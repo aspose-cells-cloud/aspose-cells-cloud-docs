@@ -2,9 +2,9 @@
 title: "Convert Worksheet To Html Table"
 ArticleTitle: "Convert Worksheet To Html Table – Aspose.Cells Cloud API"
 second_title: "Document"
-linktitle: "ConvertWorksheetToHtmlTable"
+linktitle: "Convert Worksheet To Html Table"
 type: docs
-url: /cells/convert/worksheet/html-table
+url: /convert/worksheet/html-table
 aliases: []
 keywords: "Aspose.Cells, ConvertWorksheetToHtmlTable, HTML Table, API"
 description: "Converts a worksheet of a spreadsheet on a local drive to an HTML table file using Aspose.Cells Cloud."
@@ -27,18 +27,18 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type   | Path/Query String/HTTP Body | Description |
-|----------------|--------|-----------------------------|-------------|
-| Spreadsheet    | File   | FormData                    | Upload spreadsheet file. |
-| worksheet      | String | Query                       | Worksheet name of spreadsheet. (required) |
+| Parameter Name | Type   | Path/Query String/HTTP Body | Description                                                                                                                             |
+| -------------- | ------ | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet    | File   | FormData                    | Upload spreadsheet file.                                                                                                                |
+| worksheet      | String | Query                       | Worksheet name of spreadsheet. (required)                                                                                               |
 | region         | String | Query                       | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password       | String | Query                       | The password for opening spreadsheet file. |
+| password       | String | Query                       | The password for opening spreadsheet file.                                                                                              |
 
 ### Request Body Parameter
 
-| Parameter Name | Type | Description |
-| -------------- | ---- | ----------- |
-| *None* | *None* | *No JSON body is required; the file is sent as multipart/form-data.* |
+| Parameter Name | Type   | Description                                                          |
+| -------------- | ------ | -------------------------------------------------------------------- |
+| _None_         | _None_ | _No JSON body is required; the file is sent as multipart/form-data._ |
 
 ### **Response**
 
@@ -50,14 +50,14 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 **Response Status Codes**
 
-| Code | Meaning | Description |
-|------|---------|-------------|
-| 200 | OK | Worksheet successfully converted to HTML table and returned as a file stream. |
-| 400 | Bad Request | Invalid request URL or missing required parameters. |
-| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
-| 404 | Not Found | Source file not accessible. |
-| 500 | Internal Server Error | The spreadsheet encountered an anomaly while obtaining conversion data. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| Code | Meaning               | Description                                                                   |
+| ---- | --------------------- | ----------------------------------------------------------------------------- |
+| 200  | OK                    | Worksheet successfully converted to HTML table and returned as a file stream. |
+| 400  | Bad Request           | Invalid request URL or missing required parameters.                           |
+| 401  | Unauthorized          | Authentication has failed, or no credentials were provided.                   |
+| 404  | Not Found             | Source file not accessible.                                                   |
+| 500  | Internal Server Error | The spreadsheet encountered an anomaly while obtaining conversion data.       |
+| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                             |
 
 ## How to Use the Convert Worksheet To Html Table with SDKs
 
@@ -100,4 +100,3 @@ curl -v "https://api.aspose.cloud/v4.0/cells/convert/worksheet/html-table?worksh
 Using an SDK is the fastest way to accelerate development. An SDK abstracts low-level details, allowing you to focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose.Cells Cloud web services using various SDKs:
-`[TBD]`

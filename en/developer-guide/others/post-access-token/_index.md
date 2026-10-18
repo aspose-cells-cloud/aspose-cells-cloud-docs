@@ -14,10 +14,10 @@ draft: false
 
 Before calling this endpoint, ensure you have:
 
-* A registered [Aspose Cloud account](https://dashboard.aspose.cloud/).
-* A **Client ID** and **Client Secret** generated in the [Aspose Cloud dashboard](https://dashboard.aspose.cloud/authorization).
+- A registered [Aspose Cloud account](https://dashboard.aspose.cloud/).
+- A **Client ID** and **Client Secret** generated in the [Aspose Cloud dashboard](https://dashboard.aspose.cloud/authorization).
 
-> 🔒 **Security Best Practice**: Store `client_id` and `client_secret` in environment variables or a secrets manager — *never* in source code, configuration files, or client-side JavaScript.
+> 🔒 **Security Best Practice**: Store `client_id` and `client_secret` in environment variables or a secrets manager — _never_ in source code, configuration files, or client-side JavaScript.
 
 ---
 
@@ -29,7 +29,7 @@ POST https://api.aspose.cloud/v4.0/cells/connect/token
 
 ### Authentication Flow
 
-This API acts as a secure proxy to the Aspose Cloud authorization service. It accepts your client credentials via OAuth 2.0 **client credentials flow**, forwards them to the authorization server, and returns the resulting JWT (JSON Web Token) access token — *not* a raw JWT, but a token *issued* by Aspose Cloud and intended for use with Aspose.Cells Cloud APIs.
+This API acts as a secure proxy to the Aspose Cloud authorization service. It accepts your client credentials via OAuth 2.0 **client credentials flow**, forwards them to the authorization server, and returns the resulting JWT (JSON Web Token) access token — _not_ a raw JWT, but a token _issued_ by Aspose Cloud and intended for use with Aspose.Cells Cloud APIs.
 
 > ℹ️ **Note**: The returned `access_token` is a JWT with a 1-hour (`expires_in: 3600`) lifetime. Use it in the `Authorization: Bearer <token>` header for all subsequent API calls.
 
@@ -37,11 +37,11 @@ This API acts as a secure proxy to the Aspose Cloud authorization service. It ac
 
 ## Request Parameters
 
-| Parameter     | Type   | Location                 | Description                                      |
-|---------------|--------|--------------------------|--------------------------------------------------|
-| `grant_type`  | string | body (form‑url‑encoded)  | Must be `client_credentials` for OAuth2.         |
-| `client_id`   | string | body (form‑url‑encoded)  | Your Aspose Cloud client identifier.             |
-| `client_secret`| string| body (form‑url‑encoded)  | Your Aspose Cloud client secret.                 |
+| Parameter       | Type   | Location                | Description                              |
+| --------------- | ------ | ----------------------- | ---------------------------------------- |
+| `grant_type`    | string | body (form‑url‑encoded) | Must be `client_credentials` for OAuth2. |
+| `client_id`     | string | body (form‑url‑encoded) | Your Aspose Cloud client identifier.     |
+| `client_secret` | string | body (form‑url‑encoded) | Your Aspose Cloud client secret.         |
 
 ---
 
@@ -55,6 +55,7 @@ curl -X POST "https://api.aspose.cloud/v4.0/cells/connect/token" \
 ```
 
 > 🔐 **Recommended**: Set credentials in `.env` or your CI/CD secrets:
+>
 > ```bash
 > export ASPOSE_CLIENT_ID="your-client-id"
 > export ASPOSE_CLIENT_SECRET="your-client-secret"
@@ -76,13 +77,13 @@ curl -X POST "https://api.aspose.cloud/v4.0/cells/connect/token" \
 
 ### Error Responses
 
-| Code | Meaning           | Description                                  | Example                                                                 |
-|------|-------------------|----------------------------------------------|-------------------------------------------------------------------------|
-| 400  | Bad Request       | Missing or malformed parameters (e.g., missing `grant_type`) | ```json {"error": "invalid_request", "error_description": "Missing grant_type."}``` |
-| 401  | Unauthorized      | Invalid or expired `client_id`/`client_secret` | ```json {"error": "invalid_client", "error_description": "Client authentication failed."}``` |
-| 500  | Internal Server Error | Temporary service disruption              | ```json {"error": "server_error", "error_description": "An unexpected error occurred."}``` |
+| Code | Meaning               | Description                                                  | Example                                                                                  |
+| ---- | --------------------- | ------------------------------------------------------------ | ---------------------------------------------------------------------------------------- |
+| 400  | Bad Request           | Missing or malformed parameters (e.g., missing `grant_type`) | `json {"error": "invalid_request", "error_description": "Missing grant_type."}`          |
+| 401  | Unauthorized          | Invalid or expired `client_id`/`client_secret`               | `json {"error": "invalid_client", "error_description": "Client authentication failed."}` |
+| 500  | Internal Server Error | Temporary service disruption                                 | `json {"error": "server_error", "error_description": "An unexpected error occurred."}`   |
 
-> ℹ️ **Token Expiration**: Always check `expires_in`. Renew tokens *before* expiration to avoid 401 errors in downstream calls.
+> ℹ️ **Token Expiration**: Always check `expires_in`. Renew tokens _before_ expiration to avoid 401 errors in downstream calls.
 
 ---
 
@@ -111,7 +112,7 @@ const cellsApi = new CellsApi({
   clientId: process.env.ASPose_CLIENT_ID,
   clientSecret: process.env.ASPose_CLIENT_SECRET,
   basePath: "https://api.aspose.cloud",
-  authPath: "https://api.aspose.cloud/connect/token"
+  authPath: "https://api.aspose.cloud/connect/token",
 });
 
 // Token is fetched automatically on first API call
@@ -120,11 +121,12 @@ cellsApi.cellsWorkbookPutConvertWorkbook(
   (err, result) => {
     if (err) throw err;
     console.log("Conversion successful.");
-  }
+  },
 );
 ```
 
 > ✅ SDKs automatically:
+>
 > - Fetch and cache tokens
 > - Refresh expired tokens (if refresh tokens are supported)
 > - Handle retries and error parsing
@@ -137,23 +139,3 @@ The API is fully defined in the [machine-readable OpenAPI spec](https://raw.gith
 
 You can also explore the interactive reference at:  
 [reference.aspose.cloud/cells/#/CellsAuthorityController/PostAccessToken](https://reference.aspose.cloud/cells/#/CellsAuthorityController/PostAccessToken)
-
----
-
-## Related Documentation
-
-- [Getting Started: API Authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)
-- [OAuth 2.0 Overview](https://docs.aspose.cloud/total/getting-started/oauth2/)
-- [Managing API Credentials](https://dashboard.aspose.cloud/authorization)
-- [Error Handling Best Practices](https://docs.aspose.cloud/total/working-with-errors/)
-
----
-
-## Security Considerations
-
-1. **Transport Security**: Always use HTTPS. Never send credentials over HTTP.
-2. **Token Storage**: Store tokens in memory or secure storage (e.g., environment variables, vaults like HashiCorp Vault or AWS Secrets Manager).
-3. **Token Lifecycle**: Implement token refresh logic. Do not hardcode tokens.
-4. **Client-Side Use**: Avoid using client credentials directly in browser-based apps. Use a backend proxy to obtain tokens.
-
-> ⚠️ **Critical**: If you suspect credential exposure (e.g., accidentally committed to Git), immediately rotate your `client_id` and `client_secret` in the [Aspose Cloud dashboard](https://dashboard.aspose.cloud/authorization).

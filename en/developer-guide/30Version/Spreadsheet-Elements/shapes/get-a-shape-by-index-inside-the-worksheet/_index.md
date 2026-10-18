@@ -7,7 +7,7 @@ url: /shapes/get/
 aliases: [/get-a-shape-by-index-inside-the-worksheet/]
 keywords: "Aspose.Cells Cloud, Excel shape API, get shape by index, worksheet shape, REST API, shape retrieval, Aspose.Cells SDK"
 description: "Retrieve a shape by its index from an Excel worksheet using Aspose.Cells Cloud REST API. Includes request syntax, parameters, response details, and SDK examples."
-weight: 20
+weight: 100
 ArticleTitle: "Get a Shape by Index on an Excel Worksheet – Aspose.Cells Cloud Documentation"
 ---
 
@@ -19,9 +19,10 @@ This REST API retrieves a shape (including its image data or metadata) from an E
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes/{shapeindex}
 ```
 
-**Prerequisites**  
-- A valid Aspose Cloud access token (Bearer JWT).  
-- The workbook must be stored in your Aspose Cloud storage or a specified folder.  
+**Prerequisites**
+
+- A valid Aspose Cloud access token (Bearer JWT).
+- The workbook must be stored in your Aspose Cloud storage or a specified folder.
 
 ### **Security and Authentication**
 
@@ -114,13 +115,13 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/She
 
 **Possible HTTP status codes**
 
-| Code | Description |
-|------|-------------|
-| **200 OK** | The shape was retrieved successfully. |
-| **400 Bad Request** | The request is malformed or missing required parameters. |
-| **401 Unauthorized** | Authentication failed or token is missing/invalid. |
-| **404 Not Found** | The specified workbook, worksheet, or shape index does not exist. |
-| **500 Internal Server Error** | An unexpected server error occurred. |
+| Code                          | Description                                                       |
+| ----------------------------- | ----------------------------------------------------------------- |
+| **200 OK**                    | The shape was retrieved successfully.                             |
+| **400 Bad Request**           | The request is malformed or missing required parameters.          |
+| **401 Unauthorized**          | Authentication failed or token is missing/invalid.                |
+| **404 Not Found**             | The specified workbook, worksheet, or shape index does not exist. |
+| **500 Internal Server Error** | An unexpected server error occurred.                              |
 
 **Common pitfalls:** Using an incorrect base domain (`api.aspose.com`) or the outdated `/autoshapes/` segment will result in a 404 error. Always use the `/shapes/` segment with the `api.aspose.cloud` domain.
 

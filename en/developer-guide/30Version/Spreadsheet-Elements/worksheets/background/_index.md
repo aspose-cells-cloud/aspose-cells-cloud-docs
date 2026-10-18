@@ -6,7 +6,7 @@ type: docs
 url: /worksheets/background/
 keywords: "Aspose.Cells Cloud, worksheet background, Excel API, add background image, delete worksheet background, SDK examples"
 description: "Learn how to add or remove a background image on an Excel worksheet using Aspose.Cells Cloud REST API. Includes request syntax, SDK examples for Java, .NET, Python, PHP, and error handling."
-weight: 20
+weight: 100
 ArticleTitle: "Add or Delete Worksheet Background Image with Aspose.Cells Cloud API"
 ---
 

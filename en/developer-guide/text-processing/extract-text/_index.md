@@ -1,6 +1,7 @@
 ---
 url: /extract-text/
 title: Extract Text from Excel Cells Using Aspose.Cells Cloud API
+linktitle: Extract Text
 date: 2024-03-15
 lastmod: 2024-05-22
 sitemap:
@@ -33,27 +34,27 @@ All requests require a [JWT access token](https://docs.aspose.cloud/total/gettin
 
 ## Request Parameters
 
-| Parameter         | Type    | Location   | Required | Description |
-|-------------------|---------|------------|----------|-------------|
-| `Spreadsheet`     | File    | FormData   | ✅ Yes   | Upload the Excel workbook (`.xlsx`, `.xls`, `.csv`, etc.). |
-| `extractTextType` | String  | Query      | ✅ Yes   | Extraction mode. Valid values: `Before`, `After`, `BeforePosition`, `AfterPosition`. |
-| `outPositionRange`| String  | Query      | ✅ Yes   | Target cell/range for output (e.g., `Sheet1!B1:B10`). |
-| `beforeText`      | String  | Query      | ❌ No    | Extract text *before* this substring (used with `Before`). |
-| `afterText`       | String  | Query      | ❌ No    | Extract text *after* this substring (used with `After`). |
-| `beforePosition`  | Integer | Query      | ❌ No    | Number of characters from the *left* (used with `BeforePosition`). |
-| `afterPosition`   | Integer | Query      | ❌ No    | Number of characters from the *right* (used with `AfterPosition`). |
-| `worksheet`       | String  | Query      | ❌ No    | Source worksheet name. Defaults to first sheet if omitted. |
-| `range`           | String  | Query      | ❌ No    | Source cell/range (e.g., `A1`, `A1:A100`). |
-| `outPath`         | String  | Query      | ❌ No    | Storage folder path for saving the result workbook. If omitted, the updated file is returned in the response body. |
-| `outStorageName`  | String  | Query      | ❌ No    | Name of the cloud storage to use for `outPath`. |
-| `region`          | String  | Query      | ❌ No    | Locale setting (e.g., `en-US`, `fr-FR`). Affects numeric/date parsing. |
-| `password`        | String  | Query      | ❌ No    | Password for protected workbooks. |
+| Parameter          | Type    | Location | Required | Description                                                                                                        |
+| ------------------ | ------- | -------- | -------- | ------------------------------------------------------------------------------------------------------------------ |
+| `Spreadsheet`      | File    | FormData | ✅ Yes   | Upload the Excel workbook (`.xlsx`, `.xls`, `.csv`, etc.).                                                         |
+| `extractTextType`  | String  | Query    | ✅ Yes   | Extraction mode. Valid values: `Before`, `After`, `BeforePosition`, `AfterPosition`.                               |
+| `outPositionRange` | String  | Query    | ✅ Yes   | Target cell/range for output (e.g., `Sheet1!B1:B10`).                                                              |
+| `beforeText`       | String  | Query    | ❌ No    | Extract text _before_ this substring (used with `Before`).                                                         |
+| `afterText`        | String  | Query    | ❌ No    | Extract text _after_ this substring (used with `After`).                                                           |
+| `beforePosition`   | Integer | Query    | ❌ No    | Number of characters from the _left_ (used with `BeforePosition`).                                                 |
+| `afterPosition`    | Integer | Query    | ❌ No    | Number of characters from the _right_ (used with `AfterPosition`).                                                 |
+| `worksheet`        | String  | Query    | ❌ No    | Source worksheet name. Defaults to first sheet if omitted.                                                         |
+| `range`            | String  | Query    | ❌ No    | Source cell/range (e.g., `A1`, `A1:A100`).                                                                         |
+| `outPath`          | String  | Query    | ❌ No    | Storage folder path for saving the result workbook. If omitted, the updated file is returned in the response body. |
+| `outStorageName`   | String  | Query    | ❌ No    | Name of the cloud storage to use for `outPath`.                                                                    |
+| `region`           | String  | Query    | ❌ No    | Locale setting (e.g., `en-US`, `fr-FR`). Affects numeric/date parsing.                                             |
+| `password`         | String  | Query    | ❌ No    | Password for protected workbooks.                                                                                  |
 
 ---
 
 ## cURL Example
 
-Extract text *before* `"Total"` in cell `A1` of `Sheet1`, and write the result to `B1`:
+Extract text _before_ `"Total"` in cell `A1` of `Sheet1`, and write the result to `B1`:
 
 ```bash
 curl -X PUT \
@@ -83,7 +84,7 @@ const req = new ExtractTextRequest({
   outPositionRange: "Sheet1!B1",
   worksheet: "Sheet1",
   range: "A1",
-  spreadsheet: "Sample.xlsx"
+  spreadsheet: "Sample.xlsx",
 });
 
 try {
@@ -128,7 +129,7 @@ print("Extraction completed:", result)
 ## How It Works
 
 - **String cells** → Scanned for delimiters (e.g., `"Total"`) or positional boundaries.
-- **Numeric/date cells** → Converted to text *using workbook locale* before extraction (e.g., `123.45` → `"123"` for left 3).
+- **Numeric/date cells** → Converted to text _using workbook locale_ before extraction (e.g., `123.45` → `"123"` for left 3).
 - **Empty cells** → Output remains empty.
 - **No delimiter found?** → Returns empty string (no errors).
 - **Preserves source data**: Formulas, formatting, and validation rules remain intact.
@@ -139,12 +140,12 @@ print("Extraction completed:", result)
 
 ## Supported Extraction Modes
 
-| Mode             | Description                                                                 | Example Input (`A1 = "Total: $123.45"`) | Output (`B1`) |
-|------------------|-----------------------------------------------------------------------------|------------------------------------------|---------------|
-| `Before`         | Extract text *before* a specified substring                                | `beforeText = "Total:"`                 | `""` (empty)  |
-| `After`          | Extract text *after* a specified substring                                 | `afterText = "Total: "`                 | `$123.45`     |
-| `BeforePosition` | Extract first *n* characters from the *left* (pos = 1-based)               | `beforePosition = 5`                    | `Total`       |
-| `AfterPosition`  | Extract last *n* characters from the *right* (pos = 1-based)               | `afterPosition = 4`                     | `123.45`      |
+| Mode             | Description                                                  | Example Input (`A1 = "Total: $123.45"`) | Output (`B1`) |
+| ---------------- | ------------------------------------------------------------ | --------------------------------------- | ------------- |
+| `Before`         | Extract text _before_ a specified substring                  | `beforeText = "Total:"`                 | `""` (empty)  |
+| `After`          | Extract text _after_ a specified substring                   | `afterText = "Total: "`                 | `$123.45`     |
+| `BeforePosition` | Extract first _n_ characters from the _left_ (pos = 1-based) | `beforePosition = 5`                    | `Total`       |
+| `AfterPosition`  | Extract last _n_ characters from the _right_ (pos = 1-based) | `afterPosition = 4`                     | `123.45`      |
 
 ---
 
@@ -165,35 +166,11 @@ print("Extraction completed:", result)
 
 ### Error Codes
 
-| Code | Meaning                         |
-|------|---------------------------------|
-| 200  | Success                         |
-| 202  | Accepted (asynchronous)         |
+| Code | Meaning                                       |
+| ---- | --------------------------------------------- |
+| 200  | Success                                       |
+| 202  | Accepted (asynchronous)                       |
 | 400  | Invalid parameters or missing required fields |
-| 401  | Invalid/missing JWT token       |
-| 404  | Workbook not found              |
-| 500  | Internal server error           |
-
----
-
-## Best Practices & Tips
-
-- 🔁 **Batch processing**: Use `range=A1:A1000` to extract text across many rows at once.
-- 🌐 **Locale-awareness**: Set `region` to match your data’s format (e.g., `de-DE` for comma decimals).
-- 🗂️ **Storage management**: Use `outPath` + `outStorageName` to avoid large response payloads.
-- 🔄 **Idempotent**: Re-running with the same inputs overwrites the target range predictably.
-
----
-
-## See Also
-
-- [Upload Spreadsheet](/upload-spreadsheet/)  
-- [Save Workbook to Cloud Storage](/storage-management/)  
-- [Convert Excel to PDF](/convert-excel-to-pdf/)  
-- [Working with Formulas](/formula-support/)  
-
----
-
-> 📄 **Last updated**: 2024-05-22  
-> 📚 [OpenAPI Specification (v4.0)](https://raw.githubusercontent.com/aspose-cells-cloud/aspose-cells-cloud-openapi-spec/main/specs/cells-cloud-openapi-spec.yaml)  
-> 🛡️ All endpoints enforce HTTPS and support CORS for browser-based clients.
+| 401  | Invalid/missing JWT token                     |
+| 404  | Workbook not found                            |
+| 500  | Internal server error                         |

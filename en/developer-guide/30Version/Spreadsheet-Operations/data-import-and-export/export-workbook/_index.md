@@ -7,13 +7,12 @@ url: /export-excel-to-different-formats/
 aliases: [/export/excel-to-different-formats/]
 keywords: "Aspose.Cells Cloud, Excel export, workbook conversion, PDF, CSV, JSON, image formats, spreadsheet API, XLSX, ODS, PNG"
 description: "A step‑by‑step guide on exporting Excel workbooks to multiple formats—including PDF, CSV, JSON, and various image types—using the Aspose.Cells Cloud REST API and SDKs."
-weight: 20
+weight: 100
 ---
 
 You can export workbooks to any of the following formats: [XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [ODS](https://docs.fileformat.com/spreadsheet/ods/), [TXT](https://docs.fileformat.com/word-processing/txt/), [PDF](https://docs.fileformat.com/pdf/), [OTS](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [DIF](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [NUMBERS](https://docs.fileformat.com/spreadsheet/numbers/), [FODS](https://docs.fileformat.com/spreadsheet/fods/).
 
 ## REST API
-
 
 ```bash
 POST https://api.aspose.cloud/v3.0/cells/export
@@ -23,16 +22,14 @@ POST https://api.aspose.cloud/v3.0/cells/export
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-
 ### Request Parameters
 
-| Parameter Name | Type    | Path/Query String/HTTP Body | required |Description                                                |
-|----------------|---------|-----------------------------|-----------|------------------------------------------------------------|
-| file           | file    | formData                    | True | File to upload                                             |
-| objectType  | string | query                       |   True | The type of object to export. For chart export use `chart`. Other possible values are `worksheet`, `picture`, etc. |
-| format  | string | query                       |  True | Desired output format. Supported values: `png`, `jpeg`, `gif`, `bmp`, `svg`, `tiff`, `emf`, `wmf`, `pdf`.
- |
-
+| Parameter Name | Type   | Path/Query String/HTTP Body | required | Description                                                                                                        |
+| -------------- | ------ | --------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------ |
+| file           | file   | formData                    | True     | File to upload                                                                                                     |
+| objectType     | string | query                       | True     | The type of object to export. For chart export use `chart`. Other possible values are `worksheet`, `picture`, etc. |
+| format         | string | query                       | True     | Desired output format. Supported values: `png`, `jpeg`, `gif`, `bmp`, `svg`, `tiff`, `emf`, `wmf`, `pdf`.          |
+|  |
 
 ### **Response**
 
@@ -53,22 +50,19 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 }
 ```
 
-
 **HTTP Status Codes**
 
-| Code | Meaning               | Description |
-|------|-----------------------|-------------|
+| Code | Meaning               | Description                                                    |
+| ---- | --------------------- | -------------------------------------------------------------- |
 | 200  | OK                    | Shapes exported successfully; response contains the file list. |
-| 400  | Bad Request           | Missing or invalid parameters. |
-| 401  | Unauthorized          | Invalid or missing access token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error | Unexpected server error. |
-
+| 400  | Bad Request           | Missing or invalid parameters.                                 |
+| 401  | Unauthorized          | Invalid or missing access token.                               |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                              |
+| 500  | Internal Server Error | Unexpected server error.                                       |
 
 ## How to Use the PostExport API with SDKs
 
 ### PostExport API Specification
-
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) defines a publicly accessible programming interface that allows you to perform REST interactions directly from a web browser.
 

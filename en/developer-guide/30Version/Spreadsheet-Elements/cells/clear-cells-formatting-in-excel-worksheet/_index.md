@@ -10,7 +10,7 @@ ArticleTitle: "Clear Cell Formatting in an Excel Worksheet - Aspose.Cells Cloud 
 
 **Note:** All Aspose.Cells Cloud API calls must be made over **HTTPS**. HTTP endpoints are deprecated and may be blocked by browsers.
 
-- **Method:** POST  
+- **Method:** POST
 - **Endpoint:** `https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clearformats`
 
 This REST API clears cell formatting in an Excel file and is part of the Aspose.Cells Cloud suite for clearing cell formatting in Excel worksheets.
@@ -29,27 +29,28 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ```json
 {
-    "Status":"OK",
-    "Code":200
+  "Status": "OK",
+  "Code": 200
 }
 ```
 
 **Response Schema**
 
-| Field  | Type    | Description                                   |
-|--------|---------|-----------------------------------------------|
+| Field  | Type    | Description                                       |
+| ------ | ------- | ------------------------------------------------- |
 | Code   | integer | HTTP status code returned by the API (e.g., 200). |
-| Status | string  | Result of the operation (`OK` for success).   |
+| Status | string  | Result of the operation (`OK` for success).       |
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## How to Use the PostClearFormats API with SDKs
 
 ### PostClearFormats API Specification
@@ -145,5 +146,5 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 
 **See also**
 
-- [Clear Contents and Styles of Cells](https://docs.aspose.cloud/cells/clear-contents-and-styles)  
+- [Clear Contents and Styles of Cells](https://docs.aspose.cloud/cells/clear-contents-and-styles)
 - [Set Cell Style](https://docs.aspose.cloud/cells/set-cell-style)

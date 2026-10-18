@@ -7,7 +7,7 @@ type: docs
 url: /learn/local-file-processing-vs-cloud-file-processing/
 description: "Compare Aspose.Cells Cloud local file and cloud file processing: storage, cost, security, and typical scenarios. Understand which approach fits your workflow."
 keywords: "Aspose.Cells Cloud, local file processing, cloud file processing, spreadsheet conversion, API"
-weight: 10
+weight: 100
 ---
 
 Local file processing and cloud file processing are different data management paradigms, with significant differences in file storage infrastructure, business processing, access, cost structure, security, and applicable scenarios. The main differences between the two are:
@@ -17,7 +17,6 @@ Local file processing and cloud file processing are different data management pa
 ## 1. File storage location and infrastructure
 
 - Local file:
-
   - Files are stored on physical devices that the user owns or manages, such as the hard drive of a personal computer, internal servers, or external hard drives. **You can point the Cells Cloud client directly to a file that resides on any local storage device.**
   - The customer has complete physical control over the hardware.
   - The purchase, maintenance, upgrade and retirement of the infrastructure is the responsibility of the user or their organization.
@@ -38,12 +37,11 @@ api.convert_spreadsheet(
 
 **API Reference – Convert Spreadsheet**
 
-| Method                | HTTP Verb | Endpoint            | Parameters (key)                                 | Responses            |
-|-----------------------|-----------|---------------------|--------------------------------------------------|----------------------|
-| `convert_spreadsheet` | POST      | `/cells/convert`    | `inputFile` – path to source file<br>`format` – target format (e.g., `pdf`) | `200 OK` – conversion successful<br>`400 Bad Request` – invalid parameters<br>`401 Unauthorized` – authentication failure |
+| Method                | HTTP Verb | Endpoint         | Parameters (key)                                                            | Responses                                                                                                                 |
+| --------------------- | --------- | ---------------- | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| `convert_spreadsheet` | POST      | `/cells/convert` | `inputFile` – path to source file<br>`format` – target format (e.g., `pdf`) | `200 OK` – conversion successful<br>`400 Bad Request` – invalid parameters<br>`401 Unauthorized` – authentication failure |
 
 - Cloud file:
-
   - Files are stored in remote data centres operated by third‑party cloud service providers (Aspose cloud storage, Dropbox, AWS, Google Cloud, Microsoft Azure). **AWS, Dropbox, Google Cloud, and Microsoft Azure can all connect to Aspose cloud storage.**
   - Customers access these files over the Internet, regardless of the location and maintenance of the underlying hardware.
   - The infrastructure is the responsibility of the cloud service provider, and users use it on demand.
@@ -92,11 +90,11 @@ api.save_spreadsheet_as(
 
 **API Reference – Cloud File Operations**
 
-| Method                     | HTTP Verb | Endpoint                     | Parameters (key)                                                                                 | Responses                                    |
-|----------------------------|-----------|------------------------------|---------------------------------------------------------------------------------------------------|----------------------------------------------|
-| `upload_file`              | PUT       | `/cells/storage/file`        | `localPath` – local file path<br>`remotePath` – destination in cloud storage                     | `200 OK` – upload successful<br>`401 Unauthorized` |
-| `export_spreadsheet_as_format` | POST      | `/cells/{name}/export`       | `name` – cloud file name<br>`format` – target format (e.g., `pdf`)<br>`folder` – optional folder | `200 OK` – export successful<br>`400 Bad Request` |
-| `save_spreadsheet_as`      | POST      | `/cells/{name}/saveas`       | `name` – cloud file name<br>`format` – target format<br>`folder` – destination folder            | `200 OK` – save successful<br>`401 Unauthorized` |
+| Method                         | HTTP Verb | Endpoint               | Parameters (key)                                                                                 | Responses                                          |
+| ------------------------------ | --------- | ---------------------- | ------------------------------------------------------------------------------------------------ | -------------------------------------------------- |
+| `upload_file`                  | PUT       | `/cells/storage/file`  | `localPath` – local file path<br>`remotePath` – destination in cloud storage                     | `200 OK` – upload successful<br>`401 Unauthorized` |
+| `export_spreadsheet_as_format` | POST      | `/cells/{name}/export` | `name` – cloud file name<br>`format` – target format (e.g., `pdf`)<br>`folder` – optional folder | `200 OK` – export successful<br>`400 Bad Request`  |
+| `save_spreadsheet_as`          | POST      | `/cells/{name}/saveas` | `name` – cloud file name<br>`format` – target format<br>`folder` – destination folder            | `200 OK` – save successful<br>`401 Unauthorized`   |
 
 ## 2. Business processing
 
@@ -105,13 +103,11 @@ Regardless of local file processing or cloud file processing, all business proce
 ## 3. Data Access
 
 - Local file processing:
-
   - Access is usually limited to the device itself.
   - Multi‑person collaboration is difficult.
   - Inconvenience in changing equipment or location.
 
 - Cloud file processing:
-
   - Access files from any device (computer, phone, tablet) anytime, anywhere, as long as you have an Internet connection.
   - Natural support for multi‑person real‑time collaboration; multiple users can edit the same document at the same time, and the system automatically handles version control.
   - Strong mobility, flexible office support, and remote work.
@@ -119,19 +115,17 @@ Regardless of local file processing or cloud file processing, all business proce
 ## 4. Cost structure and security
 
 - Local file:
-
   - High capital expenditure is required in the early stage. This leads to additional costs for operational support later.
   - Physical security and network security are both controlled by the users themselves.
 
 - Cloud file:
-
   - Low upfront investment, mainly operating expenses, pay‑as‑you‑go.
   - Security and integrity are the responsibilities of the cloud service provider.
 
 ## 5. Applicable scenarios
 
-- Local file: File operations can only be performed locally.  
-- Cloud file: File operations can be performed locally or in the cloud.  
+- Local file: File operations can only be performed locally.
+- Cloud file: File operations can be performed locally or in the cloud.
 
 **Notes / Limitations:** The API supports files up to 200 MB for cloud processing, and only the formats listed in the documentation can be converted. Network latency may affect processing time for large spreadsheets.
 

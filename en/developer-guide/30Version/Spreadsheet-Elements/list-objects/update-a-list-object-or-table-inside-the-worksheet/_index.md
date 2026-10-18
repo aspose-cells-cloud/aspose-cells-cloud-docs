@@ -10,7 +10,7 @@ aliases:
   - /tables/update/
 keywords: "Aspose.Cells, ListObject, Update Table, Excel API, REST, Cloud SDK, list object update, Excel worksheet, table"
 description: "Learn how to update an Excel table using Aspose.Cells Cloud API (v3.0). Includes endpoint, parameters, sample cURL, error codes, and SDK examples."
-weight: 20
+weight: 100
 ---
 
 This REST API updates the properties of a **list object** (table) in an Excel worksheet.
@@ -23,18 +23,18 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 
 The `listObject` DTO contains the following fields. Only the fields you need to change are required in the request body.
 
-| Field                                           | Type               | Required | Description                                                                |
-| ----------------------------------------------- | ------------------ | -------- | -------------------------------------------------------------------------- |
-| **DisplayName**                                 | string             | optional | The name displayed for the table.                                          |
-| **StartRow** / **StartColumn**                  | integer            | optional | Zero‑based index of the first row/column of the table.                     |
-| **EndRow** / **EndColumn**                      | integer            | optional | Zero‑based index of the last row/column of the table.                      |
-| **Range**                                       | string             | optional | A‑1 style address that defines the table range (e.g., `A1:D10`).           |
-| **ShowHeaderRow**                               | boolean            | optional | `true` to display the header row.                                          |
-| **ShowTotals**                                  | boolean            | optional | `true` to display the totals row.                                          |
-| **TableStyleName**                              | string             | optional | Name of the built‑in table style to apply.                                 |
-| **TableStyleType**                              | string             | optional | Style type (`TableStyleLight`, `TableStyleMedium`, etc.).                  |
-| **ListColumns**                                 | array of objects   | optional | Collection of column definitions (`Name`, `TotalsCalculation`).            |
-| **Sorter**, **AutoFilter**, **ShowTableStyle…** | object             | optional | Advanced styling and filtering options (see full DTO in the OpenAPI spec). |
+| Field                                           | Type             | Required | Description                                                                |
+| ----------------------------------------------- | ---------------- | -------- | -------------------------------------------------------------------------- |
+| **DisplayName**                                 | string           | optional | The name displayed for the table.                                          |
+| **StartRow** / **StartColumn**                  | integer          | optional | Zero‑based index of the first row/column of the table.                     |
+| **EndRow** / **EndColumn**                      | integer          | optional | Zero‑based index of the last row/column of the table.                      |
+| **Range**                                       | string           | optional | A‑1 style address that defines the table range (e.g., `A1:D10`).           |
+| **ShowHeaderRow**                               | boolean          | optional | `true` to display the header row.                                          |
+| **ShowTotals**                                  | boolean          | optional | `true` to display the totals row.                                          |
+| **TableStyleName**                              | string           | optional | Name of the built‑in table style to apply.                                 |
+| **TableStyleType**                              | string           | optional | Style type (`TableStyleLight`, `TableStyleMedium`, etc.).                  |
+| **ListColumns**                                 | array of objects | optional | Collection of column definitions (`Name`, `TotalsCalculation`).            |
+| **Sorter**, **AutoFilter**, **ShowTableStyle…** | object           | optional | Advanced styling and filtering options (see full DTO in the OpenAPI spec). |
 
 ### Minimal Example Payload
 
@@ -106,11 +106,11 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet7/listob
 
 The successful response includes the following fields:
 
-| Field   | Type   | Description                              |
-| ------- | ------ | ---------------------------------------- |
-| Code    | integer| HTTP status code (200 for success).      |
-| Status  | string | Textual description of the status.       |
-| UpdatedObject *(optional)* | object | The updated `ListObject` representation, containing the properties that were modified. |
+| Field                      | Type    | Description                                                                            |
+| -------------------------- | ------- | -------------------------------------------------------------------------------------- |
+| Code                       | integer | HTTP status code (200 for success).                                                    |
+| Status                     | string  | Textual description of the status.                                                     |
+| UpdatedObject _(optional)_ | object  | The updated `ListObject` representation, containing the properties that were modified. |
 
 {{< /tab >}}
 

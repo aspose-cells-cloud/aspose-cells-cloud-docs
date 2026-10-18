@@ -1,7 +1,7 @@
 ---
 title: "Delete Worksheet Comment API – Aspose.Cells Cloud"
 type: docs
-url: /cells/comments/delete/
+url: /comments/delete/
 description: "Delete a cell comment from an Excel worksheet using Aspose.Cells Cloud REST API v3.0. Includes HTTP request/response examples, SDK code snippets (C#, Java, Python, Node.js, PHP, Ruby, Perl, Go), authentication guidance, and error handling."
 keywords: "delete cell comment, Excel API, Aspose.Cells Cloud, REST API, worksheet comment removal"
 date: "2024-05-15"
@@ -44,18 +44,18 @@ DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comment
 
 ### Path Parameters
 
-| Parameter   | Type   | Required | Description                     |
-|-------------|--------|----------|---------------------------------|
-| `name`      | string | ✅       | The name of the Excel workbook (e.g., `SalesData.xlsx`). |
+| Parameter   | Type   | Required | Description                                                            |
+| ----------- | ------ | -------- | ---------------------------------------------------------------------- |
+| `name`      | string | ✅       | The name of the Excel workbook (e.g., `SalesData.xlsx`).               |
 | `sheetName` | string | ✅       | The name of the worksheet containing the comment (e.g., `Q3_Results`). |
-| `cellName`  | string | ✅       | The address of the cell with the comment to delete (e.g., `B5`). |
+| `cellName`  | string | ✅       | The address of the cell with the comment to delete (e.g., `B5`).       |
 
 ### Query Parameters
 
-| Parameter     | Type   | Required | Description                                                                 |
-|---------------|--------|----------|-----------------------------------------------------------------------------|
+| Parameter     | Type   | Required | Description                                                                               |
+| ------------- | ------ | -------- | ----------------------------------------------------------------------------------------- |
 | `folder`      | string | ❌       | Folder path where the workbook is stored (e.g., `Docs`). If omitted, root folder is used. |
-| `storageName` | string | ❌       | Name of the storage service (e.g., `MyCloud`). If omitted, the default storage is used. |
+| `storageName` | string | ❌       | Name of the storage service (e.g., `MyCloud`). If omitted, the default storage is used.   |
 
 ## Delete a Worksheet Comment via REST API
 
@@ -82,28 +82,29 @@ curl -v "https://api.aspose.cloud/v3.0/cells/SalesData.xlsx/worksheets/Q3_Result
 
 #### HTTP Status Codes
 
-| Code | Meaning               | Description                                                       |
-|------|-----------------------|-------------------------------------------------------------------|
-| 200  | OK                    | Comment deleted successfully.                                     |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 404  | Not Found             | Workbook, worksheet, or comment not found.                        |
-| 429  | Too Many Requests     | Rate limit exceeded. See [Rate Limiting](#rate-limiting).         |
-| 500  | Internal Server Error | Unexpected server error.                                          |
+| Code | Meaning               | Description                                                  |
+| ---- | --------------------- | ------------------------------------------------------------ |
+| 200  | OK                    | Comment deleted successfully.                                |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                |
+| 404  | Not Found             | Workbook, worksheet, or comment not found.                   |
+| 429  | Too Many Requests     | Rate limit exceeded. See [Rate Limiting](#rate-limiting).    |
+| 500  | Internal Server Error | Unexpected server error.                                     |
 
 ### Error Responses
 
-| HTTP Code | Example Response                              | Description                                    |
-|-----------|-----------------------------------------------|------------------------------------------------|
-| 400       | `{ "Code": 400, "Message": "Invalid parameters." }` | Malformed request (e.g., invalid `cellName`). |
-| 401       | `{ "Code": 401, "Message": "Authentication required." }` | Missing or expired token.                   |
-| 404       | `{ "Code": 404, "Message": "Resource not found." }` | Workbook, worksheet, or comment does not exist. |
+| HTTP Code | Example Response                                         | Description                                     |
+| --------- | -------------------------------------------------------- | ----------------------------------------------- |
+| 400       | `{ "Code": 400, "Message": "Invalid parameters." }`      | Malformed request (e.g., invalid `cellName`).   |
+| 401       | `{ "Code": 401, "Message": "Authentication required." }` | Missing or expired token.                       |
+| 404       | `{ "Code": 404, "Message": "Resource not found." }`      | Workbook, worksheet, or comment does not exist. |
 
 ## SDK Examples
 
 All examples below use **Aspose.Cells Cloud SDK v21.0.0** (current as of May 2024). Replace placeholder values with your own.
 
 > 💡 **Tip**: Install SDKs via:
+>
 > - **C#**: `dotnet add package Aspose.Cells.Cloud --version 24.5.0`
 > - **Java**: Maven artifact `com.aspose:aspose-cells-cloud:24.5.0`
 > - **Python**: `pip install asposecellscloud==21.0.0`
@@ -227,7 +228,13 @@ const config = new Configuration({
 const api = new WorksheetsApi(config);
 
 api
-  .deleteWorksheetComment("SalesData.xlsx", "Q3_Results", "B5", "Docs", "MyStorage")
+  .deleteWorksheetComment(
+    "SalesData.xlsx",
+    "Q3_Results",
+    "B5",
+    "Docs",
+    "MyStorage",
+  )
   .then((response) => {
     console.log("Comment deleted. Status:", response.status);
   })
@@ -344,4 +351,4 @@ Test this API interactively using the [Swagger Console](https://apiconsole.aspos
 ## Changelog
 
 - **2024-05-15** (v21.0.0): Updated SDK examples, clarified rate limits, fixed broken links, improved accessibility (added alt text), and standardized metadata.
-- **2026-07-30**: *Note: Original future-dated content corrected to reflect current release.*
+- **2026-07-30**: _Note: Original future-dated content corrected to reflect current release._

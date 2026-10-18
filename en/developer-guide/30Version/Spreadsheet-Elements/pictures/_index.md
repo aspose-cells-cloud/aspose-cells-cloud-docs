@@ -17,56 +17,57 @@ This guide explains how to work with **pictures** (also called images) in Excel 
 
 **Prerequisites**: an Aspose.Cells Cloud account, a valid API key, and the appropriate SDK installed for your chosen language.
 
-- [How to get a specific format picture from an Excel worksheet.](/cells/pictures/get/) – Retrieve a single picture in the requested format (PNG, JPEG, etc.) from a worksheet.  
-- [How to get all pictures information from an Excel worksheet.](/cells/pictures/get-all/) | List metadata for every picture contained in a worksheet.  
-- [How to add a picture for an Excel worksheet.](/cells/pictures/add/) – Insert a new picture into a worksheet, specifying its position and size.  
-- [How to update a specific picture from an Excel worksheet.](/cells/pictures/update/) – Modify the properties (e.g., dimensions, placement) of an existing picture.  
-- [How to delete all pictures from an Excel worksheet.](/cells/pictures/clear/) – Remove every picture object from a worksheet in a single call.  
-- [How to delete a picture from an Excel worksheet.](/cells/pictures/delete/) – Delete a single picture identified by its index.  
+- [How to get a specific format picture from an Excel worksheet.](/cells/pictures/get/) – Retrieve a single picture in the requested format (PNG, JPEG, etc.) from a worksheet.
+- [How to get all pictures information from an Excel worksheet.](/cells/pictures/get-all/) | List metadata for every picture contained in a worksheet.
+- [How to add a picture for an Excel worksheet.](/cells/pictures/add/) – Insert a new picture into a worksheet, specifying its position and size.
+- [How to update a specific picture from an Excel worksheet.](/cells/pictures/update/) – Modify the properties (e.g., dimensions, placement) of an existing picture.
+- [How to delete all pictures from an Excel worksheet.](/cells/pictures/clear/) – Remove every picture object from a worksheet in a single call.
+- [How to delete a picture from an Excel worksheet.](/cells/pictures/delete/) – Delete a single picture identified by its index.
 
 **API reference**
 
-**Get a specific format picture**  
+**Get a specific format picture**
 
-| HTTP Method | Endpoint | Required Parameters | Sample Request | Sample Response | Status Codes |
-|-------------|----------|---------------------|----------------|----------------|--------------|
-| GET | `/cells/{fileName}/worksheets/{sheetName}/pictures/{pictureIndex}` | `fileName` (path), `sheetName` (path), `pictureIndex` (path), `format` (query) | `GET https://api.aspose.cloud/v3.0/cells/myBook.xlsx/worksheets/Sheet1/pictures/0?format=png` | Binary image data (PNG, JPEG, etc.) | 200 OK, 400 Bad Request, 401 Unauthorized, 404 Not Found, 500 Server Error |
+| HTTP Method | Endpoint                                                           | Required Parameters                                                            | Sample Request                                                                                | Sample Response                     | Status Codes                                                               |
+| ----------- | ------------------------------------------------------------------ | ------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------- | ----------------------------------- | -------------------------------------------------------------------------- |
+| GET         | `/cells/{fileName}/worksheets/{sheetName}/pictures/{pictureIndex}` | `fileName` (path), `sheetName` (path), `pictureIndex` (path), `format` (query) | `GET https://api.aspose.cloud/v3.0/cells/myBook.xlsx/worksheets/Sheet1/pictures/0?format=png` | Binary image data (PNG, JPEG, etc.) | 200 OK, 400 Bad Request, 401 Unauthorized, 404 Not Found, 500 Server Error |
 
-**Get all pictures information**  
+**Get all pictures information**
 
-| HTTP Method | Endpoint | Required Parameters | Sample Request | Sample Response | Status Codes |
-|-------------|----------|---------------------|----------------|----------------|--------------|
-| GET | `/cells/{fileName}/worksheets/{sheetName}/pictures` | `fileName` (path), `sheetName` (path) | `GET https://api.aspose.cloud/v3.0/cells/myBook.xlsx/worksheets/Sheet1/pictures` | JSON array with picture metadata (index, name, position, size) | 200 OK, 400, 401, 404, 500 |
+| HTTP Method | Endpoint                                            | Required Parameters                   | Sample Request                                                                   | Sample Response                                                | Status Codes               |
+| ----------- | --------------------------------------------------- | ------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------- |
+| GET         | `/cells/{fileName}/worksheets/{sheetName}/pictures` | `fileName` (path), `sheetName` (path) | `GET https://api.aspose.cloud/v3.0/cells/myBook.xlsx/worksheets/Sheet1/pictures` | JSON array with picture metadata (index, name, position, size) | 200 OK, 400, 401, 404, 500 |
 
-**Add a picture**  
+**Add a picture**
 
-| HTTP Method | Endpoint | Required Parameters | Sample Request Body | Sample Response | Status Codes |
-|-------------|----------|---------------------|---------------------|----------------|--------------|
-| POST | `/cells/{fileName}/worksheets/{sheetName}/pictures` | `fileName` (path), `sheetName` (path) | `{ "image": "<base64‑encoded‑image>", "upperLeftRow": 5, "upperLeftColumn": 2, "width": 200, "height": 150 }` | `{ "code": 200, "status": "OK", "pictureIndex": 3 }` | 201 Created, 400, 401, 404, 500 |
+| HTTP Method | Endpoint                                            | Required Parameters                   | Sample Request Body                                                                                           | Sample Response                                      | Status Codes                    |
+| ----------- | --------------------------------------------------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | ------------------------------- |
+| POST        | `/cells/{fileName}/worksheets/{sheetName}/pictures` | `fileName` (path), `sheetName` (path) | `{ "image": "<base64‑encoded‑image>", "upperLeftRow": 5, "upperLeftColumn": 2, "width": 200, "height": 150 }` | `{ "code": 200, "status": "OK", "pictureIndex": 3 }` | 201 Created, 400, 401, 404, 500 |
 
-**Update a picture**  
+**Update a picture**
 
-| HTTP Method | Endpoint | Required Parameters | Sample Request Body | Sample Response | Status Codes |
-|-------------|----------|---------------------|---------------------|----------------|--------------|
-| PUT | `/cells/{fileName}/worksheets/{sheetName}/pictures/{pictureIndex}` | `fileName` (path), `sheetName` (path), `pictureIndex` (path) | `{ "upperLeftRow": 10, "upperLeftColumn": 4, "width": 300, "height": 250 }` | `{ "code": 200, "status": "OK" }` | 200 OK, 400, 401, 404, 500 |
+| HTTP Method | Endpoint                                                           | Required Parameters                                          | Sample Request Body                                                         | Sample Response                   | Status Codes               |
+| ----------- | ------------------------------------------------------------------ | ------------------------------------------------------------ | --------------------------------------------------------------------------- | --------------------------------- | -------------------------- |
+| PUT         | `/cells/{fileName}/worksheets/{sheetName}/pictures/{pictureIndex}` | `fileName` (path), `sheetName` (path), `pictureIndex` (path) | `{ "upperLeftRow": 10, "upperLeftColumn": 4, "width": 300, "height": 250 }` | `{ "code": 200, "status": "OK" }` | 200 OK, 400, 401, 404, 500 |
 
-**Delete all pictures**  
+**Delete all pictures**
 
-| HTTP Method | Endpoint | Required Parameters | Sample Request | Sample Response | Status Codes |
-|-------------|----------|---------------------|----------------|----------------|--------------|
-| DELETE | `/cells/{fileName}/worksheets/{sheetName}/pictures` | `fileName` (path), `sheetName` (path) | `DELETE https://api.aspose.cloud/v3.0/cells/myBook.xlsx/worksheets/Sheet1/pictures` | `{ "code": 200, "status": "All pictures deleted." }` | 200 OK, 400, 401, 404, 500 |
+| HTTP Method | Endpoint                                            | Required Parameters                   | Sample Request                                                                      | Sample Response                                      | Status Codes               |
+| ----------- | --------------------------------------------------- | ------------------------------------- | ----------------------------------------------------------------------------------- | ---------------------------------------------------- | -------------------------- |
+| DELETE      | `/cells/{fileName}/worksheets/{sheetName}/pictures` | `fileName` (path), `sheetName` (path) | `DELETE https://api.aspose.cloud/v3.0/cells/myBook.xlsx/worksheets/Sheet1/pictures` | `{ "code": 200, "status": "All pictures deleted." }` | 200 OK, 400, 401, 404, 500 |
 
-**Delete a specific picture**  
+**Delete a specific picture**
 
-| HTTP Method | Endpoint | Required Parameters | Sample Request | Sample Response | Status Codes |
-|-------------|----------|---------------------|----------------|----------------|--------------|
-| DELETE | `/cells/{fileName}/worksheets/{sheetName}/pictures/{pictureIndex}` | `fileName` (path), `sheetName` (path), `pictureIndex` (path) | `DELETE https://api.aspose.cloud/v3.0/cells/myBook.xlsx/worksheets/Sheet1/pictures/2` | `{ "code": 200, "status": "Picture deleted." }` | 200 OK, 400, 401, 404, 500 |
+| HTTP Method | Endpoint                                                           | Required Parameters                                          | Sample Request                                                                        | Sample Response                                 | Status Codes               |
+| ----------- | ------------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------------------------------- | ----------------------------------------------- | -------------------------- |
+| DELETE      | `/cells/{fileName}/worksheets/{sheetName}/pictures/{pictureIndex}` | `fileName` (path), `sheetName` (path), `pictureIndex` (path) | `DELETE https://api.aspose.cloud/v3.0/cells/myBook.xlsx/worksheets/Sheet1/pictures/2` | `{ "code": 200, "status": "Picture deleted." }` | 200 OK, 400, 401, 404, 500 |
 
 **Related topics**
 
-Explore other image‑related operations in Aspose.Cells Cloud:  
-- [Add, edit, and delete drawing shapes](/cells/shapes/) – add, edit, and delete drawing shapes.  
-- [Create and manipulate chart objects](/cells/charts/) – create and manipulate chart objects.  
+Explore other image‑related operations in Aspose.Cells Cloud:
+
+- [Add, edit, and delete drawing shapes](/cells/shapes/) – add, edit, and delete drawing shapes.
+- [Create and manipulate chart objects](/cells/charts/) – create and manipulate chart objects.
 - [Embed and manage raw image files](/cells/images/) – embed and manage raw image files.
 
 ---

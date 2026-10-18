@@ -7,7 +7,7 @@ url: /rows/get/rows/
 aliases: [/get-row-from-a-worksheet/]
 keywords: "Aspose.Cells Cloud, Get Rows API, Excel worksheet rows, REST API, cURL example, SDK examples, .NET, Java, Python"
 description: "Learn how to retrieve rows information from an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, authentication, cURL, and SDK code samples for C#, Java, Python, and more."
-weight: 10
+weight: 100
 ArticleTitle: "Get rows information from an Excel worksheet – Aspose.Cells Cloud API Documentation"
 ---
 
@@ -105,13 +105,13 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 
 **Response codes**
 
-| Code | Meaning                     | Description                                                                 |
-|------|-----------------------------|-----------------------------------------------------------------------------|
-| 200  | OK                          | The request succeeded and the rows information is returned.                |
-| 400  | Bad Request                 | The request is malformed (e.g., missing required parameters).              |
-| 401  | Unauthorized                | Invalid or missing JWT token.                                               |
-| 404  | Not Found                   | The specified workbook or worksheet does not exist.                         |
-| 500  | Internal Server Error       | An unexpected error occurred on the server.                                 |
+| Code | Meaning               | Description                                                   |
+| ---- | --------------------- | ------------------------------------------------------------- |
+| 200  | OK                    | The request succeeded and the rows information is returned.   |
+| 400  | Bad Request           | The request is malformed (e.g., missing required parameters). |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                 |
+| 404  | Not Found             | The specified workbook or worksheet does not exist.           |
+| 500  | Internal Server Error | An unexpected error occurred on the server.                   |
 
 ## Cloud SDK Family
 

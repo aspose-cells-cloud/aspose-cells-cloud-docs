@@ -7,7 +7,7 @@ url: /worksheets/calculate-formula/
 aliases: [/calculate-formula-in-a-worksheet/]
 keywords: "Aspose.Cells Cloud, Excel, formula calculation, REST API, SDKs, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, Swift"
 description: "Calculate formulas in an Excel worksheet using Aspose.Cells Cloud REST API. Supports multiple SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, Swift) with ready‑to‑use examples."
-weight: 20
+weight: 100
 ArticleTitle: "Calculate a formula on an Excel worksheet – Aspose.Cells Cloud Documentation"
 ---
 
@@ -43,11 +43,11 @@ You can obtain a token by following the OAuth 2.0 flow described in the Aspose
 
 ### Possible response status codes
 
-| Code | Description                                 |
-|------|---------------------------------------------|
-| 200  | Request succeeded; the formula value is returned. |
-| 400  | Bad request – missing or invalid parameters. |
-| 401  | Unauthorized – invalid or missing JWT token. |
+| Code | Description                                                 |
+| ---- | ----------------------------------------------------------- |
+| 200  | Request succeeded; the formula value is returned.           |
+| 400  | Bad request – missing or invalid parameters.                |
+| 401  | Unauthorized – invalid or missing JWT token.                |
 | 404  | Not found – the specified file or worksheet does not exist. |
 | 500  | Internal server error – unexpected condition on the server. |
 
@@ -143,7 +143,8 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 
 ---
 
-**See also:**  
-- [Get Worksheet](https://docs.aspose.cloud/cells/worksheets/get-worksheet/)  
-- [Update Worksheet](https://docs.aspose.cloud/cells/worksheets/update-worksheet/)  
-- [Calculate All Formulas](https://docs.aspose.cloud/cells/worksheets/calculate-all-formulas/)  
+**See also:**
+
+- [Get Worksheet](https://docs.aspose.cloud/cells/worksheets/get-worksheet/)
+- [Update Worksheet](https://docs.aspose.cloud/cells/worksheets/update-worksheet/)
+- [Calculate All Formulas](https://docs.aspose.cloud/cells/worksheets/calculate-all-formulas/)

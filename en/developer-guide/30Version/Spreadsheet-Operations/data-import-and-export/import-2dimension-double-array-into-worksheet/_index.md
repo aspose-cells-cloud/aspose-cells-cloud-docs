@@ -13,7 +13,7 @@ aliases:
   ]
 keywords: "Import 2‑Dimension Double Array, Excel, Aspose Cells Cloud, REST API, Spreadsheet, Data Import"
 description: "Learn how to import a two‑dimensional double array into an Excel worksheet using Aspose.Cells Cloud REST API. Includes request format, parameters, and SDK code samples."
-weight: 20
+weight: 100
 ---
 
 This REST API **imports a two‑dimensional double array** into an Excel worksheet.
@@ -60,20 +60,21 @@ The important parameters are described in the following table:
 
 ```json
 {
-  "Status":"OK",
-  "Code":200
+  "Status": "OK",
+  "Code": 200
 }
 ```
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## How to Use the PostImportData API with SDKs
 
 ### PostImportData API Specification

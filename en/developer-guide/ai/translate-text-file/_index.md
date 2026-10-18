@@ -1,6 +1,7 @@
 ---
 url: /translate-text-file/
 title: Translate Text File with AI-Powered Language Conversion
+linktitle: "Translate Text File"
 type: docs
 description: Use Aspose.Cells Cloud's AI-powered TranslateTextFile API to convert text files into any supported language via REST. Supports file upload or raw text input, preserves formatting, and integrates with major SDKs.
 keywords: AI text translation, Aspose.Cells Cloud API, REST API translate file, multilingual spreadsheet, neural machine translation
@@ -37,12 +38,12 @@ PUT https://api.aspose.cloud/v4.0/cells/ai/translate/text-file
 
 ## Request Parameters
 
-| Parameter Name | Type   | Location | Required | Description |
-|:---------------|:-------|:---------|:---------|:------------|
-| Spreadsheet    | File   | FormData | Yes      | The source file to translate. Accepts plain-text (`.txt`) or supported spreadsheet formats (e.g., `.csv`, `.xlsx`). Use form field name `file` in `multipart/form-data`. |
-| targetLanguage | String | Query    | Yes      | ISO 639-1 language code for the target language (e.g., `es`, `fr`, `de`). Case-insensitive. |
+| Parameter Name | Type   | Location | Required | Description                                                                                                                                                                            |
+| :------------- | :----- | :------- | :------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet    | File   | FormData | Yes      | The source file to translate. Accepts plain-text (`.txt`) or supported spreadsheet formats (e.g., `.csv`, `.xlsx`). Use form field name `file` in `multipart/form-data`.               |
+| targetLanguage | String | Query    | Yes      | ISO 639-1 language code for the target language (e.g., `es`, `fr`, `de`). Case-insensitive.                                                                                            |
 | region         | String | Query    | No       | Locale identifier (e.g., `en-US`, `fr-FR`, `zh-CN`) that influences date, number, and currency formatting. **Note**: Only applies to spreadsheet inputs; ignored for plain-text files. |
-| password       | String | Query    | No       | Password to decrypt encrypted spreadsheet files. Not required for plain-text (`.txt`) files. |
+| password       | String | Query    | No       | Password to decrypt encrypted spreadsheet files. Not required for plain-text (`.txt`) files.                                                                                           |
 
 ---
 
@@ -50,9 +51,10 @@ PUT https://api.aspose.cloud/v4.0/cells/ai/translate/text-file
 
 ### Successful Response (200 OK)
 
-**Headers**  
-- `Content-Type: application/octet-stream`  
-- `Content-Disposition: attachment; filename="<original_name>_translated.txt"`  
+**Headers**
+
+- `Content-Type: application/octet-stream`
+- `Content-Disposition: attachment; filename="<original_name>_translated.txt"`
 - `Content-Length: <size_in_bytes>`
 
 **Body**  
@@ -60,13 +62,13 @@ Binary stream containing the translated content with preserved formatting, line 
 
 ### Error Responses
 
-| Code | Meaning               | Description |
-|:-----|:----------------------|:------------|
-| 200  | OK                    | Translation completed successfully. |
+| Code | Meaning               | Description                                                                               |
+| :--- | :-------------------- | :---------------------------------------------------------------------------------------- |
+| 200  | OK                    | Translation completed successfully.                                                       |
 | 400  | Bad Request           | Missing `targetLanguage`, unsupported file type, empty payload, or invalid `region` code. |
-| 401  | Unauthorized          | Invalid, expired, or missing JWT token. |
-| 413  | Payload Too Large     | File size exceeds the 2 GB limit. |
-| 500  | Internal Server Error | Translation service unavailable or internal processing failure. |
+| 401  | Unauthorized          | Invalid, expired, or missing JWT token.                                                   |
+| 413  | Payload Too Large     | File size exceeds the 2 GB limit.                                                         |
+| 500  | Internal Server Error | Translation service unavailable or internal processing failure.                           |
 
 For authentication issues, see [Authentication Troubleshooting](/cells-cloud/authentication/#troubleshooting).
 
@@ -109,6 +111,7 @@ For authentication issues, see [Authentication Troubleshooting](/cells-cloud/aut
 ### 1. File Upload Mode (Multipart/Form-Data)
 
 **cURL Example**
+
 ```bash
 curl -X PUT "https://api.aspose.cloud/v4.0/cells/ai/translate/text-file?targetLanguage=es" \
   -H "Authorization: Bearer <JWT token>" \
@@ -118,6 +121,7 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/ai/translate/text-file?targetLa
 ### 2. Direct Content Mode (Raw Text)
 
 **cURL Example**
+
 ```bash
 curl -X PUT "https://api.aspose.cloud/v4.0/cells/ai/translate/text-file?targetLanguage=fr&region=fr-FR" \
   -H "Authorization: Bearer <JWT token>" \
@@ -135,6 +139,7 @@ Aspose.Cells Cloud SDKs abstract low-level HTTP details and simplify integration
 
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go">}}
 {{<tab tabNum="1">}}
+
 ```csharp
 // Install Aspose.Cells.Cloud SDK via NuGet: Install-Package Aspose.Cells.Cloud
 
@@ -146,8 +151,10 @@ var response = await cellsApi.CellsAiTranslateTextFileAsync(
 );
 Console.WriteLine($"Translated file saved as: {response.Name}");
 ```
+
 {{</tab>}}
 {{<tab tabNum="2">}}
+
 ```java
 // Install Aspose.Cells.Cloud SDK via Maven: com.aspose:aspose-cells-cloud:22.3
 
@@ -158,8 +165,10 @@ TranslateTextFileResponse response = cellsApi.cellsAiTranslateTextFile(
 );
 System.out.println("Translated file: " + response.getName());
 ```
+
 {{</tab>}}
 {{<tab tabNum="3">}}
+
 ```php
 // Install via Composer: composer require aspose/cells-cloud
 
@@ -175,8 +184,10 @@ $file = realpath("document.txt");
 $response = $cellsApi->cellsAiTranslateTextFile("es", null, null, $file);
 echo "Translated file: " . $response->getName();
 ```
+
 {{</tab>}}
 {{<tab tabNum="4">}}
+
 ```ruby
 # Install: gem install aspose_cells_cloud
 
@@ -193,20 +204,23 @@ response = @cells_api.cells_ai_translate_text_file(
 )
 puts "Translated file: #{response.name}"
 ```
+
 {{</tab>}}
 {{<tab tabNum="5">}}
+
 ```javascript
 // Install: npm install @aspose/cells-cloud
 
 const cellsApi = new CellsApi("your_app_sid", "your_app_key");
-const response = await cellsApi.cellsAiTranslateTextFile(
-  "es", 
-  { file: fs.createReadStream("document.txt") }
-);
+const response = await cellsApi.cellsAiTranslateTextFile("es", {
+  file: fs.createReadStream("document.txt"),
+});
 console.log("Translated file:", response.name);
 ```
+
 {{</tab>}}
 {{<tab tabNum="6">}}
+
 ```python
 # Install: pip install asposecellscloud
 
@@ -221,8 +235,10 @@ with open("document.txt", "rb") as f:
     )
 print(f"Translated file: {response.name}")
 ```
+
 {{</tab>}}
 {{<tab tabNum="7">}}
+
 ```perl
 use AsposeCellsCloud::Configuration;
 use AsposeCellsCloud::CellsApi;
@@ -240,8 +256,10 @@ my $response = $api->cells_ai_translate_text_file(
 );
 print "Translated file: " . $response->{name} . "\n";
 ```
+
 {{</tab>}}
 {{<tab tabNum="8">}}
+
 ```go
 // Install: go get github.com/aspose-cells-cloud/aspose-cells-cloud-go
 
@@ -268,25 +286,6 @@ if err != nil {
 }
 fmt.Printf("Translated file: %s\n", *resp.Name)
 ```
+
 {{</tab>}}
 {{</tabs>}}
-
-> **Note**: All SDK examples assume valid authentication credentials. For troubleshooting, see [Common SDK Errors](/cells-cloud/sdk-troubleshooting/).
-
----
-
-## Related Resources
-
-- [Authentication Guide](/cells-cloud/authentication/)  
-- [File Handling & Uploads](/cells-cloud/file-handling/)  
-- [AI API Overview](/cells-cloud/ai/)  
-- [API Reference: TranslateTextFile](https://reference.aspose.cloud/cells/#/AIController/TranslateTextFile)  
-
----
-
-## Changelog
-
-| Date       | Version | Changes |
-|:-----------|:--------|:--------|
-| 2024-04-27 | v4.0    | Added support for direct text input mode; clarified `region` parameter scope; updated SDK examples. |
-| 2024-03-15 | v4.0    | Initial stable release of the AI-powered `TranslateTextFile` endpoint. |

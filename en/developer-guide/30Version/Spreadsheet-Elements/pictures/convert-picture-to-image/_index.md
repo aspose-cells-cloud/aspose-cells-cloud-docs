@@ -7,7 +7,7 @@ url: /pictures/get/
 aliases: [/convert-picture-to-image/]
 keywords: "Aspose.Cells, Get Picture, API, Excel, Cloud, REST"
 description: "Retrieve a specific picture from an Excel worksheet using the Aspose.Cells Cloud REST API. Includes endpoint, parameters, authentication steps, response codes, and code examples."
-weight: 10
+weight: 100
 ArticleTitle: "Aspose.Cells Cloud API – Get Picture from Worksheet"
 ---
 

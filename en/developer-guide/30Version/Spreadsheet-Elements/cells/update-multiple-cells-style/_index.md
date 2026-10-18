@@ -3,8 +3,18 @@ title: "Update Multiple Cells Style – Aspose.Cells Cloud API Reference (v3.0)"
 date: 2024-05-10
 type: docs
 url: /update-multiple-cells-style/
-weight: 20
-keywords: ["Aspose.Cells", "update multiple cells style", "Excel cell style API", "cloud SDK", "REST API", "cURL example", "JSON request", "JWT authentication"]
+weight: 100
+keywords:
+  [
+    "Aspose.Cells",
+    "update multiple cells style",
+    "Excel cell style API",
+    "cloud SDK",
+    "REST API",
+    "cURL example",
+    "JSON request",
+    "JWT authentication",
+  ]
 description: "Update Excel cell range styles (font, color, background) via Aspose.Cells Cloud REST API v3.0. Includes cURL, SDK examples (C#, Java, Python), and JWT auth."
 ---
 
@@ -18,22 +28,22 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/sty
 
 ### Request Parameters
 
-| Parameter Name | Type   | Location | Required | Description |
-|----------------|--------|----------|----------|-------------|
-| **name**       | string | path     | Yes      | Workbook name. |
-| **sheetName**  | string | path     | Yes      | Worksheet name. |
-| **range**      | string | query    | Yes      | Cell range (e.g., `A1:A10`). |
-| **style**      | object | body     | Yes      | JSON object defining the style to apply. |
-| **folder**     | string | query    | No       | Folder containing the workbook. |
-| **storageName**| string | query    | No       | Name of the storage. |
+| Parameter Name  | Type   | Location | Required | Description                              |
+| --------------- | ------ | -------- | -------- | ---------------------------------------- |
+| **name**        | string | path     | Yes      | Workbook name.                           |
+| **sheetName**   | string | path     | Yes      | Worksheet name.                          |
+| **range**       | string | query    | Yes      | Cell range (e.g., `A1:A10`).             |
+| **style**       | object | body     | Yes      | JSON object defining the style to apply. |
+| **folder**      | string | query    | No       | Folder containing the workbook.          |
+| **storageName** | string | query    | No       | Name of the storage.                     |
 
 #### Style Object
 
 The `style` JSON object supports the following optional properties:
 
-- **Font** – Font settings (e.g., `Name`, `Size`, `IsBold`, `IsItalic`, `Color`, `IsStrikeout`, `IsSubscript`, `IsSuperscript`).  
-- **BackgroundColor** – Background color in ARGB format: `{ "A":255, "R":0, "G":0, "B":0 }`.  
-- **ForegroundColor** – Foreground color in ARGB format.  
+- **Font** – Font settings (e.g., `Name`, `Size`, `IsBold`, `IsItalic`, `Color`, `IsStrikeout`, `IsSubscript`, `IsSuperscript`).
+- **BackgroundColor** – Background color in ARGB format: `{ "A":255, "R":0, "G":0, "B":0 }`.
+- **ForegroundColor** – Foreground color in ARGB format.
 - **Name**, **CultureCustom**, **Custom** – Additional style metadata.
 
 > 📝 **Note**: All color values must be in ARGB format with channel values between `0` and `255`. Invalid values return `400 Bad Request`.
@@ -57,20 +67,20 @@ Returns a `CellsCloudResponse` object:
 }
 ```
 
-| Field    | Type    | Description                         |
-|----------|---------|-------------------------------------|
-| `Status` | string  | Operation result status (`"OK"` on success). |
+| Field    | Type    | Description                                          |
+| -------- | ------- | ---------------------------------------------------- |
+| `Status` | string  | Operation result status (`"OK"` on success).         |
 | `Code`   | integer | HTTP status code (e.g., `200`, `400`, `401`, `500`). |
 
 #### HTTP Status Codes
 
-| Code | Meaning               | Description |
-|------|-----------------------|-------------|
-| 200  | OK                    | Style updated successfully. |
+| Code | Meaning               | Description                                                                 |
+| ---- | --------------------- | --------------------------------------------------------------------------- |
+| 200  | OK                    | Style updated successfully.                                                 |
 | 400  | Bad Request           | Missing/invalid parameters (e.g., malformed `range`, invalid color format). |
-| 401  | Unauthorized          | Invalid, expired, or missing JWT token. |
-| 413  | Payload Too Large     | Request body exceeds size limit. |
-| 500  | Internal Server Error | Unexpected server error. |
+| 401  | Unauthorized          | Invalid, expired, or missing JWT token.                                     |
+| 413  | Payload Too Large     | Request body exceeds size limit.                                            |
+| 500  | Internal Server Error | Unexpected server error.                                                    |
 
 ---
 
@@ -183,8 +193,8 @@ Examples for multiple languages:
 
 ## See Also
 
-- [Read cell range style](/read-cell-range-style/)  
-- [Get worksheet cell styles](/get-worksheet-cell-styles/)  
+- [Read cell range style](/read-cell-range-style/)
+- [Get worksheet cell styles](/get-worksheet-cell-styles/)
 
 ## API Reference
 

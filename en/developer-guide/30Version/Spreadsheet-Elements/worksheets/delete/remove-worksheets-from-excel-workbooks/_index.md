@@ -7,7 +7,7 @@ url: /worksheets/delete-worksheet/
 aliases: [/remove-worksheets-from-excel-workbooks/]
 keywords: "Aspose.Cells Cloud, Delete Worksheet, Excel, Spreadsheet, REST API"
 description: "Delete a worksheet from an Excel workbook using Aspose.Cells Cloud REST API. Supports SDKs for C#, Java, PHP, Ruby, Node.js, Python, Perl, Go and cURL."
-weight: 20
+weight: 100
 ArticleTitle: "Delete Worksheet – Aspose.Cells Cloud API"
 ---
 
@@ -20,7 +20,7 @@ Prerequisites: To call this API you must provide a valid JWT authentication toke
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
 ```
 
-*Note: The API uses version **v3.0**, which is the current stable version. Future version changes will be announced in the release notes.*
+_Note: The API uses version **v3.0**, which is the current stable version. Future version changes will be announced in the release notes._
 
 ### **Request parameters**
 
@@ -33,13 +33,13 @@ DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
 
 Possible HTTP responses:
 
-| Status Code | Description |
-| ----------- | ----------- |
-| 200 OK | Worksheet deleted successfully. |
-| 400 Bad Request | Invalid request parameters. |
-| 401 Unauthorized | Authentication failed or token missing. |
-| 404 Not Found | Specified workbook or worksheet does not exist. |
-| 500 Internal Server Error | Unexpected server error. |
+| Status Code               | Description                                     |
+| ------------------------- | ----------------------------------------------- |
+| 200 OK                    | Worksheet deleted successfully.                 |
+| 400 Bad Request           | Invalid request parameters.                     |
+| 401 Unauthorized          | Authentication failed or token missing.         |
+| 404 Not Found             | Specified workbook or worksheet does not exist. |
+| 500 Internal Server Error | Unexpected server error.                        |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheet) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -57,7 +57,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet3" 
   -H "Authorization: Bearer <jwt token>"
 ```
 
-*All requests must be made over HTTPS; the API does not support non‑TLS connections.*
+_All requests must be made over HTTPS; the API does not support non‑TLS connections._
 
 {{< /tab >}}
 

@@ -6,7 +6,7 @@ type: docs
 url: /set-page-setup/
 keywords: "Aspose.Cells, Excel, page setup, REST API, worksheet, cloud SDK"
 description: "Learn how to set the page setup for an Excel worksheet using Aspose.Cells Cloud REST API. Includes request details, a secure HTTPS cURL example, response status codes, and SDK code snippets for multiple programming languages."
-weight: 20
+weight: 100
 ArticleTitle: "Set page setup for a worksheet – Aspose.Cells Cloud API Guide"
 ---
 
@@ -94,13 +94,13 @@ The API returns a JSON object indicating the result of the operation:
 
 **Possible response status codes**
 
-| Code | Meaning                     | When                                                       |
-|------|-----------------------------|------------------------------------------------------------|
-| 200  | OK                          | Successful page‑setup update                               |
-| 400  | Bad Request                 | Invalid JSON payload or missing required fields            |
-| 401  | Unauthorized                | Missing or invalid JWT token                               |
-| 404  | Not Found                   | Workbook or worksheet name does not exist                  |
-| 500  | Internal Server Error       | Unexpected server failure                                  |
+| Code | Meaning               | When                                            |
+| ---- | --------------------- | ----------------------------------------------- |
+| 200  | OK                    | Successful page‑setup update                    |
+| 400  | Bad Request           | Invalid JSON payload or missing required fields |
+| 401  | Unauthorized          | Missing or invalid JWT token                    |
+| 404  | Not Found             | Workbook or worksheet name does not exist       |
+| 500  | Internal Server Error | Unexpected server failure                       |
 
 ## Cloud SDK Family
 

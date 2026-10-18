@@ -4,11 +4,11 @@ ArticleTitle: "Get Merged Cells In Remote Worksheet – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Get Merged Cells In Remote Worksheet"
 type: docs
-url: /cells/mergedcells/get
+url: /merged-cells-in-remote-worksheet
 aliases: []
 keywords: "Aspose Cells, Get Merged Cells, Remote Worksheet, API"
 description: "Retrieves all merged cell areas from a remote worksheet in a spreadsheet."
-weight: 10
+weight: 100
 ---
 
 ## The GetMergedCellsInRemotedWorksheet of Aspose.Cells Cloud Web Services
@@ -27,20 +27,20 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type   | Path/Query String/HTTP Body | Description |
-|----------------|--------|-----------------------------|-------------|
-| name | string | Path | Spreadsheet name |
-| worksheet | string | Path | Worksheet name |
-| folder | string | Query | The cloud storage path of the spreadsheet. |
-| storageName | string | Query | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted. |
-| region | string | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password | string | Query | The password for opening spreadsheet file. |
+| Parameter Name | Type   | Path/Query String/HTTP Body | Description                                                                                                                             |
+| -------------- | ------ | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| name           | string | Path                        | Spreadsheet name                                                                                                                        |
+| worksheet      | string | Path                        | Worksheet name                                                                                                                          |
+| folder         | string | Query                       | The cloud storage path of the spreadsheet.                                                                                              |
+| storageName    | string | Query                       | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.                                       |
+| region         | string | Query                       | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password       | string | Query                       | The password for opening spreadsheet file.                                                                                              |
 
 ### Request Body Parameter
 
 | Parameter Name | Type | Description |
 | -------------- | ---- | ----------- |
-| — | — | *None* |
+| —              | —    | _None_      |
 
 ### **Response**
 
@@ -63,13 +63,13 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 **Response Status Codes**
 
-| Code | Meaning | Description |
-|------|---------|-------------|
-| 200 | OK | The request succeeded and the list of merged cell areas is returned. |
-| 400 | Bad Request | Invalid URL or malformed request parameters. |
-| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
-| 413 | Payload Too Large | The request payload exceeds the allowed size. |
-| 500 | Internal Server Error | The spreadsheet has encountered an anomaly in obtaining data. |
+| Code | Meaning               | Description                                                          |
+| ---- | --------------------- | -------------------------------------------------------------------- |
+| 200  | OK                    | The request succeeded and the list of merged cell areas is returned. |
+| 400  | Bad Request           | Invalid URL or malformed request parameters.                         |
+| 401  | Unauthorized          | Authentication has failed, or no credentials were provided.          |
+| 413  | Payload Too Large     | The request payload exceeds the allowed size.                        |
+| 500  | Internal Server Error | The spreadsheet has encountered an anomaly in obtaining data.        |
 
 ## How to Use the GetMergedCellsInRemotedWorksheet with SDKs
 
@@ -122,4 +122,3 @@ curl -v "https://api.aspose.cloud/v4.0/cells/Sample.xlsx/worksheets/Sheet1/merge
 Using an SDK is the fastest way to accelerate development. An SDK abstracts low-level details, allowing you to focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose Cells Cloud web services using various SDKs:
-`[TBD]`

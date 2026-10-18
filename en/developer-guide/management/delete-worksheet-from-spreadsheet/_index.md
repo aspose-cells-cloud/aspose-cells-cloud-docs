@@ -1,6 +1,7 @@
 ---
 url: /delete-worksheet-from-spreadsheet/
 title: "Delete Excel Worksheet via REST API | Aspose.Cells Cloud"
+linktitle: "Delete Worksheet"
 date: 2023-09-15T00:00:00Z
 lastmod: 2024-05-22T14:30:00Z
 sitemap:
@@ -35,14 +36,14 @@ The Aspose.Cells Cloud APIs require [JWT token-based authentication](https://doc
 
 ### Request Parameters
 
-| Parameter Name   | Type   | Location | Description                                                                                                                                                                                             |
-|------------------|--------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `Spreadsheet`    | File   | FormData | **Required.** The source Excel workbook file (.xlsx, .xls, etc.) from which a worksheet will be removed.                                                                                               |
-| `sheetName`      | String | Query    | **Required.** The exact name of the worksheet to be deleted (e.g., `Sheet1`, `TemporaryData`).                                                                                                          |
-| `outPath`        | String | Query    | **Optional.** The target folder path in cloud storage where the modified workbook will be saved. If omitted, the workbook is saved in the same location as the source file or a default path.           |
-| `outStorageName` | String | Query    | **Optional.** The identifier of the cloud storage service (e.g., `ProjectStorage`) where the output file will be written. If not supplied, the default storage is used.                                 |
-| `region`         | String | Query    | **Optional.** The locale setting (e.g., `it-IT`, `en-US`) that affects region-specific formulas, number formatting, and date parsing during the save operation.                                      |
-| `password`       | String | Query    | **Optional.** The password required to open and modify a password-protected spreadsheet. Omit if the file is not encrypted.                                                                            |
+| Parameter Name   | Type   | Location | Description                                                                                                                                                                                   |
+| ---------------- | ------ | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Spreadsheet`    | File   | FormData | **Required.** The source Excel workbook file (.xlsx, .xls, etc.) from which a worksheet will be removed.                                                                                      |
+| `sheetName`      | String | Query    | **Required.** The exact name of the worksheet to be deleted (e.g., `Sheet1`, `TemporaryData`).                                                                                                |
+| `outPath`        | String | Query    | **Optional.** The target folder path in cloud storage where the modified workbook will be saved. If omitted, the workbook is saved in the same location as the source file or a default path. |
+| `outStorageName` | String | Query    | **Optional.** The identifier of the cloud storage service (e.g., `ProjectStorage`) where the output file will be written. If not supplied, the default storage is used.                       |
+| `region`         | String | Query    | **Optional.** The locale setting (e.g., `it-IT`, `en-US`) that affects region-specific formulas, number formatting, and date parsing during the save operation.                               |
+| `password`       | String | Query    | **Optional.** The password required to open and modify a password-protected spreadsheet. Omit if the file is not encrypted.                                                                   |
 
 ### Response
 
@@ -57,14 +58,14 @@ The Aspose.Cells Cloud APIs require [JWT token-based authentication](https://doc
 
 **HTTP Status Codes**
 
-| Code | Meaning               | Description                                                                 |
-|------|-----------------------|-----------------------------------------------------------------------------|
-| 200  | OK                    | Worksheet deleted successfully; response contains the modified workbook.    |
+| Code | Meaning               | Description                                                                       |
+| ---- | --------------------- | --------------------------------------------------------------------------------- |
+| 200  | OK                    | Worksheet deleted successfully; response contains the modified workbook.          |
 | 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type, missing `sheetName`). |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                               |
-| 404  | Not Found             | Source file not found in storage.                                           |
-| 413  | Payload Too Large     | Uploaded file exceeds the size limit.                                       |
-| 500  | Internal Server Error | Unexpected server error during processing.                                  |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                                     |
+| 404  | Not Found             | Source file not found in storage.                                                 |
+| 413  | Payload Too Large     | Uploaded file exceeds the size limit.                                             |
+| 500  | Internal Server Error | Unexpected server error during processing.                                        |
 
 ## Use Cases: When to Delete Worksheets via Aspose.Cells Cloud API
 
@@ -136,10 +137,3 @@ SDKs provide idiomatic wrappers to simplify authentication, serialization, and e
 {{< /tabs >}}
 
 > **Tip**: All SDK source code is available on [GitHub](https://github.com/aspose-cells-cloud) under the MIT license.
-
-## Related Documentation
-
-- [Add Worksheet to Excel Workbook](/add-worksheet-to-excel/)
-- [List Worksheets in Excel File](/list-worksheets-in-excel/)
-- [Protect Excel Worksheet](/protect-excel-worksheet/)
-- [Batch Workbook Management Operations](/batch-workbook-operations/)

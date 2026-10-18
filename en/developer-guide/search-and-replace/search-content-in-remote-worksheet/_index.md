@@ -1,5 +1,6 @@
 ---
 title: "Search Text in Remote Excel Worksheet – Aspose.Cells Cloud API"
+linktitle: "Search Text in Remote Spreadsheet"
 description: "Find text, numbers, or formulas in a remote Excel worksheet using Aspose.Cells Cloud API. Supports case-insensitive search, password-protected files, and cloud storage integration."
 keywords: "aspose.cells, excel api, text search, remote worksheet, cloud api"
 date: 2023-11-15
@@ -27,16 +28,16 @@ Authorization: Bearer {access_token}
 
 ## Request Parameters
 
-| Parameter     | Type    | Location | Required | Description |
-|---------------|---------|----------|----------|-------------|
-| `name`        | string  | Path     | Yes      | The filename of the target Excel workbook (e.g., `annual_report.xlsx`). |
-| `worksheet`   | string  | Path     | Yes      | Name of the worksheet to search. |
-| `searchText`  | string  | Query    | Yes      | The text, number, or formula to locate. |
-| `ignoringCase`| boolean | Query    | No       | When `true`, performs case-insensitive search. Default: `true`. |
-| `folder`      | string  | Query    | No       | Cloud storage folder path containing the workbook. Omit to use the root folder. |
-| `storageName` | string  | Query    | No       | Custom storage name if configured. Uses default storage if omitted. |
-| `region`      | string  | Query    | No       | Locale setting (e.g., `en-US`, `fr-FR`) affecting number/date parsing and text comparison. |
-| `password`    | string  | Query    | No       | Password for protected workbooks. Omit if unencrypted. |
+| Parameter      | Type    | Location | Required | Description                                                                                |
+| -------------- | ------- | -------- | -------- | ------------------------------------------------------------------------------------------ |
+| `name`         | string  | Path     | Yes      | The filename of the target Excel workbook (e.g., `annual_report.xlsx`).                    |
+| `worksheet`    | string  | Path     | Yes      | Name of the worksheet to search.                                                           |
+| `searchText`   | string  | Query    | Yes      | The text, number, or formula to locate.                                                    |
+| `ignoringCase` | boolean | Query    | No       | When `true`, performs case-insensitive search. Default: `true`.                            |
+| `folder`       | string  | Query    | No       | Cloud storage folder path containing the workbook. Omit to use the root folder.            |
+| `storageName`  | string  | Query    | No       | Custom storage name if configured. Uses default storage if omitted.                        |
+| `region`       | string  | Query    | No       | Locale setting (e.g., `en-US`, `fr-FR`) affecting number/date parsing and text comparison. |
+| `password`     | string  | Query    | No       | Password for protected workbooks. Omit if unencrypted.                                     |
 
 ## Response
 
@@ -70,11 +71,11 @@ Authorization: Bearer {access_token}
 
 ### Error Responses
 
-| Status Code | Description |
-|-------------|-------------|
-| `400`       | Invalid URL or malformed request parameters |
-| `401`       | Missing or invalid OAuth 2.0 credentials |
-| `404`       | Workbook, worksheet, or storage path not found |
+| Status Code | Description                                                      |
+| ----------- | ---------------------------------------------------------------- |
+| `400`       | Invalid URL or malformed request parameters                      |
+| `401`       | Missing or invalid OAuth 2.0 credentials                         |
+| `404`       | Workbook, worksheet, or storage path not found                   |
 | `500`       | Server-side error (e.g., unsupported file format, access denied) |
 
 ## Use Cases
@@ -115,27 +116,3 @@ response = api.search_content_in_remote_worksheet(
 )
 print(f"Found {len(response.text_items)} cells with matches")
 ```
-
-## Best Practices
-
-- **Specify `region`** when locale affects parsing (e.g., decimal separators, date formats).
-- **Use `folder` and `storageName`** for organized cloud storage navigation.
-- **Enable `ignoringCase`** by default unless case sensitivity is required for exact matches.
-- **Handle `password`** securely—avoid hardcoding; use environment variables or secure vaults.
-
-## Related Resources
-
-- [Aspose.Cells Cloud SDKs](https://github.com/aspose-cells-cloud)
-- [Authentication Guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)
-- [Cloud Storage Integration](https://docs.aspose.cloud/cells/storage/)
-- [Pricing & Plans](https://purchase.aspose.cloud/pricing)
-
-## Related API Endpoints
-
-- `GET /cells/{name}/worksheets/{worksheet}/cells/search` – Search cells with formatting context  
-- `POST /cells/{name}/worksheets/{worksheet}/find` – Find and replace operations  
-- `GET /cells/{name}/worksheets/{worksheet}/cells` – Retrieve cell list with metadata  
-
----
-
-*Last updated: November 15, 2023*

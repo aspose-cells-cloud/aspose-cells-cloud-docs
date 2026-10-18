@@ -5,12 +5,13 @@ url: /conditional-formattings/get-all/
 aliases: [/get-conditional-formattings-of-worksheet/]
 keywords: "Aspose.Cells Cloud, REST API, Excel, Conditional Formatting, Worksheet, Conditional Formatting API"
 description: "Retrieve all conditional formatting rules applied to a worksheet using the Aspose.Cells Cloud REST API. Includes request syntax, authentication steps, parameters, concise response examples, and error handling."
-weight: 20
+weight: 100
 ---
 
 This REST API retrieves the conditional formatting rules that are applied to a worksheet.
 
 ## Security and Authentication
+
 The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## REST API
@@ -89,31 +90,31 @@ _The example above shows only the most relevant fields to keep the payload conci
 
 **Response Parameters**
 
-| Parameter | Type   | Description |
-|-----------|--------|-------------|
-| Status | string | Result status of the request (e.g., **OK**). |
-| ConditionalFormattings | object | Container for conditional formatting data. |
-| ConditionalFormattings.Count | integer | Number of conditional formatting rules returned. |
-| ConditionalFormattings.ConditionalFormattingList | array | List of conditional formatting objects. |
-| ConditionalFormattingList[].sqref | string | Cell range to which the formatting applies (e.g., **A1:B10**). |
-| ConditionalFormattingList[].FormatConditions | array | Collection of format condition objects for the range. |
-| FormatConditions[].Priority | integer | Evaluation priority of the condition. |
-| FormatConditions[].Type | string | Type of condition (e.g., **CellValue**). |
-| FormatConditions[].Operator | string | Operator used for the condition (e.g., **GreaterThan**). |
-| FormatConditions[].Formula1 | string | First formula or value for the condition. |
-| FormatConditions[].Style | object | Styling applied when the condition is met. |
-| Style.Font.Color | object | RGBA color definition for the font. |
-| Style.Font.IsBold | boolean | Indicates whether the font is bold. |
+| Parameter                                        | Type    | Description                                                    |
+| ------------------------------------------------ | ------- | -------------------------------------------------------------- |
+| Status                                           | string  | Result status of the request (e.g., **OK**).                   |
+| ConditionalFormattings                           | object  | Container for conditional formatting data.                     |
+| ConditionalFormattings.Count                     | integer | Number of conditional formatting rules returned.               |
+| ConditionalFormattings.ConditionalFormattingList | array   | List of conditional formatting objects.                        |
+| ConditionalFormattingList[].sqref                | string  | Cell range to which the formatting applies (e.g., **A1:B10**). |
+| ConditionalFormattingList[].FormatConditions     | array   | Collection of format condition objects for the range.          |
+| FormatConditions[].Priority                      | integer | Evaluation priority of the condition.                          |
+| FormatConditions[].Type                          | string  | Type of condition (e.g., **CellValue**).                       |
+| FormatConditions[].Operator                      | string  | Operator used for the condition (e.g., **GreaterThan**).       |
+| FormatConditions[].Formula1                      | string  | First formula or value for the condition.                      |
+| FormatConditions[].Style                         | object  | Styling applied when the condition is met.                     |
+| Style.Font.Color                                 | object  | RGBA color definition for the font.                            |
+| Style.Font.IsBold                                | boolean | Indicates whether the font is bold.                            |
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
 
 {{< /tab >}}
 

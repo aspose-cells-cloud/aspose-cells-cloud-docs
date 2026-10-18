@@ -1,10 +1,20 @@
 ---
 title: "Aspose.Cells Cloud Unprotect Spreadsheet API"
+linktitle: ""
 description: "Programmatically remove open and modify passwords from Excel files (.xlsx, .xls) using Aspose.Cells Cloud API. Supports OAuth2 authentication, batch processing, and secure cloud-based unprotection."
 date: 2024-03-20T00:00:00Z
 lastmod: 2024-06-15T00:00:00Z
 draft: false
-tags: ["unprotect", "excel", "password", "security", "rest-api", "oauth2", "batch-processing"]
+tags:
+  [
+    "unprotect",
+    "excel",
+    "password",
+    "security",
+    "rest-api",
+    "oauth2",
+    "batch-processing",
+  ]
 categories: ["aspose.cells.cloud", "api-reference"]
 weight: 100
 api_version: "4.0"
@@ -36,14 +46,14 @@ All requests require a valid JWT access token issued via OAuth2. For implementat
 
 ## Request Parameters
 
-| Parameter Name   | Type   | Location   | Required | Description |
-|------------------|--------|------------|----------|-------------|
-| `Spreadsheet`    | File   | FormData   | ✅ Yes   | The Excel file to unprotect. Supported formats: `.xlsx`, `.xls`, `.xlsm`, `.xlsb`. |
-| `password`       | String | Query      | ✅ Yes   | Password required to open the workbook. Omit only if no open password is set. |
-| `modifyPassword` | String | Query      | ✅ Yes   | Password required to modify the workbook (e.g., edit, format, insert rows). |
-| `outPath`        | String | Query      | ❌ No    | Full path (including filename) where the unprotected file will be saved (e.g., `/output/unprotected.xlsx`). Defaults to response stream if omitted. |
-| `outStorageName` | String | Query      | ❌ No    | Name of the cloud storage (e.g., `First Aspose Cloud Storage`). Required if `outPath` is specified. |
-| `region`         | String | Query      | ❌ No    | Locale setting (e.g., `en-US`, `fr-FR`). Affects date/number formatting. Default: `en-US`. |
+| Parameter Name   | Type   | Location | Required | Description                                                                                                                                         |
+| ---------------- | ------ | -------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Spreadsheet`    | File   | FormData | ✅ Yes   | The Excel file to unprotect. Supported formats: `.xlsx`, `.xls`, `.xlsm`, `.xlsb`.                                                                  |
+| `password`       | String | Query    | ✅ Yes   | Password required to open the workbook. Omit only if no open password is set.                                                                       |
+| `modifyPassword` | String | Query    | ✅ Yes   | Password required to modify the workbook (e.g., edit, format, insert rows).                                                                         |
+| `outPath`        | String | Query    | ❌ No    | Full path (including filename) where the unprotected file will be saved (e.g., `/output/unprotected.xlsx`). Defaults to response stream if omitted. |
+| `outStorageName` | String | Query    | ❌ No    | Name of the cloud storage (e.g., `First Aspose Cloud Storage`). Required if `outPath` is specified.                                                 |
+| `region`         | String | Query    | ❌ No    | Locale setting (e.g., `en-US`, `fr-FR`). Affects date/number formatting. Default: `en-US`.                                                          |
 
 > **Best Practice**: Always specify `outPath` and `outStorageName` for production workflows to avoid large response payloads. Store unprotected files directly in your cloud storage.
 
@@ -63,14 +73,14 @@ Content-Disposition: attachment; filename="unprotected.xlsx"
 
 ### HTTP Status Codes
 
-| Code | Meaning             | Description |
-|------|---------------------|-------------|
-| 200  | OK                  | Unprotection successful. File returned in response body. |
-| 400  | Bad Request         | Missing/invalid parameters (e.g., unsupported file format, malformed password). |
-| 401  | Unauthorized        | Invalid, expired, or missing JWT token. |
-| 404  | Not Found           | Source file not found in storage (if referenced). |
-| 413  | Payload Too Large   | Uploaded file exceeds 2 GB limit. |
-| 500  | Internal Server Error | Server error during processing (e.g., corrupted file, resource exhaustion). |
+| Code | Meaning               | Description                                                                     |
+| ---- | --------------------- | ------------------------------------------------------------------------------- |
+| 200  | OK                    | Unprotection successful. File returned in response body.                        |
+| 400  | Bad Request           | Missing/invalid parameters (e.g., unsupported file format, malformed password). |
+| 401  | Unauthorized          | Invalid, expired, or missing JWT token.                                         |
+| 404  | Not Found             | Source file not found in storage (if referenced).                               |
+| 413  | Payload Too Large     | Uploaded file exceeds 2 GB limit.                                               |
+| 500  | Internal Server Error | Server error during processing (e.g., corrupted file, resource exhaustion).     |
 
 ---
 
@@ -133,34 +143,10 @@ Console.WriteLine($"Unprotected file saved to: {response.Path}");
 
 ### Common Scenarios & Fixes
 
-| Error | Cause | Resolution |
-|-------|-------|------------|
-| `400 Bad Request` | Missing `password` or `modifyPassword` | Provide both passwords—even if one is empty, pass an empty string `""`. |
-| `400 Bad Request` | Unsupported file format | Ensure input is `.xlsx`, `.xls`, `.xlsm`, or `.xlsb`. |
-| `404 Not Found` | Source file missing | Verify `name` matches an existing file in storage. |
-| `413 Payload Too Large` | File > 2 GB | Split large files or use chunked upload + storage APIs first. |
-| `500 Server Error` | Corrupted file | Validate file integrity before upload. |
-
----
-
-## Best Practices
-
-1. **Store Passwords Securely**: Never hardcode passwords in client code. Use environment variables or secret managers (e.g., HashiCorp Vault).
-2. **Use Output Paths**: For production, specify `outPath` and `outStorageName` to avoid large base64-encoded responses.
-3. **Validate Files**: Check file integrity and format *before* calling the API to reduce unnecessary server load.
-4. **Handle Region Settings**: Specify `region` explicitly for workbooks with locale-sensitive data (e.g., dates, currencies).
-5. **Audit Access**: Log unprotection events for compliance—especially in regulated industries.
-
----
-
-## Related Resources
-
-- [Convert Excel to PDF](https://docs.aspose.cloud/cells/convert-excel-to-pdf/)
-- [Cloud Storage API](https://docs.aspose.cloud/cells/storage/)
-- [Batch Processing Guide](https://docs.aspose.cloud/cells/batch-processing/)
-- [Aspose.Cells Cloud SDKs](https://github.com/aspose-cells-cloud)
-- [OpenAPI Specification (v4.0)](https://reference.aspose.cloud/cells/v4.0/cells.openapi.json)
-
----
-
-*Last updated: 2024-06-15*
+| Error                   | Cause                                  | Resolution                                                              |
+| ----------------------- | -------------------------------------- | ----------------------------------------------------------------------- |
+| `400 Bad Request`       | Missing `password` or `modifyPassword` | Provide both passwords—even if one is empty, pass an empty string `""`. |
+| `400 Bad Request`       | Unsupported file format                | Ensure input is `.xlsx`, `.xls`, `.xlsm`, or `.xlsb`.                   |
+| `404 Not Found`         | Source file missing                    | Verify `name` matches an existing file in storage.                      |
+| `413 Payload Too Large` | File > 2 GB                            | Split large files or use chunked upload + storage APIs first.           |
+| `500 Server Error`      | Corrupted file                         | Validate file integrity before upload.                                  |

@@ -3,7 +3,7 @@ title: "Find Text in Excel Files – Aspose.Cells Cloud API"
 description: "Search for specific text in Excel (XLS, XLSX, XLSM, XLSB) and ODS files using Aspise.Cells Cloud API. Includes request details, cURL & SDK examples, and error handling."
 keywords: "Aspose.Cells, Excel, search, API, REST"
 type: docs
-url: /cells/search/
+url: /search/
 aliases:
   - /search/
   - /search-without-using-storage/
@@ -14,36 +14,39 @@ weight: 50
 # Find Text in Excel Files – Aspose.Cells Cloud API
 
 ## Overview
+
 Aspose.Cells Cloud provides a **POST** endpoint that searches for a given text string inside Excel workbooks (XLS, XLSX, XLSM, XLSB) and OpenDocument Spreadsheet (ODS) files. The API returns every cell that contains the requested text together with a link to the worksheet where the match was found.
 
-> **Use Cases**  
-> - Validate that a particular value exists in a report before further processing.  
-> - Build a quick “find‑and‑replace” tool that first lists all occurrences.  
+> **Use Cases**
+>
+> - Validate that a particular value exists in a report before further processing.
+> - Build a quick “find‑and‑replace” tool that first lists all occurrences.
 > - Generate an index of key terms across a batch of spreadsheets.
 
 ---
 
 ## Prerequisites
-| Requirement | Details |
-|-------------|---------|
-| **Authentication** | JWT token obtained via the Aspose Cloud OAuth flow. The token must include the **Cells** scope. |
-| **Supported formats** | XLS, XLSX, XLSM, XLSB, ODS |
-| **Maximum file size** | 150 MB (compressed). Larger files return **413 Payload Too Large**. |
-| **Required headers** | `Authorization: Bearer <jwt-token>`  <br> `Accept: application/json` |
-| **Permissions** | The token must have *read* permission on the target storage (if using remote storage) – not required when the file is uploaded as `multipart/form-data`. |
 
-*Tip:* Use the **/connect/token** endpoint to generate a JWT token. See the [Authentication guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) for details.
+| Requirement           | Details                                                                                                                                                  |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Authentication**    | JWT token obtained via the Aspose Cloud OAuth flow. The token must include the **Cells** scope.                                                          |
+| **Supported formats** | XLS, XLSX, XLSM, XLSB, ODS                                                                                                                               |
+| **Maximum file size** | 150 MB (compressed). Larger files return **413 Payload Too Large**.                                                                                      |
+| **Required headers**  | `Authorization: Bearer <jwt-token>` <br> `Accept: application/json`                                                                                      |
+| **Permissions**       | The token must have _read_ permission on the target storage (if using remote storage) – not required when the file is uploaded as `multipart/form-data`. |
+
+_Tip:_ Use the **/connect/token** endpoint to generate a JWT token. See the [Authentication guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) for details.
 
 ---
 
 ## Endpoint
 
-| Item | Value |
-|------|-------|
-| **HTTP Method** | `POST` |
-| **URL** | `https://api.aspose.cloud/v3.0/cells/search` |
-| **Purpose** | Search for specified text within an uploaded Excel workbook. |
-| **Security** | JWT token (Bearer) – see *Prerequisites* above. |
+| Item            | Value                                                        |
+| --------------- | ------------------------------------------------------------ |
+| **HTTP Method** | `POST`                                                       |
+| **URL**         | `https://api.aspose.cloud/v3.0/cells/search`                 |
+| **Purpose**     | Search for specified text within an uploaded Excel workbook. |
+| **Security**    | JWT token (Bearer) – see _Prerequisites_ above.              |
 
 ---
 
@@ -53,13 +56,13 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ## Request Parameters
 
-| Name | Type | Location | Required | Description |
-|------|------|----------|----------|-------------|
-| `file` | **file** | `formData` (multipart) | **Yes** | The spreadsheet file to upload. |
-| `text` | **string** | Query string | **Yes** | The text string to search for. |
-| `password` | **string** | Query string | No | Password for opening a protected workbook, if required. |
-| `sheetname` | **string** | Query string | No | Name of the worksheet to limit the search. If omitted, all worksheets are searched. |
-| `checkExcelRestriction` | **boolean** | Query string | No (default: `true`) | When `true`, the API validates Excel‑specific restrictions (e.g., read‑only cells) before searching. |
+| Name                    | Type        | Location               | Required             | Description                                                                                          |
+| ----------------------- | ----------- | ---------------------- | -------------------- | ---------------------------------------------------------------------------------------------------- |
+| `file`                  | **file**    | `formData` (multipart) | **Yes**              | The spreadsheet file to upload.                                                                      |
+| `text`                  | **string**  | Query string           | **Yes**              | The text string to search for.                                                                       |
+| `password`              | **string**  | Query string           | No                   | Password for opening a protected workbook, if required.                                              |
+| `sheetname`             | **string**  | Query string           | No                   | Name of the worksheet to limit the search. If omitted, all worksheets are searched.                  |
+| `checkExcelRestriction` | **boolean** | Query string           | No (default: `true`) | When `true`, the API validates Excel‑specific restrictions (e.g., read‑only cells) before searching. |
 
 ---
 
@@ -73,7 +76,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/search?text=Invoice&sheetname=Sheet
   -F "file=@InvoiceReport.xlsx"
 ```
 
-*Replace `<jwt-token>` with a valid token and adjust the query parameters as needed.*
+_Replace `<jwt-token>` with a valid token and adjust the query parameters as needed._
 
 ---
 
@@ -118,25 +121,25 @@ curl -v "https://api.aspose.cloud/v3.0/cells/search?text=Invoice&sheetname=Sheet
 
 ### Response Fields
 
-| Field | Type | Description |
-|-------|------|-------------|
-| `Status` | string | Overall request status (`OK` for success). |
-| `Code` | integer | HTTP status code (200). |
-| `TextItems.link` | object | Hypermedia link to the collection resource. |
-| `TextItems.TextItemList` | array | List of matches. Each item contains: |
-| `Text` | string | The cell value that matched the search text. |
-| `link` | object | Hyperlink to the worksheet where the match was found (`Href` points to `Workbook/worksheets/SheetName`). |
+| Field                    | Type    | Description                                                                                              |
+| ------------------------ | ------- | -------------------------------------------------------------------------------------------------------- |
+| `Status`                 | string  | Overall request status (`OK` for success).                                                               |
+| `Code`                   | integer | HTTP status code (200).                                                                                  |
+| `TextItems.link`         | object  | Hypermedia link to the collection resource.                                                              |
+| `TextItems.TextItemList` | array   | List of matches. Each item contains:                                                                     |
+| `Text`                   | string  | The cell value that matched the search text.                                                             |
+| `link`                   | object  | Hyperlink to the worksheet where the match was found (`Href` points to `Workbook/worksheets/SheetName`). |
 
 ---
 
 ## Error Responses
 
-| HTTP Code | Meaning | Typical Cause | Example Body |
-|-----------|---------|---------------|--------------|
-| **400** | Bad Request | Missing required parameters, unsupported file type, or invalid query values. | `{ "Status":"Error","Code":400,"Message":"The 'text' query parameter is required." }` |
-| **401** | Unauthorized | Missing or invalid JWT token. | `{ "Status":"Error","Code":401,"Message":"Invalid or expired access token." }` |
-| **413** | Payload Too Large | Uploaded file exceeds the 150 MB limit. | `{ "Status":"Error","Code":413,"Message":"File size exceeds the allowed limit." }` |
-| **500** | Internal Server Error | Unexpected server‑side problem. | `{ "Status":"Error","Code":500,"Message":"An unexpected error occurred." }` |
+| HTTP Code | Meaning               | Typical Cause                                                                | Example Body                                                                          |
+| --------- | --------------------- | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| **400**   | Bad Request           | Missing required parameters, unsupported file type, or invalid query values. | `{ "Status":"Error","Code":400,"Message":"The 'text' query parameter is required." }` |
+| **401**   | Unauthorized          | Missing or invalid JWT token.                                                | `{ "Status":"Error","Code":401,"Message":"Invalid or expired access token." }`        |
+| **413**   | Payload Too Large     | Uploaded file exceeds the 150 MB limit.                                      | `{ "Status":"Error","Code":413,"Message":"File size exceeds the allowed limit." }`    |
+| **500**   | Internal Server Error | Unexpected server‑side problem.                                              | `{ "Status":"Error","Code":500,"Message":"An unexpected error occurred." }`           |
 
 ---
 
@@ -240,25 +243,28 @@ for item in result.text_items.text_item_list:
 import { CellsApi, Configuration } from "@asposecells-cloud/sdk";
 
 const config = new Configuration({
-    accessToken: "YOUR_JWT_TOKEN",
-    basePath: "https://api.aspose.cloud"
+  accessToken: "YOUR_JWT_TOKEN",
+  basePath: "https://api.aspose.cloud",
 });
 
 const api = new CellsApi(config);
 
-api.postSearch({
+api
+  .postSearch({
     file: fs.createReadStream("InvoiceReport.xlsx"),
     text: "Invoice",
     sheetname: "Sheet1",
-    checkExcelRestriction: true
-}).then(response => {
-    response.textItems?.textItemList?.forEach(item => {
-        console.log(`${item.text} -> ${item.link?.href}`);
+    checkExcelRestriction: true,
+  })
+  .then((response) => {
+    response.textItems?.textItemList?.forEach((item) => {
+      console.log(`${item.text} -> ${item.link?.href}`);
     });
-}).catch(err => console.error(err));
+  })
+  .catch((err) => console.error(err));
 ```
 
-*(SDKs for PHP, Ruby, Go, and Perl are available in the [Aspose.Cells Cloud GitHub repository](https://github.com/aspose-cells-cloud).)*
+_(SDKs for PHP, Ruby, Go, and Perl are available in the [Aspose.Cells Cloud GitHub repository](https://github.com/aspose-cells-cloud).)_
 
 ---
 

@@ -6,7 +6,7 @@ type: docs
 url: /worksheets/page-count/
 keywords: "Aspose.Cells, Excel API, worksheet page count, REST, cloud SDK, Excel pagination"
 description: "Retrieve the number of printable pages in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes HTTPS request format, authentication steps, sample cURL, full JSON response, status codes, and SDK code samples."
-weight: 10
+weight: 100
 ArticleTitle: "Get Page Count for an Excel Worksheet – Aspose.Cells Cloud API"
 ---
 

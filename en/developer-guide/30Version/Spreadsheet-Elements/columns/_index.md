@@ -16,8 +16,10 @@ lastmod: 2024-05-10
 
 This page provides a concise overview of the primary column-related operations available through the Aspose.Cells Cloud API. Use the links below to navigate to the detailed documentation for each action, including request parameters, example code, and sample responses.
 
-### Supported Column Operations  
+### Supported Column Operations
+
 Aspose.Cells Cloud supports 8 core column operations via its REST API. Below are links to step-by-step tutorials, each with:
+
 - Request structure (path, query, body)
 - cURL/SDK examples
 - Response schema & error codes

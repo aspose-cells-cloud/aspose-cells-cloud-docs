@@ -29,9 +29,9 @@ POST https://api.aspose.cloud/v3.0/cells/batch/protect
 
 #### Base URL
 
-| Environment | Base URL |
-|-------------|----------|
-| Production  | `https://api.aspose.cloud/v3.0/cells/batch/protect` |
+| Environment | Base URL                                                |
+| ----------- | ------------------------------------------------------- |
+| Production  | `https://api.aspose.cloud/v3.0/cells/batch/protect`     |
 | Sandbox     | `https://testapi.aspose.cloud/v3.0/cells/batch/protect` |
 
 > **Note**: All requests require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/). Obtain your `Client ID` and `Client Secret` from the [Aspose Cloud Dashboard](https://dashboard.aspose.cloud/).
@@ -42,28 +42,28 @@ POST https://api.aspose.cloud/v3.0/cells/batch/protect
 
 The request body must contain a `BatchProtectRequest` object.
 
-| Parameter Name        | Type                | Location | Required | Description |
-|-----------------------|---------------------|----------|----------|-------------|
+| Parameter Name        | Type                  | Location | Required | Description                                                                                             |
+| --------------------- | --------------------- | -------- | -------- | ------------------------------------------------------------------------------------------------------- |
 | `batchProtectRequest` | `BatchProtectRequest` | Body     | ✅ Yes   | JSON payload defining source folder, file selection criteria, protection settings, and output location. |
 
 #### `BatchProtectRequest` Properties
 
-| Field            | Type                     | Required | Description |
-|------------------|--------------------------|----------|-------------|
-| `SourceFolder`   | `string`                 | ❌ No    | Cloud storage folder containing source files (e.g., `"CellsTests"`). Defaults to root if omitted. |
-| `MatchCondition` | `MatchConditionRequest` | ❌ No    | Criteria to select files (regex or exact name matches). If omitted, *all* `.xlsx`/`.xls` files in `SourceFolder` are protected. |
-| `ProtectionType` | `string`                 | ❌ No    | Type of protection: `"All"` (full encryption), `"ReadOnly"` (lock editing), `"Structure"` (lock sheet structure), `"Windows"` (lock window size/position). Default: `"All"`. |
-| `Password`       | `string`                 | ❌ No    | Password to apply for protected files. If omitted, no password is set (use with caution). |
-| `OutFolder`      | `string`                 | ❌ No    | Cloud storage folder where protected files are saved. Defaults to `SourceFolder` if omitted. |
+| Field            | Type                    | Required | Description                                                                                                                                                                  |
+| ---------------- | ----------------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `SourceFolder`   | `string`                | ❌ No    | Cloud storage folder containing source files (e.g., `"CellsTests"`). Defaults to root if omitted.                                                                            |
+| `MatchCondition` | `MatchConditionRequest` | ❌ No    | Criteria to select files (regex or exact name matches). If omitted, _all_ `.xlsx`/`.xls` files in `SourceFolder` are protected.                                              |
+| `ProtectionType` | `string`                | ❌ No    | Type of protection: `"All"` (full encryption), `"ReadOnly"` (lock editing), `"Structure"` (lock sheet structure), `"Windows"` (lock window size/position). Default: `"All"`. |
+| `Password`       | `string`                | ❌ No    | Password to apply for protected files. If omitted, no password is set (use with caution).                                                                                    |
+| `OutFolder`      | `string`                | ❌ No    | Cloud storage folder where protected files are saved. Defaults to `SourceFolder` if omitted.                                                                                 |
 
 #### `MatchConditionRequest` Properties
 
-| Field               | Type       | Required | Description |
-|---------------------|------------|----------|-------------|
-| `RegexPattern`      | `string`   | ❌ No    | Regular expression to match file names (case-insensitive). Example: `"^Book\d+\.xlsx$"` matches `Book1.xlsx`, `Book123.xlsx`, etc. |
-| `FullMatchConditions` | `string[]` | ❌ No    | List of exact file names to protect (e.g., `["Report.xlsx", "Summary.xlsx"]`). |
+| Field                 | Type       | Required | Description                                                                                                                        |
+| --------------------- | ---------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| `RegexPattern`        | `string`   | ❌ No    | Regular expression to match file names (case-insensitive). Example: `"^Book\d+\.xlsx$"` matches `Book1.xlsx`, `Book123.xlsx`, etc. |
+| `FullMatchConditions` | `string[]` | ❌ No    | List of exact file names to protect (e.g., `["Report.xlsx", "Summary.xlsx"]`).                                                     |
 
-> **Tip**: Combine `RegexPattern` and `FullMatchConditions` for complex selection logic (files matching *either* condition are selected).
+> **Tip**: Combine `RegexPattern` and `FullMatchConditions` for complex selection logic (files matching _either_ condition are selected).
 
 ---
 
@@ -99,14 +99,14 @@ This example protects all `.xlsx` files in `input_files` matching `Sales*.xlsx`,
 
 #### Error Responses
 
-| Code | Meaning             | Cause |
-|------|---------------------|-------|
-| 400  | Bad Request         | Invalid JSON, missing required fields, or unsupported `ProtectionType`. |
-| 401  | Unauthorized        | Missing, expired, or invalid JWT token. |
-| 409  | Conflict            | Output file exists and `isWriteOver` is `false` (not applicable here but included for completeness). |
-| 422  | Unprocessable Entity | `SourceFolder` or `OutFolder` does not exist, or no files match the `MatchCondition`. |
+| Code | Meaning              | Cause                                                                                                |
+| ---- | -------------------- | ---------------------------------------------------------------------------------------------------- |
+| 400  | Bad Request          | Invalid JSON, missing required fields, or unsupported `ProtectionType`.                              |
+| 401  | Unauthorized         | Missing, expired, or invalid JWT token.                                                              |
+| 409  | Conflict             | Output file exists and `isWriteOver` is `false` (not applicable here but included for completeness). |
+| 422  | Unprocessable Entity | `SourceFolder` or `OutFolder` does not exist, or no files match the `MatchCondition`.                |
 
-> **Note**: A 200 response confirms *processing completion* but does not guarantee *all files were protected*. Check logs or use the [Batch Status API](https://docs.aspose.cloud/cells/batch-status/) for per-file results.
+> **Note**: A 200 response confirms _processing completion_ but does not guarantee _all files were protected_. Check logs or use the [Batch Status API](https://docs.aspose.cloud/cells/batch-status/) for per-file results.
 
 ---
 
@@ -281,12 +281,16 @@ puts "Status: #{response.code}"
 ```javascript
 // npm install aspose-cells-cloud --save
 
-const { CellsApi, MatchConditionRequest, BatchProtectRequest } = require("aspose-cells-cloud");
+const {
+  CellsApi,
+  MatchConditionRequest,
+  BatchProtectRequest,
+} = require("aspose-cells-cloud");
 
 const client = new CellsApi("YOUR_CLIENT_ID", "YOUR_CLIENT_SECRET");
 
 const matchCondition = new MatchConditionRequest({
-  regexPattern: "^Book.+\\.xlsx$"
+  regexPattern: "^Book.+\\.xlsx$",
 });
 
 const request = new BatchProtectRequest({
@@ -294,12 +298,13 @@ const request = new BatchProtectRequest({
   outFolder: "Output",
   matchCondition: matchCondition,
   password: "123456",
-  protectionType: "All"
+  protectionType: "All",
 });
 
-client.postBatchProtect(request)
-  .then(res => console.log(`Status: ${res.code}`))
-  .catch(err => console.error(err));
+client
+  .postBatchProtect(request)
+  .then((res) => console.log(`Status: ${res.code}`))
+  .catch((err) => console.error(err));
 ```
 
 {{< /tab >}}
@@ -426,9 +431,9 @@ fmt.Printf("Status: %s\n", *response.Code)
 
 ### Related Resources
 
-- [Encrypt, Decrypt, and Digitally Sign Excel Files](https://docs.aspose.cloud/cells/protect/)  
-- [Batch Merge Excel Files](https://docs.aspose.cloud/cells/batch/merge/)  
-- [Batch Convert Excel Files](https://docs.aspose.cloud/cells/batch/convert/)  
-- [Aspose.Cells Cloud SDKs on GitHub](https://github.com/aspose-cells-cloud)  
+- [Encrypt, Decrypt, and Digitally Sign Excel Files](https://docs.aspose.cloud/cells/protect/)
+- [Batch Merge Excel Files](https://docs.aspose.cloud/cells/batch/merge/)
+- [Batch Convert Excel Files](https://docs.aspose.cloud/cells/batch/convert/)
+- [Aspose.Cells Cloud SDKs on GitHub](https://github.com/aspose-cells-cloud)
 
 > **Last updated**: May 22, 2024

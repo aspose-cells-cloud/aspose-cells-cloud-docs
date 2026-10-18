@@ -7,7 +7,7 @@ url: /export-excel-ole-object/
 aliases: [/export/excel-ole-object/]
 keywords: "Aspose.Cells, OLE object, export, Excel, cloud API, PDF, PNG, DOCX, PPTX"
 description: "Export OLE objects from an Excel workbook using Aspose.Cells Cloud API. Learn request format, parameters, sample cURL, and error handling."
-weight: 20
+weight: 100
 ArticleTitle: "Export OLE Object – Aspose.Cells Cloud API"
 ---
 
@@ -21,15 +21,13 @@ POST https://api.aspose.cloud/v3.0/cells/export
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-
 ### Request Parameters
 
-| Parameter       | Location  | Type   | Required | Description                                                                    |
-| --------------- | --------- | ------ | -------- | ------------------------------------------------------------------------------ |
-| `file`          | Form‑data | file   | Yes      | The Excel workbook (`.xlsx`, `.xls`, etc.) that contains the OLE objects.      |
-| `outputFormat`  | Query     | string | Yes      | Target format for the exported objects (`pdf`, `png`, `jpeg`, `docx`, `pptx`). |
-| `objectType`    | Query     | string | Yes      | Fixed value `oleobject`.                                                       |
-
+| Parameter      | Location  | Type   | Required | Description                                                                    |
+| -------------- | --------- | ------ | -------- | ------------------------------------------------------------------------------ |
+| `file`         | Form‑data | file   | Yes      | The Excel workbook (`.xlsx`, `.xls`, etc.) that contains the OLE objects.      |
+| `outputFormat` | Query     | string | Yes      | Target format for the exported objects (`pdf`, `png`, `jpeg`, `docx`, `pptx`). |
+| `objectType`   | Query     | string | Yes      | Fixed value `oleobject`.                                                       |
 
 ### Response
 
@@ -54,22 +52,21 @@ A successful request returns a JSON object that lists the exported files:
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## How to Use the PostExport API with SDKs
 
 ### PostExport API Specification
 
-
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
-
 
 ```bash
 curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=oleobject&format=pdf" \

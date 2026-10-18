@@ -2,7 +2,7 @@
 title: "Get First Cell (A1) from an Excel Worksheet"
 type: docs
 url: /get-first-cell-from-excel-worksheet/
-weight: 20
+weight: 100
 keywords: "Aspose.Cells Cloud, Excel, REST API, Get First Cell, Worksheet, A1, API v3"
 description: "Learn how to retrieve the first cell (A1) of an Excel worksheet using Aspose.Cells Cloud REST API v3.0. Includes cURL request, JSON response, error examples, and SDK samples for C#, Java, PHP, Python, and more."
 ArticleTitle: "Get First Cell (A1) from an Excel Worksheet using Aspose.Cells Cloud API"
@@ -28,12 +28,12 @@ curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1
 
 **Parameters**
 
-| Parameter          | Type   | Description                                               | Required |
-|--------------------|--------|-----------------------------------------------------------|----------|
-| `cellOrMethodName` | string | Must be set to `firstcell` to retrieve the first cell.   | Yes      |
-| `fileName`         | string | Name of the workbook file (e.g., `myWorkbook.xlsx`).      | Yes      |
-| `worksheet`        | string | Name of the worksheet (e.g., `Sheet1`).                  | Yes      |
-| `Authorization`    | header | Bearer token for authentication.                         | Yes      |
+| Parameter          | Type   | Description                                            | Required |
+| ------------------ | ------ | ------------------------------------------------------ | -------- |
+| `cellOrMethodName` | string | Must be set to `firstcell` to retrieve the first cell. | Yes      |
+| `fileName`         | string | Name of the workbook file (e.g., `myWorkbook.xlsx`).   | Yes      |
+| `worksheet`        | string | Name of the worksheet (e.g., `Sheet1`).                | Yes      |
+| `Authorization`    | header | Bearer token for authentication.                       | Yes      |
 
 {{< /tab >}}
 
@@ -98,13 +98,13 @@ curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
 
 {{< /tab >}}
 

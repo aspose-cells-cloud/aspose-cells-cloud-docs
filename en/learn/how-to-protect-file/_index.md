@@ -5,7 +5,7 @@ linktitle: "How to protect an Excel file"
 type: docs
 url: /how-to-protect-file
 description: "Learn how to protect Excel files with Aspose.Cells Cloud API: password encryption, digital signatures, batch protection, and SDK examples in C#, Python, Java, and more."
-weight: 10
+weight: 100
 kwords: Excel file protection, password-protect spreadsheet, Aspose.Cells Cloud API, digital signature Excel, batch protect workbook
 date: 2024-03-15
 last_modified_date: 2024-06-10
@@ -22,22 +22,22 @@ The Aspose.Cells Cloud API provides multiple robust APIs for protecting Excel or
 
 Below is a summary of key protection APIs across versions:
 
-| Function | Description | API Reference |
-| :------------------------- | :------------------------- | :------------------------- |
-| **[Protect a spreadsheet](https://docs.aspose.cloud/cells/protect-spreadsheet/)** | Protect a spreadsheet. | [ProtectSpreadsheet](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Protection/ProtectSpreadsheet) |
+| Function                                                                              | Description              | API Reference                                                                                                          |
+| :------------------------------------------------------------------------------------ | :----------------------- | :--------------------------------------------------------------------------------------------------------------------- |
+| **[Protect a spreadsheet](https://docs.aspose.cloud/cells/protect-spreadsheet/)**     | Protect a spreadsheet.   | [ProtectSpreadsheet](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Protection/ProtectSpreadsheet)     |
 | **[Unprotect a spreadsheet](https://docs.aspose.cloud/cells/unprotect-spreadsheet/)** | Unprotect a spreadsheet. | [UnprotectSpreadsheet](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Protection/UnprotectSpreadsheet) |
 
 > **Note:** In Aspose.Cells Cloud API v4, the unprotect operation uses `POST /cells/{name}/unprotect`, not `DELETE`. The API reference endpoint name reflects this (`UnprotectSpreadsheet`), but the underlying HTTP method is `POST`.
 
 ### Version 3 Protection APIs
 
-| Function | Development Guide | API Reference |
-|-----------------------|-------------------|---------------------------------|
-| **[Encrypt MS Excel and OpenDocument Spreadsheet with a password](https://reference.aspose.cloud/cells/#/Protection/PostEncryptWorkbook)** | [Development Guide](https://docs.aspose.cloud/cells/excel-file-encrypt/) | [PostEncryptWorkbook](https://reference.aspose.cloud/cells/#/Protection/PostEncryptWorkbook) |
-| **[Protect MS Excel and OpenDocument Spreadsheet](https://reference.aspose.cloud/cells/#/Workbook/PostProtectWorkbook)** | [Development Guide](https://docs.aspose.cloud/cells/protect-excel-file/) | [PostProtectWorkbook](https://apireference.aspose.cloud/cells/#/Workbook/PostProtectWorkbook) |
-| **[Protect MS Excel and OpenDocument Spreadsheet without using cloud storage](https://reference.aspose.cloud/cells/#/LightCells/PostProtect)** | [Development Guide](https://docs.aspose.cloud/cells/protect-excel-files/) | [PostProtect](https://apireference.aspose.cloud/cells/#/LightCells/PostProtect) |
+| Function                                                                                                                                        | Development Guide                                                                | API Reference                                                                                  |
+| ----------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| **[Encrypt MS Excel and OpenDocument Spreadsheet with a password](https://reference.aspose.cloud/cells/#/Protection/PostEncryptWorkbook)**      | [Development Guide](https://docs.aspose.cloud/cells/excel-file-encrypt/)         | [PostEncryptWorkbook](https://reference.aspose.cloud/cells/#/Protection/PostEncryptWorkbook)   |
+| **[Protect MS Excel and OpenDocument Spreadsheet](https://reference.aspose.cloud/cells/#/Workbook/PostProtectWorkbook)**                        | [Development Guide](https://docs.aspose.cloud/cells/protect-excel-file/)         | [PostProtectWorkbook](https://apireference.aspose.cloud/cells/#/Workbook/PostProtectWorkbook)  |
+| **[Protect MS Excel and OpenDocument Spreadsheet without using cloud storage](https://reference.aspose.cloud/cells/#/LightCells/PostProtect)**  | [Development Guide](https://docs.aspose.cloud/cells/protect-excel-files/)        | [PostProtect](https://apireference.aspose.cloud/cells/#/LightCells/PostProtect)                |
 | **[Apply digital signatures to MS Excel and OpenDocument Spreadsheet](https://reference.aspose.cloud/cells/#/Protection/PostDigitalSignature)** | [Development Guide](https://docs.aspose.cloud/cells/workbook/digital-signature/) | [PostDigitalSignature](https://reference.aspose.cloud/cells/#/Protection/PostDigitalSignature) |
-| **[Batch protect files](https://reference.aspose.cloud/cells/#/Batch/PostBatchProtect)** | [Development Guide](https://docs.aspose.cloud/cells/batch/protect/) | [PostBatchProtect](https://reference.aspose.cloud/cells/#/Batch/PostBatchProtect) |
+| **[Batch protect files](https://reference.aspose.cloud/cells/#/Batch/PostBatchProtect)**                                                        | [Development Guide](https://docs.aspose.cloud/cells/batch/protect/)              | [PostBatchProtect](https://reference.aspose.cloud/cells/#/Batch/PostBatchProtect)              |
 
 # How to Protect an Excel File with Aspose.Cells Cloud
 

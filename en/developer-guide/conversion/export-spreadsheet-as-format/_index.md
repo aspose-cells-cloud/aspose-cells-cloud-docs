@@ -38,19 +38,19 @@ This document provides full API details, usage examples, best practices, and SDK
 GET https://api.aspose.cloud/v4.0/cells/{name}?format={format}&folder={folder}&storageName={storageName}&outPath={outPath}&outStorageName={outStorageName}&fontsLocation={fontsLocation}&region={region}&password={password}&AutoRowsFit={autoRowsFit}&AutoColumnsFit={autoColumnsFit}
 ```
 
-| Parameter | Type | Location | Required | Description |
-|:----------|:-----|:---------|:---------|:------------|
-| `name` | string | Path | ✅ | Name of the source workbook (e.g., `MyWorkbook.xlsx`). |
-| `format` | string | Query | ✅ | Target format: `PDF`, `XLSX`, `CSV`, `HTML`, `JSON`, `ODS`, `TIFF`, `TXT`, `XLS`, `MHTML`, `XLSB`, `XLTM`, `XLT`, `XLTX`, `DOTX`, `DOCX`, `EPUB`, `MD`, `PNG`, `JPEG`, `BMP`, `SVG`, `XPS`, `PS`, `EMF`. |
-| `folder` | string | Query | ❌ | Folder path containing the workbook. Defaults to root. |
-| `storageName` | string | Query | ❌ | Custom storage name. Uses default storage if omitted. |
-| `outPath` | string | Query | ❌ | Destination folder for the output file. Defaults to same as source. |
-| `outStorageName` | string | Query | ❌ | Storage name for output file. Uses `storageName` or default if omitted. |
-| `fontsLocation` | string | Query | ❌ | Custom folder containing fonts required for rendering. |
-| `region` | string | Query | ❌ | Locale setting (e.g., `en-US`, `fr-FR`). Affects number/date formatting. |
-| `password` | string | Query | ❌ | Password for encrypted Excel files. |
-| `AutoRowsFit` | boolean | Query | ❌ | Whether to autofit all rows before export. Default: `false`. |
-| `AutoColumnsFit` | boolean | Query | ❌ | Whether to autofit all columns before export. Default: `false`. |
+| Parameter        | Type    | Location | Required | Description                                                                                                                                                                                              |
+| :--------------- | :------ | :------- | :------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `name`           | string  | Path     | ✅       | Name of the source workbook (e.g., `MyWorkbook.xlsx`).                                                                                                                                                   |
+| `format`         | string  | Query    | ✅       | Target format: `PDF`, `XLSX`, `CSV`, `HTML`, `JSON`, `ODS`, `TIFF`, `TXT`, `XLS`, `MHTML`, `XLSB`, `XLTM`, `XLT`, `XLTX`, `DOTX`, `DOCX`, `EPUB`, `MD`, `PNG`, `JPEG`, `BMP`, `SVG`, `XPS`, `PS`, `EMF`. |
+| `folder`         | string  | Query    | ❌       | Folder path containing the workbook. Defaults to root.                                                                                                                                                   |
+| `storageName`    | string  | Query    | ❌       | Custom storage name. Uses default storage if omitted.                                                                                                                                                    |
+| `outPath`        | string  | Query    | ❌       | Destination folder for the output file. Defaults to same as source.                                                                                                                                      |
+| `outStorageName` | string  | Query    | ❌       | Storage name for output file. Uses `storageName` or default if omitted.                                                                                                                                  |
+| `fontsLocation`  | string  | Query    | ❌       | Custom folder containing fonts required for rendering.                                                                                                                                                   |
+| `region`         | string  | Query    | ❌       | Locale setting (e.g., `en-US`, `fr-FR`). Affects number/date formatting.                                                                                                                                 |
+| `password`       | string  | Query    | ❌       | Password for encrypted Excel files.                                                                                                                                                                      |
+| `AutoRowsFit`    | boolean | Query    | ❌       | Whether to autofit all rows before export. Default: `false`.                                                                                                                                             |
+| `AutoColumnsFit` | boolean | Query    | ❌       | Whether to autofit all columns before export. Default: `false`.                                                                                                                                          |
 
 ---
 
@@ -185,7 +185,7 @@ import { CellsApi } from "aspose-cells-cloud";
 
 const config = new Configuration({
   appSid: "YOUR_APP_SID",
-  appKey: "YOUR_APP_KEY"
+  appKey: "YOUR_APP_KEY",
 });
 
 const cellsApi = new CellsApi(config);
@@ -195,7 +195,7 @@ const result = await cellsApi.exportSpreadsheetAsFormat(
   "PDF",
   undefined,
   undefined,
-  "exported/MyWorkbook.pdf"
+  "exported/MyWorkbook.pdf",
 );
 
 console.log(`Exported to: ${result}`);
@@ -271,23 +271,19 @@ if err != nil {
 fmt.Printf("Exported to: %s\n", *resp)
 ```
 
-> 📚 See the full [SDK repository on GitHub](https://github.com/aspose-cells-cloud) for installation, authentication, and advanced usage.
-
----
-
 ## Supported Output Formats
 
-| Format | Description | Use Case |
-|:-------|:------------|:---------|
-| `PDF` | Portable Document Format | Sharing, archiving, printing |
-| `XLSX` | Excel Open XML | Modern Excel compatibility |
-| `CSV` | Comma-Separated Values | Data import/export, ETL |
-| `HTML` | HyperText Markup Language | Web publishing |
-| `JSON` | JavaScript Object Notation | API consumption, NoSQL ingestion |
-| `ODS` | OpenDocument Spreadsheet | LibreOffice, LibreOffice Online |
-| `TIFF` | Tagged Image File Format | Image-based archival, OCR prep |
-| `TXT` | Plain Text | Simple data extraction |
-| `MHTML` | MIME HTML | Email-ready documents |
+| Format  | Description                | Use Case                         |
+| :------ | :------------------------- | :------------------------------- |
+| `PDF`   | Portable Document Format   | Sharing, archiving, printing     |
+| `XLSX`  | Excel Open XML             | Modern Excel compatibility       |
+| `CSV`   | Comma-Separated Values     | Data import/export, ETL          |
+| `HTML`  | HyperText Markup Language  | Web publishing                   |
+| `JSON`  | JavaScript Object Notation | API consumption, NoSQL ingestion |
+| `ODS`   | OpenDocument Spreadsheet   | LibreOffice, LibreOffice Online  |
+| `TIFF`  | Tagged Image File Format   | Image-based archival, OCR prep   |
+| `TXT`   | Plain Text                 | Simple data extraction           |
+| `MHTML` | MIME HTML                  | Email-ready documents            |
 
 > 🔍 Full list of supported formats: [Aspose.Cells Cloud Format Support](/supported-formats/)
 
@@ -295,45 +291,24 @@ fmt.Printf("Exported to: %s\n", *resp)
 
 ## HTTP Responses
 
-| Code | Meaning | Description |
-|:-----|:--------|:------------|
-| `200` | OK | Export successful; file stream returned. |
-| `400` | Bad Request | Invalid request parameters (e.g., unsupported format, missing `name`). |
-| `401` | Unauthorized | Invalid or missing JWT token. |
-| `404` | Not Found | Source file not found in storage. |
-| `500` | Internal Server Error | Conversion failed (e.g., corrupted file, unsupported encryption). |
+| Code  | Meaning               | Description                                                            |
+| :---- | :-------------------- | :--------------------------------------------------------------------- |
+| `200` | OK                    | Export successful; file stream returned.                               |
+| `400` | Bad Request           | Invalid request parameters (e.g., unsupported format, missing `name`). |
+| `401` | Unauthorized          | Invalid or missing JWT token.                                          |
+| `404` | Not Found             | Source file not found in storage.                                      |
+| `500` | Internal Server Error | Conversion failed (e.g., corrupted file, unsupported encryption).      |
 
 ---
 
 ## Error Handling
 
-| Error | Cause | Resolution |
-|:------|:------|:-----------|
-| `400 Bad Request` | Missing `format` or `name`, invalid format value | Validate parameters; use supported formats |
-| `401 Unauthorized` | Token expired or malformed | Refresh token; ensure `Bearer` prefix |
-| `404 Not Found` | File doesn’t exist in storage | Verify `folder` and `name` path |
+| Error              | Cause                                                | Resolution                                          |
+| :----------------- | :--------------------------------------------------- | :-------------------------------------------------- |
+| `400 Bad Request`  | Missing `format` or `name`, invalid format value     | Validate parameters; use supported formats          |
+| `401 Unauthorized` | Token expired or malformed                           | Refresh token; ensure `Bearer` prefix               |
+| `404 Not Found`    | File doesn’t exist in storage                        | Verify `folder` and `name` path                     |
 | `500 Server Error` | File corrupted, password mismatch, or internal issue | Check file integrity; try unencrypted version first |
-
----
-
-## Use Cases
-
-✅ **Legacy System Migration**  
-Convert thousands of `.xls` files to `.xlsx` for modern Excel support.
-
-✅ **Data Pipeline Normalization**  
-Standardize `.ods`, `.xls`, `.csv` inputs to `.json` or `.csv` for ingestion into databases.
-
-✅ **Web Publishing**  
-Export financial models to `.html` for embedding in dashboards.
-
-✅ **Archival Standardization**  
-Convert all spreadsheets to `.pdf/a` for long-term compliance.
-
-✅ **Interoperability**  
-Generate `.ods` for LibreOffice users or `.xlsx` for Google Sheets import.
-
----
 
 ## Why Use This API?
 
@@ -343,33 +318,3 @@ Generate `.ods` for LibreOffice users or `.xlsx` for Google Sheets import.
 - ✅ **High Fidelity**: Preserves formatting, formulas, charts, and macros.
 - ✅ **Developer Friendly**: SDKs in 8+ languages with full documentation.
 - ✅ **Secure**: TLS 1.2+ encryption; JWT authentication; GDPR-compliant data handling.
-
----
-
-## When *Not* to Use This API
-
-- ❌ **Offline/Local Use**: Prefer local SDKs (e.g., Aspose.Cells for .NET/Java) for air-gapped environments.
-- ❌ **Very Large Files (>2 GB)**: Use batch processing or local conversion for files exceeding cloud memory limits.
-- ❌ **Real-Time Rendering**: For real-time chart generation, consider image conversion APIs (e.g., `/cells/{name}/worksheets/{sheetName}/render`).
-
----
-
-## Related Documentation
-
-- [Convert Excel to PDF](/convert-excel-to-pdf/)
-- [Compare Two Excel Files](/compare-spreadsheets/)
-- [Export Excel to Images (PNG/JPEG)](/convert-excel-to-image/)
-- [REST API Overview](/rest-api-overview/)
-- [Aspose.Cells Cloud SDKs](https://github.com/aspose-cells-cloud)
-
----
-
-## Support & Feedback
-
-- 💬 [Aspose.Cells Cloud Forum](https://forum.aspose.cloud/c/cells-cloud)
-- 🐛 Report issues: [GitHub Issues](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/issues)
-- 📧 Enterprise support: [contact sales](https://www.aspose.cloud/contact-us)
-
----
-
-> © 2024 Aspose Pty Ltd. All rights reserved. Aspose.Cells Cloud is a registered trademark of Aspose Pty Ltd.

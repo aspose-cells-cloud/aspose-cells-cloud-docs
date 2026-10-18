@@ -2,13 +2,13 @@
 title: "Get Worksheets With Local Spreadsheet"
 ArticleTitle: "Get Worksheets With Local Spreadsheet – Aspose.Cells Cloud"
 second_title: "Document"
-linktitle: "Get Worksheets With Local Spreadsheet"
+linktitle: "Get Worksheets"
 type: docs
-url: /cells/spreadsheet/worksheets
+url: /spreadsheet/worksheets
 aliases: []
 keywords: "Aspose.Cells, Worksheets, Local Spreadsheet, API"
 description: "Fetches a complete list of worksheets from the currently active local spreadsheet."
-weight: 1000
+weight: 100
 ---
 
 ## The Get Worksheets With Local Spreadsheet of Aspose.Cells Cloud Web Services
@@ -27,16 +27,16 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type   | Path/Query String/HTTP Body | Description |
-|----------------|--------|-----------------------------|-------------|
-| Spreadsheet    | File   | FormData (HTTP Body)        | Upload spreadsheet file. |
-| region         | String | Query                       | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. *(optional)* |
-| password       | String | Query                       | The password for opening spreadsheet file. *(optional)* |
+| Parameter Name | Type   | Path/Query String/HTTP Body | Description                                                                                                                                          |
+| -------------- | ------ | --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet    | File   | FormData (HTTP Body)        | Upload spreadsheet file.                                                                                                                             |
+| region         | String | Query                       | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. _(optional)_ |
+| password       | String | Query                       | The password for opening spreadsheet file. _(optional)_                                                                                              |
 
 ### Request Body Parameter
 
-| Parameter Name | Type | Description |
-|----------------|------|-------------|
+| Parameter Name | Type | Description              |
+| -------------- | ---- | ------------------------ |
 | Spreadsheet    | File | Upload spreadsheet file. |
 
 ### **Response**
@@ -61,14 +61,14 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 **Response Status Codes**
 
-| Code | Meaning | Description |
-|------|---------|-------------|
-| 200 | OK | The list of worksheets was retrieved successfully. |
-| 400 | Bad Request | Invalid request (e.g., malformed URL or missing required data). |
-| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
-| 404 | Not Found | Source file not accessible. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Internal Server Error | The spreadsheet has encountered an anomaly in obtaining data. |
+| Code | Meaning               | Description                                                     |
+| ---- | --------------------- | --------------------------------------------------------------- |
+| 200  | OK                    | The list of worksheets was retrieved successfully.              |
+| 400  | Bad Request           | Invalid request (e.g., malformed URL or missing required data). |
+| 401  | Unauthorized          | Authentication has failed, or no credentials were provided.     |
+| 404  | Not Found             | Source file not accessible.                                     |
+| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.               |
+| 500  | Internal Server Error | The spreadsheet has encountered an anomaly in obtaining data.   |
 
 ## How to Use the Get Worksheets With Local Spreadsheet with SDKs
 
@@ -123,4 +123,3 @@ curl -v "https://api.aspose.cloud/v4.0/cells/spreadsheet/worksheets?region=en-US
 Using an SDK is the fastest way to accelerate development. An SDK abstracts low-level details, allowing you to focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose.Cells Cloud web services using various SDKs:
-`[TBD]`

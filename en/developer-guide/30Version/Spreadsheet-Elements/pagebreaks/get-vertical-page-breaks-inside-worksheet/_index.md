@@ -7,7 +7,7 @@ url: /page-breaks/get-vertical-page-breaks/
 aliases: [/get-vertical-page-breaks-inside-worksheet/]
 keywords: "Aspose.Cells, vertical page breaks, Excel API, cloud spreadsheet, REST API"
 description: "Retrieve vertical page breaks from an Excel worksheet using the Aspose.Cells Cloud REST API (v3.0). Includes HTTPS endpoint, required parameters, cURL example, response details, error handling, and SDK samples."
-weight: 20
+weight: 100
 ---
 
 This REST API retrieves **vertical** page breaks from a worksheet.

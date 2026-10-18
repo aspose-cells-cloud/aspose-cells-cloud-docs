@@ -83,13 +83,13 @@ Save the response body to a file (e.g., `report.html`) to view the rendered tabl
 
 **HTTP Status Codes**
 
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Success: HTML file generated and returned as binary stream.      |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
+| Code | Meaning               | Description                                                  |
+| ---- | --------------------- | ------------------------------------------------------------ |
+| 200  | OK                    | Success: HTML file generated and returned as binary stream.  |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                            |
+| 500  | Internal Server Error | Unexpected server error.                                     |
 
 ### Common Errors
 

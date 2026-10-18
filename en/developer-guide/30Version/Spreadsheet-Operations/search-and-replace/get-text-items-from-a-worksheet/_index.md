@@ -5,7 +5,7 @@ linktitle: "Get Text Items in Worksheet"
 type: docs
 url: /worksheets/get-text-items/
 aliases: [/get-text-items-from-a-worksheet/]
-weight: 20
+weight: 100
 keywords: "Aspose.Cells, Cloud API, Excel, worksheet, text items, REST"
 description: "Retrieve all text items from a specific worksheet in an Excel file using Aspose.Cells Cloud REST API. Includes sample cURL, SDK code, authentication steps, and response schema."
 ArticleTitle: "Get Text Items from an Excel Worksheet"
@@ -20,10 +20,10 @@ https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{worksheet}/textItems
 ```
 
 ### Security and Authentication
+
 The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ### Request Parameters
-
 
 | Parameter Name | Type   | Location | Required | Description                                    |
 | -------------- | ------ | -------- | -------- | ---------------------------------------------- |
@@ -36,8 +36,8 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 
 ```json
 {
-  "Status":"OK",
-  "Code":200,
+  "Status": "OK",
+  "Code": 200,
   "TextItems": {
     "link": {
       "Href": "string",
@@ -62,18 +62,19 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## How to Use the GetWorksheetTextItems API with SDKs
 
 ### GetWorksheetTextItems API Specification
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetTextItems){:target="_blank" rel="noopener noreferrer"} defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetTextItems){:target="\_blank" rel="noopener noreferrer"} defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 You can use the cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
@@ -122,7 +123,7 @@ curl -X GET "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/sheet1/tex
 
 ### Use Aspose.Cells Cloud SDKs
 
-SDKs simplify integration by handling low‑level details and letting you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud){:target="_blank" rel="noopener noreferrer"} for a complete list of Aspose.Cells Cloud SDKs.
+SDKs simplify integration by handling low‑level details and letting you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud){:target="\_blank" rel="noopener noreferrer"} for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 

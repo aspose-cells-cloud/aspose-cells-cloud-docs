@@ -22,59 +22,58 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Location | Description |
-|----------------|------|----------|-------------|
-| **BatchLockRequest** |  | body | Request body that contains the unlock settings. |
+| Parameter Name       | Type | Location | Description                                     |
+| -------------------- | ---- | -------- | ----------------------------------------------- |
+| **BatchLockRequest** |      | body     | Request body that contains the unlock settings. |
 
 ### **BatchLockRequest** Properties
 
-| Name          | Type                     | Description                                 | Notes |
-|---------------|--------------------------|---------------------------------------------|-------|
-| SourceFolder  | string                   | Folder that contains the source Excel files.| [optional] |
-| MatchCondition| MatchConditionRequest    | Criteria used to select files for unlocking.| [optional] |
-| Password      | string                   | Password applied to protected workbooks.   | [optional] |
-| OutFolder     | string                   | Destination folder for the unlocked files. | [optional] |
+| Name           | Type                  | Description                                  | Notes      |
+| -------------- | --------------------- | -------------------------------------------- | ---------- |
+| SourceFolder   | string                | Folder that contains the source Excel files. | [optional] |
+| MatchCondition | MatchConditionRequest | Criteria used to select files for unlocking. | [optional] |
+| Password       | string                | Password applied to protected workbooks.     | [optional] |
+| OutFolder      | string                | Destination folder for the unlocked files.   | [optional] |
 
 ### **MatchConditionRequest** Properties
 
-| Name               | Type      | Description                                 | Notes |
-|--------------------|-----------|---------------------------------------------|-------|
-| RegexPattern       | string    | Regular expression to match file names.    | [optional] |
-| FullMatchConditions| string[]  | Exact file name conditions to match.       | [optional] |
+| Name                | Type     | Description                             | Notes      |
+| ------------------- | -------- | --------------------------------------- | ---------- |
+| RegexPattern        | string   | Regular expression to match file names. | [optional] |
+| FullMatchConditions | string[] | Exact file name conditions to match.    | [optional] |
 
 ### Request Body Parameter
 
 | Parameter Name | Type | Description                                    |
 | -------------- | ---- | ---------------------------------------------- |
 | data           | file | Binary content of the workbook file to create. |
-  
+
 ### **Response**
 
 ```json
 {
-    "Name": "ResponseFile",
-    "DataType": {
-        "Identifier": "File",
-        "Reference": "Stream",
-        "Name": "file"
-    }
+  "Name": "ResponseFile",
+  "DataType": {
+    "Identifier": "File",
+    "Reference": "Stream",
+    "Name": "file"
+  }
 }
 ```
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | When Returned                           |
-|------|-----------------------------|-----------------------------------------|
-| 200 OK | Workbook created successfully | Normal flow                              |
-| 201 Created | Workbook created (alternative response) | When the API returns a created status |
-| 400 Bad Request | Invalid parameters | Client‑side error                        |
-| 401 Unauthorized | Missing or invalid token | Authentication error                    |
-| 409 Conflict | File exists and `isWriteOver=false` | Conflict with existing file    
+| Code             | Meaning                                 | When Returned                         |
+| ---------------- | --------------------------------------- | ------------------------------------- |
+| 200 OK           | Workbook created successfully           | Normal flow                           |
+| 201 Created      | Workbook created (alternative response) | When the API returns a created status |
+| 400 Bad Request  | Invalid parameters                      | Client‑side error                     |
+| 401 Unauthorized | Missing or invalid token                | Authentication error                  |
+| 409 Conflict     | File exists and `isWriteOver=false`     | Conflict with existing file           |
 
 ## How to Use the PostBatchLock API with SDKs
 
 ### PostBatchLock API Specification
-
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/Batch/PostBatchUnlock) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

@@ -3,7 +3,7 @@ title: "Get Chart from a Worksheet"
 type: docs
 url: /charts/get/
 aliases: [/get-chart-from-a-worksheet/]
-weight: 10
+weight: 100
 keywords: "Aspose.Cells Cloud, Get Chart, Worksheet, REST API, Excel, Chart API, chart retrieval, Excel chart"
 description: "Retrieve chart information, including metadata and export format, from a worksheet using the Aspose.Cells Cloud REST API."
 ArticleTitle: "Get Chart from a Worksheet – Aspose.Cells Cloud API"
@@ -34,7 +34,6 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | folder         | string  | query    | Folder path where the document is stored.   |
 | storageName    | string  | query    | Name of the storage service.                |
 
-
 ### **Response**
 
 ```json
@@ -57,17 +56,17 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## How to Use the GetWorksheetChart API with SDKs
 
 ### GetWorksheetChart API Specification
-
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/GetWorksheetChart) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

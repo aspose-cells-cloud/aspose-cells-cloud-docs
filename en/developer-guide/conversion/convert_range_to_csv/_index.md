@@ -4,11 +4,11 @@ ArticleTitle: "Convert Range to CSV – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Convert Range to CSV"
 type: docs
-url: /cells/convert/range/csv
+url: /convert/range/csv
 aliases: []
 keywords: "convert, csv, range, Aspose.Cells"
 description: "Converts a range of spreadsheet on a local drive to the csv file."
-weight: 1
+weight: 100
 ---
 
 ## The Convert Range to CSV of Aspose.Cells Cloud Web Services
@@ -27,24 +27,24 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name   | Type    | Path/Query String/HTTP Body | Description                                                                                                                            |
-|------------------|---------|-----------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| Spreadsheet      | File    | FormData                    | Upload spreadsheet file.                                                                                                               |
-| worksheet        | String  | Query                       | Worksheet name of spreadsheet. **Required**.                                                                                           |
-| range            | String  | Query                       | Cell area. e.g. `A1:C10`. **Required**.                                                                                                 |
-| outPath          | String  | Query                       | (Optional) The folder path where the workbook is stored. The default is null.                                                          |
-| outStorageName   | String  | Query                       | Output file Storage Name.                                                                                                              |
-| fontsLocation    | String  | Query                       | Use Custom fonts.                                                                                                                      |
-| AutoRowsFit      | Boolean | Query                       | (Optional) Autofits all rows in worksheets.                                                                                            |
-| AutoColumnsFit   | Boolean | Query                       | (Optional) Autofits all columns in worksheets.                                                                                         |
-| region           | String  | Query                       | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password         | String  | Query                       | The password for opening spreadsheet file.                                                                                             |
+| Parameter Name | Type    | Path/Query String/HTTP Body | Description                                                                                                                             |
+| -------------- | ------- | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet    | File    | FormData                    | Upload spreadsheet file.                                                                                                                |
+| worksheet      | String  | Query                       | Worksheet name of spreadsheet. **Required**.                                                                                            |
+| range          | String  | Query                       | Cell area. e.g. `A1:C10`. **Required**.                                                                                                 |
+| outPath        | String  | Query                       | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
+| outStorageName | String  | Query                       | Output file Storage Name.                                                                                                               |
+| fontsLocation  | String  | Query                       | Use Custom fonts.                                                                                                                       |
+| AutoRowsFit    | Boolean | Query                       | (Optional) Autofits all rows in worksheets.                                                                                             |
+| AutoColumnsFit | Boolean | Query                       | (Optional) Autofits all columns in worksheets.                                                                                          |
+| region         | String  | Query                       | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password       | String  | Query                       | The password for opening spreadsheet file.                                                                                              |
 
 ### Request Body Parameter
 
-| Parameter Name | Type | Description |
-| -------------- | ---- | ----------- |
-| None | N/A | No request body parameters. |
+| Parameter Name | Type | Description                 |
+| -------------- | ---- | --------------------------- |
+| None           | N/A  | No request body parameters. |
 
 ### **Response**
 
@@ -56,13 +56,13 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 **Response Status Codes**
 
-| Code | Meaning | Description |
-|------|---------|-------------|
-| 200 | OK | The range was successfully converted and the CSV file is returned in the response body. |
-| 400 | Bad Request | Invalid URL or missing required parameters. |
-| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
-| 413 | Payload Too Large | The request payload exceeds the allowed size limit. |
-| 500 | Internal Server Error | The spreadsheet encountered an anomaly while obtaining conversion data. |
+| Code | Meaning               | Description                                                                             |
+| ---- | --------------------- | --------------------------------------------------------------------------------------- |
+| 200  | OK                    | The range was successfully converted and the CSV file is returned in the response body. |
+| 400  | Bad Request           | Invalid URL or missing required parameters.                                             |
+| 401  | Unauthorized          | Authentication has failed, or no credentials were provided.                             |
+| 413  | Payload Too Large     | The request payload exceeds the allowed size limit.                                     |
+| 500  | Internal Server Error | The spreadsheet encountered an anomaly while obtaining conversion data.                 |
 
 ## How to Use the Convert Range to CSV with SDKs
 
@@ -105,4 +105,3 @@ curl -v "https://api.aspose.cloud/v4.0/cells/convert/range/csv?worksheet=Sheet1&
 Using an SDK is the fastest way to accelerate development. An SDK abstracts low‑level details, allowing you to focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose Cells Cloud web services using various SDKs:
-`[TBD]`

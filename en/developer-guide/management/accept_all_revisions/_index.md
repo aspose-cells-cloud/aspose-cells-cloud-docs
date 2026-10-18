@@ -4,7 +4,7 @@ ArticleTitle: "Accept All Revisions – Aspose.Cells Cloud"
 second_title: "Document"
 linktitle: "Accept All Revisions"
 type: docs
-url: /cells/spreadsheet/accept-all-revisions
+url: /spreadsheet/accept-all-revisions
 aliases: []
 keywords: "Aspose.Cells, AcceptAllRevisions, spreadsheet, revisions"
 description: "Accept all revisions in a spreadsheet file using Aspose.Cells Cloud API."
@@ -27,19 +27,19 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type   | Path/Query String/HTTP Body | Description |
-|----------------|--------|-----------------------------|-------------|
-| Spreadsheet    | File   | FormData (HTTP Body)        | Upload spreadsheet file. |
-| outPath        | string | Query                       | (Optional) The folder path where the workbook is stored. The default is null. |
-| outStorageName | string | Query                       | Output file Storage Name. |
-| fontsLocation  | string | Query                       | Use Custom fonts. |
+| Parameter Name | Type   | Path/Query String/HTTP Body | Description                                                                                                                             |
+| -------------- | ------ | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet    | File   | FormData (HTTP Body)        | Upload spreadsheet file.                                                                                                                |
+| outPath        | string | Query                       | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
+| outStorageName | string | Query                       | Output file Storage Name.                                                                                                               |
+| fontsLocation  | string | Query                       | Use Custom fonts.                                                                                                                       |
 | region         | string | Query                       | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password       | string | Query                       | The password for opening spreadsheet file. |
+| password       | string | Query                       | The password for opening spreadsheet file.                                                                                              |
 
 ### Request Body Parameter
 
-| Parameter Name | Type | Description |
-| -------------- | ---- | ----------- |
+| Parameter Name | Type | Description              |
+| -------------- | ---- | ------------------------ |
 | Spreadsheet    | File | Upload spreadsheet file. |
 
 ### **Response**
@@ -52,13 +52,13 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 **Response Status Codes**
 
-| Code | Meaning | Description |
-|------|---------|-------------|
-| 200 | OK | The revisions were successfully accepted and the processed file is returned. |
-| 400 | Bad Request | The request is invalid (e.g., missing required file or invalid parameters). |
-| 401 | Unauthorized | Authentication failed or JWT token is missing/invalid. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Internal Server Error | An unexpected error occurred on the server. |
+| Code | Meaning               | Description                                                                  |
+| ---- | --------------------- | ---------------------------------------------------------------------------- |
+| 200  | OK                    | The revisions were successfully accepted and the processed file is returned. |
+| 400  | Bad Request           | The request is invalid (e.g., missing required file or invalid parameters).  |
+| 401  | Unauthorized          | Authentication failed or JWT token is missing/invalid.                       |
+| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                            |
+| 500  | Internal Server Error | An unexpected error occurred on the server.                                  |
 
 ## How to Use the AcceptAllRevisions with SDKs
 
@@ -101,4 +101,3 @@ curl -v "https://api.aspose.cloud/v4.0/cells/spreadsheet/accept-all-revisions?ou
 Using an SDK is the fastest way to accelerate development. An SDK abstracts low-level details, allowing you to focus on your project tasks. Please check out the <a href="[TBD]" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose Cells Cloud web services using various SDKs:
- `[TBD]`

@@ -110,22 +110,22 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/Quarterly_Report.xlsx/search/br
 
 ### Error Codes
 
-- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.  
-- **401 Unauthorized** – Invalid access token, client ID, or client secret.  
-- **404 Not Found** – The spreadsheet file is not accessible.  
+- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.
+- **401 Unauthorized** – Invalid access token, client ID, or client secret.
+- **404 Not Found** – The spreadsheet file is not accessible.
 - **500 Server Error** – An anomaly occurred while obtaining calculation data.
 
 ## Where should we use the Search for broken links within the Spreadsheet API?
 
-- **Regular audit of large financial models** – Before releasing monthly or quarterly reports, automatically scan key calculation areas (e.g., `Dashboard!B5:K50`) that contain many external data references to ensure all links point to valid source files.  
-- **Data integration for mergers and acquisitions** – When merging multiple spreadsheets representing business units, scan the “Overview” worksheet after integration to identify links that have become invalid due to changed file paths or permission issues.  
+- **Regular audit of large financial models** – Before releasing monthly or quarterly reports, automatically scan key calculation areas (e.g., `Dashboard!B5:K50`) that contain many external data references to ensure all links point to valid source files.
+- **Data integration for mergers and acquisitions** – When merging multiple spreadsheets representing business units, scan the “Overview” worksheet after integration to identify links that have become invalid due to changed file paths or permission issues.
 - **Preparation of investor data packages** – Before finalising presentation materials that contain charts and tables linked to external databases or market‑data sources, verify the validity of all links.
 
 ## Why should you use the Search for broken links within the Spreadsheet API?
 
-- **Developer‑friendly** – Aspose.Cells Cloud provides SDK libraries in multiple languages, enabling rapid development with comprehensive documentation. Compared with building a custom solution, this significantly reduces development effort.  
-- **Reduced labor costs** – Automates link validation, eliminating the need for dedicated staff to manually consolidate documents.  
-- **Pay‑per‑use** – No upfront investment; you only pay for the API calls you actually use.  
+- **Developer‑friendly** – Aspose.Cells Cloud provides SDK libraries in multiple languages, enabling rapid development with comprehensive documentation. Compared with building a custom solution, this significantly reduces development effort.
+- **Reduced labor costs** – Automates link validation, eliminating the need for dedicated staff to manually consolidate documents.
+- **Pay‑per‑use** – No upfront investment; you only pay for the API calls you actually use.
 - **Zero maintenance costs** – No servers to maintain, no software updates, and no compatibility concerns.
 
 ## How to Use the Search for broken links within the Spreadsheet API with SDKs

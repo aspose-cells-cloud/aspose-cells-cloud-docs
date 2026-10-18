@@ -7,7 +7,7 @@ url: /ranges/copy/
 aliases: [/copy-range-in-a-worksheet-with-paste-options/]
 keywords: "Aspose.Cells Cloud, REST API, Excel, copy range, worksheet, paste options"
 description: "Use Aspose.Cells Cloud REST API to copy a range within an Excel worksheet with full paste‑option support. Includes SDK examples for multiple programming languages."
-weight: 20
+weight: 100
 ArticleTitle: "Copy Range in a Worksheet with Paste Options – Aspose.Cells Cloud API"
 ---
 

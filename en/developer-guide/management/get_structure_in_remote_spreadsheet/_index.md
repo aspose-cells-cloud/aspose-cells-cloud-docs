@@ -1,10 +1,10 @@
 ---
-title: "GetStructureInRemoteSpreadsheet"
+title: "Get Remote Spreadsheet Structure"
 ArticleTitle: "Get Structure In Remote Spreadsheet – Aspose.Cells Cloud API"
 second_title: "Document"
-linktitle: "GetStructureInRemoteSpreadsheet"
+linktitle: "Remote Spreadsheet Structure"
 type: docs
-url: /cells/{name}/structure
+url: /{name}/structure
 aliases: []
 keywords: "Aspose.Cells, GetStructure, spreadsheet, structure"
 description: "Retrieve the structural metadata of a remote Excel workbook, including worksheets, tables, pivot tables, charts, shapes, and other core information."
@@ -27,19 +27,19 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTP Body | Description |
-|----------------|------|-----------------------------|-------------|
-| name | string | Path | Name of the spreadsheet file. |
-| folder | string | Query | Folder where the file is located. (Optional) |
-| storageName | string | Query | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted. |
-| region | string | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password | string | Query | The password for opening spreadsheet file. |
+| Parameter Name | Type   | Path/Query String/HTTP Body | Description                                                                                                                             |
+| -------------- | ------ | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| name           | string | Path                        | Name of the spreadsheet file.                                                                                                           |
+| folder         | string | Query                       | Folder where the file is located. (Optional)                                                                                            |
+| storageName    | string | Query                       | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.                                       |
+| region         | string | Query                       | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password       | string | Query                       | The password for opening spreadsheet file.                                                                                              |
 
 ### Request Body Parameter
 
-| Parameter Name | Type | Description |
-| -------------- | ---- | ----------- |
-| [TBD] | [TBD] | [TBD] |
+| Parameter Name | Type  | Description |
+| -------------- | ----- | ----------- |
+| [TBD]          | [TBD] | [TBD]       |
 
 ### **Response**
 
@@ -69,13 +69,13 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 **Response Status Codes**
 
-| Code | Meaning | Description |
-|------|---------|-------------|
-| 200 | OK | Successfully retrieved workbook structure. |
-| 400 | Bad Request | Invalid request parameters. |
-| 401 | Unauthorized | Authentication failed or token missing. |
-| 413 | Payload Too Large | The request payload exceeds the allowed size. |
-| 500 | Internal Server Error | Unexpected server error. |
+| Code | Meaning               | Description                                   |
+| ---- | --------------------- | --------------------------------------------- |
+| 200  | OK                    | Successfully retrieved workbook structure.    |
+| 400  | Bad Request           | Invalid request parameters.                   |
+| 401  | Unauthorized          | Authentication failed or token missing.       |
+| 413  | Payload Too Large     | The request payload exceeds the allowed size. |
+| 500  | Internal Server Error | Unexpected server error.                      |
 
 ## How to Use the Get Structure In Remote Spreadsheet with SDKs
 
@@ -134,4 +134,3 @@ curl -v "https://api.aspose.cloud/v4.0/cells/{name}/structure?folder=myFolder&st
 Using an SDK is the fastest way to accelerate development. An SDK abstracts low-level details, allowing you to focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose Cells Cloud web services using various SDKs:
-`[TBD]`

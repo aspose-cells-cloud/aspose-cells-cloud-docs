@@ -26,7 +26,6 @@ Use the Aspose.Cells Cloud Web API to instantly convert text case in your spread
 PUT https://api.aspose.cloud/v4.0/cells/content/wordcase
 ```
 
-
 ### **Security and Authentication**
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
@@ -34,6 +33,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 ```bash
 -H "Authorization: Bearer {access_token}"
 ```
+
 ### Request Parameters for **UpdateWordCase** API
 
 | Parameter Name | Type   | Location | Description                                                                                                                                                           |

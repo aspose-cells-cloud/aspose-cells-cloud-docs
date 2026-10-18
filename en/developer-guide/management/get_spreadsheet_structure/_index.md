@@ -1,14 +1,14 @@
 ---
-title: "GetSpreadsheetStructure"
+title: "Get Spreadsheet Structure"
 ArticleTitle: "GetSpreadsheetStructure – Aspose.Cells Cloud"
 second_title: "Document"
-linktitle: "GetSpreadsheetStructure"
+linktitle: "Get Spreadsheet Structure"
 type: docs
-url: /cells/spreadsheet/structure
+url: /spreadsheet/structure
 aliases: []
 keywords: "Aspose.Cells, Spreadsheet Structure, API"
 description: "Structurally convert the core metadata, worksheets, tables, pivot tables, charts, shapes, and other information of an Excel workbook into a JObject type JSON object."
-weight: 1000
+weight: 100
 ---
 
 ## The GetSpreadsheetStructure of Aspose.Cells Cloud Web Services
@@ -27,16 +27,16 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type   | Path/Query String/HTTP Body | Description |
-|----------------|--------|-----------------------------|-------------|
-| Spreadsheet    | File   | FormData (body)             | Upload spreadsheet file. |
+| Parameter Name | Type   | Path/Query String/HTTP Body | Description                                                                                                                             |
+| -------------- | ------ | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet    | File   | FormData (body)             | Upload spreadsheet file.                                                                                                                |
 | region         | String | Query                       | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password       | String | Query                       | The password for opening spreadsheet file. |
+| password       | String | Query                       | The password for opening spreadsheet file.                                                                                              |
 
 ### Request Body Parameter
 
-| Parameter Name | Type | Description |
-| -------------- | ---- | ----------- |
+| Parameter Name | Type | Description              |
+| -------------- | ---- | ------------------------ |
 | Spreadsheet    | File | Upload spreadsheet file. |
 
 ### **Response**
@@ -61,13 +61,13 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 **Response Status Codes**
 
-| Code | Meaning | Description |
-|------|---------|-------------|
-| 200 | OK | Successfully retrieved the spreadsheet structure. |
-| 400 | Bad Request | Invalid request parameters or file format. |
-| 401 | Unauthorized | Authentication failed or missing JWT token. |
-| 413 | Payload Too Large | Uploaded file exceeds the allowed size limit. |
-| 500 | Internal Server Error | An unexpected error occurred on the server. |
+| Code | Meaning               | Description                                       |
+| ---- | --------------------- | ------------------------------------------------- |
+| 200  | OK                    | Successfully retrieved the spreadsheet structure. |
+| 400  | Bad Request           | Invalid request parameters or file format.        |
+| 401  | Unauthorized          | Authentication failed or missing JWT token.       |
+| 413  | Payload Too Large     | Uploaded file exceeds the allowed size limit.     |
+| 500  | Internal Server Error | An unexpected error occurred on the server.       |
 
 ## How to Use the GetSpreadsheetStructure with SDKs
 
@@ -121,4 +121,3 @@ curl -v "https://api.aspose.cloud/v4.0/cells/spreadsheet/structure?region=en-US&
 Using an SDK is the fastest way to accelerate development. An SDK abstracts low-level details, allowing you to focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose Cells Cloud web services using various SDKs:
-`[TBD]`

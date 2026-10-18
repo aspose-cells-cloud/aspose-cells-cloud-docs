@@ -1,6 +1,6 @@
 ---
 title: Rename Worksheet in Excel – Aspose.Cells Cloud API
-linktitle: Rename Excel Worksheet
+linktitle: Rename Worksheet
 type: docs
 url: /rename-worksheet-in-spreadsheet/
 keywords: "rename worksheet, Aspose.Cells Cloud, Excel API, spreadsheet SDK, REST API"
@@ -19,15 +19,15 @@ Programmatically rename worksheets in Excel workbooks using the Aspose.Cells Clo
 
 ### Request Parameters
 
-| Parameter        | Type   | Location   | Required | Description |
-|------------------|--------|------------|----------|-------------|
-| `Spreadsheet`    | File   | FormData   | ✅ Yes   | Excel workbook file (`.xlsx`, `.xls`, etc.) containing the worksheet to rename. |
-| `sourceName`     | String | Query      | ✅ Yes   | Current name of the worksheet to rename. |
-| `targetName`     | String | Query      | ✅ Yes   | New name for the worksheet. Must be ≤ 31 characters and contain no `:`, `\`, `?`, `*`, `[`, or `]`. |
-| `outPath`        | String | Query      | ❌ No    | Folder path in cloud storage where the renamed workbook is saved. Defaults to the source file’s location. |
-| `outStorageName` | String | Query      | ❌ No    | Name of configured cloud storage (e.g., `ArchiveStorage`). Defaults to the account’s primary storage. |
-| `region`         | String | Query      | ❌ No    | Locale setting (e.g., `en-US`, `fr-FR`, `ko-KR`) affecting number/date formatting and naming conventions. |
-| `password`       | String | Query      | ❌ No    | Password to decrypt a password-protected workbook. Omit if the file is unencrypted. |
+| Parameter        | Type   | Location | Required | Description                                                                                               |
+| ---------------- | ------ | -------- | -------- | --------------------------------------------------------------------------------------------------------- |
+| `Spreadsheet`    | File   | FormData | ✅ Yes   | Excel workbook file (`.xlsx`, `.xls`, etc.) containing the worksheet to rename.                           |
+| `sourceName`     | String | Query    | ✅ Yes   | Current name of the worksheet to rename.                                                                  |
+| `targetName`     | String | Query    | ✅ Yes   | New name for the worksheet. Must be ≤ 31 characters and contain no `:`, `\`, `?`, `*`, `[`, or `]`.       |
+| `outPath`        | String | Query    | ❌ No    | Folder path in cloud storage where the renamed workbook is saved. Defaults to the source file’s location. |
+| `outStorageName` | String | Query    | ❌ No    | Name of configured cloud storage (e.g., `ArchiveStorage`). Defaults to the account’s primary storage.     |
+| `region`         | String | Query    | ❌ No    | Locale setting (e.g., `en-US`, `fr-FR`, `ko-KR`) affecting number/date formatting and naming conventions. |
+| `password`       | String | Query    | ❌ No    | Password to decrypt a password-protected workbook. Omit if the file is unencrypted.                       |
 
 > **Note:** Excel worksheet names are limited to 31 characters and cannot include `:`, `\`, `?`, `*`, `[`, or `]`.
 
@@ -47,24 +47,27 @@ A successful request returns the modified workbook as a file stream. The respons
 
 **HTTP Status Codes**
 
-| Code | Meaning               | Description |
-|------|-----------------------|-------------|
-| 200  | OK                    | Worksheet renamed successfully. |
+| Code | Meaning               | Description                                                             |
+| ---- | --------------------- | ----------------------------------------------------------------------- |
+| 200  | OK                    | Worksheet renamed successfully.                                         |
 | 400  | Bad Request           | Invalid parameters, unsupported file format, or invalid worksheet name. |
-| 401  | Unauthorized          | Missing or invalid JWT token. |
-| 404  | Not Found             | Source file not found in storage. |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit (100 MB). |
-| 500  | Internal Server Error | Unexpected server-side error. |
+| 401  | Unauthorized          | Missing or invalid JWT token.                                           |
+| 404  | Not Found             | Source file not found in storage.                                       |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit (100 MB).                              |
+| 500  | Internal Server Error | Unexpected server-side error.                                           |
 
 ## Use Cases
 
-### Report Generation & Brand Standardization  
+### Report Generation & Brand Standardization
+
 Automatically rename generic worksheet tabs (e.g., `Sheet1`) to client-specific names (e.g., `AcmeCorp_Q1_Summary`) for professional report delivery.
 
-### ETL Workflow Standardization  
+### ETL Workflow Standardization
+
 Rename extracted or transformed worksheets to consistent names (e.g., `Raw_Data`, `Cleaned_Data`) for downstream analysis pipelines.
 
-### Multilingual Content Delivery  
+### Multilingual Content Delivery
+
 Localize worksheet names based on user locale (e.g., `数据` for Chinese, `Données` for French) before distribution.
 
 ## Why Use Aspose.Cells Cloud API?
@@ -102,17 +105,3 @@ Localize worksheet names based on user locale (e.g., `数据` for Chinese, `Donn
 {{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_RenameWorksheet.go" >}}
 {{< /tab >}}
 {{< /tabs >}}
-
-> **Tip:** All SDK examples use consistent parameter names (`sourceName`, `targetName`). See the [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ManagementController/RenameWorksheetInSpreadsheet) for direct REST integration.
-
-## Related Resources
-
-- [Upload Excel Files to Cloud Storage](/upload-excel-file/)
-- [Merge or Split Worksheets](/merge-worksheet/)
-- [Authentication & JWT Setup](/authentication/)
-- [REST API Overview](/rest-api-overview/)
-
----
-
-**Last verified:** 2024-05-22  
-**API Version:** v4.0

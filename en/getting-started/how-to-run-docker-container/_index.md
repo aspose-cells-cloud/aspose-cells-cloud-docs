@@ -23,30 +23,30 @@ keywords:
 
 Docker technology is designed to automate the deployment of applications by using lightweight containers. Developers can use a Docker container to bundle an application with all of its libraries and dependencies and deploy everything as a single package.
 
-The Aspose.Cells Cloud team has published the Docker container on <a href="https://hub.docker.com/r/aspose/cells-cloud" target="_blank" rel="noopener noreferrer">Docker Hub</a> to facilitate Docker users.  
+The Aspose.Cells Cloud team has published the Docker container on <a href="https://hub.docker.com/r/aspose/cells-cloud" target="_blank" rel="noopener noreferrer">Docker Hub</a> to facilitate Docker users.
 
 **Prerequisites** – Ensure Docker Engine ≥ 20.x is installed and that your operating system (Windows 10/Server 2019/2022 or a supported Linux distribution) meets the requirements. An optional license key can be supplied to run in licensed mode.
 
-- Docker Engine ≥ 20.x installed  
-- Supported OS (Windows 10/Server 2019/2022 or a Linux distribution)  
-- Optional license key for licensed mode  
+- Docker Engine ≥ 20.x installed
+- Supported OS (Windows 10/Server 2019/2022 or a Linux distribution)
+- Optional license key for licensed mode
 
 ## Container configuration
 
 ### Required volumes
 
-| Mount path in container | Description |
-| :--- | :--- |
-| C:\fonts | Folder with fonts that will be used to render documents |
-| C:\data | File‑storage folder |
+| Mount path in container | Description                                             |
+| :---------------------- | :------------------------------------------------------ |
+| C:\fonts                | Folder with fonts that will be used to render documents |
+| C:\data                 | File‑storage folder                                     |
 
 **Linux/macOS alternative** – Use `/fonts` and `/data` in the container and map them to host directories such as `/home/user/fonts` and `/home/user/data` when running the container.
 
 ### Parameters
 
-| Name | Description |
-| :--- | :--- |
-| LicensePublicKey | Public key of the license |
+| Name              | Description                |
+| :---------------- | :------------------------- |
+| LicensePublicKey  | Public key of the license  |
 | LicensePrivateKey | Private key of the license |
 
 If the **License** parameters are omitted, the app runs in trial mode.
@@ -78,7 +78,7 @@ You can write the following configuration in a **docker‑compose.yml** file:
 ```yaml
 AsposeCellsCloud:
   image: aspose/cells-cloud:25.9.0
-  ports: ["5000:80"]   # host 5000 → container 80
+  ports: ["5000:80"] # host 5000 → container 80
   volumes:
     - "C:/Windows/Fonts:C:/Windows/Fonts"
     - "c:/data:c:/data"
@@ -101,12 +101,14 @@ docker run \
   aspose/cells-cloud:25.9.0
 ```
 
-**Troubleshooting:**  
-- **Port conflict:** Ensure that port 5000 on the host is free or change the mapping to an unused port.  
-- **License load failure:** Verify that the public and private keys are correctly passed as environment variables or mounted as files.  
+**Troubleshooting:**
+
+- **Port conflict:** Ensure that port 5000 on the host is free or change the mapping to an unused port.
+- **License load failure:** Verify that the public and private keys are correctly passed as environment variables or mounted as files.
 - **Missing fonts:** If documents render with incorrect fonts, confirm that the font directory is correctly mounted and contains the required font files.
 
-**Related resources:**  
+**Related resources:**
+
 - <a href="/cells/api/">API reference</a> | <a href="/cells/license/">License activation guide</a> | <a href="/cells/getting-started/">Getting started overview</a>
 
 ```json

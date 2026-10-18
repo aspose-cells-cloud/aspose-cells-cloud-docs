@@ -8,7 +8,7 @@ url: /developer‑guide/
 aliases: [/developer‑guide‑v4.0/]
 keywords: "Aspose.Cells Cloud, Excel REST API, spreadsheet conversion, merge, split, protect, search replace, data transformation, SDK examples, Java, .NET, Python, Node.js, PHP, Go, Ruby, Perl"
 description: "Comprehensive developer guide for Aspose.Cells Cloud REST APIs, covering spreadsheet conversion, merging, splitting, protection, search‑and‑replace, and data transformation, with links to SDK examples for Java, .NET, Python, Node.js, PHP, Go, Ruby, and Perl."
-weight: 20
+weight: 100
 ---
 
 ## **Core Features**

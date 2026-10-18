@@ -7,7 +7,7 @@ url: /import/without-using-storage/
 aliases: [/import-data-in-excel-worksheet-without-using-storage/]
 keywords: "Aspose.Cells, Cloud API, import data without storage, Excel import API, REST import"
 description: "Learn how to import data without storage into an Excel workbook using Aspose.Cells Cloud API. Includes request format, parameters, cURL example, SDK code, and error handling."
-weight: 10
+weight: 100
 ArticleTitle: "Import Data without Using Storage – Aspose.Cells Cloud API"
 ---
 
@@ -27,10 +27,10 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Request Parameters:**
 
-| Parameter Name | Type          | Location  | Description                                                                                                                                     |
-| -------------- | ------------- | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| file           | file          | formData  | The Excel file to upload.                                                                                                                       |
-| ImportOption   | ImportOption  | JSON body | JSON object that defines the data to import, its type (e.g., `IntArray`, `DoubleArray`, `StringArray`), and the placement within the worksheet. |
+| Parameter Name | Type         | Location  | Description                                                                                                                                     |
+| -------------- | ------------ | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| file           | file         | formData  | The Excel file to upload.                                                                                                                       |
+| ImportOption   | ImportOption | JSON body | JSON object that defines the data to import, its type (e.g., `IntArray`, `DoubleArray`, `StringArray`), and the placement within the worksheet. |
 
 The **ImportOption** parameters are described in the **ImportData option reference** [/cells/import/#import-data-option-parameter](/cells/import/#import-data-option-parameter).
 
@@ -41,20 +41,20 @@ A valid JWT token must be generated beforehand, and the file size must not excee
 
 ```json
 {
-  "Status":"OK",
-  "Code":200
+  "Status": "OK",
+  "Code": 200
 }
 ```
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
 
 **Notes:**  
 When sending the request, the `Content-Type: multipart/form-data` header is automatically set by the `-F` flag. For large payloads, consider compressing the data before import and implement retry logic for transient errors.
@@ -79,7 +79,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/import" \
   -F "ImportOption={\"Data\":[1,2,4],\"DestinationWorksheet\":\"Sheet1\",\"FirstRow\":1,\"FirstColumn\":2,\"IsVertical\":true,\"IsInsert\":true,\"ImportDataType\":\"IntArray\"}"
 ```
 
-*The `-F` flag automatically sets `Content-Type: multipart/form-data`.*  
+_The `-F` flag automatically sets `Content-Type: multipart/form-data`._
 
 {{< /tab >}}
 
@@ -87,15 +87,14 @@ curl -v "https://api.aspose.cloud/v3.0/cells/import" \
 
 ```json
 {
-  "Status":"OK",
-  "Code":200
+  "Status": "OK",
+  "Code": 200
 }
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
-
 
 ### Use Aspose.Cells Cloud SDKs
 

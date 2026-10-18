@@ -6,7 +6,7 @@ type: docs
 url: /worksheets/get-worksheet/
 keywords: "Aspose.Cells Cloud Get Worksheet, worksheet export, Excel API, REST, CSV, PDF, PNG, JPEG, GIF, BMP, TIFF, EMF, XPS, OTS, XLS, XLSX, XLSB, XLSM, ODS, FODS, Numbers, cloud API"
 description: "Learn how to export a single worksheet from an Excel file using Aspose.Cells Cloud REST API. Includes endpoint, parameters, a corrected cURL example, authentication details, error handling, and SDK snippets for C#, Java, Python, and more."
-weight: 10
+weight: 100
 ArticleTitle: "Export a Worksheet with Aspose.Cells Cloud API – Formats, cURL & SDK Samples"
 ---
 
@@ -31,16 +31,17 @@ You can export to the following formats:
 | XPS     | .xps      | application/vnd.ms-xpsdocument                                    |
 | DIF     | .dif      | application/x-dif                                                 |
 | PNG     | .png      | image/png                                                         |
-| JPEG    | .jpeg    | image/jpeg                                                        |
+| JPEG    | .jpeg     | image/jpeg                                                        |
 | GIF     | .gif      | image/gif                                                         |
 | BMP     | .bmp      | image/bmp                                                         |
 | WMF     | .wmf      | image/wmf                                                         |
-| TIFF    | .tiff    | image/tiff                                                        |
+| TIFF    | .tiff     | image/tiff                                                        |
 | EMF     | .emf      | image/emf                                                         |
 | NUMBERS | .numbers  | application/vnd.apple.numbers                                     |
 | FODS    | .fods     | application/vnd.oasis.opendocument.spreadsheet-flat-xml           |
 
 ## Security and Authentication
+
 The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## REST API

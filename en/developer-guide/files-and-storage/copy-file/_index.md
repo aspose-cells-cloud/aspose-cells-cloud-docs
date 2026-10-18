@@ -27,27 +27,27 @@ PUT https://api.aspose.cloud/v4.0/cells/storage/file/copy/{srcPath}
 ### Authentication
 
 All requests require a valid JWT token. See the [Authentication Guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) for implementation details.  
-*Note: External links include `rel="noopener noreferrer"` for security.*
+_Note: External links include `rel="noopener noreferrer"` for security._
 
 ### Request Parameters
 
-| Parameter Name    | Type   | Location | Required | Description                                     |
-|-------------------|--------|----------|----------|-------------------------------------------------|
-| `srcPath`         | string | Path     | Yes      | Source file path in cloud storage.              |
-| `destPath`        | string | Query    | Yes      | Destination file path.                          |
+| Parameter Name    | Type   | Location | Required | Description                                         |
+| ----------------- | ------ | -------- | -------- | --------------------------------------------------- |
+| `srcPath`         | string | Path     | Yes      | Source file path in cloud storage.                  |
+| `destPath`        | string | Query    | Yes      | Destination file path.                              |
 | `srcStorageName`  | string | Query    | No       | Source storage name (defaults to internal storage). |
-| `destStorageName` | string | Query    | No       | Destination storage name.                       |
-| `versionId`       | string | Query    | No       | Optional version ID (for versioned storage).    |
+| `destStorageName` | string | Query    | No       | Destination storage name.                           |
+| `versionId`       | string | Query    | No       | Optional version ID (for versioned storage).        |
 
 ### HTTP Responses
 
-| Status Code | Description                     |
-|-------------|---------------------------------|
-| `200 OK`    | File copied successfully.       |
-| `400 Bad Request` | Invalid or missing parameters (e.g., invalid path, unsupported extension). |
-| `401 Unauthorized` | Invalid or expired JWT token.   |
-| `413 Payload Too Large` | Source file exceeds size limit (e.g., > 2 GB). |
-| `500 Internal Server Error` | Unexpected server-side failure. |
+| Status Code                 | Description                                                                |
+| --------------------------- | -------------------------------------------------------------------------- |
+| `200 OK`                    | File copied successfully.                                                  |
+| `400 Bad Request`           | Invalid or missing parameters (e.g., invalid path, unsupported extension). |
+| `401 Unauthorized`          | Invalid or expired JWT token.                                              |
+| `413 Payload Too Large`     | Source file exceeds size limit (e.g., > 2 GB).                             |
+| `500 Internal Server Error` | Unexpected server-side failure.                                            |
 
 > **Note**: A `200 OK` response contains no body—success is indicated solely by the HTTP status.
 
@@ -65,6 +65,7 @@ curl -X PUT \
 Using an SDK simplifies authentication, serialization, and error handling. Below are working examples for key languages.
 
 #### Go
+
 ```go
 import (
     "context"
@@ -86,6 +87,7 @@ if err != nil {
 ```
 
 #### Python
+
 ```python
 from asposecellscloud.api import cells_api
 from asposecellscloud.models import CopyFileRequest
@@ -101,6 +103,7 @@ api.copy_file(request)
 ```
 
 #### Node.js
+
 ```javascript
 const { CellsApi } = require("aspose-cells-cloud");
 const client = new CellsApi(process.env.CLIENT_ID, process.env.CLIENT_SECRET);
@@ -108,7 +111,7 @@ const client = new CellsApi(process.env.CLIENT_ID, process.env.CLIENT_SECRET);
 await client.copyFile("source.xlsx", {
   destPath: "dest.xlsx",
   srcStorageName: "MyStorage",
-  destStorageName: "MyStorage"
+  destStorageName: "MyStorage",
 });
 ```
 
@@ -116,11 +119,11 @@ await client.copyFile("source.xlsx", {
 
 ### Related Operations
 
-| Operation | Description | Link |
-|-----------|-------------|------|
-| `PutCreate` | Upload a new file to cloud storage | `/put-create/` |
-| `DeleteFile` | Remove a file from storage | `/delete-file/` |
-| `GetWorkbook` | Retrieve a workbook from storage | `/download-file/` |
+| Operation       | Description                           | Link               |
+| --------------- | ------------------------------------- | ------------------ |
+| `PutCreate`     | Upload a new file to cloud storage    | `/put-create/`     |
+| `DeleteFile`    | Remove a file from storage            | `/delete-file/`    |
+| `GetWorkbook`   | Retrieve a workbook from storage      | `/download-file/`  |
 | `CloneWorkbook` | Create a new workbook from a template | `/clone-workbook/` |
 
 ### Best Practices

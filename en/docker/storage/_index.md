@@ -12,7 +12,7 @@ keywords: "Aspose.Cells, Docker, container storage, JSON configuration, PowerShe
 
 **Summary**: This guide shows how to configure the storage location for Aspose.Cells Cloud Docker containers on Windows and Linux using JSON configuration files and Docker run commands.
 
-## Default Storage Configuration ##
+## Default Storage Configuration
 
 **Prerequisites**: Ensure Docker Engine 20.10+ is installed, you have valid Aspose.Cells Cloud license keys (`LicensePublicKey` and `LicensePrivateKey`), and the host folder you intend to use for storage (e.g., `c:/data` on Windows or `/data` on Linux) exists with appropriate permissions.
 
@@ -50,7 +50,7 @@ keywords: "Aspose.Cells, Docker, container storage, JSON configuration, PowerShe
 
 {{< /tabs >}}
 
-## Default Position ##
+## Default Position
 
 - **windows**
 
@@ -64,7 +64,7 @@ c:\app\storageResource.json
 /app/storageResource.json
 ```
 
-## Custom Storage Configuration ##
+## Custom Storage Configuration
 
 Specify a custom storage profile when you need to use a different folder for Aspose.Cells Cloud data.
 
@@ -79,7 +79,7 @@ docker run -d \
   aspose/cells-cloud:ltsc2019.22.9.0
 ```
 
-*Linux example*:
+_Linux example_:
 
 ```bash
 docker run -d \
@@ -91,10 +91,3 @@ docker run -d \
   --name asposecellscloud \
   aspose/cells-cloud:ltsc2019.22.9.0
 ```
-
-**Reference Document** :
-
-- [How to run Aspose.Cells Cloud Docker container.](https://docs.aspose.cloud/cells/run-aspose-cells-cloud-docker-container/)
-- [Docker Container Features](https://docs.aspose.cloud/cells/docker/container-features/)
-- [Downloading Aspose.Cells Cloud Docker Image](https://docs.aspose.cloud/cells/docker/download-image/)
-- [Managing Container Tags](https://docs.aspose.cloud/cells/docker/manage-tags/)

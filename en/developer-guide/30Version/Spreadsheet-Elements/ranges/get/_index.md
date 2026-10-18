@@ -6,7 +6,7 @@ type: docs
 url: /ranges/get/
 keywords: "Aspose.Cells, Excel, API, get, range, spreadsheet, REST"
 description: "Learn how to retrieve range content from an Excel worksheet using Aspose.Cells Cloud REST API. Includes request syntax and sample code."
-weight: 20
+weight: 100
 ArticleTitle: "How to Get Range Content from an Excel Worksheet – Aspose.Cells Cloud API"
 ---
 
@@ -26,13 +26,13 @@ It is a simple `GET` request that returns the range data in JSON format (or othe
 
 **Request Overview**
 
-| Element | Value |
-|---------|-------|
-| **HTTP Method** | `GET` |
-| **Endpoint** | `https://api.aspose.cloud/v3.0/cells/{fileName}/worksheets/{sheetName}/ranges/{rangeName}` |
-| **Path Parameters** | `fileName` – name of the Excel file (including extension) <br> `sheetName` – name of the worksheet <br> `rangeName` – name of the range (e.g., `A1:B10`) |
-| **Query Parameters** (optional) | `folder` – storage folder <br> `storage` – storage name <br> `outFormat` – response format (e.g., `json`, `xml`) |
-| **Headers** | `Authorization: Bearer <access_token>` <br> `Accept: application/json` |
+| Element                         | Value                                                                                                                                                    |
+| ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **HTTP Method**                 | `GET`                                                                                                                                                    |
+| **Endpoint**                    | `https://api.aspose.cloud/v3.0/cells/{fileName}/worksheets/{sheetName}/ranges/{rangeName}`                                                               |
+| **Path Parameters**             | `fileName` – name of the Excel file (including extension) <br> `sheetName` – name of the worksheet <br> `rangeName` – name of the range (e.g., `A1:B10`) |
+| **Query Parameters** (optional) | `folder` – storage folder <br> `storage` – storage name <br> `outFormat` – response format (e.g., `json`, `xml`)                                         |
+| **Headers**                     | `Authorization: Bearer <access_token>` <br> `Accept: application/json`                                                                                   |
 
 **Sample cURL**
 
@@ -107,27 +107,25 @@ print(response)
     "RowCount": 1,
     "FirstRow": 0,
     "FirstColumn": 0,
-    "Values": [
-      ["Value1", "Value2"]
-    ]
+    "Values": [["Value1", "Value2"]]
   }
 }
 ```
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
 
-- `200 OK` – Range retrieved successfully.  
-- `400 Bad Request` – Missing or invalid parameters.  
-- `401 Unauthorized` – Invalid or missing access token.  
-- `404 Not Found` – Specified file, worksheet, or range does not exist.  
+- `200 OK` – Range retrieved successfully.
+- `400 Bad Request` – Missing or invalid parameters.
+- `401 Unauthorized` – Invalid or missing access token.
+- `404 Not Found` – Specified file, worksheet, or range does not exist.
 - `500 Internal Server Error` – Unexpected server error.
 
 **Error‑Response Examples**
@@ -158,7 +156,7 @@ print(response)
 
 **See also**
 
-- [How to get cell data based on a named range](/cells/ranges/get/values/)  
-- [How to get a named range from an Excel workbook](/cells/ranges/get/name/)  
-- [Update range content](/cells/ranges/update/)  
-- [Delete a range](/cells/ranges/delete/)  
+- [How to get cell data based on a named range](/cells/ranges/get/values/)
+- [How to get a named range from an Excel workbook](/cells/ranges/get/name/)
+- [Update range content](/cells/ranges/update/)
+- [Delete a range](/cells/ranges/delete/)

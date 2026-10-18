@@ -35,17 +35,17 @@ The API requires <a href="https://docs.aspose.cloud/total/getting-started/rest-a
 
 ### Request Parameters
 
-| Parameter Name | Type   | Location | Required | Description |
-| :------------- | :----- | :------- | :------- | :---------- |
-| `Spreadsheet` | File | FormData | ✅ Yes | Binary Excel file (`.xlsx`, `.xls`, `.xlsb`, etc.). Read directly from the request body—no prior upload to cloud storage. |
-| `worksheet` | String | Query | ✅ Yes | Name of the worksheet to convert (case-sensitive). Must exist in the workbook. |
-| `outPath` | String | Query | ❌ No | Target folder path (in cloud storage) where the generated HTML file will be saved. Omit to return the file directly in the response. |
-| `outStorageName` | String | Query | ❌ No | Name of the cloud storage service to use for `outPath`. Required only when `outPath` points to a non-default storage. |
-| `fontsLocation` | String | Query | ❌ No | Absolute path to a folder containing custom TrueType/OpenType fonts for accurate rendering of non-standard characters. |
-| `region` | String | Query | ❌ No | Locale identifier (e.g., `en-US`, `fr-FR`) that influences number/date formatting. Defaults to the workbook's internal region setting. |
-| `password` | String | Query | ❌ No | Password for opening a protected workbook. Omit for unprotected files. |
-| `AutoRowsFit` | Boolean | Query | ❌ No | *(New in v4.0)* Fit all rows to content height. Default: `false`. |
-| `AutoColumnsFit` | Boolean | Query | ❌ No | *(New in v4.0)* Fit all columns to content width. Default: `false`. |
+| Parameter Name   | Type    | Location | Required | Description                                                                                                                            |
+| :--------------- | :------ | :------- | :------- | :------------------------------------------------------------------------------------------------------------------------------------- |
+| `Spreadsheet`    | File    | FormData | ✅ Yes   | Binary Excel file (`.xlsx`, `.xls`, `.xlsb`, etc.). Read directly from the request body—no prior upload to cloud storage.              |
+| `worksheet`      | String  | Query    | ✅ Yes   | Name of the worksheet to convert (case-sensitive). Must exist in the workbook.                                                         |
+| `outPath`        | String  | Query    | ❌ No    | Target folder path (in cloud storage) where the generated HTML file will be saved. Omit to return the file directly in the response.   |
+| `outStorageName` | String  | Query    | ❌ No    | Name of the cloud storage service to use for `outPath`. Required only when `outPath` points to a non-default storage.                  |
+| `fontsLocation`  | String  | Query    | ❌ No    | Absolute path to a folder containing custom TrueType/OpenType fonts for accurate rendering of non-standard characters.                 |
+| `region`         | String  | Query    | ❌ No    | Locale identifier (e.g., `en-US`, `fr-FR`) that influences number/date formatting. Defaults to the workbook's internal region setting. |
+| `password`       | String  | Query    | ❌ No    | Password for opening a protected workbook. Omit for unprotected files.                                                                 |
+| `AutoRowsFit`    | Boolean | Query    | ❌ No    | _(New in v4.0)_ Fit all rows to content height. Default: `false`.                                                                      |
+| `AutoColumnsFit` | Boolean | Query    | ❌ No    | _(New in v4.0)_ Fit all columns to content width. Default: `false`.                                                                    |
 
 ### Response
 
@@ -53,28 +53,28 @@ Returns a binary HTML file stream (Content-Type: `text/html`).
 
 **HTTP Status Codes**
 
-| Code | Meaning               | Description |
-|------|-----------------------|-------------|
-| 200  | OK                    | HTML content returned successfully. |
+| Code | Meaning               | Description                                                                         |
+| ---- | --------------------- | ----------------------------------------------------------------------------------- |
+| 200  | OK                    | HTML content returned successfully.                                                 |
 | 400  | Bad Request           | Missing/invalid parameters (e.g., unsupported file type, missing `worksheet` name). |
-| 401  | Unauthorized          | Invalid or missing JWT token. |
-| 403  | Forbidden             | Insufficient permissions or quota exceeded. |
-| 404  | Not Found             | Source file or specified worksheet not found. |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit (100 MB). |
-| 500  | Internal Server Error | Unexpected server error during conversion. |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                                       |
+| 403  | Forbidden             | Insufficient permissions or quota exceeded.                                         |
+| 404  | Not Found             | Source file or specified worksheet not found.                                       |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit (100 MB).                                          |
+| 500  | Internal Server Error | Unexpected server error during conversion.                                          |
 
 ## Use Cases
 
-- **Embed live spreadsheet data in a web portal** – Convert financial-report worksheets to HTML for direct browser viewing without Excel plugins.  
-- **Generate printable HTML invoices** – Automate web-ready invoice pages from Excel templates.  
-- **Create documentation snippets** – Extract spec sheets as HTML fragments for technical manuals or wikis.  
+- **Embed live spreadsheet data in a web portal** – Convert financial-report worksheets to HTML for direct browser viewing without Excel plugins.
+- **Generate printable HTML invoices** – Automate web-ready invoice pages from Excel templates.
+- **Create documentation snippets** – Extract spec sheets as HTML fragments for technical manuals or wikis.
 - **Build low-code BI dashboards** – Integrate worksheet data into custom dashboard widgets.
 
 ## Benefits
 
-- **Zero-upload workflow** – No need to store files in cloud storage; conversion occurs in-memory per request.  
-- **High-performance rendering** – Server-side processing ensures fast, accurate output with full formatting fidelity.  
-- **Full control over output** – Customize fonts, locale, and layout (via `AutoRowsFit`/`AutoColumnsFit`).  
+- **Zero-upload workflow** – No need to store files in cloud storage; conversion occurs in-memory per request.
+- **High-performance rendering** – Server-side processing ensures fast, accurate output with full formatting fidelity.
+- **Full control over output** – Customize fonts, locale, and layout (via `AutoRowsFit`/`AutoColumnsFit`).
 - **Seamless integration** – Simple `PUT` request with `multipart/form-data` fits naturally into CI/CD, microservices, or serverless pipelines.
 
 ## Examples
@@ -118,29 +118,3 @@ Using the Aspose.Cells Cloud SDK is the fastest way to integrate. Below are conc
 {{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_v40_ConvertWorksheetToHtml.go" >}}
 {{< /tab >}}
 {{< /tabs >}}
-
-> **Tip**: For API reference and interactive testing, see the <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertWorksheetToHtml" rel="noopener noreferrer" target="_blank">Convert Worksheet to HTML API Specification</a>.
-
-## Error Handling
-
-- **400 Bad Request**: Invalid URL, missing required parameters, or unsupported file format.  
-- **401 Unauthorized**: Invalid or missing JWT token.  
-- **404 Not Found**: Source file or specified worksheet not accessible.  
-- **500 Server Error**: Unexpected server error during conversion (e.g., corrupted file, internal failure).
-
-## Best Practices
-
-- **Validate worksheet names**: Ensure `worksheet` matches exactly (case-sensitive).  
-- **Use `AutoRowsFit`/`AutoColumnsFit`**: For better layout control in the resulting HTML.  
-- **Specify `region` explicitly**: Ensures consistent number/date formatting across locales.  
-- **Secure credentials**: Never hardcode API keys—use environment variables or secure vaults.
-
-## Related Resources
-
-- [Convert Workbook to PDF](/convert-workbook-to-pdf/)  
-- [Export Chart to Image](/export-chart-to-image/)  
-- [Web Portal Integration Guide](/integration/web-portal/)  
-- [CI/CD Pipeline Integration](/guides/cicd-integration/)  
-- [Aspose.Cells Cloud SDK GitHub Repositories](https://github.com/aspose-cells-cloud)
-
-> 💬 **Was this helpful?** [Leave feedback](mailto:support@aspose.cloud?subject=Feedback%20on%20Worksheet%20to%20HTML%20API) or open an issue on [GitHub](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/issues).

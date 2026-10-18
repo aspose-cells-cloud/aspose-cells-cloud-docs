@@ -8,17 +8,19 @@ url: /rows/add/row/
 aliases: [/add-an-empty-row-in-a-worksheet/]
 keywords: "Aspose.Cells Cloud, Excel, add empty row, worksheet, REST API, insert row, cloud spreadsheet"
 description: "Use Aspose.Cells Cloud REST API to insert an empty row into an Excel worksheet. Supports multiple SDKs (C#, Java, Python, Go, PHP, Ruby, Node.js, Perl, Android, Swift) for rapid development."
-weight: 20
+weight: 100
 ---
 
 This REST API adds a new row to an Excel worksheet. It inserts an empty row at the specified zero‑based index.
 
-**Prerequisites:**  
-- A valid Aspose Cloud access token (Bearer JWT) must be included in the `Authorization` header.  
+**Prerequisites:**
+
+- A valid Aspose Cloud access token (Bearer JWT) must be included in the `Authorization` header.
 - The target workbook must be uploaded to your Aspose Cloud storage, and the `folder` and `storageName` parameters should point to its location.
 
-**Notes:**  
-- The `rowIndex` is zero‑based; inserting at index 0 adds a row at the top of the worksheet.  
+**Notes:**
+
+- The `rowIndex` is zero‑based; inserting at index 0 adds a row at the top of the worksheet.
 - Excel worksheets have a maximum of 1,048,576 rows; attempting to insert beyond this limit will result
 
 ## PutInsertWorksheetRow API
@@ -76,15 +78,15 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
 
-*Example of an error response (e.g., when the row index exceeds the worksheet limit):*
+_Example of an error response (e.g., when the row index exceeds the worksheet limit):_
 
 ```json
 {

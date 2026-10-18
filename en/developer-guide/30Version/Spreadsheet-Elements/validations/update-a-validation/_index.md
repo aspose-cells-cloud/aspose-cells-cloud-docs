@@ -6,7 +6,7 @@ type: docs
 url: /validations/update/
 keywords: "Aspose.Cells Cloud, Excel validation update, REST API, worksheet validation, Excel API"
 description: "How to update a worksheet validation in an Excel file using the Aspose.Cells Cloud REST API, with cURL examples and SDK code snippets for multiple programming languages."
-weight: 10
+weight: 100
 ArticleTitle: "Update Worksheet Validation Using Aspose.Cells Cloud API"
 ---
 
@@ -65,14 +65,14 @@ curl -v "https://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/v
 
 **Possible HTTP status codes**
 
-| Code | Meaning                                 | Description |
-|------|-----------------------------------------|-------------|
-| 200  | OK                                      | Validation was updated successfully. |
-| 400  | Bad Request                             | The request is malformed or missing required parameters. |
-| 401  | Unauthorized                            | Invalid or missing JWT token. |
-| 403  | Forbidden                               | The token does not have sufficient scopes. |
-| 404  | Not Found                               | The specified workbook, worksheet, or validation index does not exist. |
-| 500  | Internal Server Error                   | An unexpected error occurred on the server. |
+| Code | Meaning               | Description                                                            |
+| ---- | --------------------- | ---------------------------------------------------------------------- |
+| 200  | OK                    | Validation was updated successfully.                                   |
+| 400  | Bad Request           | The request is malformed or missing required parameters.               |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                          |
+| 403  | Forbidden             | The token does not have sufficient scopes.                             |
+| 404  | Not Found             | The specified workbook, worksheet, or validation index does not exist. |
+| 500  | Internal Server Error | An unexpected error occurred on the server.                            |
 
 For more details on handling errors, refer to the <a href="https://apireference.aspose.cloud/cells/#/Errors" target="_blank" rel="noopener noreferrer">Aspose.Cells Cloud error documentation</a>.
 

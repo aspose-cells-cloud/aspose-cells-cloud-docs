@@ -28,14 +28,14 @@ PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/search/bro
 
 ### Request Parameters
 
-| Parameter    | Type   | Location       | Required | Description |
-|--------------|--------|----------------|----------|-------------|
-| `name`       | string | Path           | Yes      | Workbook filename (e.g., `Annual_Report.xlsx`). |
-| `worksheet`  | string | Path           | Yes      | Worksheet name where scanning occurs (e.g., `DataSheet1`). |
-| `folder`     | string | Query string   | No       | Directory path in cloud storage. Defaults to root. |
-| `storageName`| string | Query string   | No       | Custom storage identifier. Uses default storage if omitted. |
-| `region`     | string | Query string   | No       | Locale setting (e.g., `en-US`, `fr-FR`, `de-DE`) for formula/data interpretation. |
-| `password`   | string | Query string   | No       | Password for encrypted workbooks. Omit for unencrypted files. |
+| Parameter     | Type   | Location     | Required | Description                                                                       |
+| ------------- | ------ | ------------ | -------- | --------------------------------------------------------------------------------- |
+| `name`        | string | Path         | Yes      | Workbook filename (e.g., `Annual_Report.xlsx`).                                   |
+| `worksheet`   | string | Path         | Yes      | Worksheet name where scanning occurs (e.g., `DataSheet1`).                        |
+| `folder`      | string | Query string | No       | Directory path in cloud storage. Defaults to root.                                |
+| `storageName` | string | Query string | No       | Custom storage identifier. Uses default storage if omitted.                       |
+| `region`      | string | Query string | No       | Locale setting (e.g., `en-US`, `fr-FR`, `de-DE`) for formula/data interpretation. |
+| `password`    | string | Query string | No       | Password for encrypted workbooks. Omit for unencrypted files.                     |
 
 ### Authentication
 
@@ -89,22 +89,25 @@ curl -X PUT \
 
 ### Error Handling
 
-| Status Code | Description |
-|-------------|-------------|
-| `400`       | Invalid request URL or parameters. |
-| `401`       | Missing, invalid, or expired JWT token. |
-| `404`       | Workbook or worksheet not found. |
+| Status Code | Description                                                                  |
+| ----------- | ---------------------------------------------------------------------------- |
+| `400`       | Invalid request URL or parameters.                                           |
+| `401`       | Missing, invalid, or expired JWT token.                                      |
+| `404`       | Workbook or worksheet not found.                                             |
 | `500`       | Internal server error during scan (e.g., unsupported format, access denied). |
 
 ### Use Cases
 
-#### 1. Financial Model Audits  
+#### 1. Financial Model Audits
+
 Scan dashboard ranges (e.g., `Dashboard!B5:K50`) before quarterly reporting to validate all external references.
 
-#### 2. M&A Data Integration  
+#### 2. M&A Data Integration
+
 After merging business-unit workbooks, verify the `"Overview"` worksheet for broken links caused by path changes or permission shifts.
 
-#### 3. Investor Package Preparation  
+#### 3. Investor Package Preparation
+
 Pre-flight charts and tables linked to market databases to ensure real-time data sources remain accessible.
 
 ### Benefits
@@ -149,10 +152,3 @@ Use our language-specific SDKs for faster, more reliable integration.
 {{</tab>}}
 {{</tabs>}}
 
-### Reference
-
-- [OpenAPI Specification](https://reference.aspose.cloud/cells/v4.0/cells/swagger.json)
-- [SDK Documentation](https://docs.aspose.cloud/cells/)
-- [Cloud Storage Integration Guide](https://docs.aspose.cloud/total/working-with-cloud-storage/)
-
-> 📌 **Note**: This API validates links *within* the spreadsheet context. For full external link scanning (e.g., web URLs), combine with our [Hyperlink Validation API](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Hyperlinks).

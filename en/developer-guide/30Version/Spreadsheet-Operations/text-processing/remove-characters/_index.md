@@ -18,7 +18,7 @@ weight: 100
 
 The **Remove Characters** API enables you to clean and standardize text content in Excel worksheets by removing specific characters, predefined character sets, or substrings. This operation helps eliminate unwanted symbols, formatting artifacts, or inconsistent text patterns — ideal for data preprocessing, validation, and automation workflows.
 
-> **Note**: This operation modifies cell values *in-place* and returns the updated workbook as a base64-encoded string in the response.
+> **Note**: This operation modifies cell values _in-place_ and returns the updated workbook as a base64-encoded string in the response.
 
 ## Prerequisites
 
@@ -35,28 +35,28 @@ POST https://api.aspose.cloud/v3.0/cells/removecharacters
 
 ### Request Headers
 
-| Header | Value |
-|--------|-------|
+| Header          | Value                   |
+| --------------- | ----------------------- |
 | `Authorization` | Bearer `{access_token}` |
-| `Content-Type` | `application/json` |
+| `Content-Type`  | `application/json`      |
 
 ---
 
 ## Request Parameters
 
-| Parameter | Type | Location | Required | Description |
-|-----------|------|----------|----------|-------------|
-| `removeCharactersOptions` | `RemoveCharactersOptions` | Body | Yes | Object defining the scope and type of characters to remove. |
+| Parameter                 | Type                      | Location | Required | Description                                                 |
+| ------------------------- | ------------------------- | -------- | -------- | ----------------------------------------------------------- |
+| `removeCharactersOptions` | `RemoveCharactersOptions` | Body     | Yes      | Object defining the scope and type of characters to remove. |
 
 ### `RemoveCharactersOptions` Schema
 
-| Property | Type | Required | Description |
-|----------|------|----------|-------------|
-| `Range` | string | Yes | A1-style range (e.g., `"A1:C10"`) or named range to process. |
-| `CustomCharacters` | string | No | String of characters to remove (e.g., `"@#$"`). Each character is treated individually. |
-| `CharacterSet` | string | No | Predefined set: `"NonPrinting"`, `"Text"`, `"Numeric"`, `"Symbols"`, or `"Punctuation"`. |
-| `Substring` | string | No | Exact substring to remove (e.g., `"USD"`, `"°C"`). |
-| `IgnoreCase` | boolean | No | If `true`, substring and text-character removal is case-insensitive. Default: `false`. |
+| Property           | Type    | Required | Description                                                                              |
+| ------------------ | ------- | -------- | ---------------------------------------------------------------------------------------- |
+| `Range`            | string  | Yes      | A1-style range (e.g., `"A1:C10"`) or named range to process.                             |
+| `CustomCharacters` | string  | No       | String of characters to remove (e.g., `"@#$"`). Each character is treated individually.  |
+| `CharacterSet`     | string  | No       | Predefined set: `"NonPrinting"`, `"Text"`, `"Numeric"`, `"Symbols"`, or `"Punctuation"`. |
+| `Substring`        | string  | No       | Exact substring to remove (e.g., `"USD"`, `"°C"`).                                       |
+| `IgnoreCase`       | boolean | No       | If `true`, substring and text-character removal is case-insensitive. Default: `false`.   |
 
 > **Tip**: Only one of `CustomCharacters`, `CharacterSet`, or `Substring` should be specified per request to avoid ambiguous behavior.
 
@@ -104,34 +104,34 @@ On success, the API returns a `FileInfo` object containing metadata and the upda
 }
 ```
 
-| Field | Description |
-|-------|-------------|
-| `Code` | HTTP status code (200 for success). |
-| `Status` | Operation result (`"OK"`). |
-| `Filename` | Name of the modified file. |
-| `Filesize` | Size of the updated file in bytes. |
+| Field         | Description                                              |
+| ------------- | -------------------------------------------------------- |
+| `Code`        | HTTP status code (200 for success).                      |
+| `Status`      | Operation result (`"OK"`).                               |
+| `Filename`    | Name of the modified file.                               |
+| `Filesize`    | Size of the updated file in bytes.                       |
 | `FileContent` | Base64-encoded binary content of the updated Excel file. |
 
 ### Error Responses
 
-| Status Code | Error | Description |
-|-------------|-------|-------------|
-| `400` | `Bad Request` | Invalid `Range`, missing/invalid parameters, or unsupported file type. |
-| `401` | `Unauthorized` | Invalid, expired, or missing JWT token. |
-| `413` | `Payload Too Large` | Input file exceeds the 2 GB limit. |
-| `500` | `Internal Server Error` | Unexpected server-side failure. |
+| Status Code | Error                   | Description                                                            |
+| ----------- | ----------------------- | ---------------------------------------------------------------------- |
+| `400`       | `Bad Request`           | Invalid `Range`, missing/invalid parameters, or unsupported file type. |
+| `401`       | `Unauthorized`          | Invalid, expired, or missing JWT token.                                |
+| `413`       | `Payload Too Large`     | Input file exceeds the 2 GB limit.                                     |
+| `500`       | `Internal Server Error` | Unexpected server-side failure.                                        |
 
 ---
 
 ## Supported Character Sets
 
-| Set | Characters Removed | Use Case |
-|-----|-------------------|----------|
-| `NonPrinting` | ASCII 0–31, 127, 129, 141, 143, 144, 157 | Remove hidden line breaks, control chars, and formatting artifacts. |
-| `Text` | All letters (A–Z, a–z) | Strip alphabetic characters (e.g., to extract pure numbers). |
-| `Numeric` | All digits (0–9) | Remove numbers, leaving text or symbols. |
-| `Symbols` | Math (`+`, `×`, `π`), currency (`€`, `¥`), punctuation-like (™, №) | Standardize technical or financial data. |
-| `Punctuation` | `.,;:!?'"()[]{}-` | Clean natural-language text for NLP or indexing. |
+| Set           | Characters Removed                                                 | Use Case                                                            |
+| ------------- | ------------------------------------------------------------------ | ------------------------------------------------------------------- |
+| `NonPrinting` | ASCII 0–31, 127, 129, 141, 143, 144, 157                           | Remove hidden line breaks, control chars, and formatting artifacts. |
+| `Text`        | All letters (A–Z, a–z)                                             | Strip alphabetic characters (e.g., to extract pure numbers).        |
+| `Numeric`     | All digits (0–9)                                                   | Remove numbers, leaving text or symbols.                            |
+| `Symbols`     | Math (`+`, `×`, `π`), currency (`€`, `¥`), punctuation-like (™, №) | Standardize technical or financial data.                            |
+| `Punctuation` | `.,;:!?'"()[]{}-`                                                  | Clean natural-language text for NLP or indexing.                    |
 
 ---
 
@@ -216,4 +216,4 @@ File.WriteAllBytes("output.xlsx", Convert.FromBase64String(response.FileContent)
 
 ---
 
-> **Tip**: Need to remove characters *based on position* (e.g., first 3 chars)? Use the [`PostCellsTrimText`](/excel-trim-text/) API instead.
+> **Tip**: Need to remove characters _based on position_ (e.g., first 3 chars)? Use the [`PostCellsTrimText`](/excel-trim-text/) API instead.

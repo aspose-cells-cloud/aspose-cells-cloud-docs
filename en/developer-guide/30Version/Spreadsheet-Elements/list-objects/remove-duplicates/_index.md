@@ -6,7 +6,7 @@ type: docs
 keywords: "remove duplicates, listobject, Aspose.Cells Cloud API, Excel, REST"
 url: /list-objects/remove-duplicates/
 description: "Learn how to delete duplicate rows from a ListObject in an Excel worksheet using the Aspose.Cells Cloud REST API. Includes endpoint, parameters, authentication, and sample requests and responses."
-weight: 20
+weight: 100
 ---
 
 This REST API removes duplicate rows from a **ListObject** in an Excel worksheet.
@@ -66,13 +66,14 @@ On success the service returns a JSON object similar to the example above. The f
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## Cloud SDK Family
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check the GitHub repository for a complete list of Aspose.Cells Cloud SDKs.

@@ -8,7 +8,7 @@ description: "Build an Excel spreadsheet app in 5 minutes with Aspose.Cells Clou
 date: 2024-02-15
 lastmod: 2024-03-28
 last_reviewed: 2024-03-28
-weight: 20
+weight: 100
 keywords: "Aspose.Cells Cloud, Excel, Spreadsheet, API, Cloud SDK, REST API, PDF, CSV, JSON, Quickstart, Python, Java, C#, Node.js, Go, Ruby, Perl, PHP, Swift"
 ---
 
@@ -39,7 +39,7 @@ Congratulations! You have successfully signed up with Aspose Cloud.
 Next, you need to make individual adjustments to your account:
 
 - Access your [Aspose Account Settings](https://id.containerize.com/admin/) by clicking the icon in the upper‑right corner of the page.  
-  *Aspose uses Containerize SSO for secure authentication. Learn more about our security model [here](https://aspose.cloud/security).*
+  _Aspose uses Containerize SSO for secure authentication. Learn more about our security model [here](https://aspose.cloud/security)._
 
 ![dashboard.png](/images/dashboard.png)
 
@@ -92,7 +92,7 @@ Please take a moment to familiarize yourself with a wide range of Aspose.Cells C
 
 For the effective use of Cloud API, we provide a family of powerful [Cloud SDKs](https://products.aspose.cloud/cells/family) for almost all major operating systems (Windows, macOS, Linux, Android) and popular programming languages, including [Android](https://products.aspose.cloud/cells/android), [C#](https://products.aspose.cloud/cells/net), [Python](https://products.aspose.cloud/cells/python), [Golang](https://products.aspose.cloud/cells/go), [Java](https://products.aspose.cloud/cells/java), [Node.js](https://products.aspose.cloud/cells/nodejs), [Perl](https://products.aspose.cloud/cells/perl), [PHP](https://products.aspose.cloud/cells/php), [Ruby](https://products.aspose.cloud/cells/ruby), and [Swift](https://products.aspose.cloud/cells/swift).
 
- All of the above SDKs are hosted on [GitHub](https://github.com/aspose-cells-cloud/). Each repository contains a wide range of code examples to illustrate its usage.
+All of the above SDKs are hosted on [GitHub](https://github.com/aspose-cells-cloud/). Each repository contains a wide range of code examples to illustrate its usage.
 
 {{% alert style="warning" %}}
 

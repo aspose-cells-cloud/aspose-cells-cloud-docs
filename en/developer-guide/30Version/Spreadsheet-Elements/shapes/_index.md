@@ -17,7 +17,8 @@ ArticleTitle: "Working with Excel Shapes – Aspose.Cells Cloud Documentation"
 Shapes represent drawing objects such as lines, rectangles, text boxes, and images that can be placed on an Excel worksheet. They are useful for visualizing data, adding annotations, or creating interactive elements within a spreadsheet. This page provides quick links to the most common shape‑related operations, each accompanied by a brief description.
 
 > 💡 **Quick Example**  
-> To retrieve all shapes in a worksheet:  
+> To retrieve all shapes in a worksheet:
+>
 > ```csharp
 > // See full C# example at /cells/working-with-shapes/examples/
 > ```
@@ -43,7 +44,7 @@ Before proceeding with shape operations, ensure you have:
 
 Use the following endpoints to retrieve shape information:
 
-- [Get all shapes](/cells/shapes/get-all/)  
+- [Get all shapes](/cells/shapes/get-all/)
 - [Get a shape by index](/cells/shapes/get/)
 
 ### Adding Shapes
@@ -56,7 +57,7 @@ Add drawing objects to your worksheet programmatically:
 
 Remove unwanted shapes efficiently:
 
-- [Delete all shapes](/cells/shapes/clear/)  
+- [Delete all shapes](/cells/shapes/clear/)
 - [Delete a specific shape](/cells/shapes/delete/)
 
 ### Converting Shapes to Images
@@ -66,4 +67,4 @@ Export shapes for external use or integration:
 - [Convert a shape to an image](/cells/shapes/conversion/)
 
 ![Excel shape types: rectangles, text boxes, lines, and images](/images/shapes-overview.png)  
-*Figure 1: Common shape types supported by Aspose.Cells Cloud*
+_Figure 1: Common shape types supported by Aspose.Cells Cloud_

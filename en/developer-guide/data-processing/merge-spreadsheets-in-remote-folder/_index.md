@@ -1,6 +1,7 @@
 ---
 url: /merge-spreadsheets-in-remote-folder/
 title: "Merge Matching Spreadsheets in Remote Folder"
+linktitle: "Merge files in remote folder"
 date: 2024-03-15
 lastmod: 2024-05-22
 version: "v4.0"
@@ -16,7 +17,7 @@ keywords:
     "CSV merge",
     "ODS merge",
   ]
-weight: 10
+weight: 100
 type: docs
 ---
 
@@ -98,20 +99,3 @@ Download the merged file directly from `FileUrl`, or save it to the specified `o
 | `404` | Not Found             | Source folder or files not found in storage.                                        |
 | `413` | Payload Too Large     | Total input size exceeds cloud limits.                                              |
 | `500` | Internal Server Error | Unexpected server-side failure during merge.                                        |
-
-## Error Handling
-
-- **400 Bad Request**: Invalid URL or malformed query parameters (e.g., `folder` missing, `outFormat` unsupported).
-- **401 Unauthorized**: Authentication failed or credentials expired.
-- **404 Not Found**: Source files inaccessible or storage path invalid.
-- **500 Server Error**: Internal failure (e.g., corrupted source file, service unavailability).
-
-## Using Aspose.Cells Cloud SDKs
-
-SDKs abstract low-level HTTP details and simplify integration. Supported languages include:
-
-- [Go](https://github.com/aspose-cells-cloud/aspose-cells-cloud-go)
-- [Java](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java)
-- [Node.js](https://github.com/aspose-cells-cloud/aspose-cells-cloud-node)
-- [Python](https://github.com/aspose-cells-cloud/aspose-cells-cloud-python)
-- [.NET](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet)

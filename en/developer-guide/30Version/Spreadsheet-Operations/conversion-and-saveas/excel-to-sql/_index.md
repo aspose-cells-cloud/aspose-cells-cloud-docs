@@ -43,23 +43,24 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 The API returns a **FileInfo** object that contains the generated sql file.
 
-| Field           | Type   | Description                                   |
-| --------------- | ------ | --------------------------------------------- |
+| Field           | Type   | Description                                 |
+| --------------- | ------ | ------------------------------------------- |
 | **Filename**    | string | Name of the sql file (e.g., `example.sql`). |
-| **FileSize**    | int    | Size of the file in bytes.                    |
-| **FileContent** | string | Base64‑encoded content of the sql file.      |
+| **FileSize**    | int    | Size of the file in bytes.                  |
+| **FileContent** | string | Base64‑encoded content of the sql file.     |
 
 [FileInfo](/cells/file-info/)
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## How to Use the PostConvertWorkbookToSQL API with SDKs
 
 ### PostConvertWorkbookToSQL API Specification
@@ -161,9 +162,10 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 
 - **[GET /cells/{name}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)** – Retrieves a workbook with optional conversion settings.
 
-**Notes**  
-- When converting password‑protected Excel files, ensure the `password` query parameter is supplied; otherwise the conversion will fail with a 400 error.  
-- The service returns the SQL file content as Base64; decode it before saving to a `.sql` file.  
+**Notes**
+
+- When converting password‑protected Excel files, ensure the `password` query parameter is supplied; otherwise the conversion will fail with a 400 error.
+- The service returns the SQL file content as Base64; decode it before saving to a `.sql` file.
 
 **Sample Files**  
 Download a sample Excel workbook [here](https://example.com/sample.xlsx) and a pre‑generated SQL result [here](https://example.com/sample.sql) to test the API quickly.

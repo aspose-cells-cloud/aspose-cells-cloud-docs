@@ -39,13 +39,13 @@ Aspose.Cells Cloud Docker Container encapsulates these features as a RESTful API
 
 ### Main Advantages
 
-| Benefits               | Description                                                                 |
-| ---------------------- | --------------------------------------------------------------------------- |
+| Benefits                  | Description                                                                                        |
+| ------------------------- | -------------------------------------------------------------------------------------------------- |
 | Data privacy and security | All file processing is done within your private network; no need to upload to a third‑party cloud. |
-| Offline availability   | Does not rely on Aspose public cloud, suitable for intranet or isolated environments. |
-| Scalability            | Easily scale out via Docker/Kubernetes.                                    |
-| Unified API            | Fully compatible with the Aspose.Cells Cloud public API; no code changes required. |
-| License control        | Supports two types of authorization; choose the one that suits your situation. |
+| Offline availability      | Does not rely on Aspose public cloud, suitable for intranet or isolated environments.              |
+| Scalability               | Easily scale out via Docker/Kubernetes.                                                            |
+| Unified API               | Fully compatible with the Aspose.Cells Cloud public API; no code changes required.                 |
+| License control           | Supports two types of authorization; choose the one that suits your situation.                     |
 
 ## How to Use Aspose.Cells Cloud Docker Container
 
@@ -53,22 +53,18 @@ Refer to the user manual — [How to Use Aspose.Cells Cloud Docker Container](ht
 
 **Prerequisites**
 
-- Docker Engine 20.10 or later installed on the host machine.  
-- Minimum 2 GB RAM and 2 CPU cores allocated to the container for typical workloads.  
+- Docker Engine 20.10 or later installed on the host machine.
+- Minimum 2 GB RAM and 2 CPU cores allocated to the container for typical workloads.
 - A valid Aspose.Cells Cloud license file (or access token) placed in a directory that will be mounted into the container.
 
 **Quick start**
 
-1. Pull the Docker image: `docker pull aspose/cells-cloud`.  
-2. Run the container, mounting the license and data directories, e.g.:  
+1. Pull the Docker image: `docker pull aspose/cells-cloud`.
+2. Run the container, mounting the license and data directories, e.g.:
    ```bash
    docker run -d -p 8080:80 \
      -v /path/to/license:/app/license \
      -v /path/to/data:/app/data \
      aspose/cells-cloud
-   ```  
+   ```
 3. Access the REST API at `http://localhost:8080/v3.0/`. For detailed API usage, see the [Aspose.Cells Cloud API reference](https://docs.aspose.cloud/cells/api-reference/).
-
-## Reference Document
-
-- [How to configure Aspose.Cells Cloud Docker Container storage.](https://docs.aspose.cloud/cells/docker/storage/)

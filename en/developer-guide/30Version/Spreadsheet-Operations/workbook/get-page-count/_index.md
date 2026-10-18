@@ -7,7 +7,7 @@ url: /get-page-count-from-an-excel-file/
 aliases: [/workbook/page-count/, /workbook/get/page-count/]
 keywords: "Aspose.Cells, Cloud API, Excel page count, workbook pagination"
 description: "Retrieve the total number of printable pages in an Excel workbook via the Aspose.Cells Cloud REST API (v3.0). Includes request format, required parameters, cURL example, response schema, error handling, and SDK snippets for multiple languages."
-weight: 10
+weight: 100
 version: "v3.0"
 ArticleTitle: "Get Page Count from an Excel File using Aspose.Cells Cloud API"
 ---
@@ -15,6 +15,7 @@ ArticleTitle: "Get Page Count from an Excel File using Aspose.Cells Cloud API"
 This REST API returns the **page count** for a workbook.
 
 ## Security and Authentication
+
 The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## REST API
@@ -47,7 +48,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/YourFile.xlsx/pagecount" \
   -H "Authorization: Bearer <jwt token>"
 ```
 
-*Replace `YourFile.xlsx` with the actual name of the workbook you want to query.*
+_Replace `YourFile.xlsx` with the actual name of the workbook you want to query._
 
 {{< /tab >}}
 

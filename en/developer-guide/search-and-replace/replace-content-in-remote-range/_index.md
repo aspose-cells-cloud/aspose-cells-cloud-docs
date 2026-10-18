@@ -27,17 +27,17 @@ PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{ce
 
 ### Request Parameters
 
-| Parameter Name | Type   | Location | Required | Description |
-|----------------|--------|----------|----------|-------------|
-| `name`         | string | Path     | Yes      | The name of the workbook file stored in cloud storage (e.g., `"report.xlsx"`). |
-| `worksheet`    | string | Path     | Yes      | The name of the worksheet where the replacement will occur. |
-| `cellArea`     | string | Path     | Yes      | The cell range (e.g., `"A1:D20"`) in which text will be searched and replaced. |
-| `searchText`   | string | Query    | Yes      | The exact text string to search for within the specified range. |
-| `replaceText`  | string | Query    | Yes      | The text string that replaces all occurrences of `searchText`. |
-| `folder`       | string | Query    | No       | The cloud storage folder path where the workbook resides. |
-| `storageName`  | string | Query    | No       | *(Optional)* The name of a custom cloud storage. If omitted, the default storage is used. |
-| `region`       | string | Query    | No       | *(Optional)* Locale identifier (e.g., `"en-US"`, `"fr-FR"`) affecting text comparison rules. |
-| `password`     | string | Query    | No       | *(Optional)* Password to open a password-protected workbook. |
+| Parameter Name | Type   | Location | Required | Description                                                                                  |
+| -------------- | ------ | -------- | -------- | -------------------------------------------------------------------------------------------- |
+| `name`         | string | Path     | Yes      | The name of the workbook file stored in cloud storage (e.g., `"report.xlsx"`).               |
+| `worksheet`    | string | Path     | Yes      | The name of the worksheet where the replacement will occur.                                  |
+| `cellArea`     | string | Path     | Yes      | The cell range (e.g., `"A1:D20"`) in which text will be searched and replaced.               |
+| `searchText`   | string | Query    | Yes      | The exact text string to search for within the specified range.                              |
+| `replaceText`  | string | Query    | Yes      | The text string that replaces all occurrences of `searchText`.                               |
+| `folder`       | string | Query    | No       | The cloud storage folder path where the workbook resides.                                    |
+| `storageName`  | string | Query    | No       | _(Optional)_ The name of a custom cloud storage. If omitted, the default storage is used.    |
+| `region`       | string | Query    | No       | _(Optional)_ Locale identifier (e.g., `"en-US"`, `"fr-FR"`) affecting text comparison rules. |
+| `password`     | string | Query    | No       | _(Optional)_ Password to open a password-protected workbook.                                 |
 
 ### Authentication
 
@@ -64,12 +64,12 @@ The `CellsCloudResponse` object confirms successful execution. The API does **no
 
 ### Error Codes
 
-| Code | Message         | Cause |
-|------|-----------------|-------|
-| 400  | Bad Request     | Invalid URL, malformed parameters, or unsupported file format. |
-| 401  | Unauthorized    | Missing, expired, or invalid access token. |
-| 404  | Not Found       | Workbook, worksheet, or specified range does not exist. |
-| 500  | Server Error    | Internal failure during processing (e.g., file corruption, permission error). |
+| Code | Message      | Cause                                                                         |
+| ---- | ------------ | ----------------------------------------------------------------------------- |
+| 400  | Bad Request  | Invalid URL, malformed parameters, or unsupported file format.                |
+| 401  | Unauthorized | Missing, expired, or invalid access token.                                    |
+| 404  | Not Found    | Workbook, worksheet, or specified range does not exist.                       |
+| 500  | Server Error | Internal failure during processing (e.g., file corruption, permission error). |
 
 ---
 
@@ -88,7 +88,7 @@ The `CellsCloudResponse` object confirms successful execution. The API does **no
 
 A stable, versioned OpenAPI specification for this operation is available at:  
 [https://docs.aspose.cloud/cells/specification/22.12/](https://docs.aspose.cloud/cells/specification/22.12/)  
-*(Note: Replace `22.12` with the latest stable version as needed.)*
+_(Note: Replace `22.12` with the latest stable version as needed.)_
 
 ### SDK Examples
 
@@ -158,28 +158,3 @@ response = api.cells_ranges_put_replace_content(
 
 print(f"Status: {response.code} - {response.status}")
 ```
-
-> **Note**: Full SDK source code and examples are available on [GitHub](https://github.com/aspose-cells-cloud).
-
----
-
-## Best Practices
-
-- ✅ **Validate Range Syntax**: Use Excel-style range notation (e.g., `"A1:C5"`, `"B2:E100"`, `"Sheet2!A1:B10"`).
-- ✅ **Use Exact Matches**: The operation performs case-sensitive, exact substring matching. For case-insensitive replacement, normalize text before calling the API.
-- ✅ **Set `region` for Locale-Sensitive Text**: When replacing dates, numbers, or culture-specific symbols, specify the appropriate `region` parameter to ensure consistent interpretation.
-- ✅ **Test with Sample Files**: Use small test workbooks first to verify behavior before running in production.
-- ✅ **Include `folder` Explicitly**: Avoid ambiguity by specifying the `folder` path instead of relying on default storage root.
-
----
-
-## Related Documentation
-
-- [Authentication Overview](/total/getting-started/rest-api-overview/authenticating-api-requests/)  
-- [Batch File Operations](/cells/batch-update-cloud-sheets/)  
-- [Working with Ranges in Cloud Excel](/cells/working-with-ranges/)  
-- [Aspose.Cells Cloud SDK Setup Guide](/total/getting-started/sdk/)  
-
----
-
-*Last updated: June 15, 2024 | Version: v22.12*

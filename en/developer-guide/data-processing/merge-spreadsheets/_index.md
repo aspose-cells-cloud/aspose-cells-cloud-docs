@@ -45,20 +45,20 @@ PUT https://api.aspose.cloud/v4.0/cells/merge/spreadsheet
 
 ### Security and Authentication
 
-All requests require JWT token-based authentication. Obtain your access token via OAuth 2.0 as described in our [Authentication Guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/){rel="noopener noreferrer" target="_blank"}.
+All requests require JWT token-based authentication. Obtain your access token via OAuth 2.0 as described in our [Authentication Guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/){rel="noopener noreferrer" target="\_blank"}.
 
 ### Request Parameters
 
-| Parameter Name  | Type    | Location         | Required | Description |
-|-----------------|---------|------------------|----------|-------------|
-| `Spreadsheet`   | File    | FormData         | Yes      | One or more local spreadsheet files (XLSX, XLS, CSV, ODS, etc.). Multiple files may be uploaded as separate `Spreadsheet` entries. |
-| `outFormat`     | String  | Query            | No       | Desired output format (e.g., `XLSX`, `PDF`, `CSV`, `HTML`). Default: `xlsx`. |
-| `mergeInOneSheet` | Boolean | Query          | No       | `true` → merge all data into a single worksheet; `false` → preserve original sheet structure. Default: `false`. |
-| `outPath`       | String  | Query            | No       | Cloud storage path where the merged file will be saved. If omitted, output is returned in the response body. |
-| `outStorageName`| String  | Query            | No       | Name of the cloud storage (default or custom). Default: first configured storage. |
-| `fontsLocation` | String  | Query            | No       | Cloud folder containing custom fonts (required for accurate PDF/image rendering). |
-| `region`        | String  | Query            | No       | Locale (e.g., `en-US`, `fr-FR`) for number, date, and currency formatting. |
-| `password`      | String  | Query            | No       | Password to decrypt a protected input file. |
+| Parameter Name    | Type    | Location | Required | Description                                                                                                                        |
+| ----------------- | ------- | -------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| `Spreadsheet`     | File    | FormData | Yes      | One or more local spreadsheet files (XLSX, XLS, CSV, ODS, etc.). Multiple files may be uploaded as separate `Spreadsheet` entries. |
+| `outFormat`       | String  | Query    | No       | Desired output format (e.g., `XLSX`, `PDF`, `CSV`, `HTML`). Default: `xlsx`.                                                       |
+| `mergeInOneSheet` | Boolean | Query    | No       | `true` → merge all data into a single worksheet; `false` → preserve original sheet structure. Default: `false`.                    |
+| `outPath`         | String  | Query    | No       | Cloud storage path where the merged file will be saved. If omitted, output is returned in the response body.                       |
+| `outStorageName`  | String  | Query    | No       | Name of the cloud storage (default or custom). Default: first configured storage.                                                  |
+| `fontsLocation`   | String  | Query    | No       | Cloud folder containing custom fonts (required for accurate PDF/image rendering).                                                  |
+| `region`          | String  | Query    | No       | Locale (e.g., `en-US`, `fr-FR`) for number, date, and currency formatting.                                                         |
+| `password`        | String  | Query    | No       | Password to decrypt a protected input file.                                                                                        |
 
 ### Response
 
@@ -76,19 +76,19 @@ On success, the API returns the merged workbook as a binary stream.
 
 **Success Response**
 
-| Status Code | Content-Type               | Description                     |
-|-------------|----------------------------|---------------------------------|
-| `200 OK`    | `application/octet-stream` | Binary stream of the merged file|
+| Status Code | Content-Type               | Description                      |
+| ----------- | -------------------------- | -------------------------------- |
+| `200 OK`    | `application/octet-stream` | Binary stream of the merged file |
 
 **Error Responses**
 
-| Code | Meaning               | Description |
-|------|-----------------------|-------------|
-| `400`| Bad Request           | Missing/invalid parameters, unsupported file type, or malformed request. |
-| `401`| Unauthorized          | Invalid or missing JWT token. |
-| `404`| Not Found             | Source file inaccessible or storage path invalid. |
-| `413`| Payload Too Large     | One or more uploaded files exceed the 2 GB limit. |
-| `500`| Internal Server Error | Unexpected server-side failure during processing. |
+| Code  | Meaning               | Description                                                              |
+| ----- | --------------------- | ------------------------------------------------------------------------ |
+| `400` | Bad Request           | Missing/invalid parameters, unsupported file type, or malformed request. |
+| `401` | Unauthorized          | Invalid or missing JWT token.                                            |
+| `404` | Not Found             | Source file inaccessible or storage path invalid.                        |
+| `413` | Payload Too Large     | One or more uploaded files exceed the 2 GB limit.                        |
+| `500` | Internal Server Error | Unexpected server-side failure during processing.                        |
 
 ### Usage Examples
 
@@ -104,7 +104,7 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/merge/spreadsheet?outFormat=PDF
 
 #### Using SDKs
 
-Aspose.Cells Cloud provides SDKs for popular languages. See the [GitHub repository](https://github.com/aspose-cells-cloud){rel="noopener noreferrer" target="_blank"} for code samples.
+Aspose.Cells Cloud provides SDKs for popular languages. See the [GitHub repository](https://github.com/aspose-cells-cloud){rel="noopener noreferrer" target="\_blank"} for code samples.
 
 {{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 {{< tab tabNum="1" >}}
@@ -136,16 +136,19 @@ Aspose.Cells Cloud provides SDKs for popular languages. See the [GitHub reposito
 ## When to Use the Merge Spreadsheet API
 
 ### Education & Research
+
 - **Grading Workflows** – Consolidate student submissions for batch annotation.
 - **Research Data** – Merge experimental datasets across departments or labs.
 - **Curriculum Development** – Combine chapter exercises into a single workbook.
 
 ### Business & Data Operations
+
 - **Report Consolidation** – Aggregate weekly departmental reports into a master dashboard.
 - **Data Enrichment** – Merge raw CSV exports with reference data before analysis.
 - **Template Automation** – Fill preformatted templates with merged data from multiple sources.
 
 ### Development & DevOps
+
 - **Test Data Generation** – Assemble test case spreadsheets for CI/CD pipelines.
 - **Log Analysis** – Combine system log reports across environments into one view.
 - **Config Management** – Unify configuration spreadsheets for cross-platform deployments.
@@ -164,35 +167,9 @@ Aspose.Cells Cloud provides SDKs for popular languages. See the [GitHub reposito
 
 ## Limitations & Best Practices
 
-| Limitation | Recommendation |
-|------------|----------------|
-| Max 2 GB per request | Split large files before merging |
-| No support for VBA macros | Remove macros before upload or use `XLSM` as output |
-| Sheet name collisions may occur | Enable `mergeInOneSheet=true` for unique output |
-| Custom fonts required for PDF rendering | Specify `fontsLocation` for accurate output |
-
-## Frequently Asked Questions
-
-### Q: Can I merge files with different formats (e.g., XLSX + CSV)?
-A: Yes. The API accepts mixed input formats in a single call.
-
-### Q: Does the merge operation preserve formatting and formulas?
-A: Yes—cell formatting, formulas, and embedded objects are retained. Charts and pivot tables are preserved unless `mergeInOneSheet=true`, in which case data is appended row-wise.
-
-### Q: Where is the merged file stored?
-A: By default, the output is returned in the response body. Use `outPath` to save directly to cloud storage.
-
-### Q: Is there a free trial?
-A: Yes—[sign up](https://dashboard.aspose.cloud/) for a free tier with 150 API calls/month.
-
-## See Also
-
-- [Convert Excel to PDF](/convert-excel-to-pdf/)
-- [Split Excel Files](/split-excel/)
-- [Aspose.Cells Cloud Pricing](https://purchase.aspose.cloud/pricing)
-
----
-
-> **Last Updated**: November 15, 2023  
-> **API Version**: v4.0  
-> **Endpoint**: `PUT /cells/merge/spreadsheet`
+| Limitation                              | Recommendation                                      |
+| --------------------------------------- | --------------------------------------------------- |
+| Max 2 GB per request                    | Split large files before merging                    |
+| No support for VBA macros               | Remove macros before upload or use `XLSM` as output |
+| Sheet name collisions may occur         | Enable `mergeInOneSheet=true` for unique output     |
+| Custom fonts required for PDF rendering | Specify `fontsLocation` for accurate output         |

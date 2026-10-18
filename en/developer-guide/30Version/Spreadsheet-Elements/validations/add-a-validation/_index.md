@@ -6,7 +6,7 @@ type: docs
 url: /validations/add/
 keywords: "Add worksheet validation, Excel, Aspose.Cells Cloud, REST API, Spreadsheet, Validation rule"
 description: "Use the Aspose.Cells Cloud REST API to add a worksheet validation to an Excel file. SDKs are available for C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, and Swift."
-weight: 10
+weight: 100
 ---
 
 This REST API adds a worksheet validation to an Excel worksheet.

@@ -38,15 +38,15 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/search/content?searchText=Invoi
 
 ## Request Parameters
 
-| Parameter    | Type    | Location    | Required | Description |
-|--------------|---------|-------------|----------|-------------|
-| `spreadsheet` | File    | FormData    | Yes      | The Excel file to search. |
-| `searchText`  | String  | Query       | Yes      | The text (or numeric value) to locate. |
-| `ignoringCase`| Boolean | Query       | No       | Whether to ignore case in the search. Default: `true`. |
-| `worksheet`   | String  | Query       | No       | Name of the worksheet to limit the search scope. If omitted, all worksheets are scanned. |
-| `cellArea`    | String  | Query       | No       | A1-style range (e.g., `A1:C10`) to restrict the search area. |
-| `region`      | String  | Query       | No       | Locale setting (e.g., `en-US`, `fr-FR`) affecting number/date parsing. |
-| `password`    | String  | Query       | No       | Password for protected workbooks. |
+| Parameter      | Type    | Location | Required | Description                                                                              |
+| -------------- | ------- | -------- | -------- | ---------------------------------------------------------------------------------------- |
+| `spreadsheet`  | File    | FormData | Yes      | The Excel file to search.                                                                |
+| `searchText`   | String  | Query    | Yes      | The text (or numeric value) to locate.                                                   |
+| `ignoringCase` | Boolean | Query    | No       | Whether to ignore case in the search. Default: `true`.                                   |
+| `worksheet`    | String  | Query    | No       | Name of the worksheet to limit the search scope. If omitted, all worksheets are scanned. |
+| `cellArea`     | String  | Query    | No       | A1-style range (e.g., `A1:C10`) to restrict the search area.                             |
+| `region`       | String  | Query    | No       | Locale setting (e.g., `en-US`, `fr-FR`) affecting number/date parsing.                   |
+| `password`     | String  | Query    | No       | Password for protected workbooks.                                                        |
 
 ---
 
@@ -76,6 +76,7 @@ The API returns a `SearchResponse` object containing an array of matched items.
 ```
 
 Each `textItem` includes:
+
 - `cellName`: A1-style cell reference (e.g., `"A1"`).
 - `text`: The matched string.
 - `occurrences`: Number of times the text appears in that cell.
@@ -84,11 +85,11 @@ Each `textItem` includes:
 
 ## Error Handling
 
-| Code | Description |
-|------|-------------|
-| `400 Bad Request` | Invalid URL, malformed parameters, or unsupported file format. |
-| `401 Unauthorized` | Missing, expired, or invalid JWT token. |
-| `404 Not Found` | The uploaded file cannot be accessed or does not exist. |
+| Code                        | Description                                                    |
+| --------------------------- | -------------------------------------------------------------- |
+| `400 Bad Request`           | Invalid URL, malformed parameters, or unsupported file format. |
+| `401 Unauthorized`          | Missing, expired, or invalid JWT token.                        |
+| `404 Not Found`             | The uploaded file cannot be accessed or does not exist.        |
 | `500 Internal Server Error` | Unexpected error during processing (e.g., corrupted workbook). |
 
 ---
@@ -96,15 +97,19 @@ Each `textItem` includes:
 ## Use Cases
 
 ### Compliance & Security Audits
+
 Scan workbooks for sensitive terms (e.g., `"Confidential"`, `"PII"`, `"Internal"`) to support data governance and regulatory compliance.
 
 ### Cross-Sheet Data Discovery
+
 Find identifiers (e.g., project numbers, customer IDs) across multiple worksheets to map data relationships.
 
 ### Template Verification
+
 Validate that placeholders like `{{Date}}` or `{{User}}` are fully replaced after batch report generation.
 
 ### Legacy Data Mining
+
 Search historical Excel files for event codes, transaction types, or business terms to accelerate archival analysis.
 
 ---
@@ -150,20 +155,3 @@ Using an SDK simplifies integration by handling HTTP requests and response parsi
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_SearchTextInLocalFile.go" >}}
 {{</tab>}}
 {{</tabs >}}
-
-> **Tip**: For production use, pin SDK versions and Gist commits to avoid breakage from upstream changes. See the [Aspose.Cells Cloud GitHub organization](https://github.com/aspose-cells-cloud) for the latest SDK releases.
-
----
-
-## OpenAPI Specification
-
-The API conforms to the OpenAPI 2.0 (Swagger) standard. You can view or download the full specification here:  
-[OpenAPI Specification (Swagger JSON)](https://reference.aspose.cloud/cells/v2.0/cells/swagger.json)
-
----
-
-## Related Operations
-
-- [Export Excel to PDF](/export-excel-to-pdf/)
-- [Convert Excel to CSV](/convert-excel-to-csv/)
-- [Validate Excel Files](/validate-excel-files/)

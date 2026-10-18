@@ -5,7 +5,7 @@ type: docs
 url: /tasks/cells-object-operate/
 aliases: [/working-with-cellsobjectoperate-task/]
 description: "Learn how to use the CellsObjectOperate task in Aspose.Cells Cloud API with parameter reference, request/response examples, and best‑practice tips for worksheets, charts, and pivot tables."
-weight: 20
+weight: 100
 ArticleTitle: "Aspose.Cells Cloud API – Working with CellsObjectOperate Task (REST)"
 keywords:
   - "Aspose CellsObjectOperate"
@@ -24,106 +24,107 @@ The **CellsObjectOperate** task lets you perform create, read, update, and delet
 
 **OperateObject**
 
-| Parameter Name          | Type   | Description |
-| ----------------------- | ------ | ----------- |
-| OperateObjectType       | string | The type of Excel object to operate on. Allowed values: `Workbook`, `Worksheet`, `PageSetup`, `Cells`, `Chart`, `Shape`, `ListObject`, `PivotTable`, `WorkbookSettings`, `PageBreak`. |
-| OperateObjectPosition   | object | Container that identifies the target object’s location (e.g., workbook name, worksheet name, chart index). Required for most operations. |
+| Parameter Name        | Type   | Description                                                                                                                                                                           |
+| --------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| OperateObjectType     | string | The type of Excel object to operate on. Allowed values: `Workbook`, `Worksheet`, `PageSetup`, `Cells`, `Chart`, `Shape`, `ListObject`, `PivotTable`, `WorkbookSettings`, `PageBreak`. |
+| OperateObjectPosition | object | Container that identifies the target object’s location (e.g., workbook name, worksheet name, chart index). Required for most operations.                                              |
 
 **OperateObjectPosition**
 
-| Parameter Name | Type   | Description |
-| -------------- | ------ | ----------- |
-| Workbook       | object | The workbook that contains the target object. Must include either `FileName` (cloud storage) or `FileContent` (base‑64). |
-| SheetName      | string | Name of the worksheet where the operation is applied. Required for worksheet‑level objects (charts, shapes, etc.). |
-| ChartIndex     | integer| Zero‑based index of the chart within the worksheet (used when `OperateObjectType` is `Chart`). |
-| ShapeIndex     | integer| Zero‑based index of the shape within the worksheet (used when `OperateObjectType` is `Shape`). |
-| CellName       | string | A1‑style cell reference (e.g., `A1`). Used for cell‑level operations. |
-| ListObjectIndex| integer| Zero‑based index of the list object (used when `OperateObjectType` is `ListObject`). |
+| Parameter Name  | Type    | Description                                                                                                              |
+| --------------- | ------- | ------------------------------------------------------------------------------------------------------------------------ |
+| Workbook        | object  | The workbook that contains the target object. Must include either `FileName` (cloud storage) or `FileContent` (base‑64). |
+| SheetName       | string  | Name of the worksheet where the operation is applied. Required for worksheet‑level objects (charts, shapes, etc.).       |
+| ChartIndex      | integer | Zero‑based index of the chart within the worksheet (used when `OperateObjectType` is `Chart`).                           |
+| ShapeIndex      | integer | Zero‑based index of the shape within the worksheet (used when `OperateObjectType` is `Shape`).                           |
+| CellName        | string  | A1‑style cell reference (e.g., `A1`). Used for cell‑level operations.                                                    |
+| ListObjectIndex | integer | Zero‑based index of the list object (used when `OperateObjectType` is `ListObject`).                                     |
 
 **ChartOperateParameter**
 
-| Parameter Name        | Type    | Description |
-| --------------------- | ------- | ----------- |
-| ChartIndex            | integer | Index of the chart to modify. Required when updating an existing chart. |
-| ChartType             | string  | Type of chart to create (e.g., `Bar`, `Line`, `Pie`). |
-| UpperLeftRow          | integer | Row number of the chart’s upper‑left corner (zero‑based). |
-| UpperLeftColumn       | integer | Column number of the chart’s upper‑left corner (zero‑based). |
-| LowerRightRow         | integer | Row number of the chart’s lower‑right corner. |
-| LowerRightColumn      | integer | Column number of the chart’s lower‑right corner. |
-| Area                  | string  | Data range for the chart (e.g., `A1:B5`). |
-| IsVertical            | string  | `true` if the chart orientation is vertical; otherwise `false`. |
-| CategoryData          | string  | Range that provides category (X‑axis) labels. |
-| IsAutoGetSerialName   | string  | `true` to automatically generate series names; `false` to use custom names. |
-| Title                 | string  | Title text displayed on the chart. |
+| Parameter Name      | Type    | Description                                                                 |
+| ------------------- | ------- | --------------------------------------------------------------------------- |
+| ChartIndex          | integer | Index of the chart to modify. Required when updating an existing chart.     |
+| ChartType           | string  | Type of chart to create (e.g., `Bar`, `Line`, `Pie`).                       |
+| UpperLeftRow        | integer | Row number of the chart’s upper‑left corner (zero‑based).                   |
+| UpperLeftColumn     | integer | Column number of the chart’s upper‑left corner (zero‑based).                |
+| LowerRightRow       | integer | Row number of the chart’s lower‑right corner.                               |
+| LowerRightColumn    | integer | Column number of the chart’s lower‑right corner.                            |
+| Area                | string  | Data range for the chart (e.g., `A1:B5`).                                   |
+| IsVertical          | string  | `true` if the chart orientation is vertical; otherwise `false`.             |
+| CategoryData        | string  | Range that provides category (X‑axis) labels.                               |
+| IsAutoGetSerialName | string  | `true` to automatically generate series names; `false` to use custom names. |
+| Title               | string  | Title text displayed on the chart.                                          |
 
 **ListObjectOperateParameter**
 
-| Parameter Name | Type   | Description |
-| -------------- | ------ | ----------- |
+| Parameter Name | Type   | Description                                                                                                            |
+| -------------- | ------ | ---------------------------------------------------------------------------------------------------------------------- |
 | ListObject     | object | Configuration object for a list (table) operation. Includes properties such as `ShowHeader`, `ShowTotal`, and `Style`. |
 
 **PageBreakOperateParameter**
 
-| Parameter Name | Type    | Description |
-| -------------- | ------- | ----------- |
-| PageBreakType  | string  | Type of page break (`Horizontal` or `Vertical`). |
+| Parameter Name | Type    | Description                                             |
+| -------------- | ------- | ------------------------------------------------------- |
+| PageBreakType  | string  | Type of page break (`Horizontal` or `Vertical`).        |
 | Index          | integer | Zero‑based index of the page break to delete or modify. |
-| Row            | integer | Row number where a horizontal page break is placed. |
-| Column         | integer | Column number where a vertical page break is placed. |
-| StartIndex     | integer | Starting index for a range‑based page‑break operation. |
-| EndIndex       | integer | Ending index for a range‑based page‑break operation. |
+| Row            | integer | Row number where a horizontal page break is placed.     |
+| Column         | integer | Column number where a vertical page break is placed.    |
+| StartIndex     | integer | Starting index for a range‑based page‑break operation.  |
+| EndIndex       | integer | Ending index for a range‑based page‑break operation.    |
 
 **PageSetupOperateParameter**
 
-| Parameter Name | Type   | Description |
-| -------------- | ------ | ----------- |
+| Parameter Name | Type   | Description                                                        |
+| -------------- | ------ | ------------------------------------------------------------------ |
 | PageSetup      | object | Settings for page layout (margins, orientation, paper size, etc.). |
 
 **PivotTableOperateParameter**
 
-| Parameter Name   | Type        | Description |
-| ---------------- | ----------- | ----------- |
-| DestCellName     | string      | Upper‑left cell of the destination range for the pivot table (e.g., `C5`). |
-| SourceData       | string      | Source range for the pivot table (e.g., `A1:D100`). |
-| TableName        | string      | Name assigned to the created pivot table. |
-| UseSameSource    | string      | `true` to reuse an existing source range; `false` to create a new one. |
-| PivotTableIndex  | integer     | Index of the pivot table to update (required for modify/delete actions). |
-| PivotFieldRows   | integer[]   | Collection of field indexes that will appear in the rows area. |
-| PivotFieldColumns| integer[]   | Collection of field indexes that will appear in the columns area. |
-| PivotFieldData   | integer[]   | Collection of field indexes that will appear in the data area. |
+| Parameter Name    | Type      | Description                                                                |
+| ----------------- | --------- | -------------------------------------------------------------------------- |
+| DestCellName      | string    | Upper‑left cell of the destination range for the pivot table (e.g., `C5`). |
+| SourceData        | string    | Source range for the pivot table (e.g., `A1:D100`).                        |
+| TableName         | string    | Name assigned to the created pivot table.                                  |
+| UseSameSource     | string    | `true` to reuse an existing source range; `false` to create a new one.     |
+| PivotTableIndex   | integer   | Index of the pivot table to update (required for modify/delete actions).   |
+| PivotFieldRows    | integer[] | Collection of field indexes that will appear in the rows area.             |
+| PivotFieldColumns | integer[] | Collection of field indexes that will appear in the columns area.          |
+| PivotFieldData    | integer[] | Collection of field indexes that will appear in the data area.             |
 
 **ShapeOperateParameter**
 
-| Parameter Name | Type   | Description |
-| -------------- | ------ | ----------- |
+| Parameter Name | Type   | Description                                                 |
+| -------------- | ------ | ----------------------------------------------------------- |
 | Shape          | object | Definition of the shape (type, position, size, text, etc.). |
 
 **WorkbookSettingsOperateParameter**
 
-| Parameter Name   | Type   | Description |
-| ---------------- | ------ | ----------- |
+| Parameter Name   | Type   | Description                                                                  |
+| ---------------- | ------ | ---------------------------------------------------------------------------- |
 | WorkbookSettings | object | Settings that affect the whole workbook (e.g., calculation mode, precision). |
 
 **WorksheetOperateParameter**
 
-| Parameter Name | Type   | Description |
-| -------------- | ------ | ----------- |
-| Name           | string | Current name of the worksheet to be operated on. |
-| SheetType      | string | Type of sheet (`Worksheet`, `Chart`, etc.). |
-| NewName        | string | New name for the worksheet when renaming. |
+| Parameter Name | Type   | Description                                                       |
+| -------------- | ------ | ----------------------------------------------------------------- |
+| Name           | string | Current name of the worksheet to be operated on.                  |
+| SheetType      | string | Type of sheet (`Worksheet`, `Chart`, etc.).                       |
+| NewName        | string | New name for the worksheet when renaming.                         |
 | MovingRequest  | object | Parameters for moving a worksheet (e.g., `FromIndex`, `ToIndex`). |
 
 ## REST API
 
-| API                | Type | Description | Resource Link |
-| ------------------ | ---- | ----------- | ------------- |
-| /cells/task/runtask| POST | Run Task    | [PostRunTask](https://apireference.aspose.cloud/cells/#/Task/PostRunTask) |
+| API                 | Type | Description | Resource Link                                                             |
+| ------------------- | ---- | ----------- | ------------------------------------------------------------------------- |
+| /cells/task/runtask | POST | Run Task    | [PostRunTask](https://apireference.aspose.cloud/cells/#/Task/PostRunTask) |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 ### Prerequisites
-- **Authentication** – Include a valid `Authorization: Bearer <access_token>` header.  
-- **Storage** – The source workbook must be stored in Aspose Cloud Storage or supplied as base‑64‑encoded content in the request body.  
+
+- **Authentication** – Include a valid `Authorization: Bearer <access_token>` header.
+- **Storage** – The source workbook must be stored in Aspose Cloud Storage or supplied as base‑64‑encoded content in the request body.
 - **API Version** – This documentation targets **v3.0** of the Aspose.Cells Cloud API.
 
 ### Sample Request (cURL)
@@ -166,18 +167,46 @@ The request body follows the **CellsObjectOperateRequest** schema defined below:
       "type": "object",
       "required": ["OperateObjectType"],
       "properties": {
-        "OperateObjectType": { "type": "string", "enum": ["Workbook","Worksheet","PageSetup","Cells","Chart","Shape","ListObject","PivotTable","WorkbookSettings","PageBreak"] },
-        "OperateObjectPosition": { "$ref": "#/definitions/OperateObjectPosition" }
+        "OperateObjectType": {
+          "type": "string",
+          "enum": [
+            "Workbook",
+            "Worksheet",
+            "PageSetup",
+            "Cells",
+            "Chart",
+            "Shape",
+            "ListObject",
+            "PivotTable",
+            "WorkbookSettings",
+            "PageBreak"
+          ]
+        },
+        "OperateObjectPosition": {
+          "$ref": "#/definitions/OperateObjectPosition"
+        }
       }
     },
     "ChartOperateParameter": { "$ref": "#/definitions/ChartOperateParameter" },
-    "ListObjectOperateParameter": { "$ref": "#/definitions/ListObjectOperateParameter" },
-    "PageBreakOperateParameter": { "$ref": "#/definitions/PageBreakOperateParameter" },
-    "PageSetupOperateParameter": { "$ref": "#/definitions/PageSetupOperateParameter" },
-    "PivotTableOperateParameter": { "$ref": "#/definitions/PivotTableOperateParameter" },
+    "ListObjectOperateParameter": {
+      "$ref": "#/definitions/ListObjectOperateParameter"
+    },
+    "PageBreakOperateParameter": {
+      "$ref": "#/definitions/PageBreakOperateParameter"
+    },
+    "PageSetupOperateParameter": {
+      "$ref": "#/definitions/PageSetupOperateParameter"
+    },
+    "PivotTableOperateParameter": {
+      "$ref": "#/definitions/PivotTableOperateParameter"
+    },
     "ShapeOperateParameter": { "$ref": "#/definitions/ShapeOperateParameter" },
-    "WorkbookSettingsOperateParameter": { "$ref": "#/definitions/WorkbookSettingsOperateParameter" },
-    "WorksheetOperateParameter": { "$ref": "#/definitions/WorksheetOperateParameter" }
+    "WorkbookSettingsOperateParameter": {
+      "$ref": "#/definitions/WorkbookSettingsOperateParameter"
+    },
+    "WorksheetOperateParameter": {
+      "$ref": "#/definitions/WorksheetOperateParameter"
+    }
   },
   "definitions": {
     "OperateObjectPosition": {
@@ -201,9 +230,9 @@ The request body follows the **CellsObjectOperateRequest** schema defined below:
         "LowerRightRow": { "type": "integer" },
         "LowerRightColumn": { "type": "integer" },
         "Area": { "type": "string" },
-        "IsVertical": { "type": "string", "enum": ["true","false"] },
+        "IsVertical": { "type": "string", "enum": ["true", "false"] },
         "CategoryData": { "type": "string" },
-        "IsAutoGetSerialName": { "type": "string", "enum": ["true","false"] },
+        "IsAutoGetSerialName": { "type": "string", "enum": ["true", "false"] },
         "Title": { "type": "string" }
       }
     }
@@ -228,31 +257,32 @@ The request body follows the **CellsObjectOperateRequest** schema defined below:
 
 The response contains the following fields:
 
-| Field   | Type   | Description |
-| ------- | ------ | ----------- |
-| Code    | integer| HTTP‑like status code returned by the task engine. |
-| Status  | string | Human‑readable status (e.g., `OK`). |
-| TaskId  | string | Identifier of the asynchronous task. |
-| Result  | object | Object holding operation‑specific results. |
-| Result.ChartId | integer | Identifier of the created or modified chart. |
-| Result.Message | string | Short message describing the outcome. |
+| Field          | Type    | Description                                        |
+| -------------- | ------- | -------------------------------------------------- |
+| Code           | integer | HTTP‑like status code returned by the task engine. |
+| Status         | string  | Human‑readable status (e.g., `OK`).                |
+| TaskId         | string  | Identifier of the asynchronous task.               |
+| Result         | object  | Object holding operation‑specific results.         |
+| Result.ChartId | integer | Identifier of the created or modified chart.       |
+| Result.Message | string  | Short message describing the outcome.              |
 
 ### Error Handling
 
-| HTTP Status | Error Code | Description | Suggested Remedy |
-| ----------- | ---------- | ----------- | ---------------- |
-| 400         | InvalidParameter | One or more request parameters are missing or malformed. | Verify required fields and data types. |
-| 401         | Unauthorized | Invalid or missing authentication token. | Refresh the access token and include it in the `Authorization` header. |
-| 404         | NotFound | Specified workbook, worksheet, or object does not exist. | Check the `FileName`, `SheetName`, and object indexes. |
-| 500         | ServerError | An unexpected error occurred on the server. | Retry the request; if the problem persists, contact support. |
+| HTTP Status | Error Code       | Description                                              | Suggested Remedy                                                       |
+| ----------- | ---------------- | -------------------------------------------------------- | ---------------------------------------------------------------------- |
+| 400         | InvalidParameter | One or more request parameters are missing or malformed. | Verify required fields and data types.                                 |
+| 401         | Unauthorized     | Invalid or missing authentication token.                 | Refresh the access token and include it in the `Authorization` header. |
+| 404         | NotFound         | Specified workbook, worksheet, or object does not exist. | Check the `FileName`, `SheetName`, and object indexes.                 |
+| 500         | ServerError      | An unexpected error occurred on the server.              | Retry the request; if the problem persists, contact support.           |
 
 ### Common Use Cases
-- **Add a new chart** to a worksheet.  
-- **Rename a worksheet** (`OperateObjectType = "Worksheet"` with `WorksheetOperateParameter.NewName`).  
-- **Insert a page break** (`OperateObjectType = "PageBreak"` with `PageBreakOperateParameter`).  
-- **Update pivot‑table source data** (`OperateObjectType = "PivotTable"` with `PivotTableOperateParameter.SourceData`).  
-- **Modify workbook settings** such as calculation mode (`OperateObjectType = "WorkbookSettings"`).  
 
----  
+- **Add a new chart** to a worksheet.
+- **Rename a worksheet** (`OperateObjectType = "Worksheet"` with `WorksheetOperateParameter.NewName`).
+- **Insert a page break** (`OperateObjectType = "PageBreak"` with `PageBreakOperateParameter`).
+- **Update pivot‑table source data** (`OperateObjectType = "PivotTable"` with `PivotTableOperateParameter.SourceData`).
+- **Modify workbook settings** such as calculation mode (`OperateObjectType = "WorkbookSettings"`).
 
-*All descriptions are derived from the official Aspose.Cells Cloud OpenAPI specification.*
+---
+
+_All descriptions are derived from the official Aspose.Cells Cloud OpenAPI specification._

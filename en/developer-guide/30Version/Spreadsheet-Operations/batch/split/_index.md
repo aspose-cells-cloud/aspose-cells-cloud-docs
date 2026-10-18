@@ -22,59 +22,58 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name   | Type               | Path/Query/String/HTTPBody | Description                                   |
-|------------------|--------------------|----------------------------|-----------------------------------------------|
-| BatchSplitRequest| BatchSplitRequest  | body                       | Request payload containing split options.     |
+| Parameter Name    | Type              | Path/Query/String/HTTPBody | Description                               |
+| ----------------- | ----------------- | -------------------------- | ----------------------------------------- |
+| BatchSplitRequest | BatchSplitRequest | body                       | Request payload containing split options. |
 
 ### **BatchSplitRequest** Properties
 
-| Name          | Type                | Description                                 | Notes      |
-|---------------|---------------------|---------------------------------------------|------------|
-| SourceFolder  | string              | Folder that contains the source file.       | [optional] |
-| SourceStorage | string              | Storage name where the source file resides. | [optional] |
-| MatchCondition| MatchConditionRequest| Conditions used to select files for splitting.| [optional] |
-| Format        | string              | Desired output format (e.g., pdf, csv).    | [optional] |
-| FromIndex     | integer             | Starting index of the pages to split.       | [optional] |
-| ToIndex       | integer             | Ending index of the pages to split.         | [optional] |
-| OutFolder     | string              | Destination folder for the split files.     | [optional] |
-| SaveOptions   | SaveOptions         | Additional options for saving the output.   | [optional] |
+| Name           | Type                  | Description                                    | Notes      |
+| -------------- | --------------------- | ---------------------------------------------- | ---------- |
+| SourceFolder   | string                | Folder that contains the source file.          | [optional] |
+| SourceStorage  | string                | Storage name where the source file resides.    | [optional] |
+| MatchCondition | MatchConditionRequest | Conditions used to select files for splitting. | [optional] |
+| Format         | string                | Desired output format (e.g., pdf, csv).        | [optional] |
+| FromIndex      | integer               | Starting index of the pages to split.          | [optional] |
+| ToIndex        | integer               | Ending index of the pages to split.            | [optional] |
+| OutFolder      | string                | Destination folder for the split files.        | [optional] |
+| SaveOptions    | SaveOptions           | Additional options for saving the output.      | [optional] |
 
 ### **MatchConditionRequest** Properties
 
-| Name                | Type      | Description                                 | Notes      |
-|---------------------|-----------|---------------------------------------------|------------|
-| RegexPattern        | string    | Regular expression to match file names.     | [optional] |
-| FullMatchConditions| string[]  | List of exact match conditions.             | [optional] |
+| Name                | Type     | Description                             | Notes      |
+| ------------------- | -------- | --------------------------------------- | ---------- |
+| RegexPattern        | string   | Regular expression to match file names. | [optional] |
+| FullMatchConditions | string[] | List of exact match conditions.         | [optional] |
 
 ### Request Body Parameter
 
 | Parameter Name | Type | Description                                    |
 | -------------- | ---- | ---------------------------------------------- |
 | data           | file | Binary content of the workbook file to create. |
-  
+
 ### **Response**
 
 ```json
 {
-    "Name": "ResponseFile",
-    "DataType": {
-        "Identifier": "File",
-        "Reference": "Stream",
-        "Name": "file"
-    }
+  "Name": "ResponseFile",
+  "DataType": {
+    "Identifier": "File",
+    "Reference": "Stream",
+    "Name": "file"
+  }
 }
 ```
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | When Returned                           |
-|------|-----------------------------|-----------------------------------------|
-| 200 OK | Workbook created successfully | Normal flow                              |
-| 201 Created | Workbook created (alternative response) | When the API returns a created status |
-| 400 Bad Request | Invalid parameters | Client‑side error                        |
-| 401 Unauthorized | Missing or invalid token | Authentication error                    |
-| 409 Conflict | File exists and `isWriteOver=false` | Conflict with existing file            |
-
+| Code             | Meaning                                 | When Returned                         |
+| ---------------- | --------------------------------------- | ------------------------------------- |
+| 200 OK           | Workbook created successfully           | Normal flow                           |
+| 201 Created      | Workbook created (alternative response) | When the API returns a created status |
+| 400 Bad Request  | Invalid parameters                      | Client‑side error                     |
+| 401 Unauthorized | Missing or invalid token                | Authentication error                  |
+| 409 Conflict     | File exists and `isWriteOver=false`     | Conflict with existing file           |
 
 ## How to Use the PostBatchSplit API with SDKs
 

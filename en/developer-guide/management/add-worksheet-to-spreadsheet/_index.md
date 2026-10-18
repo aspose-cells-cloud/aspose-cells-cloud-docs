@@ -33,25 +33,25 @@ PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/add/worksheet
 
 ### Request Parameters
 
-| Parameter Name     | Type   | Location   | Required | Description |
-| :----------------- | :----- | :--------- | :------- | :---------- |
-| **Spreadsheet**    | File   | FormData   | ✅ Yes   | The Excel workbook (.xlsx, .xls, etc.) to which the new sheet will be added. |
-| **sheetType**      | String | Query      | ❌ No    | Type of sheet to create. Acceptable values: `worksheet` (default), `chartsheet`, `macrosheet`, `vbmodule`. |
-| **position**       | Integer| Query      | ❌ No    | Zero-based index where the new sheet is inserted. `0` = first position. Omit to append at end. |
-| **sheetName**      | String | Query      | ❌ No    | Unique name for the new sheet. If omitted, a default like `Sheet1` is assigned. |
-| **outPath**        | String | Query      | ❌ No    | Cloud storage folder path for saving the output workbook. Defaults to the source file’s location. |
-| **outStorageName** | String | Query      | ✅ Yes   | Name of the configured cloud storage (e.g., `AsposeCloudStorage`). |
-| **region**         | String | Query      | ❌ No    | Locale (e.g., `en-US`, `fr-FR`) affecting number/date formatting in the new sheet. |
-| **password**       | String | Query      | ❌ No    | Password to decrypt a protected workbook. Omit for unprotected files. |
+| Parameter Name     | Type    | Location | Required | Description                                                                                                |
+| :----------------- | :------ | :------- | :------- | :--------------------------------------------------------------------------------------------------------- |
+| **Spreadsheet**    | File    | FormData | ✅ Yes   | The Excel workbook (.xlsx, .xls, etc.) to which the new sheet will be added.                               |
+| **sheetType**      | String  | Query    | ❌ No    | Type of sheet to create. Acceptable values: `worksheet` (default), `chartsheet`, `macrosheet`, `vbmodule`. |
+| **position**       | Integer | Query    | ❌ No    | Zero-based index where the new sheet is inserted. `0` = first position. Omit to append at end.             |
+| **sheetName**      | String  | Query    | ❌ No    | Unique name for the new sheet. If omitted, a default like `Sheet1` is assigned.                            |
+| **outPath**        | String  | Query    | ❌ No    | Cloud storage folder path for saving the output workbook. Defaults to the source file’s location.          |
+| **outStorageName** | String  | Query    | ✅ Yes   | Name of the configured cloud storage (e.g., `AsposeCloudStorage`).                                         |
+| **region**         | String  | Query    | ❌ No    | Locale (e.g., `en-US`, `fr-FR`) affecting number/date formatting in the new sheet.                         |
+| **password**       | String  | Query    | ❌ No    | Password to decrypt a protected workbook. Omit for unprotected files.                                      |
 
 ### Supported Worksheet Types
 
-| Type          | Description |
-|---------------|-------------|
-| `worksheet`   | Standard cell-based worksheet (default) |
-| `chartsheet`  | Chart-only sheet |
-| `macrosheet`  | Legacy BIFF8 macro sheet |
-| `vbmodule`    | Visual Basic for Applications (VBA) module |
+| Type         | Description                                |
+| ------------ | ------------------------------------------ |
+| `worksheet`  | Standard cell-based worksheet (default)    |
+| `chartsheet` | Chart-only sheet                           |
+| `macrosheet` | Legacy BIFF8 macro sheet                   |
+| `vbmodule`   | Visual Basic for Applications (VBA) module |
 
 > **Note**: Avoid ambiguous or deprecated types like `BIFF4Macro`, `Other`, or `Dialog`; they are not supported in v4.0.
 
@@ -72,15 +72,15 @@ On success, the API returns **HTTP 200 OK** with the updated workbook in the res
 
 #### HTTP Status Codes
 
-| Code | Meaning               | Description |
-| :--- | :-------------------- | :---------- |
-| 200  | OK                    | Sheet added successfully; workbook returned. |
+| Code | Meaning               | Description                                                                 |
+| :--- | :-------------------- | :-------------------------------------------------------------------------- |
+| 200  | OK                    | Sheet added successfully; workbook returned.                                |
 | 201  | Created               | A new workbook was generated (e.g., empty file uploaded + new sheet added). |
-| 400  | Bad Request           | Invalid parameters (e.g., invalid `sheetType`, missing `Spreadsheet`). |
-| 401  | Unauthorized          | Missing or invalid JWT token. |
-| 404  | Not Found             | Source workbook not found in storage. |
-| 413  | Payload Too Large     | Upload exceeds 2 GB limit. |
-| 500  | Internal Server Error | Unexpected error during processing. |
+| 400  | Bad Request           | Invalid parameters (e.g., invalid `sheetType`, missing `Spreadsheet`).      |
+| 401  | Unauthorized          | Missing or invalid JWT token.                                               |
+| 404  | Not Found             | Source workbook not found in storage.                                       |
+| 413  | Payload Too Large     | Upload exceeds 2 GB limit.                                                  |
+| 500  | Internal Server Error | Unexpected error during processing.                                         |
 
 ---
 
@@ -102,6 +102,7 @@ On success, the API returns **HTTP 200 OK** with the updated workbook in the res
   Reorder sheets to match logical workflows (e.g., `Summary`, `Data`, `Charts`, `Notes`).
 
 For related operations, see:
+
 - [List Worksheets](../list-worksheets/)
 - [Rename Worksheet](../rename-worksheet/)
 - [Delete Worksheet](../delete-worksheet/)
@@ -138,7 +139,7 @@ curl -X PUT \
   -o updated_workbook.xlsx
 ```
 
-> *Example uses Aspose.Cells Cloud SDK for .NET v24.5. Ensure your project references this version.*
+> _Example uses Aspose.Cells Cloud SDK for .NET v24.5. Ensure your project references this version._
 
 ### SDK Examples
 
@@ -168,19 +169,3 @@ curl -X PUT \
 {{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_AddWorksheet.go" >}}  
 {{< /tab >}}  
 {{< /tabs >}}
-
----
-
-## See Also
-
-- [List Worksheets](../list-worksheets/)  
-- [Rename Worksheet](../rename-worksheet/)  
-- [Delete Worksheet](../delete-worksheet/)  
-- [Move Worksheet](../move-worksheet/)  
-- [Protect Workbook](../protect-workbook/)  
-
----
-
-> **API Reference**: [AddWorksheetToSpreadsheet](https://reference.aspose.cloud/cells/#/ManagementController/AddWorksheetToSpreadsheet)  
-> **SDK Source**: [GitHub — aspose-cells-cloud](https://github.com/aspose-cells-cloud)  
-> **Support**: [Aspose.Cells Cloud Forum](https://forum.aspose.cloud/c/cells)

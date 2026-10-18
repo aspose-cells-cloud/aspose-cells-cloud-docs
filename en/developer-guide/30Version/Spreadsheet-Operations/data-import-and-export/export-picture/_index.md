@@ -7,13 +7,12 @@ url: /export-excel-picture-to-different-formats/
 aliases: [/export/excel-picture-to-different-formats/]
 keywords: "Export Picture, Aspose.Cells Cloud, REST API, Excel, Image Formats, PNG, GIF, JPEG, BMP, SVG, TIFF, EMF, WMF"
 description: "Export Excel pictures to various image formats using Aspose.Cells Cloud REST API. The service supports SDKs for multiple languages, including C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, and Swift."
-weight: 20
+weight: 100
 ---
 
 You can export pictures to the following formats: [PNG](https://docs.fileformat.com/Image/png/), [GIF](https://docs.fileformat.com/image/gif/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), and [WMF](https://docs.fileformat.com/image/Wmf/).
 
 ## REST API
-
 
 ```bash
 POST https://api.aspose.cloud/v3.0/cells/export
@@ -23,15 +22,13 @@ POST https://api.aspose.cloud/v3.0/cells/export
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-
 ### Request Parameters
 
-| Parameter       | Location  | Type   | Required | Description                                                                    |
-| --------------- | --------- | ------ | -------- | ------------------------------------------------------------------------------ |
-| `file`          | Form‑data | file   | Yes      | The Excel workbook (`.xlsx`, `.xls`, etc.) that contains the OLE objects.      |
-| `outputFormat`  | Query     | string | Yes      | Target format for the exported objects (`pdf`, `png`, `jpeg`, `docx`, `pptx`). |
-| `objectType`    | Query     | string | Yes      | Fixed value `oleobject`.                                                       |
-
+| Parameter      | Location  | Type   | Required | Description                                                                    |
+| -------------- | --------- | ------ | -------- | ------------------------------------------------------------------------------ |
+| `file`         | Form‑data | file   | Yes      | The Excel workbook (`.xlsx`, `.xls`, etc.) that contains the OLE objects.      |
+| `outputFormat` | Query     | string | Yes      | Target format for the exported objects (`pdf`, `png`, `jpeg`, `docx`, `pptx`). |
+| `objectType`   | Query     | string | Yes      | Fixed value `oleobject`.                                                       |
 
 ### Response
 
@@ -64,13 +61,14 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## How to Use the PostExport API with SDKs
 
 ### PostExport API Specification
@@ -78,7 +76,6 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
-
 
 ```bash
 curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=picture&format=tiff" \

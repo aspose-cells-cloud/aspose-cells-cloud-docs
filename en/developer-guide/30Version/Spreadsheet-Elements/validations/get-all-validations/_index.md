@@ -6,7 +6,7 @@ type: docs
 url: /validations/get-all/
 keywords: "Aspose.Cells Cloud, Excel, worksheet validations, REST API, Get all validations, SDKs"
 description: "Retrieve all worksheet validations from an Excel worksheet using the Aspose.Cells Cloud REST API. Supports multiple SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) for rapid integration."
-weight: 10
+weight: 100
 ---
 
 Worksheet validations let you define rules that restrict the type or range of data that can be entered into cells. They are commonly used to enforce data integrity, such as limiting entries to a list of values, dates within a specific range, or numeric limits.
@@ -30,12 +30,12 @@ GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validation
 
 **Response status codes**
 
-| Code | Description                              |
-|------|------------------------------------------|
-| 200  | Successful request – list of validations |
-| 401  | Unauthorized – invalid or missing token  |
+| Code | Description                               |
+| ---- | ----------------------------------------- |
+| 200  | Successful request – list of validations  |
+| 401  | Unauthorized – invalid or missing token   |
 | 404  | Not found – document or worksheet missing |
-| 500  | Internal server error                    |
+| 500  | Internal server error                     |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/WorksheetValidations/GetWorksheetValidations) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

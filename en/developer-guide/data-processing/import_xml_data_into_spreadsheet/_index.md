@@ -4,11 +4,11 @@ ArticleTitle: "Import XML Data Into Spreadsheet – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Import XML Data Into Spreadsheet"
 type: docs
-url: /cells/import/data/xml
+url: /import/data/xml
 aliases: []
 keywords: "Import XML, Aspose.Cells, API"
 description: "Import XML data file into the local spreadsheet using Aspose.Cells Cloud."
-weight: 1000
+weight: 100
 ---
 
 ## The Import XML Data Into Spreadsheet of Aspose.Cells Cloud Web Services
@@ -27,24 +27,24 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name   | Type    | Path/Query String/HTTP Body | Description                                                                                                                            |
-|------------------|---------|-----------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| datafile         | File    | FormData                    | Upload data file.                                                                                                                      |
-| Spreadsheet      | File    | FormData                    | Upload spreadsheet file.                                                                                                               |
-| worksheet        | String  | Query                       | Need to import XML data into the worksheet.                                                                                            |
-| startcell        | String  | Query                       | Starting position for data import                                                                                                      |
-| insert           | Boolean | Query                       | Controls the insertion behavior. true: inserts data; false: overwrites existing data. Default: **true**                               |
-| outPath          | String  | Query                       | (Optional) The folder path where the workbook is stored. The default is null.                                                         |
-| outStorageName   | String  | Query                       | Output file Storage Name.                                                                                                              |
-| fontsLocation    | String  | Query                       | Use Custom fonts.                                                                                                                      |
-| region           | String  | Query                       | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password         | String  | Query                       | The password for opening spreadsheet file.                                                                                             |
+| Parameter Name | Type    | Path/Query String/HTTP Body | Description                                                                                                                             |
+| -------------- | ------- | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| datafile       | File    | FormData                    | Upload data file.                                                                                                                       |
+| Spreadsheet    | File    | FormData                    | Upload spreadsheet file.                                                                                                                |
+| worksheet      | String  | Query                       | Need to import XML data into the worksheet.                                                                                             |
+| startcell      | String  | Query                       | Starting position for data import                                                                                                       |
+| insert         | Boolean | Query                       | Controls the insertion behavior. true: inserts data; false: overwrites existing data. Default: **true**                                 |
+| outPath        | String  | Query                       | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
+| outStorageName | String  | Query                       | Output file Storage Name.                                                                                                               |
+| fontsLocation  | String  | Query                       | Use Custom fonts.                                                                                                                       |
+| region         | String  | Query                       | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password       | String  | Query                       | The password for opening spreadsheet file.                                                                                              |
 
 ### Request Body Parameter
 
 | Parameter Name | Type | Description |
-|----------------|------|-------------|
-| *None*         | -    | -           |
+| -------------- | ---- | ----------- |
+| _None_         | -    | -           |
 
 ### **Response**
 
@@ -56,14 +56,14 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 **Response Status Codes**
 
-| Code | Meaning                 | Description                                                                                           |
-|------|-------------------------|-------------------------------------------------------------------------------------------------------|
-| 200  | OK                      | XML data imported successfully and the updated spreadsheet file is returned.                        |
-| 400  | Bad Request             | Invalid request URL or missing required parameters.                                                   |
-| 401  | Unauthorized            | Authentication has failed, or no credentials were provided.                                          |
-| 404  | Not Found               | Source file not accessible.                                                                           |
-| 413  | Payload Too Large       | Uploaded file exceeds the allowed size limit.                                                          |
-| 500  | Internal Server Error   | The spreadsheet has encountered an anomaly in obtaining data.                                         |
+| Code | Meaning               | Description                                                                  |
+| ---- | --------------------- | ---------------------------------------------------------------------------- |
+| 200  | OK                    | XML data imported successfully and the updated spreadsheet file is returned. |
+| 400  | Bad Request           | Invalid request URL or missing required parameters.                          |
+| 401  | Unauthorized          | Authentication has failed, or no credentials were provided.                  |
+| 404  | Not Found             | Source file not accessible.                                                  |
+| 413  | Payload Too Large     | Uploaded file exceeds the allowed size limit.                                |
+| 500  | Internal Server Error | The spreadsheet has encountered an anomaly in obtaining data.                |
 
 ## How to Use the Import XML Data Into Spreadsheet with SDKs
 
@@ -107,4 +107,3 @@ curl -v "https://api.aspose.cloud/v4.0/cells/import/data/xml?worksheet={workshee
 Using an SDK is the fastest way to accelerate development. An SDK abstracts low-level details, allowing you to focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose Cells Cloud web services using various SDKs:
-`[TBD]`

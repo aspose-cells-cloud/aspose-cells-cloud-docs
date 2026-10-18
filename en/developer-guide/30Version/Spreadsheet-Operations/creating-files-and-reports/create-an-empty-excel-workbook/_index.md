@@ -12,7 +12,7 @@ aliases:
   ]
 keywords: "Aspose.Cells, Cloud, Excel, empty workbook, REST API, SDK"
 description: "Learn how to create an empty Excel workbook using Aspose.Cells Cloud REST API. Includes cURL and SDK examples."
-weight: 20
+weight: 100
 ArticleTitle: "Create an Empty Excel Workbook using Aspose.Cells Cloud API"
 ---
 
@@ -48,24 +48,24 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ```json
 {
-    "Name": "ResponseFile",
-    "DataType": {
-        "Identifier": "File",
-        "Reference": "Stream",
-        "Name": "file"
-    }
+  "Name": "ResponseFile",
+  "DataType": {
+    "Identifier": "File",
+    "Reference": "Stream",
+    "Name": "file"
+  }
 }
 ```
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | When Returned                           |
-|------|-----------------------------|-----------------------------------------|
-| 200 OK | Workbook created successfully | Normal flow                              |
-| 201 Created | Workbook created (alternative response) | When the API returns a created status |
-| 400 Bad Request | Invalid parameters | Client‑side error                        |
-| 401 Unauthorized | Missing or invalid token | Authentication error                    |
-| 409 Conflict | File exists and `isWriteOver=false` | Conflict with existing file            |
+| Code             | Meaning                                 | When Returned                         |
+| ---------------- | --------------------------------------- | ------------------------------------- |
+| 200 OK           | Workbook created successfully           | Normal flow                           |
+| 201 Created      | Workbook created (alternative response) | When the API returns a created status |
+| 400 Bad Request  | Invalid parameters                      | Client‑side error                     |
+| 401 Unauthorized | Missing or invalid token                | Authentication error                  |
+| 409 Conflict     | File exists and `isWriteOver=false`     | Conflict with existing file           |
 
 ## How to Use the PutWorkbookCreate API with SDKs
 
@@ -97,6 +97,7 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/newworkbook.xlsx?isWriteOver=fa
   "Status": "OK"
 }
 ```
+
 {{< /tab >}}
 
 {{< /tabs >}}

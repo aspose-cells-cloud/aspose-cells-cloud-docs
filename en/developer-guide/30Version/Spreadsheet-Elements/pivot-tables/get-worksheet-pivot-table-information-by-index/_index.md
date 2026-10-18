@@ -7,7 +7,7 @@ url: /pivot-tables/get/
 aliases: [/get-worksheet-pivot-table-information-by-index/]
 keywords: "Aspose.Cells, pivot table, Excel, REST API, get worksheet pivot table"
 description: "Retrieve a pivot table from an Excel worksheet via Aspose.Cells Cloud REST API. Includes request syntax, parameters, authentication, response schema, error handling, and SDK samples."
-weight: 10
+weight: 100
 ArticleTitle: "Get a Pivot Table in an Excel Worksheet"
 ---
 
@@ -170,15 +170,15 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/work
 
 **Response Schema**
 
-| Field          | Type    | Description                                      |
-|----------------|---------|--------------------------------------------------|
-| Status         | string  | Operation status text (e.g., “OK”).             |
-| PivotFilters   | array   | Collection of pivot filter definitions.         |
-| └─ AutoFilter  | object  | Details of automatic filtering applied to pivot. |
-|    └─ link     | object  | Hyperlink information for the filter.            |
-|    └─ FilterColumns | array | Individual column filter settings.          |
-|    └─ Range    | string  | Cell range the filter applies to.                |
-|    └─ Sorter   | object  | Sorting configuration for the filtered data.    |
+| Field                                                                            | Type   | Description                                      |
+| -------------------------------------------------------------------------------- | ------ | ------------------------------------------------ |
+| Status                                                                           | string | Operation status text (e.g., “OK”).              |
+| PivotFilters                                                                     | array  | Collection of pivot filter definitions.          |
+| └─ AutoFilter                                                                    | object | Details of automatic filtering applied to pivot. |
+|     └─ link                                                                      | object | Hyperlink information for the filter.            |
+|     └─ FilterColumns                                                             | array  | Individual column filter settings.               |
+|     └─ Range                                                                     | string | Cell range the filter applies to.                |
+|     └─ Sorter                                                                    | object | Sorting configuration for the filtered data.     |
 | (additional nested fields follow the same structure as shown in the sample JSON) |
 
 {{< /tab >}}

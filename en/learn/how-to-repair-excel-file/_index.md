@@ -4,7 +4,7 @@ linktitle: "How to repair an Excel file"
 type: docs
 url: /how-to-repair-excel-file
 description: "Learn how to repair corrupted Excel files programmatically using Aspose.Cells Cloud API. Includes C# code examples, authentication steps, and SDK setup."
-weight: 10
+weight: 100
 date: 2023-11-15T00:00:00Z
 lastmod: 2024-05-20T14:30:00Z
 aliases:
@@ -22,7 +22,7 @@ The Aspose.Cells Cloud API provides a robust interface for repairing corrupted E
 
 The API supports file repair and is generally compatible with various online environments. Below is a detailed description of the API:
 
-- **[Repair Excel or another spreadsheet file.](https://reference.aspose.cloud/cells/v3.0/#/LightCells/PostRepair)**. For guidance on how to call this API, please refer to the  [development guide](https://docs.aspose.cloud/cells/repair/).
+- **[Repair Excel or another spreadsheet file.](https://reference.aspose.cloud/cells/v3.0/#/LightCells/PostRepair)**. For guidance on how to call this API, please refer to the [development guide](https://docs.aspose.cloud/cells/repair/).
 
 # How to repair Excel or another spreadsheet through Aspose.Cells Cloud
 

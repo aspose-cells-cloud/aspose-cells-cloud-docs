@@ -9,8 +9,9 @@ keywords: "Aspose.Cells Cloud, Convert Range to Image, Excel API, Image Formats,
 slug: convert-range-to-image
 api_version: "v4.0"
 date: 2024-06-15
-weight: 10
-tags: ["excel", "range-to-image", "rest-api", "image-conversion", "aspose-cells"]
+weight: 100
+tags:
+  ["excel", "range-to-image", "rest-api", "image-conversion", "aspose-cells"]
 ---
 
 Convert a specific range from a local Excel file to PNG, JPEG, SVG, TIFF, or BMP via Aspose.Cells Cloud REST API — no full workbook upload required.
@@ -27,20 +28,20 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 
 ## Request Parameters
 
-| Name               | Location                          | Type    | Required | Description |
-|--------------------|-----------------------------------|---------|----------|-------------|
-| **Spreadsheet**    | Form‑Data (`multipart/form-data`) | File    | **Yes**  | The Excel file to be processed. |
-| **worksheet**      | Query                             | String  | **Yes**  | Worksheet name that contains the range (e.g., `Sheet1`). |
-| **range**          | Query                             | String  | **Yes**  | Cell area to convert, e.g., `A1:C10`. |
-| **format**         | Query                             | String  | **Yes**  | Output image format (`png`, `jpeg`, `svg`, `tiff`, `bmp`). |
-| **printHeadings**  | Query                             | Boolean | No       | `true` to include row/column headings in the image. Default: `false`. |
-| **autoRowsFit**    | Query                             | Boolean | No       | Auto-fit rows before rendering. Default: `false`. |
-| **autoColumnsFit** | Query                             | Boolean | No       | Auto-fit columns before rendering. Default: `false`. |
+| Name               | Location                          | Type    | Required | Description                                                                                                                          |
+| ------------------ | --------------------------------- | ------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| **Spreadsheet**    | Form‑Data (`multipart/form-data`) | File    | **Yes**  | The Excel file to be processed.                                                                                                      |
+| **worksheet**      | Query                             | String  | **Yes**  | Worksheet name that contains the range (e.g., `Sheet1`).                                                                             |
+| **range**          | Query                             | String  | **Yes**  | Cell area to convert, e.g., `A1:C10`.                                                                                                |
+| **format**         | Query                             | String  | **Yes**  | Output image format (`png`, `jpeg`, `svg`, `tiff`, `bmp`).                                                                           |
+| **printHeadings**  | Query                             | Boolean | No       | `true` to include row/column headings in the image. Default: `false`.                                                                |
+| **autoRowsFit**    | Query                             | Boolean | No       | Auto-fit rows before rendering. Default: `false`.                                                                                    |
+| **autoColumnsFit** | Query                             | Boolean | No       | Auto-fit columns before rendering. Default: `false`.                                                                                 |
 | **outPath**        | Query                             | String  | No       | Folder path for the generated file if you want to store it in cloud storage. If omitted, the image is returned in the response body. |
-| **outStorageName** | Query                             | String  | No       | Name of the storage service (e.g., `MyStorage`). Ignored if `outPath` is not specified. |
-| **fontsLocation**  | Query                             | String  | No       | URL or path to custom fonts used during conversion. |
-| **region**         | Query                             | String  | No       | Locale identifier (e.g., `en-US`, `fr-FR`). Affects number and date formatting. Default: `en-US`. |
-| **password**       | Query                             | String  | No       | Password for encrypted workbooks. |
+| **outStorageName** | Query                             | String  | No       | Name of the storage service (e.g., `MyStorage`). Ignored if `outPath` is not specified.                                              |
+| **fontsLocation**  | Query                             | String  | No       | URL or path to custom fonts used during conversion.                                                                                  |
+| **region**         | Query                             | String  | No       | Locale identifier (e.g., `en-US`, `fr-FR`). Affects number and date formatting. Default: `en-US`.                                    |
+| **password**       | Query                             | String  | No       | Password for encrypted workbooks.                                                                                                    |
 
 > **Note**: All query parameter names use camelCase (`autoRowsFit`, `autoColumnsFit`, etc.) to match the actual API contract.
 
@@ -73,14 +74,14 @@ Save the response body to a file (e.g., `report.png`) to view the rendered image
 
 ## HTTP Status Codes
 
-| Code | Meaning               | Description |
-|------|-----------------------|-------------|
-| 200  | OK                    | Range converted successfully; image returned in response body. |
+| Code | Meaning               | Description                                                                   |
+| ---- | --------------------- | ----------------------------------------------------------------------------- |
+| 200  | OK                    | Range converted successfully; image returned in response body.                |
 | 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type, malformed range). |
-| 401  | Unauthorized          | Invalid or missing JWT token. |
-| 404  | Not Found             | Source file not accessible or worksheet/range not found. |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error | Unexpected server error during conversion. |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                                 |
+| 404  | Not Found             | Source file not accessible or worksheet/range not found.                      |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                             |
+| 500  | Internal Server Error | Unexpected server error during conversion.                                    |
 
 ## How to Use the Convert Range to Image API
 

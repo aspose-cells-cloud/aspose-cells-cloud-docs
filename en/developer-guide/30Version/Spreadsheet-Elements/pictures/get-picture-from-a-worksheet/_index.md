@@ -8,7 +8,7 @@ aliases: [/get-picture-from-a-worksheet/]
 keywords: "Aspose.Cells Cloud, Excel worksheet, pictures API, get all pictures, REST API, SDK"
 description: "Retrieve all picture objects from an Excel worksheet via Aspose.Cells Cloud REST API."
 ArticleTitle: "Get all pictures in an Excel worksheet - Aspose.Cells Cloud API"
-weight: 10
+weight: 100
 ---
 
 This REST API retrieves all picture information from an Excel worksheet.
@@ -16,9 +16,9 @@ This REST API retrieves all picture information from an Excel worksheet.
 **Prerequisites**  
 Before calling this endpoint, ensure you have:
 
-- A valid Aspose Cloud JWT access token.  
-- The target Excel file uploaded to the selected storage.  
-- The correct storage name (if using a custom storage).  
+- A valid Aspose Cloud JWT access token.
+- The target Excel file uploaded to the selected storage.
+- The correct storage name (if using a custom storage).
 - The worksheet name that contains the pictures.
 
 ## GetWorksheetPictures API
@@ -176,6 +176,6 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 {{< /tabs >}}
 
-You can download the SDKs directly from their respective package managers (e.g., NuGet for .NET, Maven Central for Java, Composer for PHP, npm for Node.js, PyPI for Python, CPAN for Perl, and Go modules for Go).  
+You can download the SDKs directly from their respective package managers (e.g., NuGet for .NET, Maven Central for Java, Composer for PHP, npm for Node.js, PyPI for Python, CPAN for Perl, and Go modules for Go).
 
-*See also:* Add a picture, Delete a picture, Update picture properties.
+_See also:_ Add a picture, Delete a picture, Update picture properties.

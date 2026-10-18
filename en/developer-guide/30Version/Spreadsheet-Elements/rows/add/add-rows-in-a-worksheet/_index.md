@@ -7,7 +7,7 @@ type: docs
 url: /rows/add/rows/
 keywords: "Aspose.Cells Cloud, insert rows, Excel worksheet, REST API, SDK, add multiple rows"
 description: "Learn how to use the Aspose.Cells Cloud REST API to insert multiple rows into an Excel worksheet. This guide covers the endpoint, request parameters, sample cURL commands, and SDK usage examples."
-weight: 20
+weight: 100
 ---
 
 This REST API adds several new rows to an Excel worksheet.
@@ -69,12 +69,12 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 }
 ```
 
-*Possible response codes*  
+_Possible response codes_
 
-- **200 OK** – Rows inserted successfully.  
-- **400 Bad Request** – Invalid parameters (e.g., negative row index).  
-- **401 Unauthorized** – Missing or invalid JWT token.  
-- **404 Not Found** – Specified workbook or worksheet does not exist.  
+- **200 OK** – Rows inserted successfully.
+- **400 Bad Request** – Invalid parameters (e.g., negative row index).
+- **401 Unauthorized** – Missing or invalid JWT token.
+- **404 Not Found** – Specified workbook or worksheet does not exist.
 - **500 Internal Server Error** – Unexpected server error.
 
 {{< /tab >}}

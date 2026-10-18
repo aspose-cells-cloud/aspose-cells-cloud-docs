@@ -32,57 +32,62 @@ curl -X PUT \
 
 ## Request Parameters
 
-| Parameter | Type | Location | Required | Description |
-|-----------|------|----------|----------|-------------|
-| `Spreadsheet` | File | FormData | ✅ Yes | Excel workbook to process. Supported formats: `.xlsx`, `.xls`, `.xlsm`, `.xlsb`, `.ods`. |
-| `outPath` | String | Query | ❌ No | Target path (including filename) in cloud storage for the cleaned output. If omitted, output is saved to the same folder as the source. |
-| `outStorageName` | String | Query | ❌ No | Name of the configured cloud storage (e.g., `MyFirstStorage`) where the output file will be stored. |
-| `region` | String | Query | ❌ No | Locale setting (e.g., `en-US`, `fr-FR`) affecting number/date formatting during processing. |
-| `password` | String | Query | ❌ No | Password for protected workbooks. Omit if file is unencrypted. |
+| Parameter        | Type   | Location | Required | Description                                                                                                                             |
+| ---------------- | ------ | -------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| `Spreadsheet`    | File   | FormData | ✅ Yes   | Excel workbook to process. Supported formats: `.xlsx`, `.xls`, `.xlsm`, `.xlsb`, `.ods`.                                                |
+| `outPath`        | String | Query    | ❌ No    | Target path (including filename) in cloud storage for the cleaned output. If omitted, output is saved to the same folder as the source. |
+| `outStorageName` | String | Query    | ❌ No    | Name of the configured cloud storage (e.g., `MyFirstStorage`) where the output file will be stored.                                     |
+| `region`         | String | Query    | ❌ No    | Locale setting (e.g., `en-US`, `fr-FR`) affecting number/date formatting during processing.                                             |
+| `password`       | String | Query    | ❌ No    | Password for protected workbooks. Omit if file is unencrypted.                                                                          |
 
 ## Response
 
 On success (`200 OK`), the API returns the cleaned workbook as a binary file stream (`Content-Type: application/octet-stream`).
 
-| Field | Type | Description |
-|-------|------|-------------|
+| Field          | Type          | Description                                           |
+| -------------- | ------------- | ----------------------------------------------------- |
 | `ResponseFile` | File (Stream) | The processed workbook with blank worksheets removed. |
 
 ### Error Responses
 
-| Status | Code | Description |
-|--------|------|-------------|
-| `400 Bad Request` | Invalid request format, malformed parameters, or missing required file. |
-| `401 Unauthorized` | Invalid or expired access token; missing or invalid credentials. |
-| `404 Not Found` | Source file not found in storage or inaccessible path. |
+| Status             | Code                                                                        | Description |
+| ------------------ | --------------------------------------------------------------------------- | ----------- |
+| `400 Bad Request`  | Invalid request format, malformed parameters, or missing required file.     |
+| `401 Unauthorized` | Invalid or expired access token; missing or invalid credentials.            |
+| `404 Not Found`    | Source file not found in storage or inaccessible path.                      |
 | `500 Server Error` | Internal processing failure—e.g., corruption during parsing or calculation. |
 
 > **Important**: This operation permanently deletes blank worksheets. Always back up your workbook before use.
 
 ## Use Cases
 
-### 1. Post-Data Consolidation Cleanup  
+### 1. Post-Data Consolidation Cleanup
+
 After merging data from multiple sources into a master workbook, remove placeholder or intermediate sheets that remain empty.
 
-### 2. Template-Based Report Generation  
+### 2. Template-Based Report Generation
+
 Automatically clean up unused template sheets after populating only the required ones with dynamic data.
 
-### 3. ETL Preprocessing Pipelines  
+### 3. ETL Preprocessing Pipelines
+
 Standardize incoming Excel files by removing extraneous blank sheets before analysis, storage, or further transformation.
 
-### 4. Legacy Workbook Modernization  
+### 4. Legacy Workbook Modernization
+
 Optimize aging Excel files that have accumulated empty sheets over time, reducing file size and improving user experience.
 
-### 5. User-Generated Content Validation  
+### 5. User-Generated Content Validation
+
 Ensure consistency in workbooks submitted via web forms or portals by automatically stripping accidental blank sheets.
 
 ## Benefits
 
-| Benefit | Explanation |
-|---------|-------------|
-| **No Infrastructure** | Fully managed cloud service—no servers, updates, or compatibility maintenance required. |
-| **Rapid Integration** | SDKs reduce implementation to 5–10 lines of code (see examples below). |
-| **Cost-Effective** | Pay only for API calls; no upfront or hidden fees. |
+| Benefit                 | Explanation                                                                              |
+| ----------------------- | ---------------------------------------------------------------------------------------- |
+| **No Infrastructure**   | Fully managed cloud service—no servers, updates, or compatibility maintenance required.  |
+| **Rapid Integration**   | SDKs reduce implementation to 5–10 lines of code (see examples below).                   |
+| **Cost-Effective**      | Pay only for API calls; no upfront or hidden fees.                                       |
 | **Reliable Processing** | Tested logic for identifying truly empty sheets (no data, formulas, charts, or objects). |
 
 ## SDK Examples
@@ -131,16 +136,3 @@ response = api.cells_delete_blank_worksheets(
 )
 print(f"Cleaned workbook saved: {response}")
 ```
-
-> View full SDK examples for [C#](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet), [Java](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java), [Python](https://github.com/aspose-cells-cloud/aspose-cells-cloud-python), [PHP](https://github.com/aspose-cells-cloud/aspose-cells-cloud-php), [Node.js](https://github.com/aspose-cells-cloud/aspose-cells-cloud-node), [Ruby](https://github.com/aspose-cells-cloud/aspose-cells-cloud-ruby), [Perl](https://github.com/aspose-cells-cloud/aspose-cells-cloud-perl), and [Go](https://github.com/aspose-cells-cloud/aspose-cells-cloud-go) on GitHub.
-
-## See Also
-
-- [Merge Multiple Excel Files](/merge-excel-files/)
-- [Split Excel Workbook by Worksheet](/split-excel-workbook/)
-- [Protect Workbook with Password](/protect-excel-workbook/)
-- [Convert Excel to PDF](/convert-excel-to-pdf/)
-
-## API Reference
-
-Full OpenAPI specification: [RemoveSpreadsheetBlankWorksheets (v4.0)](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Transform/RemoveSpreadsheetBlankWorksheets)

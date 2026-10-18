@@ -1,6 +1,7 @@
 ---
 url: /remove-characters-by-position/
 title: Remove Characters by Position in Excel – Aspose.Cells Cloud API v4
+linktitle: Remove Characters by Position
 date: 2024-03-15T10:00:00Z
 description: "Use Aspose.Cells Cloud Web API to precisely delete characters from Excel cells by position — first/last N characters, before/after markers, or between delimiters. Includes SDK examples in 8 languages."
 keywords:
@@ -24,20 +25,20 @@ Remove unwanted characters from Excel cells based on positional rules. Aspose.Ce
 
 The API supports the following position-based removal strategies:
 
-| Mode | Description |
-|------|-------------|
-| `theFirstNCharacters` | Removes the first *N* characters from each selected cell. |
-| `theLastNCharacters` | Removes the last *N* characters from each selected cell. |
-| `allCharactersBeforeText` | Deletes all text before the first occurrence of the specified substring. |
-| `allCharactersAfterText` | Deletes all text after the first occurrence of the specified substring. |
-| `BetweenValues` | Removes the substring between two delimiters. Optionally excludes the delimiters themselves using the `includingDelimiters` parameter (see [Options](#options)). |
+| Mode                      | Description                                                                                                                                                      |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `theFirstNCharacters`     | Removes the first _N_ characters from each selected cell.                                                                                                        |
+| `theLastNCharacters`      | Removes the last _N_ characters from each selected cell.                                                                                                         |
+| `allCharactersBeforeText` | Deletes all text before the first occurrence of the specified substring.                                                                                         |
+| `allCharactersAfterText`  | Deletes all text after the first occurrence of the specified substring.                                                                                          |
+| `BetweenValues`           | Removes the substring between two delimiters. Optionally excludes the delimiters themselves using the `includingDelimiters` parameter (see [Options](#options)). |
 
 ## Options
 
-| Option | Type | Description |
-|--------|------|-------------|
-| `caseSensitive` | Boolean | Controls case sensitivity for `allCharactersBeforeText`, `allCharactersAfterText`, and `BetweenValues`. Default: `false`. |
-| `includingDelimiters` | Boolean *(not exposed in query params)* | Applies only to `BetweenValues` mode. When `false`, the delimiter strings themselves are retained; when `true`, they are removed along with the inner content. *(Note: This option is internal to the API service and may be set via SDK or body payload in future versions.)* |
+| Option                | Type                                    | Description                                                                                                                                                                                                                                                                    |
+| --------------------- | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `caseSensitive`       | Boolean                                 | Controls case sensitivity for `allCharactersBeforeText`, `allCharactersAfterText`, and `BetweenValues`. Default: `false`.                                                                                                                                                      |
+| `includingDelimiters` | Boolean _(not exposed in query params)_ | Applies only to `BetweenValues` mode. When `false`, the delimiter strings themselves are retained; when `true`, they are removed along with the inner content. _(Note: This option is internal to the API service and may be set via SDK or body payload in future versions.)_ |
 
 ## API Endpoint
 
@@ -55,20 +56,20 @@ The API requires [JWT token-based authentication](https://docs.aspose.cloud/tota
 
 ### Request Parameters
 
-| Parameter Name | Type | Location | Required | Description |
-|----------------|------|----------|----------|-------------|
-| `Spreadsheet` | File | FormData | ✅ Yes | The Excel file to process (XLSX, XLS, ODS, CSV, etc.). |
-| `theFirstNCharacters` | Integer | Query | ❌ No | Number of leading characters to remove. |
-| `theLastNCharacters` | Integer | Query | ❌ No | Number of trailing characters to remove. |
-| `allCharactersBeforeText` | String | Query | ❌ No | Remove all text before the first occurrence of this substring. |
-| `allCharactersAfterText` | String | Query | ❌ No | Remove all text after the first occurrence of this substring. |
-| `caseSensitive` | Boolean | Query | ❌ No | Whether substring matching is case-sensitive. |
-| `worksheet` | String | Query | ❌ No | Target worksheet name. Defaults to the first worksheet. |
-| `range` | String | Query | ❌ No | Cell range (e.g., `"A1:C10"`). Defaults to all used cells in the worksheet. |
-| `outPath` | String | Query | ❌ No | Cloud storage path for output file. If omitted, saved in source folder. |
-| `outStorageName` | String | Query | ❌ No | Name of the cloud storage for output. |
-| `region` | String | Query | ❌ No | Locale setting (e.g., `"en-US"`, `"zh-CN"`), affecting text encoding and parsing. |
-| `password` | String | Query | ❌ No | Password for protected workbooks. |
+| Parameter Name            | Type    | Location | Required | Description                                                                       |
+| ------------------------- | ------- | -------- | -------- | --------------------------------------------------------------------------------- |
+| `Spreadsheet`             | File    | FormData | ✅ Yes   | The Excel file to process (XLSX, XLS, ODS, CSV, etc.).                            |
+| `theFirstNCharacters`     | Integer | Query    | ❌ No    | Number of leading characters to remove.                                           |
+| `theLastNCharacters`      | Integer | Query    | ❌ No    | Number of trailing characters to remove.                                          |
+| `allCharactersBeforeText` | String  | Query    | ❌ No    | Remove all text before the first occurrence of this substring.                    |
+| `allCharactersAfterText`  | String  | Query    | ❌ No    | Remove all text after the first occurrence of this substring.                     |
+| `caseSensitive`           | Boolean | Query    | ❌ No    | Whether substring matching is case-sensitive.                                     |
+| `worksheet`               | String  | Query    | ❌ No    | Target worksheet name. Defaults to the first worksheet.                           |
+| `range`                   | String  | Query    | ❌ No    | Cell range (e.g., `"A1:C10"`). Defaults to all used cells in the worksheet.       |
+| `outPath`                 | String  | Query    | ❌ No    | Cloud storage path for output file. If omitted, saved in source folder.           |
+| `outStorageName`          | String  | Query    | ❌ No    | Name of the cloud storage for output.                                             |
+| `region`                  | String  | Query    | ❌ No    | Locale setting (e.g., `"en-US"`, `"zh-CN"`), affecting text encoding and parsing. |
+| `password`                | String  | Query    | ❌ No    | Password for protected workbooks.                                                 |
 
 > **Note**: Only one primary mode (`theFirstNCharacters`, `theLastNCharacters`, `allCharactersBeforeText`, `allCharactersAfterText`, or `BetweenValues`) should be specified per request. Combining modes yields undefined behavior.
 
@@ -87,13 +88,13 @@ On success, returns the cleaned workbook as a binary stream (`Content-Type: appl
 
 ### Error Codes
 
-| Status Code | Description |
-|-------------|-------------|
-| `200 OK` | Request succeeded; cleaned file returned. |
-| `400 Bad Request` | Invalid parameter values or malformed request URI. |
-| `401 Unauthorized` | Invalid or expired access token. |
-| `404 Not Found` | Specified file or storage path not found. |
-| `500 Server Error` | Internal error during file processing. |
+| Status Code        | Description                                        |
+| ------------------ | -------------------------------------------------- |
+| `200 OK`           | Request succeeded; cleaned file returned.          |
+| `400 Bad Request`  | Invalid parameter values or malformed request URI. |
+| `401 Unauthorized` | Invalid or expired access token.                   |
+| `404 Not Found`    | Specified file or storage path not found.          |
+| `500 Server Error` | Internal error during file processing.             |
 
 ## Use Cases
 
@@ -110,7 +111,7 @@ On success, returns the cleaned workbook as a binary stream (`Content-Type: appl
 - **Preservation**: Formatting, formulas, and data validation remain intact.
 - **Developer Experience**: Prebuilt SDKs for C#, Java, PHP, Ruby, Node.js, Python, Perl, and Go accelerate integration.
 
-> Customers report up to **90% reduction** in text-cleaning time for large workbooks compared to manual or spreadsheet-native approaches. *(See [Aspose.Cells Cloud Case Studies](https://www.aspose.com/cloud/case-studies/) for verified examples.)*
+> Customers report up to **90% reduction** in text-cleaning time for large workbooks compared to manual or spreadsheet-native approaches. _(See [Aspose.Cells Cloud Case Studies](https://www.aspose.com/cloud/case-studies/) for verified examples.)_
 
 ## OpenAPI Specification
 
@@ -122,6 +123,7 @@ Using an SDK is recommended for production use. The SDK handles authentication, 
 
 {{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 {{< tab tabNum="1" >}}
+
 ```csharp
 // See full example at: https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/blob/master/Examples/Cells/TextProcessing/RemoveCharactersByPosition.cs
 var cellsApi = new CellsApi(clientId, clientSecret);
@@ -132,8 +134,10 @@ var response = await cellsApi.CellsContentRemoveCharactersByPositionAsync(
     range: "A1:A10"
 );
 ```
+
 {{< /tab >}}
 {{< tab tabNum="2" >}}
+
 ```java
 // See full example at: https://github.com/aspose-cells-cloud/aspose-cells-cloud-java/blob/master/Examples/src/main/java/com/aspose/cells/examples/TextProcessing/RemoveCharactersByPosition.java
 CellsApi cellsApi = new CellsApi(clientId, clientSecret);
@@ -144,8 +148,10 @@ File response = cellsApi.cellsContentRemoveCharactersByPosition(
     "A1:A10" // range
 );
 ```
+
 {{< /tab >}}
 {{< tab tabNum="3" >}}
+
 ```php
 // See full example at: https://github.com/aspose-cells-cloud/aspose-cells-cloud-php/blob/master/Samples/TextProcessing/RemoveCharactersByPosition.php
 $cellsApi = new CellsApi($clientId, $clientSecret);
@@ -156,8 +162,10 @@ $response = $cellsApi->cellsContentRemoveCharactersByPosition(
     "A1:A10"
 );
 ```
+
 {{< /tab >}}
 {{< tab tabNum="4" >}}
+
 ```ruby
 # See full example at: https://github.com/aspose-cells-cloud/aspose-cells-cloud-ruby/blob/master/examples/remove_characters_by_position.rb
 cells_api = AsposeCellsCloud::CellsApi.new(client_id, client_secret)
@@ -168,8 +176,10 @@ response = cells_api.cells_content_remove_characters_by_position(
   range: "A1:A10"
 )
 ```
+
 {{< /tab >}}
 {{< tab tabNum="5" >}}
+
 ```typescript
 // See full example at: https://github.com/aspose-cells-cloud/aspose-cells-cloud-node/blob/master/examples/text-processing/remove-characters-by-position.ts
 const cellsApi = new CellsApi(clientId, clientSecret);
@@ -177,11 +187,13 @@ const response = await cellsApi.cellsContentRemoveCharactersByPosition(
   "input.xlsx",
   3,
   "Sheet1",
-  "A1:A10"
+  "A1:A10",
 );
 ```
+
 {{< /tab >}}
 {{< tab tabNum="6" >}}
+
 ```python
 # See full example at: https://github.com/aspose-cells-cloud/aspose-cells-cloud-python/blob/master/examples/text_processing/remove_characters_by_position.py
 cells_api = CellsApi(client_id, client_secret)
@@ -192,8 +204,10 @@ response = cells_api.cells_content_remove_characters_by_position(
     range="A1:A10"
 )
 ```
+
 {{< /tab >}}
 {{< tab tabNum="7" >}}
+
 ```perl
 # See full example at: https://github.com/aspose-cells-cloud/aspose-cells-cloud-perl/blob/master/examples/remove-characters-by-position.pl
 my $cells_api = AsposeCellsCloud::API->new(
@@ -207,8 +221,10 @@ my $response = $cells_api->cells_content_remove_characters_by_position(
     range => "A1:A10"
 );
 ```
+
 {{< /tab >}}
 {{< tab tabNum="8" >}}
+
 ```go
 // See full example at: https://github.com/aspose-cells-cloud/aspose-cells-cloud-go/blob/master/examples/textprocessing/removecharactersbyposition.go
 cfg := cells.NewConfiguration(clientId, clientSecret)
@@ -223,18 +239,8 @@ resp, _, err := api.CellsApi.CellsContentRemoveCharactersByPosition(
     },
 )
 ```
+
 {{< /tab >}}
 {{< /tabs >}}
 
 > Explore the full SDK source and examples at [GitHub](https://github.com/aspose-cells-cloud).
-
-## See Also
-
-- [Batch Text Processing API](/batch-text-processing/)
-- [Replace Text in Excel](/replace-text/)
-- [Find and Replace](/find-replace/)
-- [Extract Text from Excel](/extract-text/)
-
-## License
-
-Aspose.Cells Cloud APIs are available under the [Aspose Cloud Terms of Use](https://www.aspose.com/legal/terms-of-use/). Free trial accounts include 100 free API calls per day and 2 GB storage.

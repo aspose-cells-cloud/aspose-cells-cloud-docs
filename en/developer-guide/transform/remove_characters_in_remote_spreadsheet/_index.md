@@ -4,7 +4,7 @@ ArticleTitle: "Remove Characters In Remote Spreadsheet – Aspose.Cells Cloud AP
 second_title: "Document"
 linktitle: "Remove Characters In Remote Spreadsheet"
 type: docs
-url: /cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/characters
+url: /{name}/worksheets/{worksheet}/range/{range}/content/remove/characters
 aliases: []
 keywords: "Aspose.Cells, Remove Characters, Text Processing"
 description: "Deletes user-defined characters, predefined symbol sets, or any substring from every cell in the chosen range while preserving formulas, formatting and data‑validation for a remote spreadsheet."
@@ -27,25 +27,25 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name      | Type    | Path/Query String/HTTP Body | Description                                                                                                                                                                       |
-|---------------------|---------|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| name                | string  | Path                        | (Required) The name of the workbook file to be retrieved.                                                                                                                         |
-| worksheet           | string  | Path                        | Specify the worksheet of spreadsheet.                                                                                                                                              |
-| range               | string  | Path                        | Specify the worksheet range of spreadsheet.                                                                                                                                       |
-| removeTextMethod    | string  | Query                       | Specify the removal of text method type.                                                                                                                                          |
-| characterSets       | string  | Query                       | Specify the character sets.                                                                                                                                                       |
-| removeCustomValue   | string  | Query                       | Specify the remove custom value.                                                                                                                                                  |
-| caseSensitive       | boolean | Query                       | Affects `Substring` mode and `CustomChars` when enabled.                                                                                                                          |
-| folder              | string  | Query                       | (Optional) The folder path where the workbook is stored. The default is null.                                                                                                    |
-| storageName         | string  | Query                       | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.                                                                               |
-| region              | string  | Query                       | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.                                         |
-| password            | string  | Query                       | The password for opening spreadsheet file.                                                                                                                                         |
+| Parameter Name    | Type    | Path/Query String/HTTP Body | Description                                                                                                                             |
+| ----------------- | ------- | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| name              | string  | Path                        | (Required) The name of the workbook file to be retrieved.                                                                               |
+| worksheet         | string  | Path                        | Specify the worksheet of spreadsheet.                                                                                                   |
+| range             | string  | Path                        | Specify the worksheet range of spreadsheet.                                                                                             |
+| removeTextMethod  | string  | Query                       | Specify the removal of text method type.                                                                                                |
+| characterSets     | string  | Query                       | Specify the character sets.                                                                                                             |
+| removeCustomValue | string  | Query                       | Specify the remove custom value.                                                                                                        |
+| caseSensitive     | boolean | Query                       | Affects `Substring` mode and `CustomChars` when enabled.                                                                                |
+| folder            | string  | Query                       | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
+| storageName       | string  | Query                       | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.                                       |
+| region            | string  | Query                       | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password          | string  | Query                       | The password for opening spreadsheet file.                                                                                              |
 
 ### Request Body Parameter
 
-| Parameter Name | Type | Description |
-| -------------- | ---- | ----------- |
-| *None* | *None* | This operation does not require a request body. |
+| Parameter Name | Type   | Description                                     |
+| -------------- | ------ | ----------------------------------------------- |
+| _None_         | _None_ | This operation does not require a request body. |
 
 ### **Response**
 
@@ -66,13 +66,13 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 **Response Status Codes**
 
-| Code | Meaning | Description |
-|------|---------|-------------|
-| 200 | OK | The characters were removed successfully and the workbook was updated. |
-| 400 | Bad Request | One or more parameters are missing or invalid. |
-| 401 | Unauthorized | Authentication failed – missing or invalid JWT token. |
-| 413 | Payload Too Large | The request size exceeds the allowed limit. |
-| 500 | Internal Server Error | An unexpected error occurred on the server side. |
+| Code | Meaning               | Description                                                            |
+| ---- | --------------------- | ---------------------------------------------------------------------- |
+| 200  | OK                    | The characters were removed successfully and the workbook was updated. |
+| 400  | Bad Request           | One or more parameters are missing or invalid.                         |
+| 401  | Unauthorized          | Authentication failed – missing or invalid JWT token.                  |
+| 413  | Payload Too Large     | The request size exceeds the allowed limit.                            |
+| 500  | Internal Server Error | An unexpected error occurred on the server side.                       |
 
 ## How to Use the Remove Characters In Remote Spreadsheet with SDKs
 
@@ -123,4 +123,3 @@ curl -v "https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/range
 Using an SDK is the fastest way to accelerate development. An SDK abstracts low-level details, allowing you to focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose Cells Cloud web services using various SDKs:
-`[TBD]`

@@ -7,7 +7,7 @@ url: /worksheets/autofit/
 aliases: [/autofit-rows-and-columns-of-worksheet/]
 keywords: "autofit, column, row, Aspose.Cells, Cloud, Excel, API, resize"
 description: "Learn how to automatically resize rows and columns in an Excel worksheet using Aspose.Cells Cloud REST API. Includes cURL, .NET, Java, and Python examples."
-weight: 20
+weight: 100
 ArticleTitle: "Working with Autofit on an Excel Worksheet – Aspose.Cells Cloud API"
 ---
 
@@ -21,22 +21,22 @@ ArticleTitle: "Working with Autofit on an Excel Worksheet – Aspose.Cells Cloud
 **Prerequisites**  
 Before using the Autofit operations you must have:
 
-1. An Aspose.Cells Cloud account with a valid **Client Id** and **Client Secret**.  
-2. A workbook uploaded to Aspose Cloud storage (or accessible via a public URL).  
+1. An Aspose.Cells Cloud account with a valid **Client Id** and **Client Secret**.
+2. A workbook uploaded to Aspose Cloud storage (or accessible via a public URL).
 3. The worksheet name you intend to modify.
 
-**API Reference**  
+**API Reference**
 
-| Operation | HTTP Method | Endpoint | Required Parameters | Request Body | Sample Response | Status Codes |
-|-----------|-------------|----------|--------------------|--------------|----------------|--------------|
-| AutoFit a **column** | POST | `/cells/worksheets/{sheetName}/autofit/column` | `sheetName` (path) <br> `columnIndex` (query) | *none* | `{ "code": 200, "status": "OK", "message": "Column autofitted." }` | 200, 400, 401, 404, 500 |
-| AutoFit **columns** | POST | `/cells/worksheets/{sheetName}/autofit/columns` | `sheetName` (path) <br> `startColumn`, `endColumn` (query) | *none* | `{ "code": 200, "status": "OK", "message": "Columns autofitted." }` | 200, 400, 401, 404, 500 |
-| AutoFit a **row** | POST | `/cells/worksheets/{sheetName}/autofit/row` | `sheetName` (path) <br> `rowIndex` (query) | *none* | `{ "code": 200, "status": "OK", "message": "Row autofitted." }` | 200, 400, 401, 404, 500 |
-| AutoFit **rows** | POST | `/cells/worksheets/{sheetName}/autofit/rows` | `sheetName` (path) <br> `startRow`, `endRow` (query) | *none* | `{ "code": 200, "status": "OK", "message": "Rows autofitted." }` | 200, 400, 401, 404, 500 |
+| Operation            | HTTP Method | Endpoint                                        | Required Parameters                                        | Request Body | Sample Response                                                     | Status Codes            |
+| -------------------- | ----------- | ----------------------------------------------- | ---------------------------------------------------------- | ------------ | ------------------------------------------------------------------- | ----------------------- |
+| AutoFit a **column** | POST        | `/cells/worksheets/{sheetName}/autofit/column`  | `sheetName` (path) <br> `columnIndex` (query)              | _none_       | `{ "code": 200, "status": "OK", "message": "Column autofitted." }`  | 200, 400, 401, 404, 500 |
+| AutoFit **columns**  | POST        | `/cells/worksheets/{sheetName}/autofit/columns` | `sheetName` (path) <br> `startColumn`, `endColumn` (query) | _none_       | `{ "code": 200, "status": "OK", "message": "Columns autofitted." }` | 200, 400, 401, 404, 500 |
+| AutoFit a **row**    | POST        | `/cells/worksheets/{sheetName}/autofit/row`     | `sheetName` (path) <br> `rowIndex` (query)                 | _none_       | `{ "code": 200, "status": "OK", "message": "Row autofitted." }`     | 200, 400, 401, 404, 500 |
+| AutoFit **rows**     | POST        | `/cells/worksheets/{sheetName}/autofit/rows`    | `sheetName` (path) <br> `startRow`, `endRow` (query)       | _none_       | `{ "code": 200, "status": "OK", "message": "Rows autofitted." }`    | 200, 400, 401, 404, 500 |
 
 **Code Samples**
 
-*cURL*
+_cURL_
 
 ```bash
 curl -X POST "https://api.aspose.cloud/v3.0/cells/worksheets/MySheet/autofit/columns?startColumn=0&endColumn=5" \
@@ -44,7 +44,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/worksheets/MySheet/autofit/col
      -H "Content-Type: application/json"
 ```
 
-*.NET (C#)*
+_.NET (C#)_
 
 ```csharp
 using Aspose.Cells.Cloud.SDK.Api;
@@ -65,7 +65,7 @@ var response = apiInstance.PostWorksheetAutofitColumns(
 Console.WriteLine(response.Status);
 ```
 
-*Java*
+_Java_
 
 ```java
 import com.aspose.cloud.cells.api.CellsApi;
@@ -85,7 +85,7 @@ PostWorksheetAutofitRowsResponse resp = api.postWorksheetAutofitRows(
 System.out.println(resp.getStatus());
 ```
 
-*Python*
+_Python_
 
 ```python
 from asposecellscloud import CellsApi, ApiClient, Configuration
@@ -109,8 +109,8 @@ print(response.status)
 
 These snippets demonstrate how to:
 
-1. Authenticate with Aspose.Cells Cloud using your **Client Id** and **Client Secret**.  
-2. Call the appropriate Autofit endpoint for columns or rows.  
+1. Authenticate with Aspose.Cells Cloud using your **Client Id** and **Client Secret**.
+2. Call the appropriate Autofit endpoint for columns or rows.
 3. Process the response, which confirms that the operation succeeded.
 
 **Next Steps**

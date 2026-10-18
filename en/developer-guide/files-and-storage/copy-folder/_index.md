@@ -31,12 +31,12 @@ PUT https://api.aspose.cloud/v4.0/cells/storage/folder/copy/{srcPath}
 
 ### Request Parameters
 
-| Parameter Name    | Required | Type   | Location | Description |
-|-------------------|----------|--------|----------|-------------|
-| `srcPath`         | Yes      | String | Path     | The path of the source folder to copy (e.g., `"source/backup"`). |
-| `destPath`        | Yes      | String | Query    | The path where the new folder will be created (e.g., `"dest/backup"`). |
+| Parameter Name    | Required | Type   | Location | Description                                                                              |
+| ----------------- | -------- | ------ | -------- | ---------------------------------------------------------------------------------------- |
+| `srcPath`         | Yes      | String | Path     | The path of the source folder to copy (e.g., `"source/backup"`).                         |
+| `destPath`        | Yes      | String | Query    | The path where the new folder will be created (e.g., `"dest/backup"`).                   |
 | `srcStorageName`  | No       | String | Query    | Name of the storage containing the source folder (defaults to first configured storage). |
-| `destStorageName` | No       | String | Query    | Name of the destination storage (defaults to `srcStorageName` if omitted). |
+| `destStorageName` | No       | String | Query    | Name of the destination storage (defaults to `srcStorageName` if omitted).               |
 
 ### Authentication
 
@@ -66,15 +66,15 @@ A successful request returns **HTTP 200** with an empty JSON body:
 
 ### HTTP Status Codes
 
-| Code | Meaning               | Description |
-|------|-----------------------|-------------|
-| 200  | OK                    | Folder copied successfully. |
+| Code | Meaning               | Description                                                                                    |
+| ---- | --------------------- | ---------------------------------------------------------------------------------------------- |
+| 200  | OK                    | Folder copied successfully.                                                                    |
 | 400  | Bad Request           | Missing or invalid parameters (e.g., `srcPath` or `destPath` missing, or invalid folder path). |
-| 401  | Unauthorized          | Invalid, expired, or missing JWT token. |
-| 403  | Forbidden             | Insufficient permissions for source/destination storage. |
-| 404  | Not Found             | Source folder does not exist. |
-| 409  | Conflict              | Destination folder already exists (overwrites not supported). |
-| 500  | Internal Server Error | Unexpected server-side failure. |
+| 401  | Unauthorized          | Invalid, expired, or missing JWT token.                                                        |
+| 403  | Forbidden             | Insufficient permissions for source/destination storage.                                       |
+| 404  | Not Found             | Source folder does not exist.                                                                  |
+| 409  | Conflict              | Destination folder already exists (overwrites not supported).                                  |
+| 500  | Internal Server Error | Unexpected server-side failure.                                                                |
 
 > **Note:** Copying a folder to a location where a folder already exists will return `409 Conflict`. Use `DeleteFolder` first if replacement is intended.
 
@@ -86,60 +86,76 @@ The following examples demonstrate copying `"MyFolder"` to `"MyFolderCopy"` in t
 
 {{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 {{< tab tabNum="1" >}}
+
 ```csharp
 // See full example: https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/blob/master/Cells.Cloud.Examples/Examples/Folders/CopyFolder.cs
 var cellsApi = new CellsApi(clientId, clientSecret, basePath, baseAddress);
 cellsApi.CopyFolder("MyFolder", "MyFolderCopy");
 ```
+
 {{< /tab >}}
 {{< tab tabNum="2" >}}
+
 ```java
 // See full example: https://github.com/aspose-cells-cloud/aspose-cells-cloud-java/blob/master/Examples/src/main/java/Example40_CopyFolder.java
 CellsApi cellsApi = new CellsApi(clientId, clientSecret);
 cellsApi.copyFolder("MyFolder", "MyFolderCopy", null, null);
 ```
+
 {{< /tab >}}
 {{< tab tabNum="3" >}}
+
 ```php
 // See full example: https://github.com/aspose-cells-cloud/aspose-cells-cloud-php/blob/master/Examples/Folder/CopyFolder.php
 $cellsApi = new CellsApi($clientId, $clientSecret);
 $cellsApi->copyFolder("MyFolder", "MyFolderCopy");
 ```
+
 {{< /tab >}}
 {{< tab tabNum="4" >}}
+
 ```ruby
 # See full example: https://github.com/aspose-cells-cloud/aspose-cells-cloud-ruby/blob/master/examples/folder/copy_folder.rb
 cells_api = AsposeCellsCloud::CellsApi.new(client_id, client_secret)
 cells_api.copy_folder("MyFolder", "MyFolderCopy")
 ```
+
 {{< /tab >}}
 {{< tab tabNum="5" >}}
+
 ```typescript
 // See full example: https://github.com/aspose-cells-cloud/aspose-cells-cloud-node/blob/master/examples/folder/copyFolder.ts
 const cellsApi = new CellsApi(clientId, clientSecret);
 await cellsApi.copyFolder("MyFolder", "MyFolderCopy");
 ```
+
 {{< /tab >}}
 {{< tab tabNum="6" >}}
+
 ```python
 # See full example: https://github.com/aspose-cells-cloud/aspose-cells-cloud-python/blob/master/examples/folder/copy_folder.py
 cells_api = CellsApi(client_id, client_secret)
 cells_api.copy_folder("MyFolder", "MyFolderCopy")
 ```
+
 {{< /tab >}}
 {{< tab tabNum="7" >}}
+
 ```perl
 # See full example: https://github.com/aspose-cells-cloud/aspose-cells-cloud-perl/blob/master/examples/folder/copy_folder.pl
 my $cells_api = Aspose::Cells::Cloud::CellsApi->new($client_id, $client_secret);
 $cells_api->copy_folder("MyFolder", "MyFolderCopy");
 ```
+
 {{< /tab >}}
 {{< tab tabNum="8" >}}
+
 ```go
 // See full example: https://github.com/aspose-cells-cloud/aspose-cells-cloud-go/blob/master/examples/folder/copy_folder.go
 cellsAPI := cells.NewCellsApi(clientId, clientSecret)
 _, err := cellsAPI.CopyFolder(context.Background(), "MyFolder", &cells.CopyFolderOptions{DestPath: "MyFolderCopy"})
 ```
+
 {{< /tab >}}
 {{< /tabs >}}
 

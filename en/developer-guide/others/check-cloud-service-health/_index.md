@@ -39,11 +39,11 @@ GET https://api.aspose.cloud/v4.0/cells/status/check
 
 ### Request Parameters
 
-| Parameter     | Type   | Required | Description |
-|---------------|--------|----------|-------------|
-| `Authorization` | header | Yes | Bearer token for authentication. |
-| `detail`        | query  | No      | Set to `true` to include detailed component status. |
-| `Accept`        | header | No      | Desired response format; default is `application/json`. |
+| Parameter       | Type   | Required | Description                                             |
+| --------------- | ------ | -------- | ------------------------------------------------------- |
+| `Authorization` | header | Yes      | Bearer token for authentication.                        |
+| `detail`        | query  | No       | Set to `true` to include detailed component status.     |
+| `Accept`        | header | No       | Desired response format; default is `application/json`. |
 
 ### Response Format
 
@@ -66,20 +66,20 @@ A successful response returns HTTP `200 OK` with a JSON payload:
 
 ### HTTP Status Codes
 
-| Code | Meaning             | Description |
-|------|---------------------|-------------|
-| `200`  | OK                  | Service is healthy; full status details included. |
-| `401`  | Unauthorized        | Invalid, expired, or missing access token. |
-| `429`  | Too Many Requests   | Rate limit exceeded. Retry after delay. |
-| `503`  | Service Unavailable | Service undergoing maintenance or experiencing downtime. |
-| `4xx`  | Client Error        | Malformed request, invalid parameter, or missing headers. |
-| `5xx`  | Server Error        | Unexpected server failure; retry with exponential backoff. |
+| Code  | Meaning             | Description                                                |
+| ----- | ------------------- | ---------------------------------------------------------- |
+| `200` | OK                  | Service is healthy; full status details included.          |
+| `401` | Unauthorized        | Invalid, expired, or missing access token.                 |
+| `429` | Too Many Requests   | Rate limit exceeded. Retry after delay.                    |
+| `503` | Service Unavailable | Service undergoing maintenance or experiencing downtime.   |
+| `4xx` | Client Error        | Malformed request, invalid parameter, or missing headers.  |
+| `5xx` | Server Error        | Unexpected server failure; retry with exponential backoff. |
 
 ## Use Cases
 
-- 🔹 **Pre-flight validation** before initiating large-scale document conversions or Excel operations.  
-- 🔹 **Automated SLA monitoring** integrated into CI/CD pipelines or observability platforms (e.g., Prometheus, Datadog).  
-- 🔹 **Troubleshooting** during integration failures—verify service availability before escalating.  
+- 🔹 **Pre-flight validation** before initiating large-scale document conversions or Excel operations.
+- 🔹 **Automated SLA monitoring** integrated into CI/CD pipelines or observability platforms (e.g., Prometheus, Datadog).
+- 🔹 **Troubleshooting** during integration failures—verify service availability before escalating.
 
 ## Implementation Examples
 
@@ -108,9 +108,9 @@ func main() {
     cfg := configuration.NewConfiguration()
     cfg.AppSid = "your-client-id"
     cfg.AppKey = "your-client-secret"
-    
+
     api := api.NewCellsStatusApi(cfg)
-    
+
     resp, _, err := api.CheckCloudServiceHealth(
         context.Background(),
         &api.CheckCloudServiceHealthOpts{Detail: api.BoolPtr(true)},
@@ -122,26 +122,3 @@ func main() {
     fmt.Printf("Service Status: %s\n", *resp.Status)
 }
 ```
-
-> 📚 For other SDKs (Python, Java, Node.js, PHP), see the [Aspose.Cells Cloud GitHub repository](https://github.com/aspose-cells-cloud).
-
-## Best Practices
-
-- ✅ **Implement retry logic** with exponential backoff for transient failures (e.g., `503` or network timeouts).  
-- ✅ **Monitor rate limits**—excessive health checks may trigger throttling.  
-- ✅ **Integrate with alerting systems** (e.g., PagerDuty, Slack) to detect outages proactively.  
-- ✅ **Cache responses** briefly (e.g., 30–60 seconds) to reduce redundant calls.  
-
-## OpenAPI Specification
-
-This endpoint is fully documented in the [Aspose.Cells Cloud OpenAPI spec](https://reference.aspose.cloud/cells/#/CellsStatusController/CheckCloudServiceHealth). Use it to generate clients, test requests, or validate integrations.
-
-## See Also
-
-- [Authentication in Aspose.Cells Cloud](/total/getting-started/authentication/)  
-- [Quick Start: Build Your First App](/cells/quick-start/)  
-- [OAuth2 FAQ & Troubleshooting](/cells/faq/#oauth2)  
-
----
-
-> 💡 **Tip**: Bookmark this page or add a health-check badge to your dashboard using the live status endpoint. For enterprise SLA reporting, combine with the [Usage Metrics API](/cells/usage/).

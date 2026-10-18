@@ -5,7 +5,15 @@ lastmod: 2024-05-20
 linktitle: "Get Public Key"
 type: docs
 url: /get-public-key/
-keywords: ["Aspose.Cells Cloud", "RSA public key", "2048-bit encryption", "REST API", "asymmetric key", "OAuth2"]
+keywords:
+  [
+    "Aspose.Cells Cloud",
+    "RSA public key",
+    "2048-bit encryption",
+    "REST API",
+    "asymmetric key",
+    "OAuth2",
+  ]
 description: "Retrieve the 2048-bit RSA public key from Aspose.Cells Cloud API for secure Excel file encryption. Includes cURL, SDK examples, and OAuth2 authentication."
 weight: 100
 ---
@@ -15,7 +23,8 @@ This API retrieves the RSA public key (2048-bit) used for encrypting sensitive d
 ## Prerequisites
 
 Before calling this endpoint, ensure you have:
-- A valid OAuth2 access token with the `Cells.Read` scope  
+
+- A valid OAuth2 access token with the `Cells.Read` scope
 - An understanding of [JWT-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)
 
 ## Endpoint
@@ -28,10 +37,10 @@ GET https://api.aspose.cloud/v4.0/cells/publickey
 
 ### HTTP Headers
 
-| Header           | Required | Type   | Description                                                                 |
-|------------------|----------|--------|-----------------------------------------------------------------------------|
-| `Authorization`  | Yes      | string | Bearer token for OAuth2 authentication                                      |
-| `Accept`         | No       | string | Desired response format (e.g., `application/json`; defaults to JSON)       |
+| Header          | Required | Type   | Description                                                          |
+| --------------- | -------- | ------ | -------------------------------------------------------------------- |
+| `Authorization` | Yes      | string | Bearer token for OAuth2 authentication                               |
+| `Accept`        | No       | string | Desired response format (e.g., `application/json`; defaults to JSON) |
 
 ### cURL Example
 
@@ -60,7 +69,7 @@ curl -X GET "https://api.aspose.cloud/v4.0/cells/publickey" \
 ### HTTP Status Codes
 
 | Code | Meaning               | Description                                                                 |
-|------|-----------------------|-----------------------------------------------------------------------------|
+| ---- | --------------------- | --------------------------------------------------------------------------- |
 | 200  | OK                    | Public key retrieved successfully; response contains RSA public key in JSON |
 | 400  | Bad Request           | Invalid or missing parameters (e.g., malformed token, unsupported format)   |
 | 401  | Unauthorized          | Invalid, expired, or missing OAuth2 access token                            |
@@ -73,7 +82,8 @@ curl -X GET "https://api.aspose.cloud/v4.0/cells/publickey" \
 
 SDKs reduce boilerplate code, automate token refresh, and simplify integration. Below are examples for common languages:
 
-- **C#**:  
+- **C#**:
+
   ```csharp
   var configuration = new Configuration { AppSid = "xxxx", AppKey = "yyyy" };
   var keyApi = new KeyController(configuration);
@@ -81,7 +91,8 @@ SDKs reduce boilerplate code, automate token refresh, and simplify integration. 
   Console.WriteLine($"Algorithm: {publicKey.CellsCloudPublicKey.Algorithm}, KeySize: {publicKey.CellsCloudPublicKey.KeySize}");
   ```
 
-- **Python**:  
+- **Python**:
+
   ```python
   from asposecellscloud.configuration import Configuration
   from asposecellscloud.api_client import KeyController
@@ -92,32 +103,17 @@ SDKs reduce boilerplate code, automate token refresh, and simplify integration. 
   print(f"Algorithm: {response.cells_cloud_public_key.algorithm}, Size: {response.cells_cloud_public_key.key_size}")
   ```
 
-- **Node.js**:  
-  ```javascript
-  const { Configuration, KeyController } = require('aspose-cells-cloud');
+- **Node.js**:
 
-  const config = new Configuration('xxxx', 'yyyy');
+  ```javascript
+  const { Configuration, KeyController } = require("aspose-cells-cloud");
+
+  const config = new Configuration("xxxx", "yyyy");
   const keyApi = new KeyController(config);
   const response = await keyApi.getPublicKey();
-  console.log(`Algorithm: ${response.body.CellsCloudPublicKey.Algorithm}, Size: ${response.body.CellsCloudPublicKey.KeySize}`);
+  console.log(
+    `Algorithm: ${response.body.CellsCloudPublicKey.Algorithm}, Size: ${response.body.CellsCloudPublicKey.KeySize}`,
+  );
   ```
 
 For a complete list of SDKs and source code, visit the [Aspose.Cells Cloud GitHub repository](https://github.com/aspose-cells-cloud).
-
-### OpenAPI Specification
-
-You can explore and test this endpoint interactively via the [OpenAPI specification](https://reference.aspose.cloud/cells/#/KeyController/GetPublicKey).
-
-## Security Architecture
-
-![Aspose.Cells Cloud Public Key Retrieval Flow](https://docs.aspose.cloud/cells/images/publickey-flow.png)
-
-*Diagram: Client requests OAuth2 token → retrieves public key via `/cells/publickey` → uses key to encrypt Excel data before upload.*
-
-**Alt text:** Diagram showing Aspose.Cells Cloud public key retrieval and data encryption flow
-
-## Related Resources
-
-- [REST API Authentication Overview](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)
-- [Aspose.Cells Cloud SDK Documentation](https://docs.aspose.cloud/cells/sdk/)
-- [Aspose.Cells Cloud SDK Source Code (GitHub)](https://github.com/aspose-cells-cloud)

@@ -4,11 +4,11 @@ ArticleTitle: "Convert Table to PDF – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Convert Table to PDF"
 type: docs
-url: /cells/convert/table/pdf
+url: /convert/table/pdf
 aliases: []
 keywords: "Convert Table PDF, Aspose.Cells, API"
 description: "Converts a table of a spreadsheet on a local drive to a PDF file using Aspose.Cells Cloud."
-weight: 1000
+weight: 100
 ---
 
 ## The Convert Table to PDF of Aspose.Cells Cloud Web Services
@@ -27,24 +27,18 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name   | Type   | Path/Query String/HTTP Body | Description                                                                                                                                                     |
-|------------------|--------|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Spreadsheet      | File   | FormData                    | Upload spreadsheet file.                                                                                                                                         |
-| worksheet        | String | Query                       | Worksheet name of spreadsheet.                                                                                                                                  |
-| tableName        | String | Query                       | Table name.                                                                                                                                                      |
-| outPath          | String | Query                       | (Optional) The folder path where the workbook is stored. The default is null.                                                                                  |
-| outStorageName   | String | Query                       | Output file Storage Name.                                                                                                                                       |
-| fontsLocation    | String | Query                       | Use Custom fonts.                                                                                                                                               |
-| AutoRowsFit      | Boolean| Query                       | (Optional) Autofits all rows in worksheets.                                                                                                                    |
-| AutoColumnsFit   | Boolean| Query                       | (Optional) Autofits all columns in worksheets.                                                                                                                 |
-| region           | String | Query                       | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.                         |
-| password         | String | Query                       | The password for opening spreadsheet file.                                                                                                                      |
-
-### Request Body Parameter
-
-| Parameter Name | Type | Description |
-|----------------|------|-------------|
-| *None* | *None* | *No JSON body is required; the file is sent via multipart/form-data.* |
+| Parameter Name | Type    | Path/Query String/HTTP Body | Description                                                                                                                             |
+| -------------- | ------- | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet    | File    | FormData                    | Upload spreadsheet file.                                                                                                                |
+| worksheet      | String  | Query                       | Worksheet name of spreadsheet.                                                                                                          |
+| tableName      | String  | Query                       | Table name.                                                                                                                             |
+| outPath        | String  | Query                       | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
+| outStorageName | String  | Query                       | Output file Storage Name.                                                                                                               |
+| fontsLocation  | String  | Query                       | Use Custom fonts.                                                                                                                       |
+| AutoRowsFit    | Boolean | Query                       | (Optional) Autofits all rows in worksheets.                                                                                             |
+| AutoColumnsFit | Boolean | Query                       | (Optional) Autofits all columns in worksheets.                                                                                          |
+| region         | String  | Query                       | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password       | String  | Query                       | The password for opening spreadsheet file.                                                                                              |
 
 ### **Response**
 
@@ -56,14 +50,14 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 **Response Status Codes**
 
-| Code | Meaning | Description |
-|------|---------|-------------|
-| 200 | OK | The table was successfully converted to PDF; the response body contains the PDF file stream. |
-| 400 | Bad Request | Invalid request parameters or malformed URL. |
-| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
-| 404 | Not Found | Source file not accessible or worksheet/table not found. |
-| 413 | Payload Too Large | The uploaded spreadsheet exceeds the allowed size limit. |
-| 500 | Internal Server Error | An error occurred while converting the spreadsheet to PDF. |
+| Code | Meaning               | Description                                                                                  |
+| ---- | --------------------- | -------------------------------------------------------------------------------------------- |
+| 200  | OK                    | The table was successfully converted to PDF; the response body contains the PDF file stream. |
+| 400  | Bad Request           | Invalid request parameters or malformed URL.                                                 |
+| 401  | Unauthorized          | Authentication has failed, or no credentials were provided.                                  |
+| 404  | Not Found             | Source file not accessible or worksheet/table not found.                                     |
+| 413  | Payload Too Large     | The uploaded spreadsheet exceeds the allowed size limit.                                     |
+| 500  | Internal Server Error | An error occurred while converting the spreadsheet to PDF.                                   |
 
 ## How to Use the Convert Table to PDF with SDKs
 
@@ -106,6 +100,7 @@ curl -v "https://api.aspose.cloud/v4.0/cells/convert/table/pdf?worksheet={worksh
 Using an SDK is the fastest way to accelerate development. An SDK abstracts low‑level details, allowing you to focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose.Cells Cloud web services using various SDKs:
+
 ```csharp
 // SDK example code for C#
 var apiInstance = new ConversionApi();
@@ -154,5 +149,3 @@ pdf_bytes = api_instance.convert_table_to_pdf(
 with open("output.pdf", "wb") as out_file:
     out_file.write(pdf_bytes)
 ```
-
-`[TBD]`

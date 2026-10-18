@@ -20,57 +20,56 @@ POST http://api.aspose.cloud/v3.0/cells/batch/lock
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-
 ### Request Parameters
 
-| Parameter Name   | Type               | Location | Description                                 |
-|------------------|--------------------|----------|---------------------------------------------|
-| BatchLockRequest | BatchLockRequest   | body     | JSON body containing lock parameters.      |
+| Parameter Name   | Type             | Location | Description                           |
+| ---------------- | ---------------- | -------- | ------------------------------------- |
+| BatchLockRequest | BatchLockRequest | body     | JSON body containing lock parameters. |
 
 #### **BatchLockRequest** Properties
 
-| Name          | Type                     | Description                                            | Notes    |
-|---------------|--------------------------|--------------------------------------------------------|----------|
-| SourceFolder  | string                   | Folder that contains the source Excel files.           | optional |
-| MatchCondition| MatchConditionRequest    | Conditions used to select which files to lock.         | optional |
-| Password      | string                   | Password to apply to the locked files.                | optional |
-| OutFolder     | string                   | Destination folder for the locked files.              | optional |
+| Name           | Type                  | Description                                    | Notes    |
+| -------------- | --------------------- | ---------------------------------------------- | -------- |
+| SourceFolder   | string                | Folder that contains the source Excel files.   | optional |
+| MatchCondition | MatchConditionRequest | Conditions used to select which files to lock. | optional |
+| Password       | string                | Password to apply to the locked files.         | optional |
+| OutFolder      | string                | Destination folder for the locked files.       | optional |
 
 #### **MatchConditionRequest** Properties
 
-| Name               | Type      | Description                                          | Notes    |
-|--------------------|-----------|------------------------------------------------------|----------|
-| RegexPattern       | string    | Regular‑expression pattern to match file names.      | optional |
-| FullMatchConditions| string[]  | Exact file‑name matches for locking.                 | optional |
+| Name                | Type     | Description                                     | Notes    |
+| ------------------- | -------- | ----------------------------------------------- | -------- |
+| RegexPattern        | string   | Regular‑expression pattern to match file names. | optional |
+| FullMatchConditions | string[] | Exact file‑name matches for locking.            | optional |
 
 ### Request Body Parameter
 
 | Parameter Name | Type | Description                                    |
 | -------------- | ---- | ---------------------------------------------- |
 | data           | file | Binary content of the workbook file to create. |
-  
+
 ### **Response**
 
 ```json
 {
-    "Name": "ResponseFile",
-    "DataType": {
-        "Identifier": "File",
-        "Reference": "Stream",
-        "Name": "file"
-    }
+  "Name": "ResponseFile",
+  "DataType": {
+    "Identifier": "File",
+    "Reference": "Stream",
+    "Name": "file"
+  }
 }
 ```
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | When Returned                           |
-|------|-----------------------------|-----------------------------------------|
-| 200 OK | Workbook created successfully | Normal flow                              |
-| 201 Created | Workbook created (alternative response) | When the API returns a created status |
-| 400 Bad Request | Invalid parameters | Client‑side error                        |
-| 401 Unauthorized | Missing or invalid token | Authentication error                    |
-| 409 Conflict | File exists and `isWriteOver=false` | Conflict with existing file    
+| Code             | Meaning                                 | When Returned                         |
+| ---------------- | --------------------------------------- | ------------------------------------- |
+| 200 OK           | Workbook created successfully           | Normal flow                           |
+| 201 Created      | Workbook created (alternative response) | When the API returns a created status |
+| 400 Bad Request  | Invalid parameters                      | Client‑side error                     |
+| 401 Unauthorized | Missing or invalid token                | Authentication error                  |
+| 409 Conflict     | File exists and `isWriteOver=false`     | Conflict with existing file           |
 
 ## How to Use the PostBatchLock API with SDKs
 

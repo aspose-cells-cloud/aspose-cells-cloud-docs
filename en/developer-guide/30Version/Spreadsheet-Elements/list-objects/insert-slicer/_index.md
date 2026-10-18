@@ -6,7 +6,7 @@ type: docs
 url: /list-objects/insert-slicer/
 keywords: "slicer, ListObject, Excel, REST API, Aspose.Cells Cloud, cloud SDK"
 description: "Add a slicer to an Excel ListObject via Aspose.Cells Cloud REST API v3.0. Full cURL & SDK examples for C#, Java, Python, Node.js, and more."
-weight: 20
+weight: 100
 ArticleTitle: "Insert a Slicer into an Excel ListObject – Aspose.Cells Cloud API"
 date: 2023-11-15
 categories: ["cloud-api", "excel"]
@@ -70,13 +70,13 @@ curl -v "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listo
 
 **HTTP Status Codes**
 
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
+| Code | Meaning               | Description                                                                              |
+| ---- | --------------------- | ---------------------------------------------------------------------------------------- |
 | 200  | OK                    | Slicer inserted successfully; response contains metadata (name, column index, position). |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).                             |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                                            |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                                        |
+| 500  | Internal Server Error | Unexpected server error.                                                                 |
 
 ### Error Handling
 

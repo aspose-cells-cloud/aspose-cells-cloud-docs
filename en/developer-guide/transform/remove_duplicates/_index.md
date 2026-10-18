@@ -4,11 +4,11 @@ ArticleTitle: "Remove Duplicates – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Remove Duplicates"
 type: docs
-url: /cells/remove/duplicates
+url: /remove/duplicates
 aliases: []
 keywords: "Aspose.Cells, Remove Duplicates, API"
 description: "Removes duplicate values in a worksheet, range, or table."
-weight: 1000
+weight: 100
 ---
 
 ## The Remove Duplicates of Aspose.Cells Cloud Web Services
@@ -27,22 +27,22 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type   | Path/Query String/HTTP Body | Description |
-|----------------|--------|-----------------------------|-------------|
-| Spreadsheet    | File   | FormData                    | Upload spreadsheet file. |
-| worksheet      | String | Query                       | The worksheet name. (optional) |
-| range          | String | Query                       | Range name that need deduplication. (optional) |
-| table          | String | Query                       | Table name that need deduplication. (optional) |
-| outPath        | String | Query                       | (Optional) The folder path where the workbook is stored. The default is null. |
-| outStorageName | String | Query                       | Output file Storage Name. |
+| Parameter Name | Type   | Path/Query String/HTTP Body | Description                                                                                                                             |
+| -------------- | ------ | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet    | File   | FormData                    | Upload spreadsheet file.                                                                                                                |
+| worksheet      | String | Query                       | The worksheet name. (optional)                                                                                                          |
+| range          | String | Query                       | Range name that need deduplication. (optional)                                                                                          |
+| table          | String | Query                       | Table name that need deduplication. (optional)                                                                                          |
+| outPath        | String | Query                       | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
+| outStorageName | String | Query                       | Output file Storage Name.                                                                                                               |
 | region         | String | Query                       | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password       | String | Query                       | The password for opening spreadsheet file. |
+| password       | String | Query                       | The password for opening spreadsheet file.                                                                                              |
 
 ### Request Body Parameter
 
-| Parameter Name | Type | Description |
-| -------------- | ---- | ----------- |
-| [TBD] | [TBD] | [TBD] |
+| Parameter Name | Type  | Description |
+| -------------- | ----- | ----------- |
+| [TBD]          | [TBD] | [TBD]       |
 
 ### **Response**
 
@@ -54,13 +54,13 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 **Response Status Codes**
 
-| Code | Meaning | Description |
-|------|---------|-------------|
-| 200 | OK | The resulting spreadsheet with duplicates removed is returned as a file stream. |
-| 400 | Bad Request | Invalid request parameters or malformed URL. |
-| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Internal Server Error | The spreadsheet has encountered an anomaly in obtaining data or other server‑side error. |
+| Code | Meaning               | Description                                                                              |
+| ---- | --------------------- | ---------------------------------------------------------------------------------------- |
+| 200  | OK                    | The resulting spreadsheet with duplicates removed is returned as a file stream.          |
+| 400  | Bad Request           | Invalid request parameters or malformed URL.                                             |
+| 401  | Unauthorized          | Authentication has failed, or no credentials were provided.                              |
+| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                                        |
+| 500  | Internal Server Error | The spreadsheet has encountered an anomaly in obtaining data or other server‑side error. |
 
 ## How to Use the Remove Duplicates with SDKs
 
@@ -72,6 +72,7 @@ You can use the cURL command-line tool to access Aspose.Cells web services easil
 
 {< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}
 {< tab tabNum="1" >}
+
 ```bash
 # Use HTTPS for a secure connection
 curl -v "https://api.aspose.cloud/v4.0/cells/remove/duplicates?worksheet=Sheet1&range=A1:C10&table=MyTable&outPath=output%2Ffolder&outStorageName=MyStorage&region=en-US&password=MyPassword" \
@@ -81,13 +82,16 @@ curl -v "https://api.aspose.cloud/v4.0/cells/remove/duplicates?worksheet=Sheet1&
   -H "Authorization: Bearer <jwt token>" \
   -F 'Spreadsheet=@example.xlsx'
 ```
+
 {< /tab >}
 {< tab tabNum="2" >}
+
 ```json
 {
   "File": "binary stream of the resulting spreadsheet (e.g., .xlsx)"
 }
 ```
+
 {< /tab >}
 {< /tabs >}
 
@@ -96,6 +100,7 @@ curl -v "https://api.aspose.cloud/v4.0/cells/remove/duplicates?worksheet=Sheet1&
 Using an SDK is the fastest way to accelerate development. An SDK abstracts low‑level details, allowing you to focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose Cells Cloud web services using various SDKs:
+
 ```csharp
 // SDK example code for C#
 var config = new Configuration
@@ -164,5 +169,3 @@ try:
 except ApiException as e:
     print("Exception when calling TransformApi->remove_duplicates: %s\\n" % e)
 ```
-
-`[TBD]`

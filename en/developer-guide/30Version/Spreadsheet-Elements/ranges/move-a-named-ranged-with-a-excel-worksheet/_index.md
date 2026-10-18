@@ -7,7 +7,7 @@ url: /ranges/move/
 aliases: [/move-a-named-range-with-an-excel-worksheet/]
 keywords: "Aspose.Cells Cloud, move named range, Excel worksheet, REST API, range move, SDK examples"
 description: "Learn how to move a named range within an Excel worksheet using Aspose.Cells Cloud REST API v3.0, with endpoint details, authentication, examples, and SDK code samples."
-weight: 20
+weight: 100
 ArticleTitle: "Move a named range with an Excel worksheet using Aspose.Cells Cloud API"
 ---
 
@@ -22,6 +22,7 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/mo
 ```
 
 ### Authentication
+
 The API requires a **Bearer JWT token** obtained through the Aspose Cloud OAuth flow. Include the token in the `Authorization` header:
 
 ```
@@ -31,8 +32,9 @@ Authorization: Bearer <jwt token>
 The token must have the **Cells** scope.
 
 ### Prerequisites
-- The workbook must be stored in Aspose Cloud storage.  
-- Provide the storage name (`storageName`) and the folder path (`folder`) if the file is not in the root directory.  
+
+- The workbook must be stored in Aspose Cloud storage.
+- Provide the storage name (`storageName`) and the folder path (`folder`) if the file is not in the root directory.
 - Use the latest Aspose.Cells Cloud SDK version that supports API version **v3.0**.
 
 ### **Security and Authentication**
@@ -41,36 +43,36 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Name           | Type   | Location | Description |
-|----------------|--------|----------|-------------|
-| **name**       | string | path     | Name of the workbook file |
-| **sheetName**  | string | path     | Name of the worksheet |
-| **destRow**    | integer| query    | Starting row index of the destination range (0‑based) |
-| **destColumn**| integer| query    | Starting column index of the destination range (0‑based) |
-| **range**      | object | body     | Definition of the source range to be moved |
-| **folder**     | string | query    | Folder path where the workbook is stored |
-| **storageName**| string | query    | Name of the Aspose Cloud storage |
+| Name            | Type    | Location | Description                                              |
+| --------------- | ------- | -------- | -------------------------------------------------------- |
+| **name**        | string  | path     | Name of the workbook file                                |
+| **sheetName**   | string  | path     | Name of the worksheet                                    |
+| **destRow**     | integer | query    | Starting row index of the destination range (0‑based)    |
+| **destColumn**  | integer | query    | Starting column index of the destination range (0‑based) |
+| **range**       | object  | body     | Definition of the source range to be moved               |
+| **folder**      | string  | query    | Folder path where the workbook is stored                 |
+| **storageName** | string  | query    | Name of the Aspose Cloud storage                         |
 
 ### Request Body
 
-| Field          | Type   | Required | Description |
-|----------------|--------|----------|-------------|
-| **ColumnCount**| integer| No | Number of columns in the source range |
-| **ColumnWidth**| integer| No | Width of each column (in points) |
-| **FirstColumn**| integer| No | Zero‑based index of the first column of the source range |
-| **FirstRow**   | integer| No | Zero‑based index of the first row of the source range |
-| **Name**       | string | No | Name of the range (if it is a named range) |
-| **RefersTo**   | string | No | A‑1 style reference that defines the range |
-| **RowCount**   | integer| No | Number of rows in the source range |
-| **RowHeight**  | integer| No | Height of each row (in points) |
-| **Worksheet**  | string | No | Worksheet that contains the source range |
+| Field           | Type    | Required | Description                                              |
+| --------------- | ------- | -------- | -------------------------------------------------------- |
+| **ColumnCount** | integer | No       | Number of columns in the source range                    |
+| **ColumnWidth** | integer | No       | Width of each column (in points)                         |
+| **FirstColumn** | integer | No       | Zero‑based index of the first column of the source range |
+| **FirstRow**    | integer | No       | Zero‑based index of the first row of the source range    |
+| **Name**        | string  | No       | Name of the range (if it is a named range)               |
+| **RefersTo**    | string  | No       | A‑1 style reference that defines the range               |
+| **RowCount**    | integer | No       | Number of rows in the source range                       |
+| **RowHeight**   | integer | No       | Height of each row (in points)                           |
+| **Worksheet**   | string  | No       | Worksheet that contains the source range                 |
 
 ### Workflow
 
-1. **Upload** the workbook to Aspose Cloud storage (if it does not already exist).  
-2. **Generate** a JWT token using the OAuth endpoint.  
-3. **Build** the JSON payload that describes the source range.  
-4. **Call** the `moveto` endpoint with the required path, query parameters, and the JSON body.  
+1. **Upload** the workbook to Aspose Cloud storage (if it does not already exist).
+2. **Generate** a JWT token using the OAuth endpoint.
+3. **Build** the JSON payload that describes the source range.
+4. **Call** the `moveto` endpoint with the required path, query parameters, and the JSON body.
 5. **Verify** the response; a successful call returns a `200 OK` status.
 
 ### Example Request / Response
@@ -85,7 +87,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>" \
--d '{ 
+-d '{
   "ColumnCount": 7,
   "ColumnWidth": 19,
   "FirstColumn": 0,
@@ -117,21 +119,21 @@ When an error occurs, the response includes an optional `ErrorMessage` field tha
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
 
 **Response Schema**
 
-| Field | Type   | Description |
-|-------|--------|-------------|
-| **Code** | integer | HTTP‑like status code returned by the API (e.g., 200) |
-| **Status** | string | Textual description of the result (e.g., "OK") |
-| **ErrorMessage** | string (optional) | Human‑readable error details when the call fails |
+| Field            | Type              | Description                                           |
+| ---------------- | ----------------- | ----------------------------------------------------- |
+| **Code**         | integer           | HTTP‑like status code returned by the API (e.g., 200) |
+| **Status**       | string            | Textual description of the result (e.g., "OK")        |
+| **ErrorMessage** | string (optional) | Human‑readable error details when the call fails      |
 
 ## Cloud SDK Family
 

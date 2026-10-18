@@ -6,11 +6,10 @@ linktitle: "Get in workbook"
 type: docs
 url: /workbook/get-text-items/
 aliases: [/get-text-items-from-a-workbook/]
-weight: 10
+weight: 100
 keywords: "Excel, Aspose.Cells Cloud, REST API, Spreadsheet, Get Text Items, Workbook"
 description: "Retrieve text items from an Excel workbook using the Aspose.Cells Cloud REST API. Available through SDKs for C#, Java, Python, PHP, Ruby, Go, Node.js, Perl, and Swift."
 ---
-
 
 ## REST API
 
@@ -24,7 +23,6 @@ GET https://api.aspose.cloud/v3.0/cells/{name}/textItems
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-
 ### Request parameters
 
 | Parameter Name | Type   | Location | Description                                            |
@@ -37,8 +35,8 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ```json
 {
-  "Status":"OK",
-  "Code":200,
+  "Status": "OK",
+  "Code": 200,
   "TextItems": {
     "link": {
       "Href": "string",
@@ -63,13 +61,14 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## How to Use the GetWorkbookTextItems API with SDKs
 
 ### GetWorkbookTextItems API Specification
@@ -122,7 +121,7 @@ curl -X GET "https://api.aspose.cloud/v3.0/cells/test.xlsx/textItems" -H "accept
 Typical HTTP response codes:
 
 | Code | Description                                 |
-|------|---------------------------------------------|
+| ---- | ------------------------------------------- |
 | 200  | Request succeeded; text items are returned. |
 | 401  | Unauthorized – missing or invalid token.    |
 | 403  | Forbidden – insufficient permissions.       |

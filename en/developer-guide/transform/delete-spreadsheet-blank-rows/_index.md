@@ -29,7 +29,6 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 -H "Authorization: Bearer {access_token}"
 ```
 
-
 ### Request Parameters
 
 | Parameter Name | Type   | Location | Description                                                                                                                                    |
@@ -44,15 +43,17 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 All calls must include the `Authorization: Bearer <access_token>` header. Obtain the access token via the Aspose Cloud OAuth2 flow described in the authentication guide.
 
 > [!NOTE]  
-> Before calling this API, ensure:  
-> 1. Your Aspose Cloud account is active  
-> 2. The workbook is uploaded to cloud storage  
-> 3. You have a valid OAuth2 access token  
+> Before calling this API, ensure:
+>
+> 1. Your Aspose Cloud account is active
+> 2. The workbook is uploaded to cloud storage
+> 3. You have a valid OAuth2 access token
 
-**Prerequisites & Notes**  
-- Ensure your Aspose Cloud storage is configured and the source workbook is uploaded before invoking the API.  
-- Supported file formats include `.xlsx`, `.xls`, `.ods`, and other common spreadsheet types.  
-- Maximum file size is 150 MB for a single request; larger files should be processed in chunks.  
+**Prerequisites & Notes**
+
+- Ensure your Aspose Cloud storage is configured and the source workbook is uploaded before invoking the API.
+- Supported file formats include `.xlsx`, `.xls`, `.ods`, and other common spreadsheet types.
+- Maximum file size is 150 MB for a single request; larger files should be processed in chunks.
 
 ### Response
 

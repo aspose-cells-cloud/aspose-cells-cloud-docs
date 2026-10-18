@@ -1,9 +1,9 @@
 ---
-url: /convert-range-to-json/
 title: Convert Excel Range to JSON | Aspose.Cells Cloud API
+linktitle: Convert Excel Range to JSON
+url: /convert-range-to-json/
 date: 2024-06-20
 description: Use Aspose.Cells Cloud API to convert Excel range data to JSON. Includes cURL, SDK examples, authentication, and real-world use cases.
-robots: noindex
 sitemap: false
 weight: 100
 keywords: convert range to json, Aspose.Cells Cloud, Excel to JSON, spreadsheet conversion, API
@@ -27,18 +27,18 @@ All requests require a valid JWT access token. See [Authentication Overview](htt
 
 ## Request Parameters
 
-| Parameter | Type | Location | Required | Description |
-|-----------|------|----------|----------|-------------|
-| `Spreadsheet` | File | FormData | ✅ Yes | Local Excel/CSV file to process. |
-| `worksheet` | String | Query | ✅ Yes | Name of the worksheet containing the range (e.g., `Sheet1`). |
-| `range` | String | Query | ✅ Yes | Cell range in A1 notation (e.g., `A1:C10`). |
-| `outPath` | String | Query | ❌ No | Folder path in cloud storage where the source file resides (default: `null`). |
-| `outStorageName` | String | Query | ❌ No | Cloud storage name for output (if persisting result). |
-| `fontsLocation` | String | Query | ❌ No | Custom font directory for rendering. |
-| `region` | String | Query | ❌ No | Locale setting (e.g., `en-US`, `fr-FR`) to influence number/date formatting. |
-| `password` | String | Query | ❌ No | Password to open the protected spreadsheet. |
-| `AutoRowsFit` | Boolean | Query | ❌ No | Fit row heights to content (default: `false`). |
-| `AutoColumnsFit` | Boolean | Query | ❌ No | Fit column widths to content (default: `false`). |
+| Parameter        | Type    | Location | Required | Description                                                                   |
+| ---------------- | ------- | -------- | -------- | ----------------------------------------------------------------------------- |
+| `Spreadsheet`    | File    | FormData | ✅ Yes   | Local Excel/CSV file to process.                                              |
+| `worksheet`      | String  | Query    | ✅ Yes   | Name of the worksheet containing the range (e.g., `Sheet1`).                  |
+| `range`          | String  | Query    | ✅ Yes   | Cell range in A1 notation (e.g., `A1:C10`).                                   |
+| `outPath`        | String  | Query    | ❌ No    | Folder path in cloud storage where the source file resides (default: `null`). |
+| `outStorageName` | String  | Query    | ❌ No    | Cloud storage name for output (if persisting result).                         |
+| `fontsLocation`  | String  | Query    | ❌ No    | Custom font directory for rendering.                                          |
+| `region`         | String  | Query    | ❌ No    | Locale setting (e.g., `en-US`, `fr-FR`) to influence number/date formatting.  |
+| `password`       | String  | Query    | ❌ No    | Password to open the protected spreadsheet.                                   |
+| `AutoRowsFit`    | Boolean | Query    | ❌ No    | Fit row heights to content (default: `false`).                                |
+| `AutoColumnsFit` | Boolean | Query    | ❌ No    | Fit column widths to content (default: `false`).                              |
 
 ## Response
 
@@ -62,7 +62,7 @@ Content-Disposition: attachment; filename="result.json"
   {
     "Product ID": "P1002",
     "Product Name": "USB-C Cable",
-    "Price": 12.50
+    "Price": 12.5
   }
 ]
 ```
@@ -71,24 +71,24 @@ Content-Disposition: attachment; filename="result.json"
 
 ## HTTP Status Codes
 
-| Code | Meaning | Description |
-|------|---------|-------------|
-| `200` | OK | Range successfully converted. |
-| `400` | Bad Request | Invalid parameters (e.g., malformed range, unsupported file format). |
-| `401` | Unauthorized | Missing, expired, or invalid JWT token. |
-| `404` | Not Found | Source file not found or inaccessible. |
-| `500` | Internal Server Error | Unexpected server error during processing. |
+| Code  | Meaning               | Description                                                          |
+| ----- | --------------------- | -------------------------------------------------------------------- |
+| `200` | OK                    | Range successfully converted.                                        |
+| `400` | Bad Request           | Invalid parameters (e.g., malformed range, unsupported file format). |
+| `401` | Unauthorized          | Missing, expired, or invalid JWT token.                              |
+| `404` | Not Found             | Source file not found or inaccessible.                               |
+| `500` | Internal Server Error | Unexpected server error during processing.                           |
 
 ## Use Cases
 
-| Use Case | Description |
-|----------|-------------|
-| **Real-Time Dashboards** | Feed live Excel ranges into Chart.js, D3.js, or Power BI. |
-| **E-Commerce Sync** | Automatically publish product catalogs or pricing to web APIs. |
-| **ML Data Pipelines** | Preprocess cleaned spreadsheets for training datasets. |
+| Use Case                     | Description                                                             |
+| ---------------------------- | ----------------------------------------------------------------------- |
+| **Real-Time Dashboards**     | Feed live Excel ranges into Chart.js, D3.js, or Power BI.               |
+| **E-Commerce Sync**          | Automatically publish product catalogs or pricing to web APIs.          |
+| **ML Data Pipelines**        | Preprocess cleaned spreadsheets for training datasets.                  |
 | **Configuration Management** | Store feature flags or A/B test parameters in Excel and deploy as JSON. |
-| **i18n Localization** | Convert translation spreadsheets to JSON for React i18n or gettext. |
-| **Webhook Payloads** | Transform report data into JSON for event-driven integrations. |
+| **i18n Localization**        | Convert translation spreadsheets to JSON for React i18n or gettext.     |
+| **Webhook Payloads**         | Transform report data into JSON for event-driven integrations.          |
 
 > 🔗 **See also**: [Convert Range to CSV](/convert-range-to-csv/) for tabular data interchange.
 
@@ -153,11 +153,11 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/range/json?worksheet=Sh
 
 ## Additional Resources
 
-- [API Reference](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertRangeToJson)  
-- [GitHub SDK Repository](https://github.com/aspose-cells-cloud)  
-- [Authentication Guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)  
+- [API Reference](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertRangeToJson)
+- [GitHub SDK Repository](https://github.com/aspose-cells-cloud)
+- [Authentication Guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)
 
 ---
 
-*Last updated: 2024-06-20*  
-*Feedback? [Open an issue on GitHub](https://github.com/aspose-cells-cloud/docs/issues)*
+_Last updated: 2024-06-20_  
+_Feedback? [Open an issue on GitHub](https://github.com/aspose-cells-cloud/docs/issues)_

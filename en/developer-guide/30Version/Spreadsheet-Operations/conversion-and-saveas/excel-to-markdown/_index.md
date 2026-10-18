@@ -13,6 +13,7 @@ ArticleTitle: "Convert Excel to Markdown – Aspose.Cells Cloud API Documentatio
 This REST API converts a spreadsheet file to a Markdown-format file.
 
 ## Security and Authentication
+
 The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## REST API
@@ -26,7 +27,6 @@ POST https://api.aspose.cloud/v3.0/cells/convert/markdown
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### Query Parameters
-
 
 | Parameter Name        | Type   | Location | Description                                                                                       |
 | --------------------- | ------ | -------- | ------------------------------------------------------------------------------------------------- |
@@ -56,8 +56,6 @@ The API returns a JSON object of type **FileInfo**:
 | 401       | Unauthorized – missing or invalid token.                          | `{"error":"Invalid access token."}`             |
 | 400       | Bad Request – missing required parameters or invalid file format. | `{"error":"The 'datafile' field is required."}` |
 | 500       | Internal Server Error – unexpected server problem.                | `{"error":"An unexpected error occurred."}`     |
-
-
 
 ## How to Use the PostConvertWorkbookToMarkdown API with SDKs
 

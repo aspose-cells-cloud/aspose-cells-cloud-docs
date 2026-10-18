@@ -6,42 +6,42 @@ url: /tasks/support-request-file/
 aliases: [/support-request-file-in-task-api/]
 keywords: "Aspose.Cells, REST API, Excel, Cloud"
 description: "Aspose.Cells Cloud API enables task-based processing of request files for Excel workbooks."
-weight: 10
+weight: 100
 ArticleTitle: "Support Request File in Aspose.Cells Task API"
 ---
 
 ## REST API
 
-| **API** | **Type** | **Description** | **Resource Link** |
-| :- | :- | :- | :- |
-| /cells/task/runtask | POST | Run Task | [PostRunTask](https://apireference.aspose.cloud/cells/#/Task/PostRunTask) |
+| **API**             | **Type** | **Description** | **Resource Link**                                                         |
+| :------------------ | :------- | :-------------- | :------------------------------------------------------------------------ |
+| /cells/task/runtask | POST     | Run Task        | [PostRunTask](https://apireference.aspose.cloud/cells/#/Task/PostRunTask) |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Task/PostRunTask) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 **Request Parameters**
 
-| Parameter | Type | Required | Description |
-|-----------|------|----------|-------------|
-| TaskDescription | object | Yes | Container for a single task definition. |
-| TaskType | string | Yes | Type of task, e.g., `ImportData` or `SaveResult`. |
-| Workbook.FileSourceType | string | Yes | Source of the workbook file (`CloudFileSystem`, `InMemoryFiles`). |
-| Workbook.FilePath | string | Yes | Path to the workbook file in the selected source. |
-| ImportBatchDataOption.DestinationWorksheet | string | Yes | Target worksheet name for imported data. |
-| ImportBatchDataOption.IsInsert | boolean | Yes | Whether to insert rows (`true`) or overwrite (`false`). |
-| ImportBatchDataOption.Source.FileSourceType | string | Yes | Source of the request file (`RequestFiles`). |
-| ImportBatchDataOption.Source.FilePath | string | Yes | Path to the request file containing batch data. |
-| SaveResultTaskParameter.ResultSource | string | Yes | Source of the result file (`InMemoryFiles`). |
-| SaveResultTaskParameter.ResultDestination.DestinationType | string | Yes | Destination type for the result (`CloudFileSystem`). |
-| SaveResultTaskParameter.ResultDestination.InputFile | string | Yes | Input workbook file name. |
-| SaveResultTaskParameter.ResultDestination.OutputFile | string | Yes | Desired output file name. |
+| Parameter                                                 | Type    | Required | Description                                                       |
+| --------------------------------------------------------- | ------- | -------- | ----------------------------------------------------------------- |
+| TaskDescription                                           | object  | Yes      | Container for a single task definition.                           |
+| TaskType                                                  | string  | Yes      | Type of task, e.g., `ImportData` or `SaveResult`.                 |
+| Workbook.FileSourceType                                   | string  | Yes      | Source of the workbook file (`CloudFileSystem`, `InMemoryFiles`). |
+| Workbook.FilePath                                         | string  | Yes      | Path to the workbook file in the selected source.                 |
+| ImportBatchDataOption.DestinationWorksheet                | string  | Yes      | Target worksheet name for imported data.                          |
+| ImportBatchDataOption.IsInsert                            | boolean | Yes      | Whether to insert rows (`true`) or overwrite (`false`).           |
+| ImportBatchDataOption.Source.FileSourceType               | string  | Yes      | Source of the request file (`RequestFiles`).                      |
+| ImportBatchDataOption.Source.FilePath                     | string  | Yes      | Path to the request file containing batch data.                   |
+| SaveResultTaskParameter.ResultSource                      | string  | Yes      | Source of the result file (`InMemoryFiles`).                      |
+| SaveResultTaskParameter.ResultDestination.DestinationType | string  | Yes      | Destination type for the result (`CloudFileSystem`).              |
+| SaveResultTaskParameter.ResultDestination.InputFile       | string  | Yes      | Input workbook file name.                                         |
+| SaveResultTaskParameter.ResultDestination.OutputFile      | string  | Yes      | Desired output file name.                                         |
 
 **Response**
 
-| Field | Type | Description |
-|-------|------|-------------|
-| Code | integer | HTTP status code (e.g., 200 for success). |
-| Status | string | Operation status (`OK` or error message). |
-| Result | object | Details of the task execution, including any generated files. |
+| Field  | Type    | Description                                                   |
+| ------ | ------- | ------------------------------------------------------------- |
+| Code   | integer | HTTP status code (e.g., 200 for success).                     |
+| Status | string  | Operation status (`OK` or error message).                     |
+| Result | object  | Details of the task execution, including any generated files. |
 
 You can use **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 

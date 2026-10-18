@@ -7,7 +7,7 @@ url: /search-and-replace/
 aliases: [/working-with-text/, /text/]
 description: "Learn how to search and replace text in Excel workbooks and worksheets using Aspose.Cells Cloud REST API. Includes request format, sample code for .NET, Java, Python, and error handling."
 keywords: "Aspose.Cells Cloud, Excel, search and replace, REST API, .NET, Java, Python"
-weight: 20
+weight: 100
 ArticleTitle: "Search and Replace Text in Excel Files using Aspose.Cells Cloud API"
 ---
 
@@ -95,12 +95,13 @@ Below are minimal examples for three popular SDKs. Replace `{clientId}`, `{clien
 | 404       | Not Found – workbook or worksheet does not exist | Check the file name, folder path, and `sheetName`.                       |
 | 415       | Unsupported Media Type – invalid file format     | Ensure the uploaded file is in a supported Excel or CSV format.          |
 | 202       | Accepted – request accepted for processing       | Poll the operation status if asynchronous processing is used.            |
-| 204       | No Content – operation succeeded with no body    | The replacement was applied; no additional data returned.               |
+| 204       | No Content – operation succeeded with no body    | The replacement was applied; no additional data returned.                |
 | 500       | Internal Server Error – unexpected failure       | Retry after a short delay; contact Aspose support if the issue persists. |
 
-**Notes:**  
-- Large workbooks may exceed request size limits; consider uploading the file to cloud storage first.  
-- When `ignoreCase` is set to `true`, be aware that locale‑specific case mappings can affect results.  
+**Notes:**
+
+- Large workbooks may exceed request size limits; consider uploading the file to cloud storage first.
+- When `ignoreCase` is set to `true`, be aware that locale‑specific case mappings can affect results.
 - Using `matchWholeCell` with formulas will not replace partial matches inside the formula text.
 
 ## Search and replace in Excel files

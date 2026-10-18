@@ -6,7 +6,7 @@ url: /how-to-convert-file-formats
 description: "Learn how to convert Excel, CSV, PDF, and 20+ formats using Aspose.Cells Cloud REST API — including local, cloud, and save-as conversion modes with .NET code samples."
 date: 2023-11-15
 draft: false
-weight: 10
+weight: 100
 tags: ["excel", "rest-api", "conversion", "pdf", "csv"]
 ---
 
@@ -20,29 +20,29 @@ Aspose.Cells Cloud Spreadsheet API provides a set of dual-channel interfaces for
 
 ## **Core Conversion Matrix**
 
-| Conversion Type       | Object Level      | Typical API                     | Output Formats                 |
-|-----------------------|-------------------|---------------------------------|--------------------------------|
-| **Local Conversion**  | Workbook          | `ConvertSpreadsheet`            | PDF/XLSX/JSON/.... 20+ formats |
-|                       | Worksheet         | `ConvertWorksheetToImage`       | PNG/JPEG/SVG                   |
-|                       |                   | `ConvertWorksheetToPdf`         | Pdf                            |
-|                       | Table             | `ConvertTableToImage`           | PNG/JPEG/SVG/....              |
-|                       |                   | `ConvertTableToPdf`             | Pdf                            |
-|                       |                   | `ConvertTableToCsv`             | Csv                            |
-|                       |                   | `ConvertTableToHtml`            | Html                           |
-|                       |                   | `ConvertTableToJson`            | JSON                           |
-|                       | Range             | `ConvertRangeToImage`           | PNG/JPEG/SVG/....              |
-|                       |                   | `ConvertRangeToPdf`             | Pdf                            |
-|                       |                   | `ConvertRangeToCsv`             | Csv                            |
-|                       |                   | `ConvertRangeToHtml`            | Html                           |
-|                       |                   | `ConvertRangeToJson`            | JSON                           |
-|                       | Chart             | `ConvertChartToImage`           | PNG/JPEG/SVG/....              |
-|                       |                   | `ConvertChartToPdf`             | PDF                            |
-| **Cloud Conversion**  | Workbook          | `ExportSpreadsheetAsFormat`     | PDF/XLSX/JSON/.... 20+ formats |
-|                       | Worksheet         | `ExportWorksheetAsFormat`       | PDF/XLSX/JSON/.... 20+ formats |
-|                       | Table             | `ExportTableAsFormat`           | PDF/XLSX/JSON/.... 20+ formats |
-|                       | Range             | `ExportRangeAsFormat`           | PDF/XLSX/JSON/.... 20+ formats |
-|                       | Chart             | `ExportChartAsFormat`           | PDF/XLSX/JSON/.... 20+ formats |
-| **Cloud Save As**     | Workbook          | `SaveSpreadsheetAs`             | PDF/XLSX/JSON/.... 20+ formats |
+| Conversion Type      | Object Level | Typical API                 | Output Formats                 |
+| -------------------- | ------------ | --------------------------- | ------------------------------ |
+| **Local Conversion** | Workbook     | `ConvertSpreadsheet`        | PDF/XLSX/JSON/.... 20+ formats |
+|                      | Worksheet    | `ConvertWorksheetToImage`   | PNG/JPEG/SVG                   |
+|                      |              | `ConvertWorksheetToPdf`     | Pdf                            |
+|                      | Table        | `ConvertTableToImage`       | PNG/JPEG/SVG/....              |
+|                      |              | `ConvertTableToPdf`         | Pdf                            |
+|                      |              | `ConvertTableToCsv`         | Csv                            |
+|                      |              | `ConvertTableToHtml`        | Html                           |
+|                      |              | `ConvertTableToJson`        | JSON                           |
+|                      | Range        | `ConvertRangeToImage`       | PNG/JPEG/SVG/....              |
+|                      |              | `ConvertRangeToPdf`         | Pdf                            |
+|                      |              | `ConvertRangeToCsv`         | Csv                            |
+|                      |              | `ConvertRangeToHtml`        | Html                           |
+|                      |              | `ConvertRangeToJson`        | JSON                           |
+|                      | Chart        | `ConvertChartToImage`       | PNG/JPEG/SVG/....              |
+|                      |              | `ConvertChartToPdf`         | PDF                            |
+| **Cloud Conversion** | Workbook     | `ExportSpreadsheetAsFormat` | PDF/XLSX/JSON/.... 20+ formats |
+|                      | Worksheet    | `ExportWorksheetAsFormat`   | PDF/XLSX/JSON/.... 20+ formats |
+|                      | Table        | `ExportTableAsFormat`       | PDF/XLSX/JSON/.... 20+ formats |
+|                      | Range        | `ExportRangeAsFormat`       | PDF/XLSX/JSON/.... 20+ formats |
+|                      | Chart        | `ExportChartAsFormat`       | PDF/XLSX/JSON/.... 20+ formats |
+| **Cloud Save As**    | Workbook     | `SaveSpreadsheetAs`         | PDF/XLSX/JSON/.... 20+ formats |
 
 ### **Local File Conversion**
 
@@ -101,25 +101,25 @@ CellsApi cellsApi = new CellsApi(clientId, clientSecret);
 
 ```csharp
 // Convert cloud Excel to PDF, Save to local file
-cellsApi.ExportSpreadsheetAsFormat( new SDK.Request.ExportSpreadsheetAsFormatRequest 
-{ 
+cellsApi.ExportSpreadsheetAsFormat( new SDK.Request.ExportSpreadsheetAsFormatRequest
+{
     name = "EmployeeSalesSummary.xlsx" ,
     format = "pdf",
-    folder ="NetSDKData" 
-} , "EmployeeSalesSummary.pdf");   
+    folder ="NetSDKData"
+} , "EmployeeSalesSummary.pdf");
 ```
 
 - **Convert Excel worksheet to pdf**
 
 ```csharp
 // Convert cloud Excel worksheet to PDF, Save to local file
-cellsApi.ExportWorksheetAsFormat (new SDK.Request.ExportWorksheetAsFormatRequest 
-{ 
+cellsApi.ExportWorksheetAsFormat (new SDK.Request.ExportWorksheetAsFormatRequest
+{
     name = "EmployeeSalesSummary.xlsx",
     worksheet = "Sales",
     format = "pdf",
-    folder ="NetSDKData" 
-} , "EmployeeSalesSummary_Sales.pdf");   
+    folder ="NetSDKData"
+} , "EmployeeSalesSummary_Sales.pdf");
 ```
 
 ## Installing and Initializing the Aspose.Cells Cloud SDK
@@ -143,22 +143,22 @@ CellsApi cellsInstance = new CellsApi(clientId, clientSecret);
 
 ```
 
-## **File Format Conversion Use Cases**  
+## **File Format Conversion Use Cases**
 
-Aspose Cells Cloud API delivers enterprise-grade **spreadsheet conversion** capabilities for critical business scenarios:  
+Aspose Cells Cloud API delivers enterprise-grade **spreadsheet conversion** capabilities for critical business scenarios:
 
 1. **Excel → PDF**  
-   Generate print-ready reports with preserved formatting  
+   Generate print-ready reports with preserved formatting
 2. **Spreadsheets → HTML**  
-   Embed interactive tables in web applications  
+   Embed interactive tables in web applications
 3. **CSV → Excel (XLSX)**  
-   Transform raw data into analyzable workbooks  
+   Transform raw data into analyzable workbooks
 4. **Custom Format Transcoding**  
-   Convert between 20+ formats (XLS, XLSB, ODS, FODS, TSV)  
-![Input-to-output format conversion matrix: 20+ formats supported including Excel, CSV, PDF, HTML, JSON, SVG, and ODS](https://docs.aspose.cloud/image-1.png)
+    Convert between 20+ formats (XLS, XLSB, ODS, FODS, TSV)  
+   ![Input-to-output format conversion matrix: 20+ formats supported including Excel, CSV, PDF, HTML, JSON, SVG, and ODS](https://docs.aspose.cloud/image-1.png)
 
 > “Used by Fortune 500 companies to automate financial reporting (Excel → PDF) and embed live dashboards (Spreadsheets → HTML) with sub-200ms conversion latency.”
 
-## **Conclusion: Streamline Conversions with One API Call**  
+## **Conclusion: Streamline Conversions with One API Call**
 
 With Aspose.Cells Cloud, developers can unify spreadsheet conversion logic across local, cloud, and hybrid workflows — all from a single, consistent API surface. Whether you're building reporting tools, data pipelines, or web integrations, our REST-based SDK ensures reliable, scalable format transformations with minimal code overhead.

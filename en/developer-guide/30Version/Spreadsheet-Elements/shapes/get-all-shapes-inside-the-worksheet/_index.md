@@ -8,12 +8,13 @@ aliases: [/get-all-shapes-inside-the-worksheet/]
 keywords: "Aspose.Cells, Cloud API, Excel shapes, get shapes, REST, SDK"
 description: "Retrieve every shape (charts, pictures, text boxes) from a worksheet using Aspose.Cells Cloud REST API. Includes cURL example, SDK snippets, authentication steps, and error handling."
 ArticleTitle: "Get All Shapes on an Excel Worksheet"
-weight: 10
+weight: 100
 ---
 
 This REST API enables retrieval of all shapes on an Excel worksheet.
 
 ## Security and Authentication
+
 The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## REST API
@@ -24,13 +25,13 @@ GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes
 
 ### Request Parameters
 
-| Parameter Name  | Type   | Location | Description                                                                                              |
-| --------------- | ------ | -------- | -------------------------------------------------------------------------------------------------------- |
-| **name**        | string | path     | The name of the Excel file.                                                                              |
-| **sheetName**   | string | path     | The name of the worksheet.                                                                               |
-| **folder**      | string | query    | The folder that contains the document.                                                                   |
-| **storageName** | string | query    | The name of the storage service to use.                                                                   |
-| **include**     | string | query    | Set to `details` to return full shape properties; otherwise only the `link` objects are returned.       |
+| Parameter Name  | Type   | Location | Description                                                                                       |
+| --------------- | ------ | -------- | ------------------------------------------------------------------------------------------------- |
+| **name**        | string | path     | The name of the Excel file.                                                                       |
+| **sheetName**   | string | path     | The name of the worksheet.                                                                        |
+| **folder**      | string | query    | The folder that contains the document.                                                            |
+| **storageName** | string | query    | The name of the storage service to use.                                                           |
+| **include**     | string | query    | Set to `details` to return full shape properties; otherwise only the `link` objects are returned. |
 
 > **Optional**: `folder`, `storageName`, and `include` can be omitted when the file resides in the root storage.
 

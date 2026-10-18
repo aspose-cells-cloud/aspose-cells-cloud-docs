@@ -2,7 +2,7 @@
 title: "Get Cell Data from a Worksheet"
 type: docs
 url: /get-cell-data-from-a-worksheet/
-weight: 10
+weight: 100
 date: 2024-06-15
 api_version: "3.0"
 keywords: "Aspose.Cells Cloud, get cell data, Excel API, REST API, cell value, worksheet API, Aspose API example"
@@ -27,12 +27,12 @@ curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1
 
 **Parameters**
 
-| Parameter          | Type   | Description                                                                 | Required |
-|--------------------|--------|-----------------------------------------------------------------------------|----------|
+| Parameter          | Type   | Description                                                                         | Required |
+| ------------------ | ------ | ----------------------------------------------------------------------------------- | -------- |
 | `cellOrMethodName` | string | Must match the cell address (e.g., `A3`) or method (e.g., `firstcell`, `lastcell`). | Yes      |
-| `fileName`         | string | Name of the workbook file (e.g., `myWorkbook.xlsx`).                       | Yes      |
-| `worksheet`        | string | Name of the worksheet (e.g., `Sheet1`).                                    | Yes      |
-| `Authorization`    | header | Bearer token for authentication.                                            | Yes      |
+| `fileName`         | string | Name of the workbook file (e.g., `myWorkbook.xlsx`).                                | Yes      |
+| `worksheet`        | string | Name of the worksheet (e.g., `Sheet1`).                                             | Yes      |
+| `Authorization`    | header | Bearer token for authentication.                                                    | Yes      |
 
 {{< /tab >}}
 
@@ -65,7 +65,7 @@ curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1
 }
 ```
 
-> *Note: `IsStyleSet` is deprecated in v3.1+; use `Style` object instead.*
+> _Note: `IsStyleSet` is deprecated in v3.1+; use `Style` object instead._
 
 {{< /tab >}}
 

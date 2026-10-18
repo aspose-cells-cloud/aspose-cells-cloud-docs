@@ -1,14 +1,14 @@
 ---
-title: "UnpivotRange"
-ArticleTitle: "UnpivotRange – Aspose.Cells Cloud"
+title: "Unpivot Range"
+ArticleTitle: "Unpivot Range – Aspose.Cells Cloud"
 second_title: "Document"
-linktitle: "UnpivotRange"
+linktitle: "Unpivot Range"
 type: docs
-url: /cells/unpivot/range
+url: /unpivot/range
 aliases: []
-keywords: "Aspose.Cells, UnpivotRange, API"
+keywords: "Aspose.Cells, Unpivot Range, API"
 description: "Switch rows and columns in the spreadsheet."
-weight: 10
+weight: 100
 ---
 
 ## The UnpivotRange of Aspose.Cells Cloud Web Services
@@ -27,22 +27,22 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name   | Type   | Path/Query String/HTTP Body | Description                                                                                                                                                     |
-|------------------|--------|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Spreadsheet      | File   | FormData                    | Upload spreadsheet file.                                                                                                                                         |
-| worksheet        | string | Query                       | The worksheet name.                                                                                                                                              |
-| cellArea         | string | Query                       | A specified data range.                                                                                                                                          |
-| skipEmptyValue   | boolean| Query                       | If true, skips empty values. Default: true.                                                                                                                      |
-| outPath          | string | Query                       | (Optional) The folder path where the workbook is stored. The default is null.                                                                                   |
-| outStorageName   | string | Query                       | Output file Storage Name.                                                                                                                                       |
-| region           | string | Query                       | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.                        |
-| password         | string | Query                       | The password for opening spreadsheet file.                                                                                                                      |
+| Parameter Name | Type    | Path/Query String/HTTP Body | Description                                                                                                                             |
+| -------------- | ------- | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet    | File    | FormData                    | Upload spreadsheet file.                                                                                                                |
+| worksheet      | string  | Query                       | The worksheet name.                                                                                                                     |
+| cellArea       | string  | Query                       | A specified data range.                                                                                                                 |
+| skipEmptyValue | boolean | Query                       | If true, skips empty values. Default: true.                                                                                             |
+| outPath        | string  | Query                       | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
+| outStorageName | string  | Query                       | Output file Storage Name.                                                                                                               |
+| region         | string  | Query                       | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password       | string  | Query                       | The password for opening spreadsheet file.                                                                                              |
 
 ### Request Body Parameter
 
 | Parameter Name | Type | Description |
-|----------------|------|-------------|
-| — | — | — |
+| -------------- | ---- | ----------- |
+| —              | —    | —           |
 
 ### **Response**
 
@@ -54,13 +54,13 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 **Response Status Codes**
 
-| Code | Meaning | Description |
-|------|---------|-------------|
-| 200 | OK | The unpivoted spreadsheet file is returned. |
-| 400 | Bad Request | Invalid request parameters. |
-| 401 | Unauthorized | Authentication failed. |
-| 413 | Payload Too Large | Uploaded file exceeds size limit. |
-| 500 | Internal Server Error | Server encountered an unexpected condition. |
+| Code | Meaning               | Description                                 |
+| ---- | --------------------- | ------------------------------------------- |
+| 200  | OK                    | The unpivoted spreadsheet file is returned. |
+| 400  | Bad Request           | Invalid request parameters.                 |
+| 401  | Unauthorized          | Authentication failed.                      |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.           |
+| 500  | Internal Server Error | Server encountered an unexpected condition. |
 
 ## How to Use the UnpivotRange with SDKs
 
@@ -98,4 +98,3 @@ curl -v "https://api.aspose.cloud/v4.0/cells/unpivot/range?worksheet=Sheet1&cell
 Using an SDK is the fastest way to accelerate development. An SDK abstracts low-level details, allowing you to focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose Cells Cloud web services using various SDKs:
- `[TBD]`

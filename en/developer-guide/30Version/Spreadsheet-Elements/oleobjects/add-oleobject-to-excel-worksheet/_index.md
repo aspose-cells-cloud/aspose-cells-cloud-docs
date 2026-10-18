@@ -8,7 +8,7 @@ aliases: [/add-oleobject-to-excel-worksheet/]
 keywords: "Add OLE object, Excel, Aspose.Cells Cloud, REST API, SDK"
 description: "Use Aspose.Cells Cloud REST API to add OLE objects to Excel worksheets. The API can be called directly or through SDKs for C#, Java, PHP, Ruby, Node.js, Python, Perl, and Go."
 ArticleTitle: "Add OLE Object to Excel Worksheet with Aspose.Cells Cloud API"
-weight: 20
+weight: 100
 ---
 
 The Aspose.Cells Cloud API enables programmatic manipulation of Excel workbooks, including the ability to embed OLE objects (e.g., Word documents, PDFs, or other binary files) directly into a worksheet.
@@ -81,13 +81,13 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/oleobj
 
 **Possible HTTP status codes**
 
-| Code | Description                                 |
-|------|---------------------------------------------|
-| 200  | OLE object added successfully.              |
-| 400  | Bad request – missing or invalid parameters.|
-| 401  | Unauthorized – invalid or missing JWT token.|
+| Code | Description                                                     |
+| ---- | --------------------------------------------------------------- |
+| 200  | OLE object added successfully.                                  |
+| 400  | Bad request – missing or invalid parameters.                    |
+| 401  | Unauthorized – invalid or missing JWT token.                    |
 | 404  | Not found – workbook, worksheet, or source file does not exist. |
-| 500  | Internal server error – unexpected failure. |
+| 500  | Internal server error – unexpected failure.                     |
 
 A typical successful response returns the following JSON payload:
 

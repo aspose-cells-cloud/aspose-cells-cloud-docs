@@ -10,7 +10,7 @@ tags:
 categories:
   - "cells"
   - "api-reference"
-weight: 10
+weight: 100
 draft: false
 slug: delete-vertical-page-break
 api_version: v3.0

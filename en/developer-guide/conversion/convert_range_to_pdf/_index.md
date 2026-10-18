@@ -1,14 +1,14 @@
 ---
-title: "ConvertRangeToPdf"
+title: "Convert Range To Pdf"
 ArticleTitle: "Convert Range to PDF – Aspose.Cells Cloud API"
 second_title: "Document"
-linktitle: "ConvertRangeToPdf"
+linktitle: "Convert Range To Pdf"
 type: docs
-url: /cells/convert/range/pdf
+url: /convert/range/pdf
 aliases: []
 keywords: "Aspose.Cells, Convert Range to PDF, API"
 description: "Converts a specified range of a spreadsheet to PDF using Aspose.Cells Cloud."
-weight: 1
+weight: 100
 ---
 
 ## The ConvertRangeToPdf of Aspose.Cells Cloud Web Services
@@ -27,23 +27,23 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name   | Type   | Path/Query String/HTTP Body | Description                                                                                                                                    |
-|------------------|--------|-----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| Spreadsheet      | File   | FormData                    | Upload spreadsheet file.                                                                                                                       |
-| worksheet        | String | Query                       | worksheet name of spreadsheet.                                                                                                                |
-| range            | String | Query                       | cell area. e.g. A1:C10                                                                                                                         |
-| outPath          | String | Query                       | (Optional) The folder path where the workbook is stored. The default is null.                                                                 |
-| outStorageName   | String | Query                       | Output file Storage Name.                                                                                                                      |
-| fontsLocation    | String | Query                       | Use Custom fonts.                                                                                                                              |
-| AutoRowsFit      | Boolean| Query                       | (Optional) Autofits all rows in worksheets.                                                                                                   |
-| AutoColumnsFit   | Boolean| Query                       | (Optional) Autofits all columns in worksheets.                                                                                                |
-| region           | String | Query                       | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.       |
-| password         | String | Query                       | The password for opening spreadsheet file.                                                                                                     |
+| Parameter Name | Type    | Path/Query String/HTTP Body | Description                                                                                                                             |
+| -------------- | ------- | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet    | File    | FormData                    | Upload spreadsheet file.                                                                                                                |
+| worksheet      | String  | Query                       | worksheet name of spreadsheet.                                                                                                          |
+| range          | String  | Query                       | cell area. e.g. A1:C10                                                                                                                  |
+| outPath        | String  | Query                       | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
+| outStorageName | String  | Query                       | Output file Storage Name.                                                                                                               |
+| fontsLocation  | String  | Query                       | Use Custom fonts.                                                                                                                       |
+| AutoRowsFit    | Boolean | Query                       | (Optional) Autofits all rows in worksheets.                                                                                             |
+| AutoColumnsFit | Boolean | Query                       | (Optional) Autofits all columns in worksheets.                                                                                          |
+| region         | String  | Query                       | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password       | String  | Query                       | The password for opening spreadsheet file.                                                                                              |
 
 ### Request Body Parameter
 
-| Parameter Name | Type | Description |
-|----------------|------|-------------|
+| Parameter Name | Type | Description              |
+| -------------- | ---- | ------------------------ |
 | Spreadsheet    | File | Upload spreadsheet file. |
 
 ### **Response**
@@ -56,13 +56,13 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 **Response Status Codes**
 
-| Code | Meaning | Description |
-|------|---------|-------------|
-| 200 | OK | Successful conversion; returns the generated PDF file stream. |
-| 400 | Bad Request | Invalid url. |
-| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Internal Server Error | The spreadsheet has encountered an anomaly in obtaining conversion data. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | Successful conversion; returns the generated PDF file stream.            |
+| 400  | Bad Request           | Invalid url.                                                             |
+| 401  | Unauthorized          | Authentication has failed, or no credentials were provided.              |
+| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                        |
+| 500  | Internal Server Error | The spreadsheet has encountered an anomaly in obtaining conversion data. |
 
 ## How to Use the ConvertRangeToPdf with SDKs
 
@@ -105,6 +105,7 @@ curl -v "https://api.aspose.cloud/v4.0/cells/convert/range/pdf?worksheet=Sheet1&
 Using an SDK is the fastest way to accelerate development. An SDK abstracts low-level details, allowing you to focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose Cells Cloud web services using various SDKs:
+
 ```csharp
 // SDK example code for C#
 var apiInstance = new ConversionApi();
@@ -132,16 +133,15 @@ with open("sample.xlsx", "rb") as f:
 
 ```javascript
 // SDK example code for JavaScript/Node.js
-const fs = require('fs');
-const { ConversionApi } = require('asposecellscloud');
+const fs = require("fs");
+const { ConversionApi } = require("asposecellscloud");
 const apiInstance = new ConversionApi();
 
-let file = fs.createReadStream('sample.xlsx');
-apiInstance.convertRangeToPdf(file, { worksheet: 'Sheet1', range: 'A1:C10' })
-    .then((result) => {
-        fs.writeFileSync('output.pdf', result);
-    })
-    .catch((error) => console.error(error));
+let file = fs.createReadStream("sample.xlsx");
+apiInstance
+  .convertRangeToPdf(file, { worksheet: "Sheet1", range: "A1:C10" })
+  .then((result) => {
+    fs.writeFileSync("output.pdf", result);
+  })
+  .catch((error) => console.error(error));
 ```
-
-`[TBD]`

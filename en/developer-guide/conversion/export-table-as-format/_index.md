@@ -2,7 +2,7 @@
 title: "Export Excel Table to PDF, PNG, CSV via Aspose.Cells Cloud"
 lastmod: 2024-03-15
 date: 2020-01-01
-linktitle: "Export Table to PDF/PNG/CSV"
+linktitle: "Export Table to Image"
 type: docs
 url: /export-table-as-format/
 keywords: "Aspose.Cells Cloud, export table, Excel table to PDF, REST API, cloud conversion, JWT auth"
@@ -33,56 +33,56 @@ All requests require [JWT token-based authentication](https://docs.aspose.cloud/
 
 ### Request Parameters
 
-| Parameter Name   | Type    | Location | Required | Description |
-|------------------|---------|----------|----------|-------------|
-| `name`           | string  | Path     | ✅ Yes    | Name of the workbook file in cloud storage. |
-| `worksheet`      | string  | Path     | ✅ Yes    | Name of the worksheet containing the table. |
-| `tableName`      | string  | Path     | ✅ Yes    | Name of the table to export. |
-| `format`         | string  | Query    | ✅ Yes    | Output format: `pdf`, `png`, `svg`, `csv`, `json`, etc. Case-insensitive (e.g., `"Pdf"` or `"PDF"` accepted). |
-| `folder`         | string  | Query    | ❌ No     | Folder path of the workbook. Defaults to root. |
-| `storageName`    | string  | Query    | ❌ No     | Custom cloud storage name. Uses default storage if omitted. |
-| `outPath`        | string  | Query    | ❌ No     | Output file path in cloud storage. Defaults to root. |
-| `outStorageName` | string  | Query    | ❌ No     | Storage for output file. Defaults to `storageName` or default storage. |
-| `fontsLocation`  | string  | Query    | ❌ No     | Custom font directory for accurate rendering. |
-| `region`         | string  | Query    | ❌ No     | Locale (e.g., `en-US`, `fr-FR`) affecting number/date formatting. |
-| `password`       | string  | Query    | ❌ No     | Password to decrypt the protected workbook. |
-| `autoRowsFit`    | boolean | Query    | ❌ No     | Auto-fit rows before export. |
-| `autoColumnsFit` | boolean | Query    | ❌ No     | Auto-fit columns before export. |
+| Parameter Name   | Type    | Location | Required | Description                                                                                                   |
+| ---------------- | ------- | -------- | -------- | ------------------------------------------------------------------------------------------------------------- |
+| `name`           | string  | Path     | ✅ Yes   | Name of the workbook file in cloud storage.                                                                   |
+| `worksheet`      | string  | Path     | ✅ Yes   | Name of the worksheet containing the table.                                                                   |
+| `tableName`      | string  | Path     | ✅ Yes   | Name of the table to export.                                                                                  |
+| `format`         | string  | Query    | ✅ Yes   | Output format: `pdf`, `png`, `svg`, `csv`, `json`, etc. Case-insensitive (e.g., `"Pdf"` or `"PDF"` accepted). |
+| `folder`         | string  | Query    | ❌ No    | Folder path of the workbook. Defaults to root.                                                                |
+| `storageName`    | string  | Query    | ❌ No    | Custom cloud storage name. Uses default storage if omitted.                                                   |
+| `outPath`        | string  | Query    | ❌ No    | Output file path in cloud storage. Defaults to root.                                                          |
+| `outStorageName` | string  | Query    | ❌ No    | Storage for output file. Defaults to `storageName` or default storage.                                        |
+| `fontsLocation`  | string  | Query    | ❌ No    | Custom font directory for accurate rendering.                                                                 |
+| `region`         | string  | Query    | ❌ No    | Locale (e.g., `en-US`, `fr-FR`) affecting number/date formatting.                                             |
+| `password`       | string  | Query    | ❌ No    | Password to decrypt the protected workbook.                                                                   |
+| `autoRowsFit`    | boolean | Query    | ❌ No    | Auto-fit rows before export.                                                                                  |
+| `autoColumnsFit` | boolean | Query    | ❌ No    | Auto-fit columns before export.                                                                               |
 
 ### Response
 
 Returns the exported table as binary file content.
 
-| Field | Type | Description |
-|-------|------|-------------|
-| `fileContents` | `byte[]` | Base64-encoded file data (cURL returns raw binary; SDKs decode automatically). |
-| `contentType`  | `string` | MIME type (e.g., `application/pdf`, `image/png`, `text/csv`). |
-| `fileDownloadName` | `string` | Optional suggested filename. |
+| Field              | Type     | Description                                                                    |
+| ------------------ | -------- | ------------------------------------------------------------------------------ |
+| `fileContents`     | `byte[]` | Base64-encoded file data (cURL returns raw binary; SDKs decode automatically). |
+| `contentType`      | `string` | MIME type (e.g., `application/pdf`, `image/png`, `text/csv`).                  |
+| `fileDownloadName` | `string` | Optional suggested filename.                                                   |
 
 ### HTTP Status Codes
 
-| Code | Meaning | Description |
-|------|---------|-------------|
-| `200` | OK | Table successfully exported. Response contains binary file content. |
-| `400` | Bad Request | Missing/invalid parameters (e.g., unsupported `format`, malformed URL). |
-| `401` | Unauthorized | Invalid or missing JWT token. |
-| `404` | Not Found | Workbook, worksheet, or table not found. |
-| `500` | Internal Server Error | Unexpected server error during conversion. |
+| Code  | Meaning               | Description                                                             |
+| ----- | --------------------- | ----------------------------------------------------------------------- |
+| `200` | OK                    | Table successfully exported. Response contains binary file content.     |
+| `400` | Bad Request           | Missing/invalid parameters (e.g., unsupported `format`, malformed URL). |
+| `401` | Unauthorized          | Invalid or missing JWT token.                                           |
+| `404` | Not Found             | Workbook, worksheet, or table not found.                                |
+| `500` | Internal Server Error | Unexpected server error during conversion.                              |
 
 ## Use Cases
 
-- **Legacy System Migration**: Convert legacy `.xls` tables to `.xlsx` or CSV for modern systems.  
-- **Data Interchange**: Normalize tables to CSV/JSON for ingestion into databases or analytics tools.  
-- **Web Publishing**: Export formatted tables to HTML or PNG for dashboards and reports.  
-- **Archive Standardization**: Convert heterogeneous formats (XLS, XLSM, ODS) to a unified PDF for compliance.  
+- **Legacy System Migration**: Convert legacy `.xls` tables to `.xlsx` or CSV for modern systems.
+- **Data Interchange**: Normalize tables to CSV/JSON for ingestion into databases or analytics tools.
+- **Web Publishing**: Export formatted tables to HTML or PNG for dashboards and reports.
+- **Archive Standardization**: Convert heterogeneous formats (XLS, XLSM, ODS) to a unified PDF for compliance.
 - **Office Interoperability**: Generate files compatible with LibreOffice, Google Sheets, or Apple Numbers.
 
 ## Why Use This API?
 
-- ✅ **Cloud-native**: No local resource usage; conversions happen server-side.  
-- ✅ **Secure**: HTTPS + JWT authentication; no file downloads.  
-- ✅ **Developer-friendly**: SDKs for 8+ languages; REST interface for flexibility.  
-- ✅ **Cost-efficient**: Pay-per-use with no infrastructure overhead.  
+- ✅ **Cloud-native**: No local resource usage; conversions happen server-side.
+- ✅ **Secure**: HTTPS + JWT authentication; no file downloads.
+- ✅ **Developer-friendly**: SDKs for 8+ languages; REST interface for flexibility.
+- ✅ **Cost-efficient**: Pay-per-use with no infrastructure overhead.
 - ✅ **Accurate rendering**: Supports custom fonts, locale settings, and auto-fitting.
 
 > **Note**: By default, the API exports **raw table data only** (cell values, no styles). To preserve formatting (e.g., colors, fonts), use `format=pdf` with `autoRowsFit=true` and `autoColumnsFit=true`.
@@ -96,8 +96,6 @@ curl -X GET \
   -H "Accept: application/octet-stream" \
   --output table_export.pdf
 ```
-
-✅ **Tip**: Replace `{access_token}` with your token from the Aspose Cloud Dashboard.
 
 ## SDK Examples
 
@@ -130,19 +128,3 @@ Gist examples below are pinned to commit `abc123` (2024-03-15) for stability.
 {{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "abc123" "Example40_ExportTableAsFormat.go" >}}
 {{< /tab >}}
 {{< /tabs >}}
-
-## API Reference
-
-View the full specification: [ExportTableAsFormat (v4.0)](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ExportTableAsFormat)
-
-## See Also
-
-- [Export Worksheet to Format](/export-worksheet-as-format/)  
-- [Convert Workbook to PDF/CSV](/convert-workbook/)  
-- [SDK Support Guide](/sdk-support/)
-
----
-
-{{% alert color="info" %}}
-💡 **Pro Tip**: For styled PDF exports, include `autoRowsFit=true&autoColumnsFit=true&fontsLocation=custom-fonts` in the query string.  
-{{% /alert %}}

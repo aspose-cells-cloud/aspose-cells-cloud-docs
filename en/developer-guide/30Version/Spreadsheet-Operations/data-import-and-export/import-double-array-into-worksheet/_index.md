@@ -10,7 +10,7 @@ aliases:
   - /import/double-array/
 keywords: "Aspose.Cells, import double array, Excel API, cloud SDK"
 description: "Learn how to import a double‑array into an Excel worksheet using Aspose.Cells Cloud REST API. Includes authentication, request format, parameters, sample XML/JSON, and response details."
-weight: 20
+weight: 100
 ArticleTitle: "Import Double Array into Excel Worksheet – Aspose.Cells Cloud Guide"
 ---
 

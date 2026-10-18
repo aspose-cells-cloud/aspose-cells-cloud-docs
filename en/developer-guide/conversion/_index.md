@@ -8,7 +8,7 @@ date: 2024-03-15
 draft: false
 keywords: "Excel conversion API, range to PDF, spreadsheet export, Aspose.Cells Cloud, REST API documentation, programmatic Excel to PDF conversion, Aspose.Cells Cloud range export, convert Excel to CSV online, Excel to JSON API, spreadsheet to image conversion"
 description: "Convert Excel ranges, charts, tables, and worksheets to PDF, CSV, JSON, HTML, and images via Aspose.Cells Cloud REST API. Includes SDKs for .NET, Java, Python, Node.js, and more. Fast, secure, no-install solution with full programmatic control and detailed format support."
-weight: 20
+weight: 100
 ---
 
 ## Spreadsheet Conversion Toolkit
@@ -23,8 +23,8 @@ For authentication setup, see [**Authentication Overview**](https://docs.aspose.
 - **[Convert a spreadsheet range to an HTML file.](https://docs.aspose.cloud/cells/convert-range-to-html/)**
 - **[Convert a spreadsheet range to a JSON file.](https://docs.aspose.cloud/cells/convert-range-to-json/)**
 - **[Convert a spreadsheet range to a PDF file.](https://docs.aspose.cloud/cells/convert-range-to-pdf/)**
-- **Export a range to XLSX, ODS, TIFF, or Markdown.**
-- **Export a spreadsheet as another format file.**
+- **[Export a range to XLSX, ODS, TIFF, or Markdown.](https://docs.aspose.cloud/cells/export-range-as-format/)**
+- **[Export a spreadsheet as another format file.](https://docs.aspose.cloud/cells/export-spreadsheet-as-format/)**
 - **[Convert a spreadsheet range to an image.](https://docs.aspose.cloud/cells/convert-range-to-image/)**
 
 > **Note**: CSV/JSON/XML export does not support merged cells or embedded charts.
@@ -33,7 +33,7 @@ For authentication setup, see [**Authentication Overview**](https://docs.aspose.
 
 - **[Convert a spreadsheet chart to an image.](https://docs.aspose.cloud/cells/convert-chart-to-image/)**
 - **[Convert a spreadsheet chart to a PDF file.](https://docs.aspose.cloud/cells/convert-chart-to-pdf/)**
-- **Export a spreadsheet chart as another format file.**
+- **[Export a spreadsheet chart as another format file.](https://docs.aspose.cloud/cells/export-chart-as-format/)**
 
 ### Table Conversion
 
@@ -42,13 +42,13 @@ For authentication setup, see [**Authentication Overview**](https://docs.aspose.
 - **[Convert a spreadsheet table to an image.](https://docs.aspose.cloud/cells/convert-table-to-image/)**
 - **[Convert a spreadsheet table to a JSON file.](https://docs.aspose.cloud/cells/convert-table-to-json/)**
 - **[Convert a spreadsheet table to a PDF file.](https://docs.aspose.cloud/cells/convert-table-to-pdf/)**
-- **Export a spreadsheet table as another format file.**
+- **[Export a spreadsheet table as another format file.](https://docs.aspose.cloud/cells/export-table-as-format/)**
 
 ### Worksheet Conversion
 
 - **[Convert a spreadsheet worksheet to an image.](https://docs.aspose.cloud/cells/convert-worksheet-to-image/)**
 - **[Convert a spreadsheet worksheet to a PDF file.](https://docs.aspose.cloud/cells/convert-worksheet-to-pdf/)**
-- **Export a spreadsheet worksheet as another format file.**
+- **[Export a spreadsheet worksheet as another format file.](https://docs.aspose.cloud/cells/export-worksheet-as-format/)**
 
 ### Spreadsheet Conversion
 

@@ -2,9 +2,9 @@
 title: "Convert Chart to PDF"
 ArticleTitle: "Convert Chart to PDF – Aspose.Cells Cloud API"
 second_title: "Document"
-linktitle: "ConvertChartToPdf"
+linktitle: "Convert Chart To Pdf"
 type: docs
-url: /cells/convert/chart/pdf
+url: /convert/chart/pdf
 aliases: []
 keywords: "ConvertChartToPdf, Aspose.Cells, PDF, chart conversion"
 description: "Converts a chart of spreadsheet on a local drive to pdf."
@@ -27,21 +27,21 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name   | Type   | Path/Query String/HTTP Body | Description |
-|------------------|--------|-----------------------------|-------------|
-| Spreadsheet      | File   | FormData                    | Upload spreadsheet file. |
-| worksheet        | String | Query                       | Worksheet name of spreadsheet. |
-| chartIndex       | Integer| Query                       | Chart index of worksheet. |
-| outPath          | String | Query                       | (Optional) The folder path where the workbook is stored. The default is null. |
-| outStorageName   | String | Query                       | Output file Storage Name. |
-| fontsLocation    | String | Query                       | Use Custom fonts. |
-| region           | String | Query                       | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password         | String | Query                       | The password for opening spreadsheet file. |
+| Parameter Name | Type    | Path/Query String/HTTP Body | Description                                                                                                                             |
+| -------------- | ------- | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet    | File    | FormData                    | Upload spreadsheet file.                                                                                                                |
+| worksheet      | String  | Query                       | Worksheet name of spreadsheet.                                                                                                          |
+| chartIndex     | Integer | Query                       | Chart index of worksheet.                                                                                                               |
+| outPath        | String  | Query                       | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
+| outStorageName | String  | Query                       | Output file Storage Name.                                                                                                               |
+| fontsLocation  | String  | Query                       | Use Custom fonts.                                                                                                                       |
+| region         | String  | Query                       | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password       | String  | Query                       | The password for opening spreadsheet file.                                                                                              |
 
 ### Request Body Parameter
 
-| Parameter Name | Type | Description |
-| -------------- | ---- | ----------- |
+| Parameter Name | Type | Description              |
+| -------------- | ---- | ------------------------ |
 | Spreadsheet    | File | Upload spreadsheet file. |
 
 ### **Response**
@@ -54,14 +54,14 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 **Response Status Codes**
 
-| Code | Meaning | Description |
-|------|---------|-------------|
-| 200 | OK | Chart successfully converted to PDF; binary PDF file returned. |
-| 400 | Bad Request | Invalid request parameters or malformed URL. |
-| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
-| 404 | Not Found | Source file not accessible. |
-| 413 | Payload Too Large | Uploaded file exceeds the allowed size limit. |
-| 500 | Internal Server Error | An error occurred while processing the conversion. |
+| Code | Meaning               | Description                                                    |
+| ---- | --------------------- | -------------------------------------------------------------- |
+| 200  | OK                    | Chart successfully converted to PDF; binary PDF file returned. |
+| 400  | Bad Request           | Invalid request parameters or malformed URL.                   |
+| 401  | Unauthorized          | Authentication has failed, or no credentials were provided.    |
+| 404  | Not Found             | Source file not accessible.                                    |
+| 413  | Payload Too Large     | Uploaded file exceeds the allowed size limit.                  |
+| 500  | Internal Server Error | An error occurred while processing the conversion.             |
 
 ## How to Use the Convert Chart to PDF with SDKs
 
@@ -73,6 +73,7 @@ You can use the cURL command-line tool to access Aspose.Cells web services easil
 
 {< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}
 {< tab tabNum="1" >}
+
 ```bash
 # Use HTTPS for a secure connection
 curl -v "https://api.aspose.cloud/v4.0/cells/convert/chart/pdf?worksheet={worksheet}&chartIndex={chartIndex}&outPath={outPath}&outStorageName={outStorageName}&fontsLocation={fontsLocation}&region={region}&password={password}" \
@@ -82,13 +83,16 @@ curl -v "https://api.aspose.cloud/v4.0/cells/convert/chart/pdf?worksheet={worksh
   -H "Authorization: Bearer <jwt token>" \
   -F "Spreadsheet=@sample.xlsx"
 ```
+
 {< /tab >}
 {< tab tabNum="2" >}
+
 ```json
 {
   "ResponseFile": "binary PDF file stream"
 }
 ```
+
 {< /tab >}
 {< /tabs >}
 
@@ -97,4 +101,3 @@ curl -v "https://api.aspose.cloud/v4.0/cells/convert/chart/pdf?worksheet={worksh
 Using an SDK is the fastest way to accelerate development. An SDK abstracts low-level details, allowing you to focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose Cells Cloud web services using various SDKs:
-`[TBD]`

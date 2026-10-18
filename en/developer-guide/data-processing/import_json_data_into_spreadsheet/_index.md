@@ -4,7 +4,7 @@ ArticleTitle: "Import JSON Data Into Spreadsheet – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Import JSON Data Into Spreadsheet"
 type: docs
-url: /cells/import/data/json
+url: /import/data/json
 aliases: []
 keywords: "Import JSON, Aspose.Cells, Spreadsheet, API"
 description: "Import JSON data file into the local spreadsheet."
@@ -27,24 +27,18 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type   | Path/Query String/HTTP Body | Description |
-|----------------|--------|-----------------------------|-------------|
-| datafile       | File   | FormData                    | Upload data file. |
-| Spreadsheet    | File   | FormData                    | Upload spreadsheet file. |
-| worksheet      | string | Query                       | Need to import JSON data into the worksheet. |
-| startcell      | string | Query                       | Starting position for data import |
-| insert         | boolean| Query                       | Controls the insertion behavior. true: inserts data; false: overwrites existing data. (Default: true) |
-| outPath        | string | Query                       | (Optional) The folder path where the workbook is stored. The default is null. |
-| outStorageName | string | Query                       | Output file Storage Name. |
-| fontsLocation  | string | Query                       | Use Custom fonts. |
-| region         | string | Query                       | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password       | string | Query                       | The password for opening spreadsheet file. |
-
-### Request Body Parameter
-
-| Parameter Name | Type | Description |
-| -------------- | ---- | ----------- |
-| [TBD] | [TBD] | [TBD] |
+| Parameter Name | Type    | Path/Query String/HTTP Body | Description                                                                                                                             |
+| -------------- | ------- | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| datafile       | File    | FormData                    | Upload data file.                                                                                                                       |
+| Spreadsheet    | File    | FormData                    | Upload spreadsheet file.                                                                                                                |
+| worksheet      | string  | Query                       | Need to import JSON data into the worksheet.                                                                                            |
+| startcell      | string  | Query                       | Starting position for data import                                                                                                       |
+| insert         | boolean | Query                       | Controls the insertion behavior. true: inserts data; false: overwrites existing data. (Default: true)                                   |
+| outPath        | string  | Query                       | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
+| outStorageName | string  | Query                       | Output file Storage Name.                                                                                                               |
+| fontsLocation  | string  | Query                       | Use Custom fonts.                                                                                                                       |
+| region         | string  | Query                       | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password       | string  | Query                       | The password for opening spreadsheet file.                                                                                              |
 
 ### **Response**
 
@@ -56,14 +50,14 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 **Response Status Codes**
 
-| Code | Meaning | Description |
-|------|---------|-------------|
-| 200 | OK | File successfully generated and returned. |
-| 400 | Bad Request | Invalid url. |
-| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
-| 404 | Not Found | Source file not accessible. |
-| 413 | Payload Too Large | [TBD] |
-| 500 | Internal Server Error | The spreadsheet has encountered an anomaly in obtaining data. |
+| Code | Meaning               | Description                                                   |
+| ---- | --------------------- | ------------------------------------------------------------- |
+| 200  | OK                    | File successfully generated and returned.                     |
+| 400  | Bad Request           | Invalid url.                                                  |
+| 401  | Unauthorized          | Authentication has failed, or no credentials were provided.   |
+| 404  | Not Found             | Source file not accessible.                                   |
+| 413  | Payload Too Large     | [TBD]                                                         |
+| 500  | Internal Server Error | The spreadsheet has encountered an anomaly in obtaining data. |
 
 ## How to Use the Import JSON Data Into Spreadsheet with SDKs
 
@@ -75,6 +69,7 @@ You can use the cURL command-line tool to access Aspose Cells Cloud web services
 
 {< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}
 {< tab tabNum="1" >}
+
 ```bash
 # Use HTTPS for a secure connection
 curl -v "https://api.aspose.cloud/v4.0/cells/import/data/json?worksheet=Sheet1&startcell=A1&insert=true&outPath=output%2F&outStorageName=MyStorage&fontsLocation=%2Ffonts&region=en-US&password=Secret" \
@@ -85,13 +80,16 @@ curl -v "https://api.aspose.cloud/v4.0/cells/import/data/json?worksheet=Sheet1&s
   -F "datafile=@data.json" \
   -F "Spreadsheet=@workbook.xlsx"
 ```
+
 {< /tab >}
 {< tab tabNum="2" >}
+
 ```json
 {
   "file": "binary stream"
 }
 ```
+
 {< /tab >}
 {< /tabs >}
 
@@ -100,4 +98,3 @@ curl -v "https://api.aspose.cloud/v4.0/cells/import/data/json?worksheet=Sheet1&s
 Using an SDK is the fastest way to accelerate development. An SDK abstracts low-level details, allowing you to focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose Cells Cloud web services using various SDKs:
- `[TBD]`

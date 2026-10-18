@@ -5,38 +5,39 @@ url: /tasks/cells-object-operate/pivottable/
 aliases: [/working-with-pivot-table-using-cellsobjectoperate-task/]
 keywords: "Aspose Cells pivot table API, CellsObjectOperate, Excel REST API"
 description: "Learn how to generate a pivot table in Excel using Aspose.Cells Cloud’s CellsObjectOperate task. Includes cURL example, parameter guide, and SDK references."
-weight: 10
+weight: 100
 ---
 
 This REST API **creates** a pivot table using the **CellsObjectOperate** task.
 
 **PivotTableOperateParameter**
 
-| Parameter Name      | Type          | Description                                                                 |
-|---------------------|---------------|-----------------------------------------------------------------------------|
-| DestCellName        | string        | Top‑left cell of the pivot table (e.g., `C1`).                               |
-| SourceData          | string        | Range that contains the source data (e.g., `Sheet2!A1:E8`).                |
-| TableName           | string        | Name assigned to the new pivot table.                                       |
-| UseSameSource       | string        | `true` / `false` – whether the pivot uses the same source workbook.         |
-| PivotTableIndex     | integer       | Index of the pivot table when multiple tables exist in the worksheet.      |
-| PivotFieldRows      | integer[]     | Zero‑based indexes of fields to place in the rows area.                     |
-| PivotFieldColumns   | integer[]     | Zero‑based indexes of fields to place in the columns area.                  |
-| PivotFieldData      | integer[]     | Zero‑based indexes of fields to aggregate as data.                          |
+| Parameter Name    | Type      | Description                                                           |
+| ----------------- | --------- | --------------------------------------------------------------------- |
+| DestCellName      | string    | Top‑left cell of the pivot table (e.g., `C1`).                        |
+| SourceData        | string    | Range that contains the source data (e.g., `Sheet2!A1:E8`).           |
+| TableName         | string    | Name assigned to the new pivot table.                                 |
+| UseSameSource     | string    | `true` / `false` – whether the pivot uses the same source workbook.   |
+| PivotTableIndex   | integer   | Index of the pivot table when multiple tables exist in the worksheet. |
+| PivotFieldRows    | integer[] | Zero‑based indexes of fields to place in the rows area.               |
+| PivotFieldColumns | integer[] | Zero‑based indexes of fields to place in the columns area.            |
+| PivotFieldData    | integer[] | Zero‑based indexes of fields to aggregate as data.                    |
 
 ## REST API
 
-| **API**               | **Type** | **Description** | **Resource Link** |
-|-----------------------|----------|-----------------|-------------------|
-| /cells/task/runtask   | POST     | Run Task        | [PostRunTask](https://apireference.aspose.cloud/cells/#/Task/PostRunTask) |
+| **API**             | **Type** | **Description** | **Resource Link**                                                         |
+| ------------------- | -------- | --------------- | ------------------------------------------------------------------------- |
+| /cells/task/runtask | POST     | Run Task        | [PostRunTask](https://apireference.aspose.cloud/cells/#/Task/PostRunTask) |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 ### Prerequisites
+
 Before invoking the API you must:
 
-1. Register for an Aspose.Cloud account and create an application to obtain a **client ID** and **client secret**.  
-2. Request a **JWT token** from the `/connect/token` endpoint using the client credentials.  
-3. Include the token in the `Authorization: Bearer <jwt token>` header of every request.  
+1. Register for an Aspose.Cloud account and create an application to obtain a **client ID** and **client secret**.
+2. Request a **JWT token** from the `/connect/token` endpoint using the client credentials.
+3. Include the token in the `Authorization: Bearer <jwt token>` header of every request.
 
 You can now use the **cURL** command‑line tool to access Aspose.Cells web services.
 

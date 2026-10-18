@@ -15,7 +15,7 @@ tags:
 categories:
   - cells
   - api
-weight: 10
+weight: 100
 aliases:
   - /import-data-into-excel-worksheet/
   - /import-data-into-worksheet/
@@ -39,16 +39,17 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 
 ### Request Parameters
 
-| Parameter     | Type   | Location | Required | Description |
-|---------------|--------|----------|----------|-------------|
-| `name`        | string | path     | Yes      | The name of the target Excel file (must exist in storage). |
-| `folder`      | string | query    | No       | The folder path in storage where the Excel file resides. |
-| `storageName` | string | query    | No       | The name of the storage service (e.g., "default", "MyCloudStorage"). |
-| `region`      | string | query    | No       | Regional settings for workbook formatting (e.g., "en-US"). |
-| `FontsLocation` | string | query | No       | Custom font directory path (if applicable). |
-| `importOption` | object | body    | No       | JSON object specifying import behavior (e.g., `ImportStringArrayOption`, `ImportPictureOption`). |
+| Parameter       | Type   | Location | Required | Description                                                                                      |
+| --------------- | ------ | -------- | -------- | ------------------------------------------------------------------------------------------------ |
+| `name`          | string | path     | Yes      | The name of the target Excel file (must exist in storage).                                       |
+| `folder`        | string | query    | No       | The folder path in storage where the Excel file resides.                                         |
+| `storageName`   | string | query    | No       | The name of the storage service (e.g., "default", "MyCloudStorage").                             |
+| `region`        | string | query    | No       | Regional settings for workbook formatting (e.g., "en-US").                                       |
+| `FontsLocation` | string | query    | No       | Custom font directory path (if applicable).                                                      |
+| `importOption`  | object | body     | No       | JSON object specifying import behavior (e.g., `ImportStringArrayOption`, `ImportPictureOption`). |
 
 > **Note**: The `importOption` parameter defines the data format and import behavior. Supported options include:
+>
 > - `ImportCSVDataOption`
 > - `ImportBatchDataOption`
 > - `ImportStringArrayOption`
@@ -72,14 +73,14 @@ Ensure the target workbook exists in the specified storage location before impor
 
 The `importOption` body parameter requires the following common fields (specific fields vary by option type):
 
-| Field              | Type    | Required | Description |
-|--------------------|---------|----------|-------------|
-| `DestinationWorksheet` | string | Yes      | Target worksheet name (e.g., `"Sheet1"`). |
-| `FirstRow`         | integer | Yes      | Starting row index (0-based or 1-based depending on option). |
-| `FirstColumn`      | integer | Yes      | Starting column index (0-based or 1-based). |
-| `IsVertical`       | boolean | No       | Direction of data insertion (`true` = column-wise, `false` = row-wise). |
-| `IsInsert`         | boolean | No       | Whether to insert new rows/columns (`true`) or overwrite existing data (`false`). |
-| `Data`             | array   | Yes      | Data to import (e.g., `[1, 2, 4]`, `[["A1","B1"], ["A2","B2"]]`). |
+| Field                  | Type    | Required | Description                                                                       |
+| ---------------------- | ------- | -------- | --------------------------------------------------------------------------------- |
+| `DestinationWorksheet` | string  | Yes      | Target worksheet name (e.g., `"Sheet1"`).                                         |
+| `FirstRow`             | integer | Yes      | Starting row index (0-based or 1-based depending on option).                      |
+| `FirstColumn`          | integer | Yes      | Starting column index (0-based or 1-based).                                       |
+| `IsVertical`           | boolean | No       | Direction of data insertion (`true` = column-wise, `false` = row-wise).           |
+| `IsInsert`             | boolean | No       | Whether to insert new rows/columns (`true`) or overwrite existing data (`false`). |
+| `Data`                 | array   | Yes      | Data to import (e.g., `[1, 2, 4]`, `[["A1","B1"], ["A2","B2"]]`).                 |
 
 For detailed parameter definitions, see the [Import Data Option Reference](/cells/import/#import-data-option-parameter).
 
@@ -123,15 +124,15 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/importdata?folder=Temp&s
 
 ## HTTP Status Codes
 
-| Code | Meaning             | Description |
-|------|---------------------|-------------|
-| 200  | OK                  | Data imported successfully. |
-| 400  | Bad Request         | Invalid `importOption` structure, missing required fields, or unsupported `importDataType`. |
-| 401  | Unauthorized        | Invalid or expired JWT token. |
-| 403  | Forbidden           | Insufficient permissions for the target storage or file. |
-| 404  | Not Found           | Excel file or storage location not found. |
-| 413  | Payload Too Large   | Request body exceeds size limits. |
-| 500  | Internal Server Error | Unexpected server error. |
+| Code | Meaning               | Description                                                                                 |
+| ---- | --------------------- | ------------------------------------------------------------------------------------------- |
+| 200  | OK                    | Data imported successfully.                                                                 |
+| 400  | Bad Request           | Invalid `importOption` structure, missing required fields, or unsupported `importDataType`. |
+| 401  | Unauthorized          | Invalid or expired JWT token.                                                               |
+| 403  | Forbidden             | Insufficient permissions for the target storage or file.                                    |
+| 404  | Not Found             | Excel file or storage location not found.                                                   |
+| 413  | Payload Too Large     | Request body exceeds size limits.                                                           |
+| 500  | Internal Server Error | Unexpected server error.                                                                    |
 
 ---
 

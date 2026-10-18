@@ -5,7 +5,13 @@ linktitle: "Comments"
 type: docs
 url: /comments/
 aliases: [/working-with-comments/]
-keywords: ["Aspose.Cells Cloud", "Excel comments API", "spreadsheet comments", "REST API"]
+keywords:
+  [
+    "Aspose.Cells Cloud",
+    "Excel comments API",
+    "spreadsheet comments",
+    "REST API",
+  ]
 description: "API guide for adding, retrieving, updating, and deleting Excel comments using Aspose.Cells Cloud REST API v3.0 — with cURL, Python, and Node.js examples."
 date: 2024-03-15T10:00:00Z
 last_modified_date: 2024-05-22T14:30:00Z
@@ -19,9 +25,9 @@ When creating an Excel workbook, users can add comments for various reasons. A c
 
 **Prerequisites**
 
-- An active Aspose.Cells Cloud account.  
-- A valid **access token** obtained via OAuth 2.0.  
-- API version **v3.0** (the endpoints used in this guide belong to this version).  
+- An active Aspose.Cells Cloud account.
+- A valid **access token** obtained via OAuth 2.0.
+- API version **v3.0** (the endpoints used in this guide belong to this version).
 - Optional: Aspose.Cells SDK for your preferred language to simplify request construction.
 
 > ⚠️ **API Version**: This guide uses Aspose.Cells Cloud **v3.0**. Check the [API Changelog](/changelog/) for v4.0 updates.
@@ -38,18 +44,18 @@ Content-Type: application/json
 
 **Path parameters**
 
-| Parameter | Type   | Required | Description                              |
-|-----------|--------|----------|------------------------------------------|
+| Parameter | Type   | Required | Description                                      |
+| --------- | ------ | -------- | ------------------------------------------------ |
 | `file`    | string | Yes      | Name of the workbook file (including extension). |
-| `sheet`   | string | Yes      | Worksheet name where the comment will be added. |
+| `sheet`   | string | Yes      | Worksheet name where the comment will be added.  |
 
 **Request body schema**
 
-| Field     | Type   | Required | Description                              |
-|-----------|--------|----------|------------------------------------------|
-| `CellName`| string | Yes      | A1-style address of the cell (e.g., **B2**). |
-| `Comment` | string | Yes      | Text of the comment to be stored. |
-| `Author`  | string | No       | Name of the comment author. |
+| Field      | Type   | Required | Description                                  |
+| ---------- | ------ | -------- | -------------------------------------------- |
+| `CellName` | string | Yes      | A1-style address of the cell (e.g., **B2**). |
+| `Comment`  | string | Yes      | Text of the comment to be stored.            |
+| `Author`   | string | No       | Name of the comment author.                  |
 
 **Sample request body**
 
@@ -79,7 +85,7 @@ Content-Type: application/json
 **Common error codes**
 
 | Code | Meaning                              |
-|------|--------------------------------------|
+| ---- | ------------------------------------ |
 | 400  | Invalid cell address or request body |
 | 401  | Unauthorized – missing/invalid token |
 | 404  | Workbook or worksheet not found      |
@@ -95,10 +101,10 @@ Authorization: Bearer {access_token}
 
 **Path parameters**
 
-| Parameter | Type   | Required | Description                              |
-|-----------|--------|----------|------------------------------------------|
+| Parameter | Type   | Required | Description         |
+| --------- | ------ | -------- | ------------------- |
 | `file`    | string | Yes      | Workbook file name. |
-| `sheet`   | string | Yes      | Worksheet name. |
+| `sheet`   | string | Yes      | Worksheet name.     |
 
 **Sample response**
 
@@ -135,18 +141,18 @@ Content-Type: application/json
 
 **Path parameters**
 
-| Parameter      | Type   | Required | Description |
-|----------------|--------|----------|-------------|
-| `file`         | string | Yes      | Workbook file name. |
-| `sheet`        | string | Yes      | Worksheet name. |
+| Parameter      | Type   | Required | Description                                |
+| -------------- | ------ | -------- | ------------------------------------------ |
+| `file`         | string | Yes      | Workbook file name.                        |
+| `sheet`        | string | Yes      | Worksheet name.                            |
 | `commentIndex` | int    | Yes      | Zero-based index of the comment to update. |
 
 **Request body schema**
 
-| Field    | Type   | Required | Description |
-|----------|--------|----------|-------------|
-| `Comment`| string | Yes      | New comment text. |
-| `Author` | string | No       | Updated author name (optional). |
+| Field     | Type   | Required | Description                     |
+| --------- | ------ | -------- | ------------------------------- |
+| `Comment` | string | Yes      | New comment text.               |
+| `Author`  | string | No       | Updated author name (optional). |
 
 **Sample request body**
 
@@ -172,10 +178,10 @@ Authorization: Bearer {access_token}
 
 **Path parameters**
 
-| Parameter      | Type   | Required | Description |
-|----------------|--------|----------|-------------|
-| `file`         | string | Yes      | Workbook file name. |
-| `sheet`        | string | Yes      | Worksheet name. |
+| Parameter      | Type   | Required | Description                                |
+| -------------- | ------ | -------- | ------------------------------------------ |
+| `file`         | string | Yes      | Workbook file name.                        |
+| `sheet`        | string | Yes      | Worksheet name.                            |
 | `commentIndex` | int    | Yes      | Zero-based index of the comment to delete. |
 
 A successful deletion returns:
@@ -198,21 +204,21 @@ Authorization: Bearer {access_token}
 
 **Path parameters**
 
-| Parameter | Type   | Required | Description |
-|-----------|--------|----------|-------------|
+| Parameter | Type   | Required | Description         |
+| --------- | ------ | -------- | ------------------- |
 | `file`    | string | Yes      | Workbook file name. |
-| `sheet`   | string | Yes      | Worksheet name. |
+| `sheet`   | string | Yes      | Worksheet name.     |
 
 **Error-handling guidance**
 
-- **404 Not Found** – Verify that the workbook ID, worksheet name, and comment index are correct.  
-- **400 Bad Request** – Check JSON syntax and required fields (`CellName`, `Comment`).  
+- **404 Not Found** – Verify that the workbook ID, worksheet name, and comment index are correct.
+- **400 Bad Request** – Check JSON syntax and required fields (`CellName`, `Comment`).
 - **429 Too Many Requests** – Implement exponential back-off and respect the `Retry-After` header.
 
 **Summary**
 
-- Excel comments are used to [add a note or explain a formula in a cell](/cells/comments/add/).  
-- Excel provides users with the flexibility of [editing](/cells/comments/update/), [deleting](/cells/comments/delete/), and [showing](/cells/comments/get/) or [hiding](/cells/comments/update/) comments on a worksheet.  
-- After adding a comment, users can [resize, reshape, and format the comment box in Excel](https://support.microsoft.com/). In the Aspose.Cells Cloud API, comment *appearance* (e.g., position, size) must be managed via cell formatting endpoints (see [Working with Cells](/cells/working-with-cells/)).  
+- Excel comments are used to [add a note or explain a formula in a cell](/cells/comments/add/).
+- Excel provides users with the flexibility of [editing](/cells/comments/update/), [deleting](/cells/comments/delete/), and [showing](/cells/comments/get/) or [hiding](/cells/comments/update/) comments on a worksheet.
+- After adding a comment, users can [resize, reshape, and format the comment box in Excel](https://support.microsoft.com/). In the Aspose.Cells Cloud API, comment _appearance_ (e.g., position, size) must be managed via cell formatting endpoints (see [Working with Cells](/cells/working-with-cells/)).
 
 For more information on working with other spreadsheet elements, see the guide on [working with cells](/cells/working-with-cells/).

@@ -30,23 +30,25 @@ Excel ListObjects (tables) provide a structured way to organize data sets. They 
 **API Reference (overview):**  
 The Aspose.Cells Cloud REST API exposes ListObject operations through endpoints such as `GET /cells/{fileName}/worksheets/{sheetName}/listobjects`, `POST /cells/{fileName}/worksheets/{sheetName}/listobjects`, `PUT /cells/{fileName}/worksheets/{sheetName}/listobjects/{listObjectIndex}`, and `DELETE /cells/{fileName}/worksheets/{sheetName}/listobjects/{listObjectIndex}`. Required query parameters include `folder` (required) and `storage` (optional). Request bodies are JSON objects describing the table’s properties (name, showHeaderRow, showTotalRow, etc.), and responses return JSON payloads with the created or modified ListObject details.
 
-**Prerequisites:**  
-- A valid Aspose.Cells Cloud authentication token.  
-- The workbook file must be uploaded to a supported storage location (default: **/**) and the `folder` query parameter should point to that location.  
+**Prerequisites:**
+
+- A valid Aspose.Cells Cloud authentication token.
+- The workbook file must be uploaded to a supported storage location (default: **/**) and the `folder` query parameter should point to that location.
 - Optional: Set `storage` if using a non‑default storage service.
 
 **Endpoint details**
 
-| Method | Endpoint | Query Parameters | Request Body (JSON) | Success Response (example) | Status Codes |
-|--------|----------|------------------|---------------------|----------------------------|--------------|
-| GET | `/cells/{fileName}/worksheets/{sheetName}/listobjects` | `folder` (required), `storage` (optional) | *none* | `{ "ListObjects": [ { "Name": "Table1", "ShowHeaderRow": true, "ShowTotalRow": false, ... } ] }` | 200 – OK, 400 – Bad Request, 401 – Unauthorized, 404 – Not Found |
-| POST | `/cells/{fileName}/worksheets/{sheetName}/listobjects` | `folder` (required), `storage` (optional) | `{ "Name": "Table1", "StartRow": 0, "StartColumn": 0, "TotalRows": 10, "TotalColumns": 5, "ShowHeaderRow": true, "ShowTotalRow": false }` | `{ "Code": 200, "Status": "OK", "ListObject": { "Name": "Table1", "ShowHeaderRow": true, ... } }` | 201 – Created, 400 – Bad Request, 401 – Unauthorized, 409 – Conflict |
-| PUT | `/cells/{fileName}/worksheets/{sheetName}/listobjects/{listObjectIndex}` | `folder` (required), `storage` (optional) | `{ "Name": "UpdatedTable", "ShowTotalRow": true }` | `{ "Code": 200, "Status": "OK", "ListObject": { "Name": "UpdatedTable", "ShowTotalRow": true, ... } }` | 200 – OK, 400 – Bad Request, 401 – Unauthorized, 404 – Not Found |
-| DELETE | `/cells/{fileName}/worksheets/{sheetName}/listobjects/{listObjectIndex}` | `folder` (required), `storage` (optional) | *none* | `{ "Code": 200, "Status": "Deleted" }` | 200 – OK, 400 – Bad Request, 401 – Unauthorized, 404 – Not Found |
+| Method | Endpoint                                                                 | Query Parameters                          | Request Body (JSON)                                                                                                                       | Success Response (example)                                                                             | Status Codes                                                         |
+| ------ | ------------------------------------------------------------------------ | ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------- |
+| GET    | `/cells/{fileName}/worksheets/{sheetName}/listobjects`                   | `folder` (required), `storage` (optional) | _none_                                                                                                                                    | `{ "ListObjects": [ { "Name": "Table1", "ShowHeaderRow": true, "ShowTotalRow": false, ... } ] }`       | 200 – OK, 400 – Bad Request, 401 – Unauthorized, 404 – Not Found     |
+| POST   | `/cells/{fileName}/worksheets/{sheetName}/listobjects`                   | `folder` (required), `storage` (optional) | `{ "Name": "Table1", "StartRow": 0, "StartColumn": 0, "TotalRows": 10, "TotalColumns": 5, "ShowHeaderRow": true, "ShowTotalRow": false }` | `{ "Code": 200, "Status": "OK", "ListObject": { "Name": "Table1", "ShowHeaderRow": true, ... } }`      | 201 – Created, 400 – Bad Request, 401 – Unauthorized, 409 – Conflict |
+| PUT    | `/cells/{fileName}/worksheets/{sheetName}/listobjects/{listObjectIndex}` | `folder` (required), `storage` (optional) | `{ "Name": "UpdatedTable", "ShowTotalRow": true }`                                                                                        | `{ "Code": 200, "Status": "OK", "ListObject": { "Name": "UpdatedTable", "ShowTotalRow": true, ... } }` | 200 – OK, 400 – Bad Request, 401 – Unauthorized, 404 – Not Found     |
+| DELETE | `/cells/{fileName}/worksheets/{sheetName}/listobjects/{listObjectIndex}` | `folder` (required), `storage` (optional) | _none_                                                                                                                                    | `{ "Code": 200, "Status": "Deleted" }`                                                                 | 200 – OK, 400 – Bad Request, 401 – Unauthorized, 404 – Not Found     |
 
 **Code snippets**
 
-*C# (POST – Add ListObject)*
+_C# (POST – Add ListObject)_
+
 ```csharp
 var api = new CellsApi("client_id", "client_secret");
 var request = new ListObject
@@ -63,14 +65,16 @@ var response = api.PostWorksheetListObject("Book1.xlsx", "Sheet1", request, fold
 Console.WriteLine(response.ListObject.Name);
 ```
 
-*Java (GET – Retrieve ListObjects)*
+_Java (GET – Retrieve ListObjects)_
+
 ```java
 CellsApi apiInstance = new CellsApi();
 ListObjectResponse result = apiInstance.getWorksheetListObjects("Book1.xlsx", "Sheet1", null, null);
 System.out.println(result.getListObjects());
 ```
 
-*Python (PUT – Update ListObject)*
+_Python (PUT – Update ListObject)_
+
 ```python
 from asposecellscloud import CellsApi, ListObject
 api = CellsApi(client_id, client_secret)
@@ -80,19 +84,21 @@ response = api.put_worksheet_list_object(
 print(response.list_object.name)
 ```
 
-*Node.js (DELETE – Remove ListObject)*
+_Node.js (DELETE – Remove ListObject)_
+
 ```javascript
 const { CellsApi } = require("asposecellscloud");
 const api = new CellsApi(clientId, clientSecret);
-api.deleteWorksheetListObject("Book1.xlsx", "Sheet1", 0, { folder: "" })
-   .then(res => console.log("Deleted:", res.body));
+api
+  .deleteWorksheetListObject("Book1.xlsx", "Sheet1", 0, { folder: "" })
+  .then((res) => console.log("Deleted:", res.body));
 ```
 
-**Notes:**  
-- ListObject indices are zero‑based.  
-- When adding a ListObject, the `StartRow` and `StartColumn` define the upper‑left cell of the table.  
-- The API supports pagination via `offset` and `limit` query parameters (not shown in the table) for large worksheets.  
+**Notes:**
+
+- ListObject indices are zero‑based.
+- When adding a ListObject, the `StartRow` and `StartColumn` define the upper‑left cell of the table.
+- The API supports pagination via `offset` and `limit` query parameters (not shown in the table) for large worksheets.
 - Rate limits: 100 requests per minute per account; exceeding this returns **429 Too Many Requests**.
 
-By leveraging ListObjects, developers can automate structured data management in Excel worksheets, enabling scalable reporting and data analysis workflows via the Aspose.Cells Cloud API. For more information on Excel table standards, see Microsoft’s official [Overview of Excel Tables](https://support.microsoft.com/en-us/office/overview-of-excel-tables-7ab0bb7d-3a9e-4b56-a3c9-3e1f242c063c). You may also want to explore [PivotTables](/cells/pivottables/) and [worksheet formatting options](/cells/formatting/) for enhanced data analysis.
----
+## By leveraging ListObjects, developers can automate structured data management in Excel worksheets, enabling scalable reporting and data analysis workflows via the Aspose.Cells Cloud API. For more information on Excel table standards, see Microsoft’s official [Overview of Excel Tables](https://support.microsoft.com/en-us/office/overview-of-excel-tables-7ab0bb7d-3a9e-4b56-a3c9-3e1f242c063c). You may also want to explore [PivotTables](/cells/pivottables/) and [worksheet formatting options](/cells/formatting/) for enhanced data analysis.

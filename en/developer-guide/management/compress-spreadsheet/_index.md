@@ -32,22 +32,23 @@ All requests require [JWT token-based authentication](https://docs.aspose.cloud/
 
 ## Request Parameters
 
-| Parameter Name   | Type    | Location     | Required | Description |
-|------------------|---------|--------------|----------|-------------|
-| `Spreadsheet`    | File    | FormData     | Yes      | The source Excel file (`.xlsx`, `.xls`, `.xlsm`, `.xlsb`, etc.) to compress. |
-| `level`          | Integer | Query        | Yes      | Compression intensity: `0` (fastest/lowest compression) to `9` (slowest/highest). Default: `5`. |
-| `outPath`        | String  | Query        | No       | Destination folder path in cloud storage. If omitted, output is saved in the source folder. |
-| `outStorageName` | String  | Query        | No       | Identifier of the configured cloud storage (e.g., `MyStorage`). |
-| `region`         | String  | Query        | No       | Locale setting (e.g., `en-US`, `de-DE`). Affects number/date formatting and locale-sensitive parsing. |
-| `password`       | String  | Query        | No       | Password for encrypted workbooks. Omit if file is not protected. |
+| Parameter Name   | Type    | Location | Required | Description                                                                                           |
+| ---------------- | ------- | -------- | -------- | ----------------------------------------------------------------------------------------------------- |
+| `Spreadsheet`    | File    | FormData | Yes      | The source Excel file (`.xlsx`, `.xls`, `.xlsm`, `.xlsb`, etc.) to compress.                          |
+| `level`          | Integer | Query    | Yes      | Compression intensity: `0` (fastest/lowest compression) to `9` (slowest/highest). Default: `5`.       |
+| `outPath`        | String  | Query    | No       | Destination folder path in cloud storage. If omitted, output is saved in the source folder.           |
+| `outStorageName` | String  | Query    | No       | Identifier of the configured cloud storage (e.g., `MyStorage`).                                       |
+| `region`         | String  | Query    | No       | Locale setting (e.g., `en-US`, `de-DE`). Affects number/date formatting and locale-sensitive parsing. |
+| `password`       | String  | Query    | No       | Password for encrypted workbooks. Omit if file is not protected.                                      |
 
-> **Note**: Though `outStorageName` is marked *Not Required* in the spec, it is strongly recommended for predictable storage routing. Omitting it may result in fallback behavior depending on account configuration.
+> **Note**: Though `outStorageName` is marked _Not Required_ in the spec, it is strongly recommended for predictable storage routing. Omitting it may result in fallback behavior depending on account configuration.
 
 ## Response
 
 The API returns the compressed Excel file as a binary stream.
 
 **Example JSON metadata response (when using SDKs with wrapper):**
+
 ```json
 {
   "type": "FileContentResult",
@@ -59,14 +60,14 @@ The API returns the compressed Excel file as a binary stream.
 
 ### HTTP Status Codes
 
-| Code | Meaning               | Description |
-|------|-----------------------|-------------|
-| 200  | OK                    | Compression succeeded; response contains the optimized file. |
+| Code | Meaning               | Description                                                                         |
+| ---- | --------------------- | ----------------------------------------------------------------------------------- |
+| 200  | OK                    | Compression succeeded; response contains the optimized file.                        |
 | 400  | Bad Request           | Invalid or missing parameters (e.g., unsupported file type, invalid `level` range). |
-| 401  | Unauthorized          | Missing or invalid JWT token. |
-| 404  | Not Found             | Source file not found in cloud storage. |
-| 413  | Payload Too Large     | Uploaded file exceeds the 2 GB limit. |
-| 500  | Internal Server Error | Unexpected server-side error during processing. |
+| 401  | Unauthorized          | Missing or invalid JWT token.                                                       |
+| 404  | Not Found             | Source file not found in cloud storage.                                             |
+| 413  | Payload Too Large     | Uploaded file exceeds the 2 GB limit.                                               |
+| 500  | Internal Server Error | Unexpected server-side error during processing.                                     |
 
 ## Usage Scenarios
 
@@ -81,10 +82,10 @@ The API returns the compressed Excel file as a binary stream.
 
 ## Why Use Aspose.Cells Cloud for Compression?
 
-- ✅ **No infrastructure overhead** — Aspose.Cells Cloud handles server maintenance, updates, and compatibility.  
-- ✅ **Configurable compression** — Balance speed and size with compression levels `0`–`9`.  
-- ✅ **Pay-per-use pricing** — Only pay for API calls made; no fixed infrastructure costs.  
-- ✅ **Multi-language SDK support** — Accelerate development with official SDKs for C#, Java, PHP, Python, Node.js, Ruby, Perl, and Go.  
+- ✅ **No infrastructure overhead** — Aspose.Cells Cloud handles server maintenance, updates, and compatibility.
+- ✅ **Configurable compression** — Balance speed and size with compression levels `0`–`9`.
+- ✅ **Pay-per-use pricing** — Only pay for API calls made; no fixed infrastructure costs.
+- ✅ **Multi-language SDK support** — Accelerate development with official SDKs for C#, Java, PHP, Python, Node.js, Ruby, Perl, and Go.
 - ✅ **Encrypted file support** — Compress password-protected workbooks securely via the `password` parameter.
 
 ## Getting Started
@@ -104,6 +105,7 @@ See the [Aspose.Cells Cloud GitHub repository](https://github.com/aspose-cells-c
 
 {{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 {{< tab tabNum="1" >}}
+
 ```csharp
 var cellsApi = new CellsApi(clientId, clientSecret);
 var result = cellsApi.CompressSpreadsheet(
@@ -113,8 +115,10 @@ var result = cellsApi.CompressSpreadsheet(
 );
 File.WriteAllBytes("output.xlsx", result.FileContents);
 ```
+
 {{< /tab >}}
 {{< tab tabNum="2" >}}
+
 ```java
 CellsApi cellsApi = new CellsApi(clientId, clientSecret);
 FileInputStream fis = new FileInputStream("input.xlsx");
@@ -128,8 +132,10 @@ File compressed = cellsApi.compressSpreadsheet(
     null
 );
 ```
+
 {{< /tab >}}
 {{< tab tabNum="3" >}}
+
 ```php
 $cellsApi = new CellsApi($clientId, $clientSecret);
 $response = $cellsApi->compressSpreadsheet(
@@ -143,8 +149,10 @@ $response = $cellsApi->compressSpreadsheet(
 );
 file_put_contents("output.xlsx", $response->fileContents);
 ```
+
 {{< /tab >}}
 {{< tab tabNum="4" >}}
+
 ```ruby
 cells_api = AsposeCellsCloud::CellsApi.new(client_id, client_secret)
 result = cells_api.compress_spreadsheet(
@@ -155,22 +163,29 @@ result = cells_api.compress_spreadsheet(
 )
 File.write('output.xlsx', result.file_contents)
 ```
+
 {{< /tab >}}
 {{< tab tabNum="5" >}}
+
 ```typescript
 import { CellsApi } from "@aspose/cells-cloud";
-const cellsApi = new CellsApi(process.env.CLIENT_ID!, process.env.CLIENT_SECRET!);
+const cellsApi = new CellsApi(
+  process.env.CLIENT_ID!,
+  process.env.CLIENT_SECRET!,
+);
 const result = await cellsApi.compressSpreadsheet(
   "input.xlsx",
   fs.createReadStream("input.xlsx"),
   6,
   undefined,
-  "MyStorage"
+  "MyStorage",
 );
 fs.writeFileSync("output.xlsx", Buffer.from(result.fileContents!));
 ```
+
 {{< /tab >}}
 {{< tab tabNum="6" >}}
+
 ```python
 from asposecellscloud.api import CellsApi
 from asposecellscloud.models import CompressionRequest
@@ -185,8 +200,10 @@ with open("input.xlsx", "rb") as f:
 with open("output.xlsx", "wb") as f:
     f.write(result.file_contents)
 ```
+
 {{< /tab >}}
 {{< tab tabNum="7" >}}
+
 ```perl
 my $api = AsposeCellsCloud::API->new(
     client_id => $clientId,
@@ -200,8 +217,10 @@ my $result = $api->cells_compress_spreadsheet(
     'MyStorage'
 );
 ```
+
 {{< /tab >}}
 {{< tab tabNum="8" >}}
+
 ```go
 import (
     "os"
@@ -223,28 +242,6 @@ resp, _, err := cellsApi.CompressSpreadsheet(
     "",
 )
 ```
+
 {{< /tab >}}
 {{< /tabs >}}
-
-## Best Practices
-
-- **Choose compression level wisely**:  
-  - Use `level=0` or `1` for near-real-time processing where speed matters.  
-  - Use `level=7`–`9` for archival or batch processing where size reduction is critical.  
-- **Validate input files**: Ensure files are valid Excel formats before upload to avoid `400` errors.  
-- **Handle locale explicitly**: Specify `region` when formatting-sensitive data (dates, currencies) is involved.  
-- **Secure sensitive workbooks**: Always use `password` for protected files — never hardcode credentials.
-
-## Related Resources
-
-- [Encrypt Excel Files](/cells/encrypt-spreadsheet/) — Protect your compressed outputs with password encryption.  
-- [SDK Developer Guide](/total/developer-guide/) — Learn to integrate Aspose.Cells Cloud SDKs in your stack.  
-- [ETL Integration Patterns](/cells/etl-integration/) — Build scalable data pipelines with compressed spreadsheets.  
-- [API Reference](https://reference.aspose.cloud/cells/#/ManagementController/CompressSpreadsheet) — Full endpoint specification and schema details.  
-
-## Support & Feedback
-
-For issues, questions, or feature requests:  
-- Visit the [Aspose.Cells Cloud Forum](https://forum.aspose.cloud/c/cells/13)  
-- Report bugs via the [GitHub Issues page](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/issues)  
-- Contact support: [support@aspose.cloud](mailto:support@aspose.cloud)

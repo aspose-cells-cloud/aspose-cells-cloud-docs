@@ -3,6 +3,7 @@ title: "Convert Excel Table to HTML | Aspose.Cells Cloud"
 description: "Aspose.Cells Cloud API v3: Convert Excel tables to HTML via REST. Secure, format-preserving, and SDK-ready. No upload required."
 keywords: "Aspose.Cells Cloud, Excel table to HTML, convert table to HTML, cloud API, spreadsheet conversion"
 weight: 100
+linktitle: "Convert Table To Html
 date: 2024-05-10
 last_updated: 2024-05-10
 version: "v3.0"
@@ -22,7 +23,7 @@ PUT https://api.aspose.cloud/v4.0/cells/convert/table/html
 ### **Security and Authentication**
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/authentication/" rel="noopener noreferrer">JWT token-based authentication</a>.  
-*Replace `{YOUR_ACCESS_TOKEN}` in examples with a valid JWT token obtained from the Aspose Cloud dashboard.*
+_Replace `{YOUR_ACCESS_TOKEN}` in examples with a valid JWT token obtained from the Aspose Cloud dashboard._
 
 ### Request Parameters
 
@@ -142,6 +143,3 @@ response = cells_api.cells_table_post_table_to_html(
     filename="myWorkbook.xlsx"
 )
 ```
-
-> **Note**: For full workbook conversion (not just tables), see [Convert Workbook to HTML](/convert-workbook-to-html/).  
-> For a comparison of table vs. range conversion, refer to [Table vs. Range Conversion](/docs/comparison/table-vs-range).

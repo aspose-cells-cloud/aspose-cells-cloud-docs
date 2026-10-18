@@ -6,7 +6,7 @@ url: /how-to-merge-multiple-files
 description: "Step-by-step guide to merge Excel, CSV, and PDF files using Aspose.Cells Cloud REST API in C#, Python, Node.js, and more. Includes code samples and use cases."
 date: 2024-05-15
 last_modified: 2024-06-20
-weight: 10
+weight: 100
 keywords: "Excel merge, cloud spreadsheet API, REST API merge, C# merge Excel, Aspose.Cells Cloud"
 ---
 
@@ -20,10 +20,10 @@ The Aspose.Cells Cloud API provides robust APIs for merging multiple spreadsheet
 
 Multiple APIs are available for file merging, each compatible with various online environments. Below is a detailed comparison of these APIs:
 
-| Function        | Description      | API Reference      |
-| :------------------------- | :------------------------- | :------------------------- |
-| **[MergeSpreadsheets](https://docs.aspose.cloud/cells/merge-spreadsheets/)** | Merge local spreadsheet files into a specified format file. | [MergeSpreadsheets](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/MergeSpreadsheets) |
-| **[MergeRemoteSpreadsheet](https://docs.aspose.cloud/cells/merge-remote-spreadsheet/)** | Merge two cloud-based spreadsheet files (primary + secondary) into a specified format file. | [MergeRemoteSpreadsheet](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/MergeRemoteSpreadsheet) |
+| Function                                                                                                    | Description                                                                                          | API Reference                                                                                                                                    |
+| :---------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[MergeSpreadsheets](https://docs.aspose.cloud/cells/merge-spreadsheets/)**                                | Merge local spreadsheet files into a specified format file.                                          | [MergeSpreadsheets](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/MergeSpreadsheets)                             |
+| **[MergeRemoteSpreadsheet](https://docs.aspose.cloud/cells/merge-remote-spreadsheet/)**                     | Merge two cloud-based spreadsheet files (primary + secondary) into a specified format file.          | [MergeRemoteSpreadsheet](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/MergeRemoteSpreadsheet)                   |
 | **[MergeSpreadsheetsInRemoteFolder](https://docs.aspose.cloud/cells/merge-spreadsheets-in-remote-folder/)** | Batch-merge multiple spreadsheets in a cloud folder matching a pattern into a specified format file. | [MergeSpreadsheetsInRemoteFolder](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/MergeSpreadsheetsInRemoteFolder) |
 
 ## Merge Multiple Files Using Aspose.Cells Cloud API

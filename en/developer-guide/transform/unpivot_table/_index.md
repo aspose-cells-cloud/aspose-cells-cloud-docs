@@ -4,7 +4,7 @@ ArticleTitle: "Unpivot Table – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Unpivot Table"
 type: docs
-url: /cells/unpivot/table
+url: /unpivot/table
 aliases: []
 keywords: "Aspose.Cells, Unpivot, Transform"
 description: "Switch rows and columns in the spreadsheet."
@@ -27,21 +27,21 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name   | Type    | Path/Query String/HTTP Body | Description                                                                                                            |
-|------------------|---------|-----------------------------|------------------------------------------------------------------------------------------------------------------------|
-| Spreadsheet      | File    | FormData                    | Upload spreadsheet file.                                                                                               |
-| worksheet        | String  | Query                       | The worksheet name.                                                                                                    |
-| index            | Integer | Query                       | A specified data range.                                                                                                |
-| skipEmptyValue   | Boolean | Query                       | Skip empty values (default: true).                                                                                    |
-| outPath          | String  | Query                       | (Optional) The folder path where the workbook is stored. The default is null.                                         |
-| outStorageName   | String  | Query                       | Output file Storage Name.                                                                                              |
-| region           | String  | Query                       | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password         | String  | Query                       | The password for opening spreadsheet file.                                                                             |
+| Parameter Name | Type    | Path/Query String/HTTP Body | Description                                                                                                                             |
+| -------------- | ------- | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet    | File    | FormData                    | Upload spreadsheet file.                                                                                                                |
+| worksheet      | String  | Query                       | The worksheet name.                                                                                                                     |
+| index          | Integer | Query                       | A specified data range.                                                                                                                 |
+| skipEmptyValue | Boolean | Query                       | Skip empty values (default: true).                                                                                                      |
+| outPath        | String  | Query                       | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
+| outStorageName | String  | Query                       | Output file Storage Name.                                                                                                               |
+| region         | String  | Query                       | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password       | String  | Query                       | The password for opening spreadsheet file.                                                                                              |
 
 ### Request Body Parameter
 
-| Parameter Name | Type | Description |
-| -------------- | ---- | ----------- |
+| Parameter Name | Type | Description                 |
+| -------------- | ---- | --------------------------- |
 | N/A            | N/A  | No request body parameters. |
 
 ### **Response**
@@ -54,13 +54,13 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 **Response Status Codes**
 
-| Code | Meaning | Description |
-|------|---------|-------------|
-| 200 | OK | The unpivoted spreadsheet file is returned. |
-| 400 | Bad Request | Invalid request parameters. |
-| 401 | Unauthorized | Authentication failed or JWT token missing/invalid. |
-| 413 | Payload Too Large | Uploaded file exceeds the allowed size limit. |
-| 500 | Internal Server Error | Unexpected server error. |
+| Code | Meaning               | Description                                         |
+| ---- | --------------------- | --------------------------------------------------- |
+| 200  | OK                    | The unpivoted spreadsheet file is returned.         |
+| 400  | Bad Request           | Invalid request parameters.                         |
+| 401  | Unauthorized          | Authentication failed or JWT token missing/invalid. |
+| 413  | Payload Too Large     | Uploaded file exceeds the allowed size limit.       |
+| 500  | Internal Server Error | Unexpected server error.                            |
 
 ## How to Use the Unpivot Table with SDKs
 
@@ -103,4 +103,3 @@ curl -v "https://api.aspose.cloud/v4.0/cells/unpivot/table?worksheet={worksheet}
 Using an SDK is the fastest way to accelerate development. An SDK abstracts low-level details, allowing you to focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose Cells Cloud web services using various SDKs:
- `[TBD]`

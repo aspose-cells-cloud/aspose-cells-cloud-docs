@@ -22,26 +22,26 @@ GET https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{ra
 
 #### Path Parameters
 
-| Parameter | Type   | Required | Description                          |
-|:----------|:-------|:---------|:-------------------------------------|
-| `name`    | string | Yes      | Name of the workbook file in cloud storage. |
-| `worksheet` | string | Yes    | Name of the worksheet containing the range. |
-| `range`   | string | Yes      | Cell range identifier (e.g., `A1:C12`, `Sheet2!B2:D20`). |
+| Parameter   | Type   | Required | Description                                              |
+| :---------- | :----- | :------- | :------------------------------------------------------- |
+| `name`      | string | Yes      | Name of the workbook file in cloud storage.              |
+| `worksheet` | string | Yes      | Name of the worksheet containing the range.              |
+| `range`     | string | Yes      | Cell range identifier (e.g., `A1:C12`, `Sheet2!B2:D20`). |
 
 #### Query Parameters
 
-| Parameter         | Type    | Required | Description |
-|:------------------|:--------|:---------|:------------|
-| `format`          | string  | Yes      | Target output format (e.g., `pdf`, `png`, `svg`, `csv`, `xlsx`). Case-insensitive. |
-| `folder`          | string  | No       | Folder path containing the workbook. Defaults to root. |
-| `storageName`     | string  | No       | Cloud storage name. Omit to use default storage. |
-| `outPath`         | string  | No       | Absolute path in cloud storage where the output file will be saved. Requires `outStorageName` if non-default storage is used. |
-| `outStorageName`  | string  | No       | Storage name for the output file. Required when `outPath` specifies a non-default storage. |
-| `fontsLocation`   | string  | No       | Custom folder path for fonts used during rendering. |
-| `AutoRowsFit`     | boolean | No       | Whether to auto-fit rows in the range before conversion. Default: `false`. |
-| `AutoColumnsFit`  | boolean | No       | Whether to auto-fit columns in the range before conversion. Default: `false`. |
-| `region`          | string  | No       | Locale setting (e.g., `en-US`, `fr-FR`). Mirrors Excel’s **File > Options > Advanced > International** setting. Affects number, date, and formula evaluation behavior. |
-| `password`        | string  | No       | Password to open the protected workbook. |
+| Parameter        | Type    | Required | Description                                                                                                                                                            |
+| :--------------- | :------ | :------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `format`         | string  | Yes      | Target output format (e.g., `pdf`, `png`, `svg`, `csv`, `xlsx`). Case-insensitive.                                                                                     |
+| `folder`         | string  | No       | Folder path containing the workbook. Defaults to root.                                                                                                                 |
+| `storageName`    | string  | No       | Cloud storage name. Omit to use default storage.                                                                                                                       |
+| `outPath`        | string  | No       | Absolute path in cloud storage where the output file will be saved. Requires `outStorageName` if non-default storage is used.                                          |
+| `outStorageName` | string  | No       | Storage name for the output file. Required when `outPath` specifies a non-default storage.                                                                             |
+| `fontsLocation`  | string  | No       | Custom folder path for fonts used during rendering.                                                                                                                    |
+| `AutoRowsFit`    | boolean | No       | Whether to auto-fit rows in the range before conversion. Default: `false`.                                                                                             |
+| `AutoColumnsFit` | boolean | No       | Whether to auto-fit columns in the range before conversion. Default: `false`.                                                                                          |
+| `region`         | string  | No       | Locale setting (e.g., `en-US`, `fr-FR`). Mirrors Excel’s **File > Options > Advanced > International** setting. Affects number, date, and formula evaluation behavior. |
+| `password`       | string  | No       | Password to open the protected workbook.                                                                                                                               |
 
 > **Note**: If `outPath` is specified, `outStorageName` must be provided when the output should reside in a non-default storage.
 
@@ -63,11 +63,11 @@ The API returns a binary stream of the converted file (MIME type matches the req
 
 #### Example Response (Stream Output)
 
-| Field | Type | Description |
-|:------|:-----|:------------|
-| `Content-Type` | string | MIME type (e.g., `application/pdf`, `image/png`) |
+| Field                 | Type   | Description                                                        |
+| :-------------------- | :----- | :----------------------------------------------------------------- |
+| `Content-Type`        | string | MIME type (e.g., `application/pdf`, `image/png`)                   |
 | `Content-Disposition` | string | Inline or attachment with filename (e.g., `filename="A1_C12.pdf"`) |
-| Body | binary | File content as byte stream |
+| Body                  | binary | File content as byte stream                                        |
 
 #### Example Response (Cloud Storage Save)
 
@@ -82,14 +82,14 @@ Content-Length: 0
 
 ### HTTP Status Codes
 
-| Code | Meaning | Description |
-|:-----|:--------|:------------|
-| `200` | OK | Conversion successful. |
-| `400` | Bad Request | Invalid or missing parameters (e.g., unsupported `format`, malformed range). |
-| `401` | Unauthorized | Invalid, expired, or missing JWT token. |
-| `403` | Forbidden | Access denied to the workbook (e.g., wrong password, insufficient permissions). |
-| `404` | Not Found | Workbook, worksheet, or range not found. |
-| `500` | Internal Server Error | Unexpected error during conversion (e.g., unsupported feature in range). |
+| Code  | Meaning               | Description                                                                     |
+| :---- | :-------------------- | :------------------------------------------------------------------------------ |
+| `200` | OK                    | Conversion successful.                                                          |
+| `400` | Bad Request           | Invalid or missing parameters (e.g., unsupported `format`, malformed range).    |
+| `401` | Unauthorized          | Invalid, expired, or missing JWT token.                                         |
+| `403` | Forbidden             | Access denied to the workbook (e.g., wrong password, insufficient permissions). |
+| `404` | Not Found             | Workbook, worksheet, or range not found.                                        |
+| `500` | Internal Server Error | Unexpected error during conversion (e.g., unsupported feature in range).        |
 
 ---
 
@@ -129,7 +129,7 @@ File.WriteAllBytes("range_export.pdf", response);
 #### Java
 
 ```java
-CellsApi api = new CellsApi(System.getenv("CELLS_CLOUD_CLIENT_ID"), 
+CellsApi api = new CellsApi(System.getenv("CELLS_CLOUD_CLIENT_ID"),
                             System.getenv("CELLS_CLOUD_CLIENT_SECRET"));
 ResponseStream response = api.cellsRangesGetRangesWorksheet(
     "MyWorkbook.xlsx", "Sheet1", "A1:C12", "pdf", null, null);
@@ -164,51 +164,35 @@ with open("range_export.pdf", "wb") as f:
 ### Use Cases
 
 #### Data Export & Migration
+
 - **Database Integration**: Export ranges directly to database staging tables.
 - **Application Integration**: Push selected ranges into SaaS tools (e.g., CRM, analytics).
 - **Legacy-to-Modern Migration**: Convert legacy Excel ranges to open formats (CSV, JSON).
 - **Cross-Platform Sharing**: Distribute only relevant data subsets across teams or platforms.
 
 #### Reporting & Analytics
+
 - **Targeted Reporting**: Export report sections (e.g., Q3 KPIs) to PDF for stakeholder review.
 - **Dashboard Feeds**: Generate CSV/JSON for BI tools (Power BI, Tableau).
 - **Financial Reporting**: Extract ledger ranges for audit compliance (e.g., balance sheet, P&L).
 - **Performance Tracking**: Pull KPI ranges into monitoring systems.
 
 #### Development & Testing
+
 - **Test Data Generation**: Create CSV or Excel test datasets from production ranges.
 - **API Prototyping**: Quickly validate data flows using real range exports.
 - **Dev/QA Collaboration**: Share specific data scenarios with minimal overhead.
 
 #### Business Operations
+
 - **Selective Data Sharing**: Send only approved ranges to external partners.
 - **Partial Backups**: Backup critical ranges without full workbook duplication.
 - **Compliance Submissions**: Export regulatory data (e.g., tax, ESG) in required formats.
 - **Inter-Department Sharing**: Distribute sales or inventory ranges to relevant teams.
 
 #### Automation Workflows
+
 - **Scheduled Exports**: Run nightly exports of range data using cron or workflow engines (e.g., Apache Airflow).
 - **Event-Triggered Exports**: Export upon sales order creation, inventory threshold, or report completion.
 - **Batch Processing**: Export multiple ranges across workbooks in parallel.
 - **Pipeline Integration**: Embed range export in CI/CD (e.g., generate test reports as PDF).
-
----
-
-### Benefits
-
-- **Cloud-Native Workflow**: Process spreadsheets directly in cloud storage—no local file I/O needed.
-- **Format Versatility**: Support for PDF, PNG, SVG, CSV, XLSX, and other common formats.
-- **Reduced Infrastructure Overhead**: Hosted service eliminates server provisioning, scaling, and maintenance.
-- **Consistent Formatting**: Preserves Excel styling, formulas, and layout in output.
-- **Scalable Performance**: Optimized for large workbooks and high-throughput scenarios.
-
----
-
-### Related Documentation
-
-- [Authentication Guide](/getting-started/authentication/)  
-- [Export Entire Workbook to PDF](/export-workbook-to-pdf/)  
-- [Cloud Storage Integration](/cloud-storage-integration/)  
-- [Aspose.Cells Cloud SDK Overview](/sdks/)
-
----

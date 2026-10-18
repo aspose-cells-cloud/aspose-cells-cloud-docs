@@ -33,16 +33,16 @@ PUT https://api.aspose.cloud/v4.0/cells/convert/spreadsheet/csv
 
 ### Request Parameters
 
-| Parameter | Type | Location | Required | Description |
-|:----------|:-----|:---------|:---------|:------------|
-| `Spreadsheet` | File | FormData | ✅ Yes | Local Excel/WorkBook file (e.g., `myWorkbook.xlsx`). Must be sent as `multipart/form-data`. |
-| `outPath` | String | Query | ❌ No | Destination path in cloud storage (e.g., `/output/reports/`). Omit to return CSV directly in response body. |
-| `outStorageName` | String | Query | ❌ No | Cloud storage name for output. Defaults to configured account storage if omitted. |
-| `fontsLocation` | String | Query | ❌ No | Custom font folder path (e.g., `/fonts/`). Required for accurate rendering with non-system fonts. |
-| `region` | String | Query | ❌ No | Locale setting (e.g., `en-US`, `fr-FR`). Affects number/date formatting and parsing. |
-| `password` | String | Query | ❌ No | Password for encrypted spreadsheets. Incorrect/missing password returns `400`/`401`. |
-| `AutoRowsFit` | Boolean | Query | ❌ No | `true` to autofit all rows before conversion. Default: `false`. |
-| `AutoColumnsFit` | Boolean | Query | ❌ No | `true` to autofit all columns before conversion. Default: `false`. |
+| Parameter        | Type    | Location | Required | Description                                                                                                 |
+| :--------------- | :------ | :------- | :------- | :---------------------------------------------------------------------------------------------------------- |
+| `Spreadsheet`    | File    | FormData | ✅ Yes   | Local Excel/WorkBook file (e.g., `myWorkbook.xlsx`). Must be sent as `multipart/form-data`.                 |
+| `outPath`        | String  | Query    | ❌ No    | Destination path in cloud storage (e.g., `/output/reports/`). Omit to return CSV directly in response body. |
+| `outStorageName` | String  | Query    | ❌ No    | Cloud storage name for output. Defaults to configured account storage if omitted.                           |
+| `fontsLocation`  | String  | Query    | ❌ No    | Custom font folder path (e.g., `/fonts/`). Required for accurate rendering with non-system fonts.           |
+| `region`         | String  | Query    | ❌ No    | Locale setting (e.g., `en-US`, `fr-FR`). Affects number/date formatting and parsing.                        |
+| `password`       | String  | Query    | ❌ No    | Password for encrypted spreadsheets. Incorrect/missing password returns `400`/`401`.                        |
+| `AutoRowsFit`    | Boolean | Query    | ❌ No    | `true` to autofit all rows before conversion. Default: `false`.                                             |
+| `AutoColumnsFit` | Boolean | Query    | ❌ No    | `true` to autofit all columns before conversion. Default: `false`.                                          |
 
 ### Response
 
@@ -61,24 +61,24 @@ X-Request-Id: 8a3e5f9d-1c2b-4a7e-b3d2-0e1f2a3c4b5d
 
 #### HTTP Status Codes
 
-| Code | Meaning | Cause |
-|:-----|:--------|:------|
-| `200` | ✅ OK | Conversion successful; CSV returned in body. |
-| `202` | ⏳ Accepted | Asynchronous conversion initiated. Check `Location` header. |
-| `400` | ❌ Bad Request | Invalid parameters (e.g., unsupported file type, missing file, malformed JSON). |
-| `401` | ❌ Unauthorized | Invalid, expired, or missing JWT token. |
-| `413` | ❌ Payload Too Large | File exceeds 2 GB limit. |
-| `404` | ❌ Not Found | Source file inaccessible or path invalid. |
-| `500` | ❌ Internal Server Error | Server-side error during conversion. |
+| Code  | Meaning                  | Cause                                                                           |
+| :---- | :----------------------- | :------------------------------------------------------------------------------ |
+| `200` | ✅ OK                    | Conversion successful; CSV returned in body.                                    |
+| `202` | ⏳ Accepted              | Asynchronous conversion initiated. Check `Location` header.                     |
+| `400` | ❌ Bad Request           | Invalid parameters (e.g., unsupported file type, missing file, malformed JSON). |
+| `401` | ❌ Unauthorized          | Invalid, expired, or missing JWT token.                                         |
+| `413` | ❌ Payload Too Large     | File exceeds 2 GB limit.                                                        |
+| `404` | ❌ Not Found             | Source file inaccessible or path invalid.                                       |
+| `500` | ❌ Internal Server Error | Server-side error during conversion.                                            |
 
 ## Where Should You Use This API?
 
-| Use Case | Benefit |
-|:---------|:--------|
-| **Data Export for BI Tools** | Instantly convert Excel reports to CSV for import into Tableau, Power BI, or Snowflake. |
-| **Automated Batch Pipelines** | Process thousands of local spreadsheets serverlessly (e.g., via AWS Lambda or Azure Functions). |
-| **Web App File Uploads** | Let users upload Excel files and download CSV instantly—no backend storage needed. |
-| **Legacy System Modernization** | Convert `.xls` or `.xlsm` files to plain-text CSV for flat-file integrations. |
+| Use Case                        | Benefit                                                                                         |
+| :------------------------------ | :---------------------------------------------------------------------------------------------- |
+| **Data Export for BI Tools**    | Instantly convert Excel reports to CSV for import into Tableau, Power BI, or Snowflake.         |
+| **Automated Batch Pipelines**   | Process thousands of local spreadsheets serverlessly (e.g., via AWS Lambda or Azure Functions). |
+| **Web App File Uploads**        | Let users upload Excel files and download CSV instantly—no backend storage needed.              |
+| **Legacy System Modernization** | Convert `.xls` or `.xlsm` files to plain-text CSV for flat-file integrations.                   |
 
 ## Why Use Aspose.Cells Cloud for CSV Conversion?
 
@@ -110,13 +110,14 @@ All examples assume you have [configured your SDK credentials](https://docs.aspo
 
 {{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 {{< tab tabNum="1" >}}
+
 ```csharp
 // Install-Package Aspose.Cells-Cloud -Version 22.8.0
 
-var config = new Configuration 
-{ 
-    ClientId = "your_client_id", 
-    ClientSecret = "your_client_secret" 
+var config = new Configuration
+{
+    ClientId = "your_client_id",
+    ClientSecret = "your_client_secret"
 };
 var cellsApi = new CellsApi(config);
 
@@ -130,8 +131,10 @@ var response = cellsApi.CellsConvertSpreadsheetToCsv(
 File.WriteAllBytes("output.csv", response);
 Console.WriteLine("✅ Conversion successful!");
 ```
+
 {{< /tab >}}
 {{< tab tabNum="2" >}}
+
 ```java
 // Import: import com.aspose.cells.cloud.*;
 
@@ -142,17 +145,19 @@ CellsApi cellsApi = new CellsApi(config);
 
 FileInputStream fis = new FileInputStream("input.xlsx");
 byte[] response = cellsApi.cellsConvertSpreadsheetToCsv(
-    fis, 
-    "en-US", 
-    true, 
+    fis,
+    "en-US",
+    true,
     null, null, null, null, null, null
 );
 
 Files.write(Paths.get("output.csv"), response);
 System.out.println("✅ Conversion successful!");
 ```
+
 {{< /tab >}}
 {{< tab tabNum="3" >}}
+
 ```php
 // composer require aspose-cells-cloud/aspose-cells-cloud-php
 
@@ -170,8 +175,10 @@ $response = $cellsApi->cellsConvertSpreadsheetToCsv(
 file_put_contents("output.csv", $response);
 echo "✅ Conversion successful!";
 ```
+
 {{< /tab >}}
 {{< tab tabNum="4" >}}
+
 ```ruby
 # gem install aspose_cells_cloud
 
@@ -192,8 +199,10 @@ response = api.cells_convert_spreadsheet_to_csv(
 File.write("output.csv", response)
 puts "✅ Conversion successful!"
 ```
+
 {{< /tab >}}
 {{< tab tabNum="5" >}}
+
 ```typescript
 // npm install @aspose/cells-cloud --save
 
@@ -205,15 +214,17 @@ const config = {
 };
 const cellsApi = new CellsApi(config);
 
-const response = await cellsApi.cellsConvertSpreadsheetToCsv(
-  "input.xlsx",
-  { region: "en-US", autoRowsFit: true }
-);
+const response = await cellsApi.cellsConvertSpreadsheetToCsv("input.xlsx", {
+  region: "en-US",
+  autoRowsFit: true,
+});
 await fs.promises.writeFile("output.csv", response);
 console.log("✅ Conversion successful!");
 ```
+
 {{< /tab >}}
 {{< tab tabNum="6" >}}
+
 ```python
 # pip install asposecellscloud
 
@@ -233,8 +244,10 @@ with open("output.csv", "wb") as f:
     f.write(response)
 print("✅ Conversion successful!")
 ```
+
 {{< /tab >}}
 {{< tab tabNum="7" >}}
+
 ```perl
 use AsposeCellsCloud::Configuration;
 use AsposeCellsCloud::CellsApi;
@@ -256,8 +269,10 @@ print $out $$response;
 close $out;
 print "✅ Conversion successful!\n";
 ```
+
 {{< /tab >}}
 {{< tab tabNum="8" >}}
+
 ```go
 // go get github.com/aspose-cells-cloud/aspose-cells-cloud-go
 
@@ -285,32 +300,16 @@ if err != nil { panic(err) }
 os.WriteFile("output.csv", resp, 0644)
 fmt.Println("✅ Conversion successful!")
 ```
+
 {{< /tab >}}
 {{< /tabs >}}
 
 ## Error Handling Examples
 
-| Error | HTTP Code | Resolution |
-|:------|:----------|:-----------|
-| Missing JWT token | `401` | Include a valid JWT in the `Authorization: Bearer` header. |
-| File not found | `404` | Ensure the uploaded file exists and is accessible. |
-| Unsupported file format | `400` | Use `.xls`, `.xlsx`, `.xlsm`, `.xlsb`, `.ods`, etc. |
-| Password-protected file | `400` | Provide the correct `password` query parameter. |
-| File too large | `413` | Split large files or use the [Batch API](/cells/batch-processing/) instead. |
-
-## Best Practices
-
-1. **Always validate file size** before upload (max 2 GB).
-2. **Use `region`** for locale-sensitive data (e.g., `de-DE` for German number formats).
-3. **Enable `AutoRowsFit`/`AutoColumnsFit`** to avoid truncated data in CSV.
-4. **Handle `202 Accepted` responses** for large files: poll the `Location` header until completion.
-5. **Cache JWT tokens** (valid for 24 hours) to reduce authentication overhead.
-
-## See Also
-
-- [Convert Excel to PDF](/convert-excel-to-pdf/)  
-- [Batch Convert Multiple Spreadsheets](/cells/batch-processing/)  
-- [Aspose.Cells Cloud SDKs for .NET, Java, Python, Ruby, Node.js, PHP, Perl, and Go](https://github.com/aspose-cells-cloud)  
-- [Product Overview](/cells/total/)  
-
-> 📚 **Need Help?** Visit our [Support Forum](https://forum.aspose.cloud/c/cells/10) or check the [API Reference](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertSpreadsheetToCsv).
+| Error                   | HTTP Code | Resolution                                                                  |
+| :---------------------- | :-------- | :-------------------------------------------------------------------------- |
+| Missing JWT token       | `401`     | Include a valid JWT in the `Authorization: Bearer` header.                  |
+| File not found          | `404`     | Ensure the uploaded file exists and is accessible.                          |
+| Unsupported file format | `400`     | Use `.xls`, `.xlsx`, `.xlsm`, `.xlsb`, `.ods`, etc.                         |
+| Password-protected file | `400`     | Provide the correct `password` query parameter.                             |
+| File too large          | `413`     | Split large files or use the [Batch API](/cells/batch-processing/) instead. |

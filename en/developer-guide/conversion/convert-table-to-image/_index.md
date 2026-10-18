@@ -41,19 +41,19 @@ This endpoint requires a valid JWT access token. See [Authentication Overview](h
 
 ## Request Parameters
 
-| Parameter Name | Type | Location | Required | Description |
-|----------------|------|----------|----------|-------------|
-| `Spreadsheet` | File | FormData | Yes | Local Excel file containing the table to convert. |
-| `worksheet` | String | Query | Yes | Name of the worksheet containing the table. |
-| `tableName` | String | Query | Yes | Name of the Excel table to convert. |
-| `format` | String | Query | Yes | Target image format: `png`, `jpeg`, `tiff`, `bmp`, or `svg`. |
-| `outPath` | String | Query | No | Path in cloud storage where the output image will be saved. If omitted, the result is returned in the response body. |
-| `outStorageName` | String | Query | No | Name of the cloud storage to use for `outPath`. |
-| `fontsLocation` | String | Query | No | Custom folder path for fonts used during rendering. |
-| `AutoRowsFit` | Boolean | Query | No | Whether to auto-fit rows before conversion. Default: `false`. |
-| `AutoColumnsFit` | Boolean | Query | No | Whether to auto-fit columns before conversion. Default: `false`. |
-| `region` | String | Query | No | Locale setting (e.g., `en-US`, `fr-FR`, `fr-CA`) to affect number, date, and time formatting. |
-| `password` | String | Query | No | Password to open the protected Excel file. |
+| Parameter Name   | Type    | Location | Required | Description                                                                                                          |
+| ---------------- | ------- | -------- | -------- | -------------------------------------------------------------------------------------------------------------------- |
+| `Spreadsheet`    | File    | FormData | Yes      | Local Excel file containing the table to convert.                                                                    |
+| `worksheet`      | String  | Query    | Yes      | Name of the worksheet containing the table.                                                                          |
+| `tableName`      | String  | Query    | Yes      | Name of the Excel table to convert.                                                                                  |
+| `format`         | String  | Query    | Yes      | Target image format: `png`, `jpeg`, `tiff`, `bmp`, or `svg`.                                                         |
+| `outPath`        | String  | Query    | No       | Path in cloud storage where the output image will be saved. If omitted, the result is returned in the response body. |
+| `outStorageName` | String  | Query    | No       | Name of the cloud storage to use for `outPath`.                                                                      |
+| `fontsLocation`  | String  | Query    | No       | Custom folder path for fonts used during rendering.                                                                  |
+| `AutoRowsFit`    | Boolean | Query    | No       | Whether to auto-fit rows before conversion. Default: `false`.                                                        |
+| `AutoColumnsFit` | Boolean | Query    | No       | Whether to auto-fit columns before conversion. Default: `false`.                                                     |
+| `region`         | String  | Query    | No       | Locale setting (e.g., `en-US`, `fr-FR`, `fr-CA`) to affect number, date, and time formatting.                        |
+| `password`       | String  | Query    | No       | Password to open the protected Excel file.                                                                           |
 
 ---
 
@@ -71,26 +71,26 @@ Content-Disposition: attachment; filename="Table1.png"
 
 ### HTTP Status Codes
 
-| Code | Description |
-|------|-------------|
-| `200` | Success. Image returned in response body or saved to cloud storage. |
+| Code  | Description                                                          |
+| ----- | -------------------------------------------------------------------- |
+| `200` | Success. Image returned in response body or saved to cloud storage.  |
 | `400` | Invalid request — missing required parameters or unsupported format. |
-| `401` | Authentication failed or token expired. |
-| `403` | Access denied — insufficient permissions. |
-| `404` | Source file, worksheet, or table not found. |
-| `413` | Request payload too large (file exceeds size limit). |
-| `500` | Server error during processing. |
+| `401` | Authentication failed or token expired.                              |
+| `403` | Access denied — insufficient permissions.                            |
+| `404` | Source file, worksheet, or table not found.                          |
+| `413` | Request payload too large (file exceeds size limit).                 |
+| `500` | Server error during processing.                                      |
 
 ---
 
 ## Use Cases
 
-| Use Case | Description |
-|---------|-------------|
-| **Report Snapshots** | Convert summary tables to PNG/JPEG for inclusion in PDFs or printed documents. |
-| **Presentation Graphics** | Embed formatted tables as images in PowerPoint or Google Slides. |
-| **Training Materials** | Capture templates or sample data for user guides and knowledge bases. |
-| **Thumbnail Previews** | Generate small previews for file browsers or document management systems. |
+| Use Case                  | Description                                                                    |
+| ------------------------- | ------------------------------------------------------------------------------ |
+| **Report Snapshots**      | Convert summary tables to PNG/JPEG for inclusion in PDFs or printed documents. |
+| **Presentation Graphics** | Embed formatted tables as images in PowerPoint or Google Slides.               |
+| **Training Materials**    | Capture templates or sample data for user guides and knowledge bases.          |
+| **Thumbnail Previews**    | Generate small previews for file browsers or document management systems.      |
 
 ---
 
@@ -175,11 +175,3 @@ Yes. Provide `outPath` and optionally `outStorageName` to store the result in yo
 ### What if my Excel file is password-protected?
 
 Include the `password` query parameter with the correct password.
-
----
-
-## See Also
-
-- [Convert Worksheet to Image](/convert-worksheet-to-image/)
-- [Aspose.Cells Cloud Overview](/cells/cloud/)
-- [Image File Formats](/image/)

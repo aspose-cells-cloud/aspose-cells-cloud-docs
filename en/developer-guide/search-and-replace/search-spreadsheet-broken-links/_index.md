@@ -33,13 +33,13 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/search/broken-links?worksheet=S
 
 ### Request Parameters
 
-| Parameter | Type   | Location   | Required | Description |
-|-----------|--------|------------|----------|-------------|
-| `Spreadsheet` | File | FormData (multipart) | Yes | Excel workbook (`.xlsx`, `.xls`, `.xlsb`, `.xlsm`, `.ods`, etc.) to analyze. |
-| `worksheet` | String | Query | No | Name of the worksheet to scan. Defaults to the first visible sheet. |
-| `cellArea` | String | Query | No | Target cell range in A1 notation (e.g., `B2:D10`). If omitted, the used range is scanned. |
-| `region` | String | Query | No | Locale identifier (e.g., `en-US`, `fr-FR`). Affects date/number parsing and formula interpretation. |
-| `password` | String | Query | No | Password for encrypted workbooks. Omit if the file is unprotected. |
+| Parameter     | Type   | Location             | Required | Description                                                                                         |
+| ------------- | ------ | -------------------- | -------- | --------------------------------------------------------------------------------------------------- |
+| `Spreadsheet` | File   | FormData (multipart) | Yes      | Excel workbook (`.xlsx`, `.xls`, `.xlsb`, `.xlsm`, `.ods`, etc.) to analyze.                        |
+| `worksheet`   | String | Query                | No       | Name of the worksheet to scan. Defaults to the first visible sheet.                                 |
+| `cellArea`    | String | Query                | No       | Target cell range in A1 notation (e.g., `B2:D10`). If omitted, the used range is scanned.           |
+| `region`      | String | Query                | No       | Locale identifier (e.g., `en-US`, `fr-FR`). Affects date/number parsing and formula interpretation. |
+| `password`    | String | Query                | No       | Password for encrypted workbooks. Omit if the file is unprotected.                                  |
 
 ### Authentication
 
@@ -76,28 +76,28 @@ A successful response returns a `BrokenLinksResponse` object:
 
 #### BrokenLink Object
 
-| Field | Type | Description |
-|-------|------|-------------|
-| `CellName` | String | Cell address (e.g., `B5`) containing the broken link. |
-| `Link` | String | Original URL or file path referenced in the cell. |
+| Field          | Type   | Description                                                         |
+| -------------- | ------ | ------------------------------------------------------------------- |
+| `CellName`     | String | Cell address (e.g., `B5`) containing the broken link.               |
+| `Link`         | String | Original URL or file path referenced in the cell.                   |
 | `ErrorMessage` | String | Human-readable error (e.g., `"File not found"`, `"404 Not Found"`). |
-| `Status` | String | Always `"Broken"` for entries in the `BrokenLinks` array. |
+| `Status`       | String | Always `"Broken"` for entries in the `BrokenLinks` array.           |
 
 ### Error Codes
 
-| Code | Description |
-|------|-------------|
-| `400 Bad Request` | Invalid request URI, malformed parameters, or unsupported file format. |
-| `401 Unauthorized` | Missing, expired, or invalid access token or credentials. |
-| `404 Not Found` | Specified file not accessible or upload failed. |
-| `429 Too Many Requests` | Rate limit exceeded (60 calls/minute). |
-| `500 Server Error` | Internal server error during link resolution or file processing. |
+| Code                    | Description                                                            |
+| ----------------------- | ---------------------------------------------------------------------- |
+| `400 Bad Request`       | Invalid request URI, malformed parameters, or unsupported file format. |
+| `401 Unauthorized`      | Missing, expired, or invalid access token or credentials.              |
+| `404 Not Found`         | Specified file not accessible or upload failed.                        |
+| `429 Too Many Requests` | Rate limit exceeded (60 calls/minute).                                 |
+| `500 Server Error`      | Internal server error during link resolution or file processing.       |
 
 ### Use Cases
 
-- **Financial Model Auditing**: Before releasing monthly/quarterly reports, scan key dashboard ranges (e.g., `Dashboard!B5:K50`) to verify all external data references remain valid.  
-- **M&A Due Diligence**: After consolidating business-unit spreadsheets, run a quality check on the “Overview” worksheet to catch broken cross-file links caused by renamed paths or permissions.  
-- **Investor Package Validation**: Ensure charts, tables, and executive summaries referencing external market data sources (e.g., Bloomberg, Yahoo Finance) resolve correctly before distribution.  
+- **Financial Model Auditing**: Before releasing monthly/quarterly reports, scan key dashboard ranges (e.g., `Dashboard!B5:K50`) to verify all external data references remain valid.
+- **M&A Due Diligence**: After consolidating business-unit spreadsheets, run a quality check on the “Overview” worksheet to catch broken cross-file links caused by renamed paths or permissions.
+- **Investor Package Validation**: Ensure charts, tables, and executive summaries referencing external market data sources (e.g., Bloomberg, Yahoo Finance) resolve correctly before distribution.
 
 ### Implementation Guidance
 
@@ -135,16 +135,3 @@ Aspose.Cells Cloud provides SDKs for C#, Java, PHP, Ruby, Node.js, Python, Perl,
 #### OpenAPI Specification
 
 The endpoint is defined in the public [OpenAPI spec](https://reference.aspose.cloud/cells/#/SearchController/SearchSpreadsheetBrokenLinks). Use this to generate client libraries or integrate with API-gateway tools.
-
-### Best Practices
-
-- **Use `cellArea` to limit scope**: Scanning a large workbook can increase latency. Specify only the ranges under audit.  
-- **Validate with `region`**: If your workbook uses locale-specific date/number formats, set the `region` parameter to avoid false positives (e.g., `en-GB` for `dd/mm/yyyy` vs `en-US` for `mm/dd/yyyy`).  
-- **Handle encrypted files securely**: Pass the `password` parameter only over HTTPS. Avoid hardcoding credentials in scripts.  
-- **Automate cleanup**: Feed `BrokenLinks` results into a script that attempts to refresh links or flag cells for manual review.
-
-### Related Documentation
-
-- [Authentication Overview](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)  
-- [Cloud Storage Integration](/cells/cloud/storage-integration/)  
-- [SDK Installation Guide](/cells/sdk-overview/)

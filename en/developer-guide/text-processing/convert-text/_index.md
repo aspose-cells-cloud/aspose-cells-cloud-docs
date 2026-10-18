@@ -41,18 +41,18 @@ All requests require [JWT token-based authentication](https://docs.aspose.cloud/
 
 ## Request Parameters
 
-| Parameter Name   | Type   | Location                | Description |
-|------------------|--------|-------------------------|-------------|
-| `Spreadsheet`    | File   | FormData                | The spreadsheet file to be processed. Supported formats include XLSX, XLS, ODS, CSV, etc. |
-| `convertTextType`| String | Query (required)        | Specifies the conversion type. Valid values: `"Number"` (text-to-number), `"AccentNormalization"` (accent removal), `"LineBreaks"` (line-break conversion), `"SpecialChars"` (custom character replacement). |
-| `sourceCharacters`| String| Query (optional)        | Characters, strings, or patterns to replace or remove (e.g., `"é,è,ê"`, `"#N/A"`, `"%0A"` for line breaks). |
-| `targetCharacters`| String| Query (optional)        | Replacement strings (e.g., `"e"` for accented letters, `""` for removal, `"%20"` for space). |
-| `worksheet`      | String | Query (optional)        | Name of the worksheet where conversion applies. Defaults to the first worksheet. |
-| `range`          | String | Query (optional)        | Cell range (e.g., `"A1:C10"`). Defaults to all used cells in the worksheet. |
-| `outPath`        | String | Query (optional)        | Cloud storage folder path for the output file. Defaults to the source folder. |
-| `outStorageName` | String | Query (optional)        | Name of the cloud storage where the output file will be stored. |
-| `region`         | String | Query (optional)        | Locale setting (e.g., `"en-US"`, `"fr-FR"`), affecting number/date parsing and language-specific behavior. |
-| `password`       | String | Query (optional)        | Password for password-protected files. |
+| Parameter Name     | Type   | Location         | Description                                                                                                                                                                                                  |
+| ------------------ | ------ | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `Spreadsheet`      | File   | FormData         | The spreadsheet file to be processed. Supported formats include XLSX, XLS, ODS, CSV, etc.                                                                                                                    |
+| `convertTextType`  | String | Query (required) | Specifies the conversion type. Valid values: `"Number"` (text-to-number), `"AccentNormalization"` (accent removal), `"LineBreaks"` (line-break conversion), `"SpecialChars"` (custom character replacement). |
+| `sourceCharacters` | String | Query (optional) | Characters, strings, or patterns to replace or remove (e.g., `"é,è,ê"`, `"#N/A"`, `"%0A"` for line breaks).                                                                                                  |
+| `targetCharacters` | String | Query (optional) | Replacement strings (e.g., `"e"` for accented letters, `""` for removal, `"%20"` for space).                                                                                                                 |
+| `worksheet`        | String | Query (optional) | Name of the worksheet where conversion applies. Defaults to the first worksheet.                                                                                                                             |
+| `range`            | String | Query (optional) | Cell range (e.g., `"A1:C10"`). Defaults to all used cells in the worksheet.                                                                                                                                  |
+| `outPath`          | String | Query (optional) | Cloud storage folder path for the output file. Defaults to the source folder.                                                                                                                                |
+| `outStorageName`   | String | Query (optional) | Name of the cloud storage where the output file will be stored.                                                                                                                                              |
+| `region`           | String | Query (optional) | Locale setting (e.g., `"en-US"`, `"fr-FR"`), affecting number/date parsing and language-specific behavior.                                                                                                   |
+| `password`         | String | Query (optional) | Password for password-protected files.                                                                                                                                                                       |
 
 ### Example Request (cURL)
 
@@ -80,11 +80,11 @@ On success, returns the processed workbook as a file stream.
 
 ## Error Codes
 
-| Code | Description |
-|------|-------------|
-| `400 Bad Request` | Invalid API URI, malformed parameters, or unsupported file format. |
-| `401 Unauthorized` | Invalid or expired access token, or incorrect client ID/secret. |
-| `404 Not Found` | Specified file or storage path does not exist. |
+| Code               | Description                                                                            |
+| ------------------ | -------------------------------------------------------------------------------------- |
+| `400 Bad Request`  | Invalid API URI, malformed parameters, or unsupported file format.                     |
+| `401 Unauthorized` | Invalid or expired access token, or incorrect client ID/secret.                        |
+| `404 Not Found`    | Specified file or storage path does not exist.                                         |
 | `500 Server Error` | Internal server failure during processing (e.g., corrupted file or calculation error). |
 
 ## Use Cases
@@ -104,12 +104,12 @@ On success, returns the processed workbook as a file stream.
 
 ## Internal & External Resources
 
-- **Related Documentation**:  
-  - [Data Validation Guide](/data-validation/)  
-  - [Excel to PDF Conversion API](/convert-excel-to-pdf/)  
+- **Related Documentation**:
+  - [Data Validation Guide](/data-validation/)
+  - [Excel to PDF Conversion API](/convert-excel-to-pdf/)
   - [Workbook Merging & Splitting](/merge-workbooks/)
 
-- **External References**:  
+- **External References**:
   - [Aspose.Cells Cloud SDKs (GitHub)](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet)  
     _Select your language: .NET, Java, PHP, Ruby, Node.js, Python, Perl, or Go._
   - [Raw OpenAPI Specification (JSON)](https://raw.githubusercontent.com/aspose-cells-cloud/aspose-cells-cloud-openapi-spec/main/specs/Cells_API.json)
@@ -142,9 +142,3 @@ On success, returns the processed workbook as a file stream.
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ConvertText.go">}}
 {{</tab>}}
 {{</tabs>}}
-
-> **Accessibility Note**: All code samples are language-specific and do not include embedded images. If rendered UI includes icons (e.g., language flags), ensure `alt` text like `"C# SDK code snippet"` is provided.
-
-## Last Updated
-
-May 2024 — Verified for Aspose.Cells Cloud API v4.0.

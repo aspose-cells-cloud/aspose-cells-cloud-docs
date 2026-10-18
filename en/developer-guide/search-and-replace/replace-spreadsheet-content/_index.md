@@ -40,15 +40,15 @@ For step-by-step instructions, see [Authenticating API Requests](https://docs.as
 
 ## Request Parameters
 
-| Parameter Name | Type   | Location                  | Required | Description |
-| :------------- | :----- | :------------------------ | :------- | :---------- |
-| `Spreadsheet`  | File   | `multipart/form-data`     | Yes      | Local spreadsheet file to process. |
-| `searchText`   | String | Query                     | Yes      | Text string to search for. |
-| `replaceText`  | String | Query                     | Yes      | Replacement text. |
-| `worksheet`    | String | Query                     | No       | Name of the worksheet to process. Defaults to the first worksheet. |
-| `cellArea`     | String | Query                     | No       | Cell range (e.g., `"A1:D20"`, `"B5:F15"`). Defaults to all used cells in the worksheet. |
-| `region`       | String | Query                     | No       | Locale identifier (e.g., `"en-US"`, `"fr-FR"`). Affects case sensitivity and locale-specific text handling. |
-| `password`     | String | `multipart/form-data`     | No       | **Password for protected files.** *Do not send in query strings.* Include as a form field (e.g., `Content-Disposition: form-data; name="password"`). |
+| Parameter Name | Type   | Location              | Required | Description                                                                                                                                          |
+| :------------- | :----- | :-------------------- | :------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Spreadsheet`  | File   | `multipart/form-data` | Yes      | Local spreadsheet file to process.                                                                                                                   |
+| `searchText`   | String | Query                 | Yes      | Text string to search for.                                                                                                                           |
+| `replaceText`  | String | Query                 | Yes      | Replacement text.                                                                                                                                    |
+| `worksheet`    | String | Query                 | No       | Name of the worksheet to process. Defaults to the first worksheet.                                                                                   |
+| `cellArea`     | String | Query                 | No       | Cell range (e.g., `"A1:D20"`, `"B5:F15"`). Defaults to all used cells in the worksheet.                                                              |
+| `region`       | String | Query                 | No       | Locale identifier (e.g., `"en-US"`, `"fr-FR"`). Affects case sensitivity and locale-specific text handling.                                          |
+| `password`     | String | `multipart/form-data` | No       | **Password for protected files.** _Do not send in query strings._ Include as a form field (e.g., `Content-Disposition: form-data; name="password"`). |
 
 > 🔒 **Security Note**: Sending passwords in query strings is insecure (exposed in logs, proxies, and browser history). Always use the `password` field in the request body.
 
@@ -75,7 +75,7 @@ curl -v "https://api.aspose.cloud/v4.0/cells/replace/content?searchText=old&repl
 
 Returns a binary stream containing the modified workbook. Save the response with the appropriate extension (e.g., `.xlsx`).
 
-Example JSON schema for the *metadata* (actual response is binary):
+Example JSON schema for the _metadata_ (actual response is binary):
 
 ```http
 HTTP/1.1 200 OK
@@ -85,12 +85,12 @@ Content-Disposition: attachment; filename="updated_file.xlsx"
 
 ## Error Handling
 
-| Code | Description |
-| :--- | :---------- |
+| Code  | Description                                                    |
+| :---- | :------------------------------------------------------------- |
 | `400` | Invalid URL, malformed parameters, or unsupported file format. |
-| `401` | Invalid, expired, or missing access token. |
-| `404` | Source file not found or specified worksheet does not exist. |
-| `500` | Internal server error during processing. |
+| `401` | Invalid, expired, or missing access token.                     |
+| `404` | Source file not found or specified worksheet does not exist.   |
+| `500` | Internal server error during processing.                       |
 
 ## Where to Use This API
 
@@ -156,20 +156,3 @@ Using an SDK abstracts HTTP details and simplifies file handling. Below are conc
 ## OpenAPI Specification
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Search/ReplaceSpreadsheetContent) defines this operation for direct REST interactions or code generation.
-
-## Related Topics
-
-- [Upload File to Cloud Storage](/upload-file/)  
-- [Batch File Operations](/batch-operations/)  
-- [Working with Password-Protected Files](/password-protected-files/)
-
-<!-- Schema markup for SEO -->
-<script type="application/ld+json">
-{
-  "@type": "SoftwareApplication",
-  "name": "Aspose.Cells Cloud Find & Replace API",
-  "applicationCategory": "DeveloperApplication",
-  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-  "featureList": "Replace text in local Excel files, Range-specific replacement, Preserve formatting, On-premise processing"
-}
-</script>

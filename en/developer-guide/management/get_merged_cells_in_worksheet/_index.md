@@ -2,13 +2,13 @@
 title: "GetMergedCellsInWorksheet"
 ArticleTitle: "Get Merged Cells in Worksheet – Aspose.Cells Cloud API"
 second_title: "Document"
-linktitle: "GetMergedCellsInWorksheet"
+linktitle: "Get Merged Cells In Worksheet"
 type: docs
-url: /cells/spreadsheet/mergedcells
+url: /spreadsheet/merged-cells
 aliases: []
 keywords: "Aspose Cells, merged cells, worksheet, API"
 description: "Get all merged cell area from a local spreadsheet worksheet."
-weight: 1000
+weight: 100
 ---
 
 ## The Get Merged Cells In Worksheet of Aspose.Cells Cloud Web Services
@@ -27,18 +27,18 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTP Body | Description |
-|----------------|------|-----------------------------|-------------|
-| Spreadsheet | File | FormData | Upload spreadsheet file. |
-| worksheet | String | Query | Worksheet name. |
-| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password | String | Query | The password for opening spreadsheet file. |
+| Parameter Name | Type   | Path/Query String/HTTP Body | Description                                                                                                                             |
+| -------------- | ------ | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet    | File   | FormData                    | Upload spreadsheet file.                                                                                                                |
+| worksheet      | String | Query                       | Worksheet name.                                                                                                                         |
+| region         | String | Query                       | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password       | String | Query                       | The password for opening spreadsheet file.                                                                                              |
 
 ### Request Body Parameter
 
-| Parameter Name | Type | Description |
-| -------------- | ---- | ----------- |
-| N/A | N/A | This operation does not accept a JSON body; the spreadsheet file is sent via `multipart/form-data`. |
+| Parameter Name | Type | Description                                                                                         |
+| -------------- | ---- | --------------------------------------------------------------------------------------------------- |
+| N/A            | N/A  | This operation does not accept a JSON body; the spreadsheet file is sent via `multipart/form-data`. |
 
 ### **Response**
 
@@ -61,13 +61,13 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 **Response Status Codes**
 
-| Code | Meaning | Description |
-|------|---------|-------------|
-| 200 | OK | Successfully retrieved merged cell areas. |
-| 400 | Bad Request | One or more request parameters are invalid or missing. |
-| 401 | Unauthorized | Authentication failed – invalid or missing JWT token. |
-| 413 | Payload Too Large | Uploaded spreadsheet exceeds the allowed size limit. |
-| 500 | Internal Server Error | An unexpected error occurred on the server. |
+| Code | Meaning               | Description                                            |
+| ---- | --------------------- | ------------------------------------------------------ |
+| 200  | OK                    | Successfully retrieved merged cell areas.              |
+| 400  | Bad Request           | One or more request parameters are invalid or missing. |
+| 401  | Unauthorized          | Authentication failed – invalid or missing JWT token.  |
+| 413  | Payload Too Large     | Uploaded spreadsheet exceeds the allowed size limit.   |
+| 500  | Internal Server Error | An unexpected error occurred on the server.            |
 
 ## How to Use the Get Merged Cells In Worksheet with SDKs
 
@@ -121,4 +121,3 @@ curl -v "https://api.aspose.cloud/v4.0/cells/spreadsheet/mergedcells?worksheet=S
 Using an SDK is the fastest way to accelerate development. An SDK abstracts low-level details, allowing you to focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose Cells Cloud web services using various SDKs:
- `[TBD]`

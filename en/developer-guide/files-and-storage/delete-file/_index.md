@@ -23,10 +23,10 @@ DELETE https://api.aspose.cloud/v4.0/cells/storage/file/{path}
 
 ### Request Parameters
 
-| Parameter Name | Type   | Location | Description |
-| :------------- | :----- | :------- | :---------- |
-| `path`         | string | Path     | **Required.** The URL-encoded path to the file in cloud storage (e.g., `input/Report.xlsx`). |
-| `storageName`  | string | Query    | **Optional.** The name of the storage where the file resides. Omit to use the default storage. |
+| Parameter Name | Type   | Location | Description                                                                                            |
+| :------------- | :----- | :------- | :----------------------------------------------------------------------------------------------------- |
+| `path`         | string | Path     | **Required.** The URL-encoded path to the file in cloud storage (e.g., `input/Report.xlsx`).           |
+| `storageName`  | string | Query    | **Optional.** The name of the storage where the file resides. Omit to use the default storage.         |
 | `versionId`    | string | Query    | **Optional.** The version identifier of the file to delete. If omitted, the latest version is deleted. |
 
 ### Security and Authentication
@@ -49,14 +49,14 @@ A successful request returns **HTTP 200** with an empty response body.
 
 #### HTTP Status Codes
 
-| Code | Meaning               | Description |
-| :--- | :-------------------- | :---------- |
-| 200  | OK                    | File deleted successfully. |
+| Code | Meaning               | Description                                                                      |
+| :--- | :-------------------- | :------------------------------------------------------------------------------- |
+| 200  | OK                    | File deleted successfully.                                                       |
 | 400  | Bad Request           | Invalid or missing `path`, unsupported file type, or malformed query parameters. |
-| 401  | Unauthorized          | Invalid, expired, or missing JWT token. |
-| 404  | Not Found             | File or storage not found. |
-| 413  | Payload Too Large     | Request size exceeds limits (rare for DELETE). |
-| 500  | Internal Server Error | Unexpected server error. |
+| 401  | Unauthorized          | Invalid, expired, or missing JWT token.                                          |
+| 404  | Not Found             | File or storage not found.                                                       |
+| 413  | Payload Too Large     | Request size exceeds limits (rare for DELETE).                                   |
+| 500  | Internal Server Error | Unexpected server error.                                                         |
 
 ### Examples
 
@@ -102,9 +102,9 @@ await cells_api.delete_file("Example.xlsx", storage_name="MyStorage")
 
 ### Related Operations
 
-- [Upload File](/upload-file/)  
-- [List Files](/list-files/)  
-- [Download File](/download-file/)  
+- [Upload File](/upload-file/)
+- [List Files](/list-files/)
+- [Download File](/download-file/)
 - [Storage API Overview](/storage-api/)
 
 ### OpenAPI Specification

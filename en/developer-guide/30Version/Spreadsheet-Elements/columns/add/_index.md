@@ -9,17 +9,17 @@ aliases:
   - /add-an-empty-column-in-a-worksheet/
 keywords: "add, column, Excel, API, Aspose.Cells, Cloud, REST, insert"
 description: "Learn how to insert a new column into an Excel sheet using Aspose.Cells Cloud REST API. Includes request syntax, cURL example, and SDK code samples."
-weight: 20
+weight: 100
 ArticleTitle: "Add Empty Column to Excel Worksheet Using Aspose.Cells Cloud API"
 ---
 
-This REST API inserts one or more columns into a worksheet.  
+This REST API inserts one or more columns into a worksheet.
 
 **Prerequisites**  
 Before calling this endpoint, ensure you have completed the following steps:
 
-- Obtain a valid OAuth 2.0 access token and include it in the `Authorization` header.  
-- Store the target workbook in the selected storage (default = “Default”) or specify the appropriate `folder` and `storageName` parameters.  
+- Obtain a valid OAuth 2.0 access token and include it in the `Authorization` header.
+- Store the target workbook in the selected storage (default = “Default”) or specify the appropriate `folder` and `storageName` parameters.
 - Verify that the worksheet name provided in `sheetName` exists in the workbook.
 
 ## PutInsertWorksheetColumns API
@@ -46,8 +46,8 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 **Notes**
 
-- The `columnIndex` must be between 0 and the current number of columns in the worksheet. Inserting beyond the existing range will automatically expand the sheet.  
-- Inserting multiple columns (`totalColumns` > 1) shifts existing columns to the right.  
+- The `columnIndex` must be between 0 and the current number of columns in the worksheet. Inserting beyond the existing range will automatically expand the sheet.
+- Inserting multiple columns (`totalColumns` > 1) shifts existing columns to the right.
 - The `updateReference` flag defaults to `false`; set to `true` to update formulas and named ranges.
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PutInsertWorksheetColumns) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
@@ -81,13 +81,13 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cel
 
 **Response codes**
 
-| Code | Description                                 |
-|------|---------------------------------------------|
-| 200  | Column(s) inserted successfully.            |
-| 400  | Bad request – missing or invalid parameters.|
-| 401  | Unauthorized – invalid or missing token.    |
-| 404  | Workbook or worksheet not found.            |
-| 500  | Internal server error.                      |
+| Code | Description                                  |
+| ---- | -------------------------------------------- |
+| 200  | Column(s) inserted successfully.             |
+| 400  | Bad request – missing or invalid parameters. |
+| 401  | Unauthorized – invalid or missing token.     |
+| 404  | Workbook or worksheet not found.             |
+| 500  | Internal server error.                       |
 
 **Example error responses**
 

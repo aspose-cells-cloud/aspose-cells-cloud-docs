@@ -24,14 +24,14 @@ Data validation rules help enforce data integrity by restricting input types and
 
 ### API Summary
 
-| Operation | HTTP Method | Endpoint | Description |
-|-----------|-------------|----------|-------------|
-| Add | POST | `/cells/{file}/worksheets/{sheet}/validations` | Create a validation rule |
-| Get | GET | `/cells/{file}/worksheets/{sheet}/validations/{index}` | Retrieve a specific rule |
-| Get All | GET | `/cells/{file}/worksheets/{sheet}/validations` | List all rules |
-| Update | PUT | `/cells/{file}/worksheets/{sheet}/validations/{index}` | Modify a rule |
-| Delete | DELETE | `/cells/{file}/worksheets/{sheet}/validations/{index}` | Remove a rule |
-| Clear | POST | `/cells/{file}/worksheets/{sheet}/validations/clear` | Remove all rules |
+| Operation | HTTP Method | Endpoint                                               | Description              |
+| --------- | ----------- | ------------------------------------------------------ | ------------------------ |
+| Add       | POST        | `/cells/{file}/worksheets/{sheet}/validations`         | Create a validation rule |
+| Get       | GET         | `/cells/{file}/worksheets/{sheet}/validations/{index}` | Retrieve a specific rule |
+| Get All   | GET         | `/cells/{file}/worksheets/{sheet}/validations`         | List all rules           |
+| Update    | PUT         | `/cells/{file}/worksheets/{sheet}/validations/{index}` | Modify a rule            |
+| Delete    | DELETE      | `/cells/{file}/worksheets/{sheet}/validations/{index}` | Remove a rule            |
+| Clear     | POST        | `/cells/{file}/worksheets/{sheet}/validations/clear`   | Remove all rules         |
 
 ## Working with validations on an Excel file
 

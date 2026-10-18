@@ -53,20 +53,20 @@ Include your JWT token in the `Authorization` header:
 
 ## Request Parameters
 
-| Parameter Name                 | Type    | Location    | Required | Default      | Description |
-|-------------------------------|---------|-------------|----------|--------------|-------------|
-| `spreadsheet`                 | File    | FormData    | Yes      | —            | The spreadsheet file to process (XLSX, XLS, ODS, CSV). |
-| `delimiters`                  | String  | Query       | Yes      | —            | One or more delimiter characters (e.g., `","`, `";"`, `"|"`, `" "`, `"\n"`). |
-| `keepDelimitersInResultingCells` | Boolean | Query    | No       | `false`      | When `true`, delimiters are retained in the resulting cells. |
-| `keepDelimitersPosition`      | String  | Query       | No       | `None`       | Where to retain delimiters if enabled: `None`, `AtTheBeginning`, `AtTheEnd`, `BeforeText`, `AfterText`. |
-| `howToSplit`                  | String  | Query       | No       | `SplitToColumns` | Direction of output: `None`, `SplitToColumns`, `SplitToRows`. |
-| `outPositionRange`            | String  | Query       | Yes      | —            | Target range for output (e.g., `` `"D1:F10"` ``). |
-| `worksheet`                   | String  | Query       | No       | First sheet  | Worksheet name where splitting is applied. |
-| `range`                       | String  | Query       | No       | Used range   | Source cell range to split (e.g., `` `"A1:A10"` ``). |
-| `outPath`                     | String  | Query       | No       | Source folder | Cloud storage path to save the output workbook. |
-| `outStorageName`              | String  | Query       | No       | Default      | Name of the cloud storage for output. |
-| `region`                      | String  | Query       | No       | `en-US`      | Locale setting (e.g., `"en-US"`, `"de-DE"`, `"ja-JP"`). Affects delimiter interpretation and formatting rules. |
-| `password`                    | String  | Query       | No       | —            | Password for password-protected workbooks. |
+| Parameter Name                   | Type    | Location | Required | Default          | Description                                                                                                    |
+| -------------------------------- | ------- | -------- | -------- | ---------------- | -------------------------------------------------------------------------------------------------------------- | ------------------- |
+| `spreadsheet`                    | File    | FormData | Yes      | —                | The spreadsheet file to process (XLSX, XLS, ODS, CSV).                                                         |
+| `delimiters`                     | String  | Query    | Yes      | —                | One or more delimiter characters (e.g., `","`, `";"`, `"                                                       | "`, `" "`, `"\n"`). |
+| `keepDelimitersInResultingCells` | Boolean | Query    | No       | `false`          | When `true`, delimiters are retained in the resulting cells.                                                   |
+| `keepDelimitersPosition`         | String  | Query    | No       | `None`           | Where to retain delimiters if enabled: `None`, `AtTheBeginning`, `AtTheEnd`, `BeforeText`, `AfterText`.        |
+| `howToSplit`                     | String  | Query    | No       | `SplitToColumns` | Direction of output: `None`, `SplitToColumns`, `SplitToRows`.                                                  |
+| `outPositionRange`               | String  | Query    | Yes      | —                | Target range for output (e.g., `` `"D1:F10"` ``).                                                              |
+| `worksheet`                      | String  | Query    | No       | First sheet      | Worksheet name where splitting is applied.                                                                     |
+| `range`                          | String  | Query    | No       | Used range       | Source cell range to split (e.g., `` `"A1:A10"` ``).                                                           |
+| `outPath`                        | String  | Query    | No       | Source folder    | Cloud storage path to save the output workbook.                                                                |
+| `outStorageName`                 | String  | Query    | No       | Default          | Name of the cloud storage for output.                                                                          |
+| `region`                         | String  | Query    | No       | `en-US`          | Locale setting (e.g., `"en-US"`, `"de-DE"`, `"ja-JP"`). Affects delimiter interpretation and formatting rules. |
+| `password`                       | String  | Query    | No       | —                | Password for password-protected workbooks.                                                                     |
 
 ### Notes on Key Parameters
 
@@ -95,12 +95,12 @@ curl -X PUT \
 // C# example: Split text in column A by comma into columns D–F
 var cellsApi = new CellsApi(clientId, clientSecret);
 cellsApi.SplitText(
-  "input.xlsx",
-  delimiters: ",",
-  howToSplit: "SplitToColumns",
-  outPositionRange: "D1:F10",
-  worksheet: "Sheet1",
-  range: "A1:A5"
+"input.xlsx",
+delimiters: ",",
+howToSplit: "SplitToColumns",
+outPositionRange: "D1:F10",
+worksheet: "Sheet1",
+range: "A1:A5"
 );
 {{</highlight>}}  
 {{</tab>}}  
@@ -118,17 +118,19 @@ cellsApi.splitText(request, "input.xlsx", null, null);
 {{</tab>}}  
 {{<tab tabNum="6" >}}  
 {{<highlight python>}}
+
 # Python example: Split by pipe delimiter, retain at end, write to rows
+
 api = CellsApi(os.getenv('ASPOSE_CLOUD_CLIENT_ID'), os.getenv('ASPOSE_CLOUD_CLIENT_SECRET'))
 api.split_text(
-    file='input.xlsx',
-    delimiters='|',
-    how_to_split='SplitToRows',
-    out_position_range='C1:E10',
-    worksheet='Data',
-    range='A1:A8',
-    keep_delimiters_in_resulting_cells=True,
-    keep_delimiters_position='AtTheEnd'
+file='input.xlsx',
+delimiters='|',
+how_to_split='SplitToRows',
+out_position_range='C1:E10',
+worksheet='Data',
+range='A1:A8',
+keep_delimiters_in_resulting_cells=True,
+keep_delimiters_position='AtTheEnd'
 )
 {{</highlight>}}  
 {{</tab>}}  
@@ -148,54 +150,15 @@ Content-Disposition: attachment; filename="output.xlsx"
 
 ### Error Codes
 
-| Code | Description |
-|------|-------------|
-| `400 Bad Request` | Invalid parameter format (e.g., malformed range, missing required fields). |
-| `401 Unauthorized` | Missing, expired, or invalid JWT token. |
-| `403 Forbidden` | Insufficient permissions or quota exceeded. |
-| `404 Not Found` | Spreadsheet file not found in storage or invalid path. |
-| `415 Unsupported Media Type` | File format not supported (e.g., .xlsx required). |
-| `500 Internal Server Error` | Unexpected server-side failure during processing. |
-
-## Use Cases
-
-### 1. CSV & Text Import Cleanup
-- **ERP/CRM imports**: `"John Doe;johndoe@email.com;555-1234"` → separate columns for name, email, phone.  
-- **Database exports**: `"ORD-2024-001|Premium|Express"` → order ID, tier, shipping method.  
-- **Log analysis**: `"2024-01-15 10:30:00|ERROR|ConnectionTimeout"` → timestamp, level, message.
-
-### 2. Legacy System Migration
-- Convert flat-file exports with multi-value fields into normalized tables for modern BI tools (Power BI, Tableau).
-
-### 3. Data Cleaning & Standardization
-- **Delimiter normalization**: Convert mixed delimiters (`"A,B;C|D"`) to a uniform format.  
-- **Financial codes**: `"DEP-CHK-3847"` → type (`DEP`), source (`CHK`), reference (`3847`).  
-- **Medical records**: `"Smith,Jane_F_1985"` → last name, first name, gender, birth year.
-
-## Benefits
-
-- Supports multiple delimiter types: characters, strings, masks, and line breaks.  
-- Flexible output configuration: directional split, delimiter retention, and range control.  
-- Reduces manual effort: no need to upload and re-download workbooks for repeated operations.  
-- Language-agnostic: SDKs available for major platforms (C#, Java, Python, Node.js, etc.).
-
-## Related APIs
-
-- [CombineText API](/combine-text/) – Merge multiple cells into one with configurable separator.  
-- [FilterData API](/filter-data/) – Extract rows matching specific criteria for further processing.  
-- [Workbook API](/workbook/) – Manage workbooks (upload, save, convert) in cloud storage.
+| Code                         | Description                                                                |
+| ---------------------------- | -------------------------------------------------------------------------- |
+| `400 Bad Request`            | Invalid parameter format (e.g., malformed range, missing required fields). |
+| `401 Unauthorized`           | Missing, expired, or invalid JWT token.                                    |
+| `403 Forbidden`              | Insufficient permissions or quota exceeded.                                |
+| `404 Not Found`              | Spreadsheet file not found in storage or invalid path.                     |
+| `415 Unsupported Media Type` | File format not supported (e.g., .xlsx required).                          |
+| `500 Internal Server Error`  | Unexpected server-side failure during processing.                          |
 
 ## OpenAPI Specification
 
 The full API contract is documented in the [Aspose.Cells Cloud OpenAPI spec](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/TextProcessing/SplitText).
-
-## Best Practices
-
-- **Avoid overlapping ranges**: Ensure `outPositionRange` does not overwrite source data.  
-- **Test with small samples**: Validate delimiter behavior on a subset before full execution.  
-- **Use `region` for international data**: Specify locale explicitly when delimiters conflict with number/date formatting.  
-- **Secure credentials**: Never expose `client_id`/`client_secret` in client-side code. Use environment variables or secure vaults.
-
----
-
-> **Feedback?** Report issues or suggest improvements via the [Aspose.Cells Cloud GitHub Issues](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/issues).

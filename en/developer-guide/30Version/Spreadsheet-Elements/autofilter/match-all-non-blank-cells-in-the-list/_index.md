@@ -12,11 +12,12 @@ weight: 100
 ---
 
 **Overview**  
-The *Match all non‑blank cells* operation applies an AutoFilter to a worksheet and returns only the rows where the specified column contains data, ignoring empty cells. This is useful for cleaning data sets, generating reports, or preparing data for further analysis.
+The _Match all non‑blank cells_ operation applies an AutoFilter to a worksheet and returns only the rows where the specified column contains data, ignoring empty cells. This is useful for cleaning data sets, generating reports, or preparing data for further analysis.
 
-**Prerequisites**  
-- A valid JWT token for Aspose.Cells Cloud authentication.  
-- The workbook must be uploaded to Aspose Cloud storage.  
+**Prerequisites**
+
+- A valid JWT token for Aspose.Cells Cloud authentication.
+- The workbook must be uploaded to Aspose Cloud storage.
 - You need the file name, worksheet name, and the zero‑based column index (`fieldIndex`) you wish to filter.
 
 This REST API matches all non‑blank cells in the AutoFilter list on an Excel worksheet.
@@ -45,22 +46,22 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ```json
 {
-    "Status":"OK",
-    "Code":200
+  "Status": "OK",
+  "Code": 200
 }
 ```
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
 
-*Example error response (400)*  
+_Example error response (400)_
 
 ```json
 {

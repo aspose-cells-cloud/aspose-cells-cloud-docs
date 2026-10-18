@@ -10,11 +10,9 @@ weight: 100
 ArticleTitle: "Convert Excel to JSON using Aspose.Cells Cloud API – Quick Guide"
 ---
 
-
 ## REST API
 
-This REST API converts a spreadsheet file to a JSON‑formatted file.  
-
+This REST API converts a spreadsheet file to a JSON‑formatted file.
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/convert/json
@@ -87,17 +85,17 @@ Common HTTP status codes:
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## How to Use the PostConvertWorkbookToJson API with SDKs
 
 ### PostConvertWorkbookToJson API Specification
-
 
 The <a href="https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToJson" rel="noopener noreferrer" title="Aspose.Cells OpenAPI Specification – Convert Workbook to JSON">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

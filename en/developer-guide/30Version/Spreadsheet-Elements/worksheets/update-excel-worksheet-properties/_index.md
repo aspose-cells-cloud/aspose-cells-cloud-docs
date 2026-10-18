@@ -5,7 +5,7 @@ linktitle: "Update"
 type: docs
 url: /worksheets/update-properties/
 aliases: [/update-excel-worksheet-properties/]
-weight: 20
+weight: 100
 keywords:
   [
     "Aspose.Cells",
@@ -82,13 +82,13 @@ Typical response codes:
 - **404** – Workbook or worksheet not found.
 - **500** – Internal server error.
 
-| Code | Meaning |
-|------|---------|
-| 200 | Success – the worksheet properties were updated. |
-| 400 | Bad request – malformed JSON or missing required parameter. |
-| 401 | Unauthorized – missing or invalid JWT token. |
-| 404 | Not found – workbook or worksheet does not exist. |
-| 500 | Internal server error. |
+| Code | Meaning                                                     |
+| ---- | ----------------------------------------------------------- |
+| 200  | Success – the worksheet properties were updated.            |
+| 400  | Bad request – malformed JSON or missing required parameter. |
+| 401  | Unauthorized – missing or invalid JWT token.                |
+| 404  | Not found – workbook or worksheet does not exist.           |
+| 500  | Internal server error.                                      |
 
 ## Cloud SDK Family
 

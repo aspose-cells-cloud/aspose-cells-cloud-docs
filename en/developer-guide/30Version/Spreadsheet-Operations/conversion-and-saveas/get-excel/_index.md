@@ -9,7 +9,7 @@ aliases:
   - /export-different-formats/
 keywords: "Aspose.Cells, Excel conversion, convert Excel, PDF, CSV, HTML, ODS, JSON, image formats, spreadsheet export, API, REST"
 description: "Learn how to retrieve an Excel workbook in any format (PDF, CSV, HTML, PNG, etc.) using Aspose.Cells Cloud REST API. Includes cURL, SDK samples, authentication, and response details."
-weight: 10
+weight: 100
 ArticleTitle: "Aspose.Cells Cloud – Convert Excel Workbook to PDF, CSV, HTML, and More (GET /cells/{name})"
 ---
 
@@ -45,7 +45,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Response
 
-**Success (200)** 
+**Success (200)**
 
 - The API returns a **[Workbook](/cells/workbook/)** object that contains workbook structure info when the `format` query parameter is omitted.
 
@@ -62,23 +62,25 @@ Content-Length: 123456
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
 
-> **Notes:**  
-> - Large workbooks may take longer to convert; consider increasing the request timeout.  
+> **Notes:**
+>
+> - Large workbooks may take longer to convert; consider increasing the request timeout.
 > - Some formats (e.g., `ODS`) are not supported for certain Excel features such as macros.
 
 ## How to Use the GetWorkBook API with SDKs
 
-> **Prerequisites:**  
-> - A valid **JWT access token** obtained via the Aspose.Cells authentication flow.  
-> - The source workbook must be stored in a supported Aspose storage or supplied directly in the request.  
+> **Prerequisites:**
+>
+> - A valid **JWT access token** obtained via the Aspose.Cells authentication flow.
+> - The source workbook must be stored in a supported Aspose storage or supplied directly in the request.
 > - Ensure the API version (`v3.0`) matches the latest released version.
 
 ### GetWorkBook API Specification
@@ -165,7 +167,7 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 
 **See Also**
 
-- <a href="https://apireference.aspose.cloud/cells/#/Workbook/ConvertWorkbook" rel="noopener noreferrer">Convert Workbook (POST)</a>  
+- <a href="https://apireference.aspose.cloud/cells/#/Workbook/ConvertWorkbook" rel="noopener noreferrer">Convert Workbook (POST)</a>
 - <a href="https://apireference.aspose.cloud/cells/#/Workbook/SaveAs" rel="noopener noreferrer">Save As (GET)</a>
 
 ---

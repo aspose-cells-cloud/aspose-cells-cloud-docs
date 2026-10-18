@@ -7,7 +7,7 @@ type: docs
 url: /overview/
 description: "Aspose.Cells Cloud REST API enables Excel automation in the cloud—convert XLSX to PDF/HTML/ODS, merge/split files, and apply encryption—using SDKs for Python, Java, C#, Node.js, and more. Free trial available."
 keywords: "Excel API, cloud spreadsheet, XLSX conversion, REST API for Excel, Aspose.Cells Cloud SDK"
-weight: 10
+weight: 100
 date: 2024-03-15
 lastmod: 2024-05-22
 canonical: https://docs.aspose.cloud/cells/overview/
@@ -17,12 +17,12 @@ aliases:
 
 Aspose.Cells Cloud is a REST API that enables a wide array of document-processing tasks, such as creating, manipulating, converting, and rendering Excel documents in the cloud. You can effortlessly convert Excel files to various formats, including:
 
-- PDF  
-- HTML  
-- ODS  
-- XPS  
-- CSV  
-- and other popular formats  
+- PDF
+- HTML
+- ODS
+- XPS
+- CSV
+- and other popular formats
 
 **Prerequisites:** To use the service, you need an Aspose Cloud account and a valid API key. These credentials are required for all authenticated requests.
 

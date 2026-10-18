@@ -31,17 +31,17 @@ PUT https://api.aspose.cloud/v4.0/cells/ai/task/decompose
 
 ### Authentication
 
-All requests require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/){rel="noopener noreferrer"}.
+All requests require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ---
 
 ## Request Parameters
 
-| Parameter | Type   | Location | Required | Description |
-|-----------|--------|----------|----------|-------------|
-| `TaskDescription` | `string` | Body | Yes | A plain-text description of the user’s overall objective. Example: *"Launch Q3 marketing campaign including content creation, email blast, and social media ads."* |
-| `region` | `string` | Query | No | Regional setting (e.g., `en-US`, `fr-FR`). Affects number formatting, date parsing, and locale-specific behavior. Default: `en-US`. |
-| `password` | `string` | Query | No | Password for protected spreadsheet templates (if used internally). |
+| Parameter         | Type     | Location | Required | Description                                                                                                                                                        |
+| ----------------- | -------- | -------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `TaskDescription` | `string` | Body     | Yes      | A plain-text description of the user’s overall objective. Example: _"Launch Q3 marketing campaign including content creation, email blast, and social media ads."_ |
+| `region`          | `string` | Query    | No       | Regional setting (e.g., `en-US`, `fr-FR`). Affects number formatting, date parsing, and locale-specific behavior. Default: `en-US`.                                |
+| `password`        | `string` | Query    | No       | Password for protected spreadsheet templates (if used internally).                                                                                                 |
 
 > ⚠️ **Note**: Omit `password` unless explicitly required. It is not used for the `TaskDescription` input.
 
@@ -61,8 +61,8 @@ All requests require [JWT token-based authentication](https://docs.aspose.cloud/
 
 On success (HTTP `200 OK`), the API returns a binary file stream:
 
-- **Content-Type**: `application/octet-stream`  
-- **Content-Disposition**: `attachment; filename="DecomposedTaskPlan.xlsx"`  
+- **Content-Type**: `application/octet-stream`
+- **Content-Disposition**: `attachment; filename="DecomposedTaskPlan.xlsx"`
 - **Content-Length**: Dynamic (e.g., `12,288` bytes)
 
 The file is generated as an Excel workbook (`.xlsx`) with the first worksheet containing structured task data. CSV and ODS formats are also supported via query parameters or SDK options.
@@ -77,24 +77,25 @@ ID,Subject,Owner,Estimated Duration,Description
 4,Integration review,Solution Architect,4,"Analyze impact on microservices, event flows, and database migrations; produce integration plan."
 ```
 
-> ✅ **Key Fields**:  
-> - `ID`: Sequential task identifier  
-> - `Subject`: Concise task title  
-> - `Owner`: Recommended assignee based on role inference  
-> - `Estimated Duration`: Hours (integer)  
+> ✅ **Key Fields**:
+>
+> - `ID`: Sequential task identifier
+> - `Subject`: Concise task title
+> - `Owner`: Recommended assignee based on role inference
+> - `Estimated Duration`: Hours (integer)
 > - `Description`: SMART-aligned detail with deliverables
 
 ---
 
 ## HTTP Status Codes
 
-| Code | Meaning | Description |
-|------|---------|-------------|
-| `200` | OK | Task decomposition successful; file stream returned. |
-| `400` | Bad Request | Missing `TaskDescription`, empty input, or invalid `region` format. |
-| `401` | Unauthorized | Invalid, expired, or missing JWT token. |
-| `413` | Payload Too Large | Input exceeds 10 KB limit. |
-| `500` | Internal Server Error | Unexpected server-side failure. |
+| Code  | Meaning               | Description                                                         |
+| ----- | --------------------- | ------------------------------------------------------------------- |
+| `200` | OK                    | Task decomposition successful; file stream returned.                |
+| `400` | Bad Request           | Missing `TaskDescription`, empty input, or invalid `region` format. |
+| `401` | Unauthorized          | Invalid, expired, or missing JWT token.                             |
+| `413` | Payload Too Large     | Input exceeds 10 KB limit.                                          |
+| `500` | Internal Server Error | Unexpected server-side failure.                                     |
 
 ### Error Response (400 Bad Request)
 
@@ -109,14 +110,15 @@ ID,Subject,Owner,Estimated Duration,Description
 
 ## Use Cases
 
-| Scenario | Benefit |
-|----------|---------|
-| **Project Kickoff** | Convert high-level briefs into sprint-ready task lists with time estimates. |
+| Scenario                | Benefit                                                                                              |
+| ----------------------- | ---------------------------------------------------------------------------------------------------- |
+| **Project Kickoff**     | Convert high-level briefs into sprint-ready task lists with time estimates.                          |
 | **Marketing Campaigns** | Break down objectives (e.g., “Q3 Product Launch”) into executable steps for cross-team coordination. |
-| **Resource Planning** | Allocate workloads proactively using hour-based estimates per subtask. |
-| **Milestone Tracking** | Auto-generate milestone nodes synced to Gantt charts (e.g., via Excel import into MS Project). |
+| **Resource Planning**   | Allocate workloads proactively using hour-based estimates per subtask.                               |
+| **Milestone Tracking**  | Auto-generate milestone nodes synced to Gantt charts (e.g., via Excel import into MS Project).       |
 
 > 🔄 **Workflow Integration**: Output files integrate directly with:
+>
 > - Redmine (CSV import)
 > - Jira (CSV/XLSX via bulk import)
 > - Azure DevOps (CSV with field mapping)
@@ -197,10 +199,14 @@ const config = new CellsCloudConfiguration({
 });
 
 const cellsApi = new CellsApi(config);
-const taskDescription = "Develop a web API for task splitting with OpenAPI spec.";
+const taskDescription =
+  "Develop a web API for task splitting with OpenAPI spec.";
 const region = "en-US";
 
-const response = await cellsApi.cellsAIDecomposeUserTask(taskDescription, region);
+const response = await cellsApi.cellsAIDecomposeUserTask(
+  taskDescription,
+  region,
+);
 await response.save("DecomposedTaskPlan.xlsx");
 ```
 
@@ -280,16 +286,3 @@ file.Write(response)
 - **Regional Settings**: Specify `region` if your project uses non-US date/number formats (e.g., `de-DE` for German locales).
 - **Export Format**: While `.xlsx` is default, use SDK options or custom headers to request CSV (e.g., `Accept: text/csv`).
 - **Milestone Mapping**: Milestone nodes are auto-generated for major phase transitions (e.g., “Design Complete”, “Testing Started”).
-
----
-
-## Related Documentation
-
-- [Redmine Integration Guide](/redmine-integration/)  
-- [Aspose.Cells Cloud SDK Overview](/sdks/)  
-- [Project Management Automation Overview](/project-automation/)  
-
----
-
-> © 2024 Aspose Pty Ltd. Aspose.Cells Cloud is a registered trademark of Aspose Pty Ltd.  
-> API Version: **v4.0** | Released: **June 2024**

@@ -1,10 +1,21 @@
 ---
 url: /convert-worksheet-to-csv/
 title: "Convert Worksheet to CSV – Aspose.Cells Cloud API Documentation"
+linktitle: "Convert Worksheet To Csv"
+type: docs
 date: 2024-03-15
 lastmod: 2024-05-22
 description: "Convert a single Excel worksheet to CSV using Aspose.Cells Cloud API v4.0: REST endpoint, cURL examples, SDK code (C#, Java, Python, etc.), error handling, and security best practices."
-keywords: ["Aspose.Cells", "CSV conversion", "worksheet to CSV", "REST API", "cloud spreadsheet", "Excel to CSV", "v4.0"]
+keywords:
+  [
+    "Aspose.Cells",
+    "CSV conversion",
+    "worksheet to CSV",
+    "REST API",
+    "cloud spreadsheet",
+    "Excel to CSV",
+    "v4.0",
+  ]
 weight: 100
 ---
 
@@ -26,17 +37,17 @@ The Aspose.Cells Cloud APIs use [JWT token-based authentication](https://docs.as
 
 ## Request Parameters
 
-| Parameter Name     | Type    | Location | Required | Description |
-|--------------------|---------|----------|----------|-------------|
-| `Spreadsheet`      | File    | FormData | Yes      | Binary file of the source spreadsheet (e.g., `.xlsx`, `.xls`). |
-| `worksheet`        | String  | Query    | Yes      | Name of the worksheet to convert (case-sensitive). If omitted, the first worksheet is used. |
-| `outPath`          | String  | Query    | No       | Target folder path in cloud storage where the CSV will be saved. If omitted, the CSV is returned directly in the response stream. |
-| `outStorageName`   | String  | Query    | No       | Name of the storage service (e.g., `Azure`, `AWS S3`). Required only when `outPath` is specified. |
-| `fontsLocation`    | String  | Query    | No       | Path to a custom fonts folder on the server for non-standard font rendering. |
-| `AutoRowsFit`      | Boolean | Query    | No       | (Optional) Autofit all rows in the worksheet before conversion. |
-| `AutoColumnsFit`   | Boolean | Query    | No       | (Optional) Autofit all columns in the worksheet before conversion. |
-| `region`           | String  | Query    | No       | BCP 47 locale tag (e.g., `en-US`, `fr-FR`) to control number/date formatting. |
-| `password`         | String  | Query    | No       | Password for protected spreadsheets. Must match the file’s encryption password. |
+| Parameter Name   | Type    | Location | Required | Description                                                                                                                       |
+| ---------------- | ------- | -------- | -------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| `Spreadsheet`    | File    | FormData | Yes      | Binary file of the source spreadsheet (e.g., `.xlsx`, `.xls`).                                                                    |
+| `worksheet`      | String  | Query    | Yes      | Name of the worksheet to convert (case-sensitive). If omitted, the first worksheet is used.                                       |
+| `outPath`        | String  | Query    | No       | Target folder path in cloud storage where the CSV will be saved. If omitted, the CSV is returned directly in the response stream. |
+| `outStorageName` | String  | Query    | No       | Name of the storage service (e.g., `Azure`, `AWS S3`). Required only when `outPath` is specified.                                 |
+| `fontsLocation`  | String  | Query    | No       | Path to a custom fonts folder on the server for non-standard font rendering.                                                      |
+| `AutoRowsFit`    | Boolean | Query    | No       | (Optional) Autofit all rows in the worksheet before conversion.                                                                   |
+| `AutoColumnsFit` | Boolean | Query    | No       | (Optional) Autofit all columns in the worksheet before conversion.                                                                |
+| `region`         | String  | Query    | No       | BCP 47 locale tag (e.g., `en-US`, `fr-FR`) to control number/date formatting.                                                     |
+| `password`       | String  | Query    | No       | Password for protected spreadsheets. Must match the file’s encryption password.                                                   |
 
 ## Response
 
@@ -44,13 +55,13 @@ Returns a binary CSV stream (`application/octet-stream`) or saves the file to cl
 
 ### HTTP Status Codes
 
-| Code | Meaning               | Description |
-|------|-----------------------|-------------|
-| 200  | OK                    | Conversion successful; CSV returned as a binary stream. |
+| Code | Meaning               | Description                                                                   |
+| ---- | --------------------- | ----------------------------------------------------------------------------- |
+| 200  | OK                    | Conversion successful; CSV returned as a binary stream.                       |
 | 400  | Bad Request           | Missing required parameters or invalid input (e.g., unsupported file format). |
-| 401  | Unauthorized          | Invalid, expired, or missing JWT token. |
-| 404  | Not Found             | Source file not accessible or worksheet name not found. |
-| 500  | Internal Server Error | Unexpected server error during conversion. |
+| 401  | Unauthorized          | Invalid, expired, or missing JWT token.                                       |
+| 404  | Not Found             | Source file not accessible or worksheet name not found.                       |
+| 500  | Internal Server Error | Unexpected server error during conversion.                                    |
 
 ## Use Cases
 
@@ -111,12 +122,3 @@ Using Aspose.Cells Cloud SDKs simplifies integration by abstracting low-level HT
 ## API Specification
 
 Review the full API specification in the [Aspose.Cells Cloud Reference](https://reference.aspose.cloud/cells/v4.0#/Conversion/ConvertWorksheetToCsv).
-
-## Error Handling
-
-- **400 Bad Request**: Invalid URL, malformed parameters, or unsupported file type.  
-- **401 Unauthorized**: Authentication failed or missing credentials.  
-- **404 Not Found**: Worksheet name does not exist or source file inaccessible.  
-- **500 Server Error**: Internal server anomaly during conversion.
-
-For detailed troubleshooting, see the [Error Handling Guide](https://docs.aspose.cloud/total/troubleshooting/error-codes/).

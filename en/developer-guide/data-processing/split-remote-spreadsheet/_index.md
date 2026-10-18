@@ -171,5 +171,3 @@ The following code examples demonstrate how to call the API using various SDKs:
 - **Pay‑per‑use**: No upfront investment; you only pay for API calls actually used.
 - **Preserves complex Excel formatting** in universally accessible PDF format.
 - **Cloud-native architecture**: Enables remote processing, reducing local resource usage and improving performance for large workbooks.
-
-{{< figure src="https://i.imgur.com/placeholder_split_flow.png" alt="Flowchart: Upload Excel file → API call with parameters → Split into worksheets → Export to PDF/CSV/JSON" caption="Figure 1: How the Split Remote Spreadsheet API works" >}}

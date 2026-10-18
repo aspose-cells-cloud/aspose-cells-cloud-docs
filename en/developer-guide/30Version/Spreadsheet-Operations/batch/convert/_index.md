@@ -22,56 +22,55 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name       | Type   | Location | Description                                           |
-|----------------------|--------|----------|-------------------------------------------------------|
-| **batchConvertRequest** | object | body     | Request body containing conversion settings.         |
+| Parameter Name          | Type   | Location | Description                                  |
+| ----------------------- | ------ | -------- | -------------------------------------------- |
+| **batchConvertRequest** | object | body     | Request body containing conversion settings. |
 
 #### BatchConvertRequest Properties
 
-| Name          | Type                | Description                                           | Notes |
-|---------------|---------------------|-------------------------------------------------------|-------|
-| **SourceFolder** | string              | Path to the folder that contains the source Excel files. | [optional] |
-| **MatchCondition** | MatchConditionRequest | Conditions used to select files for conversion.      | [optional] |
-| **Format**        | string              | Target format for conversion (e.g., `pdf`, `csv`).   | [optional] |
-| **OutFolder**     | string              | Destination folder where converted files will be saved. | [optional] |
-| **SaveOptions**   | SaveOptions         | Additional options that control how files are saved. | [optional] |
+| Name               | Type                  | Description                                              | Notes      |
+| ------------------ | --------------------- | -------------------------------------------------------- | ---------- |
+| **SourceFolder**   | string                | Path to the folder that contains the source Excel files. | [optional] |
+| **MatchCondition** | MatchConditionRequest | Conditions used to select files for conversion.          | [optional] |
+| **Format**         | string                | Target format for conversion (e.g., `pdf`, `csv`).       | [optional] |
+| **OutFolder**      | string                | Destination folder where converted files will be saved.  | [optional] |
+| **SaveOptions**    | SaveOptions           | Additional options that control how files are saved.     | [optional] |
 
 #### MatchConditionRequest Properties
 
-| Name               | Type      | Description                                          | Notes |
-|--------------------|-----------|------------------------------------------------------|-------|
-| **RegexPattern**   | string    | Regular expression used to filter file names.       | [optional] |
-| **FullMatchConditions** | string[] | List of exact file name conditions for matching.    | [optional] |
-
+| Name                    | Type     | Description                                      | Notes      |
+| ----------------------- | -------- | ------------------------------------------------ | ---------- |
+| **RegexPattern**        | string   | Regular expression used to filter file names.    | [optional] |
+| **FullMatchConditions** | string[] | List of exact file name conditions for matching. | [optional] |
 
 ### Request Body Parameter
 
 | Parameter Name | Type | Description                                    |
 | -------------- | ---- | ---------------------------------------------- |
 | data           | file | Binary content of the workbook file to create. |
-  
+
 ### **Response**
 
 ```json
 {
-    "Name": "ResponseFile",
-    "DataType": {
-        "Identifier": "File",
-        "Reference": "Stream",
-        "Name": "file"
-    }
+  "Name": "ResponseFile",
+  "DataType": {
+    "Identifier": "File",
+    "Reference": "Stream",
+    "Name": "file"
+  }
 }
 ```
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | When Returned                           |
-|------|-----------------------------|-----------------------------------------|
-| 200 OK | Workbook created successfully | Normal flow                              |
-| 201 Created | Workbook created (alternative response) | When the API returns a created status |
-| 400 Bad Request | Invalid parameters | Client‑side error                        |
-| 401 Unauthorized | Missing or invalid token | Authentication error                    |
-| 409 Conflict | File exists and `isWriteOver=false` | Conflict with existing file    
+| Code             | Meaning                                 | When Returned                         |
+| ---------------- | --------------------------------------- | ------------------------------------- |
+| 200 OK           | Workbook created successfully           | Normal flow                           |
+| 201 Created      | Workbook created (alternative response) | When the API returns a created status |
+| 400 Bad Request  | Invalid parameters                      | Client‑side error                     |
+| 401 Unauthorized | Missing or invalid token                | Authentication error                  |
+| 409 Conflict     | File exists and `isWriteOver=false`     | Conflict with existing file           |
 
 ## How to Use the PostBatchConvert API with SDKs
 

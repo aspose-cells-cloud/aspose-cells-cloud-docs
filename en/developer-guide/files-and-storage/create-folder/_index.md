@@ -48,28 +48,32 @@ The operation returns HTTP status `200 OK` with an empty JSON body (`{}`) on suc
 
 **HTTP Status Codes**
 
-| Code | Status            | Description                                                                 |
-| ---- | ----------------- | --------------------------------------------------------------------------- |
-| 200  | OK                | Folder created successfully.                                                |
-| 400  | Bad Request       | Missing or invalid parameters (e.g., invalid path syntax or unsupported characters). |
-| 401  | Unauthorized      | Invalid, expired, or missing JWT token.                                    |
-| 409  | Conflict          | Folder already exists at the specified path.                               |
-| 500  | Internal Server Error | Unexpected server error.                                                |
+| Code | Status                | Description                                                                          |
+| ---- | --------------------- | ------------------------------------------------------------------------------------ |
+| 200  | OK                    | Folder created successfully.                                                         |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., invalid path syntax or unsupported characters). |
+| 401  | Unauthorized          | Invalid, expired, or missing JWT token.                                              |
+| 409  | Conflict              | Folder already exists at the specified path.                                         |
+| 500  | Internal Server Error | Unexpected server error.                                                             |
 
 ### Example: cURL Request
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 {{< tab tabNum="11" >}}
+
 ```bash
 curl -X PUT "https://api.aspose.cloud/v4.0/cells/storage/folder/myFolder/subFolder" \
      -H "Authorization: Bearer {access_token}" \
      -H "Accept: application/json"
 ```
+
 {{< /tab >}}
 {{< tab tabNum="12" >}}
+
 ```json
 {}
 ```
+
 {{< /tab >}}
 {{< /tabs >}}
 
@@ -114,4 +118,4 @@ The [OpenAPI specification](https://raw.githubusercontent.com/aspose-cells-cloud
 - [List Folders](/list-folders/) — Retrieve directory contents from cloud storage.
 - [Delete Folder](/delete-folder/) — Remove an empty folder from storage.
 
-> *Last updated: March 2024 | API version: v4.0*
+> _Last updated: March 2024 | API version: v4.0_

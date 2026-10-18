@@ -2,6 +2,7 @@
 title: "Convert Excel Table to CSV via Aspose.Cells Cloud API"
 second title: "Document"
 ArticleTitle: "Convert Excel Table to CSV via Aspose.Cells Cloud API"
+linktitle: "Convert Table to Csv
 linktype: "docs"
 url: /convert-table-to-csv/
 keywords: "excel to csv, table conversion, aspose.cells cloud, rest api"
@@ -115,7 +116,7 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/table/csv?worksheet=She
   -o converted.csv
 ```
 
-> *Tip: Add `-v` for verbose output to troubleshoot authentication or payload issues.*
+> _Tip: Add `-v` for verbose output to troubleshoot authentication or payload issues._
 
 {{< /tab >}}
 
@@ -146,8 +147,8 @@ The following code examples illustrate how to make calls to Aspose.Cells web ser
 // Ensure you have set up your App SID and API Key
 var configuration = new Configuration
 {
-    AppSid = "your_app_sid",
-    AppKey = "your_api_key"
+AppSid = "your_app_sid",
+AppKey = "your_api_key"
 };
 var cellsApi = new CellsApi(configuration.AppSid, configuration.AppKey);
 
@@ -185,7 +186,9 @@ $response = $cellsApi->CellsTableGetTable("input.xlsx", "Sheet1", "Table1");
 {{</tab>}}
 {{<tab tabNum="4" >}}
 {{<highlight ruby>}}
+
 # Example: Aspose.Cells.Cloud SDK for Ruby
+
 require 'aspose_cells_cloud'
 
 configuration = AsposeCellsCloud::Configuration.new
@@ -195,7 +198,9 @@ configuration.app_key = 'your_api_key'
 api_instance = AsposeCellsCloud::CellsApi.new(configuration)
 
 response = api_instance.cells_table_get_table('input.xlsx', 'Sheet1', 'Table1')
+
 # Process response
+
 {{</highlight>}}
 {{</tab>}}
 {{<tab tabNum="5" >}}
@@ -210,13 +215,15 @@ configuration.appKey = "your_api_key";
 const cellsApi = new CellsApi(configuration);
 
 cellsApi.cellsTableGetTable("input.xlsx", "Sheet1", "Table1").then((response) => {
-    // Save response
+// Save response
 });
 {{</highlight>}}
 {{</tab>}}
 {{<tab tabNum="6" >}}
 {{<highlight python>}}
+
 # Example: Aspose.Cells.Cloud SDK for Python
+
 from asposecellscloud.configuration import Configuration
 from asposecellscloud.cells_api import CellsApi
 
@@ -226,12 +233,16 @@ config.app_key = "your_api_key"
 
 api = CellsApi(None, None, None, None, config)
 response = api.cells_table_get_table("input.xlsx", "Sheet1", "Table1")
+
 # Save result
+
 {{</highlight>}}
 {{</tab>}}
 {{<tab tabNum="7" >}}
 {{<highlight perl>}}
+
 # Example: Aspose.Cells.Cloud SDK for Perl
+
 use Aspose::Cells::Cloud::CellsApi;
 my $config = {
     'appSid' => 'your_app_sid',
@@ -239,23 +250,25 @@ my $config = {
 };
 my $cells_api = Aspose::Cells::Cloud::CellsApi->new($config);
 my $response = $cells_api->cells_table_get_table("input.xlsx", "Sheet1", "Table1");
+
 # Handle response
+
 {{</highlight>}}
 {{</tab>}}
 {{<tab tabNum="8" >}}
 {{<highlight go>}}
 // Example: Aspose.Cells.Cloud SDK for Go
 import (
-    "context"
-    "fmt"
-    "github.com/aspose-cells-cloud/aspose-cells-cloud-go/v22/config"
-    "github.com/aspose-cells-cloud/aspose-cells-cloud-go/v22/api"
+"context"
+"fmt"
+"github.com/aspose-cells-cloud/aspose-cells-cloud-go/v22/config"
+"github.com/aspose-cells-cloud/aspose-cells-cloud-go/v22/api"
 )
 
 func main() {
-    cfg := config.NewConfiguration()
-    cfg.AppSid = "your_app_sid"
-    cfg.AppKey = "your_api_key"
+cfg := config.NewConfiguration()
+cfg.AppSid = "your_app_sid"
+cfg.AppKey = "your_api_key"
 
     cellsApi := api.NewCellsApiWithConfiguration(cfg)
     resp, _, err := cellsApi.CellsTableGetTable(context.Background(), "input.xlsx", "Sheet1", "Table1")
@@ -264,9 +277,10 @@ func main() {
         return
     }
     // Process resp
+
 }
 {{</highlight>}}
 {{</tab>}}
 {{< /tabs >}}
 
-> *If you receive HTTP 401, check your JWT token validity. If 413, reduce file size or enable chunked upload.*
+> _If you receive HTTP 401, check your JWT token validity. If 413, reduce file size or enable chunked upload._

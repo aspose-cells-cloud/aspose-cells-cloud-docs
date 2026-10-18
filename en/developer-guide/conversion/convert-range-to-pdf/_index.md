@@ -25,20 +25,18 @@ PUT https://api.aspose.cloud/v4.0/cells/convert/range/pdf
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-> *Note: This guide uses Aspose.Cells Cloud API v4.0 (released March 2024). For migration from v3.x, see [API Version Differences](/migration/v3-to-v4/).*
-
 ### **Request Parameters:**
 
-| Parameter Name | Type   | Path/Query String/HTTP Body | Description                                                                   |
-| -------------- | ------ | --------------------------- | ----------------------------------------------------------------------------- |
-| Spreadsheet    | File   | FormData                    | Upload the spreadsheet file.                                                  |
-| worksheet      | String | Query                       | The worksheet name within the spreadsheet.                                    |
-| range          | String | Query                       | The cell area to be converted, e.g., `A1:C10`.                                |
-| outPath        | String | Query                       | (Optional) The folder path where the workbook is stored. The default is null. |
+| Parameter Name | Type   | Path/Query String/HTTP Body | Description                                                                                  |
+| -------------- | ------ | --------------------------- | -------------------------------------------------------------------------------------------- |
+| Spreadsheet    | File   | FormData                    | Upload the spreadsheet file.                                                                 |
+| worksheet      | String | Query                       | The worksheet name within the spreadsheet.                                                   |
+| range          | String | Query                       | The cell area to be converted, e.g., `A1:C10`.                                               |
+| outPath        | String | Query                       | (Optional) The folder path where the workbook is stored. The default is null.                |
 | outStorageName | String | Query                       | Output file storage name. Specify the storage configured in your Aspose.Cells Cloud account. |
-| fontsLocation  | String | Query                       | Location for storing custom fonts for home use.                               |
-| region         | String | Query                       | The spreadsheet region setting.                                               |
-| password       | String | Query                       | The password for opening the spreadsheet file.                                |
+| fontsLocation  | String | Query                       | Location for storing custom fonts for home use.                                              |
+| region         | String | Query                       | The spreadsheet region setting.                                                              |
+| password       | String | Query                       | The password for opening the spreadsheet file.                                               |
 
 ### **Response**
 

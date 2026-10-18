@@ -7,7 +7,7 @@ url: /export-excel-worksheet-to-different-formats/
 aliases: [/export/excel-worksheet-to-different-formats/]
 keywords: "Aspose.Cells, export worksheet, Excel API, PDF, CSV, TIFF, ODS, image formats"
 description: "Learn how to export an Excel worksheet to PDF, CSV, TIFF, and other formats using the Aspose.Cells Cloud REST API. Includes cURL example, required authentication, parameter details, and response handling."
-weight: 20
+weight: 100
 ArticleTitle: "Export Excel Worksheet to Various Formats – Aspose.Cells Cloud"
 ---
 
@@ -48,11 +48,11 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type    | Path/Query String/HTTP Body | required | Description                                                |
-|----------------|---------|-----------------------------|----------|------------------------------------------------------------|
-| file           | file    | formData                    | True     | File to upload                                             |
-| objectType     | string  | query                       | True     | The type of object to export. For chart export use `chart`. Other possible values are `worksheet`, `picture`, etc. |
-| format         | string  | query                       | True     | Desired output format. Supported values: `png`, `jpeg`, `gif`, `bmp`, `svg`, `tiff`, `emf`, `wmf`, `pdf`. |
+| Parameter Name | Type   | Path/Query String/HTTP Body | required | Description                                                                                                        |
+| -------------- | ------ | --------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------ |
+| file           | file   | formData                    | True     | File to upload                                                                                                     |
+| objectType     | string | query                       | True     | The type of object to export. For chart export use `chart`. Other possible values are `worksheet`, `picture`, etc. |
+| format         | string | query                       | True     | Desired output format. Supported values: `png`, `jpeg`, `gif`, `bmp`, `svg`, `tiff`, `emf`, `wmf`, `pdf`.          |
 
 ### Response
 
@@ -124,18 +124,18 @@ If the request fails, the API returns a JSON error object containing fields such
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
 
 **Notes**
 
-- Maximum file size for upload is 50 MB.  
-- The API supports exporting multiple worksheets in a single request; each worksheet is returned as a separate file in the `Files` array.  
+- Maximum file size for upload is 50 MB.
+- The API supports exporting multiple worksheets in a single request; each worksheet is returned as a separate file in the `Files` array.
 - Asynchronous processing is available for large workbooks; use the `202 Accepted` response to poll the operation status.
 
 ## How to Use the PostExport API with SDKs

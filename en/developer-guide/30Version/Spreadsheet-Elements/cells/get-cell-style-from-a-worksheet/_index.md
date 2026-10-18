@@ -2,7 +2,7 @@
 title: "Get Cell Style from a Worksheet – Aspose.Cells Cloud API"
 type: docs
 url: /get-cell-style-from-a-worksheet/
-weight: 10
+weight: 100
 date: 2024-03-15
 keywords: "Aspose.Cells, Excel, REST API, cell style, spreadsheet, cloud SDK, API documentation"
 description: "Learn how to retrieve the style of a specific cell in an Excel worksheet using Aspose.Cells Cloud REST API v3. Includes cURL, response schema, status codes, and SDK snippets for 8+ languages."
@@ -34,13 +34,13 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 
 ### Request Parameters
 
-| Parameter Name | Type   | Location | Description                                      | Required |
-|----------------|--------|----------|--------------------------------------------------|----------|
-| `name`         | string | path     | The name of the Excel document.                  | Yes      |
-| `sheetName`    | string | path     | The name of the worksheet.                       | Yes      |
-| `cellName`     | string | path     | The address of the cell (e.g., `A1`, `$B$2`).    | Yes      |
-| `folder`       | string | query    | The folder that contains the file.               | No       |
-| `storageName`  | string | query    | The name of the storage to use.                  | No       |
+| Parameter Name | Type   | Location | Description                                   | Required |
+| -------------- | ------ | -------- | --------------------------------------------- | -------- |
+| `name`         | string | path     | The name of the Excel document.               | Yes      |
+| `sheetName`    | string | path     | The name of the worksheet.                    | Yes      |
+| `cellName`     | string | path     | The address of the cell (e.g., `A1`, `$B$2`). | Yes      |
+| `folder`       | string | query    | The folder that contains the file.            | No       |
+| `storageName`  | string | query    | The name of the storage to use.               | No       |
 
 > **Note**: Omit `folder` or `storageName` if using the default storage/folder configured in your Aspose.Cloud account.
 
@@ -140,45 +140,46 @@ A successful request returns the full style object for the specified cell in the
 
 #### Response Schema
 
-| Field                    | Type    | Description                                                               |
-| ------------------------ | ------- | ------------------------------------------------------------------------- |
-| `Style`                  | object  | Container for all style-related properties of the cell.                   |
-| `Style.Font`             | object  | Font settings (name, size, color, style flags).                           |
-| `Style.Font.Color`       | object  | RGBA color values for the font.                                           |
-| `Style.Font.IsBold`      | boolean | `true` if the font is bold.                                               |
-| `Style.Font.IsItalic`    | boolean | `true` if the font is italic.                                             |
-| `Style.Font.IsStrikeout` | boolean | `true` if the font has a strike-through.                                  |
-| `Style.Font.IsSubscript` | boolean | `true` if the font is subscript.                                          |
-| `Style.Font.IsSuperscript`| boolean| `true` if the font is superscript.                                        |
-| `Style.Font.Name`        | string  | Font family name (e.g., **Calibri**).                                     |
-| `Style.Font.Size`        | number  | Font size in points.                                                      |
-| `Style.Font.Underline`   | string  | Underline style (e.g., **Single**, **Double**, **None**).                 |
-| `Style.IsLocked`         | boolean | Indicates whether the cell is protected from editing.                     |
-| `Style.IsTextWrapped`    | boolean | `true` if text wrapping is enabled.                                       |
-| `Style.IsGradient`       | boolean | `true` if a gradient fill is applied.                                     |
-| `Style.Pattern`          | string  | Fill pattern name (e.g., **None**, **Gray75**, **LightVertical**).        |
-| `Style.BorderCollection` | array   | List of border objects defining line style, color, and border type.       |
-| `Style.BackgroundColor`  | object  | RGBA values for the cell background.                                      |
-| `Style.ForegroundColor`  | object  | RGBA values for the cell foreground.                                      |
+| Field                      | Type    | Description                                                         |
+| -------------------------- | ------- | ------------------------------------------------------------------- |
+| `Style`                    | object  | Container for all style-related properties of the cell.             |
+| `Style.Font`               | object  | Font settings (name, size, color, style flags).                     |
+| `Style.Font.Color`         | object  | RGBA color values for the font.                                     |
+| `Style.Font.IsBold`        | boolean | `true` if the font is bold.                                         |
+| `Style.Font.IsItalic`      | boolean | `true` if the font is italic.                                       |
+| `Style.Font.IsStrikeout`   | boolean | `true` if the font has a strike-through.                            |
+| `Style.Font.IsSubscript`   | boolean | `true` if the font is subscript.                                    |
+| `Style.Font.IsSuperscript` | boolean | `true` if the font is superscript.                                  |
+| `Style.Font.Name`          | string  | Font family name (e.g., **Calibri**).                               |
+| `Style.Font.Size`          | number  | Font size in points.                                                |
+| `Style.Font.Underline`     | string  | Underline style (e.g., **Single**, **Double**, **None**).           |
+| `Style.IsLocked`           | boolean | Indicates whether the cell is protected from editing.               |
+| `Style.IsTextWrapped`      | boolean | `true` if text wrapping is enabled.                                 |
+| `Style.IsGradient`         | boolean | `true` if a gradient fill is applied.                               |
+| `Style.Pattern`            | string  | Fill pattern name (e.g., **None**, **Gray75**, **LightVertical**).  |
+| `Style.BorderCollection`   | array   | List of border objects defining line style, color, and border type. |
+| `Style.BackgroundColor`    | object  | RGBA values for the cell background.                                |
+| `Style.ForegroundColor`    | object  | RGBA values for the cell foreground.                                |
 
 > **Tip**: All optional fields (e.g., `Name`, `Custom`, `BackgroundThemeColor`) may be `null` if not explicitly set.
 
 ### HTTP Status Codes
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Style retrieved successfully; response contains the `Style` object. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., invalid `cellName` format, unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 404  | Not Found                   | File, worksheet, or cell not found in the document. |
-| 413  | Payload Too Large           | Requested resource exceeds size limit.          |
-| 500  | Internal Server Error       | Unexpected server error.                        |
+| Code | Meaning               | Description                                                                             |
+| ---- | --------------------- | --------------------------------------------------------------------------------------- |
+| 200  | OK                    | Style retrieved successfully; response contains the `Style` object.                     |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., invalid `cellName` format, unsupported file type). |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                                           |
+| 404  | Not Found             | File, worksheet, or cell not found in the document.                                     |
+| 413  | Payload Too Large     | Requested resource exceeds size limit.                                                  |
+| 500  | Internal Server Error | Unexpected server error.                                                                |
 
 #### Error Responses
 
 Typical error payloads follow the standard Aspose.Cells format:
 
 **400 Bad Request**
+
 ```json
 {
   "Code": 400,
@@ -188,6 +189,7 @@ Typical error payloads follow the standard Aspose.Cells format:
 ```
 
 **401 Unauthorized**
+
 ```json
 {
   "Code": 401,
@@ -197,6 +199,7 @@ Typical error payloads follow the standard Aspose.Cells format:
 ```
 
 **404 Not Found**
+
 ```json
 {
   "Code": 404,
@@ -386,5 +389,5 @@ You can explore and test this endpoint directly in your browser using the [Inter
 - [Set Cell Style](/set-cell-style/)
 - [Get Cell Value](/get-cell-value/)
 - [Apply Cell Formatting](/apply-cell-formatting/)
-- [Cell Style Best Practices](/cell-style-guidelines/)  
+- [Cell Style Best Practices](/cell-style-guidelines/)
 - [Working with Excel Files in the Cloud](/excel-cloud-overview/)

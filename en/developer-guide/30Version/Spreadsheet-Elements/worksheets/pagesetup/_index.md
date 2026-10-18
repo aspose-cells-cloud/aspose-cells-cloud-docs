@@ -6,7 +6,7 @@ type: docs
 url: /page-setup/
 keywords: "Aspose.Cells, pageSetup, worksheet, print settings, margins, orientation, paper size, header, footer, scaling"
 description: "Learn how to configure Excel worksheet print layout with Aspose.Cells Cloud’s PageSetup object. Includes property list, defaults, ranges, and code samples for C#, Java, and Python."
-weight: 20
+weight: 100
 ArticleTitle: "Worksheet Page Setup – Configure Print Layout with Aspose.Cells Cloud"
 ---
 
@@ -84,6 +84,6 @@ This snippet sets the worksheet to landscape orientation, uses A4 paper, centers
 
 ## Related Objects
 
-- **Header** – Configures the worksheet header.  
-- **Footer** – Configures the worksheet footer.  
-- **PrintOptions** – Additional print‑related settings such as page breaks and print area.  
+- **Header** – Configures the worksheet header.
+- **Footer** – Configures the worksheet footer.
+- **PrintOptions** – Additional print‑related settings such as page breaks and print area.

@@ -2,7 +2,7 @@
 title: Get Column Details – Aspose.Cells Cloud API Reference (v3.0)
 linktitle: "Get"
 type: docs
-url: /cells/get-column-details/
+url: /get-column-details/
 aliases:
   [
     /get-columns-from-an-excel-worksheet/,
@@ -80,7 +80,7 @@ GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/colu
 | **folder**      | query    | string  | No       | Storage folder where the workbook resides.                |
 | **storageName** | query    | string  | No       | Name of the storage service (e.g., Aspose Cloud Storage). |
 
-> **Important:** While the specification marks `name`, `sheetName`, and `columnIndex` as `Required: false`, these are *functionally required* for a valid request. Omitting them will result in a `400 Bad Request`.
+> **Important:** While the specification marks `name`, `sheetName`, and `columnIndex` as `Required: false`, these are _functionally required_ for a valid request. Omitting them will result in a `400 Bad Request`.
 
 ---
 
@@ -292,15 +292,15 @@ apiInstance
 
 ## Additional Resources
 
-- [OpenAPI Specification (v3.0)](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetColumns)  
-- [Authentication Guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)  
-- [GitHub Repository – Node.js SDK Examples](https://github.com/aspose-cells-cloud/aspose-cells-cloud-node/tree/master/examples/Cells/GetWorksheetColumns)  
-- [GitHub Repository – C# SDK Examples](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/tree/master/Examples/Cells)  
-- [GitHub Repository – Java SDK Examples](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java/tree/master/Examples)  
+- [OpenAPI Specification (v3.0)](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetColumns)
+- [Authentication Guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)
+- [GitHub Repository – Node.js SDK Examples](https://github.com/aspose-cells-cloud/aspose-cells-cloud-node/tree/master/examples/Cells/GetWorksheetColumns)
+- [GitHub Repository – C# SDK Examples](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/tree/master/Examples/Cells)
+- [GitHub Repository – Java SDK Examples](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java/tree/master/Examples)
 - [GitHub Repository – Python SDK Examples](https://github.com/aspose-cells-cloud/aspose-cells-cloud-python/tree/master/examples)
 
 > **Tip**: Replace `cellsdemo.xlsx` with your own file name when testing via the [Swagger UI](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetColumns).
 
 ---
 
-*Document last updated on 2024-05-15.*
+_Document last updated on 2024-05-15._

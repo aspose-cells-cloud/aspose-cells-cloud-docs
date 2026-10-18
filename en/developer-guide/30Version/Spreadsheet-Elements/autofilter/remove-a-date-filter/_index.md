@@ -29,49 +29,49 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name       | Type    | Location | Description                                                                                     |
-|----------------------|---------|----------|-------------------------------------------------------------------------------------------------|
-| name                 | string  | path     | Name of the Excel file.                                                                         |
-| sheetName            | string  | path     | Worksheet name.                                                                                 |
-| fieldIndex           | integer | query    | Zero‑based index of the column to which the filter is applied.                                 |
-| dateTimeGroupingType | string  | query    | Grouping type for the date filter (e.g., Year, Month, Day).                                    |
-| year                 | integer | query    | Year component of the filter (default 0).                                                       |
-| month                | integer | query    | Month component of the filter (default 0).                                                      |
-| day                  | integer | query    | Day component of the filter (default 0).                                                        |
-| hour                 | integer | query    | Hour component of the filter (default 0).                                                       |
-| minute               | integer | query    | Minute component of the filter (default 0).                                                     |
-| second               | integer | query    | Second component of the filter (default 0).                                                     |
-| folder               | string  | query    | Folder path in storage where the file is located.                                               |
-| storageName          | string  | query    | Name of the Aspose Cloud storage.                                                               |
+| Parameter Name       | Type    | Location | Description                                                    |
+| -------------------- | ------- | -------- | -------------------------------------------------------------- |
+| name                 | string  | path     | Name of the Excel file.                                        |
+| sheetName            | string  | path     | Worksheet name.                                                |
+| fieldIndex           | integer | query    | Zero‑based index of the column to which the filter is applied. |
+| dateTimeGroupingType | string  | query    | Grouping type for the date filter (e.g., Year, Month, Day).    |
+| year                 | integer | query    | Year component of the filter (default 0).                      |
+| month                | integer | query    | Month component of the filter (default 0).                     |
+| day                  | integer | query    | Day component of the filter (default 0).                       |
+| hour                 | integer | query    | Hour component of the filter (default 0).                      |
+| minute               | integer | query    | Minute component of the filter (default 0).                    |
+| second               | integer | query    | Second component of the filter (default 0).                    |
+| folder               | string  | query    | Folder path in storage where the file is located.              |
+| storageName          | string  | query    | Name of the Aspose Cloud storage.                              |
 
 ### **Response**
 
 ```json
 {
-    "Status":"OK",
-    "Code":200
+  "Status": "OK",
+  "Code": 200
 }
 ```
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
 
 The API returns standard HTTP status codes indicating the result of the delete operation.
 
-| Code | Meaning | Description |
-|------|---------|-------------|
-| 200  | OK      | The date filter was successfully deleted; the response contains the operation status. |
-| 400  | Bad Request | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized | Invalid or missing JWT token. |
-| 413  | Payload Too Large | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error | Unexpected server error. |
+| Code | Meaning               | Description                                                                           |
+| ---- | --------------------- | ------------------------------------------------------------------------------------- |
+| 200  | OK                    | The date filter was successfully deleted; the response contains the operation status. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).                          |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                                         |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                                     |
+| 500  | Internal Server Error | Unexpected server error.                                                              |
 
 ## How to Use the DeleteWorksheetDateFilter API with SDKs
 

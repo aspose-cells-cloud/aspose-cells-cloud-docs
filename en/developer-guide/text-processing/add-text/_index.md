@@ -2,7 +2,7 @@
 title: "Aspose.Cells Cloud Add Text API – Bulk Insert Prefixes, Suffixes & Custom Text into Excel Cells"
 date: 2024-05-10
 version: "v4.0"
-linktitle: "AddText"
+linktitle: "Add Text"
 url: /add-text/
 keywords: "Aspose.Cells Cloud API, add text Excel, bulk text insertion, prefix suffix Excel, spreadsheet text replace, Excel automation, cloud spreadsheet API"
 description: "Use the Aspose.Cells Cloud AddText API to insert prefixes, suffixes, or custom labels into hundreds of Excel cells in one REST call. Supports precise positioning (beginning, end, before/after anchor text), conditional cell handling, and locale-aware formatting."
@@ -18,17 +18,17 @@ Bulk-insert prefixes, suffixes, or custom text into multiple Excel cells in a si
 The `AddText` operation (v4.0) enables you to:
 
 - Insert text at **any position** within each cell:
-  | Value            | Description                                                                 |
+  | Value | Description |
   | ---------------- | --------------------------------------------------------------------------- |
-  | `None`           | Replace the original cell content entirely.                                 |
-  | `AtTheBeginning` | Insert text at the start (i.e., prefix).                                    |
-  | `AtTheEnd`       | Insert text at the end (i.e., suffix).                                      |
-  | `BeforeText`     | Insert *before* the first occurrence of `selectText`; skip if not found.    |
-  | `AfterText`      | Insert *after* the first occurrence of `selectText`; skip if not found.     |
+  | `None` | Replace the original cell content entirely. |
+  | `AtTheBeginning` | Insert text at the start (i.e., prefix). |
+  | `AtTheEnd` | Insert text at the end (i.e., suffix). |
+  | `BeforeText` | Insert _before_ the first occurrence of `selectText`; skip if not found. |
+  | `AfterText` | Insert _after_ the first occurrence of `selectText`; skip if not found. |
 
 - Apply to a specific **worksheet** and **range** (e.g., `"Sheet2!B2:D20"` or `"A1:C10"`).
 - Control empty-cell behavior: `skipEmptyCells=true` (default) skips blank cells; `false` populates them.
-- Convert non-text values (`number`, `boolean`, `formula`) to string *before* insertion. **Formulas are dropped** to prevent corruption.
+- Convert non-text values (`number`, `boolean`, `formula`) to string _before_ insertion. **Formulas are dropped** to prevent corruption.
 - Preserve locale formatting via the `region` parameter (e.g., `"en-US"`, `"de-DE"`).
 
 > **Note**: When `position = BeforeText` or `AfterText`, and the `selectText` substring is absent in a cell, that cell remains unchanged.
@@ -51,19 +51,19 @@ The API uses [JWT token-based authentication](https://docs.aspose.cloud/total/ge
 
 ## Request Parameters
 
-| Parameter      | Type      | Location | Required | Default | Description |
-|----------------|-----------|----------|----------|---------|-------------|
-| `Spreadsheet`  | `File`    | FormData | Yes      | —       | Upload the Excel file (XLSX, XLS, ODS, CSV, etc.). |
-| `text`         | `String`  | Query    | Yes      | —       | The text content to insert. |
-| `position`     | `String`  | Query    | Yes      | —       | Position enum: `None`, `AtTheBeginning`, `AtTheEnd`, `BeforeText`, `AfterText`. |
-| `selectText`   | `String`  | Query    | No       | `null`  | Anchor substring used only when `position` is `BeforeText` or `AfterText`. |
-| `skipEmptyCells`| `Boolean`| Query    | No       | `true`  | If `true`, skip empty cells; if `false`, insert `text` into empty cells. |
-| `worksheet`    | `String`  | Query    | No       | First visible worksheet | Worksheet name. |
-| `range`        | `String`  | Query    | No       | All used cells in worksheet | Cell range (e.g., `"A1:C10"`, `"Sheet2!B2:D20"`). |
-| `outPath`      | `String`  | Query    | No       | Source folder | Cloud storage path to save the output file. |
-| `outStorageName`| `String` | Query    | No       | Default storage configured in your account | Name of the cloud storage for the output file. |
-| `region`       | `String`  | Query    | No       | `en-US` | Locale for formatting numbers, dates, and currency (e.g., `"fr-FR"`, `"ja-JP"`). |
-| `password`     | `String`  | Query    | No       | `null`  | Password for protected workbooks. |
+| Parameter        | Type      | Location | Required | Default                                    | Description                                                                      |
+| ---------------- | --------- | -------- | -------- | ------------------------------------------ | -------------------------------------------------------------------------------- |
+| `Spreadsheet`    | `File`    | FormData | Yes      | —                                          | Upload the Excel file (XLSX, XLS, ODS, CSV, etc.).                               |
+| `text`           | `String`  | Query    | Yes      | —                                          | The text content to insert.                                                      |
+| `position`       | `String`  | Query    | Yes      | —                                          | Position enum: `None`, `AtTheBeginning`, `AtTheEnd`, `BeforeText`, `AfterText`.  |
+| `selectText`     | `String`  | Query    | No       | `null`                                     | Anchor substring used only when `position` is `BeforeText` or `AfterText`.       |
+| `skipEmptyCells` | `Boolean` | Query    | No       | `true`                                     | If `true`, skip empty cells; if `false`, insert `text` into empty cells.         |
+| `worksheet`      | `String`  | Query    | No       | First visible worksheet                    | Worksheet name.                                                                  |
+| `range`          | `String`  | Query    | No       | All used cells in worksheet                | Cell range (e.g., `"A1:C10"`, `"Sheet2!B2:D20"`).                                |
+| `outPath`        | `String`  | Query    | No       | Source folder                              | Cloud storage path to save the output file.                                      |
+| `outStorageName` | `String`  | Query    | No       | Default storage configured in your account | Name of the cloud storage for the output file.                                   |
+| `region`         | `String`  | Query    | No       | `en-US`                                    | Locale for formatting numbers, dates, and currency (e.g., `"fr-FR"`, `"ja-JP"`). |
+| `password`       | `String`  | Query    | No       | `null`                                     | Password for protected workbooks.                                                |
 
 ### Example: Add Prefix to Selected Range
 
@@ -90,12 +90,12 @@ Returns the updated workbook as a binary stream.
 
 ## Error Codes
 
-| Code | Description |
-|------|-------------|
-| `400` Bad Request | Missing required parameters (`text`, `position`, `Spreadsheet`), invalid `position` value, or malformed range/worksheet names. |
-| `401` Unauthorized | Invalid, expired, or missing access token. |
-| `404` Not Found | Spreadsheet file not found in upload or storage path. |
-| `500` Server Error | Internal error processing the workbook (e.g., calculation dependency failure). |
+| Code               | Description                                                                                                                    |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
+| `400` Bad Request  | Missing required parameters (`text`, `position`, `Spreadsheet`), invalid `position` value, or malformed range/worksheet names. |
+| `401` Unauthorized | Invalid, expired, or missing access token.                                                                                     |
+| `404` Not Found    | Spreadsheet file not found in upload or storage path.                                                                          |
+| `500` Server Error | Internal error processing the workbook (e.g., calculation dependency failure).                                                 |
 
 ## Common Use Cases
 
@@ -145,14 +145,3 @@ Returns the updated workbook as a binary stream.
 ## OpenAPI Specification
 
 Explore the full interface definition: [Aspose.Cells Cloud v4.0 – AddText](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/TextProcessing/AddText)
-
-## See Also
-
-- [Authentication & Security](/cells/authorization/)
-- [SDK Documentation & Examples](/cells/sdks/)
-- [Other Text Operations](/cells/text-processing/)  
-  _Insert, replace, or search text across workbooks and ranges._
-
-## References
-
-1. Internal benchmark comparing manual Excel text insertion vs. Aspose.Cells Cloud API for 1,000-cell tasks (2023–2024). Actual savings vary by workflow complexity and team size.

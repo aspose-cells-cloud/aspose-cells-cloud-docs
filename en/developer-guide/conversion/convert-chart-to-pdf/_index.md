@@ -1,5 +1,5 @@
 ---
-title: "Aspose.Cells Cloud API – Convert Excel Chart to PDF"
+title: "Convert Excel Chart to PDF - Aspose.Cells Cloud API"
 second_title: "Document"
 ArticleTitle: "How to Convert a Local Spreadsheet Chart to a PDF File"
 linktitle: "Convert Chart to PDF"
