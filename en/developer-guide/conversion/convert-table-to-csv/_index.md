@@ -1,6 +1,6 @@
 ---
 title: "Convert Excel Table to CSV via Aspose.Cells Cloud API"
-second title: "Document"
+second_title: "Document"
 ArticleTitle: "Convert Excel Table to CSV via Aspose.Cells Cloud API"
 linktitle: "Convert Table to Csv
 linktype: "docs"

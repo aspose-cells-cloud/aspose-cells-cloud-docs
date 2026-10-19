@@ -1,7 +1,7 @@
 ---
 url: split-remote-spreadsheet
 title: Split Remote Spreadsheet in Cloud
-second title: Developer Reference
+second_title: Developer Reference
 linktitle: Split Remote Spreadsheet in Cloud
 date: 2024-05-20T10:00:00Z
 tags:
