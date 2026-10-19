@@ -2,7 +2,7 @@
 title: "Aspose.Cells Cloud Quickstart: Create a spreadsheet application in 5 minutes"
 second_title: "Document"
 ArticleTitle: "Aspose.Cells Cloud Quickstart: Build an Excel Spreadsheet App in 5 Minutes"
-linktype: "docs"
+type: "docs"
 url: "/quickstart/"
 description: "Build an Excel spreadsheet app in 5 minutes with Aspose.Cells Cloud: REST API setup, free account creation, security credentials, and SDK installation for Python, Java, C#, and more."
 date: 2024-02-15

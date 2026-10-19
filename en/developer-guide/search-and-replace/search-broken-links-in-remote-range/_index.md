@@ -92,7 +92,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 The `BrokenLinks` collection contains objects of type **BrokenLink**. Each object provides the following properties:
 
 - **CellName** – The address of the cell that contains the broken reference (e.g., `B12`).
-- **LinkType** – The type of link that is broken (e.g., `ExternalReference`, `Formula`).
+- **type** – The type of link that is broken (e.g., `ExternalReference`, `Formula`).
 - **ErrorMessage** – A description of why the link is considered broken.
 
 **Note**: The API is subject to rate limits. Refer to the [Pricing and Rate Limits](https://www.aspose.cloud/pricing) page for details.

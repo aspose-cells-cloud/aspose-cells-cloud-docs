@@ -3,7 +3,7 @@ title: "Convert Excel Table to CSV via Aspose.Cells Cloud API"
 second_title: "Document"
 ArticleTitle: "Convert Excel Table to CSV via Aspose.Cells Cloud API"
 linktitle: "Convert Table to Csv
-linktype: "docs"
+type: "docs"
 url: /convert-table-to-csv/
 keywords: "excel to csv, table conversion, aspose.cells cloud, rest api"
 description: "Step-by-step guide to convert Excel table data to CSV using Aspose.Cells Cloud REST API, with cURL and SDK examples."
