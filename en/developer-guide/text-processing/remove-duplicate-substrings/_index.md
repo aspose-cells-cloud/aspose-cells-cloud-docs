@@ -7,7 +7,7 @@ description: "Remove duplicate substrings from Excel cells via Aspose.Cells Clou
 keywords: "excel duplicate substrings, text deduplication api, cloud excel cleaning, aspose.cells cloud, excel macro alternative, data normalization api"
 date: 2024-05-15T10:30:00Z
 lastmod: 2024-05-15T10:30:00Z
-weight: 1
+weight: 100
 aliases:
   - /text-processing/remove-duplicate-substrings/
   - /cells/remove-duplicate-substrings/
@@ -28,15 +28,13 @@ Key capabilities:
 
 > **Note**: Only string-type cell content is processed. Numbers, booleans, and formulas are converted to strings before splitting; formulas are dropped, and only their final values are used.
 
----
+
 
 ## API Endpoint
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/content/remove/duplicate-substrings
 ```
-
----
 
 ## Authentication
 
@@ -48,7 +46,6 @@ Authorization: Bearer {access_token}
 
 See [Authentication Overview](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) for setup instructions.
 
----
 
 ## Request Parameters
 
@@ -65,7 +62,6 @@ See [Authentication Overview](https://docs.aspose.cloud/total/getting-started/re
 | `region`                          | String  | Query    | No       | Locale for text processing (e.g., `"en-US"`, `"tr-TR"`). Affects case rules and delimiter interpretation.                                                                                                                 |
 | `password`                        | String  | Query    | No       | Password for protected workbooks. Required if the file is encrypted.                                                                                                                                                      |
 
----
 
 ## Example Request (cURL)
 
@@ -82,7 +78,6 @@ This example:
 - Ignores case when comparing substrings.
 - Processes only cells in range `A1:D100`.
 
----
 
 ## Response
 
@@ -109,7 +104,6 @@ On success (HTTP `200 OK`), the response returns the cleaned workbook as a file 
 | 404  | Not Found             | Workbook, worksheet, or range not found.                           |
 | 500  | Internal Server Error | Unexpected server-side error.                                      |
 
----
 
 ## Use Cases
 
@@ -118,17 +112,6 @@ On success (HTTP `200 OK`), the response returns the cleaned workbook as a file 
 - **HR & Certifications**: Remove duplicate skill or certification entries (e.g., `"Python,Python,SQL,Python"` → `"Python,SQL"`).
 - **Product Tagging**: Normalize product attributes where duplicates occur due to import errors.
 
----
-
-## Benefits
-
-- ✅ **Automation**: Eliminates manual editing and reduces human error.
-- ✅ **Data Integrity**: Preserves cell formatting, styles, and validation rules.
-- ✅ **Flexibility**: Supports custom delimiters, case sensitivity control, and regional settings.
-- ✅ **Cloud Efficiency**: No local file storage needed; processing occurs server-side.
-- ✅ **Developer Experience**: SDKs available in [C#](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet), [Java](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java), [Python](https://github.com/aspose-cells-cloud/aspose-cells-cloud-python), [Node.js](https://github.com/aspose-cells-cloud/aspose-cells-cloud-node), and more.
-
----
 
 ## OpenAPI Specification
 

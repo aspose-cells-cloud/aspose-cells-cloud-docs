@@ -6,7 +6,6 @@ linktitle: "Convert Text"
 url: /convert-text/
 keywords: "Aspose.Cells convert text, Excel text to numbers, remove special characters Excel, replace line breaks Excel, normalize accented characters, Excel data cleaning API"
 description: "Aspose.Cells Cloud API v4: Convert text-formatted numbers to numbers, normalize accents, and clean special characters in Excel files via REST API — with SDK examples for .NET, Java, Python, PHP, Ruby, Node.js, Perl, and Go."
-date: 2024-05-30
 weight: 100
 ---
 

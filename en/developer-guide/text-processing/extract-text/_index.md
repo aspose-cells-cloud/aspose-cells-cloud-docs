@@ -2,11 +2,7 @@
 url: /extract-text/
 title: Extract Text from Excel Cells Using Aspose.Cells Cloud API
 linktitle: Extract Text
-date: 2024-03-15
-lastmod: 2024-05-22
-sitemap:
-  priority: 0.8
-canonical: https://reference.aspose.cloud/cells/extract-text/
+type: docs
 keywords: "extract text from Excel, Aspose.Cells Cloud API, substring extraction, left/right text, position-based extraction, REST API for Excel"
 description: "Extract substrings, numbers, or fixed-length prefixes/suffixes from Excel cells using Aspose.Cells Cloud REST API. Supports Before, After, BeforePosition, and AfterPosition modes—no formulas required."
 weight: 100

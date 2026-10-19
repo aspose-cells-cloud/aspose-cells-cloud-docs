@@ -1,8 +1,8 @@
 ---
 title: "Aspose.Cells Cloud Add Text API – Bulk Insert Prefixes, Suffixes & Custom Text into Excel Cells"
-date: 2024-05-10
 version: "v4.0"
 linktitle: "Add Text"
+type: docs
 url: /add-text/
 keywords: "Aspose.Cells Cloud API, add text Excel, bulk text insertion, prefix suffix Excel, spreadsheet text replace, Excel automation, cloud spreadsheet API"
 description: "Use the Aspose.Cells Cloud AddText API to insert prefixes, suffixes, or custom labels into hundreds of Excel cells in one REST call. Supports precise positioning (beginning, end, before/after anchor text), conditional cell handling, and locale-aware formatting."

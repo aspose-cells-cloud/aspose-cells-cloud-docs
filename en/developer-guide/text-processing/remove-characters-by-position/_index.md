@@ -2,7 +2,7 @@
 url: /remove-characters-by-position/
 title: Remove Characters by Position in Excel – Aspose.Cells Cloud API v4
 linktitle: Remove Characters by Position
-date: 2024-03-15T10:00:00Z
+type: docs
 description: "Use Aspose.Cells Cloud Web API to precisely delete characters from Excel cells by position — first/last N characters, before/after markers, or between delimiters. Includes SDK examples in 8 languages."
 keywords:
   - "Aspose.Cells Cloud"
@@ -14,7 +14,6 @@ keywords:
   - "remove text after marker"
   - "between values removal"
 weight: 100
-canonical: /remove-characters-by-position/
 ---
 
 ## Introduction
