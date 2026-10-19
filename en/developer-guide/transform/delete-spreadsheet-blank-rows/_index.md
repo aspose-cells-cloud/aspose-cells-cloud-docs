@@ -3,7 +3,6 @@ title: "Delete Blank Rows in Excel | Aspose.Cells Cloud API"
 secondtitle: "Document"
 ArticleTitle: "How to Delete All Blank/Empty Rows in Excel – Complete Data Cleanup Guide"
 linktitle: "Delete Blank Rows"
-date: 2024-05-22
 type: docs
 url: /delete-spreadsheet-blank-rows/
 keywords: ["Aspose.Cells", "Excel API", "delete blank rows"]

@@ -3,7 +3,6 @@ url: split-remote-spreadsheet
 title: Split Remote Spreadsheet in Cloud
 second_title: Developer Reference
 linktitle: Split Remote Spreadsheet in Cloud
-date: 2024-05-20T10:00:00Z
 tags:
   - excel
   - split
@@ -15,7 +14,6 @@ categories:
   - cloud-storage
 description: Use Aspose.Cells Cloud API to split Excel workbooks stored in cloud storage into separate files and export to 30+ formats (PDF, CSV, JSON, etc.). Includes REST, cURL, and SDK examples.
 weight: 100
-canonical_url: https://reference.aspose.cloud/cells/split-remote-spreadsheet/
 keywords: Aspose.Cells Cloud, split Excel workbook, spreadsheet splitter, cloud API, export to PDF, export to CSV, export to JSON, multiple format export, cloud spreadsheet processing
 ---
 

@@ -7,7 +7,7 @@ type: docs
 url: /text-processing/
 description: "Learn how to trim, split, convert, extract, and remove text in Excel files using Aspose.Cells Cloud REST APIs. Includes concise examples and SDK snippets."
 keywords: "Aspose.Cells, Cloud API, Text Processing, Trim Text, Split Text, Convert Text, Extract Text, Remove Text, Excel API"
-weight: 30
+weight: 100
 ---
 
 ## Excel Text Manipulation APIs

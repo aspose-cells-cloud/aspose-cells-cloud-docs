@@ -1,7 +1,6 @@
 ---
 url: /import-data-into-spreadsheet/
 title: "Aspose.Cells Cloud Data Import API: CSV, JSON, XML to Excel"
-date: 2024-05-15
 secondtitle: "Document"
 articletitle: "Multi‑Source Data Integration Excel Platform – Aspose.Cells Cloud Automated Data Import and Transformation API."
 linktitle: "Import Data into Spreadsheet"

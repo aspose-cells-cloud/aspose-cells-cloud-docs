@@ -2,10 +2,7 @@
 url: /split-spreadsheet/
 title: "Aspose.Cells Cloud Split Excel Web API – Split Excel Locally to Multiple Files & Export to 30+ Formats"
 description: "Split Excel workbooks locally using Aspose.Cells Cloud API — no upload required. Export to PDF, CSV, JSON, and 30+ formats. Includes cURL & SDK examples for 8+ languages."
-date: 2024-03-15T10:00:00Z
 linktitle: Split spreadsheet
-last_modified: 2024-05-22
-draft: false
 tags:
   - split
   - excel
@@ -15,7 +12,7 @@ tags:
 categories:
   - data-processing
   - cloud-api
-weight: 5
+weight: 100
 ---
 
 # Split Excel Workbook Locally via Aspose.Cells Cloud API

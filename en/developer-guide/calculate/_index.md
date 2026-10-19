@@ -1,6 +1,5 @@
 ---
 title: "Aspose.Cells Cloud Web API – Calculate SUM, COUNT, AVERAGE, MIN, MAX & Basic Math Operations"
-date: 2024-06-15
 linktitle: "Calculate"
 type: docs
 url: /calculate/

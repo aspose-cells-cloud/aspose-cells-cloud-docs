@@ -2,9 +2,7 @@
 url: /replace-content-in-remote-spreadsheet/
 title: "Bulk Text Replacement in Remote Excel Files – Find & Replace API"
 linktitle: "Replace content in Remote Spreadsheet"
-last_modified: 2024-06-15T14:30:00Z
-date: 2024-02-15T10:00:00Z
-canonical: /replace-content-in-remote-spreadsheet/
+type: docs
 keywords: "Aspose.Cells Cloud, replace content, remote spreadsheet, find and replace API, cloud Excel, bulk text replacement"
 description: "Aspose.Cells Cloud Find & Replace API enables secure, programmatic bulk text replacement in Excel workbooks hosted in the cloud. Supports OAuth2, multiple SDKs, and preserves cell formatting, formulas, and charts."
 weight: 100

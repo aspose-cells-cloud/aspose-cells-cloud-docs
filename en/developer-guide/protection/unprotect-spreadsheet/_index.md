@@ -1,10 +1,7 @@
 ---
 title: "Aspose.Cells Cloud Unprotect Spreadsheet API"
-linktitle: ""
+linktitle: "Unprotect Spreadsheet"
 description: "Programmatically remove open and modify passwords from Excel files (.xlsx, .xls) using Aspose.Cells Cloud API. Supports OAuth2 authentication, batch processing, and secure cloud-based unprotection."
-date: 2024-03-20T00:00:00Z
-lastmod: 2024-06-15T00:00:00Z
-draft: false
 tags:
   [
     "unprotect",
@@ -17,7 +14,7 @@ tags:
   ]
 categories: ["aspose.cells.cloud", "api-reference"]
 weight: 100
-api_version: "4.0"
+type: docs
 ---
 
 # Aspose.Cells Cloud Unprotect Spreadsheet API

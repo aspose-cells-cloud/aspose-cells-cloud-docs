@@ -2,9 +2,6 @@
 url: /merge-spreadsheets-in-remote-folder/
 title: "Merge Matching Spreadsheets in Remote Folder"
 linktitle: "Merge files in remote folder"
-date: 2024-03-15
-lastmod: 2024-05-22
-version: "v4.0"
 description: "Combine multiple spreadsheet files stored in Aspose Cloud storage into a single file. Supports 30+ output formats including PDF, CSV, JSON, XLSX, ODS, and XPS—fully in the cloud."
 keywords:
   [

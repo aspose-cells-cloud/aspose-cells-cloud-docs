@@ -2,9 +2,7 @@
 url: /merge-spreadsheets/
 title: "Merge Multiple Excel Files into One Spreadsheet – Aspose.Cells Cloud API"
 linktitle: "Batch Merge Spreadsheets"
-date: 2023-11-15
-canonical: "/merge-spreadsheets/"
-robots: "index, follow"
+type: docs
 keywords:
   - "Aspose.Cells Cloud API"
   - "merge spreadsheets"

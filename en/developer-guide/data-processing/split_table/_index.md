@@ -8,7 +8,7 @@ url: /split/table
 aliases: []
 keywords: "Aspose.Cells, Split Table, API"
 description: "API to split a table in a spreadsheet by column values."
-weight: 1
+weight: 100
 ---
 
 ## The SplitTable of Aspose.Cells Cloud Web Services

@@ -6,9 +6,6 @@ ArticleTitle: "Find & Fix Broken Links in Excel – Cloud Spreadsheet Link Check
 linktitle: "Search Broken Links"
 keywords: "Excel link checker, broken reference detector, cloud spreadsheet audit, Aspose.Cells Cloud API, external reference validation"
 description: "Use Aspose.Cells Cloud API to programmatically detect broken Excel links—including external references, formulas, and data sources—in workbooks. Get structured JSON results for automated quality assurance in financial modeling, M&A due diligence, and investor reporting."
-date: 2023-11-15T10:00:00Z
-lastmod: 2024-05-20T14:30:00Z
-canonicalURL: /search-spreadsheet-broken-links/
 type: docs
 weight: 100
 ---

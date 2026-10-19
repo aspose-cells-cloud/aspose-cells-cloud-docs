@@ -5,11 +5,6 @@ linktitle: "Replace Remote Range Content"
 type: docs
 description: "Use Aspose.Cells Cloud API to find and replace text within a specified range of a remote Excel file stored in cloud storage. Supports authentication, error handling, and multi-language SDK integration."
 keywords: "replace text remote excel range, Aspose.Cells Cloud API, find and replace Excel, cloud spreadsheet edit, remote Excel file update"
-date: 2024-03-15
-version: "v22.12"
-api_version: "v4.0"
-author: "Aspose.Cells Cloud Team"
-lastmod: "2024-06-15"
 weight: 100
 ---
 

@@ -1,11 +1,9 @@
 ---
 title: "Search Text in Remote Excel Worksheet – Aspose.Cells Cloud API"
 linktitle: "Search Text in Remote Spreadsheet"
+type: docs
 description: "Find text, numbers, or formulas in a remote Excel worksheet using Aspose.Cells Cloud API. Supports case-insensitive search, password-protected files, and cloud storage integration."
 keywords: "aspose.cells, excel api, text search, remote worksheet, cloud api"
-date: 2023-11-15
-canonical: https://docs.aspose.cloud/cells/search-content-in-remote-worksheet/
-robots: index, follow
 ---
 
 # Search Text in Remote Excel Worksheet – Aspose.Cells Cloud API

@@ -2,8 +2,7 @@
 url: /merge-remote-spreadsheet/
 title: "Merge Excel Files in Cloud via Aspose.Cells Cloud API"
 linktitle: "Merge remote spreadsheet"
-date: 2024-05-10
-lastmod: 2024-06-15
+type: docs
 description: "Merge Excel files online via Aspose.Cells Cloud API — combine workbooks stored in AWS S3, Azure Blob, or Google Cloud Storage with output format control (XLSX, PDF, CSV). Free trial, no login required."
 keywords:
   [

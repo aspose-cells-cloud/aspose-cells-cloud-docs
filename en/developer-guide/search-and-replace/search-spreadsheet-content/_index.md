@@ -1,9 +1,6 @@
 ---
 url: /search-spreadsheet-content/
 title: "Search Spreadsheet Content – Aspose.Cells Cloud API"
-date: 2024-03-15T10:00:00Z
-lastmod: 2024-03-15T10:00:00Z
-draft: false
 linktitle: "Search Spreadsheet Content"
 type: docs
 keywords: "Excel search API, spreadsheet content search, text lookup in Excel, cloud spreadsheet API, find text in Excel"

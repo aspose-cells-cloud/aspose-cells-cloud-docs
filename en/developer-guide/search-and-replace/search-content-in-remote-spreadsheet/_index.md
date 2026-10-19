@@ -3,8 +3,7 @@ url: /search-content-in-remote-spreadsheet/
 title: "Search Text in Remote Excel Spreadsheets – Aspose.Cells Cloud API"
 second_title: "Search Content in Remote Spreadsheet API"
 linktitle: "Search Remote Spreadsheet Content"
-date: 2024-03-15T09:00:00Z
-lastmod: 2024-05-20T14:30:00Z
+type: docs
 description: "Learn how to programmatically search text, numbers, or formulas in Excel files stored in cloud storage using Aspose.Cells Cloud REST API — with case-insensitive matching, folder support, and password handling."
 keywords: "Aspose.Cells, Excel search API, cloud spreadsheet, text search, REST"
 weight: 100

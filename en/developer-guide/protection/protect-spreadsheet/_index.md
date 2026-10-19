@@ -1,9 +1,8 @@
 ---
 title: "Excel Password Protection API – Set Open and Modify Passwords Programmatically"
-date: 2024-05-10
-lastmod: 2024-06-15
 url: /protect-spreadsheet/
 linktitle: "Protect Spreadsheet"
+type: docs
 summary: "Learn how to programmatically protect Excel files with open and modify passwords using Aspose.Cells Cloud REST API. Includes cURL, SDK examples, and OAuth 2.0 integration guide."
 description: "Automate Excel spreadsheet protection via REST API — set open & modify passwords in .xlsx/.xls/.xlsm files. Includes cURL, Python, Java, Node.js, and Go examples, plus OAuth 2.0 authentication and compliance best practices."
 keywords: "Excel password protection API, open password, modify password, spreadsheet security, Excel encryption, Aspose.Cells Cloud, REST API"
