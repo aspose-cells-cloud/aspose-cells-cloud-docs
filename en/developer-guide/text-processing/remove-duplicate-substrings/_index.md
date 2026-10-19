@@ -5,8 +5,7 @@ linktitle: "Remove Duplicate Substrings"
 url: "/remove-duplicate-substrings/"
 description: "Remove duplicate substrings from Excel cells via Aspose.Cells Cloud API. Clean repeated text programmatically while preserving cell formatting, validation, and structure."
 keywords: "excel duplicate substrings, text deduplication api, cloud excel cleaning, aspose.cells cloud, excel macro alternative, data normalization api"
-date: 2024-05-15T10:30:00Z
-lastmod: 2024-05-15T10:30:00Z
+type: docs
 weight: 100
 aliases:
   - /text-processing/remove-duplicate-substrings/

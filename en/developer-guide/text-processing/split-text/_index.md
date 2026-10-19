@@ -6,11 +6,7 @@ url: /split-text/
 keywords: "Aspose, Cells, Split Text API, Excel, delimiter, text segmentation, cloud API"
 description: "Split Excel cell text by delimiter, mask, or line break using Aspose.Cells Cloud REST API. Supports XLSX, ODS, CSV; keep/drop delimiters; output to rows/columns."
 summary: "Use the Split Text API to segment Excel cell content by custom delimiters, masks, or line breaks. Ideal for cleaning ERP/CRM imports, legacy data exports, and semi-structured logs."
-date: 2024-03-15T00:00:00Z
-lastmod: 2024-05-22T14:30:00Z
-sitemap:
-  changefreq: monthly
-  priority: 0.8
+type: docs
 weight: 100
 ---
 
