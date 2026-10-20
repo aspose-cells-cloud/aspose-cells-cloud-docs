@@ -20,7 +20,7 @@ src="https://docs.aspose.cloud/cells/images/sdk-icon.png"
 alt="Aspose.Cells Cloud SDK for Excel logo"
 caption="Aspose.Cells Cloud text replacement workflow"
 
-> }}
+>}}
 
 ## REST API Endpoint
 
