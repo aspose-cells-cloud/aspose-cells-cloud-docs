@@ -1,6 +1,6 @@
 ---
 title: "How to Work with Visibility on an Excel Worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Visibility"
 type: docs
 url: /worksheets/panes/

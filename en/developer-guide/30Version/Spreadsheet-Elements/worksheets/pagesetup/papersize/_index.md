@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud – Complete List of Paper Size Constants"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Paper Size"
 type: docs
 url: /paper-size/

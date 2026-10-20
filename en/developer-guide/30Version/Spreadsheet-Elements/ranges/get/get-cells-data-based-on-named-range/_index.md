@@ -1,6 +1,6 @@
 ---
 title: "Get cells data based on named range"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Values"
 type: docs
 url: /ranges/get/values/

@@ -1,6 +1,6 @@
 ---
 title: "Excel to TIFF"
-second_title: "Document"
+second_title: "Developer Guide"
 linketitle: "Excel to TIFF"
 type: docs
 url: /convert-excel-file-to-tiff-file/

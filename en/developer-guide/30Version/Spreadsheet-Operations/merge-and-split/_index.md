@@ -1,6 +1,6 @@
 ---
 title: "Merge and Split Excel Files"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Merge and Split"
 type: docs
 url: /merge-and-split/

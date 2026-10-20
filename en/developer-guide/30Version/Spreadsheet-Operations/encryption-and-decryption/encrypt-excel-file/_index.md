@@ -1,6 +1,6 @@
 ---
 title: "Encrypt an Excel Workbook with Aspose.Cells Cloud API – Quick cURL & SDK Examples"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Encrypt an Excel file"
 type: docs
 url: /excel-file-encrypt/

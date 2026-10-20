@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud API – Manage Worksheets, Compress & Create Excel Workbooks"
-second_title: "Document"
+second_title: "Developer Guide"
 ArticleTitle: "Aspose.Cells Cloud API – Manage Worksheets, Compress & Create Excel Workbooks"
 linktitle: "Management"
 type: docs
@@ -59,6 +59,7 @@ This page provides an overview of the management capabilities offered by Aspose.
 ## Prerequisites
 
 To use Aspose.Cells Cloud for worksheet and workbook management, you need:
+
 - An active [Aspose.Cells Cloud account](https://dashboard.aspose.cloud/)
 - Valid API credentials (Client ID and Client Secret)
 - Basic familiarity with REST APIs and cURL or SDK usage

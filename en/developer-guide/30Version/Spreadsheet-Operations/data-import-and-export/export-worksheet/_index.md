@@ -1,6 +1,6 @@
 ---
 title: "Export Worksheet – Aspose.Cells Cloud"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Worksheet"
 type: docs
 url: /export-excel-worksheet-to-different-formats/

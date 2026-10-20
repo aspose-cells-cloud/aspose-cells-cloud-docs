@@ -1,7 +1,7 @@
 ---
 title: "Accept All Revisions"
 ArticleTitle: "Accept All Revisions – Aspose.Cells Cloud"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Accept All Revisions"
 type: docs
 url: /spreadsheet/accept-all-revisions

@@ -1,7 +1,7 @@
 ---
 title: "Add Top 10 Filter to an Excel Worksheet (Aspose.Cells Cloud)"
 ArticleTitle: "Add Top 10 Filter to an Excel Worksheet – Aspose.Cells Cloud"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Add top 10 filter"
 type: docs
 url: /autofilter/add-top-10-filter/
@@ -49,8 +49,8 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ```json
 {
-    "Status":"OK",
-    "Code":200
+  "Status": "OK",
+  "Code": 200
 }
 ```
 
@@ -58,41 +58,42 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ```json
 {
-    "Code":400,
-    "Message":"Bad Request – missing or invalid parameters."
+  "Code": 400,
+  "Message": "Bad Request – missing or invalid parameters."
 }
 ```
 
 ```json
 {
-    "Code":401,
-    "Message":"Unauthorized – invalid or missing JWT token."
+  "Code": 401,
+  "Message": "Unauthorized – invalid or missing JWT token."
 }
 ```
 
 ```json
 {
-    "Code":413,
-    "Message":"Payload Too Large – uploaded file exceeds the allowed size."
+  "Code": 413,
+  "Message": "Payload Too Large – uploaded file exceeds the allowed size."
 }
 ```
 
 ```json
 {
-    "Code":500,
-    "Message":"Internal Server Error – unexpected server condition."
+  "Code": 500,
+  "Message": "Internal Server Error – unexpected server condition."
 }
 ```
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## How to Use the PutWorksheetFilterTop10 API with SDKs
 
 ### PutWorksheetFilterTop10 API Specification

@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud – Excel Broken Links Detection API – Scan & Validate Spreadsheet Links in Remote Workbooks"
-second_title: "Document"
+second_title: "Developer Guide"
 ArticleTitle: "Find & Fix Broken Links in Remote Excel – Cloud Spreadsheet Link Checker"
 linktitle: "Search Remote Spreadsheets Broken Links"
 type: docs

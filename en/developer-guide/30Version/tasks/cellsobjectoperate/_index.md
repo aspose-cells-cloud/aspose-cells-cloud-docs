@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud API – Working with CellsObjectOperate Task (REST)"
-second_title: "Document"
+second_title: "Developer Guide"
 type: docs
 url: /tasks/cells-object-operate/
 aliases: [/working-with-cellsobjectoperate-task/]

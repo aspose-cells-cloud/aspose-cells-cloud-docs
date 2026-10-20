@@ -1,6 +1,6 @@
 ---
 title: "Get All Worksheets"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "All"
 type: docs
 url: /worksheets/get-all/

@@ -1,7 +1,7 @@
 ---
 title: "SearchAllTextItemsInRemoteSpreadsheet"
 ArticleTitle: "SearchAllTextItemsInRemoteSpreadsheet – Aspose.Cells Cloud API"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "SearchAllTextItemsInRemoteSpreadsheet"
 type: docs
 url: /{name}/search/content/all-textitems

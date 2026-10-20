@@ -1,6 +1,6 @@
 ---
 title: "Autofit Column in Excel with Aspose.Cells Cloud API – Quick Guide"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Column"
 type: docs
 url: /worksheets/autofit/column/

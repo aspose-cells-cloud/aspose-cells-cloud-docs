@@ -1,7 +1,7 @@
 ---
 title: "Import Picture into Excel Worksheet"
 ArticleTitle: "Import Picture into Excel Worksheet – Aspose.Cells Cloud API Guide"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Import picture"
 type: docs
 url: /import-picture-into-excel-worksheet/
@@ -91,7 +91,6 @@ Possible status codes:
 | 401  | Unauthorized – invalid or missing token |
 | 500  | Internal server error                   |
 
-
 ## How to Use the PostImportData API with SDKs
 
 ### PostImportData API Specification
@@ -99,7 +98,6 @@ Possible status codes:
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostImport) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
-
 
 Using an SDK is the best way to accelerate development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

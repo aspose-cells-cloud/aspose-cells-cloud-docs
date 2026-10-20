@@ -1,7 +1,7 @@
 ---
 title: "Convert Text In Remote Spreadsheet"
 ArticleTitle: "Convert Text In Remote Spreadsheet – Aspose.Cells Cloud"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Convert Text In Remote Spreadsheet"
 type: docs
 url: /{name}/worksheets/{worksheet}/range/{range}/content/convert/text

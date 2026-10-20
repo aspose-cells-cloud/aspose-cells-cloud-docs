@@ -1,6 +1,6 @@
 ---
 title: "Group rows on an Excel Worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Group"
 type: docs
 url: /rows/group/
@@ -13,8 +13,9 @@ ArticleTitle: "Group Rows in Excel Worksheet using Aspose.Cells Cloud API"
 
 This REST API groups rows on an Excel worksheet.
 
-**Prerequisites:**  
-- A valid OAuth 2.0 access token (Bearer JWT) must be supplied in the `Authorization` header.  
+**Prerequisites:**
+
+- A valid OAuth 2.0 access token (Bearer JWT) must be supplied in the `Authorization` header.
 - The workbook must already exist in the specified `folder` of the chosen `storageName` (or the default storage) before the request is made.
 
 ## PostGroupWorksheetRows API
@@ -68,18 +69,18 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
 
 Typical error responses:
 
-- **400 Bad Request** – check that `firstIndex` and `lastIndex` are valid integers and that `firstIndex` ≤ `lastIndex`.  
-- **401 Unauthorized** – verify that the `Authorization` header contains a current JWT token.  
+- **400 Bad Request** – check that `firstIndex` and `lastIndex` are valid integers and that `firstIndex` ≤ `lastIndex`.
+- **401 Unauthorized** – verify that the `Authorization` header contains a current JWT token.
 - **404 Not Found** – ensure the workbook (`name`) and worksheet (`sheetName`) exist in the specified `folder`/`storageName`.
 
 {{< /tab >}}

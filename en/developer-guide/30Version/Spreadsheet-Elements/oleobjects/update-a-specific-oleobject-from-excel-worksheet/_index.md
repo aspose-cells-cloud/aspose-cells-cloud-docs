@@ -1,6 +1,6 @@
 ---
 title: "Update an OLE Object in an Excel Worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Update"
 type: docs
 url: /oleobjects/update/

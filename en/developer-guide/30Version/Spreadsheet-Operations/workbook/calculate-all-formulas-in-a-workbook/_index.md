@@ -1,6 +1,6 @@
 ---
 title: "Calculate All Formulas on an Excel Workbook"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Calculate"
 type: docs
 url: /calculate-all-formulas-on-an-excel-file/
@@ -15,8 +15,9 @@ ArticleTitle: "Calculate All Formulas on an Excel Workbook"
 This REST API calculates **all formulas** in an Excel workbook.
 
 **Prerequisites:** Before calling this endpoint, ensure you have:
-- A valid JWT authentication token. (See the [Authentication Guide](/authentication/).)  
-- Your Aspose.Cells Cloud client ID and secret.  
+
+- A valid JWT authentication token. (See the [Authentication Guide](/authentication/).)
+- Your Aspose.Cells Cloud client ID and secret.
 - The target workbook uploaded to the designated storage location. (Refer to the [Storage Setup](/storage/).)
 
 ## PostWorkbookCalculateFormula API
@@ -93,12 +94,12 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/calculateformula?ignoreE
   - `404` – Workbook not found.
   - `500` – Server‑side error; contact Aspose support if it persists.
 
-| Code | Meaning               | When Returned                                             |
-|------|-----------------------|-----------------------------------------------------------|
-| 400  | Bad Request           | Invalid request parameters or malformed JSON.            |
-| 401  | Unauthorized          | Missing, invalid, or expired JWT token.                  |
-| 404  | Not Found             | Specified workbook does not exist in storage.            |
-| 500  | Internal Server Error | Unexpected server‑side failure; contact Aspose support.   |
+| Code | Meaning               | When Returned                                           |
+| ---- | --------------------- | ------------------------------------------------------- |
+| 400  | Bad Request           | Invalid request parameters or malformed JSON.           |
+| 401  | Unauthorized          | Missing, invalid, or expired JWT token.                 |
+| 404  | Not Found             | Specified workbook does not exist in storage.           |
+| 500  | Internal Server Error | Unexpected server‑side failure; contact Aspose support. |
 
 ## Cloud SDK Family
 

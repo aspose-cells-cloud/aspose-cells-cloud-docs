@@ -1,7 +1,7 @@
 ---
 title: "Add a Digital Signature to an Excel Workbook"
 ArticleTitle: "Add a Digital Signature to an Excel Workbook – Aspose.Cells Cloud API"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Digital signature"
 type: docs
 url: /excel-digital-signature/
@@ -13,12 +13,11 @@ description: "Learn how to add a digital signature to an Excel workbook using th
 weight: 35
 ---
 
-
 **Prerequisites:**  
 Before calling this endpoint, ensure you have:
 
-- A valid JWT access token obtained via Aspose Cloud authentication.  
-- The target workbook uploaded to your Aspose Cloud storage.  
+- A valid JWT access token obtained via Aspose Cloud authentication.
+- The target workbook uploaded to your Aspose Cloud storage.
 - A digital signature file in `.pfx` or `.p12` format and its password.
 
 This REST API adds a **digital signature** to an Excel workbook.
@@ -43,7 +42,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | **folder**               | string | `<code>query</code>` | Folder where the workbook is stored.                   |
 | **storageName**          | string | `<code>query</code>` | Name of the storage service to use.                    |
 
-*Note: If the file name contains special characters, URL‑encode it before adding it to the query string.*
+_Note: If the file name contains special characters, URL‑encode it before adding it to the query string._
 
 ### Error Handling
 
@@ -63,7 +62,6 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | 401         | Unauthorized        | Invalid or missing access token.                          |
 | 404         | NotFound            | Specified workbook not found in the given folder/storage. |
 | 500         | InternalServerError | Unexpected server error.                                  |
-
 
 ## How to Use the PostDigitalSignature API with SDKs
 
@@ -103,12 +101,12 @@ curl -v "https://api.aspose.cloud/v4.0/cells/{name}/digitalsignature?digitalsign
 **Response Schema**  
 The API returns a JSON object with the following fields:
 
-| Field        | Type   | Description                                          |
-| ------------ | ------ | ---------------------------------------------------- |
-| `Code`       | int    | HTTP‑like status code indicating the result.         |
-| `Status`     | string | Short text describing the outcome (e.g., `OK`).     |
-| `SignatureId`| string | Identifier of the applied digital signature (optional). |
-| `Message`    | string | Additional information or error details (optional). |
+| Field         | Type   | Description                                             |
+| ------------- | ------ | ------------------------------------------------------- |
+| `Code`        | int    | HTTP‑like status code indicating the result.            |
+| `Status`      | string | Short text describing the outcome (e.g., `OK`).         |
+| `SignatureId` | string | Identifier of the applied digital signature (optional). |
+| `Message`     | string | Additional information or error details (optional).     |
 
 ### Use Aspose.Cells Cloud SDKs
 

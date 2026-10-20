@@ -1,6 +1,6 @@
 ---
 title: "Remove Write‑Protection (Password) from an Excel Workbook"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Clear Excel Files Password"
 type: docs
 url: /clear-excel-files-password/
@@ -39,25 +39,25 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | `folder`       | string | query    | The folder that contains the workbook (optional). |
 | `storageName`  | string | query    | The name of the storage service (optional).       |
 
-
 ### Response
 
 ```json
 {
-  "Status":"OK",
-  "Code":200
+  "Status": "OK",
+  "Code": 200
 }
 ```
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## How to Use the DeleteDocumentUnprotectFromChanges API with SDKs
 
 ### DeleteDocumentUnprotectFromChanges API Specification
@@ -92,7 +92,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xlsx/writeProtecti
 {{< /tab >}}
 
 {{< /tabs >}}
-
 
 ### Use Aspose.Cells Cloud SDKs
 

@@ -1,6 +1,6 @@
 ---
 title: "Unfreeze Panes on an Excel Worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Unfreeze"
 type: docs
 url: /worksheets/panes/unfreeze/

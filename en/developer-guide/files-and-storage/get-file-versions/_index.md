@@ -1,6 +1,6 @@
 ---
-title: "Aspose.Cells Cloud Get File Versions API – Fast Retrieval of File Version History"
-second_title: "Document"
+title: "Get File Versions API – Fast Retrieval of File Version History"
+second_title: "Developer Guide"
 ArticleTitle: "Cloud‑Based Excel Management – Quickly Retrieve File Version History in Aspose.Cells Cloud"
 linktitle: "Get File Versions"
 type: docs

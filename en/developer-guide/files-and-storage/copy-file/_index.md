@@ -8,10 +8,6 @@ url: /copy-file/
 keywords: "Aspose.Cells, CopyFile API, Excel file copy, Cloud storage, REST API, duplicate Excel file"
 description: "Use Aspose.Cells Cloud’s CopyFile API to securely duplicate Excel files between storage accounts. Includes cURL examples, SDK support (Go, Python, Node.js), authentication guide, and batch operation insights."
 weight: 100
-date: 2024-02-15T10:00:00Z
-lastmod: 2024-02-15T10:00:00Z
-draft: false
-canonicalURL: "https://reference.aspose.cloud/cells/copy-file/"
 ---
 
 ## Excel Cloud API: CopyFile
@@ -125,29 +121,3 @@ await client.copyFile("source.xlsx", {
 | `DeleteFile`    | Remove a file from storage            | `/delete-file/`    |
 | `GetWorkbook`   | Retrieve a workbook from storage      | `/download-file/`  |
 | `CloneWorkbook` | Create a new workbook from a template | `/clone-workbook/` |
-
-### Best Practices
-
-- ✅ **Use storage names explicitly** to avoid ambiguity in multi-tenant environments.
-- ✅ **Validate `destPath` extension** (e.g., `.xlsx`, `.xls`) to prevent format mismatches.
-- ✅ **Leverage versioning** via `versionId` for audit trails and rollback support.
-- ✅ **Batch copies sequentially** to prevent rate limiting—avoid concurrent large-file copies.
-
-### Structured Data (JSON-LD)
-
-```json
-{
-  "@context": "https://schema.org",
-  "@type": "TechArticle",
-  "headline": "Aspose.Cells Cloud CopyFile API Guide",
-  "datePublished": "2024-02-15",
-  "dateModified": "2024-02-15",
-  "author": {
-    "@type": "Organization",
-    "name": "Aspose"
-  },
-  "articleSection": "API Reference",
-  "keywords": "CopyFile API, Excel cloud copy, REST API, Aspose.Cells",
-  "url": "https://reference.aspose.cloud/cells/copy-file/"
-}
-```

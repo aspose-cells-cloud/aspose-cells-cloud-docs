@@ -1,7 +1,7 @@
 ---
 title: "Get Remote Spreadsheet Structure"
 ArticleTitle: "Get Structure In Remote Spreadsheet – Aspose.Cells Cloud API"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Remote Spreadsheet Structure"
 type: docs
 url: /{name}/structure

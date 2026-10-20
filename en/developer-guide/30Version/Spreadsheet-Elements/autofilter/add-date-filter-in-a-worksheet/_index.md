@@ -1,6 +1,6 @@
 ---
 title: "Add Date Filter to an Excel Worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Add date filter"
 type: docs
 url: /autofilter/add-date-filter/
@@ -29,7 +29,6 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request parameters
 
-
 | Parameter Name           | Type    | Location | Description                                                                                                                                                     |
 | ------------------------ | ------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **name**                 | string  | Path     | The workbook name.                                                                                                                                              |
@@ -48,30 +47,30 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | **folder**               | string  | Query    | Folder path of the original workbook.                                                                                                                           |
 | **storageName**          | string  | Query    | Name of the storage service.                                                                                                                                    |
 
-*The PUT request does not require a request body; all parameters are supplied via the query string.*
+_The PUT request does not require a request body; all parameters are supplied via the query string._
 
 ### **Response**
 
 ```json
 {
-    "Status":"OK",
-    "Code":200
+  "Status": "OK",
+  "Code": 200
 }
 ```
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## How to Use the PutWorksheetDateFilter API with SDKs
 
 ### PutWorksheetDateFilter API Specification
-
 
 The <a href="https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetDateFilter" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
@@ -103,8 +102,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFi
 {{< /tab >}}
 
 {{< /tabs >}}
-
-
 
 ### Use Aspose.Cells Cloud SDKs
 

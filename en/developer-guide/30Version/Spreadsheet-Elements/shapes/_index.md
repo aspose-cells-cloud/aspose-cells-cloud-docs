@@ -1,6 +1,6 @@
 ---
 title: "Working with Excel Shapes – Aspose.Cells Cloud Documentation"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Shapes"
 type: docs
 url: /shapes/

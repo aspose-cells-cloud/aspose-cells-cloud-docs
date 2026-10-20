@@ -1,6 +1,6 @@
 ---
 title: "Get a worksheet validation by index from an Excel worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Get"
 type: docs
 url: /validations/get/

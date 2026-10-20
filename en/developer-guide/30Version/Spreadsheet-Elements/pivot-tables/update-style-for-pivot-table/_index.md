@@ -1,6 +1,6 @@
 ---
 title: "Update style for pivot table"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Format all"
 type: docs
 url: /pivot-tables/format-all/

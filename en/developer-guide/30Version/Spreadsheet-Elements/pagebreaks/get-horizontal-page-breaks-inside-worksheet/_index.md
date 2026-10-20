@@ -1,6 +1,6 @@
 ---
 title: "Get Horizontal Page Breaks"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Get Horizontal Page Breaks"
 type: docs
 url: /page-breaks/get-horizontal-page-breaks/

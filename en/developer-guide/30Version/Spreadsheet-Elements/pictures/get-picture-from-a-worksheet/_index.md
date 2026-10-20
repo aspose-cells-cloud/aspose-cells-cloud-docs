@@ -1,6 +1,6 @@
 ---
 title: "Get all pictures in an Excel worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Get all"
 type: docs
 url: /pictures/get-all/

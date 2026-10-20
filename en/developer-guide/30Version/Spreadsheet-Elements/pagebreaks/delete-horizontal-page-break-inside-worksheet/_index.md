@@ -1,7 +1,7 @@
 ---
 title: "Delete horizontal page break"
 ArticleTitle: "Aspose.Cells Cloud – Delete Horizontal Page Break (REST API)"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Delete horizontal page break"
 type: docs
 url: /page-breaks/delete-horizontal-page-break/

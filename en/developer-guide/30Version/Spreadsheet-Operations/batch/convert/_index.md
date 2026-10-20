@@ -1,6 +1,6 @@
 ---
 title: "Batch Convert Excel Files"
-second_title: "Document"
+second_title: "Developer Guide"
 type: docs
 url: /batch/convert
 keywords: "batch conversion, Excel, Aspose.Cells Cloud, REST API, PDF, CSV, JSON, Markdown, spreadsheet"

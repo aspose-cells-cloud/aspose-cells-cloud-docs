@@ -1,10 +1,10 @@
 ---
 title: "Split an Excel file into multiple files"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Split Multi Excel files"
 type: docs
 url: /split-an-excel-file-to-multi-files/
-aliases: [/split-excel-workbooks/,/workbook/split/]
+aliases: [/split-excel-workbooks/, /workbook/split/]
 keywords: "Aspose.Cells, Cloud, Excel, Split, API, PDF, CSV, JSON"
 description: "Use the Aspose.Cells Cloud REST API to split multi‑sheet Excel workbooks into separate files. Supports output formats such as PDF, CSV, and JSON, and is available through SDKs for Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift."
 weight: 32
@@ -26,16 +26,15 @@ POST https://api.aspose.cloud/v3.0/cells/split
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-
 ### Request parameters
 
-| Parameter Name | Type   | Location  | Description                                                       |
-|----------------|--------|-----------|-------------------------------------------------------------------|
-| file           | file   | formData  | The Excel workbook to upload.                                     |
-| format         | string | query     | Desired output format (e.g., `pdf`, `csv`, `json`).               |
-| password       | string | query     | Password for an encrypted workbook (optional).                   |
-| from           | integer| query     | Index of the first sheet to include (1‑based).                    |
-| to             | integer| query     | Index of the last sheet to include (inclusive).                  |
+| Parameter Name | Type    | Location | Description                                         |
+| -------------- | ------- | -------- | --------------------------------------------------- |
+| file           | file    | formData | The Excel workbook to upload.                       |
+| format         | string  | query    | Desired output format (e.g., `pdf`, `csv`, `json`). |
+| password       | string  | query    | Password for an encrypted workbook (optional).      |
+| from           | integer | query    | Index of the first sheet to include (1‑based).      |
+| to             | integer | query    | Index of the last sheet to include (inclusive).     |
 
 ### **Response**
 
@@ -63,13 +62,14 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## How to Use the PostSplit API with SDKs
 
 ### PostSplit API Specification
@@ -78,12 +78,12 @@ The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells
 
 **HTTP status codes**
 
-| Code | Meaning                         | Description                                                                      |
-|------|---------------------------------|----------------------------------------------------------------------------------|
-| 200  | OK                              | The workbook was split successfully and the response contains the file list.   |
-| 400  | Bad Request                     | Missing or invalid parameters (e.g., unsupported format).                     |
-| 401  | Unauthorized                    | Invalid or missing JWT token.                                                    |
-| 500  | Internal Server Error           | An unexpected error occurred on the server side.                                 |
+| Code | Meaning               | Description                                                                  |
+| ---- | --------------------- | ---------------------------------------------------------------------------- |
+| 200  | OK                    | The workbook was split successfully and the response contains the file list. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported format).                    |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                                |
+| 500  | Internal Server Error | An unexpected error occurred on the server side.                             |
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 

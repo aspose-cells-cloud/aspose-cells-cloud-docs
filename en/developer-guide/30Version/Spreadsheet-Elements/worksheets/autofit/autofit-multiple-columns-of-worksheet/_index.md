@@ -1,6 +1,6 @@
 ---
 title: "Autofit Multiple Columns on an Excel Worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Columns"
 type: docs
 url: /worksheets/autofit/columns/

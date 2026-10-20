@@ -1,7 +1,7 @@
 ---
 title: "Get Spreadsheet Structure"
 ArticleTitle: "GetSpreadsheetStructure – Aspose.Cells Cloud"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Get Spreadsheet Structure"
 type: docs
 url: /spreadsheet/structure

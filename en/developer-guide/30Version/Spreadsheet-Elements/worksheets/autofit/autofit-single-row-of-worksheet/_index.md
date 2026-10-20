@@ -1,6 +1,6 @@
 ---
 title: "Autofit a row on an Excel worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Row"
 type: docs
 url: /worksheets/autofit/row/
@@ -14,6 +14,7 @@ ArticleTitle: "Autofit Row in Excel Worksheet using Aspose.Cells Cloud API"
 This REST API **autofits a row** on an Excel worksheet.
 
 ## Security and Authentication
+
 The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## REST API

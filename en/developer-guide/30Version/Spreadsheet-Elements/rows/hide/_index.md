@@ -1,6 +1,6 @@
 ---
 title: "Hide rows on an Excel worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Hide"
 type: docs
 url: /rows/hide/
@@ -69,13 +69,13 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 
 **Response status codes**
 
-| Code | Description |
-|------|-------------|
-| 200 | Success – rows hidden |
-| 400 | Bad request – invalid parameters |
-| 401 | Unauthorized – missing or invalid JWT |
-| 404 | Not found – workbook or worksheet does not exist |
-| 500 | Server error – internal processing failure |
+| Code | Description                                      |
+| ---- | ------------------------------------------------ |
+| 200  | Success – rows hidden                            |
+| 400  | Bad request – invalid parameters                 |
+| 401  | Unauthorized – missing or invalid JWT            |
+| 404  | Not found – workbook or worksheet does not exist |
+| 500  | Server error – internal processing failure       |
 
 A successful call returns a JSON object that contains the fields `Code` and `Status`. In case of an error, the response includes additional fields such as `Message` and appropriate HTTP status codes (e.g., 400, 401, 404, 500).
 

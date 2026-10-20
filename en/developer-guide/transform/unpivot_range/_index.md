@@ -1,7 +1,7 @@
 ---
 title: "Unpivot Range"
 ArticleTitle: "Unpivot Range – Aspose.Cells Cloud"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Unpivot Range"
 type: docs
 url: /unpivot/range

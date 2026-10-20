@@ -1,6 +1,6 @@
 ---
 title: "Working with Deleting Rows on an Excel Worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Delete"
 type: docs
 url: /rows/delete/

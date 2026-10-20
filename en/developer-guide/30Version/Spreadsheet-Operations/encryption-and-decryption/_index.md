@@ -1,6 +1,6 @@
 ---
 title: "Encrypt, Decrypt, and Digitally Sign Excel Files"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Protect Excel"
 type: docs
 url: /protect/
@@ -16,17 +16,18 @@ weight: 36
 **What is “protect” in Aspose.Cells Cloud?**  
 The **Protect** operation secures an Excel workbook by applying a password that restricts opening, editing, or modifying the file’s structure. The API also supports encrypting the workbook, decrypting it, and adding a digital signature for tamper‑proof verification.
 
-**API reference**  
+**API reference**
 
-| HTTP Method | Endpoint | Required query / body parameters | Sample request body | Typical responses |
-|-------------|----------|-----------------------------------|---------------------|-------------------|
-| POST | `https://api.aspose.cloud/v3.0/cells/{fileName}/protect` | `fileName` (path), `password` (query) | `{ "password": "MySecret123" }` | `200 OK` – protection applied, `400 Bad Request`, `401 Unauthorized`, `500 Internal Server Error` |
-| POST | `https://api.aspose.cloud/v3.0/cells/{fileName}/unprotect` | `fileName` (path), `password` (query) | N/A | `200 OK` – protection removed, error codes as above |
-| POST | `https://api.aspose.cloud/v3.0/cells/{fileName}/encrypt` | `fileName` (path), `password` (query) | N/A | `200 OK` – file encrypted |
-| POST | `https://api.aspose.cloud/v3.0/cells/{fileName}/decrypt` | `fileName` (path), `password` (query) | N/A | `200 OK` – file decrypted |
-| POST | `https://api.aspose.cloud/v3.0/cells/{fileName}/sign` | `fileName` (path) | `{ "certificatePath": "/certs/mycert.pfx", "certificatePassword": "certPass" }` | `200 OK` – digital signature added |
+| HTTP Method | Endpoint                                                   | Required query / body parameters      | Sample request body                                                             | Typical responses                                                                                 |
+| ----------- | ---------------------------------------------------------- | ------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| POST        | `https://api.aspose.cloud/v3.0/cells/{fileName}/protect`   | `fileName` (path), `password` (query) | `{ "password": "MySecret123" }`                                                 | `200 OK` – protection applied, `400 Bad Request`, `401 Unauthorized`, `500 Internal Server Error` |
+| POST        | `https://api.aspose.cloud/v3.0/cells/{fileName}/unprotect` | `fileName` (path), `password` (query) | N/A                                                                             | `200 OK` – protection removed, error codes as above                                               |
+| POST        | `https://api.aspose.cloud/v3.0/cells/{fileName}/encrypt`   | `fileName` (path), `password` (query) | N/A                                                                             | `200 OK` – file encrypted                                                                         |
+| POST        | `https://api.aspose.cloud/v3.0/cells/{fileName}/decrypt`   | `fileName` (path), `password` (query) | N/A                                                                             | `200 OK` – file decrypted                                                                         |
+| POST        | `https://api.aspose.cloud/v3.0/cells/{fileName}/sign`      | `fileName` (path)                     | `{ "certificatePath": "/certs/mycert.pfx", "certificatePassword": "certPass" }` | `200 OK` – digital signature added                                                                |
 
-**Code example (C#)**  
+**Code example (C#)**
+
 ```csharp
 using Aspose.Cells.Cloud.SDK.Api;
 using Aspose.Cells.Cloud.SDK.Model.Requests;
@@ -48,9 +49,10 @@ var protectRequest = new PostProtectWorkbookRequest(
 api.PostProtectWorkbook(protectRequest);
 ```
 
-**Prerequisites**  
-- An active Aspose.Cells Cloud subscription.  
-- `AppSid` and `AppKey` for authentication.  
+**Prerequisites**
+
+- An active Aspose.Cells Cloud subscription.
+- `AppSid` and `AppKey` for authentication.
 
 **Authentication**  
 All requests must include the `Authorization` header with a valid JWT token obtained from the Aspose Cloud authentication endpoint.
@@ -58,8 +60,9 @@ All requests must include the `Authorization` header with a valid JWT token obta
 **Error handling**  
 Check the HTTP status code and the `Error` object returned in the response body. Common errors include invalid password (`400`), missing file (`404`), and authentication failures (`401`).
 
-**Notes**  
-- The same endpoint can be used to **encrypt** or **decrypt** by changing the action segment (`/encrypt`, `/decrypt`).  
+**Notes**
+
+- The same endpoint can be used to **encrypt** or **decrypt** by changing the action segment (`/encrypt`, `/decrypt`).
 - Digital signatures require a valid certificate file accessible to the API.
 
 - [Encrypt an Excel file with Aspose.Cells Cloud API](/cells/excel-file-encrypt/)

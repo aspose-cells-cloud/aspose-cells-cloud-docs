@@ -1,6 +1,6 @@
 ---
 title: "Developer Guide: Convert, Merge, Split, Protect, Search, Replace & Transform — All in Cells Cloud."
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Developer Guide"
 ArticleTitle: "Convert, Merge, Split, Protect, Search, Replace & Transform — All in Cells Cloud."
 type: docs

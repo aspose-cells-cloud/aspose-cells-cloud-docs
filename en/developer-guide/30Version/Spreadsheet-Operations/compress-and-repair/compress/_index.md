@@ -1,7 +1,7 @@
 ---
 title: "Compress Data in an Excel File"
 ArticleTitle: "Compress Data in an Excel File – Aspose.Cells Cloud API"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Compress Excel Files"
 type: docs
 url: /compress-excel-files/
@@ -13,9 +13,10 @@ weight: 39
 
 ## The PostCompress API of Aspose.Cells Cloud Web Services
 
-**Prerequisites:**  
-- A valid JWT token is required for authentication.  
-- Supported file formats are XLS, XLSX, XLSM, XLSB, and ODS.  
+**Prerequisites:**
+
+- A valid JWT token is required for authentication.
+- Supported file formats are XLS, XLSX, XLSM, XLSB, and ODS.
 - The maximum allowed file size is 500 MB per request (subject to service limits).
 
 This REST API compresses data in an Excel file.
@@ -37,17 +38,17 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type    | Path/Query String/HTTP Body | Description                                                |
-|----------------|---------|-----------------------------|------------------------------------------------------------|
-| file           | file    | formData                    | File to upload                                             |
+| Parameter Name | Type    | Path/Query String/HTTP Body | Description                                                            |
+| -------------- | ------- | --------------------------- | ---------------------------------------------------------------------- |
+| file           | file    | formData                    | File to upload                                                         |
 | CompressLevel  | integer | query                       | Compression level (0‑100); higher values indicate stronger compression |
 
 ### Request Body Parameter
 
-| Parameter Name | Type | Description                                    |
-| -------------- | ---- | ---------------------------------------------- |
+| Parameter Name | Type | Description                                      |
+| -------------- | ---- | ------------------------------------------------ |
 | data           | file | Binary content of the workbook file to compress. |
-  
+
 ### **Response**
 
 ```json
@@ -60,17 +61,18 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 }
 ```
 
-*Note:* `FileContent` contains the compressed workbook encoded as a Base64 string. The length of the string corresponds to the size of the compressed file; you can decode it using standard Base64 utilities to retrieve the binary Excel file.
+_Note:_ `FileContent` contains the compressed workbook encoded as a Base64 string. The length of the string corresponds to the size of the compressed file; you can decode it using standard Base64 utilities to retrieve the binary Excel file.
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## How to Use the PostCompress API with SDKs
 
 ### PostCompress API Specification

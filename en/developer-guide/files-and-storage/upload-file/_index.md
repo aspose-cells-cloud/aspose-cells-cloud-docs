@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud Upload File API – An Interface for Fast Uploading of Files in the Cloud"
-second_title: "Document"
+second_title: "Developer Guide"
 ArticleTitle: "Aspose.Cells Cloud Upload File API – An Interface for Fast Uploading of Files in the Cloud"
 linktitle: "Upload File"
 type: docs

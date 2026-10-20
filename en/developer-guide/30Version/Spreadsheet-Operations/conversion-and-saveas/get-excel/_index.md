@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud – Convert Excel Workbook to PDF, CSV, HTML, and More (GET /cells/{name})"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Convert Excel"
 type: docs
 url: /get-different-formats-files/

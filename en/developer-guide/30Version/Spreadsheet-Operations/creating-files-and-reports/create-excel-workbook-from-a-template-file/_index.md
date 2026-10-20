@@ -1,6 +1,6 @@
 ---
 title: "How to Create an Excel Workbook with a Template File"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Template File"
 type: docs
 url: /create-an-excel-file-with-template-file/
@@ -21,13 +21,13 @@ Create a new Excel workbook by using an existing template file and, optionally, 
 
 ## Prerequisites
 
-| Requirement | Description |
-|-------------|-------------|
-| **Aspose.Cells Cloud account** | Sign‑up at https://dashboard.aspose.cloud/ and obtain a **Client Id** / **Client Secret**. |
-| **JWT access token** | Generate a JWT token as described in the [authentication guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/). |
-| **Template file** | Upload the template Excel file (e.g., `Calendar.xlsx`) to your chosen storage using the **Upload File** API or the UI. |
-| **Data file (optional)** | A JSON or XML file that contains Smart‑Marker values (e.g., `Sample_Data.xml`). |
-| **Supported storage** | Default storage (`Default`) or a custom storage configured in your Aspose account. |
+| Requirement                    | Description                                                                                                                                                      |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Aspose.Cells Cloud account** | Sign‑up at https://dashboard.aspose.cloud/ and obtain a **Client Id** / **Client Secret**.                                                                       |
+| **JWT access token**           | Generate a JWT token as described in the [authentication guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/). |
+| **Template file**              | Upload the template Excel file (e.g., `Calendar.xlsx`) to your chosen storage using the **Upload File** API or the UI.                                           |
+| **Data file (optional)**       | A JSON or XML file that contains Smart‑Marker values (e.g., `Sample_Data.xml`).                                                                                  |
+| **Supported storage**          | Default storage (`Default`) or a custom storage configured in your Aspose account.                                                                               |
 
 ---
 
@@ -51,37 +51,37 @@ The token must be obtained beforehand and is valid for 1 hour by default.
 PUT https://api.aspose.cloud/v3.0/cells/{name}
 ```
 
-| Component | Value |
-|-----------|-------|
-| **Method** | `PUT` |
-| **Path**   | `/cells/{name}` – `name` is the desired name of the newly created workbook (including extension, e.g., `newworkbook.xlsx`). |
-| **Content‑Type** | `multipart/form-data` (when a data file is sent in the body). |
-| **Accept** | `application/json` |
+| Component        | Value                                                                                                                       |
+| ---------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| **Method**       | `PUT`                                                                                                                       |
+| **Path**         | `/cells/{name}` – `name` is the desired name of the newly created workbook (including extension, e.g., `newworkbook.xlsx`). |
+| **Content‑Type** | `multipart/form-data` (when a data file is sent in the body).                                                               |
+| **Accept**       | `application/json`                                                                                                          |
 
 ### Path Parameter
 
-| Name | Type | Required | Description |
-|------|------|----------|-------------|
-| `name` | string | **Yes** | The name of the workbook to be created (e.g., `newworkbook.xlsx`). |
+| Name   | Type   | Required | Description                                                        |
+| ------ | ------ | -------- | ------------------------------------------------------------------ |
+| `name` | string | **Yes**  | The name of the workbook to be created (e.g., `newworkbook.xlsx`). |
 
 ### Query Parameters
 
-| Parameter | Type | Required | Default | Description |
-|-----------|------|----------|---------|-------------|
-| `templateFile` | string | No | — | Name of the template file stored in the cloud. |
-| `dataFile` | string | No | — | Name of the data file (XML or JSON) stored in the cloud. |
-| `isWriteOver` | boolean | No | `false` | Overwrite the target file if it already exists. Pass `true` or `false` **without** quotes. |
-| `folder` | string | No | — | Folder path where the template (and optional data file) resides. |
-| `storageName` | string | No | — | Name of the storage service that contains the files. |
-| `checkExcelRestriction` | boolean | No | `true` | Validate the workbook against Excel restrictions before creation. |
+| Parameter               | Type    | Required | Default | Description                                                                                |
+| ----------------------- | ------- | -------- | ------- | ------------------------------------------------------------------------------------------ |
+| `templateFile`          | string  | No       | —       | Name of the template file stored in the cloud.                                             |
+| `dataFile`              | string  | No       | —       | Name of the data file (XML or JSON) stored in the cloud.                                   |
+| `isWriteOver`           | boolean | No       | `false` | Overwrite the target file if it already exists. Pass `true` or `false` **without** quotes. |
+| `folder`                | string  | No       | —       | Folder path where the template (and optional data file) resides.                           |
+| `storageName`           | string  | No       | —       | Name of the storage service that contains the files.                                       |
+| `checkExcelRestriction` | boolean | No       | `true`  | Validate the workbook against Excel restrictions before creation.                          |
 
 ### Request Body (optional)
 
 When the data for Smart‑Marker placeholders is sent directly in the request, include it as a multipart file part named **`data`**.
 
-| Part Name | Type | Description |
-|-----------|------|-------------|
-| `data` | file | XML or JSON file that contains Smart‑Marker values. |
+| Part Name | Type | Description                                         |
+| --------- | ---- | --------------------------------------------------- |
+| `data`    | file | XML or JSON file that contains Smart‑Marker values. |
 
 #### Example cURL with request body
 
@@ -93,7 +93,7 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/newworkbook.xlsx?templateFile=C
      -F "data=@Sample_Data.xml"
 ```
 
-*If the `dataFile` query parameter is used instead of a multipart body, omit the `-F` flag.*
+_If the `dataFile` query parameter is used instead of a multipart body, omit the `-F` flag._
 
 ---
 
@@ -103,40 +103,41 @@ A successful call returns a **`200 OK`** (or **`201 Created`** when a new file i
 
 ```json
 {
-    "Code": 200,
-    "Status": "OK",
-    "File": {
-        "Name": "newworkbook.xlsx",
-        "Size": 18234,
-        "Path": "output/newworkbook.xlsx",
-        "Url": "https://api.aspose.cloud/v3.0/storage/file/output/newworkbook.xlsx"
-    }
+  "Code": 200,
+  "Status": "OK",
+  "File": {
+    "Name": "newworkbook.xlsx",
+    "Size": 18234,
+    "Path": "output/newworkbook.xlsx",
+    "Url": "https://api.aspose.cloud/v3.0/storage/file/output/newworkbook.xlsx"
+  }
 }
 ```
 
 ### Response Data Types
 
-| Property | Type | Description |
-|----------|------|-------------|
-| `Code` | integer | HTTP‑like status code returned by the API. |
-| `Status` | string | Textual description of the status. |
-| `File` | object | Details of the generated workbook. |
-| `File.Name` | string | File name of the created workbook. |
-| `File.Size` | integer | Size in bytes. |
-| `File.Path` | string | Relative path in the storage. |
-| `File.Url` | string | Direct download URL (requires the same JWT token). |
+| Property    | Type    | Description                                        |
+| ----------- | ------- | -------------------------------------------------- |
+| `Code`      | integer | HTTP‑like status code returned by the API.         |
+| `Status`    | string  | Textual description of the status.                 |
+| `File`      | object  | Details of the generated workbook.                 |
+| `File.Name` | string  | File name of the created workbook.                 |
+| `File.Size` | integer | Size in bytes.                                     |
+| `File.Path` | string  | Relative path in the storage.                      |
+| `File.Url`  | string  | Direct download URL (requires the same JWT token). |
 
 ---
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ---
 
 ## SDK Examples
@@ -268,27 +269,36 @@ end
 {{< tab tabNum="5" >}}
 
 ```javascript
-const { WorkbookApi, Configuration } = require('asposecellscloud');
-const fs = require('fs');
+const { WorkbookApi, Configuration } = require("asposecellscloud");
+const fs = require("fs");
 
 let config = new Configuration();
-config.accessToken = '{access_token}';
-config.basePath = 'https://api.aspose.cloud';
+config.accessToken = "{access_token}";
+config.basePath = "https://api.aspose.cloud";
 
 let apiInstance = new WorkbookApi(config);
 
-let name = 'newworkbook.xlsx';
-let templateFile = 'Calendar.xlsx';
-let dataFile = 'Sample_Data.xml';
+let name = "newworkbook.xlsx";
+let templateFile = "Calendar.xlsx";
+let dataFile = "Sample_Data.xml";
 let isWriteOver = true;
-let folder = 'templates';
-let storageName = 'MyStorage';
+let folder = "templates";
+let storageName = "MyStorage";
 
-let data = fs.createReadStream('Sample_Data.xml');
+let data = fs.createReadStream("Sample_Data.xml");
 
-apiInstance.putWorkbookCreate(name, templateFile, dataFile, isWriteOver, folder, storageName, data)
-    .then(response => console.log(response))
-    .catch(err => console.error(err));
+apiInstance
+  .putWorkbookCreate(
+    name,
+    templateFile,
+    dataFile,
+    isWriteOver,
+    folder,
+    storageName,
+    data,
+  )
+  .then((response) => console.log(response))
+  .catch((err) => console.error(err));
 ```
 
 {{< /tab >}}
@@ -408,19 +418,19 @@ func main() {
 
 ## Error Handling
 
-| Status Code | Situation | Recommended Action |
-|-------------|-----------|--------------------|
-| **400** | Required parameters missing or invalid file type. | Verify query parameters, ensure template and data files exist and are supported (`.xlsx`, `.xml`, `.json`). |
-| **401** | JWT token is missing, expired, or malformed. | Regenerate a fresh access token using your Client Id/Secret. |
-| **413** | Uploaded file exceeds the service size limit (default 50 MB). | Reduce file size or split the workbook into smaller parts. |
-| **500** | Unexpected server error. | Retry after a short delay; if the problem persists, contact Aspose support with the `Request‑Id` header value. |
+| Status Code | Situation                                                     | Recommended Action                                                                                             |
+| ----------- | ------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| **400**     | Required parameters missing or invalid file type.             | Verify query parameters, ensure template and data files exist and are supported (`.xlsx`, `.xml`, `.json`).    |
+| **401**     | JWT token is missing, expired, or malformed.                  | Regenerate a fresh access token using your Client Id/Secret.                                                   |
+| **413**     | Uploaded file exceeds the service size limit (default 50 MB). | Reduce file size or split the workbook into smaller parts.                                                     |
+| **500**     | Unexpected server error.                                      | Retry after a short delay; if the problem persists, contact Aspose support with the `Request‑Id` header value. |
 
 ---
 
 ## See Also
 
-- **[PutWorkbookSave](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookSave)** – Save an existing workbook to a specified format.  
-- **[GetWorkbook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkbook)** – Retrieve workbook information or download the file.  
-- **[Upload File API](https://apireference.aspose.cloud/cells/#/Storage/UploadFile)** – Upload template or data files to cloud storage.  
+- **[PutWorkbookSave](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookSave)** – Save an existing workbook to a specified format.
+- **[GetWorkbook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkbook)** – Retrieve workbook information or download the file.
+- **[Upload File API](https://apireference.aspose.cloud/cells/#/Storage/UploadFile)** – Upload template or data files to cloud storage.
 
 ---

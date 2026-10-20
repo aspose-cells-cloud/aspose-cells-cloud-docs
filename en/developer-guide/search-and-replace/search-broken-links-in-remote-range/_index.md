@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud – Detect Broken Links in Excel Range (API)"
-second_title: "Document"
+second_title: "Developer Guide"
 ArticleTitle: "Find & Fix Broken Links in Remote Excel Range – Cloud Spreadsheet Link Checker"
 linktitle: "Search Remote Range Broken Links"
 type: docs

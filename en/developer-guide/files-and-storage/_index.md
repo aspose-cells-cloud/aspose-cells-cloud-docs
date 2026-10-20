@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud API – File & Folder Management (Upload, Download, Copy, Move)"
-second_title: "Document"
+second_title: "Developer Guide"
 ArticleTitle: "Cloud File Management for Excel – An Efficient and Secure Solution for Excel File Storage and Intelligent Organization"
 linktitle: "Files and Storage"
 type: docs

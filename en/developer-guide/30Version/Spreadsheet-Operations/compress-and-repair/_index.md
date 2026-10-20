@@ -1,6 +1,6 @@
 ---
 title: "Compress and Repair Excel Files"
-second_title: "Document"
+second_title: "Developer Guide"
 type: docs
 url: /compress-and-repair-excel-files/
 linktitle: "Compress and Repair"

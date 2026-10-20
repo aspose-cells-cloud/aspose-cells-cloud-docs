@@ -1,6 +1,6 @@
 ---
 title: "Get page count from an Excel File"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Pages"
 type: docs
 url: /get-page-count-from-an-excel-file/

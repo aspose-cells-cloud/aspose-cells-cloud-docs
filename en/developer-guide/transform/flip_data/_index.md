@@ -1,7 +1,7 @@
 ---
 title: "Flip Data"
 ArticleTitle: "Flip Data – Aspose.Cells Cloud"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Flip Data"
 type: docs
 url: /flip

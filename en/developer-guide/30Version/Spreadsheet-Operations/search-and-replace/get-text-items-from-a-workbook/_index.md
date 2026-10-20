@@ -1,7 +1,7 @@
 ---
 title: "Get text items from an Excel workbook"
 ArticleTitle: "Get Text Items from an Excel Workbook using Aspose.Cells Cloud API"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Get in workbook"
 type: docs
 url: /workbook/get-text-items/

@@ -1,6 +1,6 @@
 ---
 title: "Add a worksheet validation to an Excel worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Add"
 type: docs
 url: /validations/add/

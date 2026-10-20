@@ -1,7 +1,7 @@
 ---
 title: "GetMergedCellsInRemotedWorksheet"
 ArticleTitle: "Get Merged Cells In Remote Worksheet – Aspose.Cells Cloud API"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Get Merged Cells In Remote Worksheet"
 type: docs
 url: /merged-cells-in-remote-worksheet

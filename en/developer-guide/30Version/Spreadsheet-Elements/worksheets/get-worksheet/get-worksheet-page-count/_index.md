@@ -1,6 +1,6 @@
 ---
 title: "Get Page Count for an Excel Worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "PageCount"
 type: docs
 url: /worksheets/page-count/

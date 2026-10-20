@@ -1,6 +1,6 @@
 ---
 title: "Delete a pivot table in an Excel worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: Delete
 type: docs
 url: /pivot-tables/delete/

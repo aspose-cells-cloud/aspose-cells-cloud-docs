@@ -1,6 +1,6 @@
 ---
 title: "Delete a Specific Document Property"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Delete"
 type: docs
 url: /document-properties/delete/

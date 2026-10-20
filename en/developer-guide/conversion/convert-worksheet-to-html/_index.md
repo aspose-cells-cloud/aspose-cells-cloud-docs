@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud Web API – Convert Worksheet to HTML"
-second_title: "Document"
+second_title: "Developer Guide"
 ArticleTitle: "Convert Worksheet to HTML"
 linktitle: "Convert Worksheet to HTML"
 type: docs

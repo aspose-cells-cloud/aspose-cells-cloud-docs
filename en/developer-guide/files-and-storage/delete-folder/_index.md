@@ -1,15 +1,12 @@
 ---
-title: "Delete Folder – Aspose.Cells Cloud API | Remove Folders via REST"
+title: "Delete Folder"
 second_title: "Developer Guide"
 linktitle: "Delete folder"
 type: docs
 url: /delete-folder/
 description: "Delete folders in Aspose.Cells Cloud storage via REST API. Learn syntax, authentication, parameters, error handling, and SDK examples."
 keywords: "delete folder, Aspose.Cells Cloud, REST API, remove folder, Excel cloud storage"
-slug: delete-folder
-date: 2024-05-15
 weight: 30
-robots: noindex
 ---
 
 # Delete Folder
@@ -96,13 +93,13 @@ No additional payload is provided because the operation’s result is binary –
 
 ### HTTP Status Codes
 
-| Code | Meaning               | Description                          |
-| ---- | --------------------- | ------------------------------------ |
-| 200  | OK                    | Folder deleted successfully.         |
-| 400  | Bad Request           | Missing or invalid parameters.       |
-| 401  | Unauthorized          | Invalid or missing JWT token.        |
-| 404  | Not Found             | Folder or storage not found.         |
-| 500  | Internal Server Error | Unexpected server error.             |
+| Code | Meaning               | Description                    |
+| ---- | --------------------- | ------------------------------ |
+| 200  | OK                    | Folder deleted successfully.   |
+| 400  | Bad Request           | Missing or invalid parameters. |
+| 401  | Unauthorized          | Invalid or missing JWT token.  |
+| 404  | Not Found             | Folder or storage not found.   |
+| 500  | Internal Server Error | Unexpected server error.       |
 
 When an error occurs, the body contains a JSON object with `code` and `message` fields describing the problem.
 
@@ -320,27 +317,3 @@ func main() {
 ```
 
 </details>
-
----
-
-## See Also
-
-- **[Create Folder](/create-folder/)** – Create a new folder in cloud storage.
-- **[Copy Folder](/copy-folder/)** – Duplicate a folder and its contents.
-- **[Move Folder](/move-folder/)** – Relocate a folder to a different path.
-- **[Interactive API Documentation for DeleteFolder](https://reference.aspose.cloud/cells/#/FolderController/DeleteFolder)** – Explore and test the endpoint directly.
-
----
-
-## SEO & Accessibility Checklist (internal)
-
-- **Title & H1**: Use en‑dash (`–`), primary keyword *Delete Folder* at front, and meta description ≤160 chars.
-- **H1 in body removed**: Only front matter `title` generates the `<h1>` in Hugo.
-- **Meta description**: Optimized to 142 characters with keyword-first structure.
-- **External link**: Added `aria-label` to OpenAPI link for accessibility.
-- **Invisible characters**: Removed non-breaking spaces and zero-width characters from internal links.
-- **Status code description**: Corrected to reflect *folder deletion*, not *filter application*.
-- **SDK examples**: Replaced `{access_token}` with `{YOUR_ACCESS_TOKEN}` and added usage guidance.
-- **Internal links**: All use consistent trailing slashes and include `rel="noopener noreferrer"` where applicable.
-- **Date corrected**: Changed from `2026-07-30` to `2024-05-15`; `robots: noindex` added for safety.
-- **`weight` added**: For explicit ordering in documentation hierarchy.

@@ -1,7 +1,7 @@
 ---
 title: "Remove Characters By Position"
 ArticleTitle: "Remove Characters By Position – Aspose.Cells Cloud API"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Remove Characters By Position"
 type: docs
 url: /content/remove/characters-by-position

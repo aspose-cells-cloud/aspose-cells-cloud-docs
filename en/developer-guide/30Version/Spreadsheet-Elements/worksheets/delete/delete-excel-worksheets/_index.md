@@ -1,6 +1,6 @@
 ---
 title: "Delete Multiple Excel Worksheets"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Multiple worksheets"
 type: docs
 url: /worksheets/delete-multiple/

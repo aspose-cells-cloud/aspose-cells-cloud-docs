@@ -1,7 +1,7 @@
 ---
 title: "Convert an Excel File to Different Formats"
 ArticleTitle: "Convert an Excel File to Different Formats"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Convert Excel"
 type: docs
 url: /convert-an-excel-file-to-different-formats/

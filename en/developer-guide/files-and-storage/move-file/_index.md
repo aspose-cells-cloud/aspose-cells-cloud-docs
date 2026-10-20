@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud Move File API – Interface for Fast Moving of Files in the Cloud"
-second_title: "Document"
+second_title: "Developer Guide"
 ArticleTitle: "Cloud-based Excel File Efficient Management Solution – Interface for Fast Moving of Files in the Cloud"
 linktitle: "Move File"
 type: docs

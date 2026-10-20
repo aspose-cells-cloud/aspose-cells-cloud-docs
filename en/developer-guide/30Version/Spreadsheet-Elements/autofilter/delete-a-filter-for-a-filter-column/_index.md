@@ -1,6 +1,6 @@
 ---
 title: "Delete a Filter from an Excel Worksheet – Aspose.Cells Cloud API"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Delete filter"
 type: docs
 url: /delete-filter/

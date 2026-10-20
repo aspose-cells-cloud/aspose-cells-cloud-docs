@@ -1,6 +1,6 @@
 ---
 title: "Excel Worksheet Rename"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Rename"
 type: docs
 url: /worksheets/rename/

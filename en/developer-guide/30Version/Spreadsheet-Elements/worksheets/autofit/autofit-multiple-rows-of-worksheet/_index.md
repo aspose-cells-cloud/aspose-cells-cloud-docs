@@ -1,6 +1,6 @@
 ---
 title: "Autofit Multiple Rows in an Excel Worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Rows"
 type: docs
 url: /worksheets/autofit/rows/
@@ -14,6 +14,7 @@ ArticleTitle: "Autofit Multiple Rows in an Excel Worksheet – Aspose.Cells Clou
 This REST API automatically adjusts the height of rows in an Excel worksheet.
 
 ## Security and Authentication
+
 The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## REST API
@@ -26,14 +27,14 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitro
 
 | Parameter Name        | Type    | Location | Description                                                                                                                          | Required |
 | --------------------- | ------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------ | -------- |
-| **name**              | string  | path     | The name of the Excel file.                                                                                                          | ✔ |
-| **sheetName**         | string  | path     | The name of the worksheet.                                                                                                           | ✔ |
-| **autoFitterOptions** | object  | body     | Options that control how rows are autofitted (e.g., ignore hidden rows). See the brief field description below.                      | ✖ |
-| **startRow**          | integer | query    | The first row to autofit (1-based index).                                                                                            | ✔ |
-| **endRow**            | integer | query    | The last row to autofit (inclusive).                                                                                                 | ✔ |
-| **onlyAuto**          | boolean | query    | When `true`, the API adjusts only rows whose height is automatically calculated by Excel. When `false`, a full autofit is performed. | ✖ |
-| **folder**            | string  | query    | The folder that contains the document.                                                                                               | ✖ |
-| **storageName**       | string  | query    | The name of the storage service.                                                                                                     | ✖ |
+| **name**              | string  | path     | The name of the Excel file.                                                                                                          | ✔        |
+| **sheetName**         | string  | path     | The name of the worksheet.                                                                                                           | ✔        |
+| **autoFitterOptions** | object  | body     | Options that control how rows are autofitted (e.g., ignore hidden rows). See the brief field description below.                      | ✖        |
+| **startRow**          | integer | query    | The first row to autofit (1-based index).                                                                                            | ✔        |
+| **endRow**            | integer | query    | The last row to autofit (inclusive).                                                                                                 | ✔        |
+| **onlyAuto**          | boolean | query    | When `true`, the API adjusts only rows whose height is automatically calculated by Excel. When `false`, a full autofit is performed. | ✖        |
+| **folder**            | string  | query    | The folder that contains the document.                                                                                               | ✖        |
+| **storageName**       | string  | query    | The name of the storage service.                                                                                                     | ✖        |
 
 **autoFitterOptions** fields (all optional):
 
@@ -78,13 +79,13 @@ Typical error responses include:
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
 
 {{< /tab >}}
 

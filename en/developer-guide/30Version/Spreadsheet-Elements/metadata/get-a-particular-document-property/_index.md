@@ -1,6 +1,6 @@
 ---
 title: "Get a Specific Document Property"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Get"
 type: docs
 url: /document-properties/get/

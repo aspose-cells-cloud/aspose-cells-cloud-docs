@@ -1,6 +1,6 @@
 ---
 title: "Copy contents and formats from another worksheet."
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Copy"
 type: docs
 url: /worksheets/copy/

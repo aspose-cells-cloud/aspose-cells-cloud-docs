@@ -1,10 +1,11 @@
 ---
 title: "Add a custom criterion in an Excel worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Add custom filter"
 type: docs
 url: /autofilter/add-custom-filter/
-aliases: [/filter-a-list-with-a-custom-criteria/,/autofilter/add-a-custom-filter/]
+aliases:
+  [/filter-a-list-with-a-custom-criteria/, /autofilter/add-a-custom-filter/]
 keywords: "Excel, custom filter, Aspose.Cells Cloud, REST API, auto filter, worksheet, custom criteria"
 description: "Learn how to use the Aspose.Cells Cloud REST API to add a custom filter to an Excel worksheet. Includes request details, a cURL example, and SDK code snippets for multiple programming languages."
 weight: 65
@@ -25,40 +26,41 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters:
 
-| Parameter Name | Type    | Location                     | Description                                                                 |
-|----------------|---------|------------------------------|-----------------------------------------------------------------------------|
-| name           | string  | path                         | Name of the Excel file.                                                     |
-| sheetName      | string  | path                         | Name of the worksheet that contains the data to be filtered.               |
-| range          | string  | query                        | Cell range that the filter will be applied to (e.g., `A1:B1`).             |
-| fieldIndex     | integer | query                        | Zero‑based index of the column on which the filter is applied.             |
-| operatorType1  | string  | query                        | First comparison operator (e.g., `LessOrEqual`, `Equal`).                  |
-| criteria1      | string  | query                        | First filter value or expression.                                          |
-| isAnd          | boolean | query                        | If `true`, combines the two criteria with **AND**; otherwise **OR**.       |
-| operatorType2  | string  | query                        | Second comparison operator (optional).                                     |
-| criteria2      | string  | query                        | Second filter value or expression (optional).                              |
-| matchBlanks    | boolean | query                        | When `true`, blanks are included in the filter results.                    |
-| refresh        | boolean | query                        | If `true`, forces the worksheet to refresh after applying the filter.      |
-| folder         | string  | query                        | Folder path in storage where the file is located.                          |
-| storageName    | string  | query                        | Name of the storage service.                                                |
+| Parameter Name | Type    | Location | Description                                                           |
+| -------------- | ------- | -------- | --------------------------------------------------------------------- |
+| name           | string  | path     | Name of the Excel file.                                               |
+| sheetName      | string  | path     | Name of the worksheet that contains the data to be filtered.          |
+| range          | string  | query    | Cell range that the filter will be applied to (e.g., `A1:B1`).        |
+| fieldIndex     | integer | query    | Zero‑based index of the column on which the filter is applied.        |
+| operatorType1  | string  | query    | First comparison operator (e.g., `LessOrEqual`, `Equal`).             |
+| criteria1      | string  | query    | First filter value or expression.                                     |
+| isAnd          | boolean | query    | If `true`, combines the two criteria with **AND**; otherwise **OR**.  |
+| operatorType2  | string  | query    | Second comparison operator (optional).                                |
+| criteria2      | string  | query    | Second filter value or expression (optional).                         |
+| matchBlanks    | boolean | query    | When `true`, blanks are included in the filter results.               |
+| refresh        | boolean | query    | If `true`, forces the worksheet to refresh after applying the filter. |
+| folder         | string  | query    | Folder path in storage where the file is located.                     |
+| storageName    | string  | query    | Name of the storage service.                                          |
 
 ### **Response**
 
 ```json
 {
-    "Status":"OK",
-    "Code":200
+  "Status": "OK",
+  "Code": 200
 }
 ```
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## How to Use the PutWorksheetCustomFilter API with SDKs
 
 ### PutWorksheetCustomFilter API Specification
@@ -93,7 +95,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFi
 {{< /tab >}}
 
 {{< /tabs >}}
-
 
 ### Use Aspose.Cells Cloud SDKs
 

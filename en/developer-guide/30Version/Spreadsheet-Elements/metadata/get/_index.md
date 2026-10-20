@@ -1,6 +1,6 @@
 ---
 title: "Get metadata from Excel files"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Get without using storage"
 type: docs
 url: /metadata/get/
@@ -58,13 +58,13 @@ POST https://api.aspose.cloud/v3.0/cells/metadata/get
 ]
 ```
 
-| Code | Meaning                 | When                              |
-|------|-------------------------|-----------------------------------|
-| 200  | Success                 | Metadata returned.                |
-| 400  | Bad Request             | Missing file or invalid query.    |
-| 401  | Unauthorized            | Invalid or missing token.         |
-| 404  | Not Found               | Specified file not found.         |
-| 500  | Internal Server Error   | Unexpected server failure.        |
+| Code | Meaning               | When                           |
+| ---- | --------------------- | ------------------------------ |
+| 200  | Success               | Metadata returned.             |
+| 400  | Bad Request           | Missing file or invalid query. |
+| 401  | Unauthorized          | Invalid or missing token.      |
+| 404  | Not Found             | Specified file not found.      |
+| 500  | Internal Server Error | Unexpected server failure.     |
 
 The API returns these standard HTTP status codes together with an error‑response JSON object when applicable.
 

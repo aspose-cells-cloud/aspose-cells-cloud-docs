@@ -1,6 +1,6 @@
 ---
 title: "Update Worksheet Properties – Aspose.Cells Cloud API Reference (v3.0)"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Update"
 type: docs
 url: /worksheets/update-properties/

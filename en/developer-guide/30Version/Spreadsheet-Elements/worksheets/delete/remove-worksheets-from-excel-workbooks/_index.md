@@ -1,6 +1,6 @@
 ---
 title: "Delete Worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "One worksheet"
 type: docs
 url: /worksheets/delete-worksheet/

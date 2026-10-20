@@ -1,6 +1,6 @@
 ---
 title: "Delete metadata from Excel files"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Delete without using storage"
 type: docs
 url: /metadata/delete/
@@ -13,9 +13,10 @@ ArticleTitle: "Delete metadata from Excel files – Aspose.Cells Cloud Documenta
 **Overview**  
 The Delete Metadata operation permanently removes all workbook properties (standard and custom) from the uploaded Excel file(s) and returns the processed file(s) in the response.
 
-**Prerequisites**  
-- A valid Aspose.Cells Cloud JWT token (obtainable via the OAuth 2.0 authentication flow).  
-- API version **v3.0** (the endpoint used in this example).  
+**Prerequisites**
+
+- A valid Aspose.Cells Cloud JWT token (obtainable via the OAuth 2.0 authentication flow).
+- API version **v3.0** (the endpoint used in this example).
 - For SDK usage, install the appropriate Aspose.Cells Cloud SDK for your language (e.g., via NuGet, Maven, npm, pip, CPAN, or Go modules).
 
 This REST API deletes **metadata** from one or more Excel files. It removes workbook properties such as author, title, and custom data, and returns the cleaned files.
@@ -80,12 +81,12 @@ curl -v "https://api.aspose.cloud/v3.0/cells/metadata/delete?type=all" \
 
 The API returns a JSON object containing an `Error` field with details for each case.
 
-| Code | Meaning | Description |
-|------|---------|-------------|
-| 200 | OK | Metadata deleted, file returned |
-| 400 | Bad Request | Missing file or invalid `type` |
-| 401 | Unauthorized | Invalid or missing JWT |
-| 500 | Internal Server Error | Server processing failure |
+| Code | Meaning               | Description                     |
+| ---- | --------------------- | ------------------------------- |
+| 200  | OK                    | Metadata deleted, file returned |
+| 400  | Bad Request           | Missing file or invalid `type`  |
+| 401  | Unauthorized          | Invalid or missing JWT          |
+| 500  | Internal Server Error | Server processing failure       |
 
 ## Cloud SDK Family
 

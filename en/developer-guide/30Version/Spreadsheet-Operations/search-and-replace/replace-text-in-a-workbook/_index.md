@@ -1,6 +1,6 @@
 ---
 title: "Replace text in an Excel workbook"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Replace in workbook"
 type: docs
 url: /workbook/replace-text/
@@ -17,6 +17,7 @@ This REST API replaces text in an Excel workbook.
 ```bash
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/replaceText
 ```
+
 ### **Security and Authentication**
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
@@ -36,9 +37,9 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ```json
 {
-    "Status":"OK",
-    "Code":200,
-      "Workbook": {
+  "Status": "OK",
+  "Code": 200,
+  "Workbook": {
     "FileName": "test.xlsx",
     "Links": [
       {
@@ -152,13 +153,14 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## How to Use the PostReplace API with SDKs
 
 ### PostReplace API Specification

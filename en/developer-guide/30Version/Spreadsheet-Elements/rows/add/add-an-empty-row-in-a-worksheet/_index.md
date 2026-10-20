@@ -1,7 +1,7 @@
 ---
 title: "Add an empty row on an Excel worksheet"
 ArticleTitle: "Add an empty row to an Excel worksheet using Aspose.Cells Cloud API"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Row"
 type: docs
 url: /rows/add/row/

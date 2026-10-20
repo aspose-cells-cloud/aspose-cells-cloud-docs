@@ -1,6 +1,6 @@
 ---
 title: "Update a shape on an Excel worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Update"
 type: docs
 url: /shapes/update/
@@ -57,7 +57,7 @@ The `dto` object contains the properties that can be updated. All fields are opt
 
 - `Content-Type: application/json`
 - `Accept: application/json`
-- `Authorization: Bearer <accessToken>` _(the JWT token from the _Authentication_ step)_
+- `Authorization: Bearer <accessToken>` _(the JWT token from the \_Authentication_ step)\_
 
 ### Request body (example)
 
@@ -119,7 +119,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes
 
 **Example error responses**
 
-*400 – Bad Request*
+_400 – Bad Request_
 
 ```json
 {
@@ -128,7 +128,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes
 }
 ```
 
-*401 – Unauthorized*
+_401 – Unauthorized_
 
 ```json
 {
@@ -137,7 +137,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes
 }
 ```
 
-*404 – Not Found*
+_404 – Not Found_
 
 ```json
 {
@@ -146,7 +146,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes
 }
 ```
 
-*500 – Internal Server Error*
+_500 – Internal Server Error_
 
 ```json
 {

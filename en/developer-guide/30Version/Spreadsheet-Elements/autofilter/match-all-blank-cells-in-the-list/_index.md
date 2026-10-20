@@ -1,7 +1,7 @@
 ---
 title: "Match all blank cells in an Excel worksheet"
 ArticleTitle: "Match all blank cells in an Excel worksheet – Aspose.Cells Cloud API Guide"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Match all blank cells"
 type: docs
 url: /autofilter/match-all-blank/

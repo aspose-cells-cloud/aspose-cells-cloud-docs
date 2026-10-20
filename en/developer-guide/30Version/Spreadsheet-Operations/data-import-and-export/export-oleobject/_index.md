@@ -1,6 +1,6 @@
 ---
 title: "Export OLE Object – Aspose.Cells Cloud API"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "OLE Object"
 type: docs
 url: /export-excel-ole-object/

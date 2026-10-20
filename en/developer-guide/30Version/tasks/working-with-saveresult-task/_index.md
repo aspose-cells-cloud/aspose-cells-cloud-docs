@@ -1,6 +1,6 @@
 ---
 title: "Working with SaveResult Task"
-second_title: "Document"
+second_title: "Developer Guide"
 type: docs
 url: /tasks/save-result/
 aliases: [/working-with-saveresult-task/]
@@ -11,9 +11,9 @@ weight: 50
 
 ## REST API
 
-| **API** | **Type** | **Description** | **Resource Link** |
-| :- | :- | :- | :- |
-| /cells/task/runtask | POST | Run Task | [PostRunTask](https://apireference.aspose.cloud/cells/#/Task/PostRunTask) |
+| **API**             | **Type** | **Description** | **Resource Link**                                                         |
+| :------------------ | :------- | :-------------- | :------------------------------------------------------------------------ |
+| /cells/task/runtask | POST     | Run Task        | [PostRunTask](https://apireference.aspose.cloud/cells/#/Task/PostRunTask) |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Task/PostRunTask) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -101,6 +101,7 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{< tabs tabTotal="1" tabID="4" tabName1="Java" >}}
 
 {{< tab tabNum="1" >}}
+
 ```java
 var xml = @"
 <TaskData>
@@ -148,6 +149,7 @@ using (HttpWebResponse response = helper.CallPost("http://api.aspose.com/v3.0/ce
     }
 }
 ```
+
 {{< /tab >}}
 
 {{< /tabs >}}

@@ -1,6 +1,6 @@
 ---
 title: "Delete a Picture from an Excel Worksheet – Aspose.Cells Cloud API"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Delete"
 type: docs
 url: /pictures/delete/
@@ -60,11 +60,11 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/picture
 
 **Sample Response Headers**
 
-| Header        | Value                         |
-|---------------|------------------------------|
-| Content-Type  | application/json             |
-| Content-Length| (varies)                     |
-| Date          | (server date)                |
+| Header         | Value            |
+| -------------- | ---------------- |
+| Content-Type   | application/json |
+| Content-Length | (varies)         |
+| Date           | (server date)    |
 
 {{< /tab >}}
 

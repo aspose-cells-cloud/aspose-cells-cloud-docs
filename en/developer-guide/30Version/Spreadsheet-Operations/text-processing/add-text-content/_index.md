@@ -1,6 +1,6 @@
 ---
 title: "Add Text to Excel: Efficiently Insert Data with Spreadsheet Web API"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Add Text"
 type: docs
 url: /excel-add-text/

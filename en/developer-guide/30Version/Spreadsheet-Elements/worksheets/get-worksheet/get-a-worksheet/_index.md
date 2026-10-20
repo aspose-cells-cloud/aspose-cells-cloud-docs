@@ -1,6 +1,6 @@
 ---
 title: "Export a Worksheet with Aspose.Cells Cloud API – Formats, cURL & SDK Samples"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Worksheet Export"
 type: docs
 url: /worksheets/get-worksheet/

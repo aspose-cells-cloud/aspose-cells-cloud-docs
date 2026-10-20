@@ -1,6 +1,6 @@
 ---
 title: "Export Shapes"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Shape"
 type: docs
 url: /export-excel-shape-to-different-formats/

@@ -1,6 +1,6 @@
 ---
 title: "Convert Excel to PPTX using Aspose.Cells Cloud API v3.0"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Excel to PPTX"
 type: docs
 url: /convert-excel-file-to-pptx-file/
@@ -63,18 +63,17 @@ The API returns a **FileInfo** object that contains the generated pptx file.
 
 [FileInfo](/cells/file-info/)
 
-
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
 
-*Notes:* The endpoint supports common Excel formats (`.xlsx`, `.xls`, `.xlsm`). The maximum file size is limited to 50 MB. Conversion may be restricted for workbooks containing macros or protected sheets unless the appropriate parameters are supplied.
+_Notes:_ The endpoint supports common Excel formats (`.xlsx`, `.xls`, `.xlsm`). The maximum file size is limited to 50 MB. Conversion may be restricted for workbooks containing macros or protected sheets unless the appropriate parameters are supplied.
 
 ## How to Use the PostConvertWorkbookToPptx API with SDKs
 

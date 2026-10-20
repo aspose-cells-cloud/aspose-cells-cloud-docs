@@ -1,6 +1,6 @@
 ---
 title: "Get rows information from an Excel worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Rows"
 type: docs
 url: /rows/get/rows/

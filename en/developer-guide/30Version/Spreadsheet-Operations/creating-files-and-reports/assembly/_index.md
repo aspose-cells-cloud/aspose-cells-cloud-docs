@@ -1,6 +1,6 @@
 ---
 title: "Assembling Data for the Creation of an Excel Report"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Assembly Data"
 type: docs
 url: /assembly-data-for-the-creation-of-an-excel-report/
@@ -24,7 +24,6 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-
 | Parameter Name | Type   | Location                  | Description                                                            |
 | -------------- | ------ | ------------------------- | ---------------------------------------------------------------------- |
 | file           | file   | formData (multipart body) | The spreadsheet file to upload.                                        |
@@ -45,13 +44,14 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## How to Use the PostAssemble API with SDKs
 
 ### PostAssemble API Specification

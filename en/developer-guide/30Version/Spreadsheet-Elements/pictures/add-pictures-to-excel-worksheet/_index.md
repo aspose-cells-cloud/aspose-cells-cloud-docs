@@ -1,6 +1,6 @@
 ---
 title: "Add a Picture in an Excel File"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Add"
 type: docs
 url: /pictures/add/

@@ -1,6 +1,6 @@
 ---
 title: "Excel to SQL"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Excel to SQL"
 type: docs
 url: /convert-excel-file-to-sql-file/

@@ -1,7 +1,7 @@
 ---
 title: "Remove Duplicate Substrings In Remote Spreadsheet"
 ArticleTitle: "Remove Duplicate Substrings In Remote Spreadsheet – Aspose.Cells Cloud API"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Remove Duplicate Substrings In Remote Spreadsheet"
 type: docs
 url: /{name}/worksheets/{worksheet}/range/{range}/content/remove/duplicate-substrings

@@ -1,7 +1,7 @@
 ---
 title: "Search Spreadsheet All Text Items"
 ArticleTitle: "Search Spreadsheet All Text Items – Aspose.Cells Cloud API"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Search Spreadsheet All Text Items"
 type: docs
 url: /search/content/all-textitems

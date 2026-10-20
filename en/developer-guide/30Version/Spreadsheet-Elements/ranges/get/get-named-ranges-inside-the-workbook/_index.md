@@ -1,6 +1,6 @@
 ---
 title: "Get Named Ranges on an Excel Workbook"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Name"
 type: docs
 url: /ranges/get/name/

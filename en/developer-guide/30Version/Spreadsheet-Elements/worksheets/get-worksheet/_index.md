@@ -1,6 +1,6 @@
 ---
 title: "How to get different content from an Excel worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Get"
 type: docs
 url: /worksheets/get/

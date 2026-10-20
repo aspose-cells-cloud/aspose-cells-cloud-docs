@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud Remove Characters Web API – Delete Custom Characters & Substrings from Excel (Online Short‑Code)"
-second_title: "Document"
+second_title: "Developer Guide"
 ArticleTitle: "Excel Text Cleaner – Delete Characters & Substrings from Selected Range"
 linktitle: "Remove Characters"
 type: docs

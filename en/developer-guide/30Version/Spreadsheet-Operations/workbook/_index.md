@@ -1,6 +1,6 @@
 ---
 title: "Working with Excel files: Formula Calculation, Auto-fit, Clear Objects, etc."
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Excel Common Operations"
 type: docs
 url: /workbook/

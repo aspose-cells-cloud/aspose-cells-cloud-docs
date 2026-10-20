@@ -4,13 +4,9 @@ title: "Aspose.Cells Cloud AI – Decompose User Task API (v4.0) | SMART Task Pl
 ArticleTitle: "Decompose User Task API"
 linktitle: "Decompose User Task"
 type: docs
-date: 2024-06-10
-lastmod: 2024-06-10
 description: "Use Aspose.Cells Cloud AI’s REST API to decompose user objectives into SMART-compliant, time-estimated action plans. Export results as CSV/XLSX for direct import into Redmine, Jira, Azure DevOps, and more. Includes SDK examples and regional formatting support."
 keywords: "Aspose.Cells AI, REST API, task decomposition, SMART task planning, Redmine import, project automation, task breakdown, time estimation"
 weight: 100
-robots: index, follow
-canonical: https://docs.aspose.cloud/cells/decompose-user-task/
 ---
 
 ## Overview

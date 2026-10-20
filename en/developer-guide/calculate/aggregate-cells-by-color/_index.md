@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud Web API – Sum and Count by Color in Excel"
-second_title: "Document"
+second_title: "Developer Guide"
 ArticleTitle: "Sum, Count, Average, Max, Min Values by Color in Spreadsheet/Excel"
 LinkTitle: "Aggregate Cells by Color"
 type: docs

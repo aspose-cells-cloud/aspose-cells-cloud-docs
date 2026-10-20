@@ -1,6 +1,6 @@
 ---
 title: "How to work with deleting worksheets in an Excel workbook"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Delete"
 type: docs
 url: /worksheets/delete/

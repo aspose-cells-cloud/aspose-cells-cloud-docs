@@ -1,6 +1,6 @@
 ---
 title: "Working with Excel PivotTables"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "PivotTables"
 type: docs
 url: /pivottables/

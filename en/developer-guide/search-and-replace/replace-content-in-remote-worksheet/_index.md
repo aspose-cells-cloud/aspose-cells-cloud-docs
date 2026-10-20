@@ -1,6 +1,6 @@
 ---
 title: "Replace Text in Remote Excel Worksheet | Aspose.Cells Cloud API"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Replace Content in Remote Worksheet"
 url: /replace-content-in-remote-worksheet/
 keywords: "Aspose.Cells, replace text, remote worksheet, Excel API, cloud spreadsheet, find and replace, REST API"

@@ -1,6 +1,6 @@
 ---
 title: "Update Cell Style for Pivot Table"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: Format
 type: docs
 url: /pivot-tables/format/
@@ -45,7 +45,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | needReCalculate | boolean | query    | Indicates whether the pivot table should be recalculated after styling. The default value is **false**. |
 | folder          | string  | query    | Folder where the document is stored (optional).                                                         |
 | storageName     | string  | query    | Name of the storage (optional).                                                                         |
-| Method          | string  | N/A      | HTTP method used for the request (**POST**).                                                             |
+| Method          | string  | N/A      | HTTP method used for the request (**POST**).                                                            |
 
 The <a href="https://apireference.aspose.cloud/cells/#/PivotTables/PostPivotTableCellStyle" target="_blank" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -82,13 +82,13 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/work
 **Response**  
 On success the service returns HTTP 200 with an empty body indicating that the style has been applied. In case of an error, a JSON payload with an error code and message is returned.
 
-| HTTP Status | Description                                    |
-|------------|------------------------------------------------|
-| 200        | Style applied successfully.                    |
-| 400        | Bad request – e.g., invalid column/row index.  |
-| 401        | Unauthorized – missing or invalid JWT token.   |
-| 404        | Not found – specified document, worksheet, or pivot table does not exist. |
-| 500        | Internal server error – unexpected condition.  |
+| HTTP Status | Description                                                               |
+| ----------- | ------------------------------------------------------------------------- |
+| 200         | Style applied successfully.                                               |
+| 400         | Bad request – e.g., invalid column/row index.                             |
+| 401         | Unauthorized – missing or invalid JWT token.                              |
+| 404         | Not found – specified document, worksheet, or pivot table does not exist. |
+| 500         | Internal server error – unexpected condition.                             |
 
 The response body is empty on success.
 

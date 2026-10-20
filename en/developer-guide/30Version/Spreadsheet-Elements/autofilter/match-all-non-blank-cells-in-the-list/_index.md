@@ -1,6 +1,6 @@
 ---
 title: "Match all non‑blank cells in an Excel worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Match all non‑blank cells"
 type: docs
 url: /autofilter/match-all-non-blank/

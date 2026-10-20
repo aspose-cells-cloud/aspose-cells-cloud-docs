@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud – Merge, Split & Import Spreadsheet Data"
-second_title: "Document"
+second_title: "Developer Guide"
 ArticleTitle: "Spreadsheet Data Processing – Merge, Split & Import"
 linktitle: "Data Processing"
 type: docs
@@ -16,16 +16,16 @@ The **Data Processing** section of Aspose.Cells Cloud API enables you to import,
 
 ## Data Import and Management
 
-- **[Import CSV, JSON, XML data into Excel files](https://docs.aspose.cloud/cells/import-data-into-spreadsheet/)**  
+- **[Import CSV, JSON, XML data into Excel files](https://docs.aspose.cloud/cells/import-data-into-spreadsheet/)**
 
 The import operation accepts CSV, JSON, or XML payloads and creates a new worksheet (or updates an existing one) in the target workbook.
 
 **Endpoint details**
 
-| HTTP Method | Endpoint | Request Body | Success Response |
-|-------------|----------|--------------|------------------|
-| POST | `https://api.aspose.cloud/v3.0/cells/{fileName}/import` | `application/json` or `text/csv` (depending on format) | `200 OK` with JSON containing the updated workbook metadata |
-| GET | `https://api.aspose.cloud/v3.0/cells/{fileName}?format=excel` | *none* | Returns the processed workbook file |
+| HTTP Method | Endpoint                                                      | Request Body                                           | Success Response                                            |
+| ----------- | ------------------------------------------------------------- | ------------------------------------------------------ | ----------------------------------------------------------- |
+| POST        | `https://api.aspose.cloud/v3.0/cells/{fileName}/import`       | `application/json` or `text/csv` (depending on format) | `200 OK` with JSON containing the updated workbook metadata |
+| GET         | `https://api.aspose.cloud/v3.0/cells/{fileName}?format=excel` | _none_                                                 | Returns the processed workbook file                         |
 
 **Sample cURL request (CSV import)**
 
@@ -55,16 +55,16 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/MyWorkbook.xlsx/import" \
 
 - **[Merge Remote Excel Files into Specified Workbook](https://docs.aspose.cloud/cells/merge-remote-spreadsheet/)**
 - **[Merge Multiple Excel Files into a Single Workbook](https://docs.aspose.cloud/cells/merge-spreadsheets/)**
-- **[Merge Excel files that match in a remote folder](https://docs.aspose.cloud/cells/merge-spreadsheets-in-remote-folder/)**  
+- **[Merge Excel files that match in a remote folder](https://docs.aspose.cloud/cells/merge-spreadsheets-in-remote-folder/)**
 
 Merging combines two or more workbooks into a single target workbook. The API supports both explicit file lists and pattern‑based merges within a storage folder.
 
 **Endpoint details**
 
-| HTTP Method | Endpoint | Parameters | Success Response |
-|-------------|----------|------------|------------------|
-| POST | `https://api.aspose.cloud/v3.0/cells/merge` | `files` (array of file names), `target` (optional target workbook name) | `200 OK` with JSON describing the merged workbook |
-| POST | `https://api.aspose.cloud/v3.0/cells/merge/remote` | `sourceFolder`, `pattern`, `target` | `200 OK` with merged workbook metadata |
+| HTTP Method | Endpoint                                           | Parameters                                                              | Success Response                                  |
+| ----------- | -------------------------------------------------- | ----------------------------------------------------------------------- | ------------------------------------------------- |
+| POST        | `https://api.aspose.cloud/v3.0/cells/merge`        | `files` (array of file names), `target` (optional target workbook name) | `200 OK` with JSON describing the merged workbook |
+| POST        | `https://api.aspose.cloud/v3.0/cells/merge/remote` | `sourceFolder`, `pattern`, `target`                                     | `200 OK` with merged workbook metadata            |
 
 **Sample cURL request (merge explicit list)**
 
@@ -96,16 +96,16 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/merge" \
 ## File Splitting Operation
 
 - **[Split an Excel file into multiple files based on worksheets](https://docs.aspose.cloud/cells/split-remote-spreadsheet/)**
-- **[Split Excel File According to Custom Rules](https://docs.aspose.cloud/cells/split-spreadsheet/)**  
+- **[Split Excel File According to Custom Rules](https://docs.aspose.cloud/cells/split-spreadsheet/)**
 
 Splitting extracts individual worksheets or groups of rows/columns into separate workbook files.
 
 **Endpoint details**
 
-| HTTP Method | Endpoint | Parameters | Success Response |
-|-------------|----------|------------|------------------|
-| POST | `https://api.aspose.cloud/v3.0/cells/{fileName}/split` | `splitBy` (e.g., `worksheet`), `outputFolder` | `200 OK` with list of generated file URLs |
-| POST | `https://api.aspose.cloud/v3.0/cells/{fileName}/split/custom` | Custom rule JSON (page size, row range, etc.) | `200 OK` with details of split files |
+| HTTP Method | Endpoint                                                      | Parameters                                    | Success Response                          |
+| ----------- | ------------------------------------------------------------- | --------------------------------------------- | ----------------------------------------- |
+| POST        | `https://api.aspose.cloud/v3.0/cells/{fileName}/split`        | `splitBy` (e.g., `worksheet`), `outputFolder` | `200 OK` with list of generated file URLs |
+| POST        | `https://api.aspose.cloud/v3.0/cells/{fileName}/split/custom` | Custom rule JSON (page size, row range, etc.) | `200 OK` with details of split files      |
 
 **Sample cURL request (split by worksheet)**
 
@@ -126,8 +126,14 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/BigReport.xlsx/split" \
   "Code": 200,
   "Status": "OK",
   "Splits": [
-    {"FileName": "BigReport_Sheet1.xlsx", "Url": "https://storage.aspose.cloud/..."},
-    {"FileName": "BigReport_Sheet2.xlsx", "Url": "https://storage.aspose.cloud/..."}
+    {
+      "FileName": "BigReport_Sheet1.xlsx",
+      "Url": "https://storage.aspose.cloud/..."
+    },
+    {
+      "FileName": "BigReport_Sheet2.xlsx",
+      "Url": "https://storage.aspose.cloud/..."
+    }
   ]
 }
 ```

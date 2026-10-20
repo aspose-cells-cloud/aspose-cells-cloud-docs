@@ -1,7 +1,7 @@
 ---
 title: "GetMergedCellsInWorksheet"
 ArticleTitle: "Get Merged Cells in Worksheet – Aspose.Cells Cloud API"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Get Merged Cells In Worksheet"
 type: docs
 url: /spreadsheet/merged-cells

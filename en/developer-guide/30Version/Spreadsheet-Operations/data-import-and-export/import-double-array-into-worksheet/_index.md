@@ -1,6 +1,6 @@
 ---
 title: "Import Double Array into Excel Worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Import double array"
 type: docs
 url: /import-double-array-into-excel-worksheet/

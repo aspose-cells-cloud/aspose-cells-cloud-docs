@@ -5,9 +5,6 @@ type: docs
 url: /copy-folder/
 description: "Automate Excel folder backups and reorganization in the cloud using Aspose.Cells Cloud’s CopyFolder REST API. Includes full API reference, cURL examples, and SDK code snippets in 8 languages."
 keywords: "copy folder, Aspose.Cells Cloud, REST API, cloud storage, spreadsheet management, folder duplication"
-date: 2024-03-15
-lastmod: 2024-06-15
-robots: index, follow
 weight: 100
 ---
 

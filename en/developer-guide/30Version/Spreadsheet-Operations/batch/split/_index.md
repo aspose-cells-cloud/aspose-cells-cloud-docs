@@ -1,6 +1,6 @@
 ---
 title: "Batch Split"
-second_title: "Document"
+second_title: "Developer Guide"
 type: docs
 url: /batch/split
 keywords: "Batch Split, Aspose.Cells Cloud, REST API, Excel, PDF, CSV, JSON, Spreadsheet, Cloud SDK"

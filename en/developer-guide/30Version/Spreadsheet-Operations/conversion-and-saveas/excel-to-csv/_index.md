@@ -1,6 +1,6 @@
 ---
 title: "Excel to CSV"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Excel to CSV"
 type: docs
 url: convert-excel-file-to-CSV-file/
@@ -25,7 +25,6 @@ POST https://api.aspose.cloud/v3.0/cells/convert/csv
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-
 ### Query Parameters
 
 | Parameter Name          | Type   | Description                                                                           |
@@ -44,24 +43,24 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 The API returns a **FileInfo** object that contains the generated CSV file.
 
-| Field           | Type   | Description                                   |
-| --------------- | ------ | --------------------------------------------- |
+| Field           | Type   | Description                                 |
+| --------------- | ------ | ------------------------------------------- |
 | **Filename**    | string | Name of the CSV file (e.g., `example.csv`). |
-| **FileSize**    | int    | Size of the file in bytes.                    |
-| **FileContent** | string | Base64‑encoded content of the CSV file.      |
+| **FileSize**    | int    | Size of the file in bytes.                  |
+| **FileContent** | string | Base64‑encoded content of the CSV file.     |
 
 [FileInfo](/cells/file-info/)
 
-
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## How to Use the PostConvertWorkbookToCSV API with SDKs
 
 ### PostConvertWorkbookToCSV API Specification

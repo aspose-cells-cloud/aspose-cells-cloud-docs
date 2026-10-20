@@ -1,6 +1,6 @@
 ---
 title: "Add an OLE object in an Excel worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Add OLE object"
 type: docs
 url: /oleobjects/add/

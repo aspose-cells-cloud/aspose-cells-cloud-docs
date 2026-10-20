@@ -1,12 +1,11 @@
 ---
-title: "Download File API (v4.0)"
+title: "Download File API"
+second_title: "Developer Guide"
 linktitle: "Download File API"
 type: docs
 url: /download-file/
 keywords: "Aspose.Cells, Download File API, Excel cloud storage, REST API, file download, PDF, CSV, SDK"
 description: "Download files (Excel, PDF, CSV) from Aspose.Cells Cloud storage via REST API. Includes cURL & SDK examples (C#, Java, Python, etc.), authentication, and response handling."
-date: 2024-05-10
-lastmod: 2024-06-14
 weight: 100
 ---
 

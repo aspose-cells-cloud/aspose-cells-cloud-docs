@@ -1,7 +1,7 @@
 ---
 title: "Remove Duplicates"
 ArticleTitle: "Remove Duplicates – Aspose.Cells Cloud API"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Remove Duplicates"
 type: docs
 url: /remove/duplicates

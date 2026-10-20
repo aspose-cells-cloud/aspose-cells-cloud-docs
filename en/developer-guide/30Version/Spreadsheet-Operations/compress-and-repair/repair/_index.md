@@ -1,6 +1,6 @@
 ---
 title: "Repair Excel Files"
-second_title: "Document"
+second_title: "Developer Guide"
 type: docs
 linktitle: "Repair Excel Files"
 url: /repair-excel-files/
@@ -11,7 +11,7 @@ weight: 39
 
 This REST API allows you to **repair** Excel files.
 
-- Repair XLS, XLSX, XLSM, XLSB, ODS and other spreadsheet formats.  
+- Repair XLS, XLSX, XLSM, XLSB, ODS and other spreadsheet formats.
 - Supports uploading multiple files in a single request.
 
 Aspose.Cells Cloud Excel Repair recovers data from corrupt Excel files online without any installation. Corrupted Excel files are problematic because they cannot be opened. You can try the Aspose.Cells Cloud Excel Repair app to recover data from such files.
@@ -19,7 +19,6 @@ Aspose.Cells Cloud Excel Repair recovers data from corrupt Excel files online wi
 ## REST API
 
 The **Repair Excel Files** endpoint repairs corrupted spreadsheet files and returns the repaired content.
-
 
 ```bash
 POST https://api.aspose.cloud/v3.0/cells/repair
@@ -31,10 +30,10 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type   | Location                     | Description |
-|----------------|--------|------------------------------|-------------|
-| file           | file   | formData (multipart)         | File to upload |
-| format         | string | query                        | Desired output format. If omitted (null), the output format defaults to the same format as the input file. |
+| Parameter Name | Type   | Location             | Description                                                                                                |
+| -------------- | ------ | -------------------- | ---------------------------------------------------------------------------------------------------------- |
+| file           | file   | formData (multipart) | File to upload                                                                                             |
+| format         | string | query                | Desired output format. If omitted (null), the output format defaults to the same format as the input file. |
 
 ### **Response**
 
@@ -50,13 +49,14 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## How to Use the PostRepair API with SDKs
 
 ### PostRepair API Specification
@@ -106,9 +106,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/repair" \
 
 On success the service returns HTTP 200 with a JSON payload containing a `Files` array. In error situations the API uses standard HTTP status codes:
 
-- **400 Bad Request** – Invalid parameters or unrecoverable file.  
-- **401 Unauthorized** – Missing or invalid JWT token.  
-- **413 Payload Too Large** – Uploaded file exceeds the allowed size.  
+- **400 Bad Request** – Invalid parameters or unrecoverable file.
+- **401 Unauthorized** – Missing or invalid JWT token.
+- **413 Payload Too Large** – Uploaded file exceeds the allowed size.
 - **500 Internal Server Error** – Unexpected server‑side failure.
 
 ## Cloud SDK Family

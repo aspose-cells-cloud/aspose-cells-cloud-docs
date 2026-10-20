@@ -1,6 +1,6 @@
 ---
 title: "Working with Excel AutoFilter"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "AutoFilter"
 type: docs
 url: /autofilter/

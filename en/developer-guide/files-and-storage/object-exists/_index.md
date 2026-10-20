@@ -1,6 +1,6 @@
 ---
 title: "Object Exists API – Check File/Folder Presence in Aspose.Cells Cloud"
-second_title: "Document"
+second_title: "Developer Guide"
 ArticleTitle: "Object Exists API – Verify File or Folder Presence in Aspose.Cells Cloud"
 linktitle: "Object Exists"
 type: docs

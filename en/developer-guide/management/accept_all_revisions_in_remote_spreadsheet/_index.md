@@ -1,7 +1,7 @@
 ---
 title: "Accept All Revisions In Remote Spreadsheet"
 ArticleTitle: "Accept All Revisions In Remote Spreadsheet – Aspose.Cells Cloud"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Accept All Revisions In Remote Spreadsheet"
 type: docs
 url: /accept-all-revisions

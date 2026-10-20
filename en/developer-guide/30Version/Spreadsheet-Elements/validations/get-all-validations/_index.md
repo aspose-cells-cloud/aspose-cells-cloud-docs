@@ -1,6 +1,6 @@
 ---
 title: "Get All Worksheet Validations from an Excel Worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Get All"
 type: docs
 url: /validations/get-all/

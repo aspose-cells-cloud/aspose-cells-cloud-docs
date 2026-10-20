@@ -1,6 +1,6 @@
 ---
 title: "Delete a shape by index on an Excel worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Delete"
 type: docs
 url: /shapes/delete/

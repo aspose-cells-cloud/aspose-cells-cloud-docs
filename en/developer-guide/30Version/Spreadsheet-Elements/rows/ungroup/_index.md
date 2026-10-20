@@ -1,6 +1,6 @@
 ---
 title: "Ungroup rows on an Excel Worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Ungroup"
 type: docs
 url: /rows/ungroup/

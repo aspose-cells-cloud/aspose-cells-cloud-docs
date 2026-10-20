@@ -1,6 +1,6 @@
 ---
 title: "Working with Excel Ranges"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Range"
 type: docs
 url: /ranges/

@@ -1,6 +1,6 @@
 ---
 title: "Working with Excel Charts"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Charts"
 type: docs
 url: /charts/

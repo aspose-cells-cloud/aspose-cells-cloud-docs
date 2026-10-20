@@ -1,6 +1,6 @@
 ---
 title: "Add a Filter in an Excel Worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Add filter"
 type: docs
 url: /autofilter/add-filter/
@@ -27,36 +27,36 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request parameters
 
-| Parameter Name | Type    | Location | Description |
-|----------------|---------|----------|-------------|
-| name           | string  | Path     | The workbook name. |
-| sheetName      | string  | Path     | The worksheet name. |
-| range          | string  | Query    | The cell range that contains the filter (e.g., `A1:B1`). |
-| fieldIndex     | integer | Query    | Zero‑based index of the column to which the filter is applied. |
-| criteria       | string  | Query    | The filter criteria (e.g., a value or expression). |
+| Parameter Name | Type    | Location | Description                                                            |
+| -------------- | ------- | -------- | ---------------------------------------------------------------------- |
+| name           | string  | Path     | The workbook name.                                                     |
+| sheetName      | string  | Path     | The worksheet name.                                                    |
+| range          | string  | Query    | The cell range that contains the filter (e.g., `A1:B1`).               |
+| fieldIndex     | integer | Query    | Zero‑based index of the column to which the filter is applied.         |
+| criteria       | string  | Query    | The filter criteria (e.g., a value or expression).                     |
 | matchBlanks    | boolean | Query    | Set to `true` to include blank cells in the filter; otherwise `false`. |
 | refresh        | boolean | Query    | Set to `true` to refresh the filter after applying; otherwise `false`. |
-| folder         | string  | Query    | The folder where the original workbook is stored. |
-| storageName    | string  | Query    | The name of the storage service. |
+| folder         | string  | Query    | The folder where the original workbook is stored.                      |
+| storageName    | string  | Query    | The name of the storage service.                                       |
 
 ### **Response**
 
 ```json
 {
-    "Status":"OK",
-    "Code":200
+  "Status": "OK",
+  "Code": 200
 }
 ```
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
 
 ## How to Use the PutWorksheetFilter API with SDKs
 

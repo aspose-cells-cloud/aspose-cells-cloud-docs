@@ -1,6 +1,6 @@
 ---
 title: "Spreadsheet Elements"
-second_title: "Document"
+second_title: "Developer Guide"
 type: docs
 url: /spreadsheet-elements/
 keywords: "Aspose.Cells, Cloud, Excel API, AutoFilter, Charts, PivotTables, Worksheets"

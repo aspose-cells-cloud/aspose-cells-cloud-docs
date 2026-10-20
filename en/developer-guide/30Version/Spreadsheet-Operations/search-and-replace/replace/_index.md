@@ -1,6 +1,6 @@
 ---
 title: Replace Text in Excel Files
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Replace text without using storage"
 type: docs
 url: /replace/
@@ -16,10 +16,11 @@ weight: 80
 Replace specified text with new text in Excel files using Aspose.Cells Cloud REST API. This operation supports multiple files in a single request, optional worksheet targeting, and password-protected workbooks. All API calls require JWT token-based authentication.
 
 {{< figure
-  src="https://docs.aspose.cloud/cells/images/sdk-icon.png"
-  alt="Aspose.Cells Cloud SDK for Excel logo"
-  caption="Aspose.Cells Cloud text replacement workflow"
->}}
+src="https://docs.aspose.cloud/cells/images/sdk-icon.png"
+alt="Aspose.Cells Cloud SDK for Excel logo"
+caption="Aspose.Cells Cloud text replacement workflow"
+
+> }}
 
 ## REST API Endpoint
 
@@ -35,14 +36,14 @@ All Aspose.Cells Cloud APIs require [JWT token-based authentication](https://doc
 
 ## Request Parameters
 
-| Parameter Name          | Type    | Location             | Required | Description                                                                 |
-|-------------------------|---------|----------------------|----------|-----------------------------------------------------------------------------|
-| **file**                | file    | formData (multipart) | Yes      | Excel file(s) to process. Multiple files can be uploaded in one request.   |
-| **text**                | string  | query                | Yes      | Text string to locate and replace.                                          |
-| **newtext**             | string  | query                | Yes      | Replacement text.                                                           |
-| **password**            | string  | query                | No       | Password for protected workbooks (optional).                               |
-| **sheetname**           | string  | query                | No       | Target worksheet name. If omitted, search occurs across all visible sheets.|
-| **checkExcelRestriction**| boolean| query                | No       | Whether to enforce Excel cell modification restrictions. Default: `true`.  |
+| Parameter Name            | Type    | Location             | Required | Description                                                                 |
+| ------------------------- | ------- | -------------------- | -------- | --------------------------------------------------------------------------- |
+| **file**                  | file    | formData (multipart) | Yes      | Excel file(s) to process. Multiple files can be uploaded in one request.    |
+| **text**                  | string  | query                | Yes      | Text string to locate and replace.                                          |
+| **newtext**               | string  | query                | Yes      | Replacement text.                                                           |
+| **password**              | string  | query                | No       | Password for protected workbooks (optional).                                |
+| **sheetname**             | string  | query                | No       | Target worksheet name. If omitted, search occurs across all visible sheets. |
+| **checkExcelRestriction** | boolean | query                | No       | Whether to enforce Excel cell modification restrictions. Default: `true`.   |
 
 ---
 
@@ -66,13 +67,13 @@ The API returns a `FilesResult` object containing the processed files:
 
 **HTTP Status Codes**
 
-| Code | Meaning               | Description                                                                 |
-|------|-----------------------|-----------------------------------------------------------------------------|
-| 200  | OK                    | Replacement completed successfully. Response includes updated file(s).      |
-| 400  | Bad Request           | Missing required parameters, invalid file format, or malformed request.    |
-| 401  | Unauthorized          | Invalid, expired, or missing JWT token.                                     |
-| 413  | Payload Too Large     | Total uploaded file size exceeds the 2 GB limit.                            |
-| 500  | Internal Server Error | Unexpected server-side failure during processing.                           |
+| Code | Meaning               | Description                                                             |
+| ---- | --------------------- | ----------------------------------------------------------------------- |
+| 200  | OK                    | Replacement completed successfully. Response includes updated file(s).  |
+| 400  | Bad Request           | Missing required parameters, invalid file format, or malformed request. |
+| 401  | Unauthorized          | Invalid, expired, or missing JWT token.                                 |
+| 413  | Payload Too Large     | Total uploaded file size exceeds the 2 GB limit.                        |
+| 500  | Internal Server Error | Unexpected server-side failure during processing.                       |
 
 ---
 
@@ -188,15 +189,19 @@ puts "Replaced text in: #{response.files.first.filename}"
 // Aspose.Cells Cloud SDK for Node.js v24.5
 // Example: Replace text in Excel files
 
-import { CellsApi, Configuration } from '@aspose/cells-cloud';
+import { CellsApi, Configuration } from "@aspose/cells-cloud";
 
 const config = new Configuration({
-  clientId: 'your_client_id',
-  clientSecret: 'your_client_secret'
+  clientId: "your_client_id",
+  clientSecret: "your_client_secret",
 });
 const cellsApi = new CellsApi(config);
 
-const response = await cellsApi.postReplace('file1.xlsx', '1', 'aspose.cells.cloud');
+const response = await cellsApi.postReplace(
+  "file1.xlsx",
+  "1",
+  "aspose.cells.cloud",
+);
 console.log(`Replaced text in: ${response.data.files[0].filename}`);
 ```
 
@@ -275,19 +280,19 @@ func main() {
   cfg := client.NewConfiguration()
   cfg.AppKey = "your_client_id"
   cfg.AppSid = "your_client_secret"
-  
+
   api := api.NewCellsApiWithClientConfiguration(cfg)
-  
+
   fileName := "file1.xlsx"
   text := "1"
   newText := "aspose.cells.cloud"
-  
+
   resp, _, err := api.PostReplace(context.Background(), fileName, text, newText, nil, nil, nil)
   if err != nil {
     fmt.Fprintf(os.Stderr, "Error: %v\n", err)
     os.Exit(1)
   }
-  
+
   fmt.Printf("Replaced text in: %s\n", *resp.Files[0].Filename)
 }
 ```

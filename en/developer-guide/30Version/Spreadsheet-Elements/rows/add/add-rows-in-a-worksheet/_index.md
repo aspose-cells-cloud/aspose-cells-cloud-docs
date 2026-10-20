@@ -1,7 +1,7 @@
 ---
 title: "Add multiple rows to an Excel worksheet"
 ArticleTitle: "Add multiple rows to an Excel worksheet using Aspose.Cells Cloud API"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Rows"
 type: docs
 url: /rows/add/rows/

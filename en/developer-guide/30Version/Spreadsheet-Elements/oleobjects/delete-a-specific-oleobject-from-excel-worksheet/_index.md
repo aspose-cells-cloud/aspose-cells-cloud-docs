@@ -1,6 +1,6 @@
 ---
 title: "Delete an OLE object in an Excel worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Delete"
 type: docs
 url: /oleobjects/delete/
@@ -14,6 +14,7 @@ ArticleTitle: "Delete OLE Object from Excel Worksheet using Aspose.Cells Cloud A
 This page explains how to delete a specific OLE object from a worksheet in an Excel workbook using **Aspose.Cells Cloud**. An OLE object can be a linked image, chart, or any embedded object that Excel stores as a separate entity.
 
 ## Security and Authentication
+
 The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## REST API

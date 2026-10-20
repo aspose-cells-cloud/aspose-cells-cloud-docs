@@ -1,6 +1,6 @@
 ---
 title: "How to Get Range Content from an Excel Worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Get"
 type: docs
 url: /ranges/get/

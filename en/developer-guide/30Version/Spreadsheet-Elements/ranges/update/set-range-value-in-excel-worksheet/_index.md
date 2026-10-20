@@ -1,6 +1,6 @@
 ---
 title: "Set Range Value in an Excel Worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Set values"
 type: docs
 url: /ranges/update/values/
@@ -13,9 +13,10 @@ ArticleTitle: "Set Range Value in an Excel Worksheet – Aspose.Cells Cloud API"
 
 Use this REST API to set a value in the specified range. When appropriate, the value is converted to another data type and the cell’s number format is reset.
 
-**Prerequisites**  
-- A valid Aspose Cloud account.  
-- A JWT token that includes the `Cells.ReadWrite` scope.  
+**Prerequisites**
+
+- A valid Aspose Cloud account.
+- A JWT token that includes the `Cells.ReadWrite` scope.
 - The workbook must already be uploaded to the target storage location.
 
 ## PostWorksheetCellsRangeValue API
@@ -26,16 +27,16 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/va
 
 The request parameters are:
 
-| Parameter Name | Type    | Location | Description                                                |
-|----------------|---------|----------|------------------------------------------------------------|
-| name           | string  | path     | Workbook name                                              |
-| sheetName      | string  | path     | Worksheet name                                             |
-| value          | string  | query    | Input value                                                |
-| range          | object  | body     | Range object in the worksheet                              |
-| isConverted    | boolean | query    | Indicates whether the input value should be converted      |
-| setStyle       | boolean | query    | Indicates whether to apply style to the target cells       |
-| folder         | string  | query    | Workbook folder                                            |
-| storageName    | string  | query    | Storage name                                               |
+| Parameter Name | Type    | Location | Description                                           |
+| -------------- | ------- | -------- | ----------------------------------------------------- |
+| name           | string  | path     | Workbook name                                         |
+| sheetName      | string  | path     | Worksheet name                                        |
+| value          | string  | query    | Input value                                           |
+| range          | object  | body     | Range object in the worksheet                         |
+| isConverted    | boolean | query    | Indicates whether the input value should be converted |
+| setStyle       | boolean | query    | Indicates whether to apply style to the target cells  |
+| folder         | string  | query    | Workbook folder                                       |
+| storageName    | string  | query    | Storage name                                          |
 
 **Example of the `range` object** that can be sent in the request body:
 
@@ -83,23 +84,23 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/
 
 **Response Schema**
 
-| Field   | Type    | Description                                              |
-|---------|---------|----------------------------------------------------------|
-| Code    | integer | HTTP status code of the operation.                      |
-| Status  | string  | Short description of the result (e.g., "OK").           |
-| Message | string  | Detailed error message when the request fails (optional).|
-| Result  | object  | Additional data returned for successful calls (optional).|
+| Field   | Type    | Description                                               |
+| ------- | ------- | --------------------------------------------------------- |
+| Code    | integer | HTTP status code of the operation.                        |
+| Status  | string  | Short description of the result (e.g., "OK").             |
+| Message | string  | Detailed error message when the request fails (optional). |
+| Result  | object  | Additional data returned for successful calls (optional). |
 
 **Possible HTTP Status Codes**
 
-- **200 OK** – The range value was set successfully.  
-- **400 Bad Request** – Invalid parameters or malformed request body.  
-- **401 Unauthorized** – Missing or invalid JWT token.  
-- **403 Forbidden** – Insufficient permissions for the requested operation.  
-- **404 Not Found** – Specified workbook, worksheet, or range does not exist.  
+- **200 OK** – The range value was set successfully.
+- **400 Bad Request** – Invalid parameters or malformed request body.
+- **401 Unauthorized** – Missing or invalid JWT token.
+- **403 Forbidden** – Insufficient permissions for the requested operation.
+- **404 Not Found** – Specified workbook, worksheet, or range does not exist.
 - **500 Internal Server Error** – Unexpected server error.
 
-*Example error response for a 400 Bad Request:*
+_Example error response for a 400 Bad Request:_
 
 ```json
 {

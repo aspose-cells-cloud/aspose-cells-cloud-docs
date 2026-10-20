@@ -1,6 +1,6 @@
 ---
 title: "Get Vertical Page Breaks"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Get Vertical Page Breaks"
 type: docs
 url: /page-breaks/get-vertical-page-breaks/

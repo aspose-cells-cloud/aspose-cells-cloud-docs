@@ -1,6 +1,6 @@
 ---
 title: "Refresh an Auto Filter in an Excel Worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Refresh auto filter"
 type: docs
 url: /autofilter/refresh/

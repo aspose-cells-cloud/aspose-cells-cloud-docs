@@ -5,7 +5,6 @@ ArticleTitle: "Aspose.Cells Cloud AI – Task Decomposition, Spreadsheet & Text 
 linktitle: "AI"
 type: docs
 url: /ai/
-date: 2024-05-22T08:00:00Z
 keywords: "Aspose.Cells, Cloud AI, Excel translation, task decomposition, REST API, AI translation Excel, task breakdown API"
 description: "Aspose.Cells Cloud AI enables programmatic Excel task decomposition, spreadsheet translation, and text file translation via REST APIs. Includes code samples, request/response specs, and best practices for developers."
 weight: 100

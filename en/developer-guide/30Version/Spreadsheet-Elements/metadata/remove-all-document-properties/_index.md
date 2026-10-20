@@ -1,6 +1,6 @@
 ---
 title: "Remove All Document Properties"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Clear"
 type: docs
 url: /document-properties/clear/

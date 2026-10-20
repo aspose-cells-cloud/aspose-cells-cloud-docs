@@ -1,6 +1,6 @@
 ---
 title: "How to update range content from an Excel worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Update"
 type: docs
 url: /ranges/update/

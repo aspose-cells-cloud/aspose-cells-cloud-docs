@@ -1,6 +1,6 @@
 ---
 title: "Get OLE Object from Excel Worksheet – Aspose.Cells Cloud API"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Get"
 type: docs
 url: /oleobjects/get/

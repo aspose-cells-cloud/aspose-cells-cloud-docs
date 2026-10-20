@@ -1,6 +1,6 @@
 ---
 title: "File Info"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "File Info"
 type: docs
 url: /file-info/
@@ -11,7 +11,6 @@ ArticleTitle: "File Info – Excel File Metadata and Base64 Content (Aspose.Cell
 ---
 
 ## FileInfo Properties
-
 
 | Name            | Type   | Description                                         |
 | --------------- | ------ | --------------------------------------------------- |
@@ -42,6 +41,6 @@ For each error, ensure the authentication token is valid (401), verify the file 
 
 ## See Also
 
-- [Get Workbook](https://docs.aspose.cloud/cells/get-workbook) – retrieve a workbook object and its worksheets.  
-- [Download File](https://docs.aspose.cloud/cells/download-file) – download raw file bytes without Base64 encoding.  
-- [Authentication Overview](https://docs.aspose.cloud/cells/authentication) – how to obtain and use access tokens.  
+- [Get Workbook](https://docs.aspose.cloud/cells/get-workbook) – retrieve a workbook object and its worksheets.
+- [Download File](https://docs.aspose.cloud/cells/download-file) – download raw file bytes without Base64 encoding.
+- [Authentication Overview](https://docs.aspose.cloud/cells/authentication) – how to obtain and use access tokens.

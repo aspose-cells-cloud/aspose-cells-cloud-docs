@@ -1,6 +1,6 @@
 ---
 title: "Sort Data of Range on an Excel Worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Sort"
 type: docs
 url: /worksheets/sort-data/

@@ -1,6 +1,6 @@
 ---
 title: "Create an Empty Excel Workbook"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Empty Workbook"
 type: docs
 url: /create-an-empty-excel-file/

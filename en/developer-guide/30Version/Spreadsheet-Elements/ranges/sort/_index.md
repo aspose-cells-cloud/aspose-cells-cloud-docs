@@ -1,6 +1,6 @@
 ---
 title: Range Sort
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Sort"
 type: docs
 keywords: "Range Sort, Aspose.Cells Cloud, REST API, Spreadsheet, Excel, API"

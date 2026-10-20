@@ -1,6 +1,6 @@
 ---
 title: "Excel Text Processing: Add Text, Remove Characters, Trim Text, Update Word Case, and More"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Text Processing"
 type: docs
 url: /text-processing/

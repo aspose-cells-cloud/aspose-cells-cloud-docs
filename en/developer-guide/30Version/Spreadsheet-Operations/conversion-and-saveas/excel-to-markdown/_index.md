@@ -1,6 +1,6 @@
 ---
 title: "Convert Excel to Markdown"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Excel to Markdown"
 type: docs
 url: /convert-excel-file-to-markdown-file/

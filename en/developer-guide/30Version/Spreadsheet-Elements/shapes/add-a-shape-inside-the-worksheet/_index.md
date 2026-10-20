@@ -1,6 +1,6 @@
 ---
 title: "Add a Shape to an Excel Worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Add"
 type: docs
 url: /shapes/add/
@@ -77,18 +77,18 @@ _The successful response returns the HTTP status code, a textual status, and the
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
 
 Typical error responses include:
 
-- **400 Bad Request** – missing or invalid parameters.  
-- **401 Unauthorized** – invalid or missing JWT token.  
+- **400 Bad Request** – missing or invalid parameters.
+- **401 Unauthorized** – invalid or missing JWT token.
 - **404 Not Found** – the specified worksheet or document does not exist.
 
 Each error is returned as a JSON object containing `Code` and `Message` fields.

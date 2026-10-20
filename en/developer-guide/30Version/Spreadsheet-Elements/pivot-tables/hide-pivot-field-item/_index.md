@@ -1,6 +1,6 @@
 ---
 title: "Hide pivot field item in a pivot table"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: Hide
 type: docs
 url: /pivot-tables/hide-pivot-field-item/
@@ -13,9 +13,9 @@ ArticleTitle: "Hide Pivot Field Item in a Pivot Table – Aspose.Cells Cloud API
 
 Before calling the API, ensure you have:
 
-* A valid **JWT access token** (obtainable via the Aspose Cloud authentication flow).  
-* The target workbook uploaded to your Aspose Cloud storage.  
-* The worksheet and pivot table already created.
+- A valid **JWT access token** (obtainable via the Aspose Cloud authentication flow).
+- The target workbook uploaded to your Aspose Cloud storage.
+- The worksheet and pivot table already created.
 
 These prerequisites prevent authentication errors and “resource not found” responses. The following steps outline the required setup before invoking the API.
 
@@ -48,10 +48,10 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 **Quick reference of required query parameters**
 
-- **pivotFieldType** – type of the field (e.g., `Row`).  
-- **fieldIndex** – zero‑based index of the field to modify.  
-- **itemIndex** – zero‑based index of the item to hide/show.  
-- **isHide** – `true` to hide, `false` to show.  
+- **pivotFieldType** – type of the field (e.g., `Row`).
+- **fieldIndex** – zero‑based index of the field to modify.
+- **itemIndex** – zero‑based index of the item to hide/show.
+- **isHide** – `true` to hide, `false` to show.
 - **needReCalculate** – optional, defaults to `false`.
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PivotTables/PostPivotTableFieldHideItem) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
@@ -87,12 +87,12 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/pivott
 
 **Response details**
 
-| Status Code | Description                                                          |
-| ----------- | -------------------------------------------------------------------- |
-| 200         | The item was hidden successfully.                                   |
-| 400         | Bad request – missing or invalid parameters.                        |
-| 401         | Unauthorized – invalid or missing JWT token.                        |
-| 500         | Server error – the operation could not be completed.                |
+| Status Code | Description                                          |
+| ----------- | ---------------------------------------------------- |
+| 200         | The item was hidden successfully.                    |
+| 400         | Bad request – missing or invalid parameters.         |
+| 401         | Unauthorized – invalid or missing JWT token.         |
+| 500         | Server error – the operation could not be completed. |
 
 **Note:** If the supplied `fieldIndex` or `itemIndex` is out of range, the API returns a **400 Bad Request** response.
 

@@ -1,6 +1,6 @@
 ---
 title: "Convert Workbook Options"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Convert Workbook Options"
 type: docs
 url: /convert-workbook-options/
@@ -27,7 +27,7 @@ ArticleTitle: "Convert Workbook Options – Aspose.Cells Cloud API"
 
 **Prerequisites**
 
-- Obtain a valid OAuth 2.0 access token for Aspose.Cells Cloud.  
+- Obtain a valid OAuth 2.0 access token for Aspose.Cells Cloud.
 - Ensure the source file is accessible via one of the supported `DataSource` types.
 
 **Quick example**
@@ -68,10 +68,10 @@ https://api.aspose.cloud/v3.0/cells/convert
 
 Required headers:
 
-| Header                | Value                              |
-|-----------------------|------------------------------------|
-| `Authorization`       | `Bearer {access_token}`            |
-| `Content-Type`        | `application/json`                |
+| Header          | Value                   |
+| --------------- | ----------------------- |
+| `Authorization` | `Bearer {access_token}` |
+| `Content-Type`  | `application/json`      |
 
 The request body must be a JSON representation of `ConvertWorkbookOptions` (see the example above). All properties are optional unless required by the chosen `ConvertFormat`.
 
@@ -91,21 +91,21 @@ Example of a JSON response for an asynchronous request:
 
 **Status codes**
 
-| Code | Meaning                                 |
-|------|------------------------------------------|
-| 200  | Conversion completed; file returned.     |
+| Code | Meaning                                      |
+| ---- | -------------------------------------------- |
+| 200  | Conversion completed; file returned.         |
 | 202  | Conversion accepted; result available later. |
 | 400  | Bad request – missing or invalid parameters. |
-| 401  | Unauthorized – invalid or missing token. |
-| 403  | Forbidden – insufficient permissions.   |
-| 500  | Internal server error.                   |
+| 401  | Unauthorized – invalid or missing token.     |
+| 403  | Forbidden – insufficient permissions.        |
+| 500  | Internal server error.                       |
 
 **Notes / Limitations**
 
-- The `CheckExcelRestriction` flag enforces Excel limits such as maximum rows (1,048,576) and columns (16,384).  
-- Not all target formats support every `SaveOptions` property; unsupported options are ignored.  
-- When using `HttpUri` as a data source, the URL must be publicly reachable without authentication.  
-- The API method and endpoint information have been added to improve developer clarity and reduce integration errors.  
+- The `CheckExcelRestriction` flag enforces Excel limits such as maximum rows (1,048,576) and columns (16,384).
+- Not all target formats support every `SaveOptions` property; unsupported options are ignored.
+- When using `HttpUri` as a data source, the URL must be publicly reachable without authentication.
+- The API method and endpoint information have been added to improve developer clarity and reduce integration errors.
 
 ## FileSource Properties
 
@@ -177,12 +177,12 @@ Example of a JSON response for an asynchronous request:
 | CachedFileFolder                  | String        | true     | false    |               | Folder used for temporary cached files.               |
 | ClearData                         | Boolean       | true     | false    |               | Clears existing data before saving.                   |
 | CreateDirectory                   | Boolean       | true     | false    |               | Creates the target directory if it does not exist.    |
-| EnableHttpCompression             | Boolean       | true     | false    |               | Enables HTTP compression for the response.           |
-| RefreshChartCache                 | Boolean       | true     | false    |               | Refreshes cached chart data before saving.           |
-| SortNames                         | Boolean       | true     | false    |               | Sorts named ranges alphabetically.                   |
-| ValidateMergedAreas               | Boolean       | true     | false    |               | Validates merged cells for consistency.              |
-| CheckExcelRestriction             | Boolean       | true     | false    |               | Enforces Excel‑specific limits during conversion.    |
-| EncryptDocumentProperties          | Boolean       | true     | false    |               | Encrypts document properties in the output file.      |
+| EnableHttpCompression             | Boolean       | true     | false    |               | Enables HTTP compression for the response.            |
+| RefreshChartCache                 | Boolean       | true     | false    |               | Refreshes cached chart data before saving.            |
+| SortNames                         | Boolean       | true     | false    |               | Sorts named ranges alphabetically.                    |
+| ValidateMergedAreas               | Boolean       | true     | false    |               | Validates merged cells for consistency.               |
+| CheckExcelRestriction             | Boolean       | true     | false    |               | Enforces Excel‑specific limits during conversion.     |
+| EncryptDocumentProperties         | Boolean       | true     | false    |               | Encrypts document properties in the output file.      |
 
 ## HtmlSaveOptions Properties
 

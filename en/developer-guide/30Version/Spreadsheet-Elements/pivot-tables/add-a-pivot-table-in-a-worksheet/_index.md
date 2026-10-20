@@ -1,6 +1,6 @@
 ---
 title: "Add a pivot table in an Excel worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: Add
 type: docs
 url: /pivot-tables/add/
@@ -13,10 +13,11 @@ ArticleTitle: "How to Add a Pivot Table in an Excel Worksheet using Aspose.Cells
 
 This REST API adds a pivot table into a worksheet.
 
-**Prerequisites:**  
-- An Aspose.Cells Cloud account with a valid JWT access token.  
-- The target workbook must be stored in a supported storage location (default storage or a user‑specified storage).  
-- The worksheet specified by `sheetName` must exist in the workbook.  
+**Prerequisites:**
+
+- An Aspose.Cells Cloud account with a valid JWT access token.
+- The target workbook must be stored in a supported storage location (default storage or a user‑specified storage).
+- The worksheet specified by `sheetName` must exist in the workbook.
 
 ## PutWorksheetPivotTable API
 
@@ -78,13 +79,14 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/She
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## Cloud SDK Family
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.

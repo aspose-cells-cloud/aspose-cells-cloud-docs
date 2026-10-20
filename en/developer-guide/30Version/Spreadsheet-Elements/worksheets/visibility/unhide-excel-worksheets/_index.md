@@ -1,6 +1,6 @@
 ---
 title: "Unhide an Excel worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Unhide"
 type: docs
 url: /worksheets/unhide/
@@ -15,9 +15,9 @@ This REST API provides an endpoint to **unhide a worksheet** in an Excel workboo
 **Prerequisites**  
 Before calling this operation you must have:
 
-* A valid Aspose Cloud access token (JWT) included in the `Authorization` header.  
-* The workbook stored in a supported storage location that you specify with the `folder` and `storageName` query parameters.  
-* The workbook must be in a format supported by Aspose.Cells (e.g., `.xls`, `.xlsx`, `.xlsm`).  
+- A valid Aspose Cloud access token (JWT) included in the `Authorization` header.
+- The workbook stored in a supported storage location that you specify with the `folder` and `storageName` query parameters.
+- The workbook must be in a format supported by Aspose.Cells (e.g., `.xls`, `.xlsx`, `.xlsm`).
 
 ## REST API
 
@@ -64,13 +64,13 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/She
 
 **Possible response codes**
 
-| HTTP Code | Meaning                              | Sample Body (when applicable)                               |
-|-----------|--------------------------------------|--------------------------------------------------------------|
-| 200       | Worksheet visibility updated successfully | `{ "Code": 200, "Status": "OK" }`                           |
-| 400       | Bad request – missing or invalid parameters | `{ "Code": 400, "Message": "Invalid request parameters." }` |
-| 401       | Unauthorized – missing or invalid JWT token | `{ "Code": 401, "Message": "Authentication failed." }`      |
-| 404       | Not found – workbook or worksheet does not exist | `{ "Code": 404, "Message": "File or worksheet not found." }` |
-| 500       | Internal server error                | `{ "Code": 500, "Message": "An unexpected error occurred." }` |
+| HTTP Code | Meaning                                          | Sample Body (when applicable)                                 |
+| --------- | ------------------------------------------------ | ------------------------------------------------------------- |
+| 200       | Worksheet visibility updated successfully        | `{ "Code": 200, "Status": "OK" }`                             |
+| 400       | Bad request – missing or invalid parameters      | `{ "Code": 400, "Message": "Invalid request parameters." }`   |
+| 401       | Unauthorized – missing or invalid JWT token      | `{ "Code": 401, "Message": "Authentication failed." }`        |
+| 404       | Not found – workbook or worksheet does not exist | `{ "Code": 404, "Message": "File or worksheet not found." }`  |
+| 500       | Internal server error                            | `{ "Code": 500, "Message": "An unexpected error occurred." }` |
 
 {{< /tab >}}
 

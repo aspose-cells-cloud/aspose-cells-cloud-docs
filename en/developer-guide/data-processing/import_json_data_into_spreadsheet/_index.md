@@ -1,7 +1,7 @@
 ---
 title: "Import JSON Data Into Spreadsheet"
 ArticleTitle: "Import JSON Data Into Spreadsheet – Aspose.Cells Cloud API"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Import JSON Data Into Spreadsheet"
 type: docs
 url: /import/data/json

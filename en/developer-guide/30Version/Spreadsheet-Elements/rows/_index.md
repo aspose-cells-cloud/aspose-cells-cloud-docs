@@ -1,7 +1,7 @@
 ---
 title: "Working with Excel Rows – Aspose.Cells Cloud API"
 ArticleTitle: "Working with Excel Rows – Aspose.Cells Cloud API"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Rows"
 type: docs
 url: /rows/

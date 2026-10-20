@@ -1,6 +1,6 @@
 ---
 title: "Worksheet Page Setup"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Page setup"
 type: docs
 url: /page-setup/

@@ -1,21 +1,21 @@
----  
-title: "ImportData Task – Aspose.Cells Cloud API Reference & cURL Examples"  
-second_title: "Document"  
-type: docs  
-url: /tasks/importdata/  
-aliases: [/working-with-importdata-task/]  
-keywords: "Aspose.Cells, ImportData Task, Excel API, REST, cURL, SDK"  
-description: "Learn how to import batch data into Excel workbooks using Aspose.Cells Cloud ImportData Task. Includes cURL syntax, request schema, SDK samples (C#, PHP, Ruby, Node.js) and error handling."  
-weight: 40  
----  
+---
+title: "ImportData Task – Aspose.Cells Cloud API Reference & cURL Examples"
+second_title: "Developer Guide"
+type: docs
+url: /tasks/importdata/
+aliases: [/working-with-importdata-task/]
+keywords: "Aspose.Cells, ImportData Task, Excel API, REST, cURL, SDK"
+description: "Learn how to import batch data into Excel workbooks using Aspose.Cells Cloud ImportData Task. Includes cURL syntax, request schema, SDK samples (C#, PHP, Ruby, Node.js) and error handling."
+weight: 40
+---
 
-## REST API  
+## REST API
 
-| **API** | **Type** | **Description** | **Resource Link** |
-| :- | :- | :- | :- |
-| /cells/task/runtask | POST | Run Task | [PostRunTask](https://apireference.aspose.cloud/cells/#/Task/PostRunTask) |
+| **API**             | **Type** | **Description** | **Resource Link**                                                         |
+| :------------------ | :------- | :-------------- | :------------------------------------------------------------------------ |
+| /cells/task/runtask | POST     | Run Task        | [PostRunTask](https://apireference.aspose.cloud/cells/#/Task/PostRunTask) |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Task/PostRunTask) defines a publicly accessible programming interface that enables direct REST interactions from a web browser.  
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Task/PostRunTask) defines a publicly accessible programming interface that enables direct REST interactions from a web browser.
 
 You can use the **cURL** command‑line tool to call Aspose.Cells Cloud services. The example below shows how to execute an **ImportData** task with a properly formatted JSON payload.
 

@@ -1,6 +1,6 @@
 ---
 title: "Search & Replace in Aspose.Cells Cloud API – Excel Spreadsheet Manipulation"
-second_title: "Document"
+second_title: "Developer Guide"
 ArticleTitle: "Search and Replace Text in Excel Files using Aspose.Cells Cloud API"
 linktitle: "Search and Replace"
 type: docs
@@ -17,18 +17,18 @@ weight: 100
 
 The **Search & Replace** feature of Aspose.Cells Cloud API enables developers to programmatically locate and replace text, formulas, or hyperlinks within Excel workbooks stored in the cloud.
 
-- **[Replace Content in Remote Spreadsheet](https://docs.aspose.cloud/cells/replace-content-in-remote-spreadsheet/)** – Replaces all occurrences of a specified string in a workbook stored on Aspose Cloud storage.  
-- **[Replace Range Content in Remote Spreadsheet](https://docs.aspose.cloud/cells/replace-content-in-remote-range/)** – Replaces content within a defined cell range of a remote workbook.  
-- **[Replace Spreadsheet Content](https://docs.aspose.cloud/cells/replace-spreadsheet-content/)** – Provides a bulk replace operation for the entire spreadsheet.  
-- **[Replace Worksheet Content in Remote Spreadsheet](https://docs.aspose.cloud/cells/replace-content-in-remote-worksheet/)** – Replaces text in a specific worksheet of a remote workbook.  
-- **[Search Broken Links of Range in Remote Spreadsheet](https://docs.aspose.cloud/cells/search-broken-links-in-remote-range/)** – Finds and reports broken hyperlinks within a defined range.  
-- **[Search Broken Links of Worksheet in Remote Spreadsheet](https://docs.aspose.cloud/cells/search-broken-links-in-remote-worksheet/)** – Detects broken links across an entire worksheet.  
-- **[Search Content in Remote Spreadsheet](https://docs.aspose.cloud/cells/search-content-in-remote-spreadsheet/)** – Searches for specific text, formulas, or values in a remote workbook.  
-- **[Search for Broken Links in Remote Spreadsheets](https://docs.aspose.cloud/cells/search-broken-links-in-remote-spreadsheet/)** – Scans multiple workbooks for broken hyperlinks.  
-- **[Search Range Content in Remote Spreadsheet](https://docs.aspose.cloud/cells/search-content-in-remote-range/)** – Searches within a specific cell range.  
-- **[Search Spreadsheet Broken Links](https://docs.aspose.cloud/cells/search-spreadsheet-broken-links/)** – Provides a comprehensive list of broken links across a spreadsheet.  
-- **[Search Spreadsheet Content](https://docs.aspose.cloud/cells/search-spreadsheet-content/)** – General content search across the entire spreadsheet.  
-- **[Search Worksheet Content in Remote Spreadsheet](https://docs.aspose.cloud/cells/search-content-in-remote-worksheet/)** – Searches for content within a particular worksheet.  
+- **[Replace Content in Remote Spreadsheet](https://docs.aspose.cloud/cells/replace-content-in-remote-spreadsheet/)** – Replaces all occurrences of a specified string in a workbook stored on Aspose Cloud storage.
+- **[Replace Range Content in Remote Spreadsheet](https://docs.aspose.cloud/cells/replace-content-in-remote-range/)** – Replaces content within a defined cell range of a remote workbook.
+- **[Replace Spreadsheet Content](https://docs.aspose.cloud/cells/replace-spreadsheet-content/)** – Provides a bulk replace operation for the entire spreadsheet.
+- **[Replace Worksheet Content in Remote Spreadsheet](https://docs.aspose.cloud/cells/replace-content-in-remote-worksheet/)** – Replaces text in a specific worksheet of a remote workbook.
+- **[Search Broken Links of Range in Remote Spreadsheet](https://docs.aspose.cloud/cells/search-broken-links-in-remote-range/)** – Finds and reports broken hyperlinks within a defined range.
+- **[Search Broken Links of Worksheet in Remote Spreadsheet](https://docs.aspose.cloud/cells/search-broken-links-in-remote-worksheet/)** – Detects broken links across an entire worksheet.
+- **[Search Content in Remote Spreadsheet](https://docs.aspose.cloud/cells/search-content-in-remote-spreadsheet/)** – Searches for specific text, formulas, or values in a remote workbook.
+- **[Search for Broken Links in Remote Spreadsheets](https://docs.aspose.cloud/cells/search-broken-links-in-remote-spreadsheet/)** – Scans multiple workbooks for broken hyperlinks.
+- **[Search Range Content in Remote Spreadsheet](https://docs.aspose.cloud/cells/search-content-in-remote-range/)** – Searches within a specific cell range.
+- **[Search Spreadsheet Broken Links](https://docs.aspose.cloud/cells/search-spreadsheet-broken-links/)** – Provides a comprehensive list of broken links across a spreadsheet.
+- **[Search Spreadsheet Content](https://docs.aspose.cloud/cells/search-spreadsheet-content/)** – General content search across the entire spreadsheet.
+- **[Search Worksheet Content in Remote Spreadsheet](https://docs.aspose.cloud/cells/search-content-in-remote-worksheet/)** – Searches for content within a particular worksheet.
 
 Before proceeding, ensure you’ve [configured your OAuth credentials](/cells/getting-started/authentication/).  
 See [supported file formats](/cells/conversion/supported-formats/) for full compatibility.

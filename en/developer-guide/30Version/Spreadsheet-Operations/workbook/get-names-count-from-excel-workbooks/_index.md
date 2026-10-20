@@ -1,6 +1,6 @@
 ---
 title: "Get Names from an Excel Workbook"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Names"
 type: docs
 url: /get-names-from-an-excel-file/
@@ -38,10 +38,10 @@ The request parameters are:
 
 The request must include the following HTTP headers:
 
-| Header        | Type   | Description                              |
-|---------------|--------|------------------------------------------|
-| Authorization | string | Bearer JWT token (required)              |
-| Accept        | string | `application/json`                       |
+| Header        | Type   | Description                                   |
+| ------------- | ------ | --------------------------------------------- |
+| Authorization | string | Bearer JWT token (required)                   |
+| Accept        | string | `application/json`                            |
 | Content-Type  | string | `application/json` (for requests with a body) |
 
 **Authentication** – The API requires an OAuth2/JWT bearer token. Obtain a token from `https://api.aspose.cloud/connect/token` using your client‑id and client‑secret, then include the header `Authorization: Bearer <jwt token>` in every request.

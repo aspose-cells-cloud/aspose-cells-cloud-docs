@@ -1,7 +1,7 @@
 ---
 title: "Import XML Data Into Spreadsheet"
 ArticleTitle: "Import XML Data Into Spreadsheet – Aspose.Cells Cloud API"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Import XML Data Into Spreadsheet"
 type: docs
 url: /import/data/xml

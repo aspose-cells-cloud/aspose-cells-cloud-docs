@@ -1,6 +1,6 @@
 ---
 title: "Working with Excel Data Validation"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Validations"
 type: docs
 url: /validations/

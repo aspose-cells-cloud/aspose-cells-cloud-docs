@@ -1,6 +1,6 @@
 ---
 title: "Add a Pivot Field to a Pivot Table"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Add Pivot Field"
 type: docs
 url: /pivot-tables/add-pivot-field/
@@ -70,8 +70,8 @@ The successful response returns a JSON object with `Code` and `Status` fields. E
 
 ```json
 {
-  "Code": 0,        // integer indicating the HTTP status code
-  "Status": "OK"    // string message
+  "Code": 0, // integer indicating the HTTP status code
+  "Status": "OK" // string message
 }
 ```
 
@@ -133,6 +133,7 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 
 {{< /tabs >}}
 
-**See also:**  
-- [Add a Pivot Table](https://docs.aspose.cloud/cells/pivot-tables/add-pivot-table/)  
+**See also:**
+
+- [Add a Pivot Table](https://docs.aspose.cloud/cells/pivot-tables/add-pivot-table/)
 - [Delete Pivot Field](https://docs.aspose.cloud/cells/pivot-tables/delete-pivot-field/)

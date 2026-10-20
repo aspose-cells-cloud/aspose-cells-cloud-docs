@@ -1,7 +1,7 @@
 ---
 title: "Working with Excel ListObject"
 ArticleTitle: "Working with Excel ListObject"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "ListObjects"
 type: docs
 url: /list-objects/

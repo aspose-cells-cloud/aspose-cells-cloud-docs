@@ -1,6 +1,6 @@
 ---
-title: "Aspose.Cells Cloud API – Get Disk Usage | Real‑Time Storage Metrics"
-second_title: "Document"
+title: "Get Disk Usage"
+second_title: "Developer Guide"
 ArticleTitle: "Cloud‑based Excel File Management Solution – Interface to quickly retrieve disk usage in the cloud."
 linktitle: "Get Disk Usage"
 type: docs

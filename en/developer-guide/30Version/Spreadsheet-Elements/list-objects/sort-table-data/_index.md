@@ -1,6 +1,6 @@
 ---
 title: "Sort ListObject Data in an Excel Worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Sort"
 type: docs
 url: /list-objects/sort-data/
@@ -82,19 +82,19 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet7/listob
 
 **HTTP Status Codes**
 
-| Status Code | Description                              |
-|------------|------------------------------------------|
-| 200        | OK – sorting completed successfully.    |
-| 400        | Bad Request – invalid parameters.       |
-| 401        | Unauthorized – authentication failed.    |
-| 404        | Not Found – workbook, worksheet, or ListObject not found. |
-| 500        | Internal Server Error – server‑side issue.|
+| Status Code | Description                                               |
+| ----------- | --------------------------------------------------------- |
+| 200         | OK – sorting completed successfully.                      |
+| 400         | Bad Request – invalid parameters.                         |
+| 401         | Unauthorized – authentication failed.                     |
+| 404         | Not Found – workbook, worksheet, or ListObject not found. |
+| 500         | Internal Server Error – server‑side issue.                |
 
 **Response Parameters**
 
-| Parameter | Type    | Description                                 |
-|-----------|---------|---------------------------------------------|
-| Code      | integer | HTTP status code returned by the API.       |
+| Parameter | Type    | Description                                     |
+| --------- | ------- | ----------------------------------------------- |
+| Code      | integer | HTTP status code returned by the API.           |
 | Status    | string  | Textual description of the result (e.g., "OK"). |
 
 {{< /tab >}}

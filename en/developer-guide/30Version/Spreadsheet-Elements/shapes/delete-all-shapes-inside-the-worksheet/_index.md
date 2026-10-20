@@ -1,7 +1,7 @@
 ---
 title: "Delete all shapes on an Excel worksheet"
 ArticleTitle: "Delete all shapes on an Excel worksheet – Aspose.Cells Cloud API"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Clear"
 type: docs
 url: /shapes/clear/

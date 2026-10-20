@@ -1,6 +1,6 @@
 ---
 title: "Convert an Excel File to Different Formats"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Convert Spreadsheet"
 type: docs
 url: /convert-a-spread-file-to-different-formats/

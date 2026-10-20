@@ -1,6 +1,6 @@
 ---
 title: "Move a named range with an Excel worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Move"
 type: docs
 url: /ranges/move/

@@ -1,6 +1,6 @@
 ---
 title: "Auto‑fit columns in an Excel file"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Columns"
 type: docs
 url: /autofit-columns-on-an-excel-file/
@@ -70,26 +70,27 @@ curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/autofitcolumns" \
 {{< /tabs >}}
 
 ### Prerequisites
+
 Before calling this operation, ensure that you have a valid Aspose Cloud API key, a generated JWT token, and that the target workbook already exists in the specified storage location.
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
 
 The API can return the following HTTP status codes:
 
-| Code | Description |
-|------|-------------|
-| 200  | Success – columns auto‑fitted |
+| Code | Description                                 |
+| ---- | ------------------------------------------- |
+| 200  | Success – columns auto‑fitted               |
 | 400  | Bad request – missing or invalid parameters |
-| 401  | Unauthorized – invalid or expired JWT |
-| 500  | Server error – internal processing failure |
+| 401  | Unauthorized – invalid or expired JWT       |
+| 500  | Server error – internal processing failure  |
 
 ## Cloud SDK Family
 

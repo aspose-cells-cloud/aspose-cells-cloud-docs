@@ -1,7 +1,7 @@
 ---
 title: "Convert Worksheet To Html Table"
 ArticleTitle: "Convert Worksheet To Html Table – Aspose.Cells Cloud API"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Convert Worksheet To Html Table"
 type: docs
 url: /convert/worksheet/html-table

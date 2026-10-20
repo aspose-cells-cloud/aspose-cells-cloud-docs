@@ -1,6 +1,6 @@
 ---
 title: "Spreadsheet Operations"
-second_title: "Document"
+second_title: "Developer Guide"
 type: docs
 url: /spreadsheet-operations/
 keywords: "Aspose Cells Cloud, Excel API, spreadsheet operations, auto fit, batch processing, file protection, conversion, import export, text processing"

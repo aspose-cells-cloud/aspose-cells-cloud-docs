@@ -1,6 +1,6 @@
 ---
 title: "Update Metadata"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Update without using storage"
 type: docs
 url: /metadata/update/
@@ -137,6 +137,7 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 
 {{< /tabs >}}
 
-**See also:**  
-- [Get Metadata](/metadata/get/)  
-- [Delete Metadata](/metadata/delete/)  
+**See also:**
+
+- [Get Metadata](/metadata/get/)
+- [Delete Metadata](/metadata/delete/)

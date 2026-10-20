@@ -1,10 +1,10 @@
 ---
 title: "Add a color filter in an Excel worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Add color filter"
 type: docs
 url: /autofilter/add-color-filter/
-aliases: [/filter-a-list-using-a-color-filter/,/autofilter/add-a-color-filter/]
+aliases: [/filter-a-list-using-a-color-filter/, /autofilter/add-a-color-filter/]
 keywords: "Excel, color filter, Aspose.Cells Cloud, REST API, auto filter, JWT authentication"
 description: "Learn how to apply a color filter to an Excel worksheet with Aspose.Cells Cloud API. Includes endpoint, parameters, cURL example, error handling, and SDK samples."
 weight: 65
@@ -27,45 +27,45 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters:
 
-
-| Parameter Name | Type    | Location | Description                                                                 |
-|----------------|---------|----------|-----------------------------------------------------------------------------|
-| name           | string  | path     | The name of the Excel file.                                                 |
-| sheetName      | string  | path     | The name of the worksheet that contains the data to be filtered.           |
-| range          | string  | query    | The cell range to which the filter is applied (e.g., `A1:B10`).            |
-| fieldIndex     | integer | query    | Zero‑based index of the column on which the color filter is applied.       |
-| colorFilter    | object  | body     | JSON object that defines the foreground and background colors to filter.   |
-| matchBlanks    | boolean | query    | Whether rows with blank cells should be included in the filter results.   |
-| refresh        | boolean | query    | If `true`, the worksheet is refreshed after applying the filter.           |
-| folder         | string  | query    | The folder in storage where the Excel file is located.                      |
-| storageName    | string  | query    | The name of the storage service (e.g., Aspose Cloud Storage).              |
+| Parameter Name | Type    | Location | Description                                                              |
+| -------------- | ------- | -------- | ------------------------------------------------------------------------ |
+| name           | string  | path     | The name of the Excel file.                                              |
+| sheetName      | string  | path     | The name of the worksheet that contains the data to be filtered.         |
+| range          | string  | query    | The cell range to which the filter is applied (e.g., `A1:B10`).          |
+| fieldIndex     | integer | query    | Zero‑based index of the column on which the color filter is applied.     |
+| colorFilter    | object  | body     | JSON object that defines the foreground and background colors to filter. |
+| matchBlanks    | boolean | query    | Whether rows with blank cells should be included in the filter results.  |
+| refresh        | boolean | query    | If `true`, the worksheet is refreshed after applying the filter.         |
+| folder         | string  | query    | The folder in storage where the Excel file is located.                   |
+| storageName    | string  | query    | The name of the storage service (e.g., Aspose Cloud Storage).            |
 
 **`colorFilter` JSON schema**
 
-| Property          | Type   | Description                                                                    | Required |
-|-------------------|--------|--------------------------------------------------------------------------------|----------|
-| Pattern           | string | Filter pattern (e.g., `"Solid"`).                                             | Yes      |
-| ForegroundColor   | object | Defines the foreground color. Contains sub‑properties such as `Color`, `ColorIndex`, `IsShapeColor`, `ThemeColor`, and `Type`. | No |
-| BackgroundColor   | object | Defines the background color. Same sub‑properties as `ForegroundColor`.      | No |
+| Property        | Type   | Description                                                                                                                    | Required |
+| --------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------ | -------- |
+| Pattern         | string | Filter pattern (e.g., `"Solid"`).                                                                                              | Yes      |
+| ForegroundColor | object | Defines the foreground color. Contains sub‑properties such as `Color`, `ColorIndex`, `IsShapeColor`, `ThemeColor`, and `Type`. | No       |
+| BackgroundColor | object | Defines the background color. Same sub‑properties as `ForegroundColor`.                                                        | No       |
 
 ### **Response**
 
 ```json
 {
-    "Status":"OK",
-    "Code":200
+  "Status": "OK",
+  "Code": 200
 }
 ```
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## How to Use the PutWorksheetColorFilter API with SDKs
 
 ### PutWorksheetColorFilter API Specification

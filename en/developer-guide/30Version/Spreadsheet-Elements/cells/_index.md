@@ -1,7 +1,7 @@
 ---
 title: "Working with Excel Cells"
 ArticleTitle: "Working with Excel Cells – Aspose.Cells Cloud Documentation"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Cells"
 type: docs
 url: /working-with-cells/

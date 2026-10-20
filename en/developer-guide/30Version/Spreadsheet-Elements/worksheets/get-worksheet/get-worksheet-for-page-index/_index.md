@@ -1,7 +1,7 @@
 ---
 title: "Export a Worksheet Page – Aspose.Cells Cloud API Reference"
 ArticleTitle: "Export a Worksheet Page – Aspose.Cells Cloud API Reference"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Page"
 type: docs
 url: /worksheets/page-to-different-formats/
@@ -41,7 +41,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1?format
 
 **Response** – The service returns the requested page in the chosen format. For image formats (png, jpeg, gif, etc.) the body contains the binary image; for document formats (pdf, xls, csv, …) the body contains the file content. A successful call returns HTTP 200.
 
-*Example of a PNG response (truncated base64 snippet):*
+_Example of a PNG response (truncated base64 snippet):_
 
 ```text
 iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABG0lEQVR42mNkYGBg+M+ABbJw
@@ -64,13 +64,13 @@ iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABG0lEQVR42mNkYGBg+M+ABbJw
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
 
 **Possible errors**
 

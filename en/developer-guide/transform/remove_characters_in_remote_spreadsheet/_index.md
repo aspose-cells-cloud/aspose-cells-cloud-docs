@@ -1,7 +1,7 @@
 ---
 title: "Remove Characters In Remote Spreadsheet"
 ArticleTitle: "Remove Characters In Remote Spreadsheet – Aspose.Cells Cloud API"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Remove Characters In Remote Spreadsheet"
 type: docs
 url: /{name}/worksheets/{worksheet}/range/{range}/content/remove/characters

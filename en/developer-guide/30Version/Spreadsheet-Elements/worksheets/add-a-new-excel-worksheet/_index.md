@@ -1,7 +1,7 @@
 ---
 title: "Add an Excel Worksheet"
 ArticleTitle: "Add an Excel Worksheet - Aspose.Cells Cloud API Guide"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Add"
 type: docs
 url: /worksheets/add/

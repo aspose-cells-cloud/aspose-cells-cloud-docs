@@ -1,6 +1,6 @@
 ---
 title: "Save Excel Workbook – Aspose.Cells Cloud API"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Save as"
 type: docs
 url: /save-an-excel-file-as-other-formats-files/
@@ -15,9 +15,10 @@ weight: 30
 This REST API allows you **to save** an Excel file in different formats.  
 Before calling this endpoint, ensure you have a valid OAuth 2.0 access token and that the source workbook is stored in your Aspose Cloud storage.
 
-**Prerequisites**  
-1. Obtain a JWT access token and include it in the `Authorization: Bearer <token>` header of every request.  
-2. Upload the source workbook to Aspose Cloud storage (or confirm it already exists).  
+**Prerequisites**
+
+1. Obtain a JWT access token and include it in the `Authorization: Bearer <token>` header of every request.
+2. Upload the source workbook to Aspose Cloud storage (or confirm it already exists).
 3. Know the storage name and folder path where the workbook resides.
 
 ## PostWorkbookSaveAs API
@@ -94,13 +95,14 @@ The API returns a `SaveResponse` object.
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## How to Use the PostWorkbookSaveAs API with SDKs
 
 ### PostWorkbookSaveAs API Specification

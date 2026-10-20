@@ -1,6 +1,6 @@
 ---
 title: "Convert table to pivot table"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: Convert
 type: docs
 url: /pivot-tables/convert-table-to-pivottable/
@@ -19,9 +19,10 @@ This REST API creates a **pivot table** from a list object.
 
 A pivot table summarizes data from a list object, allowing you to analyze and report on large data sets directly within the workbook.
 
-**Prerequisites:**  
-- A valid JWT bearer token for authentication.  
-- The workbook must exist in the specified storage location.  
+**Prerequisites:**
+
+- A valid JWT bearer token for authentication.
+- The workbook must exist in the specified storage location.
 - The target worksheet must contain the list object you want to summarize.
 
 ## PostWorksheetListObjectSummarizeWithPivotTable API
@@ -54,7 +55,10 @@ The request body must follow the JSON schema defined below:
   "type": "object",
   "properties": {
     "Name": { "type": "string", "description": "Name of the new pivot table." },
-    "DestCellName": { "type": "string", "description": "Top‑left cell of the pivot table (e.g., \"C1\")." },
+    "DestCellName": {
+      "type": "string",
+      "description": "Top‑left cell of the pivot table (e.g., \"C1\")."
+    },
     "PivotFieldRows": {
       "type": "array",
       "items": { "type": "integer" },
@@ -71,7 +75,13 @@ The request body must follow the JSON schema defined below:
       "description": "Zero‑based indices of fields to use as data fields."
     }
   },
-  "required": ["Name", "DestCellName", "PivotFieldRows", "PivotFieldColumns", "PivotFieldData"]
+  "required": [
+    "Name",
+    "DestCellName",
+    "PivotFieldRows",
+    "PivotFieldColumns",
+    "PivotFieldData"
+  ]
 }
 ```
 
@@ -92,7 +102,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/TestCase.xlsx/worksheets/Sheet2/lis
 -H "Authorization: Bearer <jwt token>"
 ```
 
-*Note: Use the production endpoint (`api.aspose.cloud`) for live environments. The QA endpoint (`api-qa.aspose.cloud`) is intended for testing only. HTTPS is required for all production calls.*
+_Note: Use the production endpoint (`api.aspose.cloud`) for live environments. The QA endpoint (`api-qa.aspose.cloud`) is intended for testing only. HTTPS is required for all production calls._
 
 {{< /tab >}}
 
@@ -111,13 +121,14 @@ curl -v "https://api.aspose.cloud/v3.0/cells/TestCase.xlsx/worksheets/Sheet2/lis
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## Cloud SDK Family
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.

@@ -1,6 +1,6 @@
 ---
 title: "Convert an Excel file to another format or save it differently."
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Conversion and Save As"
 type: docs
 url: /conversion-and-save-as/
@@ -20,7 +20,8 @@ Document conversion is a complex process. Many factors contribute to the convers
 
 The service works seamlessly for any document format conversion. You can both import and export documents in these formats:
 
-**Supported Formats**  
+**Supported Formats**
+
 - Import/Export: [XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [ODS](https://docs.fileformat.com/spreadsheet/ods/), [TXT](https://docs.fileformat.com/word-processing/txt/)
 - Export‑only: [PDF](https://docs.fileformat.com/pdf/), [OTS](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [DIF](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [NUMBERS](https://docs.fileformat.com/spreadsheet/numbers/), [FODS](https://docs.fileformat.com/spreadsheet/fods/)
 
@@ -34,21 +35,21 @@ The service works seamlessly for any document format conversion. You can both im
 
 **API details**
 
-- **GET /cells/{name}**  
-  - **Path parameters:** `name` – workbook file name (required).  
-  - **Query parameters:** `format` – target format (e.g., pdf, csv, json); `storage` – cloud storage name (optional); `folder` – folder path within storage (optional).  
-  - **Response:** File stream of the converted workbook; `Content‑Type` matches the target format.  
-  - **Status codes:** 200 OK, 400 Bad Request, 401 Unauthorized, 404 Not Found, 500 Internal Server Error.  
+- **GET /cells/{name}**
+  - **Path parameters:** `name` – workbook file name (required).
+  - **Query parameters:** `format` – target format (e.g., pdf, csv, json); `storage` – cloud storage name (optional); `folder` – folder path within storage (optional).
+  - **Response:** File stream of the converted workbook; `Content‑Type` matches the target format.
+  - **Status codes:** 200 OK, 400 Bad Request, 401 Unauthorized, 404 Not Found, 500 Internal Server Error.
 
-- **PUT /cells/convert**  
-  - **Request body:** multipart/form‑data containing the source workbook file (`file`) and a required `format` field indicating the desired output.  
-  - **Response:** Binary stream of the converted file.  
-  - **Status codes:** 200 OK, 400 Bad Request, 401 Unauthorized, 500 Internal Server Error.  
+- **PUT /cells/convert**
+  - **Request body:** multipart/form‑data containing the source workbook file (`file`) and a required `format` field indicating the desired output.
+  - **Response:** Binary stream of the converted file.
+  - **Status codes:** 200 OK, 400 Bad Request, 401 Unauthorized, 500 Internal Server Error.
 
-- **POST /cells/{name}/saveAs**  
-  - **Path parameters:** `name` – existing workbook name.  
-  - **Query parameters:** `format` – target format; `outPath` – destination path in cloud storage (optional); `storage` – storage name (optional).  
-  - **Response:** JSON object with operation result and the path of the saved file. Example response:  
+- **POST /cells/{name}/saveAs**
+  - **Path parameters:** `name` – existing workbook name.
+  - **Query parameters:** `format` – target format; `outPath` – destination path in cloud storage (optional); `storage` – storage name (optional).
+  - **Response:** JSON object with operation result and the path of the saved file. Example response:
 
     ```json
     {
@@ -57,9 +58,9 @@ The service works seamlessly for any document format conversion. You can both im
       "message": "File saved successfully.",
       "path": "Converted/MyWorkbook.pdf"
     }
-    ```  
+    ```
 
-  - **Status codes:** 200 OK, 400 Bad Request, 401 Unauthorized, 404 Not Found, 500 Internal Server Error.  
+  - **Status codes:** 200 OK, 400 Bad Request, 401 Unauthorized, 404 Not Found, 500 Internal Server Error.
 
 **Sample cURL for converting to PDF**
 

@@ -1,6 +1,6 @@
 ---
 title: "Delete multiple rows from an Excel worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Rows"
 type: docs
 url: /rows/delete/rows/
@@ -69,13 +69,13 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 
 **Possible response codes**
 
-| HTTP Status | Description |
-|-------------|-------------|
-| 200 | Rows deleted successfully. |
-| 400 | Bad request – invalid parameters. |
-| 401 | Unauthorized – missing or invalid JWT token. |
-| 404 | Not found – workbook or worksheet does not exist. |
-| 500 | Internal server error – unexpected condition. |
+| HTTP Status | Description                                       |
+| ----------- | ------------------------------------------------- |
+| 200         | Rows deleted successfully.                        |
+| 400         | Bad request – invalid parameters.                 |
+| 401         | Unauthorized – missing or invalid JWT token.      |
+| 404         | Not found – workbook or worksheet does not exist. |
+| 500         | Internal server error – unexpected condition.     |
 
 ## Cloud SDK Family
 

@@ -1,6 +1,6 @@
 ---
 title: "Get All Pivot Tables in an Excel Worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: Get all
 type: docs
 url: /pivot-tables/get-all/

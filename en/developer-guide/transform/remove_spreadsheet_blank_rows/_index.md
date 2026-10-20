@@ -1,7 +1,7 @@
 ---
 title: "Remove Spreadsheet Blank Rows"
 ArticleTitle: "Remove Spreadsheet Blank Rows – Aspose.Cells Cloud API"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Remove Spreadsheet Blank Rows"
 type: docs
 url: /remove/blank-rows

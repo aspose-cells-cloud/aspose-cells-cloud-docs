@@ -1,6 +1,6 @@
 ---
 title: "Autofit Rows on an Excel Workbook"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Rows"
 type: docs
 url: /autofit-rows-on-an-excel-file/
@@ -40,13 +40,13 @@ The request parameters include:
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostAutofitWorkbookRows) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -76,7 +76,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/autofitrows" \
 }
 ```
 
-*Example error response (e.g., missing workbook):*
+_Example error response (e.g., missing workbook):_
 
 ```json
 {
@@ -90,8 +90,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/autofitrows" \
 
 {{< /tabs >}}
 
-**Notes**  
-- When `AutoFitMergedCells` is set to **true**, merged cells are considered as a single entity during the autofit operation.  
+**Notes**
+
+- When `AutoFitMergedCells` is set to **true**, merged cells are considered as a single entity during the autofit operation.
 - Setting `IgnoreHidden` to **true** skips hidden rows and columns, preserving their current dimensions.
 
 ## Cloud SDK Family

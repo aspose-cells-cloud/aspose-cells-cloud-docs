@@ -1,6 +1,6 @@
 ---
 title: "Delete all pictures in an Excel worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Clear"
 type: docs
 url: /pictures/clear/
@@ -13,9 +13,10 @@ ArticleTitle: "How to Delete All Pictures in an Excel Worksheet with Aspose.Cell
 
 This REST API deletes **all** pictures in a worksheet.
 
-**Prerequisites**  
-- An active Aspose.Cells Cloud account with a valid OAuth 2.0 access token.  
-- API version 3.0 (or later) is required; earlier versions are deprecated.  
+**Prerequisites**
+
+- An active Aspose.Cells Cloud account with a valid OAuth 2.0 access token.
+- API version 3.0 (or later) is required; earlier versions are deprecated.
 - The target Excel file must be stored in a supported storage location (default or custom).
 
 **Version Compatibility**  
@@ -140,6 +141,7 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 
 **Notes:** The DELETE operation does not support pagination and is subject to the standard Aspose.Cells Cloud API rate limits (default 100 requests per minute). Adjust your client logic accordingly.
 
-**See also**:  
-- [/pictures/delete/](../delete/) – Delete a specific picture from a worksheet.  
-- [/pictures/add/](../add/) – Add a picture to a worksheet.  
+**See also**:
+
+- [/pictures/delete/](../delete/) – Delete a specific picture from a worksheet.
+- [/pictures/add/](../add/) – Add a picture to a worksheet.

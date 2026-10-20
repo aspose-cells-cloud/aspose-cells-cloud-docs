@@ -1,6 +1,6 @@
 ---
 title: "Build Excel Reports with Smart Marker Templates"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "SmartMarker"
 type: docs
 url: /build-report-with-smart-marker/
@@ -48,30 +48,32 @@ A Smart Marker is a placeholder syntax that maps data fields in an XML (or JSON)
 
 ```json
 {
-    "Name": "ResponseFile",
-    "DataType": {
-        "Identifier": "File",
-        "Reference": "Stream",
-        "Name": "file"
-    }
+  "Name": "ResponseFile",
+  "DataType": {
+    "Identifier": "File",
+    "Reference": "Stream",
+    "Name": "file"
+  }
 }
 ```
 
-**Notes / Limitations:**  
-- The API supports Excel files up to **50 MB** in size.  
-- Accepted formats are **.xlsx**, **.xlsm**, and **.xlsb** only.  
+**Notes / Limitations:**
+
+- The API supports Excel files up to **50 MB** in size.
+- Accepted formats are **.xlsx**, **.xlsm**, and **.xlsb** only.
 - A rate limit of **20 requests per second** per account is enforced.
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
-## How to Use the Workbook SmartMarker API 
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
+## How to Use the Workbook SmartMarker API
 
 ### Workbook SmartMarker API Specification
 

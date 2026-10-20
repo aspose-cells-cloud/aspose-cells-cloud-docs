@@ -1,6 +1,6 @@
 ---
 title: "Calculate a formula on an Excel worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Calculate"
 type: docs
 url: /worksheets/calculate-formula/

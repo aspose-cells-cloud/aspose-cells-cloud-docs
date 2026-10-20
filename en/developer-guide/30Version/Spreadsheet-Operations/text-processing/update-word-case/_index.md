@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells – Update Word Case API"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Word Case"
 type: docs
 url: /post-update-word-case/

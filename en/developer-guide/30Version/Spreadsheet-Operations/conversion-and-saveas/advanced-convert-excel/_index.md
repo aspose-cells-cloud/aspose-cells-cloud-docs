@@ -1,6 +1,6 @@
 ---
 title: "Advanced Convert Excel File – Aspose.Cells Cloud API Guide"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Advanced Convert"
 type: docs
 url: /advanced-convert-excel/
@@ -12,19 +12,20 @@ weight: 50
 
 ## Advanced Cloud API for Excel Conversion
 
-The Advanced Convert operation enables you to transform an Excel workbook into various output formats (PDF, HTML, CSV, etc.) while giving you fine-grained control over page setup, save options, and print settings.  
+The Advanced Convert operation enables you to transform an Excel workbook into various output formats (PDF, HTML, CSV, etc.) while giving you fine-grained control over page setup, save options, and print settings.
 
 **Prerequisites / Authentication**  
-To use this endpoint you must obtain an access token from Aspose.Cells Cloud and include it in the `Authorization` header as a Bearer token.  
+To use this endpoint you must obtain an access token from Aspose.Cells Cloud and include it in the `Authorization` header as a Bearer token.
 
-**API Reference**  
-- **Method:** `PUT`  
-- **Endpoint:** `/cells/convert`  
-- **Parameters:**  
-  - `format` (string, required) – Desired output format (e.g., `pdf`, `html`).  
-  - `outPath` (string, optional) – Path in cloud storage where the converted file will be saved.  
-  - `options` (object, optional) – JSON object containing advanced conversion options such as `pageSetup`, `saveOptions`, and `printSettings`.  
-- **Request Body Example:**  
+**API Reference**
+
+- **Method:** `PUT`
+- **Endpoint:** `/cells/convert`
+- **Parameters:**
+  - `format` (string, required) – Desired output format (e.g., `pdf`, `html`).
+  - `outPath` (string, optional) – Path in cloud storage where the converted file will be saved.
+  - `options` (object, optional) – JSON object containing advanced conversion options such as `pageSetup`, `saveOptions`, and `printSettings`.
+- **Request Body Example:**
   ```json
   {
     "format": "pdf",
@@ -42,24 +43,25 @@ To use this endpoint you must obtain an access token from Aspose.Cells Cloud and
       }
     }
   }
-  ```  
-- **Response:**  
-  - `200 OK` – Conversion succeeded; response contains the converted file stream or a reference to the saved file.  
-  - `400 Bad Request` – Invalid parameters or malformed request body.  
-  - `401 Unauthorized` – Authentication failed or token missing.  
-  - `500 Internal Server Error` – Server-side error during conversion.  
+  ```
+- **Response:**
+  - `200 OK` – Conversion succeeded; response contains the converted file stream or a reference to the saved file.
+  - `400 Bad Request` – Invalid parameters or malformed request body.
+  - `401 Unauthorized` – Authentication failed or token missing.
+  - `500 Internal Server Error` – Server-side error during conversion.
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Conversion succeeded; response contains the converted file stream or a reference to the saved file. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                                                         |
+| ---- | --------------------- | --------------------------------------------------------------------------------------------------- |
+| 200  | OK                    | Conversion succeeded; response contains the converted file stream or a reference to the saved file. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).                                        |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                                                       |
+| 500  | Internal Server Error | Unexpected server error.                                                                            |
 
-**Notes**  
-* Some output formats have specific limitations (e.g., HTML conversion strips macros and ActiveX controls). Review the format-specific documentation for details.  
+**Notes**
+
+- Some output formats have specific limitations (e.g., HTML conversion strips macros and ActiveX controls). Review the format-specific documentation for details.
 
 ### The ability to load spreadsheet files from multiple data sources
 

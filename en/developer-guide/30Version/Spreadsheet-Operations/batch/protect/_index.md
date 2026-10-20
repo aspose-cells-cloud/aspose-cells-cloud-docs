@@ -1,6 +1,6 @@
 ---
 title: "Batch Protect Excel Files"
-second_title: "Document"
+second_title: "Developer Guide"
 description: "Protect multiple Excel files in bulk using Aspose.Cells Cloud REST API. Support for regex and exact name matching, password protection, and output folder configuration. Includes cURL and SDK examples for C#, Java, Python, Node.js, PHP, Ruby, Perl, and Go."
 keywords: "batch protect Excel files, Aspose.Cells Cloud API, Excel protection, workbook encryption, REST API, batch file protection, regex file matching, password-protected Excel"
 url: /batch/protect

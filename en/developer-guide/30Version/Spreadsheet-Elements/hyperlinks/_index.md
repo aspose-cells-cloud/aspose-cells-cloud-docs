@@ -1,7 +1,7 @@
 ---
 title: "Hyperlinks in Excel – Aspose.Cells Cloud"
 ArticleTitle: "Hyperlinks in Excel – Aspose.Cells Cloud"
-second_title: "Document"
+second_title: "Developer Guide"
 type: docs
 linktitle: "Hyperlinks"
 url: /hyperlinks/

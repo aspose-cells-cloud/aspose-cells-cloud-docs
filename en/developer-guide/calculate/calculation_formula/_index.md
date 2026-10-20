@@ -1,7 +1,7 @@
 ---
 title: "Calculate Formula"
 ArticleTitle: "Calculate Formula – Aspose.Cells Cloud API"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Calculate Formula"
 type: docs
 url: /calculate/formula

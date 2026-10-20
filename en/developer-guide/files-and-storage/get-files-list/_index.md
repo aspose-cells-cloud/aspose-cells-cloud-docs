@@ -1,5 +1,6 @@
 ---
 title: "Aspose.Cells Cloud API – Get Files List (Folder Contents)"
+second_title: "Developer Guide"
 description: "Retrieve a list of files and sub‑folders from a specific folder in Aspose.Cells Cloud storage."
 keywords:
   - Aspose.Cells

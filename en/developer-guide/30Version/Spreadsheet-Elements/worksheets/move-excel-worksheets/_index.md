@@ -1,6 +1,6 @@
 ---
 title: "Move an Excel Worksheet – Aspose.Cells Cloud API (v3.0)"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Move"
 type: docs
 url: /worksheets/move/

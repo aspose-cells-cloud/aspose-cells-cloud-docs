@@ -1,6 +1,6 @@
 ---
 title: "Create Excel Files and Build Excel Reports"
-second_title: "Document"
+second_title: "Developer Guide"
 date: 2024-05-15
 type: docs
 url: /creating-files-and-reports/
@@ -16,9 +16,9 @@ Using the Aspose.Cells Cloud API, you can effortlessly create new Excel workbook
 
 **Prerequisites**: Before you begin, ensure you have a valid Aspose Cloud API key and the Aspose.Cells Cloud SDK installed for your development language.
 
-- ✅ An Aspose Cloud account with valid [API key and App SID](https://dashboard.aspose.cloud/)  
-- ✅ Aspose.Cells Cloud SDK for your language (e.g., `pip install aspose-words-cloud` for Python)  
-- ✅ Basic familiarity with Excel file structure and JSON data formats  
+- ✅ An Aspose Cloud account with valid [API key and App SID](https://dashboard.aspose.cloud/)
+- ✅ Aspose.Cells Cloud SDK for your language (e.g., `pip install aspose-words-cloud` for Python)
+- ✅ Basic familiarity with Excel file structure and JSON data formats
 
 ## Create an Excel file and build a report
 
@@ -57,7 +57,7 @@ const dataFile = "reportData.json";
 const response = await cellsApi.cellsWorkbookPostSmartMarkers(
   templateFile,
   dataFile,
-  outPath = "ReportWithMarkers.xlsx"
+  (outPath = "ReportWithMarkers.xlsx"),
 );
 console.log("Report generated:", response);
 ```
@@ -68,9 +68,10 @@ For a visual overview, see the SmartMarker workflow below:
 
 ![SmartMarker data assembly and template processing flow](/images/smartmarker-flow.png)
 
-*alt="Diagram: Template file, data source, and SmartMarker engine producing final Excel report"*
+_alt="Diagram: Template file, data source, and SmartMarker engine producing final Excel report"_
 
 Related Resources:
+
 - [Aspose.Cells Cloud API Reference](https://reference.aspose.cloud/cells/)
 - [SDK Source Code & Samples](https://github.com/aspose-cells-cloud)
 - [SmartMarker Syntax Guide](/cells/smartmarker-syntax/)

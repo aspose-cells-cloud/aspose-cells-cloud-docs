@@ -1,6 +1,6 @@
 ---
 title: "Get a shape by index on an Excel worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Get"
 type: docs
 url: /shapes/get/

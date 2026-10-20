@@ -1,6 +1,6 @@
 ---
 title: "AutoFitterOptions – Properties & Usage Guide | Aspose.Cells Cloud API"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "AutoFitterOptions"
 type: docs
 url: /auto-fitter-options/
@@ -53,29 +53,29 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/workbook/autoFitter" \
 
 **Endpoint reference**
 
-| Method | URL | Required Parameters | Description |
-|--------|-----|---------------------|-------------|
-| PUT    | `/cells/workbook/autoFitter` | `autoFitterOptions` (JSON body) | Applies the specified `AutoFitterOptions` to the target workbook. |
-| GET    | `/cells/workbook/autoFitter` | *none* | Retrieves the current `AutoFitterOptions` settings for the workbook. |
+| Method | URL                          | Required Parameters             | Description                                                          |
+| ------ | ---------------------------- | ------------------------------- | -------------------------------------------------------------------- |
+| PUT    | `/cells/workbook/autoFitter` | `autoFitterOptions` (JSON body) | Applies the specified `AutoFitterOptions` to the target workbook.    |
+| GET    | `/cells/workbook/autoFitter` | _none_                          | Retrieves the current `AutoFitterOptions` settings for the workbook. |
 
 **Request parameters for the PUT endpoint**
 
-| Parameter                | Type    | Required | Description |
-|--------------------------|---------|----------|-------------|
-| AutoFitMergedCellsType   | string  | Yes      | How merged cells are auto‑fitted (`All`, `First`, `None`). |
-| IgnoreHidden             | boolean | No       | Whether hidden rows/columns are ignored. |
-| OnlyAuto                 | boolean | No       | Fit only rows without manual height settings. |
-| DefaultEditLanguage      | string  | No       | Editing language (e.g., `en-US`). |
-| MaxRowHeight             | double  | No       | Maximum row height in points; `0` = unlimited. |
-| AutoFitWrappedTextType   | string  | No       | How wrapped text is handled (`All`, `OnlyWrapped`, `None`). |
-| FormatStrategy           | string  | No       | Formatting strategy (`AutoFit`, `PreserveExisting`). |
-| ForRendering             | string  | No       | Apply auto‑fit for rendering (`True`, `False`). |
+| Parameter              | Type    | Required | Description                                                 |
+| ---------------------- | ------- | -------- | ----------------------------------------------------------- |
+| AutoFitMergedCellsType | string  | Yes      | How merged cells are auto‑fitted (`All`, `First`, `None`).  |
+| IgnoreHidden           | boolean | No       | Whether hidden rows/columns are ignored.                    |
+| OnlyAuto               | boolean | No       | Fit only rows without manual height settings.               |
+| DefaultEditLanguage    | string  | No       | Editing language (e.g., `en-US`).                           |
+| MaxRowHeight           | double  | No       | Maximum row height in points; `0` = unlimited.              |
+| AutoFitWrappedTextType | string  | No       | How wrapped text is handled (`All`, `OnlyWrapped`, `None`). |
+| FormatStrategy         | string  | No       | Formatting strategy (`AutoFit`, `PreserveExisting`).        |
+| ForRendering           | string  | No       | Apply auto‑fit for rendering (`True`, `False`).             |
 
 Typical response codes:
 
-- **200 OK** – Operation completed successfully.  
-- **400 Bad Request** – Invalid JSON payload or unsupported value.  
-- **401 Unauthorized** – Missing or invalid authentication token.  
+- **200 OK** – Operation completed successfully.
+- **400 Bad Request** – Invalid JSON payload or unsupported value.
+- **401 Unauthorized** – Missing or invalid authentication token.
 - **500 Internal Server Error** – Unexpected server error.
 
 **Sample GET response**

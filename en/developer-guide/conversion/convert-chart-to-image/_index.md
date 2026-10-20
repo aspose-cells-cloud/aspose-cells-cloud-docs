@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud Web API - Convert Excel Chart to Image - Free Online Tool"
-second_title: "Document"
+second_title: "Developer Guide"
 ArticleTitle: "How to Convert Spreadsheet Chart to Image: Step-by-Step Guide"
 linktitle: "Convert Chart to Image"
 type: docs

@@ -1,6 +1,6 @@
 ---
 title: "Move a Pivot Table in an Excel File"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: Move
 type: docs
 url: /pivot-tables/move/

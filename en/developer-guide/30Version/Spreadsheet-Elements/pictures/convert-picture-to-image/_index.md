@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud API – Get Picture from Worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Get"
 type: docs
 url: /pictures/get/

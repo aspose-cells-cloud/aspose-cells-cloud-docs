@@ -1,6 +1,6 @@
 ---
 title: "Working with Excel Page Breaks"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "PageBreaks"
 type: docs
 url: /working-with-pagebreaks/

@@ -1,6 +1,6 @@
 ---
 title: "How to work with panes on an Excel worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Panes"
 type: docs
 url: /worksheets/panes/

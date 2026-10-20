@@ -1,6 +1,6 @@
 ---
 title: "Save Options"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Save options"
 type: docs
 url: /save-options/
@@ -16,8 +16,9 @@ ArticleTitle: "Save Options – Aspose.Cells Cloud REST API Documentation"
 
 SaveOptions allow you to control how a workbook is saved when using the Aspose.Cells Cloud REST API. By configuring these options you can enable HTTP compression, specify the output format, manage temporary storage, and control additional behaviors such as chart cache refresh and automatic directory creation.
 
-**Prerequisites**  
-- An authenticated Aspose.Cells Cloud session ([OAuth 2.0 setup](/oauth-setup)).  
+**Prerequisites**
+
+- An authenticated Aspose.Cells Cloud session ([OAuth 2.0 setup](/oauth-setup)).
 - The target workbook must be loaded or created via the API prior to saving ([Create or load workbook via API](/workbook-operations)).
 
 | Name                      | Type       | Description                                                                                        | Notes      |
@@ -31,15 +32,17 @@ SaveOptions allow you to control how a workbook is saved when using the Aspose.C
 | **CreateDirectory**       | **bool?**  | If true and the directory does not exist, it will be automatically created before saving the file. | [optional] |
 | **SortNames**             | **bool?**  | Sorts named ranges alphabetically when saving.                                                     | [optional] |
 
-**Request**  
-- **Method:** `POST` (or `PUT` depending on the operation)  
-- **Endpoint:** `/cells/workbook/save`  
-- **Headers:**  
-  - `Authorization: Bearer <access_token>`  
-  - `Content-Type: application/json`  
+**Request**
+
+- **Method:** `POST` (or `PUT` depending on the operation)
+- **Endpoint:** `/cells/workbook/save`
+- **Headers:**
+  - `Authorization: Bearer <access_token>`
+  - `Content-Type: application/json`
 - **Body:** JSON representation of the `SaveOptions` model (the table above) combined with the workbook data or reference.
 
-**Response Example**  
+**Response Example**
+
 ```json
 {
   "status": "OK",
@@ -50,15 +53,16 @@ SaveOptions allow you to control how a workbook is saved when using the Aspose.C
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
 
-**Notes / Remarks**  
-- When **CreateDirectory** is set to `true`, the API will automatically create the target folder if it does not already exist.  
-- Enabling **EnableHTTPCompression** can reduce payload size for large workbooks, but the client must support gzip/deflate decoding ([RFC 7694](https://datatracker.ietf.org/doc/html/rfc7694)).  
+**Notes / Remarks**
+
+- When **CreateDirectory** is set to `true`, the API will automatically create the target folder if it does not already exist.
+- Enabling **EnableHTTPCompression** can reduce payload size for large workbooks, but the client must support gzip/deflate decoding ([RFC 7694](https://datatracker.ietf.org/doc/html/rfc7694)).
 - **RefreshChartCache** should be used when charts rely on dynamic data that may have changed since the workbook was generated. For more information, see [Learn more about file formats](/supported-formats).

@@ -1,6 +1,6 @@
 ---
 title: "Insert Watermarks and Set Backgrounds in Excel Files"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Watermark and Background"
 type: docs
 url: /watermark-and-background/

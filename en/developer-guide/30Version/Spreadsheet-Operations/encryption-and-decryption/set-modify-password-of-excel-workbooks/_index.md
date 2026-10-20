@@ -1,6 +1,6 @@
 ---
 title: "Modify Password Protection of an Excel Workbook"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Modify an Excel file password"
 type: docs
 url: /workbook/password/modify/

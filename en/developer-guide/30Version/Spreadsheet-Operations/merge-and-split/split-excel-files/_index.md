@@ -1,7 +1,7 @@
 ---
 title: "Split an Excel workbook into multiple files"
 ArticleTitle: "How to Split an Excel Workbook into Multiple Files using Aspose.Cells Cloud API"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Split an Excel file"
 type: docs
 url: /split-multi-excel-files/
@@ -27,18 +27,18 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request parameters
 
-| Parameter Name       | Type    | Location | Description                                                                                     | Required |
-| -------------------- | ------- | -------- | ----------------------------------------------------------------------------------------------- | -------- |
-| files[]              | file    | formData | One or more Excel workbooks to be **split**. Use `file1`, `file2`, … in the request.          | Yes      |
-| format               | string  | Query    | Desired output format for the split files.                                                     | No       |
-| from                 | integer | Query    | Starting worksheet index.                                                                       | No       |
-| to                   | integer | Query    | Ending worksheet index.                                                                         | No       |
-| horizontalResolution | integer | Query    | Image horizontal resolution.                                                                    | No       |
-| verticalResolution   | integer | Query    | Image vertical resolution.                                                                      | No       |
-| outFolder            | string  | Query    | Output folder for the split files.                                                              | No       |
-| splitNameRule        | string  | Query    | Naming rule applied to split files.                                                             | No       |
-| folder               | string  | Query    | Folder containing the original workbook.                                                        | No       |
-| storageName          | string  | Query    | Name of the storage to use.                                                                     | No       |
+| Parameter Name       | Type    | Location | Description                                                                          | Required |
+| -------------------- | ------- | -------- | ------------------------------------------------------------------------------------ | -------- |
+| files[]              | file    | formData | One or more Excel workbooks to be **split**. Use `file1`, `file2`, … in the request. | Yes      |
+| format               | string  | Query    | Desired output format for the split files.                                           | No       |
+| from                 | integer | Query    | Starting worksheet index.                                                            | No       |
+| to                   | integer | Query    | Ending worksheet index.                                                              | No       |
+| horizontalResolution | integer | Query    | Image horizontal resolution.                                                         | No       |
+| verticalResolution   | integer | Query    | Image vertical resolution.                                                           | No       |
+| outFolder            | string  | Query    | Output folder for the split files.                                                   | No       |
+| splitNameRule        | string  | Query    | Naming rule applied to split files.                                                  | No       |
+| folder               | string  | Query    | Folder containing the original workbook.                                             | No       |
+| storageName          | string  | Query    | Name of the storage to use.                                                          | No       |
 
 ### **Response**
 
@@ -68,13 +68,14 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## How to Use the PostWorkbookSplit API with SDKs
 
 ### PostWorkbookSplit API Specification

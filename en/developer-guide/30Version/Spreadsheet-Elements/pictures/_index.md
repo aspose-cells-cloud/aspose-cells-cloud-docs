@@ -1,6 +1,6 @@
 ---
 title: "Working with Excel pictures"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Pictures"
 type: docs
 url: /pictures/

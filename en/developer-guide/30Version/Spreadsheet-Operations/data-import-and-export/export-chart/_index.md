@@ -1,6 +1,6 @@
 ---
 title: "Export Excel Chart"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Chart"
 type: docs
 url: /export-excel-chart-to-different-formats/

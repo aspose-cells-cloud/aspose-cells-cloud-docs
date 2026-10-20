@@ -1,6 +1,6 @@
 ---
 title: "Import JSON Data into Excel"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Import JSON"
 type: docs
 url: /import-json-data-into-excel/
@@ -17,6 +17,7 @@ This REST API **imports JSON data** into an Excel worksheet.
 ```bash
 POST https://api.aspose.cloud/v3.0/cells/{name}/importjson
 ```
+
 ### **Security and Authentication**
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
@@ -69,7 +70,6 @@ Possible status codes:
 | 400  | Bad request – missing or invalid data   |
 | 401  | Unauthorized – invalid or missing token |
 | 500  | Internal server error                   |
-
 
 ## How to Use the PostWorkbookImportJson API with SDKs
 

@@ -1,6 +1,6 @@
 ---
 title: "Check if a Storage Exists – Aspose.Cells Cloud API (v4.0)"
-second_title: "Document"
+second_title: "Developer Guide"
 ArticleTitle: "Cloud-based Excel File Management – Check Storage Existence"
 linktitle: "Storage Exists"
 type: docs

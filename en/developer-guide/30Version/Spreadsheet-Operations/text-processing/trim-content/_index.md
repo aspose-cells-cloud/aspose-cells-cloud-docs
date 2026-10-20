@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Trim Content API – Remove Spaces & Line Breaks from Excel"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Trim Content"
 type: docs
 url: /spreadsheet-trim-content/

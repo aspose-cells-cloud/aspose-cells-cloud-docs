@@ -1,7 +1,7 @@
 ---
 title: "Update a List Object in an Excel Worksheet"
 ArticleTitle: "Update a List Object in an Excel Worksheet – Aspose.Cells Cloud API Documentation"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Update"
 type: docs
 url: /list-objects/update/

@@ -1,6 +1,6 @@
 ---
 title: "Batch Unlock"
-second_title: "Document"
+second_title: "Developer Guide"
 type: docs
 url: /batch/unlock
 keywords: "batch unlock, Aspose.Cells Cloud, Excel, REST API, spreadsheet, cloud SDK"

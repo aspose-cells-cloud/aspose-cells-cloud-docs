@@ -1,6 +1,6 @@
 ---
 title: "Working with Convert Task"
-second_title: "Document"
+second_title: "Developer Guide"
 type: docs
 url: /tasks/convert/
 aliases: [/working-with-convert-task/]
@@ -11,12 +11,11 @@ weight: 30
 
 ## REST API
 
-|**API**|**Type**|**Description**|**Resource Link**|
-| :- | :- | :- | :- |
-|/cells/task/runtask|POST|Run Task|[PostRunTask](https://apireference.aspose.cloud/cells/#/Task/PostRunTask)|
+| **API**             | **Type** | **Description** | **Resource Link**                                                         |
+| :------------------ | :------- | :-------------- | :------------------------------------------------------------------------ |
+| /cells/task/runtask | POST     | Run Task        | [PostRunTask](https://apireference.aspose.cloud/cells/#/Task/PostRunTask) |
 
-
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Task/PostRunTask) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.  
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Task/PostRunTask) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 

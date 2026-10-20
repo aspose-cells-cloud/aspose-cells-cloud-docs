@@ -1,6 +1,6 @@
 ---
 title: "Working with Excel Comments"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Comments"
 type: docs
 url: /comments/

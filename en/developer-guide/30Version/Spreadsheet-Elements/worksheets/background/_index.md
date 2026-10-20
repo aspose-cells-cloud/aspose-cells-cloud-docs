@@ -1,6 +1,6 @@
 ---
 title: "Add or Delete Worksheet Background Image – Aspose.Cells Cloud API"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Background"
 type: docs
 url: /worksheets/background/

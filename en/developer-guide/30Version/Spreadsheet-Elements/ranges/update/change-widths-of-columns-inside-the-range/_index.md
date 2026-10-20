@@ -1,7 +1,7 @@
 ---
 title: "Change Column Widths Inside a Range"
 ArticleTitle: "Change Column Widths Inside a Range – Aspose.Cells Cloud API"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Column width"
 type: docs
 url: /ranges/update/column-width/
@@ -14,6 +14,7 @@ weight: 74
 This REST API sets the column width of a range.
 
 ## Security and Authentication
+
 The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## REST API
@@ -24,20 +25,20 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/col
 
 **Prerequisites** – Before calling the endpoint you must:
 
-1. Create an Aspose Cloud account and obtain a *client ID* and *client secret*.  
-2. Request a JWT token by calling the OAuth endpoint (`/connect/token`). The token is returned in the `access_token` field.  
-3. Upload the target workbook to your Aspose Cloud storage (or ensure it already exists in the specified folder).  
+1. Create an Aspose Cloud account and obtain a _client ID_ and _client secret_.
+2. Request a JWT token by calling the OAuth endpoint (`/connect/token`). The token is returned in the `access_token` field.
+3. Upload the target workbook to your Aspose Cloud storage (or ensure it already exists in the specified folder).
 
 The request parameters are:
 
-| Parameter Name | Type   | Location | Description |
-|----------------|--------|----------|-------------|
-| name           | string | path     | Name of the workbook file |
-| sheetName      | string | path     | Name of the worksheet |
-| value          | number | query    | Desired column width value |
+| Parameter Name | Type   | Location | Description                                |
+| -------------- | ------ | -------- | ------------------------------------------ |
+| name           | string | path     | Name of the workbook file                  |
+| sheetName      | string | path     | Name of the worksheet                      |
+| value          | number | query    | Desired column width value                 |
 | range          | object | body     | Range object that defines the target cells |
-| folder         | string | query    | Folder path where the workbook is stored |
-| storageName    | string | query    | Name of the storage service |
+| folder         | string | query    | Folder path where the workbook is stored   |
+| storageName    | string | query    | Name of the storage service                |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeColumnWidth) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -83,13 +84,13 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/
 }
 ```
 
-*Possible error responses*  
+_Possible error responses_
 
-| HTTP Code | Description                               |
-|-----------|-------------------------------------------|
+| HTTP Code | Description                              |
+| --------- | ---------------------------------------- |
 | 400       | Bad Request – invalid JSON or parameters |
-| 401       | Unauthorized – missing or invalid token   |
-| 404       | Not Found – workbook or worksheet absent   |
+| 401       | Unauthorized – missing or invalid token  |
+| 404       | Not Found – workbook or worksheet absent |
 
 {{< /tab >}}
 
@@ -155,14 +156,14 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 
 ## FAQ
 
-**Q:** *What endpoint do I call to set the column width of a range in an Excel workbook?*  
+**Q:** _What endpoint do I call to set the column width of a range in an Excel workbook?_  
 **A:** `POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/columnWidth` where `{name}` is the workbook file name and `{sheetName}` is the target worksheet.
 
-**Q:** *How do I authenticate the request when using the column‑width API?*  
+**Q:** _How do I authenticate the request when using the column‑width API?_  
 **A:** Include an `Authorization: Bearer <jwt token>` header. Obtain the JWT token via the Aspose Cloud OAuth flow (`/connect/token`) using your client ID and client secret.
 
-**Q:** *What JSON body should I send to change the width of columns A‑C to 25 points?*  
-**A:**  
+**Q:** _What JSON body should I send to change the width of columns A‑C to 25 points?_  
+**A:**
 
 ```json
 {

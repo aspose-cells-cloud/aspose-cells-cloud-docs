@@ -1,6 +1,6 @@
 ---
 title: "Merge an Excel Workbook into Another Workbook"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Merge an Excel workbook into another workbook"
 type: docs
 url: /merge-an-excel-file-into-the-excel-file/
@@ -23,7 +23,6 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/merge
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-
 ### **Query Parameter**
 
 | Parameter Name | Type   | Description                                                 |
@@ -36,9 +35,9 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ```json
 {
-    "Status":"OK",
-    "Code":200,
-      "Workbook": {
+  "Status": "OK",
+  "Code": 200,
+  "Workbook": {
     "FileName": "test.xlsx",
     "Links": [
       {
@@ -152,13 +151,14 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## How to Use the PostWorkbooksMerge API with SDKs
 
 ### PostWorkbooksMerge API Specification
@@ -166,7 +166,6 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbooksMerge) defines a publicly accessible programming interface and lets the API carry out REST interactions directly from a web browser.
 
 You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL, including the required authentication header.
-
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 

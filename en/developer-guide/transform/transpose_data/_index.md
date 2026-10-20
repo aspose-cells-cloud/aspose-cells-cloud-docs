@@ -1,7 +1,7 @@
 ---
 title: "Transpose Data"
 ArticleTitle: "Transpose Data – Aspose.Cells Cloud API"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Transpose Data"
 type: docs
 url: /transpose

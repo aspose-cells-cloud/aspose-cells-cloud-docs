@@ -1,6 +1,6 @@
 ---
 title: "Unprotect Excel Workbook – Aspose.Cells Cloud API"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Unprotect Excel File"
 type: docs
 url: /excel-file-unprotect/

@@ -1,6 +1,6 @@
 ---
 title: "Export Workbook"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Workbook"
 type: docs
 url: /export-excel-to-different-formats/
@@ -29,7 +29,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | file           | file   | formData                    | True     | File to upload                                                                                                     |
 | objectType     | string | query                       | True     | The type of object to export. For chart export use `chart`. Other possible values are `worksheet`, `picture`, etc. |
 | format         | string | query                       | True     | Desired output format. Supported values: `png`, `jpeg`, `gif`, `bmp`, `svg`, `tiff`, `emf`, `wmf`, `pdf`.          |
-|  |
+|                |
 
 ### **Response**
 

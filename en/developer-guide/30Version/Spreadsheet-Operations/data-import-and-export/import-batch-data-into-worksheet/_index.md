@@ -1,6 +1,6 @@
 ---
 title: "Import Batch Data into Excel Worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Import batch data"
 type: docs
 url: /import-batch-data-into-excel/
@@ -16,7 +16,7 @@ ArticleTitle: "Import Batch Data into Excel Worksheet – Aspose.Cells Cloud Doc
 
 This REST API **imports batch data** into an Excel worksheet. It accepts a multipart request where the first part contains the **ImportBatchDataOption** object and the second part carries the actual data file (CSV, JSON, XML, etc.).
 
-The operation uses an HTTP request with multipart content (see [RFC 2046](https://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](https://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)).  
+The operation uses an HTTP request with multipart content (see [RFC 2046](https://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](https://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)).
 
 ## PostImportData API
 
@@ -76,20 +76,21 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ```json
 {
-  "Status":"OK",
-  "Code":200
+  "Status": "OK",
+  "Code": 200
 }
 ```
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## How to Use the PostImportData API with SDKs
 
 ### PostImportData API Specification

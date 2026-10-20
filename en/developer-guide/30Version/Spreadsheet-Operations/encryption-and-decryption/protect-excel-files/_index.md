@@ -1,15 +1,12 @@
 ---
 title: "Protect Excel Files"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Encrypt Excel files"
 date: 2024-05-22
 lastmod: 2024-05-22
 type: docs
 url: /protect-excel-files/
-aliases:
-  [
-    /protect/without-storage/
-  ]
+aliases: [/protect/without-storage/]
 keywords: "Aspose.Cells, Excel protection API, encrypt Excel workbook, cloud spreadsheet security, REST API"
 description: "Encrypt and protect Excel workbooks using Aspose.Cells Cloud REST API with JWT authentication. Includes cURL, SDK examples, and error codes."
 weight: 40
@@ -36,10 +33,10 @@ Authorization: Bearer <your_jwt_token>
 
 ### Request Parameters
 
-| Parameter Name         | Type   | Location | Description                                      | Required |
-|------------------------|--------|----------|--------------------------------------------------|----------|
-| `file`                 | file   | formData | Excel file(s) to protect                         | Yes      |
-| `password`             | string | query    | Password to encrypt the workbook                 | No       |
+| Parameter Name           | Type   | Location | Description                                                    | Required |
+| ------------------------ | ------ | -------- | -------------------------------------------------------------- | -------- |
+| `file`                   | file   | formData | Excel file(s) to protect                                       | Yes      |
+| `password`               | string | query    | Password to encrypt the workbook                               | No       |
 | `protectWorkbookRequest` | object | body     | Optional structured request payload (e.g., encryption options) | No       |
 
 > **Note**: If `password` is provided in the query string, it takes precedence over any password in the request body.
@@ -72,14 +69,14 @@ On success (`200 OK`), the API returns a `FilesResult` object containing the pro
 
 #### HTTP Status Codes
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Protection applied successfully.                 |
-| 400  | Bad Request                 | Missing file, invalid password, or unsupported format. |
-| 401  | Unauthorized                | Invalid or missing JWT token.                    |
-| 403  | Forbidden                   | Insufficient permissions or account restrictions. |
-| 413  | Payload Too Large           | File exceeds maximum upload size (1 GB).         |
-| 500  | Internal Server Error       | Unexpected server-side error.                    |
+| Code | Meaning               | Description                                            |
+| ---- | --------------------- | ------------------------------------------------------ |
+| 200  | OK                    | Protection applied successfully.                       |
+| 400  | Bad Request           | Missing file, invalid password, or unsupported format. |
+| 401  | Unauthorized          | Invalid or missing JWT token.                          |
+| 403  | Forbidden             | Insufficient permissions or account restrictions.      |
+| 413  | Payload Too Large     | File exceeds maximum upload size (1 GB).               |
+| 500  | Internal Server Error | Unexpected server-side error.                          |
 
 #### Example Error Response
 
@@ -98,27 +95,28 @@ Using an SDK simplifies authentication, request construction, and response parsi
 
 ```javascript
 // Aspose.Cells Cloud SDK for Node.js v22.5.0
-const { CellsApi, PostProtectRequest } = require('aspose-cells-cloud');
+const { CellsApi, PostProtectRequest } = require("aspose-cells-cloud");
 
-const clientId = process.env['CELLS_CLOUD_CLIENT_ID'];
-const clientSecret = process.env['CELLS_CLOUD_CLIENT_SECRET'];
+const clientId = process.env["CELLS_CLOUD_CLIENT_ID"];
+const clientSecret = process.env["CELLS_CLOUD_CLIENT_SECRET"];
 
 const cellsApi = new CellsApi(clientId, clientSecret);
 
-const fileName = 'sample.xlsx';
-const password = 'MySecretPwd';
+const fileName = "sample.xlsx";
+const password = "MySecretPwd";
 
 const request = new PostProtectRequest({
   file: fileName,
-  password: password
+  password: password,
 });
 
-cellsApi.postProtect(request)
+cellsApi
+  .postProtect(request)
   .then((response) => {
-    console.log('Protected workbook downloaded.');
+    console.log("Protected workbook downloaded.");
     // Handle response.files[0].fileContent (Base64)
   })
-  .catch((error) => console.error('Error:', error));
+  .catch((error) => console.error("Error:", error));
 ```
 
 ### Java
@@ -132,13 +130,13 @@ public class ExamplePostProtect {
     public static void main(String[] args) {
         String clientId = "your_client_id";
         String clientSecret = "your_client_secret";
-        
+
         CellsApi cellsApi = new CellsApi(clientId, clientSecret);
-        
+
         try {
             File file = new File("sample.xlsx");
             String password = "MySecretPwd";
-            
+
             FilesResult result = cellsApi.postProtect(file, password, null, null);
             System.out.println("Protected workbook saved.");
         } catch (Exception e) {
@@ -182,10 +180,10 @@ print("Protected workbook retrieved.")
 
 ## Best Practices
 
-- **Use HTTPS only** — Never send passwords over unencrypted connections.  
-- **Store passwords securely** — Use environment variables or secret managers (e.g., AWS Secrets Manager).  
-- **Validate file types** — Ensure uploaded files are valid Excel workbooks (`.xlsx`, `.xls`, `.xlsm`).  
-- **Handle Base64 content** — Decode the `FileContent` field before saving to disk.  
+- **Use HTTPS only** — Never send passwords over unencrypted connections.
+- **Store passwords securely** — Use environment variables or secret managers (e.g., AWS Secrets Manager).
+- **Validate file types** — Ensure uploaded files are valid Excel workbooks (`.xlsx`, `.xls`, `.xlsm`).
+- **Handle Base64 content** — Decode the `FileContent` field before saving to disk.
 - **Update SDKs** — Use the latest SDK versions for security patches and feature support.
 
 ---

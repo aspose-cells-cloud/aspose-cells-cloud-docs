@@ -1,6 +1,6 @@
 ---
 title: "Update a worksheet validation on an Excel worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Update"
 type: docs
 url: /validations/update/

@@ -1,7 +1,7 @@
 ---
 title: "Split Table"
 ArticleTitle: "Split Table – Aspose.Cells Cloud API"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Split Table"
 type: docs
 url: /split/table

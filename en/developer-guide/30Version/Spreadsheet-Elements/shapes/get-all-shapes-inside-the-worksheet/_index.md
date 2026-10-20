@@ -1,6 +1,6 @@
 ---
 title: "Get All Shapes on an Excel Worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Get-all"
 type: docs
 url: /shapes/get-all/

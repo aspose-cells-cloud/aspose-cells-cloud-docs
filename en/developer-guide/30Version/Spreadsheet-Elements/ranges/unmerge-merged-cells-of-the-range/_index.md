@@ -1,6 +1,6 @@
 ---
 title: "Unmerge Cells in a Range"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Unmerge"
 type: docs
 url: /ranges/unmerge/

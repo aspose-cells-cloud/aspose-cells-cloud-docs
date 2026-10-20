@@ -1,6 +1,6 @@
 ---
 title: "Working with Autofit on an Excel Worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Autofit"
 type: docs
 url: /worksheets/autofit/

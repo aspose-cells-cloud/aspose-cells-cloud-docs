@@ -1,6 +1,6 @@
 ---
 title: "Add Horizontal Page Break"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Add Horizontal Page Break"
 type: docs
 url: /page-breaks/add-horizontal-page-break/
@@ -28,17 +28,17 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type    | Location | Description                                                               |
-| -------------- | ------- | -------- | ------------------------------------------------------------------------- |
-| name           | string  | path     | Name of the Excel file.                                                   |
-| sheetName      | string  | path     | Name of the worksheet where the break will be added.                      |
-| cellname       | string  | query    | Cell reference (e.g., **A1**) that marks the start of the page break.    |
-| row            | integer | query    | Zero‑based row index for the page break.                                  |
-| column         | integer | query    | Zero‑based column index for the page break.                               |
-| startColumn    | integer | query    | Starting column of a range when inserting a break.                        |
-| endColumn      | integer | query    | Ending column of a range when inserting a break.                          |
-| folder         | string  | query    | Folder path containing the Excel file.                                    |
-| storageName    | string  | query    | Name of the Aspose Cloud storage.                                         |
+| Parameter Name | Type    | Location | Description                                                           |
+| -------------- | ------- | -------- | --------------------------------------------------------------------- |
+| name           | string  | path     | Name of the Excel file.                                               |
+| sheetName      | string  | path     | Name of the worksheet where the break will be added.                  |
+| cellname       | string  | query    | Cell reference (e.g., **A1**) that marks the start of the page break. |
+| row            | integer | query    | Zero‑based row index for the page break.                              |
+| column         | integer | query    | Zero‑based column index for the page break.                           |
+| startColumn    | integer | query    | Starting column of a range when inserting a break.                    |
+| endColumn      | integer | query    | Ending column of a range when inserting a break.                      |
+| folder         | string  | query    | Folder path containing the Excel file.                                |
+| storageName    | string  | query    | Name of the Aspose Cloud storage.                                     |
 
 The <a href="https://apireference.aspose.cloud/cells/#/PageBreaks/PutHorizontalPageBreak" target="_blank" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible interface that lets you perform REST interactions directly from a web browser.
 
@@ -84,13 +84,13 @@ Example of an error response when the JWT token is missing or invalid:
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
 
 For more details on related operations, see the API pages for **[Get Horizontal Page Breaks](../get-horizontal-page-breaks/)** and **[Delete Horizontal Page Break](../delete-horizontal-page-break/)**.
 

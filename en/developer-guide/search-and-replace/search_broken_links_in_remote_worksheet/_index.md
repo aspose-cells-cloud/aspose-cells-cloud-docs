@@ -1,7 +1,7 @@
 ---
 title: "SearchBrokenLinksInRemoteWorksheet"
 ArticleTitle: "Search Broken Links in Remote Worksheet – Aspose.Cells Cloud API"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "SearchBrokenLinksInRemoteWorksheet"
 type: docs
 url: /{name}/worksheets/{worksheet}/search/broken-links

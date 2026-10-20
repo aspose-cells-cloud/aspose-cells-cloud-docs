@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud Move Folder API – Quickly Move Folders in the Cloud"
-second_title: "Document"
+second_title: "Developer Guide"
 ArticleTitle: "Cloud-based Excel File Management – Quickly Move Folders in the Cloud"
 linktitle: "Move Folder"
 type: docs

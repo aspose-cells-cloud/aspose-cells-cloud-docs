@@ -1,6 +1,6 @@
 ---
 title: "Copy Range in a Worksheet with Paste Options"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Copy"
 type: docs
 url: /ranges/copy/

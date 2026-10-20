@@ -1,7 +1,7 @@
 ---
 title: "Import CSV Data Into Spreadsheet"
 ArticleTitle: "Import CSV Data Into Spreadsheet – Aspose.Cells Cloud API"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Import CSV Data Into Spreadsheet"
 type: docs
 url: /import/data/csv
@@ -41,7 +41,6 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | fontsLocation      | String  | Query                       | Use Custom fonts. (optional)                                                                                                                       |
 | region             | String  | Query                       | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. (optional) |
 | password           | String  | Query                       | The password for opening spreadsheet file. (optional)                                                                                              |
-
 
 ### **Response**
 

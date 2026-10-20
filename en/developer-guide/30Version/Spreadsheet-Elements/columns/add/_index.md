@@ -1,6 +1,6 @@
 ---
 title: "Add an Empty Column to an Excel Worksheet - Aspose.Cells Cloud API"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Add"
 type: docs
 url: /columns/add/

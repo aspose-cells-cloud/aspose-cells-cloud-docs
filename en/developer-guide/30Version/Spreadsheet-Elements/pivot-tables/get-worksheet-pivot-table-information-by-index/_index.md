@@ -1,6 +1,6 @@
 ---
 title: "Get a Pivot Table in an Excel Worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: Get
 type: docs
 url: /pivot-tables/get/

@@ -1,6 +1,6 @@
 ---
 title: "Unlock Excel Files"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Unlock Excel Files"
 type: docs
 url: /unlock-excel-files/
@@ -22,13 +22,13 @@ POST https://api.aspose.cloud/v3.0/cells/unlock
 
 ### Authentication
 
-The Aspose.Cells Cloud APIs use [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/rel="noopener noreferrer" target="_blank"). Ensure you include a valid bearer token in the `Authorization` header.
+The Aspose.Cells Cloud APIs use [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/rel="noopener noreferrer" target="\_blank"). Ensure you include a valid bearer token in the `Authorization` header.
 
 ### Request Parameters
 
-| Parameter Name | Type   | Location             | Required | Description |
-|----------------|--------|----------------------|----------|-------------|
-| `file`         | file   | formData (HTTP body) | Yes      | Excel file(s) to unlock. Multiple files may be uploaded in a single request. |
+| Parameter Name | Type   | Location             | Required | Description                                                                          |
+| -------------- | ------ | -------------------- | -------- | ------------------------------------------------------------------------------------ |
+| `file`         | file   | formData (HTTP body) | Yes      | Excel file(s) to unlock. Multiple files may be uploaded in a single request.         |
 | `password`     | string | query string         | No       | Password required to decrypt the workbook. If omitted, the file must be unprotected. |
 
 > ⚠️ **Security Note**  
@@ -79,21 +79,21 @@ On successful unlock, the API returns a `FilesResult` object containing the decr
 }
 ```
 
-| Field         | Type    | Description |
-|---------------|---------|-------------|
-| `Files`       | Array   | Array of unlocked files (each with `Filename`, `FileSize`, `FileContent`, and optionally `FileFormat`). |
-| `Code`        | integer | HTTP status code (e.g., 200). |
-| `Status`      | string  | Status message ("OK" on success). |
+| Field    | Type    | Description                                                                                             |
+| -------- | ------- | ------------------------------------------------------------------------------------------------------- |
+| `Files`  | Array   | Array of unlocked files (each with `Filename`, `FileSize`, `FileContent`, and optionally `FileFormat`). |
+| `Code`   | integer | HTTP status code (e.g., 200).                                                                           |
+| `Status` | string  | Status message ("OK" on success).                                                                       |
 
 #### HTTP Status Codes
 
-| Code | Meaning                     | Description |
-|------|-----------------------------|-------------|
-| 200  | OK                          | Files successfully decrypted and returned. |
-| 400  | Bad Request                 | Missing `file`, invalid file format, or malformed request. |
-| 401  | Unauthorized                | Invalid, expired, or missing JWT token. |
-| 413  | Payload Too Large           | File size exceeds the limit (currently 2 GB per request). |
-| 500  | Internal Server Error       | Unexpected server-side error. |
+| Code | Meaning               | Description                                                |
+| ---- | --------------------- | ---------------------------------------------------------- |
+| 200  | OK                    | Files successfully decrypted and returned.                 |
+| 400  | Bad Request           | Missing `file`, invalid file format, or malformed request. |
+| 401  | Unauthorized          | Invalid, expired, or missing JWT token.                    |
+| 413  | Payload Too Large     | File size exceeds the limit (currently 2 GB per request).  |
+| 500  | Internal Server Error | Unexpected server-side error.                              |
 
 ---
 
@@ -183,15 +183,15 @@ puts "Unlocked #{result.files.count} file(s)."
 
 ```javascript
 // Install: npm install aspose-cells-cloud
-const { CellsApi } = require('aspose-cells-cloud');
+const { CellsApi } = require("aspose-cells-cloud");
 
 const cellsApi = new CellsApi(
   process.env.ASPOSE_CLOUD_CLIENT_ID,
-  process.env.ASPOSE_CLOUD_CLIENT_SECRET
+  process.env.ASPOSE_CLOUD_CLIENT_SECRET,
 );
 
-const result = await cellsApi.postUnlock('sample.xlsx', {
-  password: process.env.ASPOSE_PASSWORD
+const result = await cellsApi.postUnlock("sample.xlsx", {
+  password: process.env.ASPOSE_PASSWORD,
 });
 console.log(`Unlocked ${result.body.Files.length} file(s).`);
 ```
@@ -283,10 +283,10 @@ fmt.Printf("Unlocked %d file(s).\n", len(filesResult.Files))
 
 ## Related Topics
 
-- [Encrypt Excel Files](/encrypt-excel-files/)  
-- [Aspose.Cells Cloud SDK Overview](/cells-cloud-sdks/)  
-- [Bulk Workbook Operations](/bulk-operations/)  
+- [Encrypt Excel Files](/encrypt-excel-files/)
+- [Aspose.Cells Cloud SDK Overview](/cells-cloud-sdks/)
+- [Bulk Workbook Operations](/bulk-operations/)
 
 ---
 
-*Last updated: May 10, 2024*
+_Last updated: May 10, 2024_

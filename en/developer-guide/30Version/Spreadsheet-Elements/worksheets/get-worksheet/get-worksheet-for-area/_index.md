@@ -1,6 +1,6 @@
 ---
 title: "Export a Worksheet Area to PNG, PDF, CSV – Aspose.Cells Cloud API"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Area"
 type: docs
 url: /worksheets/area-to-different-formats/
@@ -21,27 +21,27 @@ The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets
 
 ### Request parameters
 
-| Parameter            | Type   | Required | Description                                    |
-|----------------------|--------|----------|------------------------------------------------|
-| `name`               | string | Yes      | Workbook file name.                            |
-| `sheetName`          | string | Yes      | Target worksheet name.                         |
-| `format`             | string | Yes      | Desired output format (png, pdf, csv, …).      |
-| `area`               | string | No       | Cell range to export (e.g., `B3:K8`).          |
-| `verticalResolution`| int    | No       | Vertical DPI for raster formats.               |
-| `horizontalResolution`| int  | No       | Horizontal DPI for raster formats.             |
-| `folder`             | string | No       | Cloud storage folder that contains the file.   |
-| `storage`            | string | No       | Name of the storage service.                   |
+| Parameter              | Type   | Required | Description                                  |
+| ---------------------- | ------ | -------- | -------------------------------------------- |
+| `name`                 | string | Yes      | Workbook file name.                          |
+| `sheetName`            | string | Yes      | Target worksheet name.                       |
+| `format`               | string | Yes      | Desired output format (png, pdf, csv, …).    |
+| `area`                 | string | No       | Cell range to export (e.g., `B3:K8`).        |
+| `verticalResolution`   | int    | No       | Vertical DPI for raster formats.             |
+| `horizontalResolution` | int    | No       | Horizontal DPI for raster formats.           |
+| `folder`               | string | No       | Cloud storage folder that contains the file. |
+| `storage`              | string | No       | Name of the storage service.                 |
 
 ### Successful response
 
-* **200 OK** – Returns the requested file in binary format (PNG, PDF, CSV, etc.).
+- **200 OK** – Returns the requested file in binary format (PNG, PDF, CSV, etc.).
 
 ### Error responses
 
-| Status Code | Description                              |
-|-------------|------------------------------------------|
-| 400         | Bad request – missing or invalid parameters. |
-| 401         | Unauthorized – authentication token is missing or invalid. |
+| Status Code | Description                                                 |
+| ----------- | ----------------------------------------------------------- |
+| 400         | Bad request – missing or invalid parameters.                |
+| 401         | Unauthorized – authentication token is missing or invalid.  |
 | 404         | Not found – specified workbook or worksheet does not exist. |
 | 500         | Internal server error – unexpected condition on the server. |
 

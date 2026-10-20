@@ -1,6 +1,6 @@
 ---
 title: "Working with Excel Metadata and Document Properties"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Metadata & Properties"
 type: docs
 url: /metadata/

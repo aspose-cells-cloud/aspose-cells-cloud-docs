@@ -1,6 +1,6 @@
 ---
 title: "Import 2 Dimension Integer Array into Excel Worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Import 2 dimension integer array"
 type: docs
 url: /import-a-2D-integer-array-into-excel-worksheet/

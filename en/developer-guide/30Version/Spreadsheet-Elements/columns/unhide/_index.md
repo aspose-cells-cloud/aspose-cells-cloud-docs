@@ -1,7 +1,7 @@
 ---
 title: "Unhide columns on an Excel worksheet"
 ArticleTitle: "Unhide columns on an Excel worksheet - Aspose.Cells Cloud API"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Unhide"
 type: docs
 url: /columns/unhide/
@@ -67,13 +67,13 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ce
 
 **Typical HTTP status codes**
 
-| Code | Description                                 |
-|------|---------------------------------------------|
-| 200  | OK – Columns were successfully unhidden.    |
-| 400  | Bad Request – Invalid parameters.           |
-| 401  | Unauthorized – Missing or invalid token.    |
-| 404  | Not Found – Workbook or worksheet not found.|
-| 500  | Internal Server Error – Unexpected failure. |
+| Code | Description                                  |
+| ---- | -------------------------------------------- |
+| 200  | OK – Columns were successfully unhidden.     |
+| 400  | Bad Request – Invalid parameters.            |
+| 401  | Unauthorized – Missing or invalid token.     |
+| 404  | Not Found – Workbook or worksheet not found. |
+| 500  | Internal Server Error – Unexpected failure.  |
 
 ## Cloud SDK Family
 

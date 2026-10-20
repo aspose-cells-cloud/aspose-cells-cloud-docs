@@ -1,6 +1,6 @@
 ---
 title: "Excel to PNG"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Excel to PNG"
 type: docs
 url: convert-excel-file-to-png-file/
@@ -39,28 +39,27 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 The API returns a **FileInfo** object that contains the generated PNG file.
 
-| Field           | Type   | Description                                   |
-| --------------- | ------ | --------------------------------------------- |
+| Field           | Type   | Description                                 |
+| --------------- | ------ | ------------------------------------------- |
 | **Filename**    | string | Name of the PNG file (e.g., `example.png`). |
-| **FileSize**    | int    | Size of the file in bytes.                    |
-| **FileContent** | string | Base64‑encoded content of the PNG file.      |
+| **FileSize**    | int    | Size of the file in bytes.                  |
+| **FileContent** | string | Base64‑encoded content of the PNG file.     |
 
 [FileInfo](/cells/file-info/)
 
-
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## How to Use the PostConvertWorkbookToPNG API with SDKs
 
 ### PostConvertWorkbookToPNG API Specification
-
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToPNG) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

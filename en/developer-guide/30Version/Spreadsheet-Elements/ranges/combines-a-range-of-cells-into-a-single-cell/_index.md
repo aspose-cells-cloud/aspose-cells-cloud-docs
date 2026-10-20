@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud API – Merge Cells Range"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Merge"
 type: docs
 url: /ranges/merge/

@@ -5,9 +5,6 @@ type: docs
 url: /delete-file/
 description: "Delete an Excel file from Aspose.Cells Cloud storage using the REST API. Includes endpoint, path/query parameters, authentication, HTTP status codes, and cURL/SDK examples."
 keywords: "Aspose.Cells, delete file API, Excel cloud storage, REST API, file management, cloud file deletion"
-date: 2024-03-15
-lastmod: 2024-05-22
-canonical: "https://reference.aspose.cloud/cells/delete-file/"
 weight: 100
 ---
 
@@ -106,8 +103,3 @@ await cells_api.delete_file("Example.xlsx", storage_name="MyStorage")
 - [List Files](/list-files/)
 - [Download File](/download-file/)
 - [Storage API Overview](/storage-api/)
-
-### OpenAPI Specification
-
-The OpenAPI specification for this operation is available as a machine-readable YAML file:  
-🔗 [spec.yaml](https://raw.githubusercontent.com/aspose-cells-cloud/aspose-cells-cloud/master/openapi/spec.yaml)

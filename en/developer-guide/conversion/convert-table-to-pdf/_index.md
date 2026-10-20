@@ -1,6 +1,6 @@
 ---
 title: "Convert Excel Table to PDF via Aspose.Cells Cloud API"
-second_title: "Document"
+second_title: "Developer Guide"
 ArticleTitle: "How to Convert Local Spreadsheet Table Data to a PDF File: Step‑by‑Step Guide"
 linktitle: "Convert Table to PDF"
 date: 2024-06-15

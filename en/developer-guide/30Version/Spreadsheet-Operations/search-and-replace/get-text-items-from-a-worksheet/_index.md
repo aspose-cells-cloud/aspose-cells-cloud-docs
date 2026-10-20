@@ -1,6 +1,6 @@
 ---
 title: "Get Text Items from an Excel Worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Get Text Items in Worksheet"
 type: docs
 url: /worksheets/get-text-items/

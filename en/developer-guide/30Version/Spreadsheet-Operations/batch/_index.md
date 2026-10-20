@@ -1,6 +1,6 @@
 ---
 title: "Batch Processing of Excel Files – Convert, Lock, Protect, Split, Unlock with Aspose.Cells Cloud API"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Batch Excel files"
 date: 2024-06-15
 url: /batch/

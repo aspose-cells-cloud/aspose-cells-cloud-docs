@@ -1,6 +1,6 @@
 ---
 title: "Batch Lock Excel Files"
-second_title: "Document"
+second_title: "Developer Guide"
 type: docs
 url: /batch/lock
 keywords: "batch lock, Excel, Aspose.Cells, Cloud API, spreadsheet, file protection"

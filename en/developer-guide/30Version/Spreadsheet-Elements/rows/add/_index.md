@@ -1,6 +1,6 @@
 ---
 title: "How to Add Rows to an Excel Worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Add"
 type: docs
 url: /rows/add/

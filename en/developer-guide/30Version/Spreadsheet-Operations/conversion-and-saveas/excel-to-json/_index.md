@@ -1,6 +1,6 @@
 ---
 title: "Excel to JSON"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Excel to JSON"
 type: docs
 url: /convert-excel-file-to-json-file/

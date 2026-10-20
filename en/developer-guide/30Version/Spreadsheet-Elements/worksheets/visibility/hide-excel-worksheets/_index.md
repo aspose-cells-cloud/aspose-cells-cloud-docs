@@ -1,6 +1,6 @@
 ---
 title: "Hide an Excel worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Hide"
 type: docs
 url: /worksheets/hide/

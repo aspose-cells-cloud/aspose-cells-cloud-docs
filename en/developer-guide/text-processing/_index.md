@@ -1,6 +1,6 @@
 ---
 title: "Aspose.Cells Cloud API – Text Processing (Trim, Split, Convert, Extract, Remove)"
-second_title: "Document"
+second_title: "Developer Guide"
 ArticleTitle: "Spreadsheet Text Processing: Trim, Split, Convert, Extract, and Remove Text"
 linktitle: "Text Processing"
 type: docs
@@ -12,10 +12,9 @@ weight: 100
 
 ## Excel Text Manipulation APIs
 
-Aspose.Cells Cloud offers a collection of REST endpoints that let you manipulate text inside Excel worksheets. These operations cover everyday tasks such as trimming whitespace, splitting strings, converting case, extracting substrings, and removing unwanted characters.  
+Aspose.Cells Cloud offers a collection of REST endpoints that let you manipulate text inside Excel worksheets. These operations cover everyday tasks such as trimming whitespace, splitting strings, converting case, extracting substrings, and removing unwanted characters.
 
 **Prerequisites:** All requests must be authenticated with a valid access token supplied in the `Authorization` header. Refer to the authentication guide for details on obtaining and using tokens.
-
 
 ### Basic Text Operations
 

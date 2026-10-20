@@ -1,6 +1,6 @@
 ---
 title: "Update picture in an Excel file"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Update"
 type: docs
 url: /pictures/update/
@@ -40,12 +40,12 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Error Responses
 
-| HTTP Code | Description                                            |
-| --------- | ------------------------------------------------------ |
-| 401       | Unauthorized – missing or invalid token.               |
+| HTTP Code | Description                                                                 |
+| --------- | --------------------------------------------------------------------------- |
+| 401       | Unauthorized – missing or invalid token.                                    |
 | 404       | Not Found – the specified file, worksheet, or picture index does not exist. |
-| 400       | Bad Request – malformed request syntax or invalid parameters. |
-| 500       | Internal Server Error – an unexpected condition was encountered. |
+| 400       | Bad Request – malformed request syntax or invalid parameters.               |
+| 500       | Internal Server Error – an unexpected condition was encountered.            |
 
 The <a href="https://apireference.aspose.cloud/cells/#/Pictures/PostWorksheetPicture" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -137,4 +137,4 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 
 {{< /tabs >}}
 
-*See also:* Add picture, Delete picture, Get picture, Clear pictures – other picture‑related operations in the Aspose.Cells Cloud API.
+_See also:_ Add picture, Delete picture, Get picture, Clear pictures – other picture‑related operations in the Aspose.Cells Cloud API.

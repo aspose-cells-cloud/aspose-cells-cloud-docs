@@ -1,6 +1,6 @@
 ---
 title: "Export Picture"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Picture"
 type: docs
 url: /export-excel-picture-to-different-formats/

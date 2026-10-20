@@ -2,7 +2,7 @@
 title: "Aspise.Cells Cloud Web API – Other Features: Health Check, Get Public Key"
 linktitle: "Other Features"
 ArticleTitle: "Other Features: Health Check, Get Public Key"
-second_title: "Document"
+second_title: "Developer Guide"
 type: docs
 url: /other-features/
 keywords: "Aspose.Cells, Cloud API, health check, public key, access token, Excel, REST"

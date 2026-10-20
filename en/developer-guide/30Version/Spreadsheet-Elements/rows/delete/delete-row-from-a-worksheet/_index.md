@@ -1,6 +1,6 @@
 ---
 title: "Delete a Row in an Excel Worksheet"
-second_title: "Document"
+second_title: "Developer Guide"
 linktitle: "Row"
 type: docs
 url: /rows/delete/row/
@@ -13,9 +13,10 @@ ArticleTitle: "Delete a Row in an Excel Worksheet – Aspose.Cells Cloud API Gui
 
 This REST API deletes a row from an Excel worksheet.
 
-**Prerequisites**  
-- A valid JWT **Authorization** token.  
-- The workbook must be stored in a supported Aspose Cloud storage (default or custom).  
+**Prerequisites**
+
+- A valid JWT **Authorization** token.
+- The workbook must be stored in a supported Aspose Cloud storage (default or custom).
 - The target folder (if specified) must exist in the chosen storage.
 
 ## REST API
@@ -70,13 +71,13 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 
 **Possible HTTP response codes**
 
-| Code | Meaning                              | Description                                                                 |
-|------|--------------------------------------|-----------------------------------------------------------------------------|
-| 200  | OK                                   | The row was deleted successfully.                                           |
-| 400  | Bad Request                          | Missing or invalid parameters (e.g., non‑numeric `rowIndex`).             |
-| 401  | Unauthorized                         | Invalid or missing JWT token.                                               |
-| 404  | Not Found                            | Specified workbook, worksheet, or row does not exist.                      |
-| 500  | Internal Server Error                | Unexpected server error; see error response for details.                    |
+| Code | Meaning               | Description                                                   |
+| ---- | --------------------- | ------------------------------------------------------------- |
+| 200  | OK                    | The row was deleted successfully.                             |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., non‑numeric `rowIndex`). |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                 |
+| 404  | Not Found             | Specified workbook, worksheet, or row does not exist.         |
+| 500  | Internal Server Error | Unexpected server error; see error response for details.      |
 
 **Error response example**
 
@@ -118,7 +119,8 @@ curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/
 
 {{< /tabs >}}
 
-**Related operations**  
-- [Add a Row](/cells/rows/add/row/)  
-- [Delete Multiple Rows](/cells/rows/delete/rows/)  
-- [Get Row Details](/cells/rows/get/row/)  
+**Related operations**
+
+- [Add a Row](/cells/rows/add/row/)
+- [Delete Multiple Rows](/cells/rows/delete/rows/)
+- [Get Row Details](/cells/rows/get/row/)

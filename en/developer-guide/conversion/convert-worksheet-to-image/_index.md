@@ -1,6 +1,6 @@
 ---
 title: "Worksheet Conversion – Aspose.Cells Cloud API Documentation"
-second_title: "Document"
+second_title: "Developer Guide"
 ArticleTitle: "How to Convert Local Worksheet Spreadsheet Data to an Image File: Step‑by‑Step Guide"
 linktitle: "Convert Worksheet to Image"
 type: docs

@@ -3,6 +3,7 @@ url: split-remote-spreadsheet
 title: Split Remote Spreadsheet in Cloud
 second_title: Developer Reference
 linktitle: Split Remote Spreadsheet in Cloud
+type: docs
 tags:
   - excel
   - split
