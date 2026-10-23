@@ -10,6 +10,7 @@ aliases: [/protect/without-storage/]
 keywords: "Aspose.Cells, Excel protection API, encrypt Excel workbook, cloud spreadsheet security, REST API"
 description: "Encrypt and protect Excel workbooks using Aspose.Cells Cloud REST API with JWT authentication. Includes cURL, SDK examples, and error codes."
 weight: 40
+ArticleTitle: "Protect Excel Files with Aspose.Cells Cloud REST API"
 ---
 
 Use Aspose.Cells Cloud REST API to encrypt and protect Excel workbooks. This guide demonstrates how to apply password protection via the `POST /cells/protect` endpoint using HTTP requests, cURL, and SDKs for multiple programming languages.

@@ -7,6 +7,8 @@ aliases: [/working-with-convert-task/]
 keywords: "Aspose.Cells Cloud, REST API, Convert Task, Excel, Spreadsheet, PDF, CSV, JSON, Markdown"
 description: "The Cells Cloud API for Excel provides task support for converting Excel files to various formats."
 weight: 30
+linktitle: "Convert Task"
+ArticleTitle: "Aspose.Cells Cloud Convert Task: REST API and SDK Examples"
 ---
 
 ## REST API

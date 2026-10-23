@@ -9,6 +9,7 @@ linktitle: "Add Worksheet to Spreadsheet"
 type: docs
 keywords: "add worksheet to excel, excel api, aspose.cells cloud, insert sheet, spreadsheet automation, chart sheet, macro sheet, REST API"
 weight: 100
+ArticleTitle: "Add Worksheet to Excel Workbook with Aspose.Cells Cloud REST API"
 ---
 
 Add a new worksheet, chart sheet, or macro sheet to an Excel workbook with precise control over its type, name, and insertion position using the Aspose.Cells Cloud REST API. This operation supports programmatic workbook structuring for automated reporting, template generation, and audit workflows.

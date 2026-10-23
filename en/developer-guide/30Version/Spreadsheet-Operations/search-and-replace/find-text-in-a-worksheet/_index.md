@@ -8,6 +8,7 @@ aliases: [/find-text-in-a-worksheet/]
 weight: 40
 keywords: "Excel, Aspose.Cells Cloud, REST API, find text, worksheet, spreadsheet, search"
 description: "Use the Aspose.Cells Cloud REST API to find text in an Excel worksheet. The API is available across multiple SDKs and programming languages."
+ArticleTitle: "Find Text in Excel Worksheet using Aspose.Cells Cloud REST API"
 ---
 
 This REST API searches for text in an Excel worksheet.

@@ -11,6 +11,7 @@ lastmod: 2024-06-15
 images:
   - src: "/images/health-check-response.png"
     alt: "Aspose.Cells Cloud health check API response in JSON format displayed in Postman"
+ArticleTitle: "Aspose.Cells Cloud Health Check API: Real-Time Service Status Monitoring"
 ---
 
 Check the real-time health status of Aspose.Cells Cloud services to ensure reliability before executing critical operations.

@@ -8,6 +8,9 @@ date: "2024-05-15"
 lastModified: "2024-05-15"
 canonical: "https://docs.aspose.cloud/cells/comments/delete/"
 draft: false
+weight: 100
+linktitle: "Delete Comment"
+ArticleTitle: "Delete Worksheet Comment via Aspose.Cells Cloud REST API"
 ---
 
 > **Page last updated:** May 15, 2024

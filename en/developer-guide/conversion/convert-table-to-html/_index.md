@@ -10,6 +10,7 @@ version: "v3.0"
 url: /convert-table-to-html/
 type: docs
 aliases: ["/api/convert-table-to-html", "/docs/cells/convert/table/html"]
+ArticleTitle: "Aspose.Cells Cloud API: Convert Excel Table to HTML via REST"
 ---
 
 **Quick summary** – This endpoint reads a local Excel workbook, extracts the specified **table**, converts it to an **HTML** file, and returns the result as a downloadable stream. No intermediate upload to Aspose Cloud storage is required.

@@ -9,6 +9,7 @@ description: "Learn how to convert local spreadsheets (XLS, XLSX, CSV, etc.) to 
 date: 2024-05-10
 lastmod: 2024-06-01
 weight: 100
+ArticleTitle: "Convert Spreadsheet to PDF with Aspose.Cells Cloud API"
 ---
 
 The **ConvertSpreadsheetToPdf** endpoint enables direct conversion of a spreadsheet file uploaded from a local drive into a PDF document—processed entirely on Aspose.Cells Cloud servers—without storing the source file in cloud storage. This cloud-native approach reduces bandwidth usage, eliminates intermediate upload steps, and delivers the output PDF as a binary stream ready for download or further processing.

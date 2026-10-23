@@ -7,6 +7,8 @@ url: /get-mergedcell-from-a-worksheet/
 weight: 60
 keywords: "Aspose.Cells Cloud, merged cells, Excel worksheet, REST API, Aspose.Cells SDK, Excel merged cells"
 description: "Retrieve merged cell ranges from an Excel worksheet using Aspose.Cells Cloud API v3.0. Includes authentication, cURL examples, SDK code snippets in C#, Java, Python, and more."
+linktitle: "Get Merged Cells"
+ArticleTitle: "Get Merged Cells from Excel Worksheet Using Aspose.Cells Cloud API"
 ---
 
 ## Overview

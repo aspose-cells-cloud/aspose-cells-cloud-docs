@@ -8,6 +8,7 @@ url: /available-sdks/aspose-cells-cloud-node/
 description: "Aspose.Cells Cloud SDK for Node.js offers true cross-platform power: one import provides Windows, Linux, and macOS developers with the same fluent API to create, convert, merge, split, protect, and manipulate every Excel object—no Office installation is required, and no platform-specific tweaks are needed."
 weight: 30
 kwords: Node.js, Node.js SDK, Excel SDK for Node.js, Cloud SDK for Node.js, REST, Chart, Pivot Table, Table/List Object, Convert Spreadsheet, PDF, CSV, Json, Markdown, Merge, Split, Protect, Search, Replace
+keywords: "Aspose.Cells Cloud, Aspose.Cells Cloud SDK for Node.js, Node.js Excel library, convert Excel to PDF, merge Excel files, split Excel workbook, protect Excel spreadsheet, search and replace in Excel, cloud-based Excel manipulation"
 ---
 
 The SDK is open-source and licensed under the MIT License. You can access the Node library source code for Aspose.Cells Cloud [here](https://github.com/aspose-cells-cloud/aspose-cells-cloud-node).

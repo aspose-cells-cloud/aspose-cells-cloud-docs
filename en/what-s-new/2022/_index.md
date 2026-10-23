@@ -8,6 +8,7 @@ url: /new-features/2023/
 keywords: "What's new in aspose cells cloud. Microsoft Office Excel, Open Office Spreadsheet, CSV, PDF."
 description: "This page describes the most interesting new Aspose.Cells Cloud features introduced in recent releases."
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, What's new in Aspose.Cells Cloud
+ArticleTitle: "Aspose.Cells Cloud 2022 New Features: Chart Axis, Convert APIs, Export Enhancements"
 ---
 
 Welcome to what's new in Aspose.Cells Cloud docs. Use this page to quickly find the latest changes.

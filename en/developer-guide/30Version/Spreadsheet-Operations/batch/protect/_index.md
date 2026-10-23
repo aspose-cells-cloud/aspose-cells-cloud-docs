@@ -11,6 +11,8 @@ date: 2024-03-15
 aliases:
   - /cells/batch-protect-excel-files/
   - /cells/workbook/batch-protection/
+linktitle: "Batch Protect Excel Files"
+ArticleTitle: "Batch Protect Excel Files with Aspose.Cells Cloud REST API"
 ---
 
 ## Batch Protect Excel Files via REST API

@@ -8,6 +8,7 @@ aliases: [/developer-guide/v3.0/, /developer-guide-v3.0/]
 keywords: "Aspose.Cells Cloud, Excel REST API, workbook conversion, chart API, data import, export, PDF, CSV, JSON, developer guide"
 description: "Learn how to use Aspose.Cells Cloud 3.0 REST APIs for Excel workbook creation, conversion, styling, charts, tables, and more. Includes code samples and best‑practice tips."
 weight: 150
+linktitle: "Aspose.Cells Cloud 3.0 Developer Guide"
 ---
 
 ## Working with Aspose.Cells Cloud REST APIs

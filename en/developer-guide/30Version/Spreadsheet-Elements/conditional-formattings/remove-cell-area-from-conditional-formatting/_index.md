@@ -7,6 +7,7 @@ keywords: "Aspose.Cells Cloud, Delete Cell Area, Conditional Formatting API, Exc
 description: "Use the Aspose.Cells Cloud REST API to delete a specific cell area from conditional formatting in an Excel worksheet. Includes ASP.NET, Java, and Python examples."
 ArticleTitle: "Delete Cell Area – Aspose.Cells Cloud API Documentation"
 weight: 70
+linktitle: "Delete Cell Area"
 ---
 
 This REST API removes a cell area from a conditional‑formatting rule.

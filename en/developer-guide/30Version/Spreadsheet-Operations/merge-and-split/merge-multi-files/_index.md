@@ -8,6 +8,7 @@ aliases: [/merge/multi-files/]
 keywords: "Aspose.Cells Cloud, merge multiple Excel files, REST API, spreadsheet merge, cloud SDK"
 description: "Learn how to merge multiple Excel workbooks into one file using the Aspose.Cells Cloud REST API (v3.0). Includes HTTPS endpoint, cURL command, SDK samples, required parameters, and error‑handling details."
 weight: 32
+ArticleTitle: "Merge Multiple Excel Files into One Workbook with Aspose.Cells Cloud REST API"
 ---
 
 ## REST API

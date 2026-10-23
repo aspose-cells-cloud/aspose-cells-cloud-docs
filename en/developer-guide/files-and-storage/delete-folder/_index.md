@@ -7,6 +7,7 @@ url: /delete-folder/
 description: "Delete folders in Aspose.Cells Cloud storage via REST API. Learn syntax, authentication, parameters, error handling, and SDK examples."
 keywords: "delete folder, Aspose.Cells Cloud, REST API, remove folder, Excel cloud storage"
 weight: 30
+ArticleTitle: "Delete Folder in Aspose.Cells Cloud Storage via REST API"
 ---
 
 # Delete Folder

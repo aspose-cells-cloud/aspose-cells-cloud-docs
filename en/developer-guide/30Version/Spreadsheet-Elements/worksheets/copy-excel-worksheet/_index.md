@@ -8,6 +8,7 @@ aliases: [/copy-excel-worksheet/]
 keywords: "Aspose Cells copy worksheet API, Excel copy sheet REST, Aspose Cloud SDK copy, spreadsheet copy worksheet"
 description: "Learn how to copy a worksheet and its formats to a new sheet using Aspose.Cells Cloud REST API. Includes endpoint, parameters, cURL, and SDK examples for C#, Java, Python, and more."
 weight: 100
+ArticleTitle: "Copy Excel Worksheet Using Aspose.Cells Cloud REST API"
 ---
 
 This REST API copies a worksheet and its formats to a new sheet within the same workbook.

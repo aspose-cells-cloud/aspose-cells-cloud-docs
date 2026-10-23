@@ -6,6 +6,7 @@ linktitle: "Replace Spreadsheet Content"
 url: /replace-spreadsheet-content/
 type: docs
 weight: 100
+ArticleTitle: "Aspose.Cells Cloud Replace Spreadsheet Content API"
 ---
 
 ## Replace Text in Excel Without Uploading

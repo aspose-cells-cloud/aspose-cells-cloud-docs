@@ -7,6 +7,7 @@ keywords: "remove duplicates, listobject, Aspose.Cells Cloud API, Excel, REST"
 url: /list-objects/remove-duplicates/
 description: "Learn how to delete duplicate rows from a ListObject in an Excel worksheet using the Aspose.Cells Cloud REST API. Includes endpoint, parameters, authentication, and sample requests and responses."
 weight: 100
+ArticleTitle: "Remove Duplicate Rows from ListObject in Excel via Aspose.Cells Cloud API"
 ---
 
 This REST API removes duplicate rows from a **ListObject** in an Excel worksheet.

@@ -6,6 +6,7 @@ weight: 100
 keywords: "Aspose.Cells Cloud, Excel, REST API, Get First Cell, Worksheet, A1, API v3"
 description: "Learn how to retrieve the first cell (A1) of an Excel worksheet using Aspose.Cells Cloud REST API v3.0. Includes cURL request, JSON response, error examples, and SDK samples for C#, Java, PHP, Python, and more."
 ArticleTitle: "Get First Cell (A1) from an Excel Worksheet using Aspose.Cells Cloud API"
+linktitle: "Get First Cell (A1)"
 ---
 
 This REST API shows how to retrieve the **first cell** in an Excel file when the `cellOrMethodName` parameter is set to `firstcell`.

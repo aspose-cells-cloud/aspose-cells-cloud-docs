@@ -9,6 +9,8 @@ weight: 65
 linktitle: "Add color filter"
 slug: add-dynamic-filter
 api_version: v3.0
+type: docs
+ArticleTitle: "Apply Dynamic Filters in Excel with Aspose.Cells Cloud API"
 ---
 
 ## Overview

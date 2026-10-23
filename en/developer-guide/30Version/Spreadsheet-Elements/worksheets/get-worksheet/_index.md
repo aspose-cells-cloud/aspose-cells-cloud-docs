@@ -7,6 +7,7 @@ url: /worksheets/get/
 keywords: "Excel, worksheet, Aspose.Cells Cloud, REST API, content extraction, format conversion"
 description: "Learn how to retrieve various types of content from an Excel worksheet using the Aspose.Cells Cloud REST API. The guide covers supported formats and provides links to related operations."
 weight: 100
+ArticleTitle: "Get Excel Worksheet Content via Aspose.Cells Cloud REST API"
 ---
 
 ## Working with Getting an Excel Worksheet

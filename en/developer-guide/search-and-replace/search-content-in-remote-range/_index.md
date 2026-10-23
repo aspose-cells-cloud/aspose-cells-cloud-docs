@@ -6,6 +6,7 @@ type: docs
 url: /search-content-in-remote-range/
 keywords: "Aspose.Cells Cloud, Excel REST API, text search, remote range search, spreadsheet automation, cloud data extraction, RESTful API, cURL example, range query, cell search"
 weight: 100
+ArticleTitle: "Search Excel Range Content in Aspose.Cells Cloud API"
 ---
 
 ## API Overview

@@ -7,6 +7,8 @@ url: /conditional-formattings/add-a-condition/
 aliases:
   - /add-a-condition-for-format-condition/
 weight: 40
+linktitle: "Add Condition"
+ArticleTitle: "Add Condition to Conditional Formatting in Excel using Aspose.Cells Cloud API"
 ---
 
 # Add Condition to Conditional Formatting

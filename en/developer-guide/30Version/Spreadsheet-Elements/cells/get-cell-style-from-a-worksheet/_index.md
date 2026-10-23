@@ -14,6 +14,8 @@ tags:
 categories:
   - cells
   - api-reference
+linktitle: "Get Cell Style"
+ArticleTitle: "Get Cell Style from Excel Worksheet using Aspose.Cells Cloud REST API"
 ---
 
 Use this REST API to retrieve the **style** of a cell in an Excel worksheet.

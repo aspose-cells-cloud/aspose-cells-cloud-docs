@@ -8,6 +8,7 @@ aliases: [/move-pivot-table/]
 keywords: "Aspose.Cells Cloud, move pivot table, Excel, REST API, SDK, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, Swift"
 description: "Learn how to use the Aspose.Cells Cloud REST API to move a pivot table within an Excel workbook. SDKs are available for Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift."
 weight: 120
+ArticleTitle: "Move Pivot Table Field with Aspose.Cells Cloud REST API"
 ---
 
 This REST API moves a pivot table within an Excel workbook.

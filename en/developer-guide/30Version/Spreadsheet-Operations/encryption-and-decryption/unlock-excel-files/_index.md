@@ -10,6 +10,7 @@ description: "Learn how to unlock password-protected Excel files using the Aspos
 date: 2024-05-10
 last_updated: May 10, 2024
 weight: 70
+ArticleTitle: "Unlock Password-Protected Excel Files with Aspose.Cells Cloud REST API"
 ---
 
 This REST API unlocks password-protected Excel files, supporting both single and multiple file processing in a single request.

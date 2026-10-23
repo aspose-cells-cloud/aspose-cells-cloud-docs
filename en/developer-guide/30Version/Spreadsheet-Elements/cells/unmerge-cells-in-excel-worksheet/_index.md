@@ -17,6 +17,7 @@ tags:
 related:
   - url: /merge-cells-in-excel-worksheet/
     title: Merge Cells in Excel Worksheet
+linktitle: "Unmerge Cells"
 ---
 
 This REST API endpoint unmerges previously merged cells in an Excel worksheet using Aspose.Cells Cloud. The operation supports specifying a rectangular cell range to unmerge and returns a confirmation response. SDKs for .NET, Java, Python, Ruby, Node.js, PHP, Perl, and Go are available to accelerate development.

@@ -9,6 +9,8 @@ description: "Copy data and formats from specific entire rows in an Excel worksh
 api_version: "v3.0"
 method: "POST"
 weight: 30
+ArticleTitle: "Copy Rows in Excel with Aspose.Cells Cloud REST API v3.0"
+keywords: "Aspose.Cells Cloud, copy rows Excel, worksheet row copy, REST API copy rows, copy rows programmatically, Excel automation, copy entire rows, row copy API, Aspose.Cells Cloud SDK, copy rows between worksheets"
 ---
 
 # Copy Rows on an Excel Worksheet <span style="float:right;">v3.0</span>

@@ -7,6 +7,7 @@ type: docs
 description: "Learn how to programmatically search text, numbers, or formulas in Excel files stored in cloud storage using Aspose.Cells Cloud REST API — with case-insensitive matching, folder support, and password handling."
 keywords: "Aspose.Cells, Excel search API, cloud spreadsheet, text search, REST"
 weight: 100
+ArticleTitle: "Search Text in Remote Excel Files via Aspose.Cells Cloud API"
 ---
 
 ## Search Content in Remote Spreadsheet API

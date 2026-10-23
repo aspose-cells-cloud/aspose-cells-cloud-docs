@@ -9,6 +9,9 @@ keywords: Aspose.Cells Cloud, REST API, Excel automation, conditional formatting
 weight: 30
 aliases:
   - /add-a-cell-area-for-format-condition/
+type: docs
+linktitle: "Add CellArea to CF"
+ArticleTitle: "Add CellArea to Conditional Formatting in Aspose.Cells Cloud REST API v3.0"
 ---
 
 ## Why This Matters

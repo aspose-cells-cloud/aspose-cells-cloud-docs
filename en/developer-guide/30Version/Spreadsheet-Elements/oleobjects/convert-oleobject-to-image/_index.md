@@ -21,6 +21,7 @@ keywords:
   - GIF
   - EMF
   - BMP
+ArticleTitle: "Convert OLE Object to Image with Aspose.Cells Cloud REST API"
 ---
 
 ![OLE Object Conversion Workflow](/images/ole-object-workflow.png "OLE Object Conversion: Workbook → API → Output Image")

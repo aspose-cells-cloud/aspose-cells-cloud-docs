@@ -9,6 +9,10 @@ categories: ["product-overview"]
 weight: 60
 aliases: ["/cells/evaluate/", "/cloud/try-cells/"]
 url: /evaluate-aspose-cells/
+type: docs
+linktitle: "Evaluate Aspose.Cells Cloud"
+ArticleTitle: "Evaluate Aspose.Cells Cloud REST API Free Trial: 150 Calls/Month"
+keywords: "Aspose.Cells Cloud, free trial, REST API evaluation, Excel cloud API, API testing, Aspose.Cells Cloud pricing, cloud Excel processing, Excel file conversion, Excel API integration, Aspose.Cells Cloud dashboard"
 ---
 
 You can evaluate the **Aspose.Cells Cloud** REST APIs by creating a free-trial account on the Aspose Cloud Dashboard. After registration, you will receive a **Client Id** and **Client Secret** that allow up to 150 API calls per month.

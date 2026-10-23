@@ -6,6 +6,7 @@ weight: 160
 keywords: "Aspose.Cells, Chart, Category Axis, REST API, Excel, Cloud SDK"
 description: "Updates the category axis of a chart in an Excel worksheet using the Aspose.Cells Cloud REST API."
 ArticleTitle: "Update Chart Category Axis – Aspose.Cells Cloud API"
+linktitle: "Update Category Axis"
 ---
 
 This REST API updates a chart’s category axis.

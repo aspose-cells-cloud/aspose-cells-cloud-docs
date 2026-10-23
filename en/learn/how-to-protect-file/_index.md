@@ -10,6 +10,7 @@ kwords: Excel file protection, password-protect spreadsheet, Aspose.Cells Cloud 
 date: 2024-03-15
 last_modified_date: 2024-06-10
 draft: false
+keywords: "Aspose.Cells Cloud, protect Excel file, password protect spreadsheet, digital signature Excel, batch protect files, encrypt workbook, unprotect spreadsheet API, spreadsheet security, Aspose.Cells Cloud API, file protection SDK"
 ---
 
 # Introduction

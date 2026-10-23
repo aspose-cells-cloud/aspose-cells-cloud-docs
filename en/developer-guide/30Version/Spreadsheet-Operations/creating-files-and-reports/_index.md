@@ -10,6 +10,8 @@ tags: ["excel", "cloud", "reporting"]
 categories: ["cells", "tutorials"]
 description: "Step-by-step guide to create Excel workbooks and build dynamic reports using Aspose.Cells Cloud API, including SmartMarker template processing and code examples."
 ArticleTitle: "Create Excel Files and Build Excel Reports – Aspose.Cells Cloud API"
+weight: 100
+keywords: "Aspose.Cells Cloud, create Excel file, build Excel report, SmartMarker, template processing, generate workbook from template, dynamic reporting, data binding, Excel automation, cloud API"
 ---
 
 Using the Aspose.Cells Cloud API, you can effortlessly create new Excel workbooks and generate workbooks from template files. It also supports creating advanced Excel reports with the SmartMarker feature, which can handle a variety of data‑processing and reporting needs.

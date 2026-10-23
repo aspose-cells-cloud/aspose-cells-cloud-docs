@@ -16,6 +16,7 @@ keywords:
   ]
 weight: 100
 type: docs
+ArticleTitle: "Merge Spreadsheets in Remote Aspose.Cells Cloud Folder"
 ---
 
 ## Overview

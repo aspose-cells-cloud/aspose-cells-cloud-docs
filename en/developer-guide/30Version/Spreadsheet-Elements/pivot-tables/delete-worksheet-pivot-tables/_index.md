@@ -14,6 +14,8 @@ keywords:
   - "Excel"
 date: 2024-06-15
 api_version: "v3.0"
+weight: 100
+ArticleTitle: "Delete All Pivot Tables in Excel Worksheet via Aspose.Cells Cloud REST API"
 ---
 
 # Delete All Pivot Tables in an Excel Worksheet

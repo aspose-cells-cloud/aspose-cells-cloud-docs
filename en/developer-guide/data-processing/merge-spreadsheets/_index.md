@@ -13,6 +13,7 @@ keywords:
   - "CSV consolidation API"
 description: "Merge spreadsheets using Aspose.Cells Cloud API — batch combine Excel, CSV, ODS files into one workbook and export to 30+ formats (PDF, HTML, etc.) with REST endpoint, cURL, and SDK examples."
 weight: 100
+ArticleTitle: "Merge Multiple Excel Files with Aspose.Cells Cloud API – Batch Combine Spreadsheets"
 ---
 
 # Merge Multiple Excel Files into One Spreadsheet

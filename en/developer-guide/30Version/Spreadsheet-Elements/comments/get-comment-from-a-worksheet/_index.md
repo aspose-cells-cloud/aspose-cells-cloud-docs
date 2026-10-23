@@ -7,6 +7,7 @@ keywords: "Aspose.Cells, worksheet comment, API, GET, Excel"
 description: "Learn how to retrieve a worksheet comment by cell name using Aspose.Cells Cloud API (v3.0). Includes request URL, parameters, cURL example, response details, and SDK code snippets."
 weight: 100
 ArticleTitle: "Get Worksheet Comment – Aspose.Cells Cloud API Documentation"
+linktitle: "Get Worksheet Comment"
 ---
 
 This REST API retrieves a worksheet comment by cell name using **Aspose.Cells Cloud**.

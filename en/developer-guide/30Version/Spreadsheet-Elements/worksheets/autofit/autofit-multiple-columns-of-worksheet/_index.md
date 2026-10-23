@@ -8,6 +8,7 @@ aliases: [/autofit-multiple-columns-of-worksheet/]
 keywords: "Aspose.Cells, autofit columns, Excel API, cloud spreadsheet, REST"
 description: "Learn how to autofit multiple columns in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, cURL example, error handling, and SDK code snippets for C#, Java, Python, and more."
 weight: 100
+ArticleTitle: "Autofit Multiple Columns in Excel Worksheet via Aspose.Cells Cloud API"
 ---
 
 This REST API autofits **multiple columns** on an Excel worksheet.

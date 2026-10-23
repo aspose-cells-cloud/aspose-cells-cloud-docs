@@ -8,6 +8,7 @@ aliases: [/get-validation-from-a-worksheet/]
 keywords: "Aspose.Cells Cloud, worksheet validation API, get validation by index, Excel REST API, Aspose.Cells SDK"
 description: "Retrieve a worksheet validation by its zero‑based index from an Excel workbook using Aspose.Cells Cloud API (v3.0). Includes cURL example, response schema, error codes, and SDK snippets for C#, Java, Python, and more."
 weight: 100
+ArticleTitle: "Get Worksheet Validation by Index in Aspose.Cells Cloud REST API"
 ---
 
 This REST API retrieves a worksheet validation by its index on an Excel worksheet.  

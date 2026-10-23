@@ -12,6 +12,7 @@ linktitle: "Protect an Excel File"
 type: docs
 url: /protect-excel-file/
 aliases: [/protect-excel-workbooks/, /workbook/protect/]
+keywords: "Aspose.Cells Cloud, protect Excel workbook, Excel password protection, WorkbookProtectionRequest, PostProtectDocument API, restrict Excel editing, structure protection, windows protection, contents protection, Aspose.Cells Cloud SDK"
 ---
 
 This REST API **protects** an Excel workbook, enabling you to securely protect an Excel workbook with password and protection options using Aspose.Cells Cloud.

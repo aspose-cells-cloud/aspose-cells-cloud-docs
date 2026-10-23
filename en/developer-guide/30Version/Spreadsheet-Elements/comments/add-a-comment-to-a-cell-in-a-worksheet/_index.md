@@ -7,6 +7,9 @@ keywords: "Aspose.Cells, Cloud API, Add Worksheet Comment, Excel, Spreadsheet, C
 weight: 100
 api_version: "v3.1"
 date: 2024-05-15
+type: docs
+linktitle: "Add Comment"
+ArticleTitle: "Add Worksheet Comment via Aspose.Cells Cloud REST API v3.1"
 ---
 
 # Add Worksheet Comment

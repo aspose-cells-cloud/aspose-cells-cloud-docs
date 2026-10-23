@@ -16,6 +16,10 @@ categories:
 aliases:
   - /conversion/convert-table-to-json/
 weight: 100
+type: docs
+ArticleTitle: "Convert Excel Table to JSON via Aspose.Cells Cloud API v4.0"
+description: "Convert Excel table data to JSON in a single cloud API call using Aspose.Cells Cloud API v4.0—no prior upload needed. Includes cURL and SDK examples."
+keywords: "Aspose.Cells Cloud, convert Excel table to JSON, table to JSON API, cloud Excel conversion, Aspose.Cells Cloud API v4.0, convert worksheet table to JSON, JSON export from Excel, cloud table extraction"
 ---
 
 Convert Excel table data to **JSON** in a single API call using Aspose.Cells Cloud API v4.0. This endpoint processes local spreadsheet files directly in the cloud—no prior upload to cloud storage required—eliminating storage overhead and simplifying data pipelines.

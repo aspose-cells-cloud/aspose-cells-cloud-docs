@@ -6,6 +6,8 @@ aliases: [/set-chart-title-in-excel-worksheet/]
 weight: 30
 keywords: "Aspose.Cells Cloud, chart title API, Excel chart title, REST API, SDK examples"
 description: "Learn how to add or update a chart title in an Excel worksheet using the Aspose.Cells Cloud REST API. Includes cURL, SDK samples, required parameters, authentication steps, and error handling."
+linktitle: "Add Chart Title"
+ArticleTitle: "Add or Update Chart Title in Excel with Aspose.Cells Cloud API"
 ---
 
 Adds a chart title or makes an existing title visible.

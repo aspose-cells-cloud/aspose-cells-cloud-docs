@@ -9,6 +9,7 @@ weight: 100
 tags: ["cells", "spreadsheet", "api", "transform"]
 categories: ["api-reference", "cloud"]
 summary: "Effortlessly exchange data between two columns, rows, or ranges in Excel files using Aspose.Cells Cloud API v4.0—ideal for financial modeling, ETL, and error correction."
+ArticleTitle: "Swap Excel Ranges with Aspose.Cells Cloud API v4.0"
 ---
 
 {{% alert color="primary" %}}

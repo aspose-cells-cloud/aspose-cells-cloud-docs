@@ -8,6 +8,7 @@ aliases: [/assembly/]
 keywords: "Aspose.Cells, Excel report, data assembly, Cloud API, REST, SDK, cURL, PDF, ODS"
 description: "Learn how to use Aspose.Cells Cloud’s Assembly API to merge data into Excel (XLSX, PDF, ODS) reports. Includes endpoint, parameters, cURL sample, SDK code, auth guide, and error handling."
 weight: 40
+ArticleTitle: "Aspose.Cells Cloud Assembly API: Merge Data into Excel, PDF, ODS Reports"
 ---
 
 This REST API assembles data **into** an Excel file.

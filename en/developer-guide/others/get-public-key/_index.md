@@ -16,6 +16,7 @@ keywords:
   ]
 description: "Retrieve the 2048-bit RSA public key from Aspose.Cells Cloud API for secure Excel file encryption. Includes cURL, SDK examples, and OAuth2 authentication."
 weight: 100
+ArticleTitle: "Get RSA 2048-bit Public Key from Aspose.Cells Cloud API"
 ---
 
 This API retrieves the RSA public key (2048-bit) used for encrypting sensitive data before transmission to Aspose.Cells Cloud. The endpoint supports OAuth2 authentication and returns the key in JSON format.

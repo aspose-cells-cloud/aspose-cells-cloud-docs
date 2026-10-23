@@ -6,6 +6,8 @@ date: 2024-06-15
 weight: 130
 keywords: "Aspose Cells Cloud, REST API, Excel, Worksheet, Cell Properties, Get Cells Properties"
 description: "Use Aspose.Cells Cloud REST API to retrieve detailed cell properties—including value, formula, type, and style—from Excel worksheets. Supports both cell references (e.g., A1) and predefined method names (e.g., firstcell, maxrow)."
+linktitle: "Get Cell Properties"
+ArticleTitle: "Get Cells Properties via Aspose.Cells Cloud REST API"
 ---
 
 This REST API demonstrates how to retrieve properties of a specific cell or a predefined method (such as `firstcell`, `maxrow`, or `maxdatacolumn`) in an Excel worksheet using Aspose.Cells Cloud.

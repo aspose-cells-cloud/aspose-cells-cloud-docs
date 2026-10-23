@@ -6,6 +6,8 @@ aliases: [/get-conditional-formatting/]
 keywords: "Aspose.Cells Cloud, REST API, Conditional Formatting, Excel, Spreadsheet"
 description: "Retrieve conditional formatting rules from a worksheet using the Aspose.Cells Cloud REST API."
 weight: 100
+linktitle: "Get Conditional Formatting"
+ArticleTitle: "Retrieve Conditional Formatting Rules via Aspose.Cells Cloud REST API"
 ---
 
 This REST API retrieves conditional formatting rules from a worksheet.

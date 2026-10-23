@@ -17,6 +17,7 @@ keywords:
     "v4.0",
   ]
 weight: 100
+ArticleTitle: "Convert Excel Worksheet to CSV via Aspose.Cells Cloud API v4.0"
 ---
 
 The **Convert Worksheet to CSV** endpoint transforms a specific worksheet from a local spreadsheet file into a CSV document entirely on the Aspose.Cells Cloud server. By uploading the source file and specifying the target worksheet, developers receive a binary CSV stream without storing the file in cloud storage. This API is ideal for automating data extraction, integrating spreadsheet data into downstream systems (e.g., BI tools, accounting software), and reducing storage overhead.

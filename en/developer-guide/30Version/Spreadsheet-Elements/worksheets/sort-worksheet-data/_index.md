@@ -8,6 +8,7 @@ aliases: [/sort-worksheet-data/]
 keywords: "Aspose.Cells Cloud, Excel sort API, worksheet range sorting, REST API, dataSorter"
 description: "Sort a specific range in an Excel worksheet using Aspose.Cells Cloud REST API. Includes endpoint, required parameters, authentication steps, error handling, and SDK examples."
 weight: 100
+ArticleTitle: "Sort Excel Worksheet Range Data with Aspose.Cells Cloud REST API"
 ---
 
 The REST API sorts data within a specified range on an Excel worksheet.

@@ -16,6 +16,7 @@ categories:
 description: Use Aspose.Cells Cloud API to split Excel workbooks stored in cloud storage into separate files and export to 30+ formats (PDF, CSV, JSON, etc.). Includes REST, cURL, and SDK examples.
 weight: 100
 keywords: Aspose.Cells Cloud, split Excel workbook, spreadsheet splitter, cloud API, export to PDF, export to CSV, export to JSON, multiple format export, cloud spreadsheet processing
+ArticleTitle: "Split Excel Workbook in Cloud with Aspose.Cells Cloud API"
 ---
 
 ## Prerequisites

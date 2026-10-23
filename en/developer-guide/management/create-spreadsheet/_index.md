@@ -10,6 +10,7 @@ lastmod: 2024-05-01T14:30:00Z
 weight: 100
 canonical: "https://reference.aspose.cloud/cells/create-spreadsheet/"
 robots: "index, follow"
+ArticleTitle: "Aspose.Cells Cloud REST API: Create Excel Spreadsheets (XLSX, ODS, CSV)"
 ---
 
 Programmatically create new Excel spreadsheets using Aspose.Cells Cloud REST API. Generate blank workbooks or instantiate files from custom templates stored in cloud storage. This API enables automated Excel file creation for report generation, document automation, and data-processing workflows.

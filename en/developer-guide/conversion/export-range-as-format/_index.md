@@ -8,6 +8,7 @@ type: docs
 url: /export-range-as-format/
 keywords: "Aspose.Cells Cloud, export Excel range, PDF, PNG, CSV, SVG, cloud API, spreadsheet conversion, range to format"
 weight: 100
+ArticleTitle: "Export Excel Range to PDF, PNG, CSV, SVG via Aspose.Cells Cloud API"
 ---
 
 ## Export Range as Format API

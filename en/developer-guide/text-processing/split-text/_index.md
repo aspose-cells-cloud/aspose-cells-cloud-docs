@@ -8,6 +8,7 @@ description: "Split Excel cell text by delimiter, mask, or line break using Aspo
 summary: "Use the Split Text API to segment Excel cell content by custom delimiters, masks, or line breaks. Ideal for cleaning ERP/CRM imports, legacy data exports, and semi-structured logs."
 type: docs
 weight: 100
+ArticleTitle: "Split Excel Text by Delimiter, Mask, or Line Break | Aspose.Cells Cloud API"
 ---
 
 Segment Excel cell text into multiple columns or rows using custom segmentation rules. Split content by delimiter, mask, or line break, and output results to a specified range using the Aspose.Cells Cloud Text Processing API.

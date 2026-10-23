@@ -10,6 +10,7 @@ aliases:
 keywords: "unfreeze panes, Excel, Aspose.Cells Cloud, REST API, SDK, C#, Java, PHP, Python, Node.js, Go, Swift, Android, Ruby, Perl"
 description: "Learn how to remove frozen panes from an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes cURL example, SDK code snippets for C#, Java, Python, and more."
 weight: 1000
+ArticleTitle: "Unfreeze Panes in Excel Worksheet using Aspose.Cells Cloud REST API"
 ---
 
 This REST API call **unfreezes** (removes frozen panes) from an Excel worksheet.

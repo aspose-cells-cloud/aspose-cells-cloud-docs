@@ -6,6 +6,7 @@ url: /delete-file/
 description: "Delete an Excel file from Aspose.Cells Cloud storage using the REST API. Includes endpoint, path/query parameters, authentication, HTTP status codes, and cURL/SDK examples."
 keywords: "Aspose.Cells, delete file API, Excel cloud storage, REST API, file management, cloud file deletion"
 weight: 100
+ArticleTitle: "Delete Excel File from Aspose.Cells Cloud Storage via REST API"
 ---
 
 # Delete File

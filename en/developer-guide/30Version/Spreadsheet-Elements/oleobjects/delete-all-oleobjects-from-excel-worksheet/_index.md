@@ -10,6 +10,7 @@ api_version: v3.0
 last_updated: 2024-11-01
 lastmod: 2024-11-01
 weight: 60
+ArticleTitle: "Clear All OLE Objects from Excel Worksheet via Aspose.Cells Cloud REST API"
 ---
 
 # Delete all OLE objects in an Excel worksheet

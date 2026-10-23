@@ -7,6 +7,8 @@ url: /autofilter/get/
 aliases:
   - /get-autofilter-description/
 weight: 50
+linktitle: "Get AutoFilter"
+ArticleTitle: "Retrieve AutoFilter Description from Excel Worksheet via Aspose.Cells Cloud API"
 ---
 
 # Retrieve AutoFilter Description from a Worksheet

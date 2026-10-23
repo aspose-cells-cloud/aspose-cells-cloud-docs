@@ -6,6 +6,9 @@ url: /comments/clear/
 aliases:
   - /delete-all-comments-in-a-worksheet/
 weight: 50
+type: docs
+linktitle: "Clear All Comments"
+ArticleTitle: "Delete All Comments in Worksheet via Aspose.Cells Cloud API"
 ---
 
 # Delete All Worksheet Comments

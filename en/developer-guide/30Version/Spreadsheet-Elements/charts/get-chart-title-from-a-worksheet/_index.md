@@ -16,6 +16,7 @@ keywords:
   - "GET chart title"
 description: "Learn how to retrieve a chart title from an Excel worksheet using Aspose.Cells Cloud REST API. Includes endpoint, parameters, authentication, sample cURL and SDK code."
 ArticleTitle: "Get Chart Title from a Worksheet"
+linktitle: "Get Chart Title"
 ---
 
 This REST API retrieves the title of a chart that is stored in a worksheet of an Excel workbook.

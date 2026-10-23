@@ -12,6 +12,9 @@ keywords: "remove characters, Aspose.Cells, Excel API, text processing, cloud"
 aliases:
   - /text-processing/remove-characters/
 weight: 100
+type: docs
+linktitle: "Remove Characters from Excel"
+ArticleTitle: "Aspose.Cells Cloud API: Remove Characters from Excel Files"
 ---
 
 ## Overview

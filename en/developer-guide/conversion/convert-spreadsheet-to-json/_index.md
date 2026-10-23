@@ -16,6 +16,8 @@ keywords:
 description: "Securely convert local Excel/CSV files to JSON format using Aspose.Cells Cloud API. Includes cURL, SDK examples (Python, Node.js, Java, C#, PHP, Ruby, Perl, Go), query parameter options (password, region, fonts), and best practices for server-side conversion."
 api_version: "v4.0"
 weight: 100
+type: docs
+ArticleTitle: "Convert Excel to JSON with Aspose.Cells Cloud API - Secure, Server-Side Conversion"
 ---
 
 Convert local spreadsheets (`.xls`, `.xlsx`, `.xlsm`) directly to JSON on Aspose.Cells Cloud without storing files in cloud storage first. This cloud-native conversion eliminates intermediate steps, reduces latency and storage costs, and simplifies integration for data pipelines, web/mobile apps, and serverless functions.

@@ -10,6 +10,8 @@ slug: convert-range-to-html
 date: 2024-03-15
 lastmod: 2024-06-15
 weight: 100
+ArticleTitle: "Aspose.Cells Cloud: Convert Excel Range to HTML via REST API"
+keywords: "Aspose.Cells Cloud, convert Excel range to HTML, range to HTML API, Excel conversion, cloud-based Excel conversion, A1:C10 to HTML, REST API conversion, JWT authentication, cURL example, SDK conversion"
 ---
 
 Convert a selected range of a local Excel workbook to an HTML file directly through Aspose.Cells Cloud. The conversion happens entirely on the cloud server, so you never need to upload the whole workbook or have Excel installed locally.

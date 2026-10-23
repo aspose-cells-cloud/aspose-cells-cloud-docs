@@ -6,6 +6,7 @@ type: docs
 keywords: "Aspose.Cells Cloud, replace content, remote spreadsheet, find and replace API, cloud Excel, bulk text replacement"
 description: "Aspose.Cells Cloud Find & Replace API enables secure, programmatic bulk text replacement in Excel workbooks hosted in the cloud. Supports OAuth2, multiple SDKs, and preserves cell formatting, formulas, and charts."
 weight: 100
+ArticleTitle: "Aspose.Cells Cloud API: Bulk Replace Text in Remote Excel Ranges"
 ---
 
 Perform bulk text replacement across remote Excel files stored in cloud storage such as AWS S3 or Azure Blob. Use this REST API endpoint to efficiently locate and update text across an entire workbook or specific ranges—without downloading or manually editing files.

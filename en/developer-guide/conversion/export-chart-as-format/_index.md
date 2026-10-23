@@ -9,6 +9,7 @@ type: docs
 url: /export-chart-as-format/
 keywords: "Aspose.Cells Cloud, chart export, Excel API, REST API, PDF conversion"
 weight: 100
+ArticleTitle: "Export Excel Chart to PDF, PNG, SVG with Aspose.Cells Cloud API"
 ---
 
 {{% alert color="primary" %}}  

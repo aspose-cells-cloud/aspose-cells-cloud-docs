@@ -5,6 +5,8 @@ description: "Split Excel workbooks locally using Aspose.Cells Cloud API — no 
 linktitle: Split spreadsheet
 type: docs
 weight: 100
+ArticleTitle: "Split Excel Workbook Locally with Aspose.Cells Cloud API – No Upload, 30+ Formats"
+keywords: "Aspose.Cells Cloud, split Excel workbook, local Excel splitting, Excel to PDF split, Excel API split, split worksheet to files, Excel REST API, cURL split Excel, Aspose.Cells SDK"
 ---
 
 # Split Excel Workbook Locally via Aspose.Cells Cloud API

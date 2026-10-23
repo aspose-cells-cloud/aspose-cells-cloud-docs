@@ -7,6 +7,8 @@ date: 2024-04-10
 lastmod: 2024-06-15
 description: "Use Aspose.Cells Cloud REST API to get the highest used row index in an Excel worksheet. Includes cURL, SDK examples (C#, Java, Python, more), and API reference."
 keywords: "Aspose.Cells Cloud, REST API, Excel worksheet, GetMaxRow, maximum row index, spreadsheet automation"
+linktitle: "Get Max Row from Worksheet"
+ArticleTitle: "Get Max Row from Excel Worksheet Using Aspose.Cells Cloud REST API"
 ---
 
 This REST API returns the **maximum row number** in an Excel worksheet when the `cellOrMethodName` parameter is set to `maxrow`.

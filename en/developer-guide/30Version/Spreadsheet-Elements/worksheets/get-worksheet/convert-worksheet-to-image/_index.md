@@ -9,6 +9,8 @@ aliases:
   - /cells/convert-worksheet-to-image/
   - /worksheets/conversion/
 weight: 130
+linktitle: "Convert Worksheet to Image"
+ArticleTitle: "Convert Excel Worksheet to PDF, PNG, JPEG, SVG & More with Aspose.Cells Cloud API"
 ---
 
 ## Overview

@@ -19,6 +19,10 @@ aliases:
   - /hyperlinks/update/
   - /update-hyperlinks-in-excel-worksheet/
 url: /hyperlinks/update/
+type: docs
+linktitle: "Update Hyperlink"
+ArticleTitle: "Update Excel Hyperlink via Aspose.Cells Cloud REST API v3.0"
+keywords: "Aspose.Cells Cloud, update hyperlink, Excel hyperlink API, PostWorksheetHyperlink, REST API v3.0, Excel worksheet hyperlink, cURL example, SDK example, API documentation, hyperlink update example"
 ---
 
 ## Update a Hyperlink in an Excel Worksheet

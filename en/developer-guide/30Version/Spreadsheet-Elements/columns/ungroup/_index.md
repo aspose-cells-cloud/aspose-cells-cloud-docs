@@ -15,6 +15,7 @@ slug: columns/ungroup
 date: 2024-06-15
 weight: 70
 draft: false
+ArticleTitle: "Ungroup Columns in Excel with Aspose.Cells Cloud REST API"
 ---
 
 # Ungroup Columns in Excel

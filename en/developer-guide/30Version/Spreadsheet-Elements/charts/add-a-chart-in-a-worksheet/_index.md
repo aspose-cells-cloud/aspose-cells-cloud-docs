@@ -11,6 +11,7 @@ keywords:
   - "chart API REST"
   - "Aspose.Cells SDK examples"
 ArticleTitle: "Add a Chart to a Worksheet – Aspose.Cells Cloud API Guide"
+linktitle: "Add Chart to Worksheet"
 ---
 
 This REST API adds a new chart to a worksheet.

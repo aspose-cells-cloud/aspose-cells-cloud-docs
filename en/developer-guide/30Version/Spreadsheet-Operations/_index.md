@@ -7,6 +7,7 @@ keywords: "Aspose Cells Cloud, Excel API, spreadsheet operations, auto fit, batc
 description: "Learn how to perform spreadsheet operations such as auto‑fit, batch conversion, protection, merging, and search‑replace using Aspose.Cells Cloud REST API. Includes concise usage notes and code‑sample guidance."
 weight: 100
 ArticleTitle: "Spreadsheet Operations – Aspose.Cells Cloud API Guide"
+linktitle: "Spreadsheet Operations Guide"
 ---
 
 Spreadsheet Operations provides a concise guide to the most common actions you can perform on Excel workbooks with **Aspose.Cells Cloud** (v3.0). Whether you need to auto‑fit columns, batch‑process files, protect worksheets, or manipulate text, the REST API offers dedicated endpoints that work across languages like Python, C#, and Java. The list below links to the detailed documentation for each operation and includes a brief usage note to help you get started quickly.

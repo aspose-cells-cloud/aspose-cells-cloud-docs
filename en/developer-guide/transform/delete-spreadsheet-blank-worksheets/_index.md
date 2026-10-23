@@ -7,6 +7,7 @@ description: >-
   Use Aspose.Cells Cloud API v4.0 to automatically identify and remove blank/empty worksheets from Excel workbooks (.xlsx, .xls, .xlsm, .xlsb, .ods). Includes REST API spec, SDK code examples, and use cases for ETL, templates, and consolidation workflows.
 keywords: "Aspose.Cells Cloud, delete blank worksheets, Excel API, workbook cleanup, spreadsheet optimization, remove empty sheets"
 weight: 100
+ArticleTitle: "Delete Blank Worksheets in Excel Workbooks using Aspose.Cells Cloud API v4.0"
 ---
 
 Remove blank worksheets programmatically from Excel workbooks using Aspose.Cells Cloud API. This operation scans all sheets in a workbook and deletes those containing no data, formulas, charts, comments, or other objects—while preserving populated sheets. Ideal for post-processing automation, template cleanup, and workbook standardization.

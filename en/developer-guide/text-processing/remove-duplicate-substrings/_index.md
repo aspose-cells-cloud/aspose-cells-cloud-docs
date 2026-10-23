@@ -10,6 +10,7 @@ weight: 100
 aliases:
   - /text-processing/remove-duplicate-substrings/
   - /cells/remove-duplicate-substrings/
+ArticleTitle: "Remove Duplicate Substrings in Excel with Aspose.Cells Cloud API"
 ---
 
 Remove duplicate substrings from Excel cells with Aspose.Cells Cloud API. Clean repeated text within individual cells—such as `"VIP,Premium,VIP,Gold"` → `"VIP,Premium,Gold"`—while preserving formatting, data validation, and workbook structure.

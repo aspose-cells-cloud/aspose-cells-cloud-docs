@@ -9,6 +9,7 @@ description: "Replace specified text with new text in Excel files using Aspose.C
 date: 2024-03-15T10:00:00Z
 lastmod: 2024-05-20T14:30:00Z
 weight: 80
+ArticleTitle: "Replace Text in Excel Files with Aspose.Cells Cloud REST API"
 ---
 
 ## Replace Text in Excel Files

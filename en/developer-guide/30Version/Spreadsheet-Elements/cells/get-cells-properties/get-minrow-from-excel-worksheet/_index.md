@@ -7,6 +7,7 @@ date: 2023-11-15
 description: "Retrieve the first non-empty row index from an Excel worksheet using Aspose.Cells Cloud REST API v3.0 — includes cURL, SDK examples (C#, Java, Python, Go, and more), and error codes."
 keywords: "Aspose.Cells, GetMinRow, Excel worksheet, REST API, min row index, cloud SDK"
 ArticleTitle: "Get MinRow from Excel Worksheet – Aspose.Cells Cloud API Reference"
+linktitle: "Get MinRow"
 ---
 
 This REST API returns the minimum row index in an Excel worksheet when the `cellOrMethodName` parameter is set to `minrow`. The endpoint can be used to determine the first non‑empty row (zero‑based) in a given worksheet.

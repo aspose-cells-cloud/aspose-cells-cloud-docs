@@ -9,6 +9,7 @@ keywords: "Aspose.Cells Cloud, calculate cell formula, Excel API, REST API, form
 tags: [rest-api, excel, cloud, calculation, sdk]
 categories: [api-reference, calculation]
 articleTitle: "Calculate Cell Formula – Aspose.Cells Cloud API Documentation"
+linktitle: "Calculate Cell Formula"
 ---
 
 ## Overview

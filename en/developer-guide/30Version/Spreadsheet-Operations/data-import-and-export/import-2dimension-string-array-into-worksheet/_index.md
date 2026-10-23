@@ -15,6 +15,7 @@ aliases:
 keywords: "Aspose.Cells Cloud, import 2D string array, Excel, REST API, SDK"
 description: "Learn how to use Aspose.Cells Cloud REST API to import a two‑dimensional string array into an Excel worksheet. Includes request format, parameter details, and SDK code examples for C#, PHP, and Ruby."
 weight: 100
+ArticleTitle: "Import 2D String Array into Excel Worksheet via Aspose.Cells Cloud REST API"
 ---
 
 This REST API **imports a two‑dimensional string array** into an Excel worksheet.

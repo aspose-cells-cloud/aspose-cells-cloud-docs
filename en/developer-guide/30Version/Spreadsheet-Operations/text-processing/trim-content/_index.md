@@ -7,6 +7,7 @@ url: /spreadsheet-trim-content/
 keywords: "Aspose.Cells, Trim Content API, Excel clean data, remove spaces Excel, line break removal, spreadsheet data cleaning"
 description: "Use Aspose.Cells Cloud PostTrimContent API to automatically clean extra spaces, line breaks, and unwanted characters from Excel cells. Learn the endpoint, request format, sample code, and error handling."
 weight: 100
+ArticleTitle: "Aspose.Cells Cloud PostTrimContent API: Trim Excel Cell Content"
 ---
 
 ## **Excel Web API : PostTrimContent**

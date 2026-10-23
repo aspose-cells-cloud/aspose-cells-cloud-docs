@@ -8,6 +8,8 @@ description: "Use Aspose.Cells Cloud API to get the max column index in an Excel
 date: 2023-11-15
 draft: false
 canonical: https://docs.aspose.com/cells-cloud/get-maxcolumn-from-excel-worksheet/
+linktitle: "Get MaxColumn"
+ArticleTitle: "Get Max Column Index from Excel Worksheet using Aspose.Cells Cloud API"
 ---
 
 This REST API returns the maximum column index in an Excel worksheet when the `cellOrMethodName` parameter is set to `maxcolumn`.

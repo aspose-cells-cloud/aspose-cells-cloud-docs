@@ -10,6 +10,8 @@ aliases: [/clearobjects/]
 keywords: ["clear objects", "Excel API", "remove comments", "Aspose.Cells Cloud", "REST API clear charts", "delete shapes Excel", "clear pivot tables Cloud"]
 description: "Use Aspose.Cells Cloud REST API to delete comments, charts, shapes, list objects, hyperlinks, OLE objects, pivot tables, validations, and background elements from Excel workbooks. Includes cURL examples and SDK code snippets in 8 programming languages."
 weight: 39
+type: docs
+ArticleTitle: "Clear Excel Objects with Aspose.Cells Cloud REST API"
 ---
 
 This REST API clears internal elements (such as comments, charts, shapes, and more) from Excel files and returns the cleaned workbook in your preferred output format.

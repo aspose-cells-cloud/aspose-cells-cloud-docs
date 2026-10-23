@@ -11,6 +11,7 @@ h1: "Lock Excel Files"
 description: "Securely lock Excel workbooks via Aspose.Cells Cloud REST API v3.0. Includes cURL examples, OAuth2 authentication, and SDK code for C#, Java, Python, and more."
 keywords: "lock Excel, protect workbook, Excel security, Aspose.Cells Cloud, REST API, v3.0, workbook encryption"
 weight: 70
+ArticleTitle: "Lock Excel Files with Aspose.Cells Cloud REST API v3.0"
 ---
 
 # Lock Excel Files

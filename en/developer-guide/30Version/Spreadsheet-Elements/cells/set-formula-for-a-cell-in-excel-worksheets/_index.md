@@ -5,6 +5,8 @@ url: /set-formula-for-a-cell-in-excel-worksheets/
 weight: 80
 keywords: "Excel, Aspose.Cells, REST API, Set Formula, Worksheet, Cell, Cloud SDK, cURL"
 description: "Learn how to set a formula for a specific cell in an Excel worksheet using Aspose.Cells Cloud REST API. Includes cURL example, full parameter list, error handling, and SDK code samples."
+linktitle: "Set Cell Formula"
+ArticleTitle: "Set Formula for a Cell in Excel Using Aspose.Cells Cloud REST API"
 ---
 
 This REST API sets a **cell formula** in an Excel file.

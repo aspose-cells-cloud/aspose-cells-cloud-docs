@@ -8,6 +8,7 @@ date: 2024-05-15
 last_modified: 2024-06-20
 weight: 100
 keywords: "Excel merge, cloud spreadsheet API, REST API merge, C# merge Excel, Aspose.Cells Cloud"
+ArticleTitle: "Merge Multiple Excel, CSV, PDF Files with Aspose.Cells Cloud REST API"
 ---
 
 ## Introduction

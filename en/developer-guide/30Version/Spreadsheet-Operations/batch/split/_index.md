@@ -6,6 +6,8 @@ url: /batch/split
 keywords: "Batch Split, Aspose.Cells Cloud, REST API, Excel, PDF, CSV, JSON, Spreadsheet, Cloud SDK"
 description: "Documentation for the Aspose.Cells Cloud Batch Split API, which splits spreadsheet files into multiple formats such as PDF, CSV, or JSON. Includes request details, example cURL commands, and SDK usage across various programming languages."
 weight: 100
+linktitle: "Batch Split API"
+ArticleTitle: "Aspose.Cells Cloud Batch Split API: Split Excel Files to PDF, CSV, JSON"
 ---
 
 This REST API performs a **batch split** of eligible files.

@@ -15,6 +15,7 @@ keywords:
   - "API Reference"
 description: "Deletes a chart from a worksheet by its zero‑based index using the Aspose.Cells Cloud REST API."
 ArticleTitle: "Delete a Chart from a Worksheet using Aspose.Cells Cloud REST API"
+linktitle: "Delete Chart"
 ---
 
 This REST API deletes a worksheet chart by its index.

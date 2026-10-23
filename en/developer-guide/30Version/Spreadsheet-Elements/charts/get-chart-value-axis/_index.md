@@ -6,6 +6,7 @@ weight: 60
 keywords: Aspose.Cells, Chart Value Axis, REST API, Excel, Cloud SDK, Get Chart Value Axis
 description: "Aspose.Cells Cloud REST API - Retrieve the value axis of a chart in an Excel worksheet."
 ArticleTitle: "Get Chart Value Axis - Aspose.Cells Cloud REST API"
+linktitle: "Get Chart Value Axis"
 ---
 
 This REST API retrieves the value axis of a chart. It is part of the **Aspose.Cells Cloud REST API** and works with Excel worksheets stored in the cloud.

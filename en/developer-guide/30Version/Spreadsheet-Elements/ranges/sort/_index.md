@@ -7,6 +7,7 @@ keywords: "Range Sort, Aspose.Cells Cloud, REST API, Spreadsheet, Excel, API"
 url: /ranges/sort/
 description: Provides an API to sort a range of cells within a workbook using Aspose.Cells Cloud.
 weight: 100
+ArticleTitle: "Sort Range of Cells in Excel with Aspose.Cells Cloud REST API"
 ---
 
 This REST API sorts a specified range of cells.

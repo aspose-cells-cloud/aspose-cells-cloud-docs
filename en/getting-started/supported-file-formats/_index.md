@@ -7,6 +7,8 @@ type: docs
 url: /supported-file-formats/
 description: "Aspose.Cells Cloud supports 30+ formats: Excel (XLS/XLSX), CSV, PDF, JSON, Markdown, and 20+ image formats. Convert, load, and save programmatically."
 weight: 40
+ArticleTitle: "Aspose.Cells Cloud Supported File Formats: Convert, Load & Save 30+ Formats"
+keywords: "Aspose.Cells Cloud, spreadsheet file formats, Excel format support, XLSX conversion, CSV import, PDF export, image formats, ODS support, JSON parsing, markdown conversion"
 ---
 
 |**Format**|**Description**|**Load**|**Save**|

@@ -7,6 +7,8 @@ url: /apply-rich-text-formatting-to-a-cell/
 weight: 40
 keywords: "Aspose.Cells Cloud, Excel REST API, rich text formatting, mixed font styles, cell characters, cURL example, SDK integration"
 article_type: how-to
+linktitle: "Apply Rich Text Formatting"
+ArticleTitle: "Apply Rich Text Formatting to Excel Cells via Aspose.Cells Cloud REST API"
 ---
 
 ## Apply Rich Text Formatting to a Cell

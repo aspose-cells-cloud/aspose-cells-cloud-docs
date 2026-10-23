@@ -18,6 +18,8 @@ keywords:
   ]
 date: 2024-06-15
 api_version: "v3.0"
+weight: 100
+ArticleTitle: "Delete Excel Columns via Aspose.Cells Cloud REST API"
 ---
 
 # Delete Columns from Excel Worksheet

@@ -8,6 +8,8 @@ description: "Learn how to retrieve a specific row from an Excel worksheet store
 keywords: "Aspose.Cells Cloud, get row, Excel API, spreadsheet REST, C# SDK, Java SDK, Python SDK"
 date: 2026-07-30
 api_version: "v3.0"
+weight: 100
+ArticleTitle: "Get Row from Excel Worksheet via Aspose.Cells Cloud REST API"
 ---
 
 # Retrieve a Single Row from an Excel Worksheet

@@ -7,6 +7,7 @@ url: /repair-excel-files/
 keywords: "Aspose Cells, Excel repair API, corrupt XLSX, spreadsheet recovery, cloud API"
 description: "Use Aspose.Cells Cloud REST API to repair corrupted Excel files (XLS, XLSX, XLSM, XLSB, ODS). Upload one or many files, choose output format, and receive repaired files as Base64. No installation required."
 weight: 39
+ArticleTitle: "Aspose.Cells Cloud Repair API: Fix Corrupt Excel XLSX XLSM Files Online"
 ---
 
 This REST API allows you to **repair** Excel files.

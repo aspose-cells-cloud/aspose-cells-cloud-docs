@@ -7,6 +7,7 @@ keywords: "Aspose.Cells, replace text, remote worksheet, Excel API, cloud spread
 description: "Use Aspose.Cells Cloud API to find and replace text in remote Excel worksheets. Supports password-protected files, region settings, and bulk updates via REST."
 type: docs
 weight: 100
+ArticleTitle: "Replace Text in Remote Excel Worksheet Using Aspose.Cells Cloud API"
 ---
 
 Replace specified text within a defined range of a worksheet in remote Excel files stored in cloud storage. This API enables precise, server-side text updates without downloading files — ideal for dynamic reporting, template population, and cross-region data synchronization.

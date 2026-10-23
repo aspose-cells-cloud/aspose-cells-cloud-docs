@@ -10,6 +10,8 @@ lastmod: 2024-05-20T14:30:00Z
 aliases:
   - /repair-excel-file/
   - /cells/repair-guide/
+ArticleTitle: "Repair Corrupted Excel Files with Aspose.Cells Cloud API"
+keywords: "Aspose.Cells Cloud, repair Excel file, fix corrupted XLSX, cloud file repair, Aspose.Cells Cloud API, repair spreadsheet programmatically, Excel recovery API, C# Excel repair, repair XLSX online, Aspose.Cells Cloud SDK"
 ---
 
 ## Introduction

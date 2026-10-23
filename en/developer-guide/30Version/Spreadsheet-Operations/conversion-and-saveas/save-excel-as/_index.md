@@ -10,6 +10,7 @@ aliases:
 keywords: "Aspose Cells, Excel, Save As, PDF, CSV, JSON, Markdown, REST API"
 description: "Save Excel workbooks to PDF, CSV, JSON, Markdown and other formats using Aspose.Cells Cloud REST API."
 weight: 30
+ArticleTitle: "Save Excel Workbook to PDF, CSV, JSON, Markdown & More with Aspose.Cells Cloud API"
 ---
 
 This REST API allows you **to save** an Excel file in different formats.  

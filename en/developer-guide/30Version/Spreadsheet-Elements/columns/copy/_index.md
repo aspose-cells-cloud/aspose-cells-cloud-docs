@@ -13,6 +13,8 @@ aliases:
   - /copy-columns-in-an-excel-worksheet/
 linktitle: "Copy Columns"
 articleTitle: "Copy Columns in an Excel Worksheet using Aspose.Cells Cloud API"
+type: docs
+keywords: "Aspose.Cells Cloud, copy columns, Excel column duplication, REST API v3.0, PostCopyWorksheetColumns, cURL example, SDK integration, conditional formatting copy, worksheet column operations, authentication JWT"
 ---
 
 ## Overview

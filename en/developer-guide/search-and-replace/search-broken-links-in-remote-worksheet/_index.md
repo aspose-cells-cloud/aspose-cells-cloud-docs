@@ -6,6 +6,7 @@ type: docs
 description: "Detect and fix broken external links, dead hyperlinks, and invalid references in cloud-hosted Excel worksheets. Includes cURL, SDK examples, and error handling."
 keywords: "broken links, Excel validation, cloud API, link audit, Aspose.Cells Cloud"
 weight: 100
+ArticleTitle: "Aspose.Cells Cloud API: Search Broken Links in Remote Excel Worksheet"
 ---
 
 ## Search Broken Links in Remote Worksheet API

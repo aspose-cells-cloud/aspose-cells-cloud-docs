@@ -16,6 +16,7 @@ weight: 76
 aliases:
   - /change-heights-of-rows-inside-the-range/
 canonical: "https://docs.aspose.cloud/cells/ranges/update/row-height/"
+ArticleTitle: "Update Row Height for Excel Range via Aspose.Cells Cloud API"
 ---
 
 # Set Row Height for a Range in Excel

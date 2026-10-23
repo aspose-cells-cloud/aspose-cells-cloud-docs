@@ -6,6 +6,8 @@ url: /batch/convert
 keywords: "batch conversion, Excel, Aspose.Cells Cloud, REST API, PDF, CSV, JSON, Markdown, spreadsheet"
 description: "Learn how to use Aspose.Cells Cloud API to batch‑convert multiple Excel files into formats such as PDF, CSV, JSON, or Markdown. This guide includes REST endpoint details, request parameters, cURL example, and SDK code snippets for various languages."
 weight: 100
+linktitle: "Batch Convert Excel"
+ArticleTitle: "Aspose.Cells Cloud Batch Convert API: Convert Excel Files to PDF, CSV, JSON, Markdown"
 ---
 
 This REST API enables **batch conversion** of eligible files.

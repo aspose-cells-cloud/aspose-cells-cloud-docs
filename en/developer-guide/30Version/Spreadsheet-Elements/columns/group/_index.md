@@ -20,6 +20,7 @@ date: 2023-11-15
 aliases:
   - /cells/group-columns/
   - /excel/group-columns/
+ArticleTitle: "Group Columns in Excel Using Aspose.Cells Cloud REST API v3.0"
 ---
 
 # Group Columns on an Excel Worksheet

@@ -7,6 +7,7 @@ keywords: "Aspose.Cells, Cloud, Excel API, AutoFilter, Charts, PivotTables, Work
 description: "Explore Aspose.Cells Cloud REST API features for Excel, including AutoFilter, cells, charts, columns, comments, conditional formatting, hyperlinks, list objects, metadata, OLE objects, page breaks, pictures, pivot tables, ranges, rows, shapes, validation, and worksheets."
 weight: 100
 ArticleTitle: "Spreadsheet Elements – Aspose.Cells Cloud Documentation"
+linktitle: "Spreadsheet Elements"
 ---
 
 Explore the core Excel components that can be managed via the Aspose.Cells Cloud REST API. Each link below leads to detailed guidance on working with a specific spreadsheet element.

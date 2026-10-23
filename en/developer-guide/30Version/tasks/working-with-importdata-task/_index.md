@@ -7,6 +7,8 @@ aliases: [/working-with-importdata-task/]
 keywords: "Aspose.Cells, ImportData Task, Excel API, REST, cURL, SDK"
 description: "Learn how to import batch data into Excel workbooks using Aspose.Cells Cloud ImportData Task. Includes cURL syntax, request schema, SDK samples (C#, PHP, Ruby, Node.js) and error handling."
 weight: 40
+linktitle: "ImportData Task"
+ArticleTitle: "Aspose.Cells Cloud ImportData Task: Import Batch Data into Excel via REST API & SDKs"
 ---
 
 ## REST API

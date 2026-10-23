@@ -15,6 +15,7 @@ keywords:
   - "chart operation"
   - "pivot table API"
   - "page break API"
+linktitle: "CellsObjectOperate Task"
 ---
 
 **Overview**  

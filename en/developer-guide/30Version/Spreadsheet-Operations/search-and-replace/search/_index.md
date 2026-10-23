@@ -9,6 +9,8 @@ aliases:
   - /search-without-using-storage/
   - /search-without-storage/
 weight: 50
+linktitle: "Search Excel Files"
+ArticleTitle: "Find Text in Excel Files with Aspose.Cells Cloud API"
 ---
 
 # Find Text in Excel Files – Aspose.Cells Cloud API

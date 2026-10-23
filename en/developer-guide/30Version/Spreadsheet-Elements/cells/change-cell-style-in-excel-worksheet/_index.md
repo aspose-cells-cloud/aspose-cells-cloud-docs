@@ -25,6 +25,8 @@ categories:
   - cells
   - api-reference
 article_title: "Change Cell Style in Excel Worksheet – Aspose.Cells Cloud API Guide"
+linktitle: "Update Cell Style"
+ArticleTitle: "Update Excel Cell Style with Aspose.Cells Cloud REST API"
 ---
 
 This guide explains how to update the **cell style** of a specific cell in an Excel worksheet using the Aspose.Cells Cloud REST API (v3.0). You will learn how to apply styles via `cURL`, SDKs (C#, Java, Python, PHP, Node.js, Ruby, Perl, and Go), and understand authentication, request structure, and response handling.

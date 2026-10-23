@@ -7,6 +7,7 @@ weight: 160
 keywords: Excel, Aspose.Cells, REST API, Chart Title, Update, Cloud SDK
 description: Learn how to update a chart title in an Excel worksheet using Aspose.Cells Cloud REST API, cURL, and various SDKs.
 ArticleTitle: "Update Chart Title in Excel Worksheet – Aspose.Cells Cloud Documentation"
+linktitle: "Update Chart Title"
 ---
 
 This REST API updates the chart title.

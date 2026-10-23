@@ -6,6 +6,7 @@ type: docs
 description: Use Aspose.Cells Cloud's AI-powered TranslateTextFile API to convert text files into any supported language via REST. Supports file upload or raw text input, preserves formatting, and integrates with major SDKs.
 keywords: AI text translation, Aspose.Cells Cloud API, REST API translate file, multilingual spreadsheet, neural machine translation
 weight: 100
+ArticleTitle: "Translate Text Files with Aspose.Cells Cloud AI API"
 ---
 
 ## Overview

@@ -8,6 +8,7 @@ keywords: "Aspose.Cells, REST API, Excel, Cloud"
 description: "Aspose.Cells Cloud API enables task-based processing of request files for Excel workbooks."
 weight: 100
 ArticleTitle: "Support Request File in Aspose.Cells Task API"
+linktitle: "Support Request File"
 ---
 
 ## REST API

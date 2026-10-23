@@ -6,6 +6,8 @@ aliases: [/show-chart-legend-in-a-worksheet/]
 weight: 100
 keywords: "Aspose.Cells Cloud, chart legend API, Excel chart legend, REST PUT chart legend, Aspose API v3.0"
 description: "Learn how to display a chart legend in an Excel worksheet using the Aspose.Cells Cloud REST API (v3.0). Includes endpoint details, parameters, a cURL example, and SDK snippets."
+linktitle: "Show Chart Legend"
+ArticleTitle: "Display Chart Legend in Excel with Aspose.Cells Cloud REST API"
 ---
 
 This REST API enables you to display the **legend**—the explanatory box that identifies data series—in a chart that resides in a worksheet of an Excel workbook.

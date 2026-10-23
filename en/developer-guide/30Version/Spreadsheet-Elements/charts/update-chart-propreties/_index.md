@@ -7,6 +7,7 @@ weight: 160
 keywords: "Aspose.Cells, chart, update, Excel, REST API, SDK"
 description: "Learn how to update chart properties (type, title, legend, etc.) in an Excel workbook using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, cURL example, and SDK snippets for C#, Java, PHP, Ruby, Node.js, Perl, and Go."
 ArticleTitle: "Update Chart Properties – Aspose.Cells Cloud REST API"
+linktitle: "Update Chart Properties"
 ---
 
 This REST API updates chart properties.

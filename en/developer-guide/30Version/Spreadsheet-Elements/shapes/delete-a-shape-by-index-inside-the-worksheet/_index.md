@@ -8,6 +8,7 @@ aliases: [/delete-a-shape-by-index-inside-the-worksheet/]
 keywords: "Aspose.Cells Cloud, Delete shape, Shape index, Excel worksheet, REST API, SDK"
 description: "Use the Aspose.Cells Cloud REST API to delete a shape by its index on an Excel worksheet. The API is available through multiple SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) and supports various storage options."
 weight: 50
+ArticleTitle: "Delete Excel Shape by Index Using Aspose.Cells Cloud REST API"
 ---
 
 This REST API deletes a shape on an Excel worksheet.

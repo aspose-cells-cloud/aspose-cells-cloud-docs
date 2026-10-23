@@ -6,6 +6,7 @@ weight: 160
 keywords: "Aspose.Cells, Chart, Second Category Axis, REST API, Update Chart, Excel, Cloud API"
 description: "Learn how to update the second category axis of a chart in an Excel worksheet using the Aspose.Cells Cloud REST API."
 ArticleTitle: "Update Chart Second Category Axis – Aspose.Cells Cloud API"
+linktitle: "Update Second Category Axis"
 ---
 
 This REST API updates the second category axis of a chart.

@@ -8,6 +8,7 @@ keywords: "Excel API, REST API tutorial, cloud spreadsheet SDK, Aspose.Cells Clo
 description: "Learn how to programmatically retrieve the minimum column index with data in an Excel worksheet using Aspose.Cells Cloud REST API, including cURL and SDK examples."
 ArticleTitle: "Get MinColumn from Excel Worksheet - Aspose.Cells Cloud API"
 robots: index, follow
+linktitle: "Get MinColumn"
 ---
 
 This REST API returns the minimum column index that contains data in an Excel worksheet when the `cellOrMethodName` parameter is set to `mincolumn`.

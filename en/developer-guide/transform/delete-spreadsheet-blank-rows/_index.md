@@ -12,7 +12,7 @@ weight: 100
 
 Automatically delete all blank rows from Excel spreadsheets using Aspose.Cells Cloud API. Our intelligent API detects and removes rows that contain no data, formulas, comments, or objects while preserving all other content. It supports batch processing, cloud automation, and seamless integration for enterprise data‑cleaning workflows.
 
-## Web API Endpoint
+## The DeleteSpreadsheetBlankRows API Endpoint
 
 The `DeleteSpreadsheetBlankRows` operation is exposed via the following REST endpoint:
 
@@ -38,22 +38,6 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | region         | String | Query    | Locale settings (e.g., `en-US`, `fr-FR`) applied during processing.                                                                            |
 | password       | String | Query    | Password for opening an encrypted spreadsheet. Omit if the file is not protected.                                                              |
 
-**Authentication**  
-All calls must include the `Authorization: Bearer <access_token>` header. Obtain the access token via the Aspose Cloud OAuth2 flow described in the authentication guide.
-
-> [!NOTE]  
-> Before calling this API, ensure:
->
-> 1. Your Aspose Cloud account is active
-> 2. The workbook is uploaded to cloud storage
-> 3. You have a valid OAuth2 access token
-
-**Prerequisites & Notes**
-
-- Ensure your Aspose Cloud storage is configured and the source workbook is uploaded before invoking the API.
-- Supported file formats include `.xlsx`, `.xls`, `.ods`, and other common spreadsheet types.
-- Maximum file size is 150 MB for a single request; larger files should be processed in chunks.
-
 ### Response
 
 The API returns a JSON array containing a reference to the processed file.
@@ -72,10 +56,12 @@ The API returns a JSON array containing a reference to the processed file.
 
 ### Error Codes
 
-- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized** – Invalid access token or client credentials.
-- **404 Not Found** – The spreadsheet file cannot be accessed.
-- **500 Server Error** – An unexpected error occurred while processing the file.
+| Code    | Description                                                             |
+| ------- | ----------------------------------------------------------------------- |
+| **400** | Invalid URL, malformed parameters, or missing `Spreadsheet` field.      |
+| **401** | Missing, expired, or invalid JWT token.                                 |
+| **404** | Source file not found in cloud storage (if `outPath` specifies a path). |
+| **500** | Server-side error during processing (e.g., file corruption).            |
 
 ## Where should we use the Delete Spreadsheet Blank Rows API?
 
