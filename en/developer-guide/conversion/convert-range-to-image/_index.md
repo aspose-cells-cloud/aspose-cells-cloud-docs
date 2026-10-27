@@ -25,7 +25,7 @@ PUT https://api.aspose.cloud/v4.0/cells/convert/range/image
 
 ### Security and Authentication
 
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/cells/getting-started/rest-api-overview/authenticating-api-requests/).
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## Request Parameters
 

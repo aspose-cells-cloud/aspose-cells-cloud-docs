@@ -11,11 +11,9 @@ description: "Structurally convert the core metadata, worksheets, tables, pivot 
 weight: 100
 ---
 
-## The GetSpreadsheetStructure of Aspose.Cells Cloud Web Services
-
 Structurally convert the core metadata, worksheets, tables, pivot tables, charts, shapes, and other information of an Excel workbook into a JObject type JSON object, for scenarios such as data export, API responses, and log recording.
 
-### Web API Endpoint
+## The GetSpreadsheetStructure Web API Endpoint
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/structure

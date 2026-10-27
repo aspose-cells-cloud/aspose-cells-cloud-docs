@@ -6,8 +6,6 @@ type: docs
 url: /compress-spreadsheet/
 description: "Learn how to programmatically compress Excel workbooks using Aspose.Cells Cloud API — reduce file size, optimize storage, and improve transfer performance with configurable compression levels."
 keywords: "Excel compression, Aspose.Cells Cloud API, reduce Excel file size, workbook optimization, spreadsheet compression level, cloud Excel compression"
-date: 2024-03-15T10:00:00Z
-lastmod: 2024-05-22T14:30:00Z
 weight: 100
 aliases:
   - /excel/compression/

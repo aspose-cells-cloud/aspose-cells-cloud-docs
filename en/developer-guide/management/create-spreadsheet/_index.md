@@ -5,8 +5,6 @@ linktitle: "Create Spreadsheet"
 type: docs
 url: /create-spreadsheet/
 keywords: "Aspose.Cells, spreadsheet API, create Excel, cloud, XLSX, ODS, CSV, template, SDK, automation, REST API"
-date: 2024-03-15T08:00:00Z
-lastmod: 2024-05-01T14:30:00Z
 weight: 100
 canonical: "https://reference.aspose.cloud/cells/create-spreadsheet/"
 robots: "index, follow"

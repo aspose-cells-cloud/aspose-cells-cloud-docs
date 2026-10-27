@@ -19,7 +19,6 @@ Before calling the API, ensure you have:
 
 - A valid Aspose.Cells Cloud account and API credentials (`Client ID` and `Client Secret`)
 - A personal access token (JWT) generated using your credentials  
-  _(See [Authentication Guide](https://docs.aspose.com/cells-cloud/Authentication/) for setup instructions.)_
 
 ## Translate Spreadsheet API
 
