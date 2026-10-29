@@ -6,7 +6,7 @@ type: docs
 url: /pictures/add/
 aliases: [/add-pictures-to-excel-worksheet/]
 keywords: "Aspose.Cells, Excel, add picture, REST API"
-description: "Use Aspose.Cells Cloud REST API to add an image to an Excel worksheet. SDKs for Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift simplify integration across platforms."
+description: "Add a picture to an Excel worksheet using Aspose.Cells Cloud REST API PutWorksheetAddPicture with JWT auth and SDKs"
 weight: 100
 ArticleTitle: "Add a Picture to an Excel Worksheet – Aspose.Cells Cloud API"
 ---

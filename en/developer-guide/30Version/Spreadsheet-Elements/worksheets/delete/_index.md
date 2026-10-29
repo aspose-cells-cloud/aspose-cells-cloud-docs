@@ -5,7 +5,7 @@ linktitle: "Delete"
 type: docs
 url: /worksheets/delete/
 keywords: "Aspose.Cells, Cloud, REST API, Delete Worksheet, Excel, C#, Java, Python"
-description: "Learn how to delete single or multiple worksheets from an Excel workbook using Aspose.Cells Cloud REST API. Includes C#, Java, and Python examples, prerequisites, error‑handling tips, and related operations."
+description: "Delete one or more worksheets from Excel workbooks via Aspose.Cells Cloud REST API with C#, Java, and Python examples"
 weight: 100
 ArticleTitle: "Delete Worksheet(s) in an Excel Workbook with Aspose.Cells Cloud API"
 ---

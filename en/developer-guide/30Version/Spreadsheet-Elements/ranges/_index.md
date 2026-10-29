@@ -6,7 +6,7 @@ type: docs
 url: /ranges/
 aliases: [/working-with-ranges/]
 keywords: "Aspose.Cells, Excel range, REST API, SDK, .NET, Java, Python, merge cells, copy range, set range value"
-description: "Learn how to retrieve, modify, style, merge, move, and copy Excel ranges using the Aspose.Cells Cloud REST API. Includes SDK code samples for .NET, Java, Python, and more."
+description: "Aspose.Cells Cloud API: Get, set, merge, copy, style, and move Excel ranges, including named ranges via REST endpoints."
 date: 2023-11-15
 robots: index, follow
 canonical: /ranges/

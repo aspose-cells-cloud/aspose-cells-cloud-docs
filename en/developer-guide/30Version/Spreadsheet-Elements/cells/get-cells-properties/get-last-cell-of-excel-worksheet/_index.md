@@ -4,7 +4,7 @@ type: docs
 url: /get-last-cell-of-excel-worksheet/
 weight: 30
 keywords: "Aspose.Cells Cloud, Excel API, endcell, last cell, worksheet API, REST API v4.0, spreadsheet cloud"
-description: "Retrieve the endcell (last used cell) of an Excel worksheet using Aspose.Cells Cloud REST API v4.0. Includes cURL, SDK examples (C#, Java, Python, Node.js), and response schema."
+description: "Get the endcell (last used cell) of an Excel worksheet via Aspose.Cells Cloud REST API v4.0, with cURL and SDK examples."
 ArticleTitle: "Get Last Cell of Excel Worksheet – Aspose.Cells Cloud API v4.0"
 date: 2023-10-17
 lastmod: 2024-02-15

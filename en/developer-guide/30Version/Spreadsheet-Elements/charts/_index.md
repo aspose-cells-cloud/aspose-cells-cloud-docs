@@ -13,7 +13,7 @@ keywords:
     "update chart legend API",
     "convert Excel chart to PNG",
   ]
-description: "Comprehensive guide to managing Excel charts via Aspose.Cells Cloud API — retrieve, add, update, delete, and convert charts to images with REST examples and code samples."
+description: "Aspose.Cells Cloud API: Add, retrieve, update, delete, and convert Excel charts to images via REST calls"
 weight: 100
 ArticleTitle: "Working with Excel Charts – Aspose.Cells Cloud Documentation"
 ---

@@ -1,8 +1,7 @@
 ---
 title: Convert OLE Object to Image – Aspose.Cells Cloud REST API
 date: 2023-11-15
-description: >-
-  Extract and convert embedded OLE objects in Excel files to PNG, JPEG, TIFF, GIF, EMF, or BMP using Aspose.Cells Cloud REST API. Includes cURL examples, SDK snippets for 8+ languages, and best practices.
+description: "Convert embedded OLE objects in Excel to images (PNG, JPEG, TIFF, GIF, EMF, BMP) via Aspose.Cells Cloud API"
 linktitle: Convert OLE Object to Image
 type: docs
 url: /oleobjects/convert/

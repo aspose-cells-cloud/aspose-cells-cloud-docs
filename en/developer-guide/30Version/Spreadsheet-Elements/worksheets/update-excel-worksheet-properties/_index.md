@@ -16,7 +16,7 @@ keywords:
     "cloud",
     "v3.0",
   ]
-description: "Learn how to update base properties (e.g., display zeros, ruler visibility) of an Excel worksheet using Aspose.Cells Cloud REST API v3.0. Includes cURL request, SDK samples, parameters, and error handling."
+description: "Update Excel worksheet properties like DisplayZeros and IsRulerVisible using Aspose.Cells Cloud REST API v3.0"
 ArticleTitle: "Update Worksheet Properties – Aspose.Cells Cloud API Reference (v3.0)"
 ---
 

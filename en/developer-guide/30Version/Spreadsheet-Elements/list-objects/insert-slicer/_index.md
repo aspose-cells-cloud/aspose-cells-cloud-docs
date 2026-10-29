@@ -5,7 +5,7 @@ linktitle: "Insert slicer"
 type: docs
 url: /list-objects/insert-slicer/
 keywords: "slicer, ListObject, Excel, REST API, Aspose.Cells Cloud, cloud SDK"
-description: "Add a slicer to an Excel ListObject via Aspose.Cells Cloud REST API v3.0. Full cURL & SDK examples for C#, Java, Python, Node.js, and more."
+description: "Insert a slicer into Excel ListObject using Aspose.Cells Cloud REST API v3.0 with cURL and SDK examples"
 weight: 100
 ArticleTitle: "Insert a Slicer into an Excel ListObject – Aspose.Cells Cloud API"
 date: 2023-11-15

@@ -6,7 +6,7 @@ type: docs
 url: /workbook/
 aliases: [/working-with-workbook/]
 keywords: "Aspose.Cells, Excel API, workbook operations, calculate formulas, autofit"
-description: "Comprehensive guide to Excel workbook operations via Aspose.Cells Cloud REST API: calculate formulas, auto-fit rows/columns, retrieve metadata, and more — with SDK examples for Python, .NET, Java, and more."
+description: "Aspose.Cells Cloud workbook operations: calculate formulas, auto-fit rows/columns, clear objects via REST API and SDKs"
 tags: ["excel", "workbook", "automation", "rest-api"]
 categories: ["productivity", "cloud"]
 lastmod: 2024-06-15

@@ -3,7 +3,7 @@ title: "How to convert spreadsheet file formats with Aspose.Cells Cloud"
 linktitle: "How to convert spreadsheet file formats"
 type: docs
 url: /how-to-convert-file-formats
-description: "Learn how to convert Excel, CSV, PDF, and 20+ formats using Aspose.Cells Cloud REST API — including local, cloud, and save-as conversion modes with .NET code samples."
+description: "Convert Excel, PDF, CSV, HTML, and 20+ formats using Aspose.Cells Cloud REST API in local, cloud, and save-as modes."
 date: 2023-11-15
 draft: false
 weight: 100

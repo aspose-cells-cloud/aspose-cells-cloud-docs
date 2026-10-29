@@ -5,7 +5,7 @@ linktitle: "Panes"
 type: docs
 url: /worksheets/panes/
 keywords: "Excel, panes, freeze panes, unfreeze panes, Aspose.Cells Cloud, REST API"
-description: "Learn how to work with panes in an Excel worksheet using Aspose.Cells Cloud REST API, including steps to freeze and unfreeze panes across supported SDK languages."
+description: "Freeze or unfreeze panes in Excel worksheets using Aspose.Cells Cloud REST API and SDKs."
 weight: 100
 ArticleTitle: "How to Freeze and Unfreeze Panes in Excel Using Aspose.Cells Cloud"
 ---

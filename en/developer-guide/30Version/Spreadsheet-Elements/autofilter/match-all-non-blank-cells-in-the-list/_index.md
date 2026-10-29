@@ -6,7 +6,7 @@ type: docs
 url: /autofilter/match-all-non-blank/
 aliases: [/match-all-non-blank-cells-in-the-list/]
 keywords: "Aspose.Cells Cloud, match non‑blank cells, AutoFilter, Excel API"
-description: "Learn how to use Aspose.Cells Cloud REST API to match all non‑blank cells in an AutoFilter list on an Excel worksheet. Includes endpoint, parameters, authentication, response schema, error codes, and SDK examples."
+description: "Filter Excel rows where a column contains any non-blank data using Aspose.Cells Cloud REST API"
 ArticleTitle: "Match all non‑blank cells in an Excel worksheet using Aspose.Cells Cloud API"
 weight: 100
 ---

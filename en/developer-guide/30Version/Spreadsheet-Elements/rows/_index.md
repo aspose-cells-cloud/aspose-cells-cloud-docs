@@ -14,7 +14,7 @@ keywords:
     "Aspose.Cells row operations",
     "programmatically hide rows",
   ]
-description: "Use Aspose.Cells Cloud REST API to programmatically manage Excel rows—get, add, copy, hide, group, ungroup, and delete rows in worksheets."
+description: "Use Aspose.Cells Cloud API to get, add, copy, hide, unhide, group, ungroup, and delete Excel rows via REST endpoints."
 weight: 100
 lastmod: 2024-06-15
 ---

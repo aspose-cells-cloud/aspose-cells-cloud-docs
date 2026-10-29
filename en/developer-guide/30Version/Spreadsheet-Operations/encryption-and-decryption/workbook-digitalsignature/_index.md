@@ -9,7 +9,7 @@ aliases:
   - /protect/digital-signature/
   - /workbook/digital-signature/
 keywords: "Aspose.Cells Cloud, digital signature, Excel workbook, REST API, .pfx, JWT, signature API"
-description: "Learn how to add a digital signature to an Excel workbook using the Aspose.Cells Cloud REST API (v4.0). Includes endpoint, parameters, authentication, response schema, error handling, and SDK examples for multiple languages."
+description: "Sign Excel workbooks digitally using Aspose.Cells Cloud REST API with JWT auth, .pfx/.p12 files, and SDK examples"
 weight: 35
 ---
 

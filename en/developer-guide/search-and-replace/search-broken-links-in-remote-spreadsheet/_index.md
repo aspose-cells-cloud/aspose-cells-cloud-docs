@@ -6,7 +6,7 @@ linktitle: "Search Remote Spreadsheets Broken Links"
 type: docs
 url: /search-broken-links-in-remote-spreadsheet/
 keywords: "Excel, broken links, API, cloud, spreadsheet, validation, Aspose.Cells"
-description: "Use Aspose.Cells Cloud API to scan remote Excel workbooks for broken external links, invalid formulas, and missing data sources."
+description: "Find broken external links and invalid formulas in remote Excel files using Aspose.Cells Cloud API"
 weight: 100
 ---
 

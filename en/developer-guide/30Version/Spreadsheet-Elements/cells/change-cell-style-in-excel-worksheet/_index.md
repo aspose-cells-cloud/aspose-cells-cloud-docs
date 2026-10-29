@@ -14,7 +14,7 @@ keywords:
   - cURL
   - cell style update
   - Excel API
-description: "Step-by-step guide to update Excel cell style using Aspose.Cells Cloud REST API (v3.0), including cURL, SDK examples (C#, Java, Python), and security best practices."
+description: "Change Excel cell style using Aspose.Cells Cloud API with cURL or SDKs (C#, Java, Python) and authentication examples"
 tags:
   - cell-style
   - excel-api

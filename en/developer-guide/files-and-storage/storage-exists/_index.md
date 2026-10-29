@@ -6,7 +6,7 @@ linktitle: "Storage Exists"
 type: docs
 url: /storage-exists/
 keywords: "Aspose.Cells, storage exists, cloud storage API, REST, Excel"
-description: "Verify the existence of a storage container in Aspose.Cells Cloud. Learn the GET /v4.0/cells/storage/{storageName}/exist endpoint, required parameters, response format, and see SDK examples in C#, Java, Python, and more."
+description: "Check if a storage container exists using Aspose.Cells Cloud API: GET /v4.0/cells/storage/{storageName}/exist"
 weight: 100
 ---
 

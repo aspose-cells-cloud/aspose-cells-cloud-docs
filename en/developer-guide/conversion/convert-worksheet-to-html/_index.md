@@ -5,7 +5,7 @@ ArticleTitle: "Convert Worksheet to HTML"
 linktitle: "Convert Worksheet to HTML"
 type: docs
 url: /convert-worksheet-to-html/
-description: "Convert Excel worksheets to HTML via Aspose.Cells Cloud API — zero-upload, secure, fast, with custom fonts, region support, and error handling. REST-based, v4.0."
+description: "Convert Excel worksheet to HTML using Aspose.Cells Cloud API—secure, REST-based, with locale and font control."
 summary: "Learn how to convert Excel worksheets to HTML using Aspose.Cells Cloud API — zero-upload, secure, and fast. Supports custom fonts, locale settings, and password-protected workbooks."
 keywords: "Aspose.Cells, Excel to HTML, worksheet conversion, cloud API, free online converter"
 authors: ["Aspose Cloud Team"]

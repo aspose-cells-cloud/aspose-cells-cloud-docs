@@ -6,7 +6,7 @@ type: docs
 url: /shapes/
 aliases: ["/working-with-shapes/"]
 keywords: "Excel shapes, Aspose.Cells Cloud, API, worksheet, shape operations, programmatic shapes, worksheet graphics, Aspose.Cells REST API"
-description: "Comprehensive guide to managing Excel shapes via Aspose.Cells Cloud API: add, retrieve, delete, and convert shapes programmatically with code examples."
+description: "Manage Excel shapes programmatically: add, retrieve, delete, and convert shapes to images using Aspose.Cells Cloud API."
 date: 2024-03-15
 weight: 100
 ArticleTitle: "Working with Excel Shapes – Aspose.Cells Cloud Documentation"

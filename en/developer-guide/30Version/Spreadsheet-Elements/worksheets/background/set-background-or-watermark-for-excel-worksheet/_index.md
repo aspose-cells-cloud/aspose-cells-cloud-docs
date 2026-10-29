@@ -7,7 +7,7 @@ type: docs
 url: /worksheets/background/add/
 aliases: [/set-background-or-watermark-for-excel-worksheet/]
 keywords: "Aspose.Cells, Excel, worksheet, background, REST API, SDK, add image"
-description: "Learn how to add a background image (PNG, JPEG, BMP) to an Excel worksheet using Aspose.Cells Cloud REST API. Includes endpoint, required parameters, authentication steps, cURL example, and SDK code samples."
+description: "Add a background image (PNG, JPEG, BMP, GIF) to an Excel worksheet using Aspose.Cells Cloud REST API with cURL or SDKs."
 weight: 180
 ---
 

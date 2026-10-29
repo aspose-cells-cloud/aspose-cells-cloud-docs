@@ -6,7 +6,7 @@ type: docs
 url: /add-watermark-into-excel-files/
 aliases: [/watermark/]
 keywords: "add watermark to Excel, Aspose.Cells Cloud, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
-description: "Learn how to add a text watermark to Excel workbooks using Aspose.Cells Cloud REST API (v3.0). Includes cURL example, required parameters, and response details."
+description: "Add text watermarks to Excel files using Aspose.Cells Cloud REST API via PostWatermark endpoint with cURL or 8+ SDKs."
 weight: 39
 ArticleTitle: "Add Watermark to Excel Files – Aspose.Cells Cloud Documentation"
 ---

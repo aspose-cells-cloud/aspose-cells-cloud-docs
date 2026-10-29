@@ -5,7 +5,7 @@ url: /charts/legend/get/
 aliases: [/get-chart-legend-from-a-worksheet/]
 weight: 80
 keywords: "Aspose.Cells, chart legend, REST API, Excel, cloud SDK, get chart legend, worksheet, spreadsheet"
-description: "Retrieve the legend of a chart from a specific worksheet in an Excel workbook using the Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, cURL sample, and SDK snippets."
+description: "Get chart legend properties (position, font, size, formatting) from Excel using Aspose.Cells Cloud REST API v3.0"
 linktitle: "Get Chart Legend"
 ArticleTitle: "Get Chart Legend from Worksheet using Aspose.Cells Cloud REST API"
 ---

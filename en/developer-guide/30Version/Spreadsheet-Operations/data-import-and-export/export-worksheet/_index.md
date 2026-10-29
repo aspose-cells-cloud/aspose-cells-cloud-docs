@@ -6,7 +6,7 @@ type: docs
 url: /export-excel-worksheet-to-different-formats/
 aliases: [/export/excel-worksheet-to-different-formats/]
 keywords: "Aspose.Cells, export worksheet, Excel API, PDF, CSV, TIFF, ODS, image formats"
-description: "Learn how to export an Excel worksheet to PDF, CSV, TIFF, and other formats using the Aspose.Cells Cloud REST API. Includes cURL example, required authentication, parameter details, and response handling."
+description: "Export Excel worksheet to PDF, CSV, TIFF, and other formats via Aspose.Cells Cloud REST API with cURL and SDK examples"
 weight: 100
 ArticleTitle: "Export Excel Worksheet to Various Formats – Aspose.Cells Cloud"
 ---

@@ -3,7 +3,7 @@ title: "How to repair an Excel file with Aspose.Cells Cloud"
 linktitle: "How to repair an Excel file"
 type: docs
 url: /how-to-repair-excel-file
-description: "Learn how to repair corrupted Excel files programmatically using Aspose.Cells Cloud API. Includes C# code examples, authentication steps, and SDK setup."
+description: "Repair corrupted Excel, XLSX, CSV, and ODS files using Aspose.Cells Cloud API with C# examples"
 weight: 100
 date: 2023-11-15T00:00:00Z
 lastmod: 2024-05-20T14:30:00Z

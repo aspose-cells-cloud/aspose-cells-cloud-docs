@@ -5,7 +5,7 @@ second_title: Web API Documentation
 articleTitle: Convert Excel Table to Image via REST API (PNG, JPEG, TIFF, SVG)
 linktitle: Convert Table to Image
 type: docs
-description: Use the Aspose.Cells Cloud API to convert a local Excel table directly to image formats including PNG, JPEG, TIFF, BMP, and SVG — without uploading files to cloud storage.
+description: "Convert Excel tables to PNG, JPEG, TIFF, BMP, or SVG using Aspose.Cells Cloud REST API—no cloud upload required."
 keywords: "Excel table export, spreadsheet to image API, PNG conversion, JPEG table image, TIFF export, SVG vector image"
 date: 2024-06-15
 last_modified: 2024-06-15

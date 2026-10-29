@@ -5,7 +5,7 @@ linktitle: "Get All"
 type: docs
 url: /validations/get-all/
 keywords: "Aspose.Cells Cloud, Excel, worksheet validations, REST API, Get all validations, SDKs"
-description: "Retrieve all worksheet validations from an Excel worksheet using the Aspose.Cells Cloud REST API. Supports multiple SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) for rapid integration."
+description: "Get all Excel worksheet validations using Aspose.Cells Cloud REST API with cURL or SDKs for C#, Java, Python."
 weight: 100
 ArticleTitle: "Get All Worksheet Validations via Aspose.Cells Cloud REST API"
 ---

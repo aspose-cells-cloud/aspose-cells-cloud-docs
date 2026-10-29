@@ -4,7 +4,7 @@ type: docs
 url: /learn
 aliases: [/learn-aspose-cells-cloud]
 linktitle: "Learn"
-description: "Get started with Aspose.Cells Cloud REST API in 5 minutes. Learn to convert Excel files to PDF, CSV, and more with cURL, Python, .NET, Java, and Node.js SDKs. No local Excel required."
+description: "Aspose.Cells Cloud: Convert Excel to PDF/CSV, automate spreadsheets via REST API and SDKs—no local Excel required."
 weight: 15
 ArticleTitle: "Aspose.Cells Cloud API Tutorial: Convert Excel to PDF, CSV in 5 Minutes"
 keywords: "Aspose.Cells Cloud, Excel API, spreadsheet automation, convert XLSX to PDF, REST API Excel, Python SDK Excel, .NET Excel API, Java Excel SDK, Node.js Excel API, cURL Excel conversion"

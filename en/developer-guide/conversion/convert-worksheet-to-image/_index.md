@@ -6,7 +6,7 @@ linktitle: "Convert Worksheet to Image"
 type: docs
 url: /convert-worksheet-to-image/
 keywords: "Aspose.Cells Cloud, worksheet to image, convert worksheet to image, Excel to PNG, Excel to SVG, Excel to TIFF, Excel to JPEG, Excel to BMP, image conversion API, REST API, spreadsheet image export, SDK examples"
-description: "Step-by-step guide to convert an Excel worksheet to image formats (PNG, SVG, TIFF, JPEG, BMP, etc.) using Aspose.Cells Cloud API, including request parameters, response details, error codes, usage scenarios, and SDK code samples."
+description: "Convert Excel worksheet to PNG, SVG, TIFF, JPEG, BMP via Aspose.Cells Cloud API with SDK examples"
 weight: 100
 ---
 

@@ -6,7 +6,7 @@ type: docs
 url: /worksheets/zoom/
 aliases: [/set-zoom-in-excel-worksheet/]
 keywords: "Aspose.Cells, Excel zoom, worksheet zoom, REST API, cloud SDK, Excel automation"
-description: "Learn how to set worksheet zoom (10‑400 %) using Aspose.Cells Cloud API v3.0. Includes cURL, SDK examples, and error handling."
+description: "Set Excel worksheet zoom (10–400%) via Aspose.Cells Cloud REST API v3.0 using cURL or SDKs with JWT authentication."
 weight: 100
 ArticleTitle: "Set Zoom for an Excel Worksheet – Aspose.Cells Cloud API v3.0"
 ---

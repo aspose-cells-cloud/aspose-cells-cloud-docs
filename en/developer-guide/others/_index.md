@@ -6,7 +6,7 @@ second_title: "Developer Guide"
 type: docs
 url: /other-features/
 keywords: "Aspose.Cells, Cloud API, health check, public key, access token, Excel, REST"
-description: "Explore Aspose.Cells Cloud other features: health‑check endpoint, public key retrieval, and token generation to secure your Excel API integrations."
+description: "Aspose.Cells Cloud: health check, run status, public key, and access token generation for secure API integration"
 weight: 180
 ---
 

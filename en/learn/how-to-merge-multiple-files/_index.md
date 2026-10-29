@@ -3,7 +3,7 @@ title: "How to merge multiple Spreadsheet files with Aspose.Cells Cloud"
 linktitle: "How to merge multiple Spreadsheet files"
 type: docs
 url: /how-to-merge-multiple-files
-description: "Step-by-step guide to merge Excel, CSV, and PDF files using Aspose.Cells Cloud REST API in C#, Python, Node.js, and more. Includes code samples and use cases."
+description: "Merge Excel, CSV, PDF, and other formats using Aspose.Cells Cloud REST API with C#, Python, Node.js, and SDKs."
 date: 2024-05-15
 last_modified: 2024-06-20
 weight: 100

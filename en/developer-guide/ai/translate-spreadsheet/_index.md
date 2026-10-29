@@ -3,7 +3,7 @@ url: /translate-spreadsheet/
 title: "Aspose.Cells Cloud Web API – Translate Spreadsheet to Target Language"
 linktitle: "Translate Spreadsheet"
 type: docs
-description: "Use Aspose.Cells Cloud AI to translate Excel workbooks (XLSX, CSV, etc.) to any language. Preserve formulas, charts, and multi-sheet structure. Includes API spec, SDK examples, and error codes."
+description: "Translate Excel files with AI: preserve formulas, charts, and multi-sheet structure using Aspose.Cells Cloud API"
 keywords: "Aspose.Cells Cloud, translate spreadsheet API, AI translation, spreadsheet translation, multi-sheet translation, cloud spreadsheet processing, targetLanguage, neural translation"
 weight: 100
 ArticleTitle: "Aspose.Cells Cloud Translate Spreadsheet API – AI-Powered Multi-Language Translation"

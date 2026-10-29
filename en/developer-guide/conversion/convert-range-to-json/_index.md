@@ -3,7 +3,7 @@ title: Convert Excel Range to JSON | Aspose.Cells Cloud API
 linktitle: Convert Excel Range to JSON
 url: /convert-range-to-json/
 date: 2024-06-20
-description: Use Aspose.Cells Cloud API to convert Excel range data to JSON. Includes cURL, SDK examples, authentication, and real-world use cases.
+description: "Convert Excel range to JSON via Aspose.Cells Cloud API with secure, cloud-native conversion and full SDK support."
 sitemap: false
 weight: 100
 keywords: convert range to json, Aspose.Cells Cloud, Excel to JSON, spreadsheet conversion, API

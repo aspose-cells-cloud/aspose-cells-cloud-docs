@@ -6,7 +6,7 @@ type: docs
 url: /worksheets/move/
 aliases: [/move-excel-worksheets/]
 keywords: "Aspose.Cells Cloud, Move Worksheet, Excel, REST API, SDK, C#, Java, Python, Node.js, PHP, Ruby, Go, Android, Swift, Perl, v3.0"
-description: "Learn how to move an Excel worksheet to a new position using Aspose.Cells Cloud API (v3.0). Includes endpoint, required parameters, cURL example, and SDK code in C#, Java, Python, and more."
+description: "Move Excel worksheets via Aspose.Cells Cloud API v3.0: POST endpoint, cURL, and SDKs in C#, Java, Python."
 weight: 100
 ArticleTitle: "How to Move an Excel Worksheet with Aspose.Cells Cloud API v3.0"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Convert Excel Table to HTML | Aspose.Cells Cloud"
-description: "Aspose.Cells Cloud API v3: Convert Excel tables to HTML via REST. Secure, format-preserving, and SDK-ready. No upload required."
+description: "Convert Excel tables to HTML via Aspose.Cells Cloud REST API: secure, format-preserving, no upload needed."
 keywords: "Aspose.Cells Cloud, Excel table to HTML, convert table to HTML, cloud API, spreadsheet conversion"
 weight: 100
 linktitle: "Convert Table To Html"

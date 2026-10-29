@@ -5,7 +5,7 @@ type: docs
 url: /columns/
 aliases: [/working-with-columns/]
 keywords: "Excel columns, Aspose.Cells Cloud API, REST API, spreadsheet automation, worksheet column operations, get column, add column, copy column, hide column, unhide column, group columns, ungroup columns, delete column"
-description: "Comprehensive API guide for Excel column operations: get, add, copy, hide, unhide, group, ungroup, and delete columns via Aspose.Cells Cloud REST API."
+description: "Aspose.Cells Cloud API: Get, add, copy, hide, unhide, group, ungroup, delete Excel worksheet columns with REST examples"
 weight: 100
 ArticleTitle: "Working with Excel Columns – Aspose.Cells Cloud Documentation"
 date: 2024-05-10

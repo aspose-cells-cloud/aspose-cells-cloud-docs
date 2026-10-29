@@ -5,7 +5,7 @@ ArticleTitle: "Spreadsheet Text Processing: Trim, Split, Convert, Extract, and R
 linktitle: "Text Processing"
 type: docs
 url: /text-processing/
-description: "Learn how to trim, split, convert, extract, and remove text in Excel files using Aspose.Cells Cloud REST APIs. Includes concise examples and SDK snippets."
+description: "Process Excel text: trim, split, convert, extract, and remove using Aspose.Cells Cloud REST API"
 keywords: "Aspose.Cells, Cloud API, Text Processing, Trim Text, Split Text, Convert Text, Extract Text, Remove Text, Excel API"
 weight: 100
 ---

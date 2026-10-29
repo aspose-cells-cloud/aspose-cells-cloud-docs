@@ -5,7 +5,7 @@ linktitle: "Update"
 type: docs
 url: /validations/update/
 keywords: "Aspose.Cells Cloud, Excel validation update, REST API, worksheet validation, Excel API"
-description: "How to update a worksheet validation in an Excel file using the Aspose.Cells Cloud REST API, with cURL examples and SDK code snippets for multiple programming languages."
+description: "Update a worksheet validation in Excel via Aspose.Cells Cloud REST API using cURL or SDKs in C#, Java, Python, and more."
 weight: 100
 ArticleTitle: "Update Worksheet Validation Using Aspose.Cells Cloud API"
 ---

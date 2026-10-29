@@ -5,7 +5,7 @@ linktitle: "Delete"
 type: docs
 url: /validations/clear/
 keywords: "Aspose.Cells Cloud, Delete worksheet validations, Excel, REST API, Spreadsheet validation, API"
-description: "Remove all data validation rules from a worksheet in an Excel file using Aspose.Cells Cloud REST API. Includes authentication steps, request details, cURL example, response schema, error handling, and SDK snippets."
+description: "Delete all data validations from an Excel worksheet using Aspose.Cells Cloud REST API with cURL or SDKs."
 weight: 100
 ArticleTitle: "Delete All Worksheet Validations in Excel via Aspose.Cells Cloud API"
 ---

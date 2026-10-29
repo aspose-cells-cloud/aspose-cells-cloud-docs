@@ -1,6 +1,6 @@
 ---
 title: Add a dynamic filter in an Excel worksheet using Aspose.Cells Cloud API
-description: Learn how to apply a dynamic filter (e.g., BelowAverage, Tomorrow, LastMonth) to an Excel worksheet with the Aspose.Cells Cloud REST API. Includes authentication, request syntax, parameters, response handling, and SDK examples for multiple languages.
+description: "Apply dynamic filters like BelowAverage, Tomorrow, or LastMonth to Excel data using Aspose.Cells Cloud API PUT request."
 url: /autofilter/add-dynamic-filter/
 aliases:
   [/filter-a-list-using-dynamic-filter/, /autofilter/add-a-dynamic-filter/]

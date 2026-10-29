@@ -5,7 +5,7 @@ linktitle: "File Info"
 type: docs
 url: /file-info/
 keywords: "File, Info, Excel, Aspose.Cells, Cloud API, Metadata, Base64"
-description: "Retrieve Excel file name, size, and Base64 content using Aspose.Cells Cloud API. Includes request syntax, sample code, and error handling."
+description: "Get Excel file metadata—name, size, Base64 content—via Aspose.Cells Cloud API with example response and error codes"
 weight: 79
 ArticleTitle: "File Info – Excel File Metadata and Base64 Content (Aspose.Cells Cloud API)"
 ---

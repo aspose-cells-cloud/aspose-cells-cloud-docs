@@ -1,4 +1,4 @@
----  
+---
 title: "Set Range Style – Aspose.Cells Cloud API"  
 second_title: "Documentation"  
 linktitle: "Set Range Style"  
@@ -6,10 +6,10 @@ type: docs
 url: /ranges/update/style/  
 aliases: [/set-the-style-of-the-range/]  
 keywords: "Aspose.Cells, range style, API, Excel, cloud"  
-description: "Learn how to set the style of a cell range in an Excel worksheet using the Aspose.Cells Cloud REST API. Includes authentication steps, request format, response details, and SDK examples for .NET, Java, Python, Go, and more."  
+description: "Update Excel range style using Aspose.Cells Cloud API: POST /cells/{name}/worksheets/{sheetName}/ranges/style"
 weight: 70  
 ArticleTitle: "Set Range Style in Excel via Aspose.Cells Cloud REST API"
----  
+---
 
 ## **Introduction**  
 This example demonstrates how to set the style of a range using the Aspose.Cells Cloud API. You can call the API from many programming languages, such as .NET, Java, PHP, Ruby, Python, JavaScript (jQuery), and others.  

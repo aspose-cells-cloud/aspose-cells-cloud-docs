@@ -6,7 +6,7 @@ type: docs
 url: /excel-file-decrypt/
 aliases: [/decrypt-excel-workbooks/, /workbook/decrypt/]
 keywords: "Aspose.Cells, Excel decryption, REST API, cloud SDK"
-description: "Learn how to decrypt an Excel workbook using Aspose.Cells Cloud REST API. Includes required parameters, cURL example, SDK code samples, and error handling details."
+description: "Decrypt encrypted Excel workbooks using Aspose.Cells Cloud API with JWT, cURL, or SDKs (C#, Java, Python)."
 ArticleTitle: "How to Decrypt an Excel Workbook Using Aspose.Cells Cloud API"
 weight: 50
 ---

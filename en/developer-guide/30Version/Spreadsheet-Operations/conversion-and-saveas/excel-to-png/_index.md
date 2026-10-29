@@ -5,7 +5,7 @@ linktitle: "Excel to PNG"
 type: docs
 url: convert-excel-file-to-png-file/
 keywords: "Excel to PNG, Aspose.Cells Cloud, REST API, spreadsheet conversion, PNG format"
-description: "Convert Excel spreadsheets to PNG images using Aspose.Cells Cloud REST API. Supports multiple SDKs and provides detailed examples for various programming languages."
+description: "Convert Excel to PNG using Aspose.Cells Cloud REST API with JWT auth, SDKs, and cURL examples"
 weight: 90
 ArticleTitle: "Convert Excel to PNG using Aspose.Cells Cloud REST API"
 ---

@@ -3,7 +3,7 @@ title: "Delete Blank Columns from Excel with Aspose.Cells Cloud API v4 – REST 
 url: /delete-spreadsheet-blank-columns/
 linktitle: "Delete Blank Columns"
 type: docs
-description: "Automatically remove blank columns from Excel spreadsheets using Aspose.Cells Cloud API v4. Includes REST endpoint, authentication, curl examples, and SDK code (C#, Java, Python, Go) for enterprise data cleanup workflows."
+description: "Delete blank columns from Excel files via Aspose.Cells Cloud API v4 for clean data import, reports, and ETL workflows."
 keywords: "delete blank columns Excel API, Aspose.Cells Cloud, REST API, Excel cleanup, spreadsheet automation"
 tags:
   - excel

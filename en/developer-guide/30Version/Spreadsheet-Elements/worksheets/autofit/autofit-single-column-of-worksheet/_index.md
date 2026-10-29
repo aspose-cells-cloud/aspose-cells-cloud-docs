@@ -6,7 +6,7 @@ type: docs
 url: /worksheets/autofit/column/
 aliases: [/autofit-single-column-of-worksheet/]
 keywords: "Aspose.Cells Cloud, autofit column, Excel API, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
-description: "Learn how to automatically resize a column (or column range) in an Excel worksheet using Aspose.Cells Cloud REST API. Includes cURL, SDK examples (C#, Java, Python, etc.) and full request/response details."
+description: "Autofit a single Excel column via Aspose.Cells Cloud REST API with cURL and SDKs (C#, Java, Python, etc.)."
 weight: 100
 ArticleTitle: "Autofit Single Column in Excel with Aspose.Cells Cloud REST API"
 ---

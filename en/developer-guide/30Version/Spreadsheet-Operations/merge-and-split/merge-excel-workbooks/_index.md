@@ -6,7 +6,7 @@ type: docs
 url: /merge-an-excel-file-into-the-excel-file/
 aliases: [/merge-excel-workbooks/, /workbook/merge/]
 keywords: "Excel merge, Aspose.Cells Cloud, workbook API, REST API, spreadsheet merging, cloud SDK, authentication, mergeWith, cURL example"
-description: "Step‑by‑step guide to merge one Excel workbook into another using Aspose.Cells Cloud REST API (v3.0). Includes authentication, required mergeWith parameter, cURL example and SDK code snippets."
+description: "Merge Excel workbooks using Aspose.Cells Cloud API with JWT auth and mergeWith parameter"
 ArticleTitle: "Merge an Excel Workbook into Another Workbook using Aspose.Cells Cloud API"
 weight: 50
 ---

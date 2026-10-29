@@ -6,7 +6,7 @@ type: docs
 url: /worksheets/replace-text/
 aliases: [/replace-text-in-a-workbook/]
 keywords: "Aspose.Cells, replace text, Excel, REST API, spreadsheet, worksheet"
-description: "Learn how to replace text in an Excel worksheet using the Aspose.Cells Cloud API (v3.0). Includes prerequisites, authentication, request syntax, cURL example, SDK code samples, response details, and error handling."
+description: "Replace text in Excel worksheets using Aspose.Cells Cloud REST API with cURL or SDKs (C#, Java, Python, etc.)."
 ArticleTitle: "Replace Text in an Excel Worksheet – Aspose.Cells Cloud API"
 weight: 70
 ---

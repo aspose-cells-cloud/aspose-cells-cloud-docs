@@ -5,7 +5,7 @@ ArticleTitle: "Aspose.Cells Cloud Pricing Plan"
 linktitle: "Pricing Plan"
 type: docs
 url: /pricing-plan/
-description: "Explore Aspose.Cells Cloud pricing: 150 free API calls each month, then pay-as-you-go with rates as low as $0.007 per call. No hidden upgrades—just transparent, tiered pricing."
+description: "Aspose.Cells Cloud: 150 free API calls/month, then pay-as-you-go from $0.007/call in transparent, tiered pricing."
 date: 2024-03-15
 last_modified_date: 2024-05-30
 sitemap: true

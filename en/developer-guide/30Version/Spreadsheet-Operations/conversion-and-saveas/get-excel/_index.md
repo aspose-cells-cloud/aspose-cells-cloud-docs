@@ -8,7 +8,7 @@ aliases:
   - /export-excel-workbook-to-different-file-formats/
   - /export-different-formats/
 keywords: "Aspose.Cells, Excel conversion, convert Excel, PDF, CSV, HTML, ODS, JSON, image formats, spreadsheet export, API, REST"
-description: "Learn how to retrieve an Excel workbook in any format (PDF, CSV, HTML, PNG, etc.) using Aspose.Cells Cloud REST API. Includes cURL, SDK samples, authentication, and response details."
+description: "Convert Excel files to PDF, CSV, HTML, images via Aspose.Cells Cloud API GET /cells/{name} with JWT and SDKs"
 weight: 100
 ArticleTitle: "Aspose.Cells Cloud – Convert Excel Workbook to PDF, CSV, HTML, and More (GET /cells/{name})"
 ---

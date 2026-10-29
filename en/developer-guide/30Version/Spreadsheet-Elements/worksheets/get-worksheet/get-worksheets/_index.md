@@ -6,7 +6,7 @@ type: docs
 url: /worksheets/get-all/
 aliases: [/get-worksheet-count/]
 keywords: "Aspose.Cells, Cloud API, Get Worksheets, Excel, REST, SDK"
-description: "Retrieve the list of worksheets in an Excel workbook via Aspose.Cells Cloud REST API (v3.0). Includes cURL example, SDK snippets, and response format."
+description: "Retrieve all worksheets from an Excel workbook using Aspose.Cells Cloud REST API with cURL or SDK examples."
 weight: 100
 ArticleTitle: "Get All Worksheets from Excel Workbook via Aspose.Cells Cloud REST API"
 ---

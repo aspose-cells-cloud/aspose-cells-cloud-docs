@@ -4,7 +4,7 @@ ArticleTitle: "How to Protect an Excel File with Aspose.Cells Cloud"
 linktitle: "How to protect an Excel file"
 type: docs
 url: /how-to-protect-file
-description: "Learn how to protect Excel files with Aspose.Cells Cloud API: password encryption, digital signatures, batch protection, and SDK examples in C#, Python, Java, and more."
+description: "Protect Excel files with Aspose.Cells Cloud API using password encryption, digital signatures, and batch processing."
 weight: 100
 kwords: Excel file protection, password-protect spreadsheet, Aspose.Cells Cloud API, digital signature Excel, batch protect workbook
 date: 2024-03-15

@@ -4,7 +4,7 @@ second_title: "Aspose.Cells Cloud Document"
 linktitle: "Row height"
 type: docs
 url: /ranges/update/row-height/
-description: "Learn how to programmatically set row height for a range in Excel worksheets using Aspose.Cells Cloud REST API v3.0, with full cURL and SDK examples for multiple languages."
+description: "Update row height for a range in Excel via Aspose.Cells Cloud REST API v3.0 with cURL and SDK examples."
 keywords:
   - "row height"
   - "Excel range"

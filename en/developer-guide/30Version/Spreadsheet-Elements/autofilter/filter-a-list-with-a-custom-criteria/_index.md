@@ -7,7 +7,7 @@ url: /autofilter/add-custom-filter/
 aliases:
   [/filter-a-list-with-a-custom-criteria/, /autofilter/add-a-custom-filter/]
 keywords: "Excel, custom filter, Aspose.Cells Cloud, REST API, auto filter, worksheet, custom criteria"
-description: "Learn how to use the Aspose.Cells Cloud REST API to add a custom filter to an Excel worksheet. Includes request details, a cURL example, and SDK code snippets for multiple programming languages."
+description: "Apply custom filter criteria to Excel worksheets using Aspose.Cells Cloud REST API's PutWorksheetCustomFilter endpoint"
 weight: 65
 ArticleTitle: "Add a custom criterion in an Excel worksheet – Aspose.Cells Cloud API"
 ---

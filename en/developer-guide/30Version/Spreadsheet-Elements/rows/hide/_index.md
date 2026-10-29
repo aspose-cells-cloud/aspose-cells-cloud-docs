@@ -6,7 +6,7 @@ type: docs
 url: /rows/hide/
 aliases: [/hide-rows-in-excel-worksheet/]
 keywords: "hide rows, Aspose.Cells Cloud, Excel API, REST, SDK"
-description: "Learn how to hide one or multiple rows in an Excel worksheet using Aspose.Cells Cloud REST API. Includes cURL example, SDK snippets, parameters, authentication, response details, and error handling."
+description: "Hide Excel worksheet rows via Aspose.Cells Cloud REST API using cURL or SDKs. Specify startrow and totalRows parameters."
 weight: 40
 ArticleTitle: "Hide Rows in Excel Worksheet using Aspose.Cells Cloud API"
 ---

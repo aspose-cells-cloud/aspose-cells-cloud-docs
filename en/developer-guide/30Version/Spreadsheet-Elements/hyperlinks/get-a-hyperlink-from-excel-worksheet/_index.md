@@ -3,7 +3,7 @@ title: "Get Worksheet Hyperlink"
 type: docs
 url: /hyperlinks/get/
 keywords: "Aspose.Cells Cloud, Get Worksheet Hyperlink, Excel hyperlink API, REST, JWT authentication, Excel worksheet, API endpoint"
-description: "Retrieve a specific hyperlink from an Excel worksheet using Aspose.Cells Cloud API (v3.0). Includes endpoint, parameters, cURL example, authentication details, error handling, and SDK snippets."
+description: "Retrieve a specific Excel worksheet hyperlink using Aspose.Cells Cloud REST API with JWT authentication, cURL, or SDKs."
 weight: 100
 ArticleTitle: "Aspose.Cells Cloud API – Get Worksheet Hyperlink"
 linktitle: "Get Hyperlink"

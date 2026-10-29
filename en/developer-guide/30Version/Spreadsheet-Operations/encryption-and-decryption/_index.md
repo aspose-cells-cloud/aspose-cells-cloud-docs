@@ -6,7 +6,7 @@ type: docs
 url: /protect/
 aliases: [/workbook/password/]
 keywords: "Excel, protect, encrypt, decrypt, digital signature, Aspose.Cells Cloud, REST API, password, security"
-description: "Learn how to protect, encrypt, decrypt, and digitally sign Excel workbooks with Aspose.Cells Cloud REST API – code examples for Android, C#, Java, Python and more."
+description: "Encrypt, decrypt, protect, and sign Excel files with Aspose.Cells Cloud API using passwords or certificates"
 ArticleTitle: "Encrypt, Decrypt, Digitally Sign and Protect Excel Files using Aspose.Cells Cloud API"
 weight: 36
 ---

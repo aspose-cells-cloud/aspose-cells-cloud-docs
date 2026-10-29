@@ -6,7 +6,7 @@ linktitle: "Move File"
 type: docs
 url: /move-file/
 keywords: "Aspose.Cells, Move File API, Cloud Storage, Excel API, File Management"
-description: "How to move files between folders in Aspose.Cells Cloud storage using the v4.0 Move File API – endpoint, parameters, examples, and SDK links."
+description: "Move Excel files in Aspose.Cells Cloud storage using the Move File API with path parameters and cURL/SDK examples"
 weight: 100
 ---
 

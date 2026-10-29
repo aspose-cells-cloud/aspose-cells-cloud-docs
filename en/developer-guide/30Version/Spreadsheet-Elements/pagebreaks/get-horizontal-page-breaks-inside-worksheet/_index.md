@@ -6,7 +6,7 @@ type: docs
 url: /page-breaks/get-horizontal-page-breaks/
 aliases: [/get-horizontal-page-breaks-inside-worksheet/]
 keywords: "horizontal page breaks, Aspose.Cells Cloud, REST API, Excel worksheet, SDK"
-description: "Retrieve horizontal page breaks from an Excel worksheet via Aspose.Cells Cloud API. Includes endpoint, parameters, cURL example, response format, and SDK snippets for C#, Java, Python, and more."
+description: "Get horizontal page breaks from Excel worksheet via Aspose.Cells Cloud REST API with cURL and SDK examples"
 ArticleTitle: "Get Horizontal Page Breaks - Aspose.Cells Cloud API Documentation"
 weight: 100
 ---

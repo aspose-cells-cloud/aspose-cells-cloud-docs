@@ -7,7 +7,7 @@ type: docs
 url: /ranges/update/column-width/
 aliases: [/change-widths-of-columns-inside-the-range/]
 keywords: "Aspose.Cells, column width, REST API, Excel, SDK, range, cloud"
-description: "Learn how to change column widths inside a range using Aspose.Cells Cloud REST API or SDKs (C#, Java, Python, etc.). Includes cURL, request/response details, and authentication steps."
+description: "Update column widths in a range using Aspose.Cells Cloud REST API with cURL and SDK examples"
 weight: 74
 ---
 

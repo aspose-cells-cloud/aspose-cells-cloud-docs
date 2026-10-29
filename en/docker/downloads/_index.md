@@ -5,7 +5,7 @@ ArticleTitle: "Aspose.Cells Cloud Docker Image Download"
 linktitle: "Image Download"
 type: docs
 url: /docker/downloads/
-description: "Get the latest Aspose.Cells Cloud Docker images for Windows Server 2016/2019 and Linux. Follow step‑by‑step instructions, prerequisites, and security tips to run the container locally."
+description: "Download Aspose.Cells Cloud Docker images for Windows Server 2016/2019 and Linux to run the REST API locally."
 weight: 30
 keywords: "Aspose.Cells, Cloud, Docker, container, image, download, Windows Server, Linux, REST API"
 ---

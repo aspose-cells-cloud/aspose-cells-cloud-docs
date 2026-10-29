@@ -5,7 +5,7 @@ type: docs
 url: /oleobjects/
 aliases: ["/working-with-oleobjects/"]
 keywords: ["OLE object", "Excel", "Aspose.Cells", "REST API", "cloud"]
-description: "Use Aspose.Cells Cloud REST API to retrieve, add, update, delete, and convert OLE objects in Excel worksheets. Includes code examples, SDKs for Java, .NET, Python, PHP, and more."
+description: "Aspose.Cells Cloud API: manage Excel OLE objects—add, get, update, delete, convert—with code examples and SDKs"
 date: 2024-03-15
 lastmod: 2024-06-10
 weight: 100

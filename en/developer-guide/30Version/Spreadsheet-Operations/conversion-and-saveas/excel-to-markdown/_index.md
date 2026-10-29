@@ -5,7 +5,7 @@ linktitle: "Excel to Markdown"
 type: docs
 url: /convert-excel-file-to-markdown-file/
 keywords: "Excel, Markdown, conversion, Aspose.Cells Cloud, REST API, excel to markdown conversion, aspose cells markdown api, excel markdown export"
-description: "Convert Excel worksheets to Markdown using Aspose.Cells Cloud REST API – includes cURL example, SDK snippets, required parameters, and authentication details."
+description: "Convert Excel files to Markdown via Aspose.Cells Cloud REST API with cURL, SDK examples, and JWT authentication."
 weight: 100
 ArticleTitle: "Convert Excel to Markdown – Aspose.Cells Cloud API Documentation"
 ---

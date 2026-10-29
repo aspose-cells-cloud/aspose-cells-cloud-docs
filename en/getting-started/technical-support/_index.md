@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud Technical Support"
 LinkTitle: "Technical Support"
 type: docs
 url: /technical-support/
-description: "Free technical support for Aspose.Cells Cloud API. Get help via the Aspose Cloud Forum, FAQs, and developer assistance. Fast responses for developers and enterprises."
+description: "Get free Aspose.Cells Cloud technical support from the development team via the Aspose Cloud Forum."
 keywords: "Aspose.Cells Cloud support, technical support, Aspose Cloud Forum, API assistance"
 weight: 80
 date: 2024-06-15

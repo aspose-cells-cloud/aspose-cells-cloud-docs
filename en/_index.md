@@ -5,7 +5,7 @@ ArticleTitle: "Aspose.Cells Cloud API – Convert, Merge, Split & Protect Excel 
 linktitle: "Developer Center"
 type: docs
 url: /
-description: "Aspose.Cells Cloud REST API enables conversion, merging, splitting, protecting, and comprehensive processing of Excel spreadsheets. Free 150 calls/month, SDKs for 8 languages."
+description: "Aspose.Cells Cloud API: convert, merge, split, encrypt Excel files in the cloud. Free 150 calls/month, 8 SDKs, RESTful."
 weight: 100
 keywords: "Aspose.Cells Cloud, Excel API, spreadsheet conversion, merge Excel, split Excel, protect Excel, cloud spreadsheet SDK, REST API, Excel processing"
 ---

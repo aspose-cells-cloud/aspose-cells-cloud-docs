@@ -9,7 +9,7 @@ aliases:
   - /workbook/delete-background/
   - /workbook/background/delete/
 keywords: "Aspose Cells delete background, Excel API delete background, Aspose.Cells Cloud, DELETE /cells background"
-description: "Remove a background image from an Excel workbook using Aspose.Cells Cloud API. Learn the DELETE endpoint, required parameters, cURL example, and SDK code in C#, Java, Python, and more."
+description: "Delete background image from Excel workbook using Aspose.Cells Cloud REST API DELETE /cells/{name}/background endpoint."
 weight: 170
 ArticleTitle: "Delete Background Image from Excel Workbook using Aspose.Cells Cloud API"
 ---

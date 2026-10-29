@@ -7,7 +7,7 @@ type: docs
 url: /autofilter/match-all-blank/
 aliases: [/match-all-blank-cells-in-the-list/]
 keywords: "Aspose.Cells, blank cells, AutoFilter, REST API, Excel"
-description: "Learn how to use Aspose.Cells Cloud REST API to filter and match all blank cells in an Excel worksheet. Includes endpoint, parameters, authentication steps, cURL example, and SDK snippets for C#, Java, Python, and more."
+description: "Filter blank cells in Excel using Aspose.Cells Cloud API with PostWorksheetMatchBlanks endpoint via cURL or SDKs."
 weight: 100
 ---
 

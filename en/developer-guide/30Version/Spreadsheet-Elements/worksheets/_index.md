@@ -5,7 +5,7 @@ type: docs
 url: /worksheets/
 aliases: [/cells/worksheets/, /working-with-worksheets/]
 keywords: "REST API endpoint, Aspose.Cells Cloud SDK Python, Excel worksheet automation, HCL formula calculation, Excel worksheet operations, workbook manipulation, Aspose.Cells Cloud REST API"
-description: "Comprehensive guide to Excel worksheet operations using Aspose.Cells Cloud REST API. Learn to add, delete, rename, hide, freeze panes, and export worksheets via SDKs."
+description: "Aspose.Cells Cloud REST API: Excel worksheet operations—add, delete, rename, freeze, hide, sort, calculate, export"
 date: 2024-03-15T10:00:00Z
 weight: 100
 ArticleTitle: "Working with Excel Worksheets – Aspose.Cells Cloud Documentation"

@@ -1,6 +1,6 @@
 ---
 title: "Create Spreadsheet API – Aspose.Cells Cloud (v4.0) | Generate Excel Files"
-description: "Use Aspose.Cells Cloud v4.0 REST API to create blank or template-based Excel (XLSX, ODS, CSV) workbooks programmatically. Includes cURL, SDKs (C#, Java, Python, Go, PHP, Ruby, Node.js, Perl), authentication, and error handling."
+description: "Use Aspose.Cells Cloud REST API to create blank or template-based Excel (XLSX, ODS, CSV) workbooks programmatically."
 linktitle: "Create Spreadsheet"
 type: docs
 url: /create-spreadsheet/

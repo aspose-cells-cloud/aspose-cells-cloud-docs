@@ -9,7 +9,7 @@ aliases:
   - /workbook/new-from-a-template-file/
   - /workbook/create/template-file/
 keywords: "Excel, template, API, Aspose.Cells, workbook, REST, Cloud"
-description: "Learn how to generate Excel workbooks from template files using the Aspose.Cells Cloud REST API. Includes prerequisites, authentication steps, cURL examples, error‑handling details, and SDK code snippets."
+description: "Create Excel workbooks from template files using Aspose.Cells Cloud API PUT /cells/{name} with Smart-Marker data support"
 weight: 30
 ArticleTitle: "Create Excel Workbook from Template with Aspose.Cells Cloud API"
 ---

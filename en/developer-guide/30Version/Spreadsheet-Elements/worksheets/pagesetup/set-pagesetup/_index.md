@@ -5,7 +5,7 @@ linktitle: "Set page setup"
 type: docs
 url: /set-page-setup/
 keywords: "Aspose.Cells, Excel, page setup, REST API, worksheet, cloud SDK"
-description: "Learn how to set the page setup for an Excel worksheet using Aspose.Cells Cloud REST API. Includes request details, a secure HTTPS cURL example, response status codes, and SDK code snippets for multiple programming languages."
+description: "Configure Excel page setup via Aspose.Cells Cloud API: POST /cells/{name}/worksheets/{sheetName}/pagesetup with JWT auth"
 weight: 100
 ArticleTitle: "Set page setup for a worksheet – Aspose.Cells Cloud API Guide"
 ---

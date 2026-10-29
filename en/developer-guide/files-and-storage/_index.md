@@ -7,7 +7,7 @@ type: docs
 url: /files-and-storage/
 aliases: [/working-with-files-and-storage-using-aspose-cells-cloud/]
 keywords: "Aspose.Cells Cloud, file storage API, Excel file upload, download, copy, move, delete, folder management, REST API, cURL examples, cloud storage"
-description: "Step-by-step guide to managing Excel files and folders in Aspose.Cells Cloud: upload, download, copy, move, delete files, and organize folders via REST API with cURL examples and authentication."
+description: "Upload, download, copy, move, and delete Excel files in Aspose.Cells Cloud storage using REST API and JWT authentication"
 weight: 100
 ---
 

@@ -6,7 +6,7 @@ type: docs
 url: /export-excel-picture-to-different-formats/
 aliases: [/export/excel-picture-to-different-formats/]
 keywords: "Export Picture, Aspose.Cells Cloud, REST API, Excel, Image Formats, PNG, GIF, JPEG, BMP, SVG, TIFF, EMF, WMF"
-description: "Export Excel pictures to various image formats using Aspose.Cells Cloud REST API. The service supports SDKs for multiple languages, including C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, and Swift."
+description: "Export Excel pictures to PNG, GIF, JPEG, BMP, SVG, TIFF, EMF, WMF via Aspose.Cells Cloud API with cURL or SDKs."
 weight: 100
 ArticleTitle: "Export Excel Pictures to Multiple Formats Using Aspose.Cells Cloud REST API"
 ---

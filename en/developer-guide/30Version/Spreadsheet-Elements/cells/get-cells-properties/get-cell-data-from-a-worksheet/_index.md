@@ -6,7 +6,7 @@ weight: 100
 date: 2024-06-15
 api_version: "3.0"
 keywords: "Aspose.Cells Cloud, get cell data, Excel API, REST API, cell value, worksheet API, Aspose API example"
-description: "Retrieve a single cell’s value, type, and style from an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes cURL, SDK examples, parameters, and error handling. This guide shows how to retrieve cell metadata — including value, type, and formatting — from an Excel worksheet via Aspose.Cells Cloud REST API v3.0, with working cURL and SDK examples."
+description: "Get cell value, type, and style from an Excel worksheet using Aspose.Cells Cloud REST API v3.0 with cURL or SDKs"
 ArticleTitle: "Get Cell Data from a Worksheet"
 linktitle: "Get Cell Data"
 ---

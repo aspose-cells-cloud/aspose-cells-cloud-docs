@@ -15,7 +15,7 @@ keywords:
     "JSON request",
     "JWT authentication",
   ]
-description: "Update Excel cell range styles (font, color, background) via Aspose.Cells Cloud REST API v3.0. Includes cURL, SDK examples (C#, Java, Python), and JWT auth."
+description: "Update Excel cell range styles (font, color, background) via Aspose.Cells Cloud REST API v3.0 with cURL and SDKs"
 linktitle: "Update Cells Style API"
 ArticleTitle: "Aspose.Cells Cloud API: Update Multiple Cells Style in Excel"
 ---

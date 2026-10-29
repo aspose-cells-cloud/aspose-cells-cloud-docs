@@ -6,7 +6,7 @@ type: docs
 url: /ranges/unmerge/
 aliases: [/unmerge-merged-cells-of-the-range/]
 keywords: "Aspose.Cells Cloud, unmerge cells, Excel API, worksheet range, REST API"
-description: "Learn how to use the Aspose.Cells Cloud API to unmerge merged cells in a specific worksheet range. Includes endpoint, parameters, sample cURL, and SDK code snippets for C#, Java, Python, and more."
+description: "Unmerge merged cells in Excel ranges via Aspose.Cells Cloud API with cURL or SDKs for C#, Java, Python, and more."
 weight: 100
 ArticleTitle: "Unmerge Merged Cells in Excel Range via Aspose.Cells Cloud API"
 ---

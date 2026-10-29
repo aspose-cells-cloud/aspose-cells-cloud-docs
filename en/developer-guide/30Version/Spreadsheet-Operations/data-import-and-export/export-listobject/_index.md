@@ -6,7 +6,7 @@ type: docs
 url: /export-excel-listobject-to-different-formats/
 aliases: [/export/excel-listobject-to-different-formats/]
 keywords: "Export ListObject, Excel ListObject, Aspose.Cells Cloud, REST API, PDF, CSV, JSON, XLSX, ODS, PNG, TIFF, SDKs"
-description: "The Aspose.Cells Cloud REST API enables exporting Excel ListObjects to a wide range of file formats. SDKs are available for many programming languages, including C#, Java, Python, Node.js, Go, PHP, Ruby, Perl, and Swift."
+description: "Export Excel ListObjects to XLSX, PDF, CSV, TIFF, PNG, and more via Aspose.Cells Cloud REST API and SDKs"
 weight: 100
 ArticleTitle: "Export Excel ListObject to Multiple Formats Using Aspose.Cells Cloud API"
 ---

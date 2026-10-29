@@ -6,7 +6,7 @@ type: docs
 url: /document-properties/get/
 aliases: [/get-a-particular-document-property/]
 keywords: "Aspose.Cells, Cloud API, Get Document Property, Excel metadata, REST GET, SDK examples"
-description: "Retrieve a named document property (e.g., Author, Title) from an Excel file using Aspose.Cells Cloud REST API. Includes cURL example, SDK snippets, and response schema."
+description: "Get a specific Excel document property via Aspose.Cells Cloud REST API with cURL or SDK examples"
 weight: 100
 ArticleTitle: "Get a Specific Document Property from Excel using Aspose.Cells Cloud API"
 ---

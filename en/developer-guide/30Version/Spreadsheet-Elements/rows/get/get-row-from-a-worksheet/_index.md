@@ -6,7 +6,7 @@ type: docs
 url: /rows/get/row/
 aliases: [/get-row-from-a-worksheet/]
 keywords: "Aspose.Cells Cloud, Excel row API, Get Worksheet Row, REST API, .NET SDK, Java SDK, Python SDK"
-description: "Retrieve detailed information (height, style, hidden state, etc.) for a specific row in an Excel worksheet using Aspose.Cells Cloud REST API. Includes curl example, SDK snippets, and error handling."
+description: "Get Excel row data—height, visibility, style—via Aspose.Cells Cloud REST API with JWT auth, cURL, and SDK examples"
 weight: 100
 ArticleTitle: "Get Row Description from an Excel Worksheet – Aspose.Cells Cloud API"
 ---

@@ -5,7 +5,7 @@ url: /get-cell-style-from-a-worksheet/
 weight: 100
 date: 2024-03-15
 keywords: "Aspose.Cells, Excel, REST API, cell style, spreadsheet, cloud SDK, API documentation"
-description: "Learn how to retrieve the style of a specific cell in an Excel worksheet using Aspose.Cells Cloud REST API v3. Includes cURL, response schema, status codes, and SDK snippets for 8+ languages."
+description: "Retrieve Excel cell style details (font, borders, fill) via Aspose.Cells Cloud REST API v3.0 with cURL or SDKs."
 tags:
   - excel
   - cell-style

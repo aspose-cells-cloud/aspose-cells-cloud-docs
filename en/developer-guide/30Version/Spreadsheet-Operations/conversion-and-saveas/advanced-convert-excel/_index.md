@@ -6,7 +6,7 @@ type: docs
 url: /advanced-convert-excel/
 date: 2024-06-15
 keywords: "Aspose.Cells, Excel conversion, Cloud API, SDK, convert Excel to PDF, Excel to HTML, page setup Excel"
-description: "Use Aspose.Cells Cloud API to convert Excel workbooks to PDF, HTML, CSV, and more — with support for page setup, save options, and print settings via PUT /cells/convert."
+description: "Convert Excel to PDF, HTML, CSV via PUT /cells/convert with page setup, save options, and print settings control."
 weight: 50
 ArticleTitle: "Aspose.Cells Cloud Advanced Excel Conversion API – PDF, HTML, CSV with Page Setup & Save Options"
 ---

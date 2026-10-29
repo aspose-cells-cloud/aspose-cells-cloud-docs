@@ -8,7 +8,7 @@ aliases:
   - /add-an-empty-column-in-an-excel-worksheet/
   - /add-an-empty-column-in-a-worksheet/
 keywords: "add, column, Excel, API, Aspose.Cells, Cloud, REST, insert"
-description: "Learn how to insert a new column into an Excel sheet using Aspose.Cells Cloud REST API. Includes request syntax, cURL example, and SDK code samples."
+description: "Insert one or more columns into an Excel worksheet using Aspose.Cells Cloud REST API with cURL or SDK examples."
 weight: 100
 ArticleTitle: "Add Empty Column to Excel Worksheet Using Aspose.Cells Cloud API"
 ---

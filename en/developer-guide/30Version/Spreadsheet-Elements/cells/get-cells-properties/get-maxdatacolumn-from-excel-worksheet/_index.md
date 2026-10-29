@@ -5,7 +5,7 @@ type: docs
 url: /get-maxdatacolumn-from-excel-worksheet/
 weight: 70
 keywords: "Aspose.Cells Cloud, Get MaxDataColumn, Excel worksheet, REST API, v3.0, SDK, cloud API"
-description: "Call the Aspose.Cells Cloud REST API v3.0 to retrieve the highest column index containing data in an Excel worksheet — with cURL, C#, Java, Python, Node.js, and more SDK examples."
+description: "Get max data column index from Excel worksheet using Aspose.Cells Cloud REST API v3.0"
 linktitle: "Get MaxDataColumn"
 ArticleTitle: "Aspose.Cells Cloud API: Get MaxDataColumn Index from Excel Worksheet"
 ---

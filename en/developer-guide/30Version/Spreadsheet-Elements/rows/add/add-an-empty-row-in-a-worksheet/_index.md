@@ -7,7 +7,7 @@ type: docs
 url: /rows/add/row/
 aliases: [/add-an-empty-row-in-a-worksheet/]
 keywords: "Aspose.Cells Cloud, Excel, add empty row, worksheet, REST API, insert row, cloud spreadsheet"
-description: "Use Aspose.Cells Cloud REST API to insert an empty row into an Excel worksheet. Supports multiple SDKs (C#, Java, Python, Go, PHP, Ruby, Node.js, Perl, Android, Swift) for rapid development."
+description: "Add an empty row to an Excel worksheet using Aspose.Cells Cloud API PutInsertWorksheetRow with zero-based rowIndex."
 weight: 100
 ---
 

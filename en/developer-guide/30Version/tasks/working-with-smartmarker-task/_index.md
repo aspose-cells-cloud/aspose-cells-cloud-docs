@@ -4,7 +4,7 @@ type: docs
 url: /tasks/smartmarker/
 aliases: [/working-with-smartmarker-task/]
 keywords: "SmartMarker task, Aspose.Cells Cloud, REST API, Excel, spreadsheet automation"
-description: "Learn how to use the SmartMarker task of Aspose.Cells Cloud API with cURL and SDK examples, including request schema and error handling."
+description: "Use the SmartMarker task in Aspose.Cells Cloud API to merge XML/JSON data into Excel templates via REST calls or SDKs."
 weight: 60
 ArticleTitle: "Working with SmartMarker Task in Aspose.Cells Cloud API"
 linktitle: "SmartMarker Task"

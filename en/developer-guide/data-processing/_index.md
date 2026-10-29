@@ -6,7 +6,7 @@ linktitle: "Data Processing"
 type: docs
 url: /data-processing/
 keywords: "Aspose.Cells Cloud, spreadsheet data processing, Excel merge, Excel split, CSV import, JSON import, API"
-description: "Detailed guide for importing CSV/JSON data, merging remote Excel workbooks, and splitting large spreadsheets using Aspose.Cells Cloud REST API, including request/response examples."
+description: "Import CSV, JSON, XML and merge or split Excel workbooks using Aspose.Cells Cloud REST API"
 weight: 100
 ---
 

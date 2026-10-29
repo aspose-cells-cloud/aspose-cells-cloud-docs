@@ -7,7 +7,7 @@ type: docs
 url: /shapes/clear/
 aliases: [/delete-all-shapes-inside-the-worksheet/]
 keywords: "Aspose.Cells Cloud, Delete all shapes, Excel worksheet, REST API, SDK, cURL, .NET, Java, PHP, Ruby, Node.js, Python, Perl, Go, Android, Swift"
-description: "Delete all shapes from an Excel worksheet using the Aspose.Cells Cloud REST API. The operation is available via cURL and a wide range of SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, Android, Swift)."
+description: "Clear all shapes from an Excel worksheet using Aspose.Cells Cloud REST API with cURL or SDKs"
 weight: 40
 ---
 

@@ -5,7 +5,7 @@ linktitle: "Transform"
 type: docs
 url: /transform/
 keywords: "Aspose.Cells Cloud, spreadsheet transformation, delete blank rows, delete blank columns, delete blank worksheets, swap Excel ranges, cloud data cleanup"
-description: "Use Aspose.Cells Cloud APIs to delete blank rows, columns, and worksheets, and swap Excel ranges. Automate data cleanup and reorganization in the cloud—no Excel installation required."
+description: "Delete blank rows, columns, worksheets, and swap Excel ranges via Aspose.Cells Cloud API for automated data cleanup."
 date: 2024-03-15
 lastmod: 2024-05-22
 draft: false

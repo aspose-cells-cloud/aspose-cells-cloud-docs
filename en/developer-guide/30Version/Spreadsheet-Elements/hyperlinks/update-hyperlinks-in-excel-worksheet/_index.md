@@ -2,7 +2,7 @@
 title: "Update a Hyperlink in an Excel Worksheet – Aspose.Cells Cloud API Guide"
 date: 2024-06-15
 lastmod: 2024-06-15
-description: "Update Excel hyperlinks via Aspose.Cells Cloud REST API v3.0. Includes cURL, SDKs (C#, Java, Python, Node.js, Go, PHP, Ruby, Perl), rate limiting, error handling, and prerequisites."
+description: "Update Excel hyperlinks via Aspose.Cells Cloud API v3.0 using PostWorksheetHyperlink with cURL or SDKs."
 tags:
   - aspose.cells
   - hyperlink

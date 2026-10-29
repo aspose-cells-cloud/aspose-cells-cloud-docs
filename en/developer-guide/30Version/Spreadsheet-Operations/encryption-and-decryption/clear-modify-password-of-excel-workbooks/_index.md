@@ -10,7 +10,7 @@ aliases:
     /workbook/clear-modify-password/，/workbook/password/clear/,
   ]
 keywords: "Aspose.Cells, Excel, password removal, write‑protection, REST API, SDK examples"
-description: "Learn how to delete write‑protection (password) from an Excel workbook using Aspose.Cells Cloud REST API. Includes cURL example, authentication steps, and SDK code samples."
+description: "Remove write-protection password from Excel workbooks using Aspose.Cells Cloud REST API, with cURL and SDK examples."
 weight: 110
 ArticleTitle: "Remove Write‑Protection (Password) from an Excel Workbook"
 ---

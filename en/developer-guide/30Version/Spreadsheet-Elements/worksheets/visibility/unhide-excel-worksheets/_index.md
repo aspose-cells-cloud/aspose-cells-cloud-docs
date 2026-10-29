@@ -6,7 +6,7 @@ type: docs
 url: /worksheets/unhide/
 aliases: [/unhide-excel-worksheets/]
 keywords: "Aspose.Cells, unhide worksheet, Excel API, cloud spreadsheet, REST, worksheet visibility, Excel workbook"
-description: "Learn how to use Aspose.Cells Cloud REST API to unhide a worksheet in an Excel workbook. Includes request details, cURL examples, and SDK code snippets for multiple programming languages."
+description: "Unhide Excel worksheets using Aspose.Cells Cloud API: PUT /cells/{name}/worksheets/{sheetName}/visible?isVisible=true"
 weight: 60
 ArticleTitle: "Unhide Excel Worksheet Using Aspose.Cells Cloud REST API"
 ---

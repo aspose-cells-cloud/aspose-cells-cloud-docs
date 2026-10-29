@@ -6,7 +6,7 @@ type: docs
 url: /worksheets/hide/
 aliases: [/hide-excel-worksheets/]
 keywords: "Aspose.Cells Cloud, Excel, hide worksheet, REST API, spreadsheet"
-description: "Step‑by‑step guide to hide a worksheet in an Excel workbook using Aspose.Cells Cloud REST API, including request details, a cURL example, and SDK code snippets for multiple languages."
+description: "Hide Excel worksheets using Aspose.Cells Cloud REST API with PUT isVisible=false, including cURL and SDK examples"
 weight: 50
 ArticleTitle: "Hide an Excel Worksheet with Aspose.Cells Cloud REST API"
 ---

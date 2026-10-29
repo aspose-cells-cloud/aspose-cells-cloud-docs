@@ -7,7 +7,7 @@ weight: 9
 url: /new-features/
 aliases: [/what-s-new-in-aspose-cells-cloud/]
 keywords: "Aspose.Cells Cloud, new features, Microsoft Office Excel, OpenOffice Spreadsheet, CSV, PDF, REST API, SDK, spreadsheet, cloud"
-description: "Explore the latest features, improvements, and bug fixes in Aspose.Cells Cloud, including updates for Excel, OpenOffice, CSV, and PDF handling."
+description: "Aspose.Cells Cloud 4.0: Web APIs for transpose and unpivot, unified SDK, enhanced efficiency and reliability."
 ArticleTitle: "What's new in Aspose.Cells Cloud – Latest Features and Updates"
 ---
 

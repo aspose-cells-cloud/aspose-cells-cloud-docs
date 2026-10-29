@@ -6,7 +6,7 @@ linktitle: "CopyFile"
 type: docs
 url: /copy-file/
 keywords: "Aspose.Cells, CopyFile API, Excel file copy, Cloud storage, REST API, duplicate Excel file"
-description: "Use Aspose.Cells Cloud’s CopyFile API to securely duplicate Excel files between storage accounts. Includes cURL examples, SDK support (Go, Python, Node.js), authentication guide, and batch operation insights."
+description: "Copy Excel files in the cloud with Aspose.Cells Cloud CopyFile API—REST and SDK examples for cURL, Python, Go, Node.js"
 weight: 100
 ---
 

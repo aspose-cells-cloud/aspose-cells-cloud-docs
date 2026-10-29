@@ -6,7 +6,7 @@ type: docs
 url: /working-with-pagebreaks/
 aliases: [/working-with-pagebreaks/]
 keywords: "Excel, page break, Aspose.Cells Cloud, REST API, worksheet, add, delete, get, update, page breaks"
-description: "Learn how to add, retrieve, and delete page breaks in Excel worksheets using Aspose.Cells Cloud REST API. Includes examples for vertical and horizontal breaks."
+description: "Add, get, and delete vertical and horizontal page breaks in Excel worksheets via Aspose.Cells Cloud REST API"
 weight: 100
 ArticleTitle: "Working with Excel Page Breaks – Aspose.Cells Cloud Documentation"
 ---

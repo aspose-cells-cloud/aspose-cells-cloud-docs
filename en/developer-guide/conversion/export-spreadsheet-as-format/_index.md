@@ -3,7 +3,7 @@ title: "Export Remote Excel Worksheet to Other Formats"
 linktitle: "Export Spreadsheet as Format"
 type: docs
 url: /export-spreadsheet-as-format/
-description: "Convert Excel workbooks stored in Aspose Cloud to PDF, XLSX, CSV, HTML, JSON, ODS, and other formats using the ExportSpreadsheetAsFormat REST API. Includes cURL examples and SDK code for C#, Java, Python, PHP, Ruby, Node.js, Perl, and Go."
+description: "Export Excel workbooks to PDF, XLSX, CSV, HTML, JSON, ODS, TIFF via Aspose.Cells Cloud REST API and SDKs."
 keywords: "Aspose.Cells Cloud, Excel to PDF conversion, REST API export, spreadsheet format conversion, XLSX, CSV, HTML, JSON, ODS, cloud API, SDK examples"
 date: 2024-03-15
 lastmod: 2024-06-20

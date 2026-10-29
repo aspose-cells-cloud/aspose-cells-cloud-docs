@@ -5,7 +5,7 @@ type: docs
 url: /compress-and-repair-excel-files/
 linktitle: "Compress and Repair"
 keywords: "Aspose.Cells, Excel compression, Excel repair, cloud API, reduce Excel file size, restore corrupted workbook, compress Excel file, repair Excel workbook"
-description: "Learn how to compress large Excel workbooks and repair corrupted files using Aspose.Cells Cloud API. Step‑by‑step examples, supported languages, and best practices."
+description: "Compress Excel files and repair corrupted workbooks with Aspose.Cells Cloud API POST /cells/compress and /cells/repair"
 weight: 100
 ArticleTitle: "Compress and Repair Excel Files – Aspose.Cells Cloud API"
 ---

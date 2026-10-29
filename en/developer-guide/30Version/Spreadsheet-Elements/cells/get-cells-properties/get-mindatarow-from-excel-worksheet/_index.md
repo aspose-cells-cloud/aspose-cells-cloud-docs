@@ -4,7 +4,7 @@ type: docs
 url: /get-mindatarow-from-excel-worksheet/
 weight: 90
 keywords: "Aspose.Cells, MinDataRow, Excel API, Cloud SDK, retrieve first data row, worksheet data range"
-description: "Use Aspose.Cells Cloud API v3.0 to retrieve the first row with data in an Excel worksheet via the GetMinDataRow endpoint. Includes cURL, SDKs (C#, Java, Python, Go, etc.), and sample responses. v3.0 (latest stable); v4.0 in preview — see migration guide."
+description: "Get first data row index in Excel worksheet using Aspose.Cells Cloud API v3.0 GetMinDataRow endpoint"
 ArticleTitle: "Get MinDataRow from Excel Worksheet – Aspose.Cells Cloud API"
 linktitle: "Get MinDataRow"
 ---

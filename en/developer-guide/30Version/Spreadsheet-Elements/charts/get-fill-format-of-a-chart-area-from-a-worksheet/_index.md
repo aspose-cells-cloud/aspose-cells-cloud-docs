@@ -10,7 +10,7 @@ keywords:
   - "Fill Format"
   - "REST API"
   - "Excel"
-description: "Retrieve the fill format (color, pattern, gradient) of a chart area in an Excel worksheet via Aspose.Cells Cloud API. Includes cURL example, SDK code snippets, authentication steps, and response details."
+description: "Get Excel chart area fill format (color, pattern, gradient) via Aspose.Cells Cloud REST API"
 ArticleTitle: "Get Chart Area Fill Format Aspose.Cells Cloud API v3.0"
 linktitle: "Get Chart Area Fill Format"
 ---

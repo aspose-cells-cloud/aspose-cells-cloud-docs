@@ -5,7 +5,7 @@ linktitle: "Rows"
 type: docs
 url: /rows/delete/rows/
 keywords: "Aspose.Cells Cloud, delete rows, delete multiple rows, Excel worksheet, REST API, SDK"
-description: "Learn how to delete one or more rows from an Excel worksheet using Aspose.Cells Cloud REST API. Includes endpoint details, parameters, a cURL example, and SDK code samples for various languages."
+description: "Delete multiple rows from an Excel worksheet using Aspose.Cells Cloud REST API with cURL or SDKs."
 weight: 80
 ArticleTitle: "Delete Multiple Rows from an Excel Worksheet with Aspose.Cells Cloud API"
 ---

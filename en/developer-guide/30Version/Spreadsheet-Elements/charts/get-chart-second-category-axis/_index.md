@@ -4,7 +4,7 @@ type: docs
 url: /charts/second-category-axis/get/
 weight: 60
 keywords: "Get Chart Second Category Axis, Aspose.Cells Cloud API, Excel chart axis, REST API, second-category axis, Aspose.Cells"
-description: "Retrieve the second‑category axis of a chart in an Excel worksheet using the Aspose.Cells Cloud REST API. Includes request format, parameters, sample cURL, response schema, status codes, and usage notes."
+description: "Get the second-category axis of an Excel chart via Aspose.Cells Cloud REST API's GetChartSecondCategoryAxis endpoint"
 ArticleTitle: "Get Chart Second Category Axis – Aspose.Cells Cloud API"
 linktitle: "Get Second Category Axis"
 ---

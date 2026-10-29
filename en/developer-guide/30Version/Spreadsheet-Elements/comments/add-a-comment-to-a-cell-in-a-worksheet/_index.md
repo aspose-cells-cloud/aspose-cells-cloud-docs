@@ -2,7 +2,7 @@
 title: "Add Worksheet Comment (v3.1)"
 url: /comments/add/
 aliases: [/add-a-comment-to-a-cell-in-a-worksheet/]
-description: "Add a comment to a specific cell in an Excel worksheet using Aspose.Cells Cloud REST API v3.1 . Includes cURL, SDK examples, request/response schemas, and error handling."
+description: "Add a comment to a cell in an Excel worksheet via Aspose.Cells Cloud REST API v3.1, with cURL and SDK examples."
 keywords: "Aspose.Cells, Cloud API, Add Worksheet Comment, Excel, Spreadsheet, Cell Comment"
 weight: 100
 api_version: "v3.1"

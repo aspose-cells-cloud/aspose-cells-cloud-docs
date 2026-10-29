@@ -9,7 +9,7 @@ aliases:
   - /import-data/batch-data/
   - /import/batch-data/
 keywords: "Aspose.Cells, Cloud API, import batch data, Excel, CSV, JSON, XML, arrays"
-description: "Learn how to import batch data (CSV, JSON, XML, arrays) into an Excel worksheet using Aspose.Cells Cloud REST API. Includes authentication, request/response examples, SDK snippets, and error handling."
+description: "Import batch data into Excel worksheets via Aspose.Cells Cloud REST API using CSV, JSON, XML, or arrays."
 weight: 19
 ArticleTitle: "Import Batch Data into Excel Worksheet – Aspose.Cells Cloud Documentation"
 ---

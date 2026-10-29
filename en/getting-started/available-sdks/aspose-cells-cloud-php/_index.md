@@ -1,14 +1,14 @@
----  
+---
 title: "Aspose.Cells Cloud PHP SDK – Convert, Merge, Split, Protect Excel Files"  
 second_title: "Document"  
 ArticleTitle: "Aspose.Cells Cloud PHP SDK – Convert, Merge, Split, Protect Excel Files"  
 linktitle: "Aspose.Cells Cloud PHP SDK"  
 type: docs  
 url: /available-sdks/aspose-cells-cloud-php/  
-description: "Download the Aspose.Cells Cloud PHP SDK (v24.3). Learn how to install via Composer, authenticate, convert XLSX to PDF/CSV, merge workbooks, protect sheets, and more – all without installing Office."  
+description: "Aspose.Cells Cloud PHP SDK v24.3: Convert, merge, split, and protect Excel files via Composer—no local Office needed."
 keywords: "Aspose.Cells, Cloud, PHP, SDK, Excel, Convert, Merge, Split, Protect"  
 weight: 30  
----  
+---
 
 The SDK is open-source and licensed under the MIT License. You can access the PHP library source code for Aspose.Cells Cloud <a href="https://github.com/aspose-cells-cloud/aspose-cells-cloud-php" target="_blank" rel="noopener noreferrer">here</a>.
 

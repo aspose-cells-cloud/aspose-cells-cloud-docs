@@ -7,7 +7,7 @@ type: docs
 url: /compress-excel-files/
 aliases: [/compress/]
 keywords: "compress excel file, aspose cells cloud, excel compression, spreadsheet compression, rest api, file compression"
-description: "Compress Excel files (XLS, XLSX, XLSM, XLSB, ODS) using Aspose.Cells Cloud REST API. Set compression level, handle multiple files, and integrate via SDKs."
+description: "Compress Excel files up to 500 MB via Aspose.Cells Cloud API with configurable compression levels."
 weight: 39
 ---
 

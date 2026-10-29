@@ -4,7 +4,7 @@ type: docs
 url: /comments/update/
 aliases: [/update-a-comment-in-excel-workbook/]
 keywords: "Aspose.Cells Cloud, REST API, Excel, worksheet, cell comment, update worksheet comment, comment object"
-description: "Use Aspose.Cells Cloud REST API to update a worksheet comment on a cell in an Excel workbook, including request details, response codes, and SDK examples."
+description: "Update an Excel worksheet cell comment using Aspose.Cells Cloud REST API with JWT authentication, cURL, or SDK examples."
 weight: 30
 ArticleTitle: "Update Worksheet Cell Comment – Aspose.Cells Cloud API"
 linktitle: "Update Comment"

@@ -5,7 +5,7 @@ linktitle: "Convert Worksheet To Csv"
 type: docs
 date: 2024-03-15
 lastmod: 2024-05-22
-description: "Convert a single Excel worksheet to CSV using Aspose.Cells Cloud API v4.0: REST endpoint, cURL examples, SDK code (C#, Java, Python, etc.), error handling, and security best practices."
+description: "Convert Excel worksheet to CSV with Aspose.Cells Cloud API v4.0: upload, specify sheet, get binary CSV or save to cloud."
 keywords:
   [
     "Aspose.Cells",

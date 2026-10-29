@@ -5,7 +5,7 @@ linktitle: "Paper Size"
 type: docs
 url: /paper-size/
 keywords: "paper size, Aspose.Cells Cloud, REST API, spreadsheet, A4, Letter, ISO, JIS, PRC"
-description: "Full list of paper‑size constants supported by Aspose.Cells Cloud REST API, including dimensions and usage examples for setting custom sizes in spreadsheets."
+description: "Aspose.Cells Cloud API paper size constants: A4, Letter, ISO, JIS, envelopes with dimensions"
 weight: 100
 ArticleTitle: "Aspose.Cells Cloud Paper Size Constants – Complete Reference"
 ---

@@ -5,7 +5,7 @@ linktitle: "Add"
 type: docs
 url: /rows/add/
 keywords: "Aspose.Cells, add rows, Excel API, REST, C#, Java, Python, Node.js"
-description: "Step‑by‑step guide to add single or multiple rows to an Excel worksheet using Aspose.Cells Cloud REST API, with code samples for C#, Java, Python, and Node.js."
+description: "Add rows to Excel worksheets using Aspose.Cells Cloud REST API with C#, Java, Python, and Node.js examples"
 weight: 100
 ArticleTitle: "Add Rows to Excel Worksheet using Aspose.Cells Cloud API – Step‑by‑Step Guide"
 ---

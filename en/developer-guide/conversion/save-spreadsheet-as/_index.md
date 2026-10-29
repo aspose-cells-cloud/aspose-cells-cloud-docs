@@ -1,6 +1,6 @@
 ---
 title: "Save Spreadsheet as Another Format – Aspose.Cells Cloud API (v4.0)"
-description: "Save Excel, CSV, and other spreadsheet formats to PDF, XLSX, HTML, and more via Aspose.Cells Cloud API v4.0. Includes REST examples, cURL, and SDK code for Node.js, Python, Java, C#, Go, PHP, Ruby, and Perl."
+description: "Convert Excel, CSV to PDF, XLSX, HTML via Aspose.Cells Cloud API v4.0 with REST, cURL, and SDK examples"
 summary: "Convert cloud-hosted workbooks to 20+ formats—including PDF, XLSX, CSV, HTML, and ODS—without local processing. Full API reference with authentication, request parameters, error handling, and production-ready SDK examples."
 date: 2024-06-15
 type: docs
@@ -22,7 +22,7 @@ Use the **Save Spreadsheet As** API to convert a workbook stored in Aspose.Cells
 - API credentials (App SID and App Key)
 - A workbook uploaded to your cloud storage (e.g., `MyWorkbook.xlsx`)
 
-## REST API Endpoint
+## The Save Spreadsheet As Web API Endpoint
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/{name}/saveas

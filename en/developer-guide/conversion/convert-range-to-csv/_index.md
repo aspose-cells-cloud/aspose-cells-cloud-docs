@@ -7,7 +7,7 @@ url: /convert-range-to-csv/
 date: 2024-05-21
 lastmod: 2024-05-21
 keywords: "Aspose.Cells, Convert Range to CSV, Excel to CSV, Excel API, Cloud Spreadsheet, REST API, XLSX to CSV, Aspose.Cells Cloud"
-description: "Convert a specific Excel range (XLSX/XLS) to CSV via Aspose.Cells Cloud REST API — includes SDK examples (C#, Java, Python), request syntax, and authentication. Free cloud spreadsheet API."
+description: "Convert Excel range (XLSX/XLS) to CSV using Aspose.Cells Cloud REST API with C#, Java, Python SDK examples"
 weight: 100
 ---
 

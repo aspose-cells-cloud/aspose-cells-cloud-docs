@@ -9,7 +9,7 @@ aliases:
   - /autofilter/delete-a-date-filter/
 weight: 100
 keywords: "Aspose.Cells, delete date filter, Excel AutoFilter, REST API, SDK"
-description: "Learn how to delete a date filter from an Excel worksheet using the Aspose.Cells Cloud REST API. Includes endpoint, parameters, HTTPS cURL example, response payload, and SDK code samples."
+description: "Delete a date filter from an Excel worksheet using the Aspose.Cells Cloud REST API with cURL or SDKs."
 ArticleTitle: "Delete a Date Filter – Aspise.Cells Cloud API Documentation"
 ---
 

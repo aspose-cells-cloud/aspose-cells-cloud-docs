@@ -4,7 +4,7 @@ second_title: "Developer Guide"
 type: docs
 url: /batch/lock
 keywords: "batch lock, Excel, Aspose.Cells, Cloud API, spreadsheet, file protection"
-description: "Aspose.Cells Cloud API enables batch locking of multiple Excel files. Use the REST endpoint or any of the supported SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, etc.) to lock files in bulk."
+description: "Bulk-lock Excel files via Aspose.Cells Cloud API POST /batch/lock endpoint using REST or SDKs (C#, Java, Python)."
 weight: 100
 linktitle: "Batch Lock Excel Files"
 ArticleTitle: "Batch Lock Excel Files with Aspose.Cells Cloud API"

@@ -14,7 +14,7 @@ keywords:
   - "SDK"
   - "Excel chart automation"
   - "GET chart title"
-description: "Learn how to retrieve a chart title from an Excel worksheet using Aspose.Cells Cloud REST API. Includes endpoint, parameters, authentication, sample cURL and SDK code."
+description: "Retrieve a chart title from an Excel worksheet using Aspose.Cells Cloud REST API with cURL or SDKs."
 ArticleTitle: "Get Chart Title from a Worksheet"
 linktitle: "Get Chart Title"
 ---

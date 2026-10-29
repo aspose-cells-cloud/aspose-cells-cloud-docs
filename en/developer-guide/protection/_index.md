@@ -7,7 +7,7 @@ date: 2024-03-15
 type: docs
 url: /protection/
 keywords: "Aspose.Cells, Cloud, API, Spreadsheet, Protection, Open Password, Read-Write Password, Excel"
-description: "Learn how to secure Excel workbooks using Aspose.Cells Cloud REST API — set open, read/write passwords, and remove protection via code samples in C#, Python, and curl."
+description: "Protect Excel workbooks using Aspose.Cells Cloud API: set or remove open and edit passwords via C#, Python, or curl."
 weight: 100
 ---
 

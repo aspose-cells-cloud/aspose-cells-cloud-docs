@@ -9,7 +9,7 @@ aliases:
   - /import-data/integer-array/
   - /import/integer-array/
 keywords: "Aspose.Cells Cloud, Excel, import integer array, REST API, SDK, C#, PHP, Ruby, Java, Python"
-description: "Learn how to import an integer array into an Excel worksheet using Aspose.Cells Cloud REST API. Includes request syntax, parameters, sample code for multiple SDKs, and response details."
+description: "Import integer arrays into Excel worksheets via Aspose.Cells Cloud REST API with multipart POST and SDK examples"
 weight: 30
 ArticleTitle: "Import Integer Array into Excel Worksheet – Aspose.Cells Cloud API"
 ---

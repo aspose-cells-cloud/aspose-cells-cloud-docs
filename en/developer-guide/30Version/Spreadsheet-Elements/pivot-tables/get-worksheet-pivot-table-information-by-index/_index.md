@@ -6,7 +6,7 @@ type: docs
 url: /pivot-tables/get/
 aliases: [/get-worksheet-pivot-table-information-by-index/]
 keywords: "Aspose.Cells, pivot table, Excel, REST API, get worksheet pivot table"
-description: "Retrieve a pivot table from an Excel worksheet via Aspose.Cells Cloud REST API. Includes request syntax, parameters, authentication, response schema, error handling, and SDK samples."
+description: "Retrieve worksheet pivot table info by index via Aspose.Cells Cloud REST API, including cURL and SDK examples."
 weight: 100
 ArticleTitle: "Get a Pivot Table in an Excel Worksheet"
 ---

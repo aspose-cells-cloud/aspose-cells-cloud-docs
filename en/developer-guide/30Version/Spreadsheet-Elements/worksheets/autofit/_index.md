@@ -6,7 +6,7 @@ type: docs
 url: /worksheets/autofit/
 aliases: [/autofit-rows-and-columns-of-worksheet/]
 keywords: "autofit, column, row, Aspose.Cells, Cloud, Excel, API, resize"
-description: "Learn how to automatically resize rows and columns in an Excel worksheet using Aspose.Cells Cloud REST API. Includes cURL, .NET, Java, and Python examples."
+description: "Autofit Excel worksheet rows and columns via Aspose.Cells Cloud REST API with cURL, .NET, Java, Python"
 weight: 100
 ArticleTitle: "Working with Autofit on an Excel Worksheet – Aspose.Cells Cloud API"
 ---

@@ -7,7 +7,7 @@ type: docs
 url: /spreadsheet/structure
 aliases: []
 keywords: "Aspose.Cells, Spreadsheet Structure, API"
-description: "Structurally convert the core metadata, worksheets, tables, pivot tables, charts, shapes, and other information of an Excel workbook into a JObject type JSON object."
+description: "Get Excel workbook structure as JSON via Aspose.Cells Cloud API: worksheets, tables, charts, metadata"
 weight: 100
 ---
 

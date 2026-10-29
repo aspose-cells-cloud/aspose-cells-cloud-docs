@@ -6,7 +6,7 @@ type: docs
 url: /autofilter/add-filter/
 aliases: [/add-a-filter-for-a-filter-column/]
 keywords: "Aspose.Cells, Cloud, Excel, AutoFilter, Add Filter, REST API, SDK"
-description: "Learn how to add an auto‑filter to a column in an Excel worksheet using Aspose.Cells Cloud REST API. Includes cURL, SDK samples, and parameter guide."
+description: "Add an auto‑filter to a column in an Excel worksheet using Aspose.Cells Cloud REST API with cURL or SDK examples."
 weight: 60
 ArticleTitle: "Add a Filter to an Excel Worksheet using Aspose.Cells Cloud"
 ---

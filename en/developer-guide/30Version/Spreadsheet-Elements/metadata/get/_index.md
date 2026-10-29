@@ -5,7 +5,7 @@ linktitle: "Get without using storage"
 type: docs
 url: /metadata/get/
 keywords: "Aspose.Cells, Excel, metadata, REST API, cloud SDK"
-description: "Retrieve built‑in or custom metadata from Excel workbooks using Aspose.Cells Cloud REST API. Includes request format, parameters, sample SDK code, and error handling."
+description: "Get Excel metadata via Aspose.Cells Cloud API—built-in and custom properties with OAuth-secured POST /cells/metadata/get"
 weight: 23
 ArticleTitle: "Get metadata from Excel files - Aspose.Cells Cloud API"
 ---

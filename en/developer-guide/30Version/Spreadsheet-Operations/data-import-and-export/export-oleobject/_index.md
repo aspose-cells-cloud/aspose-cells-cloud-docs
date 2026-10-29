@@ -6,7 +6,7 @@ type: docs
 url: /export-excel-ole-object/
 aliases: [/export/excel-ole-object/]
 keywords: "Aspose.Cells, OLE object, export, Excel, cloud API, PDF, PNG, DOCX, PPTX"
-description: "Export OLE objects from an Excel workbook using Aspose.Cells Cloud API. Learn request format, parameters, sample cURL, and error handling."
+description: "Export Excel OLE objects to PDF, PNG, DOCX, or PPTX using Aspose.Cells Cloud API POST /cells/export?objectType=oleobject"
 weight: 100
 ArticleTitle: "Export OLE Object – Aspose.Cells Cloud API"
 ---

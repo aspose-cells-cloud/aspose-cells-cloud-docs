@@ -5,7 +5,7 @@ linktitle: "Create Folder"
 type: docs
 url: /create-folder/
 keywords: "Aspose.Cells, Cloud API, Create Folder, Storage Management, Excel"
-description: "Programmatically create folders in Aspose.Cells Cloud storage via REST API. Includes cURL examples, SDK code for 8 languages, and error handling."
+description: "Create a new folder in Aspose.Cells Cloud storage via REST API with cURL and SDK examples for 8 languages."
 weight: 100
 date: 2024-03-15T10:00:00Z
 lastmod: 2024-05-22T14:30:00Z

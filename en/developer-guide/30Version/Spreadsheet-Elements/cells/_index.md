@@ -7,7 +7,7 @@ type: docs
 url: /working-with-cells/
 aliases: [/working-with-worksheets/]
 keywords: "Excel, Aspose.Cells, cell operations, spreadsheet API, REST API, cell styling, cell merging, formula calculation"
-description: "Explore the Aspose.Cells Cloud API for Excel cell operations, including setting values, applying styles, merging/unmerging cells, and calculating formulas."
+description: "Read, write, style, merge, and calculate Excel cell data with Aspose.Cells Cloud API for automation and data processing"
 weight: 100
 ---
 

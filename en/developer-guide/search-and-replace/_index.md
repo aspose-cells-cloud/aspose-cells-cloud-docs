@@ -11,7 +11,7 @@ keywords:
   - "search and replace"
   - "REST API"
   - "text operations"
-description: "Learn how to use the Aspose.Cells Cloud **Search & Replace** API to find and replace text, formulas, or links in Excel workbooks. Includes endpoint details, request parameters, response examples, status codes, and code snippets for C#, Java, and Python."
+description: "Search and replace text, formulas, or hyperlinks in Excel files using Aspose.Cells Cloud REST API."
 weight: 100
 ---
 

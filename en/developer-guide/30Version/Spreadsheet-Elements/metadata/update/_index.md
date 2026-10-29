@@ -5,7 +5,7 @@ linktitle: "Update without using storage"
 type: docs
 url: /metadata/update/
 keywords: "metadata, Excel, Aspose.Cells Cloud, REST API, update, spreadsheet"
-description: "The Aspose.Cells Cloud REST API enables updating metadata in Excel files. It supports multiple SDKs (C#, Java, Python, Ruby, Go, etc.) for seamless integration across various programming languages."
+description: "Update Excel metadata using Aspose.Cells Cloud REST API: POST /cells/metadata/update with JWT authentication."
 weight: 35
 ArticleTitle: "Update Metadata – Aspose.Cells Cloud API Documentation"
 ---

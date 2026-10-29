@@ -4,7 +4,7 @@ title: "Search Spreadsheet Content – Aspose.Cells Cloud API"
 linktitle: "Search Spreadsheet Content"
 type: docs
 keywords: "Excel search API, spreadsheet content search, text lookup in Excel, cloud spreadsheet API, find text in Excel"
-description: "Use Aspose.Cells Cloud REST API to search for text, numbers, or formulas in Excel files uploaded locally. Supports case-insensitive, worksheet-scoped, and range-limited searches with JWT-based security."
+description: "Use Aspose.Cells Cloud API to search Excel files for text, numbers, or formulas locally—no cloud storage needed."
 weight: 100
 ArticleTitle: "Search Excel Content with Aspose.Cells Cloud API – Text, Range & Worksheet Search"
 ---

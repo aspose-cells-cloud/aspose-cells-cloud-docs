@@ -6,7 +6,7 @@ linktitle: "Docker"
 type: docs
 url: /docker-developer-guide/
 aliases: [/docker/, /docker/run/]
-description: "Deploy Aspose.Cells Cloud as a Docker container on private or on‑premises infrastructure, enabling spreadsheet processing (Excel, PDF, CSV, JSON, Markdown) without using Aspose’s public cloud."
+description: "Deploy Aspose.Cells Cloud on private Docker infrastructure for Excel, PDF, CSV, JSON, and Markdown processing."
 keywords:
   [
     "Aspose.Cells Cloud",

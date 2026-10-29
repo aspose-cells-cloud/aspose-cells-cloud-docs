@@ -1,6 +1,6 @@
 ---
 title: Delete all OLE objects in an Excel worksheet
-description: Delete all OLE objects from an Excel worksheet using Aspose.Cells Cloud REST API v3.0. Includes cURL examples, SDK samples (C#, Java, Python, Node.js, Go), path/query parameters, error handling, and best practices.
+description: "Delete all OLE objects from Excel worksheet via Aspose.Cells Cloud API v3.0 DELETE endpoint with cURL and SDK examples"
 linktitle: Clear
 type: docs
 url: /oleobjects/clear/

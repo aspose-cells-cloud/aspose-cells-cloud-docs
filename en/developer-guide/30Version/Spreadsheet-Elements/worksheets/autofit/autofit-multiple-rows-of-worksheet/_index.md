@@ -6,7 +6,7 @@ type: docs
 url: /worksheets/autofit/rows/
 aliases: [/autofit-multiple-rows-of-worksheet/]
 keywords: "autofit rows, Excel, Aspose.Cells Cloud, REST API, worksheet, spreadsheet"
-description: "Learn how to use the Aspose.Cells Cloud REST API to autofit multiple rows in an Excel worksheet. Includes request syntax, parameters, cURL example, SDK snippets, and error handling."
+description: "Autofit multiple Excel rows via Aspose.Cells Cloud REST API using startRow, endRow, and autoFitterOptions parameters."
 weight: 40
 ArticleTitle: "Autofit Multiple Rows in an Excel Worksheet – Aspose.Cells Cloud API Documentation"
 ---

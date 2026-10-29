@@ -5,7 +5,7 @@ linktitle: "Delete without using storage"
 type: docs
 url: /metadata/delete/
 keywords: "Aspose.Cells, delete metadata, Excel API, workbook properties"
-description: "Delete workbook metadata (author, title, custom) via Aspose.Cells Cloud API. Includes endpoint, authentication, parameters, cURL and SDK samples."
+description: "Delete all Excel workbook metadata (author, title, custom) using Aspose.Cells Cloud API v3.0 with cURL or SDKs."
 weight: 55
 ArticleTitle: "Delete metadata from Excel files – Aspose.Cells Cloud Documentation"
 ---

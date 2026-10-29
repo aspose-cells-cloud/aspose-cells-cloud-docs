@@ -5,7 +5,7 @@ linktitle: "Search and Replace"
 type: docs
 url: /search-and-replace/
 aliases: [/working-with-text/, /text/]
-description: "Learn how to search and replace text in Excel workbooks and worksheets using Aspose.Cells Cloud REST API. Includes request format, sample code for .NET, Java, Python, and error handling."
+description: "Search and replace text in Excel files using Aspose.Cells Cloud REST API with support for XLS, XLSX, ODS, CSV, and more."
 keywords: "Aspose.Cells Cloud, Excel, search and replace, REST API, .NET, Java, Python"
 weight: 100
 ArticleTitle: "Search and Replace Text in Excel Files using Aspose.Cells Cloud API"

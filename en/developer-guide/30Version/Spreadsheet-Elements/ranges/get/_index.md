@@ -5,7 +5,7 @@ linktitle: "Get"
 type: docs
 url: /ranges/get/
 keywords: "Aspose.Cells, Excel, API, get, range, spreadsheet, REST"
-description: "Learn how to retrieve range content from an Excel worksheet using Aspose.Cells Cloud REST API. Includes request syntax and sample code."
+description: "Retrieve Excel range content via Aspose.Cells Cloud REST API with GET request, supporting JSON response and SDK samples."
 weight: 100
 ArticleTitle: "How to Get Range Content from an Excel Worksheet – Aspose.Cells Cloud API"
 ---

@@ -9,7 +9,7 @@ aliases:
   - /workbook/add-background/
   - /workbook/background/add/
 keywords: "Aspose.Cells, add background image, Excel API, REST, cloud SDK, cURL, workbook background"
-description: "Learn how to add a background image to an Excel workbook using the Aspose.Cells Cloud REST API. Includes required parameters, authentication details, a complete cURL example, and error‑handling information."
+description: "Add background image to Excel workbook via Aspose.Cells Cloud API with cURL and SDK examples"
 weight: 160
 ArticleTitle: "Add Background Image to Excel Workbook Using Aspose.Cells Cloud API"
 ---

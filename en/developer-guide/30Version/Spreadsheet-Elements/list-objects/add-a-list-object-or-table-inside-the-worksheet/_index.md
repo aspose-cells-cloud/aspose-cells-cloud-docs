@@ -6,7 +6,7 @@ type: docs
 url: /list-objects/add/
 aliases: [/add-a-list-object-or-table-inside-the-worksheet/, /tables/add/]
 keywords: "Aspose.Cells Cloud, Excel API, list object, table, REST API, worksheet"
-description: "Learn how to add a list object (Excel table) to a worksheet using Aspose.Cells Cloud REST API. Includes endpoint, parameters, authentication steps, cURL example, and SDK code samples."
+description: "Add an Excel list object (table) to a worksheet via Aspose.Cells Cloud REST API with cURL and SDK examples."
 weight: 100
 ArticleTitle: "Add a List Object (Table) to an Excel Worksheet – Aspose.Cells Cloud Documentation"
 ---

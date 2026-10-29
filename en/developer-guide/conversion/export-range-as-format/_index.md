@@ -2,7 +2,7 @@
 title: "Export Excel Range to PDF, PNG, CSV – Aspose.Cells Cloud API"
 date: 2024-05-15
 lastmod: 2024-05-15
-description: "Export specific Excel ranges to PDF, PNG, SVG, CSV, and other formats via Aspose.Cells Cloud API. Includes cURL, SDK examples (C#, Java, Python, PHP, Node.js, Ruby, Perl, Go), parameter reference, error handling, and use cases."
+description: "Export Excel ranges to PDF, PNG, SVG, CSV, and more via Aspose.Cells Cloud API—no local download needed."
 linktitle: "Export Range as Format"
 type: docs
 url: /export-range-as-format/

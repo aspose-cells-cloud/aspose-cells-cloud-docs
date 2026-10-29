@@ -3,8 +3,7 @@ title: Add CellArea to Conditional Formatting
 date: 2024-03-15T00:00:00Z
 lastmod: 2024-05-22T14:20:00Z
 url: /conditional-formattings/add-cell-area/
-description: >-
-  Learn how to add a CellArea to conditional formatting in Excel using Aspose.Cells Cloud REST API v3.0. Includes step-by-step cURL, SDK (C#, Java, Python, Go), and real-world error handling.
+description: "Add a CellArea like A1:C3 to an Excel conditional formatting rule using Aspose.Cells Cloud API v3.0"
 keywords: Aspose.Cells Cloud, REST API, Excel automation, conditional formatting API, cURL example, SDK for .NET, Java, Python, Go, cell range
 weight: 30
 aliases:

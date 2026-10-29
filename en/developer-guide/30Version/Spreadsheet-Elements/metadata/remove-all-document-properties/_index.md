@@ -6,7 +6,7 @@ type: docs
 url: /document-properties/clear/
 aliases: [/remove-all-document-properties/]
 keywords: "Aspose.Cells, delete document properties, clear Excel properties, REST API, cloud SDK, spreadsheet, API reference"
-description: "Step‑by‑step guide to removing all custom and built‑in properties from an Excel workbook using the Aspose.Cells Cloud REST API."
+description: "Clear all Excel document properties via Aspose.Cells Cloud REST API DELETE /cells/{name}/documentproperties"
 weight: 58
 ArticleTitle: "Clear All Document Properties in Excel via Aspose.Cells Cloud REST API"
 ---

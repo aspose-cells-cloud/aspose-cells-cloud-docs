@@ -1,6 +1,6 @@
 ---
 title: "Convert Worksheet to PDF, PNG, JPEG, SVG, TIFF & More – Aspose.Cells Cloud API"
-description: "Convert Excel worksheets to PDF, PNG, JPEG, SVG, TIFF, BMP, EMF, or other formats using the Aspose.Cells Cloud REST API. Includes cURL, SDK examples (C#, Java, Python, Go, PHP, Ruby, Node.js, Perl), parameter reference, and best practices."
+description: "Convert Excel worksheet to image or text formats using Aspose.Cells Cloud REST API with cURL and SDK examples"
 keywords: "worksheet conversion, Excel to image, Aspose.Cells Cloud API, convert worksheet to PNG, Excel to PDF, REST API export, SDK examples"
 date: 2024-06-15
 type: docs

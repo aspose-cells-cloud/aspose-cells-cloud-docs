@@ -6,7 +6,7 @@ type: docs
 url: /pivot-tables/add-filters/
 aliases: [/working-with-pivot-filters/]
 keywords: "Aspose.Cells, Pivot Table, Filter, REST API, Cloud"
-description: "Learn how to add, retrieve, and delete pivot table filters using the Aspose.Cells Cloud REST API. Includes request syntax, required parameters, cURL example, and SDK snippets for C# and Go."
+description: "Add pivot table filters to Excel workbooks via Aspose.Cells Cloud REST API with cURL and SDK examples."
 weight: 50
 ArticleTitle: "Working with Pivot Filters – Aspose.Cells Cloud Documentation"
 ---

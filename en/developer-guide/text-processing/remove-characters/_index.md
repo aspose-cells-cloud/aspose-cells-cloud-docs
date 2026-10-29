@@ -6,7 +6,7 @@ linktitle: "Remove Characters"
 type: docs
 url: /remove-characters/
 keywords: "Aspose.Cells, remove characters, Excel API, text cleaning, spreadsheet"
-description: "Remove custom characters, character sets, and substrings from Excel cells in a selected range. Delete text at specific positions using the Aspose.Cells API for precise data cleaning."
+description: "Remove custom characters, sets, or substrings from Excel cells using Aspose.Cells Cloud API for precise data cleaning."
 weight: 100
 ---
 

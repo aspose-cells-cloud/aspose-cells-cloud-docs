@@ -2,7 +2,7 @@
 url: /trim-character/
 title: "Aspose.Cells Cloud Trim Character API - Clean Excel Cell Data"
 linktitle: Trim Character
-description: "Use Aspose.Cells Cloud TrimCharacter API to remove extra spaces, line breaks, and non-breaking spaces from Excel cells. Supports XLSX, CSV, ODS, and more via RESTful API. v4.0."
+description: "Remove extra spaces, line breaks, and non-breaking spaces from Excel cells using Aspose.Cells Cloud TrimCharacter API."
 keywords: "excel, text-trimming, aspose.cells, cloud-api, data-cleaning"
 type: docs
 weight: 100

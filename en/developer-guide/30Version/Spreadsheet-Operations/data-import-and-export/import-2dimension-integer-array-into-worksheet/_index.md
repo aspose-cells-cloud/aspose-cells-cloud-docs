@@ -12,7 +12,7 @@ aliases:
     /import/2dimension-integer-array/,
   ]
 keywords: "Aspose.Cells Cloud, import 2D integer array, Excel worksheet, REST API, SDK, Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, Swift"
-description: "Aspose.Cells Cloud REST API enables importing two‑dimensional integer arrays into Excel worksheets. SDKs are available for Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift."
+description: "Import 2D integer array into Excel worksheet via Aspose.Cells Cloud REST API with multipart request and SDK support."
 weight: 100
 ArticleTitle: "Import 2D Integer Array into Excel Worksheet Using Aspose.Cells Cloud REST API"
 ---

@@ -8,7 +8,7 @@ lastmod: 2024-05-20
 type: docs
 url: /convert-table-to-pdf/
 keywords: "Aspose.Cells Cloud, Excel to PDF, table export API, REST API convert table to PDF, free online tool, Excel table extraction"
-description: "Use Aspose.Cells Cloud REST API to convert Excel table data (e.g., balance sheets, KPIs) to PDF in minutes. Free, secure, and preserves formatting. SDKs for 8+ languages including C#, Java, Python, Node.js, and more."
+description: "Convert Excel table to PDF via Aspose.Cells Cloud API with cURL or SDKs—secure, format-preserving, local file support."
 weight: 100
 ---
 

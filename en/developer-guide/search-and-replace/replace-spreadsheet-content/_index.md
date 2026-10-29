@@ -1,6 +1,6 @@
 ---
 title: "Replace Text in Excel Without Uploading – Find & Replace API"
-description: "Aspose.Cells Cloud Find & Replace API lets you update Excel files (XLSX, XLS, CSV, etc.) on-premises—no cloud upload needed. Supports range-specific, worksheet-level, or full-file text replacement via REST API."
+description: "Replace Excel content locally using Aspose.Cells Cloud API—secure, batch find-and-replace without uploading files."
 keywords: "Excel find replace, Aspose.Cells Cloud API, local spreadsheet processing, bulk text replacement"
 linktitle: "Replace Spreadsheet Content"
 url: /replace-spreadsheet-content/

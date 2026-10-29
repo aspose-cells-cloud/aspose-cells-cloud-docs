@@ -4,7 +4,7 @@ type: docs
 url: /conditional-formattings/add-format-condition/
 aliases: [/add-a-format-condition/]
 keywords: "Aspose.Cells Cloud, Conditional Formatting API, Add Format Condition, Excel REST API, Cells API"
-description: "Learn how to add a format condition to an Excel worksheet using the Aspose.Cells Cloud REST API (v3.0). Includes request syntax, parameters, secure cURL example, and SDK snippets."
+description: "Add Excel conditional formatting via Aspose.Cells Cloud REST API using PUT request with cell area, type, and formulas."
 ArticleTitle: "Add Format Condition – Aspose.Cells Cloud API Documentation"
 weight: 50
 linktitle: "Add Format Condition"

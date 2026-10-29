@@ -7,7 +7,7 @@ url: /worksheets/get-text-items/
 aliases: [/get-text-items-from-a-worksheet/]
 weight: 100
 keywords: "Aspose.Cells, Cloud API, Excel, worksheet, text items, REST"
-description: "Retrieve all text items from a specific worksheet in an Excel file using Aspose.Cells Cloud REST API. Includes sample cURL, SDK code, authentication steps, and response schema."
+description: "Retrieve text items from an Excel worksheet using Aspose.Cells Cloud REST API with cURL or SDKs."
 ArticleTitle: "Get Text Items from an Excel Worksheet"
 ---
 

@@ -7,7 +7,7 @@ url: /autofilter/refresh/
 aliases: [/refresh-an-autofilter/]
 weight: 100
 keywords: "Aspose.Cells, AutoFilter, refresh, Excel, API, REST"
-description: "Refresh an existing AutoFilter on an Excel worksheet using Aspose.Cells Cloud REST API. Includes cURL and SDK examples for C#, Java, Python, and more."
+description: "Refresh an existing AutoFilter in Excel using Aspose.Cells Cloud REST API with cURL or SDKs (C#, Java, Python, etc.)."
 ArticleTitle: "Refresh an Auto Filter in an Excel Worksheet"
 ---
 

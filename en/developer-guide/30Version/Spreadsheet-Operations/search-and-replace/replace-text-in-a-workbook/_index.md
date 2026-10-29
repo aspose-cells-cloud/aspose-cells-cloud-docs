@@ -7,7 +7,7 @@ url: /workbook/replace-text/
 aliases: [/replace-text-in-a-workbook/]
 weight: 60
 keywords: "Aspose.Cells Cloud, Replace Text, Excel Workbook, XLSX, ODS, REST API, Spreadsheet, SDK"
-description: "Replace text in Excel (XLS, XLSX, XLSM, XLSB) and OpenDocument Spreadsheet (ODS) workbooks using Aspose.Cells Cloud REST API. Available via cURL and a wide range of SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, etc.)."
+description: "Replace text in Excel workbooks (XLSX, XLS, ODS) via Aspose.Cells Cloud REST API using cURL or SDKs (C#, Java, Python)."
 ArticleTitle: "Replace Text in Excel Workbook with Aspose.Cells Cloud REST API"
 ---
 

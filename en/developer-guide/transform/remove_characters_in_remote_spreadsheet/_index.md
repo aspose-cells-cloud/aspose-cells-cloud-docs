@@ -7,7 +7,7 @@ type: docs
 url: /{name}/worksheets/{worksheet}/range/{range}/content/remove/characters
 aliases: []
 keywords: "Aspose.Cells, Remove Characters, Text Processing"
-description: "Deletes user-defined characters, predefined symbol sets, or any substring from every cell in the chosen range while preserving formulas, formatting and data‑validation for a remote spreadsheet."
+description: "Remove specific characters, symbols, or substrings from a range in a remote Excel file using Aspose.Cells Cloud API"
 weight: 100
 ---
 

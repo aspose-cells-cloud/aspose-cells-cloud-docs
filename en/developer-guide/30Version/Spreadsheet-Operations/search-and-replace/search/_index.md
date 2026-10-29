@@ -1,6 +1,6 @@
 ---
 title: "Find Text in Excel Files – Aspose.Cells Cloud API"
-description: "Search for specific text in Excel (XLS, XLSX, XLSM, XLSB) and ODS files using Aspise.Cells Cloud API. Includes request details, cURL & SDK examples, and error handling."
+description: "Search for text in Excel (XLS, XLSX, XLSM, XLSB) and ODS files using Aspose.Cells Cloud API with cURL and SDK examples."
 keywords: "Aspose.Cells, Excel, search, API, REST"
 type: docs
 url: /search/

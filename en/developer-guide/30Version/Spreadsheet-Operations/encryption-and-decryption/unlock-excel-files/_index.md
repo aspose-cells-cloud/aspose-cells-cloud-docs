@@ -6,7 +6,7 @@ type: docs
 url: /unlock-excel-files/
 aliases: [/unlock/without-storage/, /unlock/, /unlock/without-using-storage/]
 keywords: "Unlock Excel, Aspose.Cells Cloud, REST API, Excel unlocking, password-protected workbook, SDK, C#, Java, Python, Node.js, Go, PHP, Ruby, Swift"
-description: "Learn how to unlock password-protected Excel files using the Aspose.Cells Cloud REST API with JWT authentication, cURL, and SDKs for C#, Java, Python, Node.js, Go, PHP, Ruby, and Perl."
+description: "Unlock password-protected Excel files via Aspose.Cells Cloud REST API using JWT, cURL, or SDKs for major languages."
 date: 2024-05-10
 last_updated: May 10, 2024
 weight: 70

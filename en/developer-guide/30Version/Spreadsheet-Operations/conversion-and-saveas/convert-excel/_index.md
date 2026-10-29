@@ -11,7 +11,7 @@ aliases:
     /convert/excel-to-different-formats/,
   ]
 keywords: "Aspose.Cells Cloud, Excel conversion, file format conversion, REST API, SDK, CSV, PDF, HTML, JSON, Markdown"
-description: "Convert Excel workbooks to formats such as CSV, PDF, HTML, JSON, Markdown, and more using the Aspose.Cells Cloud REST API."
+description: "Convert Excel to CSV, PDF, HTML, JSON, Markdown via Aspose.Cells Cloud PutConvertWorkBook API"
 weight: 100
 ---
 

@@ -5,7 +5,7 @@ url: /conditional-formattings/delete/
 aliases:
   - /remove-conditional-formatting/
 keywords: "Aspose.Cells, Conditional Formatting, Delete, API, Excel, Cloud"
-description: "Remove a conditional formatting rule from a worksheet using Aspose.Cells Cloud REST API. Includes parameters, authentication, request/response examples, and SDK snippets."
+description: "Delete conditional formatting from Excel worksheet using Aspose.Cells Cloud REST API with JWT and SDK examples"
 weight: 60
 linktitle: "Delete Conditional Formatting"
 ArticleTitle: "Delete Conditional Formatting in Excel via Aspose.Cells Cloud REST API"

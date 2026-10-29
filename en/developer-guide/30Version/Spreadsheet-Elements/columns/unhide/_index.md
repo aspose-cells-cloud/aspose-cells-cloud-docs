@@ -8,7 +8,7 @@ url: /columns/unhide/
 aliases:
   [/unhide-columns-in-an-excel-worksheet/, /unhide-columns-in-excel-worksheet/]
 keywords: "Aspose.Cells, Cloud API, unhide columns, Excel, REST, SDK"
-description: "Learn how to use the Aspose.Cells Cloud REST API to unhide columns in an Excel worksheet. Includes request details, a cURL example, and SDK code samples for several programming languages."
+description: "Unhide Excel columns with Aspose.Cells Cloud REST API using PostUnhideWorksheetColumns endpoint and SDK examples"
 weight: 50
 ---
 

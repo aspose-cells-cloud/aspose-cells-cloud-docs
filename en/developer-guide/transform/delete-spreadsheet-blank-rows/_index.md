@@ -6,7 +6,7 @@ linktitle: "Delete Blank Rows"
 type: docs
 url: /delete-spreadsheet-blank-rows/
 keywords: ["Aspose.Cells", "Excel API", "delete blank rows"]
-description: "Use Aspose.Cells Cloud API to automatically remove empty rows from Excel files. Includes SDK examples in C#, Java, Python & more."
+description: "Delete blank rows from Excel files using Aspose.Cells Cloud API for data cleaning and batch processing"
 weight: 100
 ---
 

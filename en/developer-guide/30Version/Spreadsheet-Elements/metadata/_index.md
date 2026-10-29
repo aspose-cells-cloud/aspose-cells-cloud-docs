@@ -8,7 +8,7 @@ aliases:
   - /document-properties/
   - /working-with-document-properties/
 keywords: "Aspose.Cells Cloud, Excel metadata, document properties API, REST API, GET metadata, update Excel properties, delete Excel metadata"
-description: "Learn to read, update, and delete Excel metadata (standard & custom properties) via Aspose.Cells Cloud REST API — with cURL and SDK examples for Java, .NET, Python, Node.js."
+description: "Manage Excel metadata with Aspose.Cells Cloud REST API: read, update, delete document properties using cURL or SDKs"
 ArticleTitle: "Working with Excel Metadata and Document Properties – Aspose.Cells Cloud"
 weight: 100
 ---

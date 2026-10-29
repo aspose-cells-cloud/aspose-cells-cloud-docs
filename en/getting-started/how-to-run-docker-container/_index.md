@@ -6,7 +6,7 @@ LinkTitle: "Docker Container"
 type: docs
 url: /getting-started/how-to-run-docker-container/
 aliases: [/how-to-run-docker-container/]
-description: "Learn how to pull, configure, and run the Aspose.Cells Cloud Docker container on Windows or Linux. Includes Docker‑Compose YAML, license setup, port mapping, and troubleshooting tips."
+description: "Run Aspose.Cells Cloud Docker container with Docker Compose or CLI: setup, volume mapping, license, and troubleshooting."
 weight: 100
 keywords:
   - "Aspose.Cells Cloud Docker"

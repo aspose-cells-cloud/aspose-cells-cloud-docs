@@ -5,7 +5,7 @@ linktitle: "Row"
 type: docs
 url: /rows/delete/row/
 aliases: [/delete-row-from-a-worksheet/]
-description: "Use the DELETE /worksheets/{sheetName}/cells/rows/{rowIndex} endpoint to remove a specific row from an Excel worksheet via Aspose.Cells Cloud REST API. Includes cURL command, SDK samples, and full parameter reference."
+description: "Delete a row from an Excel worksheet using Aspose.Cells Cloud REST API DELETE /rows endpoint with SDK support."
 keywords: "Aspose.Cells, delete row, Excel, API, REST, Cloud, SDK"
 weight: 80
 ArticleTitle: "Delete a Row in an Excel Worksheet – Aspose.Cells Cloud API Guide"

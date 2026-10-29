@@ -6,7 +6,7 @@ type: docs
 url: /export-excel-to-different-formats/
 aliases: [/export/excel-to-different-formats/]
 keywords: "Aspose.Cells Cloud, Excel export, workbook conversion, PDF, CSV, JSON, image formats, spreadsheet API, XLSX, ODS, PNG"
-description: "A step‑by‑step guide on exporting Excel workbooks to multiple formats—including PDF, CSV, JSON, and various image types—using the Aspose.Cells Cloud REST API and SDKs."
+description: "Export Excel workbooks to PDF, CSV, images, and more via Aspose.Cells Cloud REST API and SDKs."
 weight: 100
 ArticleTitle: "Export Excel Workbook to Multiple Formats with Aspose.Cells Cloud"
 ---

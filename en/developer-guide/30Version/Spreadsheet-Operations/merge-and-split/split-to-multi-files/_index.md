@@ -6,7 +6,7 @@ type: docs
 url: /split-an-excel-file-to-multi-files/
 aliases: [/split-excel-workbooks/, /workbook/split/]
 keywords: "Aspose.Cells, Cloud, Excel, Split, API, PDF, CSV, JSON"
-description: "Use the Aspose.Cells Cloud REST API to split multi‑sheet Excel workbooks into separate files. Supports output formats such as PDF, CSV, and JSON, and is available through SDKs for Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift."
+description: "Split Excel workbooks into multiple files using Aspose.Cells Cloud API with PDF, CSV, and JSON support"
 weight: 32
 ArticleTitle: "Split an Excel file into multiple files - Aspose.Cells Cloud Documentation"
 ---

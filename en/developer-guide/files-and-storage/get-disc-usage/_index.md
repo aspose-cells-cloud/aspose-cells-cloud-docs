@@ -6,7 +6,7 @@ linktitle: "Get Disk Usage"
 type: docs
 url: /get-disk-usage/
 keywords: "Aspose Cells, Cloud API, Disk Usage, Storage Metrics, Excel, REST"
-description: "Retrieve real‑time disk usage for Aspose.Cells Cloud. Learn the GET /v4.0/cells/storage/disk endpoint, required authentication, and sample response."
+description: "Get disk usage stats for Aspose.Cells Cloud via GET /v4.0/cells/storage/disk, including UsedSize and TotalSize."
 weight: 100
 ---
 

@@ -5,7 +5,7 @@ linktitle: "Word Case"
 type: docs
 url: /change-word-case/
 keywords: "change word case API, Aspose.Cells, Excel case conversion, uppercase, lowercase, proper case, sentence case, text formatting"
-description: "Easily convert text case in Excel files using Aspise.Cells Cloud API. Supports Uppercase, Lowercase, Proper Case, and Sentence Case. Get code samples in C#, Java, Python & more."
+description: "Convert Excel text case using Aspose.Cells Cloud API: uppercase, lowercase, proper case, and sentence case"
 weight: 100
 ---
 

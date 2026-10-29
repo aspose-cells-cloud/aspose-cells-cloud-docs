@@ -6,7 +6,7 @@ linktitle: "Convert Worksheet to PDF"
 type: docs
 url: /convert-worksheet-to-pdf/
 keywords: "Aspose.Cells, Excel to PDF, worksheet conversion, REST API, cloud conversion, spreadsheet PDF, API endpoint, PDF generation, Excel to PDF API, cloud-based conversion, secure worksheet export"
-description: "Use Aspose.Cells Cloud API v4 to convert an Excel worksheet to PDF programmatically via REST. Includes cURL, SDK examples (C#, Java, Python, Go, and more), authentication, and error codes."
+description: "Convert an Excel worksheet to PDF using Aspose.Cells Cloud API v4 with REST, cURL, or SDKs (C#, Java, Python, etc.)."
 weight: 100
 ---
 

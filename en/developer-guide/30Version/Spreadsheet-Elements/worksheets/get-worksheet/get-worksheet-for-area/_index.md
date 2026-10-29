@@ -6,7 +6,7 @@ type: docs
 url: /worksheets/area-to-different-formats/
 aliases: [/get-worksheet-for-area/]
 keywords: "Aspose.Cells, export worksheet area, PNG, PDF, CSV, Excel conversion, REST API, SDK"
-description: "Learn how to export a specific cell range from an Excel worksheet to PNG, PDF, CSV and over 20 other formats using Aspose.Cells Cloud REST API or SDKs (C#, Java, Python, …)."
+description: "Export a specific Excel worksheet range to PNG, PDF, CSV, and 20+ formats using Aspose.Cells Cloud REST API or SDKs."
 weight: 230
 ArticleTitle: "Export Worksheet Area to PNG, PDF, CSV with Aspose.Cells Cloud API – Complete Guide"
 ---

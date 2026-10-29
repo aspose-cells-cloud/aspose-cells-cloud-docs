@@ -5,7 +5,7 @@ url: /charts/delete-chart-title/
 aliases: [/delete-chart-title-in-a-worksheet/]
 weight: 150
 keywords: "Aspose.Cells, Cloud API, delete chart title, Excel, REST, SDK"
-description: "Learn how to remove a chart title from an Excel worksheet using Aspose.Cells Cloud REST API (v4.0). Includes cURL, SDK examples, and error handling."
+description: "Delete a chart title from an Excel worksheet using Aspose.Cells Cloud REST API with cURL or SDKs."
 linktitle: "Delete Chart Title"
 ArticleTitle: "Delete Chart Title in Excel Worksheet using Aspose.Cells Cloud REST API"
 ---

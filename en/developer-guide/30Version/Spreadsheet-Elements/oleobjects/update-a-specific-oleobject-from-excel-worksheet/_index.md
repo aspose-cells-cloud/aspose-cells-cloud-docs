@@ -6,7 +6,7 @@ type: docs
 url: /oleobjects/update/
 aliases: [/update-a-specific-oleobject-from-excel-worksheet/]
 keywords: "update OLE object, Excel, Aspose.Cells Cloud, REST API, SDK"
-description: "Learn how to update an OLE object (image, chart, etc.) in an Excel worksheet using Aspose.Cells Cloud REST API. Includes cURL, SDK examples, authentication steps, and error handling."
+description: "Update a specific OLE object in an Excel worksheet using Aspose.Cells Cloud REST API with cURL or SDKs"
 weight: 30
 author: "Aspose Cloud Documentation Team"
 lastmod: "2024-03-01"

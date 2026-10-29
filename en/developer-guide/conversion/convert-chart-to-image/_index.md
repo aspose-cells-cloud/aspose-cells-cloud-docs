@@ -6,7 +6,7 @@ linktitle: "Convert Chart to Image"
 type: docs
 url: /convert-chart-to-image/
 keywords: "convert chart to image, Aspose.Cells, Excel chart export, PNG, SVG, JPEG, BMP, TIFF"
-description: "Use Aspose.Cells Cloud Web API to convert an Excel chart into PNG, SVG, TIFF, JPEG, or BMP images directly from a spreadsheet file."
+description: "Convert Excel charts to PNG, SVG, TIFF, JPEG, or BMP using Aspose.Cells Cloud API with secure JWT authentication."
 weight: 100
 ---
 

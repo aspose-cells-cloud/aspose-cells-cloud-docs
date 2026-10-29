@@ -4,7 +4,7 @@ type: docs
 url: /charts/add/
 aliases: [/add-a-chart-in-a-worksheet/]
 weight: 100
-description: "Learn how to add a chart to an Excel worksheet using Aspose.Cells Cloud API v3.0. Includes endpoint, parameters, cURL example, and SDK snippets."
+description: "Use Aspose.Cells Cloud REST API to add a chart to an Excel worksheet via PUT /charts endpoint with cURL or SDKs."
 keywords:
   - "add chart Aspose.Cells"
   - "Aspose.Cells add chart API"

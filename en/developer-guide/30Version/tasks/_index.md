@@ -6,7 +6,7 @@ type: docs
 url: /tasks/
 aliases: [/tasks/]
 keywords: "Aspose.Cells Task API, Excel automation cloud, SmartMarker template processing, workbook conversion API, REST spreadsheet operations"
-description: "Comprehensive guide to Aspose.Cells Cloud Task API: Convert, ImportData, SaveResult, SmartMarker, and more. Includes REST API endpoints, parameters, and usage examples."
+description: "Aspose.Cells Cloud Task API: Convert, import, SmartMarker, async Excel automation via REST API"
 weight: 100
 linktitle: "Task API"
 ArticleTitle: "Aspose.Cells Cloud Task API: Asynchronous Excel Automation with Convert, ImportData, SmartMarker & More"

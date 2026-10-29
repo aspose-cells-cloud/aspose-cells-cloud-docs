@@ -6,7 +6,7 @@ type: docs
 url: /export-excel-shape-to-different-formats/
 aliases: [/export/excel-shape-to-different-formats/]
 keywords: "Export Shapes, Aspose.Cells Cloud, Excel shape export, Image formats, REST API, SDK"
-description: "Learn how to export Excel shapes to various image formats (PNG, GIF, JPEG, BMP, SVG, TIFF, EMF, WMF) using the Aspose.Cells Cloud REST API and SDKs."
+description: "Export Excel shapes to PNG, GIF, JPEG, BMP, SVG, TIFF, EMF, and WMF using Aspose.Cells Cloud REST API and SDKs."
 weight: 100
 ArticleTitle: "Export Shapes – Aspose.Cells Cloud"
 ---

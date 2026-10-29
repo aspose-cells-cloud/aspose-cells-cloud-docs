@@ -5,7 +5,7 @@ linktitle: "Update"
 type: docs
 url: /ranges/update/
 keywords: "Excel, range update, Aspose.Cells Cloud, REST API, spreadsheet, range style, range values, row height, column width"
-description: "Update range content in an Excel worksheet using Aspose.Cells Cloud REST API. Modify styles, values, row heights, and column widths via supported SDKs."
+description: "Update Excel range values, styles, row height, and column width using Aspose.Cells Cloud REST API and SDKs."
 weight: 100
 ArticleTitle: "How to update range content from an Excel worksheet – Aspose.Cells Cloud Documentation"
 ---

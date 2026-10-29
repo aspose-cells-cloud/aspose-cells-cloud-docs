@@ -5,7 +5,7 @@ url: /charts/legend/update/
 aliases: [/update-chart-legend-in-a-worksheet/]
 weight: 160
 keywords: "Aspose.Cells, Cloud, Excel, Chart, Legend, REST API, Update, Worksheet, cURL, SDK"
-description: "How to update a chart legend in an Excel worksheet using the Aspose.Cells Cloud REST API, with cURL request examples and SDK code snippets for multiple programming languages."
+description: "Update Excel chart legend via Aspose.Cells Cloud REST API using cURL or SDKs for C#, Java, Python, and more."
 ArticleTitle: "Update Chart Legend in a Worksheet – Aspose.Cells Cloud API Guide"
 linktitle: "Update Chart Legend"
 ---

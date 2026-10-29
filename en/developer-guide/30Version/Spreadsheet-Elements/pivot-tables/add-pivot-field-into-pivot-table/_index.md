@@ -6,7 +6,7 @@ type: docs
 url: /pivot-tables/add-pivot-field/
 aliases: [/add-a-pivot-table-in-a-worksheet/]
 keywords: "Aspose.Cells Cloud, Excel, pivot table, add pivot field, REST API, SDK"
-description: "Add a pivot field to an existing pivot table using Aspose.Cells Cloud REST API. Includes request details, cURL example, and SDK snippets."
+description: "Add a pivot field to an existing pivot table via Aspose.Cells Cloud REST API, including cURL and SDK examples."
 weight: 40
 ArticleTitle: "Add a Pivot Field to a Pivot Table – Aspose.Cells Cloud Documentation"
 ---

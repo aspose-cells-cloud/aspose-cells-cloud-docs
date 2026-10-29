@@ -8,7 +8,7 @@ aliases:
   - /hide-columns-in-excel-worksheet/
   - /hide-columns-in-an-excel-worksheet/
 keywords: "Aspose.Cells Cloud, hide columns API, Excel column hide, REST API hide columns, Aspose.Cells SDK, spreadsheet automation"
-description: "Learn how to hide one or more columns in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, cURL example, SDK code samples, and error handling."
+description: "Hide Excel columns via Aspose.Cells Cloud REST API using POST /cells/{name}/worksheets/{sheetName}/cells/columns/hide"
 weight: 40
 ArticleTitle: "Hide Excel Columns Using Aspose.Cells Cloud REST API"
 ---

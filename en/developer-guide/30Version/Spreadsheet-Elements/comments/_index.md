@@ -12,7 +12,7 @@ keywords:
     "spreadsheet comments",
     "REST API",
   ]
-description: "API guide for adding, retrieving, updating, and deleting Excel comments using Aspose.Cells Cloud REST API v3.0 — with cURL, Python, and Node.js examples."
+description: "Manage Excel comments via Aspose.Cells Cloud REST API: add, get, update, delete with cURL, Python, and Node.js examples"
 date: 2024-03-15T10:00:00Z
 last_modified_date: 2024-05-22T14:30:00Z
 canonical_url: https://docs.aspose.cloud/cells/comments/

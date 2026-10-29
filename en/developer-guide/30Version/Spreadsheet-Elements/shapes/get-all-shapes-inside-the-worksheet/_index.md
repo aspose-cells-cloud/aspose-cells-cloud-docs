@@ -6,7 +6,7 @@ type: docs
 url: /shapes/get-all/
 aliases: [/get-all-shapes-inside-the-worksheet/]
 keywords: "Aspose.Cells, Cloud API, Excel shapes, get shapes, REST, SDK"
-description: "Retrieve every shape (charts, pictures, text boxes) from a worksheet using Aspose.Cells Cloud REST API. Includes cURL example, SDK snippets, authentication steps, and error handling."
+description: "Get all shapes from an Excel worksheet via Aspose.Cells Cloud API, with cURL and SDK examples."
 ArticleTitle: "Get All Shapes on an Excel Worksheet"
 weight: 100
 ---

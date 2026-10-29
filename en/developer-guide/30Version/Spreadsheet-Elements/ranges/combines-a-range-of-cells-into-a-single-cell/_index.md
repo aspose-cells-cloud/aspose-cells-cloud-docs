@@ -6,7 +6,7 @@ type: docs
 url: /ranges/merge/
 aliases: [/combines-a-range-of-cells-into-a-single-cell/]
 keywords: "Aspose.Cells, merge cells, Excel API, REST, cloud SDK"
-description: "Merge a range of cells into a single cell using Aspose.Cells Cloud REST API. Learn request format, parameters, and SDK examples for C#, Java, Python, and more."
+description: "Merge Excel ranges into a single cell via Aspose.Cells Cloud REST API with cURL and SDK examples for C#, Java, Python."
 weight: 100
 ArticleTitle: "Merge Excel Cell Ranges with Aspose.Cells Cloud REST API"
 ---

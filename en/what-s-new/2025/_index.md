@@ -6,7 +6,7 @@ type: docs
 weight: 9
 url: /new-features/2025/
 keywords: "Aspose.Cells Cloud, new features 2025, spreadsheet API, Excel, CSV, PDF, cloud spreadsheet"
-description: "This page lists the latest Aspose.Cells Cloud features and enhancements released in 2025, including new APIs, improvements, and bug fixes."
+description: "2025 Aspose.Cells Cloud updates: new APIs, trim support, authorization, and bug fixes across versions 25.1–25.9"
 ArticleTitle: "What's new in Aspose.Cells Cloud in 2025 – Latest Features and Enhancements"
 ---
 

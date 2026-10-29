@@ -6,7 +6,7 @@ type: docs
 url: /delete-filter/
 aliases: [/delete-a-filter-for-a-filter-column/, /delete-auto-filter/]
 keywords: "Aspose.Cells Cloud delete filter, Excel, REST API, SDK"
-description: "Learn how to delete an AutoFilter from an Excel worksheet using Aspose.Cells Cloud REST API, cURL, and SDKs (C#, Java, Python, etc.). Includes endpoint, parameters, authentication, and sample code."
+description: "Delete an AutoFilter from an Excel worksheet using Aspose.Cells Cloud REST API, cURL, or SDKs (C#, Java, Python, etc.)."
 weight: 100
 ArticleTitle: "Delete AutoFilter in Excel Worksheet Using Aspose.Cells Cloud API"
 ---

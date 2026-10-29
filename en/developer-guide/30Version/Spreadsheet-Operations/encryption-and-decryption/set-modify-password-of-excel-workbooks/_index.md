@@ -8,7 +8,7 @@ aliases:
   - /set-modify-password-of-excel-workbooks/
   - /workbook/modify-password/
 keywords: "Excel password, Aspose.Cells Cloud, write‑protection, REST API, modify workbook password"
-description: "Change the write‑protection password of an Excel workbook using Aspose.Cells Cloud REST API (v3.0). Includes cURL and SDK examples."
+description: "Change Excel workbook write-protection password via Aspose.Cells Cloud REST API with cURL or SDKs."
 weight: 100
 ArticleTitle: "Modify Password Protection of an Excel Workbook – Aspose.Cells Cloud"
 ---

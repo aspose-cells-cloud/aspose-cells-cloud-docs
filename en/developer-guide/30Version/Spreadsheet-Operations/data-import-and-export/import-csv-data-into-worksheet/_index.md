@@ -9,7 +9,7 @@ aliases:
   - /import-data/csv-data/
   - /import/csv-data/
 keywords: "Import CSV data, Excel, Aspose.Cells Cloud, REST API, Spreadsheet, CSV import"
-description: "Aspose.Cells Cloud REST API enables importing CSV data into Excel worksheets. Supported SDKs include Android, .NET, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift."
+description: "Import CSV data into Excel worksheets via Aspose.Cells Cloud REST API with multipart requests and configurable options."
 weight: 19
 ArticleTitle: "Import CSV Data into Excel with Aspose.Cells Cloud REST API"
 ---

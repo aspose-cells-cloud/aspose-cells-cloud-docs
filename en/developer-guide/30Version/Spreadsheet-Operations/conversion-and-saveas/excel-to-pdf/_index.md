@@ -7,7 +7,7 @@ type: docs
 url: /convert-excel-file-to-pdf-file/
 aliases: [/convert-excel-file-to-pdf-in-cloud/, /convert/excel-to-pdf/]
 keywords: "Aspose, Cells, Excel, PDF, conversion, Cloud API"
-description: "Learn how to convert Excel workbooks to PDF with Aspose.Cells Cloud REST API. Includes cURL, SDK samples (C#, Java, Python) and authentication guide."
+description: "Convert Excel workbooks to PDF using Aspose.Cells Cloud REST API with cURL or SDKs (C#, Java, Python, etc.)"
 weight: 80
 ---
 

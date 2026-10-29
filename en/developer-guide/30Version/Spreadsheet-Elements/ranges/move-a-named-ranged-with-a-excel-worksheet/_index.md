@@ -6,7 +6,7 @@ type: docs
 url: /ranges/move/
 aliases: [/move-a-named-range-with-an-excel-worksheet/]
 keywords: "Aspose.Cells Cloud, move named range, Excel worksheet, REST API, range move, SDK examples"
-description: "Learn how to move a named range within an Excel worksheet using Aspose.Cells Cloud REST API v3.0, with endpoint details, authentication, examples, and SDK code samples."
+description: "Move a named range in an Excel worksheet via Aspose.Cells Cloud REST API v3.0 with JWT and SDK examples"
 weight: 100
 ArticleTitle: "Move a named range with an Excel worksheet using Aspose.Cells Cloud API"
 ---

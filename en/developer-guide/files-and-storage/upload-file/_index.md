@@ -6,7 +6,7 @@ linktitle: "Upload File"
 type: docs
 url: /upload-file/
 keywords: "Aspose.Cells, file upload, Excel API, cloud storage, REST API"
-description: "Guide to uploading files with Aspose.Cells Cloud API, covering request parameters, HTTP status codes, error handling, and code examples."
+description: "Upload files to Aspose.Cells Cloud storage using PUT /cells/storage/file/{path} with auth, parameters, and code examples"
 weight: 100
 ---
 

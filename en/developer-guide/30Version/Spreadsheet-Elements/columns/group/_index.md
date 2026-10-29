@@ -3,7 +3,7 @@ title: "Group Columns on an Excel Worksheet"
 secondtitle: "Aspose.Cells Cloud API Documentation"
 linktitle: "Group Columns"
 url: /group-columns/
-description: "Group Excel worksheet columns programmatically using Aspose.Cells Cloud REST API v3.0. Includes cURL and SDK examples, authentication guidance, and collapsible section support to reduce manual effort and enhance Excel-like interactivity."
+description: "Group Excel columns programmatically using Aspose.Cells Cloud API v3.0 PostGroupWorksheetColumns operation"
 keywords:
   [
     "Excel grouping",

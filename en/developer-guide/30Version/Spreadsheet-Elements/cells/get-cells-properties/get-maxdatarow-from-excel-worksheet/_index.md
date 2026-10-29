@@ -4,7 +4,7 @@ type: docs
 url: /get-maxdatarow-from-excel-worksheet/
 weight: 50
 keywords: "Excel, Aspose.Cells Cloud, REST API, Get MaxDataRow, Worksheet"
-description: "Learn how to retrieve the last row index with data in an Excel worksheet using Aspose.Cells Cloud REST API. Includes cURL and SDK examples (C#, Java, Python, more)."
+description: "Use Aspose.Cells Cloud REST API to get the last row index with data in an Excel worksheet via the maxdatarow endpoint."
 ArticleTitle: "Aspose.Cells Cloud API – Get MaxDataRow from Excel Worksheet"
 date: 2024-05-15
 lastmod: 2024-05-18

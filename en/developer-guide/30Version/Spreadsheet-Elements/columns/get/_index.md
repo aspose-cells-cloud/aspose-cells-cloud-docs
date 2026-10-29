@@ -18,7 +18,7 @@ robots: "index, follow"
 linkTitle: "Get Column Details"
 weight: 100
 ArticleTitle: "Get Column Details API - Aspose.Cells Cloud REST v3.0"
-description: "Learn how to retrieve detailed column metadata (index, width, hidden state, style) from Excel worksheets using Aspose.Cells Cloud REST API v3.0."
+description: "Retrieve Excel column metadata—index, width, hidden state, style—via Aspose.Cells Cloud REST API v3.0."
 keywords: "Aspose.Cells Cloud, get column details, Excel column metadata, REST API v3.0, column width, hidden column, column index, worksheet API, GetWorksheetColumns"
 ---
 

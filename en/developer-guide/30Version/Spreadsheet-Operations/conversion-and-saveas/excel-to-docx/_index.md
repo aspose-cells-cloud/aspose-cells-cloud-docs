@@ -5,7 +5,7 @@ linktitle: "Excel to Docx"
 type: docs
 url: convert-excel-file-to-docx-file/
 keywords: "Excel to Docx conversion, Aspose.Cells Cloud, REST API, spreadsheet conversion, document generation"
-description: "Convert Excel spreadsheets to DOCX documents using Aspose.Cells Cloud REST API. Supports multiple SDKs and programming languages for seamless integration."
+description: "Convert Excel to DOCX with Aspose.Cells Cloud API: POST /cells/convert/docx, JWT auth, and SDKs for C#, Java, Python."
 weight: 90
 ArticleTitle: "Convert Excel to DOCX with Aspose.Cells Cloud REST API"
 ---

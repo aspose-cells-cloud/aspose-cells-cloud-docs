@@ -6,7 +6,7 @@ type: docs
 url: /pivot-tables/format/
 aliases: [/update-cell-style-for-pivot-table/]
 keywords: "Aspose.Cells Cloud, pivot table style, update cell style API, REST API, Excel API, spreadsheet formatting, cloud SDK, cell style, pivot table"
-description: "Learn how to update the style of a specific cell in an Aspose.Cells Cloud pivot table via the REST API. Includes endpoint, parameters, authentication, cURL example, Go SDK code snippet, and SEO‑optimized guidance."
+description: "Format pivot table cell styles via Aspose.Cells Cloud REST API using PostPivotTableCellStyle with JWT authentication"
 weight: 90
 ArticleTitle: "Update Cell Style for Pivot Table - Aspose.Cells Cloud API Documentation"
 ---

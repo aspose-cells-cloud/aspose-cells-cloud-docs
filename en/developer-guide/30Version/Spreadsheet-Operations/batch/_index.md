@@ -5,7 +5,7 @@ linktitle: "Batch Excel files"
 date: 2024-06-15
 url: /batch/
 keywords: "batch processing, Excel API, bulk convert, workbook lock, workbook unlock, Aspose.Cells Cloud"
-description: "Use Aspose.Cells Cloud’s batch endpoints to convert, lock, protect, split, and unlock multiple Excel files via a single REST API call. Includes SDKs for 10+ languages."
+description: "Aspose.Cells Cloud Batch API: Convert, lock, protect, split, and unlock multiple Excel files in one REST request"
 weight: 35
 ArticleTitle: "Batch Processing of Excel Files – Convert, Lock, Protect, Split, Unlock with Aspose.Cells Cloud API"
 type: docs

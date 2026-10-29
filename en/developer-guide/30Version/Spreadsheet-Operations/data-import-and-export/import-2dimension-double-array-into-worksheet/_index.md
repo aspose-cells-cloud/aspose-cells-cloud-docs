@@ -12,7 +12,7 @@ aliases:
     /import/2dimension-double-array/,
   ]
 keywords: "Import 2‑Dimension Double Array, Excel, Aspose Cells Cloud, REST API, Spreadsheet, Data Import"
-description: "Learn how to import a two‑dimensional double array into an Excel worksheet using Aspose.Cells Cloud REST API. Includes request format, parameters, and SDK code samples."
+description: "Import a 2D double array into Excel using Aspose.Cells Cloud REST API with Import2DimensionDoubleArrayOption."
 weight: 100
 ArticleTitle: "Import 2D Double Array into Excel Worksheet with Aspose.Cells Cloud REST API"
 ---

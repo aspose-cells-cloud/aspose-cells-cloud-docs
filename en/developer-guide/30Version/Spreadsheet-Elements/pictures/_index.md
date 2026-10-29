@@ -6,7 +6,7 @@ type: docs
 url: /pictures/
 aliases: [/working-with-pictures/]
 keywords: "Excel pictures, Aspose.Cells Cloud, REST API, image handling, picture operations, Excel image manipulation"
-description: "Comprehensive guide to retrieving, adding, updating, and deleting pictures in Excel worksheets using Aspose.Cells Cloud REST API, with C# and Python examples."
+description: "Retrieve, add, update, and delete Excel pictures using Aspose.Cells Cloud REST API with C# and Python examples."
 weight: 100
 ArticleTitle: "Working with Excel pictures – Aspose.Cells Cloud Documentation"
 ---

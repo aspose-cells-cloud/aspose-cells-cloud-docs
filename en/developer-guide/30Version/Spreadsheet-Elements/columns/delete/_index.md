@@ -1,6 +1,6 @@
 ---
 title: "Delete Columns from Excel via Aspose.Cells Cloud API"
-description: "Step-by-step guide to delete Excel columns using Aspose.Cells Cloud REST API, including cURL, SDK examples, and error handling."
+description: "Delete Excel columns via Aspose.Cells Cloud REST API using cURL or SDKs with optional reference updates."
 linktitle: "Delete Columns"
 type: docs
 url: /columns/delete/

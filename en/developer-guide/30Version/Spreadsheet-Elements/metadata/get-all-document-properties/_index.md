@@ -6,7 +6,7 @@ type: docs
 url: /document-properties/get-all/
 aliases: [/get-all-document-properties/]
 keywords: "Get All Document Properties, Aspose.Cells Cloud, Excel document properties, REST API, SDK, Excel metadata"
-description: "Retrieve all document properties from an Excel file using the Aspose.Cells Cloud REST API. The endpoint works with all supported SDKs and programming languages."
+description: "Retrieve all built-in and custom document properties from an Excel file using Aspose.Cells Cloud REST API."
 ArticleTitle: "Get All Document Properties – Aspose.Cells Cloud API"
 weight: 25
 ---

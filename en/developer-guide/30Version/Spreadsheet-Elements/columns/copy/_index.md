@@ -1,6 +1,6 @@
 ---
 title: "Copy Columns in an Excel Worksheet"
-description: "Learn how to copy one or more columns (including data, formatting, and formatting rules) in an Excel worksheet using the Aspose.Cells Cloud REST API v3.0. Includes cURL, SDK examples (C#, Java, Python, Ruby, Node.js, Go, Perl), authentication guidance, and error handling."
+description: "Copy Excel columns with values, formatting, and formulas via Aspose.Cells Cloud REST API v3.0"
 date: 2024-06-15T10:00:00Z
 lastmod: 2024-06-15T14:30:00Z
 tags: ["excel", "columns", "copy", "rest-api", "cloud", "aspose.cells"]

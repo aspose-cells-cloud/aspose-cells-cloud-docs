@@ -11,7 +11,7 @@ aliases:
     /workbook/get/names/,
   ]
 keywords: "Aspose.Cells, Cloud, Excel, Workbook, Names, REST API, SDK"
-description: "Retrieve all defined names from an Excel workbook using the Aspose.Cells Cloud REST API. Includes authentication guidance, cURL example, response schema, error handling, and SDK samples."
+description: "Retrieve all defined names from an Excel workbook using Aspose.Cells Cloud REST API with cURL or SDK examples."
 weight: 120
 ArticleTitle: "Get Names from an Excel Workbook – Aspose.Cells Cloud API"
 ---

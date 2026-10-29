@@ -7,7 +7,7 @@ url: /workbook/find-text/
 aliases: [/find-text-in-a-workbook/]
 weight: 30
 keywords: "Aspose.Cells, find text, Excel API, workbook search"
-description: "Learn how to use Aspose.Cells Cloud API to **find text** in Excel workbooks (XLS‑X, ODS). Includes cURL example, SDK snippets, and response schema. Get started now."
+description: "Use Aspose.Cells Cloud API to search for text in Excel workbooks via POST /findText, with cURL and SDK examples."
 ArticleTitle: "Find Text in an Excel Workbook using Aspose.Cells Cloud API"
 ---
 

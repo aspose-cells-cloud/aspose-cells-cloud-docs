@@ -5,7 +5,7 @@ linktitle: "Excel to JSON"
 type: docs
 url: /convert-excel-file-to-json-file/
 keywords: "Aspose.Cells, Excel to JSON, Cloud API, spreadsheet conversion, REST API"
-description: "Learn how to convert Excel spreadsheets to JSON files with Aspose.Cells Cloud REST API. Includes cURL example, SDK snippets (C#, Java, Python), required parameters, authentication, and response format."
+description: "Convert Excel files to JSON using Aspose.Cells Cloud REST API with cURL or SDKs (C#, Java, Python, etc.)."
 weight: 100
 ArticleTitle: "Convert Excel to JSON using Aspose.Cells Cloud API – Quick Guide"
 ---

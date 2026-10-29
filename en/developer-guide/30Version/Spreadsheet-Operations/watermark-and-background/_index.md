@@ -6,7 +6,7 @@ type: docs
 url: /watermark-and-background/
 aliases: ["/export/excel-chart-to-different-formats/", "/workbook/background/"]
 keywords: "Aspose.Cells Cloud, Excel, Watermark, Background, REST API, add background to Excel, add watermark to Excel, programmatic watermarks, programmatic backgrounds"
-description: "Learn how to programmatically add, remove, and manage watermarks and backgrounds in Excel files using Aspose.Cells Cloud REST API across 10+ languages, including Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and Swift."
+description: "Add, remove, and manage Excel watermarks and backgrounds via Aspose.Cells Cloud API with 10+ language code examples"
 date: 2024-06-15
 weight: 100
 ArticleTitle: "Insert Watermarks and Set Backgrounds in Excel Files – Aspose.Cells Cloud Documentation"

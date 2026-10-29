@@ -5,7 +5,7 @@ linktitle: "Validations"
 type: docs
 url: /validations/
 keywords: "Excel data validation, Aspose.Cells Cloud, REST API, spreadsheet, Office Cloud, Excel validation API, dropdown list cell, date range validation"
-description: "Programmatically manage Excel data validation rules via Aspose.Cells Cloud REST API: add, get, update, delete, and clear validations in worksheets."
+description: "Use Aspose.Cells Cloud REST API to add, get, update, delete, and clear Excel data validation rules in worksheets."
 date: 2024-06-15
 ArticleTitle: "Working with Excel Data Validation - Aspose.Cells Cloud API Documentation"
 aliases: ["/cells/validations/"]

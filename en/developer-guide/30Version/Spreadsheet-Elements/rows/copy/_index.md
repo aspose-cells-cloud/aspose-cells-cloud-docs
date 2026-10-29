@@ -5,7 +5,7 @@ linktitle: "Copy"
 type: docs
 url: /rows/copy/
 aliases: [/copy-rows-in-excel-worksheet/]
-description: "Copy data and formats from specific entire rows in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes authentication, request/response details, error handling, and SDK examples."
+description: "Copy Excel rows via Aspose.Cells Cloud REST API v3.0 using source/destination indices and row count."
 api_version: "v3.0"
 method: "POST"
 weight: 30

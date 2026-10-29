@@ -5,7 +5,7 @@ linktitle: "Excel to SQL"
 type: docs
 url: /convert-excel-file-to-sql-file/
 keywords: "Aspose.Cells, Excel to SQL, cloud API, spreadsheet conversion, REST"
-description: "Use Aspose.Cells Cloud REST API to convert Excel spreadsheets into SQL files. Supports multiple SDKs and programming languages for seamless integration into your applications."
+description: "Convert Excel to SQL with Aspose.Cells Cloud REST API, supporting JWT auth and password-protected files via SDKs"
 weight: 100
 ArticleTitle: "Convert Excel to SQL – Aspose.Cells Cloud API"
 ---

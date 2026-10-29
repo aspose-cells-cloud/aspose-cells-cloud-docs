@@ -13,7 +13,7 @@ keywords:
     "Excel to JSON example",
     "JSON export from spreadsheet",
   ]
-description: "Securely convert local Excel/CSV files to JSON format using Aspose.Cells Cloud API. Includes cURL, SDK examples (Python, Node.js, Java, C#, PHP, Ruby, Perl, Go), query parameter options (password, region, fonts), and best practices for server-side conversion."
+description: "Convert Excel, CSV, and other spreadsheet formats to JSON using Aspose.Cells Cloud API securely and server-side."
 api_version: "v4.0"
 weight: 100
 type: docs

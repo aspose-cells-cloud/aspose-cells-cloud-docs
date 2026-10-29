@@ -2,7 +2,7 @@
 url: /merge-spreadsheets-in-remote-folder/
 title: "Merge Matching Spreadsheets in Remote Folder"
 linktitle: "Merge files in remote folder"
-description: "Combine multiple spreadsheet files stored in Aspose Cloud storage into a single file. Supports 30+ output formats including PDF, CSV, JSON, XLSX, ODS, and XPS—fully in the cloud."
+description: "Merge spreadsheets in Aspose Cloud remote folder to PDF, XLSX, CSV, ODS, JSON, XPS—no local download."
 keywords:
   [
     "Aspose.Cells",

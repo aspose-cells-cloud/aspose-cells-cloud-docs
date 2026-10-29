@@ -8,7 +8,7 @@ url: /hyperlinks/
 aliases: [/working-with-hyperlinks/]
 date: 2024-03-15
 keywords: "Excel, hyperlinks, Cells.Cloud, API, Aspose.Cells, spreadsheet, links, guide, Excel hyperlink automation, programmatic hyperlinks, Aspose.Cells REST API hyperlinks"
-description: "Step-by-step guide to manage Excel hyperlinks via Aspose.Cells Cloud API: get, add, update, and delete hyperlinks programmatically."
+description: "Aspose.Cells Cloud API: programmatically manage Excel hyperlinks—add, get, update, delete in worksheets."
 weight: 100
 ---
 

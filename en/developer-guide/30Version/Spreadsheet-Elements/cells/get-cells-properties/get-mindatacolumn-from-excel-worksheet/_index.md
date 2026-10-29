@@ -5,9 +5,7 @@ lastmod: 2024-05-22
 type: docs
 url: /get-mindatacolumn-from-excel-worksheet/
 weight: 110
-description: >-
-  Reference for the /mindatacolumn endpoint in Aspose.Cells Cloud REST API v3.0.
-  Learn how to retrieve the leftmost data column index in an Excel worksheet via cURL, SDKs, and JSON responses.
+description: "Retrieve the zero-based index of the leftmost data column in an Excel worksheet via Aspose.Cells Cloud REST API v3.0."
 ArticleTitle: "Get MinDataColumn – Aspose.Cells Cloud API Reference (v3.0)"
 keywords: "mindatacolumn, leftmost data column, Excel API, REST API, Aspose.Cells, cloud spreadsheet, zero-based index, Aspose.Cells Cloud API v3.0"
 linktitle: "Get MinDataColumn"

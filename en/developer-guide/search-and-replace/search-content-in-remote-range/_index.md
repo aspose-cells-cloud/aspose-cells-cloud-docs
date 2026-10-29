@@ -1,6 +1,6 @@
 ---
 title: "Search Text in Remote Excel Ranges – Aspose.Cells Cloud API"
-description: "Search text, numbers, or formulas in specific Excel ranges via Aspose.Cells Cloud REST API. Includes cURL, SDK examples, and authentication details for automated data discovery."
+description: "Search Excel data in remote ranges using Aspose.Cells Cloud REST API with cURL and SDK examples."
 linktitle: "Search Content in Remote Range"
 type: docs
 url: /search-content-in-remote-range/

@@ -8,7 +8,7 @@ url: /autofilter/add-top-10-filter/
 aliases:
   [/filter-the-top-10-items-in-the-list/, /autofilter/add-a-top-10-filter/]
 keywords: "Aspose.Cells, AutoFilter, Top 10 filter, Excel API"
-description: "Learn how to apply a Top 10 AutoFilter to an Excel worksheet using Aspose.Cells Cloud REST API. Includes endpoint, parameters, HTTPS cURL example, authentication details, error handling, and SDK snippets for C#, Java, Python, and more."
+description: "Add Top 10 AutoFilter to Excel via Aspose.Cells Cloud REST API using PutWorksheetFilterTop10 endpoint and SDK examples"
 weight: 65
 ---
 

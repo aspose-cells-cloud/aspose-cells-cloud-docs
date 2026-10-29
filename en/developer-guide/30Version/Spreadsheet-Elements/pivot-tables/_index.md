@@ -6,7 +6,7 @@ type: docs
 url: /pivottables/
 aliases: [/working-with-pivot-tables/]
 keywords: "Excel, PivotTable, Aspose.Cells Cloud, API, Spreadsheet, Data Analysis, REST API"
-description: "Comprehensive guide to using Aspose.Cells Cloud REST APIs for creating, retrieving, updating, and deleting PivotTables in Excel worksheets. Includes SDK references, example calls, and version notes."
+description: "Create, update, delete Excel PivotTables using Aspose.Cells Cloud REST API with SDK examples for v3.0+"
 weight: 100
 ArticleTitle: "Working with Excel PivotTables – Aspose.Cells Cloud Documentation"
 ---

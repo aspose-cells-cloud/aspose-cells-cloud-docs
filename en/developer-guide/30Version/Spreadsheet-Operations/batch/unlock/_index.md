@@ -4,7 +4,7 @@ second_title: "Developer Guide"
 type: docs
 url: /batch/unlock
 keywords: "batch unlock, Aspose.Cells Cloud, Excel, REST API, spreadsheet, cloud SDK"
-description: "Unlock multiple Excel files in batch using Aspose.Cells Cloud REST API. Supports SDKs for C#, Java, Python, and other languages."
+description: "Unlock multiple Excel files in batch via Aspose.Cells Cloud REST API with cURL or SDKs for C#, Java, Python, and more."
 weight: 100
 linktitle: "Batch Unlock API"
 ArticleTitle: "Batch Unlock Excel Files with Aspose.Cells Cloud REST API"

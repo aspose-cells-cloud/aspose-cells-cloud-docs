@@ -5,7 +5,7 @@ linktitle: "Convert Range to PDF"
 type: docs
 url: /convert-range-to-pdf/
 keywords: "Aspose.Cells Cloud, Excel to PDF, range to PDF, cloud API, REST conversion"
-description: "Learn how to convert a specific Excel range (e.g., A1:C10) to PDF via Aspose.Cells Cloud REST API — including cURL, SDK examples, and authentication."
+description: "Convert Excel range to PDF using Aspose.Cells Cloud REST API with cURL or SDKs—secure, format-preserving conversion."
 weight: 100
 date: 2024-03-15
 lastmod: 2024-03-15

@@ -12,7 +12,7 @@ aliases:
     /workbook/autofit/columns/,
   ]
 keywords: "Auto‑fit columns, Excel, Aspose.Cells Cloud, REST API, SDK, cURL, API"
-description: "Learn how to use the Aspose.Cells Cloud REST API to auto‑fit columns in an Excel workbook. Includes request details, a cURL example, and SDK code samples for multiple languages."
+description: "Use Aspose.Cells Cloud REST API to auto-fit Excel column widths with cURL or SDKs in multiple languages."
 weight: 90
 ArticleTitle: "Auto-fit Columns in Excel with Aspose.Cells Cloud REST API"
 ---

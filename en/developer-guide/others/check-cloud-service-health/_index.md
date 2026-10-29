@@ -3,7 +3,7 @@ url: /check-cloud-service-health/
 title: "Aspose.Cells Cloud Health Check"
 linktitle: "Check Cloud Service Health"
 type: docs
-description: "Monitor Aspose.Cells Cloud health in real-time using the GET /v4.0/cells/status/check endpoint. Includes authentication, request/response examples, SDK usage, and operational best practices for production monitoring."
+description: "Check Aspose.Cells Cloud service health in real-time using GET /v4.0/cells/status/check with JWT authentication."
 keywords: "Aspose.Cells Cloud, API health check, REST status, cloud service monitoring, service availability, health endpoint"
 weight: 100
 date: 2024-06-15

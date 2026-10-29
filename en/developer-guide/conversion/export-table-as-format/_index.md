@@ -6,7 +6,7 @@ linktitle: "Export Table to Image"
 type: docs
 url: /export-table-as-format/
 keywords: "Aspose.Cells Cloud, export table, Excel table to PDF, REST API, cloud conversion, JWT auth"
-description: "Securely export cloud-stored Excel tables to PDF, PNG, CSV, or JSON using Aspose.Cells Cloud REST API v4.0. Includes JWT authentication, cURL examples, and SDKs for C#, Java, Python, Node.js, PHP, Ruby, Perl, and Go."
+description: "Export Excel tables to PDF, PNG, CSV, or JSON using Aspose.Cells Cloud REST API with JWT authentication."
 weight: 100
 ArticleTitle: "Export Excel Table to PDF, PNG, CSV, JSON via Aspose.Cells Cloud REST API"
 ---

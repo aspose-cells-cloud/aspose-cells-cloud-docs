@@ -12,7 +12,7 @@ keywords:
   - "cURL"
   - "SDK"
   - "GetChartArea"
-description: "Learn how to retrieve chart‑area information from a worksheet using the Aspose.Cells Cloud REST API, with examples for cURL and multiple SDKs."
+description: "Retrieve chart-area properties from a worksheet using Aspose.Cells Cloud REST API with cURL or SDK examples."
 ArticleTitle: "Get Chart Area from a Worksheet - Aspose.Cells Cloud API"
 linktitle: "Get Chart Area"
 ---
