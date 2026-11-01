@@ -13,7 +13,7 @@ categories: ["cloud-api", "excel"]
 tags: ["slicer", "listobject", "rest-api"]
 ---
 
-This REST API inserts a slicer for a list object on an Excel worksheet.
+The **PostWorksheetListObjectInsertSlicer** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/InsertSlicer`) enables users to insert a slicer for a specific list object on an Excel worksheet via Aspose.Cells Cloud, requiring the file name, worksheet name, list object index, column index, and destination cell name as parameters to position the slicer accurately.
 
 ## REST API
 

@@ -14,7 +14,7 @@ ArticleTitle: "Aspose.Cells Cloud: Convert Excel Range to HTML via REST API"
 keywords: "Aspose.Cells Cloud, convert Excel range to HTML, range to HTML API, Excel conversion, cloud-based Excel conversion, A1:C10 to HTML, REST API conversion, JWT authentication, cURL example, SDK conversion"
 ---
 
-Convert a selected range of a local Excel workbook to an HTML file directly through Aspose.Cells Cloud. The conversion happens entirely on the cloud server, so you never need to upload the whole workbook or have Excel installed locally.
+The **ConvertRangeToHtml** API (`PUT https://api.aspose.cloud/v4.0/cells/convert/range/html`) enables developers to convert a specified cell range from a local Excel workbook directly to HTML using Aspose.Cells Cloud, without uploading the full file or requiring Excel locally; it accepts the source file, worksheet name, and range (e.g., A1:C10) as required parameters and returns the converted HTML content, supporting cloud-native conversion while preserving local file storage and reducing resource overhead.
 
 ### Prerequisites
 
@@ -27,30 +27,26 @@ Convert a selected range of a local Excel workbook to an HTML file directly thro
 PUT https://api.aspose.cloud/v4.0/cells/convert/range/html
 ```
 
-The request body is `multipart/form-data` containing the spreadsheet file. All other options are supplied as query parameters.
-
 ### **Security and Authentication**
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" target="_blank" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### Request Parameters
 
-| Name               | Type    | Location | Required | Description                                                                  |
-| ------------------ | ------- | -------- | -------- | ---------------------------------------------------------------------------- |
-| **Spreadsheet**    | File    | FormData | Yes      | The Excel workbook to convert.                                               |
-| **worksheet**      | String  | Query    | Yes      | Name of the worksheet that contains the range.                               |
-| **range**          | String  | Query    | Yes      | Cell area to convert, e.g., `A1:C10`.                                        |
-| **outPath**        | String  | Query    | No       | Folder path where the resulting HTML file should be stored (default `null`). |
-| **outStorageName** | String  | Query    | No       | Name of the storage service for the output file.                             |
-| **fontsLocation**  | String  | Query    | No       | Path to a custom fonts folder.                                               |
-| **AutoRowsFit**    | Boolean | Query    | No       | Automatically fit all rows in the worksheet.                                 |
-| **AutoColumnsFit** | Boolean | Query    | No       | Automatically fit all columns in the worksheet.                              |
-| **region**         | String  | Query    | No       | Locale identifier (e.g., `en-US`, `fr-FR`). Affects number/date formatting.  |
-| **password**       | String  | Query    | No       | Password for opening a protected workbook.                                   |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| worksheet | String | Query | worksheet name of spreadsheet. |
+| range | String | Query | cell area. e.g. A1:C10 |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| fontsLocation | String | Query | Use Custom fonts. |
+| AutoRowsFit | Boolean | Query | (Optional) Autofits all rows in worksheets. |
+| AutoColumnsFit | Boolean | Query | (Optional) Autofits all columns in worksheets. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
 
-## Response
-
-The API returns the converted HTML file as a **binary stream** (`application/octet-stream`).
+### Response
 
 ```json
 [
@@ -63,6 +59,23 @@ The API returns the converted HTML file as a **binary stream** (`application/oct
   }
 ]
 ```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
+The API returns the converted HTML file as a **binary stream** (`application/octet-stream`).
+
+### Common Errors
+
+- **413 Payload Too Large**: Split large workbooks into smaller files or compress them before upload.
+- **400 Bad Request**: Verify all required parameters (`worksheet`, `range`, `Spreadsheet`) are provided and correctly formatted.
+
+The request body is `multipart/form-data` containing the spreadsheet file. All other options are supplied as query parameters.
 
 ### Sample Success Response (HTTP)
 
@@ -92,11 +105,6 @@ Save the response body to a file (e.g., `report.html`) to view the rendered tabl
 | 401  | Unauthorized          | Invalid or missing JWT token.                                |
 | 413  | Payload Too Large     | Uploaded file exceeds size limit.                            |
 | 500  | Internal Server Error | Unexpected server error.                                     |
-
-### Common Errors
-
-- **413 Payload Too Large**: Split large workbooks into smaller files or compress them before upload.
-- **400 Bad Request**: Verify all required parameters (`worksheet`, `range`, `Spreadsheet`) are provided and correctly formatted.
 
 ## How to Use the Convert Range to Html API with SDKs?
 

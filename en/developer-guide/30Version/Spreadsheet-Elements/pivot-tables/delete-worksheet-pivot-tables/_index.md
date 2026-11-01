@@ -18,7 +18,8 @@ weight: 100
 ArticleTitle: "Delete All Pivot Tables in Excel Worksheet via Aspose.Cells Cloud REST API"
 ---
 
-# Delete All Pivot Tables in an Excel Worksheet
+
+The **DeleteWorksheetPivotTables** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables`) removes all PivotTables from a specified worksheet in an Excel file using Aspose.Cells Cloud, enabling users to reset analysis layouts, clean up unused pivot tables, or prepare templates for reuse without deleting the worksheet itself; the operation requires the file name and worksheet name as path parameters and supports optional folder and storageName query parameters for cloud storage organization.
 
 ## Overview
 

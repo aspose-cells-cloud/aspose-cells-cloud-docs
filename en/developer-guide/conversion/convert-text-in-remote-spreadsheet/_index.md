@@ -11,6 +11,8 @@ description: "Converts text in a specified range of a worksheet, including numbe
 weight: 100
 ---
 
+The **ConvertTextInRemoteSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/range/{range}/content/convert/text`) in Aspose.Cells Cloud enables targeted text conversion within a specified range of a remote spreadsheet, allowing users to transform numbers stored as text into numeric values, replace unwanted characters or line breaks with custom separators, and normalize accented characters—all without downloading or manually editing the file.
+
 ## The Convert Text In Remote Spreadsheet of Aspose.Cells Cloud Web Services
 
 Indicates converting the numbers stored as text into the correct number format, replacing unwanted characters and line breaks with the desired characters, and converting accented characters to their equivalent characters without accents.

@@ -10,7 +10,7 @@ linktitle: "Hide Chart Legend"
 ArticleTitle: "Hide Chart Legend in Excel Worksheet via Aspose.Cells Cloud REST API"
 ---
 
-This REST API hides the legend in a chart. A **chart legend** is the box that identifies the data series plotted in the chart.
+The **DeleteWorksheetChartLegend** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend`) hides the chart legend in a worksheet, removing the box that identifies the data series plotted in the chart. Aspose.Cells Cloud enables this operation via a RESTful endpoint, supporting programmatic legend management without manual editing. Developers can integrate this functionality using SDKs for .NET, Java, Go, Node.js, Python, and other languages, streamlining dynamic chart customization in cloud-based spreadsheet workflows.
 
 The API requires a valid Aspose Cloud JWT token, the workbook must be uploaded to Aspose Cloud storage, and the API version used is **v3.0**.
 

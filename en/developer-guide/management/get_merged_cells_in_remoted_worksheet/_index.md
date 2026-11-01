@@ -11,6 +11,8 @@ description: "Retrieves all merged cell areas from a remote worksheet in a sprea
 weight: 100
 ---
 
+The **GetMergedCellsInRemotedWorksheet** API (`GET https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/mergedcells`) in Aspose.Cells Cloud retrieves all merged cell areas from a specified worksheet of a remote spreadsheet, returning a structured list of cell ranges defined by their top-left and bottom-right coordinates—enabling precise layout analysis, data validation, and integrity checks before further processing.
+
 ## The GetMergedCellsInRemotedWorksheet of Aspose.Cells Cloud Web Services
 
 Get all merged cell area form a remote spreadsheet worksheet.

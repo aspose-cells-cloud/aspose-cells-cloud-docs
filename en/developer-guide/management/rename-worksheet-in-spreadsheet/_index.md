@@ -11,7 +11,7 @@ weight: 100
 ArticleTitle: "Rename Worksheet in Excel with Aspose.Cells Cloud API"
 ---
 
-Programmatically rename worksheets in Excel workbooks using the Aspose.Cells Cloud API. Update sheet names dynamically to support report standardization, ETL workflows, and multilingual content delivery—all via RESTful API calls.
+The **RenameWorksheetInSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/rename/worksheet`), part of Aspose.Cells Cloud v4.0, enables users to rename a specified worksheet within a workbook by submitting the current and new sheet names alongside the spreadsheet file in a single request. This RESTful operation supports dynamic workbook reorganization, improving structure and readability—ideal for report standardization, ETL workflows, and multilingual content delivery without manual intervention.
 
 ## API Endpoint
 

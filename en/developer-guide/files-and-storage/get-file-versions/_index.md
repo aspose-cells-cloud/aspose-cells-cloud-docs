@@ -10,7 +10,7 @@ description: "Get a complete list of version history for any Excel file stored i
 weight: 100
 ---
 
-Retrieve a complete list of version records for a specific spreadsheet stored in Aspose.Cells Cloud. This endpoint enables developers to track changes, audit modifications, and implement version‑control workflows directly from the cloud storage.
+The **GetFileVersions** API (`GET https://api.aspose.cloud/v4.0/cells/storage/version/{path}`) retrieves a complete list of version records for a specific spreadsheet stored in Aspose.Cells Cloud, enabling developers to track changes, audit modifications, and implement version-control workflows directly from cloud storage; it requires the `path` parameter specifying the file location and optionally accepts `storageName` to target a specific storage instance.
 
 The **GetFileVersions** API returns all version records for a specified spreadsheet stored in Aspose.Cells Cloud. It helps you keep a complete change history for each file.
 

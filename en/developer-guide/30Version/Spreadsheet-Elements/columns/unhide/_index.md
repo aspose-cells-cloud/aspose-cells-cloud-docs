@@ -12,7 +12,7 @@ description: "Unhide Excel columns with Aspose.Cells Cloud REST API using PostUn
 weight: 50
 ---
 
-This REST API unhides worksheet columns.
+The **PostUnhideWorksheetColumns** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/unhide`) enables developers to unhide specific ranges of columns in a worksheet using Aspose.Cells Cloud, requiring path parameters for the file and sheet name, and query parameters for the starting column index and number of columns to unhide, optionally specifying column width.
 
 **Prerequisites** – All Aspose.Cells Cloud endpoints require HTTPS and a valid OAuth 2.0 access token. Ensure you have obtained an access token and included it in the `Authorization` header of your requests.
 

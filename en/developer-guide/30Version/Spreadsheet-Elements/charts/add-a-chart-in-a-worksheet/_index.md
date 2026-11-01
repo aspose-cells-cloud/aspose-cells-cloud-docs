@@ -14,7 +14,7 @@ ArticleTitle: "Add a Chart to a Worksheet – Aspose.Cells Cloud API Guide"
 linktitle: "Add Chart to Worksheet"
 ---
 
-This REST API adds a new chart to a worksheet.
+The **PutWorksheetChart** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts`) adds a new chart to a specified worksheet in an Aspose.Cells Cloud workbook, supporting parameters like chart type, position bounds, data range, axis settings, and title; it enables developers to programmatically generate charts—including pivot charts—by specifying source data ranges and display options through a REST interface.
 
 **Prerequisites**  
 Before calling this operation, obtain a valid JWT access token and ensure the target workbook is stored in the specified folder or storage location.

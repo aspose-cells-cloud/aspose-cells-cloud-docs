@@ -9,9 +9,8 @@ ArticleTitle: "Split Excel Workbook Locally with Aspose.Cells Cloud API – No U
 keywords: "Aspose.Cells Cloud, split Excel workbook, local Excel splitting, Excel to PDF split, Excel API split, split worksheet to files, Excel REST API, cURL split Excel, Aspose.Cells SDK"
 ---
 
-# Split Excel Workbook Locally via Aspose.Cells Cloud API
 
-Split a local Excel workbook into separate files — **entirely on the server side without requiring cloud storage**. Export to 30+ formats (PDF, CSV, JSON, XLSX, HTML, ODS, XPS, and more) using RESTful API or SDKs.
+The **SplitSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/split/spreadsheet`) in Aspose.Cells Cloud v4.0 splits a locally uploaded Excel workbook into multiple output files on the server side, without requiring cloud storage—enabling users to export each worksheet or specified range to formats such as XLSX, CSV, PDF, or HTML by defining source sheet indices (`from`, `to`) and target `outFormat`.
 
 > **Note**: While processing occurs on Aspose’s infrastructure, _no files are persisted to cloud storage_. The operation is fully local to your session — your data remains secure and unuploaded to persistent storage.
 

@@ -11,7 +11,7 @@ weight: 100
 ArticleTitle: "Export Excel Chart – Document"
 ---
 
-Exporting chart objects from an Excel workbook to various image and document formats is a common requirement for reporting and publishing. Aspose.Cells Cloud provides a simple REST endpoint that converts charts directly to popular formats such as PNG, JPEG, PDF, SVG, TIFF, EMF, WMF, and more.
+The **PostExport** API (`POST https://api.aspose.cloud/v3.0/cells/export`) enables exporting Excel internal elements—such as charts, worksheets, or entire workbooks—to diverse formats including PNG, JPEG, PDF, SVG, TIFF, EMF, WMF, and more. By specifying `objectType=chart` and `format` in the request, developers can convert a chart from an uploaded Excel file directly to a target image or document format, supporting common reporting and publishing workflows without local software dependencies.
 
 You can export charts to the following formats: [PNG](https://docs.fileformat.com/Image/png/), [GIF](https://docs.fileformat.com/image/gif/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [WMF](https://docs.fileformat.com/image/Wmf/), and [PDF](https://docs.fileformat.com/pdf/).
 

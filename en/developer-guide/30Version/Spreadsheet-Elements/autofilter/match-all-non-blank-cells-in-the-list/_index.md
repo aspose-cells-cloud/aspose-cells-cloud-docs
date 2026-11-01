@@ -11,8 +11,7 @@ ArticleTitle: "Match all non‑blank cells in an Excel worksheet using Aspose.Ce
 weight: 100
 ---
 
-**Overview**  
-The _Match all non‑blank cells_ operation applies an AutoFilter to a worksheet and returns only the rows where the specified column contains data, ignoring empty cells. This is useful for cleaning data sets, generating reports, or preparing data for further analysis.
+The **PostWorksheetMatchNonBlanks** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/matchNonBlanks`) applies an AutoFilter to a specified worksheet column to retain only rows where the target field contains non-blank data, using Aspose.Cells Cloud to handle the complex filtering logic efficiently; this enables data cleaning, report generation, and preparation for downstream analysis by isolating populated entries across large datasets.
 
 **Prerequisites**
 

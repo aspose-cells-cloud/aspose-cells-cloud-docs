@@ -9,7 +9,7 @@ weight: 100
 ArticleTitle: "Copy Folder API in Aspose.Cells Cloud: Backup & Reorganize Excel Folders"
 ---
 
-The **CopyFolder** API duplicates an existing folder within Aspose.Cells Cloud storage. This operation is useful for creating backups, reorganizing data structures, or preparing folder hierarchies for batch processing—without manual file transfers.
+The **CopyFolder** API (`PUT https://api.aspose.cloud/v4.0/cells/storage/folder/copy/{srcPath}`) duplicates an existing folder in Aspose.Cells Cloud storage from a source path (`srcPath`) to a destination path (`destPath`), supporting optional storage name parameters for cross-storage operations; this enables efficient backup creation, folder reorganization, and preparation of hierarchical structures for batch processing without manual file transfers.
 
 ## Prerequisites
 

@@ -13,8 +13,7 @@ type: docs
 weight: 100
 ---
 
-The **Get Files List** operation returns the collection of files and sub‑folders stored in a specified folder of Aspose.Cells Cloud storage.  
-It is the primary entry point for browsing cloud‑based Excel workbooks, archives, and other supported file types.
+The **GetFilesList** API (`GET https://api.aspose.cloud/v4.0/cells/storage/folder/{path}`) retrieves the collection of files and subfolders stored in a specified folder of Aspose.Cells Cloud storage, enabling developers to browse cloud-based Excel workbooks, archives, and other supported file types programmatically using the v4.0 REST API.
 
 ## Aspose.Cells Cloud API – Get Files List (Folder Contents)
 

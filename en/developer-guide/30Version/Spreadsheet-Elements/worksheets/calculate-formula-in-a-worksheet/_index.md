@@ -11,7 +11,7 @@ weight: 100
 ArticleTitle: "Calculate a formula on an Excel worksheet – Aspose.Cells Cloud Documentation"
 ---
 
-This REST API returns the **calculated value of a formula** in a worksheet. It can be used to **evaluate an Excel formula** directly from your application.
+The **GetWorksheetCalculateFormula** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/formulaResult`) enables developers to calculate and retrieve the evaluated result of a specified Excel formula within a worksheet using Aspose.Cells Cloud, supporting direct formula evaluation without requiring local Excel installation.
 
 ## REST API
 

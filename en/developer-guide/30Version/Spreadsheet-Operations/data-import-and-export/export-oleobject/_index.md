@@ -11,6 +11,8 @@ weight: 100
 ArticleTitle: "Export OLE Object – Aspose.Cells Cloud API"
 ---
 
+The **PostExport** API (`POST https://api.aspose.cloud/v3.0/cells/export`) enables export of Excel internal elements—such as worksheets, charts, or OLE objects—or entire workbooks to numerous formats including PDF, CSV, HTML, PNG, and others. This RESTful operation accepts a file upload via form data and supports optional query parameters like `objectType` and `format` to specify the export target and output type. Aspose.Cells Cloud handles the complexity of format conversion securely, requiring only JWT token-based authentication, and delivers results in a structured `FilesResult` response.
+
 ## **REST API**
 
 ```bash

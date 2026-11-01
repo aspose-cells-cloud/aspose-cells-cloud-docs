@@ -13,7 +13,7 @@ aliases: ["/api/convert-table-to-html", "/docs/cells/convert/table/html"]
 ArticleTitle: "Aspose.Cells Cloud API: Convert Excel Table to HTML via REST"
 ---
 
-**Quick summary** – This endpoint reads a local Excel workbook, extracts the specified **table**, converts it to an **HTML** file, and returns the result as a downloadable stream. No intermediate upload to Aspose Cloud storage is required.
+The **ConvertTableToHtml** API (`PUT https://api.aspose.cloud/v4.0/cells/convert/table/html`) in Aspose.Cells Cloud enables direct conversion of a specified table from a local Excel workbook to HTML format without requiring intermediate cloud storage upload. The API accepts the spreadsheet file via form-data, along with the worksheet and table name as query parameters, processes the conversion entirely on the cloud server, and returns the resulting HTML as a downloadable stream.
 
 ## ConvertTableToHTML API
 
@@ -28,18 +28,18 @@ _Replace `{YOUR_ACCESS_TOKEN}` in examples with a valid JWT token obtained from 
 
 ### Request Parameters
 
-| Name               | Location  | Type      | Required | Description                                                                       |
-| ------------------ | --------- | --------- | -------- | --------------------------------------------------------------------------------- |
-| **Spreadsheet**    | Form‑Data | `File`    | **Yes**  | The Excel workbook containing the table to convert.                               |
-| **worksheet**      | Query     | `String`  | **Yes**  | Name of the worksheet that holds the table.                                       |
-| **tableName**      | Query     | `String`  | **Yes**  | Exact name of the table to be converted.                                          |
-| **outPath**        | Query     | `String`  | No       | Folder path in Aspose Cloud storage where the HTML file will be saved (optional). |
-| **outStorageName** | Query     | `String`  | No       | Storage name for the output file (optional).                                      |
-| **fontsLocation**  | Query     | `String`  | No       | Path to a folder containing custom fonts required for the conversion.             |
-| **region**         | Query     | `String`  | No       | Locale identifier (e.g., `en-US`, `fr-FR`). Affects number/date formatting.       |
-| **password**       | Query     | `String`  | No       | Password to open a protected workbook.                                            |
-| **AutoRowsFit**    | Query     | `Boolean` | No       | Auto‑fit all rows in the worksheet (`true`/`false`).                              |
-| **AutoColumnsFit** | Query     | `Boolean` | No       | Auto‑fit all columns in the worksheet (`true`/`false`).                           |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| worksheet | String | Query | worksheet name of spreadsheet. |
+| tableName | String | Query | table name |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| fontsLocation | String | Query | Use Custom fonts. |
+| AutoRowsFit | Boolean | Query | (Optional) Autofits all rows in worksheets. |
+| AutoColumnsFit | Boolean | Query | (Optional) Autofits all columns in worksheets. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
 
 ### **Response**
 
@@ -55,15 +55,24 @@ _Replace `{YOUR_ACCESS_TOKEN}` in examples with a valid JWT token obtained from 
 ]
 ```
 
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
 **HTTP Status Codes**
 
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | Invalid url. |
+| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
+| 404 | Not Found | Source file not accessible. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining conversion data. |
 
 ## When to Use the Convert Table to HTML API?
 

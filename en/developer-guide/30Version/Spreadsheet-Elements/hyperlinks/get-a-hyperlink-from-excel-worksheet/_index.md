@@ -9,7 +9,7 @@ ArticleTitle: "Aspose.Cells Cloud API – Get Worksheet Hyperlink"
 linktitle: "Get Hyperlink"
 ---
 
-This REST API retrieves a worksheet **hyperlink** using the **Aspose.Cells Get Hyperlink API**.
+The **GetWorksheetHyperlink** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks/{hyperlinkIndex}`) retrieves the description of a specific hyperlink from an Excel worksheet by its zero-based index, enabling developers to programmatically extract hyperlink details such as address, text to display, and screen tip using Aspose.Cells Cloud’s REST interface.
 
 ## Security and Authentication
 

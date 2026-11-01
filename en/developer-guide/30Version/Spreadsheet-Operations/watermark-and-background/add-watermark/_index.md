@@ -11,7 +11,7 @@ weight: 39
 ArticleTitle: "Add Watermark to Excel Files – Aspose.Cells Cloud Documentation"
 ---
 
-This REST API adds a **watermark** to Excel files.
+The **PostWatermark** API (`POST https://api.aspose.cloud/v3.0/cells/watermark`) enables users to add a text watermark to Excel files via Aspose.Cells Cloud, requiring the uploaded file, the watermark text, and color (e.g., `#1032ff`) as mandatory parameters, while supporting optional output formats such as PDF, XLSX, or PNG.
 
 **Prerequisites:** You must obtain a valid JWT access token and ensure the Excel file is in a supported format (e.g., `.xlsx`, `.xls`).  
 **Background:** A watermark is a semi‑transparent text overlay applied to each worksheet to indicate ownership or confidentiality.

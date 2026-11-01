@@ -20,7 +20,7 @@ weight: 100
 ArticleTitle: "Convert Excel Worksheet to CSV via Aspose.Cells Cloud API v4.0"
 ---
 
-The **Convert Worksheet to CSV** endpoint transforms a specific worksheet from a local spreadsheet file into a CSV document entirely on the Aspose.Cells Cloud server. By uploading the source file and specifying the target worksheet, developers receive a binary CSV stream without storing the file in cloud storage. This API is ideal for automating data extraction, integrating spreadsheet data into downstream systems (e.g., BI tools, accounting software), and reducing storage overhead.
+The **ConvertWorksheetToCsv** API (`PUT https://api.aspose.cloud/v4.0/cells/convert/worksheet/csv`) in Aspose.Cells Cloud converts a named worksheet from a locally uploaded spreadsheet file into a CSV document entirely on the cloud server, returning the binary CSV output without storing it in cloud storage—ideal for extracting data from specific sheets to integrate with BI tools, accounting systems, or other downstream applications while avoiding unnecessary storage overhead.
 
 ## Web API Endpoint
 
@@ -28,7 +28,7 @@ The **Convert Worksheet to CSV** endpoint transforms a specific worksheet from a
 PUT https://api.aspose.cloud/v4.0/cells/convert/worksheet/csv
 ```
 
-## Authentication
+### Authentication
 
 The Aspose.Cells Cloud APIs use [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/). Include your access token in the `Authorization` header:
 
@@ -36,21 +36,41 @@ The Aspose.Cells Cloud APIs use [JWT token-based authentication](https://docs.as
 -H "Authorization: Bearer {access_token}"
 ```
 
-## Request Parameters
+### Request Parameters
 
-| Parameter Name   | Type    | Location | Required | Description                                                                                                                       |
-| ---------------- | ------- | -------- | -------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| `Spreadsheet`    | File    | FormData | Yes      | Binary file of the source spreadsheet (e.g., `.xlsx`, `.xls`).                                                                    |
-| `worksheet`      | String  | Query    | Yes      | Name of the worksheet to convert (case-sensitive). If omitted, the first worksheet is used.                                       |
-| `outPath`        | String  | Query    | No       | Target folder path in cloud storage where the CSV will be saved. If omitted, the CSV is returned directly in the response stream. |
-| `outStorageName` | String  | Query    | No       | Name of the storage service (e.g., `Azure`, `AWS S3`). Required only when `outPath` is specified.                                 |
-| `fontsLocation`  | String  | Query    | No       | Path to a custom fonts folder on the server for non-standard font rendering.                                                      |
-| `AutoRowsFit`    | Boolean | Query    | No       | (Optional) Autofit all rows in the worksheet before conversion.                                                                   |
-| `AutoColumnsFit` | Boolean | Query    | No       | (Optional) Autofit all columns in the worksheet before conversion.                                                                |
-| `region`         | String  | Query    | No       | BCP 47 locale tag (e.g., `en-US`, `fr-FR`) to control number/date formatting.                                                     |
-| `password`       | String  | Query    | No       | Password for protected spreadsheets. Must match the file’s encryption password.                                                   |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| worksheet | String | Query | worksheet name of spreadsheet. |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| fontsLocation | String | Query | Use Custom fonts. |
+| AutoRowsFit | Boolean | Query | (Optional) Autofits all rows in worksheets. |
+| AutoColumnsFit | Boolean | Query | (Optional) Autofits all columns in worksheets. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
 
-## Response
+### Response
+
+```json
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
 
 Returns a binary CSV stream (`application/octet-stream`) or saves the file to cloud storage if `outPath` is provided.
 

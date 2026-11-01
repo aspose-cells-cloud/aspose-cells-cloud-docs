@@ -9,7 +9,7 @@ ArticleTitle: "Update Chart Category Axis – Aspose.Cells Cloud API"
 linktitle: "Update Category Axis"
 ---
 
-This REST API updates a chart’s category axis.
+The **PostChartCategoryAxis** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/categoryaxis`) updates the category axis of a specific chart in a worksheet using Aspose.Cells Cloud, allowing developers to programmatically modify axis properties such as scaling, formatting, and labels by sending an axis configuration object in the request body.
 
 ## PostChartCategoryAxis API
 

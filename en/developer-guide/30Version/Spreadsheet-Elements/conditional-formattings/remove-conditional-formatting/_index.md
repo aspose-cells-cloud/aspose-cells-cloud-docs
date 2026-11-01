@@ -11,7 +11,8 @@ linktitle: "Delete Conditional Formatting"
 ArticleTitle: "Delete Conditional Formatting in Excel via Aspose.Cells Cloud REST API"
 ---
 
-# Delete Conditional Formatting
+
+The **DeleteWorksheetConditionalFormatting** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}`) removes a specific conditional formatting rule from a worksheet in an Excel workbook stored in Aspose.Cells Cloud storage, using the zero-based index of the rule; this operation supports automation workflows by enabling developers to programmatically delete formatting rules—such as those highlighting values above a threshold—without manually editing the workbook.
 
 ## Background
 Conditional formatting lets you apply visual styles to cells that meet specific criteria (e.g., highlight values greater than a threshold). In automation scenarios you may need to remove an existing rule. This endpoint deletes a conditional‑formatting rule from a worksheet in an Excel workbook stored in Aspose Cloud storage.

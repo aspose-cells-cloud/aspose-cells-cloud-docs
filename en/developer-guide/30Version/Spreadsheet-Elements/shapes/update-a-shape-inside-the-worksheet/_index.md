@@ -11,7 +11,7 @@ ArticleTitle: "Update a shape on an Excel worksheet - Aspose.Cells Cloud API"
 weight: 31
 ---
 
-This REST API updates a shape on an Excel worksheet.
+The **PostWorksheetShape** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes/{shapeindex}`) updates a specific shape within an Excel worksheet by sending a shape description object in the request body. Aspose.Cells Cloud enables developers to programmatically modify shape properties—such as position, size, text, or formatting—using a RESTful interface that supports authentication and optional folder and storage parameters.
 
 ## Security and Authentication
 

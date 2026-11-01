@@ -11,6 +11,8 @@ description: "Search broken links in the worksheet of a remote spreadsheet."
 weight: 100
 ---
 
+The **SearchBrokenLinksInRemoteWorksheet** API (`PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/search/broken-links`) in Aspose.Cells Cloud enables remote scanning of a specified worksheet in a cloud-stored spreadsheet to identify broken hyperlinks—such as dead URLs or missing external references—without downloading the file, returning a list of invalid links with sheet and cell details for corrective action.
+
 ## The Search Broken Links in Remote Worksheet of Aspose.Cells Cloud Web Services
 
 This method searches for broken links within a worksheet of a spreadsheet file stored in remote cloud storage. It scans all sheets and cells to identify hyperlinks that no longer point to valid destinations, such as dead URLs or missing external references. The operation is performed remotely within the cloud environment, without requiring the file to be downloaded to the local machine.

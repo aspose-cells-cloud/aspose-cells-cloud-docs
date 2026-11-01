@@ -11,7 +11,8 @@ linktitle: "Clear All Comments"
 ArticleTitle: "Delete All Comments in Worksheet via Aspose.Cells Cloud API"
 ---
 
-# Delete All Worksheet Comments
+
+The **DeleteWorksheetComments** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments`) provided by Aspose.Cells Cloud removes all comments from a specified worksheet in a cloud-based spreadsheet file. This operation accepts the workbook file name and worksheet name as required path parameters, with optional folder and storage parameters for file location flexibility. As a destructive action, it permanently deletes all comments without recovery, enabling developers to programmatically clean up worksheets when preparing reports or resetting templates.
 
 **API version:** `v3.0`  
 **Resource:** `Worksheets` → `DeleteWorksheetComments`

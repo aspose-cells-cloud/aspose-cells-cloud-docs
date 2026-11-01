@@ -11,7 +11,7 @@ weight: 100
 ArticleTitle: "Encrypt Excel Workbook with Aspose.Cells Cloud API – cURL and SDK Examples"
 ---
 
-This REST API encrypts an Excel **workbook**.
+The **PostEncryptWorkbook** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/encryption`) enables Aspose.Cells Cloud users to encrypt an Excel workbook by providing the file name and encryption parameters via the request body; it supports robust file protection as part of a comprehensive information security strategy, allowing secure handling of sensitive spreadsheet data through standardized REST calls.
 
 **Prerequisites:** You must have a valid JWT token and the workbook uploaded to a storage location before calling this endpoint.
 

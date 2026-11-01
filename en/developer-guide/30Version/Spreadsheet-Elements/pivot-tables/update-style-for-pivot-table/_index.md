@@ -11,7 +11,7 @@ weight: 100
 ArticleTitle: "Update style for pivot table - Aspose.Cells Cloud API"
 ---
 
-This REST API updates the style of a pivot table.
+The **PostPivotTableStyle** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/FormatAll`) enables developers to update the style of a specific pivot table within a worksheet using Aspose.Cells Cloud, allowing programmatic application of formatting such as cell borders, fonts, and colors to all cells in the pivot table structure in a single request.
 
 ## PostPivotTableStyle API
 

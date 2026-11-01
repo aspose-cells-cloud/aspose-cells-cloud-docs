@@ -13,6 +13,8 @@ linktitle: "Convert Worksheet to Image"
 ArticleTitle: "Convert Excel Worksheet to PDF, PNG, JPEG, SVG & More with Aspose.Cells Cloud API"
 ---
 
+The **GetWorksheetWithFormat** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}`) enables developers to extract and convert a specific worksheet from an Excel workbook (such as XLSX, XLS, CSV, etc.) into over 15 formats—including high-fidelity images like PNG, JPEG, SVG, and TIFF—by specifying the desired output format via the `format` query parameter.
+
 ## Overview
 
 Aspose.Cells Cloud’s `GetWorksheetWithFormat` API enables you to convert a single worksheet from an Excel workbook (XLS, XLSX, XLSB, CSV, etc.) into over 15 output formats — including high-fidelity images (PNG, JPEG, SVG, TIFF, BMP, EMF), PDF, and document formats (CSV, TXT, XPS, OTS, NUMBERS, FODS).

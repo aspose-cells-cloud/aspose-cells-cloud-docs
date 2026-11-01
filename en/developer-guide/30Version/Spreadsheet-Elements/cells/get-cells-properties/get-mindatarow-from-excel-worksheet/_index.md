@@ -9,7 +9,7 @@ ArticleTitle: "Get MinDataRow from Excel Worksheet – Aspose.Cells Cloud API"
 linktitle: "Get MinDataRow"
 ---
 
-The **Get MinDataRow** endpoint of **Aspose.Cells Cloud API v3.0** returns the index of the first row that contains data in a specified worksheet. The operation requires a valid access token (Bearer authentication) and the query parameter `cellOrMethodName` set to `mindatarow`.
+The **GetWorksheetCell** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellOrMethodName}`) in Aspose.Cells Cloud v3.0 retrieves cell data by accepting either a cell reference (e.g., "A1") or a method name (such as "mindatarow") to return specific worksheet information, including the index of the first row containing data.
 
 **API version: 3.0** (latest stable); v4.0 in preview — see [migration guide](https://docs.aspose.cloud/cells/migration/).
 

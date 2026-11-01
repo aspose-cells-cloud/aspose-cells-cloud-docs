@@ -13,6 +13,8 @@ linktitle: "Add CellArea to CF"
 ArticleTitle: "Add CellArea to Conditional Formatting in Aspose.Cells Cloud REST API v3.0"
 ---
 
+The **PutWorksheetFormatConditionArea** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}/area`) enables developers to assign a specific cell range—defined by the `cellArea` query parameter—to an existing conditional formatting rule in a worksheet via Aspose.Cells Cloud. This operation supports precise control over where formatting is applied, ensuring dynamic reports and data visualizations remain accurate and relevant to the intended data subset.
+
 ## Why This Matters
 
 CellArea defines the exact range of cells affected by a conditional format—critical for dynamic reporting in Excel workbooks. Accurately assigning or updating cell ranges ensures formatting applies only where intended, preventing errors in data visualization and analysis.

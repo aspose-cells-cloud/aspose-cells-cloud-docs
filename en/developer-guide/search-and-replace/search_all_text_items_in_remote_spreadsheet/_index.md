@@ -11,6 +11,8 @@ description: "Search all text items in a remote spreadsheet using Aspose.Cells C
 weight: 100
 ---
 
+The **SearchAllTextItemsInRemoteSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/{name}/search/content/all-textitems`) in Aspose.Cells Cloud v4.0 enables searching for all text items across every sheet and cell of a remote workbook stored in the cloud, returning match locations such as sheet names and cell coordinates without requiring local storage or file download.
+
 ## The SearchAllTextItemsInRemoteSpreadsheet of Aspose.Cells Cloud Web Services
 
 This method searches for all text items within a remote spreadsheet file. It supports searching through all sheets and cells of the workbook, identifying occurrences of the search term. The operation is performed in the cloud, requiring no local storage. Ensure that you have the necessary permissions to read the source file. If the source file cannot be accessed or if an error occurs during the search process (such as an unsupported file format), an appropriate exception will be thrown. The method may return the locations of the matches (e.g., sheet name, cell coordinates) depending on implementation details.

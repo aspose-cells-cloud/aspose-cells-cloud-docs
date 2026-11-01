@@ -25,6 +25,8 @@ ArticleTitle: "Update Excel Hyperlink via Aspose.Cells Cloud REST API v3.0"
 keywords: "Aspose.Cells Cloud, update hyperlink, Excel hyperlink API, PostWorksheetHyperlink, REST API v3.0, Excel worksheet hyperlink, cURL example, SDK example, API documentation, hyperlink update example"
 ---
 
+The **PostWorksheetHyperlink** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks/{hyperlinkIndex}`) enables developers to update an existing hyperlink in a specific worksheet by its zero-based index using Aspose.Cells Cloud’s REST API, supporting precise modification of hyperlink properties such as address, text to display, and screen tip without altering other worksheet content.
+
 ## Update a Hyperlink in an Excel Worksheet
 
 **API version:** v3.0

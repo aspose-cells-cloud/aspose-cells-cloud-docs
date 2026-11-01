@@ -10,7 +10,7 @@ weight: 100
 ArticleTitle: "Get All Worksheet Validations via Aspose.Cells Cloud REST API"
 ---
 
-Worksheet validations let you define rules that restrict the type or range of data that can be entered into cells. They are commonly used to enforce data integrity, such as limiting entries to a list of values, dates within a specific range, or numeric limits.
+The **GetWorksheetValidations** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations`) retrieves descriptions of all data validation rules defined in a specific worksheet, enabling developers to inspect enforced constraints such as list dropdowns, date ranges, or numeric limits. Aspose.Cells Cloud supports this operation via a RESTful endpoint requiring the workbook name (`name`) and worksheet name (`sheetName`) as path parameters, with optional `folder` and `storageName` query parameters for file location context. This allows accurate, programmatic retrieval of validation metadata to support data integrity auditing or migration workflows.
 
 This REST API retrieves all worksheet validations on an Excel worksheet.
 

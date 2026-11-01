@@ -18,9 +18,8 @@ draft: false
 ArticleTitle: "Ungroup Columns in Excel with Aspose.Cells Cloud REST API"
 ---
 
-# Ungroup Columns in Excel
 
-Aspose.Cells Cloud provides a **POST** operation to remove column grouping from a specified worksheet in an Excel workbook. This page details the API endpoint, required parameters, authentication method, request examples (cURL), response format, and ready-to-use SDK code snippets for multiple programming languages.
+The **PostUngroupWorksheetColumns** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/ungroup`) in Aspose.Cells Cloud enables developers to remove column grouping from a specified worksheet by providing the workbook name, worksheet name, and the first and last column indices to ungroup. This REST operation supports ungrouping contiguous or non-contiguous column ranges, restoring individual column visibility and editability as defined in Excel’s grouping behavior.
 
 ## Prerequisites
 

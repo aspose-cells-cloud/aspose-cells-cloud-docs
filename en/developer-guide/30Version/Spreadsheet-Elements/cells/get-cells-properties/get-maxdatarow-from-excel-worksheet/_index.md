@@ -11,7 +11,7 @@ lastmod: 2024-05-18
 linktitle: "Get MaxDataRow"
 ---
 
-This REST API returns the maximum data row index in an Excel file when the `cellOrMethodName` parameter is set to `maxdatarow`.
+The **GetWorksheetCell** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellOrMethodName}`) retrieves cell data from an Excel worksheet by specifying either a cell reference (e.g., "A1") or a method name such as `maxdatarow` to obtain the highest row index containing data, enabling efficient worksheet analysis without loading the entire file into memory.
 
 - **cURL Example**
 

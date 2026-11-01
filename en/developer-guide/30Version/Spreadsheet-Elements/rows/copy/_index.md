@@ -13,9 +13,8 @@ ArticleTitle: "Copy Rows in Excel with Aspose.Cells Cloud REST API v3.0"
 keywords: "Aspose.Cells Cloud, copy rows Excel, worksheet row copy, REST API copy rows, copy rows programmatically, Excel automation, copy entire rows, row copy API, Aspose.Cells Cloud SDK, copy rows between worksheets"
 ---
 
-# Copy Rows on an Excel Worksheet <span style="float:right;">v3.0</span>
 
-Copy data and formats from specific entire rows in a worksheet.
+The **PostCopyWorksheetRows** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/copy`) enables copying data and formats from specific entire rows in a worksheet by specifying source and destination row indices along with the number of rows to copy. Aspose.Cells Cloud supports this operation to automate row duplication tasks programmatically, preserving cell values, styles, and formulas. Developers can integrate this capability using REST calls or SDKs for languages including .NET, Java, Python, and Node.js.
 
 ---
 

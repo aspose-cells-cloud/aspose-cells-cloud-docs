@@ -11,7 +11,7 @@ weight: 100
 ArticleTitle: "Get All Worksheets from Excel Workbook via Aspose.Cells Cloud REST API"
 ---
 
-This REST API returns information about the worksheets contained in a workbook.
+The **GetWorksheets** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets`) retrieves a list of worksheet descriptions from a specified workbook file in Aspose.Cells Cloud, supporting optional `folder` and `storageName` query parameters to locate the file.
 
 ## REST API
 

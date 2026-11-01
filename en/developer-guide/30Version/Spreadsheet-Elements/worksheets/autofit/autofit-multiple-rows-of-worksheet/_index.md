@@ -11,7 +11,7 @@ weight: 40
 ArticleTitle: "Autofit Multiple Rows in an Excel Worksheet – Aspose.Cells Cloud API Documentation"
 ---
 
-This REST API automatically adjusts the height of rows in an Excel worksheet.
+The **PostAutofitWorksheetRows** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitrows`) in Aspose.Cells Cloud automatically adjusts the height of specified rows in an Excel worksheet by analyzing their content, supporting precise control via optional query parameters like `startRow`, `endRow`, and `onlyAuto` to autofit a range or all rows.
 
 ## Security and Authentication
 

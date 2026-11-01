@@ -11,7 +11,7 @@ ArticleTitle: "Replace Text in an Excel Worksheet – Aspose.Cells Cloud API"
 weight: 70
 ---
 
-This REST API replaces text in an Excel worksheet using the **Aspose.Cells replace text API**.
+The **PostWorksheetTextReplace** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/replaceText`) enables developers to replace all occurrences of specified old text with new text in a named worksheet of an Excel file stored in the cloud, using Aspose.Cells Cloud’s robust text-replacement functionality; it requires the file name, worksheet name, and both `oldValue` and `newValue` query parameters, and optionally supports `folder` and `storageName` for flexible file handling across cloud storage systems.
 
 ## Security and Authentication
 

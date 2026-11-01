@@ -9,8 +9,7 @@ ArticleTitle: "Get Chart Category Axis – Aspose.Cells Cloud API Documentation"
 linktitle: "Get Chart Category Axis"
 ---
 
-This REST API retrieves the **Category Axis** of a chart.  
-To call this endpoint you must provide a valid OAuth 2.0 access token, and the workbook must be stored in Aspose Cloud storage.
+The **GetChartCategoryAxis** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/categoryaxis`) retrieves the category axis description of a specific chart in a worksheet using Aspose.Cells Cloud, requiring the workbook filename, worksheet name, and chart index as path parameters; it supports optional `folder` and `storageName` query parameters to locate the file in Aspose Cloud storage and returns a structured `AxisResponse` containing axis metadata.
 
 **Prerequisites**  
 Before using this endpoint, ensure that:  

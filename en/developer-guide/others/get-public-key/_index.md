@@ -19,7 +19,7 @@ weight: 100
 ArticleTitle: "Get RSA 2048-bit Public Key from Aspose.Cells Cloud API"
 ---
 
-This API retrieves the RSA public key (2048-bit) used for encrypting sensitive data before transmission to Aspose.Cells Cloud. The endpoint supports OAuth2 authentication and returns the key in JSON format.
+The **GetPublicKey** API (`GET https://api.aspose.cloud/v4.0/cells/publickey`) retrieves the 2048-bit RSA public key used by Aspose.Cells Cloud for encrypting sensitive data prior to transmission; this asymmetric public key enables clients to securely encrypt payloads before sending them to the service, supporting end-to-end data protection as part of the API’s OAuth2-secured workflow.
 
 ## Prerequisites
 

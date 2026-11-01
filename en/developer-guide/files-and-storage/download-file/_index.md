@@ -10,9 +10,8 @@ weight: 100
 ArticleTitle: "Download File API | Aspose.Cells Cloud | REST & SDK Examples"
 ---
 
-# Download File API (v4.0)
 
-The **DownloadFile** API enables you to retrieve files stored in Aspose.Cells Cloud storage. Use this endpoint to download Excel spreadsheets, PDFs, CSVs, and other supported formats directly from the cloud.
+The **DownloadFile** API (`GET https://api.aspose.cloud/v4.0/cells/storage/file/{path}`) enables you to retrieve files stored in Aspose.Cells Cloud storage by specifying the file path, supporting formats such as Excel spreadsheets, PDFs, and CSVs; the operation accepts optional `storageName` and `versionId` query parameters to target specific storage and file versions, returning the file content as a `FileStreamResult`.
 
 ## Excel API: Download File
 

@@ -11,7 +11,7 @@ description: "Filter blank cells in Excel using Aspose.Cells Cloud API with Post
 weight: 100
 ---
 
-This REST API matches all **blank cells** in the filter list on an Excel worksheet.
+The **PostWorksheetMatchBlanks** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/matchBlanks`) enables Aspose.Cells Cloud to match all blank cells within a specified AutoFilter list on an Excel worksheet by setting the filter criteria for the field at the given `fieldIndex` to include only blank entries, supporting precise data filtering without manual intervention.
 
 **Prerequisites:** Before calling this endpoint, ensure you have a valid JWT access token, the workbook is uploaded to Aspose Cloud storage, and you know the storage folder (if applicable). Provide the `folder` and `storageName` parameters when the file is not in the default root.
 

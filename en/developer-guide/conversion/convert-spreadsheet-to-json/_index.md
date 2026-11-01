@@ -20,7 +20,7 @@ type: docs
 ArticleTitle: "Convert Excel to JSON with Aspose.Cells Cloud API - Secure, Server-Side Conversion"
 ---
 
-Convert local spreadsheets (`.xls`, `.xlsx`, `.xlsm`) directly to JSON on Aspose.Cells Cloud without storing files in cloud storage first. This cloud-native conversion eliminates intermediate steps, reduces latency and storage costs, and simplifies integration for data pipelines, web/mobile apps, and serverless functions.
+The **ConvertSpreadsheetToJson** API (`PUT https://api.aspose.cloud/v4.0/cells/convert/spreadsheet/json`) in Aspose.Cells Cloud converts a local spreadsheet file—such as `.xls`, `.xlsx`, or `.xlsm`—directly to JSON format without requiring prior upload to cloud storage, enabling efficient, low-latency conversion for data pipelines and web applications by processing the file entirely on the cloud server.
 
 ## Prerequisites
 
@@ -37,7 +37,7 @@ Convert local spreadsheets (`.xls`, `.xlsx`, `.xlsm`) directly to JSON on Aspose
 PUT https://api.aspose.cloud/v4.0/cells/convert/spreadsheet/json
 ```
 
-## Authentication
+### Authentication
 
 All requests require a valid JWT access token in the `Authorization` header:
 
@@ -47,18 +47,58 @@ Authorization: Bearer <your_jwt_token>
 
 See [Authentication Overview](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) for details.
 
-## Request Parameters
+### Request Parameters
 
-| Parameter        | Type    | Location | Required | Description                                                                                                          |
-| ---------------- | ------- | -------- | -------- | -------------------------------------------------------------------------------------------------------------------- |
-| `Spreadsheet`    | File    | FormData | Yes      | Local spreadsheet file to convert (e.g., `myfile.xlsx`). Use `curl -F "Spreadsheet=@file.xlsx"`.                     |
-| `outPath`        | String  | Query    | No       | Path to save the output JSON in cloud storage (e.g., `/output/result.json`). Omit to return JSON in response stream. |
-| `outStorageName` | String  | Query    | No       | Cloud storage name (e.g., `AmazonS3`, `AzureBlob`). Required only if `outPath` uses non-default storage.             |
-| `fontsLocation`  | String  | Query    | No       | Custom fonts folder path (e.g., `/fonts`) if workbook uses non-default fonts.                                        |
-| `region`         | String  | Query    | No       | Locale (e.g., `en-US`, `fr-FR`, `de-DE`). Affects date/number/currency formatting.                                   |
-| `password`       | String  | Query    | No       | Password for protected workbooks. Omit for unprotected files.                                                        |
-| `AutoRowsFit`    | Boolean | Query    | No       | `true` to autofit all rows in worksheets before conversion. Default: `false`.                                        |
-| `AutoColumnsFit` | Boolean | Query    | No       | `true` to autofit all columns before conversion. Default: `false`.                                                   |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| fontsLocation | String | Query | Use Custom fonts. |
+| AutoRowsFit | Boolean | Query | (Optional) Autofits all rows in worksheets. |
+| AutoColumnsFit | Boolean | Query | (Optional) Autofits all columns in worksheets. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
+
+### Example Request (cURL — Direct Stream Response)
+
+```json
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | Invalid url. |
+| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
+| 404 | Not Found | Source file not accessible. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining conversion data. |
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/spreadsheet/json" \
+  -H "Authorization: Bearer <your_token>" \
+  -F "Spreadsheet=@MyWorkbook.xlsx" \
+  --output result.json
+```
 
 ### Example Request (cURL)
 
@@ -68,16 +108,7 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/spreadsheet/json?outPat
   -F "Spreadsheet=@MyWorkbook.xlsx"
 ```
 
-### Example Request (cURL — Direct Stream Response)
-
-```bash
-curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/spreadsheet/json" \
-  -H "Authorization: Bearer <your_token>" \
-  -F "Spreadsheet=@MyWorkbook.xlsx" \
-  --output result.json
-```
-
-## Response
+### Response
 
 The API returns the converted JSON as a file stream (or saves it to storage if `outPath` is provided).
 
@@ -87,14 +118,6 @@ The API returns the converted JSON as a file stream (or saves it to storage if `
 - Status: `"Conversion successful; JSON returned in response stream."`
 
 **Error Responses**
-
-| Code | Meaning               | Description                                                    |
-| ---- | --------------------- | -------------------------------------------------------------- |
-| 400  | Bad Request           | Invalid parameters (e.g., unsupported file type, missing file) |
-| 401  | Unauthorized          | Invalid, expired, or missing JWT token                         |
-| 404  | Not Found             | Source file inaccessible or path invalid                       |
-| 413  | Payload Too Large     | File exceeds 2 GB upload limit                                 |
-| 500  | Internal Server Error | Unexpected error during conversion                             |
 
 ## Use Cases
 

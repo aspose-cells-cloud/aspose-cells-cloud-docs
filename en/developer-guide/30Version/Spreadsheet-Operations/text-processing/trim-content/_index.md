@@ -10,6 +10,8 @@ weight: 100
 ArticleTitle: "Aspose.Cells Cloud PostTrimContent API: Trim Excel Cell Content"
 ---
 
+The **PostTrimContent** API (`POST https://api.aspose.cloud/v3.0/cells/trimcontent`) in Aspose.Cells Cloud processes and trims content within a specified range in a spreadsheet by removing extra spaces, line breaks, and other unnecessary characters from selected cells—helping clean data entries and ensure consistent formatting while preserving data integrity.
+
 ## **Excel Web API : PostTrimContent**
 
 The **PostTrimContent** API processes and trims content within a specified range in a spreadsheet. It removes extra spaces, line breaks, and other unnecessary characters from the content of selected cells, making it useful for cleaning data entries and ensuring consistent spreadsheet formatting.

@@ -10,7 +10,7 @@ description: "Use the Object Exists API to quickly verify whether a file or fold
 weight: 100
 ---
 
-The **Object Exists API** lets developers determine whether a specific file or folder is present in Aspose.Cells Cloud storage. It returns a simple Boolean indicating existence and whether the path points to a folder.
+The **ObjectExists** API (`GET https://api.aspose.cloud/v4.0/cells/storage/exist/{path}`) enables developers to verify whether a specific file or folder exists in Aspose.Cells Cloud storage by providing a storage path; it supports optional `storageName` and `versionId` query parameters and returns an `ObjectExist` response indicating existence and whether the path refers to a folder.
 
 ## **Excel API: Object Exists**
 

@@ -11,7 +11,7 @@ weight: 100
 ArticleTitle: "Autofit Multiple Columns in Excel Worksheet via Aspose.Cells Cloud API"
 ---
 
-This REST API autofits **multiple columns** on an Excel worksheet.
+The **PostAutofitWorksheetColumns** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitcolumns`) in Aspose.Cells Cloud enables autofitting multiple columns in a specified worksheet by adjusting column widths to fit their content, supporting optional range parameters like `startColumn` and `endColumn` for precise control.
 
 ## REST API
 

@@ -11,7 +11,7 @@ description: "Clear all shapes from an Excel worksheet using Aspose.Cells Cloud 
 weight: 40
 ---
 
-This REST API deletes all shapes on an Excel worksheet.
+The **DeleteWorksheetShapes** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes`) provided by Aspose.Cells Cloud removes all shapes from a specified worksheet in a cloud-based Excel file, supporting operations on documents stored in default or custom folders and storage accounts via optional query parameters.
 
 **Prerequisites:** A valid JWT access token is required. Obtain it via the Aspose Cloud OAuth2 flow and include it in the `Authorization` header as shown in the example below.
 

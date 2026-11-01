@@ -11,7 +11,7 @@ weight: 100
 ArticleTitle: "Get Cells Data Based on Named Range – Aspose.Cells Cloud API"
 ---
 
-**Prerequisites**
+The **GetWorksheetCellsRangeValue** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/value`) retrieves the values of cells within a specified range in a worksheet, supporting both named ranges via the `namerange` query parameter and explicit cell ranges defined by `firstRow`, `firstColumn`, `rowCount`, and `columnCount` parameters. Aspose.Cells Cloud enables developers to programmatically extract range data from Excel workbooks stored in cloud storage, simplifying data integration and reporting workflows across supported platforms including .NET, Java, Python, and Node.js.
 
 - A valid JWT access token with the appropriate scope.
 - The workbook must be uploaded to Aspose Cloud storage (or specified folder).

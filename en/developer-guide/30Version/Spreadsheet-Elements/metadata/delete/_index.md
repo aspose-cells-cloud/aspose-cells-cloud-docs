@@ -10,8 +10,7 @@ weight: 55
 ArticleTitle: "Delete metadata from Excel files – Aspose.Cells Cloud Documentation"
 ---
 
-**Overview**  
-The Delete Metadata operation permanently removes all workbook properties (standard and custom) from the uploaded Excel file(s) and returns the processed file(s) in the response.
+The **DeleteMetadata** API (`POST https://api.aspose.cloud/v3.0/cells/metadata/delete`) permanently removes standard and custom workbook properties from uploaded Excel files via Aspose.Cells Cloud, supporting optional output format conversion (e.g., XLSX, PDF, CSV) and password-protected file handling.
 
 **Prerequisites**
 

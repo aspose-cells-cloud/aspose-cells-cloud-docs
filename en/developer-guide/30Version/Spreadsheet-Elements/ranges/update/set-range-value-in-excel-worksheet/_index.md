@@ -11,7 +11,7 @@ weight: 72
 ArticleTitle: "Set Range Value in an Excel Worksheet – Aspose.Cells Cloud API"
 ---
 
-Use this REST API to set a value in the specified range. When appropriate, the value is converted to another data type and the cell’s number format is reset.
+The **PostWorksheetCellsRangeValue** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/value`) enables developers to assign a value to a specified range in an Excel worksheet using Aspose.Cells Cloud, automatically converting the value to an appropriate data type and resetting the cell’s number format when necessary; it accepts the workbook name, worksheet name, range definition in the request body, and the input value as a query parameter, with optional flags to control conversion and styling.
 
 **Prerequisites**
 

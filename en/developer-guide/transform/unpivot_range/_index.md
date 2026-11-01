@@ -11,6 +11,8 @@ description: "Switch rows and columns in the spreadsheet."
 weight: 100
 ---
 
+The **UnpivotRange** API (`PUT https://api.aspose.cloud/v4.0/cells/unpivot/range`) in Aspose.Cells Cloud enables developers to transform pivot table-like data by converting columns back into rows—effectively reversing a pivot operation—by specifying a worksheet name and data range (e.g., "A1:C10") in the request; it accepts an uploaded spreadsheet file via form data and supports optional parameters like `skipEmptyValue`, `password`, and `region` to refine handling of empty cells, protected files, and locale-specific formatting.
+
 ## The UnpivotRange of Aspose.Cells Cloud Web Services
 
 Switch rows and columns in the spreadsheet.

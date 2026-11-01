@@ -13,7 +13,8 @@ linktitle: "Search Excel Files"
 ArticleTitle: "Find Text in Excel Files with Aspose.Cells Cloud API"
 ---
 
-# Find Text in Excel Files – Aspose.Cells Cloud API
+
+The **PostSearch** API (`POST https://api.aspose.cloud/v3.0/cells/search`) enables developers to search for specified text within Excel files (XLS, XLSX, XLSM, XLSB) and OpenDocument Spreadsheet (ODS) files using Aspose.Cells Cloud, supporting optional parameters like worksheet name and file password, and returning all matching cells with their worksheet locations.
 
 ## Overview
 

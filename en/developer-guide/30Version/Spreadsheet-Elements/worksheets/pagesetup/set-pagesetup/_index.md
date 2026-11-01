@@ -10,7 +10,7 @@ weight: 100
 ArticleTitle: "Set page setup for a worksheet – Aspose.Cells Cloud API Guide"
 ---
 
-Prerequisites: To call this API you must have a valid JWT (OAuth) token and the workbook must reside in an Aspose Cloud storage location where you have read/write permissions. Ensure the token is included in the **Authorization** header and that your account has the necessary API quota.
+The **PostPageSetup** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pagesetup`) updates page setup configurations for a specified worksheet in a workbook stored in Aspose.Cells Cloud, allowing precise control over print settings such as margins, orientation, and paper size. To call this API, you must provide a valid JWT (OAuth) token in the `Authorization` header, ensure the workbook resides in an Aspose Cloud storage location where you have read/write permissions, and include the required path parameters `{name}` and `{sheetName}` along with a `pageSetup` object in the request body describing the desired settings.
 
 This REST API sets the page setup for an Excel worksheet.
 

@@ -11,7 +11,7 @@ description: "Delete a horizontal page break from an Excel worksheet via Aspose.
 weight: 50
 ---
 
-This REST API deletes a **horizontal** page break.
+The **DeleteHorizontalPageBreak** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/horizontalpagebreaks/{index}`) enables developers to remove a specific horizontal page break from a worksheet in Aspose.Cells Cloud by specifying the workbook name, worksheet name, and zero-based index of the break to delete, supporting precise control over print layout without modifying other worksheet elements.
 
 **Prerequisites**: To call this endpoint you must have a valid Aspose Cloud JWT access token. Obtain it by following the [Authentication guide]（https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/）.
 

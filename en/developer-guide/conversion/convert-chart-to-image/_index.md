@@ -10,23 +10,14 @@ description: "Convert Excel charts to PNG, SVG, TIFF, JPEG, or BMP using Aspose.
 weight: 100
 ---
 
-Excel charts are visual representations of data that can be embedded within worksheets. Converting these charts to image formats enables easy reuse across documents, web pages, and reports without requiring Excel.
+The **ConvertChartToImage** API (`PUT https://api.aspose.cloud/v4.0/cells/convert/chart/image`) in Aspose.Cells Cloud converts a chart from a local spreadsheet file directly to image format—such as PNG, SVG, or TIFF—without requiring the file to be uploaded to cloud storage, enabling efficient reuse of charts in reports, web pages, or other documents.
 
 Convert a chart from a local spreadsheet or Excel file to an image file. Supported **IMAGE FORMATS:** <a href="https://docs.fileformat.com/image/png/" rel="noopener noreferrer">PNG</a>, <a href="https://docs.fileformat.com/page-description-language/svg/" rel="noopener noreferrer">SVG</a>, <a href="https://docs.fileformat.com/image/tiff/" rel="noopener noreferrer">TIFF</a>, <a href="https://docs.fileformat.com/image/jpeg/" rel="noopener noreferrer">JPEG</a>, <a href="https://docs.fileformat.com/image/bmp/" rel="noopener noreferrer">BMP</a>
 
 ## **Convert Chart to Image API**
 
-### Web API
-
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/convert/chart/image
-```
-
-```bash
-curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/chart/image?format=png&chartIndex=0" \
-     -H "Authorization: Bearer {access_token}" \
-     -F "Spreadsheet=@MyWorkbook.xlsx" \
-     -o chart.png
 ```
 
 ### **Security and Authentication**
@@ -35,19 +26,19 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Request Parameters:**
 
-| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                                                        | Required |
-| :------------- | :------ | :------------------------- | :--------------------------------------------------------------------------------- | :------- |
-| Spreadsheet    | File    | FormData                   | Upload the spreadsheet file containing the chart.                                  | Yes      |
-| worksheet      | String  | Query                      | Specify the worksheet name if applicable.                                          | No       |
-| chartIndex     | Integer | Query                      | Index of the chart to convert.                                                     | Yes      |
-| format         | String  | Query                      | (Required) The desired image type (e.g., svg, png, jpg).                           | Yes      |
-| outPath        | String  | Query                      | (Optional) The folder path where the output file will be stored; defaults to null. | No       |
-| outStorageName | String  | Query                      | Name of the storage for the output file.                                           | No       |
-| fontsLocation  | String  | Query                      | Specify custom fonts if needed.                                                    | No       |
-| region         | String  | Query                      | Set the spreadsheet region.                                                        | No       |
-| password       | String  | Query                      | The password for opening the spreadsheet file.                                     | No       |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| worksheet | String | Query | worksheet name of spreadsheet. |
+| chartIndex | Integer | Query | chart index of worksheet. |
+| format | String | Query | (Required) The desired image type (e.g., svg, png, jpg). |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| fontsLocation | String | Query | Use Custom fonts. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
 
-## **Response**
+### **Response**
 
 ```json
 [
@@ -61,15 +52,32 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 ]
 ```
 
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
 **HTTP Status Codes**
 
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | Invalid url. |
+| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
+| 404 | Not Found | Source file not accessible. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining conversion data. |
+
+### Web API
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/chart/image?format=png&chartIndex=0" \
+     -H "Authorization: Bearer {access_token}" \
+     -F "Spreadsheet=@MyWorkbook.xlsx" \
+     -o chart.png
+```
 
 ## Where should you use the Convert Chart to Image API?
 

@@ -11,6 +11,8 @@ linktitle: "Convert Task"
 ArticleTitle: "Aspose.Cells Cloud Convert Task: REST API and SDK Examples"
 ---
 
+The **PostRunTask** API (`POST https://api.aspose.cloud/v3.0/cells/task/runtask`) in Aspose.Cells Cloud enables you to execute conversion and other document processing tasks—such as converting spreadsheets to various formats—by sending a structured `TaskData` object in the request body, returning the processed output as a downloadable stream.
+
 ## REST API
 
 | **API**             | **Type** | **Description** | **Resource Link**                                                         |

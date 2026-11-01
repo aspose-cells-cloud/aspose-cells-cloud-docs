@@ -11,7 +11,7 @@ description: "Add an empty row to an Excel worksheet using Aspose.Cells Cloud AP
 weight: 100
 ---
 
-This REST API adds a new row to an Excel worksheet. It inserts an empty row at the specified zero‑based index.
+The **PutInsertWorksheetRow** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/{rowIndex}`) enables Aspose.Cells Cloud to insert a new empty row into a specified worksheet at a zero-based index, supporting programmatic row management in Excel files via REST.
 
 **Prerequisites:**
 

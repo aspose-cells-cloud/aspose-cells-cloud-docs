@@ -10,6 +10,8 @@ description: "Import CSV, JSON, XML into Excel using Aspose.Cells Cloud REST API
 weight: 100
 ---
 
+The **ImportDataIntoSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/import/data`) in Aspose.Cells Cloud enables secure, direct import of structured data from CSV, JSON, or XML files into Excel workbooks without intermediate storage, supporting large datasets and precise placement via `worksheet` and `startcell` parameters to streamline ETL, reporting, and data consolidation workflows.
+
 ## Overview
 
 Aspose.Cells Cloud’s **Import Data into Spreadsheet API** enables efficient, secure import of structured data from CSV, JSON, and XML files directly into Excel workbooks—without intermediate file storage. Ideal for ETL pipelines, report generation, and data consolidation, the API handles large datasets (up to 1,000,000 rows), supports flexible positioning, and offers robust locale and formatting controls.

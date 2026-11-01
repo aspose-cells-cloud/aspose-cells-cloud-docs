@@ -11,7 +11,7 @@ weight: 210
 ArticleTitle: "Delete background on an Excel worksheet using Aspose.Cells Cloud API"
 ---
 
-This REST API deletes the background image of a worksheet.
+The **DeleteWorksheetBackground** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/background`) in Aspose.Cells Cloud enables programmatic removal of background images or watermarks from a specified worksheet. This REST operation requires the file name and worksheet name as path parameters, with optional query parameters for folder and storage location. It supports deletion of both static background images and watermark elements, offering a straightforward way to clean up worksheet visuals without altering other content.
 
 **Prerequisites:** You must have the workbook stored in Aspose Cloud storage and possess a valid JWT access token for authentication.
 

@@ -11,7 +11,7 @@ ArticleTitle: "Get Named Ranges on an Excel Workbook – Aspose.Cells Cloud API"
 weight: 100
 ---
 
-This REST API returns information about named ranges defined within worksheets.
+The **GetNamedRanges** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/ranges`) retrieves descriptions of named ranges defined within the worksheets of a specified workbook file, enabling developers to programmatically inspect range definitions and their properties using Aspose.Cells Cloud.
 
 **Background** – A _named range_ is a user‑defined identifier that refers to a specific cell or block of cells in a worksheet. Named ranges simplify formula creation, improve readability, and enable programmatic access to frequently used areas of a workbook.
 

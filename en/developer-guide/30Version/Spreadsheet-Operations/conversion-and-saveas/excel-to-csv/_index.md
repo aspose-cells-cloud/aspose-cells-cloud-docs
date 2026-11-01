@@ -14,7 +14,7 @@ weight: 90
 ArticleTitle: "Convert Excel to CSV using Aspose.Cells Cloud REST API"
 ---
 
-This REST API converts a spreadsheet file to a CSV‑format file.
+The **PostConvertWorkbookToCSV** API (`POST https://api.aspose.cloud/v3.0/cells/convert/csv`) converts Excel files to CSV format using Aspose.Cells Cloud, supporting password-protected workbooks and optional parameters such as regional settings and Excel restriction checks; it accepts a file upload via multipart form data and returns detailed file information upon successful conversion.
 
 ## REST API
 

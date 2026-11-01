@@ -10,7 +10,7 @@ weight: 100
 ArticleTitle: "Delete All Worksheet Validations in Excel via Aspose.Cells Cloud API"
 ---
 
-**Prerequisites**
+The **DeleteWorksheetValidations** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations`) enables developers to remove all data validation rules from a specified worksheet in an Excel workbook via the Aspose.Cells Cloud REST API, supporting efficient cleanup and dynamic workbook management without manual intervention.
 
 - A valid Aspose Cloud account.
 - A JWT access token obtained via the Aspose Cloud authentication API (`/connect/token`).

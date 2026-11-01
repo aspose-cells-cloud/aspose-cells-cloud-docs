@@ -11,7 +11,7 @@ weight: 40
 ArticleTitle: "Import JSON into Excel with Aspose.Cells Cloud REST API"
 ---
 
-This REST API **imports JSON data** into an Excel worksheet.
+The **PostWorkbookImportJson** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/importjson`) enables Aspose.Cells Cloud users to import JSON data—either from a cloud file or an HTTP URI—directly into an Excel workbook, supporting both structured and unstructured JSON formats without requiring manual conversion.
 
 ## REST API
 

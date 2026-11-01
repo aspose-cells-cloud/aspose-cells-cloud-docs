@@ -14,7 +14,7 @@ weight: 30
 ArticleTitle: "Import Integer Array into Excel Worksheet – Aspose.Cells Cloud API"
 ---
 
-This REST API imports an integer array into an Excel worksheet.
+The **PostImport** API (`POST https://api.aspose.cloud/v3.0/cells/import`) enables importing data, such as an integer array, into an Excel worksheet using Aspose.Cells Cloud, supporting output formats including XLSX, PDF, CSV, and others; it accepts an uploaded file via form data and optional query parameters to control output format, password protection, and Excel restrictions.
 
 The request must be an HTTP **POST** with multipart content (see [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). The first part of the multipart body contains the **ImportIntegerArrayOption** JSON payload, and the second part contains the source data file (e.g., a CSV or binary Excel file).
 

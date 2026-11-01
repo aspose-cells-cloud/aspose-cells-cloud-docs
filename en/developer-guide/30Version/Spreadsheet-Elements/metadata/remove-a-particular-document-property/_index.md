@@ -11,7 +11,7 @@ weight: 50
 ArticleTitle: "Delete a Document Property from Excel in Aspose.Cells Cloud REST API"
 ---
 
-This REST API deletes a document property from a workbook.
+The **DeleteDocumentProperty** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/documentproperties/{propertyName}`) enables Aspose.Cells Cloud users to remove a specific built-in or custom document property from an Excel workbook by specifying the workbook name and property name as path parameters. This REST operation supports optional query parameters such as `folder`, `storageName`, and `type` to target files in cloud storage and refine the property selection. It delivers a standardized `CellsCloudResponse` and integrates with SDKs for .NET, Java, Python, Go, and Node.js, allowing developers to programmatically clean up metadata without manual intervention in Excel.
 
 ## REST API
 

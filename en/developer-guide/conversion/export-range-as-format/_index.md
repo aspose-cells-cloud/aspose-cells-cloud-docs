@@ -11,6 +11,8 @@ weight: 100
 ArticleTitle: "Export Excel Range to PDF, PNG, CSV, SVG via Aspose.Cells Cloud API"
 ---
 
+The **ExportRangeAsFormat** API (`GET https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{range}`) in Aspose.Cells Cloud converts a specified range of a cloud-hosted Excel workbook—such as A1:C12 in a given worksheet—to a target format (e.g., PDF, PNG, SVG, CSV) without downloading the file locally, enabling efficient, server-side conversion directly from cloud storage.
+
 ## Export Range as Format API
 
 Convert a specific range within a cloud-hosted Excel or spreadsheet workbook to another format—PDF, PNG, SVG, CSV, and more—without downloading the file locally. The output can be saved to cloud storage or returned as a binary stream.

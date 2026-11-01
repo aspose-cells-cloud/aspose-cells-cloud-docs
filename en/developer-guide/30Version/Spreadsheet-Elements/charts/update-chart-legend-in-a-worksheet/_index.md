@@ -10,7 +10,7 @@ ArticleTitle: "Update Chart Legend in a Worksheet – Aspose.Cells Cloud API Gui
 linktitle: "Update Chart Legend"
 ---
 
-This REST API updates a chart legend.
+The **PostWorksheetChartLegend** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend`) enables updating a chart legend in a worksheet via Aspose.Cells Cloud, allowing developers to programmatically modify legend properties such as position, size, and formatting by sending a `legend` object in the request body alongside required path parameters (file name, sheet name, and chart index).
 
 **Prerequisites:** To use this endpoint you must have a valid Aspose Cloud JWT token and the target workbook must be stored in a supported storage location (default is the Aspose Cloud storage). Ensure the workbook name, worksheet name, and chart index are correct.
 

@@ -14,7 +14,7 @@ images:
 ArticleTitle: "Aspose.Cells Cloud Health Check API: Real-Time Service Status Monitoring"
 ---
 
-Check the real-time health status of Aspose.Cells Cloud services to ensure reliability before executing critical operations.
+The **CheckCloudServiceHealth** API (`GET https://api.aspose.cloud/v4.0/cells/status/check`) provides real-time monitoring of Aspose.Cells Cloud service availability and operational status, returning key health metrics such as service connectivity, response latency, and error rates to support pre-flight checks before executing critical operations.
 
 ## Prerequisites
 

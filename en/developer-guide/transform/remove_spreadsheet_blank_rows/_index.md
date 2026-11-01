@@ -11,6 +11,8 @@ description: "Deletes all blank rows from a spreadsheet file."
 weight: 100
 ---
 
+The **RemoveSpreadsheetBlankRows** API (`PUT https://api.aspose.cloud/v4.0/cells/remove/blank-rows`) in Aspose.Cells Cloud deletes all completely empty rows—those with no data or objects—from a spreadsheet by scanning every worksheet, helping to clean up and organize large datasets while preserving data integrity.
+
 ## The Remove Spreadsheet Blank Rows of Aspose.Cells Cloud Web Services
 
 This method removes rows from a spreadsheet that are completely empty, containing no data or objects. It scans through all sheets and identifies rows where every cell is empty. The operation is performed directly on the spreadsheet, ensuring that only rows with no content are deleted. This helps in cleaning up the spreadsheet and removing unnecessary blank rows, making the data more organized and easier to manage. Users should ensure that the spreadsheet is backed up before performing this operation, as deleted rows cannot be recovered.

@@ -11,6 +11,8 @@ linktitle: "ImportData Task"
 ArticleTitle: "Aspose.Cells Cloud ImportData Task: Import Batch Data into Excel via REST API & SDKs"
 ---
 
+The **PostRunTask** API (`POST https://api.aspose.cloud/v3.0/cells/task/runtask`) is a RESTful operation in Aspose.Cells Cloud v3.0 that executes predefined tasks—such as importing data—by accepting a `TaskData` object in the request body and returning the processed result as a stream, enabling programmatic automation of common spreadsheet operations directly from web-based clients.
+
 ## REST API
 
 | **API**             | **Type** | **Description** | **Resource Link**                                                         |

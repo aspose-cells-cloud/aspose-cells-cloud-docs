@@ -10,7 +10,7 @@ description: "Learn how to move folders in Aspose.Cells Cloud storage via the RE
 weight: 100
 ---
 
-This API moves a folder from one location to another within Aspose.Cells Cloud storage. It helps organize files and manage cloud storage efficiently.
+The **MoveFolder** API (`PUT https://api.aspose.cloud/v4.0/cells/storage/folder/move/{srcPath}`) in Aspose.Cells Cloud moves a folder from a specified source path to a destination path within cloud storage, using required path parameter `srcPath` and query parameter `destPath` to define the operation, and optionally supporting `srcStorageName` and `destStorageName` for multi-storage scenarios, enabling efficient reorganization of files and storage resources programmatically.
 
 ## **Excel API: Move Folder**
 

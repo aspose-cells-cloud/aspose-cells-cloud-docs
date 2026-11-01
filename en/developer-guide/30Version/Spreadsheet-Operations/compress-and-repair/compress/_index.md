@@ -11,6 +11,8 @@ description: "Compress Excel files up to 500 MB via Aspose.Cells Cloud API with 
 weight: 39
 ---
 
+The **PostCompress** API (`POST https://api.aspose.cloud/v3.0/cells/compress`) in Aspose.Cells Cloud enables compression of Excel files—supporting formats such as Xls, Xlsx, Xlsm, Xlsb, and Ods—by allowing users to upload a file via form data and optionally specify compression level (1–100), password, and Excel restriction checks to generate optimized target files.
+
 ## The PostCompress API of Aspose.Cells Cloud Web Services
 
 **Prerequisites:**

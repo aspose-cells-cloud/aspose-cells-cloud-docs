@@ -11,7 +11,7 @@ weight: 65
 ArticleTitle: "Add a Color Filter in an Excel Worksheet using Aspose.Cells Cloud API"
 ---
 
-Learn how to add a color filter to an Excel worksheet using the Aspose.Cells Cloud API. This guide covers the required endpoint, parameters, authentication prerequisites, sample cURL request, SDK examples, and response handling.
+The **PutWorksheetColorFilter** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/colorFilter`) enables developers to apply a color filter to a specified field within an Excel worksheet’s AutoFilter, allowing conditional highlighting or hiding of rows based on cell background or font color; it requires the workbook name, worksheet name, target range, field index, and a color filter request body, with optional parameters to match blank cells and refresh the filter.
 
 This REST API adds a **color filter** to an Excel worksheet.
 

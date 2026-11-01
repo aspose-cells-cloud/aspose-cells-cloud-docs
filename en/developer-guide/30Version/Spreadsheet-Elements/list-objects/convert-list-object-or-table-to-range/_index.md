@@ -13,7 +13,7 @@ description: "Learn how to convert an Excel ListObject (table) to a Range using 
 weight: 30
 ---
 
-This REST API converts a **ListObject (table)** to a **Range** within an Excel worksheet.
+The **PostWorksheetListObjectConvertToRange** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/ConvertToRange`) converts a specified ListObject (table) to a plain Range within an Excel worksheet, enabling developers to remove table formatting while preserving cell content and structure. Aspose.Cells Cloud supports this operation via REST API and SDKs for .NET, Java, Go, Node.js, Python, and other languages, offering reliable programmatic control over spreadsheet elements without requiring local Excel installation.
 
 **Prerequisites:**  
 Before calling the endpoint, ensure that the workbook is uploaded to your Aspose Cloud storage, the worksheet contains the target ListObject, and you are using a supported file format (e.g., .xlsx, .xlsm).

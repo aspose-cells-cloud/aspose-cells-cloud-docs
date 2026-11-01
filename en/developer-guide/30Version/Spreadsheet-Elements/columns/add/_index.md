@@ -13,7 +13,7 @@ weight: 100
 ArticleTitle: "Add Empty Column to Excel Worksheet Using Aspose.Cells Cloud API"
 ---
 
-This REST API inserts one or more columns into a worksheet.
+The **PutInsertWorksheetColumns** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex}`) inserts one or more columns into a specified worksheet at a given column index, using Aspose.Cells Cloud to programmatically manage spreadsheet structure. It requires the file name, worksheet name, column index, and number of columns to insert, with optional control over reference updates and storage location. This operation supports dynamic worksheet expansion while maintaining formatting and formula integrity across the workbook.
 
 **Prerequisites**  
 Before calling this endpoint, ensure you have completed the following steps:

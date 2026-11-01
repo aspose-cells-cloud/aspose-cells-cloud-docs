@@ -10,7 +10,7 @@ weight: 50
 linktitle: "Add Format Condition"
 ---
 
-This REST API adds a format condition to a worksheet.
+The **PutWorksheetFormatCondition** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}`) adds a format condition to a specified worksheet in Aspose.Cells Cloud, supporting types such as CellValue, Expression, ColorScale, DataBar, IconSet, Top10, UniqueValues, DuplicateValues, and ContainsText; it requires parameters including the cell area, condition type, operator type, and one or two formulas to define the formatting rule.
 
 ## Security and Authentication
 The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).

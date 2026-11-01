@@ -11,7 +11,7 @@ weight: 90
 ArticleTitle: "Update Cell Style for Pivot Table - Aspose.Cells Cloud API Documentation"
 ---
 
-This REST API updates the **style** of a cell in a pivot table.
+The **PostPivotTableCellStyle** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/Format`) enables Aspose.Cells Cloud users to update the cell style of a specific cell within a pivot table by specifying the file name, worksheet name, pivot table index, and the zero-based row and column indices of the target cell, along with a style object in the request body; this operation supports precise formatting control for pivot table elements without requiring local file manipulation.
 
 **Prerequisites / Authentication**  
 To call this endpoint you must have a valid Aspose Cloud JWT access token. Obtain the token through the OAuth 2.0 flow described in the [Authentication Guide](/authentication/). Include the token in the request header:

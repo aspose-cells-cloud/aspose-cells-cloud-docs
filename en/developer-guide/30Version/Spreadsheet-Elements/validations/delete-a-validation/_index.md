@@ -10,7 +10,7 @@ weight: 100
 ArticleTitle: "Delete Worksheet Validation in Excel via Aspose.Cells Cloud REST API"
 ---
 
-This REST API deletes a worksheet validation by its zero‑based index on an Excel worksheet.
+The **DeleteWorksheetValidation** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations/{validationIndex}`) enables developers to remove a specific data validation from an Excel worksheet by its zero-based index using Aspose.Cells Cloud, supporting programmatic cleanup of validation rules without altering other worksheet content.
 
 ## REST API
 

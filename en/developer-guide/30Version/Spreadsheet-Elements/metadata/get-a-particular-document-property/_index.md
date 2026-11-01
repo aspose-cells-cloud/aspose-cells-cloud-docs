@@ -11,7 +11,7 @@ weight: 100
 ArticleTitle: "Get a Specific Document Property from Excel using Aspose.Cells Cloud API"
 ---
 
-This REST API reads a document property by name.
+The **GetDocumentProperty** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/documentproperties/{propertyName}`) retrieves a specific built-in or custom document property from an Excel workbook by name using Aspose.Cells Cloud, supporting common properties like Author, Title, or Custom fields without requiring local file processing.
 
 ## REST API
 

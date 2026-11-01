@@ -17,6 +17,8 @@ weight: 100
 ArticleTitle: "Remove Characters by Position in Excel with Aspose.Cells Cloud API"
 ---
 
+The **RemoveCharactersByPosition** API (`PUT https://api.aspose.cloud/v4.0/cells/content/remove/characters-by-position`) in Aspose.Cells Cloud v4.0 deletes characters from Excel cell ranges by position—supporting first/last N characters, text before/after a substring, or content between two delimiters—while preserving formulas, formatting, and data validation, enabling precise text cleaning for data standardization and batch preprocessing without complex regex.
+
 ## Introduction
 
 Remove unwanted characters from Excel cells based on positional rules. Aspose.Cells Cloud Web API supports five deletion modes: first N characters, last N characters, before/after a substring, or between two delimiters. This enables precise text cleaning without complex regex, ideal for data standardization, log parsing, and batch preprocessing.

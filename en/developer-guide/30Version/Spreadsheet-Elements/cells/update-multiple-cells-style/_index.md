@@ -20,6 +20,8 @@ linktitle: "Update Cells Style API"
 ArticleTitle: "Aspose.Cells Cloud API: Update Multiple Cells Style in Excel"
 ---
 
+The **PostUpdateWorksheetRangeStyle** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/style`) enables developers to update the formatting style for a specified cell range in an Excel worksheet via Aspose.Cells Cloud, supporting key parameters including `name`, `sheetName`, `range`, and a `style` object in the request body to apply consistent styling across multiple cells efficiently.
+
 ## REST API
 
 This REST API updates the **style** for a range of cells in an Excel worksheet.

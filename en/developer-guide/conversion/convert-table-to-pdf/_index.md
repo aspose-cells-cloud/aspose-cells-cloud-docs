@@ -12,11 +12,9 @@ description: "Convert Excel table to PDF via Aspose.Cells Cloud API with cURL or
 weight: 100
 ---
 
-Export table data from a local Excel file to a PDF file using the Cloud API.
+The **ConvertTableToPdf** API (`PUT https://api.aspose.cloud/v4.0/cells/convert/table/pdf`) in Aspose.Cells Cloud enables direct conversion of a specific table from a local Excel file—uploaded as form data—into a PDF, using the worksheet name and table name as required identifiers; this cloud-native operation eliminates the need to store files in cloud storage, reduces upload overhead, and performs conversion entirely server-side with minimal client-side setup.
 
 ## **Convert Table to PDF via REST API**
-
-### Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/convert/table/pdf
@@ -28,16 +26,18 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Request Parameters:**
 
-| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                                                             |
-| :------------- | :----- | :------------------------- | :-------------------------------------------------------------------------------------- |
-| Spreadsheet    | File   | FormData                   | Upload the spreadsheet file to be converted.                                            |
-| worksheet      | String | Query                      | The worksheet name of the spreadsheet.                                                  |
-| tableName      | String | Query                      | Name of the table to convert.                                                           |
-| outPath        | String | Query                      | (Optional) The folder path where the converted PDF will be stored. The default is null. |
-| outStorageName | String | Query                      | Specify the name of the output file storage.                                            |
-| fontsLocation  | String | Query                      | Use custom fonts for the PDF.                                                           |
-| region         | String | Query                      | Specifies the region setting for the spreadsheet.                                       |
-| password       | String | Query                      | Password for accessing the spreadsheet file.                                            |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| worksheet | String | Query | worksheet name of spreadsheet. |
+| tableName | String | Query | table name |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| fontsLocation | String | Query | Use Custom fonts. |
+| AutoRowsFit | Boolean | Query | (Optional) Autofits all rows in worksheets. |
+| AutoColumnsFit | Boolean | Query | (Optional) Autofits all columns in worksheets. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
 
 ### **Response**
 
@@ -64,13 +64,14 @@ Content-Length: 124578
 
 **HTTP Status Codes**
 
-| Code | Meaning               | Description                                                  |
-| ---- | --------------------- | ------------------------------------------------------------ |
-| 200  | OK                    | Conversion successful; PDF returned as binary stream.        |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                            |
-| 500  | Internal Server Error | Unexpected server error.                                     |
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | Invalid url. |
+| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
+| 404 | Not Found | Source file not accessible. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining conversion data. |
 
 ## **Where Should You Use the Convert Table to PDF API?**
 

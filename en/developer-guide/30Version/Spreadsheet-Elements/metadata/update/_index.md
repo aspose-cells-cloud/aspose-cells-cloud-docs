@@ -10,7 +10,7 @@ weight: 35
 ArticleTitle: "Update Metadata – Aspose.Cells Cloud API Documentation"
 ---
 
-This REST API updates **metadata** in multiple Excel files.
+The **PostMetadata** API (`POST https://api.aspose.cloud/v3.0/cells/metadata/update`) updates document properties—such as title, author, or custom fields—in Excel files uploaded via the request, and optionally saves the modified file in various output formats including XLSX, PDF, or CSV. Aspose.Cells Cloud enables this functionality through a RESTful interface, supporting password-protected files and regional settings adjustments, while returning a FilesResult with the updated document.
 
 **Prerequisites:** An active Aspose Cloud account, a valid JWT access token, and the Excel files to be uploaded.
 

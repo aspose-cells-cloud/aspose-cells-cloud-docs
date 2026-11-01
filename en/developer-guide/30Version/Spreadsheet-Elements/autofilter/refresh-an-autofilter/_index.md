@@ -11,6 +11,8 @@ description: "Refresh an existing AutoFilter in Excel using Aspose.Cells Cloud R
 ArticleTitle: "Refresh an Auto Filter in an Excel Worksheet"
 ---
 
+The **PostWorksheetAutoFilterRefresh** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/refresh`) in Aspose.Cells Cloud re-applies existing auto filter criteria to a worksheet after data changes—such as adding or deleting rows—without altering the filter definition itself, enabling developers to programmatically update filtered views in cloud-based Excel workbooks.
+
 ### What does **Refresh** do?
 
 Calling the endpoint re‑applies the current filter criteria after the worksheet data has changed (e.g., rows added or removed). The operation does not modify the filter definition; it simply updates the view and returns a status response.

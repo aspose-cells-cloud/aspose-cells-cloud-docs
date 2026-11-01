@@ -11,7 +11,7 @@ weight: 100
 ArticleTitle: "Autofit Single Column in Excel with Aspose.Cells Cloud REST API"
 ---
 
-This REST API automatically adjusts the width of a single column or a contiguous range of columns on an Excel worksheet.
+The **PostAutofitWorksheetColumns** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitcolumns`) in Aspose.Cells Cloud automatically adjusts the width of one or more columns in a specified worksheet, supporting optional range parameters like `startColumn` and `endColumn` to autofit a contiguous subset of columns while preserving existing formatting and data integrity.
 
 ## REST API
 

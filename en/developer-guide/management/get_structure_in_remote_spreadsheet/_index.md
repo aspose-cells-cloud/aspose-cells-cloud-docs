@@ -11,7 +11,7 @@ description: "Retrieve the structural metadata of a remote Excel workbook, inclu
 weight: 100
 ---
 
-Structurally convert the core metadata, worksheets, tables, pivot tables, charts, shapes, and other information of an Excel workbook into a JObject type JSON object, for scenarios such as data export, API responses, and log recording.
+The **GetStructureInRemoteSpreadsheet** API (`GET https://api.aspose.cloud/v4.0/cells/{name}/structure`) in Aspose.Cells Cloud retrieves a structured JSON representation of an Excel workbook’s core elements—including metadata, worksheets, tables, pivot tables, charts, and shapes—by converting them into a JObject, enabling efficient data export, API integration, and logging without requiring local file processing.
 
 ## The Get Structure In Remote Spreadsheet Web API Endpoint
 

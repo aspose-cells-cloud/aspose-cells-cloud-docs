@@ -10,7 +10,7 @@ weight: 100
 type: docs
 ---
 
-Clean Excel data by converting text-formatted numbers to numeric values, replacing unwanted characters and line breaks, and normalizing accented characters to standard letters using the Aspose.Cells Cloud API.
+The **ConvertText** API (`PUT https://api.aspose.cloud/v4.0/cells/content/convert/text`) in Aspose.Cells Cloud enables users to clean and standardize Excel data by converting text-formatted numbers into numeric values, replacing unwanted characters and line breaks, and normalizing accented characters to plain letters, ensuring accurate calculations and consistent formatting across spreadsheets.
 
 ## Overview
 

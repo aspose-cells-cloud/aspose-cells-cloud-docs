@@ -10,6 +10,8 @@ url: /math-calculate/
 weight: 100
 ---
 
+The **MathCalculate** API (`PUT https://api.aspose.cloud/v4.0/cells/calculate/math`) enables bulk mathematical operations on spreadsheet data via Aspose.Cells Cloud, allowing users to perform calculations across entire columns, rows, or tables without writing formulas or using VBA by uploading a spreadsheet file and specifying an operation (e.g., `SUM`, `AVERAGE`) and numeric value as query parameters.
+
 ## Introduction
 
 Perform bulk calculations across entire columns, rows, or tables without writing formulas or using VBA.

@@ -15,7 +15,7 @@ description: "Convert Excel to CSV, PDF, HTML, JSON, Markdown via Aspose.Cells C
 weight: 100
 ---
 
-Before calling this endpoint, ensure you have obtained a valid JWT token and that the source workbook is stored in a supported storage location (e.g., Aspose Cloud Storage). Include the token in the `Authorization` header and, if needed, specify the `storageName` query parameter.
+The **PutConvertWorkbook** API (`PUT https://api.aspose.cloud/v3.0/cells/convert`) enables conversion of Excel workbooks to 30+ formats—including PDF, CSV, HTML, PNG, and others—by uploading the source file in the request body and specifying the target format via the `format` query parameter, with optional support for password-protected files and custom output paths.
 
 This REST API converts an Excel file to various output formats.
 

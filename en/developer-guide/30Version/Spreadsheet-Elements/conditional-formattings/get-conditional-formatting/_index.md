@@ -10,7 +10,7 @@ linktitle: "Get Conditional Formatting"
 ArticleTitle: "Retrieve Conditional Formatting Rules via Aspose.Cells Cloud REST API"
 ---
 
-This REST API retrieves conditional formatting rules from a worksheet.
+The **GetWorksheetConditionalFormatting** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}`) retrieves a specific conditional formatting rule—identified by its zero-based index—from a named worksheet within a spreadsheet file stored in Aspose.Cells Cloud, enabling developers to programmatically inspect and utilize complex formatting logic such as color scales, data bars, or icon sets applied to cells.
 
 ## REST API
 

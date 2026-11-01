@@ -10,7 +10,7 @@ weight: 100
 ArticleTitle: "Aspose.Cells Cloud: Add Text to Excel Cells via PostAddTextContent API"
 ---
 
-Adds text content to a specified location within a spreadsheet. It requires an object that defines the text to be added and the insertion location.
+The **PostAddTextContent** API (`POST https://api.aspose.cloud/v3.0/cells/addtext`) in Aspose.Cells Cloud v3.0 adds text content to a specified location within a spreadsheet document by accepting an `addTextOptions` object in the request body that defines both the text to insert and its insertion position, supporting flexible modes such as prepending labels to cells, appending uniform suffixes, or inserting text before/after a fixed character count.
 
 ## **Excel API: PostAddTextContent**
 

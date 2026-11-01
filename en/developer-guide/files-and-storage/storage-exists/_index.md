@@ -10,8 +10,7 @@ description: "Check if a storage container exists using Aspose.Cells Cloud API: 
 weight: 100
 ---
 
-The `storageExists` API checks whether a specified storage exists in the Aspose.Cells cloud service. This functionality is critical for ensuring that all operations dependent on storage can proceed without errors.
-**Summary** – The `storageExists` endpoint lets you confirm whether a specific storage container is available in Aspose.Cells Cloud. Use it before performing file‑related operations to avoid runtime errors.
+The **StorageExists** API (`GET https://api.aspose.cloud/v4.0/cells/storage/{storageName}/exist`) checks whether a specified storage container exists in Aspose.Cells Cloud, enabling developers to verify storage availability before performing file operations and preventing runtime errors due to missing storage.
 
 ## Check Storage Existence (storageExists)
 

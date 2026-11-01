@@ -11,7 +11,7 @@ ArticleTitle: "Get All Document Properties – Aspose.Cells Cloud API"
 weight: 25
 ---
 
-This REST API reads document properties.
+The **GetDocumentProperties** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/documentproperties`) retrieves descriptions of Excel file properties for a specified workbook via Aspose.Cells Cloud, supporting optional filtering by property type and specifying storage location through query parameters.
 
 ## GetDocumentProperties API
 

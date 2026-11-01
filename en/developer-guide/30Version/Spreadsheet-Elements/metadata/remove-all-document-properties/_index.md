@@ -11,7 +11,7 @@ weight: 58
 ArticleTitle: "Clear All Document Properties in Excel via Aspose.Cells Cloud REST API"
 ---
 
-This REST API deletes all custom document properties and clears built‑in ones.
+The **DeleteDocumentProperties** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/documentproperties`) in Aspose.Cells Cloud deletes all custom document properties and resets built-in ones for a specified workbook, enabling clean metadata management through a single REST call using the workbook name as a required path parameter.
 
 ## REST API
 

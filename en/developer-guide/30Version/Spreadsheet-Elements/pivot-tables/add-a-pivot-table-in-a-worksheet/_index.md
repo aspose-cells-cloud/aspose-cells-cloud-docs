@@ -11,7 +11,7 @@ weight: 30
 ArticleTitle: "How to Add a Pivot Table in an Excel Worksheet using Aspose.Cells Cloud"
 ---
 
-This REST API adds a pivot table into a worksheet.
+The **PutWorksheetPivotTable** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables`) in Aspose.Cells Cloud adds a PivotTable to a specified worksheet, supporting parameters such as `sourceData`, `destCellName`, and `tableName` to define the PivotTable’s data source, position, and name; this enables programmatic creation of complex summary reports without manual Excel interaction.
 
 **Prerequisites:**
 

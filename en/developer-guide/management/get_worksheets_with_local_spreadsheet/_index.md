@@ -11,6 +11,8 @@ description: "Fetches a complete list of worksheets from the currently active lo
 weight: 100
 ---
 
+The **GetWorksheetsWithLocalSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/worksheets`) in Aspose.Cells Cloud fetches a complete list of worksheets—including their names and types (e.g., standard, chart, macro)—from the currently active local spreadsheet application via interop or a local API, returning the collection as a structured JSON array; this enables developers to populate a worksheet selector UI or audit spreadsheet contents by uploading the file via form data.
+
 ## The Get Worksheets With Local Spreadsheet of Aspose.Cells Cloud Web Services
 
 This endpoint accesses the local spreadsheet application (e.g., Excel) via interop or a local API, collects the name and type (e.g., standard, chart, macro) of every worksheet, and returns the collection as a structured JSON array. It is typically used to populate a worksheet selector UI or to audit spreadsheet contents.

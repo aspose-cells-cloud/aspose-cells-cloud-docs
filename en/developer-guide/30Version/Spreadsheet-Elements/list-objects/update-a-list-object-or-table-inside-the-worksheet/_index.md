@@ -13,7 +13,7 @@ description: "Learn how to update an Excel table using Aspose.Cells Cloud API (v
 weight: 100
 ---
 
-This REST API updates the properties of a **list object** (table) in an Excel worksheet.
+The **PostWorksheetListObject** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}`) updates the properties of a list object (table) in an Excel worksheet by its index, using Aspose.Cells Cloud to programmatically modify table styling, structure, or content without manual intervention in the spreadsheet.
 
 ## Security and Authentication
 

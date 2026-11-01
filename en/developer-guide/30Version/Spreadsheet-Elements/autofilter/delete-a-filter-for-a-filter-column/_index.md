@@ -11,6 +11,8 @@ weight: 100
 ArticleTitle: "Delete AutoFilter in Excel Worksheet Using Aspose.Cells Cloud API"
 ---
 
+The **DeleteWorksheetFilter** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/filter`) enables Aspose.Cells Cloud users to remove an AutoFilter from a specific column in an Excel worksheet by specifying the column’s zero-based `fieldIndex`. This REST operation supports deleting filters based on a field offset, and optionally accepts a `criteria` parameter for targeted removal, allowing precise control over filtered data without reapplying or recreating the filter range.
+
 ## REST API
 
 This REST API deletes an **AutoFilter** on an Excel worksheet.

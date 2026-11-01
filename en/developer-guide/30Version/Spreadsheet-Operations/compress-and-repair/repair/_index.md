@@ -10,7 +10,7 @@ weight: 39
 ArticleTitle: "Aspose.Cells Cloud Repair API: Fix Corrupt Excel XLSX XLSM Files Online"
 ---
 
-This REST API allows you to **repair** Excel files.
+The **PostRepair** API (`POST https://api.aspose.cloud/v3.0/cells/repair`) in Aspose.Cells Cloud enables repair of corrupted or abnormal Excel files and supports output in multiple formats such as XLSX, PDF, CSV, HTML, and image formats like PNG and JPG, by accepting the damaged file via form-data upload and optionally specifying the desired output format through the `outFormat` query parameter.
 
 - Repair XLS, XLSX, XLSM, XLSB, ODS and other spreadsheet formats.
 - Supports uploading multiple files in a single request.

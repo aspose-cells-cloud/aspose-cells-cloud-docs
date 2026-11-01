@@ -11,6 +11,8 @@ description: "Switch rows and columns in the spreadsheet."
 weight: 100
 ---
 
+The **UnpivotTable** API (`PUT https://api.aspose.cloud/v4.0/cells/unpivot/table`) in Aspose.Cells Cloud converts a specified pivot table range in a spreadsheet into a flat, non-pivoted data structure by switching rows and columns. Developers can upload a spreadsheet file, specify the worksheet name and the index of the pivot table range to unpivot, and optionally control behavior such as skipping empty values or setting the output storage location. This operation supports secure, JWT-authenticated access and allows locale-sensitive formatting via the region parameter.
+
 ## The Unpivot Table of Aspose.Cells Cloud Web Services
 
 Switch rows and columns in the spreadsheet.

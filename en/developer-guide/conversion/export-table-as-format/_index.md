@@ -11,7 +11,7 @@ weight: 100
 ArticleTitle: "Export Excel Table to PDF, PNG, CSV, JSON via Aspose.Cells Cloud REST API"
 ---
 
-Export a cloud-stored Excel table (structured list) to another format — such as PDF, PNG, CSV, or JSON — directly in the cloud without downloading the workbook.
+The **ExportTableAsFormat** API (`GET https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/tables/{tableName}`) in Aspose.Cells Cloud converts a specific table from a cloud-stored Excel workbook directly to a target format—such as PDF, PNG, SVG, CSV, or XLSX—without downloading the file locally, enabling efficient, server-side export of structured data.
 
 {{% alert color="primary" %}}
 **Last updated**: March 15, 2024  
@@ -34,23 +34,43 @@ All requests require [JWT token-based authentication](https://docs.aspose.cloud/
 
 ### Request Parameters
 
-| Parameter Name   | Type    | Location | Required | Description                                                                                                   |
-| ---------------- | ------- | -------- | -------- | ------------------------------------------------------------------------------------------------------------- |
-| `name`           | string  | Path     | ✅ Yes   | Name of the workbook file in cloud storage.                                                                   |
-| `worksheet`      | string  | Path     | ✅ Yes   | Name of the worksheet containing the table.                                                                   |
-| `tableName`      | string  | Path     | ✅ Yes   | Name of the table to export.                                                                                  |
-| `format`         | string  | Query    | ✅ Yes   | Output format: `pdf`, `png`, `svg`, `csv`, `json`, etc. Case-insensitive (e.g., `"Pdf"` or `"PDF"` accepted). |
-| `folder`         | string  | Query    | ❌ No    | Folder path of the workbook. Defaults to root.                                                                |
-| `storageName`    | string  | Query    | ❌ No    | Custom cloud storage name. Uses default storage if omitted.                                                   |
-| `outPath`        | string  | Query    | ❌ No    | Output file path in cloud storage. Defaults to root.                                                          |
-| `outStorageName` | string  | Query    | ❌ No    | Storage for output file. Defaults to `storageName` or default storage.                                        |
-| `fontsLocation`  | string  | Query    | ❌ No    | Custom font directory for accurate rendering.                                                                 |
-| `region`         | string  | Query    | ❌ No    | Locale (e.g., `en-US`, `fr-FR`) affecting number/date formatting.                                             |
-| `password`       | string  | Query    | ❌ No    | Password to decrypt the protected workbook.                                                                   |
-| `autoRowsFit`    | boolean | Query    | ❌ No    | Auto-fit rows before export.                                                                                  |
-| `autoColumnsFit` | boolean | Query    | ❌ No    | Auto-fit columns before export.                                                                               |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | (Required) The name of the workbook file to be retrieved. |
+| worksheet | String | Path | worksheet name |
+| tableName | String | Path | table name |
+| format | String | Query | (Required) The desired format  (e.g., "png", "Pdf", "svg"). |
+| folder | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| storageName | String | Query | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted. |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| fontsLocation | String | Query | Use Custom fonts. |
+| AutoRowsFit | Boolean | Query | (Optional) Autofits all rows in worksheets. |
+| AutoColumnsFit | Boolean | Query | (Optional) Autofits all columns in worksheets. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
 
 ### Response
+
+```json
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
 
 Returns the exported table as binary file content.
 

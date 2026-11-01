@@ -19,7 +19,7 @@ ArticleTitle: "Get Chart Title from a Worksheet"
 linktitle: "Get Chart Title"
 ---
 
-This REST API retrieves the title of a chart that is stored in a worksheet of an Excel workbook.
+The **GetWorksheetChartTitle** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title`) retrieves the title description of a specific chart stored in a worksheet of an Excel workbook via Aspose.Cells Cloud, requiring the file name, worksheet name, and chart index as path parameters, and optionally supporting folder and storage name query parameters to locate the source file.
 
 **Prerequisites**: To call this endpoint you must have a valid Aspose.Cells Cloud OAuth2/JWT access token with the `Cells.Read` scope. The workbook must already be uploaded to the specified storage location.
 

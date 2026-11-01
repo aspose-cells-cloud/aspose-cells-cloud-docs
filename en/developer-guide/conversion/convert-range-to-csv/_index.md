@@ -11,27 +11,13 @@ description: "Convert Excel range (XLSX/XLS) to CSV using Aspose.Cells Cloud RES
 weight: 100
 ---
 
-Export a specific range from a local Excel file to CSV using the Aspose.Cells Cloud API.
+The **ConvertRangeToCsv** API (`PUT https://api.aspose.cloud/v4.0/cells/convert/range/csv`) enables developers to convert a specified cell range from a local Excel file directly to CSV format using Aspose.Cells Cloud, without requiring prior upload to cloud storage; it accepts the spreadsheet file, worksheet name, and range (e.g., `A1:C10`) as required parameters and returns the converted CSV file, supporting efficient, cloud-native conversion while reducing local resource usage.
 
 ## **Convert Range to CSV API**
-
-**Prerequisites**  
-To call this endpoint you must have a valid Aspose Cloud **client ID** and **client secret**, obtain a **JWT access token**, and ensure the source spreadsheet is in **XLSX** or **XLS** format.
-
-### Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/convert/range/csv
 ```
-
-**cURL example**
-
-```bash
-curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/range/csv?worksheet=Sheet1&range=A1:C10" \
-     -H "Authorization: Bearer $(cat ~/.aspose-cloud-token)" \
-     -F "Spreadsheet=@sample.xlsx"
-```
-> *For security, store your JWT token in an environment variable or secure vault.*
 
 ### **Security and Authentication**
 
@@ -39,16 +25,18 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Request Parameters:**
 
-| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                                                    |
-| :------------- | :----- | :------------------------- | :----------------------------------------------------------------------------- |
-| Spreadsheet    | File   | FormData                   | Upload the spreadsheet file.                                                   |
-| worksheet      | String | Query                      | The worksheet name of the spreadsheet.                                         |
-| range          | String | Query                      | Specify the cell area (e.g., A1:C10).                                          |
-| outPath        | String | Query                      | The folder path where the workbook will be stored (optional). Default is `null`; if `null`, the result is returned inline as the response body. |
-| outStorageName | String | Query                      | Name of the output storage.                                                    |
-| fontsLocation  | String | Query                      | Specify custom fonts if required.                                              |
-| region         | String | Query                      | Defines the spreadsheet region setting.                                        |
-| password       | String | Query                      | Password required to open the spreadsheet file.                                |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| worksheet | String | Query | worksheet name of spreadsheet. |
+| range | String | Query | cell area. e.g. A1:C10 |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| fontsLocation | String | Query | Use Custom fonts. |
+| AutoRowsFit | Boolean | Query | (Optional) Autofits all rows in worksheets. |
+| AutoColumnsFit | Boolean | Query | (Optional) Autofits all columns in worksheets. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
 
 ### **Response**
 
@@ -64,6 +52,25 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 ]
 ```
 
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | Invalid url. |
+| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
+| 404 | Not Found | Source file not accessible. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining conversion data. |
+
 _Example CSV content returned (first few rows):_
 
 ```csv
@@ -72,15 +79,18 @@ John Doe,2023-01-15,1250.00
 Jane Smith,2023-01-16,980.50
 ```
 
-**HTTP Status Codes**
+**Prerequisites**  
+To call this endpoint you must have a valid Aspose Cloud **client ID** and **client secret**, obtain a **JWT access token**, and ensure the source spreadsheet is in **XLSX** or **XLS** format.
 
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Range converted successfully; CSV content returned in response. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
+### Web API
+**cURL example**
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/range/csv?worksheet=Sheet1&range=A1:C10" \
+     -H "Authorization: Bearer $(cat ~/.aspose-cloud-token)" \
+     -F "Spreadsheet=@sample.xlsx"
+```
+> *For security, store your JWT token in an environment variable or secure vault.*
 
 ## Where should you use the Convert Range to CSV API?
 

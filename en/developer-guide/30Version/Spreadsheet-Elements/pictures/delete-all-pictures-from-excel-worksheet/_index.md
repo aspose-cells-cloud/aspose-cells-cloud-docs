@@ -11,7 +11,7 @@ weight: 60
 ArticleTitle: "How to Delete All Pictures in an Excel Worksheet with Aspose.Cells Cloud"
 ---
 
-This REST API deletes **all** pictures in a worksheet.
+The **DeleteWorksheetPictures** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures`) is a REST endpoint provided by Aspose.Cells Cloud that removes all pictures from a specified worksheet in an Excel file, supporting robust and programmatic cleanup of image content without manual intervention; it requires the `name` and `sheetName` path parameters and optionally accepts `folder` and `storageName` query parameters to locate the target file in cloud storage.
 
 **Prerequisites**
 

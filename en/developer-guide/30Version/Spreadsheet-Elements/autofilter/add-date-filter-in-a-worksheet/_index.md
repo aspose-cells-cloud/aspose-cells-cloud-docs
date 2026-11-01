@@ -13,7 +13,7 @@ ArticleTitle: "Add Date Filter to an Excel Worksheet | Aspose.Cells Cloud API"
 keywords: "Aspose.Cells, Excel date filter, AutoFilter API, REST API, cloud SDK, cURL, spreadsheet automation"
 ---
 
-This REST API adds a **date filter** to an Excel worksheet.
+The **PutWorksheetDateFilter** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/dateFilter`) enables developers to apply a date filter to a specified range and field in an Excel worksheet using Aspose.Cells Cloud, supporting granular grouping of datetime values by Year, Month, Day, Hour, Minute, or Second via the `dateTimeGroupingType` parameter, with optional parameters for specifying date components, matching blanks, and refreshing filters.
 
 **Prerequisites:** You must have a valid JWT token, and the target workbook must already exist in the specified storage location. The request does not require a JSON body.
 

@@ -9,6 +9,8 @@ weight: 100
 ArticleTitle: "Aspose.Cells Cloud Replace Spreadsheet Content API"
 ---
 
+The **ReplaceSpreadsheetContent** API (`PUT https://api.aspose.cloud/v4.0/cells/replace/content`) enables cloud-based text replacement within local Excel spreadsheets without uploading files to cloud storage, supporting full-workbook or targeted replacements across all sheets and cells while preserving original formatting, formulas, and charts.
+
 ## Replace Text in Excel Without Uploading
 
 Replace specified text within local Excel spreadsheet files without uploading them to the cloud. Use Aspose.Cells Cloud Find & Replace API to update content in workbooks efficiently—ideal for on-premise data pipelines, report generation, and batch processing—while preserving original formatting, formulas, and charts.

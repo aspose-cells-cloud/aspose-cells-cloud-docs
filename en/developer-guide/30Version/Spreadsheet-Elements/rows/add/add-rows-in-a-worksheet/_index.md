@@ -10,7 +10,7 @@ description: "Add rows to Excel worksheet via Aspose.Cells Cloud API PutInsertWo
 weight: 100
 ---
 
-This REST API adds several new rows to an Excel worksheet.
+The **PutInsertWorksheetRows** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows`) in Aspose.Cells Cloud v3.0 inserts one or more new rows into a specified Excel worksheet starting at a given row index, enabling dynamic worksheet expansion while optionally updating references in other sheets.
 
 ## PutInsertWorksheetRows API
 

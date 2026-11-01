@@ -10,7 +10,7 @@ linktitle: "Batch Lock Excel Files"
 ArticleTitle: "Batch Lock Excel Files with Aspose.Cells Cloud API"
 ---
 
-This REST API allows **batch locking** of eligible Excel files.
+The **PostBatchLock** API (`POST https://api.aspose.cloud/v3.0/cells/batch/lock`) enables Aspose.Cells Cloud users to batch lock eligible Excel and other supported files by applying specific matching conditions, supporting over 30 formats such as Excel, PDF, Markdown, JSON, XML, CSV, and HTML in a single operation.
 
 ## REST API
 

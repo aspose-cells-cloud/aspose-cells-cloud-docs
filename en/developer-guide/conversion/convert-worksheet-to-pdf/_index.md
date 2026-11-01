@@ -10,11 +10,9 @@ description: "Convert an Excel worksheet to PDF using Aspose.Cells Cloud API v4 
 weight: 100
 ---
 
-Export a worksheet from a local Excel file to a [PDF](https://docs.fileformat.com/pdf/) file using the Cloud API.
+The **ConvertWorksheetToPdf** API (`PUT https://api.aspose.cloud/v4.0/cells/convert/worksheet/pdf`) in Aspose.Cells Cloud converts a specified worksheet from a locally uploaded Excel file directly into a PDF document, enabling cloud-native conversion without requiring the file to be stored in cloud storage first.
 
 ## Convert a Worksheet to PDF
-
-### API Endpoint
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/convert/worksheet/pdf
@@ -26,15 +24,17 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Request Parameters:**
 
-| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                                           |
-| -------------- | ------ | -------------------------- | --------------------------------------------------------------------- |
-| Spreadsheet    | File   | FormData                   | Upload the spreadsheet file.                                          |
-| worksheet      | String | Query                      | Name of the worksheet in the spreadsheet.                             |
-| outPath        | String | Query                      | (Optional) The folder path for storing the workbook; default is null. |
-| outStorageName | String | Query                      | The output file storage name.                                         |
-| fontsLocation  | String | Query                      | Use custom fonts for the PDF.                                         |
-| region         | String | Query                      | Define the spreadsheet region setting.                                |
-| password       | String | Query                      | The password required to open the spreadsheet file.                   |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| worksheet | String | Query | worksheet name of spreadsheet. |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| fontsLocation | String | Query | Use Custom fonts. |
+| AutoRowsFit | Boolean | Query | (Optional) Autofits all rows in worksheets. |
+| AutoColumnsFit | Boolean | Query | (Optional) Autofits all columns in worksheets. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
 
 ### **Response**
 
@@ -44,22 +44,30 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
     "Name": "ResponseFile",
     "DataType": {
       "Identifier": "File",
-      "Reference": "Stream",
-      "Name": "file"
+      "Reference": "Stream"
     }
   }
 ]
 ```
 
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
 **HTTP Status Codes**
 
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | Invalid url. |
+| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
+| 404 | Not Found | Source file not accessible. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining conversion data. |
 
 ## **Where Should You Use the Convert Worksheet to PDF API?**
 

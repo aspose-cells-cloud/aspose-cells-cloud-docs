@@ -10,7 +10,7 @@ description: "Remove custom characters, sets, or substrings from Excel cells usi
 weight: 100
 ---
 
-Clean Excel data by deleting custom characters, character sets, or substrings from a selected cell range. Remove text at specific positions with Aspose.Cells API for accurate data formatting.
+The **RemoveCharacters** API (`PUT https://api.aspose.cloud/v4.0/cells/content/remove/characters`) in Aspose.Cells Cloud enables precise deletion of user-defined characters, predefined symbol sets (such as non-printing characters, letters, digits, punctuation, or symbols), or substrings from a specified Excel cell range while preserving formulas, formatting, and data validation; it supports multiple removal modes including `CustomChars`, `CharacterSet`, and `Substring`, with optional case sensitivity and locale-aware processing.
 
 ## Introduction
 

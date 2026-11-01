@@ -11,6 +11,8 @@ description: "API to find and remove repeated substrings inside cells of a speci
 weight: 1
 ---
 
+The **RemoveDuplicateSubstringsInRemoteSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/duplicate-substrings`) in Aspose.Cells Cloud identifies and removes repeated substrings within each cell of a specified range, using user-defined or preset delimiters like comma, semicolon, space, tab, or line-break, while preserving formulas (though they are converted to strings and re-evaluated), formatting, and data-validation; only the first occurrence of each duplicate substring is retained per cell, and the cleaned workbook is returned as a stream along with the count of processed cells.
+
 ## The Remove Duplicate Substrings In Remote Spreadsheet of Aspose.Cells Cloud Web Services
 
 Finds and removes repeated substrings inside every cell of the chosen range, using user‑defined or preset delimiters, while preserving formulas, formatting and data‑validation.

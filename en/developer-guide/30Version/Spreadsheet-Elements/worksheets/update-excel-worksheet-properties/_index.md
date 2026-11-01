@@ -20,7 +20,7 @@ description: "Update Excel worksheet properties like DisplayZeros and IsRulerVis
 ArticleTitle: "Update Worksheet Properties – Aspose.Cells Cloud API Reference (v3.0)"
 ---
 
-This REST API updates worksheet base properties.
+The **PostUpdateWorksheetProperty** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}`) updates core properties of a specific worksheet within a workbook stored in the cloud, using Aspose.Cells Cloud’s REST interface. Developers supply the workbook name, worksheet name, and a JSON-serialized worksheet object in the request body to modify properties such as visibility, tab color, or protection settings—enabling programmatic control over worksheet behavior without manual Excel interaction.
 
 ## REST API
 

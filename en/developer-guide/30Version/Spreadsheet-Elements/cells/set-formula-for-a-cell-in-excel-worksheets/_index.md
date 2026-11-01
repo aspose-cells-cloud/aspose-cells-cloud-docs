@@ -9,7 +9,7 @@ linktitle: "Set Cell Formula"
 ArticleTitle: "Set Formula for a Cell in Excel Using Aspose.Cells Cloud REST API"
 ---
 
-This REST API sets a **cell formula** in an Excel file.
+The **PostWorksheetCellSetValue** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}`) enables developers to set a formula or value for a specific cell in an Excel worksheet using its cell name via Aspose.Cells Cloud, supporting operations like assigning dynamic formulas such as `=SUM(A1:A10)` directly to cells without local Excel installation.
 
 ## REST API
 

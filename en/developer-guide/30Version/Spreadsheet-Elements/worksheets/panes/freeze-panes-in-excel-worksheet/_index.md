@@ -11,7 +11,7 @@ weight: 190
 ArticleTitle: "Freeze Panes in Excel Worksheet using Aspose.Cells Cloud REST API"
 ---
 
-This REST API **sets** freeze panes on an Excel worksheet.
+The **PutWorksheetFreezePanes** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/freezepanes`) enables developers to set freeze panes in an Excel worksheet using Aspose.Cells Cloud, specifying the top-left frozen cell via `row` and `column` indices along with the number of visible rows (`freezedRows`) and columns (`freezedColumns`) in the top and left panes, respectively; this supports precise control over worksheet navigation for large datasets without requiring manual Excel interaction.
 
 ## REST API
 

@@ -20,7 +20,7 @@ tags:
 ArticleTitle: "Aspose.Cells Cloud API: Create Folder in Storage"
 ---
 
-The `createFolder` operation creates a new folder at the specified location in Aspose.Cells Cloud storage. This is essential for organizing files and maintaining a structured directory hierarchy.
+The **CreateFolder** API (`PUT https://api.aspose.cloud/v4.0/cells/storage/folder/{path}`) in Aspose.Cells Cloud creates a new folder at the specified path within the cloud storage, enabling structured organization of Excel files and resources; it accepts an optional `storageName` query parameter to target a specific storage instance and returns no content on success.
 
 ## Excel API: Create Folder
 

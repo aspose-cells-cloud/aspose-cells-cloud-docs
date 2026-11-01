@@ -10,7 +10,7 @@ weight: 100
 ArticleTitle: "Aspose.Cells Cloud Protect Spreadsheet API: Set Open & Modify Passwords Programmatically"
 ---
 
-Secure Excel files programmatically with dual-layer password protection using Aspose.Cells Cloud. Apply both **open** (decrypt required to view) and **modify** (edit restriction) passwords in a single API call — ideal for enterprise workflows handling financial reports, compliance documents, or sensitive datasets.
+The **ProtectSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/protection/spreadsheet`) in Aspose.Cells Cloud applies dual-layer password protection to Excel spreadsheets, allowing developers to set both an open password (to restrict file access) and a modify password (to prevent editing) in a single request, with passwords encrypted for enhanced security.
 
 This API supports modern formats (`.xlsx`, `.xlsm`, `.xlsb`) and legacy `.xls` files, and integrates seamlessly with cloud storage and regional settings for global deployments.
 

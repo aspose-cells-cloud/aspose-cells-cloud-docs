@@ -11,7 +11,7 @@ weight: 100
 ArticleTitle: "Aspose.Cells Cloud API – Get Picture from Worksheet"
 ---
 
-This REST API retrieves a picture by its zero‑based index from an Excel worksheet.
+The **GetWorksheetPictureWithFormat** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureNumber}`) retrieves a specific picture from an Excel worksheet by its zero-based index and converts it to a requested image format (PNG, TIFF, JPEG, GIF, EMF, or BMP), enabling developers to extract and use embedded pictures as standalone image files via Aspose.Cells Cloud REST API.
 
 ## REST API
 

@@ -11,7 +11,7 @@ weight: 100
 ArticleTitle: "Add a List Object (Table) to an Excel Worksheet – Aspose.Cells Cloud Documentation"
 ---
 
-This REST API adds a **list object (table)** to an Excel worksheet.
+The **PutWorksheetListObject** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects`) enables developers to add a list object (table) to a specific worksheet in an Excel file stored in the cloud using Aspose.Cells Cloud. It supports optional query parameters such as `startRow`, `startColumn`, `endRow`, `endColumn`, `hasHeaders`, `displayName`, and `showTotals` to define the table’s range and formatting behavior.
 
 Before using this endpoint, ensure you have a valid JWT token, the workbook is stored in a supported cloud storage, and the worksheet exists.
 

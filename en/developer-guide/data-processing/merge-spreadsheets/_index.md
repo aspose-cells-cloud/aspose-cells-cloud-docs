@@ -16,9 +16,8 @@ weight: 100
 ArticleTitle: "Merge Multiple Excel Files with Aspose.Cells Cloud API – Batch Combine Spreadsheets"
 ---
 
-# Merge Multiple Excel Files into One Spreadsheet
 
-Combine several local Excel, CSV, or ODS files into a single workbook and convert the result to 30+ output formats (PDF, HTML, CSV, etc.) using the Aspose.Cells Cloud API.
+The **MergeSpreadsheets** API (`PUT https://api.aspose.cloud/v4.0/cells/merge/spreadsheet`) enables developers to combine multiple local Excel, CSV, or ODS files into a single workbook using Aspose.Cells Cloud, supporting output formats such as XLSX, CSV, PDF, and over 30 others; the operation processes files cloud-side without requiring prior upload to cloud storage and allows configuration of output format, worksheet layout (e.g., merging all data into one sheet), and regional settings.
 
 ## Overview
 

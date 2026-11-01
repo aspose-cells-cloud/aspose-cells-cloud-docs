@@ -10,9 +10,8 @@ weight: 30
 ArticleTitle: "Delete Folder in Aspose.Cells Cloud Storage via REST API"
 ---
 
-# Delete Folder
 
-Remove a folder (optionally all of its contents) from Aspose.Cells Cloud storage.
+The **DeleteFolder** API (`DELETE https://api.aspose.cloud/v4.0/cells/storage/folder/{path}`) removes a specified folder from Aspose.Cells Cloud storage, with optional recursive deletion of its contents via the `recursive` query parameter; it accepts the folder path as a required path parameter and supports specifying a custom storage name with the `storageName` query parameter.
 
 ---
 

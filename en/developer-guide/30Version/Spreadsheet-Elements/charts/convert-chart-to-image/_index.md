@@ -13,7 +13,7 @@ linktitle: "Convert Chart to Image"
 ArticleTitle: "Convert Excel Chart to Image with Aspose.Cells Cloud REST API"
 ---
 
-This REST API guide demonstrates how to convert an **Excel chart** to a wide range of image formats—including **PNG**, **SVG**, **JPEG**, **BMP**, **TIFF**, and **EMF**—using the **Aspose.Cells Cloud REST API**.
+The **GetWorksheetChart** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartNumber}`) retrieves an Excel chart from a specified worksheet and converts it to a requested image format—such as PNG, JPEG, TIFF, BMP, EMF, or GIF—using the Aspose.Cells Cloud REST API, enabling programmatic chart export without local dependencies.
 
 > **Note**: This API requires an Aspose Cloud account and a valid JWT token. A free trial with 100 monthly API calls is available at [Aspose Cloud Dashboard](https://dashboard.aspose.cloud/).
 

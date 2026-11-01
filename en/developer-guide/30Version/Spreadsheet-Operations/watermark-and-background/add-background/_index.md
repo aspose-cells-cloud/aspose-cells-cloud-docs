@@ -14,6 +14,8 @@ weight: 160
 ArticleTitle: "Add Background Image to Excel Workbook Using Aspose.Cells Cloud API"
 ---
 
+The **PutWorkbookBackground** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/background`) enables developers to set a background image for an Excel workbook using Aspose.Cells Cloud, supporting both local file upload via form data and remote image references via the `picPath` query parameter; this operation simplifies adding consistent visual branding or watermarks across all worksheets in a workbook through a single REST call.
+
 ## REST API
 
 This REST API adds a **background image** to an Excel workbook.

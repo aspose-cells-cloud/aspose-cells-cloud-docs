@@ -10,7 +10,7 @@ linktitle: "Batch Unlock API"
 ArticleTitle: "Batch Unlock Excel Files with Aspose.Cells Cloud REST API"
 ---
 
-This REST API unlocks eligible Excel files in batch.
+The **PostBatchUnlock** API (`POST https://api.aspose.cloud/v3.0/cells/batch/unlock`) enables batch unlocking of Excel and other supported files in Aspose.Cells Cloud by applying matching conditions defined in the request body. This operation accepts a `BatchLockRequest` object containing criteria such as file names, passwords, and locking patterns, and returns a streamed response with the unlocked files. Supporting over 30 formats—including Excel, PDF, CSV, HTML, and Markdown—it simplifies secure document management workflows where multiple protected files require unlocking programmatically.
 
 ## REST API
 

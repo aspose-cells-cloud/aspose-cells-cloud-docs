@@ -14,11 +14,9 @@ robots: index,follow
 canonical: "/convert-chart-to-pdf/"
 ---
 
-Export charts from a local Excel file to [PDF (Portable Document Format)](https://www.iso.org/standard/51502.html) using the Cloud API.
+The **ConvertChartToPdf** API (`PUT https://api.aspose.cloud/v4.0/cells/convert/chart/pdf`) in Aspose.Cells Cloud enables developers to convert a specific chart from a local Excel spreadsheet directly to PDF without uploading the file to cloud storage. Using form-data to send the spreadsheet, along with query parameters for the worksheet name and chart index, the operation performs cloud-native conversion—eliminating intermediate storage steps and reducing resource burden while preserving formatting fidelity in the resulting PDF.
 
 ## **Convert Chart to PDF Web API**
-
-### Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/convert/chart/pdf
@@ -30,16 +28,16 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Request Parameters:**
 
-| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                                                         |
-| -------------- | ------- | -------------------------- | ----------------------------------------------------------------------------------- |
-| Spreadsheet    | File    | FormData                   | Upload the spreadsheet file.                                                        |
-| worksheet      | String  | Query                      | The name of the worksheet containing the chart.                                     |
-| chartIndex     | Integer | Query                      | The index of the chart to convert.                                                  |
-| outPath        | String  | Query                      | (Optional) The folder path where the converted file is stored. The default is null. |
-| outStorageName | String  | Query                      | Output file storage name.                                                           |
-| fontsLocation  | String  | Query                      | Use custom fonts if required.                                                       |
-| region         | String  | Query                      | The spreadsheet region setting.                                                     |
-| password       | String  | Query                      | The password for opening the spreadsheet file.                                      |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| worksheet | String | Query | worksheet name of spreadsheet. |
+| chartIndex | Integer | Query | chart index of worksheet. |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| fontsLocation | String | Query | Use Custom fonts. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
 
 ### **Response**
 
@@ -55,15 +53,24 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 ]
 ```
 
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
 **HTTP Status Codes**
 
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | Invalid url. |
+| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
+| 404 | Not Found | Source file not accessible. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining conversion data. |
 
 ## Where should you use the Convert Chart to PDF API?
 

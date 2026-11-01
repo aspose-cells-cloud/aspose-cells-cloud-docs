@@ -10,7 +10,7 @@ weight: 100
 ArticleTitle: "Export a Worksheet with Aspose.Cells Cloud API – Formats, cURL & SDK Samples"
 ---
 
-This REST API allows you to **export a worksheet** from an Excel file to many different file formats.
+The **GetWorksheetWithFormat** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}`) enables developers to retrieve a specific worksheet from an Excel workbook and export it directly in a requested format—such as PDF, PNG, HTML, or CSV—by specifying the workbook file name and worksheet name as path parameters, with optional query parameters to control resolution, print area, and output settings.
 
 **Summary** – Use the **Get Worksheet** endpoint to download a single worksheet from a workbook in the format of your choice.
 

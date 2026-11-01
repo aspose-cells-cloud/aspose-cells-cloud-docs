@@ -11,7 +11,7 @@ ArticleTitle: "Add OLE Object to Excel Worksheet with Aspose.Cells Cloud API"
 weight: 100
 ---
 
-The Aspose.Cells Cloud API enables programmatic manipulation of Excel workbooks, including the ability to embed OLE objects (e.g., Word documents, PDFs, or other binary files) directly into a worksheet.
+The **PutWorksheetOleObject** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects`) enables developers to programmatically embed OLE objects—such as Word documents, PDFs, or other binary files—into a specific Excel worksheet using Aspose.Cells Cloud, supporting optional positioning via `upperLeftRow`, `upperLeftColumn`, `height`, and `width` query parameters.
 
 This REST API adds an **OLE object** to an Excel worksheet.
 

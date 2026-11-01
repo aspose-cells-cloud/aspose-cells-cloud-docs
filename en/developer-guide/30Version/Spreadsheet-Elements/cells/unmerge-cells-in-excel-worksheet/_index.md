@@ -20,7 +20,7 @@ related:
 linktitle: "Unmerge Cells"
 ---
 
-This REST API endpoint unmerges previously merged cells in an Excel worksheet using Aspose.Cells Cloud. The operation supports specifying a rectangular cell range to unmerge and returns a confirmation response. SDKs for .NET, Java, Python, Ruby, Node.js, PHP, Perl, and Go are available to accelerate development.
+The **PostWorksheetUnmerge** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/unmerge`) in Aspose.Cells Cloud enables developers to unmerge previously merged cells in a specified rectangular range of an Excel worksheet by providing the start row, start column, total rows, and total columns as query parameters; this operation supports precise range-based unmerging and integrates with existing cloud workflows via the v3.0 REST API.
 
 > **API Version**: Aspose.Cells Cloud v24.3  
 > **Supported Formats**: `.xlsx`, `.xlsb`, `.xlsm`, `.xls`

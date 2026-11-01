@@ -13,7 +13,7 @@ weight: 100
 ArticleTitle: "Aspose.Cells Cloud – Convert Excel Workbook to PDF, CSV, HTML, and More (GET /cells/{name})"
 ---
 
-This REST API retrieves an Excel workbook in a different format.
+The **GetWorkbook** API (`GET https://api.aspose.cloud/v3.0/cells/{name}`) retrieves an Excel workbook from Aspose.Cells Cloud in various output formats, supporting conversions to PDF, CSV, HTML, XLSX, PNG, JPG, and over 20 other formats via the optional `format` query parameter.
 
 ## GetWorkBook API
 

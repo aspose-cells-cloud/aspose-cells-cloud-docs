@@ -11,7 +11,7 @@ weight: 100
 ArticleTitle: "Set Zoom for an Excel Worksheet – Aspose.Cells Cloud API v3.0"
 ---
 
-This REST API sets the zoom value of an Excel worksheet. **Authentication** is required; include a valid Bearer JWT token in the `Authorization` header of every request.
+The **PostUpdateWorksheetZoom** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/zoom`) updates the scaling percentage of a specified worksheet in an Excel file stored in the cloud, supporting values between 10 and 400; Aspose.Cells Cloud requires authentication via a Bearer JWT token in the `Authorization` header and accepts optional query parameters `folder` and `storageName` to locate the source file.
 
 ## Security and Authentication
 

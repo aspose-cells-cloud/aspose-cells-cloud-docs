@@ -9,6 +9,8 @@ ArticleTitle: "Clear Cell Formatting in an Excel Worksheet - Aspose.Cells Cloud 
 linktitle: "Clear Cell Formatting"
 ---
 
+The **PostClearFormats** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clearformats`) in Aspose.Cells Cloud enables developers to programmatically clear cell formatting in a specified Excel worksheet, supporting targeted clearing via optional range or row/column index parameters such as `startRow`, `endColumn`, or `range`.
+
 **Note:** All Aspose.Cells Cloud API calls must be made over **HTTPS**. HTTP endpoints are deprecated and may be blocked by browsers.
 
 - **Method:** POST

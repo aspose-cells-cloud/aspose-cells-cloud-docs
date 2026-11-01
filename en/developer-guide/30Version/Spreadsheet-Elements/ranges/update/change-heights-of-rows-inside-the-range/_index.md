@@ -19,9 +19,8 @@ canonical: "https://docs.aspose.cloud/cells/ranges/update/row-height/"
 ArticleTitle: "Update Row Height for Excel Range via Aspose.Cells Cloud API"
 ---
 
-# Set Row Height for a Range in Excel
 
-This operation updates the row height of a specified range on a worksheet stored in Aspose Cloud storage.
+The **PostWorksheetCellsRangeRowHeight** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/rowHeight`) in Aspose.Cells Cloud v3.0 updates the row height for a specified range within a worksheet by setting a uniform height value for all rows in that range, enabling precise formatting control when working with Excel files stored in the cloud.
 
 ## Prerequisites / Authentication
 

@@ -17,13 +17,11 @@ sitemap:
 weight: 100
 ---
 
-The **ConvertWorksheetToHtml** endpoint reads an Excel workbook from the local file system, extracts the specified worksheet, and returns the content as an HTML file. The conversion runs entirely on Aspose's cloud servers—no intermediate upload or storage is required. This zero-upload workflow is ideal for generating web-ready views of spreadsheet data with precise rendering, locale-aware formatting, and robust error handling.
+The **ConvertWorksheetToHtml** API (`PUT https://api.aspose.cloud/v4.0/cells/convert/worksheet/html`), part of Aspose.Cells Cloud v4.0, converts a worksheet from a local Excel file directly to HTML on Aspose's cloud servers—no intermediate upload or storage is required. To use the endpoint, clients send the spreadsheet file via form data and specify the worksheet name as a query parameter; optional parameters allow control over row/column autofitting, locale settings, and password-protected files.
 
 > **Note**: All examples assume Aspose.Cells Cloud SDK v24.2+. API parameters and behavior may vary in older versions.
 
 ## Convert Worksheet to HTML API
-
-### Web API Endpoint
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/convert/worksheet/html
@@ -35,33 +33,52 @@ The API requires <a href="https://docs.aspose.cloud/total/getting-started/rest-a
 
 ### Request Parameters
 
-| Parameter Name   | Type    | Location | Required | Description                                                                                                                            |
-| :--------------- | :------ | :------- | :------- | :------------------------------------------------------------------------------------------------------------------------------------- |
-| `Spreadsheet`    | File    | FormData | ✅ Yes   | Binary Excel file (`.xlsx`, `.xls`, `.xlsb`, etc.). Read directly from the request body—no prior upload to cloud storage.              |
-| `worksheet`      | String  | Query    | ✅ Yes   | Name of the worksheet to convert (case-sensitive). Must exist in the workbook.                                                         |
-| `outPath`        | String  | Query    | ❌ No    | Target folder path (in cloud storage) where the generated HTML file will be saved. Omit to return the file directly in the response.   |
-| `outStorageName` | String  | Query    | ❌ No    | Name of the cloud storage service to use for `outPath`. Required only when `outPath` points to a non-default storage.                  |
-| `fontsLocation`  | String  | Query    | ❌ No    | Absolute path to a folder containing custom TrueType/OpenType fonts for accurate rendering of non-standard characters.                 |
-| `region`         | String  | Query    | ❌ No    | Locale identifier (e.g., `en-US`, `fr-FR`) that influences number/date formatting. Defaults to the workbook's internal region setting. |
-| `password`       | String  | Query    | ❌ No    | Password for opening a protected workbook. Omit for unprotected files.                                                                 |
-| `AutoRowsFit`    | Boolean | Query    | ❌ No    | _(New in v4.0)_ Fit all rows to content height. Default: `false`.                                                                      |
-| `AutoColumnsFit` | Boolean | Query    | ❌ No    | _(New in v4.0)_ Fit all columns to content width. Default: `false`.                                                                    |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| worksheet | String | Query | worksheet name of spreadsheet. |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| fontsLocation | String | Query | Use Custom fonts. |
+| AutoRowsFit | Boolean | Query | (Optional) Autofits all rows in worksheets. |
+| AutoColumnsFit | Boolean | Query | (Optional) Autofits all columns in worksheets. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
 
 ### Response
 
-Returns a binary HTML file stream (Content-Type: `text/html`).
+```json
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
 
 **HTTP Status Codes**
 
-| Code | Meaning               | Description                                                                         |
-| ---- | --------------------- | ----------------------------------------------------------------------------------- |
-| 200  | OK                    | HTML content returned successfully.                                                 |
-| 400  | Bad Request           | Missing/invalid parameters (e.g., unsupported file type, missing `worksheet` name). |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                                       |
-| 403  | Forbidden             | Insufficient permissions or quota exceeded.                                         |
-| 404  | Not Found             | Source file or specified worksheet not found.                                       |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit (100 MB).                                          |
-| 500  | Internal Server Error | Unexpected server error during conversion.                                          |
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | Invalid url. |
+| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
+| 404 | Not Found | Source file not accessible. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining conversion data. |
+
+Returns a binary HTML file stream (Content-Type: `text/html`).
 
 ## Use Cases
 

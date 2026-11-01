@@ -10,7 +10,7 @@ ArticleTitle: "Delete All Charts from a Worksheet using Aspose.Cells Cloud API"
 linktitle: "Clear All Charts"
 ---
 
-This REST API deletes all charts from the specified worksheet.
+The **DeleteWorksheetCharts** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts`) is a REST endpoint provided by Aspose.Cells Cloud that removes all charts from a specified worksheet within a spreadsheet file, enabling developers to programmatically clean or reset chart content without manual intervention; it requires the file name and worksheet name as path parameters, with optional query parameters for folder and storage name to support flexible cloud-based file management.
 
 **Background** – Removing all charts from a worksheet is useful when you need to reset a sheet’s visual layout, replace outdated visualizations, or prepare a workbook for reuse without retaining previous chart data.
 

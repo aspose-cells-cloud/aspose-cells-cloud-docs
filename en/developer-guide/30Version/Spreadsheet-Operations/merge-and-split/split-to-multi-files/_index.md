@@ -11,7 +11,7 @@ weight: 32
 ArticleTitle: "Split an Excel file into multiple files - Aspose.Cells Cloud Documentation"
 ---
 
-The Aspose.Cells Cloud REST API splits multi‑sheet Excel workbooks into separate files.
+The **PostSplit** API (`POST https://api.aspose.cloud/v3.0/cells/split`) enables developers to split multi-sheet Excel workbooks into separate files using Aspose.Cells Cloud, supporting output formats including CSV, XLSX, PDF, PNG, and others by processing each worksheet or a specified range of sheets as an individual file.
 
 **Prerequisites**  
 Before calling the API you must obtain a valid JWT token and include it in the `Authorization` header of each request. See the [authentication guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) for details.

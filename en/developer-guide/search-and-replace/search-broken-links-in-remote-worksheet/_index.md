@@ -9,6 +9,8 @@ weight: 100
 ArticleTitle: "Aspose.Cells Cloud API: Search Broken Links in Remote Excel Worksheet"
 ---
 
+The **SearchBrokenLinksInRemoteWorksheet** API (`PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/search/broken-links`) enables enterprise users to remotely scan Excel worksheets stored in cloud storage for broken external links, invalid hyperlinks, and missing data sources using Aspose.Cells Cloud—without downloading the file—returning a detailed list of problematic links including sheet name, cell coordinates, and invalid URLs.
+
 ## Search Broken Links in Remote Worksheet API
 
 Use the Aspose.Cells Cloud API to scan Excel worksheets stored in cloud storage for broken external links, invalid formulas, and missing data sources. This RESTful endpoint performs remote validation without downloading files — ideal for enterprise-grade quality assurance workflows.

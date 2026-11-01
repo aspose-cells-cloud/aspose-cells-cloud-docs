@@ -17,6 +17,8 @@ ArticleTitle: "Clear Contents and Styles of Cells in an Excel Worksheet – Aspo
 linktitle: "Clear Cell Contents"
 ---
 
+The **PostClearContents** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clearcontents`) enables developers to clear cell contents and styles within a specified worksheet of an Excel file using Aspose.Cells Cloud, supporting optional range-based clearing via query parameters like `range`, `startRow`, `startColumn`, `endRow`, and `endColumn` to target specific cell areas precisely.
+
 ## Prerequisites
 
 Before using the **Clear Contents and Styles** endpoint, ensure you have:

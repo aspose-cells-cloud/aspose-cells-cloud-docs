@@ -11,7 +11,7 @@ weight: 100
 ArticleTitle: "Export Excel Worksheet to Various Formats – Aspose.Cells Cloud"
 ---
 
-You can export a worksheet to the following formats:
+The **PostExport** API (`POST https://api.aspose.cloud/v3.0/cells/export`) enables developers to export Excel internal elements—such as worksheets, charts, or shapes—or entire workbooks to various file formats using Aspose.Cells Cloud, supporting over 30 formats including PDF, CSV, HTML, PNG, JPG, and MD; users upload the source file via form-data and specify target formats and optional parameters like `objectType` and `format` to control the export scope and output type.
 
 - **XLS** – [XLS format details](https://docs.fileformat.com/spreadsheet/xls/)
 - **XLSX** – [XLSX format details](https://docs.fileformat.com/spreadsheet/xlsx/)

@@ -11,7 +11,7 @@ weight: 100
 ArticleTitle: "Rename Excel Worksheet via Aspose.Cells Cloud REST API & SDKs"
 ---
 
-This REST API renames an Excel worksheet.
+The **PostRenameWorksheet** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/rename`) enables renaming an Excel worksheet within a workbook stored in the cloud by specifying the original worksheet name and a new name, using Aspose.Cells Cloud’s REST API to handle this common but often complex task efficiently.
 
 ## REST API
 

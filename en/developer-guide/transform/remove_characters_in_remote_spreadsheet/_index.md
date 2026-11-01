@@ -11,6 +11,8 @@ description: "Remove specific characters, symbols, or substrings from a range in
 weight: 100
 ---
 
+The **RemoveCharactersInRemoteSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/characters`) in Aspose.Cells Cloud v4.0 deletes user-defined characters, predefined symbol sets (such as NonPrinting, Text, Numeric, Symbols, or Punctuation), or specific substrings from every cell in a named worksheet range while preserving formulas, formatting, and data validation.
+
 ## The Remove Characters In Remote Spreadsheet of Aspose.Cells Cloud Web Services
 
 Deletes user‑defined characters, predefined symbol sets, or any substring from every cell in the chosen range while preserving formulas, formatting and data‑validation for a remote spreadsheet.

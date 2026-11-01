@@ -11,6 +11,8 @@ description: "Switch rows and columns in the spreadsheet."
 weight: 100
 ---
 
+The **TransposeData** API (`PUT https://api.aspose.cloud/v4.0/cells/transpose`) in Aspose.Cells Cloud enables developers to switch rows and columns within a specified range of a spreadsheet worksheet, supporting operations such as transforming tabular layouts for reporting or data analysis. It requires a spreadsheet file upload, the target worksheet name, and a cell area (e.g., "A1:C10"), and optionally accepts parameters like output path, storage name, locale, and password for secure handling of protected files.
+
 ## The TransposeData of Aspose.Cells Cloud Web Services
 
 Switch rows and columns in the spreadsheet.

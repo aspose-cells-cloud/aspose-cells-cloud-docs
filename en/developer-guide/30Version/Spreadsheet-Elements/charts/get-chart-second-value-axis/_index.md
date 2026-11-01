@@ -9,7 +9,7 @@ ArticleTitle: "Get Chart Second Value Axis – Aspose.Cells Cloud API"
 linktitle: "Get Second Value Axis"
 ---
 
-This REST API retrieves the second value axis of a chart.
+The **GetChartSecondValueAxis** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/secondvalueaxis`) retrieves the second value axis of a chart in Aspose.Cells Cloud, enabling developers to programmatically access axis properties such as scale, format, and title for advanced chart analysis and customization using standard REST conventions and supported SDKs for .NET, Java, Python, and other languages.
 
 ## GetChartSecondValueAxis API
 

@@ -14,7 +14,7 @@ tags: ["conversion", "api", "cloud", "excel", "rest"]
 ArticleTitle: "Save Spreadsheet As PDF, XLSX, CSV, HTML & More with Aspose.Cells Cloud API"
 ---
 
-Use the **Save Spreadsheet As** API to convert a workbook stored in Aspose.Cells Cloud to a different format (e.g., PDF, XLSX, CSV, HTML, ODS) entirely in the cloud—no local file handling required. The operation preserves layout, formulas, and styling while delivering high-fidelity output.
+The **SaveSpreadsheetAs** API (`PUT https://api.aspose.cloud/v4.0/cells/{name}/saveas`) in Aspose.Cells Cloud enables cloud-based conversion of a workbook stored in cloud storage to a specified format—such as PDF, XLSX, or CSV—without downloading the file locally, preserving layout, formulas, and styling while minimizing data transfer and enhancing security by processing entirely within the cloud environment.
 
 ## Prerequisites
 
@@ -38,20 +38,52 @@ Authorization: Bearer <access_token>
 
 ### Request Parameters
 
-| Parameter Name    | Type    | Location | Required | Description                                                                                                                              |
-| ----------------- | ------- | -------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| `name`            | String  | Path     | ✅ Yes   | The name of the source workbook (e.g., `MyWorkbook.xlsx`).                                                                               |
-| `format`          | String  | Query    | ✅ Yes   | Target format: `PDF`, `XLSX`, `CSV`, `HTML`, `ODS`, `XLS`, `TXT`, `MHTML`, `TIFF`, `PPTX`, `XPS`, `DOCX`, `EPUB`, `SVG`, `MD`, and more. |
-| `saveOptionsData` | Class   | Body     | ❌ No    | Optional `SaveOptionsData` object (e.g., `{"SaveFormat":"pdf"}`).                                                                        |
-| `folder`          | String  | Query    | ❌ No    | Folder path containing the source file. Defaults to root.                                                                                |
-| `storageName`     | String  | Query    | ❌ No    | Custom storage name. Omit to use default storage.                                                                                        |
-| `outPath`         | String  | Query    | ❌ No    | Output file path (including filename). Defaults to `name` in root.                                                                       |
-| `outStorageName`  | String  | Query    | ❌ No    | Storage name for the output file.                                                                                                        |
-| `fontsLocation`   | String  | Query    | ❌ No    | Custom font directory path.                                                                                                              |
-| `region`          | String  | Query    | ❌ No    | Locale (e.g., `en-US`, `fr-FR`) for regional formatting.                                                                                 |
-| `password`        | String  | Query    | ❌ No    | Password for encrypted workbooks.                                                                                                        |
-| `AutoRowsFit`     | Boolean | Query    | ❌ No    | Autofit all rows in worksheets.                                                                                                          |
-| `AutoColumnsFit`  | Boolean | Query    | ❌ No    | Autofit all columns in worksheets.                                                                                                       |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | (Required) The name of the workbook file to be converted. |
+| format | String | Query | (Required) The desired output format (e.g., "Xlsx", "Pdf", "Csv"). |
+| saveOptionsData | class:saveoptionsdata | HTTPBody | (Optional) Save options data. The default is null. |
+| folder | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| storageName | String | Query | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted. |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| fontsLocation | String | Query | Use Custom fonts. |
+| AutoRowsFit | Boolean | Query | (Optional) Autofits all rows in worksheets. |
+| AutoColumnsFit | Boolean | Query | (Optional) Autofits all columns in worksheets. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | Invalid url. |
+| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
+| 404 | Not Found | Source file not accessible. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining conversion data. |
 
 ### Supported Output Formats
 

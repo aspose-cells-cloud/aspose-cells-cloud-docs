@@ -9,7 +9,7 @@ weight: 100
 ArticleTitle: "Aspose.Cells Cloud TrimCharacter API: Clean Excel Cell Text & Spaces"
 ---
 
-Clean Excel cell content by removing unnecessary spaces, line breaks, and special characters with the Aspose.Cells Cloud TrimCharacter API. This RESTful endpoint enables programmatic data normalization for improved consistency, accuracy, and professionalism in spreadsheets.
+The **TrimCharacter** API (`PUT https://api.aspose.cloud/v4.0/cells/content/trim`) in Aspose.Cells Cloud enables programmatic cleaning of spreadsheet content by removing unnecessary spaces, line breaks, and special characters such as non-breaking spaces. Using this RESTful endpoint, developers can trim leading and trailing whitespace, collapse multiple spaces between words into a single space, and eliminate extra or all line breaks to ensure data consistency, readability, and professional formatting in Excel files uploaded via form-data.
 
 ## Overview
 

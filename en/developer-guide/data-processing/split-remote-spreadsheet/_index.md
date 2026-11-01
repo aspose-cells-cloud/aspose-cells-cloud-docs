@@ -19,6 +19,8 @@ keywords: Aspose.Cells Cloud, split Excel workbook, spreadsheet splitter, cloud 
 ArticleTitle: "Split Excel Workbook in Cloud with Aspose.Cells Cloud API"
 ---
 
+The **SplitRemoteSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/{name}/split/spreadsheet`) in Aspose.Cells Cloud v4.0 splits a remote spreadsheet file stored in cloud storage into multiple output files in formats such as XLSX, CSV, or PDF, based on user-defined criteria like worksheet ranges or custom paths, enabling remote processing without local file downloads.
+
 ## Prerequisites
 
 - An Aspose.Cells Cloud account and API credentials ([get free trial](https://purchase.aspose.cloud/temporary-license)).

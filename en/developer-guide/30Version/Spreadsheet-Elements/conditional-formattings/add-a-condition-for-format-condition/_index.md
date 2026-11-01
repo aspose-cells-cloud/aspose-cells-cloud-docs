@@ -11,9 +11,8 @@ linktitle: "Add Condition"
 ArticleTitle: "Add Condition to Conditional Formatting in Excel using Aspose.Cells Cloud API"
 ---
 
-# Add Condition to Conditional Formatting
 
-Add a condition to an existing conditional‑formatting rule in a worksheet using Aspose.Cells Cloud REST API (v3.0).
+The **PutWorksheetFormatConditionCondition** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}/condition`) enables developers to add a new condition to an existing conditional formatting rule in a worksheet by specifying the condition type (e.g., CellValue, Expression), operator (e.g., GreaterThan, Between), and one or two formulas via query parameters; this Aspose.Cells Cloud REST API v3.0 operation supports precise, programmatic control over conditional formatting logic without requiring local Excel installations.
 
 ---
 

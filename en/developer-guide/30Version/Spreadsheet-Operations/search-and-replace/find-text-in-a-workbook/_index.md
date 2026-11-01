@@ -11,7 +11,7 @@ description: "Use Aspose.Cells Cloud API to search for text in Excel workbooks v
 ArticleTitle: "Find Text in an Excel Workbook using Aspose.Cells Cloud API"
 ---
 
-This REST API searches for text in an Excel workbook.
+The **PostWorkbooksTextSearch** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/findText`) enables developers to search for specified text within an Excel workbook stored in the cloud using Aspose.Cells Cloud. By sending the workbook file name and the target text as required parameters, the API returns a structured response listing all matching text instances, supporting accurate and scalable text discovery across large spreadsheets without local dependencies.
 
 ## REST API
 

@@ -11,7 +11,7 @@ weight: 100
 ArticleTitle: "Get a Pivot Table in an Excel Worksheet"
 ---
 
-This REST API retrieves worksheet **pivot table** information by its index.
+The **GetWorksheetPivotTable** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivottableIndex}`) retrieves detailed information about a specific PivotTable in a worksheet by its zero-based index, enabling developers to programmatically access PivotTable metadata such as cache, data fields, and layout without parsing the entire workbook; Aspose.Cells Cloud supports this operation via a RESTful endpoint and provides SDKs for multiple programming languages including .NET, Java, Go, Node.js, and Python.
 
 ### **Security and Authentication**
 

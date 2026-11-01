@@ -17,7 +17,7 @@ weight: 90
 ArticleTitle: "Auto-fit Columns in Excel with Aspose.Cells Cloud REST API"
 ---
 
-This REST API supports auto‑fitting columns in an Excel workbook.
+The **PostAutofitWorkbookColumns** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/autofitcolumns`) enables programmatic auto-fitting of columns in an Excel workbook stored in the cloud, supporting optional start and end column indices via query parameters to limit the operation to a specific range; Aspose.Cells Cloud handles the complex layout calculations required to adjust column widths based on content, ensuring consistent formatting without manual intervention.
 
 ## PostAutofitWorkbookColumns API
 

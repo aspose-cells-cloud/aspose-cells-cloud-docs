@@ -11,7 +11,8 @@ linktitle: "Get AutoFilter"
 ArticleTitle: "Retrieve AutoFilter Description from Excel Worksheet via Aspose.Cells Cloud API"
 ---
 
-# Retrieve AutoFilter Description from a Worksheet
+
+The **GetWorksheetAutoFilter** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter`) retrieves the full AutoFilter configuration—including filter columns, range, and sorting details—from a specified worksheet in a workbook stored in the cloud, enabling developers to programmatically inspect or replicate complex filter settings using Aspose.Cells Cloud’s REST API.
 
 **Version:** v3.0  
 **Endpoint:** `GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter`

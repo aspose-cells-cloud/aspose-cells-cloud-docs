@@ -10,7 +10,7 @@ linktitle: "Clear Conditional Formatting"
 ArticleTitle: "Clear All Conditional Formatting in Excel with Aspose.Cells Cloud REST API"
 ---
 
-This REST API clears all conditional formatting rules from a worksheet.
+The **DeleteWorksheetConditionalFormattings** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings`) in Aspose.Cells Cloud v3.0 clears all conditional formatting rules from a specified worksheet, enabling developers to programmatically reset formatting without manual intervention; the operation requires the `name` and `sheetName` path parameters and supports optional `folder` and `storageName` query parameters to locate the target file.
 
 ## REST API
 

@@ -10,7 +10,7 @@ ArticleTitle: "Get Chart from a Worksheet – Aspose.Cells Cloud API"
 linktitle: "Get Chart"
 ---
 
-This REST API retrieves chart information.
+The **GetWorksheetChart** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartNumber}`) retrieves chart data from a specific worksheet in a spreadsheet document stored in Aspose.Cells Cloud, supporting optional format conversion to PNG, TIFF, JPEG, GIF, EMF, or BMP via the `format` query parameter; this operation enables developers to programmatically extract and convert embedded charts for integration into reports, dashboards, or web applications using REST or one of Aspose.Cells Cloud’s SDKs.
 
 **Prerequisites** – To call this endpoint you must have a valid Aspose.Cells Cloud account, an active storage location, and a JWT access token. Obtain the token following the instructions in the authentication guide before making any API requests.
 

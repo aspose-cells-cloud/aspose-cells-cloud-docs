@@ -11,6 +11,8 @@ description: "Deletes characters from cells by position in a spreadsheet."
 weight: 100
 ---
 
+The **RemoveCharactersByPosition** API (`PUT https://api.aspose.cloud/v4.0/cells/content/remove/characters-by-position`) in Aspose.Cells Cloud enables precise, position-based character removal from spreadsheet cells—such as stripping the first or last N characters, deleting text before or after a substring, or extracting content between delimiters—while preserving formulas, formatting, and data validation rules.
+
 ## The Remove Characters By Position of Aspose.Cells Cloud Web Services
 
 Deletes characters from every cell in the target range by position (first/last N, before/after a substring, or between two delimiters) while preserving formulas, formatting and data‑validation.

@@ -11,7 +11,7 @@ lastmod: 2024-02-15
 linktitle: "Get Last Cell"
 ---
 
-This REST API returns the **endcell** of an Excel worksheet when the `cellOrMethodName` parameter is set to `endcell`.
+The **GetWorksheetCell** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellOrMethodName}`) enables developers to retrieve cell data from an Excel worksheet by specifying either a cell reference (e.g., "A1") or a method name such as `firstcell` or `endcell`, allowing precise access to spreadsheet elements without manual parsing; Aspose.Cells Cloud supports this operation via REST and offers SDKs for .NET, Java, Go, Node.js, Python, and other languages.
 
 **Overview**  
 The **Get Last Cell** operation returns the address of the last used cell in a specified worksheet. It is useful for determining the effective data range of a sheet without scanning the entire workbook.

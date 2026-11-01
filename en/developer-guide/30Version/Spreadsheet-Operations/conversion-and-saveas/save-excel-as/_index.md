@@ -13,8 +13,7 @@ weight: 30
 ArticleTitle: "Save Excel Workbook to PDF, CSV, JSON, Markdown & More with Aspose.Cells Cloud API"
 ---
 
-This REST API allows you **to save** an Excel file in different formats.  
-Before calling this endpoint, ensure you have a valid OAuth 2.0 access token and that the source workbook is stored in your Aspose Cloud storage.
+The **PostWorkbookSaveAs** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/SaveAs`) enables developers to save an Excel workbook stored in Aspose Cloud storage to over 30 alternative formats—including PDF, Markdown, JSON, XML, CSV, HTML, and more—by specifying a new filename and optional save options, with support for features like auto-fitting rows/columns and custom font handling.
 
 **Prerequisites**
 

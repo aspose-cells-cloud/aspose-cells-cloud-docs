@@ -25,9 +25,8 @@ aliases:
 linktitle: "Import data with storage"
 ---
 
-# Import Data into Excel Using Cloud Storage
 
-Aspose.Cells Cloud REST API enables you to import structured data from various sources (e.g., JSON, CSV, arrays) directly into Excel worksheets. This functionality supports cloud-based workflows, eliminating the need for local file handling.
+The **PostImportData** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/importdata`) enables you to import structured data—such as CSV, JSON, arrays, or images—directly into an Excel file stored in cloud storage, supporting workflows that avoid local file handling. Aspose.Cells Cloud provides this REST API operation with parameters like `importOption`, `folder`, and `storageName` to control how and where data is inserted, making it suitable for scalable, server-side automation across multiple programming languages via official SDKs.
 
 ## API Overview
 

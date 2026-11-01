@@ -9,7 +9,7 @@ ArticleTitle: "Get First Cell (A1) from an Excel Worksheet using Aspose.Cells Cl
 linktitle: "Get First Cell (A1)"
 ---
 
-This REST API shows how to retrieve the **first cell** in an Excel file when the `cellOrMethodName` parameter is set to `firstcell`.
+The **GetWorksheetCell** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellOrMethodName}`) enables developers to retrieve cell data from a specific Excel worksheet by specifying either a cell reference (e.g., "A1") or a method name such as `firstcell` to fetch the first cell in the worksheet, supporting programmatic access to spreadsheet content via Aspose.Cells Cloud.
 
 **Endpoint**  
 `GET https://api.aspose.com/v3.0/cells/{fileName}/worksheets/{worksheet}/cells/firstcell`

@@ -17,6 +17,8 @@ type: docs
 keywords: "Aspose.Cells Cloud, copy columns, Excel column duplication, REST API v3.0, PostCopyWorksheetColumns, cURL example, SDK integration, conditional formatting copy, worksheet column operations, authentication JWT"
 ---
 
+The **PostCopyWorksheetColumns** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/copy`) in Aspose.Cells Cloud REST API v3.0 enables copying a specified number of columns from a source index to a destination index within the same or a different worksheet, preserving values, styles, formulas, and conditional formatting; this operation supports tasks like template duplication and structural reorganization in large Excel workbooks.
+
 ## Overview
 
 The **Copy Columns** operation in Aspose.Cells Cloud REST API v3.0 enables you to duplicate a single column or a contiguous range of columns within the same Excel worksheet. The copied content—including values, cell styles, conditional formatting, and formulas—is inserted at a specified destination column index. This operation supports large-scale spreadsheet management and is ideal for tasks such as template duplication, data expansion, and structural reorganization.

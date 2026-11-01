@@ -9,7 +9,7 @@ ArticleTitle: "Get Chart Second Category Axis – Aspose.Cells Cloud API"
 linktitle: "Get Second Category Axis"
 ---
 
-This REST API retrieves the **second‑category axis** of a chart.
+The **GetChartSecondCategoryAxis** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/secondcategoryaxis`) retrieves the second category axis of a chart in a spreadsheet via Aspose.Cells Cloud, enabling developers to programmatically access axis properties—such as scale, formatting, and title—without modifying the source file, supporting tasks like dynamic chart analysis and reporting across .NET, Java, Python, and other supported SDKs.
 
 ## GetChartSecondCategoryAxis API
 

@@ -14,7 +14,7 @@ weight: 19
 ArticleTitle: "Import Batch Data into Excel Worksheet – Aspose.Cells Cloud Documentation"
 ---
 
-This REST API **imports batch data** into an Excel worksheet. It accepts a multipart request where the first part contains the **ImportBatchDataOption** object and the second part carries the actual data file (CSV, JSON, XML, etc.).
+The **PostImport** API (`POST https://api.aspose.cloud/v3.0/cells/import`) in Aspose.Cells Cloud enables importing batch data into an Excel file by accepting a multipart request: the first part carries an ImportBatchDataOption configuration object, and the second part uploads the source data file (such as CSV, JSON, or XML), supporting output generation in multiple formats including XLSX, PDF, and CSV via the optional outFormat parameter.
 
 The operation uses an HTTP request with multipart content (see [RFC 2046](https://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](https://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)).
 

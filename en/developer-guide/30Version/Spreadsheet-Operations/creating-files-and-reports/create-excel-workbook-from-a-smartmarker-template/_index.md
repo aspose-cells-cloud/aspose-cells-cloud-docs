@@ -14,7 +14,7 @@ weight: 40
 ArticleTitle: "Build Excel Reports with Smart Marker Templates – Aspose.Cells Cloud API Guide"
 ---
 
-This REST API creates a workbook using a Smart Marker template.
+The **PostWorkbookGetSmartMarkerResult** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/smartmarker`) enables developers to process Excel workbooks using Smart Marker templates by sending a POST request with the template file name in the path and optional data via the request body or an XML file; Aspose.Cells Cloud supports this complex processing workflow, allowing dynamic report generation from structured data without requiring local Excel installation.
 
 ## Workbook SmartMarker API
 

@@ -22,7 +22,8 @@ weight: 100
 ArticleTitle: "Delete Excel Columns via Aspose.Cells Cloud REST API"
 ---
 
-# Delete Columns from Excel Worksheet
+
+The **DeleteWorksheetColumns** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex}`) enables developers to remove one or more columns from an Excel worksheet using Aspose.Cells Cloud, with optional automatic updating of cell references—including formulas—in other worksheets via the `updateReference` query parameter.
 
 **Endpoint**: `DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex}`
 

@@ -9,7 +9,7 @@ description: "Use the Aspose.Cells Cloud AddText API to insert prefixes, suffixe
 weight: 100
 ---
 
-Bulk-insert prefixes, suffixes, or custom text into multiple Excel cells in a single API call—no formulas, helper columns, or manual editing required.
+The **AddText** API (`PUT https://api.aspose.cloud/v4.0/cells/content/add/text`) in Aspose.Cells Cloud enables bulk insertion of prefixes, suffixes, or custom text into multiple Excel cells in a single request—no formulas, helper columns, or manual editing required. You specify the text to add, its position (e.g., AtTheBeginning, AtTheEnd, BeforeText, or AfterText), and optionally anchor text or cell ranges; empty cells can be skipped or filled, and numeric/formula cells are safely converted to strings before modification. The operation returns the updated workbook and a count of affected cells.
 
 ## Overview
 

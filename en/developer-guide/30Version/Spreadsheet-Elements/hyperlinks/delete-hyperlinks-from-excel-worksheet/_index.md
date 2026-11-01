@@ -10,7 +10,7 @@ ArticleTitle: "Clear Hyperlinks – Aspose.Cells Cloud API Documentation"
 linktitle: "Clear Hyperlinks"
 ---
 
-This REST API deletes **all hyperlinks** on an Excel worksheet.
+The **DeleteWorksheetHyperlinks** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks`) enables developers to remove all hyperlinks from a specified Excel worksheet using Aspose.Cells Cloud, a robust cloud-based solution that supports programmatic hyperlink management through its REST API and SDKs for multiple languages including .NET, Java, and Python.
 
 ## Security and Authentication
 The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).

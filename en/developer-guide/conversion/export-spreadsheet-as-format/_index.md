@@ -16,6 +16,8 @@ weight: 100
 ArticleTitle: "Export Excel Workbook to PDF, XLSX, CSV, HTML, JSON & More via Aspose.Cells Cloud API"
 ---
 
+The **ExportSpreadsheetAsFormat** API (`GET https://api.aspose.cloud/v4.0/cells/{name}`) in Aspose.Cells Cloud converts Excel workbooks stored in cloud storage to target formats such as PDF, XLSX, CSV, HTML, JSON, ODS, and TIFF without requiring local downloads, preserving formatting, formulas, and styling while improving performance for large files through remote processing.
+
 ## Overview
 
 The **ExportSpreadsheetAsFormat** API enables you to convert Excel workbooks stored in Aspose Cloud to a wide range of formats—including PDF, XLSX, CSV, HTML, JSON, ODS, and TIFF—directly in the cloud. The operation processes the file remotely, eliminating local downloads and preserving formatting, formulas, and styling.

@@ -11,7 +11,7 @@ ArticleTitle: "Get all pictures in an Excel worksheet - Aspose.Cells Cloud API"
 weight: 100
 ---
 
-This REST API retrieves all picture information from an Excel worksheet.
+The **GetWorksheetPictures** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures`) retrieves descriptions of all pictures in a specified Excel worksheet using Aspose.Cells Cloud, enabling developers to programmatically access picture metadata such as position, size, and type without manual extraction.
 
 **Prerequisites**  
 Before calling this endpoint, ensure you have:

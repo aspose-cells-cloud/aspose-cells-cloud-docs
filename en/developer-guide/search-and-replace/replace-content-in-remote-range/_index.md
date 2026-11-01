@@ -9,7 +9,7 @@ weight: 100
 ArticleTitle: "Replace Text in Remote Excel Range via Aspose.Cells Cloud API"
 ---
 
-Perform bulk text replacement across remote Excel files stored in cloud storage such as AWS S3, Azure Blob Storage, or Google Cloud Storage. This API enables precise find-and-replace operations within a defined cell range of a worksheet without downloading the file.
+The **ReplaceContentInRemoteRange** API (`PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{cellArea}/replace/content`) in Aspose.Cells Cloud v4.0 enables precise, bulk text replacement within a specified cell range of a remote Excel file stored in cloud storage—such as AWS S3, Azure Blob, or Google Cloud Storage—without requiring the file to be downloaded locally.
 
 ---
 

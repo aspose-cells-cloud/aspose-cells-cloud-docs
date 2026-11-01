@@ -19,6 +19,8 @@ type: docs
 ArticleTitle: "Merge Spreadsheets in Remote Aspose.Cells Cloud Folder"
 ---
 
+The **MergeSpreadsheetsInRemoteFolder** API (`PUT https://api.aspose.cloud/v4.0/cells/merge/remote-spreadsheets`) enables Aspose.Cells Cloud users to merge multiple spreadsheet files stored in a remote cloud storage folder into a single output file—fully in the cloud—without downloading files locally, supporting over 30 output formats including XLSX, CSV, PDF, ODS, JSON, and XPS.
+
 ## Overview
 
 Merge multiple spreadsheet files stored in a remote Aspose Cloud storage folder into a single output file, fully in the cloud—no local file downloads required. The operation supports over 30 output formats, including **PDF**, **CSV**, **JSON**, **XLSX**, **ODS**, and **XPS**.

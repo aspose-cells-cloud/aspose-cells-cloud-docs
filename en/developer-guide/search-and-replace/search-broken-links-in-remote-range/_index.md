@@ -10,6 +10,8 @@ description: "Detect broken external links, invalid formulas, and missing data s
 weight: 100
 ---
 
+The **SearchBrokenLinksInRemoteRange** API (`PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{cellArea}/search/broken-links`) in Aspose.Cells Cloud v4.0 scans a specified range in a remote Excel workbook for broken hyperlinks and invalid external references, enabling automated quality checks and enterprise workflow integration without downloading the file.
+
 ## **Search Broken Links in Remote Range API**
 
 Automatically detect broken links in the range data of Excel files stored in cloud storage. Our API scans specified ranges for broken external references, invalid formulas, and missing data sources. Supports remote spreadsheet auditing, automated quality checks, and integration with cloud storage providers. RESTful API for enterprise workflow automation.

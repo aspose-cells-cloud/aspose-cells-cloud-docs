@@ -9,6 +9,8 @@ weight: 100
 ArticleTitle: "Search Excel Range Content in Aspose.Cells Cloud API"
 ---
 
+The **SearchContentInRemoteRange** API (`PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{cellArea}/search/content`) enables programmatic text, number, or formula search within a specified range of an Excel workbook stored in Aspose.Cells Cloud, supporting remote, cloud-based processing without downloading the file—ideal for automated data discovery, content analysis, and spreadsheet auditing workflows.
+
 ## API Overview
 
 Programmatically search for specific text, numbers, or formulas in a defined range of an Excel workbook stored in Aspose Cloud. This RESTful API enables automated data discovery, content analysis, and spreadsheet auditing workflows—without downloading the file.

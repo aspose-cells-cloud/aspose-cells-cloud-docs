@@ -11,7 +11,7 @@ ArticleTitle: "Get Cell Data from a Worksheet"
 linktitle: "Get Cell Data"
 ---
 
-This REST API retrieves a cell from an Excel worksheet when the **`cellOrMethodName`** parameter specifies a cell name (an A1‑style address such as `A3`).
+The **GetWorksheetCell** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellOrMethodName}`) retrieves cell data from a specific worksheet in an Excel file using either a cell reference (e.g., `A3`) or a predefined method name (e.g., `firstcell`, `endcell`), enabling developers to programmatically extract cell content via Aspose.Cells Cloud's REST interface.
 
 - **cURL Example**
 

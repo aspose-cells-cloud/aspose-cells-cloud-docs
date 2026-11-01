@@ -10,7 +10,7 @@ linktitle: "Create Pivot Table"
 ArticleTitle: "Create Pivot Table in Excel with Aspose.Cells Cloud CellsObjectOperate Task"
 ---
 
-This REST API **creates** a pivot table using the **CellsObjectOperate** task.
+The **PostRunTask** API (`POST https://api.aspose.cloud/v3.0/cells/task/runtask`) in Aspose.Cells Cloud v3.0 enables users to execute background tasks—such as creating a pivot table—by submitting structured task data in the request body. This operation allows developers to automate complex spreadsheet operations, including generating pivot tables from cell data, without manual intervention in the cloud. The API accepts a required `TaskData` object defining the task type and parameters, and returns a stream response containing the processed workbook or result.
 
 **PivotTableOperateParameter**
 

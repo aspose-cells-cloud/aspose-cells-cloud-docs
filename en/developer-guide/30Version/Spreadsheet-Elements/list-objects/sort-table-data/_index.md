@@ -11,8 +11,7 @@ weight: 40
 ArticleTitle: "Sort ListObject Data in an Excel Worksheet – Aspose.Cells Cloud API"
 ---
 
-**Prerequisites**  
-To call this API you must have a valid Aspose Cloud JWT access token and the workbook must be uploaded to Aspose Cloud storage. Include the header `Authorization: Bearer <jwt token>` in every request.
+The **PostWorksheetListObjectSortTable** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/sort`) enables sorting of list objects within a worksheet by sending a `DataSorter` object in the request body, allowing developers to programmatically define sort criteria such as column order and sort direction; to use this API, you must include a valid Aspose Cloud JWT access token in the `Authorization: Bearer <jwt token>` header and ensure the target workbook is uploaded to Aspose Cloud storage.
 
 This REST API sorts a table’s data in an Excel worksheet.  
 To use this operation, provide the workbook name, worksheet name, and the index of the target ListObject, together with a `dataSorter` JSON body that defines the sorting criteria.

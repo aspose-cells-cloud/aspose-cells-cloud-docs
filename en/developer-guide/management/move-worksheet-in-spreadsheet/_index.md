@@ -12,7 +12,7 @@ api_version: v4.0
 ArticleTitle: "Move Worksheet in Excel via Aspose.Cells Cloud REST API"
 ---
 
-Rearrange Excel worksheet order programmatically using the Aspose.Cells Cloud REST API. This operation moves a specified worksheet to a new position within the workbook, enabling standardized report layouts, logical data processing structures, and user-customized workbook delivery.
+The **MoveWorksheetInSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/move/worksheet`) in Aspose.Cells Cloud enables developers to programmatically reposition a specified worksheet within an Excel workbook by name and target index, supporting dynamic report structuring and logical data flow without manual intervention.
 
 ## Prerequisites
 

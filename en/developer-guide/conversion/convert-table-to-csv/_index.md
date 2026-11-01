@@ -11,11 +11,9 @@ weight: 100
 date: 2024-05-20
 ---
 
-Export table data from a local Excel file to a CSV file using the Cloud API.
+The **ConvertTableToCsv** API (`PUT https://api.aspose.cloud/v4.0/cells/convert/table/csv`) in Aspose.Cells Cloud enables direct conversion of a specified table from a local Excel file to CSV format without requiring prior upload or cloud storage, supporting secure, server-side processing with precise control via parameters like `worksheet`, `tableName`, and optional `password` or `region` settings.
 
 ## **Convert Table to CSV API**
-
-### Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/convert/table/csv
@@ -33,16 +31,18 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Request Parameters:**
 
-| Parameter Name | Type   | Path/Query String/HTTP Body | Description                                                                                                                             |
-| -------------- | ------ | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| Spreadsheet    | File   | FormData                    | Upload the spreadsheet file.                                                                                                            |
-| worksheet      | String | Query                       | Name of the worksheet in the spreadsheet.                                                                                               |
-| tableName      | String | Query                       | Name of the table to be converted.                                                                                                      |
-| outPath        | String | Query                       | (Optional) Folder path where the workbook is stored; defaults to null.                                                                  |
-| outStorageName | String | Query                       | Name of the storage for the output file.                                                                                                |
-| fontsLocation  | String | Query                       | Path for using custom fonts.                                                                                                            |
-| region         | String | Query                       | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale-specific behavior. |
-| password       | String | Query                       | Password for opening the spreadsheet file.                                                                                              |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| worksheet | String | Query | worksheet name of spreadsheet. |
+| tableName | String | Query | table name |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| fontsLocation | String | Query | Use Custom fonts. |
+| AutoRowsFit | Boolean | Query | (Optional) Autofits all rows in worksheets. |
+| AutoColumnsFit | Boolean | Query | (Optional) Autofits all columns in worksheets. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
 
 ### **Response**
 
@@ -58,15 +58,24 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 ]
 ```
 
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
 **HTTP Status Codes**
 
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | Invalid url. |
+| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
+| 404 | Not Found | Source file not accessible. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining conversion data. |
 
 ## **Where Should You Use the Convert Table to CSV API?**
 

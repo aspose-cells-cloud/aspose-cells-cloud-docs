@@ -10,8 +10,7 @@ weight: 23
 ArticleTitle: "Get metadata from Excel files - Aspose.Cells Cloud API"
 ---
 
-This REST API retrieves **metadata** from one or more Excel files.  
-The request must include an `Authorization: Bearer <access_token>` header obtained via the OAuth 2.0 client‑credentials flow.
+The **GetMetadata** API (`POST https://api.aspose.cloud/v3.0/cells/metadata/get`) retrieves document properties—such as title, author, or custom built-in metadata—from one or more Excel files uploaded via form-data. Using Aspose.Cells Cloud, this operation supports extracting structured metadata without requiring local Excel installation, enabling programmatic analysis of workbook properties across cloud-based workflows.
 
 **Prerequisites**: To call this endpoint you must have a valid access token obtained from the Aspose Cloud OAuth 2.0 token endpoint. Example curl request to acquire a token:
 

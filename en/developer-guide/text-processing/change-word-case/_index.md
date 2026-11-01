@@ -9,6 +9,8 @@ description: "Convert Excel text case using Aspose.Cells Cloud API: uppercase, l
 weight: 100
 ---
 
+The **UpdateWordCase** API (`PUT https://api.aspose.cloud/v4.0/cells/content/wordcase`) in Aspose.Cells Cloud enables instant text case conversion in spreadsheets—supporting Upper Case, Lower Case, Proper Case, and Sentence Case—by processing only string cells while preserving formulas, formatting, and data validation; users upload a spreadsheet and specify the desired case type via query parameter, optionally targeting a specific worksheet or range.
+
 ## **Change Word Case**
 
 Use the Aspose.Cells Cloud Web API to instantly convert text case in your spreadsheet—switch between uppercase, lowercase, proper case (capitalize each word), or sentence case (capitalize the first letter of each sentence) across a selected range. Only string cells are affected; numbers, booleans, errors, and blanks are ignored. Formulas, formatting, and data validation remain untouched.

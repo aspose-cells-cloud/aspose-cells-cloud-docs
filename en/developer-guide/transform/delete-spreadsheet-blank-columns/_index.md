@@ -19,7 +19,7 @@ weight: 100
 ArticleTitle: "Delete Blank Columns from Excel with Aspose.Cells Cloud API v4"
 ---
 
-Remove blank columns from Excel workbooks programmatically with Aspose.Cells Cloud API v4. This server-side solution scans all worksheets and eliminates columns where _every cell_ is empty—no data, formulas, comments, charts, or objects. Ideal for data import pipelines, report generation, and legacy file modernization, it improves file size, rendering speed, and downstream processing accuracy.
+The **RemoveSpreadsheetBlankColumns** API (`PUT https://api.aspose.cloud/v4.0/cells/remove/blank-columns`) in Aspose.Cells Cloud v4.0 deletes all blank columns—those where every cell is empty of data, formulas, comments, charts, or objects—from an uploaded Excel workbook, improving file size, rendering speed, and downstream processing accuracy; the operation scans all worksheets server-side and returns a cleaned workbook via a `ResponseFile` response.
 
 > **Note**: Aspose.Cells Cloud v4 is stable and production-ready. For early access to v5 features, contact [support@aspose.cloud](mailto:support@aspose.cloud).
 

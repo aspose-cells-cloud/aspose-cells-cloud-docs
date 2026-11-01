@@ -10,7 +10,7 @@ linktitle: "Add Chart Title"
 ArticleTitle: "Add or Update Chart Title in Excel with Aspose.Cells Cloud API"
 ---
 
-Adds a chart title or makes an existing title visible.
+The **PutWorksheetChartTitle** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title`) enables developers to set or update the title of a specific chart in an Excel worksheet using Aspose.Cells Cloud, supporting operations such as adding a new title or modifying an existing one by sending a `TitleChart` object in the request body.
 
 ## PutWorksheetChartTitle API
 

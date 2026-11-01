@@ -12,6 +12,8 @@ weight: 80
 ArticleTitle: "Replace Text in Excel Files with Aspose.Cells Cloud REST API"
 ---
 
+The **PostReplace** API (`POST https://api.aspose.cloud/v3.0/cells/replace`) enables developers to replace specified text with new text in Excel files using Aspose.Cells Cloud, supporting operations on single or multiple files, optional worksheet targeting, and password-protected workbooks via a JWT-authenticated REST call.
+
 ## Replace Text in Excel Files
 
 Replace specified text with new text in Excel files using Aspose.Cells Cloud REST API. This operation supports multiple files in a single request, optional worksheet targeting, and password-protected workbooks. All API calls require JWT token-based authentication.

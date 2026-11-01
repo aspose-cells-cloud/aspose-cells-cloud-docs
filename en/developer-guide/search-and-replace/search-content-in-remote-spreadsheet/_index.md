@@ -10,6 +10,8 @@ weight: 100
 ArticleTitle: "Search Text in Remote Excel Files via Aspose.Cells Cloud API"
 ---
 
+The **SearchContentInRemoteSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/{name}/search/content`) enables developers to programmatically search for specific text, numbers, or formulas within Excel workbooks stored in Aspose.Cells Cloud—without downloading the file—by scanning all worksheets and cells remotely and returning precise match locations for automated data discovery, compliance auditing, or template validation workflows.
+
 ## Search Content in Remote Spreadsheet API
 
 Programmatically search for specific text, numbers, or formulas in Excel workbooks stored in cloud storage using the Aspose.Cells Cloud REST API. This operation scans all worksheets and cells remotely—no file download required—and returns precise locations of matches, enabling automated data discovery, compliance auditing, and template validation workflows.

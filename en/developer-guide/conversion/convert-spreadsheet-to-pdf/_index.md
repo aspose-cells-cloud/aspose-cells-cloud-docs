@@ -12,7 +12,7 @@ weight: 100
 ArticleTitle: "Convert Spreadsheet to PDF with Aspose.Cells Cloud API"
 ---
 
-The **ConvertSpreadsheetToPdf** endpoint enables direct conversion of a spreadsheet file uploaded from a local drive into a PDF document—processed entirely on Aspose.Cells Cloud servers—without storing the source file in cloud storage. This cloud-native approach reduces bandwidth usage, eliminates intermediate upload steps, and delivers the output PDF as a binary stream ready for download or further processing.
+The **ConvertSpreadsheetToPdf** API (`PUT https://api.aspose.cloud/v4.0/cells/convert/spreadsheet/pdf`) in Aspose.Cells Cloud enables direct conversion of a local spreadsheet file into a PDF document entirely on the cloud server—without requiring the file to be stored in cloud storage first—by accepting the source file as a multipart/form-data upload and returning the PDF as a binary response stream for immediate download or integration.
 
 The API validates file existence, permissions, and conversion integrity, returning appropriate HTTP status codes and error messages for invalid input or processing failures.
 
@@ -43,30 +43,42 @@ Then include the token in the `Authorization` header:
 
 ---
 
-## Request Parameters
+### Request Parameters
 
-| Parameter Name   | Type    | Location | Required | Description                                                                                                                           |
-| :--------------- | :------ | :------- | :------- | :------------------------------------------------------------------------------------------------------------------------------------ |
-| `Spreadsheet`    | File    | FormData | ✅ Yes   | The source spreadsheet file (e.g., `XLS`, `XLSX`, `CSV`). Max size: **100 MB**. Must be readable and valid.                           |
-| `outPath`        | String  | Query    | ❌ No    | Destination folder path for saving the PDF on the server (e.g., `/output/reports`). Omit to return PDF directly in the response body. |
-| `outStorageName` | String  | Query    | ❌ No    | Name of the target storage (e.g., `MyCloudStorage`). Required only if `outPath` is specified and non-default storage is used.         |
-| `fontsLocation`  | String  | Query    | ❌ No    | Custom fonts folder path (e.g., `/fonts/custom/`) to ensure accurate text rendering.                                                  |
-| `AutoRowsFit`    | Boolean | Query    | ❌ No    | Whether to auto-fit all rows before conversion.                                                                                       |
-| `AutoColumnsFit` | Boolean | Query    | ❌ No    | Whether to auto-fit all columns before conversion.                                                                                    |
-| `region`         | String  | Query    | ❌ No    | Locale setting (e.g., `en-US`, `fr-FR`) to affect number/date formatting.                                                             |
-| `password`       | String  | Query    | ❌ No    | Password to decrypt a protected spreadsheet. Omit for unprotected files.                                                              |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| fontsLocation | String | Query | Use Custom fonts. |
+| AutoRowsFit | Boolean | Query | (Optional) Autofits all rows in worksheets. |
+| AutoColumnsFit | Boolean | Query | (Optional) Autofits all columns in worksheets. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
 
 ---
 
-## Response
+### Response
 
-### Success (200 OK)
+```json
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
+```
 
-- **Content-Type**: `application/pdf`
-- **Content-Disposition**: `attachment; filename="converted.pdf"`
-- **Content-Length**: `<size in bytes>`
+**Sample response headers**
 
-**Body**: Binary PDF stream
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
 
 ### Error Responses
 
@@ -80,6 +92,14 @@ Then include the token in the `Authorization` header:
 | `500`     | Internal Server Error | Unexpected server-side failure during conversion.                              |
 
 ---
+
+### Success (200 OK)
+
+- **Content-Type**: `application/pdf`
+- **Content-Disposition**: `attachment; filename="converted.pdf"`
+- **Content-Length**: `<size in bytes>`
+
+**Body**: Binary PDF stream
 
 ## Use Cases
 

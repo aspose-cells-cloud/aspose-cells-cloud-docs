@@ -11,6 +11,8 @@ description: "Import JSON data file into the local spreadsheet."
 weight: 100
 ---
 
+The **ImportJSONDataIntoSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/import/data/json`) in Aspose.Cells Cloud enables developers to import JSON data directly into a specified worksheet of an existing spreadsheet file by parsing the JSON and mapping it to cell values starting at a given position; it supports formats like .xlsx and .ods and allows control over whether data is inserted or overwrites existing content via the `insert` parameter.
+
 ## The Import JSON Data Into Spreadsheet of Aspose.Cells Cloud Web Services
 
 Import JSON data file into the local spreadsheet. The method parses the JSON, maps the data to the spreadsheet's cell structure, and saves the file locally. Supported spreadsheet formats include .xlsx and .ods.

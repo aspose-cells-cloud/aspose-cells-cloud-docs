@@ -12,7 +12,7 @@ weight: 65
 ArticleTitle: "Add a custom criterion in an Excel worksheet – Aspose.Cells Cloud API"
 ---
 
-This REST API filters a list using a **custom criteria**.
+The **PutWorksheetCustomFilter** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/custom`) enables Aspose.Cells Cloud users to apply custom filter criteria to a specified range in a worksheet, allowing precise control over visible data by filtering based on field index, operator type, and custom criteria—such as filtering rows where values are greater than a threshold or match a specific text pattern—without requiring local Excel installation.
 
 ## PutWorksheetCustomFilter API
 

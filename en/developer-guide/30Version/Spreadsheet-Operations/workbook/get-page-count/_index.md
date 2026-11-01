@@ -12,7 +12,7 @@ version: "v3.0"
 ArticleTitle: "Get Page Count from an Excel File using Aspose.Cells Cloud API"
 ---
 
-This REST API returns the **page count** for a workbook.
+The **GetPageCount** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/pagecount`) enables developers to retrieve the total number of pages in an Excel workbook stored in the cloud, supporting scenarios like pagination planning or document analysis; it accepts the workbook’s filename as a required path parameter, with optional `folder` and `storageName` query parameters to specify location and storage, and returns an integer count reflecting the workbook’s printed page layout.
 
 ## Security and Authentication
 

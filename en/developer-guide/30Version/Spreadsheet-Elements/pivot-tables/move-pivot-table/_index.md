@@ -11,7 +11,7 @@ weight: 120
 ArticleTitle: "Move Pivot Table Field with Aspose.Cells Cloud REST API"
 ---
 
-This REST API moves a pivot table within an Excel workbook.
+The **PostPivotTableFieldMoveTo** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField/Move`) enables moving a pivot field within a specific PivotTable by specifying the field index and the source and target field area types (e.g., Column, Row, Page, Data, or Undefined), allowing precise reorganization of PivotTable data layout programmatically via Aspose.Cells Cloud.
 
 **Prerequisites:** Before calling this operation you must have a valid JWT access token and the workbook must be stored in Aspose Cloud storage. Specify the `folder` and `storageName` parameters as needed.
 

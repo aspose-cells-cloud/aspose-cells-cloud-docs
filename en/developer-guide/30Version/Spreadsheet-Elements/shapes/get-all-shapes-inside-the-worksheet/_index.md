@@ -11,7 +11,7 @@ ArticleTitle: "Get All Shapes on an Excel Worksheet"
 weight: 100
 ---
 
-This REST API enables retrieval of all shapes on an Excel worksheet.
+The **GetWorksheetShapes** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes`) retrieves descriptions of all shapes contained within a specified Excel worksheet, enabling developers to programmatically inspect and work with embedded objects such as charts, pictures, and drawing elements via Aspose.Cells Cloud's REST API.
 
 ## Security and Authentication
 

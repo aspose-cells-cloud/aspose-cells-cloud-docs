@@ -11,7 +11,7 @@ weight: 100
 ArticleTitle: "Move a named range with an Excel worksheet using Aspose.Cells Cloud API"
 ---
 
-Moving a named range is a common task when you need to reorganize data programmatically. This section explains how to relocate a defined range to a new position on the same worksheet using the Aspose.Cells Cloud REST API.
+The **PostWorksheetCellsRangeMoveTo** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/moveto`) enables programmatic relocation of a named range within a worksheet by specifying the source range in the request body and the destination row and column via query parameters. Using Aspose.Cells Cloud, developers can move ranges to new positions—such as adjusting layout after inserting or deleting rows/columns—while preserving formatting and formulas, supporting automation of dynamic spreadsheet reorganization tasks across Net, Java, Go, Node.js, and Python via SDKs.
 
 This REST API moves a specified range to a destination range on an Excel worksheet.
 

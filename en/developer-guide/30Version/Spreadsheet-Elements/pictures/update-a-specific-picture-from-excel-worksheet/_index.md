@@ -11,7 +11,7 @@ ArticleTitle: "Update picture in an Excel file using Aspose.Cells Cloud REST API
 weight: 70
 ---
 
-This REST API updates a picture, identified by its index, on an Excel worksheet.
+The **PostWorksheetPicture** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}`) enables updating a specific picture in an Excel worksheet by its zero-based index using Aspose.Cells Cloud, allowing developers to replace or modify picture content programmatically with a JSON-serialized picture object in the request body.
 
 **Prerequisites:** You must have a valid Aspose Cloud JWT token, the target Excel file stored in your Aspose Cloud storage, and use API version 3.0 or later.
 

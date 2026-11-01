@@ -16,9 +16,8 @@ slug: delete-vertical-page-break
 api_version: v3.0
 ---
 
-# Delete Vertical Page Break
 
-Delete a vertical page break from a worksheet in an Excel workbook using the Aspose.Cells Cloud REST API.
+The **DeleteVerticalPageBreak** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/verticalpagebreaks/{index}`) enables developers to remove a specific vertical page break from a worksheet in an Excel workbook via the Aspose.Cells Cloud REST API, using the workbook name, worksheet name, and zero-based index of the page break as required path parameters.
 
 > 💡 **Tip**: Replace `client_id` and `client_secret` with valid credentials from your [Aspose Cloud Dashboard](https://dashboard.aspose.cloud/). For JWT token generation, see our [Authentication Guide]（https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/）.
 

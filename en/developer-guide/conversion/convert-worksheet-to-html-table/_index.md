@@ -11,6 +11,8 @@ description: "Converts a worksheet of a spreadsheet on a local drive to an HTML 
 weight: 100
 ---
 
+The **ConvertWorksheetToHtmlTable** API (`PUT https://api.aspose.cloud/v4.0/cells/convert/worksheet/html-table`) in Aspose.Cells Cloud enables direct conversion of a specified worksheet from a locally uploaded spreadsheet file into an HTML table, returning the result as a file stream without requiring prior storage in the cloud; it supports optional locale settings and password-protected workbooks for accurate rendering.
+
 ## The Convert Worksheet To Html Table of Aspose.Cells Cloud Web Services
 
 This operation reads a spreadsheet file from the local file system, converts its specified worksheet to an HTML table, and returns the converted result as a file stream. The conversion is performed entirely on the cloud server, so no intermediate upload to cloud storage is required. It supports optional locale settings and password‑protected workbooks.

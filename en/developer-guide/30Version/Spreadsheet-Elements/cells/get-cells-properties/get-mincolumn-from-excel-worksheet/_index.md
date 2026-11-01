@@ -11,7 +11,7 @@ robots: index, follow
 linktitle: "Get MinColumn"
 ---
 
-This REST API returns the minimum column index that contains data in an Excel worksheet when the `cellOrMethodName` parameter is set to `mincolumn`.
+The **GetWorksheetCell** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellOrMethodName}`) retrieves cell data from an Excel worksheet by specifying either a cell reference (e.g., "A1") or a method name such as `mincolumn`, enabling developers to programmatically determine structural properties like the minimum column index containing data in the worksheet.
 
 - **cURL Example**
 

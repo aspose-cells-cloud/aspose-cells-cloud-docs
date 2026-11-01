@@ -11,6 +11,8 @@ description: "Accept all revisions in a remote spreadsheet and return the update
 weight: 100
 ---
 
+The **AcceptAllRevisionsInRemoteSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/{name}/accept-all-revisions`) in Aspose.Cells Cloud v4.0 accepts all tracked changes (revisions) in a specified workbook stored in remote storage, optionally saving the updated workbook to a different path or storage and returning the result as a binary stream.
+
 ## The Accept All Revisions In Remote Spreadsheet of Aspose.Cells Cloud Web Services
 
 Accepts all tracked changes (revisions) in the specified workbook stored in remote storage. The operation can optionally write the resulting workbook to a different location or storage and returns the updated file as a binary stream.

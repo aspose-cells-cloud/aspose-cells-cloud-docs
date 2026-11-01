@@ -11,7 +11,7 @@ weight: 100
 ArticleTitle: "Split Excel Text by Delimiter, Mask, or Line Break | Aspose.Cells Cloud API"
 ---
 
-Segment Excel cell text into multiple columns or rows using custom segmentation rules. Split content by delimiter, mask, or line break, and output results to a specified range using the Aspose.Cells Cloud Text Processing API.
+The **SplitText** API (`PUT https://api.aspose.cloud/v4.0/cells/content/split/text`) in Aspose.Cells Cloud enables precise text segmentation within Excel workbooks by splitting cell content using custom delimiters, line breaks, or pattern masks, then outputting results to a specified range in columns or rows; for example, users can split a cell’s comma-separated values into adjacent columns while optionally retaining or removing the delimiters.
 
 ## Introduction
 

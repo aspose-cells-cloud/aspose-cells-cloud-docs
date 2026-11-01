@@ -11,7 +11,7 @@ weight: 40
 ArticleTitle: "Hide Rows in Excel Worksheet using Aspose.Cells Cloud API"
 ---
 
-This REST API hides rows on an Excel worksheet.
+The **PostHideWorksheetRows** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/hide`) enables programmatic hiding of rows in an Excel worksheet via Aspose.Cells Cloud, supporting operations like specifying the starting row index and number of rows to hide through required query parameters `startrow` and `totalRows`, while allowing optional folder and storage context for cloud-based file management.
 
 **Prerequisites:** A valid JWT Bearer token obtained from the Aspose Cloud OAuth endpoint, the workbook stored in Aspose Cloud storage, and the name of the worksheet that contains the rows to hide. The API works with Excel files in XLS, XLSX, and other supported formats.
 

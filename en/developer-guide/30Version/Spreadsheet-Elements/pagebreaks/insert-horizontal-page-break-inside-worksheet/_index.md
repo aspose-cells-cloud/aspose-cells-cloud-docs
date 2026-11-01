@@ -11,7 +11,7 @@ weight: 30
 ArticleTitle: "Add Horizontal Page Break – Aspose.Cells Cloud API"
 ---
 
-The **Add Horizontal Page Break** API inserts a horizontal page break into an Excel worksheet.
+The **PutHorizontalPageBreak** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/horizontalpagebreaks`) adds a horizontal page break within a specified Excel worksheet via Aspose.Cells Cloud, enabling precise control over print layout by inserting a break at a given row or cell position without manual intervention.
 
 **Prerequisites & Authentication**  
 A valid JWT token is required for all calls to the Aspose.Cells Cloud API. Obtain the token via the OAuth 2.0 workflow described in the authentication guide, and include it in the request header as `Authorization: Bearer <jwt token>`. The target workbook must reside in a storage location accessible to the API (default storage or a custom `storageName` you specify).

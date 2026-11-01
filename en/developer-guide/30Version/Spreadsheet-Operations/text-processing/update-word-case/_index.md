@@ -10,6 +10,8 @@ weight: 100
 ArticleTitle: "Aspose.Cells – Update Word Case API Documentation"
 ---
 
+The **PostUpdateWordCase** API (`POST https://api.aspose.cloud/v3.0/cells/updatewordcase`) in Aspose.Cells Cloud automates text-case conversions across Excel, Google Sheets, and CSV files, enabling consistent formatting of large datasets by applying rules such as uppercase, lowercase, title case, or sentence case to specified text ranges.
+
 **API version:** 3.0
 
 Managing inconsistent text case in spreadsheets (Excel, Google Sheets, CSV) can be frustrating, especially with large datasets. The **PostUpdateWordCase web API** automates text‑case conversions, ensuring clean and standardized data with minimal effort.

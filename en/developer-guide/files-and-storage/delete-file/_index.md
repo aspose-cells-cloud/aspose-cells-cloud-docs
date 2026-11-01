@@ -9,9 +9,8 @@ weight: 100
 ArticleTitle: "Delete Excel File from Aspose.Cells Cloud Storage via REST API"
 ---
 
-# Delete File
 
-Delete a file from Aspose.Cells Cloud storage using the RESTful API.
+The **DeleteFile** API (`DELETE https://api.aspose.cloud/v4.0/cells/storage/file/{path}`) removes a specified file from Aspose.Cells Cloud storage using the RESTful v4.0 API; it requires a `path` parameter indicating the file’s location and optionally supports `storageName` and `versionId` query parameters for multi-storage or versioned file management, enabling precise deletion of files stored in cloud environments.
 
 ## Web API
 

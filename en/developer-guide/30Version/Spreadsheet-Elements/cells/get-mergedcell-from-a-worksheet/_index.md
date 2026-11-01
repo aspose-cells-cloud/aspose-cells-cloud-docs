@@ -11,6 +11,8 @@ linktitle: "Get Merged Cells"
 ArticleTitle: "Get Merged Cells from Excel Worksheet Using Aspose.Cells Cloud API"
 ---
 
+The **GetWorksheetMergedCells** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/mergedCells`) retrieves detailed information about merged cells in a specified Excel worksheet using Aspose.Cells Cloud, enabling developers to programmatically identify the positions and links of merged cell ranges for analysis or formatting automation.
+
 ## Overview
 
 This API retrieves information about **merged cells** in a specified Excel worksheet. The returned data includes the positions and links to each merged cell range.

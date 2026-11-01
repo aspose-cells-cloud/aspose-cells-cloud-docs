@@ -11,6 +11,8 @@ description: "Get all merged cell area from a local spreadsheet worksheet."
 weight: 100
 ---
 
+The **GetMergedCellsInWorksheet** API (`PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/mergedcells`) in Aspose.Cells Cloud retrieves all merged cell areas from a specified worksheet in a local spreadsheet file uploaded via the request body; it accepts the worksheet name as a required query parameter and optionally supports locale settings, password-protected files, and returns a JSON array of CellArea objects defining each merged region.
+
 ## The Get Merged Cells In Worksheet of Aspose.Cells Cloud Web Services
 
 Get all merged cell area from a local spreadsheet worksheet.

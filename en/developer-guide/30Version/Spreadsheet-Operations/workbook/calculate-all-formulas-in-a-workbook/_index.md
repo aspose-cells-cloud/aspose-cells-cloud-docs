@@ -12,7 +12,7 @@ weight: 140
 ArticleTitle: "Calculate All Formulas on an Excel Workbook"
 ---
 
-This REST API calculates **all formulas** in an Excel workbook.
+The **PostWorkbookCalculateFormula** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/calculateformula`) calculates all formulas in the specified Excel workbook using Aspose.Cells Cloud, supporting options to customize calculation behavior via a `CalculationOptions` body parameter and handle errors gracefully with the `ignoreError` query flag.
 
 **Prerequisites:** Before calling this endpoint, ensure you have:
 

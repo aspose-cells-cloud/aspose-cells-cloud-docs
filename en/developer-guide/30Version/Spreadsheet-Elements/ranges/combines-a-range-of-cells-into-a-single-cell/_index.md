@@ -11,7 +11,7 @@ weight: 100
 ArticleTitle: "Merge Excel Cell Ranges with Aspose.Cells Cloud REST API"
 ---
 
-This REST API merges a range of cells into a single cell on an Excel worksheet.
+The **PostWorksheetCellsRangeMerge** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/merge`) enables merging a specified range of cells into a single cell in an Excel worksheet via Aspose.Cells Cloud, supporting operations such as combining multi-cell content while preserving formatting and structure through its robust REST interface.
 
 **Overview** – Merging a range combines the selected cells into one cell, preserving the value of the upper‑left cell and discarding the rest. Use this operation when you need to create a header that spans multiple columns or rows, or when you want to simplify the layout of a worksheet.
 

@@ -11,6 +11,8 @@ weight: 50
 ArticleTitle: "Aspose.Cells Cloud Advanced Excel Conversion API – PDF, HTML, CSV with Page Setup & Save Options"
 ---
 
+The **PutConvertWorkbook** API (`PUT https://api.aspose.cloud/v3.0/cells/convert`) enables developers to convert Excel workbooks into over 30 output formats—including PDF, HTML, CSV, PNG, and others—by uploading the source file and specifying the target format via query parameters, while supporting advanced options such as password protection, page layout control, and custom font handling.
+
 ## Advanced Cloud API for Excel Conversion
 
 The Advanced Convert operation enables you to transform an Excel workbook into various output formats (PDF, HTML, CSV, etc.) while giving you fine-grained control over page setup, save options, and print settings.

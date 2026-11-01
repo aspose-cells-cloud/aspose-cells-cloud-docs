@@ -15,7 +15,7 @@ weight: 60
 ArticleTitle: "Convert Table to Pivot Table – Aspose.Cells Cloud Documentation"
 ---
 
-This REST API creates a **pivot table** from a list object.
+The **PostWorksheetListObjectSummarizeWithPivotTable** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/SummarizeWithPivotTable`) enables developers to programmatically convert an existing list object in a worksheet into a pivot table using Aspose.Cells Cloud, requiring parameters such as the workbook name, worksheet name, list object index, destination worksheet name, and a `CreatePivotTableRequest` body to define the pivot table structure and data fields.
 
 A pivot table summarizes data from a list object, allowing you to analyze and report on large data sets directly within the workbook.
 

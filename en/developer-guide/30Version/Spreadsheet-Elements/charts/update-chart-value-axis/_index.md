@@ -15,7 +15,8 @@ last_updated: 2024-05-28
 weight: 160
 ---
 
-# Update Chart Value Axis (POST /valueaxis)
+
+The **PostChartValueAxis** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/valueaxis`) enables developers to update the value axis of a specific chart in an Excel workbook stored in Aspose.Cells Cloud by sending a request body containing axis properties such as bounds, tick units, and logarithmic scaling—allowing precise control over axis behavior without manual intervention.
 
 **Summary:**  
 Modify the value axis of a specific chart in an Excel workbook stored in Aspose Cloud. You can set bounds, tick units, logarithmic scaling, and other axis properties in a single request.

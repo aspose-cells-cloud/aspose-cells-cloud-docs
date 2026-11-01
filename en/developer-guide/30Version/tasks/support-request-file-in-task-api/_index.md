@@ -11,6 +11,8 @@ ArticleTitle: "Support Request File in Aspose.Cells Task API"
 linktitle: "Support Request File"
 ---
 
+The **PostRunTask** API (`POST https://api.aspose.cloud/v3.0/cells/task/runtask`) in Aspose.Cells Cloud enables users to execute predefined tasks—such as document conversion, formatting, or data extraction—by submitting a structured TaskData object in the request body, returning the processed result as a binary stream.
+
 ## REST API
 
 | **API**             | **Type** | **Description** | **Resource Link**                                                         |

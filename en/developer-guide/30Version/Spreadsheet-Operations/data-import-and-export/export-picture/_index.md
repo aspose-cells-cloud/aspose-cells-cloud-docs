@@ -11,7 +11,7 @@ weight: 100
 ArticleTitle: "Export Excel Pictures to Multiple Formats Using Aspose.Cells Cloud REST API"
 ---
 
-You can export pictures to the following formats: [PNG](https://docs.fileformat.com/Image/png/), [GIF](https://docs.fileformat.com/image/gif/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), and [WMF](https://docs.fileformat.com/image/Wmf/).
+The **PostExport** API (`POST https://api.aspose.cloud/v3.0/cells/export`) enables exporting Excel internal elements—such as pictures—into multiple image formats including PNG, GIF, JPEG, BMP, SVG, TIFF, EMF, and WMF, using Aspose.Cells Cloud’s robust REST API. Developers can upload an Excel file and specify `objectType=picture` and `format` (e.g., `PNG`, `JPEG`) in the request to convert embedded or worksheet pictures to the desired format, supporting both authenticated and unauthenticated workflows.
 
 ## REST API
 

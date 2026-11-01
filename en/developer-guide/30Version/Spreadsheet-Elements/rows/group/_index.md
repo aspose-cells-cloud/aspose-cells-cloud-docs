@@ -11,7 +11,7 @@ weight: 60
 ArticleTitle: "Group Rows in Excel Worksheet using Aspose.Cells Cloud API"
 ---
 
-This REST API groups rows on an Excel worksheet.
+The **PostGroupWorksheetRows** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/group`) enables grouping of rows in a specified Excel worksheet using Aspose.Cells Cloud, requiring the file name, worksheet name, and the first and last row indices to group; it also optionally supports hiding the grouped rows and specifying the storage folder or name.
 
 **Prerequisites:**
 

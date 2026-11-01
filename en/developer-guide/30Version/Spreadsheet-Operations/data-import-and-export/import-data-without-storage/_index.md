@@ -11,7 +11,7 @@ weight: 100
 ArticleTitle: "Import Data without Using Storage – Aspose.Cells Cloud API"
 ---
 
-Excel data import can be complex because many factors influence the outcome. All of these factors should be considered during the **import** process. Aspose.Cells Cloud makes it easy to import a variety of formats and data types into an Excel file with professional‑grade quality.
+The **PostImport** API (`POST https://api.aspose.cloud/v3.0/cells/import`) enables developers to import data into an Excel file and generate output in various formats—such as CSV, XLSX, PDF, or images—by sending a multipart form-data request containing the source file and optional query parameters for output format, password, and regional settings. Aspose.Cells Cloud handles the import process without requiring files to be stored in cloud storage, supporting professional-grade data integration directly from client applications.
 
 This REST API imports **data** into an Excel file.
 

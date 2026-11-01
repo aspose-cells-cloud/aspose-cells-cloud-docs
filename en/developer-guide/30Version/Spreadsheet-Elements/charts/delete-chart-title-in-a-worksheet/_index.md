@@ -10,7 +10,7 @@ linktitle: "Delete Chart Title"
 ArticleTitle: "Delete Chart Title in Excel Worksheet using Aspose.Cells Cloud REST API"
 ---
 
-This REST API deletes the title of a chart.
+The **DeleteWorksheetChartTitle** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title`) enables hiding the title of a specific chart in a worksheet by sending a DELETE request with the file name, worksheet name, and chart index as required path parameters; Aspose.Cells Cloud supports this operation as part of its robust REST API for managing spreadsheet elements, allowing developers to programmatically clean chart visuals without modifying the underlying data.
 
 ## REST API
 

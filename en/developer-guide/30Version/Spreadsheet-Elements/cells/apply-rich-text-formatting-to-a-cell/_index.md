@@ -11,6 +11,8 @@ linktitle: "Apply Rich Text Formatting"
 ArticleTitle: "Apply Rich Text Formatting to Excel Cells via Aspose.Cells Cloud REST API"
 ---
 
+The **PostCellCharacters** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}/characters`) enables developers to apply rich text formatting—such as varying fonts, sizes, or styles—to specific substrings within a single cell in an Excel worksheet using the Aspose.Cells Cloud REST API, supporting precise, granular control over cell content appearance without altering the underlying cell value.
+
 ## Apply Rich Text Formatting to a Cell
 
 This guide explains how to apply **rich text formatting**—where different parts of a cell’s content use distinct fonts, sizes, or styles—to a specific cell in an Excel worksheet using the **Aspose.Cells Cloud REST API**.

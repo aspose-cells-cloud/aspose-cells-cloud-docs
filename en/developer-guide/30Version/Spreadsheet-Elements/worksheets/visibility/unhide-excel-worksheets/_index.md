@@ -11,7 +11,7 @@ weight: 60
 ArticleTitle: "Unhide Excel Worksheet Using Aspose.Cells Cloud REST API"
 ---
 
-This REST API provides an endpoint to **unhide a worksheet** in an Excel workbook.
+The **PutChangeVisibilityWorksheet** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/visible`) enables unhide or hide a specific worksheet in an Excel workbook stored in the cloud by setting its visibility state via the required `isVisible` boolean query parameter. Aspose.Cells Cloud supports this operation as part of its robust worksheet visibility management, allowing developers to programmatically control worksheet visibility using the standard REST API or one of the available SDKs for languages such as .NET, Java, Python, Node.js, and Go.
 
 **Prerequisites**  
 Before calling this operation you must have:

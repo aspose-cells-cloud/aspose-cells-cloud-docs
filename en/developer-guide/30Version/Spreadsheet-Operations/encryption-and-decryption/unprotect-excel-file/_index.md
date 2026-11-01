@@ -13,7 +13,7 @@ weight: 60
 ArticleTitle: "Unprotect Excel Workbook – Aspose.Cells Cloud API"
 ---
 
-Use this REST API to unprotect an Excel workbook.
+The **DeleteUnProtectWorkbook** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/protection`) enables unprotection of Excel workbooks via Aspose.Cells Cloud by removing existing workbook protection using the required `password` parameter; it supports unprotecting files stored in cloud storage and accepts optional `folder` and `storageName` query parameters to locate the target workbook.
 
 ## DeleteUnProtectWorkbook API
 

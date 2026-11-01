@@ -11,6 +11,8 @@ description: "Search all text items within a spreadsheet file using Aspose.Cells
 weight: 100
 ---
 
+The **SearchSpreadsheetAllTextItems** API (`PUT https://api.aspose.cloud/v4.0/cells/search/content/all-textitems`) in Aspose.Cells Cloud enables users to search for all text items across every sheet and cell of a local spreadsheet file uploaded via the request body, supporting password-protected files and locale-aware parsing through optional query parameters like `region` and `password`, with results returned as structured match locations without requiring cloud storage.
+
 ## The Search Spreadsheet All Text Items of Aspose.Cells Cloud Web Services
 
 This method searches for all text items within a local spreadsheet file. It supports searching through all sheets and cells of the workbook, identifying occurrences of the search term. The operation is performed cloud‑side, requiring no cloud storage. Ensure that you have the necessary permissions to read the source file. If the source file cannot be accessed or if an error occurs during the search process (such as an unsupported file format), an appropriate exception will be thrown. The method may return the locations of the matches (e.g., sheet name, cell coordinates) depending on implementation details.

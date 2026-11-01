@@ -18,7 +18,7 @@ ArticleTitle: "Delete a Chart from a Worksheet using Aspose.Cells Cloud REST API
 linktitle: "Delete Chart"
 ---
 
-This REST API deletes a worksheet chart by its index.
+The **DeleteWorksheetChart** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}`) enables Aspose.Cells Cloud users to remove a specific chart from a worksheet by its zero-based index, supporting robust spreadsheet automation through a simple, stateless REST call.
 
 For related operations, see the **[Add a Chart](#)** and **[Get Chart](#)** pages.
 

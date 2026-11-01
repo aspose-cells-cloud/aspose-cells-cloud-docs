@@ -11,7 +11,7 @@ weight: 100
 ArticleTitle: "Get All Pivot Tables in an Excel Worksheet – Aspose.Cells Cloud API"
 ---
 
-A **PivotTable** is a data‑summarization tool in Excel that lets you reorganize and analyze large data sets. This REST API retrieves information about **all** PivotTables in a specified worksheet.
+The **GetWorksheetPivotTables** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables`) retrieves descriptions of all PivotTables in a specified worksheet using Aspose.Cells Cloud, enabling developers to programmatically inspect PivotTable structure and metadata without local Excel installation.
 
 ## Security and Authentication
 

@@ -13,7 +13,7 @@ weight: 70
 ArticleTitle: "Unlock Password-Protected Excel Files with Aspose.Cells Cloud REST API"
 ---
 
-This REST API unlocks password-protected Excel files, supporting both single and multiple file processing in a single request.
+The **PostUnlock** API (`POST https://api.aspose.cloud/v3.0/cells/unlock`) in Aspose.Cells Cloud unlocks password-protected Excel files by accepting the encrypted file and its password as inputs, enabling secure removal of protection in a single request.
 
 ## REST API Endpoint
 

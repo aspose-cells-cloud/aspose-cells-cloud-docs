@@ -11,6 +11,8 @@ description: "Calculate formula in a spreadsheet using Aspose.Cells Cloud API."
 weight: 100
 ---
 
+The **CalculationFormula** API (`PUT https://api.aspose.cloud/v4.0/cells/calculate/formula`) in Aspose.Cells Cloud enables developers to compute the value of a specified formula within a given worksheet of an uploaded spreadsheet file, returning the updated workbook as a downloadable file stream; it supports locale-specific calculations via the optional `region` parameter and can process password-protected files using the `password` query parameter.
+
 ## The Calculate Formula of Aspose.Cells Cloud Web Services
 
 Calculates a specified formula in a given worksheet of an uploaded spreadsheet file and returns the resulting spreadsheet as a file stream. This operation supports locale‑specific processing via the **region** parameter and can open password‑protected files.

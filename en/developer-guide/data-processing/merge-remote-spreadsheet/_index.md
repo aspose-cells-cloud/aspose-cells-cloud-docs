@@ -18,7 +18,7 @@ weight: 100
 ArticleTitle: "Merge Excel Files in Cloud with Aspose.Cells Cloud API"
 ---
 
-Quickly merge Excel workbooks stored in cloud storage using Aspose.Cells Cloud API. Specify output format (e.g., XLSX, PDF, CSV), merge strategy (single or multiple worksheets), and target storage location in a single HTTPS call — all executed remotely, with no local file download required.
+The **MergeRemoteSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/{name}/merge/spreadsheet`) enables developers to merge a remote spreadsheet file into an existing workbook stored in cloud storage and output the result in a specified format such as XLSX, PDF, or CSV, using Aspose.Cells Cloud’s remote processing—eliminating local file downloads and reducing data transfer by performing the merge entirely within the cloud environment.
 
 > **Note**: Before calling this operation, ensure you have:
 >

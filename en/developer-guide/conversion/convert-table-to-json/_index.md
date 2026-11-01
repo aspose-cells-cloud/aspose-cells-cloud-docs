@@ -22,7 +22,7 @@ description: "Convert Excel table to JSON via Aspose.Cells Cloud API—no upload
 keywords: "Aspose.Cells Cloud, convert Excel table to JSON, table to JSON API, cloud Excel conversion, Aspose.Cells Cloud API v4.0, convert worksheet table to JSON, JSON export from Excel, cloud table extraction"
 ---
 
-Convert Excel table data to **JSON** in a single API call using Aspose.Cells Cloud API v4.0. This endpoint processes local spreadsheet files directly in the cloud—no prior upload to cloud storage required—eliminating storage overhead and simplifying data pipelines.
+The **ConvertTableToJson** API (`PUT https://api.aspose.cloud/v4.0/cells/convert/table/json`) in Aspose.Cells Cloud v4.0 converts a specified table from a local spreadsheet file—uploaded directly in the request—into JSON format without requiring prior storage in the cloud, enabling efficient, single-call conversion of local data while avoiding upload and storage overhead.
 
 ## **API Endpoint**
 
@@ -30,39 +30,50 @@ Convert Excel table data to **JSON** in a single API call using Aspose.Cells Clo
 PUT https://api.aspose.cloud/v4.0/cells/convert/table/json
 ```
 
-## **Authentication**
+### **Authentication**
 
 All requests require a valid [JWT access token](https://docs.aspose.cloud/total/getting-started/). Obtain your `Client ID` and `Client Secret` from the [Aspose Cloud Dashboard](https://dashboard.aspose.cloud/), then generate a token using the [OAuth 2.0 flow](https://docs.aspose.cloud/total/getting-started/quickstart/).
 
 > **Note**: Replace `{YOUR_ACCESS_TOKEN}` with your actual JWT token in all examples below.
 
-## **Request Parameters**
+### **Request Parameters**
 
-| Parameter        | Type    | Location | Required | Description                                                                                    |
-| ---------------- | ------- | -------- | -------- | ---------------------------------------------------------------------------------------------- |
-| `Spreadsheet`    | File    | FormData | ✅ Yes   | The local Excel file containing the table.                                                     |
-| `worksheet`      | String  | Query    | ✅ Yes   | Name of the worksheet that contains the target table.                                          |
-| `tableName`      | String  | Query    | ✅ Yes   | Name of the table (e.g., `Table1`, `MyTable`).                                                 |
-| `outPath`        | String  | Query    | ❌ No    | Folder path where the resulting JSON file will be stored in cloud storage. Defaults to `null`. |
-| `outStorageName` | String  | Query    | ❌ No    | Name of the cloud storage to use for output. Defaults to internal storage.                     |
-| `fontsLocation`  | String  | Query    | ❌ No    | Custom font folder path for rendering.                                                         |
-| `region`         | String  | Query    | ❌ No    | Locale setting (e.g., `en-US`, `fr-FR`). Affects number/date formatting.                       |
-| `password`       | String  | Query    | ❌ No    | Password for protected workbooks.                                                              |
-| `AutoRowsFit`    | Boolean | Query    | ❌ No    | Auto-fit rows in the worksheet during conversion.                                              |
-| `AutoColumnsFit` | Boolean | Query    | ❌ No    | Auto-fit columns in the worksheet during conversion.                                           |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| worksheet | String | Query | worksheet name of spreadsheet. |
+| tableName | String | Query | table name |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| fontsLocation | String | Query | Use Custom fonts. |
+| AutoRowsFit | Boolean | Query | (Optional) Autofits all rows in worksheets. |
+| AutoColumnsFit | Boolean | Query | (Optional) Autofits all columns in worksheets. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
 
-## **Response**
-
-Returns a JSON object containing the converted file content:
+### **Response**
 
 ```json
-{
-  "type": "FileContentResult",
-  "fileContents": "Base64-encoded JSON string",
-  "contentType": "application/json",
-  "fileDownloadName": "Table1.json"
-}
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
 ```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
+Returns a JSON object containing the converted file content:
 
 ### **HTTP Status Codes**
 

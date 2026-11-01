@@ -11,6 +11,8 @@ linktitle: "SaveResult Task Guide"
 ArticleTitle: "Use Aspose.Cells Cloud SaveResult Task to Export Processed Workbooks"
 ---
 
+The **PostRunTask** API (`POST https://api.aspose.cloud/v3.0/cells/task/runtask`) in Aspose.Cells Cloud v3.0 enables you to execute background processing tasks—such as saving results, converting formats, or automating workbook operations—by submitting a structured `TaskData` object in the request body, returning a binary stream with the processed output.
+
 ## REST API
 
 | **API**             | **Type** | **Description** | **Resource Link**                                                         |

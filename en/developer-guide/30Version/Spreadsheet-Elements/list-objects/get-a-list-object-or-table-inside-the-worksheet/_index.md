@@ -20,6 +20,8 @@ aliases:
   - /tables/get/
 ---
 
+The **GetWorksheetListObject** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listobjectindex}`) retrieves the metadata of a specific list object (table) from a named worksheet in an Excel workbook by its zero-based index, supporting optional export to formats such as PDF, CSV, or JSON via the `format` query parameter.
+
 ## Retrieve a List Object (Table) from a Worksheet
 
 Retrieve a **list object** (also known as a _table_) from a specific worksheet in an Excel workbook using the Aspose.Cells Cloud REST API. The endpoint supports retrieving the full ListObject metadata in JSON format or exporting the table directly to a specified format (PDF, CSV, JSON, etc.) via the optional `format` query parameter.

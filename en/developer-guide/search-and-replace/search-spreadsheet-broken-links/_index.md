@@ -10,6 +10,8 @@ type: docs
 weight: 100
 ---
 
+The **SearchSpreadsheetBrokenLinks** API (`PUT https://api.aspose.cloud/v4.0/cells/search/broken-links`) in Aspose.Cells Cloud identifies broken hyperlinks, invalid external references, and malformed formulas within a local Excel workbook uploaded via form data. The operation runs server-side in the cloud—no local processing or cloud storage required—and returns results in structured JSON, enabling integration into CI/CD pipelines, audit tools, or compliance workflows.
+
 ## Detect Broken Links in Excel Workbooks
 
 Use the **Search Spreadsheet Broken Links** API endpoint to identify broken hyperlinks, invalid external references, and malformed formulas in Excel workbooks. The operation runs server-side in the cloud—no local processing or cloud storage required. Results are returned in a structured JSON format for integration into CI/CD pipelines, audit tools, or compliance workflows.

@@ -11,7 +11,7 @@ weight: 50
 ArticleTitle: "Unhide rows on an Excel worksheet using Aspose.Cells Cloud API"
 ---
 
-This REST API unhides rows on an Excel worksheet.
+The **PostUnhideWorksheetRows** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/unhide`) in Aspose.Cells Cloud enables developers to unhide specified rows in an Excel worksheet by providing the file name, worksheet name, starting row index, and number of rows to unhide; it also optionally supports setting row height and specifying folder or storage names, making worksheet formatting adjustments programmatic and scalable across cloud-based document workflows.
 
 **Prerequisites:** Obtain a valid JWT access token from the Aspose Cloud authentication service and ensure the target workbook is uploaded to a supported storage before invoking this endpoint.
 

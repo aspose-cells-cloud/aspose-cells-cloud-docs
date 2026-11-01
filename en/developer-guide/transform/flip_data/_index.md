@@ -11,6 +11,8 @@ description: "Transposes a specified data range in a spreadsheet file."
 weight: 100
 ---
 
+The **FlipData** API (`PUT https://api.aspose.cloud/v4.0/cells/flip`) in Aspose.Cells Cloud transposes a specified data range by flipping its orientation—rows become columns and columns become rows—enabling restructuring of data matrices (e.g., converting a 3x2 range into a 2x3 range) to meet input requirements for charts, reports, or data models; it accepts a spreadsheet file, worksheet name, and cell area as required parameters.
+
 ## The FlipData of Aspose.Cells Cloud Web Services
 
 This API flips the orientation of a given data matrix. For example, a 3x2 range (3 rows, 2 columns) will become a 2x3 range (2 rows, 3 columns) in the output. It is commonly used for restructuring data to meet the input requirements of different charts, reports, or data models.

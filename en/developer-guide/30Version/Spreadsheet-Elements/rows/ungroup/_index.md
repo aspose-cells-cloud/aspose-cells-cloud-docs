@@ -11,7 +11,7 @@ weight: 70
 ArticleTitle: "Ungroup Rows in Excel with Aspose.Cells Cloud REST API & SDKs"
 ---
 
-This REST API ungroups rows on an Excel worksheet.
+The **PostUngroupWorksheetRows** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/ungroup`) in Aspose.Cells Cloud enables developers to ungroup rows in a specified worksheet by defining the first and last row indices to operate on, supporting precise control over row grouping and improving workbook structure management.
 
 ## REST API
 

@@ -11,6 +11,8 @@ description: "API to split a table in a spreadsheet by column values."
 weight: 100
 ---
 
+The **SplitTable** API (`PUT https://api.aspose.cloud/v4.0/cells/split/table`) in Aspose.Cells Cloud enables splitting an Excel table into multiple sheets or workbooks based on distinct values in a specified column. By grouping rows according to the split column’s unique values, it processes each group as a separate data unit, supporting export either as individual workbooks or new worksheets within the same workbook, with optional ZIP packaging for multiple files—ideal for local file splitting and cloud-based processing without requiring pre-uploaded storage.
+
 ## The SplitTable of Aspose.Cells Cloud Web Services
 
 This method performs a split operation on the source table by grouping rows according to the distinct values in the specified column. Each group of data (for each unique split value) is then processed as a separate data unit. The export destination is controlled by two key boolean parameters:

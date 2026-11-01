@@ -13,9 +13,8 @@ weight: 60
 ArticleTitle: "Clear All OLE Objects from Excel Worksheet via Aspose.Cells Cloud REST API"
 ---
 
-# Delete all OLE objects in an Excel worksheet
 
-**OleObjects – Clear** removes **all** OLE (Object Linking and Embedding) objects from a specified worksheet while leaving cell data untouched. This operation is useful for cleaning legacy spreadsheets or preparing a workbook for redistribution.
+The **DeleteWorksheetOleObjects** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects`) removes all OLE (Object Linking and Embedding) objects from a specified worksheet in an Excel file while preserving the underlying cell data, a capability provided by Aspose.Cells Cloud to clean legacy spreadsheets or prepare workbooks for redistribution without manual intervention.
 
 > **Note:** The operation is _idempotent_ — calling it when no OLE objects exist returns a successful `200 OK`.
 

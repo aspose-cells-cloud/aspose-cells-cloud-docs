@@ -14,9 +14,8 @@ weight: 70
 ArticleTitle: "Lock Excel Files with Aspose.Cells Cloud REST API v3.0"
 ---
 
-# Lock Excel Files
 
-Lock Excel workbooks programmatically using the Aspose.Cells Cloud REST API v3.0. This endpoint accepts an Excel file upload, applies protection (encryption with a password), and returns the locked workbook as a Base64-encoded response.
+The **PostLock** API (`POST https://api.aspose.cloud/v3.0/cells/lock`) in Aspose.Cells Cloud v3.0 enables developers to programmatically lock Excel workbooks by uploading a file and specifying a password via query parameters, returning a Base64-encoded protected workbook in a FilesResult response.
 
 ## API Endpoint
 

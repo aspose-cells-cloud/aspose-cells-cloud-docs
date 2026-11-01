@@ -23,7 +23,8 @@ aliases:
 ArticleTitle: "Group Columns in Excel Using Aspose.Cells Cloud REST API v3.0"
 ---
 
-# Group Columns on an Excel Worksheet
+
+The **PostGroupWorksheetColumns** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/group`) enables programmatic grouping of worksheet columns in Aspose.Cells Cloud, allowing developers to define collapsible column ranges by specifying first and last column indices, with optional control over visibility via the `hide` parameter—ideal for automating interactive Excel dashboards and reports that mirror native Excel grouping behavior.
 
 **API Version:** v3.0  
 **Operation:** `PostGroupWorksheetColumns` – Group worksheet columns in a worksheet.

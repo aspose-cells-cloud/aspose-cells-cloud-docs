@@ -13,6 +13,8 @@ type: docs
 ArticleTitle: "Apply Dynamic Filters in Excel with Aspose.Cells Cloud API"
 ---
 
+The **PutWorksheetDynamicFilter** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/dynamicFilter`) enables Aspose.Cells Cloud users to apply a dynamic filter to a specified range in an Excel worksheet, automatically evaluating values such as dates, averages, or blanks to create smart, context-aware views without manual formula writing.
+
 ## Overview
 
 The **PutWorksheetDynamicFilter** operation adds a dynamic filter to a specified range in an Excel worksheet.  

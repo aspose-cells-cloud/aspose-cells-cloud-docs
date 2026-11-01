@@ -10,6 +10,8 @@ ArticleTitle: "Working with SmartMarker Task in Aspose.Cells Cloud API"
 linktitle: "SmartMarker Task"
 ---
 
+The **PostRunTask** API (`POST https://api.aspose.cloud/v3.0/cells/task/runtask`) in Aspose.Cells Cloud executes data-driven tasks such as SmartMarker processing, where XML or JSON data is merged into placeholders in an Excel template to generate a populated workbook; it accepts a required `TaskData` object in the request body and returns the resulting workbook as a binary stream.
+
 ## REST API
 
 **SmartMarker** is a feature of the Aspose.Cells Cloud API that merges data from XML or JSON sources into placeholders within an Excel template, producing a fully populated workbook. It is typically used for report generation, mail‑merge, and data‑driven spreadsheet creation.

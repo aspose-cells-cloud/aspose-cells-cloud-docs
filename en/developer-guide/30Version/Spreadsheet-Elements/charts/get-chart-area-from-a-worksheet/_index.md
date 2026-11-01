@@ -17,7 +17,7 @@ ArticleTitle: "Get Chart Area from a Worksheet - Aspose.Cells Cloud API"
 linktitle: "Get Chart Area"
 ---
 
-This REST API returns chart‑area information.
+The **GetChartArea** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/chartArea`) retrieves detailed chart area description for a specific chart in a worksheet using Aspose.Cells Cloud, enabling developers to programmatically access layout and formatting properties such as position, size, and fill style without manual spreadsheet processing.
 
 **Prerequisites:** To call this endpoint you must have a valid JWT access token, the target workbook must be uploaded to Aspose Cloud storage, and the file format must be supported by Aspose.Cells.
 

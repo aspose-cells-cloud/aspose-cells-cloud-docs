@@ -11,6 +11,8 @@ description: "Accept all revisions in a spreadsheet file using Aspose.Cells Clou
 weight: 100
 ---
 
+The **AcceptAllRevisions** API (`PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/accept-all-revisions`) in Aspose.Cells Cloud v4.0 processes an uploaded spreadsheet file by accepting all tracked revisions—such as insertions, deletions, and formatting changes—then returns the cleaned, final workbook. Developers use this operation to finalize collaborative editing workflows in cloud-based spreadsheet applications, eliminating the need to manually resolve change history before distribution or further processing.
+
 ## The AcceptAllRevisions of Aspose.Cells Cloud Web Services
 
 Accept all revisions in the uploaded spreadsheet file and return the processed workbook.

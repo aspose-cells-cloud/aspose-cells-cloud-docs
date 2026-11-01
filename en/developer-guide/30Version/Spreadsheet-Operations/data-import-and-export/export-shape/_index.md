@@ -11,7 +11,7 @@ weight: 100
 ArticleTitle: "Export Shapes – Aspose.Cells Cloud"
 ---
 
-Exporting shapes from Excel enables reuse of diagrammatic content across platforms and applications. **Prerequisites:** a valid JWT access token and the source Excel file to upload.
+The **PutWorkbookCreate** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}`) enables developers to create a new Excel workbook programmatically in Aspose.Cells Cloud, supporting options like template files and smart marker data to populate the workbook during creation; this operation allows efficient generation of structured spreadsheet content without manual intervention, facilitating integration into cloud-based workflows.
 
 You can export shapes to the following formats: **PNG**, **GIF**, **JPEG**, **BMP**, **SVG**, **TIFF**, **EMF**, **WMF**.
 

@@ -12,7 +12,7 @@ linktitle: "Get MaxColumn"
 ArticleTitle: "Get Max Column Index from Excel Worksheet using Aspose.Cells Cloud API"
 ---
 
-This REST API returns the maximum column index in an Excel worksheet when the `cellOrMethodName` parameter is set to `maxcolumn`.
+The **GetWorksheetCell** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellOrMethodName}`) retrieves cell data from an Excel worksheet by specifying either a cell reference or a method name such as `maxcolumn`, enabling developers to programmatically determine worksheet properties like the maximum column index without loading the full document, a key capability for efficient cloud-based spreadsheet processing in Aspose.Cells Cloud.
 
 
 - **cURL Example**

@@ -10,7 +10,7 @@ description: "Upload files to Aspose.Cells Cloud storage using PUT /cells/storag
 weight: 100
 ---
 
-The **uploadFile** API enables developers to upload files directly to cloud storage for processing with Aspose Cells.
+The **UploadFile** API (`PUT https://api.aspose.cloud/v4.0/cells/storage/file/{path}`) enables developers to upload files directly to cloud storage for processing with Aspose.Cells Cloud by sending multipart/form-data containing the file and specifying the destination path; it supports optional storage name selection and returns a FilesUploadResult confirming the upload outcome.
 
 ## **Aspose Cells API: Upload File**
 

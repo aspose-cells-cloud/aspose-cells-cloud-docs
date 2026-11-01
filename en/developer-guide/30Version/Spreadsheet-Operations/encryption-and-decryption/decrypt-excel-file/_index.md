@@ -11,7 +11,7 @@ ArticleTitle: "How to Decrypt an Excel Workbook Using Aspose.Cells Cloud API"
 weight: 50
 ---
 
-**Prerequisites**
+The **DeleteDecryptWorkbook** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/encryption`) enables decryption of encrypted Excel files stored in Aspose.Cells Cloud by removing encryption from the specified file, requiring only the file name in the path and a `WorkbookEncryptionRequest` object in the request body with decryption parameters.
 
 - A valid JWT access token.
 - The workbook must be uploaded to Aspose Cloud storage and its path specified in the `folder` query parameter.

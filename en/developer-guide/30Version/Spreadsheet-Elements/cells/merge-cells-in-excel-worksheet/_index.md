@@ -11,9 +11,8 @@ canonical: "https://docs.aspose.cloud/cells/merge-cells-in-excel-worksheet/"
 weight: 110
 ---
 
-# Merge Cells in Excel with Aspose.Cells Cloud API
 
-Aspose.Cells Cloud REST API enables you to merge a rectangular block of cells into a single cell that spans the specified rows and columns. This operation is useful for creating formatted reports, dashboards, and templates in Excel files stored in the cloud.
+The **PostWorksheetMerge** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/merge`) enables developers to merge a rectangular block of cells into a single cell spanning specified rows and columns in an Excel worksheet via Aspose.Cells Cloud, supporting tasks like formatting reports and dashboards by combining multiple cells into one unified, larger cell.
 
 > **Note**: This guide applies to Aspose.Cells Cloud API v3.0 (released March 2024). For v2.0, see [Legacy Merge Documentation](/docs/cells/merge-cells-v2/).
 

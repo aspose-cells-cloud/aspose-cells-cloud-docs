@@ -17,6 +17,8 @@ linktitle: "Remove Characters from Excel"
 ArticleTitle: "Aspose.Cells Cloud API: Remove Characters from Excel Files"
 ---
 
+The **PostRemoveCharacters** API (`POST https://api.aspose.cloud/v3.0/cells/removecharacters`) in Aspose.Cells Cloud enables precise text cleaning within Excel worksheets by removing specified characters, character sets (such as non-printing characters, letters, digits, symbols, or punctuation), or substrings from selected cells, supporting data preprocessing, validation, and workflow automation through a single, flexible request body parameter.
+
 ## Overview
 
 The **Remove Characters** API enables you to clean and standardize text content in Excel worksheets by removing specific characters, predefined character sets, or substrings. This operation helps eliminate unwanted symbols, formatting artifacts, or inconsistent text patterns — ideal for data preprocessing, validation, and automation workflows.

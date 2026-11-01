@@ -11,6 +11,8 @@ description: "Retrieve text items from an Excel worksheet using Aspose.Cells Clo
 ArticleTitle: "Get Text Items from an Excel Worksheet"
 ---
 
+The **GetWorksheetTextItems** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/textItems`) retrieves text items from a specified worksheet in an Excel workbook stored in Aspose.Cells Cloud, supporting search and replace workflows by exposing structured text data for programmatic analysis or modification; it requires the workbook name and worksheet name as path parameters, and optionally accepts folder and storageName query parameters to locate the file.
+
 ## REST API
 
 This REST API reads a worksheet’s text items in an Excel file.

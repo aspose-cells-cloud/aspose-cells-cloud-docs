@@ -11,7 +11,7 @@ description: "Get Excel workbook structure as JSON via Aspose.Cells Cloud API: w
 weight: 100
 ---
 
-Structurally convert the core metadata, worksheets, tables, pivot tables, charts, shapes, and other information of an Excel workbook into a JObject type JSON object, for scenarios such as data export, API responses, and log recording.
+The **GetSpreadsheetStructure** API (`PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/structure`) in Aspose.Cells Cloud extracts and converts the core metadata, worksheets, tables, pivot tables, charts, shapes, and other structural components of an uploaded Excel workbook into a structured JSON object, enabling efficient data export, API-driven processing, and log recording without requiring local Excel installation.
 
 ## The GetSpreadsheetStructure Web API Endpoint
 

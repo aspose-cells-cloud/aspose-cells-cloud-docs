@@ -17,9 +17,8 @@ weight: 100
 type: docs
 ---
 
-# Aspose.Cells Cloud Unprotect Spreadsheet API
 
-Remove both open and modify password protection from Excel workbooks programmatically with the Aspose.Cells Cloud Unprotect Spreadsheet API. This secure, server-side operation enables automated unlocking of protected files in data pipelines, document management systems, and migration workflows—without exposing sensitive passwords client-side.
+The **UnprotectSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/unprotection/spreadsheet`) in Aspose.Cells Cloud v4.0 removes dual-layer password protection—both open and modify passwords—from Excel workbooks programmatically, supporting encrypted passwords for enhanced security; it accepts the protected spreadsheet file via form data and requires both the encryption and modify passwords as query parameters, enabling secure, server-side unlocking for integration into data pipelines, document management systems, and migration workflows without exposing credentials client-side.
 
 ## API Endpoint
 

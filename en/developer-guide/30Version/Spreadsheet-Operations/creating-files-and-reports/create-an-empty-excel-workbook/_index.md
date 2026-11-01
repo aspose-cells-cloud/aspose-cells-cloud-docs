@@ -16,7 +16,7 @@ weight: 100
 ArticleTitle: "Create an Empty Excel Workbook using Aspose.Cells Cloud API"
 ---
 
-This REST API creates an **empty workbook**.
+The **PutWorkbookCreate** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}`) creates a new Excel workbook in Aspose.Cells Cloud, supporting multiple methods such as generating a blank workbook, using a template file via the `templateFile` query parameter, or populating from smart marker data. This RESTful operation accepts the new document name as a required path parameter and optional parameters like `folder` and `storageName` to specify cloud storage locations, enabling flexible, programmatic workbook creation across supported SDKs for .NET, Java, Python, and other languages.
 
 ## PutWorkbookCreate API
 

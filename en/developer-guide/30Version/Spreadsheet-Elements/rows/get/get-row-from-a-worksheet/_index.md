@@ -11,6 +11,8 @@ weight: 100
 ArticleTitle: "Get Row Description from an Excel Worksheet – Aspose.Cells Cloud API"
 ---
 
+The **GetWorksheetRow** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/{rowIndex}`) retrieves row data by its index in an Excel worksheet using Aspose.Cells Cloud, enabling developers to programmatically access structured row content—including cell values and formatting—without downloading the entire workbook, with support for optional folder and storage parameters to locate remote files.
+
 **Prerequisites:**
 
 - Obtain a valid JWT access token and include it in the `Authorization: Bearer <jwt token>` header.

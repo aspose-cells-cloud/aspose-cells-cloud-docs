@@ -11,7 +11,7 @@ weight: 100
 ArticleTitle: "Sort Excel Worksheet Range Data with Aspose.Cells Cloud REST API"
 ---
 
-The REST API sorts data within a specified range on an Excel worksheet.
+The **PostWorksheetRangeSort** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/sort`) enables sorting data within a specified range on an Excel worksheet using Aspose.Cells Cloud. It requires the file name, worksheet name, cell area to sort, and a DataSorter object in the request body, with optional folder and storage parameters. This operation supports complex sorting scenarios such as multi-column, case-sensitive, and custom list sorting, making it suitable for programmatic data organization in cloud-based Excel workflows.
 
 ## REST API
 

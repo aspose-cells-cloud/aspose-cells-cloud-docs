@@ -11,7 +11,7 @@ weight: 40
 ArticleTitle: "Add a Pivot Field to a Pivot Table – Aspose.Cells Cloud Documentation"
 ---
 
-This REST API **adds** a pivot field to an existing pivot table.
+The **PutPivotTableField** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField`) adds a pivot field to an existing pivot table in Aspose.Cells Cloud, supporting row, column, data, or filter field types via the required `pivotFieldType` query parameter and `pivotTableFieldRequest` body. This operation enables developers to programmatically extend pivot table structure without manual reconfiguration, leveraging Aspose.Cells Cloud’s REST API to automate complex spreadsheet analysis workflows across supported SDKs for .NET, Java, Python, and other languages.
 
 > **Prerequisite:** To call this endpoint you must include a valid JWT authentication token in the `Authorization` header and ensure the workbook is stored in the specified folder or default storage.
 

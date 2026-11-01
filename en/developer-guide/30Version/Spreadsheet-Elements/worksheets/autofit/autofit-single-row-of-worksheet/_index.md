@@ -11,7 +11,7 @@ weight: 30
 ArticleTitle: "Autofit Row in Excel Worksheet using Aspose.Cells Cloud API"
 ---
 
-This REST API **autofits a row** on an Excel worksheet.
+The **PostAutofitWorksheetRow** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitrow`) in Aspose.Cells Cloud enables autofitting a single row in a worksheet by dynamically adjusting its height to accommodate the tallest content in the specified row, with optional parameters to limit the operation to a specific column range (`firstColumn`, `lastColumn`) and support for custom folder and storage locations; the operation requires the file name, worksheet name, and row index as mandatory path and query parameters.
 
 ## Security and Authentication
 

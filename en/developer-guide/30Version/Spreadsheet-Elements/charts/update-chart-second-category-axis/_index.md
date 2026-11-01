@@ -9,7 +9,7 @@ ArticleTitle: "Update Chart Second Category Axis – Aspose.Cells Cloud API"
 linktitle: "Update Second Category Axis"
 ---
 
-This REST API updates the second category axis of a chart.
+The **PostChartSecondCategoryAxis** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/secondcategoryaxis`) updates the second category axis of a chart in Aspose.Cells Cloud, enabling precise control over axis formatting and scale by sending an axis configuration object in the request body.
 
 ## PostChartSecondCategoryAxis API
 

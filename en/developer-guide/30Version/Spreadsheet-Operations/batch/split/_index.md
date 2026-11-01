@@ -10,7 +10,7 @@ linktitle: "Batch Split API"
 ArticleTitle: "Aspose.Cells Cloud Batch Split API: Split Excel Files to PDF, CSV, JSON"
 ---
 
-This REST API performs a **batch split** of eligible files.
+The **PostBatchSplit** API (`POST https://api.aspose.cloud/v3.0/cells/batch/split`) enables batch splitting of eligible files—such as Excel, PDF, Markdown, CSV, HTML, and over 30 other supported formats—by applying specific matching conditions defined in the request body, streamlining document automation workflows for developers using Aspose.Cells Cloud.
 
 ## REST API
 

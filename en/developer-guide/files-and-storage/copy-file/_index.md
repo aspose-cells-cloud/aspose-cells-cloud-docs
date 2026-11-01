@@ -10,6 +10,8 @@ description: "Copy Excel files in the cloud with Aspose.Cells Cloud CopyFile API
 weight: 100
 ---
 
+The **CopyFile** API (`PUT https://api.aspose.cloud/v4.0/cells/storage/file/copy/{srcPath}`) in Aspose.Cells Cloud enables secure, server-side duplication of Excel files within or across cloud storage accounts, supporting optional source and destination storage names and versioned file copies via query parameters.
+
 ## Excel Cloud API: CopyFile
 
 The **CopyFile** API enables secure, server-side duplication of Excel files within or across cloud storage accounts. Ideal for batch operations, backup workflows, and file versioning, this RESTful endpoint operates entirely in the cloud—no local file handling required.

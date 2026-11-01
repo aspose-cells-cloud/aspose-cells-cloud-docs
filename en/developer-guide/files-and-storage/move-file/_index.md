@@ -10,7 +10,7 @@ description: "Move Excel files in Aspose.Cells Cloud storage using the Move File
 weight: 100
 ---
 
-The **moveFile** API moves a file from one location to another within Aspose.Cells Cloud storage. It helps you organize files and manage storage efficiently.
+The **MoveFile** API (`PUT https://api.aspose.cloud/v4.0/cells/storage/file/move/{srcPath}`) moves a file from a specified source path (`srcPath`) to a destination path (`destPath`) within Aspose.Cells Cloud storage using the HTTP PUT method; it supports optional parameters for specifying source and destination storage names and version IDs, enabling efficient file reorganization across cloud storage locations without downloading or re-uploading.
 
 ## **Excel API: Move File**
 

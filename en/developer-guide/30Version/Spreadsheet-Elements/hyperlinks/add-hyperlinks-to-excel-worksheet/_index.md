@@ -10,7 +10,7 @@ linktitle: "Add Hyperlink"
 ArticleTitle: "Add Hyperlink to Excel Worksheet via Aspose.Cells Cloud REST API"
 ---
 
-This REST API adds a hyperlink to an Excel worksheet.
+The **PutWorksheetHyperlink** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks`) enables programmatic addition of hyperlinks to Excel worksheets via Aspose.Cells Cloud, supporting range-based linking by specifying first row/column, total rows/columns, and the target address; this RESTful operation allows developers to automate hyperlink insertion across supported cloud-based Excel workflows using SDKs for .NET, Java, Python, and other languages.
 
 ## REST API
 

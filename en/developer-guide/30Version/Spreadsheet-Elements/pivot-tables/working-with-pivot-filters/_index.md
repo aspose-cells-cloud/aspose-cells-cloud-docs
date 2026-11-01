@@ -11,7 +11,7 @@ weight: 50
 ArticleTitle: "Working with Pivot Filters – Aspose.Cells Cloud Documentation"
 ---
 
-This REST API adds a **pivot filter** to the pivot table at the specified index.
+The **PutWorksheetPivotTableFilter** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotFilters`) adds a pivot filter to the specified PivotTable in a worksheet using Aspose.Cells Cloud, enabling developers to programmatically apply filtering criteria to pivot table data without manual intervention.
 
 **Prerequisites**  
 Before calling this endpoint you must:

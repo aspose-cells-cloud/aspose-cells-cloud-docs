@@ -10,7 +10,7 @@ weight: 80
 ArticleTitle: "Delete Multiple Rows from an Excel Worksheet with Aspose.Cells Cloud API"
 ---
 
-This REST API deletes multiple rows **from** an Excel worksheet.
+The **DeleteWorksheetRows** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows`) in Aspose.Cells Cloud v3.0 deletes multiple consecutive rows from a specified worksheet by providing the starting row index (`startrow`) and optionally the number of rows to remove (`totalRows`), enabling efficient bulk row deletion while optionally updating cross-sheet references via the `updateReference` parameter.
 
 **Prerequisites:** To call this endpoint you must have a valid JWT access token obtained from Aspose Cloud authentication and appropriate storage permissions for the workbook.
 

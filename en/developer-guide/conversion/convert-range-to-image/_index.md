@@ -15,7 +15,7 @@ tags:
 ArticleTitle: "Convert Excel Range to Image with Aspose.Cells Cloud API"
 ---
 
-Convert a specific range from a local Excel file to PNG, JPEG, SVG, TIFF, or BMP via Aspose.Cells Cloud REST API — no full workbook upload required.
+The **ConvertRangeToImage** API (`PUT https://api.aspose.cloud/v4.0/cells/convert/range/image`) in Aspose.Cells Cloud enables developers to convert a specified cell range—such as A1:C10—from a local Excel file directly into image formats including PNG, JPEG, SVG, TIFF, or BMP, without uploading the full workbook to cloud storage; the operation reads the file from the local system, performs conversion server-side, and returns the resulting image, reducing cloud resource usage and simplifying workflow.
 
 ## Convert Range to Image Method
 
@@ -27,28 +27,26 @@ PUT https://api.aspose.cloud/v4.0/cells/convert/range/image
 
 The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
-## Request Parameters
+### Request Parameters
 
-| Name               | Location                          | Type    | Required | Description                                                                                                                          |
-| ------------------ | --------------------------------- | ------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| **Spreadsheet**    | Form‑Data (`multipart/form-data`) | File    | **Yes**  | The Excel file to be processed.                                                                                                      |
-| **worksheet**      | Query                             | String  | **Yes**  | Worksheet name that contains the range (e.g., `Sheet1`).                                                                             |
-| **range**          | Query                             | String  | **Yes**  | Cell area to convert, e.g., `A1:C10`.                                                                                                |
-| **format**         | Query                             | String  | **Yes**  | Output image format (`png`, `jpeg`, `svg`, `tiff`, `bmp`).                                                                           |
-| **printHeadings**  | Query                             | Boolean | No       | `true` to include row/column headings in the image. Default: `false`.                                                                |
-| **autoRowsFit**    | Query                             | Boolean | No       | Auto-fit rows before rendering. Default: `false`.                                                                                    |
-| **autoColumnsFit** | Query                             | Boolean | No       | Auto-fit columns before rendering. Default: `false`.                                                                                 |
-| **outPath**        | Query                             | String  | No       | Folder path for the generated file if you want to store it in cloud storage. If omitted, the image is returned in the response body. |
-| **outStorageName** | Query                             | String  | No       | Name of the storage service (e.g., `MyStorage`). Ignored if `outPath` is not specified.                                              |
-| **fontsLocation**  | Query                             | String  | No       | URL or path to custom fonts used during conversion.                                                                                  |
-| **region**         | Query                             | String  | No       | Locale identifier (e.g., `en-US`, `fr-FR`). Affects number and date formatting. Default: `en-US`.                                    |
-| **password**       | Query                             | String  | No       | Password for encrypted workbooks.                                                                                                    |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| worksheet | String | Query | worksheet name of spreadsheet. |
+| range | String | Query | cell area. e.g. A1:C10 |
+| format | String | Query | file format. e.g. png, svg, tiff |
+| printHeadings | Boolean | Query | Represents if row and column headings are printed with this page. |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| fontsLocation | String | Query | Use Custom fonts. |
+| AutoRowsFit | Boolean | Query | (Optional) Autofits all rows in worksheets. |
+| AutoColumnsFit | Boolean | Query | (Optional) Autofits all columns in worksheets. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
 
 > **Note**: All query parameter names use camelCase (`autoRowsFit`, `autoColumnsFit`, etc.) to match the actual API contract.
 
-## Response
-
-The API returns the converted **image file** as a binary stream (`application/octet-stream`).
+### Response
 
 ```json
 [
@@ -62,6 +60,16 @@ The API returns the converted **image file** as a binary stream (`application/oc
 ]
 ```
 
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
+The API returns the converted **image file** as a binary stream (`application/octet-stream`).
+
 ### Sample Success Response (HTTP)
 
 ```
@@ -73,7 +81,7 @@ Content-Length: 8423
 
 Save the response body to a file (e.g., `report.png`) to view the rendered image in a browser.
 
-## HTTP Status Codes
+### HTTP Status Codes
 
 | Code | Meaning               | Description                                                                   |
 | ---- | --------------------- | ----------------------------------------------------------------------------- |

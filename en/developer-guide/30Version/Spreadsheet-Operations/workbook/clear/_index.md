@@ -14,7 +14,7 @@ type: docs
 ArticleTitle: "Clear Excel Objects with Aspose.Cells Cloud REST API"
 ---
 
-This REST API clears internal elements (such as comments, charts, shapes, and more) from Excel files and returns the cleaned workbook in your preferred output format.
+The **PostClearObjects** API (`POST https://api.aspose.cloud/v3.0/cells/clearobjects`) enables developers to clear specific internal elements—such as charts, comments, shapes, pivot tables, hyperlinks, or validation rules—from Excel workbooks via Aspose.Cells Cloud, returning a cleaned workbook in a requested output format like XLSX, PDF, or CSV, with optional scope control via sheet name and support for password-protected files.
 
 ## Prerequisites
 

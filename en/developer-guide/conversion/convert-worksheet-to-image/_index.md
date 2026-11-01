@@ -10,7 +10,7 @@ description: "Convert Excel worksheet to PNG, SVG, TIFF, JPEG, BMP via Aspose.Ce
 weight: 100
 ---
 
-Export data from a worksheet in a local Excel file to an [Image](https://docs.fileformat.com/image/) file using the Aspose.Cells Cloud API. This operation supports multiple image formats and is ideal for generating visual snapshots of spreadsheet data.
+The **ConvertWorksheetToImage** API (`PUT https://api.aspose.cloud/v4.0/cells/convert/worksheet/image`) enables developers to convert a specific worksheet from a local Excel file into an image format such as PNG, SVG, or TIFF using Aspose.Cells Cloud, with the conversion performed entirely on the cloud server—eliminating the need to upload or store files in cloud storage.
 
 **Supported IMAGE FORMATS**
 
@@ -22,10 +22,8 @@ Export data from a worksheet in a local Excel file to an [Image](https://docs.fi
 
 ## **Convert Worksheet to Image API**
 
-### Web API
-
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/convert/worksheet/image
+PUT https://api.aspose.cloud/v4.0/cells/convert/worksheet/image
 ```
 
 ### **Security and Authentication**
@@ -34,16 +32,18 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Request Parameters**
 
-| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                                                          |
-| :------------- | :----- | :------------------------- | :----------------------------------------------------------------------------------- |
-| Spreadsheet    | File   | FormData                   | Upload the spreadsheet file.                                                         |
-| worksheet      | String | Query                      | Name of the worksheet to be converted.                                               |
-| format         | String | Query                      | Desired image format (`svg`, `png`, `tiff`, `jpeg`, `bmp`, etc.).                    |
-| outPath        | String | Query                      | _(Optional)_ Folder path where the output image will be stored; defaults to `null`.  |
-| outStorageName | String | Query                      | Name of the storage location for the output file.                                    |
-| fontsLocation  | String | Query                      | Path to a custom fonts folder, if you need to use fonts not available on the server. |
-| region         | String | Query                      | Spreadsheet region setting (e.g., `en-US`).                                          |
-| password       | String | Query                      | Password required to open a protected spreadsheet file.                              |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| worksheet | String | Query | worksheet name of spreadsheet. |
+| format | String | Query | image format:svg, png, and so on. |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| fontsLocation | String | Query | Use Custom fonts. |
+| AutoRowsFit | Boolean | Query | (Optional) Autofits all rows in worksheets. |
+| AutoColumnsFit | Boolean | Query | (Optional) Autofits all columns in worksheets. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
 
 ### **Response**
 
@@ -59,15 +59,24 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 ]
 ```
 
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
 **HTTP Status Codes**
 
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | Invalid url. |
+| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
+| 404 | Not Found | Source file not accessible. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining conversion data. |
 
 ## **Where Should You Use the Convert Worksheet to Image API?**
 

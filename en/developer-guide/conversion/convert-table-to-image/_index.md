@@ -13,7 +13,7 @@ weight: 100
 section: docs
 ---
 
-This article explains how to convert a table from a local Excel workbook to an image file using the Aspose.Cells Cloud REST API.
+The **ConvertTableToImage** API (`PUT https://api.aspose.cloud/v4.0/cells/convert/table/image`) in Aspose.Cells Cloud enables direct conversion of a table from a local Excel workbook to an image file without requiring cloud storage upload, supporting common output formats such as PNG, SVG, and TIFF; developers supply the spreadsheet file, worksheet name, table name, and target format as required parameters to perform the conversion entirely on the cloud server.
 
 ## Supported Image Formats
 
@@ -39,25 +39,45 @@ This endpoint requires a valid JWT access token. See [Authentication Overview](h
 
 ---
 
-## Request Parameters
+### Request Parameters
 
-| Parameter Name   | Type    | Location | Required | Description                                                                                                          |
-| ---------------- | ------- | -------- | -------- | -------------------------------------------------------------------------------------------------------------------- |
-| `Spreadsheet`    | File    | FormData | Yes      | Local Excel file containing the table to convert.                                                                    |
-| `worksheet`      | String  | Query    | Yes      | Name of the worksheet containing the table.                                                                          |
-| `tableName`      | String  | Query    | Yes      | Name of the Excel table to convert.                                                                                  |
-| `format`         | String  | Query    | Yes      | Target image format: `png`, `jpeg`, `tiff`, `bmp`, or `svg`.                                                         |
-| `outPath`        | String  | Query    | No       | Path in cloud storage where the output image will be saved. If omitted, the result is returned in the response body. |
-| `outStorageName` | String  | Query    | No       | Name of the cloud storage to use for `outPath`.                                                                      |
-| `fontsLocation`  | String  | Query    | No       | Custom folder path for fonts used during rendering.                                                                  |
-| `AutoRowsFit`    | Boolean | Query    | No       | Whether to auto-fit rows before conversion. Default: `false`.                                                        |
-| `AutoColumnsFit` | Boolean | Query    | No       | Whether to auto-fit columns before conversion. Default: `false`.                                                     |
-| `region`         | String  | Query    | No       | Locale setting (e.g., `en-US`, `fr-FR`, `fr-CA`) to affect number, date, and time formatting.                        |
-| `password`       | String  | Query    | No       | Password to open the protected Excel file.                                                                           |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| worksheet | String | Query | worksheet name of spreadsheet. |
+| tableName | String | Query | table name |
+| format | String | Query | file format. |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| fontsLocation | String | Query | Use Custom fonts. |
+| AutoRowsFit | Boolean | Query | (Optional) Autofits all rows in worksheets. |
+| AutoColumnsFit | Boolean | Query | (Optional) Autofits all columns in worksheets. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
 
 ---
 
-## Response
+### Response
+
+```json
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
 
 The API returns the image file as a binary stream. When `outPath` is specified, the response confirms successful storage; otherwise, the image content is included in the response body.
 

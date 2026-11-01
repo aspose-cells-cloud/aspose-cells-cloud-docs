@@ -11,8 +11,7 @@ weight: 30
 ArticleTitle: "Add a Shape to an Excel Worksheet using Aspose.Cells Cloud API"
 ---
 
-This REST API adds a shape to an Excel worksheet.  
-The endpoint belongs to **API version v3.0**; ensure that you use a JWT access token obtained through the Aspose Cloud OAuth2 flow (client‑id/client‑secret) and include it in the `Authorization: Bearer <token>` header.
+The **PutWorksheetShape** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes`) enables developers to programmatically add a shape to a specific worksheet in an Excel file stored in the cloud, supporting operations like positioning via query parameters such as `upperLeftRow`, `upperLeftColumn`, `top`, `left`, `width`, and `height`, and defining shape type using `DrawingType`, all requiring authentication via a JWT access token obtained through Aspose.Cells Cloud OAuth2.
 
 ### **Security and Authentication**
 

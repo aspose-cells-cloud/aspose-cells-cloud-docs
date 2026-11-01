@@ -11,7 +11,7 @@ weight: 100
 ArticleTitle: "Delete Multiple Excel Worksheets using Aspose.Cells Cloud REST API"
 ---
 
-This REST API deletes multiple worksheets from a workbook.
+The **DeleteWorksheets** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets`) enables deletion of multiple worksheets matching specified criteria from a workbook stored in the cloud, supporting flexible matching via the `matchCondition` body parameter while requiring only the workbook's `name` as a path parameter; Aspose.Cells Cloud handles the complex task of worksheet removal through its REST API and provides SDKs for .NET, Java, Go, Node.js, Python, and other languages to streamline integration.
 
 ## Security and Authentication
 

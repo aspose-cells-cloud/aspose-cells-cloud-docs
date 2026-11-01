@@ -10,7 +10,7 @@ weight: 100
 ArticleTitle: "Replace Text in Remote Excel Worksheet Using Aspose.Cells Cloud API"
 ---
 
-Replace specified text within a defined range of a worksheet in remote Excel files stored in cloud storage. This API enables precise, server-side text updates without downloading files — ideal for dynamic reporting, template population, and cross-region data synchronization.
+The **ReplaceContentInRemoteRange** API (`PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{cellArea}/replace/content`) in Aspose.Cells Cloud v4.0 enables precise, server-side replacement of specified text within a defined cell range of a remote Excel workbook stored in cloud storage—supporting dynamic template updates and cross-regional data synchronization without downloading the file.
 
 ## **Replace Text in Remote Worksheet API**
 

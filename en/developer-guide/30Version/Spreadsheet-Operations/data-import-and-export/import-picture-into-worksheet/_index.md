@@ -14,7 +14,7 @@ description: "Learn how to import pictures into Excel worksheets using Aspose.Ce
 weight: 19
 ---
 
-Importing a picture into an Excel worksheet allows you to enrich spreadsheets with visual content such as logos, charts, or diagrams. This guide shows how to use the Aspose.Cells Cloud **ImportPicture** operation, the required request format, and how to handle responses.
+The **PostImport** API (`POST https://api.aspose.cloud/v3.0/cells/import`) enables importing data—including images like logos, charts, or diagrams—into an Excel workbook via Aspose.Cells Cloud, supporting various output formats such as XLSX, PDF, and PNG.
 
 **Prerequisites:** You must have a valid JWT authentication token and an existing workbook stored in Aspose Cloud Storage before invoking the import operation.
 

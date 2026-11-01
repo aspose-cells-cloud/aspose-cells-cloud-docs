@@ -9,7 +9,7 @@ weight: 100
 ArticleTitle: "Extract Text from Excel Cells via Aspose.Cells Cloud REST API"
 ---
 
-Extract substrings, numbers, or fixed-length text fragments from Excel cells—without using complex `FIND`, `LEFT`, `RIGHT`, or `MID` formulas. Aspose.Cells Cloud’s **Extract Text** API processes cell data efficiently, preserving original formatting and formulas, and writes results directly to a target range in the same or different worksheet/workbook.
+The **ExtractText** API (`PUT https://api.aspose.cloud/v4.0/cells/content/extract/text`) in Aspose.Cells Cloud enables developers to extract substrings, numbers, or fixed-length text fragments—such as the first N characters, text before/after a delimiter, or text between two substrings—from Excel cell ranges without relying on complex FIND, LEFT, RIGHT, or MID formulas; the operation processes cell data efficiently, preserves original formatting and formulas, and writes results directly to a target range in the same or a different worksheet or workbook.
 
 ## API Endpoint
 

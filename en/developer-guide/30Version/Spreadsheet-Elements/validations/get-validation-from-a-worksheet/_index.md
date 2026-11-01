@@ -11,8 +11,7 @@ weight: 100
 ArticleTitle: "Get Worksheet Validation by Index in Aspose.Cells Cloud REST API"
 ---
 
-This REST API retrieves a worksheet validation by its index on an Excel worksheet.  
-Before calling the endpoint, obtain a JWT token via the `/connect/token` endpoint and include it in the `Authorization` header as `Bearer <jwt token>`.
+The **GetWorksheetValidation** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations/{validationIndex}`) retrieves a specific data validation rule from an Excel worksheet by its zero-based index, enabling developers to inspect validation constraints such as formula, type, and error message. Aspose.Cells Cloud supports this operation as part of its REST API for spreadsheet automation, allowing programmatic access to worksheet-level validation metadata without requiring local Excel installation. Authentication requires a JWT token obtained via `/connect/token` and included in the `Authorization: Bearer <token>` header.
 
 ## REST API
 

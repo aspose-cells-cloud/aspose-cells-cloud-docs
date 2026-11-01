@@ -11,7 +11,7 @@ weight: 100
 ArticleTitle: "Add a Picture to an Excel Worksheet – Aspose.Cells Cloud API"
 ---
 
-This REST API adds a new picture to an Excel worksheet.  
+The **PutWorksheetAddPicture** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures`) enables developers to add a new picture to a specific Excel worksheet using Aspose.Cells Cloud, supporting both embedded image data in the request body and external image paths via query parameters, with optional positioning controls such as upper-left and lower-right row/column coordinates.
 **Prerequisites:** You must have a valid Aspose Cloud authentication token, an existing workbook stored in a supported storage, and appropriate permissions to modify the worksheet.
 
 ## PutWorksheetAddPicture API

@@ -11,7 +11,7 @@ weight: 40
 ArticleTitle: "Add a Vertical Page Break – Aspose.Cells Cloud API"
 ---
 
-This REST API inserts a vertical page break into a worksheet.
+The **PutVerticalPageBreak** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/verticalpagebreaks`) enables developers to insert a vertical page break into a specific worksheet using Aspose.Cells Cloud, supporting precise control over print layout by specifying either a cell name (e.g., "D5") or explicit row and column indices to define the break location.
 
 ## Security and Authentication
 

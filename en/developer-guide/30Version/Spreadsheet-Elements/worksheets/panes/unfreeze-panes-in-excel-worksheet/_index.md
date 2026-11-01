@@ -13,7 +13,7 @@ weight: 1000
 ArticleTitle: "Unfreeze Panes in Excel Worksheet using Aspose.Cells Cloud REST API"
 ---
 
-This REST API call **unfreezes** (removes frozen panes) from an Excel worksheet.
+The **DeleteWorksheetFreezePanes** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/freezepanes`) unfreezes panes in an Excel worksheet by removing previously frozen rows and columns, enabling dynamic reconfiguration of scrollable view regions; Aspose.Cells Cloud supports this operation with required parameters including `row`, `column`, `freezedRows`, and `freezedColumns` to precisely define the pane boundary being unfrozen.
 
 ## REST API
 

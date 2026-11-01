@@ -13,7 +13,7 @@ weight: 100
 ArticleTitle: "Modify Password Protection of an Excel Workbook – Aspose.Cells Cloud"
 ---
 
-This REST API **changes the write‑protection password** of an existing Excel workbook.
+The **PutDocumentProtectFromChanges** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/writeProtection`) in Aspose.Cells Cloud modifies the write-protection password of an existing Excel workbook stored in cloud storage, requiring the file name in the path and a password request body containing the new password; it supports unprotection workflows and integrates with SDKs for multiple programming languages including .NET, Java, Go, Node.js, and Python.
 
 Updating the write‑protection password programmatically allows you to rotate or replace passwords without downloading the file. It is especially handy when managing secured workbooks stored in Aspose.Cells Cloud storage.
 

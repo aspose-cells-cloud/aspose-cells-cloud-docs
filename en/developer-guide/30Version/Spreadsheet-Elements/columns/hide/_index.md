@@ -13,7 +13,7 @@ weight: 40
 ArticleTitle: "Hide Excel Columns Using Aspose.Cells Cloud REST API"
 ---
 
-This REST API hides columns in a worksheet.
+The **PostHideWorksheetColumns** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/hide`) enables hiding one or more contiguous columns in a worksheet via Aspose.Cells Cloud, requiring the file name, worksheet name, starting column index, and number of columns to hide as path and query parameters; this operation supports flexible column-range hiding for spreadsheet automation in cloud-based workflows.
 
 ## REST API
 

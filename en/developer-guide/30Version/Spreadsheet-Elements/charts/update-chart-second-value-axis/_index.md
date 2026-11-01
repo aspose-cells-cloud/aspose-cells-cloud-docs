@@ -9,7 +9,7 @@ description: "Update Excel chart's second value axis via Aspose.Cells Cloud REST
 linktitle: "Update Second Value Axis"
 ---
 
-This REST API updates the second value axis of a chart.
+The **PostChartSecondValueAxis** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/secondvalueaxis`) updates the second value axis of a chart in a spreadsheet via Aspose.Cells Cloud, allowing developers to programmatically modify axis properties such as scale, format, and title by sending an Axis object in the request body.
 
 **Prerequisites:**
 

@@ -11,6 +11,8 @@ ArticleTitle: "Merge an Excel Workbook into Another Workbook using Aspose.Cells 
 weight: 50
 ---
 
+The **PostWorkbooksMerge** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/merge`) enables developers to programmatically merge a secondary Excel workbook into an existing workbook stored in the cloud using Aspose.Cells Cloud, supporting operations like combining multiple workbooks into a single file while preserving formatting and structure.
+
 ## REST API
 
 This REST API merges an Excel **workbook** into another workbook.

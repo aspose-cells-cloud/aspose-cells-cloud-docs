@@ -10,7 +10,7 @@ weight: 100
 ArticleTitle: "Get Page Count for an Excel Worksheet – Aspose.Cells Cloud API"
 ---
 
-This REST API returns the **page count** for a worksheet.
+The **GetWorksheetPageCount** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pagecount`) retrieves the total number of pages a worksheet will produce when printed, using Aspose.Cells Cloud’s robust rendering engine to accurately calculate pagination based on page setup, print area, and paper size; the operation requires the file name and worksheet name as path parameters and optionally supports folder and storageName query parameters to locate the source workbook.
 
 **Authentication:** All Aspose.Cells Cloud endpoints require a Bearer token obtained via the OAuth2 flow. Include the token in the `Authorization` header as shown in the cURL example below.
 

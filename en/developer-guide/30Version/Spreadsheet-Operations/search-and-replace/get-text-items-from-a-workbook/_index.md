@@ -11,6 +11,8 @@ keywords: "Excel, Aspose.Cells Cloud, REST API, Spreadsheet, Get Text Items, Wor
 description: "Retrieve text items from an Excel workbook using the Aspose.Cells Cloud REST API. Available through SDKs for C#, Java, Python, PHP, Ruby, Go, Node.js, Perl, and Swift."
 ---
 
+The **GetWorkbookTextItems** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/textItems`) retrieves text items from a specified Excel workbook stored in cloud storage, enabling developers to programmatically extract all text content—including cells, comments, headers, footers, and shapes—for search, analysis, or replacement workflows. Aspose.Cells Cloud supports this operation with robust parsing and structured output in the `TextItemsResponse` format, allowing precise identification of text elements across worksheets without manual intervention.
+
 ## REST API
 
 This REST API reads a workbook’s **text items** in an Excel file.

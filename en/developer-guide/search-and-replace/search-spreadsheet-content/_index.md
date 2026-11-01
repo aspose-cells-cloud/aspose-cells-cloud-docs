@@ -9,9 +9,8 @@ weight: 100
 ArticleTitle: "Search Excel Content with Aspose.Cells Cloud API – Text, Range & Worksheet Search"
 ---
 
-# Search Spreadsheet Content
 
-Programmatically search for specific text within Excel spreadsheets using the Aspose.Cells Cloud API. This operation uploads a local file to the cloud service, performs a content search, and returns matched cells—including worksheet name, cell address, and matched text—without requiring prior storage in the cloud.
+The **SearchSpreadsheetContent** API (`PUT https://api.aspose.cloud/v4.0/cells/search/content`) in Aspose.Cells Cloud enables developers to programmatically search for specified text within a local Excel spreadsheet uploaded via the request body, returning matched cell locations—including worksheet name, cell address, and matched text—without requiring prior storage in the cloud; the operation supports refining results with options like case-insensitive matching, worksheet or cell-area scoping, and password-protected file handling.
 
 ---
 

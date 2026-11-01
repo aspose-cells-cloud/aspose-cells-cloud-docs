@@ -15,7 +15,7 @@ ArticleTitle: "Get Chart Area Fill Format Aspose.Cells Cloud API v3.0"
 linktitle: "Get Chart Area Fill Format"
 ---
 
-This REST API retrieves the fill‑format information of a **Chart Area**.
+The **GetChartAreaFillFormat** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/chartArea/fillFormat`) retrieves the fill-format description of a chart area within a specified worksheet in Aspose.Cells Cloud, supporting programmatic access to visual formatting details such as background color, pattern, and gradient settings for chart rendering and analysis.
 
 **Prerequisites**  
 To call this endpoint you must have a valid OAuth/JWT access token. Obtain the token using the Aspose.Cells Cloud authentication flow and include it in the `Authorization` header as `Bearer <jwt token>`. If you are using one of the SDKs, ensure the SDK is configured with your `client_id` and `client_secret` before invoking the method.

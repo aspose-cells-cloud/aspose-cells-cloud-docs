@@ -11,6 +11,8 @@ weight: 32
 ArticleTitle: "Merge Multiple Excel Files into One Workbook with Aspose.Cells Cloud REST API"
 ---
 
+The **PostMerge** API (`POST https://api.aspose.cloud/v3.0/cells/merge`) enables developers to merge multiple Excel files into a single workbook using Aspose.Cells Cloud, supporting formats such as XLSX, PDF, and others via optional query parameters like `outFormat` and `mergeToOneSheet`.
+
 ## REST API
 
 This REST API merges multiple Excel files into a single Excel workbook.

@@ -13,7 +13,7 @@ description: "Delete a date filter from an Excel worksheet using the Aspose.Cell
 ArticleTitle: "Delete a Date Filter – Aspise.Cells Cloud API Documentation"
 ---
 
-This REST API deletes a date filter on an Excel worksheet.
+The **DeleteWorksheetDateFilter** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/dateFilter`) enables Aspose.Cells Cloud users to remove a date filter from a specified worksheet by providing the workbook name, worksheet name, field index, and dateTimeGroupingType—optionally including date components like year, month, or day—to precisely target the filter being removed.
 
 **Prerequisites:** Ensure you have a valid JWT token, the workbook is stored in Aspose Cloud storage, and you have appropriate permissions to modify the worksheet.
 

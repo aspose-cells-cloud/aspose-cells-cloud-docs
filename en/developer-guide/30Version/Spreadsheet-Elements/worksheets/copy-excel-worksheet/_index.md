@@ -11,7 +11,7 @@ weight: 100
 ArticleTitle: "Copy Excel Worksheet Using Aspose.Cells Cloud REST API"
 ---
 
-This REST API copies a worksheet and its formats to a new sheet within the same workbook.
+The **PostCopyWorksheet** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/copy`) enables copying contents and formats from a source worksheet to a new sheet within the same or a different workbook using Aspose.Cells Cloud, requiring the target workbook name, target worksheet name, source worksheet identifier, and copy options, with optional support for specifying source workbook, folder, and storage.
 
 ## REST API
 

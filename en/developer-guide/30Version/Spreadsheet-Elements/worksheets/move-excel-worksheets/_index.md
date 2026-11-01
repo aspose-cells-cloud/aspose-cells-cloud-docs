@@ -11,7 +11,7 @@ weight: 100
 ArticleTitle: "How to Move an Excel Worksheet with Aspose.Cells Cloud API v3.0"
 ---
 
-This REST API moves a worksheet within an Excel workbook.
+The **PostMoveWorksheet** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/position`) enables developers to reposition a specific worksheet within an Excel workbook using Aspose.Cells Cloud, supporting operations such as moving a sheet to a new index by providing the workbook name, worksheet name, and a `WorksheetMovingRequest` body with the target position.
 
 ## REST API
 

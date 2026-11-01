@@ -12,7 +12,7 @@ description: "Add Top 10 AutoFilter to Excel via Aspose.Cells Cloud REST API usi
 weight: 65
 ---
 
-This REST API filters the **Top 10** items in a list.
+The **PutWorksheetFilterTop10** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/filterTop10`) enables filtering the top or bottom N items in a specified worksheet range using Aspose.Cells Cloud, allowing users to dynamically hide rows based on criteria such as numeric rank or percentage, with support for both count-based and percentage-based filtering via parameters like `isTop`, `isPercent`, and `itemCount`.
 
 > **Prerequisites**  
 > • Obtain a valid JWT token using Aspose.Cells Cloud authentication.  

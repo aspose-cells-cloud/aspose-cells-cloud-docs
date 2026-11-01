@@ -11,7 +11,7 @@ description: "Step‑by‑step guide to add a new worksheet to an Excel workbook
 weight: 100
 ---
 
-This REST API adds a new worksheet to an existing workbook.
+The **PutAddNewWorksheet** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}`) in Aspose.Cells Cloud adds a new worksheet to an existing Excel workbook, supporting optional parameters such as position and sheet type (e.g., Worksheet, VB, or Chart) to customize the new sheet’s placement and behavior within the workbook.
 
 **Prerequisites**: To call this endpoint you must have a valid Aspose Cloud authentication token, the target workbook must be uploaded to Aspose Cloud storage, and you should know the storage name (if using a custom storage).
 

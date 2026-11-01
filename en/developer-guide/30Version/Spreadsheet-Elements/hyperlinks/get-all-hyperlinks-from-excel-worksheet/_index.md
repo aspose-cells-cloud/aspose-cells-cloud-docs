@@ -11,7 +11,7 @@ ArticleTitle: "Get All Hyperlinks – Aspose.Cells Cloud REST API Documentation"
 linktitle: "Get All Hyperlinks"
 ---
 
-This REST API retrieves **all hyperlinks** from a specific worksheet in an Excel workbook.
+The **GetWorksheetHyperlinks** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks`) retrieves descriptions of all hyperlinks in a specified worksheet of an Excel workbook stored in Aspose.Cells Cloud, enabling developers to programmatically inspect hyperlink content—including URLs and screen tips—without modifying the original file, using required path parameters `name` and `sheetName`, and optional query parameters for folder and storage identification.
 
 ## Security and Authentication
 

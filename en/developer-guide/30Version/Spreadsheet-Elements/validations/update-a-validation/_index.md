@@ -10,7 +10,7 @@ weight: 100
 ArticleTitle: "Update Worksheet Validation Using Aspose.Cells Cloud API"
 ---
 
-This REST API updates a worksheet validation by its index on an Excel worksheet.
+The **PostWorksheetValidation** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations/{validationIndex}`) updates an existing data validation in a specific worksheet by its index, enabling precise programmatic control over Excel validation rules using Aspose.Cells Cloud. Developers supply the workbook name, worksheet name, validation index, and a new validation object in the request body to replace the existing validation, with optional query parameters for folder and storage name to locate the file.
 
 Before calling this endpoint, obtain a JWT access token with the appropriate scopes (e.g., `Cells.ReadWrite`). Include the token in the `Authorization` header as shown in the examples.
 

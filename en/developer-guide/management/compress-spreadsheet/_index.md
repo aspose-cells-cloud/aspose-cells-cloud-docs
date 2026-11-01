@@ -13,7 +13,7 @@ aliases:
 ArticleTitle: "Compress Excel Files with Aspose.Cells Cloud API - Configurable Compression Levels"
 ---
 
-Compress Excel spreadsheets programmatically with the Aspose.Cells Cloud API to reduce file size, optimize cloud storage usage, and accelerate data transfer. The API supports configurable compression levels (0–9), handles encrypted workbooks, and integrates seamlessly into automated workflows across reporting, data pipelines, and user upload optimization.
+The **CompressSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/compress`) enables programmatic compression of Excel spreadsheets via the Aspose.Cells Cloud REST API, allowing users to reduce file size by specifying a compression level (e.g., 0–9) while supporting encrypted workbooks and optional output path configuration; this helps optimize cloud storage usage and accelerate data transfer in automated workflows.
 
 ## Compress Spreadsheet API Endpoint
 

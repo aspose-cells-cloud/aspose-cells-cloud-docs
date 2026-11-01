@@ -11,7 +11,7 @@ date: 2024-03-15
 lastmod: 2024-03-15
 ---
 
-Export a range of data from a local Excel file to a [PDF](https://docs.fileformat.com/pdf/) file using the Cloud API.
+The **ConvertRangeToPdf** API (`PUT https://api.aspose.cloud/v4.0/cells/convert/range/pdf`) in Aspose.Cells Cloud enables direct conversion of a specified cell range—defined by worksheet name and range address (e.g., "Sheet1!A1:C10")—from a locally uploaded Excel file into a PDF document, leveraging cloud-native processing without requiring prior file upload to storage.
 
 **Prerequisites**: Before using this API you need a valid Aspose.Cells Cloud account, a JWT access token, and optionally an Aspose.Cells Cloud SDK for your programming language. Ensure the target storage (default or custom) is configured if you plan to use the `outStorageName` parameter.
 
@@ -27,16 +27,18 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Request Parameters:**
 
-| Parameter Name | Type   | Path/Query String/HTTP Body | Description                                                                                  |
-| -------------- | ------ | --------------------------- | -------------------------------------------------------------------------------------------- |
-| Spreadsheet    | File   | FormData                    | Upload the spreadsheet file.                                                                 |
-| worksheet      | String | Query                       | The worksheet name within the spreadsheet.                                                   |
-| range          | String | Query                       | The cell area to be converted, e.g., `A1:C10`.                                               |
-| outPath        | String | Query                       | (Optional) The folder path where the workbook is stored. The default is null.                |
-| outStorageName | String | Query                       | Output file storage name. Specify the storage configured in your Aspose.Cells Cloud account. |
-| fontsLocation  | String | Query                       | Location for storing custom fonts for home use.                                              |
-| region         | String | Query                       | The spreadsheet region setting.                                                              |
-| password       | String | Query                       | The password for opening the spreadsheet file.                                               |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| worksheet | String | Query | worksheet name of spreadsheet. |
+| range | String | Query | cell area. e.g. A1:C10 |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| fontsLocation | String | Query | Use Custom fonts. |
+| AutoRowsFit | Boolean | Query | (Optional) Autofits all rows in worksheets. |
+| AutoColumnsFit | Boolean | Query | (Optional) Autofits all columns in worksheets. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
 
 ### **Response**
 
@@ -52,17 +54,26 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 ]
 ```
 
-_Typical response is a binary PDF stream returned as a file download._
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
 
 **HTTP Status Codes**
 
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | Invalid url. |
+| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
+| 404 | Not Found | Source file not accessible. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining conversion data. |
+
+_Typical response is a binary PDF stream returned as a file download._
 
 ## **Where Should You Use the Convert Range to PDF API?**
 

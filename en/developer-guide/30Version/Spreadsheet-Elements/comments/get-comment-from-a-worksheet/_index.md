@@ -10,7 +10,7 @@ ArticleTitle: "Get Worksheet Comment – Aspose.Cells Cloud API Documentation"
 linktitle: "Get Worksheet Comment"
 ---
 
-This REST API retrieves a worksheet comment by cell name using **Aspose.Cells Cloud**.
+The **GetWorksheetComment** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{cellName}`) retrieves the description of a comment attached to a specific cell in a worksheet using Aspose.Cells Cloud, supporting path parameters for the file name, worksheet name, and cell name to precisely target the desired comment.
 
 **Prerequisites:** To call this operation you must include a valid JWT access token in the `Authorization` header (`Bearer <jwt token>`). Tokens can be obtained via the Aspose.Cells Cloud authentication flow described in the [Authentication guide]（https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/）.
 

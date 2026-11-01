@@ -10,7 +10,7 @@ ArticleTitle: "Update Worksheet Cell Comment – Aspose.Cells Cloud API"
 linktitle: "Update Comment"
 ---
 
-This REST API updates a comment on a worksheet cell. Use this endpoint to **update a worksheet comment** in an Excel file.  
+The **PostWorksheetComment** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{cellName}`) updates an existing comment attached to a specific cell in an Excel worksheet using Aspose.Cells Cloud, requiring the workbook name, worksheet name, cell name, and a comment object in the request body.
 
 **Prerequisites:**  
 - A valid OAuth/JWT access token must be included in the `Authorization` header.  

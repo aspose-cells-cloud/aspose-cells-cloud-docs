@@ -13,6 +13,8 @@ description: "Sign Excel workbooks digitally using Aspose.Cells Cloud REST API w
 weight: 35
 ---
 
+The **PostDigitalSignature** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/digitalsignature`) enables users to apply a digital signature to an Excel workbook via Aspose.Cells Cloud, adding an electronic, encrypted stamp of authentication to verify the file's integrity and origin. The operation requires the workbook name (`name`), the digital signature file path (`digitalsignaturefile`), and the workbook's password (`password`), and supports optional folder and storage parameters for flexible file management. Aspose.Cells Cloud handles this task through a RESTful interface, allowing programmatic signing of Excel files across 30+ supported formats.
+
 **Prerequisites:**  
 Before calling this endpoint, ensure you have:
 

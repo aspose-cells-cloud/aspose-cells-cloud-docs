@@ -11,6 +11,8 @@ weight: 65
 ArticleTitle: "Add an Icon Filter to an Excel Worksheet – Aspose.Cells Cloud Documentation"
 ---
 
+The **PutWorksheetIconFilter** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/iconFilter`) enables developers to add an icon filter to a specified range in an Excel worksheet via the Aspose.Cells Cloud REST API, allowing conditional formatting based on icon sets such as traffic lights or arrows by specifying the icon set type and icon ID along with the field index and range.
+
 ## REST API
 
 This REST API adds an **icon filter** to an Excel worksheet using the **Aspose.Cells Cloud REST API**.

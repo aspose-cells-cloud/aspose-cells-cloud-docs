@@ -13,6 +13,8 @@ linktitle: "Delete Comment"
 ArticleTitle: "Delete Worksheet Comment via Aspose.Cells Cloud REST API"
 ---
 
+The **DeleteWorksheetComment** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{cellName}`) removes a cell comment from a specified worksheet in an Excel file stored in the cloud, preserving the cell's content. Aspose.Cells Cloud provides robust support for this operation, enabling developers to programmatically clean up annotations using its REST API or SDKs for .NET, Java, Python, Node.js, and Go.
+
 > **Page last updated:** May 15, 2024
 
 ## Overview

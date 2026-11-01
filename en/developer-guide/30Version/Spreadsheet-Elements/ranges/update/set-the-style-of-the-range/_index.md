@@ -11,6 +11,8 @@ weight: 70
 ArticleTitle: "Set Range Style in Excel via Aspose.Cells Cloud REST API"
 ---
 
+The **PostWorksheetCellsRangeStyle** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/style`) enables developers to set the style for a specified range in a worksheet using Aspose.Cells Cloud, allowing programmatic formatting of cell ranges such as applying fonts, borders, and fill patterns. The operation requires the workbook name, worksheet name, and a `RangeSetStyleRequest` body containing the desired style settings, with optional query parameters for folder and storage name. This REST API supports integration across multiple programming languages, including .NET, Java, Python, and JavaScript, streamlining spreadsheet styling workflows in cloud-based applications.
+
 ## **Introduction**  
 This example demonstrates how to set the style of a range using the Aspose.Cells Cloud API. You can call the API from many programming languages, such as .NET, Java, PHP, Ruby, Python, JavaScript (jQuery), and others.  
 

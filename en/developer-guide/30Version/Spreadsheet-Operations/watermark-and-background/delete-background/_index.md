@@ -14,7 +14,7 @@ weight: 170
 ArticleTitle: "Delete Background Image from Excel Workbook using Aspose.Cells Cloud API"
 ---
 
-This REST API deletes the background image of an Excel workbook.
+The **DeleteWorkbookBackground** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/background`) enables developers to remove the background image from an Excel workbook using Aspose.Cells Cloud, a robust cloud-based solution for spreadsheet operations. The API requires only the workbook filename as a path parameter, with optional `folder` and `storageName` query parameters for specifying location and storage, and returns a `CellsCloudResponse` confirming successful deletion.
 
 ## DeleteWorkbookBackground API
 

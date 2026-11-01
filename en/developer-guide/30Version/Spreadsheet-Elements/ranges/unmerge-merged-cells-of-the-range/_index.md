@@ -11,7 +11,7 @@ weight: 100
 ArticleTitle: "Unmerge Merged Cells in Excel Range via Aspose.Cells Cloud API"
 ---
 
-This REST API unmerges merged cells within a specified range on an Excel worksheet.
+The **PostWorksheetCellsRangeUnMerge** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/unmerge`) enables unmerging merged cells within a specified range on an Excel worksheet using Aspose.Cells Cloud, supporting precise range-based operations while preserving other cell formatting and data integrity.
 
 ## REST API
 

@@ -10,9 +10,8 @@ weight: 100
 draft: false
 ---
 
-# Get Access Token with Client ID and Secret
 
-Before calling this endpoint, ensure you have:
+The **PostAccessToken** API (`POST https://api.aspose.cloud/v4.0/cells/connect/token`) enables Aspose.Cells Cloud clients to obtain an access token by securely authenticating with their registered API credentials; as a proxy service, it forwards the client’s authentication request to the Aspose Cloud authorization server and returns the issued token, allowing middleware and applications to authenticate subsequent API calls without handling OAuth flows directly.
 
 - A registered [Aspose Cloud account](https://dashboard.aspose.cloud/).
 - A **Client ID** and **Client Secret** generated in the [Aspose Cloud dashboard](https://dashboard.aspose.cloud/authorization).

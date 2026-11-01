@@ -11,7 +11,7 @@ weight: 50
 ArticleTitle: "Hide an Excel Worksheet with Aspose.Cells Cloud REST API"
 ---
 
-This REST API hides a worksheet.
+The **PutChangeVisibilityWorksheet** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/visible`) enables developers to programmatically change the visibility of a specific worksheet within an Excel workbook using Aspose.Cells Cloud, by setting the required `isVisible` query parameter to `true` or `false` while providing the workbook `name` and worksheet `sheetName` as path parameters.
 
 ## REST API
 

@@ -13,7 +13,7 @@ weight: 100
 draft: false
 ---
 
-Check the Health Status of the Aspose.Cells Cloud Service in real-time.
+The **GetAsposeCellsCloudStatus** API (`GET https://api.aspose.cloud/v4.0/cells`) checks the real-time health status of the Aspose.Cells Cloud service, returning a string response that indicates service availability and operational conditions such as connectivity, latency, and error rates—enabling developers to perform pre-flight checks before executing critical operations or integrate with monitoring systems for SLA compliance.
 
 ## Overview
 

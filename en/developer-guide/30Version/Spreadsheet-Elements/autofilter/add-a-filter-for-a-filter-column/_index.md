@@ -11,6 +11,8 @@ weight: 60
 ArticleTitle: "Add a Filter to an Excel Worksheet using Aspose.Cells Cloud"
 ---
 
+The **PutWorksheetFilter** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/filter`) in Aspose.Cells Cloud enables developers to programmatically add an AutoFilter for a specific column in an Excel worksheet by specifying the range, field index, and custom criteria; it supports optional parameters such as matching blank cells and refreshing filters to hide or unhide rows, making it a precise tool for dynamic spreadsheet data filtering.
+
 **Prerequisites:** Before calling this API you must obtain a valid JWT token, ensure the target workbook is uploaded to the specified storage, and have the necessary permissions to access the file. A recent version of cURL (7.68 or later) is recommended for command‑line examples.
 
 This REST API adds a filter for a specific column on an Excel worksheet.

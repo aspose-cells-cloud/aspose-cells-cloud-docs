@@ -12,7 +12,7 @@ type: docs
 ArticleTitle: "Aspose.Cells Cloud: Convert Excel to CSV via Zero-Upload API"
 ---
 
-The **ConvertSpreadsheetToCsv** endpoint processes local spreadsheet files directly on Aspose.Cells Cloud servers—no prior upload to cloud storage required. This zero-upload architecture eliminates storage overhead, reduces latency, and simplifies integration for developers needing rapid, reliable Excel-to-CSV transformations.
+The **ConvertSpreadsheetToCsv** API (`PUT https://api.aspose.cloud/v4.0/cells/convert/spreadsheet/csv`) in Aspose.Cells Cloud enables direct conversion of local spreadsheet files to CSV format without requiring prior upload to cloud storage, allowing developers to streamline Excel-to-CSV workflows by processing files entirely on the cloud server while reducing storage overhead and latency.
 
 Supported formats include `.xls`, `.xlsx`, `.xlsm`, `.xlsb`, `.ods`, and more. The service handles password-protected files, custom fonts, locale-specific formatting, and row/column auto-fitting. On success, the CSV output is returned as a binary stream (`Content-Type: application/octet-stream`).
 
@@ -33,26 +33,38 @@ Before using this API, ensure you have:
 PUT https://api.aspose.cloud/v4.0/cells/convert/spreadsheet/csv
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### Request Parameters
 
-| Parameter        | Type    | Location | Required | Description                                                                                                 |
-| :--------------- | :------ | :------- | :------- | :---------------------------------------------------------------------------------------------------------- |
-| `Spreadsheet`    | File    | FormData | ✅ Yes   | Local Excel/WorkBook file (e.g., `myWorkbook.xlsx`). Must be sent as `multipart/form-data`.                 |
-| `outPath`        | String  | Query    | ❌ No    | Destination path in cloud storage (e.g., `/output/reports/`). Omit to return CSV directly in response body. |
-| `outStorageName` | String  | Query    | ❌ No    | Cloud storage name for output. Defaults to configured account storage if omitted.                           |
-| `fontsLocation`  | String  | Query    | ❌ No    | Custom font folder path (e.g., `/fonts/`). Required for accurate rendering with non-system fonts.           |
-| `region`         | String  | Query    | ❌ No    | Locale setting (e.g., `en-US`, `fr-FR`). Affects number/date formatting and parsing.                        |
-| `password`       | String  | Query    | ❌ No    | Password for encrypted spreadsheets. Incorrect/missing password returns `400`/`401`.                        |
-| `AutoRowsFit`    | Boolean | Query    | ❌ No    | `true` to autofit all rows before conversion. Default: `false`.                                             |
-| `AutoColumnsFit` | Boolean | Query    | ❌ No    | `true` to autofit all columns before conversion. Default: `false`.                                          |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| fontsLocation | String | Query | Use Custom fonts. |
+| AutoRowsFit | Boolean | Query | (Optional) Autofits all rows in worksheets. |
+| AutoColumnsFit | Boolean | Query | (Optional) Autofits all columns in worksheets. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
 
 ### Response
 
-**Success (HTTP 200)**: Binary CSV stream in response body with `Content-Type: application/octet-stream`.
+```json
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
+```
 
-**Asynchronous Processing (HTTP 202)**: Returned when conversion may take > 30 seconds (e.g., large files). Poll `Location` header for status.
-
-#### Response Headers (Success Example)
+**Sample response headers**
 
 ```http
 HTTP/1.1 200 OK
@@ -61,17 +73,25 @@ Content-Disposition: attachment; filename="result.csv"
 X-Request-Id: 8a3e5f9d-1c2b-4a7e-b3d2-0e1f2a3c4b5d
 ```
 
-#### HTTP Status Codes
+**HTTP Status Codes**
 
-| Code  | Meaning                  | Cause                                                                           |
-| :---- | :----------------------- | :------------------------------------------------------------------------------ |
-| `200` | ✅ OK                    | Conversion successful; CSV returned in body.                                    |
-| `202` | ⏳ Accepted              | Asynchronous conversion initiated. Check `Location` header.                     |
-| `400` | ❌ Bad Request           | Invalid parameters (e.g., unsupported file type, missing file, malformed JSON). |
-| `401` | ❌ Unauthorized          | Invalid, expired, or missing JWT token.                                         |
-| `413` | ❌ Payload Too Large     | File exceeds 2 GB limit.                                                        |
-| `404` | ❌ Not Found             | Source file inaccessible or path invalid.                                       |
-| `500` | ❌ Internal Server Error | Server-side error during conversion.                                            |
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | Invalid url. |
+| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
+| 404 | Not Found | Source file not accessible. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining conversion data. |
+
+**Success (HTTP 200)**: Binary CSV stream in response body with `Content-Type: application/octet-stream`.
+
+**Asynchronous Processing (HTTP 202)**: Returned when conversion may take > 30 seconds (e.g., large files). Poll `Location` header for status.
+
+#### Response Headers (Success Example)
+
+
+#### HTTP Status Codes
 
 ## Where Should You Use This API?
 

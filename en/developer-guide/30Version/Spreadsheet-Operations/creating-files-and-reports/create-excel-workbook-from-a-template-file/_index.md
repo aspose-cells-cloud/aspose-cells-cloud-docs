@@ -14,9 +14,8 @@ weight: 30
 ArticleTitle: "Create Excel Workbook from Template with Aspose.Cells Cloud API"
 ---
 
-# How to Create an Excel Workbook with a Template File
 
-Create a new Excel workbook by using an existing template file and, optionally, a data file that supplies Smart‑Marker values. The operation is performed through the **PUT** `/cells/{name}` endpoint of Aspose.Cells Cloud.
+The **PutWorkbookCreate** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}`) enables developers to generate a new Excel workbook using Aspose.Cells Cloud by specifying a template file and optionally a data file containing Smart Marker values; the operation supports creating workbooks from scratch or populating templates with dynamic data, all via a single REST endpoint.
 
 ---
 

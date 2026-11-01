@@ -11,11 +11,9 @@ weight: 100
 type: docs
 ---
 
-The **ConvertWorksheetToJson** endpoint reads a spreadsheet file from the local file system, extracts the specified worksheet, and returns its content as a JSON file. The conversion is performed entirely on Aspose.Cells Cloud servers, so no intermediate upload or storage is required. It supports password‑protected workbooks, custom font locations, and regional settings, delivering a fast, cloud‑native solution for exporting worksheet data to JSON for downstream processing.
+The **ConvertWorksheetToJson** API (`PUT https://api.aspose.cloud/v4.0/cells/convert/worksheet/json`) enables Aspose.Cells Cloud users to convert a specified worksheet from a local spreadsheet file directly into JSON format without uploading to cloud storage. The operation requires a multipart form-data file upload and the worksheet name as a query parameter, supporting password-protected files, custom fonts, regional settings, and optional autofit configurations for rows and columns, ensuring accurate and efficient export of structured worksheet data for downstream applications.
 
 ## **Convert Worksheet to JSON API**
-
-### Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/convert/worksheet/json
@@ -27,39 +25,50 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 
 ### Request Parameters
 
-| Parameter Name   | Type    | Location | Required/Optional | Description                                                                                                                                                       |
-| ---------------- | ------- | -------- | ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `Spreadsheet`    | file    | FormData | Required          | The Excel workbook to be processed. Must be a supported format (xls, xlsx, csv, etc.). Sent as multipart/form-data. Example: `Spreadsheet=@C:\Docs\Sample.xlsx`.  |
-| `worksheet`      | string  | Query    | Required          | Exact name of the worksheet to convert (case‑sensitive). If omitted or not found, the API returns a `400 Bad Request` error. Example: `worksheet=Sheet1`.         |
-| `outPath`        | string  | Query    | Optional          | Destination folder on the configured cloud storage where the generated JSON file will be saved. If omitted, the JSON is returned directly in the response stream. |
-| `outStorageName` | string  | Query    | Optional          | Name of the target storage (e.g., `"MyStorage"`) that contains the `outPath`. Uses the default storage when omitted.                                              |
-| `fontsLocation`  | string  | Query    | Optional          | Server‑side folder that holds custom fonts required for accurate rendering of text in the worksheet. Example: `fontsLocation=/fonts/custom/`.                     |
-| `region`         | string  | Query    | Optional          | Culture/region identifier that influences number, date, and currency formatting in the generated JSON (e.g., `en-US`, `fr-FR`).                                   |
-| `password`       | string  | Query    | Optional          | Password to open an encrypted workbook. Omit this parameter if the workbook is not password‑protected.                                                            |
-| `AutoRowsFit`    | boolean | Query    | Optional          | _(New in v4)_ If `true`, autofits all rows in the worksheet before conversion.                                                                                    |
-| `AutoColumnsFit` | boolean | Query    | Optional          | _(New in v4)_ If `true`, autofits all columns in the worksheet before conversion.                                                                                 |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| worksheet | String | Query | worksheet name of spreadsheet. |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| fontsLocation | String | Query | Use Custom fonts. |
+| AutoRowsFit | Boolean | Query | (Optional) Autofits all rows in worksheets. |
+| AutoColumnsFit | Boolean | Query | (Optional) Autofits all columns in worksheets. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
 
 ### Response
 
 ```json
-{
-  "type": "FileContentResult",
-  "fileContents": "byte[] (Base64 encoded)",
-  "contentType": "application/json",
-  "fileDownloadName": "Sheet1.json"
-}
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
 ```
 
 **HTTP Status Codes**
 
-| Code | Meaning               | Description                                                                                        |
-| ---- | --------------------- | -------------------------------------------------------------------------------------------------- |
-| 200  | OK                    | Conversion successful; JSON content returned in response body.                                     |
-| 400  | Bad Request           | Missing required parameters (e.g., `worksheet`), invalid file format, or invalid `worksheet` name. |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                                                      |
-| 404  | Not Found             | Source file not accessible or `worksheet` name not found in workbook.                              |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit (typically 200 MB).                                               |
-| 500  | Internal Server Error | Unexpected server error during conversion.                                                         |
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | Invalid url. |
+| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
+| 404 | Not Found | Source file not accessible. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining conversion data. |
 
 > **Last updated**: March 15, 2024  
 > **API version**: v4.0  

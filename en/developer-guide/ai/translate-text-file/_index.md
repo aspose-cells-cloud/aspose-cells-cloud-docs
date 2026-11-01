@@ -9,6 +9,8 @@ weight: 100
 ArticleTitle: "Translate Text Files with Aspose.Cells Cloud AI API"
 ---
 
+The **TranslateTextFile** API (`PUT https://api.aspose.cloud/v4.0/cells/ai/translate/text-file`), part of Aspose.Cells Cloud v4.0, translates the content of a text file (or raw text in the request body) into a specified target language using AI-powered services, supporting flexible input via multipart/form-data upload or direct content submission while preserving original formatting and line structure.
+
 ## Overview
 
 The **TranslateTextFile** endpoint leverages Aspose.Cells Cloud AI services to translate the content of a text file into a specified target language. It supports two operation modes:

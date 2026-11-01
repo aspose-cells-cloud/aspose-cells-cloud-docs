@@ -11,6 +11,8 @@ description: "Removes duplicate values in a worksheet, range, or table."
 weight: 100
 ---
 
+The **RemoveDuplicates** API (`PUT https://api.aspose.cloud/v4.0/cells/remove/duplicates`) in Aspose.Cells Cloud removes duplicate rows within a specified worksheet, range, or table by scanning for identical values in designated columns and retaining only the first occurrence of each duplicate set; the comparison is case-sensitive and based on exact cell value matches, enabling precise data cleaning directly in cloud-based spreadsheet processing workflows.
+
 ## The Remove Duplicates of Aspose.Cells Cloud Web Services
 
 Removes duplicate values in the worksheet, range, or table. This method scans the target scope for rows with identical values in the specified columns to check. For each set of duplicates, all but the first occurrence are removed. The comparison is typically case‑sensitive and matches the exact cell value.

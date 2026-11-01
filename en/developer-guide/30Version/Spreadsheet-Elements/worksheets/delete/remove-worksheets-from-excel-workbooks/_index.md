@@ -11,8 +11,7 @@ weight: 100
 ArticleTitle: "Delete Worksheet – Aspose.Cells Cloud API"
 ---
 
-This REST API deletes a worksheet.  
-Prerequisites: To call this API you must provide a valid JWT authentication token in the **Authorization** header and have access to the storage location where the workbook resides.
+The **DeleteWorksheet** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}`) enables removal of a specific worksheet from an Excel workbook stored in Aspose.Cells Cloud, requiring the workbook's filename (`name`) and the worksheet's name (`sheetName`) as path parameters; it supports optional `folder` and `storageName` query parameters to specify the file's location, and returns a `CellsCloudResponse` confirming successful deletion.
 
 ## REST API
 

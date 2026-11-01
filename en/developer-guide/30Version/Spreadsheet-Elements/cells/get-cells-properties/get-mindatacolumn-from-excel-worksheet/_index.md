@@ -11,8 +11,7 @@ keywords: "mindatacolumn, leftmost data column, Excel API, REST API, Aspose.Cell
 linktitle: "Get MinDataColumn"
 ---
 
-The **`mindatacolumn`** endpoint returns the zero-based index of the leftmost column that contains any cell data in a specified worksheet.  
-In other words, it tells you which column is the first one that actually holds data.
+The **GetWorksheetCell** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellOrMethodName}`) retrieves cell data from a specified Excel worksheet using either a standard cell reference (e.g., "A1") or a method name such as "mindatacolumn" to return the zero-based index of the leftmost column containing data. Aspose.Cells Cloud supports this operation to simplify programmatic access to structured worksheet content, enabling developers to efficiently determine data boundaries without manual iteration.
 
 > **Definition** – `mindatacolumn`: the index (starting at 0) of the first column that contains data in the worksheet.
 

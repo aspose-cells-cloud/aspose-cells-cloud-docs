@@ -10,7 +10,7 @@ weight: 100
 ArticleTitle: "Add Worksheet Validation to Excel via Aspose.Cells Cloud REST API"
 ---
 
-This REST API adds a worksheet validation to an Excel worksheet.
+The **PutWorksheetValidation** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations`) enables Aspose.Cells Cloud users to add a validation at a specific index in an Excel worksheet by sending the validation definition in the request body; it supports specifying a target cell range via the optional `range` query parameter and accommodates cloud storage organization through `folder` and `storageName` parameters.
 
 ## REST API
 

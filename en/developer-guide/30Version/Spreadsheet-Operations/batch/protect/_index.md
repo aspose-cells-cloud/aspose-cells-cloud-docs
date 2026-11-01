@@ -15,6 +15,8 @@ linktitle: "Batch Protect Excel Files"
 ArticleTitle: "Batch Protect Excel Files with Aspose.Cells Cloud REST API"
 ---
 
+The **PostBatchProtect** API (`POST https://api.aspose.cloud/v3.0/cells/batch/protect`) enables Aspose.Cells Cloud users to apply consistent security settings—such as full encryption or read-only locking—to multiple Excel files in a single request, using flexible matching criteria like regular expressions or exact filenames to selectively target files for protection while preserving originals and saving results to a designated output folder.
+
 ## Batch Protect Excel Files via REST API
 
 Aspose.Cells Cloud’s **batch protection API** enables you to apply consistent security settings to multiple Excel files in a single request. Using flexible matching criteria—including regular expressions and exact file names—you can selectively protect files based on naming patterns. Supported protection types include full encryption (All), read-only locking (ReadOnly), and more. Protected files are saved to a designated output folder, preserving the original files.

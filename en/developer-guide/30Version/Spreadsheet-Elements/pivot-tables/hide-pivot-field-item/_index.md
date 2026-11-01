@@ -11,7 +11,7 @@ weight: 110
 ArticleTitle: "Hide Pivot Field Item in a Pivot Table – Aspose.Cells Cloud API Guide"
 ---
 
-Before calling the API, ensure you have:
+The **PostPivotTableFieldHideItem** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField/Hide`) enables hiding a specific pivot field item in a PivotTable via Aspose.Cells Cloud, requiring path parameters for the file name, worksheet name, and PivotTable index, plus query parameters specifying the field type, field index, item index, and hide status, allowing precise control over PivotTable item visibility and supporting recalculating the PivotTable on demand.
 
 - A valid **JWT access token** (obtainable via the Aspose Cloud authentication flow).
 - The target workbook uploaded to your Aspose Cloud storage.

@@ -11,11 +11,9 @@ weight: 100
 ArticleTitle: "Export Worksheet to PDF, PNG, SVG, CSV via Aspose.Cells Cloud API"
 ---
 
-Export a cloud spreadsheet/Excel worksheet to another format file using the Aspose.Cells Cloud Web API.
+The **ExportWorksheetAsFormat** API (`GET https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}`) in Aspose.Cells Cloud converts a specific worksheet from a cloud-stored workbook directly into a target format—such as PDF, PNG, or SVG—without requiring local download, enabling efficient, server-side export of structured spreadsheet data.
 
 ## **Export Worksheet as Format API**
-
-### Web API
 
 ```http
 GET https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}
@@ -31,32 +29,54 @@ The Aspose.Cells Cloud APIs require <a href="https://docs.aspose.cloud/cells/get
 
 ### **Request Parameters**
 
-| Parameter Name     | Type      | Location           | Description                                                                             |
-| :----------------- | :-------- | :----------------- | :-------------------------------------------------------------------------------------- |
-| **name**           | `string`  | Path _(required)_  | The name of the workbook file to be retrieved.                                          |
-| **worksheet**      | `string`  | Path _(required)_  | The name of the worksheet to convert.                                                   |
-| **format**         | `string`  | Query _(required)_ | The desired output format (e.g., `"png"`, `"pdf"`, `"svg"`, `"csv"`). Case-insensitive. |
-| **folder**         | `string`  | Query _(optional)_ | The folder path where the workbook is stored. Defaults to `null` (root).                |
-| **storageName**    | `string`  | Query _(optional)_ | The name of the custom cloud storage. Uses default storage if omitted.                  |
-| **outPath**        | `string`  | Query _(optional)_ | The folder path where the output file will be saved. Defaults to `null`.                |
-| **outStorageName** | `string`  | Query _(optional)_ | The name of the storage for the output file.                                            |
-| **fontsLocation**  | `string`  | Query _(optional)_ | Path to custom fonts for rendering.                                                     |
-| **region**         | `string`  | Query _(optional)_ | Spreadsheet region/locale (e.g., `"en-US"`, `"fr-FR"`). Affects number/date formatting. |
-| **password**       | `string`  | Query _(optional)_ | Password to open the protected spreadsheet.                                             |
-| **AutoRowsFit**    | `boolean` | Query _(optional)_ | Whether to autofit all rows before conversion.                                          |
-| **AutoColumnsFit** | `boolean` | Query _(optional)_ | Whether to autofit all columns before conversion.                                       |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | (Required) The name of the workbook file to be retrieved. |
+| worksheet | String | Path | - |
+| format | String | Query | (Required) The desired pdf or image format  (e.g., "png", "Pdf", "svg"). |
+| folder | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| storageName | String | Query | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted. |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| fontsLocation | String | Query | Use Custom fonts. |
+| AutoRowsFit | Boolean | Query | (Optional) Autofits all rows in worksheets. |
+| AutoColumnsFit | Boolean | Query | (Optional) Autofits all columns in worksheets. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
 
 ### **Response**
 
-Returns a binary file stream of the requested format.
+```json
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
+```
 
-| Status Code | Meaning               | Description                                                       |
-| :---------- | :-------------------- | :---------------------------------------------------------------- |
-| `200`       | OK                    | Conversion successful; response body contains the converted file. |
-| `400`       | Bad Request           | Invalid or missing parameters (e.g., unsupported format).         |
-| `401`       | Unauthorized          | Invalid or missing JWT token.                                     |
-| `404`       | Not Found             | Workbook or worksheet not found in storage.                       |
-| `500`       | Internal Server Error | Unexpected server error during conversion.                        |
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | Invalid url. |
+| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
+| 404 | Not Found | Source file not accessible. |
+| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining conversion data. |
+
+Returns a binary file stream of the requested format.
 
 ### **cURL Example**
 

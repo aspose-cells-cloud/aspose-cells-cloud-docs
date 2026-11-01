@@ -9,7 +9,7 @@ weight: 100
 ArticleTitle: "Aspose.Cells Cloud Translate Spreadsheet API – AI-Powered Multi-Language Translation"
 ---
 
-The **TranslateSpreadsheet** endpoint translates all textual content in an Excel workbook to a specified target language using AI-powered neural translation models. It preserves cell formatting, formulas, charts, pivot tables, conditional formatting, and multi-sheet structure—making it ideal for globalizing financial reports, dashboards, and compliance documents. Supported input formats include XLS, XLSX, XLSM, CSV, and ODS.
+The **TranslateSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/ai/translate/spreadsheet`) in Aspose.Cells Cloud translates all textual content in an uploaded Excel workbook to a specified target language using AI-powered neural translation models, preserving cell formatting, formulas, charts, pivot tables, conditional formatting, and multi-sheet structure; it accepts input formats such as XLS, XLSX, XLSM, CSV, and ODS, and requires the target language code and the spreadsheet file as parameters.
 
 > **Note:** This API is available in Aspose.Cells Cloud v4.0+, released in March 2024.
 
