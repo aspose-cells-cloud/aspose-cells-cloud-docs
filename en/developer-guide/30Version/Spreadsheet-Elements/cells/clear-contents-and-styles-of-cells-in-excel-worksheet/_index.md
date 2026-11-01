@@ -16,16 +16,7 @@ canonical: https://docs.aspose.cloud/cells/clear-contents-and-styles-of-cells-in
 ArticleTitle: "Clear Contents and Styles of Cells in an Excel Worksheet – Aspose.Cells Cloud API"
 linktitle: "Clear Cell Contents"
 ---
-
 The **PostClearContents** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clearcontents`) enables developers to clear cell contents and styles within a specified worksheet of an Excel file using Aspose.Cells Cloud, supporting optional range-based clearing via query parameters like `range`, `startRow`, `startColumn`, `endRow`, and `endColumn` to target specific cell areas precisely.
-
-## Prerequisites
-
-Before using the **Clear Contents and Styles** endpoint, ensure you have:
-
-- A valid **JWT token** obtained from the Aspose.Cells Cloud authentication flow. For guidance, see the [JWT authentication guide](/auth/jwt/).
-- The workbook uploaded to your chosen storage location, or accessible via the `folder` parameter. Learn how to [upload your workbook](/upload-workbook/).
-- The required SDK version installed if you prefer to work with one of the language‑specific client libraries.
 
 ## Clear Contents and Styles of Cells in an Excel Worksheet
 
@@ -38,7 +29,7 @@ The REST API supports flexible clearing options via query parameters:
 
 > **Note**: This endpoint clears **cell contents only**. To clear styles, use the `PostClearStyles` endpoint (see [Clear Styles of Cells](/clear-styles-of-cells-in-excel-worksheet/)).
 
-## PostClearContents API
+## The Post Clear Contents Web API
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clearcontents
@@ -50,41 +41,55 @@ The Aspose.Cells Cloud APIs require [JWT token-based authentication](https://doc
 
 ### Request Parameters
 
-| Parameter      | In   | Type     | Required | Description |
-|----------------|------|----------|----------|-------------|
-| `name`         | path | string   | Yes      | The file name. |
-| `sheetName`    | path | string   | Yes      | The worksheet name. |
-| `range`        | query| string   | No       | Represents the range to which the specified cells apply (e.g., `"A2:C11"` or `"Sheet2!B2:D20"`). |
-| `startRow`     | query| integer  | No       | The start row index (0-based). |
-| `startColumn`  | query| integer  | No       | The start column index (0-based). |
-| `endRow`       | query| integer  | No       | The end row index (0-based). |
-| `endColumn`    | query| integer  | No       | The end column index (0-based). |
-| `folder`       | query| string   | No       | The folder where the file is situated. |
-| `storageName`  | query| string   | No       | The storage name where the file is situated. |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| range | String | Query | Represents the range to which the specified cells applies. |
+| startRow | Integer | Query | The start row index. |
+| startColumn | Integer | Query | The start column index. |
+| endRow | Integer | Query | The end row index. |
+| endColumn | Integer | Query | The end column index. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 > **Tip**: Either `range` or the grid parameters (`startRow`, `startColumn`, `endRow`, `endColumn`) must be provided. Using both simultaneously may result in undefined behavior.
 
 ### Response
 
-On success, the API returns a `200 OK` status with the following payload:
-
 ```json
-{
-  "Code": 200,
-  "Status": "OK"
-}
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
 ```
 
-#### HTTP Status Codes
+**Sample response headers**
 
-| Code | Meaning           | Description                                      |
-|------|-------------------|--------------------------------------------------|
-| 200  | OK                | Request processed successfully.                 |
-| 400  | Bad Request       | Invalid or missing parameters (e.g., unsupported range format). |
-| 401  | Unauthorized      | Invalid, expired, or missing JWT token.         |
-| 404  | Not Found         | Workbook or worksheet not found.                |
-| 413  | Payload Too Large | Request exceeds size limits.                    |
-| 500  | Internal Server Error | Unexpected server-side error.               |
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+On success, the API returns a `200 OK` status with the following payload:
+
+
+#### HTTP Status Codes
 
 ### Using the PostClearContents API
 

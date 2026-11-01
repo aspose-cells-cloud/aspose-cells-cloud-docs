@@ -10,27 +10,30 @@ weight: 100
 ArticleTitle: "Get All Hyperlinks – Aspose.Cells Cloud REST API Documentation"
 linktitle: "Get All Hyperlinks"
 ---
-
 The **GetWorksheetHyperlinks** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks`) retrieves descriptions of all hyperlinks in a specified worksheet of an Excel workbook stored in Aspose.Cells Cloud, enabling developers to programmatically inspect hyperlink content—including URLs and screen tips—without modifying the original file, using required path parameters `name` and `sheetName`, and optional query parameters for folder and storage identification.
 
 ## Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
-## REST API
+## The Get Worksheet Hyperlinks Web API
 
-```bash
+```http
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### Request parameters
 
-| Parameter Name | Type   | Location | Required | Default | Description                         |
-| -------------- | ------ | -------- | -------- | ------- | ----------------------------------- |
-| name           | string | path     | Yes      | –       | Name of the Excel document.         |
-| sheetName      | string | path     | Yes      | –       | Name of the worksheet.              |
-| folder         | string | query    | No       | –       | Folder that contains the document.  |
-| storageName    | string | query    | No       | –       | Name of the storage service to use. |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Hyperlinks/GetWorksheetHyperlinks) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
@@ -105,6 +108,27 @@ The JSON response contains a `Hyperlinks` object.
 
 - **Count** – total number of hyperlinks in the worksheet.
 - **HyperlinkList** – an array where each item holds a `link` object. The `Href` property stores the hyperlink address, while `Rel`, `Title`, and `Type` provide additional metadata (often `null` for simple links).
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "HyperlinksResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "HyperlinksResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
 
 ### Error Responses
 

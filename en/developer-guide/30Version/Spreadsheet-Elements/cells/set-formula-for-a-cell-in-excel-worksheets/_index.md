@@ -8,16 +8,15 @@ description: "Set Excel cell formulas using Aspose.Cells Cloud REST API with cUR
 linktitle: "Set Cell Formula"
 ArticleTitle: "Set Formula for a Cell in Excel Using Aspose.Cells Cloud REST API"
 ---
-
 The **PostWorksheetCellSetValue** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}`) enables developers to set a formula or value for a specific cell in an Excel worksheet using its cell name via Aspose.Cells Cloud, supporting operations like assigning dynamic formulas such as `=SUM(A1:A10)` directly to cells without local Excel installation.
 
-## REST API
+## The Post Worksheet Cell Set Value Web API
 
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}
 ```
 
-## Security and Authentication
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
@@ -34,7 +33,49 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 | folder         | string | query    | N        | Folder that contains the document.       |
 | storageName    | string | query    | N        | Name of the storage service.             |
 
-## **Response**
+### **Request Parameters:**
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| cellName | String | Path | The cell name. |
+| value | String | Query | The cell value. |
+| type | String | Query | The value type. |
+| formula | String | Query | Formula for cell |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 Return CellResponse.
 
@@ -58,32 +99,6 @@ Return CellResponse.
 | `HtmlString`    | string  | HTML‑encoded representation of the cell’s value.      |
 | `Style.link`    | object  | Hyperlink to the style resource.                      |
 
-
-```json
-{
-  "Status":"OK",
-  "Code":200,
-  "Cell":{
-    "Name":"A1",
-    "Row": 0,
-    "Column":0,
-    "Value": "",
-    "Type":"String",
-    "Formula" : "=Sum(A2:A15)",
-    ...
-  }
-}
-```
-
-**HTTP Status Codes**
-
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
 ## How to Use the PostWorksheetCellSetValue API with SDKs
 
 ### PostWorksheetCellSetValue API Specification

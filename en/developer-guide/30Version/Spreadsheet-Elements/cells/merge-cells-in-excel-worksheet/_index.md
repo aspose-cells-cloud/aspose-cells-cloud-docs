@@ -10,53 +10,57 @@ keywords: "merge cells, Excel, Aspose.Cells Cloud, REST API, v3.0, worksheet mer
 canonical: "https://docs.aspose.cloud/cells/merge-cells-in-excel-worksheet/"
 weight: 110
 ---
-
-
 The **PostWorksheetMerge** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/merge`) enables developers to merge a rectangular block of cells into a single cell spanning specified rows and columns in an Excel worksheet via Aspose.Cells Cloud, supporting tasks like formatting reports and dashboards by combining multiple cells into one unified, larger cell.
 
 > **Note**: This guide applies to Aspose.Cells Cloud API v3.0 (released March 2024). For v2.0, see [Legacy Merge Documentation](/docs/cells/merge-cells-v2/).
 
-## Prerequisites
-
-- A valid JWT token for authentication. See [Authentication Overview](/docs/total/getting-started/authentication/) for details.
-- The workbook must already exist in the specified storage folder.
-- Storage configuration (folder and storage name) must be set up in your Aspose.Cloud account.
-
-## API Endpoint
+## The Post Worksheet Merge Web API
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/merge
 ```
 
-### Request Parameters
-
-| Name          | Type    | Location | Required | Description                                      |
-|---------------|---------|----------|----------|--------------------------------------------------|
-| `name`        | string  | path     | Yes      | The workbook name.                               |
-| `sheetName`   | string  | path     | Yes      | The worksheet name.                              |
-| `startRow`    | integer | query    | Yes      | Zero-based index of the first row (0 = first row). |
-| `startColumn` | integer | query    | Yes      | Zero-based index of the first column (0 = first column). |
-| `totalRows`   | integer | query    | Yes      | Number of rows to merge.                         |
-| `totalColumns`| integer | query    | Yes      | Number of columns to merge.                      |
-| `folder`      | string  | query    | No       | The folder that contains the workbook.           |
-| `storageName` | string  | query    | No       | The storage name.                                |
-
-> ✅ **No request body is required** for this operation.
-
 ### Security and Authentication
 
 The Aspose.Cells Cloud APIs use [JWT token-based authentication](/docs/total/getting-started/authentication/). Ensure your requests include a valid `Authorization: Bearer <token>` header.
 
-## Response
+### Request Parameters
 
-Returns a `CellsCloudResponse` object.
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| startRow | Integer | Query | The start row index. |
+| startColumn | Integer | Query | The start column index. |
+| totalRows | Integer | Query | The total rows number. |
+| totalColumns | Integer | Query | The total columns number. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+
+> ✅ **No request body is required** for this operation.
+
+### Response
 
 ```json
-{
-  "Code": 200,
-  "Status": "OK"
-}
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
 ```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+Returns a `CellsCloudResponse` object.
 
 ### HTTP Status Codes
 

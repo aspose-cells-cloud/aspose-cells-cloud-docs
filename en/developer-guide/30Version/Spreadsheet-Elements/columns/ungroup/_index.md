@@ -17,22 +17,7 @@ weight: 70
 draft: false
 ArticleTitle: "Ungroup Columns in Excel with Aspose.Cells Cloud REST API"
 ---
-
-
 The **PostUngroupWorksheetColumns** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/ungroup`) in Aspose.Cells Cloud enables developers to remove column grouping from a specified worksheet by providing the workbook name, worksheet name, and the first and last column indices to ungroup. This REST operation supports ungrouping contiguous or non-contiguous column ranges, restoring individual column visibility and editability as defined in Excel’s grouping behavior.
-
-## Prerequisites
-
-| Requirement                                 | Why It’s Needed |
-| ------------------------------------------- | --------------- |
-| **Aspose Cloud account**                    | Required to access Aspose.Cells Cloud services. |
-| **JWT access token**                        | All API calls must include an `Authorization: Bearer <access_token>` header. See the [JWT authentication guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/). |
-| **Workbook in Aspose Cloud Storage**        | The target workbook must be stored in Aspose Cloud Storage or a connected external storage (e.g., Amazon S3, Google Drive). |
-| **Worksheet name**                          | The worksheet containing the grouped columns must exist in the workbook. |
-
-> 💡 **Tip**: Upload your workbook first using the [Files API](https://apireference.aspose.cloud/cells/#/Files).
-
----
 
 ## Authentication
 
@@ -46,18 +31,57 @@ Tokens are issued via Aspose Cloud OAuth 2.0 and expire after a set period. Refr
 
 ---
 
-## Endpoint
+## The Post Ungroup Worksheet Columns Web API
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/ungroup
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### Path Parameters
 
-| Name        | Type   | Required | Description             |
-| ----------- | ------ | -------- | ----------------------- |
-| `name`      | string | Yes      | The workbook file name (e.g., `test.xlsx`). |
-| `sheetName` | string | Yes      | The worksheet name (e.g., `Sheet1`). |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| firstIndex | Integer | Query | The first column index to be operated. |
+| lastIndex | Integer | Query | The last column index to be operated. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ### Query Parameters
 

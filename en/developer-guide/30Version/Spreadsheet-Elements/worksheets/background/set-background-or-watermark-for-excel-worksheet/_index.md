@@ -10,28 +10,33 @@ keywords: "Aspose.Cells, Excel, worksheet, background, REST API, SDK, add image"
 description: "Add a background image (PNG, JPEG, BMP, GIF) to an Excel worksheet using Aspose.Cells Cloud REST API with cURL or SDKs."
 weight: 180
 ---
-
 The **PutWorksheetBackground** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/background`) in Aspose.Cells Cloud enables developers to set a background image for a specific worksheet by uploading an image file or referencing an existing image path, supporting options like `picPath` and `File` form-data parameter to customize the background or watermark.
 
 ## Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
-## REST API
+## The Put Worksheet Background Web API
 
-```bash
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/background
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/background
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
 
 ### **Request parameters**
 
-| Parameter name | Type   | Location | Description                                                    |
-| -------------- | ------ | -------- | -------------------------------------------------------------- |
-| name           | string | path     | Name of the Excel workbook.                                    |
-| sheetName      | string | path     | Name of the worksheet to which the image is applied.           |
-| imageFile      | file   | body     | Binary image file (PNG, JPEG, BMP, etc.) to set as background. |
-| folder         | string | query    | Folder in storage where the workbook is located.               |
-| storageName    | string | query    | Name of the Aspose Cloud storage.                              |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| picPath | String | Query | picture full filename. |
+| imageAdaptOption | String | Query | - |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+| File | File | FormData | File to upload |
 
 **Supported formats & limits**
 
@@ -69,16 +74,42 @@ curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/b
 
 _Possible error responses_
 
-| HTTP Code | Description                                                 |
-| --------- | ----------------------------------------------------------- |
-| 400       | Bad request – missing or invalid parameters.                |
-| 401       | Unauthorized – invalid or expired JWT token.                |
-| 404       | Not found – workbook or worksheet does not exist.           |
-| 500       | Internal server error – unexpected condition on the server. |
 
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Cloud SDK Family
 

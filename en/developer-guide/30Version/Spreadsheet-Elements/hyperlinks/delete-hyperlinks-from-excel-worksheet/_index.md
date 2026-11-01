@@ -9,26 +9,50 @@ weight: 40
 ArticleTitle: "Clear Hyperlinks – Aspose.Cells Cloud API Documentation"
 linktitle: "Clear Hyperlinks"
 ---
-
 The **DeleteWorksheetHyperlinks** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks`) enables developers to remove all hyperlinks from a specified Excel worksheet using Aspose.Cells Cloud, a robust cloud-based solution that supports programmatic hyperlink management through its REST API and SDKs for multiple languages including .NET, Java, and Python.
 
 ## Security and Authentication
 The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
-## REST API
+## The Delete Worksheet Hyperlinks Web API
 
-```bash
+```http
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### Request Parameters
 
-| Parameter Name | Type   | Location | Description                            |
-| -------------- | ------ | -------- | -------------------------------------- |
-| name           | string | path     | The name of the Excel file.            |
-| sheetName      | string | path     | The name of the worksheet.             |
-| folder         | string | query    | The folder that contains the document. |
-| storageName    | string | query    | The storage service name.              |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
 
 ### Error Responses
 

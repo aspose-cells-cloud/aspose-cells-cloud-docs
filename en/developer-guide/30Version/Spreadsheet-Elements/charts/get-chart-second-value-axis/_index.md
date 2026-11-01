@@ -8,10 +8,9 @@ description: Retrieves the second value axis of a specified chart in an Excel wo
 ArticleTitle: "Get Chart Second Value Axis – Aspose.Cells Cloud API"
 linktitle: "Get Second Value Axis"
 ---
-
 The **GetChartSecondValueAxis** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/secondvalueaxis`) retrieves the second value axis of a chart in Aspose.Cells Cloud, enabling developers to programmatically access axis properties such as scale, format, and title for advanced chart analysis and customization using standard REST conventions and supported SDKs for .NET, Java, Python, and other languages.
 
-## GetChartSecondValueAxis API
+## The Get Chart Second Value Axis Web API
 
 ```http
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/secondvalueaxis
@@ -23,13 +22,13 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request parameters
 
-| Parameter Name | Type    | Location | Description                                     |
-| -------------- | ------- | -------- | ----------------------------------------------- |
-| name           | string  | path     | The name of the Excel file.                     |
-| sheetName      | string  | path     | The name of the worksheet containing the chart. |
-| chartIndex     | integer | path     | The zero‑based index of the chart.              |
-| folder         | string  | query    | The folder where the file is stored.            |
-| storageName    | string  | query    | The name of the Aspose Cloud storage.           |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| chartIndex | Integer | Path | The chart index. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 **Prerequisites**: A valid JWT access token obtained via the Aspose Cloud OAuth2 flow must be supplied in the `Authorization` header of each request.
 
@@ -92,6 +91,37 @@ curl -v "https://api.aspose.cloud/v3.0/cells/" \
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "AxisResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "AxisResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Cloud SDK Family
 

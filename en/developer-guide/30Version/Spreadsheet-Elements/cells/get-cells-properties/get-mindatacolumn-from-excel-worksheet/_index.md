@@ -10,8 +10,57 @@ ArticleTitle: "Get MinDataColumn – Aspose.Cells Cloud API Reference (v3.0)"
 keywords: "mindatacolumn, leftmost data column, Excel API, REST API, Aspose.Cells, cloud spreadsheet, zero-based index, Aspose.Cells Cloud API v3.0"
 linktitle: "Get MinDataColumn"
 ---
-
 The **GetWorksheetCell** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellOrMethodName}`) retrieves cell data from a specified Excel worksheet using either a standard cell reference (e.g., "A1") or a method name such as "mindatacolumn" to return the zero-based index of the leftmost column containing data. Aspose.Cells Cloud supports this operation to simplify programmatic access to structured worksheet content, enabling developers to efficiently determine data boundaries without manual iteration.
+
+## The Get Worksheet Cell Web API
+
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellOrMethodName}
+```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
+### **Request Parameters:**
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| cellOrMethodName | String | Path | The cell's or method name. (Method name like firstcell, endcell etc.) |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "String",
+    "DataType": {
+      "Identifier": "String"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 > **Definition** – `mindatacolumn`: the index (starting at 0) of the first column that contains data in the worksheet.
 
@@ -19,7 +68,7 @@ The **GetWorksheetCell** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/wo
 - A valid OAuth2 access token is required.  
 - The Excel file must be uploaded to Aspose Cloud storage.
 
-## Request Parameters
+### Request Parameters
 
 | Parameter      | Type   | Required | Description                                 |
 |----------------|--------|----------|---------------------------------------------|
@@ -61,7 +110,7 @@ curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1
 
 {{< /tabs >}}
 
-## HTTP Status Codes
+### HTTP Status Codes
 
 | Code | Meaning                     | Description                                      |
 |------|-----------------------------|--------------------------------------------------|

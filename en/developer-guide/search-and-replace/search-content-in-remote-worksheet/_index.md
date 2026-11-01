@@ -5,17 +5,15 @@ type: docs
 description: "Find text, numbers, or formulas in a remote Excel worksheet using Aspose.Cells Cloud API. Supports case-insensitive search, password-protected files, and cloud storage integration."
 keywords: "aspose.cells, excel api, text search, remote worksheet, cloud api"
 ---
-
-
 The **SearchContentInRemoteWorksheet** API (`PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/search/content`) enables developers to programmatically search for specified text, numbers, or formulas within a worksheet of an Excel workbook stored in cloud storage using Aspose.Cells Cloud, supporting case-insensitive and whole-word matching options while returning match locations directly in the cloud without requiring local file downloads.
 
-## API Endpoint
+## The Search Content in Remote Worksheet Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/search/content
 ```
 
-## Authentication
+### Authentication
 
 All requests require a valid OAuth 2.0 JWT token. See [Authentication Overview](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) for implementation details.
 
@@ -23,20 +21,48 @@ All requests require a valid OAuth 2.0 JWT token. See [Authentication Overview](
 Authorization: Bearer {access_token}
 ```
 
-## Request Parameters
+### Request Parameters
 
-| Parameter      | Type    | Location | Required | Description                                                                                |
-| -------------- | ------- | -------- | -------- | ------------------------------------------------------------------------------------------ |
-| `name`         | string  | Path     | Yes      | The filename of the target Excel workbook (e.g., `annual_report.xlsx`).                    |
-| `worksheet`    | string  | Path     | Yes      | Name of the worksheet to search.                                                           |
-| `searchText`   | string  | Query    | Yes      | The text, number, or formula to locate.                                                    |
-| `ignoringCase` | boolean | Query    | No       | When `true`, performs case-insensitive search. Default: `true`.                            |
-| `folder`       | string  | Query    | No       | Cloud storage folder path containing the workbook. Omit to use the root folder.            |
-| `storageName`  | string  | Query    | No       | Custom storage name if configured. Uses default storage if omitted.                        |
-| `region`       | string  | Query    | No       | Locale setting (e.g., `en-US`, `fr-FR`) affecting number/date parsing and text comparison. |
-| `password`     | string  | Query    | No       | Password for protected workbooks. Omit if unencrypted.                                     |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | Specify the search workbook file name. |
+| worksheet | String | Path | Specify the search worksheet name. |
+| searchText | String | Query | Specify the search content. |
+| ignoringCase | Boolean | Query | Ignore the text of the search. |
+| folder | String | Query | The folder path where the workbook is stored. |
+| storageName | String | Query | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
 
-## Response
+### Response
+
+```json
+[
+  {
+    "Name": "SearchResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "SearchResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+### Error Responses
+
+| Status Code | Description                                                      |
+| ----------- | ---------------------------------------------------------------- |
+| `400`       | Invalid URL or malformed request parameters                      |
+| `401`       | Missing or invalid OAuth 2.0 credentials                         |
+| `404`       | Workbook, worksheet, or storage path not found                   |
+| `500`       | Server-side error (e.g., unsupported file format, access denied) |
 
 ### Success Response (200 OK)
 
@@ -65,15 +91,6 @@ Authorization: Bearer {access_token}
   - `occurrences`: Number of matches in that cell
 - **`code`**: HTTP status code
 - **`status`**: Human-readable status message
-
-### Error Responses
-
-| Status Code | Description                                                      |
-| ----------- | ---------------------------------------------------------------- |
-| `400`       | Invalid URL or malformed request parameters                      |
-| `401`       | Missing or invalid OAuth 2.0 credentials                         |
-| `404`       | Workbook, worksheet, or storage path not found                   |
-| `500`       | Server-side error (e.g., unsupported file format, access denied) |
 
 ## Use Cases
 

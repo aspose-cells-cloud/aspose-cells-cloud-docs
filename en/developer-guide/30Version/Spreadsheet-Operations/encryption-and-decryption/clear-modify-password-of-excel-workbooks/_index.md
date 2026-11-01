@@ -14,14 +14,11 @@ description: "Remove write-protection password from Excel workbooks using Aspose
 weight: 110
 ArticleTitle: "Remove Write‑Protection (Password) from an Excel Workbook"
 ---
-
 The **DeleteDocumentUnProtectFromChanges** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/writeProtection`) removes write-protection (password) from an Excel workbook stored in cloud storage, enabling programmatic removal of Excel password protection. Using Aspose.Cells Cloud, developers can unprotect workbooks without requiring local software installation, supporting operations like modifying protected content after password removal. The API requires the workbook’s filename as a path parameter and optionally accepts `folder` and `storageName` query parameters to locate the file.
-
-**Prerequisites:** Obtain a valid JWT token, ensure the workbook is stored in a supported storage location, and use API version v3.0.
 
 For adding protection, see the [Protect Excel](/cells/protect/) guide.
 
-## DeleteDocumentUnprotectFromChanges API
+## The Delete Document Un Protect From Changes Web API
 
 ```http
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/writeProtection
@@ -33,30 +30,42 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Request parameters**
 
-| Parameter Name | Type   | Location | Description                                       |
-| -------------- | ------ | -------- | ------------------------------------------------- |
-| `name`         | string | path     | The name of the Excel workbook.                   |
-| `folder`       | string | query    | The folder that contains the workbook (optional). |
-| `storageName`  | string | query    | The name of the storage service (optional).       |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 ### Response
 
 ```json
-{
-  "Status": "OK",
-  "Code": 200
-}
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
 ```
 
 **HTTP Status Codes**
 
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## How to Use the DeleteDocumentUnprotectFromChanges API with SDKs
 

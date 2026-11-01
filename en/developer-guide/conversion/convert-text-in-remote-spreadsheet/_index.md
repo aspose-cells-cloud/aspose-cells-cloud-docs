@@ -10,14 +10,9 @@ keywords: "Aspose.Cells, Text Conversion, API"
 description: "Converts text in a specified range of a worksheet, including number conversion, character replacement, line break handling, and accented character normalization."
 weight: 100
 ---
-
 The **ConvertTextInRemoteSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/range/{range}/content/convert/text`) in Aspose.Cells Cloud enables targeted text conversion within a specified range of a remote spreadsheet, allowing users to transform numbers stored as text into numeric values, replace unwanted characters or line breaks with custom separators, and normalize accented characters—all without downloading or manually editing the file.
 
-## The Convert Text In Remote Spreadsheet of Aspose.Cells Cloud Web Services
-
-Indicates converting the numbers stored as text into the correct number format, replacing unwanted characters and line breaks with the desired characters, and converting accented characters to their equivalent characters without accents.
-
-### Web API Endpoint
+## The Convert Text in Remote Spreadsheet Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/range/{range}/content/convert/text
@@ -29,47 +24,59 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name   | Type   | Path/Query String/HTTP Body | Description                                                                                                                                        |
-| ---------------- | ------ | --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| name             | string | Path                        | (Required) The name of the workbook file to be retrieved.                                                                                          |
-| worksheet        | string | Path                        | Specify the worksheet of spreadsheet.                                                                                                              |
-| range            | string | Path                        | Specify the worksheet range of spreadsheet.                                                                                                        |
-| convertTextType  | string | Query                       | Indicates the conversion of text type. (Required)                                                                                                  |
-| sourceCharacters | string | Query                       | Indicates the source characters. (Optional)                                                                                                        |
-| targetCharacters | string | Query                       | Indicates the target characters. (Optional)                                                                                                        |
-| folder           | string | Query                       | (Optional) The folder path where the workbook is stored. The default is null.                                                                      |
-| storageName      | string | Query                       | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.                                                  |
-| region           | string | Query                       | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. (Optional) |
-| password         | string | Query                       | The password for opening spreadsheet file. (Optional)                                                                                              |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | (Required) The name of the workbook file to be retrieved. |
+| worksheet | String | Path | Specify the worksheet of spreadsheet. |
+| range | String | Path | Specify the worksheet range of spreadsheet. |
+| convertTextType | String | Query | Indicates the conversion of text type. |
+| sourceCharacters | String | Query | Indicates the source characters. |
+| targetCharacters | String | Query | Indicates the target characters. |
+| folder | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| storageName | String | Query | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+**Response Status Codes**
+
+Indicates converting the numbers stored as text into the correct number format, replacing unwanted characters and line breaks with the desired characters, and converting accented characters to their equivalent characters without accents.
 
 ### Request Body Parameter
 
 | Parameter Name | Type | Description |
 | -------------- | ---- | ----------- |
 | -              | -    | -           |
-
-### **Response**
-
-```json
-{
-  "Code": 200,
-  "Status": "OK",
-  "Message": "Text conversion completed successfully.",
-  "Data": {
-    // Details of the conversion result, such as number of cells updated, can be added here.
-  }
-}
-```
-
-**Response Status Codes**
-
-| Code | Meaning               | Description                                               |
-| ---- | --------------------- | --------------------------------------------------------- |
-| 200  | OK                    | The text conversion operation completed successfully.     |
-| 400  | Bad Request           | The request was malformed or missing required parameters. |
-| 401  | Unauthorized          | Authentication failed or JWT token is missing/invalid.    |
-| 413  | Payload Too Large     | The request payload exceeds the allowed size limit.       |
-| 500  | Internal Server Error | An unexpected error occurred on the server.               |
 
 ## How to Use the Convert Text In Remote Spreadsheet with SDKs
 

@@ -9,7 +9,6 @@ description: "Delete all data validations from an Excel worksheet using Aspose.C
 weight: 100
 ArticleTitle: "Delete All Worksheet Validations in Excel via Aspose.Cells Cloud API"
 ---
-
 The **DeleteWorksheetValidations** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations`) enables developers to remove all data validation rules from a specified worksheet in an Excel workbook via the Aspose.Cells Cloud REST API, supporting efficient cleanup and dynamic workbook management without manual intervention.
 
 - A valid Aspose Cloud account.
@@ -18,20 +17,24 @@ The **DeleteWorksheetValidations** API (`DELETE https://api.aspose.cloud/v3.0/ce
 
 This REST API deletes all worksheet validations on an Excel worksheet.
 
-## REST API
+## The Delete Worksheet Validations Web API
 
-```bash
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations
+```http
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
 
 ### **Request parameters**
 
-| Parameter Name | Type   | Location | Description                                           |
-| -------------- | ------ | -------- | ----------------------------------------------------- |
-| name           | string | path     | The name of the Excel document.                       |
-| sheetName      | string | path     | The name of the worksheet containing the validations. |
-| folder         | string | query    | The folder where the document is stored.              |
-| storageName    | string | query    | The name of the storage service.                      |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The workbook name. |
+| sheetName | String | Path | The worksheet name. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/WorksheetValidations/DeleteWorksheetValidation) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
@@ -63,6 +66,27 @@ curl -v "http://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/va
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
 
 ### Error Handling
 

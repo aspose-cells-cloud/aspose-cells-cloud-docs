@@ -10,27 +10,30 @@ description: "Get horizontal page breaks from Excel worksheet via Aspose.Cells C
 ArticleTitle: "Get Horizontal Page Breaks - Aspose.Cells Cloud API Documentation"
 weight: 100
 ---
-
 The **GetHorizontalPageBreaks** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/horizontalpagebreaks`) retrieves descriptions of horizontal page breaks—row-based breaks that force a worksheet to start a new printed page after a specified row—in the named worksheet of the specified workbook via Aspose.Cells Cloud, supporting precise control over printed output layout.
 
 ## Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
-## REST API
+## The Get Horizontal Page Breaks Web API
 
-```bash
+```http
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/horizontalpagebreaks
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### Request Parameters
 
-| Parameter Name | Type   | Location | Description                                                        |
-| -------------- | ------ | -------- | ------------------------------------------------------------------ |
-| name           | string | path     | The name of the Excel file.                                        |
-| sheetName      | string | path     | The name of the worksheet.                                         |
-| folder         | string | query    | The folder path in storage where the file is located. _(optional)_ |
-| storageName    | string | query    | The name of the storage. _(optional)_                              |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The workbook name. |
+| sheetName | String | Path | The worksheet name. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 The <a href="https://apireference.aspose.cloud/cells/#/PageBreaks/GetHorizontalPageBreaks" rel="noopener" title="OpenAPI specification for GetHorizontalPageBreaks">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -78,7 +81,28 @@ curl -v "https://api.aspose.cloud/v3.0/cells/sampleExcelPageBreaks.xlsx/workshee
 
 {{< /tabs >}}
 
-## Error Handling
+### **Response**
+
+```json
+[
+  {
+    "Name": "HorizontalPageBreaksResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "HorizontalPageBreaksResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+### Error Handling
 
 | HTTP Status | Description                                                 | Example JSON                                           |
 | ----------- | ----------------------------------------------------------- | ------------------------------------------------------ |

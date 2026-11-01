@@ -9,7 +9,6 @@ keywords: "Aspose.Cells Cloud, worksheet to image, convert worksheet to image, E
 description: "Convert Excel worksheet to PNG, SVG, TIFF, JPEG, BMP via Aspose.Cells Cloud API with SDK examples"
 weight: 100
 ---
-
 The **ConvertWorksheetToImage** API (`PUT https://api.aspose.cloud/v4.0/cells/convert/worksheet/image`) enables developers to convert a specific worksheet from a local Excel file into an image format such as PNG, SVG, or TIFF using Aspose.Cells Cloud, with the conversion performed entirely on the cloud server—eliminating the need to upload or store files in cloud storage.
 
 **Supported IMAGE FORMATS**
@@ -20,7 +19,7 @@ The **ConvertWorksheetToImage** API (`PUT https://api.aspose.cloud/v4.0/cells/co
 - [JPEG](https://docs.fileformat.com/image/jpeg/)
 - [BMP](https://docs.fileformat.com/image/bmp/)
 
-## **Convert Worksheet to Image API**
+## The Convert Worksheet to Image Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/convert/worksheet/image

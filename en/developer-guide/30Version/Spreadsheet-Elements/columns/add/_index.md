@@ -12,20 +12,12 @@ description: "Insert one or more columns into an Excel worksheet using Aspose.Ce
 weight: 100
 ArticleTitle: "Add Empty Column to Excel Worksheet Using Aspose.Cells Cloud API"
 ---
-
 The **PutInsertWorksheetColumns** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex}`) inserts one or more columns into a specified worksheet at a given column index, using Aspose.Cells Cloud to programmatically manage spreadsheet structure. It requires the file name, worksheet name, column index, and number of columns to insert, with optional control over reference updates and storage location. This operation supports dynamic worksheet expansion while maintaining formatting and formula integrity across the workbook.
 
-**Prerequisites**  
-Before calling this endpoint, ensure you have completed the following steps:
-
-- Obtain a valid OAuth 2.0 access token and include it in the `Authorization` header.
-- Store the target workbook in the selected storage (default = “Default”) or specify the appropriate `folder` and `storageName` parameters.
-- Verify that the worksheet name provided in `sheetName` exists in the workbook.
-
-## PutInsertWorksheetColumns API
+## The Put Insert Worksheet Columns Web API
 
 ```http
-PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex}?totalColumns=1
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex}
 ```
 
 ### **Security and Authentication**
@@ -34,15 +26,15 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request parameters
 
-| Parameter Name      | Type    | Location | Description                                                          |
-| ------------------- | ------- | -------- | -------------------------------------------------------------------- |
-| **name**            | string  | path     | The workbook file name.                                              |
-| **sheetName**       | string  | path     | The worksheet name.                                                  |
-| **columnIndex**     | integer | path     | Zero‑based index of the column where insertion begins.               |
-| **totalColumns**    | integer | query    | Number of columns to insert.                                         |
-| **updateReference** | boolean | query    | When **true**, cell references are updated to reflect the insertion. |
-| **folder**          | string  | query    | Path to the folder containing the workbook.                          |
-| **storageName**     | string  | query    | Name of the storage service.                                         |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| columnIndex | Integer | Path | The column index. |
+| columns | Integer | Query | The number of columns. |
+| updateReference | Boolean | Query | Indicates if references in other worksheets will be updated. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 **Notes**
 
@@ -81,13 +73,6 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cel
 
 **Response codes**
 
-| Code | Description                                  |
-| ---- | -------------------------------------------- |
-| 200  | Column(s) inserted successfully.             |
-| 400  | Bad request – missing or invalid parameters. |
-| 401  | Unauthorized – invalid or missing token.     |
-| 404  | Workbook or worksheet not found.             |
-| 500  | Internal server error.                       |
 
 **Example error responses**
 
@@ -116,6 +101,37 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cel
   "Message": "An unexpected error occurred on the server."
 }
 ```
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Cloud SDK Family
 

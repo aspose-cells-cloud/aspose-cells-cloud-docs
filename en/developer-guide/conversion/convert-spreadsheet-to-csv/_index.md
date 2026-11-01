@@ -11,23 +11,11 @@ weight: 100
 type: docs
 ArticleTitle: "Aspose.Cells Cloud: Convert Excel to CSV via Zero-Upload API"
 ---
-
 The **ConvertSpreadsheetToCsv** API (`PUT https://api.aspose.cloud/v4.0/cells/convert/spreadsheet/csv`) in Aspose.Cells Cloud enables direct conversion of local spreadsheet files to CSV format without requiring prior upload to cloud storage, allowing developers to streamline Excel-to-CSV workflows by processing files entirely on the cloud server while reducing storage overhead and latency.
 
 Supported formats include `.xls`, `.xlsx`, `.xlsm`, `.xlsb`, `.ods`, and more. The service handles password-protected files, custom fonts, locale-specific formatting, and row/column auto-fitting. On success, the CSV output is returned as a binary stream (`Content-Type: application/octet-stream`).
 
-## Prerequisites
-
-Before using this API, ensure you have:
-
-- ✅ An active [Aspose.Cells Cloud account](https://dashboard.aspose.cloud/)
-- ✅ Valid **Client ID** and **Client Secret** (get them from the [Aspose Cloud Dashboard](https://dashboard.aspose.cloud/))
-- ✅ File size ≤ 2 GB (per request)
-- ✅ Internet access (HTTPS required)
-
-> 💡 **Tip**: Generate a JWT token using your credentials via the [Authentication Guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
-
-## Convert Spreadsheet to CSV API
+## The Convert Spreadsheet to CSV Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/convert/spreadsheet/csv

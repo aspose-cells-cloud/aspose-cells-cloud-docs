@@ -10,7 +10,6 @@ description: "Get merged cell ranges from an Excel worksheet using Aspose.Cells 
 linktitle: "Get Merged Cells"
 ArticleTitle: "Get Merged Cells from Excel Worksheet Using Aspose.Cells Cloud API"
 ---
-
 The **GetWorksheetMergedCells** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/mergedCells`) retrieves detailed information about merged cells in a specified Excel worksheet using Aspose.Cells Cloud, enabling developers to programmatically identify the positions and links of merged cell ranges for analysis or formatting automation.
 
 ## Overview
@@ -19,28 +18,45 @@ This API retrieves information about **merged cells** in a specified Excel works
 
 > **Note**: The API model uses the singular `MergedCell` for individual objects, while the collection is represented as `MergedCellList` in the response. The endpoint name and prose refer to the *concept* of merged cells (plural).
 
-## REST API
-
-### Endpoint
+## The Get Worksheet Merged Cells Web API
 
 ```http
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/mergedCells
 ```
 
-### Request Parameters
-
-| Parameter     | Type   | Location | Required | Description                              |
-|---------------|--------|----------|----------|------------------------------------------|
-| `name`        | string | path     | ✅ Yes   | The Excel file name.                     |
-| `sheetName`   | string | path     | ✅ Yes   | The worksheet name.                      |
-| `folder`      | string | query    | ❌ No    | Folder where the file is located.        |
-| `storageName` | string | query    | ❌ No    | Name of the storage to use.              |
-
 ### Authentication
 
 All requests require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/). Include the token in the `Authorization` header as a Bearer token.
 
-## Response
+### Request Parameters
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The workseet name. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+
+### Response
+
+```json
+[
+  {
+    "Name": "MergedCellsResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "MergedCellsResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
 
 Returns a `MergedCellsResponse` object.
 

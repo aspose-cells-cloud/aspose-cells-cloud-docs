@@ -10,25 +10,28 @@ description: "Sort Excel worksheet range data using Aspose.Cells Cloud REST API 
 weight: 100
 ArticleTitle: "Sort Excel Worksheet Range Data with Aspose.Cells Cloud REST API"
 ---
-
 The **PostWorksheetRangeSort** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/sort`) enables sorting data within a specified range on an Excel worksheet using Aspose.Cells Cloud. It requires the file name, worksheet name, cell area to sort, and a DataSorter object in the request body, with optional folder and storage parameters. This operation supports complex sorting scenarios such as multi-column, case-sensitive, and custom list sorting, making it suitable for programmatic data organization in cloud-based Excel workflows.
 
-## REST API
+## The Post Worksheet Range Sort Web API
 
-```shell
+```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/sort
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### Request parameters
 
-| Parameter Name | Type   | Location | Required | Description                                                       |
-| -------------- | ------ | -------- | -------- | ----------------------------------------------------------------- |
-| name           | string | path     | Yes      | The workbook name.                                                |
-| sheetName      | string | path     | Yes      | The worksheet name.                                               |
-| cellArea       | string | query    | Yes      | The cell range to be sorted (e.g., `A5:A10`).                     |
-| dataSorter     | object | body     | Yes      | JSON object that defines the sorting settings (see schema below). |
-| folder         | string | query    | No       | The folder that contains the workbook.                            |
-| storageName    | string | query    | No       | The name of the storage where the workbook is located.            |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| cellArea | String | Query | The area needed to sort. |
+| dataSorter | class:datasorter | HTTPBody | DataSorter with sorting settings. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 **`dataSorter` object schema** – The body must contain a JSON object with the following properties:
 
@@ -82,6 +85,38 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/She
 | 500         | 500  | Internal server error.                            |
 
 The response body follows the pattern `{ "Code": <status>, "Message": "<description>", "Status": "Error" }` for error cases.
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Cloud SDK Family
 

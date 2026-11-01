@@ -9,34 +9,31 @@ description: "Get all Excel worksheet validations using Aspose.Cells Cloud REST 
 weight: 100
 ArticleTitle: "Get All Worksheet Validations via Aspose.Cells Cloud REST API"
 ---
-
 The **GetWorksheetValidations** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations`) retrieves descriptions of all data validation rules defined in a specific worksheet, enabling developers to inspect enforced constraints such as list dropdowns, date ranges, or numeric limits. Aspose.Cells Cloud supports this operation via a RESTful endpoint requiring the workbook name (`name`) and worksheet name (`sheetName`) as path parameters, with optional `folder` and `storageName` query parameters for file location context. This allows accurate, programmatic retrieval of validation metadata to support data integrity auditing or migration workflows.
 
 This REST API retrieves all worksheet validations on an Excel worksheet.
 
-## REST API
+## The Get Worksheet Validations Web API
 
-```bash
+```http
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### **Request parameters**
 
-| Parameter Name | Type   | Location | Description                               |
-| -------------- | ------ | -------- | ----------------------------------------- |
-| name           | string | path     | Name of the Excel document.               |
-| sheetName      | string | path     | Name of the worksheet.                    |
-| folder         | string | query    | Folder path where the document is stored. |
-| storageName    | string | query    | Name of the storage service.              |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The workbook name. |
+| sheetName | String | Path | The worksheet name. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 **Response status codes**
 
-| Code | Description                               |
-| ---- | ----------------------------------------- |
-| 200  | Successful request – list of validations  |
-| 401  | Unauthorized – invalid or missing token   |
-| 404  | Not found – document or worksheet missing |
-| 500  | Internal server error                     |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/WorksheetValidations/GetWorksheetValidations) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -84,6 +81,37 @@ curl -v "https://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/v
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "ValidationsResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "ValidationsResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Cloud SDK Family
 

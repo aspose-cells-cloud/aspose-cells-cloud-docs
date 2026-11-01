@@ -10,14 +10,9 @@ keywords: "Flip Data, Transform, Aspose.Cells"
 description: "Transposes a specified data range in a spreadsheet file."
 weight: 100
 ---
-
 The **FlipData** API (`PUT https://api.aspose.cloud/v4.0/cells/flip`) in Aspose.Cells Cloud transposes a specified data range by flipping its orientation—rows become columns and columns become rows—enabling restructuring of data matrices (e.g., converting a 3x2 range into a 2x3 range) to meet input requirements for charts, reports, or data models; it accepts a spreadsheet file, worksheet name, and cell area as required parameters.
 
-## The FlipData of Aspose.Cells Cloud Web Services
-
-This API flips the orientation of a given data matrix. For example, a 3x2 range (3 rows, 2 columns) will become a 2x3 range (2 rows, 3 columns) in the output. It is commonly used for restructuring data to meet the input requirements of different charts, reports, or data models.
-
-### Web API Endpoint
+## The Flip Data Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/flip
@@ -29,40 +24,59 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type    | Path/Query String/HTTP Body | Description                                                                                                                             |
-| -------------- | ------- | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| Spreadsheet    | File    | FormData                    | Upload spreadsheet file.                                                                                                                |
-| worksheet      | String  | Query                       | The worksheet name.                                                                                                                     |
-| cellArea       | String  | Query                       | A specified data range.                                                                                                                 |
-| Horizontal     | Boolean | Query                       | Horizontal/Vertical Flip. Default: true                                                                                                 |
-| outPath        | String  | Query                       | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
-| outStorageName | String  | Query                       | Output file Storage Name.                                                                                                               |
-| region         | String  | Query                       | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password       | String  | Query                       | The password for opening spreadsheet file.                                                                                              |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| worksheet | String | Query | The worksheet name. |
+| cellArea | String | Query | A specified data range |
+| Horizontal | Boolean | Query | Horizontal/Vertical Flip. |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+**Response Status Codes**
+
+This API flips the orientation of a given data matrix. For example, a 3x2 range (3 rows, 2 columns) will become a 2x3 range (2 rows, 3 columns) in the output. It is commonly used for restructuring data to meet the input requirements of different charts, reports, or data models.
 
 ### Request Body Parameter
 
 | Parameter Name | Type  | Description                                                                     |
 | -------------- | ----- | ------------------------------------------------------------------------------- |
 | _None_         | _N/A_ | _No additional JSON body is required; the file is sent as multipart/form-data._ |
-
-### **Response**
-
-```json
-{
-  "File": "<binary stream of the transformed workbook>"
-}
-```
-
-**Response Status Codes**
-
-| Code | Meaning               | Description                                                                            |
-| ---- | --------------------- | -------------------------------------------------------------------------------------- |
-| 200  | OK                    | The operation completed successfully and the transformed spreadsheet file is returned. |
-| 400  | Bad Request           | One or more required parameters are missing or invalid.                                |
-| 401  | Unauthorized          | Authentication failed – missing or invalid JWT token.                                  |
-| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                                      |
-| 500  | Internal Server Error | An unexpected error occurred on the server.                                            |
 
 ## How to Use the FlipData with SDKs
 

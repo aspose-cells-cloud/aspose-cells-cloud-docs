@@ -10,29 +10,64 @@ description: "Learn how to update a shape in an Excel worksheet using the Aspose
 ArticleTitle: "Update a shape on an Excel worksheet - Aspose.Cells Cloud API"
 weight: 31
 ---
-
 The **PostWorksheetShape** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes/{shapeindex}`) updates a specific shape within an Excel worksheet by sending a shape description object in the request body. Aspose.Cells Cloud enables developers to programmatically modify shape properties—such as position, size, text, or formatting—using a RESTful interface that supports authentication and optional folder and storage parameters.
 
 ## Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
-## REST API
+## The Post Worksheet Shape Web API
 
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes/{shapeindex}
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### Request parameters
 
-| Parameter Name  | Type    | Location | Description                                                                                   |
-| --------------- | ------- | -------- | --------------------------------------------------------------------------------------------- |
-| **name**        | string  | path     | The name of the workbook file.                                                                |
-| **sheetName**   | string  | path     | The name of the worksheet that contains the shape.                                            |
-| **shapeindex**  | integer | path     | The zero‑based index of the shape within the worksheet.                                       |
-| **dto**         | object  | body     | The shape data‑transfer object that contains the updated properties (see _DTO Schema_ below). |
-| **folder**      | string  | query    | The folder where the workbook is stored.                                                      |
-| **storageName** | string  | query    | The name of the Aspose Cloud storage.                                                         |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| shapeindex | Integer | Path | shape index in worksheet shapes. |
+| dto | class:shape | HTTPBody | The shape description. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ### DTO Schema
 

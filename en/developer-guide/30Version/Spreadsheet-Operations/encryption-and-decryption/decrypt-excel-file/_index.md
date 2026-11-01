@@ -10,13 +10,12 @@ description: "Decrypt encrypted Excel workbooks using Aspose.Cells Cloud API wit
 ArticleTitle: "How to Decrypt an Excel Workbook Using Aspose.Cells Cloud API"
 weight: 50
 ---
-
 The **DeleteDecryptWorkbook** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/encryption`) enables decryption of encrypted Excel files stored in Aspose.Cells Cloud by removing encryption from the specified file, requiring only the file name in the path and a `WorkbookEncryptionRequest` object in the request body with decryption parameters.
 
 - A valid JWT access token.
 - The workbook must be uploaded to Aspose Cloud storage and its path specified in the `folder` query parameter.
 
-## DeleteDecryptWorkbook API
+## The Delete Decrypt Workbook Web API
 
 ```http
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/encryption
@@ -28,33 +27,44 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Query Parameters
 
-| Parameter Name | Type   | Description                                     |
-| -------------- | ------ | ----------------------------------------------- |
-| folder         | string | Folder path of the original workbook.           |
-| storageName    | string | Name of the storage where the workbook resides. |
-
-### Request Body Parameter
-
-| Parameter Name | Type                      | Description                                  |
-| -------------- | ------------------------- | -------------------------------------------- |
-| encryption     | WorkbookEncryptionRequest | Encryption settings required for decryption. |
-
-### WorkbookEncryptionRequest
-
-| Parameter Name | Type    | Description                                                                                                   |
-| -------------- | ------- | ------------------------------------------------------------------------------------------------------------- |
-| EncryptionType | string  | Encryption algorithm (`XOR`, `Compatible`, `EnhancedCryptographicProviderV1`, `StrongCryptographicProvider`). |
-| KeyLength      | integer | Length of the encryption key in bits.                                                                         |
-| Password       | string  | Password used for decryption.                                                                                 |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| encryption | class:workbookencryptionrequest | HTTPBody | WorkbookEncryptionRequestEncryption parameters. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 ### Response
 
 ```json
-{
-  "Status": "OK",
-  "Code": 200
-}
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
 ```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 **Sample Error Responses**
 
@@ -86,15 +96,19 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 }
 ```
 
-**HTTP Status Codes**
+### Request Body Parameter
 
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
+| Parameter Name | Type                      | Description                                  |
+| -------------- | ------------------------- | -------------------------------------------- |
+| encryption     | WorkbookEncryptionRequest | Encryption settings required for decryption. |
+
+### WorkbookEncryptionRequest
+
+| Parameter Name | Type    | Description                                                                                                   |
+| -------------- | ------- | ------------------------------------------------------------------------------------------------------------- |
+| EncryptionType | string  | Encryption algorithm (`XOR`, `Compatible`, `EnhancedCryptographicProviderV1`, `StrongCryptographicProvider`). |
+| KeyLength      | integer | Length of the encryption key in bits.                                                                         |
+| Password       | string  | Password used for decryption.                                                                                 |
 
 ## How to Use the DeleteDecryptWorkbook API with SDKs
 

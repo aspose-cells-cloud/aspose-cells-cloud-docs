@@ -8,10 +8,9 @@ description: "Updates the category axis of a chart in an Excel worksheet using t
 ArticleTitle: "Update Chart Category Axis – Aspose.Cells Cloud API"
 linktitle: "Update Category Axis"
 ---
-
 The **PostChartCategoryAxis** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/categoryaxis`) updates the category axis of a specific chart in a worksheet using Aspose.Cells Cloud, allowing developers to programmatically modify axis properties such as scaling, formatting, and labels by sending an axis configuration object in the request body.
 
-## PostChartCategoryAxis API
+## The Post Chart Category Axis Web API
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/categoryaxis
@@ -23,14 +22,14 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request parameters
 
-| Parameter Name | Type    | Location | Description |
-| -------------- | ------- | -------- | ----------- |
-| name           | string  | path     | Name of the Excel file. |
-| sheetName      | string  | path     | Name of the worksheet that contains the chart. |
-| chartIndex     | integer | path     | Zero‑based index of the chart to be updated. |
-| axis           | object  | body     | JSON object that defines the category axis properties. |
-| folder         | string  | query    | Folder in cloud storage where the file is located (optional). |
-| storageName    | string  | query    | Name of the storage (optional). |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| chartIndex | Integer | Path | The chart index. |
+| axis | class:axis | HTTPBody | Axis |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 **Request Body Schema – `axis` object**
 
@@ -44,15 +43,6 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | TickLabelPosition | string | Position of tick labels (e.g., `Low`, `High`, `NextToAxis`). |
 | ... | ... | Additional axis properties as defined in the API spec. |
 
-**HTTP Status Codes**
-
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
 
 **Prerequisites / Authentication**
 
@@ -98,6 +88,38 @@ curl -v "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/chart
 {{< /tabs >}}
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/PostChartCategoryAxis) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ### Notes
 

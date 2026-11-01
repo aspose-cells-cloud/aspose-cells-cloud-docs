@@ -16,14 +16,58 @@ description: "Use Aspose.Cells Cloud REST API to auto-fit Excel column widths wi
 weight: 90
 ArticleTitle: "Auto-fit Columns in Excel with Aspose.Cells Cloud REST API"
 ---
-
 The **PostAutofitWorkbookColumns** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/autofitcolumns`) enables programmatic auto-fitting of columns in an Excel workbook stored in the cloud, supporting optional start and end column indices via query parameters to limit the operation to a specific range; Aspose.Cells Cloud handles the complex layout calculations required to adjust column widths based on content, ensuring consistent formatting without manual intervention.
 
-## PostAutofitWorkbookColumns API
+## The Post Autofit Workbook Columns Web API
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/autofitcolumns
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
+### **Request Parameters:**
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | - |
+| startColumn | Integer | Query | The start column index. |
+| endColumn | Integer | Query | The end column index. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 The request parameters are:
 
@@ -74,15 +118,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/autofitcolumns" \
 
 Before calling this operation, ensure that you have a valid Aspose Cloud API key, a generated JWT token, and that the target workbook already exists in the specified storage location.
 
-**HTTP Status Codes**
-
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
 
 The API can return the following HTTP status codes:
 

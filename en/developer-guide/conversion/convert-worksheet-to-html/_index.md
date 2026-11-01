@@ -16,12 +16,11 @@ sitemap:
   priority: 0.8
 weight: 100
 ---
-
 The **ConvertWorksheetToHtml** API (`PUT https://api.aspose.cloud/v4.0/cells/convert/worksheet/html`), part of Aspose.Cells Cloud v4.0, converts a worksheet from a local Excel file directly to HTML on Aspose's cloud servers—no intermediate upload or storage is required. To use the endpoint, clients send the spreadsheet file via form data and specify the worksheet name as a query parameter; optional parameters allow control over row/column autofitting, locale settings, and password-protected files.
 
 > **Note**: All examples assume Aspose.Cells Cloud SDK v24.2+. API parameters and behavior may vary in older versions.
 
-## Convert Worksheet to HTML API
+## The Convert Worksheet to HTML Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/convert/worksheet/html

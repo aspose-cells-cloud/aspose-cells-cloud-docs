@@ -21,8 +21,6 @@ api_version: "v3.0"
 weight: 100
 ArticleTitle: "Delete Excel Columns via Aspose.Cells Cloud REST API"
 ---
-
-
 The **DeleteWorksheetColumns** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex}`) enables developers to remove one or more columns from an Excel worksheet using Aspose.Cells Cloud, with optional automatic updating of cell references—including formulas—in other worksheets via the `updateReference` query parameter.
 
 **Endpoint**: `DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex}`
@@ -49,13 +47,6 @@ The operation removes one or more columns from a worksheet. Cell references (inc
 
 ---
 
-## Prerequisites
-
-- A valid **JWT access token** obtained via the Aspose Cloud authentication flow.
-- The workbook (`{name}`) must already be uploaded to Aspose Cloud storage (or accessible via the `folder`/`storageName` query parameters).
-
----
-
 ## Authentication
 
 All Aspose.Cells Cloud requests require **Bearer token** authentication.
@@ -68,19 +59,64 @@ Refer to the [authentication guide](https://docs.aspose.cloud/total/getting-star
 
 ---
 
-## Request URL & HTTP Method
+## The Delete Worksheet Columns Web API
 
 ```http
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex}
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
+### Parameters
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| columnIndex | Integer | Path | The column index. |
+| columns | Integer | Query | The number of columns. |
+| updateReference | Boolean | Query | Indicates if references in other worksheets will be updated. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 - **`{name}`** – workbook file name (e.g., `test.xlsx`).
 - **`{sheetName}`** – worksheet name (e.g., `Sheet1`).
 - **`{columnIndex}`** – zero‑based index of the first column to delete.
 
 ---
-
-## Parameters
 
 ### Path parameters
 

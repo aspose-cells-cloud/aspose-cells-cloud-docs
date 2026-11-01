@@ -9,7 +9,6 @@ description: "Aspose.Cells Cloud API v4: Convert text-formatted numbers to numbe
 weight: 100
 type: docs
 ---
-
 The **ConvertText** API (`PUT https://api.aspose.cloud/v4.0/cells/content/convert/text`) in Aspose.Cells Cloud enables users to clean and standardize Excel data by converting text-formatted numbers into numeric values, replacing unwanted characters and line breaks, and normalizing accented characters to plain letters, ensuring accurate calculations and consistent formatting across spreadsheets.
 
 ## Overview
@@ -21,15 +20,11 @@ The **ConvertText** API (`PUT https://api.aspose.cloud/v4.0/cells/content/conver
 - **Convert line breaks to space, comma or semicolon**: Improve readability by converting line breaks to spaces, commas, or semicolons, creating a more organized and visually appealing presentation.
 - **Replace accented characters**: Swap accented characters like “é” or “ü” with their non-accented counterparts (“e”, “u”), enhancing consistency and clarity.
 
-## ConvertText API Endpoint
-
-### HTTP Method and Path
+## The Convert Text Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/content/convert/text
 ```
-
-> **Note**: Ensure the `v4.0` API version is current. If `v5.0` becomes available, review deprecation notices and migrate accordingly.
 
 ### Authentication
 
@@ -39,20 +34,58 @@ All requests require [JWT token-based authentication](https://docs.aspose.cloud/
 -H "Authorization: Bearer {access_token}"
 ```
 
-## Request Parameters
+### Request Parameters
 
-| Parameter Name     | Type   | Location         | Description                                                                                                                                                                                                  |
-| ------------------ | ------ | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `Spreadsheet`      | File   | FormData         | The spreadsheet file to be processed. Supported formats include XLSX, XLS, ODS, CSV, etc.                                                                                                                    |
-| `convertTextType`  | String | Query (required) | Specifies the conversion type. Valid values: `"Number"` (text-to-number), `"AccentNormalization"` (accent removal), `"LineBreaks"` (line-break conversion), `"SpecialChars"` (custom character replacement). |
-| `sourceCharacters` | String | Query (optional) | Characters, strings, or patterns to replace or remove (e.g., `"é,è,ê"`, `"#N/A"`, `"%0A"` for line breaks).                                                                                                  |
-| `targetCharacters` | String | Query (optional) | Replacement strings (e.g., `"e"` for accented letters, `""` for removal, `"%20"` for space).                                                                                                                 |
-| `worksheet`        | String | Query (optional) | Name of the worksheet where conversion applies. Defaults to the first worksheet.                                                                                                                             |
-| `range`            | String | Query (optional) | Cell range (e.g., `"A1:C10"`). Defaults to all used cells in the worksheet.                                                                                                                                  |
-| `outPath`          | String | Query (optional) | Cloud storage folder path for the output file. Defaults to the source folder.                                                                                                                                |
-| `outStorageName`   | String | Query (optional) | Name of the cloud storage where the output file will be stored.                                                                                                                                              |
-| `region`           | String | Query (optional) | Locale setting (e.g., `"en-US"`, `"fr-FR"`), affecting number/date parsing and language-specific behavior.                                                                                                   |
-| `password`         | String | Query (optional) | Password for password-protected files.                                                                                                                                                                       |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| convertTextType | String | Query | Indicates the conversion of text type. |
+| sourceCharacters | String | Query | Indicates the source characters. |
+| targetCharacters | String | Query | Indicates the target characters. |
+| worksheet | String | Query | Specify the worksheet of spreadsheet. |
+| range | String | Query | Specify the worksheet range of spreadsheet. |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
+
+### Response
+
+```json
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
+On success, returns the processed workbook as a file stream.
+
+### Error Codes
+
+| Code               | Description                                                                            |
+| ------------------ | -------------------------------------------------------------------------------------- |
+| `400 Bad Request`  | Invalid API URI, malformed parameters, or unsupported file format.                     |
+| `401 Unauthorized` | Invalid or expired access token, or incorrect client ID/secret.                        |
+| `404 Not Found`    | Specified file or storage path does not exist.                                         |
+| `500 Server Error` | Internal server failure during processing (e.g., corrupted file or calculation error). |
+
+### HTTP Method and Path
+
+
+> **Note**: Ensure the `v4.0` API version is current. If `v5.0` becomes available, review deprecation notices and migrate accordingly.
 
 ### Example Request (cURL)
 
@@ -63,29 +96,6 @@ curl -X PUT \
   -H "Content-Type: multipart/form-data" \
   -F "Spreadsheet=@input.xlsx"
 ```
-
-## Response
-
-On success, returns the processed workbook as a file stream.
-
-```json
-{
-  "Name": "ResponseFile",
-  "DataType": {
-    "Identifier": "File",
-    "Reference": "Stream"
-  }
-}
-```
-
-## Error Codes
-
-| Code               | Description                                                                            |
-| ------------------ | -------------------------------------------------------------------------------------- |
-| `400 Bad Request`  | Invalid API URI, malformed parameters, or unsupported file format.                     |
-| `401 Unauthorized` | Invalid or expired access token, or incorrect client ID/secret.                        |
-| `404 Not Found`    | Specified file or storage path does not exist.                                         |
-| `500 Server Error` | Internal server failure during processing (e.g., corrupted file or calculation error). |
 
 ## Use Cases
 

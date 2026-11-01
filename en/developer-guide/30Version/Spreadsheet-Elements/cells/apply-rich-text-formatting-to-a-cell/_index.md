@@ -10,42 +10,36 @@ article_type: how-to
 linktitle: "Apply Rich Text Formatting"
 ArticleTitle: "Apply Rich Text Formatting to Excel Cells via Aspose.Cells Cloud REST API"
 ---
-
 The **PostCellCharacters** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}/characters`) enables developers to apply rich text formatting—such as varying fonts, sizes, or styles—to specific substrings within a single cell in an Excel worksheet using the Aspose.Cells Cloud REST API, supporting precise, granular control over cell content appearance without altering the underlying cell value.
 
 ## Apply Rich Text Formatting to a Cell
 
 This guide explains how to apply **rich text formatting**—where different parts of a cell’s content use distinct fonts, sizes, or styles—to a specific cell in an Excel worksheet using the **Aspose.Cells Cloud REST API**.
 
-### Prerequisites
-
-- ✅ A valid [JWT token](/getting-started/authentication/) for authentication  
-- ✅ The target Excel file must already exist in your Aspose.Cells Cloud storage  
-- ✅ The Excel file must be in a supported format (e.g., `.xlsx`, `.xls`)  
-- ⚠️ The total payload size must not exceed **200 MB** (see [HTTP 413 handling](#http-status-codes))
-
 > 💡 **Tip**: Rich text formatting is ideal for dashboards, reports, or any scenario where visual emphasis (e.g., highlighting key terms) improves data readability.
 
 ---
 
-## PostCellCharacters API
-
-Apply formatting to specific character ranges within a cell.
+## The Post Cell Characters Web API
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}/characters
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### Request Parameters
 
-| Parameter   | Type   | Location | Description |
-|-------------|--------|----------|-------------|
-| `name`      | string | path     | Name of the Excel file (e.g., `Book1.xlsx`). |
-| `sheetName` | string | path     | Name of the worksheet (e.g., `Sheet1`). |
-| `cellName`  | string | path     | Cell address (e.g., `A1`). |
-| `options`   | object | body     | JSON object containing an array of `FontSetting` objects. Each defines a character range and its formatting. |
-| `folder`    | string | query    | Folder path in storage where the file resides (e.g., `/Reports/Q3`). |
-| `storageName` | string | query  | Custom storage name (if using non-default storage). |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| cellName | String | Path | The cell name. |
+| options | container | HTTPBody | - |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 #### `options` Body Structure
 
@@ -75,6 +69,29 @@ Example `FontSetting`:
 > 🔍 **Note**: Fonts apply cumulatively. If `IsBold` is set but `IsItalic` is omitted, only bold formatting is applied to that range.
 
 ---
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+Apply formatting to specific character ranges within a cell.
 
 ### HTTP Status Codes
 

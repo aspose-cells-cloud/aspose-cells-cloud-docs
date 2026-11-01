@@ -9,27 +9,51 @@ weight: 100
 linktitle: "Get Conditional Formatting Rules"
 ArticleTitle: "Get All Conditional Formatting Rules from Worksheet via Aspose.Cells Cloud API"
 ---
-
 The **GetWorksheetConditionalFormattings** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings`) retrieves descriptions of all conditional formatting rules applied to a specified worksheet in a cloud-stored spreadsheet file, enabling developers to inspect formatting logic programmatically via Aspose.Cells Cloud's REST API, which supports multiple SDKs including .NET, Java, Python, and Node.js.
 
 ## Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
-## REST API
+## The Get Worksheet Conditional Formattings Web API
 
-```bash
+```http
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### Request Parameters
 
-| Parameter Name | Type   | Location | Description                                 |
-| -------------- | ------ | -------- | ------------------------------------------- |
-| name           | string | path     | The name of the Excel file.                 |
-| sheetName      | string | path     | The name of the worksheet.                  |
-| folder         | string | query    | The folder path where the file is stored.   |
-| storageName    | string | query    | The name of the storage service (optional). |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "ConditionalFormattingsResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "ConditionalFormattingsResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
 
 ### Error Responses
 

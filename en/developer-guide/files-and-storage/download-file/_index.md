@@ -9,13 +9,9 @@ description: "Download Excel, PDF, and CSV files from Aspose.Cells Cloud storage
 weight: 100
 ArticleTitle: "Download File API | Aspose.Cells Cloud | REST & SDK Examples"
 ---
-
-
 The **DownloadFile** API (`GET https://api.aspose.cloud/v4.0/cells/storage/file/{path}`) enables you to retrieve files stored in Aspose.Cells Cloud storage by specifying the file path, supporting formats such as Excel spreadsheets, PDFs, and CSVs; the operation accepts optional `storageName` and `versionId` query parameters to target specific storage and file versions, returning the file content as a `FileStreamResult`.
 
-## Excel API: Download File
-
-### Web API
+## The Download File Web API
 
 ```http
 GET https://api.aspose.cloud/v4.0/cells/storage/file/{path}
@@ -33,26 +29,47 @@ Include your access token in the `Authorization` header:
 
 ### Request Parameters
 
-| Parameter Name | Type     | Location | Required | Description                                                                                                                         |
-| -------------- | -------- | -------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| `path`         | `string` | Path     | ✅ Yes   | The virtual path to the file in cloud storage (e.g., `input/Report.xlsx`).                                                          |
-| `storageName`  | `string` | Query    | ❌ No    | The name of the storage (e.g., `MyStorage`). Defaults to the first configured storage if omitted.                                   |
-| `versionId`    | `string` | Query    | ❌ No    | Optional version identifier for versioned storage (e.g., `v1.2`). Use only when multiple file versions exist in enterprise storage. |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| path | String | Path | - |
+| storageName | String | Query | - |
+| versionId | String | Query | - |
 
 ### Response
+
+```json
+[
+  {
+    "Name": "FileStreamResult",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 The API returns a **binary file stream**. The `Content-Type` header matches the file format (e.g., `application/vnd.openxmlformats-officedocument.spreadsheetml.sheet` for XLSX, `application/pdf` for PDF, `text/csv` for CSV). No JSON payload is returned.
 
 #### HTTP Status Codes
-
-| Code  | Meaning               | Description                                                                    |
-| ----- | --------------------- | ------------------------------------------------------------------------------ |
-| `200` | OK                    | File downloaded successfully; response body contains the binary file stream.   |
-| `400` | Bad Request           | Missing or invalid parameters (e.g., unsupported file type, malformed `path`). |
-| `401` | Unauthorized          | Invalid, expired, or missing JWT token.                                        |
-| `404` | Not Found             | File not found at the specified `path` or `storageName` does not exist.        |
-| `413` | Payload Too Large     | Requested file exceeds maximum download size (1 GB).                           |
-| `500` | Internal Server Error | Unexpected server error.                                                       |
 
 ### Example: cURL Command
 

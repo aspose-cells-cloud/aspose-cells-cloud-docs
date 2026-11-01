@@ -11,7 +11,6 @@ keywords: "Aspose.Cells Cloud, chart export, Excel API, REST API, PDF conversion
 weight: 100
 ArticleTitle: "Export Excel Chart to PDF, PNG, SVG with Aspose.Cells Cloud API"
 ---
-
 The **ExportChartAsFormat** API (`GET https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/charts/{chartIndex}`) in Aspose.Cells Cloud converts a chart from a spreadsheet stored in cloud storage directly to a target format—such as PDF, PNG, or SVG—without downloading the source file, enabling efficient, server-side conversion with reduced bandwidth and improved performance for large workbooks.
 
 {{% alert color="primary" %}}  
@@ -26,32 +25,68 @@ The **ExportChartAsFormat** API (`GET https://api.aspose.cloud/v4.0/cells/{name}
 
 Export a chart from a workbook stored in Aspose Cloud Storage to a target format (PDF, PNG, SVG, etc.) in a single API call — **without downloading the source file**. This cloud-native operation improves performance, reduces bandwidth usage, and enables server-side conversion at scale.
 
-## API Endpoint
+## The Export Chart as Format Web API
 
 ```http
 GET https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/charts/{chartIndex}
 ```
 
-> 🔒 **Authentication Required**  
-> All requests must include a valid JWT token. See [Authentication Overview](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) for details.
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
+### Request Parameters
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | (Required) The name of the workbook file to be retrieved. |
+| worksheet | String | Path | worksheet name |
+| chartIndex | Integer | Path | chart index |
+| format | String | Query | (Required) The desired pdf or image format  (e.g., "png", "Pdf", "svg"). |
+| folder | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| storageName | String | Query | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted. |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| fontsLocation | String | Query | Use Custom fonts. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
 
 ---
 
-## Request Parameters
+### **Response**
 
-| Parameter        | Type    | Location | Required | Description                                                                |
-| ---------------- | ------- | -------- | -------- | -------------------------------------------------------------------------- |
-| `name`           | string  | Path     | Yes      | Workbook file name (e.g., `input.xlsx`).                                   |
-| `worksheet`      | string  | Path     | Yes      | Name of the worksheet containing the chart (e.g., `Sheet1`).               |
-| `chartIndex`     | integer | Path     | Yes      | Zero-based index of the chart to export (e.g., `0` for the first chart).   |
-| `format`         | string  | Query    | Yes      | Target output format: `png`, `pdf`, `svg`, `jpg`, `tiff`, or `bmp`.        |
-| `folder`         | string  | Query    | No       | Folder path within cloud storage (default: root `/`).                      |
-| `storageName`    | string  | Query    | No       | Custom storage name; omit to use the default storage.                      |
-| `outPath`        | string  | Query    | No       | Destination folder for the output file (if different from input location). |
-| `outStorageName` | string  | Query    | No       | Storage name for the output file.                                          |
-| `fontsLocation`  | string  | Query    | No       | Custom fonts folder path (for accurate rendering).                         |
-| `region`         | string  | Query    | No       | Locale setting (e.g., `en-US`, `fr-FR`) affecting formatting and parsing.  |
-| `password`       | string  | Query    | No       | Password for protected workbooks (if applicable).                          |
+```json
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | Invalid url. |
+| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
+| 404 | Not Found | Source file not accessible. |
+| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining conversion data. |
+
+> 🔒 **Authentication Required**  
+> All requests must include a valid JWT token. See [Authentication Overview](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) for details.
 
 ---
 

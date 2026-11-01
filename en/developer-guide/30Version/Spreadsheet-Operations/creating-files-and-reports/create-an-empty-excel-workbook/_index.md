@@ -15,10 +15,9 @@ description: "Learn how to create an empty Excel workbook using Aspose.Cells Clo
 weight: 100
 ArticleTitle: "Create an Empty Excel Workbook using Aspose.Cells Cloud API"
 ---
-
 The **PutWorkbookCreate** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}`) creates a new Excel workbook in Aspose.Cells Cloud, supporting multiple methods such as generating a blank workbook, using a template file via the `templateFile` query parameter, or populating from smart marker data. This RESTful operation accepts the new document name as a required path parameter and optional parameters like `folder` and `storageName` to specify cloud storage locations, enabling flexible, programmatic workbook creation across supported SDKs for .NET, Java, Python, and other languages.
 
-## PutWorkbookCreate API
+## The Put Workbook Create Web API
 
 ```http
 PUT https://api.aspose.cloud/v3.0/cells/{name}
@@ -30,42 +29,52 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Query Parameters
 
-| Parameter Name | Type    | Description                                                 |
-| -------------- | ------- | ----------------------------------------------------------- |
-| templateFile   | string  | Path to a template workbook to use as a base (optional).    |
-| dataFile       | string  | Path to a data file for populating the workbook (optional). |
-| isWriteOver    | boolean | `true` to overwrite an existing file; `false` otherwise.    |
-| folder         | string  | Destination folder for the created workbook (optional).     |
-| storageName    | string  | Name of the storage service to use.                         |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The new document name. |
+| templateFile | String | Query | The template file, if the data not provided default workbook is created. |
+| dataFile | String | Query | Smart marker data file, if the data not provided the request content is checked for the data. |
+| isWriteOver | Boolean | Query | Specifies whether to write over targer file. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+| checkExcelRestriction | Boolean | Query | - |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ### Request Body Parameter
 
 | Parameter Name | Type | Description                                    |
 | -------------- | ---- | ---------------------------------------------- |
 | data           | file | Binary content of the workbook file to create. |
-
-### **Response**
-
-```json
-{
-  "Name": "ResponseFile",
-  "DataType": {
-    "Identifier": "File",
-    "Reference": "Stream",
-    "Name": "file"
-  }
-}
-```
-
-**HTTP Status Codes**
-
-| Code             | Meaning                                 | When Returned                         |
-| ---------------- | --------------------------------------- | ------------------------------------- |
-| 200 OK           | Workbook created successfully           | Normal flow                           |
-| 201 Created      | Workbook created (alternative response) | When the API returns a created status |
-| 400 Bad Request  | Invalid parameters                      | Client‑side error                     |
-| 401 Unauthorized | Missing or invalid token                | Authentication error                  |
-| 409 Conflict     | File exists and `isWriteOver=false`     | Conflict with existing file           |
 
 ## How to Use the PutWorkbookCreate API with SDKs
 

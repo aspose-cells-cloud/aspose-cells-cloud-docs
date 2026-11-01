@@ -10,27 +10,69 @@ lastmod: 2024-05-22
 weight: 100
 ArticleTitle: "Rename Worksheet in Excel with Aspose.Cells Cloud API"
 ---
-
 The **RenameWorksheetInSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/rename/worksheet`), part of Aspose.Cells Cloud v4.0, enables users to rename a specified worksheet within a workbook by submitting the current and new sheet names alongside the spreadsheet file in a single request. This RESTful operation supports dynamic workbook reorganization, improving structure and readability—ideal for report standardization, ETL workflows, and multilingual content delivery without manual intervention.
 
-## API Endpoint
+## The Rename Worksheet in Spreadsheet Web API
 
-**Endpoint:**  
-`PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/rename/worksheet`
+```http
+PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/rename/worksheet
+```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
 
 ### Request Parameters
 
-| Parameter        | Type   | Location | Required | Description                                                                                               |
-| ---------------- | ------ | -------- | -------- | --------------------------------------------------------------------------------------------------------- |
-| `Spreadsheet`    | File   | FormData | ✅ Yes   | Excel workbook file (`.xlsx`, `.xls`, etc.) containing the worksheet to rename.                           |
-| `sourceName`     | String | Query    | ✅ Yes   | Current name of the worksheet to rename.                                                                  |
-| `targetName`     | String | Query    | ✅ Yes   | New name for the worksheet. Must be ≤ 31 characters and contain no `:`, `\`, `?`, `*`, `[`, or `]`.       |
-| `outPath`        | String | Query    | ❌ No    | Folder path in cloud storage where the renamed workbook is saved. Defaults to the source file’s location. |
-| `outStorageName` | String | Query    | ❌ No    | Name of configured cloud storage (e.g., `ArchiveStorage`). Defaults to the account’s primary storage.     |
-| `region`         | String | Query    | ❌ No    | Locale setting (e.g., `en-US`, `fr-FR`, `ko-KR`) affecting number/date formatting and naming conventions. |
-| `password`       | String | Query    | ❌ No    | Password to decrypt a password-protected workbook. Omit if the file is unencrypted.                       |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| sourceName | String | Query | The current name of the worksheet to be renamed. |
+| targetName | String | Query | The new name for the worksheet. |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
 
 > **Note:** Excel worksheet names are limited to 31 characters and cannot include `:`, `\`, `?`, `*`, `[`, or `]`.
+
+### Response
+
+```json
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | Invalid url. |
+| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
+| 404 | Not Found | Source file not accessible. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining data. |
+
+A successful request returns the modified workbook as a file stream. The response header includes `Content-Type: application/octet-stream`.
+
+**Endpoint:**  
+`PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/rename/worksheet`
 
 ### cURL Example
 
@@ -41,21 +83,6 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/spreadsheet/rename/worksheet?so
 ```
 
 > **Tip:** Replace `{access_token}` with your valid JWT token. Learn more about [authentication](/authentication/).
-
-## Response
-
-A successful request returns the modified workbook as a file stream. The response header includes `Content-Type: application/octet-stream`.
-
-**HTTP Status Codes**
-
-| Code | Meaning               | Description                                                             |
-| ---- | --------------------- | ----------------------------------------------------------------------- |
-| 200  | OK                    | Worksheet renamed successfully.                                         |
-| 400  | Bad Request           | Invalid parameters, unsupported file format, or invalid worksheet name. |
-| 401  | Unauthorized          | Missing or invalid JWT token.                                           |
-| 404  | Not Found             | Source file not found in storage.                                       |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit (100 MB).                              |
-| 500  | Internal Server Error | Unexpected server-side error.                                           |
 
 ## Use Cases
 

@@ -9,7 +9,6 @@ description: "Learn how to hide a chart legend in an Excel worksheet using the A
 linktitle: "Hide Chart Legend"
 ArticleTitle: "Hide Chart Legend in Excel Worksheet via Aspose.Cells Cloud REST API"
 ---
-
 The **DeleteWorksheetChartLegend** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend`) hides the chart legend in a worksheet, removing the box that identifies the data series plotted in the chart. Aspose.Cells Cloud enables this operation via a RESTful endpoint, supporting programmatic legend management without manual editing. Developers can integrate this functionality using SDKs for .NET, Java, Go, Node.js, Python, and other languages, streamlining dynamic chart customization in cloud-based spreadsheet workflows.
 
 The API requires a valid Aspose Cloud JWT token, the workbook must be uploaded to Aspose Cloud storage, and the API version used is **v3.0**.
@@ -17,21 +16,25 @@ The API requires a valid Aspose Cloud JWT token, the workbook must be uploaded t
 ## Security and Authentication
 The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
-## REST API
+## The Delete Worksheet Chart Legend Web API
 
 ```http
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### Request parameters
 
-| Parameter Name  | Type    | Location | Description                 |
-| --------------- | ------- | -------- | --------------------------- |
-| **name**        | string  | path     | Workbook name.              |
-| **sheetName**   | string  | path     | Worksheet name.             |
-| **chartIndex**  | integer | path     | Index of the chart.         |
-| **folder**      | string  | query    | Workbook folder (optional). |
-| **storageName** | string  | query    | Storage name (optional).    |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| chartIndex | Integer | Path | The chart index. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/DeleteWorksheetChartLegend) defines this publicly accessible programming interface.
 
@@ -64,7 +67,36 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/She
 
 {{< /tabs >}}
 
-## Responses
+### Responses
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 | HTTP Status                   | Description                                   | Example JSON                                                  |
 | ----------------------------- | --------------------------------------------- | ------------------------------------------------------------- |

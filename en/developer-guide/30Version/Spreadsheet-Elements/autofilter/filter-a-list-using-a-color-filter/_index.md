@@ -10,12 +10,11 @@ description: "Learn how to apply a color filter to an Excel worksheet with Aspos
 weight: 65
 ArticleTitle: "Add a Color Filter in an Excel Worksheet using Aspose.Cells Cloud API"
 ---
-
 The **PutWorksheetColorFilter** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/colorFilter`) enables developers to apply a color filter to a specified field within an Excel worksheet’s AutoFilter, allowing conditional highlighting or hiding of rows based on cell background or font color; it requires the workbook name, worksheet name, target range, field index, and a color filter request body, with optional parameters to match blank cells and refresh the filter.
 
 This REST API adds a **color filter** to an Excel worksheet.
 
-## PutWorksheetColorFilter API
+## The Put Worksheet Color Filter Web API
 
 ```http
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/colorFilter
@@ -27,17 +26,17 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters:
 
-| Parameter Name | Type    | Location | Description                                                              |
-| -------------- | ------- | -------- | ------------------------------------------------------------------------ |
-| name           | string  | path     | The name of the Excel file.                                              |
-| sheetName      | string  | path     | The name of the worksheet that contains the data to be filtered.         |
-| range          | string  | query    | The cell range to which the filter is applied (e.g., `A1:B10`).          |
-| fieldIndex     | integer | query    | Zero‑based index of the column on which the color filter is applied.     |
-| colorFilter    | object  | body     | JSON object that defines the foreground and background colors to filter. |
-| matchBlanks    | boolean | query    | Whether rows with blank cells should be included in the filter results.  |
-| refresh        | boolean | query    | If `true`, the worksheet is refreshed after applying the filter.         |
-| folder         | string  | query    | The folder in storage where the Excel file is located.                   |
-| storageName    | string  | query    | The name of the storage service (e.g., Aspose Cloud Storage).            |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The workbook name. |
+| sheetName | String | Path | The worksheet name. |
+| range | String | Query | Represents the range to which the specified AutoFilter applies. |
+| fieldIndex | Integer | Query | The integer offset of the field on which you want to base the filter (from the left of the list; the leftmost field is field 0). |
+| colorFilter | class:colorfilterrequest | HTTPBody | color filter request. |
+| matchBlanks | Boolean | Query | Match all blank cell in the list. |
+| refresh | Boolean | Query | Refresh auto filters to hide or unhide the rows. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 **`colorFilter` JSON schema**
 
@@ -50,21 +49,34 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 ### **Response**
 
 ```json
-{
-  "Status": "OK",
-  "Code": 200
-}
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
 ```
 
 **HTTP Status Codes**
 
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## How to Use the PutWorksheetColorFilter API with SDKs
 

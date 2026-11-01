@@ -9,13 +9,12 @@ weight: 100
 linktitle: "Batch Lock Excel Files"
 ArticleTitle: "Batch Lock Excel Files with Aspose.Cells Cloud API"
 ---
-
 The **PostBatchLock** API (`POST https://api.aspose.cloud/v3.0/cells/batch/lock`) enables Aspose.Cells Cloud users to batch lock eligible Excel and other supported files by applying specific matching conditions, supporting over 30 formats such as Excel, PDF, Markdown, JSON, XML, CSV, and HTML in a single operation.
 
-## REST API
+## The Post Batch Lock Web API
 
-```bash
-POST http://api.aspose.cloud/v3.0/cells/batch/lock
+```http
+POST https://api.aspose.cloud/v3.0/cells/batch/lock
 ```
 
 ### **Security and Authentication**
@@ -24,9 +23,9 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name   | Type             | Location | Description                           |
-| ---------------- | ---------------- | -------- | ------------------------------------- |
-| BatchLockRequest | BatchLockRequest | body     | JSON body containing lock parameters. |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| batchLockRequest | class:batchlockrequest | HTTPBody | BatchLockRequest Batch locking file request. |
 
 #### **BatchLockRequest** Properties
 
@@ -44,34 +43,43 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | RegexPattern        | string   | Regular‑expression pattern to match file names. | optional |
 | FullMatchConditions | string[] | Exact file‑name matches for locking.            | optional |
 
+### **Response**
+
+```json
+[
+  {
+    "Name": "Stream",
+    "DataType": {
+      "Identifier": "File"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
 ### Request Body Parameter
 
 | Parameter Name | Type | Description                                    |
 | -------------- | ---- | ---------------------------------------------- |
 | data           | file | Binary content of the workbook file to create. |
-
-### **Response**
-
-```json
-{
-  "Name": "ResponseFile",
-  "DataType": {
-    "Identifier": "File",
-    "Reference": "Stream",
-    "Name": "file"
-  }
-}
-```
-
-**HTTP Status Codes**
-
-| Code             | Meaning                                 | When Returned                         |
-| ---------------- | --------------------------------------- | ------------------------------------- |
-| 200 OK           | Workbook created successfully           | Normal flow                           |
-| 201 Created      | Workbook created (alternative response) | When the API returns a created status |
-| 400 Bad Request  | Invalid parameters                      | Client‑side error                     |
-| 401 Unauthorized | Missing or invalid token                | Authentication error                  |
-| 409 Conflict     | File exists and `isWriteOver=false`     | Conflict with existing file           |
 
 ## How to Use the PostBatchLock API with SDKs
 

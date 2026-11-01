@@ -10,36 +10,70 @@ description: "Add vertical page break to Excel worksheet via Aspose.Cells Cloud 
 weight: 40
 ArticleTitle: "Add a Vertical Page Break – Aspose.Cells Cloud API"
 ---
-
 The **PutVerticalPageBreak** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/verticalpagebreaks`) enables developers to insert a vertical page break into a specific worksheet using Aspose.Cells Cloud, supporting precise control over print layout by specifying either a cell name (e.g., "D5") or explicit row and column indices to define the break location.
 
 ## Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
-## REST API
+## The Put Vertical Page Break Web API
 
-```bash
+```http
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/verticalpagebreaks
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### Request Parameters
 
-| Parameter Name | Type    | Location | Description                                                             |
-| -------------- | ------- | -------- | ----------------------------------------------------------------------- |
-| name           | string  | path     | The name of the Excel workbook.                                         |
-| sheetName      | string  | path     | The name of the worksheet where the page break will be added.           |
-| cellname       | string  | query    | The cell reference (e.g., **A1**) that defines the page‑break location. |
-| column         | integer | query    | The zero-based index of the column where the page break starts.         |
-| row            | integer | query    | The zero-based index of the row where the page break starts.            |
-| startRow       | integer | query    | The first row of the page‑break range.                                  |
-| endRow         | integer | query    | The last row of the page‑break range.                                   |
-| folder         | string  | query    | The folder path in the storage where the workbook is located.           |
-| storageName    | string  | query    | The name of the storage service.                                        |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The workbook name. |
+| sheetName | String | Path | The worksheet name. |
+| cellname | String | Query | Cell name |
+| column | Integer | Query | Column index, zero based. |
+| row | Integer | Query | Row index, zero based. |
+| startRow | Integer | Query | Start row index, zero based. |
+| endRow | Integer | Query | End row index, zero based. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 **Required parameters** – Either `cellname` **or** `column` must be supplied. When `column` is used you may also provide `row`, `startRow`, and `endRow` to define a range. All other fields are optional.
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PageBreaks/PutVerticalPageBreak) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ### cURL Example
 
@@ -59,16 +93,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/SampleBreaks.xlsx/worksheets/Sheet1
   "Status": "OK"
 }
 ```
-
-**HTTP Status Codes**
-
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
 
 ## Cloud SDK Family
 

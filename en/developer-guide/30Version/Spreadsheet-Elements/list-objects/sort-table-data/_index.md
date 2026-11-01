@@ -10,13 +10,12 @@ description: "Sort Excel table data using Aspose.Cells Cloud API via POSTWorkshe
 weight: 40
 ArticleTitle: "Sort ListObject Data in an Excel Worksheet – Aspose.Cells Cloud API"
 ---
-
 The **PostWorksheetListObjectSortTable** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/sort`) enables sorting of list objects within a worksheet by sending a `DataSorter` object in the request body, allowing developers to programmatically define sort criteria such as column order and sort direction; to use this API, you must include a valid Aspose Cloud JWT access token in the `Authorization: Bearer <jwt token>` header and ensure the target workbook is uploaded to Aspose Cloud storage.
 
 This REST API sorts a table’s data in an Excel worksheet.  
 To use this operation, provide the workbook name, worksheet name, and the index of the target ListObject, together with a `dataSorter` JSON body that defines the sorting criteria.
 
-## PostWorksheetListObjectSortTable API
+## The Post Worksheet List Object Sort Table Web API
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/sort
@@ -28,14 +27,14 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Request parameters**
 
-| Parameter Name  | Type    | Path/Query String/HTTPBody | Description                                                                                                     |
-| --------------- | ------- | -------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| name            | string  | path                       | The name of the Excel file stored in Aspose Cloud storage.                                                      |
-| sheetName       | string  | path                       | The name of the worksheet that contains the ListObject.                                                         |
-| listObjectIndex | integer | path                       | Zero‑based index of the ListObject (table) within the worksheet.                                                |
-| dataSorter      | object  | body                       | JSON object that specifies sorting options (e.g., `CaseSensitive`, `HasHeaders`, `KeyList`, `SortLeftToRight`). |
-| folder          | string  | query                      | Folder path in storage where the Excel file is located.                                                         |
-| storageName     | string  | query                      | Name of the Aspose Cloud storage.                                                                               |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| listObjectIndex | Integer | Path | The list object index. |
+| dataSorter | class:datasorter | HTTPBody | Represents sort order for the data range. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 **Notes**  
 The request body must be a valid JSON object matching the `dataSorter` schema. Ensure that the workbook, worksheet, and ListObject exist before invoking the sort operation.
@@ -79,15 +78,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet7/listob
 }
 ```
 
-**HTTP Status Codes**
-
-| Status Code | Description                                               |
-| ----------- | --------------------------------------------------------- |
-| 200         | OK – sorting completed successfully.                      |
-| 400         | Bad Request – invalid parameters.                         |
-| 401         | Unauthorized – authentication failed.                     |
-| 404         | Not Found – workbook, worksheet, or ListObject not found. |
-| 500         | Internal Server Error – server‑side issue.                |
 
 **Response Parameters**
 
@@ -99,6 +89,38 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet7/listob
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Cloud SDK Family
 

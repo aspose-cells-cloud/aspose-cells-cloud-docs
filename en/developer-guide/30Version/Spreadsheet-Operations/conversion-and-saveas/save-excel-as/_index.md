@@ -12,19 +12,12 @@ description: "Save Excel workbooks to PDF, CSV, JSON, Markdown and other formats
 weight: 30
 ArticleTitle: "Save Excel Workbook to PDF, CSV, JSON, Markdown & More with Aspose.Cells Cloud API"
 ---
-
 The **PostWorkbookSaveAs** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/SaveAs`) enables developers to save an Excel workbook stored in Aspose Cloud storage to over 30 alternative formats—including PDF, Markdown, JSON, XML, CSV, HTML, and more—by specifying a new filename and optional save options, with support for features like auto-fitting rows/columns and custom font handling.
 
-**Prerequisites**
-
-1. Obtain a JWT access token and include it in the `Authorization: Bearer <token>` header of every request.
-2. Upload the source workbook to Aspose Cloud storage (or confirm it already exists).
-3. Know the storage name and folder path where the workbook resides.
-
-## PostWorkbookSaveAs API
+## The Post Workbook Save as Web API
 
 ```http
-POST https://api.aspose.cloud/v3.0/cells/{name}/saveAs
+POST https://api.aspose.cloud/v3.0/cells/{name}/SaveAs
 ```
 
 ### **Security and Authentication**
@@ -33,9 +26,56 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Path Parameter**
 
-| Parameter Name | Type   | Description                 |
-| -------------- | ------ | --------------------------- |
-| name           | string | The name of the Excel file. |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The workbook name. |
+| newfilename | String | Query | newfilename to save the result.The `newfilename` should encompass both the filename and extension. |
+| saveOptions | class:saveoptions | HTTPBody | - |
+| isAutoFitRows | Boolean | Query | Indicates if Autofit rows in workbook. |
+| isAutoFitColumns | Boolean | Query | Indicates if Autofit columns in workbook. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+| outStorageName | String | Query | The storage name where the output file is situated. |
+| checkExcelRestriction | Boolean | Query | Whether check restriction of excel file when user modify cells related objects. |
+| region | String | Query | The regional settings for workbook. |
+| pageWideFitOnPerSheet | Boolean | Query | The page wide fit on worksheet. |
+| pageTallFitOnPerSheet | Boolean | Query | The page tall fit on worksheet. |
+| onePagePerSheet | Boolean | Query | - |
+| FontsLocation | String | Query | Use Custom fonts. |
+
+### Response
+
+```json
+[
+  {
+    "Name": "SaveResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "SaveResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+The API returns a `SaveResponse` object.
 
 ### **Query Parameter**
 
@@ -71,37 +111,6 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
   }
 }
 ```
-
-### Response
-
-The API returns a `SaveResponse` object.
-
-```json
-{
-  "Status": "OK",
-  "Code": 200,
-  "SaveResult": {
-    "Documents": [
-      {
-        "Name": "sample.pdf",
-        "Size": 10240,
-        "Folder": "output",
-        "Storage": "MyStorage"
-      }
-    ]
-  }
-}
-```
-
-**HTTP Status Codes**
-
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
 
 ## How to Use the PostWorkbookSaveAs API with SDKs
 

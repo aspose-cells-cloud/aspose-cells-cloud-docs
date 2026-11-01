@@ -9,20 +9,17 @@ keywords: "Excel password protection API, open password, modify password, spread
 weight: 100
 ArticleTitle: "Aspose.Cells Cloud Protect Spreadsheet API: Set Open & Modify Passwords Programmatically"
 ---
-
 The **ProtectSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/protection/spreadsheet`) in Aspose.Cells Cloud applies dual-layer password protection to Excel spreadsheets, allowing developers to set both an open password (to restrict file access) and a modify password (to prevent editing) in a single request, with passwords encrypted for enhanced security.
 
 This API supports modern formats (`.xlsx`, `.xlsm`, `.xlsb`) and legacy `.xls` files, and integrates seamlessly with cloud storage and regional settings for global deployments.
 
-## **Protect Spreadsheet REST API Endpoint**
+## The Protect Spreadsheet Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/protection/spreadsheet
 ```
 
-> ✅ **API Version Note**: This page documents the current `v4.0` endpoint. Check the [API Changelog](/cells/changelog/) for updates, including potential `v5.0` migration guidance.
-
-## **Authentication**
+### **Authentication**
 
 All requests require a valid OAuth 2.0 access token with the **Cells** scope. Tokens are obtained via Aspose Cloud’s [OAuth 2.0 flow](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
@@ -37,35 +34,48 @@ Authorization: Bearer YOUR_ACCESS_TOKEN
 > - Register at [Aspose Cloud Dashboard](https://dashboard.aspose.cloud/) to get your `Client ID` and `Client Secret`
 > - Exchange credentials for an access token using the [OAuth 2.0 documentation]（https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/）
 
-## **Request Parameters**
+### **Request Parameters**
 
-| Parameter Name   | Type   | Location | Required | Description                                                                                                                              |
-| ---------------- | ------ | -------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| `Spreadsheet`    | File   | FormData | Yes      | The Excel file to protect. Supports `.xlsx`, `.xls`, `.xlsm`, `.xlsb`, `.csv`, `.tsv`, `.ods`.                                           |
-| `password`       | String | Query    | Yes      | **Open password** — required to open/decrypt the file. Empty string (`""`) removes open protection.                                      |
-| `modifyPassword` | String | Query    | Yes      | **Modify password** — required to edit the file. Empty string (`""`) removes modify protection.                                          |
-| `outPath`        | String | Query    | No       | Path (e.g., `/output/report.xlsx`) where the protected file is saved in cloud storage. If omitted, the file is returned in the response. |
-| `outStorageName` | String | Query    | No       | Name of the cloud storage (e.g., `First Aspose Cloud Storage`) to use for `outPath`. Defaults to the primary storage.                    |
-| `region`         | String | Query    | No       | Locale setting (e.g., `en-US`, `fr-FR`, `ja-JP`) to control formatting (date, number, currency) during processing.                       |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| password | String | Query | Spreadsheet file encryption password. |
+| modifyPassword | String | Query | Sets the protected password to modify the file. |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
+Returns the protected workbook as a binary file stream (or saves to cloud storage if `outPath` is provided).
+
+> ✅ **API Version Note**: This page documents the current `v4.0` endpoint. Check the [API Changelog](/cells/changelog/) for updates, including potential `v5.0` migration guidance.
 
 ### 🔐 Security Best Practices
 
 - Never hardcode passwords in client code. Use secure vaults (e.g., AWS Secrets Manager, Azure Key Vault).
 - Prefer `modifyPassword` alone for read-only sharing (no open password needed).
 - Use HTTPS for all requests to protect credentials in transit.
-
-## **Response**
-
-Returns the protected workbook as a binary file stream (or saves to cloud storage if `outPath` is provided).
-
-```json
-{
-  "type": "FileContentResult",
-  "fileContents": "byte[] (Base64 encoded)",
-  "contentType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-  "fileDownloadName": "protected_workbook.xlsx"
-}
-```
 
 ### **HTTP Status Codes**
 

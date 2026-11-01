@@ -10,29 +10,51 @@ description: "Copy Excel worksheet with formats using Aspose.Cells Cloud API: PO
 weight: 100
 ArticleTitle: "Copy Excel Worksheet Using Aspose.Cells Cloud REST API"
 ---
-
 The **PostCopyWorksheet** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/copy`) enables copying contents and formats from a source worksheet to a new sheet within the same or a different workbook using Aspose.Cells Cloud, requiring the target workbook name, target worksheet name, source worksheet identifier, and copy options, with optional support for specifying source workbook, folder, and storage.
 
-## REST API
+## The Post Copy Worksheet Web API
 
-```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/copy
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/copy
 ```
 
-The request parameters are listed below:
+### **Security and Authentication**
 
-| Parameter Name   | Type   | Location | Description                                                              |
-| ---------------- | ------ | -------- | ------------------------------------------------------------------------ |
-| `name`           | string | path     | The name of the workbook file.                                           |
-| `sheetName`      | string | path     | The name of the destination worksheet (the new sheet).                   |
-| `sourceSheet`    | string | query    | The name of the worksheet to be copied.                                  |
-| `options`        | object | body     | JSON object containing copy options (e.g., column width, formulas).      |
-| `sourceWorkbook` | string | query    | The name of the source workbook if it differs from the current workbook. |
-| `sourceFolder`   | string | query    | The folder path where the source workbook is stored.                     |
-| `folder`         | string | query    | The folder path where the destination workbook will be saved.            |
-| `storageName`    | string | query    | The name of the storage service to use.                                  |
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
+### **Request Parameters:**
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| sourceSheet | String | Query | Source worksheet. |
+| options | class:copyoptions | HTTPBody | Represents the copy options. |
+| sourceWorkbook | String | Query | source Workbook. |
+| sourceFolder | String | Query | Original workbook folder. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 ### Request & Response Examples
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostCopyWorksheet) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -55,12 +77,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/NewSheet/copy
 
 {{< tab tabNum="2" >}}
 
-```json
-{
-  "Code": 200,
-  "Status": "OK"
-}
-```
 
 {{< /tab >}}
 
@@ -76,6 +92,19 @@ The API returns standard HTTP status codes together with a JSON error body. Typi
 | 401       | Unauthorized – missing or invalid token.                   | `{ "Code": 401, "Message": "Authentication failed." }`        |
 | 404       | Not found – workbook, worksheet, or folder does not exist. | `{ "Code": 404, "Message": "Resource not found." }`           |
 | 500       | Internal server error – unexpected condition.              | `{ "Code": 500, "Message": "An unexpected error occurred." }` |
+
+The request parameters are listed below:
+
+| Parameter Name   | Type   | Location | Description                                                              |
+| ---------------- | ------ | -------- | ------------------------------------------------------------------------ |
+| `name`           | string | path     | The name of the workbook file.                                           |
+| `sheetName`      | string | path     | The name of the destination worksheet (the new sheet).                   |
+| `sourceSheet`    | string | query    | The name of the worksheet to be copied.                                  |
+| `options`        | object | body     | JSON object containing copy options (e.g., column width, formulas).      |
+| `sourceWorkbook` | string | query    | The name of the source workbook if it differs from the current workbook. |
+| `sourceFolder`   | string | query    | The folder path where the source workbook is stored.                     |
+| `folder`         | string | query    | The folder path where the destination workbook will be saved.            |
+| `storageName`    | string | query    | The name of the storage service to use.                                  |
 
 ## Cloud SDK Family
 

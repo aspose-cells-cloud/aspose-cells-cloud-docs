@@ -10,14 +10,9 @@ keywords: "Aspose Cells, Get Merged Cells, Remote Worksheet, API"
 description: "Retrieves all merged cell areas from a remote worksheet in a spreadsheet."
 weight: 100
 ---
-
 The **GetMergedCellsInRemotedWorksheet** API (`GET https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/mergedcells`) in Aspose.Cells Cloud retrieves all merged cell areas from a specified worksheet of a remote spreadsheet, returning a structured list of cell ranges defined by their top-left and bottom-right coordinates—enabling precise layout analysis, data validation, and integrity checks before further processing.
 
-## The GetMergedCellsInRemotedWorksheet of Aspose.Cells Cloud Web Services
-
-Get all merged cell area form a remote spreadsheet worksheet.
-
-### Web API Endpoint
+## The Get Merged Cells in Remoted Worksheet Web API
 
 ```http
 GET https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/mergedcells
@@ -29,49 +24,54 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type   | Path/Query String/HTTP Body | Description                                                                                                                             |
-| -------------- | ------ | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| name           | string | Path                        | Spreadsheet name                                                                                                                        |
-| worksheet      | string | Path                        | Worksheet name                                                                                                                          |
-| folder         | string | Query                       | The cloud storage path of the spreadsheet.                                                                                              |
-| storageName    | string | Query                       | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.                                       |
-| region         | string | Query                       | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password       | string | Query                       | The password for opening spreadsheet file.                                                                                              |
-
-### Request Body Parameter
-
-| Parameter Name | Type | Description |
-| -------------- | ---- | ----------- |
-| —              | —    | _None_      |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | spreadsheet name |
+| worksheet | String | Path | worksheet name |
+| folder | String | Query | The cloud storage path of the spreadsheet. |
+| storageName | String | Query | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
 
 ### **Response**
 
 ```json
 [
   {
-    "FirstRow": 0,
-    "FirstColumn": 0,
-    "TotalRows": 2,
-    "TotalColumns": 3
-  },
-  {
-    "FirstRow": 5,
-    "FirstColumn": 1,
-    "TotalRows": 1,
-    "TotalColumns": 4
+    "Name": "CellArea[]",
+    "DataType": {
+      "Identifier": "Array"
+    }
   }
 ]
 ```
 
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | Invalid url. |
+| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
+| 404 | Not Found | Source file not accessible. |
+| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining data. |
+
 **Response Status Codes**
 
-| Code | Meaning               | Description                                                          |
-| ---- | --------------------- | -------------------------------------------------------------------- |
-| 200  | OK                    | The request succeeded and the list of merged cell areas is returned. |
-| 400  | Bad Request           | Invalid URL or malformed request parameters.                         |
-| 401  | Unauthorized          | Authentication has failed, or no credentials were provided.          |
-| 413  | Payload Too Large     | The request payload exceeds the allowed size.                        |
-| 500  | Internal Server Error | The spreadsheet has encountered an anomaly in obtaining data.        |
+Get all merged cell area form a remote spreadsheet worksheet.
+
+### Request Body Parameter
+
+| Parameter Name | Type | Description |
+| -------------- | ---- | ----------- |
+| —              | —    | _None_      |
 
 ## How to Use the GetMergedCellsInRemotedWorksheet with SDKs
 

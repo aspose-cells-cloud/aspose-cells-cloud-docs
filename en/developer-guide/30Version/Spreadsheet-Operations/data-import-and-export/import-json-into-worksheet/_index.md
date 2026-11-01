@@ -10,12 +10,11 @@ description: "Learn how to import JSON data into an Excel worksheet using Aspose
 weight: 40
 ArticleTitle: "Import JSON into Excel with Aspose.Cells Cloud REST API"
 ---
-
 The **PostWorkbookImportJson** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/importjson`) enables Aspose.Cells Cloud users to import JSON data—either from a cloud file or an HTTP URI—directly into an Excel workbook, supporting both structured and unstructured JSON formats without requiring manual conversion.
 
-## REST API
+## The Post Workbook Import JSON Web API
 
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/importjson
 ```
 
@@ -25,16 +24,54 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Request Parameters**
 
-| Parameter Name        | Location     | Type   | Description                                                                                          |
-| --------------------- | ------------ | ------ | ---------------------------------------------------------------------------------------------------- |
-| name                  | Path         | string | The name of the workbook file.                                                                       |
-| importJsonRequest     | HTTP body    | class  | The request payload that contains JSON import details.                                               |
-| password              | Query string | string | Password for opening the workbook (if protected).                                                    |
-| folder                | Query string | string | The folder that contains the original workbook.                                                      |
-| storageName           | Query string | string | The name of the storage where the workbook resides.                                                  |
-| outPath               | Query string | string | Path for the output file after import. If omitted, the updated workbook is returned in the response. |
-| outStorageName        | Query string | string | Storage name for the output file.                                                                    |
-| checkExcelRestriction | Query string | string | Flag indicating whether to enforce Excel‑specific restrictions (true/false).                         |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| importJsonRequest | class:importjsonrequest | HTTPBody | Import Json request. |
+| password | String | Query | The password needed to open an Excel file. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+| outPath | String | Query | Path to save the result. If it's a single file, the `outPath` should encompass both the filename and extension. In the case of multiple files, the `outPath` should only include the folder. |
+| outStorageName | String | Query | The storage name where the output file is situated. |
+| checkExcelRestriction | Boolean | Query | Whether check restriction of excel file when user modify cells related objects. |
+| region | String | Query | The regional settings for workbook. |
+
+### Response
+
+```json
+[
+  {
+    "Name": "Stream",
+    "DataType": {
+      "Identifier": "File"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+A successful request returns **HTTP 200** with a JSON payload similar to:
+
+
+Possible status codes:
 
 ### **Example Request Body**
 
@@ -51,26 +88,6 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
   "JsonContent": "string"
 }
 ```
-
-### Response
-
-A successful request returns **HTTP 200** with a JSON payload similar to:
-
-```json
-{
-  "Code": 200,
-  "Status": "OK"
-}
-```
-
-Possible status codes:
-
-| Code | Meaning                                 |
-| ---- | --------------------------------------- |
-| 200  | Import succeeded                        |
-| 400  | Bad request – missing or invalid data   |
-| 401  | Unauthorized – invalid or missing token |
-| 500  | Internal server error                   |
 
 ## How to Use the PostWorkbookImportJson API with SDKs
 

@@ -10,20 +10,13 @@ keywords: "Aspose.Cells, export chart, Excel chart export, REST API, cURL, PDF, 
 weight: 100
 ArticleTitle: "Export Excel Chart – Document"
 ---
-
 The **PostExport** API (`POST https://api.aspose.cloud/v3.0/cells/export`) enables exporting Excel internal elements—such as charts, worksheets, or entire workbooks—to diverse formats including PNG, JPEG, PDF, SVG, TIFF, EMF, WMF, and more. By specifying `objectType=chart` and `format` in the request, developers can convert a chart from an uploaded Excel file directly to a target image or document format, supporting common reporting and publishing workflows without local software dependencies.
 
 You can export charts to the following formats: [PNG](https://docs.fileformat.com/Image/png/), [GIF](https://docs.fileformat.com/image/gif/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [WMF](https://docs.fileformat.com/image/Wmf/), and [PDF](https://docs.fileformat.com/pdf/).
 
-**Prerequisites:**
+## The Post Export Web API
 
-- A valid Aspose.Cells Cloud account with an active subscription.
-- An OAuth 2.0 Bearer token (JWT) obtained via the authentication flow.
-- The workbook file to be uploaded (maximum size < 50 MB).
-
-## **REST API**
-
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/export
 ```
 
@@ -33,70 +26,47 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type   | Path/Query String/HTTP Body | required | Description                                                                                                        |
-| -------------- | ------ | --------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------ |
-| file           | file   | formData                    | True     | File to upload                                                                                                     |
-| objectType     | string | query                       | True     | The type of object to export. For chart export use `chart`. Other possible values are `worksheet`, `picture`, etc. |
-| format         | string | query                       | True     | Desired output format. Supported values: `png`, `jpeg`, `gif`, `bmp`, `svg`, `tiff`, `emf`, `wmf`, `pdf`.          |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| File | File | FormData | File to upload |
+| objectType | String | Query | Exported object type:workbook/worksheet/chart/comment/picture/shape/listobject/oleobject. |
+| format | String | Query | The conversion format(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers). |
+| password | String | Query | The password needed to open an Excel file. |
+| checkExcelRestriction | Boolean | Query | Whether check restriction of excel file when user modify cells related objects. |
+| region | String | Query | The regional settings for workbook. |
+| FontsLocation | String | Query | Use Custom fonts. |
 
 ### **Response**
 
 ```json
-{
-  "Files": [
-    {
-      "Filename": "Book1_xlsx_Sheet4_Charts_0.tif",
-      "FileSize": 10040,
-      "FileContent": "-----Base64String--------"
-    },
-    {
-      "Filename": "Book1_xlsx_Sheet4_Charts_1.tif",
-      "FileSize": 12978,
-      "FileContent": "-----Base64String--------"
-    },
-    {
-      "Filename": "Book1_xlsx_Sheet4_Charts_2.tif",
-      "FileSize": 7002,
-      "FileContent": "-----Base64String--------"
-    },
-    {
-      "Filename": "Book1_xlsx_Sheet4_Charts_3.tif",
-      "FileSize": 11532,
-      "FileContent": "-----Base64String--------"
-    },
-    {
-      "Filename": "Book1_xlsx_Sheet6_Charts_0.tif",
-      "FileSize": 8270,
-      "FileContent": "-----Base64String--------"
-    },
-    {
-      "Filename": "myDocument_xlsx_Sheet3_Charts_0.tif",
-      "FileSize": 42570,
-      "FileContent": "-----Base64String--------"
-    },
-    {
-      "Filename": "myDocument_xlsx_Sheet3_Charts_1.tif",
-      "FileSize": 12102,
-      "FileContent": "-----Base64String--------"
-    },
-    {
-      "Filename": "myDocument_xlsx_Sheet3_Charts_2.tif",
-      "FileSize": 8290,
-      "FileContent": "-----Base64String--------"
+[
+  {
+    "Name": "FilesResult",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "FilesResult"
     }
-  ]
-}
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
 ```
 
 **HTTP Status Codes**
 
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## How to Use the PostExport API with SDKs
 

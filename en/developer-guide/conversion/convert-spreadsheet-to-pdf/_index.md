@@ -11,14 +11,13 @@ lastmod: 2024-06-01
 weight: 100
 ArticleTitle: "Convert Spreadsheet to PDF with Aspose.Cells Cloud API"
 ---
-
 The **ConvertSpreadsheetToPdf** API (`PUT https://api.aspose.cloud/v4.0/cells/convert/spreadsheet/pdf`) in Aspose.Cells Cloud enables direct conversion of a local spreadsheet file into a PDF document entirely on the cloud server—without requiring the file to be stored in cloud storage first—by accepting the source file as a multipart/form-data upload and returning the PDF as a binary response stream for immediate download or integration.
 
 The API validates file existence, permissions, and conversion integrity, returning appropriate HTTP status codes and error messages for invalid input or processing failures.
 
 ---
 
-## Request Syntax
+## The Convert Spreadsheet to PDF Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/convert/spreadsheet/pdf

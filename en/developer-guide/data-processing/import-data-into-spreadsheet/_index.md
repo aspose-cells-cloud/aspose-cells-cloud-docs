@@ -9,7 +9,6 @@ keywords: "Aspose Cells, data import API, CSV to Excel, JSON to Excel, XML to Ex
 description: "Import CSV, JSON, XML into Excel using Aspose.Cells Cloud REST API with large dataset support and flexible positioning."
 weight: 100
 ---
-
 The **ImportDataIntoSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/import/data`) in Aspose.Cells Cloud enables secure, direct import of structured data from CSV, JSON, or XML files into Excel workbooks without intermediate storage, supporting large datasets and precise placement via `worksheet` and `startcell` parameters to streamline ETL, reporting, and data consolidation workflows.
 
 ## Overview
@@ -33,9 +32,7 @@ Aspose.Cells Cloud’s **Import Data into Spreadsheet API** enables efficient, s
 
 ---
 
-## Import Data into Spreadsheet API
-
-### Endpoint
+## The Import Data Into Spreadsheet Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/import/data
@@ -51,32 +48,43 @@ Authorization: Bearer {access_token}
 
 ### Request Parameters
 
-| Parameter Name       | Type   | Location | Required | Default | Description                                                              |
-| -------------------- | ------ | -------- | -------- | ------- | ------------------------------------------------------------------------ | --- |
-| `datafile`           | File   | FormData | Yes      | —       | Data file (CSV, JSON, or XML) to import.                                 |
-| `spreadsheet`        | File   | FormData | Yes      | —       | Target Excel workbook.                                                   |
-| `worksheet`          | string | Query    | Yes      | —       | Name of the worksheet to receive data.                                   |
-| `startcell`          | string | Query    | Yes      | `A1`    | Top-left cell for import (e.g., `B3`).                                   |
-| `insert`             | bool   | Query    | No       | `true`  | `true`: Insert rows; `false`: Overwrite existing data.                   |
-| `convertNumericData` | bool   | Query    | No       | `true`  | `true`: Convert numeric strings to numbers.                              |
-| `splitter`           | string | Query    | No       | `,`     | Single-character CSV delimiter (e.g., `;`, `                             | `). |
-| `outPath`            | string | Query    | No       | `null`  | Folder path for saving the updated workbook.                             |
-| `outStorageName`     | string | Query    | No       | `null`  | Storage name for output file (if using cloud storage).                   |
-| `fontsLocation`      | string | Query    | No       | `null`  | Custom fonts directory path.                                             |
-| `region`             | string | Query    | No       | `en-US` | Locale setting (e.g., `fr-FR`, `de-DE`). Affects date/number formatting. |
-| `password`           | string | Query    | No       | `null`  | Password to open password-protected workbooks.                           |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| datafile | File | FormData | Upload data file. |
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| worksheet | String | Query | Specify the worksheet for importing data |
+| startcell | String | Query | Specify the starting position for importing data |
+| insert | Boolean | Query | The specified import data is for insertion and overwrite. |
+| convertNumericData | Boolean | Query | Specify whether to convert numerical data |
+| splitter | String | Query | Specify the delimiter for the CSV format. |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| fontsLocation | String | Query | Use Custom fonts. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
 
 ---
 
-## Response
+### Response
 
 ```json
-{
-  "type": "FileContentResult",
-  "fileContents": "byte[] (Base64 encoded)",
-  "contentType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-  "fileDownloadName": "imported-workbook.xlsx"
-}
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
 ```
 
 ### HTTP Status Codes

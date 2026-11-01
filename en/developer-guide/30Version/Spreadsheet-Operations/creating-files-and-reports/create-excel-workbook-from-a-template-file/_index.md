@@ -13,21 +13,7 @@ description: "Create Excel workbooks from template files using Aspose.Cells Clou
 weight: 30
 ArticleTitle: "Create Excel Workbook from Template with Aspose.Cells Cloud API"
 ---
-
-
 The **PutWorkbookCreate** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}`) enables developers to generate a new Excel workbook using Aspose.Cells Cloud by specifying a template file and optionally a data file containing Smart Marker values; the operation supports creating workbooks from scratch or populating templates with dynamic data, all via a single REST endpoint.
-
----
-
-## Prerequisites
-
-| Requirement                    | Description                                                                                                                                                      |
-| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Aspose.Cells Cloud account** | Sign‑up at https://dashboard.aspose.cloud/ and obtain a **Client Id** / **Client Secret**.                                                                       |
-| **JWT access token**           | Generate a JWT token as described in the [authentication guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/). |
-| **Template file**              | Upload the template Excel file (e.g., `Calendar.xlsx`) to your chosen storage using the **Upload File** API or the UI.                                           |
-| **Data file (optional)**       | A JSON or XML file that contains Smart‑Marker values (e.g., `Sample_Data.xml`).                                                                                  |
-| **Supported storage**          | Default storage (`Default`) or a custom storage configured in your Aspose account.                                                                               |
 
 ---
 
@@ -43,13 +29,63 @@ The token must be obtained beforehand and is valid for 1 hour by default.
 
 ---
 
-## Request
-
-### HTTP Request
+## The Put Workbook Create Web API
 
 ```http
 PUT https://api.aspose.cloud/v3.0/cells/{name}
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
+### Path Parameter
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The new document name. |
+| templateFile | String | Query | The template file, if the data not provided default workbook is created. |
+| dataFile | String | Query | Smart marker data file, if the data not provided the request content is checked for the data. |
+| isWriteOver | Boolean | Query | Specifies whether to write over targer file. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+| checkExcelRestriction | Boolean | Query | - |
+
+### Response
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+A successful call returns a **`200 OK`** (or **`201 Created`** when a new file is generated) with a JSON payload that describes the created workbook.
+
+### HTTP Request
+
 
 | Component        | Value                                                                                                                       |
 | ---------------- | --------------------------------------------------------------------------------------------------------------------------- |
@@ -57,12 +93,6 @@ PUT https://api.aspose.cloud/v3.0/cells/{name}
 | **Path**         | `/cells/{name}` – `name` is the desired name of the newly created workbook (including extension, e.g., `newworkbook.xlsx`). |
 | **Content‑Type** | `multipart/form-data` (when a data file is sent in the body).                                                               |
 | **Accept**       | `application/json`                                                                                                          |
-
-### Path Parameter
-
-| Name   | Type   | Required | Description                                                        |
-| ------ | ------ | -------- | ------------------------------------------------------------------ |
-| `name` | string | **Yes**  | The name of the workbook to be created (e.g., `newworkbook.xlsx`). |
 
 ### Query Parameters
 
@@ -97,23 +127,6 @@ _If the `dataFile` query parameter is used instead of a multipart body, omit the
 
 ---
 
-## Response
-
-A successful call returns a **`200 OK`** (or **`201 Created`** when a new file is generated) with a JSON payload that describes the created workbook.
-
-```json
-{
-  "Code": 200,
-  "Status": "OK",
-  "File": {
-    "Name": "newworkbook.xlsx",
-    "Size": 18234,
-    "Path": "output/newworkbook.xlsx",
-    "Url": "https://api.aspose.cloud/v3.0/storage/file/output/newworkbook.xlsx"
-  }
-}
-```
-
 ### Response Data Types
 
 | Property    | Type    | Description                                        |
@@ -128,15 +141,6 @@ A successful call returns a **`200 OK`** (or **`201 Created`** when a new file i
 
 ---
 
-**HTTP Status Codes**
-
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
 
 ---
 

@@ -10,19 +10,12 @@ description: "Learn how to delete all pictures from an Excel worksheet using Asp
 weight: 60
 ArticleTitle: "How to Delete All Pictures in an Excel Worksheet with Aspose.Cells Cloud"
 ---
-
 The **DeleteWorksheetPictures** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures`) is a REST endpoint provided by Aspose.Cells Cloud that removes all pictures from a specified worksheet in an Excel file, supporting robust and programmatic cleanup of image content without manual intervention; it requires the `name` and `sheetName` path parameters and optionally accepts `folder` and `storageName` query parameters to locate the target file in cloud storage.
-
-**Prerequisites**
-
-- An active Aspose.Cells Cloud account with a valid OAuth 2.0 access token.
-- API version 3.0 (or later) is required; earlier versions are deprecated.
-- The target Excel file must be stored in a supported storage location (default or custom).
 
 **Version Compatibility**  
 The endpoint follows the Cells Cloud 3.0 API specification. Ensure that your client libraries and request URLs target `api.aspose.cloud/v3.0`.
 
-## DeleteWorksheetPictures API
+## The Delete Worksheet Pictures Web API
 
 ```http
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
@@ -34,12 +27,33 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Request parameters**
 
-| Parameter Name | Type   | Location | Description                                |
-| -------------- | ------ | -------- | ------------------------------------------ |
-| name           | string | Path     | Name of the Excel file.                    |
-| sheetName      | string | Path     | Name of the worksheet containing pictures. |
-| folder         | string | Query    | Folder where the file is stored.           |
-| storageName    | string | Query    | Name of the storage service.               |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
 
 ### Error Responses
 

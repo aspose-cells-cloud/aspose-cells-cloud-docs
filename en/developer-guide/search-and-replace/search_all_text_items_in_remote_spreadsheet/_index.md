@@ -10,14 +10,9 @@ keywords: "search, text items, Aspose.Cells"
 description: "Search all text items in a remote spreadsheet using Aspose.Cells Cloud."
 weight: 100
 ---
-
 The **SearchAllTextItemsInRemoteSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/{name}/search/content/all-textitems`) in Aspose.Cells Cloud v4.0 enables searching for all text items across every sheet and cell of a remote workbook stored in the cloud, returning match locations such as sheet names and cell coordinates without requiring local storage or file download.
 
-## The SearchAllTextItemsInRemoteSpreadsheet of Aspose.Cells Cloud Web Services
-
-This method searches for all text items within a remote spreadsheet file. It supports searching through all sheets and cells of the workbook, identifying occurrences of the search term. The operation is performed in the cloud, requiring no local storage. Ensure that you have the necessary permissions to read the source file. If the source file cannot be accessed or if an error occurs during the search process (such as an unsupported file format), an appropriate exception will be thrown. The method may return the locations of the matches (e.g., sheet name, cell coordinates) depending on implementation details.
-
-### Web API Endpoint
+## The Search All Text Items in Remote Spreadsheet Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/{name}/search/content/all-textitems
@@ -29,45 +24,54 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type   | Path/Query String/HTTP Body | Description                                                                                                                             |
-| -------------- | ------ | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| name           | string | Path                        | The name of the workbook file.                                                                                                          |
-| folder         | string | Query                       | The folder path where the workbook is stored.                                                                                           |
-| storageName    | string | Query                       | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.                                       |
-| region         | string | Query                       | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password       | string | Query                       | The password for opening spreadsheet file.                                                                                              |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The name of the workbook file. |
+| folder | String | Query | The folder path where the workbook is stored. |
+| storageName | String | Query | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "SearchResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "SearchResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | Invalid url. |
+| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
+| 404 | Not Found | Source file not accessible. |
+| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining data. |
+
+**Response Status Codes**
+
+This method searches for all text items within a remote spreadsheet file. It supports searching through all sheets and cells of the workbook, identifying occurrences of the search term. The operation is performed in the cloud, requiring no local storage. Ensure that you have the necessary permissions to read the source file. If the source file cannot be accessed or if an error occurs during the search process (such as an unsupported file format), an appropriate exception will be thrown. The method may return the locations of the matches (e.g., sheet name, cell coordinates) depending on implementation details.
 
 ### Request Body Parameter
 
 | Parameter Name | Type | Description |
 | -------------- | ---- | ----------- |
 | [TBD]          |      | [TBD]       |
-
-### **Response**
-
-```json
-{
-  "TextItems": [
-    {
-      "SheetName": "string",
-      "CellAddress": "string",
-      "Text": "string"
-    }
-  ],
-  "TotalCount": 0
-}
-```
-
-**Response Status Codes**
-
-| Code | Meaning               | Description                                                                              |
-| ---- | --------------------- | ---------------------------------------------------------------------------------------- |
-| 200  | OK                    | The request succeeded and the response contains all text items found in the spreadsheet. |
-| 400  | Bad Request           | Invalid URL or request parameters.                                                       |
-| 401  | Unauthorized          | Authentication has failed, or no credentials were provided.                              |
-| 404  | Not Found             | Source file not accessible.                                                              |
-| 413  | Payload Too Large     | The request payload exceeds the allowed size.                                            |
-| 500  | Internal Server Error | The spreadsheet has encountered an anomaly in obtaining data.                            |
 
 ## How to Use the SearchAllTextItemsInRemoteSpreadsheet with SDKs
 

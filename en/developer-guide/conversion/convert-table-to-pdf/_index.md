@@ -11,10 +11,9 @@ keywords: "Aspose.Cells Cloud, Excel to PDF, table export API, REST API convert 
 description: "Convert Excel table to PDF via Aspose.Cells Cloud API with cURL or SDKs—secure, format-preserving, local file support."
 weight: 100
 ---
-
 The **ConvertTableToPdf** API (`PUT https://api.aspose.cloud/v4.0/cells/convert/table/pdf`) in Aspose.Cells Cloud enables direct conversion of a specific table from a local Excel file—uploaded as form data—into a PDF, using the worksheet name and table name as required identifiers; this cloud-native operation eliminates the need to store files in cloud storage, reduces upload overhead, and performs conversion entirely server-side with minimal client-side setup.
 
-## **Convert Table to PDF via REST API**
+## The Convert Table to PDF Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/convert/table/pdf

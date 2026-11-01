@@ -12,7 +12,6 @@ weight: 100
 linktitle: "Delete Comment"
 ArticleTitle: "Delete Worksheet Comment via Aspose.Cells Cloud REST API"
 ---
-
 The **DeleteWorksheetComment** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{cellName}`) removes a cell comment from a specified worksheet in an Excel file stored in the cloud, preserving the cell's content. Aspose.Cells Cloud provides robust support for this operation, enabling developers to programmatically clean up annotations using its REST API or SDKs for .NET, Java, Python, Node.js, and Go.
 
 > **Page last updated:** May 15, 2024
@@ -33,27 +32,56 @@ Authorization: Bearer <jwt token>
 
 For step-by-step instructions on obtaining and using a JWT token, see the [Authentication Guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
-## Prerequisites
+## The Delete Worksheet Comment Web API
 
-- A valid JWT access token (see [Authentication](#authentication)).
-- The target workbook (`{name}`) must exist in the specified storage location.
-- Optional: One of the Aspose.Cells Cloud SDKs installed for your preferred language.
-
-## HTTP Request
-
-### Endpoint
-
-```
+```http
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{cellName}
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### Path Parameters
 
-| Parameter   | Type   | Required | Description                                                            |
-| ----------- | ------ | -------- | ---------------------------------------------------------------------- |
-| `name`      | string | ✅       | The name of the Excel workbook (e.g., `SalesData.xlsx`).               |
-| `sheetName` | string | ✅       | The name of the worksheet containing the comment (e.g., `Q3_Results`). |
-| `cellName`  | string | ✅       | The address of the cell with the comment to delete (e.g., `B5`).       |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| cellName | String | Path | The cell name. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ### Query Parameters
 

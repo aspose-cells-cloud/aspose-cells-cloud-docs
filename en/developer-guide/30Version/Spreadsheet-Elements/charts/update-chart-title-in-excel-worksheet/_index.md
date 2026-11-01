@@ -9,22 +9,13 @@ description: Learn how to update a chart title in an Excel worksheet using Aspos
 ArticleTitle: "Update Chart Title in Excel Worksheet – Aspose.Cells Cloud Documentation"
 linktitle: "Update Chart Title"
 ---
-
 The **PostWorksheetChartTitle** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title`) enables updating the title of a specific chart in an Excel worksheet using Aspose.Cells Cloud, requiring the file name, worksheet name, chart index, and a title object in the request body; this REST endpoint supports programmatic chart title management, allowing developers to modify chart titles dynamically without manual Excel interaction.
 
-**Prerequisites:** You must have a valid Aspose Cloud account and a JWT token for authorization. Typical steps include:
-
-- Sign up for an Aspose Cloud account.  
-- Generate a JWT token via the authentication endpoint.  
-- Ensure the target workbook is stored in a supported cloud storage (default or custom).
-
-## PostWorksheetChartTitle API
+## The Post Worksheet Chart Title Web API
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title
 ```
-
-All API calls must be made over **HTTPS** to avoid mixed‑content warnings.
 
 ### **Security and Authentication**
 
@@ -32,14 +23,37 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request parameters
 
-| Parameter Name | Type    | Location | Description                    |
-| -------------- | ------- | -------- | ------------------------------ |
-| name           | string  | path     | Workbook name.                 |
-| sheetName      | string  | path     | Worksheet name.                |
-| chartIndex     | integer | path     | Zero‑based index of the chart. |
-| title          | string  | body     | New chart title.               |
-| folder         | string  | query    | The workbook folder.           |
-| storageName    | string  | query    | Storage name.                  |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| chartIndex | Integer | Path | The chart index. |
+| title | class:title | HTTPBody | TitleChart title |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+All API calls must be made over **HTTPS** to avoid mixed‑content warnings.
 
 ### Response status codes
 

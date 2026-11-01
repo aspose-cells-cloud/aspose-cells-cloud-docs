@@ -18,7 +18,6 @@ categories:
 weight: 100
 ArticleTitle: "Delete Blank Columns from Excel with Aspose.Cells Cloud API v4"
 ---
-
 The **RemoveSpreadsheetBlankColumns** API (`PUT https://api.aspose.cloud/v4.0/cells/remove/blank-columns`) in Aspose.Cells Cloud v4.0 deletes all blank columns—those where every cell is empty of data, formulas, comments, charts, or objects—from an uploaded Excel workbook, improving file size, rendering speed, and downstream processing accuracy; the operation scans all worksheets server-side and returns a cleaned workbook via a `ResponseFile` response.
 
 > **Note**: Aspose.Cells Cloud v4 is stable and production-ready. For early access to v5 features, contact [support@aspose.cloud](mailto:support@aspose.cloud).
@@ -33,15 +32,13 @@ Blank columns commonly appear after:
 
 Removing them reduces file bloat, eliminates parsing ambiguity, and ensures cleaner data for analytics tools like Power BI, Snowflake, or BigQuery.
 
-## API Endpoint
+## The Remove Spreadsheet Blank Columns Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/remove/blank-columns
 ```
 
-> **Tip**: The endpoint path `/cells/remove/blank-columns` supersedes earlier documentation referencing `/delete/blank-columns`. All examples below use the current v4.0 endpoint.
-
-## Authentication
+### Authentication
 
 All requests require a [JWT token](/getting-started/authentication/) (replace `{access_token}` with your valid token):
 
@@ -49,15 +46,48 @@ All requests require a [JWT token](/getting-started/authentication/) (replace `{
 -H "Authorization: Bearer {access_token}"
 ```
 
-## Request Parameters
+### Request Parameters
 
-| Parameter Name     | Type   | Location  | Required | Description                                                                          |
-| ------------------ | ------ | --------- | -------- | ------------------------------------------------------------------------------------ |
-| **Spreadsheet**    | File   | Form-Data | Yes      | Excel workbook to clean.                                                             |
-| **outPath**        | String | Query     | No       | Destination folder in cloud storage. If omitted, result returns in response body.    |
-| **outStorageName** | String | Query     | No       | Cloud storage name for output (e.g., `default`, `MyStorage`).                        |
-| **region**         | String | Query     | No       | Locale identifier (e.g., `en-US`, `de-DE`, `fr-FR`). Affects date/number formatting. |
-| **password**       | String | Query     | No       | Password for protected workbooks.                                                    |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
+
+### Response
+
+```json
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
+### Error Codes
+
+| Code    | Description                                                             |
+| ------- | ----------------------------------------------------------------------- |
+| **400** | Invalid URL, malformed parameters, or missing `Spreadsheet` field.      |
+| **401** | Missing, expired, or invalid JWT token.                                 |
+| **404** | Source file not found in cloud storage (if `outPath` specifies a path). |
+| **500** | Server-side error during processing (e.g., file corruption).            |
+
+> **Tip**: The endpoint path `/cells/remove/blank-columns` supersedes earlier documentation referencing `/delete/blank-columns`. All examples below use the current v4.0 endpoint.
 
 ### Example Request (cURL)
 
@@ -71,20 +101,9 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/remove/blank-columns?outPath=/c
 
 > **Note**: Use `@filename` to upload local files via `multipart/form-data`.
 
-## Response
-
 ### Success Response (200 OK)
 
 Returns the cleaned workbook as a binary stream (or saves to cloud storage if `outPath` is provided).
-
-### Error Codes
-
-| Code    | Description                                                             |
-| ------- | ----------------------------------------------------------------------- |
-| **400** | Invalid URL, malformed parameters, or missing `Spreadsheet` field.      |
-| **401** | Missing, expired, or invalid JWT token.                                 |
-| **404** | Source file not found in cloud storage (if `outPath` specifies a path). |
-| **500** | Server-side error during processing (e.g., file corruption).            |
 
 ## Use Cases
 

@@ -9,12 +9,9 @@ weight: 100
 ArticleTitle: "Get Worksheet Comment – Aspose.Cells Cloud API Documentation"
 linktitle: "Get Worksheet Comment"
 ---
-
 The **GetWorksheetComment** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{cellName}`) retrieves the description of a comment attached to a specific cell in a worksheet using Aspose.Cells Cloud, supporting path parameters for the file name, worksheet name, and cell name to precisely target the desired comment.
 
-**Prerequisites:** To call this operation you must include a valid JWT access token in the `Authorization` header (`Bearer <jwt token>`). Tokens can be obtained via the Aspose.Cells Cloud authentication flow described in the [Authentication guide]（https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/）.
-
-## GetWorksheetComment API
+## The Get Worksheet Comment Web API
 
 ```http
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{cellName}
@@ -26,13 +23,13 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type   | Location (URL Path / Query String) | Description                                                       |
-| -------------- | ------ | ---------------------------------- | ----------------------------------------------------------------- |
-| name           | string | URL Path                           | The name of the Excel file.                                       |
-| sheetName      | string | URL Path                           | The name of the worksheet that contains the comment.              |
-| cellName       | string | URL Path                           | The cell address (e.g., **A1**) whose comment is being retrieved. |
-| folder         | string | Query String                       | The folder path where the document is stored.                     |
-| storageName    | string | Query String                       | The name of the storage service.                                  |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| cellName | String | Path | The cell name |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 The <a href="https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetComment" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -94,7 +91,28 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/comment
 | `TextOrientationType`     | string  | Orientation of the text (e.g., **TopToBottom**).     |
 | `TextVerticalAlignment`   | string  | Vertical alignment of the text (e.g., **Bottom**).   |
 
-## Common Errors
+### **Response**
+
+```json
+[
+  {
+    "Name": "CommentResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CommentResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+### Common Errors
 
 - **401 Unauthorized** – Verify that the JWT token is valid, not expired, and correctly placed in the `Authorization` header.
 - **404 Not Found** – Ensure the file name, worksheet name, and cell address are correct and that the file exists in the specified folder/storage.

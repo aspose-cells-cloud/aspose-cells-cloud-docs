@@ -8,33 +8,13 @@ keywords: "copy folder, Aspose.Cells Cloud, REST API, cloud storage, spreadsheet
 weight: 100
 ArticleTitle: "Copy Folder API in Aspose.Cells Cloud: Backup & Reorganize Excel Folders"
 ---
-
 The **CopyFolder** API (`PUT https://api.aspose.cloud/v4.0/cells/storage/folder/copy/{srcPath}`) duplicates an existing folder in Aspose.Cells Cloud storage from a source path (`srcPath`) to a destination path (`destPath`), supporting optional storage name parameters for cross-storage operations; this enables efficient backup creation, folder reorganization, and preparation of hierarchical structures for batch processing without manual file transfers.
 
-## Prerequisites
+## The Copy Folder Web API
 
-To use the CopyFolder API, ensure you have:
-
-- A valid Aspose.Cells Cloud account.
-- An API key and App SID (obtained from the [Aspose Cloud Dashboard](https://dashboard.aspose.cloud/)).
-- Familiarity with [JWT-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
-
-> **Note:** Folder copy operations are subject to your storage quota and API rate limits (typically 20 requests/second per account).
-
-## Excel API: Copy Folder
-
-```
+```http
 PUT https://api.aspose.cloud/v4.0/cells/storage/folder/copy/{srcPath}
 ```
-
-### Request Parameters
-
-| Parameter Name    | Required | Type   | Location | Description                                                                              |
-| ----------------- | -------- | ------ | -------- | ---------------------------------------------------------------------------------------- |
-| `srcPath`         | Yes      | String | Path     | The path of the source folder to copy (e.g., `"source/backup"`).                         |
-| `destPath`        | Yes      | String | Query    | The path where the new folder will be created (e.g., `"dest/backup"`).                   |
-| `srcStorageName`  | No       | String | Query    | Name of the storage containing the source folder (defaults to first configured storage). |
-| `destStorageName` | No       | String | Query    | Name of the destination storage (defaults to `srcStorageName` if omitted).               |
 
 ### Authentication
 
@@ -46,20 +26,43 @@ Authorization: Bearer <access_token>
 
 For details on obtaining and refreshing tokens, see [Authentication Overview](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
+### Request Parameters
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| srcPath | String | Path | - |
+| destPath | String | Query | - |
+| srcStorageName | String | Query | - |
+| destStorageName | String | Query | - |
+
+### Response
+
+```json
+[
+  {
+    "Name": "Void",
+    "DataType": {
+      "Identifier": "Void"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+A successful request returns **HTTP 200** with an empty JSON body:
+
 ### cURL Example
 
 ```bash
 curl -v -X PUT "https://api.aspose.cloud/v4.0/cells/storage/folder/copy/MyFolder?destPath=MyFolderCopy&srcStorageName=FirstStorage&destStorageName=SecondStorage" \
      -H "Authorization: Bearer <access_token>" \
      -H "Content-Type: application/json"
-```
-
-### Response
-
-A successful request returns **HTTP 200** with an empty JSON body:
-
-```json
-{}
 ```
 
 ### HTTP Status Codes

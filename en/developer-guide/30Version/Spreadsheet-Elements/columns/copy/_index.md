@@ -16,7 +16,6 @@ articleTitle: "Copy Columns in an Excel Worksheet using Aspose.Cells Cloud API"
 type: docs
 keywords: "Aspose.Cells Cloud, copy columns, Excel column duplication, REST API v3.0, PostCopyWorksheetColumns, cURL example, SDK integration, conditional formatting copy, worksheet column operations, authentication JWT"
 ---
-
 The **PostCopyWorksheetColumns** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/copy`) in Aspose.Cells Cloud REST API v3.0 enables copying a specified number of columns from a source index to a destination index within the same or a different worksheet, preserving values, styles, formulas, and conditional formatting; this operation supports tasks like template duplication and structural reorganization in large Excel workbooks.
 
 ## Overview
@@ -48,18 +47,59 @@ Authorization: Bearer <access_token>
 
 ---
 
-## REST API Endpoint
+## The Post Copy Worksheet Columns Web API
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/copy
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### Path Parameters
 
-| Parameter   | Type   | Required | Description                                       |
-| ----------- | ------ | -------- | ------------------------------------------------- |
-| `name`      | string | Yes      | The name of the workbook (e.g., `input.xlsx`).    |
-| `sheetName` | string | Yes      | The name of the worksheet containing the columns. |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| sourceColumnIndex | Integer | Query | Source column index |
+| destinationColumnIndex | Integer | Query | Destination column index |
+| columnNumber | Integer | Query | The copied column number |
+| worksheet | String | Query | The destination worksheet name. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ### Query Parameters
 

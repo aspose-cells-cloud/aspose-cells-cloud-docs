@@ -10,29 +10,56 @@ description: "Export a specific Excel worksheet range to PNG, PDF, CSV, and 20+ 
 weight: 230
 ArticleTitle: "Export Worksheet Area to PNG, PDF, CSV with Aspose.Cells Cloud API – Complete Guide"
 ---
-
 The **GetWorksheetWithFormat** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}`) enables developers to retrieve a specified worksheet from a workbook in various formats—including XLS, XLSX, PDF, PNG, JPEG, and others—by leveraging Aspose.Cells Cloud. The operation supports exporting a specific cell range (via the `area` query parameter) and allows customization such as image resolution, print settings, and page layout options, making it ideal for programmatic document conversion and reporting workflows.
 
 This guide shows how to export a **specific cell range** from an Excel worksheet to PNG, PDF, CSV, and more than 20 additional formats using the Aspose.Cells Cloud API. For related operations such as exporting an entire worksheet or converting a workbook, see the **[Export Entire Worksheet](https://docs.aspose.cloud/cells/worksheets/worksheet-to-different-formats/)** and **[Convert Workbook to PDF](https://docs.aspose.cloud/cells/workbook/convert-to-pdf/)** pages.
 
-## REST API
+## The Get Worksheet with Format Web API
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetWithFormat) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
+```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
 
 ### Request parameters
 
-| Parameter              | Type   | Required | Description                                  |
-| ---------------------- | ------ | -------- | -------------------------------------------- |
-| `name`                 | string | Yes      | Workbook file name.                          |
-| `sheetName`            | string | Yes      | Target worksheet name.                       |
-| `format`               | string | Yes      | Desired output format (png, pdf, csv, …).    |
-| `area`                 | string | No       | Cell range to export (e.g., `B3:K8`).        |
-| `verticalResolution`   | int    | No       | Vertical DPI for raster formats.             |
-| `horizontalResolution` | int    | No       | Horizontal DPI for raster formats.           |
-| `folder`               | string | No       | Cloud storage folder that contains the file. |
-| `storage`              | string | No       | Name of the storage service.                 |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| format | String | Query | Export format(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers). |
+| verticalResolution | Integer | Query | Image vertical resolution. |
+| horizontalResolution | Integer | Query | Image horizontal resolution. |
+| area | String | Query | Represents the range to be printed. |
+| pageIndex | Integer | Query | Represents the page to be printed |
+| onePagePerSheet | Boolean | Query | - |
+| printHeadings | Boolean | Query | - |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 ### Successful response
+
+```json
+[
+  {
+    "Name": "Stream",
+    "DataType": {
+      "Identifier": "File"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
 
 - **200 OK** – Returns the requested file in binary format (PNG, PDF, CSV, etc.).
 
@@ -79,6 +106,8 @@ Converted image (binary PNG)
 {{< /tab >}}
 
 {{< /tabs >}}
+
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetWithFormat) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
 ## Cloud SDK Family
 

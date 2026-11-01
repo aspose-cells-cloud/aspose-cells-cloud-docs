@@ -9,7 +9,6 @@ description: "Use Aspose.Cells Cloud REST API to repair corrupted Excel files (X
 weight: 39
 ArticleTitle: "Aspose.Cells Cloud Repair API: Fix Corrupt Excel XLSX XLSM Files Online"
 ---
-
 The **PostRepair** API (`POST https://api.aspose.cloud/v3.0/cells/repair`) in Aspose.Cells Cloud enables repair of corrupted or abnormal Excel files and supports output in multiple formats such as XLSX, PDF, CSV, HTML, and image formats like PNG and JPG, by accepting the damaged file via form-data upload and optionally specifying the desired output format through the `outFormat` query parameter.
 
 - Repair XLS, XLSX, XLSM, XLSB, ODS and other spreadsheet formats.
@@ -17,11 +16,9 @@ The **PostRepair** API (`POST https://api.aspose.cloud/v3.0/cells/repair`) in As
 
 Aspose.Cells Cloud Excel Repair recovers data from corrupt Excel files online without any installation. Corrupted Excel files are problematic because they cannot be opened. You can try the Aspose.Cells Cloud Excel Repair app to recover data from such files.
 
-## REST API
+## The Post Repair Web API
 
-The **Repair Excel Files** endpoint repairs corrupted spreadsheet files and returns the repaired content.
-
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/repair
 ```
 
@@ -31,32 +28,44 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type   | Location             | Description                                                                                                |
-| -------------- | ------ | -------------------- | ---------------------------------------------------------------------------------------------------------- |
-| file           | file   | formData (multipart) | File to upload                                                                                             |
-| format         | string | query                | Desired output format. If omitted (null), the output format defaults to the same format as the input file. |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| File | File | FormData | File to upload |
+| outFormat | String | Query | The output data file format.(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers) |
 
 ### **Response**
 
 ```json
-{
-    "Status" : "OK",
-    "Code" : 200,
-    "Filename" : "[merged filename]",
-    "Filesize" : [file size],
-    "FileContent" : "[Base64String]"
-}
+[
+  {
+    "Name": "FilesResult",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "FilesResult"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
 ```
 
 **HTTP Status Codes**
 
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+The **Repair Excel Files** endpoint repairs corrupted spreadsheet files and returns the repaired content.
 
 ## How to Use the PostRepair API with SDKs
 

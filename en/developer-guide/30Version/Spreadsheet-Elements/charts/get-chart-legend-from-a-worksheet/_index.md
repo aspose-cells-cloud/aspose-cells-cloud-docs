@@ -9,12 +9,11 @@ description: "Get chart legend properties (position, font, size, formatting) fro
 linktitle: "Get Chart Legend"
 ArticleTitle: "Get Chart Legend from Worksheet using Aspose.Cells Cloud REST API"
 ---
-
 The **GetWorksheetChartLegend** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend`) retrieves the legend description of a specific chart in a worksheet of an Excel workbook via Aspose.Cells Cloud v3.0, supporting programmatic access to legend properties like position, font, size, and formatting without requiring local Excel installation.
 
-## **REST API**
+## The Get Worksheet Chart Legend Web API
 
-```bash
+```http
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend
 ```
 
@@ -24,107 +23,45 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 
 ### Request parameters
 
-| Parameter Name | Type    | Location | Description                               |
-| -------------- | ------- | -------- | ----------------------------------------- |
-| name           | string  | path     | Name of the workbook file.                |
-| sheetName      | string  | path     | Name of the worksheet.                    |
-| chartIndex     | integer | path     | Zero‑based index of the chart.            |
-| folder         | string  | query    | Folder path where the workbook is stored. |
-| storageName    | string  | query    | Name of the storage.                      |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| chartIndex | Integer | Path | The chart index. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 ### **Response**
 
 ```json
-{
-  "Legend": {
-    "Position": "Right",
-    "LegendEntries": {
-      "link": {
-        "Href": "/legendEntries",
-        "Rel": "self",
-        "Title": null,
-        "Type": null
-      }
-    },
-    "Area": {
-      "BackgroundColor": { "A": 0, "R": 0, "G": 0, "B": 0 },
-      "FillFormat": {
-        "Type": "Automatic",
-        "SolidFill": null,
-        "PatternFill": null,
-        "TextureFill": null,
-        "GradientFill": null,
-        "ImageData": null
-      },
-      "ForegroundColor": { "A": 0, "R": 0, "G": 0, "B": 0 },
-      "Formatting": "Automatic",
-      "InvertIfNegative": false,
-      "Transparency": 0.0
-    },
-    "AutoScaleFont": true,
-    "BackgroundMode": "Automatic",
-    "Border": {
-      "BeginArrowLength": "Medium",
-      "BeginArrowWidth": "Medium",
-      "BeginType": "None",
-      "CapType": "Flat",
-      "Color": { "A": 0, "R": 0, "G": 0, "B": 0 },
-      "CompoundType": "Single",
-      "DashType": "Solid",
-      "EndArrowLength": "Medium",
-      "EndArrowWidth": "Medium",
-      "EndType": "None",
-      "GradientFill": null,
-      "IsAuto": true,
-      "IsAutomaticColor": true,
-      "IsVisible": true,
-      "JoinType": "Round",
-      "Style": "Solid",
-      "Transparency": 0.0,
-      "Weight": "HairLine",
-      "WeightPt": 0.0
-    },
-    "Font": {
-      "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
-      "DoubleSize": 10.0,
-      "IsBold": false,
-      "IsItalic": false,
-      "IsStrikeout": false,
-      "IsSubscript": false,
-      "IsSuperscript": false,
-      "Name": "Arial",
-      "Size": 10,
-      "Underline": "None"
-    },
-    "IsAutomaticSize": true,
-    "IsInnerMode": null,
-    "Shadow": false,
-    "ShapeProperties": null,
-    "Width": 823,
-    "Height": 1043,
-    "X": 3125,
-    "Y": 1466,
-    "link": {
-      "Href": "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/legend",
-      "Rel": "self",
-      "Title": null,
-      "Type": null
+[
+  {
+    "Name": "LegendResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "LegendResponse"
     }
-  },
-  "Code": 0,
-  "Status": "0"
-}
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
 ```
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
 ## How to Use the GetWorksheetChartLegend API with SDKs
 
 ### GetWorksheetChartLegend API Specification

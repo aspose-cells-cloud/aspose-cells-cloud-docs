@@ -8,17 +8,67 @@ description: "Use Aspose.Cells Cloud API to search Excel files for text, numbers
 weight: 100
 ArticleTitle: "Search Excel Content with Aspose.Cells Cloud API – Text, Range & Worksheet Search"
 ---
-
-
 The **SearchSpreadsheetContent** API (`PUT https://api.aspose.cloud/v4.0/cells/search/content`) in Aspose.Cells Cloud enables developers to programmatically search for specified text within a local Excel spreadsheet uploaded via the request body, returning matched cell locations—including worksheet name, cell address, and matched text—without requiring prior storage in the cloud; the operation supports refining results with options like case-insensitive matching, worksheet or cell-area scoping, and password-protected file handling.
 
 ---
 
-## Web API Endpoint
+## The Search Spreadsheet Content Web API
 
-```
+```http
 PUT https://api.aspose.cloud/v4.0/cells/search/content
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
+### Request Parameters
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| searchText | String | Query | The searched text. |
+| ignoringCase | Boolean | Query | Ignore the text of the search. |
+| worksheet | String | Query | Specify the worksheet for the lookup. |
+| cellArea | String | Query | Specify the cell area for the lookup |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
+
+---
+
+### Response
+
+```json
+[
+  {
+    "Name": "SearchResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "SearchResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+The API returns a `SearchResponse` object containing an array of matched items.
+
+### Error Handling
+
+| Code                        | Description                                                    |
+| --------------------------- | -------------------------------------------------------------- |
+| `400 Bad Request`           | Invalid URL, malformed parameters, or unsupported file format. |
+| `401 Unauthorized`          | Missing, expired, or invalid JWT token.                        |
+| `404 Not Found`             | The uploaded file cannot be accessed or does not exist.        |
+| `500 Internal Server Error` | Unexpected error during processing (e.g., corrupted workbook). |
+
+---
 
 ### cURL Example
 
@@ -32,24 +82,6 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/search/content?searchText=Invoi
 > **Note:** Authentication requires a valid JWT token. See [Authentication Overview](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) for details.
 
 ---
-
-## Request Parameters
-
-| Parameter      | Type    | Location | Required | Description                                                                              |
-| -------------- | ------- | -------- | -------- | ---------------------------------------------------------------------------------------- |
-| `spreadsheet`  | File    | FormData | Yes      | The Excel file to search.                                                                |
-| `searchText`   | String  | Query    | Yes      | The text (or numeric value) to locate.                                                   |
-| `ignoringCase` | Boolean | Query    | No       | Whether to ignore case in the search. Default: `true`.                                   |
-| `worksheet`    | String  | Query    | No       | Name of the worksheet to limit the search scope. If omitted, all worksheets are scanned. |
-| `cellArea`     | String  | Query    | No       | A1-style range (e.g., `A1:C10`) to restrict the search area.                             |
-| `region`       | String  | Query    | No       | Locale setting (e.g., `en-US`, `fr-FR`) affecting number/date parsing.                   |
-| `password`     | String  | Query    | No       | Password for protected workbooks.                                                        |
-
----
-
-## Response
-
-The API returns a `SearchResponse` object containing an array of matched items.
 
 ### Example Response
 
@@ -77,17 +109,6 @@ Each `textItem` includes:
 - `cellName`: A1-style cell reference (e.g., `"A1"`).
 - `text`: The matched string.
 - `occurrences`: Number of times the text appears in that cell.
-
----
-
-## Error Handling
-
-| Code                        | Description                                                    |
-| --------------------------- | -------------------------------------------------------------- |
-| `400 Bad Request`           | Invalid URL, malformed parameters, or unsupported file format. |
-| `401 Unauthorized`          | Missing, expired, or invalid JWT token.                        |
-| `404 Not Found`             | The uploaded file cannot be accessed or does not exist.        |
-| `500 Internal Server Error` | Unexpected error during processing (e.g., corrupted workbook). |
 
 ---
 

@@ -8,7 +8,6 @@ description: "Use Aspose.Cells Cloud REST API to clear cell formatting in an Exc
 ArticleTitle: "Clear Cell Formatting in an Excel Worksheet - Aspose.Cells Cloud API"
 linktitle: "Clear Cell Formatting"
 ---
-
 The **PostClearFormats** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clearformats`) in Aspose.Cells Cloud enables developers to programmatically clear cell formatting in a specified Excel worksheet, supporting targeted clearing via optional range or row/column index parameters such as `startRow`, `endColumn`, or `range`.
 
 **Note:** All Aspose.Cells Cloud API calls must be made over **HTTPS**. HTTP endpoints are deprecated and may be blocked by browsers.
@@ -18,7 +17,7 @@ The **PostClearFormats** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/w
 
 This REST API clears cell formatting in an Excel file and is part of the Aspose.Cells Cloud suite for clearing cell formatting in Excel worksheets.
 
-## PostClearFormats API
+## The Post Clear Formats Web API
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clearformats
@@ -28,14 +27,50 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/cle
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
+### **Request Parameters:**
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| range | String | Query | Represents the range to which the specified cells applies. |
+| startRow | Integer | Query | The start row index. |
+| startColumn | Integer | Query | The start column index. |
+| endRow | Integer | Query | The end row index. |
+| endColumn | Integer | Query | The end column index. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+
 ### **Response**
 
 ```json
-{
-  "Status": "OK",
-  "Code": 200
-}
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
 ```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 **Response Schema**
 
@@ -43,16 +78,6 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | ------ | ------- | ------------------------------------------------- |
 | Code   | integer | HTTP status code returned by the API (e.g., 200). |
 | Status | string  | Result of the operation (`OK` for success).       |
-
-**HTTP Status Codes**
-
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
 
 ## How to Use the PostClearFormats API with SDKs
 

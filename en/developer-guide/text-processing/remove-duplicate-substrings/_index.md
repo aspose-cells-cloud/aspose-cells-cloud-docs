@@ -12,10 +12,9 @@ aliases:
   - /cells/remove-duplicate-substrings/
 ArticleTitle: "Remove Duplicate Substrings in Excel with Aspose.Cells Cloud API"
 ---
-
 The **RemoveDuplicateSubstrings** API (`PUT https://api.aspose.cloud/v4.0/cells/content/remove/duplicate-substrings`) in Aspose.Cells Cloud identifies and removes repeated substrings within each cell of a specified range, using user-defined or preset delimiters (e.g., comma, semicolon, space), while preserving formatting, data validation, and workbook structure—such as converting `"VIP,Premium,VIP,Gold"` to `"VIP,Premium,Gold"` in a single pass.
 
-## Introduction
+## Overview
 
 The **Remove Duplicate Substrings** API identifies and eliminates repeated substrings _within each cell_, using user-defined or preset delimiters. It processes cells independently, retains only the first occurrence of each unique substring, and reconstructs the cleaned value—ideal for deduplicating tags, error codes, certifications, or log entries.
 
@@ -28,15 +27,13 @@ Key capabilities:
 
 > **Note**: Only string-type cell content is processed. Numbers, booleans, and formulas are converted to strings before splitting; formulas are dropped, and only their final values are used.
 
-
-
-## API Endpoint
+## The Remove Duplicate Substrings Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/content/remove/duplicate-substrings
 ```
 
-## Authentication
+### Authentication
 
 All Aspose.Cells Cloud APIs require JWT token-based authentication.
 
@@ -46,22 +43,53 @@ Authorization: Bearer {access_token}
 
 See [Authentication Overview](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) for setup instructions.
 
+### Request Parameters
 
-## Request Parameters
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| delimiters | String | Query | comma, semicolon, space, tab, line-break |
+| treatConsecutiveDelimitersAsOne | Boolean | Query | collapse adjacent delimiters into a single separator. |
+| caseSensitive | Boolean | Query | - |
+| worksheet | String | Query | Specify the worksheet of spreadsheet. |
+| range | String | Query | Specify the worksheet range of spreadsheet. |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
 
-| Parameter Name                    | Type    | Location | Required | Description                                                                                                                                                                                                               |
-| --------------------------------- | ------- | -------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `Spreadsheet`                     | File    | FormData | Yes      | Excel workbook file (`.xlsx`, `.xlsm`, `.xls`, `.ods`, `.csv`, etc.).                                                                                                                                                     |
-| `delimiters`                      | String  | Query    | Yes      | Delimiter(s) to split cell content into substrings. Options: `comma`, `semicolon`, `space`, `tab`, `line-break`, `custom`, or a custom string (e.g., `";,"`). Multiple characters are treated as one composite delimiter. |
-| `treatConsecutiveDelimitersAsOne` | Boolean | Query    | No       | Collapse adjacent delimiters into a single separator. Default: `true`.                                                                                                                                                    |
-| `caseSensitive`                   | Boolean | Query    | No       | Enable case-sensitive substring comparison. Default: `false`.                                                                                                                                                             |
-| `worksheet`                       | String  | Query    | No       | Name of the target worksheet. If omitted, the first worksheet is used.                                                                                                                                                    |
-| `range`                           | String  | Query    | No       | Target cell range (e.g., `"A1:D100"`). If omitted, all used cells in the worksheet are processed.                                                                                                                         |
-| `outPath`                         | String  | Query    | No       | Cloud storage folder path where the cleaned workbook is saved. If omitted, saved in the source folder.                                                                                                                    |
-| `outStorageName`                  | String  | Query    | No       | Name of the cloud storage for the output file. Required if `outPath` is specified and storage differs from source.                                                                                                        |
-| `region`                          | String  | Query    | No       | Locale for text processing (e.g., `"en-US"`, `"tr-TR"`). Affects case rules and delimiter interpretation.                                                                                                                 |
-| `password`                        | String  | Query    | No       | Password for protected workbooks. Required if the file is encrypted.                                                                                                                                                      |
+### **Response**
 
+```json
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Example Request (cURL)
 

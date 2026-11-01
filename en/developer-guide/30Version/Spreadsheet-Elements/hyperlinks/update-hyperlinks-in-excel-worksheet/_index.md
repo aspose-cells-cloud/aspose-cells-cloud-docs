@@ -24,7 +24,6 @@ linktitle: "Update Hyperlink"
 ArticleTitle: "Update Excel Hyperlink via Aspose.Cells Cloud REST API v3.0"
 keywords: "Aspose.Cells Cloud, update hyperlink, Excel hyperlink API, PostWorksheetHyperlink, REST API v3.0, Excel worksheet hyperlink, cURL example, SDK example, API documentation, hyperlink update example"
 ---
-
 The **PostWorksheetHyperlink** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks/{hyperlinkIndex}`) enables developers to update an existing hyperlink in a specific worksheet by its zero-based index using Aspose.Cells Cloud’s REST API, supporting precise modification of hyperlink properties such as address, text to display, and screen tip without altering other worksheet content.
 
 ## Update a Hyperlink in an Excel Worksheet
@@ -54,34 +53,69 @@ The **PostWorksheetHyperlink** operation updates an existing hyperlink in a work
 
 ---
 
-## Prerequisites
-
-| Requirement        | Description                                                                                                                                                                                |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Authentication** | JWT token-based authentication. Obtain a token as described in the [Authentication guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/). |
-| **Storage**        | The workbook must be stored in a supported Aspose Cloud storage (default is **Default**).                                                                                                  |
-| **Permissions**    | The JWT token must have permission to read and write the target workbook.                                                                                                                  |
-| **Headers**        | `Content-Type: application/json` and `Accept: application/json` are required for all requests.                                                                                             |
-
----
-
 ## Rate Limiting
 
 Aspose.Cells Cloud enforces a **maximum of 60 requests per minute per access token**. Exceeding this limit returns HTTP **429 Too Many Requests**. Implement exponential back-off or respect the `Retry-After` header when throttling occurs.
 
 ---
 
-## Endpoint
+## The Post Worksheet Hyperlink Web API
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks/{hyperlinkIndex}
 ```
 
-*Updates the hyperlink identified by `hyperlinkIndex` in the worksheet `sheetName` of the file `name`.*
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
+### Parameters
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| hyperlinkIndex | Integer | Path | The hyperlink's index. |
+| hyperlink | class:hyperlink | HTTPBody | Hyperlink object |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+
+### Responses
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+### Error responses
+
+| HTTP Code | Reason                                                        | Example Body                                                         |
+| --------- | ------------------------------------------------------------- | -------------------------------------------------------------------- |
+| **400**   | Bad Request – missing or invalid parameters.                  | `{ "Code":"400", "Message":"Invalid parameter value." }`             |
+| **401**   | Unauthorized – missing or invalid JWT token.                  | `{ "Code":"401", "Message":"Access token is missing or invalid." }`  |
+| **404**   | Not Found – workbook, worksheet, or hyperlink does not exist. | `{ "Code":"404", "Message":"File not found." }`                      |
+| **429**   | Too Many Requests – rate limit exceeded.                      | `{ "Code":"429", "Message":"Request limit exceeded. Retry later." }` |
+| **500**   | Internal Server Error – unexpected server failure.            | `{ "Code":"500", "Message":"An unexpected error occurred." }`        |
 
 ---
 
-## Parameters
+*Updates the hyperlink identified by `hyperlinkIndex` in the worksheet `sheetName` of the file `name`.*
+
+---
 
 ### Path parameters
 
@@ -121,8 +155,6 @@ The request body must contain a **`hyperlink`** object. Only the fields you wish
 
 ---
 
-## Responses
-
 ### Success response
 
 | Field       | Type              | Description                                                                     |
@@ -139,18 +171,6 @@ The request body must contain a **`hyperlink`** object. Only the fields you wish
   "Status": "OK"
 }
 ```
-
-### Error responses
-
-| HTTP Code | Reason                                                        | Example Body                                                         |
-| --------- | ------------------------------------------------------------- | -------------------------------------------------------------------- |
-| **400**   | Bad Request – missing or invalid parameters.                  | `{ "Code":"400", "Message":"Invalid parameter value." }`             |
-| **401**   | Unauthorized – missing or invalid JWT token.                  | `{ "Code":"401", "Message":"Access token is missing or invalid." }`  |
-| **404**   | Not Found – workbook, worksheet, or hyperlink does not exist. | `{ "Code":"404", "Message":"File not found." }`                      |
-| **429**   | Too Many Requests – rate limit exceeded.                      | `{ "Code":"429", "Message":"Request limit exceeded. Retry later." }` |
-| **500**   | Internal Server Error – unexpected server failure.            | `{ "Code":"500", "Message":"An unexpected error occurred." }`        |
-
----
 
 ## Practical Example
 

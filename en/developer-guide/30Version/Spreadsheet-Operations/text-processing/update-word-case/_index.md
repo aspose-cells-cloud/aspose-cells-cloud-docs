@@ -9,14 +9,13 @@ description: "PostUpdateWordCase API converts text case in Excel, CSV, Google Sh
 weight: 100
 ArticleTitle: "Aspose.Cells – Update Word Case API Documentation"
 ---
-
 The **PostUpdateWordCase** API (`POST https://api.aspose.cloud/v3.0/cells/updatewordcase`) in Aspose.Cells Cloud automates text-case conversions across Excel, Google Sheets, and CSV files, enabling consistent formatting of large datasets by applying rules such as uppercase, lowercase, title case, or sentence case to specified text ranges.
 
 **API version:** 3.0
 
 Managing inconsistent text case in spreadsheets (Excel, Google Sheets, CSV) can be frustrating, especially with large datasets. The **PostUpdateWordCase web API** automates text‑case conversions, ensuring clean and standardized data with minimal effort.
 
-## **Excel Web API – Update Word Case API**
+## The Post Update Word Case Web API
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/updatewordcase
@@ -26,23 +25,11 @@ POST https://api.aspose.cloud/v3.0/cells/updatewordcase
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-### **Function Description**
-
-The PostUpdateWordCase web API addresses the common issue of inconsistent text case in spreadsheets, which can significantly impact data analysis and processing. This API automates case conversion, ensuring that your data is clean, standardized, and ready for further manipulation or analysis.
-
-- **Automated Text‑Case Conversion**
-  - **Uppercase to Lowercase** – Convert all uppercase letters to lowercase.
-  - **Lowercase to Uppercase** – Convert all lowercase letters to uppercase.
-  - **Capitalize First Letter** – Capitalize the first letter of each word.
-  - **Title Case** – Convert text to title case, where the first letter of each major word is capitalized.
-
-- **Support for Multiple Formats** – The API works with a wide range of spreadsheet formats, including Excel, OpenOffice, JSON, CSV, and others. This versatility makes it suitable for various data‑processing needs.
-
 ### **Request Parameters**
 
-| Parameter Name    | Type   | Location     | Description                                                                                                               |
-| ----------------- | ------ | ------------ | ------------------------------------------------------------------------------------------------------------------------- |
-| `wordCaseOptions` | object | Request body | Options that define the desired case transformation, such as the source range, target case type, and additional settings. |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| wordCaseOptions | class:wordcaseoptions | HTTPBody | - |
 
 **`wordCaseOptions` schema**
 
@@ -71,28 +58,50 @@ The PostUpdateWordCase web API addresses the common issue of inconsistent text c
 ### **Response**
 
 ```json
-{
-    "Status" : "OK",
-    "Code" : 200,
-    "Filename" : "[merged filename]",
-    "Filesize" : [file size],
-    "FileContent" : "[Base64String]"
-}
+[
+  {
+    "Name": "FileInfo",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "FileInfo"
+    }
+  }
+]
 ```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 - **Filename** – Name of the processed file.
 - **FileSize** – Size of the file in bytes.
 - **FileContent** – Base‑64 encoded content of the transformed file.
 
-**HTTP Status Codes**
+### **Function Description**
 
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
+The PostUpdateWordCase web API addresses the common issue of inconsistent text case in spreadsheets, which can significantly impact data analysis and processing. This API automates case conversion, ensuring that your data is clean, standardized, and ready for further manipulation or analysis.
+
+- **Automated Text‑Case Conversion**
+  - **Uppercase to Lowercase** – Convert all uppercase letters to lowercase.
+  - **Lowercase to Uppercase** – Convert all lowercase letters to uppercase.
+  - **Capitalize First Letter** – Capitalize the first letter of each word.
+  - **Title Case** – Convert text to title case, where the first letter of each major word is capitalized.
+
+- **Support for Multiple Formats** – The API works with a wide range of spreadsheet formats, including Excel, OpenOffice, JSON, CSV, and others. This versatility makes it suitable for various data‑processing needs.
 
 ## How to Use the PostUpdateWordCase API with SDKs
 

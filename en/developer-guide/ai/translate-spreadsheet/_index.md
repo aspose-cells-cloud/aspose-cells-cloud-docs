@@ -8,36 +8,60 @@ keywords: "Aspose.Cells Cloud, translate spreadsheet API, AI translation, spread
 weight: 100
 ArticleTitle: "Aspose.Cells Cloud Translate Spreadsheet API – AI-Powered Multi-Language Translation"
 ---
-
 The **TranslateSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/ai/translate/spreadsheet`) in Aspose.Cells Cloud translates all textual content in an uploaded Excel workbook to a specified target language using AI-powered neural translation models, preserving cell formatting, formulas, charts, pivot tables, conditional formatting, and multi-sheet structure; it accepts input formats such as XLS, XLSX, XLSM, CSV, and ODS, and requires the target language code and the spreadsheet file as parameters.
 
 > **Note:** This API is available in Aspose.Cells Cloud v4.0+, released in March 2024.
 
-## Prerequisites
-
-Before calling the API, ensure you have:
-
-- A valid Aspose.Cells Cloud account and API credentials (`Client ID` and `Client Secret`)
-- A personal access token (JWT) generated using your credentials  
-
-## Translate Spreadsheet API
-
-### Web API Endpoint
+## The Translate Spreadsheet Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/ai/translate/spreadsheet
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### Request Parameters
 
-| Parameter Name   | Type   | Location | Required | Description                                                                                                                                                                |
-| :--------------- | :----- | :------- | :------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `Spreadsheet`    | File   | FormData | Yes      | The Excel workbook to translate. Supported formats: `.xls`, `.xlsx`, `.xlsm`, `.csv`, `.ods`. Maximum size: **50 MB**.                                                     |
-| `targetLanguage` | string | Query    | Yes      | ISO 639-1 language code for the output language (e.g., `"es"` for Spanish, `"fr"` for French, `"de"` for German). Must be supported by the underlying translation service. |
-| `region`         | string | Query    | No       | Locale identifier (e.g., `"US"`, `"EU"`, `"CN"`, `"en-US"`) influencing date/number/currency formatting. If omitted, the original workbook region is retained.             |
-| `password`       | string | Query    | No       | Password for protected workbooks. Omit if the file is not encrypted.                                                                                                       |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| targetLanguage | String | Query | The target language code for translation (e.g., "es", "fr", "de"). |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
 
 ### Response
+
+```json
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | Invalid target language parameter. |
+| 401 | Unauthorized | Authentication failed for translation service. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Server Error | Translation service unavailable or spreadsheet processing error. |
 
 **Successful Response (200 OK)**
 
@@ -50,22 +74,6 @@ PUT https://api.aspose.cloud/v4.0/cells/ai/translate/spreadsheet
 
 **Error Responses (JSON format)**  
 Standard Aspose.Cells Cloud error model:
-
-```json
-{
-  "code": "400",
-  "message": "Bad Request",
-  "details": ["Invalid targetLanguage parameter"]
-}
-```
-
-| Status Code | Meaning               | Description                                                                         |
-| :---------- | :-------------------- | :---------------------------------------------------------------------------------- |
-| `200`       | OK                    | Translation completed successfully.                                                 |
-| `400`       | Bad Request           | Invalid or missing parameters (e.g., unsupported file type, invalid language code). |
-| `401`       | Unauthorized          | Invalid or expired JWT token.                                                       |
-| `413`       | Payload Too Large     | Uploaded file exceeds 50 MB limit.                                                  |
-| `500`       | Internal Server Error | Translation service unavailable or internal processing error.                       |
 
 ## Use Cases
 

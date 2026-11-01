@@ -10,7 +10,6 @@ description: "Export Excel tables to PDF, PNG, CSV, or JSON using Aspose.Cells C
 weight: 100
 ArticleTitle: "Export Excel Table to PDF, PNG, CSV, JSON via Aspose.Cells Cloud REST API"
 ---
-
 The **ExportTableAsFormat** API (`GET https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/tables/{tableName}`) in Aspose.Cells Cloud converts a specific table from a cloud-stored Excel workbook directly to a target format—such as PDF, PNG, SVG, CSV, or XLSX—without downloading the file locally, enabling efficient, server-side export of structured data.
 
 {{% alert color="primary" %}}
@@ -18,7 +17,7 @@ The **ExportTableAsFormat** API (`GET https://api.aspose.cloud/v4.0/cells/{name}
 All examples use test files. Replace `{access_token}` with your JWT token from the [Aspose Cloud Dashboard](https://dashboard.aspose.cloud/).
 {{% /alert %}}
 
-## API Endpoint
+## The Export Table as Format Web API
 
 ```http
 GET https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/tables/{tableName}

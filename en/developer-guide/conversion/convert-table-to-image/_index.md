@@ -12,7 +12,6 @@ last_modified: 2024-06-15
 weight: 100
 section: docs
 ---
-
 The **ConvertTableToImage** API (`PUT https://api.aspose.cloud/v4.0/cells/convert/table/image`) in Aspose.Cells Cloud enables direct conversion of a table from a local Excel workbook to an image file without requiring cloud storage upload, supporting common output formats such as PNG, SVG, and TIFF; developers supply the spreadsheet file, worksheet name, table name, and target format as required parameters to perform the conversion entirely on the cloud server.
 
 ## Supported Image Formats
@@ -27,7 +26,7 @@ The API supports the following output image formats:
 
 > **Note**: The SVG format produces a scalable vector image suitable for high-resolution rendering.
 
-## API Endpoint
+## The Convert Table to Image Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/convert/table/image

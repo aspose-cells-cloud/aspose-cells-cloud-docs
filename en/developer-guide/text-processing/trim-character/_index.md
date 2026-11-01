@@ -8,7 +8,6 @@ type: docs
 weight: 100
 ArticleTitle: "Aspose.Cells Cloud TrimCharacter API: Clean Excel Cell Text & Spaces"
 ---
-
 The **TrimCharacter** API (`PUT https://api.aspose.cloud/v4.0/cells/content/trim`) in Aspose.Cells Cloud enables programmatic cleaning of spreadsheet content by removing unnecessary spaces, line breaks, and special characters such as non-breaking spaces. Using this RESTful endpoint, developers can trim leading and trailing whitespace, collapse multiple spaces between words into a single space, and eliminate extra or all line breaks to ensure data consistency, readability, and professional formatting in Excel files uploaded via form-data.
 
 ## Overview
@@ -32,15 +31,13 @@ The TrimCharacter API provides precise control over text formatting cleanup, sup
 
 This API is ideal for cleaning user inputs, customer data, report sources, and pre-migration datasets.
 
-## API Endpoint
+## The Trim Character Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/content/trim
 ```
 
-> **Note**: This documentation applies to Aspose.Cells Cloud API v4.0. For migration guidance to v5.0, see [Aspose.Cells Cloud API Versioning](/cells/working-with-api-versions/).
-
-## Authentication
+### Authentication
 
 All requests require a valid JWT access token with the **Cells** scope. Authenticate using your `client_id` and `client_secret` as described in the [REST API Authentication Guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
@@ -50,26 +47,61 @@ Include the token in the `Authorization` header:
 Authorization: Bearer {access_token}
 ```
 
-## Request Parameters
+### Request Parameters
 
-| Parameter                 | Type    | Location | Required | Default | Description                                                               |
-| ------------------------- | ------- | -------- | -------- | ------- | ------------------------------------------------------------------------- |
-| `Spreadsheet`             | File    | FormData | ✅ Yes   | —       | Spreadsheet file to process (XLSX, XLS, ODS, CSV, etc.).                  |
-| `trimContent`             | String  | Query    | ❌ No    | `" "`   | Characters or strings to trim (e.g., `" "`, `"#0"`, `"@"`).               |
-| `trimLeading`             | Boolean | Query    | ❌ No    | `true`  | Trim content from the beginning of each cell.                             |
-| `trimTrailing`            | Boolean | Query    | ❌ No    | `true`  | Trim content from the end of each cell.                                   |
-| `trimSpaceBetweenWordTo1` | Boolean | Query    | ❌ No    | `false` | Collapse multiple spaces between words to a single space.                 |
-| `trimNonBreakingSpaces`   | Boolean | Query    | ❌ No    | `false` | Remove non-breaking spaces (U+00A0).                                      |
-| `removeExtraLineBreaks`   | Boolean | Query    | ❌ No    | `false` | Reduce consecutive line breaks to a single break.                         |
-| `removeAllLineBreaks`     | Boolean | Query    | ❌ No    | `false` | Remove all line break characters.                                         |
-| `worksheet`               | String  | Query    | ❌ No    | —       | Worksheet name to process (defaults to first visible sheet).              |
-| `range`                   | String  | Query    | ❌ No    | —       | Cell range (e.g., `"A1:C10"`); defaults to all used cells.                |
-| `outPath`                 | String  | Query    | ❌ No    | —       | Destination folder path in cloud storage (default: source folder).        |
-| `outStorageName`          | String  | Query    | ❌ No    | —       | Cloud storage name for the output file.                                   |
-| `region`                  | String  | Query    | ❌ No    | —       | Locale setting (e.g., `"en-US"`, `"fr-FR"`); affects space/line behavior. |
-| `password`                | String  | Query    | ❌ No    | —       | Password for protected workbooks.                                         |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| trimContent | String | Query | Specify the trim content. |
+| trimLeading | Boolean | Query | Specify to trim content from the beginning. |
+| trimTrailing | Boolean | Query | Specify to trim content from the end. |
+| trimSpaceBetweenWordTo1 | Boolean | Query | Remove excess spaces between words within a cell. |
+| trimNonBreakingSpaces | Boolean | Query | Remove non-breaking spaces. |
+| removeExtraLineBreaks | Boolean | Query | Remove extra line breaks. |
+| removeAllLineBreaks | Boolean | Query | Remove all line breaks. |
+| worksheet | String | Query | Specify the worksheet of spreadsheet. |
+| range | String | Query | Specify the worksheet range of spreadsheet. |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
 
 > **Best Practice**: Set `trimLeading` and `trimTrailing` explicitly to avoid unintended behavior when `trimContent` is customized.
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+> **Note**: This documentation applies to Aspose.Cells Cloud API v4.0. For migration guidance to v5.0, see [Aspose.Cells Cloud API Versioning](/cells/working-with-api-versions/).
 
 ## Example Request
 

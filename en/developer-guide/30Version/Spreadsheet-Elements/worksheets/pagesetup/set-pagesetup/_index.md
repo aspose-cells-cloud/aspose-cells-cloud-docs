@@ -9,14 +9,13 @@ description: "Configure Excel page setup via Aspose.Cells Cloud API: POST /cells
 weight: 100
 ArticleTitle: "Set page setup for a worksheet – Aspose.Cells Cloud API Guide"
 ---
-
 The **PostPageSetup** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pagesetup`) updates page setup configurations for a specified worksheet in a workbook stored in Aspose.Cells Cloud, allowing precise control over print settings such as margins, orientation, and paper size. To call this API, you must provide a valid JWT (OAuth) token in the `Authorization` header, ensure the workbook resides in an Aspose Cloud storage location where you have read/write permissions, and include the required path parameters `{name}` and `{sheetName}` along with a `pageSetup` object in the request body describing the desired settings.
 
 This REST API sets the page setup for an Excel worksheet.
 
-## REST API
+## The Post Page Setup Web API
 
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pagesetup
 ```
 
@@ -26,13 +25,13 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Request parameters**
 
-| Parameter Name | Type   | Location | Description             |
-| -------------- | ------ | -------- | ----------------------- |
-| name           | string | path     | Document name.          |
-| sheetName      | string | path     | The worksheet name.     |
-| pageSetup      | object | body     | Page‑setup description. |
-| folder         | string | query    | Document folder.        |
-| storageName    | string | query    | Storage name.           |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| pageSetup | class:pagesetup | HTTPBody | PageSetup Page Setup description. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 **Example JSON payload for the `pageSetup` object**
 
@@ -94,13 +93,37 @@ The API returns a JSON object indicating the result of the operation:
 
 **Possible response status codes**
 
-| Code | Meaning               | When                                            |
-| ---- | --------------------- | ----------------------------------------------- |
-| 200  | OK                    | Successful page‑setup update                    |
-| 400  | Bad Request           | Invalid JSON payload or missing required fields |
-| 401  | Unauthorized          | Missing or invalid JWT token                    |
-| 404  | Not Found             | Workbook or worksheet name does not exist       |
-| 500  | Internal Server Error | Unexpected server failure                       |
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Cloud SDK Family
 

@@ -9,7 +9,6 @@ description: "Retrieve a worksheet from an Excel file using Aspose.Cells Cloud R
 weight: 100
 ArticleTitle: "Export a Worksheet with Aspose.Cells Cloud API – Formats, cURL & SDK Samples"
 ---
-
 The **GetWorksheetWithFormat** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}`) enables developers to retrieve a specific worksheet from an Excel workbook and export it directly in a requested format—such as PDF, PNG, HTML, or CSV—by specifying the workbook file name and worksheet name as path parameters, with optional query parameters to control resolution, print area, and output settings.
 
 **Summary** – Use the **Get Worksheet** endpoint to download a single worksheet from a workbook in the format of your choice.
@@ -44,25 +43,31 @@ You can export to the following formats:
 
 The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
-## REST API
+## The Get Worksheet with Format Web API
 
-```bash
+```http
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### **Request parameters**
 
-| Parameter Name           | Type    | Location | Description                                                         |
-| ------------------------ | ------- | -------- | ------------------------------------------------------------------- |
-| **name**                 | string  | path     | **Required.** Name of the Excel file.                               |
-| **sheetName**            | string  | path     | **Required.** Name of the worksheet to export.                      |
-| **format**               | string  | query    | Target file format for the exported worksheet (e.g., `pdf`, `png`). |
-| **verticalResolution**   | integer | query    | Image DPI for formats that support resolution (e.g., PNG, JPEG).    |
-| **horizontalResolution** | integer | query    | Image DPI for formats that support resolution.                      |
-| **area**                 | string  | query    | Cell range to export (e.g., `A1:D10`).                              |
-| **pageIndex**            | integer | query    | Index of the page to export when the worksheet is paginated.        |
-| **folder**               | string  | query    | Folder path in storage where the source file is located.            |
-| **storageName**          | string  | query    | Name of the Aspose Cloud storage.                                   |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| format | String | Query | Export format(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers). |
+| verticalResolution | Integer | Query | Image vertical resolution. |
+| horizontalResolution | Integer | Query | Image horizontal resolution. |
+| area | String | Query | Represents the range to be printed. |
+| pageIndex | Integer | Query | Represents the page to be printed |
+| onePagePerSheet | Boolean | Query | - |
+| printHeadings | Boolean | Query | - |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 The <a href="https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheet" target="_blank" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
@@ -96,7 +101,28 @@ Content-Disposition: attachment; filename="Sheet1.gif"
 
 {{< /tabs >}}
 
-## Error Handling
+### **Response**
+
+```json
+[
+  {
+    "Name": "Stream",
+    "DataType": {
+      "Identifier": "File"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
+### Error Handling
 
 The API returns standard HTTP status codes. Common responses include:
 

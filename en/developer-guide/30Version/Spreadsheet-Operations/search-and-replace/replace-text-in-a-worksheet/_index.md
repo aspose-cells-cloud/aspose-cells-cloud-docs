@@ -10,157 +10,63 @@ description: "Replace text in Excel worksheets using Aspose.Cells Cloud REST API
 ArticleTitle: "Replace Text in an Excel Worksheet – Aspose.Cells Cloud API"
 weight: 70
 ---
-
 The **PostWorksheetTextReplace** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/replaceText`) enables developers to replace all occurrences of specified old text with new text in a named worksheet of an Excel file stored in the cloud, using Aspose.Cells Cloud’s robust text-replacement functionality; it requires the file name, worksheet name, and both `oldValue` and `newValue` query parameters, and optionally supports `folder` and `storageName` for flexible file handling across cloud storage systems.
 
 ## Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
-## REST API
+## The Post Worksheet Text Replace Web API
 
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/replaceText
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### Request Parameters
 
-| Parameter Name  | Type   | Location | Description                        |
-| --------------- | ------ | -------- | ---------------------------------- |
-| **name**        | string | path     | The name of the Excel workbook.    |
-| **sheetName**   | string | path     | The name of the worksheet.         |
-| **oldValue**    | string | query    | The text to be replaced.           |
-| **newValue**    | string | query    | The replacement text.              |
-| **folder**      | string | query    | The folder that contains the file. |
-| **storageName** | string | query    | The storage service name.          |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | Worksheet name. |
+| oldValue | String | Query | The old text to replace. |
+| newValue | String | Query | The new text to replace by. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 ### **Response**
 
 ```json
-{
-  "Status": "OK",
-  "Code": 200,
-  "Workbook": {
-    "FileName": "test.xlsx",
-    "Links": [
-      {
-        "Href": "/test.xlsx",
-        "Rel": "self",
-        "Title": null,
-        "Type": null
-      },
-      {
-        "Href": "/test.xlsx",
-        "Rel": "alternate",
-        "Title": "Download As CSV",
-        "Type": "text/csv"
-      },
-      {
-        "Href": "/test.xlsx",
-        "Rel": "alternate",
-        "Title": "Download As HTML",
-        "Type": "text/html"
-      },
-      {
-        "Href": "/test.xlsx",
-        "Rel": "alternate",
-        "Title": "Download As ODS",
-        "Type": "application/vnd.oasis.opendocument.spreadsheet"
-      },
-      {
-        "Href": "/test.xlsx",
-        "Rel": "alternate",
-        "Title": "Download As PDF",
-        "Type": "application/pdf"
-      },
-      {
-        "Href": "/test.xlsx",
-        "Rel": "alternate",
-        "Title": "Download As Table Delimited Text Format",
-        "Type": "text/plain"
-      },
-      {
-        "Href": "/test.xlsx",
-        "Rel": "alternate",
-        "Title": "Download As TIFF",
-        "Type": "image/tiff"
-      },
-      {
-        "Href": "/test.xlsx",
-        "Rel": "alternate",
-        "Title": "Download As Microsoft Excel 2003",
-        "Type": "application/vnd.ms-excel"
-      },
-      {
-        "Href": "/test.xlsx",
-        "Rel": "alternate",
-        "Title": "Download As Microsoft Excel 2007",
-        "Type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
-      },
-      {
-        "Href": "/test.xlsx",
-        "Rel": "alternate",
-        "Title": "Download As XPS",
-        "Type": "application/vnd.ms-xpsdocument"
-      }
-    ],
-    "Worksheets": {
-      "link": {
-        "Href": "/worksheets",
-        "Rel": "self",
-        "Title": null,
-        "Type": null
-      }
-    },
-    "DefaultStyle": {
-      "link": {
-        "Href": "/defaultstyle",
-        "Rel": "self",
-        "Title": null,
-        "Type": null
-      }
-    },
-    "DocumentProperties": {
-      "link": {
-        "Href": "/documentproperties",
-        "Rel": "self",
-        "Title": null,
-        "Type": null
-      }
-    },
-    "Names": {
-      "link": {
-        "Href": "/names",
-        "Rel": "self",
-        "Title": null,
-        "Type": null
-      }
-    },
-    "Settings": {
-      "link": {
-        "Href": "/settings",
-        "Rel": "self",
-        "Title": null,
-        "Type": null
-      }
-    },
-    "IsWriteProtected": "False",
-    "IsProtected": "False",
-    "IsEncryption": "false",
-    "Password": null
+[
+  {
+    "Name": "WorksheetReplaceResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "WorksheetReplaceResponse"
+    }
   }
-}
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
 ```
 
 **HTTP Status Codes**
 
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## How to Use the PostWorksheetTextReplace API with SDKs
 

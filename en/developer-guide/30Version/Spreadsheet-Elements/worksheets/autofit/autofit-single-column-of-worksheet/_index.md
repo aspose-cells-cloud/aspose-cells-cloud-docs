@@ -10,28 +10,50 @@ description: "Autofit a single Excel column via Aspose.Cells Cloud REST API with
 weight: 100
 ArticleTitle: "Autofit Single Column in Excel with Aspose.Cells Cloud REST API"
 ---
-
 The **PostAutofitWorksheetColumns** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitcolumns`) in Aspose.Cells Cloud automatically adjusts the width of one or more columns in a specified worksheet, supporting optional range parameters like `startColumn` and `endColumn` to autofit a contiguous subset of columns while preserving existing formatting and data integrity.
 
-## REST API
+## The Post Autofit Worksheet Columns Web API
 
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitcolumns
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### Request parameters
 
-| Parameter Name    | Type    | Location | Description                                                                                      |
-| ----------------- | ------- | -------- | ------------------------------------------------------------------------------------------------ |
-| name              | string  | path     | The name of the Excel file.                                                                      |
-| sheetName         | string  | path     | The name of the worksheet.                                                                       |
-| firstColumn       | integer | query    | Zero‑based index of the first column to autofit.                                                 |
-| lastColumn        | integer | query    | Zero‑based index of the last column to autofit.                                                  |
-| autoFitterOptions | object  | body     | Options that control the autofit behavior (see [AutoFitterOptions](/cells/auto-filter-options)). |
-| firstRow          | integer | query    | Zero‑based index of the first row considered when calculating column width.                      |
-| lastRow           | integer | query    | Zero‑based index of the last row considered when calculating column width.                       |
-| folder            | string  | query    | The folder in storage where the file is located.                                                 |
-| storageName       | string  | query    | The name of the storage service.                                                                 |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| startColumn | Integer | Query | The start column index. |
+| endColumn | Integer | Query | The end column index. |
+| onlyAuto | Boolean | Query | - |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
 
 ### Error responses
 

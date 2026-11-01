@@ -14,13 +14,9 @@ description: "Get Excel chart area fill format (color, pattern, gradient) via As
 ArticleTitle: "Get Chart Area Fill Format Aspose.Cells Cloud API v3.0"
 linktitle: "Get Chart Area Fill Format"
 ---
-
 The **GetChartAreaFillFormat** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/chartArea/fillFormat`) retrieves the fill-format description of a chart area within a specified worksheet in Aspose.Cells Cloud, supporting programmatic access to visual formatting details such as background color, pattern, and gradient settings for chart rendering and analysis.
 
-**Prerequisites**  
-To call this endpoint you must have a valid OAuth/JWT access token. Obtain the token using the Aspose.Cells Cloud authentication flow and include it in the `Authorization` header as `Bearer <jwt token>`. If you are using one of the SDKs, ensure the SDK is configured with your `client_id` and `client_secret` before invoking the method.
-
-## GetChartAreaFillFormat API
+## The Get Chart Area Fill Format Web API
 
 ```http
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/chartArea/fillFormat
@@ -32,13 +28,13 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request parameters
 
-| Parameter Name | Type    | Location | Description                        |
-| -------------- | ------- | -------- | ---------------------------------- |
-| name           | string  | path     | Workbook name.                     |
-| sheetName      | string  | path     | Worksheet name.                    |
-| chartIndex     | integer | path     | Index of the chart.                |
-| folder         | string  | query    | Folder that contains the workbook. |
-| storageName    | string  | query    | Name of the storage.               |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| chartIndex | Integer | Path | The chart index. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ChartArea/GetChartAreaFillFormat) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
@@ -76,18 +72,43 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/She
 - HTTP 404 is returned when the specified workbook, worksheet, or chart index does not exist.  
 - HTTP 500 denotes a server‑side error; retry the request or contact support if the problem persists.
 
-| Code | Meaning                                             |
-|------|-----------------------------------------------------|
-| 200  | Success – fill format returned                      |
-| 401  | Unauthorized – invalid or missing token             |
-| 404  | Not Found – workbook, worksheet, or chart not found |
-| 500  | Internal Server Error                               |
 
 For related operations, see **Get Chart Area Border** and **Get Chart Title** endpoints.
 
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "FillFormatResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "FillFormatResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Cloud SDK Family
 

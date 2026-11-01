@@ -10,10 +10,9 @@ description: "Export Excel worksheet to PDF, PNG, SVG, CSV via Aspose.Cells Clou
 weight: 100
 ArticleTitle: "Export Worksheet to PDF, PNG, SVG, CSV via Aspose.Cells Cloud API"
 ---
-
 The **ExportWorksheetAsFormat** API (`GET https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}`) in Aspose.Cells Cloud converts a specific worksheet from a cloud-stored workbook directly into a target format—such as PDF, PNG, or SVG—without requiring local download, enabling efficient, server-side export of structured spreadsheet data.
 
-## **Export Worksheet as Format API**
+## The Export Worksheet as Format Web API
 
 ```http
 GET https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}

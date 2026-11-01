@@ -10,14 +10,11 @@ description: "Delete an AutoFilter from an Excel worksheet using Aspose.Cells Cl
 weight: 100
 ArticleTitle: "Delete AutoFilter in Excel Worksheet Using Aspose.Cells Cloud API"
 ---
-
 The **DeleteWorksheetFilter** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/filter`) enables Aspose.Cells Cloud users to remove an AutoFilter from a specific column in an Excel worksheet by specifying the column’s zero-based `fieldIndex`. This REST operation supports deleting filters based on a field offset, and optionally accepts a `criteria` parameter for targeted removal, allowing precise control over filtered data without reapplying or recreating the filter range.
 
-## REST API
+## The Delete Worksheet Filter Web API
 
-This REST API deletes an **AutoFilter** on an Excel worksheet.
-
-```bash
+```http
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/filter
 ```
 
@@ -27,42 +24,47 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request parameters
 
-| Parameter Name           | Type    | Location | Required? | Description                                                                              |
-| ------------------------ | ------- | -------- | --------- | ---------------------------------------------------------------------------------------- |
-| **name**                 | string  | Path     | Yes       | The workbook name.                                                                       |
-| **sheetName**            | string  | Path     | Yes       | The worksheet name.                                                                      |
-| **range**                | string  | Query    | No        | The cell range to which the filter applies (e.g., `A1:C10`).                             |
-| **fieldIndex**           | integer | Query    | Yes       | Zero‑based index of the column to which the filter is applied.                           |
-| **dateTimeGroupingType** | string  | Query    | No        | How date/time values are grouped: `Day`, `Hour`, `Minute`, `Month`, `Second`, or `Year`. |
-| **year**                 | integer | Query    | No        | Year component for date grouping.                                                        |
-| **month**                | integer | Query    | No        | Month component for date grouping.                                                       |
-| **day**                  | integer | Query    | No        | Day component for date grouping.                                                         |
-| **hour**                 | integer | Query    | No        | Hour component for date grouping.                                                        |
-| **minute**               | integer | Query    | No        | Minute component for date grouping.                                                      |
-| **second**               | integer | Query    | No        | Second component for date grouping.                                                      |
-| **matchBlanks**          | boolean | Query    | No        | `true` / `false` – whether blank cells are included in the filter.                       |
-| **refresh**              | boolean | Query    | No        | `true` / `false` – whether to refresh the worksheet after deletion.                      |
-| **folder**               | string  | Query    | No        | Original workbook folder.                                                                |
-| **storageName**          | string  | Query    | No        | Storage name.                                                                            |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The workbook name. |
+| sheetName | String | Path | The worksheet name. |
+| fieldIndex | Integer | Query | The integer offset of the field on which you want to base the filter (from the left of the list; the leftmost field is field 0). |
+| criteria | String | Query | The custom criteria. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 ### **Response**
 
 ```json
-{
-  "Status": "OK",
-  "Code": 200
-}
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
 ```
 
 **HTTP Status Codes**
 
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+This REST API deletes an **AutoFilter** on an Excel worksheet.
 
 ## How to Use the DeleteWorksheetFilter API with SDKs
 

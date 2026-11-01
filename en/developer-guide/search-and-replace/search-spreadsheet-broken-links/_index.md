@@ -9,36 +9,13 @@ description: "Detect broken Excel links—external refs, hyperlinks, formulas—
 type: docs
 weight: 100
 ---
-
 The **SearchSpreadsheetBrokenLinks** API (`PUT https://api.aspose.cloud/v4.0/cells/search/broken-links`) in Aspose.Cells Cloud identifies broken hyperlinks, invalid external references, and malformed formulas within a local Excel workbook uploaded via form data. The operation runs server-side in the cloud—no local processing or cloud storage required—and returns results in structured JSON, enabling integration into CI/CD pipelines, audit tools, or compliance workflows.
 
-## Detect Broken Links in Excel Workbooks
+## The Search Spreadsheet Broken Links Web API
 
-Use the **Search Spreadsheet Broken Links** API endpoint to identify broken hyperlinks, invalid external references, and malformed formulas in Excel workbooks. The operation runs server-side in the cloud—no local processing or cloud storage required. Results are returned in a structured JSON format for integration into CI/CD pipelines, audit tools, or compliance workflows.
-
-### API Endpoint
-
-```bash
+```http
 PUT https://api.aspose.cloud/v4.0/cells/search/broken-links
 ```
-
-### Request Example
-
-```bash
-curl -X PUT "https://api.aspose.cloud/v4.0/cells/search/broken-links?worksheet=Sheet1&cellArea=B2:D10" \
-  -H "Authorization: Bearer {access_token}" \
-  -F "Spreadsheet=@sample.xlsx"
-```
-
-### Request Parameters
-
-| Parameter     | Type   | Location             | Required | Description                                                                                         |
-| ------------- | ------ | -------------------- | -------- | --------------------------------------------------------------------------------------------------- |
-| `Spreadsheet` | File   | FormData (multipart) | Yes      | Excel workbook (`.xlsx`, `.xls`, `.xlsb`, `.xlsm`, `.ods`, etc.) to analyze.                        |
-| `worksheet`   | String | Query                | No       | Name of the worksheet to scan. Defaults to the first visible sheet.                                 |
-| `cellArea`    | String | Query                | No       | Target cell range in A1 notation (e.g., `B2:D10`). If omitted, the used range is scanned.           |
-| `region`      | String | Query                | No       | Locale identifier (e.g., `en-US`, `fr-FR`). Affects date/number parsing and formula interpretation. |
-| `password`    | String | Query                | No       | Password for encrypted workbooks. Omit if the file is unprotected.                                  |
 
 ### Authentication
 
@@ -48,30 +25,39 @@ All requests require a valid [JWT token](https://docs.aspose.cloud/total/getting
 Authorization: Bearer {access_token}
 ```
 
+### Request Parameters
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| worksheet | String | Query | Specify the worksheet for the replace. |
+| cellArea | String | Query | Specify the cell area for the replace. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
+
 ### Response Structure
+
+```json
+[
+  {
+    "Name": "BrokenLinksResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "BrokenLinksResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
 
 A successful response returns a `BrokenLinksResponse` object:
 
-```json
-{
-  "BrokenLinks": [
-    {
-      "CellName": "B5",
-      "Link": "C:\\Data\\source.xlsx",
-      "ErrorMessage": "File not found",
-      "Status": "Broken"
-    },
-    {
-      "CellName": "C12",
-      "Link": "https://httpstat.us/404",
-      "ErrorMessage": "404 Not Found",
-      "Status": "Broken"
-    }
-  ],
-  "Code": 200,
-  "Status": "OK"
-}
-```
 
 #### BrokenLink Object
 
@@ -91,6 +77,16 @@ A successful response returns a `BrokenLinksResponse` object:
 | `404 Not Found`         | Specified file not accessible or upload failed.                        |
 | `429 Too Many Requests` | Rate limit exceeded (60 calls/minute).                                 |
 | `500 Server Error`      | Internal server error during link resolution or file processing.       |
+
+Use the **Search Spreadsheet Broken Links** API endpoint to identify broken hyperlinks, invalid external references, and malformed formulas in Excel workbooks. The operation runs server-side in the cloud—no local processing or cloud storage required. Results are returned in a structured JSON format for integration into CI/CD pipelines, audit tools, or compliance workflows.
+
+### Request Example
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/search/broken-links?worksheet=Sheet1&cellArea=B2:D10" \
+  -H "Authorization: Bearer {access_token}" \
+  -F "Spreadsheet=@sample.xlsx"
+```
 
 ### Use Cases
 

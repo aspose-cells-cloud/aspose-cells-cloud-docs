@@ -9,18 +9,11 @@ description: "Delete all Excel workbook metadata (author, title, custom) using A
 weight: 55
 ArticleTitle: "Delete metadata from Excel files – Aspose.Cells Cloud Documentation"
 ---
-
 The **DeleteMetadata** API (`POST https://api.aspose.cloud/v3.0/cells/metadata/delete`) permanently removes standard and custom workbook properties from uploaded Excel files via Aspose.Cells Cloud, supporting optional output format conversion (e.g., XLSX, PDF, CSV) and password-protected file handling.
-
-**Prerequisites**
-
-- A valid Aspose.Cells Cloud JWT token (obtainable via the OAuth 2.0 authentication flow).
-- API version **v3.0** (the endpoint used in this example).
-- For SDK usage, install the appropriate Aspose.Cells Cloud SDK for your language (e.g., via NuGet, Maven, npm, pip, CPAN, or Go modules).
 
 This REST API deletes **metadata** from one or more Excel files. It removes workbook properties such as author, title, and custom data, and returns the cleaned files.
 
-## a API
+## The Delete Metadata Web API
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/metadata/delete
@@ -32,10 +25,13 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Request parameters**
 
-| Parameter Name | Type   | Location | Description                                               |
-| -------------- | ------ | -------- | --------------------------------------------------------- |
-| file           | file   | formData | Excel file to upload for **metadata** deletion            |
-| type           | string | query    | Operation type; set to **all** to delete all **metadata** |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| File | File | FormData | File to upload |
+| type | String | Query | Cells document property name. |
+| outFormat | String | Query | The output data file format.(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers) |
+| password | String | Query | The password needed to open an Excel file. |
+| checkExcelRestriction | Boolean | Query | Whether check restriction of excel file when user modify cells related objects. |
 
 The <a href="https://apireference.aspose.cloud/cells/#/DeleteMetadata" target="_blank" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -80,12 +76,37 @@ curl -v "https://api.aspose.cloud/v3.0/cells/metadata/delete?type=all" \
 
 The API returns a JSON object containing an `Error` field with details for each case.
 
-| Code | Meaning               | Description                     |
-| ---- | --------------------- | ------------------------------- |
-| 200  | OK                    | Metadata deleted, file returned |
-| 400  | Bad Request           | Missing file or invalid `type`  |
-| 401  | Unauthorized          | Invalid or missing JWT          |
-| 500  | Internal Server Error | Server processing failure       |
+### **Response**
+
+```json
+[
+  {
+    "Name": "FilesResult",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "FilesResult"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Cloud SDK Family
 

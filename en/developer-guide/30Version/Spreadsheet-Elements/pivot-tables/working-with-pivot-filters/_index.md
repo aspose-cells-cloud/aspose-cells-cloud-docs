@@ -10,17 +10,9 @@ description: "Add pivot table filters to Excel workbooks via Aspose.Cells Cloud 
 weight: 50
 ArticleTitle: "Working with Pivot Filters – Aspose.Cells Cloud Documentation"
 ---
-
 The **PutWorksheetPivotTableFilter** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotFilters`) adds a pivot filter to the specified PivotTable in a worksheet using Aspose.Cells Cloud, enabling developers to programmatically apply filtering criteria to pivot table data without manual intervention.
 
-**Prerequisites**  
-Before calling this endpoint you must:
-
-- Generate a valid OAuth/JWT access token and include it in the `Authorization` header.
-- Ensure the target workbook is stored in a cloud folder that you have access to (specify `folder` and optionally `storageName`).
-- Use Aspose.Cells Cloud API version 3.0 or later.
-
-## PutWorksheetPivotTableFilter API
+## The Put Worksheet Pivot Table Filter Web API
 
 ```http
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotFilters
@@ -32,15 +24,15 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request parameters
 
-| Parameter Name      | Type    | Location | Description                                                                                     |
-| ------------------- | ------- | -------- | ----------------------------------------------------------------------------------------------- |
-| **name**            | string  | path     | The name of the Excel file.                                                                     |
-| **sheetName**       | string  | path     | The worksheet that contains the pivot table.                                                    |
-| **pivotTableIndex** | integer | path     | Zero‑based index of the pivot table to which the filter will be applied.                        |
-| **filter**          | object  | body     | JSON object that defines the filter settings. See the **filter schema** table below.            |
-| **needReCalculate** | boolean | query    | When **true**, forces the workbook to recalculate after the filter is added. Default **false**. |
-| **folder**          | string  | query    | Folder in cloud storage where the file is located.                                              |
-| **storageName**     | string  | query    | Name of the cloud storage.                                                                      |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| pivotTableIndex | Integer | Path | Gets the PivotTable report by index. |
+| filter | class:pivotfilter | HTTPBody | PivotFilter Pivot filter description. |
+| needReCalculate | Boolean | Query | Whether the specific PivotTable calculate(true/false). |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 **filter schema**
 
@@ -66,13 +58,35 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Response codes
 
-| Code | Meaning                                      |
-| ---- | -------------------------------------------- |
-| 200  | Filter added successfully.                   |
-| 400  | Bad request – invalid parameters.            |
-| 401  | Unauthorized – missing or invalid token.     |
-| 404  | Not found – workbook or pivot table missing. |
-| 500  | Internal server error.                       |
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 **Best Practices**
 

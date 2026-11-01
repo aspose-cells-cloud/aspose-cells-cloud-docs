@@ -12,26 +12,29 @@ date: 2023-11-15
 categories: ["cloud-api", "excel"]
 tags: ["slicer", "listobject", "rest-api"]
 ---
-
 The **PostWorksheetListObjectInsertSlicer** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/InsertSlicer`) enables users to insert a slicer for a specific list object on an Excel worksheet via Aspose.Cells Cloud, requiring the file name, worksheet name, list object index, column index, and destination cell name as parameters to position the slicer accurately.
 
-## REST API
+## The Post Worksheet List Object Insert Slicer Web API
 
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/InsertSlicer
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### Request Parameters
 
-| Parameter Name  | Type    | Location | Description                                                                |
-| --------------- | ------- | -------- | -------------------------------------------------------------------------- |
-| name            | String  | Path     | The name of the Excel file.                                                |
-| sheetName       | String  | Path     | The name of the worksheet that contains the list object.                   |
-| listObjectIndex | Integer | Path     | The zero‑based index of the list object to which the slicer will be added. |
-| columnIndex     | Integer | Query    | The zero‑based index of the column on which the slicer is based.           |
-| destCellName    | String  | Query    | The cell reference (e.g., **A1**) where the slicer will be placed.         |
-| folder          | String  | Query    | The folder in storage that contains the Excel file.                        |
-| storageName     | String  | Query    | The name of the Aspose Cloud storage service.                              |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| listObjectIndex | Integer | Path | List object index. |
+| columnIndex | Integer | Query | The index of ListColumn in ListObject.ListColumns |
+| destCellName | String | Query | The cell in the upper-left corner of the Slicer range. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 You can use the cURL command‑line tool to call the API:
 
@@ -77,6 +80,27 @@ curl -v "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listo
 | 401  | Unauthorized          | Invalid or missing JWT token.                                                            |
 | 413  | Payload Too Large     | Uploaded file exceeds size limit.                                                        |
 | 500  | Internal Server Error | Unexpected server error.                                                                 |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
 
 ### Error Handling
 

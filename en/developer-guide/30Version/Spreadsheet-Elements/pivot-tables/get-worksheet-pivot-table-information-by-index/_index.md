@@ -10,28 +10,31 @@ description: "Retrieve worksheet pivot table info by index via Aspose.Cells Clou
 weight: 100
 ArticleTitle: "Get a Pivot Table in an Excel Worksheet"
 ---
-
 The **GetWorksheetPivotTable** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivottableIndex}`) retrieves detailed information about a specific PivotTable in a worksheet by its zero-based index, enabling developers to programmatically access PivotTable metadata such as cache, data fields, and layout without parsing the entire workbook; Aspose.Cells Cloud supports this operation via a RESTful endpoint and provides SDKs for multiple programming languages including .NET, Java, Go, Node.js, and Python.
 
 ### **Security and Authentication**
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-## REST API
+## The Get Worksheet Pivot Table Web API
 
-```bash
+```http
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivottableIndex}
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### Request parameters
 
-| Parameter Name      | Type    | Location | Description                                              |
-| ------------------- | ------- | -------- | -------------------------------------------------------- |
-| **name**            | string  | path     | The name of the Excel file.                              |
-| **sheetName**       | string  | path     | The name of the worksheet that contains the pivot table. |
-| **pivottableIndex** | integer | path     | Zero‑based index of the pivot table in the worksheet.    |
-| **folder**          | string  | query    | The folder where the document is stored.                 |
-| **storageName**     | string  | query    | The name of the Aspose Cloud storage.                    |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| pivottableIndex | Integer | Path | Gets the PivotTable report by index. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the API with cURL.
 
@@ -184,6 +187,27 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/work
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "PivotTableResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "PivotTableResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
 
 ### Error handling
 

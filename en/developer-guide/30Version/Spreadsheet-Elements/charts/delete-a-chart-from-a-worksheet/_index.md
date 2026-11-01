@@ -17,14 +17,13 @@ description: "Deletes a chart from a worksheet by its zero‑based index using t
 ArticleTitle: "Delete a Chart from a Worksheet using Aspose.Cells Cloud REST API"
 linktitle: "Delete Chart"
 ---
-
 The **DeleteWorksheetChart** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}`) enables Aspose.Cells Cloud users to remove a specific chart from a worksheet by its zero-based index, supporting robust spreadsheet automation through a simple, stateless REST call.
 
 For related operations, see the **[Add a Chart](#)** and **[Get Chart](#)** pages.
 
-## REST API
+## The Delete Worksheet Chart Web API
 
-```bash
+```http
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}
 ```
 
@@ -34,33 +33,45 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 
 ### Request parameters
 
-| Parameter Name | Type    | Location | Description                                  |
-| -------------- | ------- | -------- | -------------------------------------------- |
-| name           | string  | path     | The workbook name.                           |
-| sheetName      | string  | path     | The worksheet name.                          |
-| chartIndex     | integer | path     | The zero‑based index of the chart to delete. |
-| folder         | string  | query    | The folder that contains the workbook.       |
-| storageName    | string  | query    | The name of the storage to use.              |
-
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| chartIndex | Integer | Path | The chart index. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 ### **Response**
 
 ```json
-{
-    "Status":"OK",
-    "Code":200
-}
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
 ```
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
 ## How to Use the PutWorksheetAddChart API with SDKs
 
 ### PutWorksheetAddChart API Specification

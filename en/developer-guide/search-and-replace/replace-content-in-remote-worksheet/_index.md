@@ -9,12 +9,9 @@ type: docs
 weight: 100
 ArticleTitle: "Replace Text in Remote Excel Worksheet Using Aspose.Cells Cloud API"
 ---
-
 The **ReplaceContentInRemoteRange** API (`PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{cellArea}/replace/content`) in Aspose.Cells Cloud v4.0 enables precise, server-side replacement of specified text within a defined cell range of a remote Excel workbook stored in cloud storage—supporting dynamic template updates and cross-regional data synchronization without downloading the file.
 
-## **Replace Text in Remote Worksheet API**
-
-### **Web API Endpoint**
+## The Replace Content in Remote Range Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{cellArea}/replace/content
@@ -32,36 +29,41 @@ For setup guidance, see the [Aspose Cloud Authentication Guide](https://docs.asp
 
 ### **Request Parameters**
 
-| Parameter Name | Type   | Location | Required | Description                                                                                                                 |
-| :------------- | :----- | :------- | :------- | :-------------------------------------------------------------------------------------------------------------------------- |
-| `name`         | String | Path     | Yes      | Name of the Excel workbook stored in cloud storage (e.g., `"sales_report.xlsx"`).                                           |
-| `worksheet`    | String | Path     | Yes      | Name of the target worksheet (e.g., `"Q1_Sales"`).                                                                          |
-| `cellArea`     | String | Path     | Yes      | Range address (e.g., `"A1:C10"`, `"Sheet2!B2:D20"`). Replacement applies only within this area.                             |
-| `searchText`   | String | Query    | Yes      | Text string to search for in the specified range.                                                                           |
-| `replaceText`  | String | Query    | Yes      | Replacement text for all matching occurrences.                                                                              |
-| `folder`       | String | Query    | No       | Folder path containing the workbook (e.g., `"/reports/monthly/"`).                                                          |
-| `storageName`  | String | Query    | No       | Custom cloud storage name (e.g., `"CorporateS3"`). Omit to use default storage.                                             |
-| `region`       | String | Query    | No       | Locale setting (e.g., `"en-US"`, `"fr-FR"`). Affects culture-specific parsing (dates, numbers) and string comparison rules. |
-| `password`     | String | Query    | No       | Password for password-protected workbooks.                                                                                  |
-
-### **Example Request (cURL)**
-
-```bash
-curl -X PUT \
-  "https://api.aspose.cloud/v4.0/cells/sales_report.xlsx/worksheets/Sheet1/ranges/A1:C50/replace/content?searchText=Q1&replaceText=Q2&folder=/reports" \
-  -H "Authorization: Bearer {access_token}"
-```
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The name of the workbook file to be replace. |
+| searchText | String | Query | The searched text. |
+| replaceText | String | Query | The replaced text. |
+| worksheet | String | Path | The worksheet name. |
+| cellArea | String | Path | The cell area for the replace. |
+| folder | String | Query | The folder path where the workbook is stored. |
+| storageName | String | Query | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
 
 ### **Response**
 
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
 On success, the API returns:
 
-```json
-{
-  "Code": 200,
-  "Status": "OK"
-}
-```
 
 > **Note**: The current response does not include the count of replacements or affected cell coordinates. For detailed feedback, consider using the [GetCellsRange](https://reference.aspose.cloud/cells/) API before/after replacement.
 
@@ -73,6 +75,14 @@ On success, the API returns:
 | `401` | Unauthorized          | Missing, expired, or invalid access token.                  |
 | `404` | Not Found             | Workbook, worksheet, or range not found.                    |
 | `500` | Internal Server Error | Server-side error (e.g., file corruption, access denial).   |
+
+### **Example Request (cURL)**
+
+```bash
+curl -X PUT \
+  "https://api.aspose.cloud/v4.0/cells/sales_report.xlsx/worksheets/Sheet1/ranges/A1:C50/replace/content?searchText=Q1&replaceText=Q2&folder=/reports" \
+  -H "Authorization: Bearer {access_token}"
+```
 
 ## **Use Cases**
 

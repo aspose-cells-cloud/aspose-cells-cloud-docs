@@ -10,12 +10,9 @@ description: "Unhide Excel rows via Aspose.Cells Cloud REST API using PostUnhide
 weight: 50
 ArticleTitle: "Unhide rows on an Excel worksheet using Aspose.Cells Cloud API"
 ---
-
 The **PostUnhideWorksheetRows** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/unhide`) in Aspose.Cells Cloud enables developers to unhide specified rows in an Excel worksheet by providing the file name, worksheet name, starting row index, and number of rows to unhide; it also optionally supports setting row height and specifying folder or storage names, making worksheet formatting adjustments programmatic and scalable across cloud-based document workflows.
 
-**Prerequisites:** Obtain a valid JWT access token from the Aspose Cloud authentication service and ensure the target workbook is uploaded to a supported storage before invoking this endpoint.
-
-## PostUnhideWorksheetRows API
+## The Post Unhide Worksheet Rows Web API
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/unhide
@@ -27,15 +24,15 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Request parameters**
 
-| Parameter Name | Type    | Location | Description                                  |
-| -------------- | ------- | -------- | -------------------------------------------- |
-| name           | string  | path     | The workbook name.                           |
-| sheetName      | string  | path     | The worksheet name.                          |
-| startrow       | integer | query    | Zero‑based index of the first row to unhide. |
-| totalRows      | integer | query    | Number of rows to unhide.                    |
-| height         | number  | query    | Row height (default 15.0).                   |
-| folder         | string  | query    | The document folder.                         |
-| storageName    | string  | query    | Name of the storage.                         |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| startrow | Integer | Query | The begin row index to be operated. |
+| totalRows | Integer | Query | Number of rows to be operated. |
+| height | floating | Query | The new row height. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 The <a href="https://apireference.aspose.cloud/cells/#/Cells/PostUnhideWorksheetRows" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -72,17 +69,39 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 
 {{< /tabs >}}
 
-**HTTP Status Codes**
-
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
 
 For detailed troubleshooting, see the [Error Handling guide](/error-handling/).
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Cloud SDK Family
 

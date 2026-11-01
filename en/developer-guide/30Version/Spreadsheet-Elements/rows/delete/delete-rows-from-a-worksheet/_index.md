@@ -9,12 +9,9 @@ description: "Delete multiple rows from an Excel worksheet using Aspose.Cells Cl
 weight: 80
 ArticleTitle: "Delete Multiple Rows from an Excel Worksheet with Aspose.Cells Cloud API"
 ---
-
 The **DeleteWorksheetRows** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows`) in Aspose.Cells Cloud v3.0 deletes multiple consecutive rows from a specified worksheet by providing the starting row index (`startrow`) and optionally the number of rows to remove (`totalRows`), enabling efficient bulk row deletion while optionally updating cross-sheet references via the `updateReference` parameter.
 
-**Prerequisites:** To call this endpoint you must have a valid JWT access token obtained from Aspose Cloud authentication and appropriate storage permissions for the workbook.
-
-## DeleteWorksheetRows API
+## The Delete Worksheet Rows Web API
 
 ```http
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
@@ -26,15 +23,15 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Request parameters**
 
-| Parameter Name  | Type    | Path / Query String / HTTP Body | Description                                                          |
-| --------------- | ------- | ------------------------------- | -------------------------------------------------------------------- |
-| name            | string  | path                            | The workbook name.                                                   |
-| sheetName       | string  | path                            | The worksheet name.                                                  |
-| startrow        | integer | query                           | Zero‑based index of the first row to delete (e.g., `0` = first row). |
-| totalRows       | integer | query                           | The number of rows to delete.                                        |
-| updateReference | boolean | query                           | Whether to update references after deletion (`true`/`false`).        |
-| folder          | string  | query                           | The document folder.                                                 |
-| storageName     | string  | query                           | The storage name.                                                    |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| startrow | Integer | Query | The begin row index to be operated. |
+| totalRows | Integer | Query | Number of rows to be operated. |
+| updateReference | Boolean | Query | Indicates if update references in other worksheets. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRows) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -76,6 +73,37 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 | 401         | Unauthorized – missing or invalid JWT token.      |
 | 404         | Not found – workbook or worksheet does not exist. |
 | 500         | Internal server error – unexpected condition.     |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Cloud SDK Family
 

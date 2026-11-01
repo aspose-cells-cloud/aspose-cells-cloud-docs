@@ -14,10 +14,9 @@ tags:
   ["excel", "range-to-image", "rest-api", "image-conversion", "aspose-cells"]
 ArticleTitle: "Convert Excel Range to Image with Aspose.Cells Cloud API"
 ---
-
 The **ConvertRangeToImage** API (`PUT https://api.aspose.cloud/v4.0/cells/convert/range/image`) in Aspose.Cells Cloud enables developers to convert a specified cell range—such as A1:C10—from a local Excel file directly into image formats including PNG, JPEG, SVG, TIFF, or BMP, without uploading the full workbook to cloud storage; the operation reads the file from the local system, performs conversion server-side, and returns the resulting image, reducing cloud resource usage and simplifying workflow.
 
-## Convert Range to Image Method
+## The Convert Range to Image Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/convert/range/image

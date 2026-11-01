@@ -10,12 +10,11 @@ keywords: "Aspose.Cells, find text, Excel API, workbook search"
 description: "Use Aspose.Cells Cloud API to search for text in Excel workbooks via POST /findText, with cURL and SDK examples."
 ArticleTitle: "Find Text in an Excel Workbook using Aspose.Cells Cloud API"
 ---
-
 The **PostWorkbooksTextSearch** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/findText`) enables developers to search for specified text within an Excel workbook stored in the cloud using Aspose.Cells Cloud. By sending the workbook file name and the target text as required parameters, the API returns a structured response listing all matching text instances, supporting accurate and scalable text discovery across large spreadsheets without local dependencies.
 
-## REST API
+## The Post Workbooks Text Search Web API
 
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/findText
 ```
 
@@ -25,50 +24,43 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request parameters
 
-| Parameter Name | Type   | Location | Description                                                |
-| -------------- | ------ | -------- | ---------------------------------------------------------- |
-| name           | string | path     | Name of the Excel workbook.                                |
-| text           | string | query    | Text string to search for.                                 |
-| folder         | string | query    | Folder that contains the workbook (optional).              |
-| storageName    | string | query    | Name of the storage where the workbook resides (optional). |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| text | String | Query | Text sample. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 ### **Response**
 
 ```json
-{
-  "Status": "OK",
-  "Code": 200,
-  "TextItems": {
-    "link": {
-      "Href": "string",
-      "Rel": "string",
-      "Title": "string",
-      "Type": "string"
-    },
-    "TextItemList": [
-      {
-        "link": {
-          "Href": "string",
-          "Rel": "string",
-          "Title": "string",
-          "Type": "string"
-        },
-        "Text": "string"
-      }
-    ]
+[
+  {
+    "Name": "TextItemsResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "TextItemsResponse"
+    }
   }
-}
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
 ```
 
 **HTTP Status Codes**
 
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## How to Use the PostWorkbooksTextSearch API with SDKs
 

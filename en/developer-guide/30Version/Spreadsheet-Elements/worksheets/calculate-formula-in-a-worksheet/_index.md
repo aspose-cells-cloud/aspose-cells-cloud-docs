@@ -10,26 +10,13 @@ description: "Calculate formulas in an Excel worksheet using Aspose.Cells Cloud 
 weight: 100
 ArticleTitle: "Calculate a formula on an Excel worksheet – Aspose.Cells Cloud Documentation"
 ---
-
 The **GetWorksheetCalculateFormula** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/formulaResult`) enables developers to calculate and retrieve the evaluated result of a specified Excel formula within a worksheet using Aspose.Cells Cloud, supporting direct formula evaluation without requiring local Excel installation.
 
-## REST API
+## The Get Worksheet Calculate Formula Web API
 
-```bash
+```http
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/formulaResult
 ```
-
-### **Request parameters**
-
-| Parameter Name | Type   | Location | Description                                        |
-| -------------- | ------ | -------- | -------------------------------------------------- |
-| name           | string | path     | Name of the Excel file.                            |
-| sheetName      | string | path     | Name of the worksheet that contains the formula.   |
-| formula        | string | query    | The formula to be evaluated (e.g., `SUM(A5:A10)`). |
-| folder         | string | query    | Folder where the document is stored.               |
-| storageName    | string | query    | Name of the storage service (if applicable).       |
-
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetCalculateFormula) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
 ### Authentication
 
@@ -40,6 +27,39 @@ Authorization: Bearer <your_jwt_token>
 ```
 
 You can obtain a token by following the OAuth 2.0 flow described in the Aspose.Cells Cloud authentication guide.
+
+### **Request parameters**
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| formula | String | Query | The formula. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetCalculateFormula) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "SingleValueResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "SingleValueResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
 
 ### Possible response status codes
 

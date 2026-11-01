@@ -17,8 +17,6 @@ api_version: "v3.0"
 weight: 100
 ArticleTitle: "Delete All Pivot Tables in Excel Worksheet via Aspose.Cells Cloud REST API"
 ---
-
-
 The **DeleteWorksheetPivotTables** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables`) removes all PivotTables from a specified worksheet in an Excel file using Aspose.Cells Cloud, enabling users to reset analysis layouts, clean up unused pivot tables, or prepare templates for reuse without deleting the worksheet itself; the operation requires the file name and worksheet name as path parameters and supports optional folder and storageName query parameters for cloud storage organization.
 
 ## Overview
@@ -26,14 +24,6 @@ The **DeleteWorksheetPivotTables** API (`DELETE https://api.aspose.cloud/v3.0/ce
 This operation removes **all** pivot tables from a specified worksheet in an Excel file. It is especially useful for resetting analysis layouts, cleaning up unused pivot tables, or preparing templates for reuse—without deleting the worksheet itself.
 
 > 💡 **Best Practice Tip**: Bulk deletion is irreversible. For safety, consider backing up your file or using [versioning](https://docs.aspose.cloud/total/getting-started/storage/versioning/) before running this operation.
-
-## Prerequisites
-
-Before calling the API, ensure you have completed the following steps:
-
-1. **Aspose Cloud Account** – Sign up for an Aspose Cloud account at [dashboard.aspose.cloud](https://dashboard.aspose.cloud/) if you do not already have one.
-2. **JWT Token** – Generate a JSON Web Token (JWT) for authentication. See the [Authentication guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) for details.
-3. **Storage Setup** – Upload the target Excel file to Aspose Cloud storage or a connected external storage. Note the **folder** and **storage name** (if applicable) where the file resides.
 
 ## Authentication
 
@@ -45,18 +35,55 @@ Authorization: Bearer <your-jwt-token>
 
 > 🔒 **Security Note**: Never expose your JWT token in client-side code or public repositories. Store credentials securely (e.g., environment variables or secret managers).
 
-## HTTP Request
+## The Delete Worksheet Pivot Tables Web API
 
-```
+```http
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### Path Parameters
 
-| Name        | Type   | Required | Description                                             |
-|-------------|--------|----------|---------------------------------------------------------|
-| `name`      | string | Yes      | The name of the Excel file (e.g., `Sample.xlsx`).      |
-| `sheetName` | string | Yes      | The name of the worksheet from which all pivot tables will be removed (e.g., `Sheet1`). |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ### Query Parameters
 

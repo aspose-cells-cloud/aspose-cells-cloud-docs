@@ -9,22 +9,12 @@ keywords: "Aspose.Cells, Move Folder, Cloud Storage, Excel API"
 description: "Learn how to move folders in Aspose.Cells Cloud storage via the RESTful Move Folder API. Includes endpoint, parameters, sample cURL, error codes, and SDK examples for C#, Java, Python, and more."
 weight: 100
 ---
-
 The **MoveFolder** API (`PUT https://api.aspose.cloud/v4.0/cells/storage/folder/move/{srcPath}`) in Aspose.Cells Cloud moves a folder from a specified source path to a destination path within cloud storage, using required path parameter `srcPath` and query parameter `destPath` to define the operation, and optionally supporting `srcStorageName` and `destStorageName` for multi-storage scenarios, enabling efficient reorganization of files and storage resources programmatically.
 
-## **Excel API: Move Folder**
-
-### Web API
+## The Move Folder Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/storage/folder/move/{srcPath}
-```
-
-**Example cURL request**
-
-```bash
-curl -X PUT "https://api.aspose.cloud/v4.0/cells/storage/folder/move/FolderA?destPath=FolderB" \
-     -H "Authorization: Bearer {access_token}"
 ```
 
 ### **Security and Authentication**
@@ -33,12 +23,12 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### The request parameters of **moveFolder** API are
 
-| Parameter Name  | Type   | Location | Description                                                       |
-| --------------- | ------ | -------- | ----------------------------------------------------------------- |
-| srcPath         | string | Path     | The full path of the folder to be moved, e.g., `FolderA/`.        |
-| destPath        | string | Query    | The target path where the folder will be moved, e.g., `FolderB/`. |
-| srcStorageName  | string | Query    | (Optional) Name of the source storage.                            |
-| destStorageName | string | Query    | (Optional) Name of the destination storage.                       |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| srcPath | String | Path | - |
+| destPath | String | Query | - |
+| srcStorageName | String | Query | - |
+| destStorageName | String | Query | - |
 
 **Parameter details**
 
@@ -49,17 +39,43 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Response**
 
-On success the API returns an empty response body with HTTP status **200 OK**. Errors are returned as JSON objects containing an `error` field.
+```json
+[
+  {
+    "Name": "Void",
+    "DataType": {
+      "Identifier": "Void"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
 
 **HTTP Status Codes**
 
-| HTTP Code | HTTP Status           | Description                                                       |
-| --------- | --------------------- | ----------------------------------------------------------------- |
-| 200       | OK                    | Web API called successfully; response contains operation details. |
-| 400       | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401       | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413       | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500       | Internal Server Error | Unexpected server error.                                          |
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+On success the API returns an empty response body with HTTP status **200 OK**. Errors are returned as JSON objects containing an `error` field.
+
+### Web API
+**Example cURL request**
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/storage/folder/move/FolderA?destPath=FolderB" \
+     -H "Authorization: Bearer {access_token}"
+```
 
 ## OpenAPI Specification
 

@@ -9,18 +9,55 @@ description: "Adds text to a specified location in an Excel spreadsheet via the 
 weight: 100
 ArticleTitle: "Aspose.Cells Cloud: Add Text to Excel Cells via PostAddTextContent API"
 ---
-
 The **PostAddTextContent** API (`POST https://api.aspose.cloud/v3.0/cells/addtext`) in Aspose.Cells Cloud v3.0 adds text content to a specified location within a spreadsheet document by accepting an `addTextOptions` object in the request body that defines both the text to insert and its insertion position, supporting flexible modes such as prepending labels to cells, appending uniform suffixes, or inserting text before/after a fixed character count.
 
-## **Excel API: PostAddTextContent**
+## The Post Add Text Content Web API
 
-```
-POST http://api.aspose.cloud/v3.0/cells/addtext
+```http
+POST https://api.aspose.cloud/v3.0/cells/addtext
 ```
 
 ### **Security and Authentication**
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+### **Request Parameter**
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| addTextOptions | class:addtextoptions | HTTPBody | that specifies the text content and the position where the text should be added. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "FileInfo",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "FileInfo"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ### **Function Description**
 
@@ -37,32 +74,6 @@ This method safely appends new text to specified cells, supporting multiple inse
 
 - **Insert text before or after a specified number of characters**  
   Inserts text after a defined number of characters from the beginning or the end of each cell in the target range. Typical use cases include formatting codes, timestamps, or custom delimiters.
-
-### **Request Parameter**
-
-| Parameter Name | Type  | Location | Description                                                                 |
-| -------------- | ----- | -------- | --------------------------------------------------------------------------- |
-| addTextOptions | Class | Body     | Specifies the text content and the position where the text should be added. |
-
-### **Response**
-
-```json
-{
-  "Filename": "xxxxxx.pdf",
-  "FileSize": xxxx,
-  "FileContent": "File Content: base64_encoded_string"
-}
-```
-
-**HTTP Status Codes**
-
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
 
 ## How to Use the PostAddTextContent API with SDKs
 

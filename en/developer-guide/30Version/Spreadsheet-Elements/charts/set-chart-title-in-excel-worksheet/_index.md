@@ -9,13 +9,12 @@ description: "Learn how to add or update a chart title in an Excel worksheet usi
 linktitle: "Add Chart Title"
 ArticleTitle: "Add or Update Chart Title in Excel with Aspose.Cells Cloud API"
 ---
-
 The **PutWorksheetChartTitle** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title`) enables developers to set or update the title of a specific chart in an Excel worksheet using Aspose.Cells Cloud, supporting operations such as adding a new title or modifying an existing one by sending a `TitleChart` object in the request body.
 
-## PutWorksheetChartTitle API
+## The Put Worksheet Chart Title Web API
 
 ```http
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title
 ```
 
 ### **Security and Authentication**
@@ -24,14 +23,14 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request parameters
 
-| Parameter Name | Type    | Location | Description                        |
-| -------------- | ------- | -------- | ---------------------------------- |
-| name           | string  | path     | Workbook name.                     |
-| sheetName      | string  | path     | Worksheet name.                    |
-| chartIndex     | integer | path     | Index of the chart.                |
-| title          | string  | body     | Text of the chart title.           |
-| folder         | string  | query    | Folder that contains the workbook. |
-| storageName    | string  | query    | Name of the storage.               |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| chartIndex | Integer | Path | The chart index. |
+| title | class:title | HTTPBody | TitleChart title. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/PutWorksheetChartTitle) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -67,12 +66,37 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Shee
 
 **Error Responses**
 
-| HTTP Code | Example Payload                                                                        | Description                                               |
-| --------- | -------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| 400       | `{ "Code": "400", "Message": "Invalid request payload." }`                             | The request body is malformed or missing required fields. |
-| 401       | `{ "Code": "401", "Message": "Authentication failed. Invalid or expired JWT token." }` | The bearer token is missing, invalid, or expired.         |
-| 404       | `{ "Code": "404", "Message": "Workbook, worksheet, or chart not found." }`             | The specified resource does not exist.                    |
-| 500       | `{ "Code": "500", "Message": "Internal server error." }`                               | An unexpected error occurred on the server.               |
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Cloud SDK Family
 

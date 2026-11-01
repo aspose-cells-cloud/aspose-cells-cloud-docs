@@ -10,10 +10,60 @@ keywords: "compress excel file, aspose cells cloud, excel compression, spreadshe
 description: "Compress Excel files up to 500 MB via Aspose.Cells Cloud API with configurable compression levels."
 weight: 39
 ---
-
 The **PostCompress** API (`POST https://api.aspose.cloud/v3.0/cells/compress`) in Aspose.Cells Cloud enables compression of Excel files—supporting formats such as Xls, Xlsx, Xlsm, Xlsb, and Ods—by allowing users to upload a file via form data and optionally specify compression level (1–100), password, and Excel restriction checks to generate optimized target files.
 
-## The PostCompress API of Aspose.Cells Cloud Web Services
+## The Post Compress Web API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/compress
+```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+### Request Parameters
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| File | File | FormData | File to upload |
+| CompressLevel | Integer | Query | Compress level. The compression ratio 1-100. |
+| password | String | Query | The password needed to open an Excel file. |
+| checkExcelRestriction | Boolean | Query | Whether check restriction of excel file when user modify cells related objects. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "FilesResult",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "FilesResult"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+_Note:_ `FileContent` contains the compressed workbook encoded as a Base64 string. The length of the string corresponds to the size of the compressed file; you can decode it using standard Base64 utilities to retrieve the binary Excel file.
 
 **Prerequisites:**
 
@@ -28,52 +78,11 @@ This REST API compresses data in an Excel file.
 - Choose the level of compression
 - Supports multiple files
 
-### Web API Endpoint
-
-```http
-POST https://api.aspose.cloud/v3.0/cells/compress
-```
-
-### **Security and Authentication**
-
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
-
-### Request Parameters
-
-| Parameter Name | Type    | Path/Query String/HTTP Body | Description                                                            |
-| -------------- | ------- | --------------------------- | ---------------------------------------------------------------------- |
-| file           | file    | formData                    | File to upload                                                         |
-| CompressLevel  | integer | query                       | Compression level (0‑100); higher values indicate stronger compression |
-
 ### Request Body Parameter
 
 | Parameter Name | Type | Description                                      |
 | -------------- | ---- | ------------------------------------------------ |
 | data           | file | Binary content of the workbook file to compress. |
-
-### **Response**
-
-```json
-{
-    "Status" : "OK",
-    "Code" : 200,
-    "Filename" : "[merged filename]",
-    "Filesize" : [file size],
-    "FileContent" : "[Base64String]"
-}
-```
-
-_Note:_ `FileContent` contains the compressed workbook encoded as a Base64 string. The length of the string corresponds to the size of the compressed file; you can decode it using standard Base64 utilities to retrieve the binary Excel file.
-
-**HTTP Status Codes**
-
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
 
 ## How to Use the PostCompress API with SDKs
 

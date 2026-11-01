@@ -10,14 +10,11 @@ description: "Add OLE objects to Excel worksheets using Aspose.Cells Cloud REST 
 ArticleTitle: "Add OLE Object to Excel Worksheet with Aspose.Cells Cloud API"
 weight: 100
 ---
-
 The **PutWorksheetOleObject** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects`) enables developers to programmatically embed OLE objects—such as Word documents, PDFs, or other binary files—into a specific Excel worksheet using Aspose.Cells Cloud, supporting optional positioning via `upperLeftRow`, `upperLeftColumn`, `height`, and `width` query parameters.
 
 This REST API adds an **OLE object** to an Excel worksheet.
 
-**Prerequisites** – You must have a valid JWT authentication token, and any source files referenced by `oleFile` or `imageFile` should be uploaded to the specified storage location before invoking the endpoint.
-
-## PutWorksheetOleObject API
+## The Put Worksheet OLE Object Web API
 
 ```http
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects
@@ -29,19 +26,18 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request parameters
 
-| Parameter Name  | Type    | Location | Description                                        |
-| --------------- | ------- | -------- | -------------------------------------------------- |
-| name            | string  | path     | The workbook file name.                            |
-| sheetName       | string  | path     | The worksheet name.                                |
-| oleObject       | object  | body     | The OLE object definition.                         |
-| upperLeftRow    | integer | query    | Row index of the upper‑left corner (default 0).    |
-| upperLeftColumn | integer | query    | Column index of the upper‑left corner (default 0). |
-| height          | integer | query    | Height of the OLE object (default 0).              |
-| width           | integer | query    | Width of the OLE object (default 0).               |
-| oleFile         | string  | query    | Name of the OLE source file.                       |
-| imageFile       | string  | query    | Name of the preview image file.                    |
-| folder          | string  | query    | Folder that contains the workbook.                 |
-| storageName     | string  | query    | Name of the storage to use.                        |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worsheet name. |
+| upperLeftRow | Integer | Query | Upper left row index |
+| upperLeftColumn | Integer | Query | Upper left column index |
+| height | Integer | Query | Height of oleObject, in unit of pixel |
+| width | Integer | Query | Width of oleObject, in unit of pixel |
+| oleFile | String | Query | OLE filename path(full file name). |
+| imageFile | String | Query | Image filename path(full file name). |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 **Notes** – `upperLeftRow` and `upperLeftColumn` use zero‑based indexing. The `oleFile` (and optionally `imageFile`) must already exist in the target storage; otherwise the request will return an error.
 
@@ -81,13 +77,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/oleobj
 
 **Possible HTTP status codes**
 
-| Code | Description                                                     |
-| ---- | --------------------------------------------------------------- |
-| 200  | OLE object added successfully.                                  |
-| 400  | Bad request – missing or invalid parameters.                    |
-| 401  | Unauthorized – invalid or missing JWT token.                    |
-| 404  | Not found – workbook, worksheet, or source file does not exist. |
-| 500  | Internal server error – unexpected failure.                     |
 
 A typical successful response returns the following JSON payload:
 
@@ -106,6 +95,37 @@ A typical successful response returns the following JSON payload:
   }
 }
 ```
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Cloud SDK Family
 

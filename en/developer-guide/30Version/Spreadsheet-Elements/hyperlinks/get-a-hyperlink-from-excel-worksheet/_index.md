@@ -8,7 +8,6 @@ weight: 100
 ArticleTitle: "Aspose.Cells Cloud API – Get Worksheet Hyperlink"
 linktitle: "Get Hyperlink"
 ---
-
 The **GetWorksheetHyperlink** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks/{hyperlinkIndex}`) retrieves the description of a specific hyperlink from an Excel worksheet by its zero-based index, enabling developers to programmatically extract hyperlink details such as address, text to display, and screen tip using Aspose.Cells Cloud’s REST interface.
 
 ## Security and Authentication
@@ -16,21 +15,46 @@ The **GetWorksheetHyperlink** API (`GET https://api.aspose.cloud/v3.0/cells/{nam
 The Aspose.Cells Cloud APIs are secure and require [JWT token‑based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).  
 Before calling the endpoint, obtain a JWT access token using your client ID and secret, and include it in the `Authorization: Bearer <jwt token>` header.
 
-## REST API
+## The Get Worksheet Hyperlink Web API
 
-```bash
+```http
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks/{hyperlinkIndex}
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### Request Parameters
 
-| Parameter Name | Type    | Location | Description                                    |
-| -------------- | ------- | -------- | ---------------------------------------------- |
-| name           | string  | path     | The name of the Excel file.                    |
-| sheetName      | string  | path     | The name of the worksheet containing the link. |
-| hyperlinkIndex | integer | path     | Zero‑based index of the hyperlink to retrieve. |
-| folder         | string  | query    | The folder where the document is stored.       |
-| storageName    | string  | query    | The name of the storage service.               |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| hyperlinkIndex | Integer | Path | The hyperlink's index. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "HyperlinkResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "HyperlinkResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
 
 ### Error Responses
 

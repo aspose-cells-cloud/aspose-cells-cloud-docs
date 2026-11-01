@@ -11,7 +11,6 @@ categories: [api-reference, calculation]
 articleTitle: "Calculate Cell Formula – Aspose.Cells Cloud API Documentation"
 linktitle: "Calculate Cell Formula"
 ---
-
 The **PostCellCalculate** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}/calculate`) enables Aspose.Cells Cloud to compute the formula value of a specific cell within a worksheet, supporting complex formulas, dependent cell resolution, and customizable calculation settings such as error handling, precision, and threading for reliable enterprise-grade results.
 
 ## Overview
@@ -20,33 +19,60 @@ Aspose.Cells Cloud enables robust calculation of Excel cell formulas via its RES
 
 ---
 
-## Prerequisites
-
-To use this API, you need:
-
-- An [Aspose.Cells Cloud account](https://dashboard.aspose.cloud/)
-- API credentials (Client ID and Client Secret)
-- A workbook uploaded to Aspose Cloud storage (or use the sample `Book1.xlsx`)
-
-> **Note**: All requests require JWT token authentication. To obtain a token, authenticate with the [`POST /connect/token`](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) endpoint. See [Authentication](/total/getting-started/auth/) for full setup instructions.
-
----
-
-## REST API Endpoint
-
-Calculate the value of a specified cell formula in a worksheet:
+## The Post Cell Calculate Web API
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}/calculate
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### Path Parameters
 
-| Parameter | Type   | Required | Description                          |
-|-----------|--------|----------|--------------------------------------|
-| `name`    | string | Yes      | The Excel file name (e.g., `Book1.xlsx`). |
-| `sheetName` | string | Yes    | Worksheet name (e.g., `Sheet1`).     |
-| `cellName` | string | Yes     | Cell address (e.g., `A1`, `B5:C10`). |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| cellName | String | Path | The cell name. |
+| options | class:calculationoptions | HTTPBody | Calculation Options |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+Calculate the value of a specified cell formula in a worksheet:
 
 ### Query Parameters
 

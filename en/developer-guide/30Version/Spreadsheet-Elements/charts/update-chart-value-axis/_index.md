@@ -14,24 +14,67 @@ keywords:
 last_updated: 2024-05-28
 weight: 160
 ---
-
-
 The **PostChartValueAxis** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/valueaxis`) enables developers to update the value axis of a specific chart in an Excel workbook stored in Aspose.Cells Cloud by sending a request body containing axis properties such as bounds, tick units, and logarithmic scaling—allowing precise control over axis behavior without manual intervention.
 
 **Summary:**  
 Modify the value axis of a specific chart in an Excel workbook stored in Aspose Cloud. You can set bounds, tick units, logarithmic scaling, and other axis properties in a single request.
 
-## Prerequisites
+## The Post Chart Value Axis Web API
 
-1. **JWT access token** – Obtain a token as described in the [Authentication guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
-2. The target **workbook** must already be uploaded to Aspose Cloud storage (or the default storage).
-3. Know the **worksheet name** and the **zero-based chart index** you wish to modify.
-
-## Endpoint
-
-```
+```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/valueaxis
 ```
+
+### Authentication
+
+The API uses **JWT token-based authentication**. Include the token in the `Authorization` header:
+
+```
+Authorization: Bearer <jwt token>
+```
+
+### Request Parameters
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| chartIndex | Integer | Path | The chart index. |
+| axis | class:axis | HTTPBody | Axis |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 Replace the placeholders with your actual values.
 
@@ -40,25 +83,6 @@ Replace the placeholders with your actual values.
 | `{name}`       | Name of the Excel file (e.g., `Book1.xlsx`).        |
 | `{sheetName}`  | Worksheet that contains the chart (e.g., `Sheet1`). |
 | `{chartIndex}` | Zero-based index of the chart (e.g., `0`).          |
-
-## Authentication
-
-The API uses **JWT token-based authentication**. Include the token in the `Authorization` header:
-
-```
-Authorization: Bearer <jwt token>
-```
-
-## Request Parameters
-
-| Name            | Location | Type   | Required | Description                                |
-| --------------- | -------- | ------ | -------- | ------------------------------------------ |
-| **name**        | Path     | string | Yes      | Excel file name stored in the cloud.       |
-| **sheetName**   | Path     | string | Yes      | Worksheet that holds the chart.            |
-| **chartIndex**  | Path     | int    | Yes      | Zero-based index of the chart to update.   |
-| **axis**        | Body     | object | Yes      | Axis settings (see _Request Body Schema_). |
-| **folder**      | Query    | string | No       | Cloud folder path where the file resides.  |
-| **storageName** | Query    | string | No       | Name of the storage service to use.        |
 
 ## Request Body Schema (`axis` object)
 

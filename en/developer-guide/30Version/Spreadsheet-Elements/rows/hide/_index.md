@@ -10,12 +10,9 @@ description: "Hide Excel worksheet rows via Aspose.Cells Cloud REST API using cU
 weight: 40
 ArticleTitle: "Hide Rows in Excel Worksheet using Aspose.Cells Cloud API"
 ---
-
 The **PostHideWorksheetRows** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/hide`) enables programmatic hiding of rows in an Excel worksheet via Aspose.Cells Cloud, supporting operations like specifying the starting row index and number of rows to hide through required query parameters `startrow` and `totalRows`, while allowing optional folder and storage context for cloud-based file management.
 
-**Prerequisites:** A valid JWT Bearer token obtained from the Aspose Cloud OAuth endpoint, the workbook stored in Aspose Cloud storage, and the name of the worksheet that contains the rows to hide. The API works with Excel files in XLS, XLSX, and other supported formats.
-
-## PostHideWorksheetRows API
+## The Post Hide Worksheet Rows Web API
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/hide
@@ -27,14 +24,14 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request parameters
 
-| Parameter       | Type    | Location | Description                                                         |
-| --------------- | ------- | -------- | ------------------------------------------------------------------- |
-| **name**        | string  | path     | The name of the workbook file.                                      |
-| **sheetName**   | string  | path     | The name of the worksheet containing the rows to hide.              |
-| **startrow**    | integer | query    | Zero‑based index of the first row to be hidden.                     |
-| **totalRows**   | integer | query    | The number of consecutive rows to hide, starting from **startrow**. |
-| **folder**      | string  | query    | The folder in storage where the workbook is located.                |
-| **storageName** | string  | query    | The name of the storage service.                                    |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| startrow | Integer | Query | The begin row index to be operated. |
+| totalRows | Integer | Query | Number of rows to be operated. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostHideWorksheetRows) provides a publicly accessible programming interface that lets you perform REST interactions directly from a web browser.
 
@@ -69,17 +66,41 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 
 **Response status codes**
 
-| Code | Description                                      |
-| ---- | ------------------------------------------------ |
-| 200  | Success – rows hidden                            |
-| 400  | Bad request – invalid parameters                 |
-| 401  | Unauthorized – missing or invalid JWT            |
-| 404  | Not found – workbook or worksheet does not exist |
-| 500  | Server error – internal processing failure       |
 
 A successful call returns a JSON object that contains the fields `Code` and `Status`. In case of an error, the response includes additional fields such as `Message` and appropriate HTTP status codes (e.g., 400, 401, 404, 500).
 
 **Notes:** Ensure that the `startrow` value is within the worksheet’s row range; otherwise the API will return a 400 error. Row indices are zero‑based, so `startrow=0` refers to the first row.
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Cloud SDK Family
 

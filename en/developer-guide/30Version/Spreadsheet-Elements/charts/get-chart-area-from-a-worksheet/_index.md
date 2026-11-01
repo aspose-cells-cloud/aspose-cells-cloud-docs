@@ -16,14 +16,11 @@ description: "Retrieve chart-area properties from a worksheet using Aspose.Cells
 ArticleTitle: "Get Chart Area from a Worksheet - Aspose.Cells Cloud API"
 linktitle: "Get Chart Area"
 ---
-
 The **GetChartArea** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/chartArea`) retrieves detailed chart area description for a specific chart in a worksheet using Aspose.Cells Cloud, enabling developers to programmatically access layout and formatting properties such as position, size, and fill style without manual spreadsheet processing.
-
-**Prerequisites:** To call this endpoint you must have a valid JWT access token, the target workbook must be uploaded to Aspose Cloud storage, and the file format must be supported by Aspose.Cells.
 
 **Background:** A chart area defines the outermost bounding box of an Excel chart, including titles, legends, and the plot area. Retrieving its properties allows you to adjust layout and styling programmatically.
 
-## GetChartArea API
+## The Get Chart Area Web API
 
 ```http
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/chartArea
@@ -35,87 +32,45 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request parameters
 
-| Parameter Name | Type    | Location | Description                                    |
-| -------------- | ------- | -------- | ---------------------------------------------- |
-| name           | string  | path     | Name of the workbook file.                     |
-| sheetName      | string  | path     | Name of the worksheet that contains the chart. |
-| chartIndex     | integer | path     | Zero‑based index of the chart.                 |
-| folder         | string  | query    | Folder where the workbook is stored.           |
-| storageName    | string  | query    | Name of the storage service.                   |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| chartIndex | Integer | Path | The chart index. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 ### **Response**
 
 ```json
-{
-  "ChartArea": {
-    "Area": {
-      "BackgroundColor": { "A": "0", "R": "0", "G": "0", "B": "0" },
-      "FillFormat": { "Type": "Automatic" },
-      "ForegroundColor": { "A": "0", "R": "0", "G": "0", "B": "0" },
-      "Formatting": "Automatic",
-      "InvertIfNegative": false,
-      "Transparency": 0.0
-    },
-    "AutoScaleFont": false,
-    "BackgroundMode": "Automatic",
-    "Border": {
-      "BeginArrowLength": "Medium",
-      "BeginArrowWidth": "Medium",
-      "BeginType": "None",
-      "CapType": "Flat",
-      "Color": { "A": "0", "R": "0", "G": "0", "B": "0" },
-      "CompoundType": "Single",
-      "DashType": "Solid",
-      "EndArrowLength": "Medium",
-      "EndArrowWidth": "Medium",
-      "EndType": "None",
-      "IsAuto": false,
-      "IsAutomaticColor": false,
-      "IsVisible": false,
-      "JoinType": "Round",
-      "Style": "Solid",
-      "Transparency": 0.0,
-      "Weight": "HairLine",
-      "WeightPt": 0.0
-    },
-    "Font": {
-      "Color": { "A": "255", "R": "0", "G": "0", "B": "0" },
-      "DoubleSize": 10.0,
-      "IsBold": false,
-      "IsItalic": false,
-      "IsStrikeout": false,
-      "IsSubscript": false,
-      "IsSuperscript": false,
-      "Name": "Arial",
-      "Size": 10,
-      "Underline": "None"
-    },
-    "IsAutomaticSize": false,
-    "IsInnerMode": false,
-    "Shadow": false,
-    "Width": 0,
-    "Height": 0,
-    "X": 0,
-    "Y": 0,
-    "link": {
-      "Href": "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/chartArea",
-      "Rel": "self"
+[
+  {
+    "Name": "ChartAreaResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "ChartAreaResponse"
     }
-  },
-  "Code": "200",
-  "Status": "OK"
-}
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
 ```
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
 ## How to Use the GetChartArea API with SDKs
 
 ### GetChartArea API Specification

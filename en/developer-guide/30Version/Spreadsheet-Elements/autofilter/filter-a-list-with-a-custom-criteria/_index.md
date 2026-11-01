@@ -11,10 +11,9 @@ description: "Apply custom filter criteria to Excel worksheets using Aspose.Cell
 weight: 65
 ArticleTitle: "Add a custom criterion in an Excel worksheet – Aspose.Cells Cloud API"
 ---
-
 The **PutWorksheetCustomFilter** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/custom`) enables Aspose.Cells Cloud users to apply custom filter criteria to a specified range in a worksheet, allowing precise control over visible data by filtering based on field index, operator type, and custom criteria—such as filtering rows where values are greater than a threshold or match a specific text pattern—without requiring local Excel installation.
 
-## PutWorksheetCustomFilter API
+## The Put Worksheet Custom Filter Web API
 
 ```http
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/custom
@@ -26,40 +25,52 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters:
 
-| Parameter Name | Type    | Location | Description                                                           |
-| -------------- | ------- | -------- | --------------------------------------------------------------------- |
-| name           | string  | path     | Name of the Excel file.                                               |
-| sheetName      | string  | path     | Name of the worksheet that contains the data to be filtered.          |
-| range          | string  | query    | Cell range that the filter will be applied to (e.g., `A1:B1`).        |
-| fieldIndex     | integer | query    | Zero‑based index of the column on which the filter is applied.        |
-| operatorType1  | string  | query    | First comparison operator (e.g., `LessOrEqual`, `Equal`).             |
-| criteria1      | string  | query    | First filter value or expression.                                     |
-| isAnd          | boolean | query    | If `true`, combines the two criteria with **AND**; otherwise **OR**.  |
-| operatorType2  | string  | query    | Second comparison operator (optional).                                |
-| criteria2      | string  | query    | Second filter value or expression (optional).                         |
-| matchBlanks    | boolean | query    | When `true`, blanks are included in the filter results.               |
-| refresh        | boolean | query    | If `true`, forces the worksheet to refresh after applying the filter. |
-| folder         | string  | query    | Folder path in storage where the file is located.                     |
-| storageName    | string  | query    | Name of the storage service.                                          |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The workbook name. |
+| sheetName | String | Path | The worksheet name. |
+| range | String | Query | Represents the range to which the specified AutoFilter applies. |
+| fieldIndex | Integer | Query | The integer offset of the field on which you want to base the filter (from the left of the list; the leftmost field is field 0). |
+| operatorType1 | String | Query | The filter operator type |
+| criteria1 | String | Query | The custom criteria. |
+| isAnd | Boolean | Query | true/false |
+| operatorType2 | String | Query | - |
+| criteria2 | String | Query | The custom criteria. |
+| matchBlanks | Boolean | Query | Match all blank cell in the list. |
+| refresh | Boolean | Query | Refresh auto filters to hide or unhide the rows. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 ### **Response**
 
 ```json
-{
-  "Status": "OK",
-  "Code": 200
-}
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
 ```
 
 **HTTP Status Codes**
 
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## How to Use the PutWorksheetCustomFilter API with SDKs
 

@@ -10,8 +10,6 @@ type: docs
 linktitle: "Clear All Comments"
 ArticleTitle: "Delete All Comments in Worksheet via Aspose.Cells Cloud API"
 ---
-
-
 The **DeleteWorksheetComments** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments`) provided by Aspose.Cells Cloud removes all comments from a specified worksheet in a cloud-based spreadsheet file. This operation accepts the workbook file name and worksheet name as required path parameters, with optional folder and storage parameters for file location flexibility. As a destructive action, it permanently deletes all comments without recovery, enabling developers to programmatically clean up worksheets when preparing reports or resetting templates.
 
 **API version:** `v3.0`  
@@ -21,31 +19,55 @@ Aspose.Cells Cloud provides a robust REST endpoint that removes **all** comments
 
 ---
 
-## Prerequisites
+## The Delete Worksheet Comments Web API
 
-| Requirement         | Details                                                                                                                                                                                                                                             |
-| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Authentication**  | A valid JWT access token is required in the `Authorization` header (`Bearer <jwt token>`). Obtain the token via the [OAuth2 authentication flow]（https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/）. |
-| **Storage**         | The file must reside in a storage that is accessible to Aspose.Cells Cloud (default storage is used if `storageName` is omitted).                                                                                                                   |
-| **Permissions**     | The token must have permission to read and write the target file.                                                                                                                                                                                   |
-| **SDKs (optional)** | SDKs are available for .NET, Java, PHP, Ruby, Node.js, Python, Perl, and Go (see **SDK Examples** section).                                                                                                                                         |
-
----
-
-## HTTP Request
-
-### Endpoint
-
-```
+```http
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### Path Parameters
 
-| Name        | Type   | Description                                 |
-| ----------- | ------ | ------------------------------------------- |
-| `name`      | string | Name of the Excel file (e.g., `test.xlsx`). |
-| `sheetName` | string | Name of the worksheet (e.g., `Sheet1`).     |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ### Query Parameters
 

@@ -12,8 +12,6 @@ weight: 50
 linktitle: "Search Excel Files"
 ArticleTitle: "Find Text in Excel Files with Aspose.Cells Cloud API"
 ---
-
-
 The **PostSearch** API (`POST https://api.aspose.cloud/v3.0/cells/search`) enables developers to search for specified text within Excel files (XLS, XLSX, XLSM, XLSB) and OpenDocument Spreadsheet (ODS) files using Aspose.Cells Cloud, supporting optional parameters like worksheet name and file password, and returning all matching cells with their worksheet locations.
 
 ## Overview
@@ -28,21 +26,59 @@ Aspose.Cells Cloud provides a **POST** endpoint that searches for a given text s
 
 ---
 
-## Prerequisites
+## The Post Search Web API
 
-| Requirement           | Details                                                                                                                                                  |
-| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Authentication**    | JWT token obtained via the Aspose Cloud OAuth flow. The token must include the **Cells** scope.                                                          |
-| **Supported formats** | XLS, XLSX, XLSM, XLSB, ODS                                                                                                                               |
-| **Maximum file size** | 150 MB (compressed). Larger files return **413 Payload Too Large**.                                                                                      |
-| **Required headers**  | `Authorization: Bearer <jwt-token>` <br> `Accept: application/json`                                                                                      |
-| **Permissions**       | The token must have _read_ permission on the target storage (if using remote storage) – not required when the file is uploaded as `multipart/form-data`. |
+```http
+POST https://api.aspose.cloud/v3.0/cells/search
+```
 
-_Tip:_ Use the **/connect/token** endpoint to generate a JWT token. See the [Authentication guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) for details.
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+### Request Parameters
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| File | File | FormData | File to upload |
+| text | String | Query | Find content |
+| password | String | Query | The password needed to open an Excel file. |
+| sheetname | String | Query | The worksheet name. Locate the specified text content in the worksheet. |
+| checkExcelRestriction | Boolean | Query | Whether check restriction of excel file when user modify cells related objects. |
 
 ---
 
-## Endpoint
+### **Response**
+
+```json
+[
+  {
+    "Name": "IList`1",
+    "DataType": {
+      "Identifier": "Container",
+      "Reference": "TextItem"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 | Item            | Value                                                        |
 | --------------- | ------------------------------------------------------------ |
@@ -50,22 +86,6 @@ _Tip:_ Use the **/connect/token** endpoint to generate a JWT token. See the [Aut
 | **URL**         | `https://api.aspose.cloud/v3.0/cells/search`                 |
 | **Purpose**     | Search for specified text within an uploaded Excel workbook. |
 | **Security**    | JWT token (Bearer) – see _Prerequisites_ above.              |
-
----
-
-### **Security and Authentication**
-
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
-
-## Request Parameters
-
-| Name                    | Type        | Location               | Required             | Description                                                                                          |
-| ----------------------- | ----------- | ---------------------- | -------------------- | ---------------------------------------------------------------------------------------------------- |
-| `file`                  | **file**    | `formData` (multipart) | **Yes**              | The spreadsheet file to upload.                                                                      |
-| `text`                  | **string**  | Query string           | **Yes**              | The text string to search for.                                                                       |
-| `password`              | **string**  | Query string           | No                   | Password for opening a protected workbook, if required.                                              |
-| `sheetname`             | **string**  | Query string           | No                   | Name of the worksheet to limit the search. If omitted, all worksheets are searched.                  |
-| `checkExcelRestriction` | **boolean** | Query string           | No (default: `true`) | When `true`, the API validates Excel‑specific restrictions (e.g., read‑only cells) before searching. |
 
 ---
 

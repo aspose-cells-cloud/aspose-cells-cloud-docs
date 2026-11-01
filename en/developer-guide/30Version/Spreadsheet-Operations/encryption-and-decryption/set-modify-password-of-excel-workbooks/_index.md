@@ -12,14 +12,13 @@ description: "Change Excel workbook write-protection password via Aspose.Cells C
 weight: 100
 ArticleTitle: "Modify Password Protection of an Excel Workbook – Aspose.Cells Cloud"
 ---
-
 The **PutDocumentProtectFromChanges** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/writeProtection`) in Aspose.Cells Cloud modifies the write-protection password of an existing Excel workbook stored in cloud storage, requiring the file name in the path and a password request body containing the new password; it supports unprotection workflows and integrates with SDKs for multiple programming languages including .NET, Java, Go, Node.js, and Python.
 
 Updating the write‑protection password programmatically allows you to rotate or replace passwords without downloading the file. It is especially handy when managing secured workbooks stored in Aspose.Cells Cloud storage.
 
-## REST API
+## The Put Document Protect From Changes Web API
 
-```bash
+```http
 PUT https://api.aspose.cloud/v3.0/cells/{name}/writeProtection
 ```
 
@@ -29,31 +28,44 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 
 ### Request parameters
 
-| Parameter Name  | Type   | Location    | Description                                      |
-| --------------- | ------ | ----------- | ------------------------------------------------ |
-| **name**        | string | path        | Name of the Excel workbook (required).           |
-| **password**    | string | body (JSON) | New write‑protection password to set (required). |
-| **folder**      | string | query       | Optional folder where the workbook is stored.    |
-| **storageName** | string | query       | Optional name of the storage service.            |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| password | class:passwordrequest | HTTPBody | The password needed to open an Excel file. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 ### Response
 
 ```json
-{
-  "Status": "OK",
-  "Code": 200
-}
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
 ```
 
 **HTTP Status Codes**
 
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## How to Use the PutDocumentProtectFromChanges API with SDKs
 

@@ -10,31 +10,33 @@ description: "Autofit multiple Excel rows via Aspose.Cells Cloud REST API using 
 weight: 40
 ArticleTitle: "Autofit Multiple Rows in an Excel Worksheet – Aspose.Cells Cloud API Documentation"
 ---
-
 The **PostAutofitWorksheetRows** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitrows`) in Aspose.Cells Cloud automatically adjusts the height of specified rows in an Excel worksheet by analyzing their content, supporting precise control via optional query parameters like `startRow`, `endRow`, and `onlyAuto` to autofit a range or all rows.
 
 ## Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
-## REST API
+## The Post Autofit Worksheet Rows Web API
 
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitrows
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### **Request parameters**
 
-| Parameter Name        | Type    | Location | Description                                                                                                                          | Required |
-| --------------------- | ------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------ | -------- |
-| **name**              | string  | path     | The name of the Excel file.                                                                                                          | ✔        |
-| **sheetName**         | string  | path     | The name of the worksheet.                                                                                                           | ✔        |
-| **autoFitterOptions** | object  | body     | Options that control how rows are autofitted (e.g., ignore hidden rows). See the brief field description below.                      | ✖        |
-| **startRow**          | integer | query    | The first row to autofit (1-based index).                                                                                            | ✔        |
-| **endRow**            | integer | query    | The last row to autofit (inclusive).                                                                                                 | ✔        |
-| **onlyAuto**          | boolean | query    | When `true`, the API adjusts only rows whose height is automatically calculated by Excel. When `false`, a full autofit is performed. | ✖        |
-| **folder**            | string  | query    | The folder that contains the document.                                                                                               | ✖        |
-| **storageName**       | string  | query    | The name of the storage service.                                                                                                     | ✖        |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| startRow | Integer | Query | The start row index. |
+| endRow | Integer | Query | The end row index. |
+| onlyAuto | Boolean | Query | Autofits all rows in this worksheet. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 **autoFitterOptions** fields (all optional):
 
@@ -77,19 +79,41 @@ Typical error responses include:
 - **404 Not Found** – The specified file or worksheet does not exist.
 - **500 Internal Server Error** – An unexpected server error occurred.
 
-**HTTP Status Codes**
-
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
 
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Cloud SDK Family
 

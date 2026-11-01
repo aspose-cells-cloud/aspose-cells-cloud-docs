@@ -14,13 +14,12 @@ url: /protect-excel-file/
 aliases: [/protect-excel-workbooks/, /workbook/protect/]
 keywords: "Aspose.Cells Cloud, protect Excel workbook, Excel password protection, WorkbookProtectionRequest, PostProtectDocument API, restrict Excel editing, structure protection, windows protection, contents protection, Aspose.Cells Cloud SDK"
 ---
-
 The **PostProtectWorkbook** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/protection`) enables developers to securely protect Excel workbooks by applying password-based or option-based protection via Aspose.Cells Cloud, supporting key operations such as restricting editing, structure, or window visibility as specified in the `protectWorkbookRequest` body.
 
 ### Security Notice
 **⚠️ Security Note**: Replace `test.xlsx`, `MyFolder`, `MyStorage`, and `aspose` with your actual file path, storage name, and a *strong, unique password*.
 
-## PostProtectDocument API
+## The Post Protect Workbook Web API
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/protection
@@ -32,10 +31,44 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Query Parameters
 
-| Parameter Name | Type   | Description                                                     |
-| -------------- | ------ | --------------------------------------------------------------- |
-| folder         | string | Folder that contains the source workbook. _(optional)_          |
-| storageName    | string | Name of the storage location. _(optional; default = "Default")_ |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| protectWorkbookRequest | class:protectworkbookrequest | HTTPBody | The protection settings. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+
+### Response
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ### Request Body Parameters
 
@@ -49,25 +82,6 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | -------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ProtectionType | string | Type of protection to apply. Allowed values (case‑insensitive): **ALL**, **CONTENTS**, **NONE**, **OBJECTS**, **SCENARIOS**, **STRUCTURE**, **WINDOWS**. |
 | Password       | string | Optional password to set for the protection.                                                                                                             |
-
-### Response
-
-```json
-{
-  "Status":"OK",
-  "Code":200
-}
-```
-
-**HTTP Status Codes**
-
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Protection applied successfully.                |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
 
 ## How to Use the PostProtectDocument API with SDKs
 

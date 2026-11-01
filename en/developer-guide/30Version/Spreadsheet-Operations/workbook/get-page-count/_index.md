@@ -11,26 +11,29 @@ weight: 100
 version: "v3.0"
 ArticleTitle: "Get Page Count from an Excel File using Aspose.Cells Cloud API"
 ---
-
 The **GetPageCount** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/pagecount`) enables developers to retrieve the total number of pages in an Excel workbook stored in the cloud, supporting scenarios like pagination planning or document analysis; it accepts the workbook’s filename as a required path parameter, with optional `folder` and `storageName` query parameters to specify location and storage, and returns an integer count reflecting the workbook’s printed page layout.
 
 ## Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
-## REST API
+## The Get Page Count Web API
 
-```bash
+```http
 GET https://api.aspose.cloud/v3.0/cells/{name}/pagecount
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### The request parameters
 
-| Parameter Name | Type   | Location | Required | Description                            |
-| -------------- | ------ | -------- | -------- | -------------------------------------- |
-| name           | string | path     | Yes      | The name of the Excel document.        |
-| folder         | string | query    | No       | The folder that contains the document. |
-| storageName    | string | query    | No       | The name of the storage to use.        |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/GetPageCount) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -63,6 +66,34 @@ _Replace `YourFile.xlsx` with the actual name of the workbook you want to query.
 {{< /tabs >}}
 
 ### Response Schema
+
+```json
+[
+  {
+    "Name": "Int32",
+    "DataType": {
+      "Identifier": "Integer"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 | HTTP Status | Data Type | Description                                                       |
 | ----------- | --------- | ----------------------------------------------------------------- |

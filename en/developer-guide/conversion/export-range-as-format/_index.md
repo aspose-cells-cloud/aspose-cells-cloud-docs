@@ -10,19 +10,83 @@ keywords: "Aspose.Cells Cloud, export Excel range, PDF, PNG, CSV, SVG, cloud API
 weight: 100
 ArticleTitle: "Export Excel Range to PDF, PNG, CSV, SVG via Aspose.Cells Cloud API"
 ---
-
 The **ExportRangeAsFormat** API (`GET https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{range}`) in Aspose.Cells Cloud converts a specified range of a cloud-hosted Excel workbook—such as A1:C12 in a given worksheet—to a target format (e.g., PDF, PNG, SVG, CSV) without downloading the file locally, enabling efficient, server-side conversion directly from cloud storage.
 
-## Export Range as Format API
-
-Convert a specific range within a cloud-hosted Excel or spreadsheet workbook to another format—PDF, PNG, SVG, CSV, and more—without downloading the file locally. The output can be saved to cloud storage or returned as a binary stream.
-
-### REST API Endpoint
+## The Export Range as Format Web API
 
 ```http
 GET https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{range}
 ```
 
+### Security & Authentication
+
+All API requests require [JWT token–based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/). Include the token in the `Authorization` header:
+
+```http
+Authorization: Bearer <access_token>
+```
+
+---
+
+### **Request Parameters:**
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | (Required) The name of the workbook file to be retrieved. |
+| worksheet | String | Path | worksheet name |
+| range | String | Path | range: A1:C12 |
+| format | String | Query | (Required) The desired format  (e.g., "png", "Pdf", "svg"). |
+| folder | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| storageName | String | Query | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted. |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| fontsLocation | String | Query | Use Custom fonts. |
+| AutoRowsFit | Boolean | Query | (Optional) Autofits all rows in worksheets. |
+| AutoColumnsFit | Boolean | Query | (Optional) Autofits all columns in worksheets. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
+
+### Response
+
+```json
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Length: 0
+```
+
+The API returns a binary stream of the converted file (MIME type matches the requested format). When `outPath` is provided, the file is saved directly to cloud storage, and the response body is empty with HTTP status `200 OK`.
+
+#### Example Response (Stream Output)
+
+| Field                 | Type   | Description                                                        |
+| :-------------------- | :----- | :----------------------------------------------------------------- |
+| `Content-Type`        | string | MIME type (e.g., `application/pdf`, `image/png`)                   |
+| `Content-Disposition` | string | Inline or attachment with filename (e.g., `filename="A1_C12.pdf"`) |
+| Body                  | binary | File content as byte stream                                        |
+
+#### Example Response (Cloud Storage Save)
+
+When `outPath` is used and the operation succeeds, the response is:
+
+
+---
+
+Convert a specific range within a cloud-hosted Excel or spreadsheet workbook to another format—PDF, PNG, SVG, CSV, and more—without downloading the file locally. The output can be saved to cloud storage or returned as a binary stream.
+
+### REST API Endpoint
 #### Path Parameters
 
 | Parameter   | Type   | Required | Description                                              |
@@ -47,39 +111,6 @@ GET https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{ra
 | `password`       | string  | No       | Password to open the protected workbook.                                                                                                                               |
 
 > **Note**: If `outPath` is specified, `outStorageName` must be provided when the output should reside in a non-default storage.
-
----
-
-### Security & Authentication
-
-All API requests require [JWT token–based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/). Include the token in the `Authorization` header:
-
-```http
-Authorization: Bearer <access_token>
-```
-
----
-
-### Response
-
-The API returns a binary stream of the converted file (MIME type matches the requested format). When `outPath` is provided, the file is saved directly to cloud storage, and the response body is empty with HTTP status `200 OK`.
-
-#### Example Response (Stream Output)
-
-| Field                 | Type   | Description                                                        |
-| :-------------------- | :----- | :----------------------------------------------------------------- |
-| `Content-Type`        | string | MIME type (e.g., `application/pdf`, `image/png`)                   |
-| `Content-Disposition` | string | Inline or attachment with filename (e.g., `filename="A1_C12.pdf"`) |
-| Body                  | binary | File content as byte stream                                        |
-
-#### Example Response (Cloud Storage Save)
-
-When `outPath` is used and the operation succeeds, the response is:
-
-```http
-HTTP/1.1 200 OK
-Content-Length: 0
-```
 
 ---
 

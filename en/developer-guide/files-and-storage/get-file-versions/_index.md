@@ -9,16 +9,13 @@ keywords: "Aspose Cells API, file versions, spreadsheet versioning, cloud storag
 description: "Get a complete list of version history for any Excel file stored in Aspose.Cells Cloud. Supports storage selection, authentication, and detailed error codes."
 weight: 100
 ---
-
 The **GetFileVersions** API (`GET https://api.aspose.cloud/v4.0/cells/storage/version/{path}`) retrieves a complete list of version records for a specific spreadsheet stored in Aspose.Cells Cloud, enabling developers to track changes, audit modifications, and implement version-control workflows directly from cloud storage; it requires the `path` parameter specifying the file location and optionally accepts `storageName` to target a specific storage instance.
 
 The **GetFileVersions** API returns all version records for a specified spreadsheet stored in Aspose.Cells Cloud. It helps you keep a complete change history for each file.
 
-## **Excel API: Get File Versions**
+## The Get File Versions Web API
 
-### Web API
-
-```
+```http
 GET https://api.aspose.cloud/v4.0/cells/storage/version/{path}
 ```
 
@@ -28,54 +25,43 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### The request parameters of **GetFileVersions** API are
 
-| Parameter Name | Type   | Location | Description                                                                                 |
-| -------------- | ------ | -------- | ------------------------------------------------------------------------------------------- |
-| `path`         | String | Path     | **Required.** Full path to the file whose versions are being retrieved.                     |
-| `storageName`  | String | Query    | Optional. Name of the storage containing the file. If omitted, the default storage is used. |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| path | String | Path | - |
+| storageName | String | Query | - |
 
 ### **Response**
 
 ```json
-{
-  "Name": "FileVersions",
-  "Description": [
-    "Contains a list of file versions for the specified document."
-  ],
-  "Type": "Class",
-  "IsAbstract": false,
-  "Properties": [
-    {
-      "Name": "Value",
-      "Description": ["A collection of file version details."],
-      "Nullable": true,
-      "ReadOnly": false,
-      "IsInherit": false,
-      "DataType": {
-        "Identifier": "Container",
-        "Reference": "FileVersion",
-        "ElementDataType": {
-          "Identifier": "Class",
-          "Reference": "FileVersion",
-          "Name": "class:fileversion"
-        },
-        "Name": "container"
-      }
+[
+  {
+    "Name": "FileVersions",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "FileVersions"
     }
-  ]
-}
+  }
+]
 ```
 
-On success, the API returns **HTTP 200 OK** with a JSON payload containing the `Value` array of file‑version objects, as illustrated above.
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
 
 **HTTP Status Codes**
 
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+On success, the API returns **HTTP 200 OK** with a JSON payload containing the `Value` array of file‑version objects, as illustrated above.
 
 ## OpenAPI Specification
 

@@ -11,16 +11,7 @@ categories: ["api-reference", "cloud"]
 summary: "Effortlessly exchange data between two columns, rows, or ranges in Excel files using Aspose.Cells Cloud API v4.0—ideal for financial modeling, ETL, and error correction."
 ArticleTitle: "Swap Excel Ranges with Aspose.Cells Cloud API v4.0"
 ---
-
 The **SwapRange** API (`PUT https://api.aspose.cloud/v4.0/cells/swap/range`), part of Aspose.Cells Cloud, enables precise one-step exchange of data between two ranges—such as columns, rows, or cell blocks—in Excel workbooks (.xlsx, .xls), preserving formatting, formulas, and cell references while allowing dynamic reorganization of spreadsheet data without manual intervention.
-
-{{% alert color="primary" %}}
-**Prerequisites**
-
-- Valid Aspose Cloud account and API credentials (client ID and client secret).
-- Uploaded workbook to cloud storage (or include via `Spreadsheet` FormData).
-- See [Authentication](/authentication/) and [File Upload](/upload/) for setup guidance.
-  {{% /alert %}}
 
 ## Overview
 
@@ -33,13 +24,13 @@ The **Swap Ranges API** enables precise, one-step exchange of data between two r
 > - ✅ **Batch-ready**: Integrate into automated ETL or data-cleaning pipelines.
 > - ✅ **Pay-per-use**: No fixed infrastructure costs.
 
-## API Endpoint
+## The Swap Range Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/swap/range
 ```
 
-## Authentication
+### Authentication
 
 All requests require a [JWT access token](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
@@ -47,19 +38,56 @@ All requests require a [JWT access token](https://docs.aspose.cloud/total/gettin
 -H "Authorization: Bearer {access_token}"
 ```
 
-## Request Parameters
+### Request Parameters
 
-| Parameter Name   | Type   | Location | Required | Description                                                                                                   |
-| ---------------- | ------ | -------- | -------- | ------------------------------------------------------------------------------------------------------------- |
-| `Spreadsheet`    | File   | FormData | ✅ Yes   | The source Excel workbook (`.xlsx`, `.xls`).                                                                  |
-| `worksheet1`     | String | Query    | ✅ Yes   | Name of the worksheet containing the first range.                                                             |
-| `range1`         | String | Query    | ✅ Yes   | First range to swap (e.g., `A1:D10`).                                                                         |
-| `worksheet2`     | String | Query    | ✅ Yes   | Name of the worksheet containing the second range (may equal `worksheet1`).                                   |
-| `range2`         | String | Query    | ✅ Yes   | Second range to swap (e.g., `F1:I10`). **Must match `range1` in dimensions**.                                 |
-| `outPath`        | String | Query    | ❌ No    | Cloud storage path to save the modified workbook (e.g., `/output/result.xlsx`).                               |
-| `outStorageName` | String | Query    | ❌ No    | Name of the configured cloud storage (e.g., `MyCompanyStorage`). **Required only if `outPath` is specified**. |
-| `region`         | String | Query    | ❌ No    | Locale (e.g., `en-US`, `fr-FR`) for formatting and date/number parsing.                                       |
-| `password`       | String | Query    | ❌ No    | Password for encrypted workbooks. Omit if unencrypted.                                                        |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| worksheet1 | String | Query | Specify the worksheet that is the source of the exchange data area. |
+| range1 | String | Query | Specify exchange data source. |
+| worksheet2 | String | Query | Specify the worksheet that is the target of the exchange data area. |
+| range2 | String | Query | Specify exchange data target. |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
+
+### Response
+
+```json
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
+The API returns the modified Excel file as a binary stream.
+
+
+- If `outPath` is specified, the file is saved to cloud storage _and_ returned in the response.
+- If omitted, only the file stream is returned.
+
+### Error Handling
+
+| HTTP Code          | Description                                                                 |
+| ------------------ | --------------------------------------------------------------------------- |
+| `400 Bad Request`  | Invalid range dimensions, malformed parameters, or missing required fields. |
+| `401 Unauthorized` | Missing, invalid, or expired JWT token.                                     |
+| `404 Not Found`    | Source workbook not found in cloud storage or path.                         |
+| `500 Server Error` | Internal processing failure (e.g., workbook corruption).                    |
 
 ### Notes on Parameters
 
@@ -76,32 +104,6 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/swap/range?worksheet1=Sheet1&ra
 ```
 
 > 💡 **Tip**: To save directly to cloud storage, add `outPath=/results/swapped.xlsx&outStorageName=MyCompanyStorage`.
-
-## Response
-
-The API returns the modified Excel file as a binary stream.
-
-```json
-{
-  "Name": "ResponseFile",
-  "DataType": {
-    "Identifier": "File",
-    "Reference": "Stream"
-  }
-}
-```
-
-- If `outPath` is specified, the file is saved to cloud storage _and_ returned in the response.
-- If omitted, only the file stream is returned.
-
-## Error Handling
-
-| HTTP Code          | Description                                                                 |
-| ------------------ | --------------------------------------------------------------------------- |
-| `400 Bad Request`  | Invalid range dimensions, malformed parameters, or missing required fields. |
-| `401 Unauthorized` | Missing, invalid, or expired JWT token.                                     |
-| `404 Not Found`    | Source workbook not found in cloud storage or path.                         |
-| `500 Server Error` | Internal processing failure (e.g., workbook corruption).                    |
 
 ## Use Cases
 

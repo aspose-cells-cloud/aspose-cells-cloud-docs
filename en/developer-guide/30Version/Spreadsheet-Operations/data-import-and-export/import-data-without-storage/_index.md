@@ -10,12 +10,11 @@ description: "Import Excel data via Aspose.Cells Cloud API using PostImportData 
 weight: 100
 ArticleTitle: "Import Data without Using Storage – Aspose.Cells Cloud API"
 ---
-
 The **PostImport** API (`POST https://api.aspose.cloud/v3.0/cells/import`) enables developers to import data into an Excel file and generate output in various formats—such as CSV, XLSX, PDF, or images—by sending a multipart form-data request containing the source file and optional query parameters for output format, password, and regional settings. Aspose.Cells Cloud handles the import process without requiring files to be stored in cloud storage, supporting professional-grade data integration directly from client applications.
 
 This REST API imports **data** into an Excel file.
 
-## PostImportData API
+## The Post Import Web API
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/import
@@ -27,10 +26,13 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Request Parameters:**
 
-| Parameter Name | Type         | Location  | Description                                                                                                                                     |
-| -------------- | ------------ | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| file           | file         | formData  | The Excel file to upload.                                                                                                                       |
-| ImportOption   | ImportOption | JSON body | JSON object that defines the data to import, its type (e.g., `IntArray`, `DoubleArray`, `StringArray`), and the placement within the worksheet. |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| File | File | FormData | File to upload |
+| outFormat | String | Query | The output data file format.(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers) |
+| password | String | Query | The password needed to open an Excel file. |
+| checkExcelRestriction | Boolean | Query | Whether check restriction of excel file when user modify cells related objects. |
+| region | String | Query | The regional settings for workbook. |
 
 The **ImportOption** parameters are described in the **ImportData option reference** [/cells/import/#import-data-option-parameter](/cells/import/#import-data-option-parameter).
 
@@ -40,21 +42,34 @@ A valid JWT token must be generated beforehand, and the file size must not excee
 ### Response
 
 ```json
-{
-  "Status": "OK",
-  "Code": 200
-}
+[
+  {
+    "Name": "FilesResult",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "FilesResult"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
 ```
 
 **HTTP Status Codes**
 
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 **Notes:**  
 When sending the request, the `Content-Type: multipart/form-data` header is automatically set by the `-F` flag. For large payloads, consider compressing the data before import and implement retry logic for transient errors.

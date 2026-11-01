@@ -9,13 +9,12 @@ weight: 100
 linktitle: "Batch Split API"
 ArticleTitle: "Aspose.Cells Cloud Batch Split API: Split Excel Files to PDF, CSV, JSON"
 ---
-
 The **PostBatchSplit** API (`POST https://api.aspose.cloud/v3.0/cells/batch/split`) enables batch splitting of eligible files—such as Excel, PDF, Markdown, CSV, HTML, and over 30 other supported formats—by applying specific matching conditions defined in the request body, streamlining document automation workflows for developers using Aspose.Cells Cloud.
 
-## REST API
+## The Post Batch Split Web API
 
-```bash
-POST http://api.aspose.cloud/v3.0/cells/batch/split
+```http
+POST https://api.aspose.cloud/v3.0/cells/batch/split
 ```
 
 ### **Security and Authentication**
@@ -24,9 +23,41 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name    | Type              | Path/Query/String/HTTPBody | Description                               |
-| ----------------- | ----------------- | -------------------------- | ----------------------------------------- |
-| BatchSplitRequest | BatchSplitRequest | body                       | Request payload containing split options. |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| batchSplitRequest | class:batchsplitrequest | HTTPBody | BatchSplitRequest Batch splitting file request. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "Stream",
+    "DataType": {
+      "Identifier": "File"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ### **BatchSplitRequest** Properties
 
@@ -53,29 +84,6 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | Parameter Name | Type | Description                                    |
 | -------------- | ---- | ---------------------------------------------- |
 | data           | file | Binary content of the workbook file to create. |
-
-### **Response**
-
-```json
-{
-  "Name": "ResponseFile",
-  "DataType": {
-    "Identifier": "File",
-    "Reference": "Stream",
-    "Name": "file"
-  }
-}
-```
-
-**HTTP Status Codes**
-
-| Code             | Meaning                                 | When Returned                         |
-| ---------------- | --------------------------------------- | ------------------------------------- |
-| 200 OK           | Workbook created successfully           | Normal flow                           |
-| 201 Created      | Workbook created (alternative response) | When the API returns a created status |
-| 400 Bad Request  | Invalid parameters                      | Client‑side error                     |
-| 401 Unauthorized | Missing or invalid token                | Authentication error                  |
-| 409 Conflict     | File exists and `isWriteOver=false`     | Conflict with existing file           |
 
 ## How to Use the PostBatchSplit API with SDKs
 

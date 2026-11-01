@@ -10,14 +10,9 @@ keywords: "Aspose.Cells, Worksheets, Local Spreadsheet, API"
 description: "Fetches a complete list of worksheets from the currently active local spreadsheet."
 weight: 100
 ---
-
 The **GetWorksheetsWithLocalSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/worksheets`) in Aspose.Cells Cloud fetches a complete list of worksheets—including their names and types (e.g., standard, chart, macro)—from the currently active local spreadsheet application via interop or a local API, returning the collection as a structured JSON array; this enables developers to populate a worksheet selector UI or audit spreadsheet contents by uploading the file via form data.
 
-## The Get Worksheets With Local Spreadsheet of Aspose.Cells Cloud Web Services
-
-This endpoint accesses the local spreadsheet application (e.g., Excel) via interop or a local API, collects the name and type (e.g., standard, chart, macro) of every worksheet, and returns the collection as a structured JSON array. It is typically used to populate a worksheet selector UI or to audit spreadsheet contents.
-
-### Web API Endpoint
+## The Get Worksheets with Local Spreadsheet Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/worksheets
@@ -29,48 +24,52 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type   | Path/Query String/HTTP Body | Description                                                                                                                                          |
-| -------------- | ------ | --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Spreadsheet    | File   | FormData (HTTP Body)        | Upload spreadsheet file.                                                                                                                             |
-| region         | String | Query                       | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. _(optional)_ |
-| password       | String | Query                       | The password for opening spreadsheet file. _(optional)_                                                                                              |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "String",
+    "DataType": {
+      "Identifier": "String"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | Invalid url. |
+| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
+| 404 | Not Found | Source file not accessible. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining data. |
+
+**Response Status Codes**
+
+This endpoint accesses the local spreadsheet application (e.g., Excel) via interop or a local API, collects the name and type (e.g., standard, chart, macro) of every worksheet, and returns the collection as a structured JSON array. It is typically used to populate a worksheet selector UI or to audit spreadsheet contents.
 
 ### Request Body Parameter
 
 | Parameter Name | Type | Description              |
 | -------------- | ---- | ------------------------ |
 | Spreadsheet    | File | Upload spreadsheet file. |
-
-### **Response**
-
-```json
-{
-  "Worksheets": [
-    {
-      "Name": "Sheet1",
-      "Id": 0,
-      "Type": "Standard"
-    },
-    {
-      "Name": "Chart1",
-      "Id": 1,
-      "Type": "Chart"
-    }
-    // ... additional worksheets
-  ]
-}
-```
-
-**Response Status Codes**
-
-| Code | Meaning               | Description                                                     |
-| ---- | --------------------- | --------------------------------------------------------------- |
-| 200  | OK                    | The list of worksheets was retrieved successfully.              |
-| 400  | Bad Request           | Invalid request (e.g., malformed URL or missing required data). |
-| 401  | Unauthorized          | Authentication has failed, or no credentials were provided.     |
-| 404  | Not Found             | Source file not accessible.                                     |
-| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.               |
-| 500  | Internal Server Error | The spreadsheet has encountered an anomaly in obtaining data.   |
 
 ## How to Use the Get Worksheets With Local Spreadsheet with SDKs
 

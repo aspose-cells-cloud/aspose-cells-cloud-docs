@@ -11,48 +11,71 @@ lastmod: 2024-04-23
 api_version: v4.0
 ArticleTitle: "Move Worksheet in Excel via Aspose.Cells Cloud REST API"
 ---
-
 The **MoveWorksheetInSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/move/worksheet`) in Aspose.Cells Cloud enables developers to programmatically reposition a specified worksheet within an Excel workbook by name and target index, supporting dynamic report structuring and logical data flow without manual intervention.
 
-## Prerequisites
-
-Before using the Move Worksheet API, ensure you have:
-
-- An [Aspose.Cloud account](https://dashboard.aspose.cloud/)
-- Valid `Client ID` and `Client Secret` from the [Aspose.Cloud Dashboard](https://dashboard.aspose.cloud/authorization)
-- A workbook with at least two worksheets
-- Understanding of zero-based worksheet indexing (e.g., `0` = first sheet)
-
-## API Endpoint
+## The Move Worksheet in Spreadsheet Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/move/worksheet
 ```
 
-## Request Parameters
-
-| Parameter        | Type    | Location | Required | Description                                                                                                                                             |
-| ---------------- | ------- | -------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `Spreadsheet`    | File    | FormData | Yes      | The source Excel workbook (`.xlsx`, `.xls`, etc.) containing the worksheet to move.                                                                     |
-| `worksheet`      | String  | Query    | Yes      | The exact name of the worksheet to move (e.g., `Sheet1`, `RawData_2024`).                                                                               |
-| `position`       | Integer | Query    | Yes      | The zero-based target index. For example, `0` moves the sheet to first position; `2` moves it to third. Must satisfy `0 ≤ position < Worksheets.Count`. |
-| `outPath`        | String  | Query    | No       | Folder path in cloud storage where the modified workbook is saved. Defaults to the source file’s directory if omitted.                                  |
-| `outStorageName` | String  | Query    | No       | Name of your configured cloud storage (e.g., `TeamDrive`). Required if using custom storage.                                                            |
-| `region`         | String  | Query    | No       | Locale for formatting (e.g., `en-US`, `fr-FR`). Affects number/date parsing and output formatting.                                                      |
-| `password`       | String  | Query    | No       | Password for encrypted workbooks. Omit if the file is not protected.                                                                                    |
-
-> ⚠️ **Important**:
->
-> - `position` must be within valid range: `0 ≤ position ≤ (Worksheets.Count - 1)`.
-> - File size must not exceed 2 GB.
-
-## Authentication
+### Authentication
 
 All requests require a JWT access token. See [Authentication Overview](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) for details.
 
 ```bash
 -H "Authorization: Bearer {access_token}"
 ```
+
+### Request Parameters
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| worksheet | String | Query | The current name of the worksheet to be moved. |
+| position | Integer | Query | Move the worksheet to the position |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
+
+> ⚠️ **Important**:
+>
+> - `position` must be within valid range: `0 ≤ position ≤ (Worksheets.Count - 1)`.
+> - File size must not exceed 2 GB.
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | Invalid url. |
+| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
+| 404 | Not Found | Source file not accessible. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining data. |
 
 ## cURL Example
 

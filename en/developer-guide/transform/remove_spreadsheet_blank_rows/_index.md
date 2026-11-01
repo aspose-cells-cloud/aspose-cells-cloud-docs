@@ -10,14 +10,9 @@ keywords: "Aspose.Cells, remove blank rows, spreadsheet, API"
 description: "Deletes all blank rows from a spreadsheet file."
 weight: 100
 ---
-
 The **RemoveSpreadsheetBlankRows** API (`PUT https://api.aspose.cloud/v4.0/cells/remove/blank-rows`) in Aspose.Cells Cloud deletes all completely empty rows—those with no data or objects—from a spreadsheet by scanning every worksheet, helping to clean up and organize large datasets while preserving data integrity.
 
-## The Remove Spreadsheet Blank Rows of Aspose.Cells Cloud Web Services
-
-This method removes rows from a spreadsheet that are completely empty, containing no data or objects. It scans through all sheets and identifies rows where every cell is empty. The operation is performed directly on the spreadsheet, ensuring that only rows with no content are deleted. This helps in cleaning up the spreadsheet and removing unnecessary blank rows, making the data more organized and easier to manage. Users should ensure that the spreadsheet is backed up before performing this operation, as deleted rows cannot be recovered.
-
-### Web API Endpoint
+## The Remove Spreadsheet Blank Rows Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/remove/blank-rows
@@ -29,38 +24,56 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type   | Path/Query String/HTTP Body | Description                                                                                                                             |
-| -------------- | ------ | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| Spreadsheet    | File   | FormData                    | Upload spreadsheet file.                                                                                                                |
-| outPath        | String | Query                       | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
-| outStorageName | String | Query                       | Output file Storage Name.                                                                                                               |
-| region         | String | Query                       | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password       | String | Query                       | The password for opening spreadsheet file.                                                                                              |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | Invalid url. |
+| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
+| 404 | Not Found | Source file not accessible. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining data. |
+
+**Response Status Codes**
+
+This method removes rows from a spreadsheet that are completely empty, containing no data or objects. It scans through all sheets and identifies rows where every cell is empty. The operation is performed directly on the spreadsheet, ensuring that only rows with no content are deleted. This helps in cleaning up the spreadsheet and removing unnecessary blank rows, making the data more organized and easier to manage. Users should ensure that the spreadsheet is backed up before performing this operation, as deleted rows cannot be recovered.
 
 ### Request Body Parameter
 
 | Parameter Name | Type | Description              |
 | -------------- | ---- | ------------------------ |
 | Spreadsheet    | File | Upload spreadsheet file. |
-
-### **Response**
-
-```json
-{
-  "ResponseFile": "binary file stream"
-}
-```
-
-**Response Status Codes**
-
-| Code | Meaning               | Description                                                         |
-| ---- | --------------------- | ------------------------------------------------------------------- |
-| 200  | OK                    | The processed spreadsheet file with blank rows removed is returned. |
-| 400  | Bad Request           | Invalid URL or request parameters.                                  |
-| 401  | Unauthorized          | Authentication has failed, or no credentials were provided.         |
-| 404  | Not Found             | Source file not accessible.                                         |
-| 413  | Payload Too Large     | Request payload exceeds allowed size.                               |
-| 500  | Internal Server Error | The spreadsheet has encountered an anomaly in obtaining data.       |
 
 ## How to Use the Remove Spreadsheet Blank Rows with SDKs
 

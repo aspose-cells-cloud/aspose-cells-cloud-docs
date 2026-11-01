@@ -13,12 +13,11 @@ description: "Import batch data into Excel worksheets via Aspose.Cells Cloud RES
 weight: 19
 ArticleTitle: "Import Batch Data into Excel Worksheet – Aspose.Cells Cloud Documentation"
 ---
-
 The **PostImport** API (`POST https://api.aspose.cloud/v3.0/cells/import`) in Aspose.Cells Cloud enables importing batch data into an Excel file by accepting a multipart request: the first part carries an ImportBatchDataOption configuration object, and the second part uploads the source data file (such as CSV, JSON, or XML), supporting output generation in multiple formats including XLSX, PDF, and CSV via the optional outFormat parameter.
 
 The operation uses an HTTP request with multipart content (see [RFC 2046](https://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](https://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)).
 
-## PostImportData API
+## The Post Import Web API
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/import
@@ -27,6 +26,48 @@ POST https://api.aspose.cloud/v3.0/cells/import
 ### **Security and Authentication**
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+### **Request Parameters:**
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| File | File | FormData | File to upload |
+| outFormat | String | Query | The output data file format.(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers) |
+| password | String | Query | The password needed to open an Excel file. |
+| checkExcelRestriction | Boolean | Query | Whether check restriction of excel file when user modify cells related objects. |
+| region | String | Query | The regional settings for workbook. |
+
+### Response
+
+```json
+[
+  {
+    "Name": "FilesResult",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "FilesResult"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ### ImportBatchDataOption
 
@@ -71,25 +112,6 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
     </Source>
 </ImportBatchDataOption>
 ```
-
-### Response
-
-```json
-{
-  "Status": "OK",
-  "Code": 200
-}
-```
-
-**HTTP Status Codes**
-
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
 
 ## How to Use the PostImportData API with SDKs
 

@@ -9,30 +9,54 @@ ArticleTitle: "Delete Cell Area – Aspose.Cells Cloud API Documentation"
 weight: 70
 linktitle: "Delete Cell Area"
 ---
-
 The **DeleteWorksheetConditionalFormattingArea** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/area`) in Aspose.Cells Cloud removes a specified rectangular cell area from an existing conditional formatting rule in a worksheet, using required path parameters `name` and `sheetName` plus query parameters `startRow`, `startColumn`, `totalRows`, and `totalColumns` to define the range; this enables precise programmatic control over conditional formatting removal without modifying other rules.
 
 ## Security and Authentication
 The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
-## REST API
+## The Delete Worksheet Conditional Formatting Area Web API
 
-```bash
+```http
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/area
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### Request Parameters
 
-| Parameter Name | Type    | Location | Description                                                         |
-| -------------- | ------- | -------- | ------------------------------------------------------------------- |
-| `name`         | string  | path     | The name of the Excel file.                                         |
-| `sheetName`    | string  | path     | The name of the worksheet that contains the conditional formatting. |
-| `startRow`     | integer | query    | Zero‑based index of the first row of the area to be removed.        |
-| `startColumn`  | integer | query    | Zero‑based index of the first column of the area to be removed.     |
-| `totalRows`    | integer | query    | Number of rows in the area to be removed.                           |
-| `totalColumns` | integer | query    | Number of columns in the area to be removed.                        |
-| `folder`       | string  | query    | Folder in cloud storage where the file is located (optional).       |
-| `storageName`  | string  | query    | Name of the storage service (optional).                             |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| startRow | Integer | Query | The start row of the range. |
+| startColumn | Integer | Query | The start column of the range. |
+| totalRows | Integer | Query | The number of rows of the range. |
+| totalColumns | Integer | Query | The number of columns of the range. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
 
 ### Error Responses
 

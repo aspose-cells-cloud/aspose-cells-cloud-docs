@@ -8,10 +8,9 @@ description: "Get the second-category axis of an Excel chart via Aspose.Cells Cl
 ArticleTitle: "Get Chart Second Category Axis – Aspose.Cells Cloud API"
 linktitle: "Get Second Category Axis"
 ---
-
 The **GetChartSecondCategoryAxis** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/secondcategoryaxis`) retrieves the second category axis of a chart in a spreadsheet via Aspose.Cells Cloud, enabling developers to programmatically access axis properties—such as scale, formatting, and title—without modifying the source file, supporting tasks like dynamic chart analysis and reporting across .NET, Java, Python, and other supported SDKs.
 
-## GetChartSecondCategoryAxis API
+## The Get Chart Second Category Axis Web API
 
 ```http
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/secondcategoryaxis
@@ -23,42 +22,45 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request parameters
 
-| Parameter Name | Type    | Parameter Location (path/query) | Description                                            |
-| -------------- | ------- | ------------------------------- | ------------------------------------------------------ |
-| name           | string  | path                            | Name of the Excel file stored in the cloud.            |
-| sheetName      | string  | path                            | Name of the worksheet that contains the chart.         |
-| chartIndex     | integer | path                            | Zero‑based index of the chart whose axis is requested. |
-| folder         | string  | query                           | Folder path in the storage where the file is located.  |
-| storageName    | string  | query                           | Name of the Aspose Cloud storage to use (optional).    |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| chartIndex | Integer | Path | The chart index. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 ### **Response**
 
 ```json
-{
-  "Code": 200,
-  "Status": "OK",
-  "Axis": {
-    "Name": "Second Category Axis",
-    "IsVisible": true,
-    "AxisLine": { "Style": "Solid", "Weight": 1 },
-    "TickMarks": "Inside",
-    "Label": {
-      "Font": { "Size": 10, "Color": "#000000" },
-      "Format": "General"
+[
+  {
+    "Name": "AxisResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "AxisResponse"
     }
   }
-}
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
 ```
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
 ## How to Use the GetChartSecondCategoryAxis API with SDKs
 
 ### GetChartSecondCategoryAxis API Specification

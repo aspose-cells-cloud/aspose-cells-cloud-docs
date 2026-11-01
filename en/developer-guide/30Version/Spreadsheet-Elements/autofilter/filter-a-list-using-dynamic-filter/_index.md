@@ -12,7 +12,6 @@ api_version: v3.0
 type: docs
 ArticleTitle: "Apply Dynamic Filters in Excel with Aspose.Cells Cloud API"
 ---
-
 The **PutWorksheetDynamicFilter** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/dynamicFilter`) enables Aspose.Cells Cloud users to apply a dynamic filter to a specified range in an Excel worksheet, automatically evaluating values such as dates, averages, or blanks to create smart, context-aware views without manual formula writing.
 
 ## Overview
@@ -20,27 +19,60 @@ The **PutWorksheetDynamicFilter** API (`PUT https://api.aspose.cloud/v3.0/cells/
 The **PutWorksheetDynamicFilter** operation adds a dynamic filter to a specified range in an Excel worksheet.  
 Dynamic filters automatically evaluate values such as dates, averages, or blanks, allowing you to create “smart” views without writing custom formulas.
 
-## Prerequisites
-
-| Requirement                | Details                                                                                                                  |
-| -------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| **Authentication**         | A valid JWT token obtained from the `/connect/token` endpoint. Include it in the `Authorization: Bearer <token>` header. |
-| **Storage**                | The workbook must reside in an Aspose Cloud storage location (default or a custom storage).                              |
-| **Supported file formats** | `.xlsx`, `.xls`, `.xlsm`, `.xlsb`, `.csv`, etc.                                                                          |
-| **Permissions**            | Read/write access to the target folder/file.                                                                             |
-
-## HTTP Request
+## The Put Worksheet Dynamic Filter Web API
 
 ```http
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/dynamicFilter
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### Path Parameters
 
-| Parameter   | Type   | Required | Description                                                       |
-| ----------- | ------ | -------- | ----------------------------------------------------------------- |
-| `name`      | string | ✅       | The name of the Excel workbook (e.g., `Book1.xlsx`).              |
-| `sheetName` | string | ✅       | The name of the worksheet that contains the range to be filtered. |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The workbook name. |
+| sheetName | String | Path | The worksheet name. |
+| range | String | Query | Represents the range to which the specified AutoFilter applies. |
+| fieldIndex | Integer | Query | The integer offset of the field on which you want to base the filter (from the left of the list; the leftmost field is field 0). |
+| dynamicFilterType | String | Query | Dynamic filter type. |
+| matchBlanks | Boolean | Query | Match all blank cell in the list. |
+| refresh | Boolean | Query | Refresh auto filters to hide or unhide the rows. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ### Query Parameters
 

@@ -10,12 +10,9 @@ description: "Learn how to update a picture in an Excel worksheet using Aspose.C
 ArticleTitle: "Update picture in an Excel file using Aspose.Cells Cloud REST API"
 weight: 70
 ---
-
 The **PostWorksheetPicture** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}`) enables updating a specific picture in an Excel worksheet by its zero-based index using Aspose.Cells Cloud, allowing developers to replace or modify picture content programmatically with a JSON-serialized picture object in the request body.
 
-**Prerequisites:** You must have a valid Aspose Cloud JWT token, the target Excel file stored in your Aspose Cloud storage, and use API version 3.0 or later.
-
-## PostWorksheetPicture API
+## The Post Worksheet Picture Web API
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}
@@ -27,16 +24,37 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Request parameters**
 
-| Parameter Name | Type    | Location | Description                                                  |
-| -------------- | ------- | -------- | ------------------------------------------------------------ |
-| name           | string  | path     | The name of the Excel document.                              |
-| sheetName      | string  | path     | The name of the worksheet that contains the picture.         |
-| pictureIndex   | integer | path     | Zero‑based index of the picture to be updated.               |
-| picture        | object  | body     | JSON object that describes the picture properties to update. |
-| folder         | string  | query    | The folder where the document is stored.                     |
-| storageName    | string  | query    | The name of the storage service.                             |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| pictureIndex | Integer | Path | The picture's index. |
+| picture | class:picture | HTTPBody | Picture object description. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 **Note:** The picture index is zero‑based. Supported image formats include JPEG, PNG, BMP, and GIF. The maximum picture size is 10 MB.
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
 
 ### Error Responses
 

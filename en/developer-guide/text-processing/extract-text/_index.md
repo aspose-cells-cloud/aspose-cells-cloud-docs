@@ -8,16 +8,15 @@ description: "Extract substrings, numbers, or fixed-length prefixes/suffixes fro
 weight: 100
 ArticleTitle: "Extract Text from Excel Cells via Aspose.Cells Cloud REST API"
 ---
-
 The **ExtractText** API (`PUT https://api.aspose.cloud/v4.0/cells/content/extract/text`) in Aspose.Cells Cloud enables developers to extract substrings, numbers, or fixed-length text fragments—such as the first N characters, text before/after a delimiter, or text between two substrings—from Excel cell ranges without relying on complex FIND, LEFT, RIGHT, or MID formulas; the operation processes cell data efficiently, preserves original formatting and formulas, and writes results directly to a target range in the same or a different worksheet or workbook.
 
-## API Endpoint
+## The Extract Text Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/content/extract/text
 ```
 
-## Authentication
+### Authentication
 
 All requests require a [JWT access token](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) (valid for 24 hours by default):
 
@@ -29,25 +28,58 @@ All requests require a [JWT access token](https://docs.aspose.cloud/total/gettin
 
 ---
 
-## Request Parameters
+### Request Parameters
 
-| Parameter          | Type    | Location | Required | Description                                                                                                        |
-| ------------------ | ------- | -------- | -------- | ------------------------------------------------------------------------------------------------------------------ |
-| `Spreadsheet`      | File    | FormData | ✅ Yes   | Upload the Excel workbook (`.xlsx`, `.xls`, `.csv`, etc.).                                                         |
-| `extractTextType`  | String  | Query    | ✅ Yes   | Extraction mode. Valid values: `Before`, `After`, `BeforePosition`, `AfterPosition`.                               |
-| `outPositionRange` | String  | Query    | ✅ Yes   | Target cell/range for output (e.g., `Sheet1!B1:B10`).                                                              |
-| `beforeText`       | String  | Query    | ❌ No    | Extract text _before_ this substring (used with `Before`).                                                         |
-| `afterText`        | String  | Query    | ❌ No    | Extract text _after_ this substring (used with `After`).                                                           |
-| `beforePosition`   | Integer | Query    | ❌ No    | Number of characters from the _left_ (used with `BeforePosition`).                                                 |
-| `afterPosition`    | Integer | Query    | ❌ No    | Number of characters from the _right_ (used with `AfterPosition`).                                                 |
-| `worksheet`        | String  | Query    | ❌ No    | Source worksheet name. Defaults to first sheet if omitted.                                                         |
-| `range`            | String  | Query    | ❌ No    | Source cell/range (e.g., `A1`, `A1:A100`).                                                                         |
-| `outPath`          | String  | Query    | ❌ No    | Storage folder path for saving the result workbook. If omitted, the updated file is returned in the response body. |
-| `outStorageName`   | String  | Query    | ❌ No    | Name of the cloud storage to use for `outPath`.                                                                    |
-| `region`           | String  | Query    | ❌ No    | Locale setting (e.g., `en-US`, `fr-FR`). Affects numeric/date parsing.                                             |
-| `password`         | String  | Query    | ❌ No    | Password for protected workbooks.                                                                                  |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| extractTextType | String | Query | Indicates extract text type. |
+| outPositionRange | String | Query | Indicates the output location for the extracted text. |
+| beforeText | String | Query | Indicates extracting the text before the specified characters or substrings. |
+| afterText | String | Query | Indicates extracting the text after the specified characters or substrings. |
+| beforePosition | Integer | Query | Indicates retrieving the first character or a specified number of characters from the left side of the selected cell. |
+| afterPosition | Integer | Query | Indicates retrieving the first character or a specified number of characters from the right side of the selected cell. |
+| worksheet | String | Query | Specify the worksheet of spreadsheet. |
+| range | String | Query | Specify the worksheet range of spreadsheet. |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
 
 ---
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## cURL Example
 

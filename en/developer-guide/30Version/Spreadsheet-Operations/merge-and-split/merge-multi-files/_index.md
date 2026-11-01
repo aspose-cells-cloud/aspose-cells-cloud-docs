@@ -10,14 +10,11 @@ description: "Learn how to merge multiple Excel workbooks into one file using th
 weight: 32
 ArticleTitle: "Merge Multiple Excel Files into One Workbook with Aspose.Cells Cloud REST API"
 ---
-
 The **PostMerge** API (`POST https://api.aspose.cloud/v3.0/cells/merge`) enables developers to merge multiple Excel files into a single workbook using Aspose.Cells Cloud, supporting formats such as XLSX, PDF, and others via optional query parameters like `outFormat` and `mergeToOneSheet`.
 
-## REST API
+## The Post Merge Web API
 
-This REST API merges multiple Excel files into a single Excel workbook.
-
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/merge
 ```
 
@@ -27,33 +24,48 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request parameters
 
-| Parameter Name  | Type    | Location | Description                                                                       | Required |
-| --------------- | ------- | -------- | --------------------------------------------------------------------------------- | -------- |
-| files[]         | file    | formData | One or more Excel workbooks to be merged. Use `file1`, `file2`, … in the request. | Yes      |
-| format          | string  | query    | Desired output format (e.g., `xlsx`).                                             | Yes      |
-| mergeToOneSheet | boolean | query    | Set to `true` to combine all worksheets into a single sheet; default is `false`.  | No       |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| File | File | FormData | File to upload |
+| outFormat | String | Query | The output data file format.(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers) |
+| mergeToOneSheet | Boolean | Query | Merge all workbooks into a sheet. |
+| password | String | Query | The password needed to open an Excel file. |
+| checkExcelRestriction | Boolean | Query | Whether check restriction of excel file when user modify cells related objects. |
+| region | String | Query | The regional settings for workbook. |
 
 ### **Response**
 
 ```json
-{
-    "Status" : "OK",
-    "Code" : 200,
-    "Filename" : "[merged filename]",
-    "Filesize" : [file size],
-    "FileContent" : "[Base64String]"
-}
+[
+  {
+    "Name": "FileInfo",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "FileInfo"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
 ```
 
 **HTTP Status Codes**
 
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+This REST API merges multiple Excel files into a single Excel workbook.
 
 ## How to Use the PostMerge API with SDKs
 

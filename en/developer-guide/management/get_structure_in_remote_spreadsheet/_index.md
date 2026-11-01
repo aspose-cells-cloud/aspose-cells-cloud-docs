@@ -10,10 +10,9 @@ keywords: "Aspose.Cells, GetStructure, spreadsheet, structure"
 description: "Retrieve the structural metadata of a remote Excel workbook, including worksheets, tables, pivot tables, charts, shapes, and other core information."
 weight: 100
 ---
-
 The **GetStructureInRemoteSpreadsheet** API (`GET https://api.aspose.cloud/v4.0/cells/{name}/structure`) in Aspose.Cells Cloud retrieves a structured JSON representation of an Excel workbook’s core elements—including metadata, worksheets, tables, pivot tables, charts, and shapes—by converting them into a JObject, enabling efficient data export, API integration, and logging without requiring local file processing.
 
-## The Get Structure In Remote Spreadsheet Web API Endpoint
+## The Get Structure in Remote Spreadsheet Web API
 
 ```http
 GET https://api.aspose.cloud/v4.0/cells/{name}/structure
@@ -25,55 +24,51 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type   | Path/Query String/HTTP Body | Description                                                                                                                             |
-| -------------- | ------ | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| name           | string | Path                        | Name of the spreadsheet file.                                                                                                           |
-| folder         | string | Query                       | Folder where the file is located. (Optional)                                                                                            |
-| storageName    | string | Query                       | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.                                       |
-| region         | string | Query                       | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password       | string | Query                       | The password for opening spreadsheet file.                                                                                              |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | - |
+| folder | String | Query | - |
+| storageName | String | Query | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "String",
+    "DataType": {
+      "Identifier": "String"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+**Response Status Codes**
 
 ### Request Body Parameter
 
 | Parameter Name | Type  | Description |
 | -------------- | ----- | ----------- |
 | [TBD]          | [TBD] | [TBD]       |
-
-### **Response**
-
-```json
-{
-  "Worksheets": [
-    {
-      "Name": "Sheet1",
-      "Tables": [],
-      "PivotTables": [],
-      "Charts": [],
-      "Shapes": []
-    }
-  ],
-  "WorkbookProperties": {
-    "Author": "string",
-    "Created": "string",
-    "Version": "string"
-  },
-  "DocumentProperties": {
-    "Title": "string",
-    "Subject": "string",
-    "Keywords": "string"
-  }
-}
-```
-
-**Response Status Codes**
-
-| Code | Meaning               | Description                                   |
-| ---- | --------------------- | --------------------------------------------- |
-| 200  | OK                    | Successfully retrieved workbook structure.    |
-| 400  | Bad Request           | Invalid request parameters.                   |
-| 401  | Unauthorized          | Authentication failed or token missing.       |
-| 413  | Payload Too Large     | The request payload exceeds the allowed size. |
-| 500  | Internal Server Error | Unexpected server error.                      |
 
 ## How to Use the Get Structure In Remote Spreadsheet with SDKs
 

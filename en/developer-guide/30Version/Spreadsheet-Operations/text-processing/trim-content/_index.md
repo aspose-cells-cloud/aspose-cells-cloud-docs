@@ -9,12 +9,9 @@ description: "Use Aspose.Cells Cloud PostTrimContent API to remove extra spaces 
 weight: 100
 ArticleTitle: "Aspose.Cells Cloud PostTrimContent API: Trim Excel Cell Content"
 ---
-
 The **PostTrimContent** API (`POST https://api.aspose.cloud/v3.0/cells/trimcontent`) in Aspose.Cells Cloud processes and trims content within a specified range in a spreadsheet by removing extra spaces, line breaks, and other unnecessary characters from selected cells—helping clean data entries and ensure consistent formatting while preserving data integrity.
 
-## **Excel Web API : PostTrimContent**
-
-The **PostTrimContent** API processes and trims content within a specified range in a spreadsheet. It removes extra spaces, line breaks, and other unnecessary characters from the content of selected cells, making it useful for cleaning data entries and ensuring consistent spreadsheet formatting.
+## The Post Trim Content Web API
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/trimcontent
@@ -24,40 +21,52 @@ POST https://api.aspose.cloud/v3.0/cells/trimcontent
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
+### **Request Parameters**
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| trimContentOptions | class:trimcontentoptions | HTTPBody | - |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "FileInfo",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "FileInfo"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+The **PostTrimContent** API processes and trims content within a specified range in a spreadsheet. It removes extra spaces, line breaks, and other unnecessary characters from the content of selected cells, making it useful for cleaning data entries and ensuring consistent spreadsheet formatting.
+
 ### **Function Description**
 
 - **Efficiency** – Trims content only within the designated range, saving time and resources by avoiding unnecessary operations on the entire worksheet.
 - **Flexibility** – Allows users to define the exact cell range to be processed, accommodating various data sets and requirements.
 - **Data Integrity** – Removes extra spaces and line breaks, helping maintain consistent and reliable data for analysis and reporting.
 - **Ease of Use** – Simple integration with minimal setup, suitable for both developers and end‑users.
-
-### **Request Parameters**
-
-| Parameter Name     | Type  | Location | Description                                                                             |
-| ------------------ | ----- | -------- | --------------------------------------------------------------------------------------- |
-| trimContentOptions | Class | Body     | Options that specify how the content should be trimmed (e.g., target range, trim mode). |
-
-### **Response**
-
-```json
-{
-    "Status" : "OK",
-    "Code" : 200,
-    "Filename" : "[merged filename]",
-    "Filesize" : [file size],
-    "FileContent" : "[Base64String]"
-}
-```
-
-**HTTP Status Codes**
-
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
 
 ## How to Use the PostRemoveCharacters API with SDKs
 

@@ -12,22 +12,14 @@ keywords: "Aspose.Cells Cloud, digital signature, Excel workbook, REST API, .pfx
 description: "Sign Excel workbooks digitally using Aspose.Cells Cloud REST API with JWT auth, .pfx/.p12 files, and SDK examples"
 weight: 35
 ---
-
 The **PostDigitalSignature** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/digitalsignature`) enables users to apply a digital signature to an Excel workbook via Aspose.Cells Cloud, adding an electronic, encrypted stamp of authentication to verify the file's integrity and origin. The operation requires the workbook name (`name`), the digital signature file path (`digitalsignaturefile`), and the workbook's password (`password`), and supports optional folder and storage parameters for flexible file management. Aspose.Cells Cloud handles this task through a RESTful interface, allowing programmatic signing of Excel files across 30+ supported formats.
-
-**Prerequisites:**  
-Before calling this endpoint, ensure you have:
-
-- A valid JWT access token obtained via Aspose Cloud authentication.
-- The target workbook uploaded to your Aspose Cloud storage.
-- A digital signature file in `.pfx` or `.p12` format and its password.
 
 This REST API adds a **digital signature** to an Excel workbook.
 
-## PostDigitalSignature API
+## The Post Digital Signature Web API
 
 ```http
-POST https://api.aspose.cloud/v4.0/cells/{name}/digitalsignature
+POST https://api.aspose.cloud/v3.0/cells/{name}/digitalsignature
 ```
 
 ### **Security and Authentication**
@@ -36,15 +28,36 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name           | Type   | Location             | Description                                            |
-| ------------------------ | ------ | -------------------- | ------------------------------------------------------ |
-| **name**                 | string | `<code>path</code>`  | The name of the workbook.                              |
-| **digitalsignaturefile** | string | `<code>query</code>` | Path to the digital‑signature file (`.pfx` or `.p12`). |
-| **password**             | string | `<code>query</code>` | Password for the workbook, if it is protected.         |
-| **folder**               | string | `<code>query</code>` | Folder where the workbook is stored.                   |
-| **storageName**          | string | `<code>query</code>` | Name of the storage service to use.                    |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| digitalsignaturefile | String | Query | The digital signature file path should include both the folder and the file name, along with the extension. |
+| password | String | Query | The password needed to open an Excel file. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 _Note: If the file name contains special characters, URL‑encode it before adding it to the query string._
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
 
 ### Error Handling
 

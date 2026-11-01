@@ -10,13 +10,11 @@ description: "Add text watermarks to Excel files using Aspose.Cells Cloud REST A
 weight: 39
 ArticleTitle: "Add Watermark to Excel Files – Aspose.Cells Cloud Documentation"
 ---
-
 The **PostWatermark** API (`POST https://api.aspose.cloud/v3.0/cells/watermark`) enables users to add a text watermark to Excel files via Aspose.Cells Cloud, requiring the uploaded file, the watermark text, and color (e.g., `#1032ff`) as mandatory parameters, while supporting optional output formats such as PDF, XLSX, or PNG.
 
-**Prerequisites:** You must obtain a valid JWT access token and ensure the Excel file is in a supported format (e.g., `.xlsx`, `.xls`).  
 **Background:** A watermark is a semi‑transparent text overlay applied to each worksheet to indicate ownership or confidentiality.
 
-## PostWatermark API
+## The Post Watermark Web API
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/watermark
@@ -28,51 +26,53 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Request Parameters**
 
-| Parameter Name | Type   | Location                  | Description                                                 |
-| -------------- | ------ | ------------------------- | ----------------------------------------------------------- |
-| `file`         | file   | formData (multipart body) | The Excel file to which the watermark will be applied.      |
-| `text`         | string | query                     | The watermark text to display.                              |
-| `color`        | string | query                     | The watermark colour in ARGB hex format (e.g., `004433ff`). |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| File | File | FormData | File to upload |
+| text | String | Query | background text. |
+| color | String | Query | e.g. #1032ff |
+| outFormat | String | Query | The output data file format.(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers) |
+| password | String | Query | The password needed to open an Excel file. |
+| checkExcelRestriction | Boolean | Query | Whether check restriction of excel file when user modify cells related objects. |
+| region | String | Query | The regional settings for workbook. |
 
 ### **Response**
+
+```json
+[
+  {
+    "Name": "FilesResult",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "FilesResult"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 The JSON response contains a **Files** array. For each file object:
 
 - **Filename** – name of the processed workbook.
 - **FileSize** – size of the file in bytes.
 - **FileContent** – Base64‑encoded content of the watermarked Excel file; decode it to obtain the actual file.
-
-```json
-{
-    "Status" : "OK",
-    "Code" : 200,
-    "Files": [
-        {
-            "Filename" : "[file1 name]",
-            "Filesize" : [file size],
-            "FileContent" : "[Base64String]"
-        },        {
-            "Filename" : "[file2 name]",
-            "Filesize" : [file size],
-            "FileContent" : "[Base64String]"
-        },        {
-            "Filename" : "[file3 name]",
-            "Filesize" : [file size],
-            "FileContent" : "[Base64String]"
-        }
-    ]
-}
-```
-
-**HTTP Status Codes**
-
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
 
 ## How to Use the PostWatermark API with SDKs
 

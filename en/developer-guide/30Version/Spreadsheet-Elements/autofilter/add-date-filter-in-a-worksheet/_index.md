@@ -12,12 +12,9 @@ weight: 65
 ArticleTitle: "Add Date Filter to an Excel Worksheet | Aspose.Cells Cloud API"
 keywords: "Aspose.Cells, Excel date filter, AutoFilter API, REST API, cloud SDK, cURL, spreadsheet automation"
 ---
-
 The **PutWorksheetDateFilter** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/dateFilter`) enables developers to apply a date filter to a specified range and field in an Excel worksheet using Aspose.Cells Cloud, supporting granular grouping of datetime values by Year, Month, Day, Hour, Minute, or Second via the `dateTimeGroupingType` parameter, with optional parameters for specifying date components, matching blanks, and refreshing filters.
 
-**Prerequisites:** You must have a valid JWT token, and the target workbook must already exist in the specified storage location. The request does not require a JSON body.
-
-## PutWorksheetDateFilter API
+## The Put Worksheet Date Filter Web API
 
 ```http
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/dateFilter
@@ -29,44 +26,56 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request parameters
 
-| Parameter Name           | Type    | Location | Description                                                                                                                                                     |
-| ------------------------ | ------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **name**                 | string  | Path     | The workbook name.                                                                                                                                              |
-| **sheetName**            | string  | Path     | The worksheet name.                                                                                                                                             |
-| **range**                | string  | Query    | Excel range to which the filter is applied (e.g., `A1:B1`).                                                                                                     |
-| **fieldIndex**           | integer | Query    | Zero‑based index of the column to filter.                                                                                                                       |
-| **dateTimeGroupingType** | string  | Query    | Grouping type for the date/time filter. Allowed values are `Day`, `Hour`, `Minute`, `Month`, `Second`, `Year`. Values are case‑sensitive; the default is `Day`. |
-| **year**                 | integer | Query    | Year component of the filter value.                                                                                                                             |
-| **month**                | integer | Query    | Month component of the filter value.                                                                                                                            |
-| **day**                  | integer | Query    | Day component of the filter value.                                                                                                                              |
-| **hour**                 | integer | Query    | Hour component of the filter value.                                                                                                                             |
-| **minute**               | integer | Query    | Minute component of the filter value.                                                                                                                           |
-| **second**               | integer | Query    | Second component of the filter value.                                                                                                                           |
-| **matchBlanks**          | boolean | Query    | Include blank cells (`true` or `false`).                                                                                                                        |
-| **refresh**              | boolean | Query    | Refresh the filter after applying (`true` or `false`).                                                                                                          |
-| **folder**               | string  | Query    | Folder path of the original workbook.                                                                                                                           |
-| **storageName**          | string  | Query    | Name of the storage service.                                                                                                                                    |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| range | String | Query | Represents the range to which the specified AutoFilter applies. |
+| fieldIndex | Integer | Query | The integer offset of the field on which you want to base the filter (from the left of the list; the leftmost field is field 0). |
+| dateTimeGroupingType | String | Query | Specifies how to group dateTime values (Day, Hour, Minute, Month, Second, Year). |
+| year | Integer | Query | The year. |
+| month | Integer | Query | The month. |
+| day | Integer | Query | The day. |
+| hour | Integer | Query | The hour. |
+| minute | Integer | Query | The minute. |
+| second | Integer | Query | The second. |
+| matchBlanks | Boolean | Query | Match all blank cell in the list. |
+| refresh | Boolean | Query | Refresh auto filters to hide or unhide the rows. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 _The PUT request does not require a request body; all parameters are supplied via the query string._
 
 ### **Response**
 
 ```json
-{
-  "Status": "OK",
-  "Code": 200
-}
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
 ```
 
 **HTTP Status Codes**
 
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## How to Use the PutWorksheetDateFilter API with SDKs
 

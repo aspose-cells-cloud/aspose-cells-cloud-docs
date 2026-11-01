@@ -25,15 +25,9 @@ Convert a local spreadsheet or Excel file to another format using the Aspose.Cel
 PUT https://api.aspose.cloud/v4.0/cells/convert/spreadsheet
 ```
 
-### Authentication
+### Security and Authentication
 
-Aspose.Cells Cloud APIs use [JWT token–based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/). Include your access token in the `Authorization` header:
-
-```http
-Authorization: Bearer {your-access-token}
-```
-
-> **Note:** Replace `{your-access-token}` with your valid JWT access token. See [Authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) for details.
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ### Request Parameters
 

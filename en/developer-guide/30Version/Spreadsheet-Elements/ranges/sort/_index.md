@@ -9,14 +9,59 @@ description: Provides an API to sort a range of cells within a workbook using As
 weight: 100
 ArticleTitle: "Sort Range of Cells in Excel with Aspose.Cells Cloud REST API"
 ---
-
 The **PostWorksheetCellsRangeSort** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/sort`) enables developers to perform data sorting around a specified range of cells in a worksheet using Aspose.Cells Cloud, supporting complex sorting criteria such as multiple keys, custom orders, and case sensitivity through a structured `RangeSortRequest` body payload.
 
-## REST API
+## The Post Worksheet Cells Range Sort Web API
 
-```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/sort
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/sort
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
+### **Request Parameters:**
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| rangeSortRequest | class:rangesortrequest | HTTPBody | RangeSortRequest Range Sort Request |
+| folder | String | Query | Original workbook folder. |
+| storageName | String | Query | Storage name. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 The request parameters are:
 

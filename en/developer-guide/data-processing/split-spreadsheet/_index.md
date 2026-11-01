@@ -8,23 +8,11 @@ weight: 100
 ArticleTitle: "Split Excel Workbook Locally with Aspose.Cells Cloud API – No Upload, 30+ Formats"
 keywords: "Aspose.Cells Cloud, split Excel workbook, local Excel splitting, Excel to PDF split, Excel API split, split worksheet to files, Excel REST API, cURL split Excel, Aspose.Cells SDK"
 ---
-
-
 The **SplitSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/split/spreadsheet`) in Aspose.Cells Cloud v4.0 splits a locally uploaded Excel workbook into multiple output files on the server side, without requiring cloud storage—enabling users to export each worksheet or specified range to formats such as XLSX, CSV, PDF, or HTML by defining source sheet indices (`from`, `to`) and target `outFormat`.
 
 > **Note**: While processing occurs on Aspose’s infrastructure, _no files are persisted to cloud storage_. The operation is fully local to your session — your data remains secure and unuploaded to persistent storage.
 
-## Prerequisites
-
-- Aspose.Cells Cloud account with valid **App SID** and **App Key**
-- `curl` installed (for REST examples)
-- Optional: SDK for your preferred programming language ([GitHub repository](https://github.com/aspose-cells-cloud))
-
----
-
-## REST API Endpoint
-
-### PUT `/cells/split/spreadsheet`
+## The Split Spreadsheet Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/split/spreadsheet
@@ -40,21 +28,56 @@ Authorization: Bearer {access_token}
 
 ---
 
-## Request Parameters
+### Request Parameters
 
-| Parameter Name   | Type    | Location | Required | Description                                                                              |
-| ---------------- | ------- | -------- | -------- | ---------------------------------------------------------------------------------------- |
-| `Spreadsheet`    | File    | FormData | ✅ Yes   | Local Excel file to split. Supported formats: XLS, XLSX, ODS, CSV, etc.                  |
-| `from`           | Integer | Query    | ❌ No    | Zero-based starting worksheet index (e.g., `0` for first sheet).                         |
-| `to`             | Integer | Query    | ❌ No    | Zero-based ending worksheet index (e.g., `2` splits sheets 0, 1, and 2).                 |
-| `outFormat`      | String  | Query    | ❌ No    | Output format: `PDF`, `CSV`, `JSON`, `XLSX`, `HTML`, `ODS`, `XPS`, etc. Default: `xlsx`. |
-| `outPath`        | String  | Query    | ❌ No    | Local folder path for output files. Defaults to a temporary session location.            |
-| `outStorageName` | String  | Query    | ❌ No    | Session-based storage identifier (used for organization in local mode).                  |
-| `fontsLocation`  | String  | Query    | ❌ No    | Custom font directory for accurate rendering (especially for PDF/image export).          |
-| `region`         | String  | Query    | ❌ No    | Locale (e.g., `"en-US"`, `"de-DE"`) for number/date/currency formatting.                 |
-| `password`       | String  | Query    | ❌ No    | Password for encrypted workbooks.                                                        |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| from | Integer | Query | Begin worksheet index. |
+| to | Integer | Query | End worksheet index. |
+| outFormat | String | Query | The out file format. |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| fontsLocation | String | Query | Use Custom fonts. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
 
 ---
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | Invalid url. |
+| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
+| 404 | Not Found | Source file not accessible. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining data. |
+
+### PUT `/cells/split/spreadsheet`
 
 ## Example Request (cURL)
 

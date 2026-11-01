@@ -10,20 +10,14 @@ keywords: "Aspose.Cells Cloud, Excel, add empty row, worksheet, REST API, insert
 description: "Add an empty row to an Excel worksheet using Aspose.Cells Cloud API PutInsertWorksheetRow with zero-based rowIndex."
 weight: 100
 ---
-
 The **PutInsertWorksheetRow** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/{rowIndex}`) enables Aspose.Cells Cloud to insert a new empty row into a specified worksheet at a zero-based index, supporting programmatic row management in Excel files via REST.
-
-**Prerequisites:**
-
-- A valid Aspose Cloud access token (Bearer JWT) must be included in the `Authorization` header.
-- The target workbook must be uploaded to your Aspose Cloud storage, and the `folder` and `storageName` parameters should point to its location.
 
 **Notes:**
 
 - The `rowIndex` is zero‑based; inserting at index 0 adds a row at the top of the worksheet.
 - Excel worksheets have a maximum of 1,048,576 rows; attempting to insert beyond this limit will result
 
-## PutInsertWorksheetRow API
+## The Put Insert Worksheet Row Web API
 
 ```http
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/{rowIndex}
@@ -35,13 +29,13 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Request parameters**
 
-| Parameter Name | Type    | Location | Description                                              |
-| -------------- | ------- | -------- | -------------------------------------------------------- |
-| name           | string  | path     | The workbook file name.                                  |
-| sheetName      | string  | path     | The worksheet name.                                      |
-| rowIndex       | integer | path     | The zero‑based index where the new row will be inserted. |
-| folder         | string  | query    | The folder path in storage that contains the workbook.   |
-| storageName    | string  | query    | The name of the Aspose Cloud storage to use.             |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| rowIndex | Integer | Path | The new row index. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PutInsertWorksheetRow) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -76,15 +70,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 
 {{< /tabs >}}
 
-**HTTP Status Codes**
-
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
 
 _Example of an error response (e.g., when the row index exceeds the worksheet limit):_
 
@@ -95,6 +80,37 @@ _Example of an error response (e.g., when the row index exceeds the worksheet li
   "Message": "Row index out of range. Maximum rows allowed: 1048576."
 }
 ```
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Cloud SDK Family
 

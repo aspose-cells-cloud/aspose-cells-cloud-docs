@@ -21,8 +21,6 @@ ArticleTitle: "Get Column Details API - Aspose.Cells Cloud REST v3.0"
 description: "Retrieve Excel column metadata—index, width, hidden state, style—via Aspose.Cells Cloud REST API v3.0."
 keywords: "Aspose.Cells Cloud, get column details, Excel column metadata, REST API v3.0, column width, hidden column, column index, worksheet API, GetWorksheetColumns"
 ---
-
-
 The **GetWorksheetColumn** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex}`) retrieves detailed column metadata—including index, width, hidden state, and style—from an Excel worksheet using the Aspose.Cells Cloud REST API v3.0, enabling developers to programmatically inspect and work with specific column properties by passing the file name, worksheet name, and zero-based column index as required path parameters.
 
 ## Table of Contents
@@ -40,13 +38,6 @@ The **GetWorksheetColumn** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/
 
 ---
 
-## Prerequisites
-
-- A valid **JWT access token** obtained via Aspose Cloud authentication.
-- The workbook file must be stored in Aspose Cloud Storage (or another supported storage) and the folder path (if any) must be known.
-
----
-
 ## Authentication
 
 All Aspose.Cells Cloud APIs use **JWT token‑based authentication**. Include the token in the `Authorization` header:
@@ -59,31 +50,66 @@ For details on obtaining a token, see the [Authentication Guide](https://docs.as
 
 ---
 
-## Endpoint
+## The Get Worksheet Column Web API
 
-```
+```http
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex}
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
+### Request Parameters
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| columnIndex | Integer | Path | The column index. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+
+> **Important:** While the specification marks `name`, `sheetName`, and `columnIndex` as `Required: false`, these are _functionally required_ for a valid request. Omitting them will result in a `400 Bad Request`.
+
+---
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "ColumnResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "ColumnResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 - **{name}** – workbook file name (e.g., `test.xlsx`).
 - **{sheetName}** – worksheet name (e.g., `Sheet1`).
 - **{columnIndex}** – zero‑based index of the column to retrieve.
 
 > **Note:** The base API version is `v3.0`, as per the operation specification.
-
----
-
-## Request Parameters
-
-| Name            | Location | Type    | Required | Description                                               |
-| --------------- | -------- | ------- | -------- | --------------------------------------------------------- |
-| **name**        | path     | string  | Yes      | The workbook file name.                                   |
-| **sheetName**   | path     | string  | Yes      | The worksheet that contains the column.                   |
-| **columnIndex** | path     | integer | Yes      | Zero‑based index of the column to retrieve.               |
-| **folder**      | query    | string  | No       | Storage folder where the workbook resides.                |
-| **storageName** | query    | string  | No       | Name of the storage service (e.g., Aspose Cloud Storage). |
-
-> **Important:** While the specification marks `name`, `sheetName`, and `columnIndex` as `Required: false`, these are _functionally required_ for a valid request. Omitting them will result in a `400 Bad Request`.
 
 ---
 

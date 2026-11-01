@@ -10,24 +10,27 @@ description: "Move Excel worksheets via Aspose.Cells Cloud API v3.0: POST endpoi
 weight: 100
 ArticleTitle: "How to Move an Excel Worksheet with Aspose.Cells Cloud API v3.0"
 ---
-
 The **PostMoveWorksheet** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/position`) enables developers to reposition a specific worksheet within an Excel workbook using Aspose.Cells Cloud, supporting operations such as moving a sheet to a new index by providing the workbook name, worksheet name, and a `WorksheetMovingRequest` body with the target position.
 
-## REST API
+## The Post Move Worksheet Web API
 
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/position
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### Request parameters
 
-| Parameter Name | Type   | Location | Description                                                                                                           |
-| -------------- | ------ | -------- | --------------------------------------------------------------------------------------------------------------------- |
-| name           | string | path     | Name of the Excel file.                                                                                               |
-| sheetName      | string | path     | Name of the worksheet to be moved.                                                                                    |
-| moving         | object | body     | JSON object that specifies the destination worksheet (`DestinationWorksheet`) and the relative position (`Position`). |
-| folder         | string | query    | Folder path where the workbook is stored.                                                                             |
-| storageName    | string | query    | Name of the storage service.                                                                                          |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| moving | class:worksheetmovingrequest | HTTPBody | WorksheetMovingRequest with moving parameters. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostMoveWorksheet) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -57,15 +60,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/She
 }
 ```
 
-**HTTP Status Codes**
-
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
 
 **Sample Error Payload**
 
@@ -80,6 +74,38 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/She
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Cloud SDK Family
 

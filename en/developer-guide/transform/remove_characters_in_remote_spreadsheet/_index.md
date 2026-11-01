@@ -10,14 +10,9 @@ keywords: "Aspose.Cells, Remove Characters, Text Processing"
 description: "Remove specific characters, symbols, or substrings from a range in a remote Excel file using Aspose.Cells Cloud API"
 weight: 100
 ---
-
 The **RemoveCharactersInRemoteSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/characters`) in Aspose.Cells Cloud v4.0 deletes user-defined characters, predefined symbol sets (such as NonPrinting, Text, Numeric, Symbols, or Punctuation), or specific substrings from every cell in a named worksheet range while preserving formulas, formatting, and data validation.
 
-## The Remove Characters In Remote Spreadsheet of Aspose.Cells Cloud Web Services
-
-Deletes user‑defined characters, predefined symbol sets, or any substring from every cell in the chosen range while preserving formulas, formatting and data‑validation for a remote spreadsheet.
-
-### Web API Endpoint
+## The Remove Characters in Remote Spreadsheet Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/characters
@@ -29,52 +24,60 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name    | Type    | Path/Query String/HTTP Body | Description                                                                                                                             |
-| ----------------- | ------- | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| name              | string  | Path                        | (Required) The name of the workbook file to be retrieved.                                                                               |
-| worksheet         | string  | Path                        | Specify the worksheet of spreadsheet.                                                                                                   |
-| range             | string  | Path                        | Specify the worksheet range of spreadsheet.                                                                                             |
-| removeTextMethod  | string  | Query                       | Specify the removal of text method type.                                                                                                |
-| characterSets     | string  | Query                       | Specify the character sets.                                                                                                             |
-| removeCustomValue | string  | Query                       | Specify the remove custom value.                                                                                                        |
-| caseSensitive     | boolean | Query                       | Affects `Substring` mode and `CustomChars` when enabled.                                                                                |
-| folder            | string  | Query                       | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
-| storageName       | string  | Query                       | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.                                       |
-| region            | string  | Query                       | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password          | string  | Query                       | The password for opening spreadsheet file.                                                                                              |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | (Required) The name of the workbook file to be retrieved. |
+| worksheet | String | Path | Specify the worksheet of spreadsheet. |
+| range | String | Path | Specify the worksheet range of spreadsheet. |
+| removeTextMethod | String | Query | Specify the removal of text method type. |
+| characterSets | String | Query | Specify the character sets. |
+| removeCustomValue | String | Query | Specify the remove custom value. |
+| caseSensitive | Boolean | Query | Affects `Substring` mode and `CustomChars` when enabled. |
+| folder | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| storageName | String | Query | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+**Response Status Codes**
+
+Deletes user‑defined characters, predefined symbol sets, or any substring from every cell in the chosen range while preserving formulas, formatting and data‑validation for a remote spreadsheet.
 
 ### Request Body Parameter
 
 | Parameter Name | Type   | Description                                     |
 | -------------- | ------ | ----------------------------------------------- |
 | _None_         | _None_ | This operation does not require a request body. |
-
-### **Response**
-
-```json
-{
-  "Code": 200,
-  "Status": "OK",
-  "Message": "Characters removed successfully.",
-  "Data": {
-    "RequestId": "string",
-    "Workbook": {
-      "Name": "string",
-      "Path": "string"
-    }
-  }
-}
-```
-
-**Response Status Codes**
-
-| Code | Meaning               | Description                                                            |
-| ---- | --------------------- | ---------------------------------------------------------------------- |
-| 200  | OK                    | The characters were removed successfully and the workbook was updated. |
-| 400  | Bad Request           | One or more parameters are missing or invalid.                         |
-| 401  | Unauthorized          | Authentication failed – missing or invalid JWT token.                  |
-| 413  | Payload Too Large     | The request size exceeds the allowed limit.                            |
-| 500  | Internal Server Error | An unexpected error occurred on the server side.                       |
 
 ## How to Use the Remove Characters In Remote Spreadsheet with SDKs
 

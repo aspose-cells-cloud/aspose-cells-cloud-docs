@@ -12,16 +12,13 @@ description: "Encrypt and protect Excel workbooks using Aspose.Cells Cloud REST 
 weight: 40
 ArticleTitle: "Protect Excel Files with Aspose.Cells Cloud REST API"
 ---
-
 The **PostProtect** API (`POST https://api.aspose.cloud/v3.0/cells/protect`) in Aspose.Cells Cloud enables Excel file encryption by allowing users to upload a workbook and specify protection settings via a `protectWorkbookRequest` body, supporting password-based workbook protection as part of a broader information security strategy; the operation accepts a `File` form-data parameter and an optional `password` query parameter to set access credentials for the protected workbook.
 
-## REST API Endpoint
+## The Post Protect Web API
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/protect
 ```
-
-> **Security Note**: This endpoint requires HTTPS. Using HTTP exposes credentials to interception.
 
 ### Authentication
 
@@ -34,13 +31,62 @@ Authorization: Bearer <your_jwt_token>
 
 ### Request Parameters
 
-| Parameter Name           | Type   | Location | Description                                                    | Required |
-| ------------------------ | ------ | -------- | -------------------------------------------------------------- | -------- |
-| `file`                   | file   | formData | Excel file(s) to protect                                       | Yes      |
-| `password`               | string | query    | Password to encrypt the workbook                               | No       |
-| `protectWorkbookRequest` | object | body     | Optional structured request payload (e.g., encryption options) | No       |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| File | File | FormData | File to upload |
+| protectWorkbookRequest | class:protectworkbookrequest | HTTPBody | - |
+| password | String | Query | The password needed to open an Excel file. |
 
 > **Note**: If `password` is provided in the query string, it takes precedence over any password in the request body.
+
+### Response
+
+```json
+[
+  {
+    "Name": "FilesResult",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "FilesResult"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+On success (`200 OK`), the API returns a `FilesResult` object containing the protected file(s) as Base64-encoded content.
+
+
+#### HTTP Status Codes
+
+
+#### Example Error Response
+
+```json
+{
+  "Code": 400,
+  "Message": "File is required."
+}
+```
+
+> **Security Note**: This endpoint requires HTTPS. Using HTTP exposes credentials to interception.
 
 ### Request Example (cURL)
 
@@ -50,42 +96,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/protect?password=MySecretPwd" \
   -H "Accept: application/json" \
   -H "Authorization: Bearer <your_jwt_token>" \
   -F 'file=@sample.xlsx'
-```
-
-### Response
-
-On success (`200 OK`), the API returns a `FilesResult` object containing the protected file(s) as Base64-encoded content.
-
-```json
-{
-  "Files": [
-    {
-      "Filename": "sample.xlsx",
-      "FileSize": 274022,
-      "FileContent": "[base64-encoded protected workbook]"
-    }
-  ]
-}
-```
-
-#### HTTP Status Codes
-
-| Code | Meaning               | Description                                            |
-| ---- | --------------------- | ------------------------------------------------------ |
-| 200  | OK                    | Protection applied successfully.                       |
-| 400  | Bad Request           | Missing file, invalid password, or unsupported format. |
-| 401  | Unauthorized          | Invalid or missing JWT token.                          |
-| 403  | Forbidden             | Insufficient permissions or account restrictions.      |
-| 413  | Payload Too Large     | File exceeds maximum upload size (1 GB).               |
-| 500  | Internal Server Error | Unexpected server-side error.                          |
-
-#### Example Error Response
-
-```json
-{
-  "Code": 400,
-  "Message": "File is required."
-}
 ```
 
 ## SDK Examples

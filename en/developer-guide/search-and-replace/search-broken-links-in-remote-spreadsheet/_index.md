@@ -9,16 +9,11 @@ keywords: "Excel, broken links, API, cloud, spreadsheet, validation, Aspose.Cell
 description: "Find broken external links and invalid formulas in remote Excel files using Aspose.Cells Cloud API"
 weight: 100
 ---
-
 The **SearchBrokenLinksInRemoteSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/{name}/search/broken-links`) enables automated detection of broken hyperlinks, invalid external references, and missing data sources in Excel workbooks stored in cloud storage via Aspose.Cells Cloud, scanning all sheets and cells remotely without local download to support enterprise-grade spreadsheet quality assurance.
 
-## **Search Broken Links In Remote Spreadsheet API**
+## The Search Broken Links in Remote Spreadsheet Web API
 
-Automatically detect broken links in Excel files stored in cloud storage. Our API scans specified ranges for broken external references, invalid formulas, and missing data sources. It supports remote spreadsheet auditing, automated quality checks, and integration with cloud‑storage providers. Use the RESTful API to automate enterprise‑level workflows.
-
-### **Web API**
-
-```
+```http
 PUT https://api.aspose.cloud/v4.0/cells/{name}/search/broken-links
 ```
 
@@ -32,15 +27,15 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Request Parameters:**
 
-| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                                                                                                                               |
-| :------------- | :----- | :------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| name           | String | Path                       | **Required.** The name of the Excel workbook file to be scanned for broken links (e.g., `Quarterly_Report.xlsx`).                                         |
-| worksheet      | String | Query                      | **Required.** The name of the worksheet where the search operation will be performed. Specify the exact sheet name as it appears in the workbook.         |
-| cellArea       | String | Query                      | **Required.** The cell range to be analyzed for broken links, expressed in A1 notation (e.g., `C5:J50`). The API searches only within this area.          |
-| folder         | String | Query                      | **Optional.** The path to the directory containing the workbook in your cloud storage. If omitted, the root directory is assumed.                         |
-| storageName    | String | Query                      | **Optional.** The name of your custom cloud‑storage configuration. If omitted, the system’s default storage is used.                                      |
-| region         | String | Query                      | **Optional.** Locale setting applied during processing (e.g., `en-US`). It can affect the interpretation of region‑specific formula syntax or references. |
-| password       | String | Query                      | **Optional.** Password required to open an encrypted spreadsheet. Omit if the file is not password‑protected.                                             |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The name of the workbook file to be search. |
+| worksheet | String | Query | Specify the worksheet for the lookup. |
+| cellArea | String | Query | Specify the cell area for the lookup |
+| folder | String | Query | The folder path where the workbook is stored. |
+| storageName | String | Query | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
 
 **Sample cURL request**
 
@@ -53,36 +48,22 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/Quarterly_Report.xlsx/search/br
 ### **Response**
 
 ```json
-{
-  "Name": "BrokenLinksResponse",
-  "Type": "Class",
-  "ParentName": "CellsCloudResponse",
-  "Properties": [
-    {
-      "Name": "BrokenLinks",
-      "DataType": {
-        "Identifier": "Container",
-        "Reference": "BrokenLink",
-        "ElementDataType": {
-          "Identifier": "Class",
-          "Reference": "BrokenLink"
-        }
-      }
-    },
-    {
-      "Name": "Code",
-      "DataType": {
-        "Identifier": "Integer"
-      }
-    },
-    {
-      "Name": "Status",
-      "DataType": {
-        "Identifier": "String"
-      }
+[
+  {
+    "Name": "BrokenLinksResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "BrokenLinksResponse"
     }
-  ]
-}
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
 ```
 
 **Sample JSON response**
@@ -116,6 +97,8 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/Quarterly_Report.xlsx/search/br
 - **401 Unauthorized** – Invalid access token, client ID, or client secret.
 - **404 Not Found** – The spreadsheet file is not accessible.
 - **500 Server Error** – An anomaly occurred while obtaining calculation data.
+
+Automatically detect broken links in Excel files stored in cloud storage. Our API scans specified ranges for broken external references, invalid formulas, and missing data sources. It supports remote spreadsheet auditing, automated quality checks, and integration with cloud‑storage providers. Use the RESTful API to automate enterprise‑level workflows.
 
 ## Where should we use the Search for broken links within the Spreadsheet API?
 

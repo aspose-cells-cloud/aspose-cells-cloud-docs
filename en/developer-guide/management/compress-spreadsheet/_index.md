@@ -12,16 +12,15 @@ aliases:
   - /cells/compress-spreadsheet/
 ArticleTitle: "Compress Excel Files with Aspose.Cells Cloud API - Configurable Compression Levels"
 ---
-
 The **CompressSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/compress`) enables programmatic compression of Excel spreadsheets via the Aspose.Cells Cloud REST API, allowing users to reduce file size by specifying a compression level (e.g., 0–9) while supporting encrypted workbooks and optional output path configuration; this helps optimize cloud storage usage and accelerate data transfer in automated workflows.
 
-## Compress Spreadsheet API Endpoint
+## The Compress Spreadsheet Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/compress
 ```
 
-## Authentication
+### Authentication
 
 All requests require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
@@ -29,33 +28,44 @@ All requests require [JWT token-based authentication](https://docs.aspose.cloud/
 -H "Authorization: Bearer {access_token}"
 ```
 
-## Request Parameters
+### Request Parameters
 
-| Parameter Name   | Type    | Location | Required | Description                                                                                           |
-| ---------------- | ------- | -------- | -------- | ----------------------------------------------------------------------------------------------------- |
-| `Spreadsheet`    | File    | FormData | Yes      | The source Excel file (`.xlsx`, `.xls`, `.xlsm`, `.xlsb`, etc.) to compress.                          |
-| `level`          | Integer | Query    | Yes      | Compression intensity: `0` (fastest/lowest compression) to `9` (slowest/highest). Default: `5`.       |
-| `outPath`        | String  | Query    | No       | Destination folder path in cloud storage. If omitted, output is saved in the source folder.           |
-| `outStorageName` | String  | Query    | No       | Identifier of the configured cloud storage (e.g., `MyStorage`).                                       |
-| `region`         | String  | Query    | No       | Locale setting (e.g., `en-US`, `de-DE`). Affects number/date formatting and locale-sensitive parsing. |
-| `password`       | String  | Query    | No       | Password for encrypted workbooks. Omit if file is not protected.                                      |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| level | Integer | Query | Specifies the compression level to be applied to the spreadsheet. The level should be within a valid range (e.g., 0-9 for most compression algorithms, where 0 is no compression and 9 is maximum compression). |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
 
 > **Note**: Though `outStorageName` is marked _Not Required_ in the spec, it is strongly recommended for predictable storage routing. Omitting it may result in fallback behavior depending on account configuration.
 
-## Response
+### Response
+
+```json
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
 
 The API returns the compressed Excel file as a binary stream.
 
 **Example JSON metadata response (when using SDKs with wrapper):**
-
-```json
-{
-  "type": "FileContentResult",
-  "fileContents": "byte[] (Base64 encoded)",
-  "contentType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-  "fileDownloadName": "compressed_workbook.xlsx"
-}
-```
 
 ### HTTP Status Codes
 

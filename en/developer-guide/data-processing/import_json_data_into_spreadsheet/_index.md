@@ -10,14 +10,9 @@ keywords: "Import JSON, Aspose.Cells, Spreadsheet, API"
 description: "Import JSON data file into the local spreadsheet."
 weight: 100
 ---
-
 The **ImportJSONDataIntoSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/import/data/json`) in Aspose.Cells Cloud enables developers to import JSON data directly into a specified worksheet of an existing spreadsheet file by parsing the JSON and mapping it to cell values starting at a given position; it supports formats like .xlsx and .ods and allows control over whether data is inserted or overwrites existing content via the `insert` parameter.
 
-## The Import JSON Data Into Spreadsheet of Aspose.Cells Cloud Web Services
-
-Import JSON data file into the local spreadsheet. The method parses the JSON, maps the data to the spreadsheet's cell structure, and saves the file locally. Supported spreadsheet formats include .xlsx and .ods.
-
-### Web API Endpoint
+## The Import JSONData Into Spreadsheet Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/import/data/json
@@ -29,37 +24,55 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type    | Path/Query String/HTTP Body | Description                                                                                                                             |
-| -------------- | ------- | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| datafile       | File    | FormData                    | Upload data file.                                                                                                                       |
-| Spreadsheet    | File    | FormData                    | Upload spreadsheet file.                                                                                                                |
-| worksheet      | string  | Query                       | Need to import JSON data into the worksheet.                                                                                            |
-| startcell      | string  | Query                       | Starting position for data import                                                                                                       |
-| insert         | boolean | Query                       | Controls the insertion behavior. true: inserts data; false: overwrites existing data. (Default: true)                                   |
-| outPath        | string  | Query                       | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
-| outStorageName | string  | Query                       | Output file Storage Name.                                                                                                               |
-| fontsLocation  | string  | Query                       | Use Custom fonts.                                                                                                                       |
-| region         | string  | Query                       | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password       | string  | Query                       | The password for opening spreadsheet file.                                                                                              |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| datafile | File | FormData | Upload data file. |
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| worksheet | String | Query | Need to import JSON data into the worksheet. |
+| startcell | String | Query | Starting position for data import |
+| insert | Boolean | Query | Controls the insertion behavior. true: inserts data; false: overwrites existing data. |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| fontsLocation | String | Query | Use Custom fonts. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
 
 ### **Response**
 
 ```json
-{
-  "file": "binary stream"
-}
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
 ```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | Invalid url. |
+| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
+| 404 | Not Found | Source file not accessible. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining data. |
 
 **Response Status Codes**
 
-| Code | Meaning               | Description                                                   |
-| ---- | --------------------- | ------------------------------------------------------------- |
-| 200  | OK                    | File successfully generated and returned.                     |
-| 400  | Bad Request           | Invalid url.                                                  |
-| 401  | Unauthorized          | Authentication has failed, or no credentials were provided.   |
-| 404  | Not Found             | Source file not accessible.                                   |
-| 413  | Payload Too Large     | [TBD]                                                         |
-| 500  | Internal Server Error | The spreadsheet has encountered an anomaly in obtaining data. |
+Import JSON data file into the local spreadsheet. The method parses the JSON, maps the data to the spreadsheet's cell structure, and saves the file locally. Supported spreadsheet formats include .xlsx and .ods.
 
 ## How to Use the Import JSON Data Into Spreadsheet with SDKs
 

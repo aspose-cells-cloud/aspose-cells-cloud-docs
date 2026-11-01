@@ -8,16 +8,9 @@ keywords: "Aspose.Cells, Chart API, Second Value Axis, Excel, REST, Cloud SDK"
 description: "Update Excel chart's second value axis via Aspose.Cells Cloud REST API using POST /charts/{chartIndex}/secondvalueaxis"
 linktitle: "Update Second Value Axis"
 ---
-
 The **PostChartSecondValueAxis** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/secondvalueaxis`) updates the second value axis of a chart in a spreadsheet via Aspose.Cells Cloud, allowing developers to programmatically modify axis properties such as scale, format, and title by sending an Axis object in the request body.
 
-**Prerequisites:**
-
-- A valid JWT access token (see the [Authentication guide]（https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/）).
-- The target Excel file must be stored in Aspose Cloud storage (provide `folder` and optional `storageName`).
-- API version v3.0 is used; ensure the base URL is `https://api.aspose.cloud/v3.0`.
-
-## PostChartSecondValueAxis API
+## The Post Chart Second Value Axis Web API
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/secondvalueaxis
@@ -29,14 +22,14 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request parameters
 
-| Parameter Name | Type    | Location | Description                                       |
-| -------------- | ------- | -------- | ------------------------------------------------- |
-| name           | string  | path     | Name of the Excel file.                           |
-| sheetName      | string  | path     | Name of the worksheet containing the chart.       |
-| chartIndex     | integer | path     | Zero‑based index of the chart to modify.          |
-| axis           | object  | body     | Settings for the second value axis.               |
-| folder         | string  | query    | Folder path in storage where the file is located. |
-| storageName    | string  | query    | Name of the storage service.                      |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| chartIndex | Integer | Path | The chart index. |
+| axis | class:axis | HTTPBody | Axis |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 **Example request body (JSON):**
 
@@ -84,20 +77,43 @@ curl -v "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/chart
 
 {{< /tabs >}}
 
-**HTTP Status Codes**
-
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
 
 **See also:**
 
 - [Get Chart Second Value Axis](https://docs.aspose.cloud/cells/charts/second-value-axis/get/)
 - [Update Chart Value Axis](https://docs.aspose.cloud/cells/charts/value-axis/update/)
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Cloud SDK Family
 

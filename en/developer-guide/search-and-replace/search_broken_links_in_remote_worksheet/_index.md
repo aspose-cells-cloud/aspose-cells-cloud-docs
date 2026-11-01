@@ -10,14 +10,9 @@ keywords: "Aspose.Cells, Search Broken Links, Remote Worksheet"
 description: "Search broken links in the worksheet of a remote spreadsheet."
 weight: 100
 ---
-
 The **SearchBrokenLinksInRemoteWorksheet** API (`PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/search/broken-links`) in Aspose.Cells Cloud enables remote scanning of a specified worksheet in a cloud-stored spreadsheet to identify broken hyperlinks—such as dead URLs or missing external references—without downloading the file, returning a list of invalid links with sheet and cell details for corrective action.
 
-## The Search Broken Links in Remote Worksheet of Aspose.Cells Cloud Web Services
-
-This method searches for broken links within a worksheet of a spreadsheet file stored in remote cloud storage. It scans all sheets and cells to identify hyperlinks that no longer point to valid destinations, such as dead URLs or missing external references. The operation is performed remotely within the cloud environment, without requiring the file to be downloaded to the local machine.
-
-### Web API Endpoint
+## The Search Broken Links in Remote Worksheet Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/search/broken-links
@@ -29,46 +24,55 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type   | Path/Query String/HTTP Body | Description                                                                                                                             |
-| -------------- | ------ | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| name           | string | Path                        | The name of the workbook file to be search.                                                                                             |
-| worksheet      | string | Path                        | Specify the worksheet for the lookup.                                                                                                   |
-| folder         | string | Query                       | The folder path where the workbook is stored. (optional)                                                                                |
-| storageName    | string | Query                       | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.                                       |
-| region         | string | Query                       | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password       | string | Query                       | The password for opening spreadsheet file.                                                                                              |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The name of the workbook file to be search. |
+| worksheet | String | Path | Specify the worksheet for the lookup. |
+| folder | String | Query | The folder path where the workbook is stored. |
+| storageName | String | Query | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "BrokenLinksResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "BrokenLinksResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | Invalid url. |
+| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
+| 404 | Not Found | Source file not accessible. |
+| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining data. |
+
+**Response Status Codes**
+
+This method searches for broken links within a worksheet of a spreadsheet file stored in remote cloud storage. It scans all sheets and cells to identify hyperlinks that no longer point to valid destinations, such as dead URLs or missing external references. The operation is performed remotely within the cloud environment, without requiring the file to be downloaded to the local machine.
 
 ### Request Body Parameter
 
 | Parameter Name | Type | Description                                     |
 | -------------- | ---- | ----------------------------------------------- |
 | —              | —    | No request body is required for this operation. |
-
-### **Response**
-
-```json
-{
-  "Links": [
-    {
-      "SheetName": "Sheet1",
-      "CellName": "A1",
-      "Url": "http://invalid.example.com"
-    }
-  ],
-  "Count": 1
-}
-```
-
-**Response Status Codes**
-
-| Code | Meaning               | Description                                                   |
-| ---- | --------------------- | ------------------------------------------------------------- |
-| 200  | OK                    | Successfully retrieved list of broken links.                  |
-| 400  | Bad Request           | Invalid request parameters or malformed URL.                  |
-| 401  | Unauthorized          | Authentication has failed, or no credentials were provided.   |
-| 404  | Not Found             | Source file not accessible.                                   |
-| 413  | Payload Too Large     | Request entity is too large.                                  |
-| 500  | Internal Server Error | The spreadsheet has encountered an anomaly in obtaining data. |
 
 ## How to Use the Search Broken Links in Remote Worksheet with SDKs
 

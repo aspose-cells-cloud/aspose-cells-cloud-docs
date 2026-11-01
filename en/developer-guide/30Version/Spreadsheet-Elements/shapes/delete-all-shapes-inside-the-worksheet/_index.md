@@ -10,12 +10,9 @@ keywords: "Aspose.Cells Cloud, Delete all shapes, Excel worksheet, REST API, SDK
 description: "Clear all shapes from an Excel worksheet using Aspose.Cells Cloud REST API with cURL or SDKs"
 weight: 40
 ---
-
 The **DeleteWorksheetShapes** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes`) provided by Aspose.Cells Cloud removes all shapes from a specified worksheet in a cloud-based Excel file, supporting operations on documents stored in default or custom folders and storage accounts via optional query parameters.
 
-**Prerequisites:** A valid JWT access token is required. Obtain it via the Aspose Cloud OAuth2 flow and include it in the `Authorization` header as shown in the example below.
-
-## DeleteWorksheetShapes API
+## The Delete Worksheet Shapes Web API
 
 ```http
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes
@@ -27,12 +24,12 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Request parameters**
 
-| Parameter Name | Type   | Location | Description                                  |
-| -------------- | ------ | -------- | -------------------------------------------- |
-| name           | string | path     | The name of the Excel document.              |
-| sheetName      | string | path     | The name of the worksheet.                   |
-| folder         | string | query    | The folder that contains the document.       |
-| storageName    | string | query    | The storage name where the document resides. |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 The <a href="https://apireference.aspose.cloud/cells/#/Shapes/DeleteWorksheetShapes" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -64,6 +61,37 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Cloud SDK Family
 

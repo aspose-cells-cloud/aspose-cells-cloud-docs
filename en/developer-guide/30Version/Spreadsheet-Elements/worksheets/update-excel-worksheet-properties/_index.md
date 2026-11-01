@@ -19,26 +19,27 @@ keywords:
 description: "Update Excel worksheet properties like DisplayZeros and IsRulerVisible using Aspose.Cells Cloud REST API v3.0"
 ArticleTitle: "Update Worksheet Properties – Aspose.Cells Cloud API Reference (v3.0)"
 ---
-
 The **PostUpdateWorksheetProperty** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}`) updates core properties of a specific worksheet within a workbook stored in the cloud, using Aspose.Cells Cloud’s REST interface. Developers supply the workbook name, worksheet name, and a JSON-serialized worksheet object in the request body to modify properties such as visibility, tab color, or protection settings—enabling programmatic control over worksheet behavior without manual Excel interaction.
 
-## REST API
+## The Post Update Worksheet Property Web API
 
-**Prerequisites:** You must have a valid Aspose Cloud account, obtain a JWT access token, and ensure the target workbook is stored in a supported storage location. All requests should be made over **HTTPS**.
-
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### **Request parameters**
 
-| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                                                                         |
-| -------------- | ------ | -------------------------- | --------------------------------------------------------------------------------------------------- |
-| name           | string | path                       | Workbook filename (including extension).                                                            |
-| sheetName      | string | path                       | Name of the worksheet to be updated.                                                                |
-| sheet          | object | body                       | JSON object containing worksheet property key/value pairs (e.g., `DisplayZeros`, `IsRulerVisible`). |
-| folder         | string | query                      | Folder path in storage where the workbook is located.                                               |
-| storageName    | string | query                      | Name of the storage to use.                                                                         |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| sheet | class:worksheet | HTTPBody | The worksheet description. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 The **sheet** object is sent in the request body as JSON. Example properties that can be modified include `DisplayZeros`, `IsRulerVisible`, `IsGridlinesVisible`, and others defined in the API specification.
 
@@ -82,13 +83,39 @@ Typical response codes:
 - **404** – Workbook or worksheet not found.
 - **500** – Internal server error.
 
-| Code | Meaning                                                     |
-| ---- | ----------------------------------------------------------- |
-| 200  | Success – the worksheet properties were updated.            |
-| 400  | Bad request – malformed JSON or missing required parameter. |
-| 401  | Unauthorized – missing or invalid JWT token.                |
-| 404  | Not found – workbook or worksheet does not exist.           |
-| 500  | Internal server error.                                      |
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+**Prerequisites:** You must have a valid Aspose Cloud account, obtain a JWT access token, and ensure the target workbook is stored in a supported storage location. All requests should be made over **HTTPS**.
 
 ## Cloud SDK Family
 

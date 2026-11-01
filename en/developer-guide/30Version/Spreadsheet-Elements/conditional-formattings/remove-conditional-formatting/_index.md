@@ -10,18 +10,10 @@ weight: 60
 linktitle: "Delete Conditional Formatting"
 ArticleTitle: "Delete Conditional Formatting in Excel via Aspose.Cells Cloud REST API"
 ---
-
-
 The **DeleteWorksheetConditionalFormatting** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}`) removes a specific conditional formatting rule from a worksheet in an Excel workbook stored in Aspose.Cells Cloud storage, using the zero-based index of the rule; this operation supports automation workflows by enabling developers to programmatically delete formatting rules—such as those highlighting values above a threshold—without manually editing the workbook.
 
 ## Background
 Conditional formatting lets you apply visual styles to cells that meet specific criteria (e.g., highlight values greater than a threshold). In automation scenarios you may need to remove an existing rule. This endpoint deletes a conditional‑formatting rule from a worksheet in an Excel workbook stored in Aspose Cloud storage.
-
-## Prerequisites
-- An **Aspose Cloud** account with **Cells** product enabled.  
-- **JWT access token** generated via the OAuth 2.0 client‑credentials flow.  
-- The workbook (`{name}`) must already exist in the specified **folder** and **storage** (if any).  
-- API version **v3.0** (default) is used in the URLs shown below.
 
 ## Authentication
 All Aspose.Cells Cloud endpoints require **JWT token‑based authentication**.
@@ -49,19 +41,56 @@ curl -X POST "https://api.aspose.cloud/connect/token" \
 
 Use the returned `access_token` in the `Authorization` header for every request.
 
-## HTTP Request
+## The Delete Worksheet Conditional Formatting Web API
 
-```
+```http
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### Path Parameters
 
-| Name      | Type   | Required | Description |
-|-----------|--------|----------|-------------|
-| `name`    | string | Yes      | The workbook file name (e.g., `Book1.xlsx`). |
-| `sheetName` | string | Yes   | The worksheet that contains the conditional formatting. |
-| `index`   | integer| Yes      | Zero‑based index of the conditional‑formatting rule to delete. |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| index | Integer | Path | Gets the Conditional Formatting element at the specified index. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ### Query Parameters
 

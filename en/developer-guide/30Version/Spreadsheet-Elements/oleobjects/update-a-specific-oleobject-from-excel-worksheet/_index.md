@@ -12,18 +12,64 @@ author: "Aspose Cloud Documentation Team"
 lastmod: "2024-03-01"
 ArticleTitle: "Update an OLE Object in an Excel Worksheet – Aspose.Cells Cloud API Guide"
 ---
-
 The **PostUpdateWorksheetOleObject** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects/{oleObjectIndex}`) updates a specific OLE object in an Excel worksheet using Aspose.Cells Cloud, enabling developers to modify embedded OLE content—such as linked or embedded objects—by sending updated OLE object data in the request body along with path parameters identifying the workbook, worksheet, and OLE object index.
 
 ### **Security and Authentication**
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-## PostUpdateWorksheetOleObject API
+## The Post Update Worksheet OLE Object Web API
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects/{oleObjectIndex}
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
+### **Request Parameters:**
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worsheet name. |
+| oleObjectIndex | Integer | Path | Ole object index. |
+| ole | class:oleobject | HTTPBody | Ole Object description. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+### Error Responses
+
+| HTTP Status | Code | Message                                                        |
+| ----------- | ---- | -------------------------------------------------------------- |
+| 400         | 4000 | Bad request – missing or invalid parameters.                   |
+| 401         | 4010 | Unauthorized – invalid or missing JWT token.                   |
+| 404         | 4040 | Not found – workbook, worksheet, or OLE object does not exist. |
+| 500         | 5000 | Internal server error – unexpected failure on the server side. |
+
+The API also returns a custom **Code** field in the response body that maps to the HTTP status (e.g., 200 → 2000, 400 → 4000, etc.).
 
 The request parameters are:
 
@@ -93,17 +139,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/" \
 {{< /tab >}}
 
 {{< /tabs >}}
-
-## Error Responses
-
-| HTTP Status | Code | Message                                                        |
-| ----------- | ---- | -------------------------------------------------------------- |
-| 400         | 4000 | Bad request – missing or invalid parameters.                   |
-| 401         | 4010 | Unauthorized – invalid or missing JWT token.                   |
-| 404         | 4040 | Not found – workbook, worksheet, or OLE object does not exist. |
-| 500         | 5000 | Internal server error – unexpected failure on the server side. |
-
-The API also returns a custom **Code** field in the response body that maps to the HTTP status (e.g., 200 → 2000, 400 → 4000, etc.).
 
 ## When to Use This API?
 

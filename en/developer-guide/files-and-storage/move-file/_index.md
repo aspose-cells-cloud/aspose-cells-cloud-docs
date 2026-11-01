@@ -9,14 +9,11 @@ keywords: "Aspose.Cells, Move File API, Cloud Storage, Excel API, File Managemen
 description: "Move Excel files in Aspose.Cells Cloud storage using the Move File API with path parameters and cURL/SDK examples"
 weight: 100
 ---
-
 The **MoveFile** API (`PUT https://api.aspose.cloud/v4.0/cells/storage/file/move/{srcPath}`) moves a file from a specified source path (`srcPath`) to a destination path (`destPath`) within Aspose.Cells Cloud storage using the HTTP PUT method; it supports optional parameters for specifying source and destination storage names and version IDs, enabling efficient file reorganization across cloud storage locations without downloading or re-uploading.
 
-## **Excel API: Move File**
+## The Move File Web API
 
-### Web API
-
-```bash
+```http
 PUT https://api.aspose.cloud/v4.0/cells/storage/file/move/{srcPath}
 ```
 
@@ -30,31 +27,45 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### The request parameters of **moveFile** API are
 
-| Parameter Name  | Type   | Path/Query String/HTTP Body | Description                                        |
-| --------------- | ------ | --------------------------- | -------------------------------------------------- |
-| srcPath         | String | Path                        | The source path of the file to be moved.           |
-| destPath        | String | Query                       | The destination path where the file will be moved. |
-| srcStorageName  | String | Query                       | The source storage name, if applicable.            |
-| destStorageName | String | Query                       | The destination storage name, if applicable.       |
-| versionId       | String | Query                       | The version ID of the file, if applicable.         |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| srcPath | String | Path | - |
+| destPath | String | Query | - |
+| srcStorageName | String | Query | - |
+| destStorageName | String | Query | - |
+| versionId | String | Query | - |
 
 ### **Response**
 
-A successful request returns **HTTP 200 OK** with an empty JSON body.
-
 ```json
-{}
+[
+  {
+    "Name": "Void",
+    "DataType": {
+      "Identifier": "Void"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
 ```
 
 **HTTP Status Codes**
 
-| HTTP Code | HTTP Status           | Description                                                       |
-| --------- | --------------------- | ----------------------------------------------------------------- |
-| 200       | OK                    | Web API called successfully; response contains operation details. |
-| 400       | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401       | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413       | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500       | Internal Server Error | Unexpected server error.                                          |
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+A successful request returns **HTTP 200 OK** with an empty JSON body.
 
 ## OpenAPI Specification
 

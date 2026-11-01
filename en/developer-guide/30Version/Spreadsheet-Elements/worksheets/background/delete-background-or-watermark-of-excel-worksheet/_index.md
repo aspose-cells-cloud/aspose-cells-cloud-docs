@@ -10,25 +10,26 @@ description: "Use Aspose.Cells Cloud REST API to delete the background image of 
 weight: 210
 ArticleTitle: "Delete background on an Excel worksheet using Aspose.Cells Cloud API"
 ---
-
 The **DeleteWorksheetBackground** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/background`) in Aspose.Cells Cloud enables programmatic removal of background images or watermarks from a specified worksheet. This REST operation requires the file name and worksheet name as path parameters, with optional query parameters for folder and storage location. It supports deletion of both static background images and watermark elements, offering a straightforward way to clean up worksheet visuals without altering other content.
 
-**Prerequisites:** You must have the workbook stored in Aspose Cloud storage and possess a valid JWT access token for authentication.
+## The Delete Worksheet Background Web API
 
-## REST API
-
-```bash
+```http
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/background
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### **Request parameters**
 
-| Parameter Name | Type   | Location | Description                                            |
-| -------------- | ------ | -------- | ------------------------------------------------------ |
-| name           | string | path     | The name of the Excel file.                            |
-| sheetName      | string | path     | The name of the worksheet whose background is removed. |
-| folder         | string | query    | The folder in storage where the file is located.       |
-| storageName    | string | query    | The name of the storage (if not the default storage).  |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheetBackground) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -57,19 +58,41 @@ curl -v "https://api.aspose.cloud/v3.0/cells/WorkSheetBackground_Sample_Test_Boo
 }
 ```
 
-**HTTP Status Codes**
-
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
 
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Cloud SDK Family
 

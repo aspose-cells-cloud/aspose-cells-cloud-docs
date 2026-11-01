@@ -10,8 +10,59 @@ description: "Update Excel range style using Aspose.Cells Cloud API: POST /cells
 weight: 70  
 ArticleTitle: "Set Range Style in Excel via Aspose.Cells Cloud REST API"
 ---
-
 The **PostWorksheetCellsRangeStyle** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/style`) enables developers to set the style for a specified range in a worksheet using Aspose.Cells Cloud, allowing programmatic formatting of cell ranges such as applying fonts, borders, and fill patterns. The operation requires the workbook name, worksheet name, and a `RangeSetStyleRequest` body containing the desired style settings, with optional query parameters for folder and storage name. This REST API supports integration across multiple programming languages, including .NET, Java, Python, and JavaScript, streamlining spreadsheet styling workflows in cloud-based applications.
+
+## The Post Worksheet Cells Range Style Web API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/style
+```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
+### **Request Parameters:**
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| rangeOperate | class:rangesetstylerequest | HTTPBody | RangeSetStyleRequest Range Set Style Request |
+| folder | String | Query | Original workbook folder. |
+| storageName | String | Query | Storage name. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## **Introduction**  
 This example demonstrates how to set the style of a range using the Aspose.Cells Cloud API. You can call the API from many programming languages, such as .NET, Java, PHP, Ruby, Python, JavaScript (jQuery), and others.  

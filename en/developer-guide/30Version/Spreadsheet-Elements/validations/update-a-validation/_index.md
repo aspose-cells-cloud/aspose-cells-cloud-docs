@@ -9,27 +9,30 @@ description: "Update a worksheet validation in Excel via Aspose.Cells Cloud REST
 weight: 100
 ArticleTitle: "Update Worksheet Validation Using Aspose.Cells Cloud API"
 ---
-
 The **PostWorksheetValidation** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations/{validationIndex}`) updates an existing data validation in a specific worksheet by its index, enabling precise programmatic control over Excel validation rules using Aspose.Cells Cloud. Developers supply the workbook name, worksheet name, validation index, and a new validation object in the request body to replace the existing validation, with optional query parameters for folder and storage name to locate the file.
 
 Before calling this endpoint, obtain a JWT access token with the appropriate scopes (e.g., `Cells.ReadWrite`). Include the token in the `Authorization` header as shown in the examples.
 
-## REST API
+## The Post Worksheet Validation Web API
 
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations/{validationIndex}
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### **Request parameters**
 
-| Parameter Name  | Type    | Location | Description                                                    |
-| --------------- | ------- | -------- | -------------------------------------------------------------- |
-| name            | string  | path     | The name of the workbook file.                                 |
-| sheetName       | string  | path     | The name of the worksheet that contains the validation.        |
-| validationIndex | integer | path     | The zero‑based index of the validation to be updated.          |
-| validation      | object  | body     | A JSON object that defines the updated validation settings.    |
-| folder          | string  | query    | The folder in cloud storage where the workbook is located.     |
-| storageName     | string  | query    | The name of the storage service (if a custom storage is used). |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The workbook name. |
+| sheetName | String | Path | The worksheet name. |
+| validationIndex | Integer | Path | The validation index. |
+| validation | class:validation | HTTPBody | Validation description. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 The <a href="https://apireference.aspose.cloud/cells/#/WorksheetValidations/PostWorksheetValidation" target="_blank" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -65,14 +68,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/v
 
 **Possible HTTP status codes**
 
-| Code | Meaning               | Description                                                            |
-| ---- | --------------------- | ---------------------------------------------------------------------- |
-| 200  | OK                    | Validation was updated successfully.                                   |
-| 400  | Bad Request           | The request is malformed or missing required parameters.               |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                          |
-| 403  | Forbidden             | The token does not have sufficient scopes.                             |
-| 404  | Not Found             | The specified workbook, worksheet, or validation index does not exist. |
-| 500  | Internal Server Error | An unexpected error occurred on the server.                            |
 
 For more details on handling errors, refer to the <a href="https://apireference.aspose.cloud/cells/#/Errors" target="_blank" rel="noopener noreferrer">Aspose.Cells Cloud error documentation</a>.
 
@@ -80,6 +75,38 @@ You may also want to explore related operations such as adding a new validation 
 
 - [Add a worksheet validation](https://docs.aspose.cloud/cells/validations/add/)
 - [Delete a worksheet validation](https://docs.aspose.cloud/cells/validations/delete/)
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Cloud SDK Family
 

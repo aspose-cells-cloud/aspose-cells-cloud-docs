@@ -10,14 +10,9 @@ keywords: "Aspose.Cells, ConvertWorksheetToHtmlTable, HTML Table, API"
 description: "Converts a worksheet of a spreadsheet on a local drive to an HTML table file using Aspose.Cells Cloud."
 weight: 100
 ---
-
 The **ConvertWorksheetToHtmlTable** API (`PUT https://api.aspose.cloud/v4.0/cells/convert/worksheet/html-table`) in Aspose.Cells Cloud enables direct conversion of a specified worksheet from a locally uploaded spreadsheet file into an HTML table, returning the result as a file stream without requiring prior storage in the cloud; it supports optional locale settings and password-protected workbooks for accurate rendering.
 
-## The Convert Worksheet To Html Table of Aspose.Cells Cloud Web Services
-
-This operation reads a spreadsheet file from the local file system, converts its specified worksheet to an HTML table, and returns the converted result as a file stream. The conversion is performed entirely on the cloud server, so no intermediate upload to cloud storage is required. It supports optional locale settings and password‑protected workbooks.
-
-### Web API Endpoint
+## The Convert Worksheet to HTML Table Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/convert/worksheet/html-table
@@ -29,37 +24,54 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type   | Path/Query String/HTTP Body | Description                                                                                                                             |
-| -------------- | ------ | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| Spreadsheet    | File   | FormData                    | Upload spreadsheet file.                                                                                                                |
-| worksheet      | String | Query                       | Worksheet name of spreadsheet. (required)                                                                                               |
-| region         | String | Query                       | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password       | String | Query                       | The password for opening spreadsheet file.                                                                                              |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| worksheet | String | Query | worksheet name of spreadsheet. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "Stream",
+    "DataType": {
+      "Identifier": "File"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | Invalid url. |
+| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
+| 404 | Not Found | Source file not accessible. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining conversion data. |
+
+**Response Status Codes**
+
+This operation reads a spreadsheet file from the local file system, converts its specified worksheet to an HTML table, and returns the converted result as a file stream. The conversion is performed entirely on the cloud server, so no intermediate upload to cloud storage is required. It supports optional locale settings and password‑protected workbooks.
 
 ### Request Body Parameter
 
 | Parameter Name | Type   | Description                                                          |
 | -------------- | ------ | -------------------------------------------------------------------- |
 | _None_         | _None_ | _No JSON body is required; the file is sent as multipart/form-data._ |
-
-### **Response**
-
-```json
-{
-  "File": "binary stream of the generated HTML table"
-}
-```
-
-**Response Status Codes**
-
-| Code | Meaning               | Description                                                                   |
-| ---- | --------------------- | ----------------------------------------------------------------------------- |
-| 200  | OK                    | Worksheet successfully converted to HTML table and returned as a file stream. |
-| 400  | Bad Request           | Invalid request URL or missing required parameters.                           |
-| 401  | Unauthorized          | Authentication has failed, or no credentials were provided.                   |
-| 404  | Not Found             | Source file not accessible.                                                   |
-| 500  | Internal Server Error | The spreadsheet encountered an anomaly while obtaining conversion data.       |
-| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                             |
 
 ## How to Use the Convert Worksheet To Html Table with SDKs
 

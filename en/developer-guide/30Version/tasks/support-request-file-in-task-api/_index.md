@@ -10,10 +10,55 @@ weight: 100
 ArticleTitle: "Support Request File in Aspose.Cells Task API"
 linktitle: "Support Request File"
 ---
-
 The **PostRunTask** API (`POST https://api.aspose.cloud/v3.0/cells/task/runtask`) in Aspose.Cells Cloud enables users to execute predefined tasks—such as document conversion, formatting, or data extraction—by submitting a structured TaskData object in the request body, returning the processed result as a binary stream.
 
-## REST API
+## The Post Run Task Web API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/task/runtask
+```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
+### **Request Parameters:**
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| TaskData | class:taskdata | HTTPBody | Task Data Descrition |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "Stream",
+    "DataType": {
+      "Identifier": "File"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 | **API**             | **Type** | **Description** | **Resource Link**                                                         |
 | :------------------ | :------- | :-------------- | :------------------------------------------------------------------------ |

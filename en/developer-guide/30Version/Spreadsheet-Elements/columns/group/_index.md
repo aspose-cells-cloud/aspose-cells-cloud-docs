@@ -22,22 +22,14 @@ aliases:
   - /excel/group-columns/
 ArticleTitle: "Group Columns in Excel Using Aspose.Cells Cloud REST API v3.0"
 ---
-
-
 The **PostGroupWorksheetColumns** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/group`) enables programmatic grouping of worksheet columns in Aspose.Cells Cloud, allowing developers to define collapsible column ranges by specifying first and last column indices, with optional control over visibility via the `hide` parameter—ideal for automating interactive Excel dashboards and reports that mirror native Excel grouping behavior.
 
 **API Version:** v3.0  
 **Operation:** `PostGroupWorksheetColumns` – Group worksheet columns in a worksheet.
 
-## Introduction
+## Overview
 
 Grouping columns in Excel enables you to create collapsible sections, improving data readability and user interaction. With Aspose.Cells Cloud, you can programmatically group ranges of columns—ideal for automating dashboard generation, report formatting, or interactive workbook creation. This API supports immediate visibility control (e.g., collapse/expand on creation), ensuring your Excel workflows mirror native Excel behavior.
-
-## Prerequisites
-
-- A valid **JWT access token** from Aspose Cloud authentication.
-- The workbook must reside in Aspose.Cells Cloud’s default storage or a named custom storage.
-- Use SDKs compatible with API version **v3.0** (latest releases recommended).
 
 ## Authentication
 
@@ -49,11 +41,58 @@ Authorization: Bearer <access_token>
 
 For detailed token acquisition steps, see the [JWT Authentication Guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
-## HTTP Request
+## The Post Group Worksheet Columns Web API
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/group
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
+### **Request Parameters:**
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| firstIndex | Integer | Query | The first column index to be operated. |
+| lastIndex | Integer | Query | The last column index to be operated. |
+| hide | Boolean | Query | columns visible state |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 | Parameter     | Location | Required | Description                                                          |
 | ------------- | -------- | -------- | -------------------------------------------------------------------- |

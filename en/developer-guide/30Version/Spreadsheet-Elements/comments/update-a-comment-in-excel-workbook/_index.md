@@ -9,14 +9,9 @@ weight: 30
 ArticleTitle: "Update Worksheet Cell Comment – Aspose.Cells Cloud API"
 linktitle: "Update Comment"
 ---
-
 The **PostWorksheetComment** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{cellName}`) updates an existing comment attached to a specific cell in an Excel worksheet using Aspose.Cells Cloud, requiring the workbook name, worksheet name, cell name, and a comment object in the request body.
 
-**Prerequisites:**  
-- A valid OAuth/JWT access token must be included in the `Authorization` header.  
-- The workbook must be stored in a supported cloud storage location (specify `folder` and optionally `storageName`).  
-
-## PostWorksheetComment API
+## The Post Worksheet Comment Web API
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{cellName}
@@ -28,14 +23,14 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type   | Location | Description                                                           |
-| -------------- | ------ | -------- | --------------------------------------------------------------------- |
-| name           | string | path     | The name of the Excel document.                                       |
-| sheetName      | string | path     | The name of the worksheet that contains the cell.                     |
-| cellName       | string | path     | The address of the cell (e.g., **A1**).                               |
-| comment        | object | body     | A **Comment** object that defines the comment to be added or updated. |
-| folder         | string | query    | The folder where the document is stored.                              |
-| storageName    | string | query    | The name of the storage service.                                      |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| cellName | String | Path | The cell name. |
+| comment | class:comment | HTTPBody | Comment object. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetComment) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
@@ -80,17 +75,42 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/comment
 
 Possible response status codes:
 
-| Code | Description                                   |
-|------|-----------------------------------------------|
-| 200  | Comment updated successfully.                |
-| 400  | Bad request – missing or invalid parameters. |
-| 401  | Unauthorized – authentication failed.        |
-| 404  | Not found – workbook, worksheet, or comment does not exist. |
-| 500  | Internal server error.                       |
 
 **Notes / Tips:**  
 - Maximum comment length is 1024 characters.  
 - Supported characters are UTF‑8; avoid control characters.  
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Cloud SDK Family
 

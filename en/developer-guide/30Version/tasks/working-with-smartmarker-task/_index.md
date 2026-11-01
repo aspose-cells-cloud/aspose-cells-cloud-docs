@@ -9,10 +9,117 @@ weight: 60
 ArticleTitle: "Working with SmartMarker Task in Aspose.Cells Cloud API"
 linktitle: "SmartMarker Task"
 ---
-
 The **PostRunTask** API (`POST https://api.aspose.cloud/v3.0/cells/task/runtask`) in Aspose.Cells Cloud executes data-driven tasks such as SmartMarker processing, where XML or JSON data is merged into placeholders in an Excel template to generate a populated workbook; it accepts a required `TaskData` object in the request body and returns the resulting workbook as a binary stream.
 
-## REST API
+## The Post Run Task Web API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/task/runtask
+```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
+### **Request Parameters:**
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| TaskData | class:taskdata | HTTPBody | Task Data Descrition |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "Stream",
+    "DataType": {
+      "Identifier": "File"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
+### Error handling
+
+The API may return the following HTTP status codes:
+
+- **400 Bad Request** – malformed request payload or missing required fields.  
+- **401 Unauthorized** – invalid or missing authentication token.  
+- **404 Not Found** – one of the specified source files cannot be located.  
+- **500 Internal Server Error** – an unexpected server‑side error occurred.
+
+Check the response body for an `Error` object that includes a `Code` and a descriptive `Message`.
+
+Using an SDK is the best way to speed up the development. An SDK takes care of low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud){:rel="noopener noreferrer"} for a complete list of Aspose.Cells Cloud SDKs.
+
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+
+{{< tabs tabTotal="1" tabID="4" tabName1="C#" >}}
+
+{{< tab tabNum="1" >}}
+```csharp
+var xml = @"<TaskData>
+    <Tasks>
+        <TaskDescription>
+            <TaskType>SmartMarker</TaskType>
+            <SmartMarkerTaskParameter>
+                <SourceWorkbook>
+                    <FileSourceType>CloudFileSystem</FileSourceType>
+                    <FilePath>Designer.xlsx</FilePath>
+                </SourceWorkbook>
+                <DestinationWorkbook>
+                    <FileSourceType>InMemoryFiles</FileSourceType>
+                    <FilePath>Temp.xlsx</FilePath>
+                </DestinationWorkbook>
+                <xmlFile>
+                    <FileSourceType>CloudFileSystem</FileSourceType>
+                    <FilePath>DataSet.xml</FilePath>
+                </xmlFile>
+            </SmartMarkerTaskParameter>
+        </TaskDescription>
+        <TaskDescription>
+            <TaskType>SaveResult</TaskType>
+            <SaveResultTaskParameter>
+                <ResultSource>InMemoryFiles</ResultSource>
+                <ResultDestination>
+                    <DestinationType>OutputStream</DestinationType>
+                    <InputFile>Temp.xlsx</InputFile>
+                    <OutputFile>Output.xlsx</OutputFile>
+                </ResultDestination>
+            </SaveResultTaskParameter>
+        </TaskDescription>
+    </Tasks>
+</TaskData>";
+
+ServiceHelper helper = new ServiceHelper(sid, key);
+using (HttpWebResponse response = helper.CallPost(
+       "https://api.aspose.cloud/v3.0/cells/task/runtask",
+       xml,
+       "application/xml"))
+{
+    if (response.StatusCode == HttpStatusCode.OK)
+    {
+        Console.WriteLine("OK");
+        using (Stream st = response.GetResponseStream())
+        using (FileStream fs = new FileStream("Output.xlsx", FileMode.OpenOrCreate))
+        {
+            st.CopyTo(fs);
+        }
+    }
+}
+```
+{{< /tab >}}
+
+{{< /tabs >}}
 
 **SmartMarker** is a feature of the Aspose.Cells Cloud API that merges data from XML or JSON sources into placeholders within an Excel template, producing a fully populated workbook. It is typically used for report generation, mail‑merge, and data‑driven spreadsheet creation.
 
@@ -111,76 +218,3 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/task/runtask" \
 | `SmartMarkerTaskParameter.DestinationWorkbook` | object | Yes | Specifies where the intermediate workbook is stored. |
 | `SmartMarkerTaskParameter.xmlFile` | object | Yes | Data source (XML/JSON) used by SmartMarker. |
 | `SaveResultTaskParameter.ResultDestination` | object | Yes | Defines how the final workbook is returned (e.g., `OutputStream`). |
-
-### Error handling
-
-The API may return the following HTTP status codes:
-
-- **400 Bad Request** – malformed request payload or missing required fields.  
-- **401 Unauthorized** – invalid or missing authentication token.  
-- **404 Not Found** – one of the specified source files cannot be located.  
-- **500 Internal Server Error** – an unexpected server‑side error occurred.
-
-Check the response body for an `Error` object that includes a `Code` and a descriptive `Message`.
-
-Using an SDK is the best way to speed up the development. An SDK takes care of low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud){:rel="noopener noreferrer"} for a complete list of Aspose.Cells Cloud SDKs.
-
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
-
-{{< tabs tabTotal="1" tabID="4" tabName1="C#" >}}
-
-{{< tab tabNum="1" >}}
-```csharp
-var xml = @"<TaskData>
-    <Tasks>
-        <TaskDescription>
-            <TaskType>SmartMarker</TaskType>
-            <SmartMarkerTaskParameter>
-                <SourceWorkbook>
-                    <FileSourceType>CloudFileSystem</FileSourceType>
-                    <FilePath>Designer.xlsx</FilePath>
-                </SourceWorkbook>
-                <DestinationWorkbook>
-                    <FileSourceType>InMemoryFiles</FileSourceType>
-                    <FilePath>Temp.xlsx</FilePath>
-                </DestinationWorkbook>
-                <xmlFile>
-                    <FileSourceType>CloudFileSystem</FileSourceType>
-                    <FilePath>DataSet.xml</FilePath>
-                </xmlFile>
-            </SmartMarkerTaskParameter>
-        </TaskDescription>
-        <TaskDescription>
-            <TaskType>SaveResult</TaskType>
-            <SaveResultTaskParameter>
-                <ResultSource>InMemoryFiles</ResultSource>
-                <ResultDestination>
-                    <DestinationType>OutputStream</DestinationType>
-                    <InputFile>Temp.xlsx</InputFile>
-                    <OutputFile>Output.xlsx</OutputFile>
-                </ResultDestination>
-            </SaveResultTaskParameter>
-        </TaskDescription>
-    </Tasks>
-</TaskData>";
-
-ServiceHelper helper = new ServiceHelper(sid, key);
-using (HttpWebResponse response = helper.CallPost(
-       "https://api.aspose.cloud/v3.0/cells/task/runtask",
-       xml,
-       "application/xml"))
-{
-    if (response.StatusCode == HttpStatusCode.OK)
-    {
-        Console.WriteLine("OK");
-        using (Stream st = response.GetResponseStream())
-        using (FileStream fs = new FileStream("Output.xlsx", FileMode.OpenOrCreate))
-        {
-            st.CopyTo(fs);
-        }
-    }
-}
-```
-{{< /tab >}}
-
-{{< /tabs >}}

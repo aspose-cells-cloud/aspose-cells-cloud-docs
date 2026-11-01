@@ -17,7 +17,6 @@ keywords:
 weight: 100
 ArticleTitle: "Merge Excel Files in Cloud with Aspose.Cells Cloud API"
 ---
-
 The **MergeRemoteSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/{name}/merge/spreadsheet`) enables developers to merge a remote spreadsheet file into an existing workbook stored in cloud storage and output the result in a specified format such as XLSX, PDF, or CSV, using Aspose.Cells Cloud’s remote processing—eliminating local file downloads and reducing data transfer by performing the merge entirely within the cloud environment.
 
 > **Note**: Before calling this operation, ensure you have:
@@ -26,35 +25,63 @@ The **MergeRemoteSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/{na
 > - All source workbooks uploaded to your cloud storage (AWS S3, Azure Blob, Google Cloud Storage, or Aspose Cloud default storage).
 > - Read permissions on source folders and write permissions on target folders.
 
-## Merge Remote Spreadsheet API
-
-### REST API Endpoint
+## The Merge Remote Spreadsheet Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/{name}/merge/spreadsheet
 ```
 
-### Request Parameters
-
-| Parameter Name      | Type    | Location | Required | Default  | Description                                                                                           |
-| ------------------- | ------- | -------- | -------- | -------- | ----------------------------------------------------------------------------------------------------- |
-| `name`              | String  | Path     | ✅ Yes   | —        | The name of the source workbook file to be merged.                                                    |
-| `mergedSpreadsheet` | String  | Query    | ✅ Yes   | —        | Comma-separated list of workbook file names to merge into the source.                                 |
-| `folder`            | String  | Query    | ❌ No    | `null`   | Folder path in cloud storage containing the source workbook.                                          |
-| `outFormat`         | String  | Query    | ❌ No    | `"xlsx"` | Output format: `XLSX`, `PDF`, `CSV`, `XLS`, `ODS`, etc.                                               |
-| `mergeInOneSheet`   | Boolean | Query    | ❌ No    | `false`  | `true`: merge all data into one worksheet; `false`: create separate worksheets per file.              |
-| `storageName`       | String  | Query    | ❌ No    | `null`   | Name of the storage where the source workbook resides (default storage used if omitted).              |
-| `outPath`           | String  | Query    | ❌ No    | `null`   | Target folder path in cloud storage for the merged output file.                                       |
-| `outStorageName`    | String  | Query    | ❌ No    | `null`   | Name of the storage for saving the output file.                                                       |
-| `fontsLocation`     | String  | Query    | ❌ No    | `null`   | Custom folder path for fonts (used during conversion to PDF/image formats).                           |
-| `region`            | String  | Query    | ❌ No    | `null`   | Locale/region for formatting (e.g., `en-US`, `de-DE`, `fr-FR`). Affects date/number/currency display. |
-| `password`          | String  | Query    | ❌ No    | `null`   | Password for protected source workbook (if applicable).                                               |
-
 ### Security & Authentication
 
 All Aspose.Cells Cloud APIs require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/){: rel="noopener noreferrer" target="\_blank"}.
 
+### Request Parameters
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The name of the workbook file to be split. |
+| mergedSpreadsheet | String | Query | - |
+| folder | String | Query | The folder path where the workbook is stored. |
+| outFormat | String | Query | The out file format. |
+| mergeInOneSheet | Boolean | Query | Whether to combine all data into a single worksheet. |
+| storageName | String | Query | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted. |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| fontsLocation | String | Query | Use Custom fonts. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
+
 ### Response
+
+```json
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | Invalid url. |
+| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
+| 404 | Not Found | Source file not accessible. |
+| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining data. |
 
 **Status:** `200 OK`  
 **Content-Type:** `application/octet-stream`  
@@ -63,16 +90,6 @@ All Aspose.Cells Cloud APIs require [JWT token-based authentication](https://doc
 The file can be downloaded directly or saved to the location specified by `outPath`.
 
 #### HTTP Status Codes
-
-| Code  | Meaning               | Description                                                                            |
-| ----- | --------------------- | -------------------------------------------------------------------------------------- |
-| `200` | OK                    | Merge and conversion successful. Response contains the merged file as a binary stream. |
-| `400` | Bad Request           | Invalid or missing parameters (e.g., unsupported file extension, malformed query).     |
-| `401` | Unauthorized          | Invalid, expired, or missing JWT token.                                                |
-| `403` | Forbidden             | Insufficient permissions to read source or write to output location.                   |
-| `404` | Not Found             | Source file or specified folder not found in storage.                                  |
-| `413` | Payload Too Large     | Request exceeds size limits.                                                           |
-| `500` | Internal Server Error | Unexpected error during processing (e.g., data corruption, service unavailable).       |
 
 ### Example: cURL Request
 

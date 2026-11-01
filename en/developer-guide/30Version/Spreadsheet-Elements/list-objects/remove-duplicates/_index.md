@@ -9,24 +9,65 @@ description: "Learn how to delete duplicate rows from a ListObject in an Excel w
 weight: 100
 ArticleTitle: "Remove Duplicate Rows from ListObject in Excel via Aspose.Cells Cloud API"
 ---
-
 The **PostWorksheetListObjectRemoveDuplicates** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/RemoveDuplicates`) removes duplicate rows from a ListObject in an Excel worksheet using Aspose.Cells Cloud, supporting robust duplicate removal for structured data while allowing optional folder and storageName query parameters to specify the file location.
 
-## REST API
+## The Post Worksheet List Object Remove Duplicates Web API
 
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/RemoveDuplicates
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### **Request parameters**
 
-| Parameter Name      | Type    | Location | Description                                              |
-| ------------------- | ------- | -------- | -------------------------------------------------------- |
-| **name**            | String  | Path     | The name of the Excel file.                              |
-| **sheetName**       | String  | Path     | The name of the worksheet that contains the list object. |
-| **listObjectIndex** | Integer | Path     | The zero‑based index of the list object to process.      |
-| **folder**          | String  | Query    | (Optional) The folder path where the file is stored.     |
-| **storageName**     | String  | Query    | (Optional) The name of the storage service.              |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| listObjectIndex | Integer | Path | The list object index. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+
+### Response
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+On success the service returns a JSON object similar to the example above. The fields are:
+
+- **Code** – HTTP status code (`200` for success).
+- **Status** – Textual description of the status.
+- **DuplicateRowsRemoved** – Number of rows that were eliminated.
+- **Message** – Additional information about the operation.
 
 ### Sample Request (cURL)
 
@@ -55,25 +96,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listo
 
 {{< /tab >}}
 {{< /tabs >}}
-
-### Response
-
-On success the service returns a JSON object similar to the example above. The fields are:
-
-- **Code** – HTTP status code (`200` for success).
-- **Status** – Textual description of the status.
-- **DuplicateRowsRemoved** – Number of rows that were eliminated.
-- **Message** – Additional information about the operation.
-
-**HTTP Status Codes**
-
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
 
 ## Cloud SDK Family
 

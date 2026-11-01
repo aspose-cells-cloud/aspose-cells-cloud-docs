@@ -11,20 +11,59 @@ description: "Calculate every formula in an Excel workbook via Aspose.Cells Clou
 weight: 140
 ArticleTitle: "Calculate All Formulas on an Excel Workbook"
 ---
-
 The **PostWorkbookCalculateFormula** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/calculateformula`) calculates all formulas in the specified Excel workbook using Aspose.Cells Cloud, supporting options to customize calculation behavior via a `CalculationOptions` body parameter and handle errors gracefully with the `ignoreError` query flag.
 
-**Prerequisites:** Before calling this endpoint, ensure you have:
-
-- A valid JWT authentication token. (See the [Authentication Guide](/authentication/).)
-- Your Aspose.Cells Cloud client ID and secret.
-- The target workbook uploaded to the designated storage location. (Refer to the [Storage Setup](/storage/).)
-
-## PostWorkbookCalculateFormula API
+## The Post Workbook Calculate Formula Web API
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/calculateformula
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
+### **Request Parameters:**
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| options | class:calculationoptions | HTTPBody | CalculationOptions Calculation Options. |
+| ignoreError | Boolean | Query | ignore Error. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 The request parameters are listed below:
 
@@ -93,13 +132,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/calculateformula?ignoreE
   - `401` – Authentication failed (invalid or expired JWT).
   - `404` – Workbook not found.
   - `500` – Server‑side error; contact Aspose support if it persists.
-
-| Code | Meaning               | When Returned                                           |
-| ---- | --------------------- | ------------------------------------------------------- |
-| 400  | Bad Request           | Invalid request parameters or malformed JSON.           |
-| 401  | Unauthorized          | Missing, invalid, or expired JWT token.                 |
-| 404  | Not Found             | Specified workbook does not exist in storage.           |
-| 500  | Internal Server Error | Unexpected server‑side failure; contact Aspose support. |
 
 ## Cloud SDK Family
 

@@ -10,16 +10,11 @@ description: "Apply icon filters to Excel worksheets via Aspose.Cells Cloud REST
 weight: 65
 ArticleTitle: "Add an Icon Filter to an Excel Worksheet – Aspose.Cells Cloud Documentation"
 ---
-
 The **PutWorksheetIconFilter** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/iconFilter`) enables developers to add an icon filter to a specified range in an Excel worksheet via the Aspose.Cells Cloud REST API, allowing conditional formatting based on icon sets such as traffic lights or arrows by specifying the icon set type and icon ID along with the field index and range.
 
-## REST API
+## The Put Worksheet Icon Filter Web API
 
-This REST API adds an **icon filter** to an Excel worksheet using the **Aspose.Cells Cloud REST API**.
-
-**Background:** An icon filter applies a visual icon set to cells based on their values, allowing quick visual analysis of data trends. Common use‑cases include highlighting performance metrics, status indicators, or categorizing values with traffic‑light icons directly within Excel worksheets.
-
-```bash
+```http
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/iconFilter
 ```
 
@@ -29,37 +24,53 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters:
 
-| Parameter Name | Type    | Location | Description                                                                                                                                                                                                                                                                                                                                                   |
-| -------------- | ------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| name           | string  | Path     | The workbook name.                                                                                                                                                                                                                                                                                                                                            |
-| sheetName      | string  | Path     | The worksheet name.                                                                                                                                                                                                                                                                                                                                           |
-| range          | string  | Query    | The cell range (e.g., `A1:B1`) to which the filter will be applied.                                                                                                                                                                                                                                                                                           |
-| fieldIndex     | integer | Query    | Zero‑based index of the column that the filter targets.                                                                                                                                                                                                                                                                                                       |
-| iconSetType    | string  | Query    | The icon set to use. Allowed values: `Arrows3`, `ArrowsGray3`, `Flags3`, `Signs3`, `Symbols3`, `Symbols32`, `TrafficLights31`, `TrafficLights32`, `Arrows4`, `ArrowsGray4`, `Rating4`, `RedToBlack4`, `TrafficLights4`, `Arrows5`, `ArrowsGray5`, `Quarters5`, `Rating5`, `Stars3`, `Boxes5`, `Triangles3`, `None`, `CustomSet`, `Smilies3`, `ColorSmilies3`. |
-| iconId         | integer | Query    | The identifier of the specific icon within the selected icon set.                                                                                                                                                                                                                                                                                             |
-| matchBlanks    | boolean | Query    | Determines whether blank cells are included (`true` or `false`).                                                                                                                                                                                                                                                                                              |
-| refresh        | boolean | Query    | Indicates whether the filter should be refreshed after applying (`true` or `false`).                                                                                                                                                                                                                                                                          |
-| folder         | string  | Query    | The folder that contains the original workbook.                                                                                                                                                                                                                                                                                                               |
-| storageName    | string  | Query    | The name of the storage where the workbook resides.                                                                                                                                                                                                                                                                                                           |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| range | String | Query | Represents the range to which the specified AutoFilter applies. |
+| fieldIndex | Integer | Query | The integer offset of the field on which you want to base the filter (from the left of the list; the leftmost field is field 0). |
+| iconSetType | String | Query | The icon set type. |
+| iconId | Integer | Query | The icon id. |
+| matchBlanks | Boolean | Query | Match all blank cell in the list. |
+| refresh | Boolean | Query | Refresh auto filters to hide or unhide the rows. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 ### **Response**
 
 ```json
-{
-  "Status": "OK",
-  "Code": 200
-}
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
 ```
 
 **HTTP Status Codes**
 
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+This REST API adds an **icon filter** to an Excel worksheet using the **Aspose.Cells Cloud REST API**.
+
+**Background:** An icon filter applies a visual icon set to cells based on their values, allowing quick visual analysis of data trends. Common use‑cases include highlighting performance metrics, status indicators, or categorizing values with traffic‑light icons directly within Excel worksheets.
 
 ## How to Use the PutWorksheetIconFilter API with SDKs
 

@@ -19,17 +19,14 @@ related:
     title: Merge Cells in Excel Worksheet
 linktitle: "Unmerge Cells"
 ---
-
 The **PostWorksheetUnmerge** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/unmerge`) in Aspose.Cells Cloud enables developers to unmerge previously merged cells in a specified rectangular range of an Excel worksheet by providing the start row, start column, total rows, and total columns as query parameters; this operation supports precise range-based unmerging and integrates with existing cloud workflows via the v3.0 REST API.
 
 > **API Version**: Aspose.Cells Cloud v24.3  
 > **Supported Formats**: `.xlsx`, `.xlsb`, `.xlsm`, `.xls`
 
-## REST API
+## The Post Worksheet Unmerge Web API
 
-### Endpoint
-
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/unmerge
 ```
 
@@ -39,22 +36,41 @@ The API uses JWT token-based authentication. Before making requests, ensure you 
 
 > **Note**: Include the header `x-aspose-client: DeveloperTool` in all requests to help us improve service reliability.
 
-## Request Parameters
+### Request Parameters
 
-| Parameter Name | Type    | Location | Required | Description |
-|----------------|---------|----------|----------|-------------|
-| `name`         | string  | path     | Yes      | Name of the workbook file. |
-| `sheetName`    | string  | path     | Yes      | Name of the worksheet containing the merged cells. |
-| `startRow`     | integer | query    | Yes      | Zero-based index of the first row in the range to unmerge. |
-| `startColumn`  | integer | query    | Yes      | Zero-based index of the first column in the range to unmerge. |
-| `totalRows`    | integer | query    | Yes      | Number of rows to include in the unmerge operation. |
-| `totalColumns` | integer | query    | Yes      | Number of columns to include in the unmerge operation. |
-| `folder`       | string  | query    | No       | Folder path where the workbook is stored (e.g., `"docs/input"`). |
-| `storageName`  | string  | query    | No       | Name of the storage service (e.g., `"First Aspose Storage"`). |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| startRow | Integer | Query | The start row index. |
+| startColumn | Integer | Query | The start column index. |
+| totalRows | Integer | Query | The total rows number. |
+| totalColumns | Integer | Query | The total columns number. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 > **Tip**: Omitting `folder` and `storageName` defaults to the root folder and default storage configured for your account.
 
-## Response
+### Response
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
 
 The API returns a `CellsCloudResponse` object with the following fields:
 

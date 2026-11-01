@@ -10,8 +10,6 @@ weight: 50
 linktitle: "Get AutoFilter"
 ArticleTitle: "Retrieve AutoFilter Description from Excel Worksheet via Aspose.Cells Cloud API"
 ---
-
-
 The **GetWorksheetAutoFilter** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter`) retrieves the full AutoFilter configuration—including filter columns, range, and sorting details—from a specified worksheet in a workbook stored in the cloud, enabling developers to programmatically inspect or replicate complex filter settings using Aspose.Cells Cloud’s REST API.
 
 **Version:** v3.0  
@@ -27,31 +25,57 @@ An **AutoFilter** allows users to filter rows in a worksheet based on column val
 
 ---
 
-## Prerequisites
-
-| Requirement           | Description                                                                                                                                                    |
-| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Authentication**    | A valid JWT token is required. See the [authentication guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/). |
-| **File location**     | The workbook must be stored in Aspose Cloud Storage (or a connected external storage).                                                                         |
-| **Supported formats** | Any Excel format supported by Aspose.Cells (e.g., `.xlsx`, `.xls`, `.xlsm`).                                                                                   |
-| **SDK (optional)**    | If you prefer using an SDK, install the appropriate package (e.g., `dotnet add package Aspose.Cells-Cloud` for .NET).                                          |
-
----
-
-## Request
-
-### HTTP Request
+## The Get Worksheet Auto Filter Web API
 
 ```http
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### Path Parameters
 
-| Parameter   | Type   | Description                                                         |
-| ----------- | ------ | ------------------------------------------------------------------- |
-| `name`      | string | **Required.** Workbook file name, including extension.              |
-| `sheetName` | string | **Required.** Worksheet name from which to retrieve the AutoFilter. |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The workbook name. |
+| sheetName | String | Path | The worksheet name. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "AutoFilterResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "AutoFilterResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+### HTTP Request
 
 ### Query Parameters
 

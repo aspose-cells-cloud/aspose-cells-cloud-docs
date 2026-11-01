@@ -10,7 +10,6 @@ description: "Hide pivot field items in Aspose.Cells Cloud via REST API with JWT
 weight: 110
 ArticleTitle: "Hide Pivot Field Item in a Pivot Table – Aspose.Cells Cloud API Guide"
 ---
-
 The **PostPivotTableFieldHideItem** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField/Hide`) enables hiding a specific pivot field item in a PivotTable via Aspose.Cells Cloud, requiring path parameters for the file name, worksheet name, and PivotTable index, plus query parameters specifying the field type, field index, item index, and hide status, allowing precise control over PivotTable item visibility and supporting recalculating the PivotTable on demand.
 
 - A valid **JWT access token** (obtainable via the Aspose Cloud authentication flow).
@@ -21,7 +20,7 @@ These prerequisites prevent authentication errors and “resource not found” r
 
 This REST API hides a pivot field item in a pivot table.
 
-## PostPivotTableFieldHideItem API
+## The Post Pivot Table Field Hide Item Web API
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField/Hide
@@ -33,18 +32,18 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Request parameters**
 
-| Parameter Name  | Type    | Location | Description                                                                                      |
-| --------------- | ------- | -------- | ------------------------------------------------------------------------------------------------ |
-| name            | string  | path     | Name of the Excel file.                                                                          |
-| sheetName       | string  | path     | Worksheet that contains the pivot table.                                                         |
-| pivotTableIndex | integer | path     | Index of the pivot table within the worksheet.                                                   |
-| pivotFieldType  | string  | query    | Type of the pivot field (Row, Column, Page, Data, etc.).                                         |
-| fieldIndex      | integer | query    | Zero‑based index of the pivot field to modify.                                                   |
-| itemIndex       | integer | query    | Index of the specific item within the field to hide.                                             |
-| isHide          | boolean | query    | Set to **true** to hide the item; **false** to show it.                                          |
-| needReCalculate | boolean | query    | Indicates whether the pivot table should be recalculated after the change. Default is **false**. |
-| folder          | string  | query    | Folder path where the workbook is stored.                                                        |
-| storageName     | string  | query    | Name of the storage service.                                                                     |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| pivotTableIndex | Integer | Path | The PivotTable index. |
+| pivotFieldType | String | Query | Represents PivotTable field type(Undefined/Row/Column/Page/Data). |
+| fieldIndex | Integer | Query | The pivot field index. |
+| itemIndex | Integer | Query | The index of the pivot item in the pivot field. |
+| isHide | Boolean | Query | Whether the specific PivotItem is hidden(true/false). |
+| needReCalculate | Boolean | Query | Whether the specific PivotTable calculate(true/false). |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 **Quick reference of required query parameters**
 
@@ -87,14 +86,39 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/pivott
 
 **Response details**
 
-| Status Code | Description                                          |
-| ----------- | ---------------------------------------------------- |
-| 200         | The item was hidden successfully.                    |
-| 400         | Bad request – missing or invalid parameters.         |
-| 401         | Unauthorized – invalid or missing JWT token.         |
-| 500         | Server error – the operation could not be completed. |
 
 **Note:** If the supplied `fieldIndex` or `itemIndex` is out of range, the API returns a **400 Bad Request** response.
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Cloud SDK Family
 

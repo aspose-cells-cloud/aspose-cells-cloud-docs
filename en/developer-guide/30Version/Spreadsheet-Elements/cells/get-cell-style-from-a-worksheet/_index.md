@@ -17,14 +17,9 @@ categories:
 linktitle: "Get Cell Style"
 ArticleTitle: "Get Cell Style from Excel Worksheet using Aspose.Cells Cloud REST API"
 ---
-
 The **GetWorksheetCellStyle** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}/style`) retrieves the style description of a specific cell in an Excel worksheet using Aspose.Cells Cloud, enabling developers to programmatically inspect formatting attributes such as font, border, fill, and number format without loading the entire workbook locally.
 
-## GetWorksheetCellStyle API
-
-{{% alert color="primary" %}}
-This endpoint is part of **Aspose.Cells Cloud API v3.0** and returns detailed style information—including font properties, borders, alignment, and fill patterns—for a specified cell in a worksheet.
-{{% /alert %}}
+## The Get Worksheet Cell Style Web API
 
 ```http
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}/style
@@ -36,109 +31,39 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 
 ### Request Parameters
 
-| Parameter Name | Type   | Location | Description                                   | Required |
-| -------------- | ------ | -------- | --------------------------------------------- | -------- |
-| `name`         | string | path     | The name of the Excel document.               | Yes      |
-| `sheetName`    | string | path     | The name of the worksheet.                    | Yes      |
-| `cellName`     | string | path     | The address of the cell (e.g., `A1`, `$B$2`). | Yes      |
-| `folder`       | string | query    | The folder that contains the file.            | No       |
-| `storageName`  | string | query    | The name of the storage to use.               | No       |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| cellName | String | Path | Cell's name. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 > **Note**: Omit `folder` or `storageName` if using the default storage/folder configured in your Aspose.Cloud account.
 
 ### Response
 
+```json
+[
+  {
+    "Name": "StyleResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "StyleResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
 A successful request returns the full style object for the specified cell in the `Style` property of the response.
 
-```json
-{
-  "Style": {
-    "Font": {
-      "Color": { "A": 255, "R": 5, "G": 99, "B": 193 },
-      "DoubleSize": 11,
-      "IsBold": false,
-      "IsItalic": false,
-      "IsStrikeout": false,
-      "IsSubscript": false,
-      "IsSuperscript": false,
-      "Name": "Calibri",
-      "Size": 11,
-      "Underline": "Single"
-    },
-    "Name": null,
-    "CultureCustom": "General",
-    "Custom": "",
-    "BackgroundColor": { "A": 0, "R": 0, "G": 0, "B": 0 },
-    "ForegroundColor": { "A": 0, "R": 0, "G": 0, "B": 0 },
-    "IsFormulaHidden": false,
-    "IsDateTime": false,
-    "IsTextWrapped": false,
-    "IsGradient": false,
-    "IsLocked": true,
-    "IsPercent": false,
-    "ShrinkToFit": false,
-    "IndentLevel": 0,
-    "Number": 0,
-    "RotationAngle": 0,
-    "Pattern": "None",
-    "TextDirection": "Context",
-    "VerticalAlignment": "Bottom",
-    "HorizontalAlignment": "General",
-    "BorderCollection": [
-      {
-        "LineStyle": "None",
-        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
-        "BorderType": "BottomBorder"
-      },
-      {
-        "LineStyle": "None",
-        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
-        "BorderType": "DiagonalDown"
-      },
-      {
-        "LineStyle": "None",
-        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
-        "BorderType": "DiagonalUp"
-      },
-      {
-        "LineStyle": "None",
-        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
-        "BorderType": "Horizontal"
-      },
-      {
-        "LineStyle": "None",
-        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
-        "BorderType": "LeftBorder"
-      },
-      {
-        "LineStyle": "None",
-        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
-        "BorderType": "RightBorder"
-      },
-      {
-        "LineStyle": "None",
-        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
-        "BorderType": "TopBorder"
-      },
-      {
-        "LineStyle": "None",
-        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
-        "BorderType": "Vertical"
-      }
-    ],
-    "BackgroundThemeColor": null,
-    "ForegroundThemeColor": null,
-    "link": {
-      "Href": "/test.xlsx/worksheets/Sheet1/cells/a1/style",
-      "Rel": "self",
-      "Title": null,
-      "Type": null
-    }
-  },
-  "Code": 200,
-  "Status": "OK"
-}
-```
 
 #### Response Schema
 
@@ -164,6 +89,10 @@ A successful request returns the full style object for the specified cell in the
 | `Style.ForegroundColor`    | object  | RGBA values for the cell foreground.                                |
 
 > **Tip**: All optional fields (e.g., `Name`, `Custom`, `BackgroundThemeColor`) may be `null` if not explicitly set.
+
+{{% alert color="primary" %}}
+This endpoint is part of **Aspose.Cells Cloud API v3.0** and returns detailed style information—including font properties, borders, alignment, and fill patterns—for a specified cell in a worksheet.
+{{% /alert %}}
 
 ### HTTP Status Codes
 

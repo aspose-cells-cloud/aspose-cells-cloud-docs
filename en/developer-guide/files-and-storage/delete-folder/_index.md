@@ -9,8 +9,6 @@ keywords: "delete folder, Aspose.Cells Cloud, REST API, remove folder, Excel clo
 weight: 30
 ArticleTitle: "Delete Folder in Aspose.Cells Cloud Storage via REST API"
 ---
-
-
 The **DeleteFolder** API (`DELETE https://api.aspose.cloud/v4.0/cells/storage/folder/{path}`) removes a specified folder from Aspose.Cells Cloud storage, with optional recursive deletion of its contents via the `recursive` query parameter; it accepts the folder path as a required path parameter and supports specifying a custom storage name with the `storageName` query parameter.
 
 ---
@@ -22,25 +20,13 @@ You can delete an empty folder or, by setting the `recursive` flag to `true`, de
 
 ---
 
-## HTTP Request
+## The Delete Folder Web API
 
-```
+```http
 DELETE https://api.aspose.cloud/v4.0/cells/storage/folder/{path}
 ```
 
-_`{path}`_ – the full path of the folder to delete (URL‑encoded).
-
-### Required HTTP Headers
-
-| Header          | Value                           | Description                               |
-| --------------- | ------------------------------- | ----------------------------------------- |
-| `Authorization` | `Bearer {access_token}`         | JWT token obtained from the auth service. |
-| `Accept`        | `application/json`              | Expected response format.                 |
-| `Content-Type`  | `application/json` _(optional)_ | Not required for DELETE, but may be sent. |
-
----
-
-## Authentication
+### Authentication
 
 Aspose.Cells Cloud uses **JWT token‑based authentication**.  
 Obtain an access token via the [authentication endpoint](/authentication/) and include it in the `Authorization` header as shown above.
@@ -53,19 +39,61 @@ Obtain an access token via the [authentication endpoint](/authentication/) and i
 
 ---
 
-## Parameters
+### Parameters
 
-| Name          | Type    | Location | Required | Default | Description                                                                            |
-| ------------- | ------- | -------- | -------- | ------- | -------------------------------------------------------------------------------------- |
-| `path`        | string  | Path     | Yes      | —       | Path of the folder to delete (URL‑encoded).                                            |
-| `storageName` | string  | Query    | No       | —       | Name of the storage that contains the folder. If omitted, the default storage is used. |
-| `recursive`   | boolean | Query    | No       | `false` | `true` → delete the folder **and all of its contents**.                                |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| path | String | Path | - |
+| storageName | String | Query | - |
+| recursive | Boolean | Query | - |
 
 **Example query string**
 
 ```
 ?storageName=MyStorage&recursive=true
 ```
+
+---
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "Void",
+    "DataType": {
+      "Identifier": "Void"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+_`{path}`_ – the full path of the folder to delete (URL‑encoded).
+
+### Required HTTP Headers
+
+| Header          | Value                           | Description                               |
+| --------------- | ------------------------------- | ----------------------------------------- |
+| `Authorization` | `Bearer {access_token}`         | JWT token obtained from the auth service. |
+| `Accept`        | `application/json`              | Expected response format.                 |
+| `Content-Type`  | `application/json` _(optional)_ | Not required for DELETE, but may be sent. |
 
 ---
 

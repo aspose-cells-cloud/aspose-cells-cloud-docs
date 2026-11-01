@@ -10,18 +10,13 @@ keywords: "Aspose.Cells Cloud, Delete horizontal page break, Excel worksheet, RE
 description: "Delete a horizontal page break from an Excel worksheet via Aspose.Cells Cloud REST API using cURL or SDKs."
 weight: 50
 ---
-
 The **DeleteHorizontalPageBreak** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/horizontalpagebreaks/{index}`) enables developers to remove a specific horizontal page break from a worksheet in Aspose.Cells Cloud by specifying the workbook name, worksheet name, and zero-based index of the break to delete, supporting precise control over print layout without modifying other worksheet elements.
 
-**Prerequisites**: To call this endpoint you must have a valid Aspose Cloud JWT access token. Obtain it by following the [Authentication guide]（https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/）.
-
-## DeleteHorizontalPageBreak API
+## The Delete Horizontal Page Break Web API
 
 ```http
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/horizontalpagebreaks/{index}
 ```
-
-_All API calls must be made over **HTTPS**._
 
 ### **Security and Authentication**
 
@@ -29,13 +24,34 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type    | Location | Description                                                |
-| -------------- | ------- | -------- | ---------------------------------------------------------- |
-| `name`         | string  | path     | The name of the Excel file (workbook).                     |
-| `sheetName`    | string  | path     | The name of the worksheet containing the page break.       |
-| `index`        | integer | path     | Zero‑based index of the horizontal page break to delete.   |
-| `folder`       | string  | query    | Optional folder path in storage where the file is located. |
-| `storageName`  | string  | query    | Optional name of the storage service.                      |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The workbook name. |
+| sheetName | String | Path | The worksheet name. |
+| index | Integer | Path | Removes the horizontal page break element at a specified name. Element index, zero based. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
 
 ### Error Responses
 
@@ -90,6 +106,8 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/horizo
 {{< /tab >}}
 
 {{< /tabs >}}
+
+_All API calls must be made over **HTTPS**._
 
 ## Cloud SDK Family
 

@@ -10,24 +10,13 @@ description: "Retrieve all picture objects from an Excel worksheet via Aspose.Ce
 ArticleTitle: "Get all pictures in an Excel worksheet - Aspose.Cells Cloud API"
 weight: 100
 ---
-
 The **GetWorksheetPictures** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures`) retrieves descriptions of all pictures in a specified Excel worksheet using Aspose.Cells Cloud, enabling developers to programmatically access picture metadata such as position, size, and type without manual extraction.
 
-**Prerequisites**  
-Before calling this endpoint, ensure you have:
-
-- A valid Aspose Cloud JWT access token.
-- The target Excel file uploaded to the selected storage.
-- The correct storage name (if using a custom storage).
-- The worksheet name that contains the pictures.
-
-## GetWorksheetPictures API
+## The Get Worksheet Pictures Web API
 
 ```http
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
 ```
-
-**Note:** Use HTTPS (TLS 1.2 or higher) when calling the API and include a valid JWT token in the `Authorization` header.
 
 ### **Security and Authentication**
 
@@ -35,12 +24,33 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Request parameters**
 
-| Parameter Name | Type   | Location | Description                                    |
-| -------------- | ------ | -------- | ---------------------------------------------- |
-| name           | string | path     | The name of the Excel file.                    |
-| sheetName      | string | path     | The name of the worksheet containing pictures. |
-| folder         | string | query    | The folder path where the file is stored.      |
-| storageName    | string | query    | The name of the storage service.               |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "PicturesResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "PicturesResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
 
 ### Error Responses
 
@@ -117,6 +127,8 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/picture
 {{< /tabs >}}
 
 **Success Response** – A successful call returns HTTP 200 with a JSON payload containing a `Pictures` object that lists each picture’s resource link.
+
+**Note:** Use HTTPS (TLS 1.2 or higher) when calling the API and include a valid JWT token in the `Authorization` header.
 
 ## Cloud SDK Family
 

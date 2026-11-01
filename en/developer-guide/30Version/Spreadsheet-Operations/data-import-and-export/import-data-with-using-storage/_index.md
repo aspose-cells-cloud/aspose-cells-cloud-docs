@@ -24,37 +24,13 @@ aliases:
   - /import/with-using-storage/
 linktitle: "Import data with storage"
 ---
-
-
 The **PostImportData** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/importdata`) enables you to import structured data—such as CSV, JSON, arrays, or images—directly into an Excel file stored in cloud storage, supporting workflows that avoid local file handling. Aspose.Cells Cloud provides this REST API operation with parameters like `importOption`, `folder`, and `storageName` to control how and where data is inserted, making it suitable for scalable, server-side automation across multiple programming languages via official SDKs.
 
-## API Overview
-
-### Endpoint
+## The Post Import Data Web API
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 ```
-
-### Request Parameters
-
-| Parameter       | Type   | Location | Required | Description                                                                                      |
-| --------------- | ------ | -------- | -------- | ------------------------------------------------------------------------------------------------ |
-| `name`          | string | path     | Yes      | The name of the target Excel file (must exist in storage).                                       |
-| `folder`        | string | query    | No       | The folder path in storage where the Excel file resides.                                         |
-| `storageName`   | string | query    | No       | The name of the storage service (e.g., "default", "MyCloudStorage").                             |
-| `region`        | string | query    | No       | Regional settings for workbook formatting (e.g., "en-US").                                       |
-| `FontsLocation` | string | query    | No       | Custom font directory path (if applicable).                                                      |
-| `importOption`  | object | body     | No       | JSON object specifying import behavior (e.g., `ImportStringArrayOption`, `ImportPictureOption`). |
-
-> **Note**: The `importOption` parameter defines the data format and import behavior. Supported options include:
->
-> - `ImportCSVDataOption`
-> - `ImportBatchDataOption`
-> - `ImportStringArrayOption`
-> - `Import2DimensionStringArrayOption`
-> - `ImportPictureOption`
-> - `ImportIntArrayOption`
 
 ### Security & Authentication
 
@@ -68,7 +44,59 @@ Ensure the target workbook exists in the specified storage location before impor
 
 ---
 
-## Import Data Option Parameters
+### Request Parameters
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| importOption | class:importoption | HTTPBody | Import option. They are include of ImportCSVDataOption, ImportBatchDataOption, ImportPictureOption, ImportStringArrayOption, Import2DimensionStringArrayOption, and so on. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+| region | String | Query | The regional settings for workbook. |
+| FontsLocation | String | Query | Use Custom fonts. |
+
+> **Note**: The `importOption` parameter defines the data format and import behavior. Supported options include:
+>
+> - `ImportCSVDataOption`
+> - `ImportBatchDataOption`
+> - `ImportStringArrayOption`
+> - `Import2DimensionStringArrayOption`
+> - `ImportPictureOption`
+> - `ImportIntArrayOption`
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+### Import Data Option Parameters
 
 The `importOption` body parameter requires the following common fields (specific fields vary by option type):
 

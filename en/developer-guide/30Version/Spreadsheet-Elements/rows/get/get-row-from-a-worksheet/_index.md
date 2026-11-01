@@ -10,18 +10,11 @@ description: "Get Excel row data—height, visibility, style—via Aspose.Cells 
 weight: 100
 ArticleTitle: "Get Row Description from an Excel Worksheet – Aspose.Cells Cloud API"
 ---
-
 The **GetWorksheetRow** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/{rowIndex}`) retrieves row data by its index in an Excel worksheet using Aspose.Cells Cloud, enabling developers to programmatically access structured row content—including cell values and formatting—without downloading the entire workbook, with support for optional folder and storage parameters to locate remote files.
-
-**Prerequisites:**
-
-- Obtain a valid JWT access token and include it in the `Authorization: Bearer <jwt token>` header.
-- Ensure the workbook is stored in Aspose Cloud storage or specify the folder path where it resides.
-- Use API version **v3.0** as shown in the endpoint URL.
 
 This REST API retrieves row data by its index on an Excel worksheet.
 
-## GetWorksheetRow API
+## The Get Worksheet Row Web API
 
 ```http
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/{rowIndex}
@@ -33,13 +26,13 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Request parameters**
 
-| Parameter Name | Type    | Location | Description                                         |
-| -------------- | ------- | -------- | --------------------------------------------------- |
-| name           | string  | path     | The name of the workbook file.                      |
-| sheetName      | string  | path     | The name of the worksheet within the workbook.      |
-| rowIndex       | integer | path     | Zero-based index of the row to retrieve.            |
-| folder         | string  | query    | The folder that contains the workbook.              |
-| storageName    | string  | query    | The name of the storage where the workbook resides. |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| rowIndex | Integer | Path | The row index. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetRow) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
@@ -112,14 +105,39 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 - **404** – Not found; the specified workbook, worksheet, or row does not exist.
 - **500** – Internal server error; an unexpected condition occurred.
 
-| Code | Description                                      | Remediation                 |
-| ---- | ------------------------------------------------ | --------------------------- |
-| 200  | Success – row data returned.                     | –                           |
-| 401  | Unauthorized – missing or invalid JWT token.     | Provide a valid JWT token.  |
-| 404  | Not found – workbook, worksheet, or row missing. | Verify names and row index. |
-| 500  | Internal server error – unexpected condition.    | Contact Aspose support.     |
 
 For a complete list of error codes, see the Aspose.Cells Cloud [Error Codes documentation](https://docs.aspose.cloud/cells/).
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "RowResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "RowResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Cloud SDK Family
 

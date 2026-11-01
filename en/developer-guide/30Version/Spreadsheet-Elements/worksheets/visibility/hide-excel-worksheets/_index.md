@@ -10,24 +10,27 @@ description: "Hide Excel worksheets using Aspose.Cells Cloud REST API with PUT i
 weight: 50
 ArticleTitle: "Hide an Excel Worksheet with Aspose.Cells Cloud REST API"
 ---
-
 The **PutChangeVisibilityWorksheet** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/visible`) enables developers to programmatically change the visibility of a specific worksheet within an Excel workbook using Aspose.Cells Cloud, by setting the required `isVisible` query parameter to `true` or `false` while providing the workbook `name` and worksheet `sheetName` as path parameters.
 
-## REST API
+## The Put Change Visibility Worksheet Web API
 
-```bash
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/visible
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/visible
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
 
 ### **Request parameters**
 
-| Parameter Name | Type    | Location | Description                                               |
-| -------------- | ------- | -------- | --------------------------------------------------------- |
-| name           | string  | path     | The name of the Excel workbook file.                      |
-| sheetName      | string  | path     | The name of the worksheet to modify.                      |
-| isVisible      | boolean | query    | Visibility flag (`true` for visible, `false` for hidden). |
-| folder         | string  | query    | The folder path where the workbook is stored.             |
-| storageName    | string  | query    | The name of the storage service.                          |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | Worksheet name. |
+| isVisible | Boolean | Query | New worksheet visibility value. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PutChangeVisibilityWorksheet) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -59,6 +62,37 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Cloud SDK Family
 

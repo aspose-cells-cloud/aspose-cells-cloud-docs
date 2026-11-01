@@ -9,13 +9,12 @@ keywords: "Aspose.Cells, file upload, Excel API, cloud storage, REST API"
 description: "Upload files to Aspose.Cells Cloud storage using PUT /cells/storage/file/{path} with auth, parameters, and code examples"
 weight: 100
 ---
-
 The **UploadFile** API (`PUT https://api.aspose.cloud/v4.0/cells/storage/file/{path}`) enables developers to upload files directly to cloud storage for processing with Aspose.Cells Cloud by sending multipart/form-data containing the file and specifying the destination path; it supports optional storage name selection and returns a FilesUploadResult confirming the upload outcome.
 
-## **Aspose Cells API: Upload File**
+## The Upload File Web API
 
-```
-PUT http://api.aspose.cloud/v4.0/cells/storage/file/{path}
+```http
+PUT https://api.aspose.cloud/v4.0/cells/storage/file/{path}
 ```
 
 ### **Security and Authentication**
@@ -28,67 +27,45 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### The request parameters of the **uploadFile** API are
 
-| Parameter Name | Type   | Path/Query String/HTTP Body | Description                                                                                    |
-| :------------- | :----- | :-------------------------- | :--------------------------------------------------------------------------------------------- |
-| UploadFiles    | File   | FormData                    | Upload files to cloud storage.                                                                 |
-| path           | String | Path                        | The destination path in the cloud storage. Specify the path where the file should be uploaded. |
-| storageName    | String | Query                       | The name of the storage where the file will be uploaded.                                       |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| UploadFiles | File | FormData | Upload files to cloud storage. |
+| path | String | Path | - |
+| storageName | String | Query | - |
 
 ### **Response**
 
 ```json
-{
-  "Name": "FilesUploadResult",
-  "Description": ["File upload result"],
-  "Type": "Class",
-  "IsAbstract": false,
-  "Properties": [
-    {
-      "Name": "Uploaded",
-      "Description": ["List of uploaded file names"],
-      "Nullable": true,
-      "ReadOnly": false,
-      "IsInherit": false,
-      "DataType": {
-        "Identifier": "Container",
-        "Reference": "String",
-        "ElementDataType": {
-          "Identifier": "String",
-          "Name": "string"
-        },
-        "Name": "container"
-      }
-    },
-    {
-      "Name": "Errors",
-      "Description": ["List of errors."],
-      "Nullable": true,
-      "ReadOnly": false,
-      "IsInherit": false,
-      "DataType": {
-        "Identifier": "Container",
-        "Reference": "Error",
-        "ElementDataType": {
-          "Identifier": "Class",
-          "Reference": "Error",
-          "Name": "class:error"
-        },
-        "Name": "container"
-      }
+[
+  {
+    "Name": "FilesUploadResult",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "FilesUploadResult"
     }
-  ]
-}
+  }
+]
 ```
 
-The API returns the following HTTP status codes:
+**Sample response headers**
 
-| Status Code                   | Description                                         |
-| ----------------------------- | --------------------------------------------------- |
-| **200 OK**                    | File uploaded successfully.                         |
-| **400 Bad Request**           | Invalid parameters or malformed request.            |
-| **401 Unauthorized**          | Missing or invalid authentication token.            |
-| **403 Forbidden**             | Insufficient permissions for the specified storage. |
-| **500 Internal Server Error** | Unexpected server error.                            |
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+The API returns the following HTTP status codes:
 
 ## How to Use the upload file API with SDKs?
 

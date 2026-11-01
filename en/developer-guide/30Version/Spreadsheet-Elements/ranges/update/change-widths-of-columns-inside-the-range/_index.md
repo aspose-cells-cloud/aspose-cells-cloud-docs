@@ -10,18 +10,64 @@ keywords: "Aspose.Cells, column width, REST API, Excel, SDK, range, cloud"
 description: "Update column widths in a range using Aspose.Cells Cloud REST API with cURL and SDK examples"
 weight: 74
 ---
-
 The **PostWorksheetCellsRangeColumnWidth** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/columnWidth`) enables developers to set the column width of a specified range within a worksheet using Aspose.Cells Cloud, requiring the workbook name, worksheet name, a range object in the request body, and a numeric width value in the query string.
 
 ## Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
-## REST API
+## The Post Worksheet Cells Range Column Width Web API
 
-```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/columnWidth
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/columnWidth
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
+### **Request Parameters:**
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| range | class:range | HTTPBody | Range The range object. |
+| value | floating | Query | Sets the column width of this range. |
+| folder | String | Query | Original workbook folder. |
+| storageName | String | Query | Storage name. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 **Prerequisites** – Before calling the endpoint you must:
 
@@ -86,11 +132,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/
 
 _Possible error responses_
 
-| HTTP Code | Description                              |
-| --------- | ---------------------------------------- |
-| 400       | Bad Request – invalid JSON or parameters |
-| 401       | Unauthorized – missing or invalid token  |
-| 404       | Not Found – workbook or worksheet absent |
 
 {{< /tab >}}
 

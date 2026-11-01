@@ -12,10 +12,9 @@ description: "Unprotect Excel workbooks via Aspose.Cells Cloud API using DeleteU
 weight: 60
 ArticleTitle: "Unprotect Excel Workbook – Aspose.Cells Cloud API"
 ---
-
 The **DeleteUnProtectWorkbook** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/protection`) enables unprotection of Excel workbooks via Aspose.Cells Cloud by removing existing workbook protection using the required `password` parameter; it supports unprotecting files stored in cloud storage and accepts optional `folder` and `storageName` query parameters to locate the target workbook.
 
-## DeleteUnProtectWorkbook API
+## The Delete Un Protect Workbook Web API
 
 ```http
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/protection
@@ -27,9 +26,42 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Path Parameters
 
-| Parameter | Type   | Description                                      | Required |
-| --------- | ------ | ------------------------------------------------ | -------- |
-| **name**  | string | Name of the workbook file (including extension). | Yes      |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| password | String | Query | Protection settings, only password can be specified. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+### HTTPS Status Error Responses
+
+| HTTP Status | Code                | Description                                               |
+| ----------- | ------------------- | --------------------------------------------------------- |
+| 400         | BadRequest          | Missing or invalid parameters.                            |
+| 401         | Unauthorized        | Invalid or missing access token.                          |
+| 404         | NotFound            | Specified workbook not found in the given folder/storage. |
+| 500         | InternalServerError | Unexpected server error.                                  |
 
 ### Query Parameters
 
@@ -69,15 +101,6 @@ curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/protection?folder=
   "Status": "OK"
 }
 ```
-
-### HTTPS Status Error Responses
-
-| HTTP Status | Code                | Description                                               |
-| ----------- | ------------------- | --------------------------------------------------------- |
-| 400         | BadRequest          | Missing or invalid parameters.                            |
-| 401         | Unauthorized        | Invalid or missing access token.                          |
-| 404         | NotFound            | Specified workbook not found in the given folder/storage. |
-| 500         | InternalServerError | Unexpected server error.                                  |
 
 ## How to Use the DeleteUnProtectWorkbook API with SDKs
 

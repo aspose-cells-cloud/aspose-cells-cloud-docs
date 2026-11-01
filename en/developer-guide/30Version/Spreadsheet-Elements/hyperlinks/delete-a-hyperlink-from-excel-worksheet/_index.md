@@ -8,37 +8,30 @@ ArticleTitle: "Delete Worksheet Hyperlink – Aspose.Cells Cloud API Documentati
 weight: 40
 linktitle: "Delete Worksheet Hyperlink"
 ---
-
 The **DeleteWorksheetHyperlink** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks/{hyperlinkIndex}`) removes a specific hyperlink from an Excel worksheet by its zero-based index, enabling precise programmatic control over hyperlink management within spreadsheets stored in Aspose.Cells Cloud.
 
-## Security and Authentication
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+## The Delete Worksheet Hyperlink Web API
 
-### REST API
-
-```bash
+```http
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks/{hyperlinkIndex}
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### Request Parameters
 
-| Parameter Name     | Type    | Location | Required | Description                                                    |
-| ------------------ | ------- | -------- | -------- | -------------------------------------------------------------- |
-| **name**           | string  | path     | ✅       | Name of the Excel document.                                    |
-| **sheetName**      | string  | path     | ✅       | Name of the worksheet.                                         |
-| **hyperlinkIndex** | integer | path     | ✅       | Zero‑based index of the hyperlink to delete.                   |
-| **folder**         | string  | query    | ❌       | Folder containing the document (default: root).                |
-| **storageName**    | string  | query    | ❌       | Name of the storage service (default storage used if omitted). |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| hyperlinkIndex | Integer | Path | The hyperlink's index. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 #### Responses
 
-| Status Code                   | Description                                             | Example Body                                       |
-| ----------------------------- | ------------------------------------------------------- | -------------------------------------------------- |
-| **200 OK**                    | Hyperlink deleted successfully.                         | `{"Code":200,"Status":"OK"}`                       |
-| **400 Bad Request**           | Missing or invalid parameters.                          | `{"Code":400,"Message":"Invalid hyperlinkIndex."}` |
-| **401 Unauthorized**          | Authentication token is missing or invalid.             | `{"Code":401,"Message":"Invalid access token."}`   |
-| **404 Not Found**             | The file, worksheet, or hyperlink index does not exist. | `{"Code":404,"Message":"Resource not found."}`     |
-| **500 Internal Server Error** | Unexpected server error.                                | `{"Code":500,"Message":"Internal server error."}`  |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Hypelinks/DeleteWorksheetHyperlink) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
@@ -70,6 +63,39 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test1.xlsx/worksheets/Sheet1/hyperl
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## Cloud SDK Family
 

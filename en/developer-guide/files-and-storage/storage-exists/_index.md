@@ -9,14 +9,11 @@ keywords: "Aspose.Cells, storage exists, cloud storage API, REST, Excel"
 description: "Check if a storage container exists using Aspose.Cells Cloud API: GET /v4.0/cells/storage/{storageName}/exist"
 weight: 100
 ---
-
 The **StorageExists** API (`GET https://api.aspose.cloud/v4.0/cells/storage/{storageName}/exist`) checks whether a specified storage container exists in Aspose.Cells Cloud, enabling developers to verify storage availability before performing file operations and preventing runtime errors due to missing storage.
 
-## Check Storage Existence (storageExists)
+## The Storage Exists Web API
 
-### Web API
-
-```
+```http
 GET https://api.aspose.cloud/v4.0/cells/storage/{storageName}/exist
 ```
 
@@ -26,46 +23,40 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type   | Location | Description                                     |
-| -------------- | ------ | -------- | ----------------------------------------------- |
-| storageName    | String | Path     | The name of the storage to check for existence. |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| storageName | String | Path | - |
 
 ### **Response**
 
 ```json
-{
-  "Name": "StorageExist",
-  "Description": ["Indicates whether the specified storage exists."],
-  "Type": "Class",
-  "IsAbstract": false,
-  "Properties": [
-    {
-      "Name": "Exists",
-      "Description": [
-        "Indicates if the storage exists.",
-        "This property returns true if the storage is present; otherwise, it returns false."
-      ],
-      "Nullable": true,
-      "ReadOnly": false,
-      "IsInherit": false,
-      "DataType": {
-        "Identifier": "Boolean",
-        "Name": "boolean"
-      }
+[
+  {
+    "Name": "StorageExist",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "StorageExist"
     }
-  ]
-}
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
 ```
 
 **HTTP Status Codes**
 
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## How to Use the storage exists API with SDKs?
 

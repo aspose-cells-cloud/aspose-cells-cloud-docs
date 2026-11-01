@@ -8,23 +8,13 @@ keywords: "Aspose.Cells, delete file API, Excel cloud storage, REST API, file ma
 weight: 100
 ArticleTitle: "Delete Excel File from Aspose.Cells Cloud Storage via REST API"
 ---
-
-
 The **DeleteFile** API (`DELETE https://api.aspose.cloud/v4.0/cells/storage/file/{path}`) removes a specified file from Aspose.Cells Cloud storage using the RESTful v4.0 API; it requires a `path` parameter indicating the file’s location and optionally supports `storageName` and `versionId` query parameters for multi-storage or versioned file management, enabling precise deletion of files stored in cloud environments.
 
-## Web API
+## The Delete File Web API
 
 ```http
 DELETE https://api.aspose.cloud/v4.0/cells/storage/file/{path}
 ```
-
-### Request Parameters
-
-| Parameter Name | Type   | Location | Description                                                                                            |
-| :------------- | :----- | :------- | :----------------------------------------------------------------------------------------------------- |
-| `path`         | string | Path     | **Required.** The URL-encoded path to the file in cloud storage (e.g., `input/Report.xlsx`).           |
-| `storageName`  | string | Query    | **Optional.** The name of the storage where the file resides. Omit to use the default storage.         |
-| `versionId`    | string | Query    | **Optional.** The version identifier of the file to delete. If omitted, the latest version is deleted. |
 
 ### Security and Authentication
 
@@ -36,24 +26,48 @@ All requests require JWT token authentication.
 
 > **Note**: Replace `{access_token}` with your valid JWT access token. See the [Authentication Guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) for setup instructions.
 
+### Request Parameters
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| path | String | Path | - |
+| storageName | String | Query | - |
+| versionId | String | Query | - |
+
 ### Response Description
+
+```json
+[
+  {
+    "Name": "Void",
+    "DataType": {
+      "Identifier": "Void"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 A successful request returns **HTTP 200** with an empty response body.
 
-```json
-{}
-```
 
 #### HTTP Status Codes
-
-| Code | Meaning               | Description                                                                      |
-| :--- | :-------------------- | :------------------------------------------------------------------------------- |
-| 200  | OK                    | File deleted successfully.                                                       |
-| 400  | Bad Request           | Invalid or missing `path`, unsupported file type, or malformed query parameters. |
-| 401  | Unauthorized          | Invalid, expired, or missing JWT token.                                          |
-| 404  | Not Found             | File or storage not found.                                                       |
-| 413  | Payload Too Large     | Request size exceeds limits (rare for DELETE).                                   |
-| 500  | Internal Server Error | Unexpected server error.                                                         |
 
 ### Examples
 

@@ -10,28 +10,31 @@ description: "Delete a picture from an Excel worksheet using Aspose.Cells Cloud 
 weight: 50
 ArticleTitle: "Delete a Picture from an Excel Worksheet – Aspose.Cells Cloud API"
 ---
-
 The **DeleteWorksheetPicture** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}`) enables developers to remove a specific picture from an Excel worksheet by its zero-based index using Aspose.Cells Cloud’s RESTful interface, supporting secure, cloud-based manipulation of spreadsheet elements without local software dependencies.
 
 ### **Security and Authentication**
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-## REST API
+## The Delete Worksheet Picture Web API
 
-```bash
+```http
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### Request Parameters
 
-| Parameter Name | Type    | Location | Required | Description                                          |
-| -------------- | ------- | -------- | -------- | ---------------------------------------------------- |
-| name           | string  | path     | Yes      | The name of the workbook file.                       |
-| sheetName      | string  | path     | Yes      | The name of the worksheet that contains the picture. |
-| pictureIndex   | integer | path     | Yes      | The zero‑based index of the picture to be deleted.   |
-| folder         | string  | query    | No       | The folder where the workbook is stored.             |
-| storageName    | string  | query    | No       | The name of the storage service (optional).          |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worsheet name. |
+| pictureIndex | Integer | Path | Picture index. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make the call with cURL.
 
@@ -69,6 +72,27 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/picture
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
 
 ### Error Handling
 

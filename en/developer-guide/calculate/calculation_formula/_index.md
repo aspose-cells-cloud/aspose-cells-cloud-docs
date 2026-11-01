@@ -10,14 +10,9 @@ keywords: "Aspose Cells, calculate formula, spreadsheet, API"
 description: "Calculate formula in a spreadsheet using Aspose.Cells Cloud API."
 weight: 100
 ---
-
 The **CalculationFormula** API (`PUT https://api.aspose.cloud/v4.0/cells/calculate/formula`) in Aspose.Cells Cloud enables developers to compute the value of a specified formula within a given worksheet of an uploaded spreadsheet file, returning the updated workbook as a downloadable file stream; it supports locale-specific calculations via the optional `region` parameter and can process password-protected files using the `password` query parameter.
 
-## The Calculate Formula of Aspose.Cells Cloud Web Services
-
-Calculates a specified formula in a given worksheet of an uploaded spreadsheet file and returns the resulting spreadsheet as a file stream. This operation supports locale‑specific processing via the **region** parameter and can open password‑protected files.
-
-### Web API Endpoint
+## The Calculation Formula Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/calculate/formula
@@ -29,37 +24,56 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type   | Path/Query String/HTTP Body | Description                                                                                                                             |
-| -------------- | ------ | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| Spreadsheet    | File   | FormData                    | Upload spreadsheet file.                                                                                                                |
-| worksheet      | String | Query                       | Name of the worksheet that contains the formula.                                                                                        |
-| formula        | String | Query                       | The formula to be calculated (e.g., `=SUM(A1:B2)`).                                                                                     |
-| region         | String | Query                       | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password       | String | Query                       | The password for opening spreadsheet file.                                                                                              |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| worksheet | String | Query | - |
+| formula | String | Query | - |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+**Response Status Codes**
+
+Calculates a specified formula in a given worksheet of an uploaded spreadsheet file and returns the resulting spreadsheet as a file stream. This operation supports locale‑specific processing via the **region** parameter and can open password‑protected files.
 
 ### Request Body Parameter
 
 | Parameter Name | Type  | Description |
 | -------------- | ----- | ----------- |
 | [TBD]          | [TBD] | [TBD]       |
-
-### **Response**
-
-```json
-{
-  "File": "<binary stream of the resulting spreadsheet>"
-}
-```
-
-**Response Status Codes**
-
-| Code | Meaning               | Description                                                        |
-| ---- | --------------------- | ------------------------------------------------------------------ |
-| 200  | OK                    | Calculation succeeded; the resulting spreadsheet file is returned. |
-| 400  | Bad Request           | One or more request parameters are missing or invalid.             |
-| 401  | Unauthorized          | Authentication failed or JWT token is missing/invalid.             |
-| 413  | Payload Too Large     | Uploaded file exceeds the allowed size limit.                      |
-| 500  | Internal Server Error | An unexpected error occurred on the server.                        |
 
 ## How to Use the Calculate Formula with SDKs
 

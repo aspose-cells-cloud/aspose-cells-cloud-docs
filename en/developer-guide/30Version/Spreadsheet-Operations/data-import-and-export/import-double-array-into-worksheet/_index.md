@@ -13,7 +13,6 @@ description: "Import double array into Excel worksheet via Aspose.Cells Cloud AP
 weight: 100
 ArticleTitle: "Import Double Array into Excel Worksheet – Aspose.Cells Cloud Guide"
 ---
-
 The **PostImport** API (`POST https://api.aspose.cloud/v3.0/cells/import`) enables importing double-array data into an Excel worksheet via Aspose.Cells Cloud, supporting output in multiple formats such as XLSX, PDF, CSV, and image types, with optional parameters like password protection and regional settings for flexible data import workflows.
 
 > **Prerequisites:** You must have a valid JWT token before calling this API. See the authentication guide for details.
@@ -21,7 +20,7 @@ The **PostImport** API (`POST https://api.aspose.cloud/v3.0/cells/import`) enabl
 You send an HTTP request with **multipart** content (see [RFC 2046](https://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](https://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)).  
 The first part of the multipart body contains the **ImportDoubleArrayOption** data and the second part contains the data file.
 
-## PostImportData API
+## The Post Import Web API
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/import
@@ -33,18 +32,16 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| File | File | FormData | File to upload |
+| outFormat | String | Query | The output data file format.(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers) |
+| password | String | Query | The password needed to open an Excel file. |
+| checkExcelRestriction | Boolean | Query | Whether check restriction of excel file when user modify cells related objects. |
+| region | String | Query | The regional settings for workbook. |
+
 #### **ImportDoubleArrayOption**
 
-| Parameter Name       | Type       | Description                                                                                                |
-| -------------------- | ---------- | ---------------------------------------------------------------------------------------------------------- |
-| FirstRow             | int        | Zero‑based index of the first row where the data will be placed.                                           |
-| FirstColumn          | int        | Zero‑based index of the first column where the data will be placed.                                        |
-| IsVertical           | boolean    | `true` / `false` – determines whether the array is inserted vertically (`true`) or horizontally (`false`). |
-| Data                 | Double[]   | Array of double values to import.                                                                          |
-| DestinationWorksheet | string     | Name of the target worksheet.                                                                              |
-| IsInsert             | boolean    | `true` / `false` – if `true`, data is inserted; if `false`, existing cells are overwritten.                |
-| ImportDataType       | string     | Type of data being imported (e.g., `IntArray`, `DoubleArray`, `StringArray`, `TwoDimensionIntArray`).      |
-| Source               | FileSource | Specifies the data file location when the `BatchData` parameter is null.                                   |
 
 #### Example (XML)
 
@@ -80,14 +77,27 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Response
 
+```json
+[
+  {
+    "Name": "FilesResult",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "FilesResult"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
 A successful request returns **HTTP 200** with a JSON payload similar to:
 
-```json
-{
-  "Code": 200,
-  "Status": "OK"
-}
-```
 
 Possible status codes:
 

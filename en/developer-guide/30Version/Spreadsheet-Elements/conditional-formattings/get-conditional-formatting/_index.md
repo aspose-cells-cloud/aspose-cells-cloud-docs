@@ -9,24 +9,48 @@ weight: 100
 linktitle: "Get Conditional Formatting"
 ArticleTitle: "Retrieve Conditional Formatting Rules via Aspose.Cells Cloud REST API"
 ---
-
 The **GetWorksheetConditionalFormatting** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}`) retrieves a specific conditional formatting rule—identified by its zero-based index—from a named worksheet within a spreadsheet file stored in Aspose.Cells Cloud, enabling developers to programmatically inspect and utilize complex formatting logic such as color scales, data bars, or icon sets applied to cells.
 
-## REST API
+## The Get Worksheet Conditional Formatting Web API
 
-```bash
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
 
 ### Request Parameters
 
-| Parameter Name | Type    | Location | Description                                          |
-| -------------- | ------- | -------- | ---------------------------------------------------- |
-| name           | string  | path     | Name of the workbook file.                           |
-| sheetName      | string  | path     | Name of the worksheet that contains the formatting.  |
-| index          | integer | path     | Zero‑based index of the conditional formatting rule. |
-| folder         | string  | query    | Folder path where the workbook is stored.            |
-| storageName    | string  | query    | Name of the storage service.                         |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| index | Integer | Path | The conditional formatting index. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "ConditionalFormattingResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "ConditionalFormattingResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
 
 ### Error Responses
 

@@ -10,14 +10,9 @@ keywords: "Aspose.Cells, Search, Text Items, API"
 description: "Search all text items within a spreadsheet file using Aspose.Cells Cloud API."
 weight: 100
 ---
-
 The **SearchSpreadsheetAllTextItems** API (`PUT https://api.aspose.cloud/v4.0/cells/search/content/all-textitems`) in Aspose.Cells Cloud enables users to search for all text items across every sheet and cell of a local spreadsheet file uploaded via the request body, supporting password-protected files and locale-aware parsing through optional query parameters like `region` and `password`, with results returned as structured match locations without requiring cloud storage.
 
-## The Search Spreadsheet All Text Items of Aspose.Cells Cloud Web Services
-
-This method searches for all text items within a local spreadsheet file. It supports searching through all sheets and cells of the workbook, identifying occurrences of the search term. The operation is performed cloud‑side, requiring no cloud storage. Ensure that you have the necessary permissions to read the source file. If the source file cannot be accessed or if an error occurs during the search process (such as an unsupported file format), an appropriate exception will be thrown. The method may return the locations of the matches (e.g., sheet name, cell coordinates) depending on implementation details.
-
-### Web API Endpoint
+## The Search Spreadsheet All Text Items Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/search/content/all-textitems
@@ -29,44 +24,53 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type   | Path/Query String/HTTP Body | Description                                                                                                                             |
-| -------------- | ------ | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| Spreadsheet    | File   | FormData                    | Upload spreadsheet file.                                                                                                                |
-| region         | String | Query                       | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password       | String | Query                       | The password for opening spreadsheet file.                                                                                              |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "SearchResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "SearchResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | Invalid url. |
+| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
+| 404 | Not Found | Source file not accessible. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining data. |
+
+**Response Status Codes**
+
+This method searches for all text items within a local spreadsheet file. It supports searching through all sheets and cells of the workbook, identifying occurrences of the search term. The operation is performed cloud‑side, requiring no cloud storage. Ensure that you have the necessary permissions to read the source file. If the source file cannot be accessed or if an error occurs during the search process (such as an unsupported file format), an appropriate exception will be thrown. The method may return the locations of the matches (e.g., sheet name, cell coordinates) depending on implementation details.
 
 ### Request Body Parameter
 
 | Parameter Name | Type  | Description |
 | -------------- | ----- | ----------- |
 | [TBD]          | [TBD] | [TBD]       |
-
-### **Response**
-
-```json
-{
-  "SearchResults": [
-    {
-      "SheetName": "Sheet1",
-      "CellName": "A1",
-      "Text": "Sample text"
-    }
-    // ... more items
-  ],
-  "TotalCount": 42
-}
-```
-
-**Response Status Codes**
-
-| Code | Meaning               | Description                                                           |
-| ---- | --------------------- | --------------------------------------------------------------------- |
-| 200  | OK                    | The request succeeded and the response contains all found text items. |
-| 400  | Bad Request           | Invalid URL or malformed request parameters.                          |
-| 401  | Unauthorized          | Authentication has failed, or no credentials were provided.           |
-| 404  | Not Found             | Source file not accessible.                                           |
-| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                     |
-| 500  | Internal Server Error | The spreadsheet has encountered an anomaly in obtaining data.         |
 
 ## How to Use the Search Spreadsheet All Text Items with SDKs
 

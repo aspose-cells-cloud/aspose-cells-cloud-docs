@@ -10,19 +10,13 @@ description: "Retrieve a shape by its index from an Excel worksheet using Aspose
 weight: 100
 ArticleTitle: "Get a Shape by Index on an Excel Worksheet – Aspose.Cells Cloud Documentation"
 ---
-
 The **GetWorksheetShape** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes/{shapeindex}`) retrieves the description of a specific shape—including its metadata and properties—by index from a named worksheet in an Excel file stored in Aspose.Cells Cloud, enabling developers to programmatically inspect embedded shapes such as charts, images, or AutoShapes without downloading the entire workbook.
 
-## GetWorksheetShape API
+## The Get Worksheet Shape Web API
 
 ```http
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes/{shapeindex}
 ```
-
-**Prerequisites**
-
-- A valid Aspose Cloud access token (Bearer JWT).
-- The workbook must be stored in your Aspose Cloud storage or a specified folder.
 
 ### **Security and Authentication**
 
@@ -30,13 +24,13 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Request parameters**
 
-| Parameter Name | Type    | Location | Description                                         |
-| -------------- | ------- | -------- | --------------------------------------------------- |
-| name           | string  | path     | Name of the Excel document.                         |
-| sheetName      | string  | path     | Name of the worksheet containing the shape.         |
-| shapeindex     | integer | path     | Zero‑based index of the shape within the worksheet. |
-| folder         | string  | query    | Folder path where the document is stored.           |
-| storageName    | string  | query    | Name of the storage service.                        |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| shapeindex | Integer | Path | shape index in worksheet shapes. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 **Note:** `shapeindex` is zero‑based; the first shape has index 0. Ensure the workbook is stored in the specified `folder` and `storageName` if you are not using the default storage.
 
@@ -115,15 +109,44 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/She
 
 **Possible HTTP status codes**
 
-| Code                          | Description                                                       |
-| ----------------------------- | ----------------------------------------------------------------- |
-| **200 OK**                    | The shape was retrieved successfully.                             |
-| **400 Bad Request**           | The request is malformed or missing required parameters.          |
-| **401 Unauthorized**          | Authentication failed or token is missing/invalid.                |
-| **404 Not Found**             | The specified workbook, worksheet, or shape index does not exist. |
-| **500 Internal Server Error** | An unexpected server error occurred.                              |
 
 **Common pitfalls:** Using an incorrect base domain (`api.aspose.com`) or the outdated `/autoshapes/` segment will result in a 404 error. Always use the `/shapes/` segment with the `api.aspose.cloud` domain.
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "ShapeResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "ShapeResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+**Prerequisites**
+
+- A valid Aspose Cloud access token (Bearer JWT).
+- The workbook must be stored in your Aspose Cloud storage or a specified folder.
 
 ## Cloud SDK Family
 

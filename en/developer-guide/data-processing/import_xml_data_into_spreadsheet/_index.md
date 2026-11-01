@@ -10,14 +10,9 @@ keywords: "Import XML, Aspose.Cells, API"
 description: "Import XML data file into the local spreadsheet using Aspose.Cells Cloud."
 weight: 100
 ---
-
 The **ImportXMLDataIntoSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/import/data/xml`) in Aspose.Cells Cloud enables developers to import XML data directly into a specified worksheet of a local spreadsheet by parsing the XML structure and mapping it to cell content, supporting formats such as .xlsx and .ods; it requires uploading both the XML data file and the target spreadsheet, along with the target worksheet name and starting cell address, and optionally controls insertion behavior via the `insert` parameter.
 
-## The Import XML Data Into Spreadsheet of Aspose.Cells Cloud Web Services
-
-Import XML data file into the local spreadsheet. The method parses the XML, maps the data to the spreadsheet's cell structure, and saves the file locally. Supported spreadsheet formats include .xlsx and .ods.
-
-### Web API Endpoint
+## The Import XMLData Into Spreadsheet Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/import/data/xml
@@ -29,43 +24,61 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type    | Path/Query String/HTTP Body | Description                                                                                                                             |
-| -------------- | ------- | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| datafile       | File    | FormData                    | Upload data file.                                                                                                                       |
-| Spreadsheet    | File    | FormData                    | Upload spreadsheet file.                                                                                                                |
-| worksheet      | String  | Query                       | Need to import XML data into the worksheet.                                                                                             |
-| startcell      | String  | Query                       | Starting position for data import                                                                                                       |
-| insert         | Boolean | Query                       | Controls the insertion behavior. true: inserts data; false: overwrites existing data. Default: **true**                                 |
-| outPath        | String  | Query                       | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
-| outStorageName | String  | Query                       | Output file Storage Name.                                                                                                               |
-| fontsLocation  | String  | Query                       | Use Custom fonts.                                                                                                                       |
-| region         | String  | Query                       | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password       | String  | Query                       | The password for opening spreadsheet file.                                                                                              |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| datafile | File | FormData | Upload data file. |
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| worksheet | String | Query | Need to import XML data into the worksheet. |
+| startcell | String | Query | Starting position for data import |
+| insert | Boolean | Query | Controls the insertion behavior. true: inserts data; false: overwrites existing data. |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| fontsLocation | String | Query | Use Custom fonts. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | Invalid url. |
+| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
+| 404 | Not Found | Source file not accessible. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining data. |
+
+**Response Status Codes**
+
+Import XML data file into the local spreadsheet. The method parses the XML, maps the data to the spreadsheet's cell structure, and saves the file locally. Supported spreadsheet formats include .xlsx and .ods.
 
 ### Request Body Parameter
 
 | Parameter Name | Type | Description |
 | -------------- | ---- | ----------- |
 | _None_         | -    | -           |
-
-### **Response**
-
-```json
-{
-  "file": "<binary stream of the updated spreadsheet>"
-}
-```
-
-**Response Status Codes**
-
-| Code | Meaning               | Description                                                                  |
-| ---- | --------------------- | ---------------------------------------------------------------------------- |
-| 200  | OK                    | XML data imported successfully and the updated spreadsheet file is returned. |
-| 400  | Bad Request           | Invalid request URL or missing required parameters.                          |
-| 401  | Unauthorized          | Authentication has failed, or no credentials were provided.                  |
-| 404  | Not Found             | Source file not accessible.                                                  |
-| 413  | Payload Too Large     | Uploaded file exceeds the allowed size limit.                                |
-| 500  | Internal Server Error | The spreadsheet has encountered an anomaly in obtaining data.                |
 
 ## How to Use the Import XML Data Into Spreadsheet with SDKs
 

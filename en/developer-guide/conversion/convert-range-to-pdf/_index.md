@@ -10,12 +10,9 @@ weight: 100
 date: 2024-03-15
 lastmod: 2024-03-15
 ---
-
 The **ConvertRangeToPdf** API (`PUT https://api.aspose.cloud/v4.0/cells/convert/range/pdf`) in Aspose.Cells Cloud enables direct conversion of a specified cell range—defined by worksheet name and range address (e.g., "Sheet1!A1:C10")—from a locally uploaded Excel file into a PDF document, leveraging cloud-native processing without requiring prior file upload to storage.
 
-**Prerequisites**: Before using this API you need a valid Aspose.Cells Cloud account, a JWT access token, and optionally an Aspose.Cells Cloud SDK for your programming language. Ensure the target storage (default or custom) is configured if you plan to use the `outStorageName` parameter.
-
-## **Convert Range to PDF API**
+## The Convert Range to PDF Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/convert/range/pdf

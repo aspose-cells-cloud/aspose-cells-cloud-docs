@@ -12,37 +12,65 @@ weight: 30
 ArticleTitle: "Copy Rows in Excel with Aspose.Cells Cloud REST API v3.0"
 keywords: "Aspose.Cells Cloud, copy rows Excel, worksheet row copy, REST API copy rows, copy rows programmatically, Excel automation, copy entire rows, row copy API, Aspose.Cells Cloud SDK, copy rows between worksheets"
 ---
-
-
 The **PostCopyWorksheetRows** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/copy`) enables copying data and formats from specific entire rows in a worksheet by specifying source and destination row indices along with the number of rows to copy. Aspose.Cells Cloud supports this operation to automate row duplication tasks programmatically, preserving cell values, styles, and formulas. Developers can integrate this capability using REST calls or SDKs for languages including .NET, Java, Python, and Node.js.
 
 ---
 
-## Prerequisites
+## The Post Copy Worksheet Rows Web API
 
-| #   | Requirement                                                                                                                                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 1   | A valid **JWT** token. See the [authentication guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/). |
-| 2   | The workbook (`{name}`) must already exist in the selected **folder** / **storage**.                                                                   |
-| 3   | The target worksheet (`{sheetName}`) must be present in the workbook.                                                                                  |
-| 4   | (Optional) Know the **folder** and **storageName** if the file is not in the default location.                                                         |
-
----
-
-## Endpoint
-
-```
+```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/copy
 ```
 
-_All path parameters are case‑sensitive._
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
 
 ### Path Parameters
 
-| Parameter   | Type   | Required | Description                                 |
-| ----------- | ------ | -------- | ------------------------------------------- |
-| `name`      | string | ✅       | The workbook file name (e.g., `test.xlsx`). |
-| `sheetName` | string | ✅       | The worksheet name (e.g., `Sheet1`).        |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| sourceRowIndex | Integer | Query | Source row index |
+| destinationRowIndex | Integer | Query | Destination row index |
+| rowNumber | Integer | Query | The copied row number |
+| worksheet | String | Query | The worksheet name. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+_All path parameters are case‑sensitive._
 
 ### Query Parameters
 

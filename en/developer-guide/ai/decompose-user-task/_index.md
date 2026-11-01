@@ -8,7 +8,6 @@ description: "Aspose.Cells Cloud AI Decompose User Task API converts free-form g
 keywords: "Aspose.Cells AI, REST API, task decomposition, SMART task planning, Redmine import, project automation, task breakdown, time estimation"
 weight: 100
 ---
-
 The **DecomposeUserTask** API (`PUT https://api.aspose.cloud/v4.0/cells/ai/task/decompose`), part of Aspose.Cells Cloud, converts free-form user task descriptions into structured, SMART-compliant action plans by analyzing plain-text input and generating hour-estimated subtasks with milestone markers, ready for direct import into project management systems such as Redmine, Jira, or Azure DevOps.
 
 ## Overview
@@ -21,7 +20,7 @@ This v4.0 release introduces enhanced time-estimate optimization and native Azur
 
 ---
 
-## API Endpoint
+## The Decompose User Task Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/ai/task/decompose
@@ -33,17 +32,50 @@ All requests require [JWT token-based authentication](https://docs.aspose.cloud/
 
 ---
 
-## Request Parameters
+### Request Parameters
 
-| Parameter         | Type     | Location | Required | Description                                                                                                                                                        |
-| ----------------- | -------- | -------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `TaskDescription` | `string` | Body     | Yes      | A plain-text description of the user’s overall objective. Example: _"Launch Q3 marketing campaign including content creation, email blast, and social media ads."_ |
-| `region`          | `string` | Query    | No       | Regional setting (e.g., `en-US`, `fr-FR`). Affects number formatting, date parsing, and locale-specific behavior. Default: `en-US`.                                |
-| `password`        | `string` | Query    | No       | Password for protected spreadsheet templates (if used internally).                                                                                                 |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| TaskDescription | String | HTTPBody | Decompose user task description. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
 
 > ⚠️ **Note**: Omit `password` unless explicitly required. It is not used for the `TaskDescription` input.
 
 ---
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Request Example
 

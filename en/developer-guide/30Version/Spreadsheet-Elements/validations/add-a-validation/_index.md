@@ -9,25 +9,27 @@ description: "Add Excel validation rules via Aspose.Cells Cloud API: PUT /cells/
 weight: 100
 ArticleTitle: "Add Worksheet Validation to Excel via Aspose.Cells Cloud REST API"
 ---
-
 The **PutWorksheetValidation** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations`) enables Aspose.Cells Cloud users to add a validation at a specific index in an Excel worksheet by sending the validation definition in the request body; it supports specifying a target cell range via the optional `range` query parameter and accommodates cloud storage organization through `folder` and `storageName` parameters.
 
-## REST API
+## The Put Worksheet Validation Web API
 
-```bash
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
 
 ### **Request parameters**
 
-| Parameter Name | Type   | Location | Description                                                |
-| -------------- | ------ | -------- | ---------------------------------------------------------- |
-| name           | string | path     | Name of the Excel document.                                |
-| sheetName      | string | path     | Name of the worksheet.                                     |
-| range          | string | query    | Cell range to which the validation applies (e.g., A1:B10). |
-| validation     | object | body     | Validation rule definition.                                |
-| folder         | string | query    | Folder that contains the document.                         |
-| storageName    | string | query    | Name of the storage service.                               |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The workbook name. |
+| sheetName | String | Path | The worksheet name. |
+| range | String | Query | Specified cells area |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/WorksheetValidations/PutWorksheetValidation) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -59,6 +61,37 @@ curl -v "http://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/va
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Cloud SDK Family
 

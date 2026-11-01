@@ -13,10 +13,9 @@ description: "Generate Excel workbooks from Smart Marker templates using Aspose.
 weight: 40
 ArticleTitle: "Build Excel Reports with Smart Marker Templates – Aspose.Cells Cloud API Guide"
 ---
-
 The **PostWorkbookGetSmartMarkerResult** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/smartmarker`) enables developers to process Excel workbooks using Smart Marker templates by sending a POST request with the template file name in the path and optional data via the request body or an XML file; Aspose.Cells Cloud supports this complex processing workflow, allowing dynamic report generation from structured data without requiring local Excel installation.
 
-## Workbook SmartMarker API
+## The Post Workbook Get Smart Marker Result Web API
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/smartmarker
@@ -26,36 +25,47 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/smartmarker
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-### **What is a Smart Marker?**
-
-A Smart Marker is a placeholder syntax that maps data fields in an XML (or JSON) file to cells in an Excel template. At runtime Aspose.Cells replaces the markers with the corresponding data, allowing you to generate fully populated reports programmatically.
-
 ### **Query Parameters**
 
-| Parameter Name | Type   | Description                                                  |
-| -------------- | ------ | ------------------------------------------------------------ |
-| outPath        | string | Destination path where the generated workbook will be saved. |
-| folder         | string | Folder containing the original workbook.                     |
-| storageName    | string | Name of the storage service to use.                          |
-
-### **Request Body Parameter**
-
-| Parameter Name | Type | Description                                           |
-| -------------- | ---- | ----------------------------------------------------- |
-| xmlFile        | file | Smart Marker XML data file uploaded with the request. |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| xmlFile | String | Query | The xml file full path, if empty the data is read from request body. |
+| folder | String | Query | The folder where the file is situated. |
+| outPath | String | Query | The path to save result |
+| storageName | String | Query | The storage name where the file is situated. |
+| outStorageName | String | Query | The storage name where the result file is situated. |
 
 ### **Response**
 
 ```json
-{
-  "Name": "ResponseFile",
-  "DataType": {
-    "Identifier": "File",
-    "Reference": "Stream",
-    "Name": "file"
+[
+  {
+    "Name": "Stream",
+    "DataType": {
+      "Identifier": "File"
+    }
   }
-}
+]
 ```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 **Notes / Limitations:**
 
@@ -63,15 +73,15 @@ A Smart Marker is a placeholder syntax that maps data fields in an XML (or JSON)
 - Accepted formats are **.xlsx**, **.xlsm**, and **.xlsb** only.
 - A rate limit of **20 requests per second** per account is enforced.
 
-**HTTP Status Codes**
+### **What is a Smart Marker?**
 
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
+A Smart Marker is a placeholder syntax that maps data fields in an XML (or JSON) file to cells in an Excel template. At runtime Aspose.Cells replaces the markers with the corresponding data, allowing you to generate fully populated reports programmatically.
+
+### **Request Body Parameter**
+
+| Parameter Name | Type | Description                                           |
+| -------------- | ---- | ----------------------------------------------------- |
+| xmlFile        | file | Smart Marker XML data file uploaded with the request. |
 
 ## How to Use the Workbook SmartMarker API
 

@@ -11,7 +11,6 @@ keywords: "Aspose.Cells, AutoFilter, Top 10 filter, Excel API"
 description: "Add Top 10 AutoFilter to Excel via Aspose.Cells Cloud REST API using PutWorksheetFilterTop10 endpoint and SDK examples"
 weight: 65
 ---
-
 The **PutWorksheetFilterTop10** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/filterTop10`) enables filtering the top or bottom N items in a specified worksheet range using Aspose.Cells Cloud, allowing users to dynamically hide rows based on criteria such as numeric rank or percentage, with support for both count-based and percentage-based filtering via parameters like `isTop`, `isPercent`, and `itemCount`.
 
 > **Prerequisites**  
@@ -19,7 +18,7 @@ The **PutWorksheetFilterTop10** API (`PUT https://api.aspose.cloud/v3.0/cells/{n
 > • Upload the Excel workbook to your Aspose Cloud storage (or specify the storage/folder where it resides).  
 > • Know the worksheet name and the cell range that you want to filter.
 
-## PutWorksheetFilterTop10 API
+## The Put Worksheet Filter Top10 Web API
 
 ```http
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/filterTop10
@@ -31,28 +30,50 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request parameters
 
-| Parameter Name  | Type    | Location | Required | Default | Description                                                                 |
-| --------------- | ------- | -------- | -------- | ------- | --------------------------------------------------------------------------- |
-| **name**        | string  | path     | Yes      | —       | The name of the Excel file.                                                 |
-| **sheetName**   | string  | path     | Yes      | —       | The name of the worksheet that contains the data.                           |
-| **range**       | string  | query    | Yes      | —       | The cell range to which the filter is applied (e.g., `A1:B10`).             |
-| **fieldIndex**  | integer | query    | Yes      | —       | Zero‑based index of the column on which the filter is applied.              |
-| **isTop**       | boolean | query    | Yes      | `true`  | `true` to filter the top items; `false` for bottom items.                   |
-| **isPercent**   | boolean | query    | No       | `false` | `true` to treat `itemCount` as a percentage; `false` for an absolute count. |
-| **itemCount**   | integer | query    | No       | `10`    | Number of items to include in the filter.                                   |
-| **matchBlanks** | boolean | query    | No       | `false` | `true` to include blank cells in the filter results.                        |
-| **refresh**     | boolean | query    | No       | `false` | `true` to refresh the filter after applying it.                             |
-| **folder**      | string  | query    | No       | —       | The folder in storage where the Excel file is located.                      |
-| **storageName** | string  | query    | No       | —       | The name of the Aspose Cloud storage.                                       |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The workbook name. |
+| sheetName | String | Path | The worksheet name. |
+| range | String | Query | Represents the range to which the specified AutoFilter applies. |
+| fieldIndex | Integer | Query | The integer offset of the field on which you want to base the filter (from the left of the list; the leftmost field is field 0). |
+| isTop | Boolean | Query | Indicates whether filter from top or bottom |
+| isPercent | Boolean | Query | Indicates whether the items is percent or count |
+| itemCount | Integer | Query | The item count |
+| matchBlanks | Boolean | Query | Match all blank cell in the list. |
+| refresh | Boolean | Query | Refresh auto filters to hide or unhide the rows. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 ### **Response**
 
 ```json
-{
-  "Status": "OK",
-  "Code": 200
-}
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
 ```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 **Typical error responses**
 
@@ -83,16 +104,6 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
   "Message": "Internal Server Error – unexpected server condition."
 }
 ```
-
-**HTTP Status Codes**
-
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
 
 ## How to Use the PutWorksheetFilterTop10 API with SDKs
 

@@ -10,10 +10,9 @@ type: docs
 weight: 100
 ArticleTitle: "Split Excel Text by Delimiter, Mask, or Line Break | Aspose.Cells Cloud API"
 ---
-
 The **SplitText** API (`PUT https://api.aspose.cloud/v4.0/cells/content/split/text`) in Aspose.Cells Cloud enables precise text segmentation within Excel workbooks by splitting cell content using custom delimiters, line breaks, or pattern masks, then outputting results to a specified range in columns or rows; for example, users can split a cell’s comma-separated values into adjacent columns while optionally retaining or removing the delimiters.
 
-## Introduction
+## Overview
 
 The Split Text API divides cell contents into multiple cells based on specified delimiters, patterns, or line breaks, and writes the results to a target range. It supports flexible splitting methods, directional output (columns or rows), and configurable delimiter handling—ideal for parsing concatenated data, CSV-style content, or multiline text into structured formats.
 
@@ -26,13 +25,7 @@ The Split Text API divides cell contents into multiple cells based on specified 
 - **Output direction** – choose between `SplitToColumns` or `SplitToRows`.
 - **Delimiter handling** – optionally retain delimiters at the beginning, end, before, or after the split text.
 
-## Prerequisites
-
-- A valid [Aspose Cloud access token](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) for JWT-based authentication.
-- A spreadsheet file uploaded to Aspose Cloud storage or sent directly in the request body.
-- Supported formats: XLSX, XLS, ODS, CSV.
-
-## REST API Endpoint
+## The Split Text Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/content/split/text
@@ -48,22 +41,55 @@ Include your JWT token in the `Authorization` header:
 
 > **Note**: All requests must use HTTPS. The authentication endpoint enforces TLS 1.2+.
 
-## Request Parameters
+### Request Parameters
 
-| Parameter Name                   | Type    | Location | Required | Default          | Description                                                                                                    |
-| -------------------------------- | ------- | -------- | -------- | ---------------- | -------------------------------------------------------------------------------------------------------------- | ------------------- |
-| `spreadsheet`                    | File    | FormData | Yes      | —                | The spreadsheet file to process (XLSX, XLS, ODS, CSV).                                                         |
-| `delimiters`                     | String  | Query    | Yes      | —                | One or more delimiter characters (e.g., `","`, `";"`, `"                                                       | "`, `" "`, `"\n"`). |
-| `keepDelimitersInResultingCells` | Boolean | Query    | No       | `false`          | When `true`, delimiters are retained in the resulting cells.                                                   |
-| `keepDelimitersPosition`         | String  | Query    | No       | `None`           | Where to retain delimiters if enabled: `None`, `AtTheBeginning`, `AtTheEnd`, `BeforeText`, `AfterText`.        |
-| `howToSplit`                     | String  | Query    | No       | `SplitToColumns` | Direction of output: `None`, `SplitToColumns`, `SplitToRows`.                                                  |
-| `outPositionRange`               | String  | Query    | Yes      | —                | Target range for output (e.g., `` `"D1:F10"` ``).                                                              |
-| `worksheet`                      | String  | Query    | No       | First sheet      | Worksheet name where splitting is applied.                                                                     |
-| `range`                          | String  | Query    | No       | Used range       | Source cell range to split (e.g., `` `"A1:A10"` ``).                                                           |
-| `outPath`                        | String  | Query    | No       | Source folder    | Cloud storage path to save the output workbook.                                                                |
-| `outStorageName`                 | String  | Query    | No       | Default          | Name of the cloud storage for output.                                                                          |
-| `region`                         | String  | Query    | No       | `en-US`          | Locale setting (e.g., `"en-US"`, `"de-DE"`, `"ja-JP"`). Affects delimiter interpretation and formatting rules. |
-| `password`                       | String  | Query    | No       | —                | Password for password-protected workbooks.                                                                     |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| delimiters | String | Query | Indicates the custom delimiter. |
+| keepDelimitersInResultingCells | Boolean | Query | Indicates keep delimiters in resulting cells. |
+| keepDelimitersPosition | String | Query | Indicates keep delimiters position. |
+| HowToSplit | String | Query | Indicates |
+| outPositionRange | String | Query | Indicates split delimiters type. |
+| worksheet | String | Query | Specify the worksheet of spreadsheet. |
+| range | String | Query | Specify the worksheet range of spreadsheet. |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ### Notes on Key Parameters
 

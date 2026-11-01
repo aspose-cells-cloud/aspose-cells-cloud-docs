@@ -10,23 +10,26 @@ description: "Retrieve vertical page breaks from an Excel worksheet using the As
 weight: 100
 ArticleTitle: "Get Vertical Page Breaks from Excel Worksheet via Aspose.Cells Cloud REST API"
 ---
-
 The **GetVerticalPageBreaks** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/verticalpagebreaks`) retrieves descriptions of vertical page breaks in a specified worksheet using Aspose.Cells Cloud, enabling developers to programmatically inspect print layout configurations by fetching the collection of vertical page breaks defined in the workbook.
 
-## Rest Api
+## The Get Vertical Page Breaks Web API
 
-```bash
+```http
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/verticalpagebreaks
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### Request Parameters
 
-| Parameter Name | Type   | Location | Description                                          | Required |
-| -------------- | ------ | -------- | ---------------------------------------------------- | -------- |
-| `name`         | string | path     | The name of the Excel file.                          | Yes      |
-| `sheetName`    | string | path     | The name of the worksheet from which to read breaks. | Yes      |
-| `folder`       | string | query    | The folder in storage that contains the file.        | No       |
-| `storageName`  | string | query    | The name of the Aspose Cloud storage to use.         | No       |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The workbook name. |
+| sheetName | String | Path | The worksheet name. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PageBreaks/GetVerticalPageBreaks) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -75,6 +78,25 @@ curl -v "https://api.aspose.cloud/v3.0/cells/sampleExcelPageBreaks.xlsx/workshee
 {{< /tabs >}}
 
 ### Response Details
+
+```json
+[
+  {
+    "Name": "VerticalPageBreaksResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "VerticalPageBreaksResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
 
 | Field                   | Type   | Description                                                                         |
 | ----------------------- | ------ | ----------------------------------------------------------------------------------- |

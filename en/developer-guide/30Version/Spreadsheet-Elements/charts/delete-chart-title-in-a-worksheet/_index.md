@@ -9,49 +9,59 @@ description: "Delete a chart title from an Excel worksheet using Aspose.Cells Cl
 linktitle: "Delete Chart Title"
 ArticleTitle: "Delete Chart Title in Excel Worksheet using Aspose.Cells Cloud REST API"
 ---
-
 The **DeleteWorksheetChartTitle** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title`) enables hiding the title of a specific chart in a worksheet by sending a DELETE request with the file name, worksheet name, and chart index as required path parameters; Aspose.Cells Cloud supports this operation as part of its robust REST API for managing spreadsheet elements, allowing developers to programmatically clean chart visuals without modifying the underlying data.
 
-## REST API
+## The Delete Worksheet Chart Title Web API
 
-```bash
-DELETE https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title
+```http
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title
 ```
 
 ### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
-
 ### Request parameters
 
-| Parameter Name | Type    | Location | Description                         |
-| -------------- | ------- | -------- | ----------------------------------- |
-| name           | string  | path     | The workbook file name.             |
-| sheetName      | string  | path     | The worksheet name.                 |
-| chartIndex     | integer | path     | The zero‑based index of the chart.  |
-| folder         | string  | query    | The folder containing the workbook. |
-| storageName    | string  | query    | The storage name.                   |
-
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| chartIndex | Integer | Path | The chart index. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 ### **Response**
 
 ```json
-{
-    "Status":"OK",
-    "Code":200
-}
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
 ```
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
 ## How to Use the DeleteWorksheetChartTitle API with SDKs
 
 ### DeleteWorksheetChartTitle API Specification

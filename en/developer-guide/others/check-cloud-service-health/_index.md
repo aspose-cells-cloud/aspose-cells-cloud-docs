@@ -13,55 +13,44 @@ images:
     alt: "Aspose.Cells Cloud health check API response in JSON format displayed in Postman"
 ArticleTitle: "Aspose.Cells Cloud Health Check API: Real-Time Service Status Monitoring"
 ---
-
 The **CheckCloudServiceHealth** API (`GET https://api.aspose.cloud/v4.0/cells/status/check`) provides real-time monitoring of Aspose.Cells Cloud service availability and operational status, returning key health metrics such as service connectivity, response latency, and error rates to support pre-flight checks before executing critical operations.
 
-## Prerequisites
-
-Before calling this endpoint, ensure you have:
-
-- An active [Aspose Cloud account](https://dashboard.aspose.cloud/)
-- A registered application with valid `ClientID` and `ClientSecret`
-- A JWT access token obtained via OAuth2 (see [Authentication Overview](/total/getting-started/authentication/))
-
-Include the token in the `Authorization` header as a Bearer token:
-
-```http
-Authorization: Bearer <your-access-token>
-```
-
-## Check Cloud Service Health
-
-### Web API Endpoint
+## The Check Cloud Service Health Web API
 
 ```http
 GET https://api.aspose.cloud/v4.0/cells/status/check
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### Request Parameters
 
-| Parameter       | Type   | Required | Description                                             |
-| --------------- | ------ | -------- | ------------------------------------------------------- |
-| `Authorization` | header | Yes      | Bearer token for authentication.                        |
-| `detail`        | query  | No       | Set to `true` to include detailed component status.     |
-| `Accept`        | header | No       | Desired response format; default is `application/json`. |
+This operation does not require request parameters.
 
 ### Response Format
 
+```json
+[
+  {
+    "Name": "String",
+    "DataType": {
+      "Identifier": "String"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
 A successful response returns HTTP `200 OK` with a JSON payload:
 
-```json
-{
-  "status": "OK",
-  "service": "Cells",
-  "timestamp": "2024-06-15T14:30:00Z",
-  "components": {
-    "api": "Operational",
-    "storage": "Operational",
-    "database": "Operational"
-  }
-}
-```
 
 > **Note**: The `timestamp` field uses [ISO 8601 UTC format](https://en.wikipedia.org/wiki/ISO_8601). When `detail=true`, additional fields such as `latency_ms`, `error_rate`, and `uptime_percentage` may appear.
 

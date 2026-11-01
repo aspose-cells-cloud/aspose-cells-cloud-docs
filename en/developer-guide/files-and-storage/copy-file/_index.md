@@ -9,14 +9,9 @@ keywords: "Aspose.Cells, CopyFile API, Excel file copy, Cloud storage, REST API,
 description: "Copy Excel files in the cloud with Aspose.Cells Cloud CopyFile API—REST and SDK examples for cURL, Python, Go, Node.js"
 weight: 100
 ---
-
 The **CopyFile** API (`PUT https://api.aspose.cloud/v4.0/cells/storage/file/copy/{srcPath}`) in Aspose.Cells Cloud enables secure, server-side duplication of Excel files within or across cloud storage accounts, supporting optional source and destination storage names and versioned file copies via query parameters.
 
-## Excel Cloud API: CopyFile
-
-The **CopyFile** API enables secure, server-side duplication of Excel files within or across cloud storage accounts. Ideal for batch operations, backup workflows, and file versioning, this RESTful endpoint operates entirely in the cloud—no local file handling required.
-
-### Web API Endpoint
+## The Copy File Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/storage/file/copy/{srcPath}
@@ -29,25 +24,47 @@ _Note: External links include `rel="noopener noreferrer"` for security._
 
 ### Request Parameters
 
-| Parameter Name    | Type   | Location | Required | Description                                         |
-| ----------------- | ------ | -------- | -------- | --------------------------------------------------- |
-| `srcPath`         | string | Path     | Yes      | Source file path in cloud storage.                  |
-| `destPath`        | string | Query    | Yes      | Destination file path.                              |
-| `srcStorageName`  | string | Query    | No       | Source storage name (defaults to internal storage). |
-| `destStorageName` | string | Query    | No       | Destination storage name.                           |
-| `versionId`       | string | Query    | No       | Optional version ID (for versioned storage).        |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| srcPath | String | Path | - |
+| destPath | String | Query | - |
+| srcStorageName | String | Query | - |
+| destStorageName | String | Query | - |
+| versionId | String | Query | - |
 
 ### HTTP Responses
 
-| Status Code                 | Description                                                                |
-| --------------------------- | -------------------------------------------------------------------------- |
-| `200 OK`                    | File copied successfully.                                                  |
-| `400 Bad Request`           | Invalid or missing parameters (e.g., invalid path, unsupported extension). |
-| `401 Unauthorized`          | Invalid or expired JWT token.                                              |
-| `413 Payload Too Large`     | Source file exceeds size limit (e.g., > 2 GB).                             |
-| `500 Internal Server Error` | Unexpected server-side failure.                                            |
+```json
+[
+  {
+    "Name": "Void",
+    "DataType": {
+      "Identifier": "Void"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 > **Note**: A `200 OK` response contains no body—success is indicated solely by the HTTP status.
+
+The **CopyFile** API enables secure, server-side duplication of Excel files within or across cloud storage accounts. Ideal for batch operations, backup workflows, and file versioning, this RESTful endpoint operates entirely in the cloud—no local file handling required.
 
 ### Example: cURL Request
 

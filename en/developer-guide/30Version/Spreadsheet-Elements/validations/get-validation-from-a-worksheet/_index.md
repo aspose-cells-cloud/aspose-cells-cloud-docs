@@ -10,24 +10,27 @@ description: "Get a validation by zero-based index from a worksheet in Excel via
 weight: 100
 ArticleTitle: "Get Worksheet Validation by Index in Aspose.Cells Cloud REST API"
 ---
-
 The **GetWorksheetValidation** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations/{validationIndex}`) retrieves a specific data validation rule from an Excel worksheet by its zero-based index, enabling developers to inspect validation constraints such as formula, type, and error message. Aspose.Cells Cloud supports this operation as part of its REST API for spreadsheet automation, allowing programmatic access to worksheet-level validation metadata without requiring local Excel installation. Authentication requires a JWT token obtained via `/connect/token` and included in the `Authorization: Bearer <token>` header.
 
-## REST API
+## The Get Worksheet Validation Web API
 
-```bash
+```http
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations/{validationIndex}
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### **Request parameters**
 
-| Parameter Name  | Type    | Location | Description                                     |
-| --------------- | ------- | -------- | ----------------------------------------------- |
-| name            | string  | path     | The name of the workbook file.                  |
-| sheetName       | string  | path     | The name of the worksheet.                      |
-| validationIndex | integer | path     | Zero‑based index of the validation to retrieve. |
-| folder          | string  | query    | Folder that contains the workbook.              |
-| storageName     | string  | query    | Name of the storage service.                    |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The workbook name. |
+| sheetName | String | Path | The worksheet name. |
+| validationIndex | Integer | Path | The validation index. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/WorksheetValidations/GetWorksheetValidation) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -111,6 +114,37 @@ curl -v "https://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/v
 | 401         | Unauthorized – invalid or missing JWT token.                         |
 | 404         | Not found – workbook, worksheet, or validation index does not exist. |
 | 500         | Internal server error – unexpected condition.                        |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "ValidationResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "ValidationResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Cloud SDK Family
 

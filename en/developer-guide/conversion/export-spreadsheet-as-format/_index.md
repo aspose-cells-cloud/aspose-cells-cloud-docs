@@ -15,7 +15,6 @@ draft: false
 weight: 100
 ArticleTitle: "Export Excel Workbook to PDF, XLSX, CSV, HTML, JSON & More via Aspose.Cells Cloud API"
 ---
-
 The **ExportSpreadsheetAsFormat** API (`GET https://api.aspose.cloud/v4.0/cells/{name}`) in Aspose.Cells Cloud converts Excel workbooks stored in cloud storage to target formats such as PDF, XLSX, CSV, HTML, JSON, ODS, and TIFF without requiring local downloads, preserving formatting, formulas, and styling while improving performance for large files through remote processing.
 
 ## Overview
@@ -26,21 +25,74 @@ This document provides full API details, usage examples, best practices, and SDK
 
 ---
 
-## Prerequisites
+## The Export Spreadsheet as Format Web API
 
-- An active [Aspose Cloud account](https://dashboard.aspose.cloud/)
-- App SID and App Key (available in your Aspose Cloud Dashboard)
-- A workbook uploaded to your cloud storage (e.g., `MyWorkbook.xlsx`)
+```http
+GET https://api.aspose.cloud/v4.0/cells/{name}
+```
 
-> 💡 **Tip**: Use the [Cloud Explorer](https://dashboard.aspose.cloud/storage) to manage files in cloud storage.
+### Authentication
+
+All requests require a valid JWT token. Obtain one using your App SID and App Key via OAuth 2.0:
+
+```bash
+curl -v "https://api.aspose.cloud/connect/token" \
+  -X POST \
+  -d "grant_type=client_credentials&client_id=YOUR_APP_SID&client_secret=YOUR_APP_KEY" \
+  -H "Content-Type: application/x-www-form-urlencoded"
+```
+
+Include the token in the `Authorization: Bearer <ACCESS_TOKEN>` header.
 
 ---
 
-## API Endpoint
+### **Request Parameters:**
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | (Required) The name of the workbook file to be retrieved. |
+| format | String | Query | (Required) The desired output format (e.g., "Xlsx", "Pdf", "Csv"). |
+| folder | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| storageName | String | Query | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted. |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| fontsLocation | String | Query | Use Custom fonts. |
+| AutoRowsFit | Boolean | Query | (Optional) Autofits all rows in worksheets. |
+| AutoColumnsFit | Boolean | Query | (Optional) Autofits all columns in worksheets. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
+```
+
+**Sample response headers**
 
 ```http
-GET https://api.aspose.cloud/v4.0/cells/{name}?format={format}&folder={folder}&storageName={storageName}&outPath={outPath}&outStorageName={outStorageName}&fontsLocation={fontsLocation}&region={region}&password={password}&AutoRowsFit={autoRowsFit}&AutoColumnsFit={autoColumnsFit}
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
 ```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | Invalid url. |
+| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
+| 404 | Not Found | Source file not accessible. |
+| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining conversion data. |
 
 | Parameter        | Type    | Location | Required | Description                                                                                                                                                                                              |
 | :--------------- | :------ | :------- | :------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -55,21 +107,6 @@ GET https://api.aspose.cloud/v4.0/cells/{name}?format={format}&folder={folder}&s
 | `password`       | string  | Query    | ❌       | Password for encrypted Excel files.                                                                                                                                                                      |
 | `AutoRowsFit`    | boolean | Query    | ❌       | Whether to autofit all rows before export. Default: `false`.                                                                                                                                             |
 | `AutoColumnsFit` | boolean | Query    | ❌       | Whether to autofit all columns before export. Default: `false`.                                                                                                                                          |
-
----
-
-## Authentication
-
-All requests require a valid JWT token. Obtain one using your App SID and App Key via OAuth 2.0:
-
-```bash
-curl -v "https://api.aspose.cloud/connect/token" \
-  -X POST \
-  -d "grant_type=client_credentials&client_id=YOUR_APP_SID&client_secret=YOUR_APP_KEY" \
-  -H "Content-Type: application/x-www-form-urlencoded"
-```
-
-Include the token in the `Authorization: Bearer <ACCESS_TOKEN>` header.
 
 ---
 

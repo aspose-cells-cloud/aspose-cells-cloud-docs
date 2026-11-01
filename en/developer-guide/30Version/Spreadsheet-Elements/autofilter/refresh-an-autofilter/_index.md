@@ -10,20 +10,64 @@ keywords: "Aspose.Cells, AutoFilter, refresh, Excel, API, REST"
 description: "Refresh an existing AutoFilter in Excel using Aspose.Cells Cloud REST API with cURL or SDKs (C#, Java, Python, etc.)."
 ArticleTitle: "Refresh an Auto Filter in an Excel Worksheet"
 ---
-
 The **PostWorksheetAutoFilterRefresh** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/refresh`) in Aspose.Cells Cloud re-applies existing auto filter criteria to a worksheet after data changes—such as adding or deleting rows—without altering the filter definition itself, enabling developers to programmatically update filtered views in cloud-based Excel workbooks.
+
+## The Post Worksheet Auto Filter Refresh Web API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/refresh
+```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
+### **Request Parameters:**
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The workbook name. |
+| sheetName | String | Path | The worksheet name. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ### What does **Refresh** do?
 
 Calling the endpoint re‑applies the current filter criteria after the worksheet data has changed (e.g., rows added or removed). The operation does not modify the filter definition; it simply updates the view and returns a status response.
 
 ### REST API
-
 This REST API refreshes an auto‑filter on an Excel worksheet (API version **v3.0**).
-
-```bash
-POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/refresh
-```
 
 ### **Security and Authentication**
 

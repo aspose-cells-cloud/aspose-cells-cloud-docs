@@ -12,7 +12,6 @@ weight: 130
 linktitle: "Convert Worksheet to Image"
 ArticleTitle: "Convert Excel Worksheet to PDF, PNG, JPEG, SVG & More with Aspose.Cells Cloud API"
 ---
-
 The **GetWorksheetWithFormat** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}`) enables developers to extract and convert a specific worksheet from an Excel workbook (such as XLSX, XLS, CSV, etc.) into over 15 formats—including high-fidelity images like PNG, JPEG, SVG, and TIFF—by specifying the desired output format via the `format` query parameter.
 
 ## Overview
@@ -49,7 +48,67 @@ This API is ideal for:
 
 ---
 
-## REST API Endpoint
+## The Get Worksheet with Format Web API
+
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
+```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
+### **Request Parameters:**
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| format | String | Query | Export format(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers). |
+| verticalResolution | Integer | Query | Image vertical resolution. |
+| horizontalResolution | Integer | Query | Image horizontal resolution. |
+| area | String | Query | Represents the range to be printed. |
+| pageIndex | Integer | Query | Represents the page to be printed |
+| onePagePerSheet | Boolean | Query | - |
+| printHeadings | Boolean | Query | - |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+
+### Response
+
+```json
+[
+  {
+    "Name": "Stream",
+    "DataType": {
+      "Identifier": "File"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+#### Sample Response (HTTP 200)
+
+
+---
 
 ### Request
 
@@ -95,24 +154,6 @@ curl -v "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1?for
 ```
 
 > ✅ **Tip**: Use `-H "Accept: application/octet-stream"` to ensure the binary image is saved directly.
-
----
-
-### Response
-
-| Status Code | Description                                    | Return Type                |
-| ----------- | ---------------------------------------------- | -------------------------- |
-| **200**     | Conversion succeeded; binary output returned.  | `application/octet-stream` |
-| **400**     | Invalid parameters (e.g., unsupported format). | JSON error object          |
-| **401**     | Missing/invalid JWT token.                     | JSON error object          |
-| **404**     | Workbook or worksheet not found.               | JSON error object          |
-| **500**     | Server-side processing failure.                | JSON error object          |
-
-#### Sample Response (HTTP 200)
-
-```
-[Binary PNG stream — save to file as `converted_sheet.png`]
-```
 
 ---
 

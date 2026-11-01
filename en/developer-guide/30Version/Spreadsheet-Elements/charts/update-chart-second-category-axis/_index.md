@@ -8,10 +8,9 @@ description: "Learn how to update the second category axis of a chart in an Exce
 ArticleTitle: "Update Chart Second Category Axis – Aspose.Cells Cloud API"
 linktitle: "Update Second Category Axis"
 ---
-
 The **PostChartSecondCategoryAxis** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/secondcategoryaxis`) updates the second category axis of a chart in Aspose.Cells Cloud, enabling precise control over axis formatting and scale by sending an axis configuration object in the request body.
 
-## PostChartSecondCategoryAxis API
+## The Post Chart Second Category Axis Web API
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/secondcategoryaxis
@@ -23,14 +22,14 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request parameters
 
-| Parameter Name | Type    | Location | Description                                            |
-| -------------- | ------- | -------- | ------------------------------------------------------ |
-| name           | string  | path     | The name of the Excel file.                            |
-| sheetName      | string  | path     | The worksheet name that contains the chart.            |
-| chartIndex     | integer | path     | The zero‑based index of the chart to be updated.       |
-| axis           | object  | body     | The second‑category‑axis object with the new settings. |
-| folder         | string  | query    | The folder path where the file is stored.              |
-| storageName    | string  | query    | The name of the storage service.                       |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| chartIndex | Integer | Path | The chart index. |
+| axis | class:axis | HTTPBody | Axis |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 **Authentication** – The API requires a valid OAuth 2.0 access token. Generate a JWT token by following the [Authentication Guide]（https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/）. Include the token in the `Authorization` header as shown in the cURL example below.
 
@@ -80,12 +79,6 @@ _Replace `{name}`, `{sheetName}`, `{chartIndex}`, `{folder}`, and `{storageName}
 
 **Error responses**
 
-| Status Code | Description                                                         |
-| ----------- | ------------------------------------------------------------------- |
-| 400         | Bad request – missing or invalid parameters.                        |
-| 401         | Unauthorized – invalid or missing JWT token.                        |
-| 404         | Not found – the specified file, worksheet, or chart does not exist. |
-| 500         | Internal server error – unexpected condition on the server.         |
 
 ```json
 {
@@ -97,6 +90,38 @@ _Replace `{name}`, `{sheetName}`, `{chartIndex}`, `{folder}`, and `{storageName}
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Cloud SDK Family
 

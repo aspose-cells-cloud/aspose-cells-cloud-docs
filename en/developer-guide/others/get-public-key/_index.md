@@ -18,21 +18,52 @@ description: "Get 2048-bit RSA public key from Aspose.Cells Cloud API via OAuth2
 weight: 100
 ArticleTitle: "Get RSA 2048-bit Public Key from Aspose.Cells Cloud API"
 ---
-
 The **GetPublicKey** API (`GET https://api.aspose.cloud/v4.0/cells/publickey`) retrieves the 2048-bit RSA public key used by Aspose.Cells Cloud for encrypting sensitive data prior to transmission; this asymmetric public key enables clients to securely encrypt payloads before sending them to the service, supporting end-to-end data protection as part of the API’s OAuth2-secured workflow.
 
-## Prerequisites
+## The Get Public Key Web API
 
-Before calling this endpoint, ensure you have:
-
-- A valid OAuth2 access token with the `Cells.Read` scope
-- An understanding of [JWT-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)
-
-## Endpoint
-
-```
+```http
 GET https://api.aspose.cloud/v4.0/cells/publickey
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
+### **Request Parameters:**
+
+This operation does not require request parameters.
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudPublicKeyResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudPublicKeyResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Request
 

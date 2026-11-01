@@ -18,7 +18,6 @@ weight: 100
 type: docs
 ArticleTitle: "Merge Spreadsheets in Remote Aspose.Cells Cloud Folder"
 ---
-
 The **MergeSpreadsheetsInRemoteFolder** API (`PUT https://api.aspose.cloud/v4.0/cells/merge/remote-spreadsheets`) enables Aspose.Cells Cloud users to merge multiple spreadsheet files stored in a remote cloud storage folder into a single output file—fully in the cloud—without downloading files locally, supporting over 30 output formats including XLSX, CSV, PDF, ODS, JSON, and XPS.
 
 ## Overview
@@ -31,7 +30,7 @@ Key benefits:
 - **Flexible formatting**: Choose between consolidating all data into one worksheet or preserving per-file sheets.
 - **Locale-aware output**: Apply region-specific number, date, and currency formatting.
 
-## API Endpoint
+## The Merge Spreadsheets in Remote Folder Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/merge/remote-spreadsheets
@@ -41,20 +40,52 @@ PUT https://api.aspose.cloud/v4.0/cells/merge/remote-spreadsheets
 
 All requests require JWT token-based authentication. See [Authenticating API Requests](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) for setup instructions.
 
-## Request Parameters
+### Request Parameters
 
-| Parameter             | Type      | Location | Required | Description                                                                                                                                  |
-| --------------------- | --------- | -------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| `folder`              | `string`  | Query    | ✅ Yes   | Cloud storage folder containing source spreadsheets.                                                                                         |
-| `fileMatchExpression` | `string`  | Query    | ❌ No    | Pattern to match files (e.g., `*report*.xlsx`). Supports `*` (any characters) and `?` (single character). Defaults to all files in `folder`. |
-| `outFormat`           | `string`  | Query    | ❌ No    | Output format: `PDF`, `CSV`, `JSON`, `XLSX`, `ODS`, `XPS`, etc. Default: `XLSX`.                                                             |
-| `mergeInOneSheet`     | `boolean` | Query    | ❌ No    | `true`: All data merged into one worksheet. `false`: Each source file → its own worksheet. Default: `false`.                                 |
-| `storageName`         | `string`  | Query    | ❌ No    | Custom storage name. Omit to use primary storage.                                                                                            |
-| `outPath`             | `string`  | Query    | ❌ No    | Destination folder for the merged file. Omit to save in `folder`.                                                                            |
-| `outStorageName`      | `string`  | Query    | ❌ No    | Storage where the output file is saved. Omit to use `storageName`.                                                                           |
-| `fontsLocation`       | `string`  | Query    | ❌ No    | Path to custom fonts folder (required for PDF/image exports).                                                                                |
-| `region`              | `string`  | Query    | ❌ No    | Locale for formatting (e.g., `en-US`, `de-DE`, `fr-FR`).                                                                                     |
-| `password`            | `string`  | Query    | ❌ No    | Password to decrypt protected source spreadsheets.                                                                                           |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| folder | String | Query | The folder used to store the merged files. |
+| fileMatchExpression | String | Query | - |
+| outFormat | String | Query | The out file format. |
+| mergeInOneSheet | Boolean | Query | Whether to combine all data into a single worksheet. |
+| storageName | String | Query | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted. |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| fontsLocation | String | Query | Use Custom fonts. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | Invalid url. |
+| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
+| 404 | Not Found | Source file not accessible. |
+| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining data. |
 
 ## Example Request (cURL)
 

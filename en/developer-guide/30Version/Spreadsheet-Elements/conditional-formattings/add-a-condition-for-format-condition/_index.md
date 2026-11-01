@@ -10,25 +10,64 @@ weight: 40
 linktitle: "Add Condition"
 ArticleTitle: "Add Condition to Conditional Formatting in Excel using Aspose.Cells Cloud API"
 ---
-
-
 The **PutWorksheetFormatConditionCondition** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}/condition`) enables developers to add a new condition to an existing conditional formatting rule in a worksheet by specifying the condition type (e.g., CellValue, Expression), operator (e.g., GreaterThan, Between), and one or two formulas via query parameters; this Aspose.Cells Cloud REST API v3.0 operation supports precise, programmatic control over conditional formatting logic without requiring local Excel installations.
 
 ---
 
-## Prerequisites
+## The Put Worksheet Format Condition Condition Web API
 
-| Requirement | Details |
-|-------------|---------|
-| **Authentication** | A valid JWT access token (Bearer) obtained via the OAuth 2.0 flow. |
-| **API Version** | v3.0 – the endpoint URL contains `/v3.0/`. |
-| **Storage** | The workbook must reside in a storage location accessible to Aspose.Cells Cloud (default is `Default`). |
-| **Permissions** | Read/Write permission on the target workbook. |
-| **Supported Formats** | Any workbook format supported by Aspose.Cells (e.g., `.xlsx`, `.xls`, `.xlsm`). |
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}/condition
+```
 
----
+### **Security and Authentication**
 
-## Endpoint
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
+### **Request Parameters:**
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| index | Integer | Path | Gets the Conditional Formatting element at the specified index. |
+| type | String | Query | Format condition type(CellValue/Expression/ColorScale/DataBar/IconSet/Top10/UniqueValues/DuplicateValues/ContainsText/NotContainsText/BeginsWith/EndsWith/ContainsBlanks/NotContainsBlanks/ContainsErrors/NotContainsErrors/TimePeriod/AboveAverage). |
+| operatorType | String | Query | Represents the operator type of conditional format and data validation(Between/Equal/GreaterThan/GreaterOrEqual/LessThan/None/NotBetween/NotEqual). |
+| formula1 | String | Query | The value or expression associated with conditional formatting. |
+| formula2 | String | Query | The value or expression associated with conditional formatting. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 **HTTP Method:** `PUT`  
 **URL:**  

@@ -13,38 +13,67 @@ weight: 39
 type: docs
 ArticleTitle: "Clear Excel Objects with Aspose.Cells Cloud REST API"
 ---
-
 The **PostClearObjects** API (`POST https://api.aspose.cloud/v3.0/cells/clearobjects`) enables developers to clear specific internal elements—such as charts, comments, shapes, pivot tables, hyperlinks, or validation rules—from Excel workbooks via Aspose.Cells Cloud, returning a cleaned workbook in a requested output format like XLSX, PDF, or CSV, with optional scope control via sheet name and support for password-protected files.
 
-## Prerequisites
+## The Post Clear Objects Web API
 
-- Aspose.Cells Cloud API key and app SID (see [Get Your API Keys](/get-your-api-keys/))
-- A local Excel file (e.g., `sample.xlsx`)
-- For authenticated requests: JWT token or `appSid` + `apiKey` pair
-- Max file size per request: **2 GB**
-
-> **Note**: The `objecttype` parameter supports multiple values (comma-separated) for bulk operations. Clarification for ambiguous types (e.g., `background`) is provided in the parameter table below.
-
----
-
-## REST API Endpoint
-
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/clearobjects
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### Request Parameters
 
-| Parameter | Type | Location | Required | Default | Allowed Values | Description |
-|-----------|------|----------|----------|---------|----------------|-------------|
-| `File` | file | form-data | Yes | — | — | The Excel file(s) to upload (supports multipart uploads) |
-| `objecttype` | string | query | Yes (if no default behavior intended) | — | `duplicaterows`, `blankcolumns`, `blankrows`, `formula`, `content`, `style`, `chart`, `comment`, `picture`, `shape`, `listobject`, `hyperlink`, `oleobject`, `pivottable`, `validation`, `background` | Types of objects to clear. **Note**: `background` clears background images or fill colors (not text background). |
-| `sheetname` | string | query | No | — | — | Scope the deletion to a specific worksheet by name. |
-| `outFormat` | string | query | No | Original file format | `CSV`, `XLS`, `HTML`, `MHTML`, `ODS`, `PDF`, `XML`, `TXT`, `TIFF`, `XLSB`, `XLSM`, `XLSX`, `XLTM`, `XLTX`, `XPS`, `PNG`, `JPG`, `JPEG`, `GIF`, `EMF`, `BMP`, `MD`, `Numbers` | Output format of the processed file. |
-| `password` | string | query | No | — | — | Password required to open the encrypted Excel file. |
-| `checkExcelRestriction` | boolean | query | No | `true` | `true`, `false` | Whether to enforce Excel editing restrictions when modifying cells related to the cleared objects. |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| File | File | FormData | File to upload |
+| objecttype | String | Query | chart/comment/picture/shape/listobject/hyperlink/oleobject/pivottable/validation/Background |
+| sheetname | String | Query | The worksheet name, specify the scope of the deletion. |
+| outFormat | String | Query | The output data file format.(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers) |
+| password | String | Query | The password needed to open an Excel file. |
+| checkExcelRestriction | Boolean | Query | Whether check restriction of excel file when user modify cells related objects. |
+| region | String | Query | The regional settings for workbook. |
 
 > **Note**: While `File` and `objecttype` are both marked as required in the API spec, `objecttype` may be optional if you intend to clear *all* supported objects (behavior depends on backend defaults). For clarity and predictability, always specify `objecttype`.
+
+---
+
+### Example Response
+
+```json
+[
+  {
+    "Name": "FilesResult",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "FilesResult"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+> **Note**: The response returns Base64-encoded content for all processed files. For large files, consider using the `disk` or `folder` parameters (if supported in future versions) or streaming the response.
 
 ---
 
@@ -58,24 +87,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/clearobjects?objecttype=comment,cha
   -H "Authorization: Bearer <your_jwt_token>" \
   -F "File=@sample.xlsx"
 ```
-
-### Example Response
-
-```json
-{
-  "Files": [
-    {
-      "Filename": "sample.xlsx",
-      "FileSize": 274022,
-      "FileContent": "UEsDBBQABgAIAAAAIQDf... (truncated Base64)"
-    }
-  ]
-}
-```
-
-> **Note**: The response returns Base64-encoded content for all processed files. For large files, consider using the `disk` or `folder` parameters (if supported in future versions) or streaming the response.
-
----
 
 ## Cloud SDK Family
 

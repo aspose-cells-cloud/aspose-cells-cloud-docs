@@ -10,12 +10,11 @@ description: "Export Excel OLE objects to PDF, PNG, DOCX, or PPTX using Aspose.C
 weight: 100
 ArticleTitle: "Export OLE Object – Aspose.Cells Cloud API"
 ---
-
 The **PostExport** API (`POST https://api.aspose.cloud/v3.0/cells/export`) enables export of Excel internal elements—such as worksheets, charts, or OLE objects—or entire workbooks to numerous formats including PDF, CSV, HTML, PNG, and others. This RESTful operation accepts a file upload via form data and supports optional query parameters like `objectType` and `format` to specify the export target and output type. Aspose.Cells Cloud handles the complexity of format conversion securely, requiring only JWT token-based authentication, and delivers results in a structured `FilesResult` response.
 
-## **REST API**
+## The Post Export Web API
 
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/export
 ```
 
@@ -25,42 +24,49 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter      | Location  | Type   | Required | Description                                                                    |
-| -------------- | --------- | ------ | -------- | ------------------------------------------------------------------------------ |
-| `file`         | Form‑data | file   | Yes      | The Excel workbook (`.xlsx`, `.xls`, etc.) that contains the OLE objects.      |
-| `outputFormat` | Query     | string | Yes      | Target format for the exported objects (`pdf`, `png`, `jpeg`, `docx`, `pptx`). |
-| `objectType`   | Query     | string | Yes      | Fixed value `oleobject`.                                                       |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| File | File | FormData | File to upload |
+| objectType | String | Query | Exported object type:workbook/worksheet/chart/comment/picture/shape/listobject/oleobject. |
+| format | String | Query | The conversion format(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers). |
+| password | String | Query | The password needed to open an Excel file. |
+| checkExcelRestriction | Boolean | Query | Whether check restriction of excel file when user modify cells related objects. |
+| region | String | Query | The regional settings for workbook. |
+| FontsLocation | String | Query | Use Custom fonts. |
 
 ### Response
 
-A successful request returns a JSON object that lists the exported files:
-
 ```json
-{
-  "Files": [
-    {
-      "Filename": "OLESlide.ppt",
-      "FileSize": 390,
-      "FileContent": "-----Base64String--------"
-    },
-    {
-      "Filename": "OLEDoc.docx",
-      "FileSize": 382,
-      "FileContent": "-----Base64String--------"
+[
+  {
+    "Name": "FilesResult",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "FilesResult"
     }
-  ]
-}
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
 ```
 
 **HTTP Status Codes**
 
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+A successful request returns a JSON object that lists the exported files:
 
 ## How to Use the PostExport API with SDKs
 

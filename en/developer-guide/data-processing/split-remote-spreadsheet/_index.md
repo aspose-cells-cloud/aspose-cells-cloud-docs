@@ -18,22 +18,9 @@ weight: 100
 keywords: Aspose.Cells Cloud, split Excel workbook, spreadsheet splitter, cloud API, export to PDF, export to CSV, export to JSON, multiple format export, cloud spreadsheet processing
 ArticleTitle: "Split Excel Workbook in Cloud with Aspose.Cells Cloud API"
 ---
-
 The **SplitRemoteSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/{name}/split/spreadsheet`) in Aspose.Cells Cloud v4.0 splits a remote spreadsheet file stored in cloud storage into multiple output files in formats such as XLSX, CSV, or PDF, based on user-defined criteria like worksheet ranges or custom paths, enabling remote processing without local file downloads.
 
-## Prerequisites
-
-- An Aspose.Cells Cloud account and API credentials ([get free trial](https://purchase.aspose.cloud/temporary-license)).
-- Install the SDK for your preferred language (see [Aspose.Cells Cloud SDKs on GitHub](https://github.com/aspose-cells-cloud)).
-- Enable cloud storage access (e.g., Aspose Cloud Storage, Google Drive, or Amazon S3).
-
-## Split Remote Spreadsheet API
-
-This documentation applies to Aspose.Cells Cloud API v4.0 (released May 2024). For migration from v3.x, see [API Versioning Guide](https://docs.aspose.cloud/total/api-versioning/).
-
-Use the Aspose.Cells Cloud API to split an Excel workbook stored in cloud storage into separate worksheet files and export each to over 30 formats such as PDF, CSV, JSON, XLSX, HTML, ODS, and XPS.
-
-### Web API
+## The Split Remote Spreadsheet Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/{name}/split/spreadsheet
@@ -45,38 +32,56 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 
 ### Request Parameters
 
-| Parameter Name   | Type    | Location | Description                                                                                                                                  |
-| :--------------- | :------ | :------- | :------------------------------------------------------------------------------------------------------------------------------------------- |
-| `name`           | String  | Path     | The name of the workbook file (e.g., `data.xlsx`) to be split, located in the specified cloud storage folder.                                |
-| `folder`         | String  | Query    | The cloud storage folder path where the source workbook is stored.                                                                           |
-| `from`           | Integer | Query    | The starting worksheet index (0‑based) for the split operation. For example, `from=0` indicates the first worksheet.                         |
-| `to`             | Integer | Query    | The ending worksheet index (0‑based) for the split operation. For example, `from=0` and `to=2` splits worksheets 0, 1, and 2 (inclusive).    |
-| `outFormat`      | String  | Query    | The output file format for the split files. Supported formats include `XLSX`, `PDF`, `CSV`, `JSON`, `HTML`, and 30+ others. Default: `XLSX`. |
-| `storageName`    | String  | Query    | _(Optional)_ The name of the cloud storage where the source workbook resides. If omitted, the default cloud storage is used.                 |
-| `outPath`        | String  | Query    | _(Optional)_ The target cloud folder path where the split files will be saved. If omitted, files are saved in the source folder.             |
-| `outStorageName` | String  | Query    | The name of the cloud storage where the output split files will be stored.                                                                   |
-| `fontsLocation`  | String  | Query    | _(Optional)_ Specifies a custom cloud folder path containing font files for proper text rendering in PDF/image outputs.                      |
-| `region`         | String  | Query    | _(Optional)_ Sets the locale for formatting numbers, dates, and currency in the output files (e.g., `"en-US"`, `"zh-CN"`, `"de-DE"`).        |
-| `password`       | String  | Query    | _(Optional)_ If the source workbook is password‑protected, provide the password to open the file.                                            |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The name of the workbook file to be split. |
+| folder | String | Query | The folder path where the workbook is stored. |
+| from | Integer | Query | Begin worksheet index. |
+| to | Integer | Query | End worksheet index. |
+| outFormat | String | Query | The desired output format (e.g., "Xlsx", "Pdf", "Csv"). |
+| storageName | String | Query | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted. |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| fontsLocation | String | Query | Use Custom fonts. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
 
 ### Response
 
 ```json
-{
-  "type": "FileContentResult",
-  "fileContents": "byte[] (Base64 encoded)",
-  "contentType": "MIME type",
-  "fileDownloadName": "optional file name"
-}
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
 ```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | Invalid url. |
+| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
+| 404 | Not Found | Source file not accessible. |
+| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining data. |
 
 The file can be downloaded directly or saved to the location specified by `outPath`.
 
 #### Success Response Details
 
-| Status Code | Content-Type               | Description                         |
-| ----------- | -------------------------- | ----------------------------------- |
-| 200 OK      | `application/octet-stream` | Binary stream of the split file(s). |
 
 #### HTTP Status Codes
 
@@ -87,6 +92,10 @@ The file can be downloaded directly or saved to the location specified by `outPa
 | 401  | Unauthorized          | Invalid or missing JWT token.                                          |
 | 404  | Not Found             | Source file not found in storage or inaccessible.                      |
 | 500  | Internal Server Error | Unexpected server error during processing (e.g., file corruption).     |
+
+This documentation applies to Aspose.Cells Cloud API v4.0 (released May 2024). For migration from v3.x, see [API Versioning Guide](https://docs.aspose.cloud/total/api-versioning/).
+
+Use the Aspose.Cells Cloud API to split an Excel workbook stored in cloud storage into separate worksheet files and export each to over 30 formats such as PDF, CSV, JSON, XLSX, HTML, ODS, and XPS.
 
 ## Use Cases: Split Excel Files in the Cloud
 

@@ -10,14 +10,11 @@ description: "Delete Excel pivot table by index using Aspose.Cells Cloud REST AP
 weight: 70
 ArticleTitle: "How to Delete a Pivot Table in an Excel Worksheet with Aspose.Cells Cloud"
 ---
-
 The **DeleteWorksheetPivotTable** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}`) enables developers to remove a specific PivotTable from a worksheet by its zero-based index using Aspose.Cells Cloud’s REST interface, supporting robust programmatic manipulation of spreadsheet data without requiring local software installation.
-
-**Prerequisites** – You must have a valid JWT access token for Aspose.Cells Cloud and the target Excel file stored in a supported storage location. Ensure the file name, worksheet name, and storage details are correctly specified before invoking the API.
 
 Pivot tables are a powerful way to summarise data in an **Excel worksheet**. Using Aspose.Cells Cloud, you can programmatically remove an unwanted pivot table with a single HTTP DELETE request. This operation is ideal when you need to clean up worksheets, automate report generation, or integrate Excel manipulation into your applications.
 
-## DeleteWorksheetPivotTable API
+## The Delete Worksheet Pivot Table Web API
 
 ```http
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}
@@ -29,13 +26,13 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Request parameters**
 
-| Parameter Name  | Type    | Location | Description                                          |
-| --------------- | ------- | -------- | ---------------------------------------------------- |
-| name            | string  | path     | Name of the Excel document.                          |
-| sheetName       | string  | path     | Name of the worksheet that contains the pivot table. |
-| pivotTableIndex | integer | path     | Zero‑based index of the pivot table to delete.       |
-| folder          | string  | query    | Path to the folder where the document is stored.     |
-| storageName     | string  | query    | Name of the storage service.                         |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| pivotTableIndex | Integer | Path | Gets the PivotTable report by index. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PivotTables/DeleteWorksheetPivotTable) defines a publicly accessible programming interface and allows you to carry out REST interactions directly from a web browser.
 
@@ -78,6 +75,27 @@ The response follows a simple JSON schema:
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
 
 ### Error handling
 

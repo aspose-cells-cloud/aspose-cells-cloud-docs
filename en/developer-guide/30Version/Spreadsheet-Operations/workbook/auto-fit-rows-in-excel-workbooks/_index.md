@@ -10,16 +10,63 @@ description: "Learn to automatically adjust row heights in an Excel workbook usi
 weight: 90
 ArticleTitle: "Autofit Rows on an Excel Workbook – Aspose.Cells Cloud API"
 ---
-
 The **PostAutofitWorkbookRows** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/autofitrows`) enables Aspose.Cells Cloud users to automatically adjust row heights in an Excel workbook to fit their contents, supporting optional range specification via `startRow`, `endRow`, `firstColumn`, and `lastColumn` query parameters. Prior to calling the API, ensure you have obtained a valid Bearer JWT token from Aspose's authentication service and that the target workbook is accessible in either the default or a configured custom storage location. The operation accepts the workbook's filename in the path and allows fine-grained control over which rows and columns to autofit, including an `onlyAuto` flag to restrict adjustments to rows already marked for auto-fitting.
 
 This REST API enables you to **autofit rows** in an Excel workbook, automatically adjusting row height after data is inserted or modified.
 
-## REST API
+## The Post Autofit Workbook Rows Web API
 
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/autofitrows
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
+### **Request Parameters:**
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| startRow | Integer | Query | Start row. |
+| endRow | Integer | Query | End row. |
+| onlyAuto | Boolean | Query | Only auto. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+| firstColumn | Integer | Query | First column index. |
+| lastColumn | Integer | Query | Last column index. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 The request parameters include:
 
@@ -37,15 +84,6 @@ The request parameters include:
 
 **AutoFitterOptions** is an object that specifies how the autofit operation behaves (e.g., `AutoFitMergedCells`, `IgnoreHidden`).
 
-**HTTP Status Codes**
-
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostAutofitWorkbookRows) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

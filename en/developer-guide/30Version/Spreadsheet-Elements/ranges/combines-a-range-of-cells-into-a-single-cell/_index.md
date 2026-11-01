@@ -10,26 +10,29 @@ description: "Merge Excel ranges into a single cell via Aspose.Cells Cloud REST 
 weight: 100
 ArticleTitle: "Merge Excel Cell Ranges with Aspose.Cells Cloud REST API"
 ---
-
 The **PostWorksheetCellsRangeMerge** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/merge`) enables merging a specified range of cells into a single cell in an Excel worksheet via Aspose.Cells Cloud, supporting operations such as combining multi-cell content while preserving formatting and structure through its robust REST interface.
 
 **Overview** – Merging a range combines the selected cells into one cell, preserving the value of the upper‑left cell and discarding the rest. Use this operation when you need to create a header that spans multiple columns or rows, or when you want to simplify the layout of a worksheet.
 
-## REST API
+## The Post Worksheet Cells Range Merge Web API
 
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/merge
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### **Request parameters**
 
-| Parameter Name  | Type   | Location | Description                                         |
-| --------------- | ------ | -------- | --------------------------------------------------- |
-| **name**        | string | path     | Workbook name.                                      |
-| **sheetName**   | string | path     | Worksheet name.                                     |
-| **range**       | object | body     | Range object that specifies the cells to be merged. |
-| **folder**      | string | query    | Folder where the workbook is stored.                |
-| **storageName** | string | query    | Name of the storage.                                |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| range | class:range | HTTPBody | Rangerange description. |
+| folder | String | Query | Original workbook folder. |
+| storageName | String | Query | Storage name. |
 
 #### Request Body Schema
 
@@ -91,6 +94,38 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/
 | **401 Unauthorized**          | Missing or invalid JWT token.                           | `{ "Code": 401, "Message": "Authentication failed." }` |
 | **404 Not Found**             | Workbook or worksheet not found.                        | `{ "Code": 404, "Message": "Resource not found." }`    |
 | **500 Internal Server Error** | Unexpected server error.                                | `{ "Code": 500, "Message": "Internal server error." }` |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Cloud SDK Family
 

@@ -9,10 +9,9 @@ keywords: "Aspose.Cells, Excel to PDF, worksheet conversion, REST API, cloud con
 description: "Convert an Excel worksheet to PDF using Aspose.Cells Cloud API v4 with REST, cURL, or SDKs (C#, Java, Python, etc.)."
 weight: 100
 ---
-
 The **ConvertWorksheetToPdf** API (`PUT https://api.aspose.cloud/v4.0/cells/convert/worksheet/pdf`) in Aspose.Cells Cloud converts a specified worksheet from a locally uploaded Excel file directly into a PDF document, enabling cloud-native conversion without requiring the file to be stored in cloud storage first.
 
-## Convert a Worksheet to PDF
+## The Convert Worksheet to PDF Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/convert/worksheet/pdf

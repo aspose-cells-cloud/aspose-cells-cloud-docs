@@ -10,16 +10,9 @@ description: "Add a pivot table to an Excel worksheet using Aspose.Cells Cloud R
 weight: 30
 ArticleTitle: "How to Add a Pivot Table in an Excel Worksheet using Aspose.Cells Cloud"
 ---
-
 The **PutWorksheetPivotTable** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables`) in Aspose.Cells Cloud adds a PivotTable to a specified worksheet, supporting parameters such as `sourceData`, `destCellName`, and `tableName` to define the PivotTable’s data source, position, and name; this enables programmatic creation of complex summary reports without manual Excel interaction.
 
-**Prerequisites:**
-
-- An Aspose.Cells Cloud account with a valid JWT access token.
-- The target workbook must be stored in a supported storage location (default storage or a user‑specified storage).
-- The worksheet specified by `sheetName` must exist in the workbook.
-
-## PutWorksheetPivotTable API
+## The Put Worksheet Pivot Table Web API
 
 ```http
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
@@ -31,17 +24,16 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Request parameters**
 
-| Parameter Name | Type    | Location | Description                                                                                                                         |
-| -------------- | ------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| name           | string  | path     | The name of the Excel document.                                                                                                     |
-| sheetName      | string  | path     | The name of the worksheet where the pivot table will be created.                                                                    |
-| request        | object  | body     | `CreatePivotTableRequest` DTO containing the pivot table definition.                                                                |
-| folder         | string  | query    | The folder that contains the document.                                                                                              |
-| storageName    | string  | query    | The name of the storage where the document is located.                                                                              |
-| sourceData     | string  | query    | The range that provides the source data for the new pivot table cache (e.g., `A5:E10`).                                             |
-| destCellName   | string  | query    | The address of the upper‑left cell of the destination range for the pivot table report.                                             |
-| tableName      | string  | query    | The name assigned to the new pivot table.                                                                                           |
-| useSameSource  | boolean | query    | When `true`, the new pivot table reuses an existing data source, saving memory if another pivot table has already used this source. |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| folder | String | Query | The folder where the file is situated. |
+| sourceData | String | Query | The data for the new PivotTable cache. |
+| destCellName | String | Query | The cell in the upper-left corner of the destination range for the PivotTable report. |
+| tableName | String | Query | The name of the new PivotTable. |
+| useSameSource | Boolean | Query | Indicates whether using same data source when another existing PivotTable has used this data source. If the property is true, it will save memory. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PivotTables/PutWorksheetPivotTable) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -77,15 +69,36 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/She
 
 {{< /tabs >}}
 
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
 **HTTP Status Codes**
 
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Cloud SDK Family
 

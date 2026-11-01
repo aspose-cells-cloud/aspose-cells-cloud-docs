@@ -10,24 +10,27 @@ description: "Rename an Excel worksheet via Aspose.Cells Cloud REST API with cUR
 weight: 100
 ArticleTitle: "Rename Excel Worksheet via Aspose.Cells Cloud REST API & SDKs"
 ---
-
 The **PostRenameWorksheet** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/rename`) enables renaming an Excel worksheet within a workbook stored in the cloud by specifying the original worksheet name and a new name, using Aspose.Cells Cloud’s REST API to handle this common but often complex task efficiently.
 
-## REST API
+## The Post Rename Worksheet Web API
 
-```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/rename
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/rename
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
 
 ### **Request parameters**
 
-| Parameter Name | Type   | Location | Description                                  |
-| -------------- | ------ | -------- | -------------------------------------------- |
-| name           | string | path     | The name of the Excel file.                  |
-| sheetName      | string | path     | The current name of the worksheet to rename. |
-| newname        | string | query    | The new name for the worksheet.              |
-| folder         | string | query    | Folder path in storage (optional).           |
-| storageName    | string | query    | Name of the storage (optional).              |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| newname | String | Query | New worksheet name. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostRenameWorksheet) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -59,6 +62,37 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Shee
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Cloud SDK Family
 

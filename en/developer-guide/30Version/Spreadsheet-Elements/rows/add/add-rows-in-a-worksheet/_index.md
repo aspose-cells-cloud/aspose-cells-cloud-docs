@@ -9,13 +9,12 @@ keywords: "Aspose.Cells Cloud, insert rows, Excel worksheet, REST API, SDK, add 
 description: "Add rows to Excel worksheet via Aspose.Cells Cloud API PutInsertWorksheetRows endpoint with parameters and SDK examples"
 weight: 100
 ---
-
 The **PutInsertWorksheetRows** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows`) in Aspose.Cells Cloud v3.0 inserts one or more new rows into a specified Excel worksheet starting at a given row index, enabling dynamic worksheet expansion while optionally updating references in other sheets.
 
-## PutInsertWorksheetRows API
+## The Put Insert Worksheet Rows Web API
 
 ```http
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
 ```
 
 ### **Security and Authentication**
@@ -24,15 +23,15 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Request parameters**
 
-| Parameter Name  | Type    | Location | Description                                                            |
-| --------------- | ------- | -------- | ---------------------------------------------------------------------- |
-| name            | string  | path     | The workbook name.                                                     |
-| sheetName       | string  | path     | The worksheet name.                                                    |
-| startrow        | integer | query    | The index of the first row to be inserted (**0‑based**).               |
-| totalRows       | integer | query    | The number of rows to insert.                                          |
-| updateReference | boolean | query    | Whether to update cell references after insertion (`true` or `false`). |
-| folder          | string  | query    | The folder that contains the document.                                 |
-| storageName     | string  | query    | The storage name.                                                      |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| startrow | Integer | Query | The begin row index to be operated. |
+| totalRows | Integer | Query | Number of rows to be operated. |
+| updateReference | Boolean | Query | Indicates if update references in other worksheets. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 **Prerequisites**  
 The workbook must already exist in the specified storage (or folder) before invoking this operation.
@@ -82,6 +81,37 @@ _Possible response codes_
 {{< /tabs >}}
 
 For further operations on rows, see the related pages: **Delete rows**, **Get rows**, and **Copy rows**.
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Cloud SDK Family
 

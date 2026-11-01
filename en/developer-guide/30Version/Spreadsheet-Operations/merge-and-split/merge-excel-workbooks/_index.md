@@ -10,14 +10,11 @@ description: "Merge Excel workbooks using Aspose.Cells Cloud API with JWT auth a
 ArticleTitle: "Merge an Excel Workbook into Another Workbook using Aspose.Cells Cloud API"
 weight: 50
 ---
-
 The **PostWorkbooksMerge** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/merge`) enables developers to programmatically merge a secondary Excel workbook into an existing workbook stored in the cloud using Aspose.Cells Cloud, supporting operations like combining multiple workbooks into a single file while preserving formatting and structure.
 
-## REST API
+## The Post Workbooks Merge Web API
 
-This REST API merges an Excel **workbook** into another workbook.
-
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/merge
 ```
 
@@ -27,139 +24,46 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Query Parameter**
 
-| Parameter Name | Type   | Description                                                 |
-| -------------- | ------ | ----------------------------------------------------------- |
-| folder         | string | Folder containing the original workbook.                    |
-| storageName    | string | Name of the storage.                                        |
-| **mergeWith**  | string | Name of the workbook to be merged into the target workbook. |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| mergeWith | String | Query | The workbook to merge with. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+| mergedStorageName | String | Query | Storage name. |
 
 ### **Response**
 
 ```json
-{
-  "Status": "OK",
-  "Code": 200,
-  "Workbook": {
-    "FileName": "test.xlsx",
-    "Links": [
-      {
-        "Href": "/test.xlsx",
-        "Rel": "self",
-        "Title": null,
-        "Type": null
-      },
-      {
-        "Href": "/test.xlsx",
-        "Rel": "alternate",
-        "Title": "Download As CSV",
-        "Type": "text/csv"
-      },
-      {
-        "Href": "/test.xlsx",
-        "Rel": "alternate",
-        "Title": "Download As HTML",
-        "Type": "text/html"
-      },
-      {
-        "Href": "/test.xlsx",
-        "Rel": "alternate",
-        "Title": "Download As ODS",
-        "Type": "application/vnd.oasis.opendocument.spreadsheet"
-      },
-      {
-        "Href": "/test.xlsx",
-        "Rel": "alternate",
-        "Title": "Download As PDF",
-        "Type": "application/pdf"
-      },
-      {
-        "Href": "/test.xlsx",
-        "Rel": "alternate",
-        "Title": "Download As Table Delimited Text Format",
-        "Type": "text/plain"
-      },
-      {
-        "Href": "/test.xlsx",
-        "Rel": "alternate",
-        "Title": "Download As TIFF",
-        "Type": "image/tiff"
-      },
-      {
-        "Href": "/test.xlsx",
-        "Rel": "alternate",
-        "Title": "Download As Microsoft Excel 2003",
-        "Type": "application/vnd.ms-excel"
-      },
-      {
-        "Href": "/test.xlsx",
-        "Rel": "alternate",
-        "Title": "Download As Microsoft Excel 2007",
-        "Type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
-      },
-      {
-        "Href": "/test.xlsx",
-        "Rel": "alternate",
-        "Title": "Download As XPS",
-        "Type": "application/vnd.ms-xpsdocument"
-      }
-    ],
-    "Worksheets": {
-      "link": {
-        "Href": "/worksheets",
-        "Rel": "self",
-        "Title": null,
-        "Type": null
-      }
-    },
-    "DefaultStyle": {
-      "link": {
-        "Href": "/defaultstyle",
-        "Rel": "self",
-        "Title": null,
-        "Type": null
-      }
-    },
-    "DocumentProperties": {
-      "link": {
-        "Href": "/documentproperties",
-        "Rel": "self",
-        "Title": null,
-        "Type": null
-      }
-    },
-    "Names": {
-      "link": {
-        "Href": "/names",
-        "Rel": "self",
-        "Title": null,
-        "Type": null
-      }
-    },
-    "Settings": {
-      "link": {
-        "Href": "/settings",
-        "Rel": "self",
-        "Title": null,
-        "Type": null
-      }
-    },
-    "IsWriteProtected": "False",
-    "IsProtected": "False",
-    "IsEncryption": "false",
-    "Password": null
+[
+  {
+    "Name": "WorkbookResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "WorkbookResponse"
+    }
   }
-}
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
 ```
 
 **HTTP Status Codes**
 
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+This REST API merges an Excel **workbook** into another workbook.
 
 ## How to Use the PostWorkbooksMerge API with SDKs
 

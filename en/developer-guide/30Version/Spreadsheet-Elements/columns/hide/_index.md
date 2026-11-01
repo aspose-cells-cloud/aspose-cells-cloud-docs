@@ -12,25 +12,28 @@ description: "Hide Excel columns via Aspose.Cells Cloud REST API using POST /cel
 weight: 40
 ArticleTitle: "Hide Excel Columns Using Aspose.Cells Cloud REST API"
 ---
-
 The **PostHideWorksheetColumns** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/hide`) enables hiding one or more contiguous columns in a worksheet via Aspose.Cells Cloud, requiring the file name, worksheet name, starting column index, and number of columns to hide as path and query parameters; this operation supports flexible column-range hiding for spreadsheet automation in cloud-based workflows.
 
-## REST API
+## The Post Hide Worksheet Columns Web API
 
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/hide
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### Request parameters
 
-| Parameter Name | Type    | Location | Description                                                           |
-| -------------- | ------- | -------- | --------------------------------------------------------------------- |
-| name           | string  | path     | The name of the workbook file.                                        |
-| sheetName      | string  | path     | The name of the worksheet where columns will be hidden.               |
-| startColumn    | integer | query    | Zero‑based index of the first column to hide.                         |
-| totalColumns   | integer | query    | Number of consecutive columns to hide, starting from **startColumn**. |
-| folder         | string  | query    | Path to the folder that contains the workbook.                        |
-| storageName    | string  | query    | Name of the storage service where the file is located.                |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| startColumn | Integer | Query | The begin column index to be operated. |
+| totalColumns | Integer | Query | Number of columns to be operated. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostHideWorksheetColumns) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
@@ -59,17 +62,41 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ce
 
 **Possible response codes**
 
-| HTTP Code | Meaning                                | Example JSON (error)                                  |
-| --------- | -------------------------------------- | ----------------------------------------------------- |
-| 200       | Success                                | `{ "Code": 200, "Status": "OK" }`                     |
-| 400       | Bad request (e.g., invalid parameters) | `{ "Code": 400, "Message": "Invalid column range." }` |
-| 401       | Unauthorized (missing/invalid token)   | `{ "Code": 401, "Message": "Invalid access token." }` |
-| 404       | Not found (workbook or worksheet)      | `{ "Code": 404, "Message": "File not found." }`       |
-| 500       | Internal server error                  | `{ "Code": 500, "Message": "Unexpected error." }`     |
 
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Cloud SDK Family
 

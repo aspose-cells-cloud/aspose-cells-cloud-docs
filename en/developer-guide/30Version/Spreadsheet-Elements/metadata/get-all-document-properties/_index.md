@@ -10,10 +10,9 @@ description: "Retrieve all built-in and custom document properties from an Excel
 ArticleTitle: "Get All Document Properties – Aspose.Cells Cloud API"
 weight: 25
 ---
-
 The **GetDocumentProperties** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/documentproperties`) retrieves descriptions of Excel file properties for a specified workbook via Aspose.Cells Cloud, supporting optional filtering by property type and specifying storage location through query parameters.
 
-## GetDocumentProperties API
+## The Get Document Properties Web API
 
 ```http
 GET https://api.aspose.cloud/v3.0/cells/{name}/documentproperties
@@ -25,11 +24,12 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type   | Location | Description                  |
-| -------------- | ------ | -------- | ---------------------------- |
-| name           | string | path     | Name of the Excel file.      |
-| folder         | string | query    | Folder containing the file.  |
-| storageName    | string | query    | Name of the storage service. |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The workbook name. |
+| type | String | Query | Excel property type. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Properties/GetDocumentProperties) defines a publicly accessible programming interface and allows you to perform REST interactions directly from a web browser.
 
@@ -259,15 +259,36 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties" \
 
 {{< /tabs >}}
 
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsDocumentPropertiesResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsDocumentPropertiesResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
 **HTTP Status Codes**
 
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Cloud SDK Family
 

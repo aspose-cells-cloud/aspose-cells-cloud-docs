@@ -8,7 +8,6 @@ keywords: "Aspose.Cells Cloud, Excel REST API, text search, remote range search,
 weight: 100
 ArticleTitle: "Search Excel Range Content in Aspose.Cells Cloud API"
 ---
-
 The **SearchContentInRemoteRange** API (`PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{cellArea}/search/content`) enables programmatic text, number, or formula search within a specified range of an Excel workbook stored in Aspose.Cells Cloud, supporting remote, cloud-based processing without downloading the file—ideal for automated data discovery, content analysis, and spreadsheet auditing workflows.
 
 ## API Overview
@@ -17,9 +16,9 @@ Programmatically search for specific text, numbers, or formulas in a defined ran
 
 ---
 
-## REST API Endpoint
+## The Search Content in Remote Range Web API
 
-```
+```http
 PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{cellArea}/search/content
 ```
 
@@ -35,6 +34,56 @@ All requests require a valid JWT access token. Follow the [Authentication Guide]
 
 ---
 
+### Request Parameters
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | Specify the search workbook file name. |
+| worksheet | String | Path | Specify the search worksheet name. |
+| cellArea | String | Path | Specify the search cell area. |
+| searchText | String | Query | Specify the search content. |
+| ignoringCase | Boolean | Query | Ignore the text of the search. |
+| folder | String | Query | The folder path where the workbook is stored. |
+| storageName | String | Query | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
+
+> **Prerequisites**: Ensure your workbook is uploaded to Aspose Cloud storage. Obtain API credentials from the [Aspose Cloud Dashboard](https://dashboard.aspose.cloud/).
+
+---
+
+### Response
+
+```json
+[
+  {
+    "Name": "SearchResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "SearchResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+### Error Responses
+
+| Status Code        | Description                                                               |
+| :----------------- | :------------------------------------------------------------------------ |
+| `400 Bad Request`  | Invalid URL, malformed parameters, or unsupported file format.            |
+| `401 Unauthorized` | Missing, expired, or invalid JWT token.                                   |
+| `404 Not Found`    | Workbook, worksheet, or range does not exist or is inaccessible.          |
+| `500 Server Error` | Internal failure during search (e.g., corrupted file, permissions issue). |
+
+---
+
 ### Example: cURL Request
 
 ```bash
@@ -44,26 +93,6 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/MyWorkbook.xlsx/worksheets/Orde
 ```
 
 ---
-
-## Request Parameters
-
-| Parameter      | Type    | Location | Required | Description                                                                               |
-| :------------- | :------ | :------- | :------- | :---------------------------------------------------------------------------------------- |
-| `name`         | String  | Path     | ✅ Yes   | Filename (including extension), e.g., `customer_data.xlsx`.                               |
-| `worksheet`    | String  | Path     | ✅ Yes   | Worksheet name, e.g., `Orders_2024`.                                                      |
-| `cellArea`     | String  | Path     | ✅ Yes   | Target range in A1 notation, e.g., `B2:H100`.                                             |
-| `searchText`   | String  | Query    | ✅ Yes   | Text, number, or formula fragment to find (e.g., `"Report"`, `"1234"`, `"=SUM(A1:A10)"`). |
-| `ignoringCase` | Boolean | Query    | ❌ No    | Whether to ignore case. Default: `true`.                                                  |
-| `folder`       | String  | Query    | ❌ No    | Directory path in cloud storage. Defaults to root if omitted.                             |
-| `storageName`  | String  | Query    | ❌ No    | Custom storage identifier (if configured). Uses default storage if omitted.               |
-| `region`       | String  | Query    | ❌ No    | Locale (e.g., `en-US`, `fr-FR`) affecting number/date parsing.                            |
-| `password`     | String  | Query    | ❌ No    | Password for encrypted workbooks. Omit for unencrypted files.                             |
-
-> **Prerequisites**: Ensure your workbook is uploaded to Aspose Cloud storage. Obtain API credentials from the [Aspose Cloud Dashboard](https://dashboard.aspose.cloud/).
-
----
-
-## Response
 
 ### Success (200 OK)
 
@@ -87,17 +116,6 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/MyWorkbook.xlsx/worksheets/Orde
   ]
 }
 ```
-
-### Error Responses
-
-| Status Code        | Description                                                               |
-| :----------------- | :------------------------------------------------------------------------ |
-| `400 Bad Request`  | Invalid URL, malformed parameters, or unsupported file format.            |
-| `401 Unauthorized` | Missing, expired, or invalid JWT token.                                   |
-| `404 Not Found`    | Workbook, worksheet, or range does not exist or is inaccessible.          |
-| `500 Server Error` | Internal failure during search (e.g., corrupted file, permissions issue). |
-
----
 
 ## Practical Use Cases
 

@@ -8,18 +8,66 @@ type: docs
 weight: 100
 ArticleTitle: "Aspose.Cells Cloud Replace Spreadsheet Content API"
 ---
-
 The **ReplaceSpreadsheetContent** API (`PUT https://api.aspose.cloud/v4.0/cells/replace/content`) enables cloud-based text replacement within local Excel spreadsheets without uploading files to cloud storage, supporting full-workbook or targeted replacements across all sheets and cells while preserving original formatting, formulas, and charts.
 
 ## Replace Text in Excel Without Uploading
 
 Replace specified text within local Excel spreadsheet files without uploading them to the cloud. Use Aspose.Cells Cloud Find & Replace API to update content in workbooks efficiently—ideal for on-premise data pipelines, report generation, and batch processing—while preserving original formatting, formulas, and charts.
 
-## API Endpoint
+## The Replace Spreadsheet Content Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/replace/content
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
+### **Request Parameters:**
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| searchText | String | Query | Specify the search content. |
+| replaceText | String | Query | Specify the replace content. |
+| worksheet | String | Query | Specify the worksheet for the replace. |
+| cellArea | String | Query | Specify the cell area for the replace. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | Invalid url. |
+| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
+| 404 | Not Found | Source file not accessible. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining data. |
 
 ## Prerequisites
 

@@ -10,28 +10,30 @@ description: "Get all shapes from an Excel worksheet via Aspose.Cells Cloud API,
 ArticleTitle: "Get All Shapes on an Excel Worksheet"
 weight: 100
 ---
-
 The **GetWorksheetShapes** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes`) retrieves descriptions of all shapes contained within a specified Excel worksheet, enabling developers to programmatically inspect and work with embedded objects such as charts, pictures, and drawing elements via Aspose.Cells Cloud's REST API.
 
 ## Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
-## REST API
+## The Get Worksheet Shapes Web API
 
-```bash
+```http
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### Request Parameters
 
-| Parameter Name  | Type   | Location | Description                                                                                       |
-| --------------- | ------ | -------- | ------------------------------------------------------------------------------------------------- |
-| **name**        | string | path     | The name of the Excel file.                                                                       |
-| **sheetName**   | string | path     | The name of the worksheet.                                                                        |
-| **folder**      | string | query    | The folder that contains the document.                                                            |
-| **storageName** | string | query    | The name of the storage service to use.                                                           |
-| **include**     | string | query    | Set to `details` to return full shape properties; otherwise only the `link` objects are returned. |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 > **Optional**: `folder`, `storageName`, and `include` can be omitted when the file resides in the root storage.
 
@@ -108,6 +110,25 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes
 
 ### Response Fields
 
+```json
+[
+  {
+    "Name": "ShapesResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "ShapesResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
 The `Shapes` object contains a list of `Shape` items. Each shape includes the following properties (when the `include=details` flag is used; otherwise only the `link` object is returned).
 
 | Property   | Type   | Description                                                                |
@@ -120,7 +141,7 @@ The `Shapes` object contains a list of `Shape` items. Each shape includes the fo
 | **Height** | number | The height of the shape in points.                                         |
 | **Link**   | object | Hyperlink information (`Href`, `Rel`, `Type`, `Title`).                    |
 
-## Error Handling
+### Error Handling
 
 | HTTP Status | Description                                       | Sample Error Body                                                   |
 | ----------- | ------------------------------------------------- | ------------------------------------------------------------------- |

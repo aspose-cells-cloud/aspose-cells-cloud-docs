@@ -10,29 +10,69 @@ description: "Get all PivotTables from an Excel worksheet via Aspose.Cells Cloud
 weight: 100
 ArticleTitle: "Get All Pivot Tables in an Excel Worksheet – Aspose.Cells Cloud API"
 ---
-
 The **GetWorksheetPivotTables** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables`) retrieves descriptions of all PivotTables in a specified worksheet using Aspose.Cells Cloud, enabling developers to programmatically inspect PivotTable structure and metadata without local Excel installation.
 
 ## Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
-## REST API
+## The Get Worksheet Pivot Tables Web API
 
-```bash
+```http
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### **Request parameters**
 
-| Parameter Name | Type   | Location | Description                          |
-| -------------- | ------ | -------- | ------------------------------------ |
-| name           | string | path     | Name of the Excel document.          |
-| sheetName      | string | path     | Name of the worksheet.               |
-| folder         | string | query    | Folder where the document is stored. |
-| storageName    | string | query    | Name of the storage service.         |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PivotTables/GetWorksheetPivotTables) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+### Response
+
+```json
+[
+  {
+    "Name": "PivotTablesResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "PivotTablesResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+{{< tab tabNum="2" >}}
+
+
+{{< /tab >}}
+
+{{< /tabs >}}
+
+### Error Responses
+
+| HTTP Code | Description                                                     | Sample JSON Payload                                           |
+| --------- | --------------------------------------------------------------- | ------------------------------------------------------------- |
+| 400       | Bad request – required parameter missing.                       | `{ "Code": "400", "Message": "Missing required parameter." }` |
+| 401       | Unauthorized – invalid or missing token.                        | `{ "Code": "401", "Message": "Authentication failed." }`      |
+| 404       | Not found – workbook, worksheet, or pivot table does not exist. | `{ "Code": "404", "Message": "Resource not found." }`         |
+| 500       | Internal server error – unexpected condition on the server.     | `{ "Code": "500", "Message": "Server error." }`               |
 
 ### Request
 
@@ -49,44 +89,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/work
 ```
 
 {{< /tab >}}
-
-### Response
-
-{{< tab tabNum="2" >}}
-
-```json
-{
-  "PivotTables": {
-    "PivotTableList": [
-      {
-        "link": {
-          "Href": "/0",
-          "Rel": "self"
-        }
-      }
-    ],
-    "link": {
-      "Href": "https://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2",
-      "Rel": "self"
-    }
-  },
-  "Code": "200",
-  "Status": "OK"
-}
-```
-
-{{< /tab >}}
-
-{{< /tabs >}}
-
-### Error Responses
-
-| HTTP Code | Description                                                     | Sample JSON Payload                                           |
-| --------- | --------------------------------------------------------------- | ------------------------------------------------------------- |
-| 400       | Bad request – required parameter missing.                       | `{ "Code": "400", "Message": "Missing required parameter." }` |
-| 401       | Unauthorized – invalid or missing token.                        | `{ "Code": "401", "Message": "Authentication failed." }`      |
-| 404       | Not found – workbook, worksheet, or pivot table does not exist. | `{ "Code": "404", "Message": "Resource not found." }`         |
-| 500       | Internal server error – unexpected condition on the server.     | `{ "Code": "500", "Message": "Server error." }`               |
 
 ## Cloud SDK Family
 

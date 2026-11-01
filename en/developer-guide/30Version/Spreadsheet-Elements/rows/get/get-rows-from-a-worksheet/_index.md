@@ -10,13 +10,9 @@ description: "Get rows from Excel worksheet using Aspose.Cells Cloud REST API v3
 weight: 100
 ArticleTitle: "Get rows information from an Excel worksheet – Aspose.Cells Cloud API Documentation"
 ---
-
 The **GetWorksheetRows** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows`) in Aspose.Cells Cloud retrieves detailed descriptions of rows in a specified Excel worksheet, supporting optional pagination via `offset` and `count` query parameters to efficiently fetch specific row ranges.
 
-**Prerequisites**  
-To call this endpoint you must provide a valid JWT token in the `Authorization` header. The token should be obtained using the Aspose.Cloud authentication flow and must include the required scopes for Cells operations. The API follows the v3.0 versioning scheme and is subject to standard rate‑limit policies.
-
-## GetWorksheetRows API
+## The Get Worksheet Rows Web API
 
 ```http
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
@@ -28,12 +24,14 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Request parameters**
 
-| Parameter Name | Type   | Location | Description          |
-| -------------- | ------ | -------- | -------------------- |
-| name           | string | path     | The workbook name.   |
-| sheetName      | string | path     | The worksheet name.  |
-| folder         | string | query    | The workbook folder. |
-| storageName    | string | query    | The storage name.    |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| offset | Integer | Query | Row offset. |
+| count | Integer | Query | Display rows number. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetRows) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -105,13 +103,36 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 
 **Response codes**
 
-| Code | Meaning               | Description                                                   |
-| ---- | --------------------- | ------------------------------------------------------------- |
-| 200  | OK                    | The request succeeded and the rows information is returned.   |
-| 400  | Bad Request           | The request is malformed (e.g., missing required parameters). |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                 |
-| 404  | Not Found             | The specified workbook or worksheet does not exist.           |
-| 500  | Internal Server Error | An unexpected error occurred on the server.                   |
+### **Response**
+
+```json
+[
+  {
+    "Name": "RowsResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "RowsResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Cloud SDK Family
 

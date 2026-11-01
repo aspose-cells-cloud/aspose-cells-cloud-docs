@@ -9,30 +9,54 @@ weight: 100
 linktitle: "Add Hyperlink"
 ArticleTitle: "Add Hyperlink to Excel Worksheet via Aspose.Cells Cloud REST API"
 ---
-
 The **PutWorksheetHyperlink** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks`) enables programmatic addition of hyperlinks to Excel worksheets via Aspose.Cells Cloud, supporting range-based linking by specifying first row/column, total rows/columns, and the target address; this RESTful operation allows developers to automate hyperlink insertion across supported cloud-based Excel workflows using SDKs for .NET, Java, Python, and other languages.
 
-## REST API
+## The Put Worksheet Hyperlink Web API
 
-```bash
+```http
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### Request Parameters
 
-| Parameter Name | Type    | Location | Description                                                                               |
-| -------------- | ------- | -------- | ----------------------------------------------------------------------------------------- |
-| name           | string  | path     | Document name.                                                                            |
-| sheetName      | string  | path     | Worksheet name.                                                                           |
-| firstRow       | integer | query    | Zero‑based index of the first row of the range to which the hyperlink will be applied.    |
-| firstColumn    | integer | query    | Zero‑based index of the first column of the range to which the hyperlink will be applied. |
-| totalRows      | integer | query    | Number of rows that the hyperlink range spans.                                            |
-| totalColumns   | integer | query    | Number of columns that the hyperlink range spans.                                         |
-| address        | string  | query    | The target URL that the hyperlink points to (URL‑encoded).                                |
-| folder         | string  | query    | The document folder.                                                                      |
-| storageName    | string  | query    | Storage name.                                                                             |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| firstRow | Integer | Query | First row of the hyperlink range. |
+| firstColumn | Integer | Query | First column of the hyperlink range. |
+| totalRows | Integer | Query | Number of rows in this hyperlink range. |
+| totalColumns | Integer | Query | Number of columns of this hyperlink range. |
+| address | String | Query | Address of the hyperlink. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 The request can also include a JSON body containing the same fields (`Address`, `FirstRow`, `FirstColumn`, `TotalRows`, `TotalColumns`). Supplying the body is useful when you prefer a payload over query‑string parameters.
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
 
 ### Error Responses
 

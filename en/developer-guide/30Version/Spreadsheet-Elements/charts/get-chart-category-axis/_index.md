@@ -8,24 +8,13 @@ description: "Retrieves the category axis of a chart in an Excel worksheet using
 ArticleTitle: "Get Chart Category Axis – Aspose.Cells Cloud API Documentation"
 linktitle: "Get Chart Category Axis"
 ---
-
 The **GetChartCategoryAxis** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/categoryaxis`) retrieves the category axis description of a specific chart in a worksheet using Aspose.Cells Cloud, requiring the workbook filename, worksheet name, and chart index as path parameters; it supports optional `folder` and `storageName` query parameters to locate the file in Aspose Cloud storage and returns a structured `AxisResponse` containing axis metadata.
 
-**Prerequisites**  
-Before using this endpoint, ensure that:  
-
-- An OAuth 2.0 token has been obtained and is valid for the Aspose Cloud services.  
-- The workbook file is uploaded to Aspose Cloud storage (default or a specified folder).  
-- You are using API version **v3.0** as shown in the request URL.  
-- The calling application has permission to read the workbook and access its worksheets.
-
-## GetChartCategoryAxis API
+## The Get Chart Category Axis Web API
 
 ```http
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/categoryaxis
 ```
-
-**Background** – Removing all charts from a worksheet is useful when you need to reset a sheet’s visual layout, replace outdated visualizations, or prepare a workbook for reuse without retaining previous chart data.
 
 ### **Security and Authentication**
 
@@ -33,50 +22,47 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request parameters
 
-| Parameter Name | Type    | Location | Description                                            |
-| -------------- | ------- | -------- | ------------------------------------------------------ |
-| name           | string  | path     | The name of the workbook file.                         |
-| sheetName      | string  | path     | The name of the worksheet containing the chart.        |
-| chartIndex     | integer | path     | Zero‑based index of the chart whose axis is requested. |
-| folder         | string  | query    | The folder path in storage where the workbook resides. |
-| storageName    | string  | query    | The name of the storage service (if not the default).  |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| chartIndex | Integer | Path | The chart index. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 ### **Response**
 
 ```json
-{
-  "Code": 200,
-  "Status": "OK",
-  "CategoryAxis": {
-    "AxisBetweenCategories": true,
-    "AxisLine": {
-      "IsVisible": true,
-      "Weight": 1.0
-    },
-    "MajorTickMark": "Cross",
-    "MinorTickMark": "None",
-    "Title": {
-      "Text": "Category Axis",
-      "IsVisible": true
-    },
-    "Labels": {
-      "IsAutoRotation": false,
-      "RotationAngle": 0,
-      "IsVisible": true
+[
+  {
+    "Name": "AxisResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "AxisResponse"
     }
   }
-}
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
 ```
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+**Background** – Removing all charts from a worksheet is useful when you need to reset a sheet’s visual layout, replace outdated visualizations, or prepare a workbook for reuse without retaining previous chart data.
+
 ## How to Use the GetChartCategoryAxis API with SDKs
 
 ### GetChartCategoryAxis API Specification

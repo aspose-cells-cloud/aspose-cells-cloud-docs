@@ -9,10 +9,9 @@ keywords: "Aspose.Cells, remove characters, Excel API, text cleaning, spreadshee
 description: "Remove custom characters, sets, or substrings from Excel cells using Aspose.Cells Cloud API for precise data cleaning."
 weight: 100
 ---
-
 The **RemoveCharacters** API (`PUT https://api.aspose.cloud/v4.0/cells/content/remove/characters`) in Aspose.Cells Cloud enables precise deletion of user-defined characters, predefined symbol sets (such as non-printing characters, letters, digits, punctuation, or symbols), or substrings from a specified Excel cell range while preserving formulas, formatting, and data validation; it supports multiple removal modes including `CustomChars`, `CharacterSet`, and `Substring`, with optional case sensitivity and locale-aware processing.
 
-## Introduction
+## Overview
 
 Easily clean and standardize your Excel data by removing specific, unwanted characters. Our add‑in offers multiple, targeted ways to sanitize your cells:
 
@@ -31,9 +30,7 @@ Easily clean and standardize your Excel data by removing specific, unwanted char
 
 **Version 4.0 – Updated 2024‑11‑15**
 
-## RemoveCharacters API
-
-### Web API
+## The Remove Characters Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/content/remove/characters
@@ -49,18 +46,19 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name    | Type   | Location           | Description                                                                                                                                                                                                                      |
-| ----------------- | ------ | ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Spreadsheet       | File   | FormData           | The spreadsheet file to be processed. Supported formats include XLSX, XLS, ODS, CSV, etc.                                                                                                                                        |
-| removeTextMethod  | String | Query              | Specifies the text‑removal method. Options: `None`, `RemoveCustomCharacter`, `RemoveCharacterSets`, `RemoveSubString`. Default is `None`.                                                                                        |
-| characterSets     | String | Query              | Predefined character set(s) to remove when `RemoveCharacterSets` is selected. Options: `NonPrintingCharacters`, `TextCharacters`, `NumericCharacters`, `Symbols`, `PunctuationMarks`. Multiple sets can be combined with commas. |
-| removeCustomValue | String | Query              | Custom character(s) or substring(s) to remove when using `RemoveCustomCharacter` or `RemoveSubString`.                                                                                                                           |
-| worksheet         | String | Query _(optional)_ | The name of the worksheet where text removal will be applied. **When omitted, the API processes the first worksheet of the workbook.**                                                                                           |
-| range             | String | Query _(optional)_ | The cell range where text removal will be applied (e.g., `"A1:C10"`). **When omitted, the operation applies to all used cells in the specified worksheet.**                                                                      |
-| outPath           | String | Query _(optional)_ | Cloud storage folder path where the processed workbook will be saved. If omitted, the file is saved in the source folder.                                                                                                        |
-| outStorageName    | String | Query _(optional)_ | The name of the cloud storage where the output file will be stored.                                                                                                                                                              |
-| region            | String | Query _(optional)_ | Sets the locale for character‑set definitions (e.g., `"en-US"`, `"ja-JP"`).                                                                                                                                                      |
-| password          | String | Query _(optional)_ | Password for a protected workbook, if required.                                                                                                                                                                                  |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| removeTextMethod | String | Query | Specify the removal of text method type. |
+| characterSets | String | Query | Specify the character sets. |
+| removeCustomValue | String | Query | Specify the remove custom value. |
+| caseSensitive | Boolean | Query | affects `Substring` mode and `CustomChars` when enabled |
+| worksheet | String | Query | Specify the worksheet of spreadsheet. |
+| range | String | Query | Specify the worksheet range of spreadsheet. |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
 
 ### Response
 
@@ -74,6 +72,14 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
     }
   }
 ]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
 ```
 
 ### Error Codes

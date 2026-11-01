@@ -10,27 +10,28 @@ keywords: "Add Excel worksheet, Aspose.Cells Cloud, REST API, PUT worksheet, Exc
 description: "Step‑by‑step guide to add a new worksheet to an Excel workbook using Aspose.Cells Cloud REST API, including request details, a cURL example, and SDK code snippets for multiple languages."
 weight: 100
 ---
-
 The **PutAddNewWorksheet** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}`) in Aspose.Cells Cloud adds a new worksheet to an existing Excel workbook, supporting optional parameters such as position and sheet type (e.g., Worksheet, VB, or Chart) to customize the new sheet’s placement and behavior within the workbook.
 
-**Prerequisites**: To call this endpoint you must have a valid Aspose Cloud authentication token, the target workbook must be uploaded to Aspose Cloud storage, and you should know the storage name (if using a custom storage).
+## The Put Add New Worksheet Web API
 
-## REST API
-
-```bash
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
 
 ### **Request parameters**
 
-| Parameter Name | Type    | Location | Description                                          |
-| -------------- | ------- | -------- | ---------------------------------------------------- |
-| name           | string  | path     | Name of the workbook file.                           |
-| sheetName      | string  | path     | Name of the new worksheet to be created.             |
-| position       | integer | query    | Zero‑based position where the sheet is inserted.     |
-| sheettype      | string  | query    | Type of the new sheet (e.g., **Chart**, **Dialog**). |
-| folder         | string  | query    | Folder that contains the workbook.                   |
-| storageName    | string  | query    | Name of the Aspose Cloud storage.                    |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The new sheet name. |
+| position | Integer | Query | The new sheet position. |
+| sheettype | String | Query | Specifies the worksheet type(VB/Worksheet/Chart/BIFF4Macro/InternationalMacro/Other/Dialog). |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PutAddNewWorksheet) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -65,13 +66,36 @@ curl -v "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Tasks" \
 
 **Possible response status codes**
 
-| Status Code | Description                                          |
-| ----------- | ---------------------------------------------------- |
-| 200         | Worksheet added successfully.                        |
-| 400         | Bad request – invalid parameters.                    |
-| 401         | Unauthorized – authentication token missing/invalid. |
-| 404         | Not found – workbook or folder does not exist.       |
-| 500         | Internal server error – unexpected condition.        |
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Cloud SDK Family
 

@@ -13,10 +13,9 @@ description: "Convert Excel spreadsheets to CSV using the Aspose.Cells Cloud RES
 weight: 90
 ArticleTitle: "Convert Excel to CSV using Aspose.Cells Cloud REST API"
 ---
-
 The **PostConvertWorkbookToCSV** API (`POST https://api.aspose.cloud/v3.0/cells/convert/csv`) converts Excel files to CSV format using Aspose.Cells Cloud, supporting password-protected workbooks and optional parameters such as regional settings and Excel restriction checks; it accepts a file upload via multipart form data and returns detailed file information upon successful conversion.
 
-## REST API
+## The Post Convert Workbook to CSV Web API
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/convert/csv
@@ -28,19 +27,44 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Query Parameters
 
-| Parameter Name          | Type   | Description                                                                           |
-| ----------------------- | ------ | ------------------------------------------------------------------------------------- |
-| `password`              | string | The password required to open the Excel file.                                         |
-| `storageName`           | string | The name of the storage where the file is located.                                    |
-| `checkExcelRestriction` | bool   | Whether to check Excel file restrictions when the user modifies cell‑related objects. |
-
-### Request Body Parameter
-
-| Parameter Name | Type      | Description                                                             |
-| -------------- | --------- | ----------------------------------------------------------------------- |
-| `datafile`     | data file | The data file included in the first part of the multipart request body. |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| File | File | FormData | File to upload |
+| password | String | Query | The password needed to open an Excel file. |
+| checkExcelRestriction | Boolean | Query | Whether check restriction of excel file when user modify cells related objects. |
+| region | String | Query | The regional settings for workbook. |
 
 ### Response
+
+```json
+[
+  {
+    "Name": "FileInfo",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "FileInfo"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 The API returns a **FileInfo** object that contains the generated CSV file.
 
@@ -52,15 +76,11 @@ The API returns a **FileInfo** object that contains the generated CSV file.
 
 [FileInfo](/cells/file-info/)
 
-**HTTP Status Codes**
+### Request Body Parameter
 
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
+| Parameter Name | Type      | Description                                                             |
+| -------------- | --------- | ----------------------------------------------------------------------- |
+| `datafile`     | data file | The data file included in the first part of the multipart request body. |
 
 ## How to Use the PostConvertWorkbookToCSV API with SDKs
 

@@ -12,12 +12,11 @@ last_updated: May 10, 2024
 weight: 70
 ArticleTitle: "Unlock Password-Protected Excel Files with Aspose.Cells Cloud REST API"
 ---
-
 The **PostUnlock** API (`POST https://api.aspose.cloud/v3.0/cells/unlock`) in Aspose.Cells Cloud unlocks password-protected Excel files by accepting the encrypted file and its password as inputs, enabling secure removal of protection in a single request.
 
-## REST API Endpoint
+## The Post Unlock Web API
 
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/unlock
 ```
 
@@ -27,13 +26,59 @@ The Aspose.Cells Cloud APIs use [JWT token-based authentication](https://docs.as
 
 ### Request Parameters
 
-| Parameter Name | Type   | Location             | Required | Description                                                                          |
-| -------------- | ------ | -------------------- | -------- | ------------------------------------------------------------------------------------ |
-| `file`         | file   | formData (HTTP body) | Yes      | Excel file(s) to unlock. Multiple files may be uploaded in a single request.         |
-| `password`     | string | query string         | No       | Password required to decrypt the workbook. If omitted, the file must be unprotected. |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| File | File | FormData | File to upload |
+| password | String | Query | The password needed to open an Excel file. |
 
 > ⚠️ **Security Note**  
 > Passing passwords via query parameters is insecure—they may appear in server logs, browser history, or proxy logs. We strongly recommend using environment variables or secure vaults (e.g., AWS Secrets Manager, HashiCorp Vault) to manage credentials. For enhanced security, consider moving sensitive parameters to headers (e.g., `X-Password`) in your client implementation.
+
+### Response
+
+```json
+[
+  {
+    "Name": "FilesResult",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "FilesResult"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+On successful unlock, the API returns a `FilesResult` object containing the decrypted files:
+
+
+| Field    | Type    | Description                                                                                             |
+| -------- | ------- | ------------------------------------------------------------------------------------------------------- |
+| `Files`  | Array   | Array of unlocked files (each with `Filename`, `FileSize`, `FileContent`, and optionally `FileFormat`). |
+| `Code`   | integer | HTTP status code (e.g., 200).                                                                           |
+| `Status` | string  | Status message ("OK" on success).                                                                       |
+
+#### HTTP Status Codes
+
+
+---
 
 ### Request Examples
 
@@ -60,43 +105,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/unlock?password=123456" \
   -H "Authorization: Bearer <your_jwt_token>" \
   -F 'file=@sample_protected.xlsx'
 ```
-
-### Response
-
-On successful unlock, the API returns a `FilesResult` object containing the decrypted files:
-
-```json
-{
-  "Files": [
-    {
-      "Filename": "sample_protected.xlsx",
-      "FileSize": 274022,
-      "FileContent": "UEsDBBQABgAIAAAAIQDf...[truncated Base64 content]...0=",
-      "FileFormat": "xlsx"
-    }
-  ],
-  "Code": 200,
-  "Status": "OK"
-}
-```
-
-| Field    | Type    | Description                                                                                             |
-| -------- | ------- | ------------------------------------------------------------------------------------------------------- |
-| `Files`  | Array   | Array of unlocked files (each with `Filename`, `FileSize`, `FileContent`, and optionally `FileFormat`). |
-| `Code`   | integer | HTTP status code (e.g., 200).                                                                           |
-| `Status` | string  | Status message ("OK" on success).                                                                       |
-
-#### HTTP Status Codes
-
-| Code | Meaning               | Description                                                |
-| ---- | --------------------- | ---------------------------------------------------------- |
-| 200  | OK                    | Files successfully decrypted and returned.                 |
-| 400  | Bad Request           | Missing `file`, invalid file format, or malformed request. |
-| 401  | Unauthorized          | Invalid, expired, or missing JWT token.                    |
-| 413  | Payload Too Large     | File size exceeds the limit (currently 2 GB per request).  |
-| 500  | Internal Server Error | Unexpected server-side error.                              |
-
----
 
 ## Using Aspose.Cells Cloud SDKs
 

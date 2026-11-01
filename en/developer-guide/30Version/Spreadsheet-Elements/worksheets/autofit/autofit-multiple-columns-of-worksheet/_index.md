@@ -10,28 +10,29 @@ description: "Autofit multiple Excel worksheet columns using Aspose.Cells Cloud 
 weight: 100
 ArticleTitle: "Autofit Multiple Columns in Excel Worksheet via Aspose.Cells Cloud API"
 ---
-
 The **PostAutofitWorksheetColumns** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitcolumns`) in Aspose.Cells Cloud enables autofitting multiple columns in a specified worksheet by adjusting column widths to fit their content, supporting optional range parameters like `startColumn` and `endColumn` for precise control.
 
-## REST API
+## The Post Autofit Worksheet Columns Web API
 
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitcolumns
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### **Request parameters**
 
-| Parameter Name      | Type    | Location | Description                                                                                                                                 |
-| ------------------- | ------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| name                | string  | path     | The file name.                                                                                                                              |
-| sheetName           | string  | path     | The worksheet name.                                                                                                                         |
-| firstColumn         | integer | query    | The start column index.                                                                                                                     |
-| lastColumn          | integer | query    | The end column index.                                                                                                                       |
-| autoFitterOptions\* | object  | body     | AutoFitter options (see [Auto Fitter Options](/cells/auto-fitter-options/)). Includes `AutoFitMergedCells`, `IgnoreHidden`, and `OnlyAuto`. |
-| firstRow            | integer | query    | The start row index for autofit (**optional**).                                                                                             |
-| lastRow             | integer | query    | The end row index for autofit (**optional**).                                                                                               |
-| folder              | string  | query    | Folder path in storage (**optional**).                                                                                                      |
-| storageName         | string  | query    | Storage name (**optional**).                                                                                                                |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| startColumn | Integer | Query | The start column index. |
+| endColumn | Integer | Query | The end column index. |
+| onlyAuto | Boolean | Query | - |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 \*The parameter name is displayed as a link to the related documentation.
 
@@ -66,6 +67,37 @@ curl -v "https://api.aspose.cloud/v3.0/cells/sampleAutoFit.xlsx/worksheets/Sheet
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Cloud SDK Family
 

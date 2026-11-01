@@ -13,10 +13,9 @@ lastmod: 2024-06-10T14:30:00Z
 robots: index,follow
 canonical: "/convert-chart-to-pdf/"
 ---
-
 The **ConvertChartToPdf** API (`PUT https://api.aspose.cloud/v4.0/cells/convert/chart/pdf`) in Aspose.Cells Cloud enables developers to convert a specific chart from a local Excel spreadsheet directly to PDF without uploading the file to cloud storage. Using form-data to send the spreadsheet, along with query parameters for the worksheet name and chart index, the operation performs cloud-native conversion—eliminating intermediate storage steps and reducing resource burden while preserving formatting fidelity in the resulting PDF.
 
-## **Convert Chart to PDF Web API**
+## The Convert Chart to PDF Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/convert/chart/pdf

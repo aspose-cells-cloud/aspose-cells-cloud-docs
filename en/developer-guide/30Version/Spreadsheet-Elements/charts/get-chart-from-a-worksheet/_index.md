@@ -9,12 +9,9 @@ description: "Retrieve chart metadata and export format from an Excel worksheet 
 ArticleTitle: "Get Chart from a Worksheet – Aspose.Cells Cloud API"
 linktitle: "Get Chart"
 ---
-
 The **GetWorksheetChart** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartNumber}`) retrieves chart data from a specific worksheet in a spreadsheet document stored in Aspose.Cells Cloud, supporting optional format conversion to PNG, TIFF, JPEG, GIF, EMF, or BMP via the `format` query parameter; this operation enables developers to programmatically extract and convert embedded charts for integration into reports, dashboards, or web applications using REST or one of Aspose.Cells Cloud’s SDKs.
 
-**Prerequisites** – To call this endpoint you must have a valid Aspose.Cells Cloud account, an active storage location, and a JWT access token. Obtain the token following the instructions in the authentication guide before making any API requests.
-
-## GetWorksheetChart API
+## The Get Worksheet Chart Web API
 
 ```http
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartNumber}
@@ -26,44 +23,45 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request parameters
 
-| Parameter Name | Type    | Location | Description                                 |
-| -------------- | ------- | -------- | ------------------------------------------- |
-| name           | string  | path     | Name of the Excel file.                     |
-| sheetName      | string  | path     | Name of the worksheet containing the chart. |
-| chartNumber    | integer | path     | Zero‑based index of the chart to retrieve.  |
-| format         | string  | query    | Desired export format (e.g., png, jpeg).    |
-| folder         | string  | query    | Folder path where the document is stored.   |
-| storageName    | string  | query    | Name of the storage service.                |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| chartNumber | Integer | Path | The chart number. |
+| format | String | Query | Chart conversion format.(PNG/TIFF/JPEG/GIF/EMF/BMP) |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 ### **Response**
 
 ```json
-{
-  "Code": 200,
-  "Status": "OK",
-  "Chart": {
-    "Name": "Chart 1",
-    "Type": "Bar",
-    "Top": 50,
-    "Left": 100,
-    "Width": 400,
-    "Height": 300,
-    "DataRange": "A1:B5",
-    "ShowLegend": true,
-    "Format": "png"
+[
+  {
+    "Name": "Stream",
+    "DataType": {
+      "Identifier": "File"
+    }
   }
-}
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
 ```
 
 **HTTP Status Codes**
 
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## How to Use the GetWorksheetChart API with SDKs
 

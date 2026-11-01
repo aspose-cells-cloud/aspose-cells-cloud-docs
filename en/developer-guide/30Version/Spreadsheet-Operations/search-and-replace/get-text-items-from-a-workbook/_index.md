@@ -10,14 +10,11 @@ weight: 100
 keywords: "Excel, Aspose.Cells Cloud, REST API, Spreadsheet, Get Text Items, Workbook"
 description: "Retrieve text items from an Excel workbook using the Aspose.Cells Cloud REST API. Available through SDKs for C#, Java, Python, PHP, Ruby, Go, Node.js, Perl, and Swift."
 ---
-
 The **GetWorkbookTextItems** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/textItems`) retrieves text items from a specified Excel workbook stored in cloud storage, enabling developers to programmatically extract all text content—including cells, comments, headers, footers, and shapes—for search, analysis, or replacement workflows. Aspose.Cells Cloud supports this operation with robust parsing and structured output in the `TextItemsResponse` format, allowing precise identification of text elements across worksheets without manual intervention.
 
-## REST API
+## The Get Workbook Text Items Web API
 
-This REST API reads a workbook’s **text items** in an Excel file.
-
-```bash
+```http
 GET https://api.aspose.cloud/v3.0/cells/{name}/textItems
 ```
 
@@ -27,49 +24,44 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request parameters
 
-| Parameter Name | Type   | Location | Description                                            |
-| -------------- | ------ | -------- | ------------------------------------------------------ |
-| name           | string | path     | The name of the workbook file.                         |
-| folder         | string | query    | The folder path in storage where the workbook resides. |
-| storageName    | string | query    | The name of the storage service.                       |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 ### **Response**
 
 ```json
-{
-  "Status": "OK",
-  "Code": 200,
-  "TextItems": {
-    "link": {
-      "Href": "string",
-      "Rel": "string",
-      "Title": "string",
-      "Type": "string"
-    },
-    "TextItemList": [
-      {
-        "link": {
-          "Href": "string",
-          "Rel": "string",
-          "Title": "string",
-          "Type": "string"
-        },
-        "Text": "string"
-      }
-    ]
+[
+  {
+    "Name": "TextItemsResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "TextItemsResponse"
+    }
   }
-}
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
 ```
 
 **HTTP Status Codes**
 
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+This REST API reads a workbook’s **text items** in an Excel file.
 
 ## How to Use the GetWorkbookTextItems API with SDKs
 

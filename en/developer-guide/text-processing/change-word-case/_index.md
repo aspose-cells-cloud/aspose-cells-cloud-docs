@@ -8,21 +8,9 @@ keywords: "change word case API, Aspose.Cells, Excel case conversion, uppercase,
 description: "Convert Excel text case using Aspose.Cells Cloud API: uppercase, lowercase, proper case, and sentence case"
 weight: 100
 ---
-
 The **UpdateWordCase** API (`PUT https://api.aspose.cloud/v4.0/cells/content/wordcase`) in Aspose.Cells Cloud enables instant text case conversion in spreadsheets—supporting Upper Case, Lower Case, Proper Case, and Sentence Case—by processing only string cells while preserving formulas, formatting, and data validation; users upload a spreadsheet and specify the desired case type via query parameter, optionally targeting a specific worksheet or range.
 
-## **Change Word Case**
-
-Use the Aspose.Cells Cloud Web API to instantly convert text case in your spreadsheet—switch between uppercase, lowercase, proper case (capitalize each word), or sentence case (capitalize the first letter of each sentence) across a selected range. Only string cells are affected; numbers, booleans, errors, and blanks are ignored. Formulas, formatting, and data validation remain untouched.
-
-- **UpperCase** – every character capitalized.
-- **LowerCase** – every character lower‑cased.
-- **ProperCase** – first letter of each word upper‑cased, the remainder lower‑cased.
-- **SentenceCase** – first letter of each sentence upper‑cased, the remainder lower‑cased.
-
-<img src="images/result.png" alt="Before/After case conversion screenshot" width="800" height="450" />
-
-### Web API
+## The Update Word Case Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/content/wordcase
@@ -38,20 +26,18 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters for **UpdateWordCase** API
 
-| Parameter Name | Type   | Location | Description                                                                                                                                                           |
-| :------------- | :----- | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| spreadsheet    | File   | FormData | The spreadsheet file to be processed. Supported formats include XLSX, XLS, ODS, CSV, etc.                                                                             |
-| wordCaseType   | String | Query    | Specifies the text‑case conversion type: `UpperCase`, `LowerCase`, `ProperCase`, or `SentenceCase`.                                                                   |
-| worksheet      | String | Query    | _(Optional)_ The name of the worksheet where case conversion will be applied. If omitted, the operation applies to the first worksheet of the workbook.               |
-| range          | String | Query    | _(Optional)_ The cell range where case conversion will be applied (e.g., `"A1:C10"`). If omitted, the operation applies to all used cells in the specified worksheet. |
-| outPath        | String | Query    | _(Optional)_ The cloud storage folder path where the processed workbook will be saved. If omitted, the file is saved in the source folder.                            |
-| outStorageName | String | Query    | The name of the cloud storage where the output file will be stored.                                                                                                   |
-| region         | String | Query    | _(Optional)_ Sets the locale for text‑case conversion rules, particularly relevant for language‑specific capitalization (e.g., `"en-US"`, `"tr-TR"`).                 |
-| password       | String | Query    | _(Optional)_ If the uploaded spreadsheet is password‑protected, provide the password to open and process the file.                                                    |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| wordCaseType | String | Query | Specify text case: Upper Case, Lower Case, Proper Case, Sentence Case. |
+| worksheet | String | Query | Specify the worksheet of spreadsheet. |
+| range | String | Query | Specify the worksheet range of spreadsheet. |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
 
 ### Response
-
-On success the service returns **200 OK** (or **202 Accepted**) with a JSON payload containing the binary stream of the processed workbook.
 
 ```json
 [
@@ -65,12 +51,31 @@ On success the service returns **200 OK** (or **202 Accepted**) with a JSON 
 ]
 ```
 
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
+On success the service returns **200 OK** (or **202 Accepted**) with a JSON payload containing the binary stream of the processed workbook.
+
 ### Error Codes
 
 - **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.
 - **401 Unauthorized** – Invalid access token or incorrect client credentials.
 - **404 Not Found** – The spreadsheet file is not accessible.
 - **500 Server Error** – The spreadsheet encountered an internal processing anomaly.
+
+Use the Aspose.Cells Cloud Web API to instantly convert text case in your spreadsheet—switch between uppercase, lowercase, proper case (capitalize each word), or sentence case (capitalize the first letter of each sentence) across a selected range. Only string cells are affected; numbers, booleans, errors, and blanks are ignored. Formulas, formatting, and data validation remain untouched.
+
+- **UpperCase** – every character capitalized.
+- **LowerCase** – every character lower‑cased.
+- **ProperCase** – first letter of each word upper‑cased, the remainder lower‑cased.
+- **SentenceCase** – first letter of each sentence upper‑cased, the remainder lower‑cased.
+
+<img src="images/result.png" alt="Before/After case conversion screenshot" width="800" height="450" />
 
 ## Where should we use the change word case API?
 

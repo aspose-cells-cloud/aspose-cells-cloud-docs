@@ -10,15 +10,9 @@ description: "Group Excel worksheet rows using Aspose.Cells Cloud REST API with 
 weight: 60
 ArticleTitle: "Group Rows in Excel Worksheet using Aspose.Cells Cloud API"
 ---
-
 The **PostGroupWorksheetRows** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/group`) enables grouping of rows in a specified Excel worksheet using Aspose.Cells Cloud, requiring the file name, worksheet name, and the first and last row indices to group; it also optionally supports hiding the grouped rows and specifying the storage folder or name.
 
-**Prerequisites:**
-
-- A valid OAuth 2.0 access token (Bearer JWT) must be supplied in the `Authorization` header.
-- The workbook must already exist in the specified `folder` of the chosen `storageName` (or the default storage) before the request is made.
-
-## PostGroupWorksheetRows API
+## The Post Group Worksheet Rows Web API
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/group
@@ -30,15 +24,15 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Request parameters**
 
-| Parameter Name | Type    | Location | Description                                                              |
-| -------------- | ------- | -------- | ------------------------------------------------------------------------ |
-| name           | string  | path     | The name of the workbook file.                                           |
-| sheetName      | string  | path     | The name of the worksheet.                                               |
-| firstIndex     | integer | query    | Zero‑based index of the first row to be grouped.                         |
-| lastIndex      | integer | query    | Zero‑based index of the last row to be grouped.                          |
-| hide           | boolean | query    | Indicates whether the grouped rows should be hidden (`true` or `false`). |
-| folder         | string  | query    | Path to the folder that contains the workbook.                           |
-| storageName    | string  | query    | Name of the storage where the workbook is located.                       |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| firstIndex | Integer | Query | The first row index to be operated. |
+| lastIndex | Integer | Query | The last row index to be operated. |
+| hide | Boolean | Query | rows visible state |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostGroupWorksheetRows) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
@@ -67,15 +61,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 }
 ```
 
-**HTTP Status Codes**
-
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
 
 Typical error responses:
 
@@ -88,6 +73,37 @@ Typical error responses:
 {{< /tabs >}}
 
 **See also:** [Ungroup rows on an Excel worksheet](../rows/ungroup/ "Ungroup rows on an Excel worksheet"), [Hide rows on an Excel worksheet](../rows/hide/ "Hide rows on an Excel worksheet"), [Unhide rows on an Excel worksheet](../rows/unhide/ "Unhide rows on an Excel worksheet").
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Cloud SDK Family
 

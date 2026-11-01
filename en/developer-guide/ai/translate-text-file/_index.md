@@ -8,7 +8,6 @@ keywords: AI text translation, Aspose.Cells Cloud API, REST API translate file, 
 weight: 100
 ArticleTitle: "Translate Text Files with Aspose.Cells Cloud AI API"
 ---
-
 The **TranslateTextFile** API (`PUT https://api.aspose.cloud/v4.0/cells/ai/translate/text-file`), part of Aspose.Cells Cloud v4.0, translates the content of a text file (or raw text in the request body) into a specified target language using AI-powered services, supporting flexible input via multipart/form-data upload or direct content submission while preserving original formatting and line structure.
 
 ## Overview
@@ -25,39 +24,46 @@ The service preserves original line breaks, indentation, and special characters,
 
 ---
 
-## API Endpoint
+## The Translate Text File Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/ai/translate/text-file
 ```
 
-> **Note**: This endpoint follows [SemVer](https://semver.org/) versioning. v4.0 is current as of April 2024. See the [API Versioning Policy](/cells-cloud/api-versioning/) for deprecation notices and upgrade guidance.
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
+### Request Parameters
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| targetLanguage | String | Query | The target language code for translation (e.g., "es", "fr", "de"). |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
 
 ---
 
-## Request Parameters
+### Response
 
-| Parameter Name | Type   | Location | Required | Description                                                                                                                                                                            |
-| :------------- | :----- | :------- | :------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Spreadsheet    | File   | FormData | Yes      | The source file to translate. Accepts plain-text (`.txt`) or supported spreadsheet formats (e.g., `.csv`, `.xlsx`). Use form field name `file` in `multipart/form-data`.               |
-| targetLanguage | String | Query    | Yes      | ISO 639-1 language code for the target language (e.g., `es`, `fr`, `de`). Case-insensitive.                                                                                            |
-| region         | String | Query    | No       | Locale identifier (e.g., `en-US`, `fr-FR`, `zh-CN`) that influences date, number, and currency formatting. **Note**: Only applies to spreadsheet inputs; ignored for plain-text files. |
-| password       | String | Query    | No       | Password to decrypt encrypted spreadsheet files. Not required for plain-text (`.txt`) files.                                                                                           |
+```json
+[
+  {
+    "Name": "IActionResult",
+    "DataType": {
+      "Identifier": "Void"
+    }
+  }
+]
+```
 
----
+**Sample response headers**
 
-## Response
-
-### Successful Response (200 OK)
-
-**Headers**
-
-- `Content-Type: application/octet-stream`
-- `Content-Disposition: attachment; filename="<original_name>_translated.txt"`
-- `Content-Length: <size_in_bytes>`
-
-**Body**  
-Binary stream containing the translated content with preserved formatting, line breaks, and character encoding.
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
 
 ### Error Responses
 
@@ -72,6 +78,21 @@ Binary stream containing the translated content with preserved formatting, line 
 For authentication issues, see [Authentication Troubleshooting](/cells-cloud/authentication/#troubleshooting).
 
 ---
+
+> **Note**: This endpoint follows [SemVer](https://semver.org/) versioning. v4.0 is current as of April 2024. See the [API Versioning Policy](/cells-cloud/api-versioning/) for deprecation notices and upgrade guidance.
+
+---
+
+### Successful Response (200 OK)
+
+**Headers**
+
+- `Content-Type: application/octet-stream`
+- `Content-Disposition: attachment; filename="<original_name>_translated.txt"`
+- `Content-Length: <size_in_bytes>`
+
+**Body**  
+Binary stream containing the translated content with preserved formatting, line breaks, and character encoding.
 
 ## Use Cases
 

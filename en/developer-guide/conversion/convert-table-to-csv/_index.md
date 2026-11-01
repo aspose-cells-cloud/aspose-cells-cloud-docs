@@ -10,10 +10,9 @@ description: "Step-by-step guide to convert Excel table data to CSV using Aspose
 weight: 100
 date: 2024-05-20
 ---
-
 The **ConvertTableToCsv** API (`PUT https://api.aspose.cloud/v4.0/cells/convert/table/csv`) in Aspose.Cells Cloud enables direct conversion of a specified table from a local Excel file to CSV format without requiring prior upload or cloud storage, supporting secure, server-side processing with precise control via parameters like `worksheet`, `tableName`, and optional `password` or `region` settings.
 
-## **Convert Table to CSV API**
+## The Convert Table to CSV Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/convert/table/csv

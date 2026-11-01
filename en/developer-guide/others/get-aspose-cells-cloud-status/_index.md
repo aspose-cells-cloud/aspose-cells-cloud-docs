@@ -12,7 +12,6 @@ categories:
 weight: 100
 draft: false
 ---
-
 The **GetAsposeCellsCloudStatus** API (`GET https://api.aspose.cloud/v4.0/cells`) checks the real-time health status of the Aspose.Cells Cloud service, returning a string response that indicates service availability and operational conditions such as connectivity, latency, and error rates—enabling developers to perform pre-flight checks before executing critical operations or integrate with monitoring systems for SLA compliance.
 
 ## Overview
@@ -31,32 +30,38 @@ This API provides real-time monitoring of Aspose.Cells Cloud service availabilit
 - Monitor API rate limits to avoid excessive health check calls
 - Combine with logging/alerting systems for proactive incident response
 
-## Prerequisites
+## The Get Aspose Cells Cloud Status Web API
 
-To call this API you must obtain a [Bearer access token](/cloud/quickstart/) using your Aspose Cloud client credentials. Include the token in the `Authorization` header as `Bearer {access_token}`.
-
-## Web API Endpoint
-
-The endpoint uses the HTTP **GET** method and does not require a request body.
-
-```
+```http
 GET https://api.aspose.cloud/v4.0/cells
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### Request Parameters
 
-| Parameter Name | Type   | Location | Description                                 |
-| -------------- | ------ | -------- | ------------------------------------------- |
-| Authorization  | String | Header   | Bearer token for authentication (required). |
+This operation does not require request parameters.
 
 ### Response
 
 ```json
-{
-  "status": "OK",
-  "service": "Aspose.Cells Cloud",
-  "timestamp": "YYYY-MM-DDTHH:MM:SSZ"
-}
+[
+  {
+    "Name": "String",
+    "DataType": {
+      "Identifier": "String"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
 ```
 
 #### Response Schema
@@ -66,6 +71,8 @@ GET https://api.aspose.cloud/v4.0/cells
 | `status`    | string            | Service health (`OK`, `Degraded`, `Down`, etc.). |
 | `service`   | string            | Name of the service.                             |
 | `timestamp` | string (ISO‑8601) | Time of the status check (server time).          |
+
+The endpoint uses the HTTP **GET** method and does not require a request body.
 
 ### HTTP Status Codes
 

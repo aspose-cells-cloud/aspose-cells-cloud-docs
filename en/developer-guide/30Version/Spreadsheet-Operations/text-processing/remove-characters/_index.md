@@ -16,7 +16,6 @@ type: docs
 linktitle: "Remove Characters from Excel"
 ArticleTitle: "Aspose.Cells Cloud API: Remove Characters from Excel Files"
 ---
-
 The **PostRemoveCharacters** API (`POST https://api.aspose.cloud/v3.0/cells/removecharacters`) in Aspose.Cells Cloud enables precise text cleaning within Excel worksheets by removing specified characters, character sets (such as non-printing characters, letters, digits, symbols, or punctuation), or substrings from selected cells, supporting data preprocessing, validation, and workflow automation through a single, flexible request body parameter.
 
 ## Overview
@@ -25,18 +24,55 @@ The **Remove Characters** API enables you to clean and standardize text content 
 
 > **Note**: This operation modifies cell values _in-place_ and returns the updated workbook as a base64-encoded string in the response.
 
-## Prerequisites
-
-- An active [Aspose Cloud account](https://dashboard.aspose.cloud/).
-- A valid JWT access token (see [Authentication Guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/){rel="noopener noreferrer"}).
-- Your Excel file uploaded to Aspose Cloud storage (`.xlsx`, `.xls`, `.xlsm`, or other supported formats).
-- An API client or SDK (e.g., cURL, Python, .NET, Java, Node.js). See [SDKs on GitHub](https://github.com/aspose-cells-cloud){rel="noopener noreferrer"}.
-
-## API Endpoint
+## The Post Remove Characters Web API
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/removecharacters
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
+### Request Parameters
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| removeCharactersOptions | class:removecharactersoptions | HTTPBody | - |
+
+### Response
+
+```json
+[
+  {
+    "Name": "FileInfo",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "FileInfo"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+On success, the API returns a `FileInfo` object containing metadata and the updated file content.
+
+### Error Responses
+
+| Status Code | Error                   | Description                                                            |
+| ----------- | ----------------------- | ---------------------------------------------------------------------- |
+| `400`       | `Bad Request`           | Invalid `Range`, missing/invalid parameters, or unsupported file type. |
+| `401`       | `Unauthorized`          | Invalid, expired, or missing JWT token.                                |
+| `413`       | `Payload Too Large`     | Input file exceeds the 2 GB limit.                                     |
+| `500`       | `Internal Server Error` | Unexpected server-side failure.                                        |
+
+---
 
 ### Request Headers
 
@@ -46,12 +82,6 @@ POST https://api.aspose.cloud/v3.0/cells/removecharacters
 | `Content-Type`  | `application/json`      |
 
 ---
-
-## Request Parameters
-
-| Parameter                 | Type                      | Location | Required | Description                                                 |
-| ------------------------- | ------------------------- | -------- | -------- | ----------------------------------------------------------- |
-| `removeCharactersOptions` | `RemoveCharactersOptions` | Body     | Yes      | Object defining the scope and type of characters to remove. |
 
 ### `RemoveCharactersOptions` Schema
 
@@ -93,10 +123,6 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/removecharacters" \
 
 ---
 
-## Response
-
-On success, the API returns a `FileInfo` object containing metadata and the updated file content.
-
 ### Success Response (200 OK)
 
 ```json
@@ -116,17 +142,6 @@ On success, the API returns a `FileInfo` object containing metadata and the upda
 | `Filename`    | Name of the modified file.                               |
 | `Filesize`    | Size of the updated file in bytes.                       |
 | `FileContent` | Base64-encoded binary content of the updated Excel file. |
-
-### Error Responses
-
-| Status Code | Error                   | Description                                                            |
-| ----------- | ----------------------- | ---------------------------------------------------------------------- |
-| `400`       | `Bad Request`           | Invalid `Range`, missing/invalid parameters, or unsupported file type. |
-| `401`       | `Unauthorized`          | Invalid, expired, or missing JWT token.                                |
-| `413`       | `Payload Too Large`     | Input file exceeds the 2 GB limit.                                     |
-| `500`       | `Internal Server Error` | Unexpected server-side failure.                                        |
-
----
 
 ## Supported Character Sets
 

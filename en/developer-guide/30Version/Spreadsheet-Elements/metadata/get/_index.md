@@ -9,63 +9,66 @@ description: "Get Excel metadata via Aspose.Cells Cloud API—built-in and custo
 weight: 23
 ArticleTitle: "Get metadata from Excel files - Aspose.Cells Cloud API"
 ---
-
 The **GetMetadata** API (`POST https://api.aspose.cloud/v3.0/cells/metadata/get`) retrieves document properties—such as title, author, or custom built-in metadata—from one or more Excel files uploaded via form-data. Using Aspose.Cells Cloud, this operation supports extracting structured metadata without requiring local Excel installation, enabling programmatic analysis of workbook properties across cloud-based workflows.
 
-**Prerequisites**: To call this endpoint you must have a valid access token obtained from the Aspose Cloud OAuth 2.0 token endpoint. Example curl request to acquire a token:
+## The Get Metadata Web API
 
-```bash
-curl -X POST "https://api.aspose.cloud/connect/token" \
-     -H "Content-Type: application/x-www-form-urlencoded" \
-     -d "grant_type=client_credentials&client_id=<your_client_id>&client_secret=<your_client_secret>"
-```
-
-## REST API
-
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/metadata/get
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### Query Parameter
 
-| Parameter Name | Type   | Description                                                               |
-| -------------- | ------ | ------------------------------------------------------------------------- |
-| type           | string | `ALL` / `BuiltIn` / `Custom` – specifies which metadata groups to return. |
-
-### Request Body Parameter
-
-| Parameter Name | Type      | Description                                                         |
-| -------------- | --------- | ------------------------------------------------------------------- |
-| excel file     | data file | The Excel file supplied as the first part of the multipart request. |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| File | File | FormData | File to upload |
+| type | String | Query | Cells document property name. |
+| password | String | Query | The password needed to open an Excel file. |
+| checkExcelRestriction | Boolean | Query | Whether check restriction of excel file when user modify cells related objects. |
 
 ### Response
 
 ```json
 [
   {
-    "Name": "Author",
-    "Value": "John Doe",
-    "BuiltIn": true,
-    "IsReadOnly": false
-  },
-  {
-    "Name": "CustomProp1",
-    "Value": "Custom Value",
-    "BuiltIn": false,
-    "IsReadOnly": false
+    "Name": "IList`1",
+    "DataType": {
+      "Identifier": "Container",
+      "Reference": "CellsDocumentProperty"
+    }
   }
 ]
 ```
 
-| Code | Meaning               | When                           |
-| ---- | --------------------- | ------------------------------ |
-| 200  | Success               | Metadata returned.             |
-| 400  | Bad Request           | Missing file or invalid query. |
-| 401  | Unauthorized          | Invalid or missing token.      |
-| 404  | Not Found             | Specified file not found.      |
-| 500  | Internal Server Error | Unexpected server failure.     |
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 The API returns these standard HTTP status codes together with an error‑response JSON object when applicable.
+
+### Request Body Parameter
+
+| Parameter Name | Type      | Description                                                         |
+| -------------- | --------- | ------------------------------------------------------------------- |
+| excel file     | data file | The Excel file supplied as the first part of the multipart request. |
 
 ### Cloud SDK Family
 

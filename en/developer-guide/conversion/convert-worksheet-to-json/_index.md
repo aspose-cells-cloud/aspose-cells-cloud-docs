@@ -10,10 +10,9 @@ description: "Convert Excel worksheets to JSON instantly using Aspose.Cells Clou
 weight: 100
 type: docs
 ---
-
 The **ConvertWorksheetToJson** API (`PUT https://api.aspose.cloud/v4.0/cells/convert/worksheet/json`) enables Aspose.Cells Cloud users to convert a specified worksheet from a local spreadsheet file directly into JSON format without uploading to cloud storage. The operation requires a multipart form-data file upload and the worksheet name as a query parameter, supporting password-protected files, custom fonts, regional settings, and optional autofit configurations for rows and columns, ensuring accurate and efficient export of structured worksheet data for downstream applications.
 
-## **Convert Worksheet to JSON API**
+## The Convert Worksheet to JSON Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/convert/worksheet/json

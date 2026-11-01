@@ -10,7 +10,6 @@ description: "Get cell values from an Excel named range using Aspose.Cells Cloud
 weight: 100
 ArticleTitle: "Get Cells Data Based on Named Range – Aspose.Cells Cloud API"
 ---
-
 The **GetWorksheetCellsRangeValue** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/value`) retrieves the values of cells within a specified range in a worksheet, supporting both named ranges via the `namerange` query parameter and explicit cell ranges defined by `firstRow`, `firstColumn`, `rowCount`, and `columnCount` parameters. Aspose.Cells Cloud enables developers to programmatically extract range data from Excel workbooks stored in cloud storage, simplifying data integration and reporting workflows across supported platforms including .NET, Java, Python, and Node.js.
 
 - A valid JWT access token with the appropriate scope.
@@ -21,25 +20,29 @@ This REST API returns a list of cells within a range identified by a named range
 
 This operation allows developers to programmatically retrieve the values of cells that belong to a specific named range in an Excel worksheet. By supplying either the `namedRange` identifier or explicit row and column indexes, the API returns a detailed list of cells, including their address, row, column, value, data type, and formatting information. The response can be used to drive data‑driven applications, generate reports, or perform further calculations on the server side. The Aspose.Cells Cloud service supports multiple programming languages through its SDKs, ensuring seamless integration regardless of the development platform. Using HTTPS guarantees secure transmission of data, and the API adheres to RESTful principles, returning standard HTTP status codes for success and error conditions.
 
-## REST API
+## The Get Worksheet Cells Range Value Web API
 
-```bash
+```http
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/value
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### **Request parameters**
 
-| Parameter Name | Type    | Location | Description                                                                                 |
-| -------------- | ------- | -------- | ------------------------------------------------------------------------------------------- |
-| name           | string  | path     | The workbook file name.                                                                     |
-| sheetName      | string  | path     | The worksheet name within the workbook.                                                     |
-| namedRange     | string  | query    | The named range to retrieve, e.g., `A1:B2` or `range_name1`.                                |
-| firstRow       | integer | query    | Zero‑based index of the first row of the range (used when `namedRange` is not supplied).    |
-| firstColumn    | integer | query    | Zero‑based index of the first column of the range (used when `namedRange` is not supplied). |
-| rowCount       | integer | query    | Number of rows to include in the range.                                                     |
-| columnCount    | integer | query    | Number of columns to include in the range.                                                  |
-| folder         | string  | query    | The folder that contains the workbook.                                                      |
-| storageName    | string  | query    | The name of the cloud storage where the workbook resides.                                   |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| namerange | String | Query | The range name. |
+| firstRow | Integer | Query | Gets the index of the first row of the range. |
+| firstColumn | Integer | Query | Gets the index of the first columnn of the range. |
+| rowCount | Integer | Query | Gets the count of rows in the range. |
+| columnCount | Integer | Query | Gets the count of columns in the range. |
+| folder | String | Query | Original workbook folder. |
+| storageName | String | Query | Storage name. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Ranges/GetWorksheetCellsRangeValue) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
@@ -258,15 +261,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/
 
 **Security Note:** Always use HTTPS when calling the API. The service does not support plain HTTP; using HTTPS ensures the request is encrypted and complies with security best practices.
 
-**HTTP Status Codes**
-
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
 
 **Example error response (400 Bad Request)**
 
@@ -279,6 +273,37 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/
 ```
 
 > **Tip:** The API uses zero‑based indices for `firstRow` and `firstColumn`. For example, the first row of the worksheet is `0`.
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "RangeValueResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "RangeValueResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Cloud SDK Family
 

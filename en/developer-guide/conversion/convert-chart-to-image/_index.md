@@ -9,12 +9,11 @@ keywords: "convert chart to image, Aspose.Cells, Excel chart export, PNG, SVG, J
 description: "Convert Excel charts to PNG, SVG, TIFF, JPEG, or BMP using Aspose.Cells Cloud API with secure JWT authentication."
 weight: 100
 ---
-
 The **ConvertChartToImage** API (`PUT https://api.aspose.cloud/v4.0/cells/convert/chart/image`) in Aspose.Cells Cloud converts a chart from a local spreadsheet file directly to image format—such as PNG, SVG, or TIFF—without requiring the file to be uploaded to cloud storage, enabling efficient reuse of charts in reports, web pages, or other documents.
 
 Convert a chart from a local spreadsheet or Excel file to an image file. Supported **IMAGE FORMATS:** <a href="https://docs.fileformat.com/image/png/" rel="noopener noreferrer">PNG</a>, <a href="https://docs.fileformat.com/page-description-language/svg/" rel="noopener noreferrer">SVG</a>, <a href="https://docs.fileformat.com/image/tiff/" rel="noopener noreferrer">TIFF</a>, <a href="https://docs.fileformat.com/image/jpeg/" rel="noopener noreferrer">JPEG</a>, <a href="https://docs.fileformat.com/image/bmp/" rel="noopener noreferrer">BMP</a>
 
-## **Convert Chart to Image API**
+## The Convert Chart to Image Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/convert/chart/image

@@ -16,10 +16,9 @@ keywords:
 weight: 100
 ArticleTitle: "Remove Characters by Position in Excel with Aspose.Cells Cloud API"
 ---
-
 The **RemoveCharactersByPosition** API (`PUT https://api.aspose.cloud/v4.0/cells/content/remove/characters-by-position`) in Aspose.Cells Cloud v4.0 deletes characters from Excel cell ranges by position—supporting first/last N characters, text before/after a substring, or content between two delimiters—while preserving formulas, formatting, and data validation, enabling precise text cleaning for data standardization and batch preprocessing without complex regex.
 
-## Introduction
+## Overview
 
 Remove unwanted characters from Excel cells based on positional rules. Aspose.Cells Cloud Web API supports five deletion modes: first N characters, last N characters, before/after a substring, or between two delimiters. This enables precise text cleaning without complex regex, ideal for data standardization, log parsing, and batch preprocessing.
 
@@ -42,7 +41,7 @@ The API supports the following position-based removal strategies:
 | `caseSensitive`       | Boolean                                 | Controls case sensitivity for `allCharactersBeforeText`, `allCharactersAfterText`, and `BetweenValues`. Default: `false`.                                                                                                                                                      |
 | `includingDelimiters` | Boolean _(not exposed in query params)_ | Applies only to `BetweenValues` mode. When `false`, the delimiter strings themselves are retained; when `true`, they are removed along with the inner content. _(Note: This option is internal to the API service and may be set via SDK or body payload in future versions.)_ |
 
-## API Endpoint
+## The Remove Characters by Position Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/content/remove/characters-by-position
@@ -58,35 +57,46 @@ The API requires [JWT token-based authentication](https://docs.aspose.cloud/tota
 
 ### Request Parameters
 
-| Parameter Name            | Type    | Location | Required | Description                                                                       |
-| ------------------------- | ------- | -------- | -------- | --------------------------------------------------------------------------------- |
-| `Spreadsheet`             | File    | FormData | ✅ Yes   | The Excel file to process (XLSX, XLS, ODS, CSV, etc.).                            |
-| `theFirstNCharacters`     | Integer | Query    | ❌ No    | Number of leading characters to remove.                                           |
-| `theLastNCharacters`      | Integer | Query    | ❌ No    | Number of trailing characters to remove.                                          |
-| `allCharactersBeforeText` | String  | Query    | ❌ No    | Remove all text before the first occurrence of this substring.                    |
-| `allCharactersAfterText`  | String  | Query    | ❌ No    | Remove all text after the first occurrence of this substring.                     |
-| `caseSensitive`           | Boolean | Query    | ❌ No    | Whether substring matching is case-sensitive.                                     |
-| `worksheet`               | String  | Query    | ❌ No    | Target worksheet name. Defaults to the first worksheet.                           |
-| `range`                   | String  | Query    | ❌ No    | Cell range (e.g., `"A1:C10"`). Defaults to all used cells in the worksheet.       |
-| `outPath`                 | String  | Query    | ❌ No    | Cloud storage path for output file. If omitted, saved in source folder.           |
-| `outStorageName`          | String  | Query    | ❌ No    | Name of the cloud storage for output.                                             |
-| `region`                  | String  | Query    | ❌ No    | Locale setting (e.g., `"en-US"`, `"zh-CN"`), affecting text encoding and parsing. |
-| `password`                | String  | Query    | ❌ No    | Password for protected workbooks.                                                 |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| theFirstNCharacters | Integer | Query | Specify removing the first n characters from selected cells. |
+| theLastNCharacters | Integer | Query | Specify removing the last n characters from selected cells. |
+| allCharactersBeforeText | String | Query | Specify using targeted removal options to delete text that is located before certain characters. |
+| allCharactersAfterText | String | Query | Specify using targeted removal options to delete text that is located after certain characters. |
+| caseSensitive | Boolean | Query | Affects `Substring` mode and `CustomChars` when enabled. |
+| worksheet | String | Query | Specify the worksheet of spreadsheet. |
+| range | String | Query | Specify the worksheet range of spreadsheet. |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
 
 > **Note**: Only one primary mode (`theFirstNCharacters`, `theLastNCharacters`, `allCharactersBeforeText`, `allCharactersAfterText`, or `BetweenValues`) should be specified per request. Combining modes yields undefined behavior.
 
 ### Response
 
-On success, returns the cleaned workbook as a binary stream (`Content-Type: application/octet-stream`).
-
 ```json
-{
-  "DataType": {
-    "Identifier": "File",
-    "Reference": "Stream"
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
   }
-}
+]
 ```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
+On success, returns the cleaned workbook as a binary stream (`Content-Type: application/octet-stream`).
 
 ### Error Codes
 

@@ -18,11 +18,62 @@ aliases:
 canonical: "https://docs.aspose.cloud/cells/ranges/update/row-height/"
 ArticleTitle: "Update Row Height for Excel Range via Aspose.Cells Cloud API"
 ---
-
-
 The **PostWorksheetCellsRangeRowHeight** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/rowHeight`) in Aspose.Cells Cloud v3.0 updates the row height for a specified range within a worksheet by setting a uniform height value for all rows in that range, enabling precise formatting control when working with Excel files stored in the cloud.
 
-## Prerequisites / Authentication
+## The Post Worksheet Cells Range Row Height Web API
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/rowHeight
+```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
+### **Request Parameters:**
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| range | class:range | HTTPBody | The range object. |
+| value | floating | Query | Sets the column height of this range. |
+| folder | String | Query | Original workbook folder. |
+| storageName | String | Query | Storage name. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+### Prerequisites / Authentication
 
 You must obtain a JWT access token from the Aspose Cloud OAuth service with the **Cells.ReadWrite** scope.
 

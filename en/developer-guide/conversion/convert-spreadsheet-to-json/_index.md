@@ -19,19 +19,9 @@ weight: 100
 type: docs
 ArticleTitle: "Convert Excel to JSON with Aspose.Cells Cloud API - Secure, Server-Side Conversion"
 ---
-
 The **ConvertSpreadsheetToJson** API (`PUT https://api.aspose.cloud/v4.0/cells/convert/spreadsheet/json`) in Aspose.Cells Cloud converts a local spreadsheet file—such as `.xls`, `.xlsx`, or `.xlsm`—directly to JSON format without requiring prior upload to cloud storage, enabling efficient, low-latency conversion for data pipelines and web applications by processing the file entirely on the cloud server.
 
-## Prerequisites
-
-- Aspose Cloud account with valid **JWT access token**
-- Supported spreadsheet format (`.xls`, `.xlsx`, `.xlsm`, `.xlsb`, `.ods`)
-- For password-protected files: the correct password
-- _(Optional)_ Custom fonts folder if workbook uses non-default fonts
-
-> 💡 **Tip**: Generate a free JWT token via the [Cloud Dashboard](https://dashboard.aspose.cloud/).
-
-## API Endpoint
+## The Convert Spreadsheet to JSON Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/convert/spreadsheet/json

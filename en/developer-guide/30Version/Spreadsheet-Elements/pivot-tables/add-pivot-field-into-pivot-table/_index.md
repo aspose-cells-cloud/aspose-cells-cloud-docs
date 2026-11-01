@@ -10,29 +10,32 @@ description: "Add a pivot field to an existing pivot table via Aspose.Cells Clou
 weight: 40
 ArticleTitle: "Add a Pivot Field to a Pivot Table – Aspose.Cells Cloud Documentation"
 ---
-
 The **PutPivotTableField** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField`) adds a pivot field to an existing pivot table in Aspose.Cells Cloud, supporting row, column, data, or filter field types via the required `pivotFieldType` query parameter and `pivotTableFieldRequest` body. This operation enables developers to programmatically extend pivot table structure without manual reconfiguration, leveraging Aspose.Cells Cloud’s REST API to automate complex spreadsheet analysis workflows across supported SDKs for .NET, Java, Python, and other languages.
 
 > **Prerequisite:** To call this endpoint you must include a valid JWT authentication token in the `Authorization` header and ensure the workbook is stored in the specified folder or default storage.
 
-## REST API
+## The Put Pivot Table Field Web API
 
-```bash
+```http
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### Request parameters
 
-| Parameter Name  | Type    | Location | Description                                                         |
-| --------------- | ------- | -------- | ------------------------------------------------------------------- |
-| name            | string  | path     | Document name.                                                      |
-| sheetName       | string  | path     | Worksheet name.                                                     |
-| pivotTableIndex | integer | path     | Index of the pivot table.                                           |
-| pivotFieldType  | string  | query    | Type of the fields area (e.g., Row, Column).                        |
-| request         | object  | body     | DTO that contains the field indexes to add.                         |
-| needReCalculate | boolean | query    | Set to **true** to recalculate the pivot table after the operation. |
-| folder          | string  | query    | Folder where the document is stored.                                |
-| storageName     | string  | query    | Name of the storage.                                                |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| pivotTableIndex | Integer | Path | The PivotTable index. |
+| pivotFieldType | String | Query | The fields area type. |
+| pivotTableFieldRequest | class:pivottablefieldrequest | HTTPBody | PivotTableFieldRequest The PivotTable field request. |
+| needReCalculate | Boolean | Query | Whether the specific PivotTable calculate(true/false). |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PivotTables/PutPivotTableField) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
@@ -76,6 +79,38 @@ The successful response returns a JSON object with `Code` and `Status` fields. E
 ```
 
 Possible error responses include **400 Bad Request** for missing parameters, **401 Unauthorized** if the token is invalid, and **500 Internal Server Error** for server‑side issues.
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Cloud SDK Family
 

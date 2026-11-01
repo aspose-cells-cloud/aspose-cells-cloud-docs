@@ -10,27 +10,30 @@ description: "Delete multiple Excel worksheets using Aspose.Cells Cloud REST API
 weight: 100
 ArticleTitle: "Delete Multiple Excel Worksheets using Aspose.Cells Cloud REST API"
 ---
-
 The **DeleteWorksheets** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets`) enables deletion of multiple worksheets matching specified criteria from a workbook stored in the cloud, supporting flexible matching via the `matchCondition` body parameter while requiring only the workbook's `name` as a path parameter; Aspose.Cells Cloud handles the complex task of worksheet removal through its REST API and provides SDKs for .NET, Java, Go, Node.js, Python, and other languages to streamline integration.
 
 ## Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
-## REST API
+## The Delete Worksheets Web API
 
-```bash
+```http
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### **Request parameters**
 
-| Parameter Name | Type   | Location | Description                                                                 |
-| -------------- | ------ | -------- | --------------------------------------------------------------------------- |
-| name           | string | path     | The name of the Excel file.                                                 |
-| matchCondition | object | body     | A `MatchConditionRequest` object that specifies which worksheets to delete. |
-| folder         | string | query    | Folder path in storage where the file is located.                           |
-| storageName    | string | query    | Name of the storage service.                                                |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | - |
+| matchCondition | class:matchconditionrequest | HTTPBody | - |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 **MatchConditionRequest Properties**
 
@@ -80,6 +83,38 @@ The request can also return common error responses, for example:
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Cloud SDK Family
 

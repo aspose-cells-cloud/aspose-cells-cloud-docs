@@ -8,18 +8,15 @@ keywords: "Aspose.Cells Cloud, delete blank worksheets, Excel API, workbook clea
 weight: 100
 ArticleTitle: "Delete Blank Worksheets in Excel Workbooks using Aspose.Cells Cloud API v4.0"
 ---
-
 The **RemoveSpreadsheetBlankWorksheets** API (`PUT https://api.aspose.cloud/v4.0/cells/remove/blank-worksheets`) in Aspose.Cells Cloud removes all blank worksheets—those containing no data, formulas, charts, comments, or other objects—from an uploaded Excel workbook. Using a `FormData` file upload, the operation preserves populated sheets while deleting empty ones, helping optimize workbook size, improve organization, and streamline post-processing workflows such as template cleanup or standardization.
 
-## API Endpoint
+## The Remove Spreadsheet Blank Worksheets Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/remove/blank-worksheets
 ```
 
-> **Note**: The path `/remove/blank-worksheets` supersedes the legacy `/delete/blank-worksheets` endpoint. Ensure clients use the correct v4.0 path.
-
-## Authentication
+### Authentication
 
 All requests require a valid [JWT access token](/docs/total/getting-started/authentication/) generated with your `Client ID` and `Client Secret`.
 
@@ -30,17 +27,37 @@ curl -X PUT \
   -F 'Spreadsheet=@input.xlsx'
 ```
 
-## Request Parameters
+### Request Parameters
 
-| Parameter        | Type   | Location | Required | Description                                                                                                                             |
-| ---------------- | ------ | -------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| `Spreadsheet`    | File   | FormData | ✅ Yes   | Excel workbook to process. Supported formats: `.xlsx`, `.xls`, `.xlsm`, `.xlsb`, `.ods`.                                                |
-| `outPath`        | String | Query    | ❌ No    | Target path (including filename) in cloud storage for the cleaned output. If omitted, output is saved to the same folder as the source. |
-| `outStorageName` | String | Query    | ❌ No    | Name of the configured cloud storage (e.g., `MyFirstStorage`) where the output file will be stored.                                     |
-| `region`         | String | Query    | ❌ No    | Locale setting (e.g., `en-US`, `fr-FR`) affecting number/date formatting during processing.                                             |
-| `password`       | String | Query    | ❌ No    | Password for protected workbooks. Omit if file is unencrypted.                                                                          |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
 
-## Response
+### Response
+
+```json
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
 
 On success (`200 OK`), the API returns the cleaned workbook as a binary file stream (`Content-Type: application/octet-stream`).
 
@@ -58,6 +75,8 @@ On success (`200 OK`), the API returns the cleaned workbook as a binary file str
 | `500 Server Error` | Internal processing failure—e.g., corruption during parsing or calculation. |
 
 > **Important**: This operation permanently deletes blank worksheets. Always back up your workbook before use.
+
+> **Note**: The path `/remove/blank-worksheets` supersedes the legacy `/delete/blank-worksheets` endpoint. Ensure clients use the correct v4.0 path.
 
 ## Use Cases
 

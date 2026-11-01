@@ -12,12 +12,11 @@ keywords:
 type: docs
 weight: 100
 ---
-
 The **GetFilesList** API (`GET https://api.aspose.cloud/v4.0/cells/storage/folder/{path}`) retrieves the collection of files and subfolders stored in a specified folder of Aspose.Cells Cloud storage, enabling developers to browse cloud-based Excel workbooks, archives, and other supported file types programmatically using the v4.0 REST API.
 
-## Aspose.Cells Cloud API – Get Files List (Folder Contents)
+## The Get Files List Web API
 
-```
+```http
 GET https://api.aspose.cloud/v4.0/cells/storage/folder/{path}
 ```
 
@@ -27,12 +26,10 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Name            | Location | Type    | Required | Description                                                          |
-| --------------- | -------- | ------- | -------- | -------------------------------------------------------------------- |
-| **path**        | Path     | string  | Yes      | Path to the folder in cloud storage.                                 |
-| **storageName** | Query    | string  | No       | Name of the storage to use. If omitted, the default storage is used. |
-| **pageSize**    | Query    | integer | No       | Maximum number of items to return per page (default: 100).           |
-| **pageNumber**  | Query    | integer | No       | Page number to retrieve (starting at 1, default: 1).                 |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| path | String | Path | - |
+| storageName | String | Query | - |
 
 - **Value** – Array of `StorageFile` objects. Each object contains:
   - `Name` – File or folder name.
@@ -42,16 +39,34 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Response**
 
+```json
+[
+  {
+    "Name": "FilesList",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "FilesList"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
 **HTTP Status Codes**
 
-| HTTP Code | HTTP Status           | Description                                                       |
-| --------- | --------------------- | ----------------------------------------------------------------- |
-| 200       | OK                    | Web API called successfully; response contains operation details. |
-| 400       | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401       | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413       | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500       | Internal Server Error | Unexpected server error.                                          |
-|           |
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## OpenAPI Specification
 

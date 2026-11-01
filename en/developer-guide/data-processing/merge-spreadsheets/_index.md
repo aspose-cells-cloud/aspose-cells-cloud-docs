@@ -15,19 +15,11 @@ description: "Merge spreadsheets using Aspose.Cells Cloud API — batch combine 
 weight: 100
 ArticleTitle: "Merge Multiple Excel Files with Aspose.Cells Cloud API – Batch Combine Spreadsheets"
 ---
-
-
 The **MergeSpreadsheets** API (`PUT https://api.aspose.cloud/v4.0/cells/merge/spreadsheet`) enables developers to combine multiple local Excel, CSV, or ODS files into a single workbook using Aspose.Cells Cloud, supporting output formats such as XLSX, CSV, PDF, and over 30 others; the operation processes files cloud-side without requiring prior upload to cloud storage and allows configuration of output format, worksheet layout (e.g., merging all data into one sheet), and regional settings.
 
 ## Overview
 
 This API endpoint enables developers to merge multiple spreadsheet files from the local file system into a unified workbook and export the result in a target format—without requiring prior upload to cloud storage. The operation is processed entirely in the cloud, ensuring scalability and minimal local resource usage.
-
-### Prerequisites
-
-- An active [Aspose Cloud account](https://dashboard.aspose.cloud/)
-- Valid API Key and App SID (see [Authentication Guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/){rel="noopener noreferrer"})
-- Supported input formats: XLSX, XLS, CSV, ODS, and others
 
 ### Supported Output Formats
 
@@ -35,7 +27,7 @@ XLSX, XLS, CSV, ODS, PDF, HTML, MHTML, TXT, TSV, XLSB, XLSM, XLTM, XLTX, DIF, SY
 
 > **Note**: Format availability may vary by region and plan. See [Supported Formats](https://docs.aspose.cloud/cells/) for the latest list.
 
-## Web API
+## The Merge Spreadsheets Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/merge/spreadsheet
@@ -47,36 +39,55 @@ All requests require JWT token-based authentication. Obtain your access token vi
 
 ### Request Parameters
 
-| Parameter Name    | Type    | Location | Required | Description                                                                                                                        |
-| ----------------- | ------- | -------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| `Spreadsheet`     | File    | FormData | Yes      | One or more local spreadsheet files (XLSX, XLS, CSV, ODS, etc.). Multiple files may be uploaded as separate `Spreadsheet` entries. |
-| `outFormat`       | String  | Query    | No       | Desired output format (e.g., `XLSX`, `PDF`, `CSV`, `HTML`). Default: `xlsx`.                                                       |
-| `mergeInOneSheet` | Boolean | Query    | No       | `true` → merge all data into a single worksheet; `false` → preserve original sheet structure. Default: `false`.                    |
-| `outPath`         | String  | Query    | No       | Cloud storage path where the merged file will be saved. If omitted, output is returned in the response body.                       |
-| `outStorageName`  | String  | Query    | No       | Name of the cloud storage (default or custom). Default: first configured storage.                                                  |
-| `fontsLocation`   | String  | Query    | No       | Cloud folder containing custom fonts (required for accurate PDF/image rendering).                                                  |
-| `region`          | String  | Query    | No       | Locale (e.g., `en-US`, `fr-FR`) for number, date, and currency formatting.                                                         |
-| `password`        | String  | Query    | No       | Password to decrypt a protected input file.                                                                                        |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| outFormat | String | Query | The out file format. |
+| mergeInOneSheet | Boolean | Query | Whether to combine all data into a single worksheet. |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| fontsLocation | String | Query | Use Custom fonts. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
 
 ### Response
 
+```json
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | Invalid url. |
+| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
+| 404 | Not Found | Source file not accessible. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining data. |
+
 On success, the API returns the merged workbook as a binary stream.
 
-```json
-{
-  "Name": "ResponseFile",
-  "DataType": {
-    "Identifier": "File",
-    "Reference": "Stream"
-  }
-}
-```
 
 **Success Response**
 
-| Status Code | Content-Type               | Description                      |
-| ----------- | -------------------------- | -------------------------------- |
-| `200 OK`    | `application/octet-stream` | Binary stream of the merged file |
 
 **Error Responses**
 

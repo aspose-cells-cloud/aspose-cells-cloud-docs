@@ -10,10 +10,65 @@ keywords: "Aspose.Cells, Remove Duplicate Substrings, API"
 description: "API to find and remove repeated substrings inside cells of a specified range in a workbook."
 weight: 1
 ---
-
 The **RemoveDuplicateSubstringsInRemoteSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/duplicate-substrings`) in Aspose.Cells Cloud identifies and removes repeated substrings within each cell of a specified range, using user-defined or preset delimiters like comma, semicolon, space, tab, or line-break, while preserving formulas (though they are converted to strings and re-evaluated), formatting, and data-validation; only the first occurrence of each duplicate substring is retained per cell, and the cleaned workbook is returned as a stream along with the count of processed cells.
 
-## The Remove Duplicate Substrings In Remote Spreadsheet of Aspose.Cells Cloud Web Services
+## The Remove Duplicate Substrings in Remote Spreadsheet Web API
+
+```http
+PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/duplicate-substrings
+```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+### Request Parameters
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | (Required) The name of the workbook file to be retrieved. |
+| worksheet | String | Path | Specify the worksheet of spreadsheet. |
+| range | String | Path | Specify the worksheet range of spreadsheet. |
+| delimiters | String | Query | comma, semicolon, space, tab, line-break |
+| treatConsecutiveDelimitersAsOne | Boolean | Query | collapse adjacent delimiters into a single separator. |
+| caseSensitive | Boolean | Query | - |
+| folder | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| storageName | String | Query | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+**Response Status Codes**
 
 Finds and removes repeated substrings inside every cell of the chosen range, using user‑defined or preset delimiters, while preserving formulas, formatting and data‑validation.
 
@@ -31,57 +86,11 @@ Finds and removes repeated substrings inside every cell of the chosen range, usi
 
 Only string‑type cells are processed; numbers, booleans and formulas are converted to string before splitting (formulas are dropped). Returns the count of cleaned cells and the updated workbook stream.
 
-### Web API Endpoint
-
-```http
-PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/duplicate-substrings
-```
-
-### **Security and Authentication**
-
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
-
-### Request Parameters
-
-| Parameter Name                  | Type    | Path/Query String/HTTP Body | Description                                                                                      |
-| ------------------------------- | ------- | --------------------------- | ------------------------------------------------------------------------------------------------ |
-| name                            | string  | Path                        | (Required) The name of the workbook file to be retrieved.                                        |
-| worksheet                       | string  | Path                        | Specify the worksheet of spreadsheet.                                                            |
-| range                           | string  | Path                        | Specify the worksheet range of spreadsheet.                                                      |
-| delimiters                      | string  | Query                       | Delimiters used to split cell values (e.g., comma, semicolon, space, tab, line‑break). Required. |
-| treatConsecutiveDelimitersAsOne | boolean | Query                       | Collapse adjacent delimiters into a single separator. Default: true. Optional.                   |
-| caseSensitive                   | boolean | Query                       | Perform case‑sensitive comparison when detecting duplicates. Optional.                           |
-| folder                          | string  | Query                       | (Optional) The folder path where the workbook is stored. Default: null.                          |
-| storageName                     | string  | Query                       | (Optional) The name of the storage if using custom cloud storage.                                |
-| region                          | string  | Query                       | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Optional.                          |
-| password                        | string  | Query                       | The password for opening spreadsheet file. Optional.                                             |
-
 ### Request Body Parameter
 
 | Parameter Name | Type | Description                                     |
 | -------------- | ---- | ----------------------------------------------- |
 | -              | -    | No request body is required for this operation. |
-
-### **Response**
-
-```json
-{
-  "code": 200,
-  "status": "OK",
-  "cellsCount": 123,
-  "file": "base64-encoded workbook stream"
-}
-```
-
-**Response Status Codes**
-
-| Code | Meaning               | Description                                                                              |
-| ---- | --------------------- | ---------------------------------------------------------------------------------------- |
-| 200  | OK                    | Operation succeeded; returns the count of cleaned cells and the updated workbook stream. |
-| 400  | Bad Request           | One or more request parameters are missing or invalid.                                   |
-| 401  | Unauthorized          | Authentication failed or JWT token is missing/invalid.                                   |
-| 413  | Payload Too Large     | The request exceeds the allowed size limits.                                             |
-| 500  | Internal Server Error | An unexpected error occurred on the server.                                              |
 
 ## How to Use the Remove Duplicate Substrings In Remote Spreadsheet with SDKs
 

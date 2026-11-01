@@ -19,27 +19,32 @@ description: "Update Excel cell range styles (font, color, background) via Aspos
 linktitle: "Update Cells Style API"
 ArticleTitle: "Aspose.Cells Cloud API: Update Multiple Cells Style in Excel"
 ---
-
 The **PostUpdateWorksheetRangeStyle** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/style`) enables developers to update the formatting style for a specified cell range in an Excel worksheet via Aspose.Cells Cloud, supporting key parameters including `name`, `sheetName`, `range`, and a `style` object in the request body to apply consistent styling across multiple cells efficiently.
 
-## REST API
-
-This REST API updates the **style** for a range of cells in an Excel worksheet.
+## The Post Update Worksheet Range Style Web API
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/style
 ```
 
+### Security and Authentication
+
+The Aspose.Cells Cloud APIs use [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/). Include a valid bearer token in the `Authorization` header:
+
+```http
+Authorization: Bearer <your_jwt_token>
+```
+
 ### Request Parameters
 
-| Parameter Name  | Type   | Location | Required | Description                              |
-| --------------- | ------ | -------- | -------- | ---------------------------------------- |
-| **name**        | string | path     | Yes      | Workbook name.                           |
-| **sheetName**   | string | path     | Yes      | Worksheet name.                          |
-| **range**       | string | query    | Yes      | Cell range (e.g., `A1:A10`).             |
-| **style**       | object | body     | Yes      | JSON object defining the style to apply. |
-| **folder**      | string | query    | No       | Folder containing the workbook.          |
-| **storageName** | string | query    | No       | Name of the storage.                     |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| range | String | Query | Represents the range to which the specified cells applies. |
+| style | class:style | HTTPBody | Style with update style settings. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 #### Style Object
 
@@ -52,24 +57,40 @@ The `style` JSON object supports the following optional properties:
 
 > 📝 **Note**: All color values must be in ARGB format with channel values between `0` and `255`. Invalid values return `400 Bad Request`.
 
-### Security and Authentication
+### Response
 
-The Aspose.Cells Cloud APIs use [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/). Include a valid bearer token in the `Authorization` header:
-
-```http
-Authorization: Bearer <your_jwt_token>
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
 ```
 
-### Response
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 Returns a `CellsCloudResponse` object:
 
-```json
-{
-  "Status": "OK",
-  "Code": 200
-}
-```
 
 | Field    | Type    | Description                                          |
 | -------- | ------- | ---------------------------------------------------- |
@@ -78,15 +99,10 @@ Returns a `CellsCloudResponse` object:
 
 #### HTTP Status Codes
 
-| Code | Meaning               | Description                                                                 |
-| ---- | --------------------- | --------------------------------------------------------------------------- |
-| 200  | OK                    | Style updated successfully.                                                 |
-| 400  | Bad Request           | Missing/invalid parameters (e.g., malformed `range`, invalid color format). |
-| 401  | Unauthorized          | Invalid, expired, or missing JWT token.                                     |
-| 413  | Payload Too Large     | Request body exceeds size limit.                                            |
-| 500  | Internal Server Error | Unexpected server error.                                                    |
 
 ---
+
+This REST API updates the **style** for a range of cells in an Excel worksheet.
 
 ## How to Use the PostUpdateWorksheetRangeStyle API
 

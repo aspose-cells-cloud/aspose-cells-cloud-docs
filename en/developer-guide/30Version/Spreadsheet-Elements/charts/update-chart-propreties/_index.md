@@ -9,29 +9,91 @@ description: "Update Excel chart properties via Aspose.Cells Cloud REST API usin
 ArticleTitle: "Update Chart Properties – Aspose.Cells Cloud REST API"
 linktitle: "Update Chart Properties"
 ---
-
 The **PostWorksheetChart** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}`) enables developers to update chart properties in a worksheet using Aspose.Cells Cloud, allowing precise programmatic control over chart appearance and behavior by sending a modified chart object in the request body.
 
 ### **Security and Authentication**
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-## PostWorksheetChart API
+## The Post Worksheet Chart Web API
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### Request parameters
 
-| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                                   |
-| -------------- | ------- | -------------------------- | ------------------------------------------------------------- |
-| name           | string  | path                       | The name of the Excel file.                                   |
-| sheetName      | string  | path                       | The name of the worksheet containing the chart.               |
-| chartIndex     | integer | path                       | Zero-based index of the chart to be updated.                  |
-| chart          | object  | body                       | JSON object that defines the chart properties to be modified. |
-| folder         | string  | query                      | The folder in storage where the file is located.              |
-| storageName    | string  | query                      | The name of the storage service.                              |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| chartIndex | Integer | Path | The chart index. |
+| chart | class:chart | HTTPBody | Chart Represents a specified chart. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+
+### Response
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+The API returns a JSON object indicating the operation result. A successful update yields:
+
+
+**Success status codes**
+
+| HTTP Status | Description |
+| ----------- | ----------- |
+| 200         | OK – The chart properties were updated successfully. |
+
+**Response headers**
+
+| Header | Description |
+| ------ | ----------- |
+| `Content-Type` | `application/json` – Indicates that the response body is JSON formatted. |
+| `X-RequestId` | Unique identifier for the request (useful for troubleshooting). |
+
+Possible error responses include:
+
+| HTTP Status | Description                                     |
+| ----------- | ----------------------------------------------- |
+| 400         | Bad Request – invalid parameters or body        |
+| 401         | Unauthorized – missing or invalid token         |
+| 404         | Not Found – file, worksheet, or chart not found |
+| 500         | Internal Server Error                           |
+
+For other chart‑related operations, see the related topics such as [Update Chart Title](/charts/title/update/) and [Update Chart Legend](/charts/legend/update/).
 
 ### Request Body Schema
 
@@ -87,41 +149,6 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet4/c
 {{< /tab >}}
 
 {{< /tabs >}}
-
-## Response
-
-The API returns a JSON object indicating the operation result. A successful update yields:
-
-```json
-{
-  "Code": 200,
-  "Status": "OK"
-}
-```
-
-**Success status codes**
-
-| HTTP Status | Description |
-| ----------- | ----------- |
-| 200         | OK – The chart properties were updated successfully. |
-
-**Response headers**
-
-| Header | Description |
-| ------ | ----------- |
-| `Content-Type` | `application/json` – Indicates that the response body is JSON formatted. |
-| `X-RequestId` | Unique identifier for the request (useful for troubleshooting). |
-
-Possible error responses include:
-
-| HTTP Status | Description                                     |
-| ----------- | ----------------------------------------------- |
-| 400         | Bad Request – invalid parameters or body        |
-| 401         | Unauthorized – missing or invalid token         |
-| 404         | Not Found – file, worksheet, or chart not found |
-| 500         | Internal Server Error                           |
-
-For other chart‑related operations, see the related topics such as [Update Chart Title](/charts/title/update/) and [Update Chart Legend](/charts/legend/update/).
 
 ## Cloud SDK Family
 

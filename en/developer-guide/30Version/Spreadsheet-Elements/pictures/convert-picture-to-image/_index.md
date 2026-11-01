@@ -10,27 +10,49 @@ description: "Retrieve a picture from an Excel worksheet by index using Aspose.C
 weight: 100
 ArticleTitle: "Aspose.Cells Cloud API – Get Picture from Worksheet"
 ---
-
 The **GetWorksheetPictureWithFormat** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureNumber}`) retrieves a specific picture from an Excel worksheet by its zero-based index and converts it to a requested image format (PNG, TIFF, JPEG, GIF, EMF, or BMP), enabling developers to extract and use embedded pictures as standalone image files via Aspose.Cells Cloud REST API.
 
-## REST API
+## The Get Worksheet Picture with Format Web API
 
-To call this endpoint you must include a valid JWT access token in the **Authorization** header. Tokens are obtained via the Aspose.Cells Cloud authentication flow and require the appropriate scopes for file access. For details on acquiring a token, see the global **Authentication** guide.
-
-```bash
-GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureNumber}
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
 
 ### Request Parameters
 
-| Parameter Name | Type    | Location | Description                                                                                                         |
-| -------------- | ------- | -------- | ------------------------------------------------------------------------------------------------------------------- |
-| name           | string  | path     | Name of the Excel document.                                                                                         |
-| sheetName      | string  | path     | Name of the worksheet.                                                                                              |
-| pictureIndex   | integer | path     | Zero‑based index of the picture.                                                                                    |
-| format         | string  | query    | Desired export format (e.g., png, jpg, bmp, gif, tiff). If omitted, the picture is returned in its original format. |
-| folder         | string  | query    | Folder that contains the document.                                                                                  |
-| storageName    | string  | query    | Name of the storage location.                                                                                       |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| pictureNumber | Integer | Path | The picture index. |
+| format | String | Query | Picture conversion format(PNG/TIFF/JPEG/GIF/EMF/BMP). |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "Stream",
+    "DataType": {
+      "Identifier": "File"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
 
 ### Error Responses
 
@@ -70,6 +92,8 @@ iVBORw0KGgoAAAANSUhEUgAA...
 {{< /tab >}}
 
 {{< /tabs >}}
+
+To call this endpoint you must include a valid JWT access token in the **Authorization** header. Tokens are obtained via the Aspose.Cells Cloud authentication flow and require the appropriate scopes for file access. For details on acquiring a token, see the global **Authentication** guide.
 
 ## Cloud SDK Family
 

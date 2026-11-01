@@ -10,66 +10,55 @@ description: "Add an Excel list object (table) to a worksheet via Aspose.Cells C
 weight: 100
 ArticleTitle: "Add a List Object (Table) to an Excel Worksheet – Aspose.Cells Cloud Documentation"
 ---
-
 The **PutWorksheetListObject** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects`) enables developers to add a list object (table) to a specific worksheet in an Excel file stored in the cloud using Aspose.Cells Cloud. It supports optional query parameters such as `startRow`, `startColumn`, `endRow`, `endColumn`, `hasHeaders`, `displayName`, and `showTotals` to define the table’s range and formatting behavior.
 
 Before using this endpoint, ensure you have a valid JWT token, the workbook is stored in a supported cloud storage, and the worksheet exists.
 
-## REST API
+## The Put Worksheet List Object Web API
 
-```bash
+```http
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### Request parameters
 
-| Parameter Name  | Type    | Location | Description                                                         |
-| --------------- | ------- | -------- | ------------------------------------------------------------------- |
-| **name**        | string  | path     | Workbook file name.                                                 |
-| **sheetName**   | string  | path     | Worksheet name.                                                     |
-| **startRow**    | integer | query    | Zero‑based index of the first row of the table range.               |
-| **startColumn** | integer | query    | Zero‑based index of the first column of the table range.            |
-| **endRow**      | integer | query    | Zero‑based index of the last row of the table range.                |
-| **endColumn**   | integer | query    | Zero‑based index of the last column of the table range.             |
-| **hasHeaders**  | boolean | query    | `true` if the first row contains column headers; otherwise `false`. |
-| **listObject**  | object  | body     | Definition of the list object (see **Request body schema**).        |
-| **folder**      | string  | query    | Folder that contains the workbook.                                  |
-| **storageName** | string  | query    | Storage name.                                                       |
-
-### Request body schema
-
-The **listObject** object describes the table that will be created. Only the most common properties are shown; see the OpenAPI specification for the complete list.
-
-```json
-{
-  "displayName": "MyTable",
-  "showTotals": false,
-  "style": "TableStyleMedium2"
-}
-```
-
-### Example request (cURL)
-
-```bash
-curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listobjects?startRow=1&startColumn=1&endRow=10&endColumn=12&hasHeaders=true" \
-  -X PUT \
-  -H "Content-Type: application/json" \
-  -H "Accept: application/json" \
-  -H "Authorization: Bearer <jwt token>" \
-  -d '{
-        "displayName": "MyTable",
-        "showTotals": false,
-        "style": "TableStyleMedium2"
-      }'
-```
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| startRow | Integer | Query | The start row of the list range. |
+| startColumn | Integer | Query | The start column of the list range. |
+| endRow | Integer | Query | The start row of the list range. |
+| endColumn | Integer | Query | The start column of the list range. |
+| folder | String | Query | The folder where the file is situated. |
+| hasHeaders | Boolean | Query | Indicate whether the range has headers. |
+| displayName | String | Query | Indicate whether display name. |
+| showTotals | Boolean | Query | Indicate whether show totals. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 ### Example response
 
 ```json
-{
-  "Code": 200,
-  "Status": "OK"
-}
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
 ```
 
 ### Error codes
@@ -102,6 +91,33 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listob
 ```
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ListObjects/PutWorksheetListObject) provides the full contract for this operation.
+
+### Request body schema
+
+The **listObject** object describes the table that will be created. Only the most common properties are shown; see the OpenAPI specification for the complete list.
+
+```json
+{
+  "displayName": "MyTable",
+  "showTotals": false,
+  "style": "TableStyleMedium2"
+}
+```
+
+### Example request (cURL)
+
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listobjects?startRow=1&startColumn=1&endRow=10&endColumn=12&hasHeaders=true" \
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{
+        "displayName": "MyTable",
+        "showTotals": false,
+        "style": "TableStyleMedium2"
+      }'
+```
 
 ## Cloud SDK Family
 

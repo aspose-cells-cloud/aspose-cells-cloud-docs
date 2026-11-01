@@ -19,18 +19,13 @@ tags:
   - rest
 ArticleTitle: "Aspose.Cells Cloud API: Create Folder in Storage"
 ---
-
 The **CreateFolder** API (`PUT https://api.aspose.cloud/v4.0/cells/storage/folder/{path}`) in Aspose.Cells Cloud creates a new folder at the specified path within the cloud storage, enabling structured organization of Excel files and resources; it accepts an optional `storageName` query parameter to target a specific storage instance and returns no content on success.
 
-## Excel API: Create Folder
+## The Create Folder Web API
 
-### Web API Endpoint
-
-```
+```http
 PUT https://api.aspose.cloud/v4.0/cells/storage/folder/{path}
 ```
-
-> 💡 **Note**: The `folder` path segment is case-insensitive on Aspose.Cloud storage backends.
 
 ### Authentication
 
@@ -38,24 +33,45 @@ Aspose.Cells Cloud APIs require [JWT token-based authentication](https://docs.as
 
 ### Request Parameters
 
-| Parameter Name | Type   | Location | Required | Default | Description                                                                 |
-| -------------- | ------ | -------- | -------- | ------- | --------------------------------------------------------------------------- |
-| `path`         | string | Path     | Yes      | —       | The folder path to create (e.g., `myFolder/subFolder`).                     |
-| `storageName`  | string | Query    | No       | —       | The name of the storage to use. If omitted, the default storage is applied. |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| path | String | Path | - |
+| storageName | String | Query | - |
 
 ### Response
 
-The operation returns HTTP status `200 OK` with an empty JSON body (`{}`) on success.
+```json
+[
+  {
+    "Name": "Void",
+    "DataType": {
+      "Identifier": "Void"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
 
 **HTTP Status Codes**
 
-| Code | Status                | Description                                                                          |
-| ---- | --------------------- | ------------------------------------------------------------------------------------ |
-| 200  | OK                    | Folder created successfully.                                                         |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., invalid path syntax or unsupported characters). |
-| 401  | Unauthorized          | Invalid, expired, or missing JWT token.                                              |
-| 409  | Conflict              | Folder already exists at the specified path.                                         |
-| 500  | Internal Server Error | Unexpected server error.                                                             |
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+The operation returns HTTP status `200 OK` with an empty JSON body (`{}`) on success.
+
+### Web API Endpoint
+> 💡 **Note**: The `folder` path segment is case-insensitive on Aspose.Cloud storage backends.
 
 ### Example: cURL Request
 

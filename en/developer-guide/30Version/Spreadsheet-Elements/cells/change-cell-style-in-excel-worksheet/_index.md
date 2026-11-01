@@ -28,37 +28,13 @@ article_title: "Change Cell Style in Excel Worksheet – Aspose.Cells Cloud API 
 linktitle: "Update Cell Style"
 ArticleTitle: "Update Excel Cell Style with Aspose.Cells Cloud REST API"
 ---
-
 The **PostUpdateWorksheetCellStyle** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}/style`) enables developers to update the style of a specific cell in an Excel worksheet by specifying the workbook name, worksheet name, and cell name, with the style configuration sent in the request body; Aspose.Cells Cloud supports this operation via REST API and SDKs for .NET, Java, Python, Node.js, Go, and other languages, allowing precise, programmatic control over cell formatting without altering other worksheet content.
 
-## Prerequisites
-
-- An Aspose Cloud account ([sign up free](https://dashboard.aspose.cloud/)).
-- A workbook uploaded to Aspose Cloud Storage (or use the sample `test_cells.xlsx`).
-- Your `Client ID` and `Client Secret` from the [Aspose Cloud Dashboard](https://dashboard.aspose.cloud/).
-
-> **Tip**: For quick testing, use the preloaded `test_cells.xlsx` workbook included in our examples.
-
-## Use cURL to Update Cell Style
-
-The `PostUpdateWorksheetCellStyle` API endpoint allows you to update the style of a single cell. Here’s how to use it with `cURL`.
-
-### Endpoint
+## The Post Update Worksheet Cell Style Web API
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}/style
 ```
-
-### Request Parameters
-
-| Parameter     | Type   | Location | Required | Description                                                                 |
-| ------------- | ------ | -------- | -------- | --------------------------------------------------------------------------- |
-| `name`        | string | path     | ✅ Yes   | Workbook file name (e.g., `test_cells.xlsx`).                               |
-| `sheetName`   | string | path     | ✅ Yes   | Worksheet name (e.g., `Sheet3`).                                            |
-| `cellName`    | string | path     | ✅ Yes   | Target cell (e.g., `A1`).                                                   |
-| `style`       | object | body     | ✅ Yes   | JSON object specifying style properties to update (e.g., background, font). |
-| `folder`      | string | query    | ❌ No    | Folder containing the workbook (e.g., `input`).                             |
-| `storageName` | string | query    | ❌ No    | Storage name (default: `First Storage`).                                    |
 
 ### Authentication
 
@@ -71,6 +47,40 @@ JWT_TOKEN=$(curl -s "https://api.aspose.cloud/connect/token" \
 ```
 
 > Replace `YOUR_CLIENT_ID` and `YOUR_CLIENT_SECRET` with your credentials from the [Aspose Cloud Dashboard](https://dashboard.aspose.cloud/).
+
+### Request Parameters
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| cellName | String | Path | The cell name. |
+| style | class:style | HTTPBody | Style with update style settings. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+
+### Example Response
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+The `PostUpdateWorksheetCellStyle` API endpoint allows you to update the style of a single cell. Here’s how to use it with `cURL`.
 
 ### Example Request: Apply Background Theme Color
 
@@ -85,31 +95,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test_cells.xlsx/worksheets/Sheet3/c
       "Tint": 0.2
     }
   }'
-```
-
-### Example Response
-
-```json
-{
-  "Code": 200,
-  "Status": "OK",
-  "Style": {
-    "Font": {
-      "Name": "Calibri",
-      "Size": 11,
-      "Color": { "A": 255, "R": 0, "G": 0, "B": 0 }
-    },
-    "BackgroundThemeColor": {
-      "ColorType": "Text2",
-      "Tint": 0.2
-    },
-    "IsLocked": true,
-    "link": {
-      "Href": "https://api.aspose.cloud/v3.0/cells/test_cells.xlsx/worksheets/Sheet3/cells/A1/style",
-      "Rel": "self"
-    }
-  }
-}
 ```
 
 ### HTTP Status Codes

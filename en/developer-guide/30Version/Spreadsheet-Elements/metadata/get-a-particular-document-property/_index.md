@@ -10,23 +10,26 @@ description: "Get a specific Excel document property via Aspose.Cells Cloud REST
 weight: 100
 ArticleTitle: "Get a Specific Document Property from Excel using Aspose.Cells Cloud API"
 ---
-
 The **GetDocumentProperty** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/documentproperties/{propertyName}`) retrieves a specific built-in or custom document property from an Excel workbook by name using Aspose.Cells Cloud, supporting common properties like Author, Title, or Custom fields without requiring local file processing.
 
-## REST API
+## The Get Document Property Web API
 
-```bash
+```http
 GET https://api.aspose.cloud/v3.0/cells/{name}/documentproperties/{propertyName}
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### Request Parameters
 
-| Parameter Name | Type   | Location | Description                                    |
-| -------------- | ------ | -------- | ---------------------------------------------- |
-| name           | string | path     | The name of the Excel file.                    |
-| propertyName   | string | path     | The name of the document property to retrieve. |
-| folder         | string | query    | The folder containing the file (optional).     |
-| storageName    | string | query    | The storage name (optional).                   |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The workbook name. |
+| propertyName | String | Path | The property name. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Properties/GetDocumentProperty) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -71,6 +74,25 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties/author
 {{< /tabs >}}
 
 ### Response Details
+
+```json
+[
+  {
+    "Name": "CellsDocumentPropertyResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsDocumentPropertyResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
 
 The JSON object returned by the API contains the following fields:
 

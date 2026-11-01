@@ -12,16 +12,71 @@ weight: 50
 linktitle: "Convert Chart to Image"
 ArticleTitle: "Convert Excel Chart to Image with Aspose.Cells Cloud REST API"
 ---
-
 The **GetWorksheetChart** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartNumber}`) retrieves an Excel chart from a specified worksheet and converts it to a requested image format—such as PNG, JPEG, TIFF, BMP, EMF, or GIF—using the Aspose.Cells Cloud REST API, enabling programmatic chart export without local dependencies.
 
 > **Note**: This API requires an Aspose Cloud account and a valid JWT token. A free trial with 100 monthly API calls is available at [Aspose Cloud Dashboard](https://dashboard.aspose.cloud/).
 
-## API Endpoint
+## The Get Worksheet Chart Web API
 
 ```http
-GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartNumber}?format={format}
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartNumber}
 ```
+
+### Authentication
+
+All requests must include a valid JWT access token in the `Authorization` header:
+
+```
+Authorization: Bearer <your_jwt_token>
+```
+
+To obtain a token, follow our [JWT Authentication Guide](/total/quick-start/rest-api-overview/authenticating-api-requests/).
+
+### Request Parameters
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| chartNumber | Integer | Path | The chart number. |
+| format | String | Query | Chart conversion format.(PNG/TIFF/JPEG/GIF/EMF/BMP) |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+
+### Response
+
+```json
+[
+  {
+    "Name": "Stream",
+    "DataType": {
+      "Identifier": "File"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+The endpoint returns the chart as a binary image stream. The response `Content-Type` header matches the requested format (e.g., `image/png`, `image/svg+xml`).
+
+#### HTTP Status Codes
 
 ### Supported Image Formats
 
@@ -34,42 +89,6 @@ GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{ch
 | GIF    | `.gif`    | `image/gif`       |
 | EMF    | `.emf`    | `image/x-emf`     |
 | SVG    | `.svg`    | `image/svg+xml`   |
-
-### Request Parameters
-
-| Parameter Name | Type    | Location | Description                                      | Required |
-|----------------|---------|----------|--------------------------------------------------|----------|
-| `name`         | string  | path     | The document name (e.g., `input.xlsx`)          | Yes      |
-| `sheetName`    | string  | path     | Worksheet name containing the chart              | Yes      |
-| `chartNumber`  | integer | path     | Zero-based index of the chart (e.g., `0`, `1`)  | Yes      |
-| `format`       | string  | query    | Target image format (case-insensitive)          | Yes      |
-| `folder`       | string  | query    | Folder path where the document resides          | No       |
-| `storageName`  | string  | query    | Custom storage name (if applicable)             | No       |
-
-### Response
-
-The endpoint returns the chart as a binary image stream. The response `Content-Type` header matches the requested format (e.g., `image/png`, `image/svg+xml`).
-
-#### HTTP Status Codes
-
-| Code | Meaning                | Description                                                  |
-|------|------------------------|--------------------------------------------------------------|
-| 200  | OK                     | Chart successfully converted and returned as image stream.  |
-| 400  | Bad Request            | Invalid or missing parameters (e.g., unsupported format).   |
-| 401  | Unauthorized           | Missing, expired, or invalid JWT token.                     |
-| 404  | Not Found              | Document, worksheet, or chart not found.                    |
-| 413  | Payload Too Large      | Document size exceeds the service limit.                    |
-| 500  | Internal Server Error  | Unexpected error on the server side.                        |
-
-## Authentication
-
-All requests must include a valid JWT access token in the `Authorization` header:
-
-```
-Authorization: Bearer <your_jwt_token>
-```
-
-To obtain a token, follow our [JWT Authentication Guide](/total/quick-start/rest-api-overview/authenticating-api-requests/).
 
 ## cURL Example
 

@@ -9,32 +9,64 @@ ArticleTitle: "Add Format Condition – Aspose.Cells Cloud API Documentation"
 weight: 50
 linktitle: "Add Format Condition"
 ---
-
 The **PutWorksheetFormatCondition** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}`) adds a format condition to a specified worksheet in Aspose.Cells Cloud, supporting types such as CellValue, Expression, ColorScale, DataBar, IconSet, Top10, UniqueValues, DuplicateValues, and ContainsText; it requires parameters including the cell area, condition type, operator type, and one or two formulas to define the formatting rule.
 
 ## Security and Authentication
 The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
-## REST API
+## The Put Worksheet Format Condition Web API
 
-```bash
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}
+```http
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
 
 ### Request parameters
 
-| Parameter Name | Type    | Location | Description                                                                  |
-| -------------- | ------- | -------- | ---------------------------------------------------------------------------- |
-| name           | string  | path     | The name of the Excel workbook.                                              |
-| sheetName      | string  | path     | The name of the worksheet that contains the range to be formatted.           |
-| index          | integer | path     | The zero-based index of the format condition to add or replace.              |
-| cellArea       | string  | query    | The cell range (e.g., `A1:C3`) to which the condition applies.               |
-| type           | string  | query    | The type of condition (e.g., `Expression`, `CellValue`).                     |
-| operatorType   | string  | query    | The operator for the condition (e.g., `Between`, `Equal`).                   |
-| formula1       | string  | query    | The first formula or value used by the condition.                            |
-| formula2       | string  | query    | The second formula or value (required for some operators such as `Between`). |
-| folder         | string  | query    | The folder in storage where the workbook is located.                         |
-| storageName    | string  | query    | The name of the storage service (e.g., `Default`).                           |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| index | Integer | Path | Gets the Conditional Formatting element at the specified index. |
+| cellArea | String | Query | Adds a conditional formatted cell range. |
+| type | String | Query | Format condition type(CellValue/Expression/ColorScale/DataBar/IconSet/Top10/UniqueValues/DuplicateValues/ContainsText/NotContainsText/BeginsWith/EndsWith/ContainsBlanks/NotContainsBlanks/ContainsErrors/NotContainsErrors/TimePeriod/AboveAverage). |
+| operatorType | String | Query | Represents the operator type of conditional format and data validation(Between/Equal/GreaterThan/GreaterOrEqual/LessThan/None/NotBetween/NotEqual). |
+| formula1 | String | Query | The value or expression associated with conditional formatting. |
+| formula2 | String | Query | The value or expression associated with conditional formatting. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+
+### Success Response
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+| HTTP Code | Reason            | Example Body                              |
+| --------- | ----------------- | ------------------------------------------ |
+| **200**   | OK – condition added or updated successfully. | `{ "Code": "200", "Status": "OK" }` |
+
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/PutWorksheetFormatCondition) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+You can use **cURL** to call the Aspose.Cells API. The example below shows a complete request, including an empty JSON body.
 
 ### Error Responses
 
@@ -44,16 +76,6 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditional
 | **401**   | Unauthorized – missing or invalid JWT token.       | `{ "Code":"401", "Message":"Access token is missing or invalid." }` |
 | **404**   | Not Found – workbook or worksheet does not exist.  | `{ "Code":"404", "Message":"File not found." }`                     |
 | **500**   | Internal Server Error – unexpected server failure. | `{ "Code":"500", "Message":"An unexpected error occurred." }`       |
-
-### Success Response
-
-| HTTP Code | Reason            | Example Body                              |
-| --------- | ----------------- | ------------------------------------------ |
-| **200**   | OK – condition added or updated successfully. | `{ "Code": "200", "Status": "OK" }` |
-
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/PutWorksheetFormatCondition) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
-
-You can use **cURL** to call the Aspose.Cells API. The example below shows a complete request, including an empty JSON body.
 
 ### cURL Example
 

@@ -13,12 +13,9 @@ keywords: "Import picture, Excel, Aspose.Cells Cloud, REST API, v3.0"
 description: "Learn how to import pictures into Excel worksheets using Aspose.Cells Cloud REST API v3.0. Includes multipart request examples, SDK code samples, and error‑handling guidance. Get started quickly with clear steps."
 weight: 19
 ---
-
 The **PostImport** API (`POST https://api.aspose.cloud/v3.0/cells/import`) enables importing data—including images like logos, charts, or diagrams—into an Excel workbook via Aspose.Cells Cloud, supporting various output formats such as XLSX, PDF, and PNG.
 
-**Prerequisites:** You must have a valid JWT authentication token and an existing workbook stored in Aspose Cloud Storage before invoking the import operation.
-
-## PostImportData API
+## The Post Import Web API
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/import
@@ -30,10 +27,55 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Request Parameters**
 
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| File | File | FormData | File to upload |
+| outFormat | String | Query | The output data file format.(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers) |
+| password | String | Query | The password needed to open an Excel file. |
+| checkExcelRestriction | Boolean | Query | Whether check restriction of excel file when user modify cells related objects. |
+| region | String | Query | The regional settings for workbook. |
+
 The request is an HTTP **POST** with **multipart/related** content (see [RFC 2046](https://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](https://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)).
 
 - The **first part** contains a JSON object named **ImportPictureOption** that describes where and how the picture should be placed.
 - The **second part** carries the image file (or its Base64‑encoded data).
+
+### Response
+
+```json
+[
+  {
+    "Name": "FilesResult",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "FilesResult"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+A successful request returns **HTTP 200** with a JSON payload similar to:
+
+
+Possible status codes:
 
 ### ImportPictureOption – definition
 
@@ -70,26 +112,6 @@ _`IsInsert` is a **boolean** – `true` inserts a new picture, `false` replaces 
 | **IsInsert**         | **boolean** | `true` to insert a new picture; `false` to replace an existing one.                                                                                                                            |
 | ImportDataType       | string      | Type of data being imported (e.g., `Picture`, `IntArray`, `DoubleArray`, `StringArray`, `TwoDimensionIntArray`, `TwoDimensionDoubleArray`, `TwoDimensionStringArray`, `BatchData`, `csvData`). |
 | Source               | FileSource  | Indicates the data file’s location when the `BatchData` parameter is null.                                                                                                                     |
-
-### Response
-
-A successful request returns **HTTP 200** with a JSON payload similar to:
-
-```json
-{
-  "Code": 200,
-  "Status": "OK"
-}
-```
-
-Possible status codes:
-
-| Code | Meaning                                 |
-| ---- | --------------------------------------- |
-| 200  | Import succeeded                        |
-| 400  | Bad request – missing or invalid data   |
-| 401  | Unauthorized – invalid or missing token |
-| 500  | Internal server error                   |
 
 ## How to Use the PostImportData API with SDKs
 

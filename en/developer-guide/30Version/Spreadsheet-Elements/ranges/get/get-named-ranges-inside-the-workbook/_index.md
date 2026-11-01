@@ -10,14 +10,11 @@ description: "Retrieve named ranges from Excel workbooks via Aspose.Cells Cloud 
 ArticleTitle: "Get Named Ranges on an Excel Workbook – Aspose.Cells Cloud API"
 weight: 100
 ---
-
 The **GetNamedRanges** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/ranges`) retrieves descriptions of named ranges defined within the worksheets of a specified workbook file, enabling developers to programmatically inspect range definitions and their properties using Aspose.Cells Cloud.
 
 **Background** – A _named range_ is a user‑defined identifier that refers to a specific cell or block of cells in a worksheet. Named ranges simplify formula creation, improve readability, and enable programmatic access to frequently used areas of a workbook.
 
-**Prerequisites** – Access to the Aspose.Cells Cloud API requires a valid JWT access token. Obtain the token by authenticating with your Aspose Cloud client ID and client secret via the OAuth 2.0 token endpoint. Include the token in the `Authorization: Bearer <jwt token>` header of every request.
-
-## GetNamedRanges API
+## The Get Named Ranges Web API
 
 ```http
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/ranges
@@ -29,21 +26,11 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request parameters
 
-| Parameter Name | Type   | Location     | Description                                  |
-| -------------- | ------ | ------------ | -------------------------------------------- |
-| name           | string | Path         | The name of the Excel document.              |
-| folder         | string | Query string | The folder that contains the document.       |
-| storageName    | string | Query string | The storage name where the document resides. |
-
-**HTTP Status Codes**
-
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetNamedRanges) defines a publicly accessible programming interface that lets you perform REST interactions directly from a web browser.
 
@@ -104,6 +91,37 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/ranges" \
 | `RowCount`    | integer | Number of rows in the range.                                             |
 | `RowHeight`   | number  | Height of each row (in points).                                          |
 | `Worksheet`   | string  | Name of the worksheet that contains the range.                           |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "RangesResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "RangesResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Cloud SDK Family
 

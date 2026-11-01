@@ -9,13 +9,12 @@ weight: 100
 linktitle: "Batch Convert Excel"
 ArticleTitle: "Aspose.Cells Cloud Batch Convert API: Convert Excel Files to PDF, CSV, JSON, Markdown"
 ---
-
 The **PostBatchConvert** API (`POST https://api.aspose.cloud/v3.0/cells/batch/convert`) enables Aspose.Cells Cloud users to batch convert eligible files that meet specific matching conditions, supporting 30+ formats including Excel, PDF, Markdown, JSON, XML, CSV, and HTML by sending a BatchConvertRequest in the request body.
 
-## REST API
+## The Post Batch Convert Web API
 
-```bash
-POST http://api.aspose.cloud/v3.0/cells/batch/convert
+```http
+POST https://api.aspose.cloud/v3.0/cells/batch/convert
 ```
 
 ### **Security and Authentication**
@@ -24,9 +23,9 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name          | Type   | Location | Description                                  |
-| ----------------------- | ------ | -------- | -------------------------------------------- |
-| **batchConvertRequest** | object | body     | Request body containing conversion settings. |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| batchConvertRequest | class:batchconvertrequest | HTTPBody | BatchConvertRequest Batch conversion file request. |
 
 #### BatchConvertRequest Properties
 
@@ -45,34 +44,43 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | **RegexPattern**        | string   | Regular expression used to filter file names.    | [optional] |
 | **FullMatchConditions** | string[] | List of exact file name conditions for matching. | [optional] |
 
+### **Response**
+
+```json
+[
+  {
+    "Name": "Stream",
+    "DataType": {
+      "Identifier": "File"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
 ### Request Body Parameter
 
 | Parameter Name | Type | Description                                    |
 | -------------- | ---- | ---------------------------------------------- |
 | data           | file | Binary content of the workbook file to create. |
-
-### **Response**
-
-```json
-{
-  "Name": "ResponseFile",
-  "DataType": {
-    "Identifier": "File",
-    "Reference": "Stream",
-    "Name": "file"
-  }
-}
-```
-
-**HTTP Status Codes**
-
-| Code             | Meaning                                 | When Returned                         |
-| ---------------- | --------------------------------------- | ------------------------------------- |
-| 200 OK           | Workbook created successfully           | Normal flow                           |
-| 201 Created      | Workbook created (alternative response) | When the API returns a created status |
-| 400 Bad Request  | Invalid parameters                      | Client‑side error                     |
-| 401 Unauthorized | Missing or invalid token                | Authentication error                  |
-| 409 Conflict     | File exists and `isWriteOver=false`     | Conflict with existing file           |
 
 ## How to Use the PostBatchConvert API with SDKs
 

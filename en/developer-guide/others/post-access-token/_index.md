@@ -9,8 +9,6 @@ description: "Obtain an OAuth2 access token for Aspose.Cells Cloud REST API usin
 weight: 100
 draft: false
 ---
-
-
 The **PostAccessToken** API (`POST https://api.aspose.cloud/v4.0/cells/connect/token`) enables Aspose.Cells Cloud clients to obtain an access token by securely authenticating with their registered API credentials; as a proxy service, it forwards the client’s authentication request to the Aspose Cloud authorization server and returns the issued token, allowing middleware and applications to authenticate subsequent API calls without handling OAuth flows directly.
 
 - A registered [Aspose Cloud account](https://dashboard.aspose.cloud/).
@@ -20,9 +18,9 @@ The **PostAccessToken** API (`POST https://api.aspose.cloud/v4.0/cells/connect/t
 
 ---
 
-## API Endpoint
+## The Post Access Token Web API
 
-```
+```http
 POST https://api.aspose.cloud/v4.0/cells/connect/token
 ```
 
@@ -34,15 +32,41 @@ This API acts as a secure proxy to the Aspose Cloud authorization service. It ac
 
 ---
 
-## Request Parameters
+### Request Parameters
 
-| Parameter       | Type   | Location                | Description                              |
-| --------------- | ------ | ----------------------- | ---------------------------------------- |
-| `grant_type`    | string | body (form‑url‑encoded) | Must be `client_credentials` for OAuth2. |
-| `client_id`     | string | body (form‑url‑encoded) | Your Aspose Cloud client identifier.     |
-| `client_secret` | string | body (form‑url‑encoded) | Your Aspose Cloud client secret.         |
+This operation does not require request parameters.
 
 ---
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "String",
+    "DataType": {
+      "Identifier": "String"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Example Request (cURL)
 

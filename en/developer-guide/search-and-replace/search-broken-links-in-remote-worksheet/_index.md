@@ -8,10 +8,71 @@ keywords: "broken links, Excel validation, cloud API, link audit, Aspose.Cells C
 weight: 100
 ArticleTitle: "Aspose.Cells Cloud API: Search Broken Links in Remote Excel Worksheet"
 ---
-
 The **SearchBrokenLinksInRemoteWorksheet** API (`PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/search/broken-links`) enables enterprise users to remotely scan Excel worksheets stored in cloud storage for broken external links, invalid hyperlinks, and missing data sources using Aspose.Cells Cloud—without downloading the file—returning a detailed list of problematic links including sheet name, cell coordinates, and invalid URLs.
 
-## Search Broken Links in Remote Worksheet API
+## The Search Broken Links in Remote Worksheet Web API
+
+```http
+PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/search/broken-links
+```
+
+### Authentication
+
+All requests require a JWT token. [Learn how to obtain one](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
+
+### Request Parameters
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The name of the workbook file to be search. |
+| worksheet | String | Path | Specify the worksheet for the lookup. |
+| folder | String | Query | The folder path where the workbook is stored. |
+| storageName | String | Query | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
+
+### Response
+
+```json
+[
+  {
+    "Name": "BrokenLinksResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "BrokenLinksResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+#### Response Object: `BrokenLinksResponse`
+
+- `BrokenLinks`: Array of broken link objects:
+  - `Address`: Full reference string (e.g., `='C:\Data\Source.xlsx'!A1`)
+  - `ErrorCode`: HTTP-like status code (e.g., `404`, `403`)
+  - `ErrorMessage`: Human-readable description
+- `Code`: Numeric status code (`200` for success)
+- `Status`: Textual status (`"OK"` for success)
+
+### Error Handling
+
+| Status Code | Description                                                                  |
+| ----------- | ---------------------------------------------------------------------------- |
+| `400`       | Invalid request URL or parameters.                                           |
+| `401`       | Missing, invalid, or expired JWT token.                                      |
+| `404`       | Workbook or worksheet not found.                                             |
+| `500`       | Internal server error during scan (e.g., unsupported format, access denied). |
 
 Use the Aspose.Cells Cloud API to scan Excel worksheets stored in cloud storage for broken external links, invalid formulas, and missing data sources. This RESTful endpoint performs remote validation without downloading files — ideal for enterprise-grade quality assurance workflows.
 
@@ -21,31 +82,6 @@ Use the Aspose.Cells Cloud API to scan Excel worksheets stored in cloud storage 
 - App SID and App Key (see [Get Started](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/))
 - Workbook uploaded to cloud storage
 - HTTPS support (HTTP endpoints are unsupported)
-
-### API Endpoint
-
-```
-PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/search/broken-links
-```
-
-### Request Parameters
-
-| Parameter     | Type   | Location     | Required | Description                                                                       |
-| ------------- | ------ | ------------ | -------- | --------------------------------------------------------------------------------- |
-| `name`        | string | Path         | Yes      | Workbook filename (e.g., `Annual_Report.xlsx`).                                   |
-| `worksheet`   | string | Path         | Yes      | Worksheet name where scanning occurs (e.g., `DataSheet1`).                        |
-| `folder`      | string | Query string | No       | Directory path in cloud storage. Defaults to root.                                |
-| `storageName` | string | Query string | No       | Custom storage identifier. Uses default storage if omitted.                       |
-| `region`      | string | Query string | No       | Locale setting (e.g., `en-US`, `fr-FR`, `de-DE`) for formula/data interpretation. |
-| `password`    | string | Query string | No       | Password for encrypted workbooks. Omit for unencrypted files.                     |
-
-### Authentication
-
-All requests require a JWT token. [Learn how to obtain one](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
-
-```bash
--H "Authorization: Bearer {access_token}"
-```
 
 ### Example Request
 
@@ -58,45 +94,11 @@ curl -X PUT \
 
 > 💡 **Tip**: Replace `{access_token}` with your actual JWT token. See the [Authentication Guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) for step-by-step instructions.
 
-### Response
-
-```json
-{
-  "Code": 200,
-  "Status": "OK",
-  "BrokenLinks": [
-    {
-      "Address": "='C:\\Data\\Source.xlsx'!A1",
-      "ErrorCode": "404",
-      "ErrorMessage": "Source file not found"
-    }
-  ]
-}
-```
-
-#### Response Object: `BrokenLinksResponse`
-
-- `BrokenLinks`: Array of broken link objects:
-  - `Address`: Full reference string (e.g., `='C:\Data\Source.xlsx'!A1`)
-  - `ErrorCode`: HTTP-like status code (e.g., `404`, `403`)
-  - `ErrorMessage`: Human-readable description
-- `Code`: Numeric status code (`200` for success)
-- `Status`: Textual status (`"OK"` for success)
-
 ### Notes
 
 - Maximum 10,000 broken links returned per request.
 - Rate limit: 100 requests/minute per account.
 - Results are not paginated.
-
-### Error Handling
-
-| Status Code | Description                                                                  |
-| ----------- | ---------------------------------------------------------------------------- |
-| `400`       | Invalid request URL or parameters.                                           |
-| `401`       | Missing, invalid, or expired JWT token.                                      |
-| `404`       | Workbook or worksheet not found.                                             |
-| `500`       | Internal server error during scan (e.g., unsupported format, access denied). |
 
 ### Use Cases
 
@@ -153,4 +155,3 @@ Use our language-specific SDKs for faster, more reliable integration.
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_SearchBrokenLinksInRemoteWorksheet.go">}}
 {{</tab>}}
 {{</tabs>}}
-

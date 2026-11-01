@@ -9,23 +9,26 @@ weight: 80
 linktitle: "Clear Conditional Formatting"
 ArticleTitle: "Clear All Conditional Formatting in Excel with Aspose.Cells Cloud REST API"
 ---
-
 The **DeleteWorksheetConditionalFormattings** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings`) in Aspose.Cells Cloud v3.0 clears all conditional formatting rules from a specified worksheet, enabling developers to programmatically reset formatting without manual intervention; the operation requires the `name` and `sheetName` path parameters and supports optional `folder` and `storageName` query parameters to locate the target file.
 
-## REST API
+## The Delete Worksheet Conditional Formattings Web API
 
-```bash
-DELETE https://api.aspose.cloud/v3.2/cells/{name}/worksheets/{sheetName}/conditionalFormattings
+```http
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
 
 ### Request Parameters
 
-| Parameter Name  | Type   | Location | Description                                                            |
-| --------------- | ------ | -------- | ---------------------------------------------------------------------- |
-| **name**        | string | path     | The name of the workbook file (e.g., `Book1.xlsx`).                    |
-| **sheetName**   | string | path     | The name of the worksheet from which to remove conditional formatting. |
-| **folder**      | string | query    | _(Optional)_ Folder path in storage where the workbook is located.     |
-| **storageName** | string | query    | _(Optional)_ Name of the storage service.                              |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/DeleteWorksheetConditionalFormattings) defines a publicly accessible programming interface and **the OpenAPI Specification** lets you carry out REST interactions directly from a web browser.
 
@@ -57,6 +60,27 @@ curl -v "https://api.aspose.cloud/v3.2/cells/Book1.xlsx/worksheets/sheet1/condit
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
 
 ### Error Responses
 

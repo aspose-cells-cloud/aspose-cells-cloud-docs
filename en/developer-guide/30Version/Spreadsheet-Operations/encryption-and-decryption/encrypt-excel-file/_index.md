@@ -10,12 +10,9 @@ description: "Learn how to encrypt an Excel workbook using Aspose.Cells Cloud RE
 weight: 100
 ArticleTitle: "Encrypt Excel Workbook with Aspose.Cells Cloud API – cURL and SDK Examples"
 ---
-
 The **PostEncryptWorkbook** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/encryption`) enables Aspose.Cells Cloud users to encrypt an Excel workbook by providing the file name and encryption parameters via the request body; it supports robust file protection as part of a comprehensive information security strategy, allowing secure handling of sensitive spreadsheet data through standardized REST calls.
 
-**Prerequisites:** You must have a valid JWT token and the workbook uploaded to a storage location before calling this endpoint.
-
-## PostEncryptDocument API
+## The Post Encrypt Workbook Web API
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/encryption
@@ -27,10 +24,44 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Query Parameters**
 
-| Parameter Name | Type   | Required | Description                           |
-| -------------- | ------ | -------- | ------------------------------------- |
-| folder         | string | ✗        | Folder path of the original workbook. |
-| storageName    | string | ✗        | Name of the storage to use.           |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| encryption | class:workbookencryptionrequest | HTTPBody | WorkbookEncryptionRequestEncryption parameters. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+
+### Response
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ### **Request Body Parameter**
 
@@ -54,25 +85,6 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | `Compatible`                      | Excel 97‑2003 compatible encryption (40‑bit). |
 | `EnhancedCryptographicProviderV1` | AES‑128 with SHA‑1 hash.                      |
 | `StrongCryptographicProvider`     | AES‑256 with SHA‑512 hash (strongest).        |
-
-### Response
-
-```json
-{
-  "Status": "OK",
-  "Code": 200
-}
-```
-
-**HTTP Status Codes**
-
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
 
 ## How to Use the PostEncryptDocument API with SDKs
 

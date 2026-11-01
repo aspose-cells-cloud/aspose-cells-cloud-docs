@@ -12,7 +12,6 @@ type: docs
 linktitle: "Add CellArea to CF"
 ArticleTitle: "Add CellArea to Conditional Formatting in Aspose.Cells Cloud REST API v3.0"
 ---
-
 The **PutWorksheetFormatConditionArea** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}/area`) enables developers to assign a specific cell range—defined by the `cellArea` query parameter—to an existing conditional formatting rule in a worksheet via Aspose.Cells Cloud. This operation supports precise control over where formatting is applied, ensuring dynamic reports and data visualizations remain accurate and relevant to the intended data subset.
 
 ## Why This Matters
@@ -22,14 +21,6 @@ CellArea defines the exact range of cells affected by a conditional format—cri
 ## Add CellArea to Conditional Formatting
 
 **Summary** – Adds a cell area (e.g., `A1:C3`) to an existing conditional‑formatting rule in a worksheet via the Aspose.Cells Cloud REST API v3.0.
-
----
-
-## Prerequisites
-
-1. **Aspose.Cells Cloud account** – obtain your **App SID** and **App Key** from the [Aspose Cloud Dashboard](https://dashboard.aspose.cloud/).
-2. **JWT token** – generate a JWT token using the App SID/Key (see the [Authentication guide](/total/getting-started/rest-api-overview/authenticating-api-requests/)).
-3. The target Excel file must already exist in the specified storage/folder.
 
 ---
 
@@ -43,19 +34,57 @@ Authorization: Bearer <jwt token>
 
 ---
 
-## HTTP Request
+## The Put Worksheet Format Condition Area Web API
 
 ```http
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}/area
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### Path Parameters
 
-| Name        | Type    | Required | Description                                          |
-| ----------- | ------- | -------- | ---------------------------------------------------- |
-| `name`      | string  | Yes      | Excel file name (e.g., `Book1.xlsx`).                |
-| `sheetName` | string  | Yes      | Worksheet that contains the rule (e.g., `Sheet1`).   |
-| `index`     | integer | Yes      | Zero‑based index of the conditional‑formatting rule. |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| index | Integer | Path | Gets the Conditional Formatting element at the specified index. |
+| cellArea | String | Query | Adds a conditional formatted cell range. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ### Query Parameters
 

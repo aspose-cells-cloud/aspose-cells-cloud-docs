@@ -10,17 +10,9 @@ keywords: "Aspose.Cells, Split Table, API"
 description: "API to split a table in a spreadsheet by column values."
 weight: 100
 ---
-
 The **SplitTable** API (`PUT https://api.aspose.cloud/v4.0/cells/split/table`) in Aspose.Cells Cloud enables splitting an Excel table into multiple sheets or workbooks based on distinct values in a specified column. By grouping rows according to the split column’s unique values, it processes each group as a separate data unit, supporting export either as individual workbooks or new worksheets within the same workbook, with optional ZIP packaging for multiple files—ideal for local file splitting and cloud-based processing without requiring pre-uploaded storage.
 
-## The SplitTable of Aspose.Cells Cloud Web Services
-
-This method performs a split operation on the source table by grouping rows according to the distinct values in the specified column. Each group of data (for each unique split value) is then processed as a separate data unit. The export destination is controlled by two key boolean parameters:
-
-- Determines the workbook structure. If `true`, each split unit is saved into a separate workbook file. If `false`, each unit becomes a new worksheet within the current workbook.
-- Determines the output packaging. When set to `true` and combined with `toNewWorkbook` = `true`, the method generates multiple individual files and returns them as a ZIP archive. When `false`, all data is consolidated into a single file (either a multi‑sheet workbook or a single file as per other settings).
-
-### Web API Endpoint
+## The Split Table Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/split/table
@@ -32,46 +24,67 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name  | Type    | Path/Query String/HTTP Body | Description                                                                                                                                                            |
-| --------------- | ------- | --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Spreadsheet     | File    | FormData                    | Upload spreadsheet file.                                                                                                                                               |
-| worksheet       | String  | Query                       | Worksheet containing the table.                                                                                                                                        |
-| tableName       | String  | Query                       | Data table that needs to be split.                                                                                                                                     |
-| splitColumnName | String  | Query                       | Column name to split by.                                                                                                                                               |
-| saveSplitColumn | Boolean | Query                       | Whether to keep the data in the split column.                                                                                                                          |
-| splitRowNumber  | Integer | Query                       | [TBD]                                                                                                                                                                  |
-| toNewWorkbook   | Boolean | Query                       | Export destination control: true - Creates new workbook files containing the split data; false - Adds a new worksheet to the current workbook.                         |
-| toMultipleFiles | Boolean | Query                       | true - Exports table data as **multiple separate files** (returned as ZIP archive); false - Stores all data in a **single file** with multiple sheets. Default: false. |
-| outPath         | String  | Query                       | (Optional) The folder path where the workbook is stored. The default is null.                                                                                          |
-| outStorageName  | String  | Query                       | Output file Storage Name.                                                                                                                                              |
-| fontsLocation   | String  | Query                       | Use Custom fonts.                                                                                                                                                      |
-| region          | String  | Query                       | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.                                |
-| password        | String  | Query                       | The password for opening spreadsheet file.                                                                                                                             |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| worksheet | String | Query | Worksheet containing the table. |
+| tableName | String | Query | Data table that needs to be split. |
+| splitColumnName | String | Query | Column name to split by. |
+| saveSplitColumn | Boolean | Query | Whether to keep the data in the split column. |
+| splitRowNumber | Integer | Query | - |
+| toNewWorkbook | Boolean | Query | Export destination control: true - Creates new workbook files containing the split data; false - Adds a new worksheet to the current workbook. |
+| toMultipleFiles | Boolean | Query | true - Exports table data as **multiple separate files** (returned as ZIP archive);false - Stores all data in a **single file** with multiple sheets. Default: false. |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| fontsLocation | String | Query | Use Custom fonts. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | Invalid url. |
+| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
+| 404 | Not Found | Source file not accessible. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining data. |
+
+**Response Status Codes**
+
+This method performs a split operation on the source table by grouping rows according to the distinct values in the specified column. Each group of data (for each unique split value) is then processed as a separate data unit. The export destination is controlled by two key boolean parameters:
+
+- Determines the workbook structure. If `true`, each split unit is saved into a separate workbook file. If `false`, each unit becomes a new worksheet within the current workbook.
+- Determines the output packaging. When set to `true` and combined with `toNewWorkbook` = `true`, the method generates multiple individual files and returns them as a ZIP archive. When `false`, all data is consolidated into a single file (either a multi‑sheet workbook or a single file as per other settings).
 
 ### Request Body Parameter
 
 | Parameter Name | Type | Description              |
 | -------------- | ---- | ------------------------ |
 | Spreadsheet    | File | Upload spreadsheet file. |
-
-### **Response**
-
-```json
-{
-  "file": "binary stream (ZIP archive or workbook depending on parameters)"
-}
-```
-
-**Response Status Codes**
-
-| Code | Meaning               | Description                                                                                                     |
-| ---- | --------------------- | --------------------------------------------------------------------------------------------------------------- |
-| 200  | OK                    | The split operation completed successfully. The response contains the generated file (ZIP archive or workbook). |
-| 400  | Bad Request           | Invalid URL or request parameters.                                                                              |
-| 401  | Unauthorized          | Authentication has failed, or no credentials were provided.                                                     |
-| 404  | Not Found             | Source file not accessible.                                                                                     |
-| 413  | Payload Too Large     | The request payload exceeds the allowed size.                                                                   |
-| 500  | Internal Server Error | The spreadsheet has encountered an anomaly in obtaining data.                                                   |
 
 ## How to Use the SplitTable with SDKs
 

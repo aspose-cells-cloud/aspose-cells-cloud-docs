@@ -10,16 +10,9 @@ canonical: "https://reference.aspose.cloud/cells/create-spreadsheet/"
 robots: "index, follow"
 ArticleTitle: "Aspose.Cells Cloud REST API: Create Excel Spreadsheets (XLSX, ODS, CSV)"
 ---
-
 The **CreateSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/create`) enables developers to programmatically generate new Excel workbooks using Aspose.Cells Cloud, supporting both blank file creation and initialization from optional templates stored in cloud storage; it accepts query parameters such as `format` for the new spreadsheet’s name, `template` for predefined content or formatting, and `region` for locale-specific formatting, allowing efficient automation of report generation and document workflows.
 
-## Prerequisites
-
-- An [Aspose.Cells Cloud account](https://dashboard.aspose.cloud/)
-- Valid API credentials (Client ID and Client Secret)
-- A configured cloud storage (e.g., `MyStorage` or `DefaultCloudStorage`)
-
-## Web API Endpoint
+## The Create Spreadsheet Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/create
@@ -45,28 +38,48 @@ Include the resulting `access_token` in the `Authorization: Bearer` header for s
 
 ### Request Parameters
 
-| Parameter Name     | Type   | Location | Required | Description                                                                                                                                       |
-| ------------------ | ------ | -------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **format**         | String | Query    | No       | File format for the new spreadsheet. Supported values: `XLSX`, `XLS`, `ODS`, `CSV`. Default: `XLSX`.                                              |
-| **template**       | String | Query    | No       | Name of a template file stored in your cloud storage (e.g., `invoice_template.xlsx`). If omitted, a blank workbook is created.                    |
-| **outPath**        | String | Query    | No       | Target folder path in cloud storage for the generated file. If `null` or omitted, the spreadsheet is saved to the root of the configured storage. |
-| **outStorageName** | String | Query    | Yes      | Identifier of the configured cloud storage (e.g., `MyDrive`).                                                                                     |
-| **region**         | String | Query    | No       | Locale setting (e.g., `en-US`, `fr-FR`) that determines default date, number, and currency formats.                                               |
-| **password**       | String | Query    | No       | Password for an encrypted template file. Leave empty if the template is not protected.                                                            |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| format | String | Query | Specifies the name of the new spreadsheet. This name will be used to identify the spreadsheet in the system. |
+| template | String | Query | template: Optional.If provided, the new spreadsheet will be created based on the specified template.This can be useful for applying predefined layouts and styles. |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
 
 ### Response
 
-The API returns the generated file as a binary stream in the response body.
+```json
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
 
 **HTTP Status Codes**
 
-| Code | Meaning               | Description                                                               |
-| ---- | --------------------- | ------------------------------------------------------------------------- |
-| 200  | OK                    | Spreadsheet created successfully; file content returned in response body. |
-| 400  | Bad Request           | Invalid parameters (e.g., unsupported format, missing `outStorageName`).  |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                             |
-| 404  | Not Found             | Template file not found in storage.                                       |
-| 500  | Internal Server Error | Unexpected server error during file generation.                           |
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | Invalid url. |
+| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
+| 404 | Not Found | Source file not accessible. |
+| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining data. |
+
+The API returns the generated file as a binary stream in the response body.
 
 ### Example: cURL Request
 

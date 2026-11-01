@@ -8,32 +8,15 @@ keywords: "replace text remote excel range, Aspose.Cells Cloud API, find and rep
 weight: 100
 ArticleTitle: "Replace Text in Remote Excel Range via Aspose.Cells Cloud API"
 ---
-
 The **ReplaceContentInRemoteRange** API (`PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{cellArea}/replace/content`) in Aspose.Cells Cloud v4.0 enables precise, bulk text replacement within a specified cell range of a remote Excel file stored in cloud storage—such as AWS S3, Azure Blob, or Google Cloud Storage—without requiring the file to be downloaded locally.
 
 ---
 
-## Replace Text in Remote Range API
-
-### HTTP Request
+## The Replace Content in Remote Range Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{cellArea}/replace/content
 ```
-
-### Request Parameters
-
-| Parameter Name | Type   | Location | Required | Description                                                                                  |
-| -------------- | ------ | -------- | -------- | -------------------------------------------------------------------------------------------- |
-| `name`         | string | Path     | Yes      | The name of the workbook file stored in cloud storage (e.g., `"report.xlsx"`).               |
-| `worksheet`    | string | Path     | Yes      | The name of the worksheet where the replacement will occur.                                  |
-| `cellArea`     | string | Path     | Yes      | The cell range (e.g., `"A1:D20"`) in which text will be searched and replaced.               |
-| `searchText`   | string | Query    | Yes      | The exact text string to search for within the specified range.                              |
-| `replaceText`  | string | Query    | Yes      | The text string that replaces all occurrences of `searchText`.                               |
-| `folder`       | string | Query    | No       | The cloud storage folder path where the workbook resides.                                    |
-| `storageName`  | string | Query    | No       | _(Optional)_ The name of a custom cloud storage. If omitted, the default storage is used.    |
-| `region`       | string | Query    | No       | _(Optional)_ Locale identifier (e.g., `"en-US"`, `"fr-FR"`) affecting text comparison rules. |
-| `password`     | string | Query    | No       | _(Optional)_ Password to open a password-protected workbook.                                 |
 
 ### Authentication
 
@@ -45,16 +28,43 @@ curl -X PUT \
   -H 'Authorization: Bearer <access_token>'
 ```
 
+### Request Parameters
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The name of the workbook file to be replace. |
+| searchText | String | Query | The searched text. |
+| replaceText | String | Query | The replaced text. |
+| worksheet | String | Path | The worksheet name. |
+| cellArea | String | Path | The cell area for the replace. |
+| folder | String | Query | The folder path where the workbook is stored. |
+| storageName | String | Query | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password | String | Query | The password for opening spreadsheet file. |
+
 ### Response
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
 
 A successful request returns a `200 OK` status with the following JSON body:
 
-```json
-{
-  "Code": 200,
-  "Status": "OK"
-}
-```
 
 The `CellsCloudResponse` object confirms successful execution. The API does **not** return the count or locations of replacements—only success confirmation.
 
@@ -68,6 +78,8 @@ The `CellsCloudResponse` object confirms successful execution. The API does **no
 | 500  | Server Error | Internal failure during processing (e.g., file corruption, permission error). |
 
 ---
+
+### HTTP Request
 
 ## Use Cases
 

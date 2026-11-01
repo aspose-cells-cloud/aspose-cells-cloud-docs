@@ -10,29 +10,30 @@ description: "Move pivot tables or fields in Excel workbooks via Aspose.Cells Cl
 weight: 120
 ArticleTitle: "Move Pivot Table Field with Aspose.Cells Cloud REST API"
 ---
-
 The **PostPivotTableFieldMoveTo** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField/Move`) enables moving a pivot field within a specific PivotTable by specifying the field index and the source and target field area types (e.g., Column, Row, Page, Data, or Undefined), allowing precise reorganization of PivotTable data layout programmatically via Aspose.Cells Cloud.
 
-**Prerequisites:** Before calling this operation you must have a valid JWT access token and the workbook must be stored in Aspose Cloud storage. Specify the `folder` and `storageName` parameters as needed.
+## The Post Pivot Table Field Move to Web API
 
-## REST API
-
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField/Move
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### **Request parameters**
 
-| Parameter Name  | Type    | Location | Description                                              |
-| --------------- | ------- | -------- | -------------------------------------------------------- |
-| name            | string  | path     | Name of the Excel file.                                  |
-| sheetName       | string  | path     | Name of the worksheet that contains the pivot table.     |
-| pivotTableIndex | integer | path     | Zero‑based index of the pivot table to be moved.         |
-| fieldIndex      | integer | query    | Index of the pivot field to move.                        |
-| from            | string  | query    | Source area of the field (e.g., `Row` or `Column`).      |
-| to              | string  | query    | Destination area of the field (e.g., `Row` or `Column`). |
-| folder          | string  | query    | Folder in storage where the file is located.             |
-| storageName     | string  | query    | Name of the storage service.                             |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| pivotTableIndex | Integer | Path | The PivotTable index. |
+| fieldIndex | Integer | Query | The pivot field index. |
+| from | String | Query | The fields area type(Column/Row/Page/Data/Undefined). |
+| to | String | Query | The fields area type(Column/Row/Page/Data/Undefined). |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PivotTables/PostPivotTableFieldMoveTo) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -64,6 +65,37 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/pivott
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Cloud SDK Family
 

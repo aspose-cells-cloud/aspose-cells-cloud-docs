@@ -16,21 +16,15 @@ categories: ["aspose.cells.cloud", "api-reference"]
 weight: 100
 type: docs
 ---
-
-
 The **UnprotectSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/unprotection/spreadsheet`) in Aspose.Cells Cloud v4.0 removes dual-layer password protection—both open and modify passwords—from Excel workbooks programmatically, supporting encrypted passwords for enhanced security; it accepts the protected spreadsheet file via form data and requires both the encryption and modify passwords as query parameters, enabling secure, server-side unlocking for integration into data pipelines, document management systems, and migration workflows without exposing credentials client-side.
 
-## API Endpoint
+## The Unprotect Spreadsheet Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/unprotection/spreadsheet
 ```
 
-> **Note**: This API is part of Aspose.Cells Cloud v4.0. Verify compatibility if migrating from earlier versions. Aspose.Cells Cloud v5.0 may introduce breaking changes—see [API Versioning Guide](https://docs.aspose.cloud/total/getting-started/overview/api-versioning/) for details.
-
----
-
-## Authentication
+### Authentication
 
 All requests require a valid JWT access token issued via OAuth2. For implementation guidance, see [Authentication Overview](https://docs.aspose.cloud/total/security/authenticating-requests/).
 
@@ -40,24 +34,48 @@ All requests require a valid JWT access token issued via OAuth2. For implementat
 
 ---
 
-## Request Parameters
+### Request Parameters
 
-| Parameter Name   | Type   | Location | Required | Description                                                                                                                                         |
-| ---------------- | ------ | -------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `Spreadsheet`    | File   | FormData | ✅ Yes   | The Excel file to unprotect. Supported formats: `.xlsx`, `.xls`, `.xlsm`, `.xlsb`.                                                                  |
-| `password`       | String | Query    | ✅ Yes   | Password required to open the workbook. Omit only if no open password is set.                                                                       |
-| `modifyPassword` | String | Query    | ✅ Yes   | Password required to modify the workbook (e.g., edit, format, insert rows).                                                                         |
-| `outPath`        | String | Query    | ❌ No    | Full path (including filename) where the unprotected file will be saved (e.g., `/output/unprotected.xlsx`). Defaults to response stream if omitted. |
-| `outStorageName` | String | Query    | ❌ No    | Name of the cloud storage (e.g., `First Aspose Cloud Storage`). Required if `outPath` is specified.                                                 |
-| `region`         | String | Query    | ❌ No    | Locale setting (e.g., `en-US`, `fr-FR`). Affects date/number formatting. Default: `en-US`.                                                          |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| Spreadsheet | File | FormData | Upload spreadsheet file. |
+| password | String | Query | Spreadsheet file encryption password. |
+| modifyPassword | String | Query | Sets the protected password to modify the file. |
+| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
+| outStorageName | String | Query | Output file Storage Name. |
+| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
 
 > **Best Practice**: Always specify `outPath` and `outStorageName` for production workflows to avoid large response payloads. Store unprotected files directly in your cloud storage.
 
 ---
 
-## Response
+### Response
+
+```json
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
 
 On success, returns the unprotected workbook as a file stream. The response payload contains the file content in binary format.
+
+> **Note**: This API is part of Aspose.Cells Cloud v4.0. Verify compatibility if migrating from earlier versions. Aspose.Cells Cloud v5.0 may introduce breaking changes—see [API Versioning Guide](https://docs.aspose.cloud/total/getting-started/overview/api-versioning/) for details.
+
+---
 
 ### Sample Response (Success: 200 OK)
 

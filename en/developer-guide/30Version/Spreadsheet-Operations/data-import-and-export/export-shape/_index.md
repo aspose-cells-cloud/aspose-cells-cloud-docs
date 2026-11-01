@@ -10,15 +10,14 @@ description: "Export Excel shapes to PNG, GIF, JPEG, BMP, SVG, TIFF, EMF, and WM
 weight: 100
 ArticleTitle: "Export Shapes – Aspose.Cells Cloud"
 ---
-
-The **PutWorkbookCreate** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}`) enables developers to create a new Excel workbook programmatically in Aspose.Cells Cloud, supporting options like template files and smart marker data to populate the workbook during creation; this operation allows efficient generation of structured spreadsheet content without manual intervention, facilitating integration into cloud-based workflows.
+The **PostExport** API (`POST https://api.aspose.cloud/v3.0/cells/export`) enables exporting Excel internal elements—such as shapes, charts, or entire workbooks—to diverse formats like PDF, PNG, HTML, or CSV. Using Aspose.Cells Cloud, developers can programmatically convert specific sheet components without manual intervention, supporting 30+ output formats and including optional parameters for password protection, regional settings, and font customization. To use the API, upload the source Excel file via the required `File` form-data field and specify the target `objectType` (e.g., `shape`) and `format` in the query string.
 
 You can export shapes to the following formats: **PNG**, **GIF**, **JPEG**, **BMP**, **SVG**, **TIFF**, **EMF**, **WMF**.
 
-## PostExport API
+## The Post Export Web API
 
 ```http
-PUT https://api.aspose.cloud/v3.0/cells/export
+POST https://api.aspose.cloud/v3.0/cells/export
 ```
 
 ### **Security and Authentication**
@@ -27,49 +26,60 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type   | Path/Query String/HTTP Body | required | Description                                                                                                            |
-| -------------- | ------ | --------------------------- | -------- | ---------------------------------------------------------------------------------------------------------------------- |
-| file           | file   | formData                    | True     | File to upload                                                                                                         |
-| objectType     | string | query                       | True     | The type of object to export. For chart export use `chart`. Valid values include `shape`, `worksheet`, `picture`, etc. |
-| format         | string | query                       | True     | Desired output format. Supported values: `png`, `jpeg`, `gif`, `bmp`, `svg`, `tiff`, `emf`, `wmf`, `pdf`.              |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| File | File | FormData | File to upload |
+| objectType | String | Query | Exported object type:workbook/worksheet/chart/comment/picture/shape/listobject/oleobject. |
+| format | String | Query | The conversion format(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers). |
+| password | String | Query | The password needed to open an Excel file. |
+| checkExcelRestriction | Boolean | Query | Whether check restriction of excel file when user modify cells related objects. |
+| region | String | Query | The regional settings for workbook. |
+| FontsLocation | String | Query | Use Custom fonts. |
+
+### Response
+
+```json
+[
+  {
+    "Name": "FilesResult",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "FilesResult"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+_Typical Base64‑encoded file payloads range from a few hundred bytes to several megabytes, depending on image dimensions and format._
 
 ### **Request Example**
 
 ```bash
-curl -X PUT "https://api.aspose.cloud/v3.0/cells/export?objectType=shape&format=tiff" \
+curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=shape&format=tiff" \
      -H "accept: multipart/form-data" \
      -H "Content-Type: multipart/form-data" \
      -H "Authorization: Bearer <your_access_token>" \
      -H "x-aspose-client: Containerize.Swagger" \
      -d '{"File":{}}'
 ```
-
-### Response
-
-```json
-{
-  "Files": [
-    {
-      "Filename": "Book1_xlsx_Sheet1_Shapes_0.tif",
-      "FileSize": 390,
-      "FileContent": "-----Base64String--------"
-    }
-    // ... additional file objects ...
-  ]
-}
-```
-
-_Typical Base64‑encoded file payloads range from a few hundred bytes to several megabytes, depending on image dimensions and format._
-
-**HTTP Status Codes**
-
-| Code | Meaning               | Description                                                    |
-| ---- | --------------------- | -------------------------------------------------------------- |
-| 200  | OK                    | Shapes exported successfully; response contains the file list. |
-| 400  | Bad Request           | Missing or invalid parameters.                                 |
-| 401  | Unauthorized          | Invalid or missing access token.                               |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                              |
-| 500  | Internal Server Error | Unexpected server error.                                       |
 
 ## How to Use the PostExport API with SDKs
 
@@ -80,7 +90,7 @@ The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells
 You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API using cURL.
 
 ```bash
-curl -X PUT "https://api.aspose.cloud/v3.0/cells/export?objectType=shape&format=tiff" \
+curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=shape&format=tiff" \
      -H "accept: multipart/form-data" \
      -H "Content-Type: multipart/form-data" \
      -H "Authorization: Bearer <your_access_token>" \

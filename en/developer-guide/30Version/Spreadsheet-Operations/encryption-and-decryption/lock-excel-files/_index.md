@@ -13,15 +13,62 @@ keywords: "lock Excel, protect workbook, Excel security, Aspose.Cells Cloud, RES
 weight: 70
 ArticleTitle: "Lock Excel Files with Aspose.Cells Cloud REST API v3.0"
 ---
-
-
 The **PostLock** API (`POST https://api.aspose.cloud/v3.0/cells/lock`) in Aspose.Cells Cloud v3.0 enables developers to programmatically lock Excel workbooks by uploading a file and specifying a password via query parameters, returning a Base64-encoded protected workbook in a FilesResult response.
 
-## API Endpoint
+## The Post Lock Web API
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/lock
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
+### Request Parameters
+
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| File | File | FormData | File to upload |
+| password | String | Query | The password needed to open an Excel file. |
+
+> **Security Note**  
+> Sending the `password` in the query string (e.g., `?password=123456`) risks exposure in server logs, proxy logs, or browser history. We recommend sending it via form-data:  
+> `-F "password=123456"`
+
+---
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "FilesResult",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "FilesResult"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 **Prerequisites**  
 - HTTPS is required.  
@@ -29,19 +76,6 @@ POST https://api.aspose.cloud/v3.0/cells/lock
   ```http
   Authorization: Bearer <access_token>
   ```
-
----
-
-## Request Parameters
-
-| Parameter | Type   | Location     | Required | Description |
-|-----------|--------|--------------|----------|-------------|
-| `File`    | file   | form-data    | ✅ Yes   | The Excel workbook to lock (`.xlsx`, `.xls`, etc.). |
-| `password`| string | query string | ✅ Yes   | Password to protect the workbook. *Note: Per security best practices, this should be sent in the request body instead of the URL.* |
-
-> **Security Note**  
-> Sending the `password` in the query string (e.g., `?password=123456`) risks exposure in server logs, proxy logs, or browser history. We recommend sending it via form-data:  
-> `-F "password=123456"`
 
 ---
 

@@ -10,31 +10,27 @@ description: "Unhide Excel worksheets using Aspose.Cells Cloud API: PUT /cells/{
 weight: 60
 ArticleTitle: "Unhide Excel Worksheet Using Aspose.Cells Cloud REST API"
 ---
-
 The **PutChangeVisibilityWorksheet** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/visible`) enables unhide or hide a specific worksheet in an Excel workbook stored in the cloud by setting its visibility state via the required `isVisible` boolean query parameter. Aspose.Cells Cloud supports this operation as part of its robust worksheet visibility management, allowing developers to programmatically control worksheet visibility using the standard REST API or one of the available SDKs for languages such as .NET, Java, Python, Node.js, and Go.
 
-**Prerequisites**  
-Before calling this operation you must have:
+## The Put Change Visibility Worksheet Web API
 
-- A valid Aspose Cloud access token (JWT) included in the `Authorization` header.
-- The workbook stored in a supported storage location that you specify with the `folder` and `storageName` query parameters.
-- The workbook must be in a format supported by Aspose.Cells (e.g., `.xls`, `.xlsx`, `.xlsm`).
-
-## REST API
-
-```bash
+```http
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/visible
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### **Request parameters**
 
-| Parameter Name | Type    | Location | Description                              |
-| -------------- | ------- | -------- | ---------------------------------------- |
-| name           | string  | path     | Document name.                           |
-| sheetName      | string  | path     | Worksheet name.                          |
-| isVisible      | boolean | query    | New worksheet visibility value (`true`). |
-| folder         | string  | query    | The document folder.                     |
-| storageName    | string  | query    | Storage name.                            |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | Worksheet name. |
+| isVisible | Boolean | Query | New worksheet visibility value. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PutChangeVisibilityWorksheet) defines a publicly accessible programming interface that lets you perform REST interactions directly from a web browser.
 
@@ -65,17 +61,41 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/She
 
 **Possible response codes**
 
-| HTTP Code | Meaning                                          | Sample Body (when applicable)                                 |
-| --------- | ------------------------------------------------ | ------------------------------------------------------------- |
-| 200       | Worksheet visibility updated successfully        | `{ "Code": 200, "Status": "OK" }`                             |
-| 400       | Bad request – missing or invalid parameters      | `{ "Code": 400, "Message": "Invalid request parameters." }`   |
-| 401       | Unauthorized – missing or invalid JWT token      | `{ "Code": 401, "Message": "Authentication failed." }`        |
-| 404       | Not found – workbook or worksheet does not exist | `{ "Code": 404, "Message": "File or worksheet not found." }`  |
-| 500       | Internal server error                            | `{ "Code": 500, "Message": "An unexpected error occurred." }` |
 
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Cloud SDK Family
 

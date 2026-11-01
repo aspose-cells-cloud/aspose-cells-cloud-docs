@@ -10,28 +10,31 @@ description: "Set Excel worksheet zoom (10–400%) via Aspose.Cells Cloud REST A
 weight: 100
 ArticleTitle: "Set Zoom for an Excel Worksheet – Aspose.Cells Cloud API v3.0"
 ---
-
 The **PostUpdateWorksheetZoom** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/zoom`) updates the scaling percentage of a specified worksheet in an Excel file stored in the cloud, supporting values between 10 and 400; Aspose.Cells Cloud requires authentication via a Bearer JWT token in the `Authorization` header and accepts optional query parameters `folder` and `storageName` to locate the source file.
 
 ## Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
-## REST API
+## The Post Update Worksheet Zoom Web API
 
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/zoom
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### **Request parameters**
 
-| Parameter   | Type    | Location | Description                                                        |
-| ----------- | ------- | -------- | ------------------------------------------------------------------ |
-| name        | string  | path     | Name of the Excel file (workbook).                                 |
-| sheetName   | string  | path     | Name of the worksheet to modify.                                   |
-| value       | integer | query    | Zoom percentage (allowed range **10 – 400**, e.g., `40` for 40 %). |
-| folder      | string  | query    | Folder path where the file is stored.                              |
-| storageName | string  | query    | Name of the storage service.                                       |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| value | Integer | Query | Represents the scaling factor in percentage. It should be between 10 and 400. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostUpdateWorksheetZoom) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -73,6 +76,37 @@ Possible HTTP status codes include:
 - `500 Internal Server Error` – unexpected server‑side error.
 
 Each error response returns a JSON body containing a `Code` and a descriptive `Message`.
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Cloud SDK Family
 

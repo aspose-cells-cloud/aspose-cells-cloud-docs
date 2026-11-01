@@ -12,7 +12,6 @@ keywords: "Aspose.Cells, ListObject, Update Table, Excel API, REST, Cloud SDK, l
 description: "Learn how to update an Excel table using Aspose.Cells Cloud API (v3.0). Includes endpoint, parameters, sample cURL, error codes, and SDK examples."
 weight: 100
 ---
-
 The **PostWorksheetListObject** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}`) updates the properties of a list object (table) in an Excel worksheet by its index, using Aspose.Cells Cloud to programmatically modify table styling, structure, or content without manual intervention in the spreadsheet.
 
 ## Security and Authentication
@@ -47,24 +46,73 @@ The `listObject` DTO contains the following fields. Only the fields you need to 
 }
 ```
 
-## REST API
+## The Post Worksheet List Object Web API
 
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### **Request parameters**
 
-| Parameter Name      | Type    | Location | Description                         |
-| ------------------- | ------- | -------- | ----------------------------------- |
-| **name**            | string  | path     | Document name.                      |
-| **sheetName**       | string  | path     | Worksheet name.                     |
-| **listObjectIndex** | integer | path     | Index of the list object to update. |
-| **listObject**      | object  | body     | ListObject DTO in the request body. |
-| **folder**          | string  | query    | Folder that contains the document.  |
-| **storageName**     | string  | query    | Name of the storage.                |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| listObjectIndex | Integer | Path | list Object index |
+| listObject | class:listobject | HTTPBody | listObject dto in request body. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObject) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+### Response
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+{{< tab tabNum="12" >}}
+
+
+The successful response includes the following fields:
+
+| Field                      | Type    | Description                                                                            |
+| -------------------------- | ------- | -------------------------------------------------------------------------------------- |
+| Code                       | integer | HTTP status code (200 for success).                                                    |
+| Status                     | string  | Textual description of the status.                                                     |
+| UpdatedObject _(optional)_ | object  | The updated `ListObject` representation, containing the properties that were modified. |
+
+{{< /tab >}}
+
+{{< /tabs >}}
+
+### Error Responses
+
+| HTTP Code | Description                                                                   | Sample Payload                                         |
+| --------- | ----------------------------------------------------------------------------- | ------------------------------------------------------ |
+| **400**   | Bad request – missing required fields or malformed JSON.                      | `{ "Code": 400, "Message": "Invalid request body." }`  |
+| **401**   | Unauthorized – JWT token is missing or invalid.                               | `{ "Code": 401, "Message": "Authentication failed." }` |
+| **404**   | Not found – the specified workbook, worksheet, or list object does not exist. | `{ "Code": 404, "Message": "Resource not found." }`    |
+| **500**   | Internal server error – unexpected condition on the server side.              | `{ "Code": 500, "Message": "Server error." }`          |
 
 ### Request
 
@@ -92,38 +140,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet7/listob
 ```
 
 {{< /tab >}}
-
-### Response
-
-{{< tab tabNum="12" >}}
-
-```json
-{
-  "Code": 200,
-  "Status": "OK"
-}
-```
-
-The successful response includes the following fields:
-
-| Field                      | Type    | Description                                                                            |
-| -------------------------- | ------- | -------------------------------------------------------------------------------------- |
-| Code                       | integer | HTTP status code (200 for success).                                                    |
-| Status                     | string  | Textual description of the status.                                                     |
-| UpdatedObject _(optional)_ | object  | The updated `ListObject` representation, containing the properties that were modified. |
-
-{{< /tab >}}
-
-{{< /tabs >}}
-
-## Error Responses
-
-| HTTP Code | Description                                                                   | Sample Payload                                         |
-| --------- | ----------------------------------------------------------------------------- | ------------------------------------------------------ |
-| **400**   | Bad request – missing required fields or malformed JSON.                      | `{ "Code": 400, "Message": "Invalid request body." }`  |
-| **401**   | Unauthorized – JWT token is missing or invalid.                               | `{ "Code": 401, "Message": "Authentication failed." }` |
-| **404**   | Not found – the specified workbook, worksheet, or list object does not exist. | `{ "Code": 404, "Message": "Resource not found." }`    |
-| **500**   | Internal server error – unexpected condition on the server side.              | `{ "Code": 500, "Message": "Server error." }`          |
 
 ## FAQ
 

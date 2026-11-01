@@ -14,18 +14,11 @@ description: "Learn how to create a pivot table from a list object using Aspose.
 weight: 60
 ArticleTitle: "Convert Table to Pivot Table – Aspose.Cells Cloud Documentation"
 ---
-
 The **PostWorksheetListObjectSummarizeWithPivotTable** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/SummarizeWithPivotTable`) enables developers to programmatically convert an existing list object in a worksheet into a pivot table using Aspose.Cells Cloud, requiring parameters such as the workbook name, worksheet name, list object index, destination worksheet name, and a `CreatePivotTableRequest` body to define the pivot table structure and data fields.
 
 A pivot table summarizes data from a list object, allowing you to analyze and report on large data sets directly within the workbook.
 
-**Prerequisites:**
-
-- A valid JWT bearer token for authentication.
-- The workbook must exist in the specified storage location.
-- The target worksheet must contain the list object you want to summarize.
-
-## PostWorksheetListObjectSummarizeWithPivotTable API
+## The Post Worksheet List Object Summarize with Pivot Table Web API
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/SummarizeWithPivotTable
@@ -37,15 +30,15 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Request parameters**
 
-| Parameter Name  | Type    | Location | Description                                |
-| --------------- | ------- | -------- | ------------------------------------------ |
-| name            | string  | path     | Workbook file name.                        |
-| sheetName       | string  | path     | Worksheet that contains the list object.   |
-| listObjectIndex | integer | path     | Index of the list object in the worksheet. |
-| destsheetName   | string  | query    | Name of the destination worksheet.         |
-| request         | object  | body     | JSON payload that defines the pivot table. |
-| folder          | string  | query    | Folder path where the workbook resides.    |
-| storageName     | string  | query    | Name of the storage.                       |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| listObjectIndex | Integer | Path | The list object index. |
+| destsheetName | String | Query | The target worksheet name. |
+| createPivotTableRequest | class:createpivottablerequest | HTTPBody | Create pivot table request. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 The request body must follow the JSON schema defined below:
 
@@ -119,15 +112,37 @@ _Note: Use the production endpoint (`api.aspose.cloud`) for live environments. T
 
 {{< /tabs >}}
 
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
 **HTTP Status Codes**
 
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Cloud SDK Family
 

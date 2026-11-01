@@ -9,7 +9,6 @@ description: "Delete all charts from a worksheet via Aspose.Cells Cloud REST API
 ArticleTitle: "Delete All Charts from a Worksheet using Aspose.Cells Cloud API"
 linktitle: "Clear All Charts"
 ---
-
 The **DeleteWorksheetCharts** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts`) is a REST endpoint provided by Aspose.Cells Cloud that removes all charts from a specified worksheet within a spreadsheet file, enabling developers to programmatically clean or reset chart content without manual intervention; it requires the file name and worksheet name as path parameters, with optional query parameters for folder and storage name to support flexible cloud-based file management.
 
 **Background** – Removing all charts from a worksheet is useful when you need to reset a sheet’s visual layout, replace outdated visualizations, or prepare a workbook for reuse without retaining previous chart data.
@@ -20,7 +19,7 @@ Before calling the API, ensure the following prerequisites are met:
 - The workbook file exists in the specified storage location and folder.  
 - You are using API version **v3.0**.
 
-## DeleteWorksheetClearCharts API
+## The Delete Worksheet Charts Web API
 
 ```http
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
@@ -32,12 +31,12 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request parameters
 
-| Parameter Name | Type   | Location | Description                          |
-| -------------- | ------ | -------- | ------------------------------------ |
-| name           | string | path     | Name of the workbook file.           |
-| sheetName      | string | path     | Name of the worksheet.               |
-| folder         | string | query    | Folder where the workbook is stored. |
-| storageName    | string | query    | Name of the storage.                 |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 **Request Headers**
 
@@ -60,15 +59,6 @@ The DELETE operation does **not** require a request body.
 }
 ```
 
-**HTTP Status Codes**
-
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
 
 *Example error responses*
 
@@ -97,6 +87,37 @@ The DELETE operation does **not** require a request body.
     "Message": "An unexpected error occurred on the server."
 }
 ```
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## How to Use the DeleteWorksheetClearCharts API with SDKs
 

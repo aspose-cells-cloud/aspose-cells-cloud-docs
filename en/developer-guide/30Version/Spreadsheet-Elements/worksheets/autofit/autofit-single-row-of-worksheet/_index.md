@@ -10,31 +10,34 @@ keywords: "autofit row, Aspose.Cells Cloud, Excel API, REST, worksheet, SDK, spr
 weight: 30
 ArticleTitle: "Autofit Row in Excel Worksheet using Aspose.Cells Cloud API"
 ---
-
 The **PostAutofitWorksheetRow** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitrow`) in Aspose.Cells Cloud enables autofitting a single row in a worksheet by dynamically adjusting its height to accommodate the tallest content in the specified row, with optional parameters to limit the operation to a specific column range (`firstColumn`, `lastColumn`) and support for custom folder and storage locations; the operation requires the file name, worksheet name, and row index as mandatory path and query parameters.
 
 ## Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
-## REST API
+## The Post Autofit Worksheet Row Web API
 
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitrow
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### **Request parameters**
 
-| Parameter Name    | Type    | Location | Description                                                                                                                                                                                                  |
-| ----------------- | ------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| name              | string  | path     | The name of the Excel file.                                                                                                                                                                                  |
-| sheetName         | string  | path     | The name of the worksheet.                                                                                                                                                                                   |
-| rowIndex          | integer | query    | Zero‑based index of the row to autofit.                                                                                                                                                                      |
-| firstColumn       | integer | query    | Index of the first column included in the operation.                                                                                                                                                         |
-| lastColumn        | integer | query    | Index of the last column included in the operation.                                                                                                                                                          |
-| autoFitterOptions | object  | body     | Object that controls the autofit behavior (e.g., whether to consider merged cells, wrap text, etc.). See [AutoFitterOptions](/cells/auto-fitter-options){:rel="noopener" title="Controls autofit behavior"}. |
-| folder            | string  | query    | Folder where the file is stored.                                                                                                                                                                             |
-| storageName       | string  | query    | Name of the storage.                                                                                                                                                                                         |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| rowIndex | Integer | Query | The row index. |
+| firstColumn | Integer | Query | The first column index. |
+| lastColumn | Integer | Query | The last column index. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+| rowCount | Integer | Query | - |
 
 **Sample `autoFitterOptions` JSON body**
 
@@ -46,6 +49,38 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitro
   "AutoFitWrappedCells": false
 }
 ```
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+### Error Handling
+
+The API returns standard HTTP status codes. Common error responses for this endpoint are:
+
+| HTTP Code | Example Payload                                           | Meaning                                                                           |
+| --------- | --------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| 400       | `{ "Code": 400, "Message": "Row index out of range." }`   | The supplied `rowIndex` does not exist in the worksheet.                          |
+| 401       | `{ "Code": 401, "Message": "Invalid or expired token." }` | Authentication failed – check the JWT token and ensure the request is over HTTPS. |
+| 404       | `{ "Code": 404, "Message": "File not found." }`           | The specified Excel file or worksheet cannot be located.                          |
+| 500       | `{ "Code": 500, "Message": "Internal server error." }`    | An unexpected server‑side problem occurred.                                       |
 
 ### Entity Definitions
 
@@ -84,17 +119,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/sampleAutoFit.xlsx/worksheets/Sheet
 {{< /tab >}}
 
 {{< /tabs >}}
-
-## Error Handling
-
-The API returns standard HTTP status codes. Common error responses for this endpoint are:
-
-| HTTP Code | Example Payload                                           | Meaning                                                                           |
-| --------- | --------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| 400       | `{ "Code": 400, "Message": "Row index out of range." }`   | The supplied `rowIndex` does not exist in the worksheet.                          |
-| 401       | `{ "Code": 401, "Message": "Invalid or expired token." }` | Authentication failed – check the JWT token and ensure the request is over HTTPS. |
-| 404       | `{ "Code": 404, "Message": "File not found." }`           | The specified Excel file or worksheet cannot be located.                          |
-| 500       | `{ "Code": 500, "Message": "Internal server error." }`    | An unexpected server‑side problem occurred.                                       |
 
 ## Cloud SDK Family
 

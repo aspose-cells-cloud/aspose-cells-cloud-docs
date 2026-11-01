@@ -10,22 +10,25 @@ description: "Retrieve all worksheets from an Excel workbook using Aspose.Cells 
 weight: 100
 ArticleTitle: "Get All Worksheets from Excel Workbook via Aspose.Cells Cloud REST API"
 ---
-
 The **GetWorksheets** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets`) retrieves a list of worksheet descriptions from a specified workbook file in Aspose.Cells Cloud, supporting optional `folder` and `storageName` query parameters to locate the file.
 
-## REST API
+## The Get Worksheets Web API
 
-```bash
+```http
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
+
 ### **Request parameters**
 
-| Parameter Name | Type   | Location | Description                            |
-| -------------- | ------ | -------- | -------------------------------------- |
-| name           | string | path     | The name of the Excel document.        |
-| folder         | string | query    | The folder that contains the document. |
-| storageName    | string | query    | The name of the storage to use.        |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheets) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -78,7 +81,28 @@ curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets" \
 
 {{< /tabs >}}
 
-## Error Handling
+### **Response**
+
+```json
+[
+  {
+    "Name": "WorksheetsResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "WorksheetsResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+### Error Handling
 
 Typical HTTP status codes returned by this endpoint:
 

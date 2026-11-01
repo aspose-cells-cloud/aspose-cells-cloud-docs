@@ -10,11 +10,9 @@ description: "Add a picture to an Excel worksheet using Aspose.Cells Cloud REST 
 weight: 100
 ArticleTitle: "Add a Picture to an Excel Worksheet – Aspose.Cells Cloud API"
 ---
-
 The **PutWorksheetAddPicture** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures`) enables developers to add a new picture to a specific Excel worksheet using Aspose.Cells Cloud, supporting both embedded image data in the request body and external image paths via query parameters, with optional positioning controls such as upper-left and lower-right row/column coordinates.
-**Prerequisites:** You must have a valid Aspose Cloud authentication token, an existing workbook stored in a supported storage, and appropriate permissions to modify the worksheet.
 
-## PutWorksheetAddPicture API
+## The Put Worksheet Add Picture Web API
 
 ```http
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
@@ -26,30 +24,21 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name   | Type    | Location | Description                                                                                  |
-| ---------------- | ------- | -------- | -------------------------------------------------------------------------------------------- |
-| name             | string  | path     | The workbook name.                                                                           |
-| sheetName        | string  | path     | The worksheet name.                                                                          |
-| picture          | object  | body     | Picture object (binary data).                                                                |
-| upperLeftRow     | integer | query    | Zero‑based index of the upper‑left row where the picture will be placed.                     |
-| upperLeftColumn  | integer | query    | Zero‑based index of the upper‑left column where the picture will be placed.                  |
-| lowerRightRow    | integer | query    | Zero‑based index of the lower‑right row of the picture area.                                 |
-| lowerRightColumn | integer | query    | Zero‑based index of the lower‑right column of the picture area.                              |
-| picturePath      | string  | query    | Path to the picture file; if omitted, the picture data must be supplied in the request body. |
-| folder           | string  | query    | The folder that contains the workbook.                                                       |
-| storageName      | string  | query    | The name of the storage service.                                                             |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worsheet name. |
+| picture | class:picture | HTTPBody | Pictute object |
+| upperLeftRow | Integer | Query | The image upper left row. |
+| upperLeftColumn | Integer | Query | The image upper left column. |
+| lowerRightRow | Integer | Query | The image low right row. |
+| lowerRightColumn | Integer | Query | The image low right column. |
+| picturePath | String | Query | The picture path, if not provided the picture data is inspected in the request body. |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
 
 **Request Body Note:** When `picturePath` is omitted, send the binary image data in the request body using `multipart/form-data`.
 
-**HTTP Status Codes**
-
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
 
 **Example 200 Response Schema**
 
@@ -93,6 +82,38 @@ curl -v "https://api.aspose.com/v1.1/cells/Sample_Test_Book.xls/worksheets/Sheet
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Cloud SDK Family
 

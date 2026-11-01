@@ -10,29 +10,80 @@ description: "Retrieve an OLE object (image, chart, or embedded file) from a wor
 ArticleTitle: "Get OLE Object from Excel Worksheet – Aspose.Cells Cloud API"
 weight: 100
 ---
-
 The **GetWorksheetOleObject** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects/{objectNumber}`) retrieves an OLE object from a specified Excel worksheet by its object number, optionally converting it to a supported image format such as PNG, TIFF, JPEG, GIF, EMF, or BMP, enabling programmatic extraction and reuse of embedded objects within cloud-based spreadsheets using Aspose.Cells Cloud.
 
 ## Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
-## Rest API
+## The Get Worksheet OLE Object Web API
 
-```bash
-GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects/{objectNumber}?format={format}
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects/{objectNumber}
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
 
 ### Request Parameters
 
-| Parameter Name | Type    | Location | Description                                                 |
-| -------------- | ------- | -------- | ----------------------------------------------------------- |
-| name           | string  | path     | Document name.                                              |
-| sheetName      | string  | path     | Worksheet name.                                             |
-| objectNumber   | integer | path     | The object number within the worksheet.                     |
-| format         | string  | query    | Desired export format for the object (e.g., `png`, `jpeg`). |
-| folder         | string  | query    | Folder that contains the document.                          |
-| storageName    | string  | query    | Name of the storage to use.                                 |
+| Parameter Name | Type | Path/Query String/HTTPBody | Description |
+|---|---|---|---|
+| name | String | Path | The file name. |
+| sheetName | String | Path | The worksheet name. |
+| objectNumber | Integer | Path | The object number. |
+| format | String | Query | Object conversion format(PNG/TIFF/JPEG/GIF/EMF/BMP). |
+| folder | String | Query | The folder where the file is situated. |
+| storageName | String | Query | The storage name where the file is situated. |
+
+### Binary Image Response
+
+```json
+[
+  {
+    "Name": "Stream",
+    "DataType": {
+      "Identifier": "File"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result"
+```
+
+When `format` is set to an image type (e.g., `png`), the API returns the binary image data with the header:
+
+```
+Content-Type: image/png
+```
+
+_(The image file is streamed directly to the client.)_
+
+### Error Responses
+
+| HTTP Status | Error Code   | Description                                   |
+| ----------- | ------------ | --------------------------------------------- |
+| 400         | BadRequest   | Missing or invalid parameters.                |
+| 401         | Unauthorized | Invalid or missing JWT token.                 |
+| 404         | NotFound     | Workbook, worksheet, or OLE object not found. |
+| 500         | ServerError  | Unexpected server error.                      |
+
+**Example 404 response**
+
+```json
+{
+  "Code": 404,
+  "Status": "NotFound",
+  "Message": "The requested OLE object with number 0 was not found in worksheet 'Sheet1'."
+}
+```
 
 ### Storage Options
 
@@ -59,16 +110,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Embedded_OleObject_Sample_Book1.xls
 
 {{< tab tabNum="2" >}}
 
-### Binary Image Response
-
-When `format` is set to an image type (e.g., `png`), the API returns the binary image data with the header:
-
-```
-Content-Type: image/png
-```
-
-_(The image file is streamed directly to the client.)_
-
 ### JSON Metadata Response
 
 If `format` is omitted or set to `json`, the API returns a JSON payload describing the OLE object:
@@ -92,25 +133,6 @@ If `format` is omitted or set to `json`, the API returns a JSON payload describi
 {{< /tab >}}
 
 {{< /tabs >}}
-
-## Error Responses
-
-| HTTP Status | Error Code   | Description                                   |
-| ----------- | ------------ | --------------------------------------------- |
-| 400         | BadRequest   | Missing or invalid parameters.                |
-| 401         | Unauthorized | Invalid or missing JWT token.                 |
-| 404         | NotFound     | Workbook, worksheet, or OLE object not found. |
-| 500         | ServerError  | Unexpected server error.                      |
-
-**Example 404 response**
-
-```json
-{
-  "Code": 404,
-  "Status": "NotFound",
-  "Message": "The requested OLE object with number 0 was not found in worksheet 'Sheet1'."
-}
-```
 
 ## Cloud SDK Family
 
