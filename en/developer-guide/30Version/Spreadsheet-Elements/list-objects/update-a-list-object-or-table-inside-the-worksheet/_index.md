@@ -59,8 +59,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 ```
 
-{{< tab tabNum="12" >}}
-
 The successful response includes the following fields:
 
 | Field                      | Type    | Description                                                                            |
@@ -68,10 +66,6 @@ The successful response includes the following fields:
 | Code                       | integer | HTTP status code (200 for success).                                                    |
 | Status                     | string  | Textual description of the status.                                                     |
 | UpdatedObject _(optional)_ | object  | The updated `ListObject` representation, containing the properties that were modified. |
-
-{{< /tab >}}
-
-{{< /tabs >}}
 
 ### Error Responses
 
