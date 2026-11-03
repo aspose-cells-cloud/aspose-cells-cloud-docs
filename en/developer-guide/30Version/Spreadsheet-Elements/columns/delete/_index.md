@@ -16,48 +16,12 @@ keywords:
     "Worksheet",
     "Columns",
   ]
-date: 2024-06-15
-api_version: "v3.0"
+
 weight: 100
 ArticleTitle: "Delete Excel Columns via Aspose.Cells Cloud REST API"
 ---
+
 The **DeleteWorksheetColumns** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex}`) enables developers to remove one or more columns from an Excel worksheet using Aspose.Cells Cloud, with optional automatic updating of cell references—including formulas—in other worksheets via the `updateReference` query parameter.
-
-**Endpoint**: `DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex}`
-
-The operation removes one or more columns from a worksheet. Cell references (including formulas) can be updated automatically after the deletion.
-
-> **Note**: The `columns` query parameter is deprecated. Use `startColumn` and `totalColumns` for new integrations. Both approaches are accepted for backward compatibility.
-
----
-
-## Table of Contents
-
-1. [Prerequisites](#prerequisites)
-2. [Authentication](#authentication)
-3. [Request URL & HTTP Method](#request-url--http-method)
-4. [Parameters](#parameters)
-   - [Path parameters](#path-parameters)
-   - [Query parameters](#query-parameters)
-5. [cURL Example](#curl-example)
-6. [Responses](#responses)
-7. [Common Errors](#common-errors)
-8. [SDK Samples](#sdk-samples)
-9. [Additional Notes](#additional-notes)
-
----
-
-## Authentication
-
-All Aspose.Cells Cloud requests require **Bearer token** authentication.
-
-```http
-Authorization: Bearer <YOUR_ACCESS_TOKEN>
-```
-
-Refer to the [authentication guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) for details on obtaining a JWT token.
-
----
 
 ## The Delete Worksheet Columns Web API
 
@@ -71,15 +35,15 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| columnIndex | Integer | Path | The column index. |
-| columns | Integer | Query | The number of columns. |
-| updateReference | Boolean | Query | Indicates if references in other worksheets will be updated. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name  | Type    | Path/Query String/HTTPBody | Description                                                  |
+| --------------- | ------- | -------------------------- | ------------------------------------------------------------ |
+| name            | String  | Path                       | The file name.                                               |
+| sheetName       | String  | Path                       | The worksheet name.                                          |
+| columnIndex     | Integer | Path                       | The column index.                                            |
+| columns         | Integer | Query                      | The number of columns.                                       |
+| updateReference | Boolean | Query                      | Indicates if references in other worksheets will be updated. |
+| folder          | String  | Query                      | The folder where the file is situated.                       |
+| storageName     | String  | Query                      | The storage name where the file is situated.                 |
 
 ### **Response**
 
@@ -104,13 +68,13 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 - **`{name}`** – workbook file name (e.g., `test.xlsx`).
 - **`{sheetName}`** – worksheet name (e.g., `Sheet1`).
@@ -120,21 +84,21 @@ Content-Type: application/json
 
 ### Path parameters
 
-| Name        | Location | Type   | Required | Description              |
-|-------------|----------|--------|----------|--------------------------|
-| **name**    | path     | string | ✅ Yes   | Workbook file name.      |
-| **sheetName** | path   | string | ✅ Yes   | Worksheet name.          |
-| **columnIndex** | path | integer | ✅ Yes | Zero‑based index of the first column to delete. |
+| Name            | Location | Type    | Required | Description                                     |
+| --------------- | -------- | ------- | -------- | ----------------------------------------------- |
+| **name**        | path     | string  | ✅ Yes   | Workbook file name.                             |
+| **sheetName**   | path     | string  | ✅ Yes   | Worksheet name.                                 |
+| **columnIndex** | path     | integer | ✅ Yes   | Zero‑based index of the first column to delete. |
 
 ### Query parameters
 
-| Name             | Location | Type    | Required | Description                                                                                      |
-|------------------|----------|---------|----------|--------------------------------------------------------------------------------------------------|
-| **startColumn**  | query    | integer | ❌ No    | Zero‑based index where deletion starts. Defaults to `columnIndex` if omitted.                    |
-| **totalColumns** | query    | integer | ❌ No    | Number of columns to delete. If omitted, only the column identified by `columnIndex` is removed. |
-| **updateReference** | query | boolean | ❌ No | When `true`, updates cell references (including formulas) across the workbook after deletion.    |
-| **folder**       | query    | string  | ❌ No    | Path to the folder that contains the workbook.                                                   |
-| **storageName**  | query    | string  | ❌ No    | Name of the Aspose Cloud storage service.                                                        |
+| Name                | Location | Type    | Required | Description                                                                                      |
+| ------------------- | -------- | ------- | -------- | ------------------------------------------------------------------------------------------------ |
+| **startColumn**     | query    | integer | ❌ No    | Zero‑based index where deletion starts. Defaults to `columnIndex` if omitted.                    |
+| **totalColumns**    | query    | integer | ❌ No    | Number of columns to delete. If omitted, only the column identified by `columnIndex` is removed. |
+| **updateReference** | query    | boolean | ❌ No    | When `true`, updates cell references (including formulas) across the workbook after deletion.    |
+| **folder**          | query    | string  | ❌ No    | Path to the folder that contains the workbook.                                                   |
+| **storageName**     | query    | string  | ❌ No    | Name of the Aspose Cloud storage service.                                                        |
 
 > **Important**: The legacy `columns` query parameter is deprecated. Prefer `startColumn` and `totalColumns` for clarity and flexibility.
 
@@ -159,13 +123,13 @@ curl -X DELETE \
 
 ## Responses
 
-| HTTP Code | Description                                                                 | Example                                                       |
-|-----------|-----------------------------------------------------------------------------|---------------------------------------------------------------|
-| **200**   | Success – the column(s) were deleted.                                       | `{ "Code": 200, "Status": "OK" }`                             |
-| **400**   | Bad request – missing or invalid parameters (e.g., `totalColumns < 1`).    | `{ "Code": 400, "Message": "Invalid totalColumns value." }`   |
-| **401**   | Unauthorized – missing or invalid JWT token.                                | `{ "Code": 401, "Message": "Authentication failed." }`        |
-| **404**   | Not found – workbook or worksheet does not exist.                          | `{ "Code": 404, "Message": "Worksheet 'Sheet1' not found." }` |
-| **500**   | Internal server error – unexpected condition on the server.                | `{ "Code": 500, "Message": "An unexpected error occurred." }` |
+| HTTP Code | Description                                                             | Example                                                       |
+| --------- | ----------------------------------------------------------------------- | ------------------------------------------------------------- |
+| **200**   | Success – the column(s) were deleted.                                   | `{ "Code": 200, "Status": "OK" }`                             |
+| **400**   | Bad request – missing or invalid parameters (e.g., `totalColumns < 1`). | `{ "Code": 400, "Message": "Invalid totalColumns value." }`   |
+| **401**   | Unauthorized – missing or invalid JWT token.                            | `{ "Code": 401, "Message": "Authentication failed." }`        |
+| **404**   | Not found – workbook or worksheet does not exist.                       | `{ "Code": 404, "Message": "Worksheet 'Sheet1' not found." }` |
+| **500**   | Internal server error – unexpected condition on the server.             | `{ "Code": 500, "Message": "An unexpected error occurred." }` |
 
 The response body follows the generic **`CellsCloudResponse`** model.
 
@@ -173,13 +137,13 @@ The response body follows the generic **`CellsCloudResponse`** model.
 
 ## Common Errors
 
-| Error Code | Cause | Resolution |
-|------------|-------|------------|
-| **400** | `totalColumns` ≤ 0 or negative | Ensure `totalColumns` is ≥ 1 and `startColumn + totalColumns ≤ worksheet column count`. |
-| **400** | Non-numeric `columnIndex`/`startColumn` | Use zero‑based integer indices only. |
-| **404** | Workbook file missing | Upload the file first via [`PutCreate`](/cells/upload/) or verify `folder`/`storageName`. |
-| **404** | Worksheet name misspelled | Confirm case-sensitive worksheet name (e.g., `Sheet1`, not `sheet1`). |
-| **413** | Request payload too large | Reduce batch size or split deletion into multiple requests. |
+| Error Code | Cause                                   | Resolution                                                                                |
+| ---------- | --------------------------------------- | ----------------------------------------------------------------------------------------- |
+| **400**    | `totalColumns` ≤ 0 or negative          | Ensure `totalColumns` is ≥ 1 and `startColumn + totalColumns ≤ worksheet column count`.   |
+| **400**    | Non-numeric `columnIndex`/`startColumn` | Use zero‑based integer indices only.                                                      |
+| **404**    | Workbook file missing                   | Upload the file first via [`PutCreate`](/cells/upload/) or verify `folder`/`storageName`. |
+| **404**    | Worksheet name misspelled               | Confirm case-sensitive worksheet name (e.g., `Sheet1`, not `sheet1`).                     |
+| **413**    | Request payload too large               | Reduce batch size or split deletion into multiple requests.                               |
 
 ---
 
@@ -187,16 +151,16 @@ The response body follows the generic **`CellsCloudResponse`** model.
 
 Below are ready‑to‑run snippets for the most popular SDKs. Replace `<YOUR_ACCESS_TOKEN>` with your actual token.
 
-| Language    | Sample |
-|-------------|--------|
-| **C#**      | <details><summary>Show code</summary> <br><br>```csharp\nusing Aspose.Cells.Cloud.SDK.Api;\nusing Aspose.Cells.Cloud.SDK.Model;\n\nvar config = new Configuration { AccessToken = "<YOUR_ACCESS_TOKEN>", BaseUrl = "https://api.aspose.cloud" };\nvar api = new CellsApi(config);\n\nvar response = api.DeleteWorksheetColumns(\n    name: "test.xlsx",\n    sheetName: "Sheet1",\n    columnIndex: 1,\n    startColumn: 1,\n    totalColumns: 2,\n    updateReference: true\n);\nConsole.WriteLine($"Status: {response.Status}");\n```</details> |
-| **Java**    | <details><summary>Show code</summary> <br><br>```java\nimport com.aspose.cloud.cells.api.CellsApi;\nimport com.aspose.cloud.cells.model.CellsCloudResponse;\nimport com.aspose.cloud.cells.Configuration;\n\nConfiguration config = new Configuration();\nconfig.setAccessToken("<YOUR_ACCESS_TOKEN>");\nconfig.setBaseUrl("https://api.aspose.cloud");\nCellsApi api = new CellsApi(config);\n\nCellsCloudResponse resp = api.deleteWorksheetColumns(\n    "test.xlsx", "Sheet1", 1, 1, 2, true, null, null\n);\nSystem.out.println("Status: " + resp.getStatus());\n```</details> |
-| **Python**  | <details><summary>Show code</summary> <br><br>```python\nimport asposecellscloud\nfrom asposecellscloud.rest import ApiException\n\nconfig = asposecellscloud.Configuration()\nconfig.access_token = '<YOUR_ACCESS_TOKEN>'\nconfig.host = 'https://api.aspose.cloud'\napi_instance = asposecellscloud.CellsApi(asposecellscloud.ApiClient(config))\n\ntry:\n    resp = api_instance.delete_worksheet_columns(\n        name='test.xlsx',\n        sheet_name='Sheet1',\n        column_index=1,\n        start_column=1,\n        total_columns=2,\n        update_reference=True\n    )\n    print('Status:', resp.status)\nexcept ApiException as e:\n    print('Exception:', e)\n```</details> |
-| **Node.js** | <details><summary>Show code</summary> <br><br>```javascript\nconst { CellsApi, Configuration } = require('asposecellscloud');\n\nlet config = new Configuration({\n  accessToken: '<YOUR_ACCESS_TOKEN>',\n  basePath: 'https://api.aspose.cloud'\n});\nlet api = new CellsApi(config);\n\napi.deleteWorksheetColumns('test.xlsx', 'Sheet1', 1, {\n  startColumn: 1,\n  totalColumns: 2,\n  updateReference: true\n}).then(res => {\n  console.log('Status:', res.status);\n}).catch(err => {\n  console.error(err);\n});\n```</details> |
-| **Go**      | <details><summary>Show code</summary> <br><br>```go\npackage main\n\nimport (\n  "context"\n  "fmt"\n  "github.com/asposecellscloud/aspose-cells-cloud-go/v3/api"\n  "github.com/asposecellscloud/aspose-cells-cloud-go/v3/client/optional"\n)\n\nfunc main() {\n  cfg := asposecellscloud.NewConfiguration()\n  cfg.AccessToken = "<YOUR_ACCESS_TOKEN>"\n  cfg.BasePath = "https://api.aspose.cloud"\n  client := api.NewAPIClient(cfg)\n  resp, _, err := client.CellsApi.DeleteWorksheetColumns(\n    context.Background(),\n    "test.xlsx", "Sheet1", 1,\n    &api.DeleteWorksheetColumnsOpts{\n      StartColumn:  optional.NewInt32(1),\n      TotalColumns: optional.NewInt32(2),\n      UpdateReference: optional.NewBool(true),\n    }\n  )\n  if err != nil {\n    fmt.Println("Error:", err)\n    return\n  }\n  fmt.Println("Status:", resp.Status)\n}\n```</details> |
-| **Ruby**    | <details><summary>Show code</summary> <br><br>```ruby\nrequire 'aspose_cells_cloud'\n\nconfig = AsposeCellsCloud::Configuration.new do |c|\n  c.access_token = '<YOUR_ACCESS_TOKEN>'\n  c.host = 'https://api.aspose.cloud'\nend\napi = AsposeCellsCloud::CellsApi.new\n\nbegin\n  resp = api.delete_worksheet_columns(\n    'test.xlsx', 'Sheet1', 1,\n    start_column: 1,\n    total_columns: 2,\n    update_reference: true\n  )\n  puts "Status: #{resp.status}"\nrescue AsposeCellsCloud::ApiError => e\n  puts "Exception: #{e}"\nend\n```</details> |
-| **PHP**     | <details><summary>Show code</summary> <br><br>```php\n<?php\nrequire_once('vendor/autoload.php');\nuse Aspose\\Cells\\Cloud\\Api\\CellsApi;\nuse Aspose\\Cells\\Cloud\\Configuration;\n\n$config = new Configuration();\n$config->setAccessToken('<YOUR_ACCESS_TOKEN>');\n$config->setHost('https://api.aspose.cloud');\n$apiInstance = new CellsApi($config);\n\ntry {\n    $result = $apiInstance->deleteWorksheetColumns(\n        'test.xlsx', 'Sheet1', 1, [\n            'startColumn' => 1,\n            'totalColumns' => 2,\n            'updateReference' => true\n        ]\n    );\n    echo "Status: " . $result->getStatus();\n} catch (Exception $e) {\n    echo 'Error: ' . $e->getMessage();\n}\n?>\n```</details> |
-| **Perl**    | <details><summary>Show code</summary> <br><br>```perl\n#!/usr/bin/perl\nuse strict; use warnings;\nuse AsposeCellsCloud::Api::CellsApi;\nuse AsposeCellsCloud::Configuration;\n\nmy $config = AsposeCellsCloud::Configuration->new(\n    access_token => '<YOUR_ACCESS_TOKEN>',\n    host => 'https://api.aspose.cloud'\n);\nmy $api = AsposeCellsCloud::Api::CellsApi->new($config);\n\nmy $response = $api->delete_worksheet_columns(\n    name => 'test.xlsx',\n    sheet_name => 'Sheet1',\n    column_index => 1,\n    start_column => 1,\n    total_columns => 2,\n    update_reference => JSON::true\n);\nprint "Status: " . $response->{Status} . "\n";\n```</details> |
+| Language    | Sample                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **C#**      | <details><summary>Show code</summary> <br><br>`csharp\nusing Aspose.Cells.Cloud.SDK.Api;\nusing Aspose.Cells.Cloud.SDK.Model;\n\nvar config = new Configuration { AccessToken = "<YOUR_ACCESS_TOKEN>", BaseUrl = "https://api.aspose.cloud" };\nvar api = new CellsApi(config);\n\nvar response = api.DeleteWorksheetColumns(\n    name: "test.xlsx",\n    sheetName: "Sheet1",\n    columnIndex: 1,\n    startColumn: 1,\n    totalColumns: 2,\n    updateReference: true\n);\nConsole.WriteLine($"Status: {response.Status}");\n`</details>                                                                                                                                                                                                                                                                                                                                  |
+| **Java**    | <details><summary>Show code</summary> <br><br>`java\nimport com.aspose.cloud.cells.api.CellsApi;\nimport com.aspose.cloud.cells.model.CellsCloudResponse;\nimport com.aspose.cloud.cells.Configuration;\n\nConfiguration config = new Configuration();\nconfig.setAccessToken("<YOUR_ACCESS_TOKEN>");\nconfig.setBaseUrl("https://api.aspose.cloud");\nCellsApi api = new CellsApi(config);\n\nCellsCloudResponse resp = api.deleteWorksheetColumns(\n    "test.xlsx", "Sheet1", 1, 1, 2, true, null, null\n);\nSystem.out.println("Status: " + resp.getStatus());\n`</details>                                                                                                                                                                                                                                                                                                |
+| **Python**  | <details><summary>Show code</summary> <br><br>`python\nimport asposecellscloud\nfrom asposecellscloud.rest import ApiException\n\nconfig = asposecellscloud.Configuration()\nconfig.access_token = '<YOUR_ACCESS_TOKEN>'\nconfig.host = 'https://api.aspose.cloud'\napi_instance = asposecellscloud.CellsApi(asposecellscloud.ApiClient(config))\n\ntry:\n    resp = api_instance.delete_worksheet_columns(\n        name='test.xlsx',\n        sheet_name='Sheet1',\n        column_index=1,\n        start_column=1,\n        total_columns=2,\n        update_reference=True\n    )\n    print('Status:', resp.status)\nexcept ApiException as e:\n    print('Exception:', e)\n`</details>                                                                                                                                                                                  |
+| **Node.js** | <details><summary>Show code</summary> <br><br>`javascript\nconst { CellsApi, Configuration } = require('asposecellscloud');\n\nlet config = new Configuration({\n  accessToken: '<YOUR_ACCESS_TOKEN>',\n  basePath: 'https://api.aspose.cloud'\n});\nlet api = new CellsApi(config);\n\napi.deleteWorksheetColumns('test.xlsx', 'Sheet1', 1, {\n  startColumn: 1,\n  totalColumns: 2,\n  updateReference: true\n}).then(res => {\n  console.log('Status:', res.status);\n}).catch(err => {\n  console.error(err);\n});\n`</details>                                                                                                                                                                                                                                                                                                                                            |
+| **Go**      | <details><summary>Show code</summary> <br><br>`go\npackage main\n\nimport (\n  "context"\n  "fmt"\n  "github.com/asposecellscloud/aspose-cells-cloud-go/v3/api"\n  "github.com/asposecellscloud/aspose-cells-cloud-go/v3/client/optional"\n)\n\nfunc main() {\n  cfg := asposecellscloud.NewConfiguration()\n  cfg.AccessToken = "<YOUR_ACCESS_TOKEN>"\n  cfg.BasePath = "https://api.aspose.cloud"\n  client := api.NewAPIClient(cfg)\n  resp, _, err := client.CellsApi.DeleteWorksheetColumns(\n    context.Background(),\n    "test.xlsx", "Sheet1", 1,\n    &api.DeleteWorksheetColumnsOpts{\n      StartColumn:  optional.NewInt32(1),\n      TotalColumns: optional.NewInt32(2),\n      UpdateReference: optional.NewBool(true),\n    }\n  )\n  if err != nil {\n    fmt.Println("Error:", err)\n    return\n  }\n  fmt.Println("Status:", resp.Status)\n}\n`</details> |
+| **Ruby**    | <details><summary>Show code</summary> <br><br>```ruby\nrequire 'aspose_cells_cloud'\n\nconfig = AsposeCellsCloud::Configuration.new do                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | c   | \n c.access_token = '<YOUR_ACCESS_TOKEN>'\n c.host = 'https://api.aspose.cloud'\nend\napi = AsposeCellsCloud::CellsApi.new\n\nbegin\n resp = api.delete_worksheet_columns(\n 'test.xlsx', 'Sheet1', 1,\n start_column: 1,\n total_columns: 2,\n update_reference: true\n )\n puts "Status: #{resp.status}"\nrescue AsposeCellsCloud::ApiError => e\n puts "Exception: #{e}"\nend\n```</details> |
+| **PHP**     | <details><summary>Show code</summary> <br><br>`php\n<?php\nrequire_once('vendor/autoload.php');\nuse Aspose\\Cells\\Cloud\\Api\\CellsApi;\nuse Aspose\\Cells\\Cloud\\Configuration;\n\n$config = new Configuration();\n$config->setAccessToken('<YOUR_ACCESS_TOKEN>');\n$config->setHost('https://api.aspose.cloud');\n$apiInstance = new CellsApi($config);\n\ntry {\n    $result = $apiInstance->deleteWorksheetColumns(\n        'test.xlsx', 'Sheet1', 1, [\n            'startColumn' => 1,\n            'totalColumns' => 2,\n            'updateReference' => true\n        ]\n    );\n    echo "Status: " . $result->getStatus();\n} catch (Exception $e) {\n    echo 'Error: ' . $e->getMessage();\n}\n?>\n`</details>                                                                                                                                                |
+| **Perl**    | <details><summary>Show code</summary> <br><br>`perl\n#!/usr/bin/perl\nuse strict; use warnings;\nuse AsposeCellsCloud::Api::CellsApi;\nuse AsposeCellsCloud::Configuration;\n\nmy $config = AsposeCellsCloud::Configuration->new(\n    access_token => '<YOUR_ACCESS_TOKEN>',\n    host => 'https://api.aspose.cloud'\n);\nmy $api = AsposeCellsCloud::Api::CellsApi->new($config);\n\nmy $response = $api->delete_worksheet_columns(\n    name => 'test.xlsx',\n    sheet_name => 'Sheet1',\n    column_index => 1,\n    start_column => 1,\n    total_columns => 2,\n    update_reference => JSON::true\n);\nprint "Status: " . $response->{Status} . "\n";\n`</details>                                                                                                                                                                                                     |
 
 > All SDKs automatically add the required `Authorization` header when `access_token` is configured.
 
@@ -223,9 +187,9 @@ Referrer-Policy: strict-origin-when-cross-origin
 
 ### SEO & Accessibility
 
-- **Internal Links**:  
-  - [Upload a workbook](/cells/upload/)  
-  - [Learn about JWT authentication](/auth/)  
+- **Internal Links**:
+  - [Upload a workbook](/cells/upload/)
+  - [Learn about JWT authentication](/auth/)
   - [Delete rows from a worksheet](/rows/delete/)
 - **Images**: All decorative images use `alt=""`; functional images include descriptive `alt` text.
 - **Structured Data**: See JSON-LD snippet below.

@@ -9,6 +9,7 @@ description: "Obtain an OAuth2 access token for Aspose.Cells Cloud REST API usin
 weight: 100
 draft: false
 ---
+
 The **PostAccessToken** API (`POST https://api.aspose.cloud/v4.0/cells/connect/token`) enables Aspose.Cells Cloud clients to obtain an access token by securely authenticating with their registered API credentials; as a proxy service, it forwards the client’s authentication request to the Aspose Cloud authorization server and returns the issued token, allowing middleware and applications to authenticate subsequent API calls without handling OAuth flows directly.
 
 - A registered [Aspose Cloud account](https://dashboard.aspose.cloud/).
@@ -24,11 +25,9 @@ The **PostAccessToken** API (`POST https://api.aspose.cloud/v4.0/cells/connect/t
 POST https://api.aspose.cloud/v4.0/cells/connect/token
 ```
 
-### Authentication Flow
+### **Security and Authentication**
 
-This API acts as a secure proxy to the Aspose Cloud authorization service. It accepts your client credentials via OAuth 2.0 **client credentials flow**, forwards them to the authorization server, and returns the resulting JWT (JSON Web Token) access token — _not_ a raw JWT, but a token _issued_ by Aspose Cloud and intended for use with Aspose.Cells Cloud APIs.
-
-> ℹ️ **Note**: The returned `access_token` is a JWT with a 1-hour (`expires_in: 3600`) lifetime. Use it in the `Authorization: Bearer <token>` header for all subsequent API calls.
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ---
 
@@ -60,13 +59,13 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Example Request (cURL)
 

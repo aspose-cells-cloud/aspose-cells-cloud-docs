@@ -9,6 +9,7 @@ keywords: "Aspose Cells, data import API, CSV to Excel, JSON to Excel, XML to Ex
 description: "Import CSV, JSON, XML into Excel using Aspose.Cells Cloud REST API with large dataset support and flexible positioning."
 weight: 100
 ---
+
 The **ImportDataIntoSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/import/data`) in Aspose.Cells Cloud enables secure, direct import of structured data from CSV, JSON, or XML files into Excel workbooks without intermediate storage, supporting large datasets and precise placement via `worksheet` and `startcell` parameters to streamline ETL, reporting, and data consolidation workflows.
 
 ## Overview
@@ -48,20 +49,20 @@ Authorization: Bearer {access_token}
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| datafile | File | FormData | Upload data file. |
-| Spreadsheet | File | FormData | Upload spreadsheet file. |
-| worksheet | String | Query | Specify the worksheet for importing data |
-| startcell | String | Query | Specify the starting position for importing data |
-| insert | Boolean | Query | The specified import data is for insertion and overwrite. |
-| convertNumericData | Boolean | Query | Specify whether to convert numerical data |
-| splitter | String | Query | Specify the delimiter for the CSV format. |
-| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
-| outStorageName | String | Query | Output file Storage Name. |
-| fontsLocation | String | Query | Use Custom fonts. |
-| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password | String | Query | The password for opening spreadsheet file. |
+| Parameter Name     | Type    | Path/Query String/HTTPBody | Description                                                                                                                             |
+| ------------------ | ------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| datafile           | File    | FormData                   | Upload data file.                                                                                                                       |
+| Spreadsheet        | File    | FormData                   | Upload spreadsheet file.                                                                                                                |
+| worksheet          | String  | Query                      | Specify the worksheet for importing data                                                                                                |
+| startcell          | String  | Query                      | Specify the starting position for importing data                                                                                        |
+| insert             | Boolean | Query                      | The specified import data is for insertion and overwrite.                                                                               |
+| convertNumericData | Boolean | Query                      | Specify whether to convert numerical data                                                                                               |
+| splitter           | String  | Query                      | Specify the delimiter for the CSV format.                                                                                               |
+| outPath            | String  | Query                      | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
+| outStorageName     | String  | Query                      | Output file Storage Name.                                                                                                               |
+| fontsLocation      | String  | Query                      | Use Custom fonts.                                                                                                                       |
+| region             | String  | Query                      | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password           | String  | Query                      | The password for opening spreadsheet file.                                                                                              |
 
 ---
 

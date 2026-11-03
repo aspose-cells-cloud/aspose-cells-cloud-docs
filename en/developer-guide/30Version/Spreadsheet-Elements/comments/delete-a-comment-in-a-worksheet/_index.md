@@ -12,6 +12,7 @@ weight: 100
 linktitle: "Delete Comment"
 ArticleTitle: "Delete Worksheet Comment via Aspose.Cells Cloud REST API"
 ---
+
 The **DeleteWorksheetComment** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{cellName}`) removes a cell comment from a specified worksheet in an Excel file stored in the cloud, preserving the cell's content. Aspose.Cells Cloud provides robust support for this operation, enabling developers to programmatically clean up annotations using its REST API or SDKs for .NET, Java, Python, Node.js, and Go.
 
 > **Page last updated:** May 15, 2024
@@ -21,14 +22,6 @@ The **DeleteWorksheetComment** API (`DELETE https://api.aspose.cloud/v3.0/cells/
 A **comment** is a text note attached to a specific cell in an Excel worksheet. The **Delete Worksheet Comment** operation removes the comment from the specified cell, leaving the cell content intact.
 
 ![Diagram: Excel cell with comment bubble being deleted via API call](/cells/images/Aspose-image-for-open-graph.jpg "Delete a worksheet comment using Aspose.Cells Cloud REST API")
-
-## Authentication
-
-All Aspose.Cells Cloud endpoints require **JWT token–based authentication**. Include the token in the `Authorization` header:
-
-```http
-Authorization: Bearer <jwt token>
-```
 
 For step-by-step instructions on obtaining and using a JWT token, see the [Authentication Guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
@@ -44,13 +37,13 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Path Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| cellName | String | Path | The cell name. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------ | -------------------------- | -------------------------------------------- |
+| name           | String | Path                       | The file name.                               |
+| sheetName      | String | Path                       | The worksheet name.                          |
+| cellName       | String | Path                       | The cell name.                               |
+| folder         | String | Query                      | The folder where the file is situated.       |
+| storageName    | String | Query                      | The storage name where the file is situated. |
 
 ### **Response**
 
@@ -75,13 +68,13 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ### Query Parameters
 

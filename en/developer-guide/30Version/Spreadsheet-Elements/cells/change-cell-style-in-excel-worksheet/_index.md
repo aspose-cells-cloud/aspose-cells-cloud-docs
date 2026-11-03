@@ -28,6 +28,7 @@ article_title: "Change Cell Style in Excel Worksheet – Aspose.Cells Cloud API 
 linktitle: "Update Cell Style"
 ArticleTitle: "Update Excel Cell Style with Aspose.Cells Cloud REST API"
 ---
+
 The **PostUpdateWorksheetCellStyle** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}/style`) enables developers to update the style of a specific cell in an Excel worksheet by specifying the workbook name, worksheet name, and cell name, with the style configuration sent in the request body; Aspose.Cells Cloud supports this operation via REST API and SDKs for .NET, Java, Python, Node.js, Go, and other languages, allowing precise, programmatic control over cell formatting without altering other worksheet content.
 
 ## The Post Update Worksheet Cell Style Web API
@@ -36,28 +37,24 @@ The **PostUpdateWorksheetCellStyle** API (`POST https://api.aspose.cloud/v3.0/ce
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}/style
 ```
 
-### Authentication
+### **Security and Authentication**
 
-First, obtain a JWT access token:
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-```bash
-JWT_TOKEN=$(curl -s "https://api.aspose.cloud/connect/token" \
-  -d "grant_type=client_credentials&client_id=YOUR_CLIENT_ID&client_secret=YOUR_CLIENT_SECRET" \
-  | jq -r '.access_token')
+```http
+Authorization: Bearer {access_token}
 ```
-
-> Replace `YOUR_CLIENT_ID` and `YOUR_CLIENT_SECRET` with your credentials from the [Aspose Cloud Dashboard](https://dashboard.aspose.cloud/).
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| cellName | String | Path | The cell name. |
-| style | class:style | HTTPBody | Style with update style settings. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type        | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ----------- | -------------------------- | -------------------------------------------- |
+| name           | String      | Path                       | The file name.                               |
+| sheetName      | String      | Path                       | The worksheet name.                          |
+| cellName       | String      | Path                       | The cell name.                               |
+| style          | class:style | HTTPBody                   | Style with update style settings.            |
+| folder         | String      | Query                      | The folder where the file is situated.       |
+| storageName    | String      | Query                      | The storage name where the file is situated. |
 
 ### Example Response
 

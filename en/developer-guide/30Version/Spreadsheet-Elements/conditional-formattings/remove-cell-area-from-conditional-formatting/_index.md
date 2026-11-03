@@ -9,10 +9,8 @@ ArticleTitle: "Delete Cell Area – Aspose.Cells Cloud API Documentation"
 weight: 70
 linktitle: "Delete Cell Area"
 ---
-The **DeleteWorksheetConditionalFormattingArea** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/area`) in Aspose.Cells Cloud removes a specified rectangular cell area from an existing conditional formatting rule in a worksheet, using required path parameters `name` and `sheetName` plus query parameters `startRow`, `startColumn`, `totalRows`, and `totalColumns` to define the range; this enables precise programmatic control over conditional formatting removal without modifying other rules.
 
-## Security and Authentication
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+The **DeleteWorksheetConditionalFormattingArea** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/area`) in Aspose.Cells Cloud removes a specified rectangular cell area from an existing conditional formatting rule in a worksheet, using required path parameters `name` and `sheetName` plus query parameters `startRow`, `startColumn`, `totalRows`, and `totalColumns` to define the range; this enables precise programmatic control over conditional formatting removal without modifying other rules.
 
 ## The Delete Worksheet Conditional Formatting Area Web API
 
@@ -26,16 +24,16 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| startRow | Integer | Query | The start row of the range. |
-| startColumn | Integer | Query | The start column of the range. |
-| totalRows | Integer | Query | The number of rows of the range. |
-| totalColumns | Integer | Query | The number of columns of the range. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------- | -------------------------- | -------------------------------------------- |
+| name           | String  | Path                       | The file name.                               |
+| sheetName      | String  | Path                       | The worksheet name.                          |
+| startRow       | Integer | Query                      | The start row of the range.                  |
+| startColumn    | Integer | Query                      | The start column of the range.               |
+| totalRows      | Integer | Query                      | The number of rows of the range.             |
+| totalColumns   | Integer | Query                      | The number of columns of the range.          |
+| folder         | String  | Query                      | The folder where the file is situated.       |
+| storageName    | String  | Query                      | The storage name where the file is situated. |
 
 ### **Response**
 
@@ -100,7 +98,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/condit
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud){:target="_blank" rel="noopener noreferrer"} for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud){:target="\_blank" rel="noopener noreferrer"} for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 

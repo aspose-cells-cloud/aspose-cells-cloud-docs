@@ -10,6 +10,7 @@ type: docs
 weight: 100
 ArticleTitle: "Split Excel Text by Delimiter, Mask, or Line Break | Aspose.Cells Cloud API"
 ---
+
 The **SplitText** API (`PUT https://api.aspose.cloud/v4.0/cells/content/split/text`) in Aspose.Cells Cloud enables precise text segmentation within Excel workbooks by splitting cell content using custom delimiters, line breaks, or pattern masks, then outputting results to a specified range in columns or rows; for example, users can split a cell’s comma-separated values into adjacent columns while optionally retaining or removing the delimiters.
 
 ## Overview
@@ -31,32 +32,30 @@ The Split Text API divides cell contents into multiple cells based on specified 
 PUT https://api.aspose.cloud/v4.0/cells/content/split/text
 ```
 
-### Authentication
+### **Security and Authentication**
 
-Include your JWT token in the `Authorization` header:
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ```bash
 -H "Authorization: Bearer {access_token}"
 ```
 
-> **Note**: All requests must use HTTPS. The authentication endpoint enforces TLS 1.2+.
-
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| Spreadsheet | File | FormData | Upload spreadsheet file. |
-| delimiters | String | Query | Indicates the custom delimiter. |
-| keepDelimitersInResultingCells | Boolean | Query | Indicates keep delimiters in resulting cells. |
-| keepDelimitersPosition | String | Query | Indicates keep delimiters position. |
-| HowToSplit | String | Query | Indicates |
-| outPositionRange | String | Query | Indicates split delimiters type. |
-| worksheet | String | Query | Specify the worksheet of spreadsheet. |
-| range | String | Query | Specify the worksheet range of spreadsheet. |
-| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
-| outStorageName | String | Query | Output file Storage Name. |
-| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password | String | Query | The password for opening spreadsheet file. |
+| Parameter Name                 | Type    | Path/Query String/HTTPBody | Description                                                                                                                             |
+| ------------------------------ | ------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet                    | File    | FormData                   | Upload spreadsheet file.                                                                                                                |
+| delimiters                     | String  | Query                      | Indicates the custom delimiter.                                                                                                         |
+| keepDelimitersInResultingCells | Boolean | Query                      | Indicates keep delimiters in resulting cells.                                                                                           |
+| keepDelimitersPosition         | String  | Query                      | Indicates keep delimiters position.                                                                                                     |
+| HowToSplit                     | String  | Query                      | Indicates                                                                                                                               |
+| outPositionRange               | String  | Query                      | Indicates split delimiters type.                                                                                                        |
+| worksheet                      | String  | Query                      | Specify the worksheet of spreadsheet.                                                                                                   |
+| range                          | String  | Query                      | Specify the worksheet range of spreadsheet.                                                                                             |
+| outPath                        | String  | Query                      | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
+| outStorageName                 | String  | Query                      | Output file Storage Name.                                                                                                               |
+| region                         | String  | Query                      | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password                       | String  | Query                      | The password for opening spreadsheet file.                                                                                              |
 
 ### **Response**
 
@@ -82,14 +81,14 @@ Content-Disposition: attachment; filename="result"
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                        |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ### Notes on Key Parameters
 

@@ -11,6 +11,7 @@ categories: ["api-reference", "cloud"]
 summary: "Effortlessly exchange data between two columns, rows, or ranges in Excel files using Aspose.Cells Cloud API v4.0—ideal for financial modeling, ETL, and error correction."
 ArticleTitle: "Swap Excel Ranges with Aspose.Cells Cloud API v4.0"
 ---
+
 The **SwapRange** API (`PUT https://api.aspose.cloud/v4.0/cells/swap/range`), part of Aspose.Cells Cloud, enables precise one-step exchange of data between two ranges—such as columns, rows, or cell blocks—in Excel workbooks (.xlsx, .xls), preserving formatting, formulas, and cell references while allowing dynamic reorganization of spreadsheet data without manual intervention.
 
 ## Overview
@@ -30,27 +31,27 @@ The **Swap Ranges API** enables precise, one-step exchange of data between two r
 PUT https://api.aspose.cloud/v4.0/cells/swap/range
 ```
 
-### Authentication
+### **Security and Authentication**
 
-All requests require a [JWT access token](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-```bash
--H "Authorization: Bearer {access_token}"
+```http
+Authorization: Bearer {access_token}
 ```
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| Spreadsheet | File | FormData | Upload spreadsheet file. |
-| worksheet1 | String | Query | Specify the worksheet that is the source of the exchange data area. |
-| range1 | String | Query | Specify exchange data source. |
-| worksheet2 | String | Query | Specify the worksheet that is the target of the exchange data area. |
-| range2 | String | Query | Specify exchange data target. |
-| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
-| outStorageName | String | Query | Output file Storage Name. |
-| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password | String | Query | The password for opening spreadsheet file. |
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                                                                                                             |
+| -------------- | ------ | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet    | File   | FormData                   | Upload spreadsheet file.                                                                                                                |
+| worksheet1     | String | Query                      | Specify the worksheet that is the source of the exchange data area.                                                                     |
+| range1         | String | Query                      | Specify exchange data source.                                                                                                           |
+| worksheet2     | String | Query                      | Specify the worksheet that is the target of the exchange data area.                                                                     |
+| range2         | String | Query                      | Specify exchange data target.                                                                                                           |
+| outPath        | String | Query                      | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
+| outStorageName | String | Query                      | Output file Storage Name.                                                                                                               |
+| region         | String | Query                      | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password       | String | Query                      | The password for opening spreadsheet file.                                                                                              |
 
 ### Response
 
@@ -75,7 +76,6 @@ Content-Disposition: attachment; filename="result"
 ```
 
 The API returns the modified Excel file as a binary stream.
-
 
 - If `outPath` is specified, the file is saved to cloud storage _and_ returned in the response.
 - If omitted, only the file stream is returned.

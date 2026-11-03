@@ -12,40 +12,20 @@ linktitle: "Add Comment"
 ArticleTitle: "Add Worksheet Comment via Aspose.Cells Cloud REST API v3.1"
 ---
 
-# Add Worksheet Comment
-
 Add a comment to a specific cell in a worksheet of an Excel workbook using the Aspose.Cells Cloud REST API.
 
-> ⚠️ **Deprecated**: This page documents the v3.0 API. For the latest features, see [v3.1 documentation](https://docs.aspose.cloud/cells/#/Worksheets/PutWorksheetComment). As of 2024-05, v3.1 is the current stable version. While v3.0 remains functional, new features and improvements are only available in v3.1. We recommend upgrading.
-
----
-
-## Prerequisites / Authentication
-
-- A **Bearer JWT token** is required for every request.  
-  _Obtain a token_ via the **/connect/token** endpoint (see the [Authentication guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)).
-- Include the token in the `Authorization` header:
-
-```http
-Authorization: Bearer <jwt_token>
-```
-
-- All calls must be made over **HTTPS** to protect the token and data.
-
-> 💡 **Tip**: Replace `<jwt_token>` with your actual JWT token. To generate one programmatically:
->
-> ```bash
-> TOKEN=$(curl -s -X POST "https://api.aspose.cloud/connect/token" \
->   -d "grant_type=client_credentials&client_id=<your_client_id>&client_secret=<your_client_secret>" \
->   | jq -r '.access_token')
-> ```
-
----
-
-## HTTP Request
+## The Add Worksheet Comment Web API
 
 ```http
 PUT https://api.aspose.cloud/v3.1/cells/{name}/worksheets/{sheetName}/comments/{cellName}
+```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```http
+Authorization: Bearer {access_token}
 ```
 
 ### Path Parameters

@@ -16,6 +16,7 @@ categories: ["aspose.cells.cloud", "api-reference"]
 weight: 100
 type: docs
 ---
+
 The **UnprotectSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/unprotection/spreadsheet`) in Aspose.Cells Cloud v4.0 removes dual-layer password protection—both open and modify passwords—from Excel workbooks programmatically, supporting encrypted passwords for enhanced security; it accepts the protected spreadsheet file via form data and requires both the encryption and modify passwords as query parameters, enabling secure, server-side unlocking for integration into data pipelines, document management systems, and migration workflows without exposing credentials client-side.
 
 ## The Unprotect Spreadsheet Web API
@@ -24,26 +25,20 @@ The **UnprotectSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/unpro
 PUT https://api.aspose.cloud/v4.0/cells/unprotection/spreadsheet
 ```
 
-### Authentication
+### **Security and Authentication**
 
-All requests require a valid JWT access token issued via OAuth2. For implementation guidance, see [Authentication Overview](https://docs.aspose.cloud/total/security/authenticating-requests/).
-
-```bash
--H "Authorization: Bearer {access_token}"
-```
-
----
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| Spreadsheet | File | FormData | Upload spreadsheet file. |
-| password | String | Query | Spreadsheet file encryption password. |
-| modifyPassword | String | Query | Sets the protected password to modify the file. |
-| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
-| outStorageName | String | Query | Output file Storage Name. |
-| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                                                                                                             |
+| -------------- | ------ | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet    | File   | FormData                   | Upload spreadsheet file.                                                                                                                |
+| password       | String | Query                      | Spreadsheet file encryption password.                                                                                                   |
+| modifyPassword | String | Query                      | Sets the protected password to modify the file.                                                                                         |
+| outPath        | String | Query                      | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
+| outStorageName | String | Query                      | Output file Storage Name.                                                                                                               |
+| region         | String | Query                      | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
 
 > **Best Practice**: Always specify `outPath` and `outStorageName` for production workflows to avoid large response payloads. Store unprotected files directly in your cloud storage.
 

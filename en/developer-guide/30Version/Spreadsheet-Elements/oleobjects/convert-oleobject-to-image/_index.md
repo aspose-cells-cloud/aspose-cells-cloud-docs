@@ -25,63 +25,35 @@ ArticleTitle: "Convert OLE Object to Image with Aspose.Cells Cloud REST API"
 
 ![OLE Object Conversion Workflow](/images/ole-object-workflow.png "OLE Object Conversion: Workbook → API → Output Image")
 
-## Convert OLE Object to Image
-
 Retrieve an embedded OLE object from a worksheet and return it in the requested image format.
 
 > **Note**: All Aspose.Cells Cloud APIs require HTTPS. HTTP endpoints are unsupported.
 
----
-
-## Prerequisites
-
-Before calling this endpoint, ensure you have:
-
-1. **Aspose.Cells Cloud account** – Sign up at the [Aspose Cloud Dashboard](https://dashboard.aspose.cloud/).
-2. **Workbook uploaded to cloud storage** – Use the [Upload File API](/cells/storage/file/upload/) or the Aspose Cloud UI.
-3. **JWT access token** – Follow the [Authentication Guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) to generate a valid token.
-
----
-
-## Security & Authentication
-
-All requests must include a valid JWT token in the `Authorization` header:
-
-```http
-Authorization: Bearer <jwt-token>
-```
-
-> **Important**: Always use `https://api.aspose.cloud`. HTTP (`http://`) is unsupported and will fail.
-
----
-
-## Request
-
-### HTTP Method
-
-`GET`
-
-### Endpoint
+## The Convert OLE Object to Image Web API
 
 ```
-https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects/{objectNumber}
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects/{objectNumber}
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
 
 ### Path Parameters
 
-| Name           | Type   | Required | Description                               |
-|----------------|--------|----------|-------------------------------------------|
-| `name`         | string | ✅       | Name of the workbook (e.g., `Book1.xlsx`). |
-| `sheetName`    | string | ✅       | Worksheet containing the OLE object.      |
-| `objectNumber` | integer| ✅       | Zero-based index of the OLE object.       |
+| Name           | Type    | Required | Description                                |
+| -------------- | ------- | -------- | ------------------------------------------ |
+| `name`         | string  | ✅       | Name of the workbook (e.g., `Book1.xlsx`). |
+| `sheetName`    | string  | ✅       | Worksheet containing the OLE object.       |
+| `objectNumber` | integer | ✅       | Zero-based index of the OLE object.        |
 
 ### Query Parameters
 
-| Name          | Type   | Required | Description                                                                 |
-|---------------|--------|----------|-----------------------------------------------------------------------------|
+| Name          | Type   | Required | Description                                                                         |
+| ------------- | ------ | -------- | ----------------------------------------------------------------------------------- |
 | `format`      | string | ❌       | Target image format: `png`, `jpeg`, `tiff`, `gif`, `emf`, or `bmp`. Default: `png`. |
-| `folder`      | string | ❌       | Path to the folder containing the workbook (e.g., `/docs`).                |
-| `storageName` | string | ❌       | Name of the storage (e.g., `MyCloud`).                                     |
+| `folder`      | string | ❌       | Path to the folder containing the workbook (e.g., `/docs`).                         |
+| `storageName` | string | ❌       | Name of the storage (e.g., `MyCloud`).                                              |
 
 ---
 
@@ -100,19 +72,20 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Embedded_OleObject_Sample_Book1.xls
 
 ## Response
 
-| Status | Content-Type              | Description                                     |
-|--------|---------------------------|-------------------------------------------------|
+| Status | Content-Type                      | Description                                    |
+| ------ | --------------------------------- | ---------------------------------------------- |
 | `200`  | `image/png` (or specified format) | Binary image data of the converted OLE object. |
-| `400`  | `application/json`        | Invalid request parameters.                    |
-| `401`  | `application/json`        | Authentication failed.                         |
-| `404`  | `application/json`        | Workbook, worksheet, or OLE object not found.  |
-| `500`  | `application/json`        | Internal server error.                         |
+| `400`  | `application/json`                | Invalid request parameters.                    |
+| `401`  | `application/json`                | Authentication failed.                         |
+| `404`  | `application/json`                | Workbook, worksheet, or OLE object not found.  |
+| `500`  | `application/json`                | Internal server error.                         |
 
 ### Handling the Response
 
 The API returns raw binary image data. Examples for common use cases:
 
 - **Save to file (Linux/macOS)**:
+
   ```bash
   curl -s "https://api.aspose.cloud/v3.0/cells/.../oleobjects/0?format=jpeg" \
     -H "Authorization: Bearer <token>" > oleobject.jpg
@@ -130,12 +103,12 @@ The API returns raw binary image data. Examples for common use cases:
 
 ## Error Responses
 
-| Status | Error Code           | Message                                          |
-|--------|----------------------|--------------------------------------------------|
-| `400`  | `InvalidParameter`   | One or more parameters are invalid or missing.   |
-| `401`  | `AuthenticationFailed`| Token expired, missing, or malformed.           |
-| `404`  | `PropertyNotFound`   | Workbook, worksheet, or OLE object does not exist. |
-| `500`  | `InternalError`      | Unexpected server error.                         |
+| Status | Error Code             | Message                                            |
+| ------ | ---------------------- | -------------------------------------------------- |
+| `400`  | `InvalidParameter`     | One or more parameters are invalid or missing.     |
+| `401`  | `AuthenticationFailed` | Token expired, missing, or malformed.              |
+| `404`  | `PropertyNotFound`     | Workbook, worksheet, or OLE object does not exist. |
+| `500`  | `InternalError`        | Unexpected server error.                           |
 
 ---
 
@@ -162,6 +135,7 @@ var stream = api.GetWorksheetOleObject(request);
 using var file = File.Create("oleobject.png");
 stream.CopyTo(file);
 ```
+
 </details>
 
 <details>
@@ -189,6 +163,7 @@ try (FileOutputStream out = new FileOutputStream("oleobject.png")) {
     stream.transferTo(out);
 }
 ```
+
 </details>
 
 <details>
@@ -209,30 +184,32 @@ stream = api.get_worksheet_ole_object(request)
 with open('oleobject.png', 'wb') as f:
     f.write(stream.read())
 ```
+
 </details>
 
 <details>
 <summary><strong>Node.js</strong></summary>
 
 ```javascript
-const { CellsApi, GetWorksheetOleObjectRequest } = require('asposecellscloud');
+const { CellsApi, GetWorksheetOleObjectRequest } = require("asposecellscloud");
 
 const api = new CellsApi();
-api.apiClient.configuration.accessToken = 'YOUR_JWT_TOKEN';
+api.apiClient.configuration.accessToken = "YOUR_JWT_TOKEN";
 
 const request = new GetWorksheetOleObjectRequest({
-    name: 'Embedded_OleObject_Sample_Book1.xlsx',
-    sheetName: 'Sheet1',
-    objectNumber: 0,
-    format: 'png'
+  name: "Embedded_OleObject_Sample_Book1.xlsx",
+  sheetName: "Sheet1",
+  objectNumber: 0,
+  format: "png",
 });
 
-api.getWorksheetOleObject(request).then(stream => {
-    const fs = require('fs');
-    const writeStream = fs.createWriteStream('oleobject.png');
-    stream.pipe(writeStream);
+api.getWorksheetOleObject(request).then((stream) => {
+  const fs = require("fs");
+  const writeStream = fs.createWriteStream("oleobject.png");
+  stream.pipe(writeStream);
 });
 ```
+
 </details>
 
 <details>
@@ -264,6 +241,7 @@ func main() {
     io.Copy(out, stream)
 }
 ```
+
 </details>
 
 <details>
@@ -288,6 +266,7 @@ $stream = $apiInstance->getWorksheetOleObject($request);
 file_put_contents('oleobject.png', $stream);
 ?>
 ```
+
 </details>
 
 <details>
@@ -306,6 +285,7 @@ request = AsposeCellsCloud::GetWorksheetOleObjectRequest.new(
 stream = api.get_worksheet_ole_object(request)
 File.open('oleobject.png', 'wb') { |f| f.write(stream) }
 ```
+
 </details>
 
 <details>
@@ -329,6 +309,7 @@ binmode $fh;
 print $fh $stream;
 close $fh;
 ```
+
 </details>
 
 > **Tip**: Full SDK source code and samples are available in the [Aspose.Cells Cloud GitHub Repository](https://github.com/aspose-cells-cloud).
@@ -337,22 +318,22 @@ close $fh;
 
 ## Related Operations
 
-| Operation              | Description                                     | Documentation Link                     |
-|------------------------|-------------------------------------------------|----------------------------------------|
-| `POST /cells/{name}/worksheets/{sheetName}/oleobjects` | Add a new OLE object to a worksheet. | [/cells/add-ole-object/](/cells/add-ole-object/) |
-| `PUT /cells/{name}/worksheets/{sheetName}/oleobjects/{objectNumber}` | Update an existing OLE object. | [/cells/update-ole-object/](/cells/update-ole-object/) |
-| `DELETE /cells/{name}/worksheets/{sheetName}/oleobjects/{objectNumber}` | Remove an OLE object. | [/cells/delete-ole-object/](/cells/delete-ole-object/) |
-| `GET /cells/{name}/worksheets/{sheetName}/oleobjects` | List all OLE objects in a worksheet. | [/cells/list-ole-objects/](/cells/list-ole-objects/) |
+| Operation                                                               | Description                          | Documentation Link                                     |
+| ----------------------------------------------------------------------- | ------------------------------------ | ------------------------------------------------------ |
+| `POST /cells/{name}/worksheets/{sheetName}/oleobjects`                  | Add a new OLE object to a worksheet. | [/cells/add-ole-object/](/cells/add-ole-object/)       |
+| `PUT /cells/{name}/worksheets/{sheetName}/oleobjects/{objectNumber}`    | Update an existing OLE object.       | [/cells/update-ole-object/](/cells/update-ole-object/) |
+| `DELETE /cells/{name}/worksheets/{sheetName}/oleobjects/{objectNumber}` | Remove an OLE object.                | [/cells/delete-ole-object/](/cells/delete-ole-object/) |
+| `GET /cells/{name}/worksheets/{sheetName}/oleobjects`                   | List all OLE objects in a worksheet. | [/cells/list-ole-objects/](/cells/list-ole-objects/)   |
 
 ---
 
 ## Additional Resources
 
-- **[OpenAPI Specification](https://apireference.aspose.cloud/cells/#/OleObjects/GetWorksheetOleObject)**  
-- **[Authentication Guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)**  
-- **[SDK Source Code & Examples](https://github.com/aspose-cells-cloud)**  
-- **[Performance & Accessibility](https://docs.aspose.cloud/cells/performance-accessibility/)**  
-  - Lighthouse Target: >90 performance, >95 accessibility (WCAG 2.1 AA)  
+- **[OpenAPI Specification](https://apireference.aspose.cloud/cells/#/OleObjects/GetWorksheetOleObject)**
+- **[Authentication Guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)**
+- **[SDK Source Code & Examples](https://github.com/aspose-cells-cloud)**
+- **[Performance & Accessibility](https://docs.aspose.cloud/cells/performance-accessibility/)**
+  - Lighthouse Target: >90 performance, >95 accessibility (WCAG 2.1 AA)
   - All images include descriptive `alt` text for screen readers.
 
 ---

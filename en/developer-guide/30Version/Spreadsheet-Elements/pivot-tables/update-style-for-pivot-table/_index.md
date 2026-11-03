@@ -10,6 +10,7 @@ description: "Update pivot table style via Aspose.Cells Cloud REST API using Pos
 weight: 100
 ArticleTitle: "Update style for pivot table - Aspose.Cells Cloud API"
 ---
+
 The **PostPivotTableStyle** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/FormatAll`) enables developers to update the style of a specific pivot table within a worksheet using Aspose.Cells Cloud, allowing programmatic application of formatting such as cell borders, fonts, and colors to all cells in the pivot table structure in a single request.
 
 ## The Post Pivot Table Style Web API
@@ -24,15 +25,15 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Request parameters**
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| pivotTableIndex | Integer | Path | The PivotTable index. |
-| style | class:style | HTTPBody | StyleStyle description in request body. |
-| needReCalculate | Boolean | Query | Whether the specific PivotTable calculate(true/false). |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name  | Type        | Path/Query String/HTTPBody | Description                                            |
+| --------------- | ----------- | -------------------------- | ------------------------------------------------------ |
+| name            | String      | Path                       | The file name.                                         |
+| sheetName       | String      | Path                       | The worksheet name.                                    |
+| pivotTableIndex | Integer     | Path                       | The PivotTable index.                                  |
+| style           | class:style | HTTPBody                   | StyleStyle description in request body.                |
+| needReCalculate | Boolean     | Query                      | Whether the specific PivotTable calculate(true/false). |
+| folder          | String      | Query                      | The folder where the file is situated.                 |
+| storageName     | String      | Query                      | The storage name where the file is situated.           |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PivotTables/PostPivotTableStyle) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -62,7 +63,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/work
 }
 ```
 
-
 {{< /tab >}}
 
 {{< /tabs >}}
@@ -90,14 +90,14 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                        |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 **Prerequisites / Authentication**  
 A valid JWT access token must be supplied in the `Authorization` header (e.g., `Bearer <jwt token>`). Ensure the token has permission to access the specified workbook and worksheet.

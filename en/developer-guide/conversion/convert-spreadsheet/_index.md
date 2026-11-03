@@ -17,9 +17,7 @@ description: "Convert a spreadsheet file to another format using the Aspose.Cell
 
 Convert a local spreadsheet or Excel file to another format using the Aspose.Cells Cloud API. This cloud-native operation accepts your local file via `multipart/form-data`, performs conversion entirely on the server, and returns the result directly—no intermediate storage required.
 
-## Convert Spreadsheet API
-
-### API Endpoint
+## The Convert Spreadsheet API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/convert/spreadsheet

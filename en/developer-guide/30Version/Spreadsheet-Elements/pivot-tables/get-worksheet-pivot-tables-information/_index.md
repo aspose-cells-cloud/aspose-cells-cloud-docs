@@ -10,11 +10,8 @@ description: "Get all PivotTables from an Excel worksheet via Aspose.Cells Cloud
 weight: 100
 ArticleTitle: "Get All Pivot Tables in an Excel Worksheet – Aspose.Cells Cloud API"
 ---
+
 The **GetWorksheetPivotTables** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables`) retrieves descriptions of all PivotTables in a specified worksheet using Aspose.Cells Cloud, enabling developers to programmatically inspect PivotTable structure and metadata without local Excel installation.
-
-## Security and Authentication
-
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## The Get Worksheet Pivot Tables Web API
 
@@ -28,12 +25,12 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Request parameters**
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------ | -------------------------- | -------------------------------------------- |
+| name           | String | Path                       | The file name.                               |
+| sheetName      | String | Path                       | The worksheet name.                          |
+| folder         | String | Query                      | The folder where the file is situated.       |
+| storageName    | String | Query                      | The storage name where the file is situated. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PivotTables/GetWorksheetPivotTables) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -59,7 +56,6 @@ Content-Type: application/json
 ```
 
 {{< tab tabNum="2" >}}
-
 
 {{< /tab >}}
 

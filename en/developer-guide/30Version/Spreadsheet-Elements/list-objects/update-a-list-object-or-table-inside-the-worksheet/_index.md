@@ -12,39 +12,8 @@ keywords: "Aspose.Cells, ListObject, Update Table, Excel API, REST, Cloud SDK, l
 description: "Learn how to update an Excel table using Aspose.Cells Cloud API (v3.0). Includes endpoint, parameters, sample cURL, error codes, and SDK examples."
 weight: 100
 ---
+
 The **PostWorksheetListObject** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}`) updates the properties of a list object (table) in an Excel worksheet by its index, using Aspose.Cells Cloud to programmatically modify table styling, structure, or content without manual intervention in the spreadsheet.
-
-## Security and Authentication
-
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
-
-## Request Body Schema
-
-The `listObject` DTO contains the following fields. Only the fields you need to change are required in the request body.
-
-| Field                                           | Type             | Required | Description                                                                |
-| ----------------------------------------------- | ---------------- | -------- | -------------------------------------------------------------------------- |
-| **DisplayName**                                 | string           | optional | The name displayed for the table.                                          |
-| **StartRow** / **StartColumn**                  | integer          | optional | Zero‑based index of the first row/column of the table.                     |
-| **EndRow** / **EndColumn**                      | integer          | optional | Zero‑based index of the last row/column of the table.                      |
-| **Range**                                       | string           | optional | A‑1 style address that defines the table range (e.g., `A1:D10`).           |
-| **ShowHeaderRow**                               | boolean          | optional | `true` to display the header row.                                          |
-| **ShowTotals**                                  | boolean          | optional | `true` to display the totals row.                                          |
-| **TableStyleName**                              | string           | optional | Name of the built‑in table style to apply.                                 |
-| **TableStyleType**                              | string           | optional | Style type (`TableStyleLight`, `TableStyleMedium`, etc.).                  |
-| **ListColumns**                                 | array of objects | optional | Collection of column definitions (`Name`, `TotalsCalculation`).            |
-| **Sorter**, **AutoFilter**, **ShowTableStyle…** | object           | optional | Advanced styling and filtering options (see full DTO in the OpenAPI spec). |
-
-### Minimal Example Payload
-
-```json
-{
-  "DisplayName": "SalesData",
-  "Range": "A1:E20",
-  "ShowHeaderRow": true,
-  "ShowTotals": false
-}
-```
 
 ## The Post Worksheet List Object Web API
 
@@ -58,14 +27,14 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Request parameters**
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| listObjectIndex | Integer | Path | list Object index |
-| listObject | class:listobject | HTTPBody | listObject dto in request body. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name  | Type             | Path/Query String/HTTPBody | Description                                  |
+| --------------- | ---------------- | -------------------------- | -------------------------------------------- |
+| name            | String           | Path                       | The file name.                               |
+| sheetName       | String           | Path                       | The worksheet name.                          |
+| listObjectIndex | Integer          | Path                       | list Object index                            |
+| listObject      | class:listobject | HTTPBody                   | listObject dto in request body.              |
+| folder          | String           | Query                      | The folder where the file is situated.       |
+| storageName     | String           | Query                      | The storage name where the file is situated. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObject) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -91,7 +60,6 @@ Content-Type: application/json
 ```
 
 {{< tab tabNum="12" >}}
-
 
 The successful response includes the following fields:
 

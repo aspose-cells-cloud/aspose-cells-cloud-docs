@@ -10,6 +10,7 @@ keywords: "Aspose.Cells, CSV import, spreadsheet, API"
 description: "Import CSV data file into the local spreadsheet using Aspose.Cells Cloud API."
 weight: 100
 ---
+
 The **ImportCSVDataIntoSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/import/data/csv`) in Aspose.Cells Cloud enables direct import of CSV data into an existing spreadsheet by parsing the file, mapping its contents to the specified worksheet and starting cell, and saving the updated file locally; it supports formats such as .xlsx and .ods and allows optional control over insertion behavior, numeric conversion, and locale-specific formatting.
 
 ## The Import CSVData Into Spreadsheet Web API
@@ -24,20 +25,20 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| datafile | File | FormData | Upload data file. |
-| Spreadsheet | File | FormData | Upload spreadsheet file. |
-| worksheet | String | Query | Need to import CSV data into the worksheet. |
-| startcell | String | Query | Starting position for data import |
-| insert | Boolean | Query | Controls the insertion behavior. true: inserts data; false: overwrites existing data. |
-| convertNumericData | Boolean | Query | Whether the string in text file is converted to numeric data. |
-| splitter | String | Query | - |
-| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
-| outStorageName | String | Query | Output file Storage Name. |
-| fontsLocation | String | Query | Use Custom fonts. |
-| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password | String | Query | The password for opening spreadsheet file. |
+| Parameter Name     | Type    | Path/Query String/HTTPBody | Description                                                                                                                             |
+| ------------------ | ------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| datafile           | File    | FormData                   | Upload data file.                                                                                                                       |
+| Spreadsheet        | File    | FormData                   | Upload spreadsheet file.                                                                                                                |
+| worksheet          | String  | Query                      | Need to import CSV data into the worksheet.                                                                                             |
+| startcell          | String  | Query                      | Starting position for data import                                                                                                       |
+| insert             | Boolean | Query                      | Controls the insertion behavior. true: inserts data; false: overwrites existing data.                                                   |
+| convertNumericData | Boolean | Query                      | Whether the string in text file is converted to numeric data.                                                                           |
+| splitter           | String  | Query                      | -                                                                                                                                       |
+| outPath            | String  | Query                      | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
+| outStorageName     | String  | Query                      | Output file Storage Name.                                                                                                               |
+| fontsLocation      | String  | Query                      | Use Custom fonts.                                                                                                                       |
+| region             | String  | Query                      | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password           | String  | Query                      | The password for opening spreadsheet file.                                                                                              |
 
 ### **Response**
 
@@ -63,14 +64,14 @@ Content-Disposition: attachment; filename="result"
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | Invalid url. |
-| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
-| 404 | Not Found | Source file not accessible. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining data. |
+| Code | Meaning           | Description                                                   |
+| ---- | ----------------- | ------------------------------------------------------------- |
+| 200  | OK                | The request completed successfully.                           |
+| 400  | Bad Request       | Invalid url.                                                  |
+| 401  | Unauthorized      | Authentication has failed, or no credentials were provided.   |
+| 404  | Not Found         | Source file not accessible.                                   |
+| 413  | Payload Too Large | The uploaded file exceeds the allowed size limit.             |
+| 500  | Server Error      | The spreadsheet has encountered an anomaly in obtaining data. |
 
 **Response Status Codes**
 

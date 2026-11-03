@@ -10,11 +10,8 @@ description: "Retrieve an OLE object (image, chart, or embedded file) from a wor
 ArticleTitle: "Get OLE Object from Excel Worksheet – Aspose.Cells Cloud API"
 weight: 100
 ---
+
 The **GetWorksheetOleObject** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects/{objectNumber}`) retrieves an OLE object from a specified Excel worksheet by its object number, optionally converting it to a supported image format such as PNG, TIFF, JPEG, GIF, EMF, or BMP, enabling programmatic extraction and reuse of embedded objects within cloud-based spreadsheets using Aspose.Cells Cloud.
-
-## Security and Authentication
-
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## The Get Worksheet OLE Object Web API
 
@@ -28,14 +25,14 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| objectNumber | Integer | Path | The object number. |
-| format | String | Query | Object conversion format(PNG/TIFF/JPEG/GIF/EMF/BMP). |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                          |
+| -------------- | ------- | -------------------------- | ---------------------------------------------------- |
+| name           | String  | Path                       | The file name.                                       |
+| sheetName      | String  | Path                       | The worksheet name.                                  |
+| objectNumber   | Integer | Path                       | The object number.                                   |
+| format         | String  | Query                      | Object conversion format(PNG/TIFF/JPEG/GIF/EMF/BMP). |
+| folder         | String  | Query                      | The folder where the file is situated.               |
+| storageName    | String  | Query                      | The storage name where the file is situated.         |
 
 ### Binary Image Response
 

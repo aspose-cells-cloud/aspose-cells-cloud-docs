@@ -15,26 +15,15 @@ aliases: [/set-a-particular-document-property/]
 
 The **Update (Set) Document Property** operation lets you create a new document property or modify an existing one in an Excel workbook stored in Aspose Cloud Storage.
 
-**Endpoint**  
-`PUT https://api.aspose.cloud/v3.0/cells/{name}/documentproperties/{propertyName}`
-
-The request accepts a JSON payload that describes the property to be set.
-
-## Prerequisites
-
-- A valid **JWT access token** (see the [Authentication guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)).
-- The target workbook (`{name}`) must already exist in Aspose Cloud Storage (or a folder you specify).
-- The storage name (`storageName`) is optional; if omitted, the default storage is used.
-
-## Authentication
-
-Aspose.Cells Cloud uses **JWT token‑based authentication**. Include the token in the `Authorization` header:
+## The PUT Document Property Web API
 
 ```http
-Authorization: Bearer <jwt-token>
+PUT https://api.aspose.cloud/v3.0/cells/{name}/documentproperties/{propertyName}
 ```
 
-For details on obtaining a JWT token, see the [Authentication guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
 
 ## HTTP Request
 

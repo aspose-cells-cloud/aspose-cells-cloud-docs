@@ -105,7 +105,7 @@ X-Request-Id: 8a3e5f9d-1c2b-4a7e-b3d2-0e1f2a3c4b5d
 ```bash
 curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/spreadsheet/csv?region=en-US&AutoRowsFit=true" \
   -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c" \
-  -H "Content-Type: multipart/form-data" \
+  -H "Content-Type: multipart/-data" \
   -F "Spreadsheet=@report.xlsx" \
   -o result.csv
 ```

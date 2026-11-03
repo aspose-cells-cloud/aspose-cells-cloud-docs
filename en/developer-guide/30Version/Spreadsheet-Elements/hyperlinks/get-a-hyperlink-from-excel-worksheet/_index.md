@@ -8,12 +8,8 @@ weight: 100
 ArticleTitle: "Aspose.Cells Cloud API – Get Worksheet Hyperlink"
 linktitle: "Get Hyperlink"
 ---
+
 The **GetWorksheetHyperlink** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks/{hyperlinkIndex}`) retrieves the description of a specific hyperlink from an Excel worksheet by its zero-based index, enabling developers to programmatically extract hyperlink details such as address, text to display, and screen tip using Aspose.Cells Cloud’s REST interface.
-
-## Security and Authentication
-
-The Aspose.Cells Cloud APIs are secure and require [JWT token‑based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).  
-Before calling the endpoint, obtain a JWT access token using your client ID and secret, and include it in the `Authorization: Bearer <jwt token>` header.
 
 ## The Get Worksheet Hyperlink Web API
 
@@ -27,13 +23,13 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| hyperlinkIndex | Integer | Path | The hyperlink's index. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------- | -------------------------- | -------------------------------------------- |
+| name           | String  | Path                       | The file name.                               |
+| sheetName      | String  | Path                       | The worksheet name.                          |
+| hyperlinkIndex | Integer | Path                       | The hyperlink's index.                       |
+| folder         | String  | Query                      | The folder where the file is situated.       |
+| storageName    | String  | Query                      | The storage name where the file is situated. |
 
 ### **Response**
 

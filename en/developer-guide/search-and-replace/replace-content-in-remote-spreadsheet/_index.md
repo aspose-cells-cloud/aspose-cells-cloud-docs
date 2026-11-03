@@ -11,23 +11,15 @@ ArticleTitle: "Aspose.Cells Cloud API: Bulk Replace Text in Remote Excel Ranges"
 
 Perform bulk text replacement across remote Excel files stored in cloud storage such as AWS S3 or Azure Blob. Use this REST API endpoint to efficiently locate and update text across an entire workbook or specific ranges—without downloading or manually editing files.
 
-> **Prerequisites**
->
-> - An Aspose.Cells Cloud account with valid `AppSID` and `AppKey`.
-> - A valid OAuth2 access token (see [Authentication Guide](/cells-cloud/authentication/)).
-> - A workbook file uploaded to your cloud storage.
-
----
-
 ## API Endpoint
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{cellArea}/replace/content
 ```
 
-> **Note**: For _workbook-wide_ replacement (all worksheets), use the simplified endpoint:  
-> `PUT https://api.aspose.cloud/v4.0/cells/{name}/replace/content`  
-> This document covers the **range-specific** operation per the latest API specification.
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ---
 

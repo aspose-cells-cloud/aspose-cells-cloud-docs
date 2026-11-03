@@ -10,11 +10,8 @@ description: "Delete a specific OLE object from an Excel worksheet using Aspose.
 weight: 50
 ArticleTitle: "Delete OLE Object from Excel Worksheet using Aspose.Cells Cloud API"
 ---
+
 The **DeleteWorksheetOleObject** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects/{oleObjectIndex}`) enables deletion of a specific OLE object—such as an embedded image, chart, or other embedded content—from a worksheet in an Excel workbook using Aspose.Cells Cloud, supporting robust programmatic control over spreadsheet elements with no manual intervention required.
-
-## Security and Authentication
-
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## The Delete Worksheet OLE Object Web API
 
@@ -28,13 +25,13 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worsheet name. |
-| oleObjectIndex | Integer | Path | Ole object index. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------- | -------------------------- | -------------------------------------------- |
+| name           | String  | Path                       | The file name.                               |
+| sheetName      | String  | Path                       | The worsheet name.                           |
+| oleObjectIndex | Integer | Path                       | Ole object index.                            |
+| folder         | String  | Query                      | The folder where the file is situated.       |
+| storageName    | String  | Query                      | The storage name where the file is situated. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/OleObjects/DeleteWorksheetOleObject) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -90,13 +87,13 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 | HTTP status          | Description                                                            | Sample JSON                                                         |
 | -------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------- |

@@ -9,6 +9,7 @@ keywords: "Aspose.Cells, Excel search API, cloud spreadsheet, text search, REST"
 weight: 100
 ArticleTitle: "Search Text in Remote Excel Files via Aspose.Cells Cloud API"
 ---
+
 The **SearchContentInRemoteSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/{name}/search/content`) enables developers to programmatically search for specific text, numbers, or formulas within Excel workbooks stored in Aspose.Cells Cloud—without downloading the file—by scanning all worksheets and cells remotely and returning precise match locations for automated data discovery, compliance auditing, or template validation workflows.
 
 ## Search Content in Remote Spreadsheet API
@@ -21,9 +22,9 @@ Programmatically search for specific text, numbers, or formulas in Excel workboo
 PUT https://api.aspose.cloud/v4.0/cells/{name}/search/content
 ```
 
-### Authentication
+### **Security and Authentication**
 
-All requests require a valid JWT Bearer token. See [Authentication Overview](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) for details.
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ```http
 Authorization: Bearer {access_token}
@@ -31,15 +32,15 @@ Authorization: Bearer {access_token}
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The name of the workbook file to be search. |
-| searchText | String | Query | The searched text. |
-| ignoringCase | Boolean | Query | Ignore the text of the search. |
-| folder | String | Query | The folder path where the workbook is stored. |
-| storageName | String | Query | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted. |
-| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password | String | Query | The password for opening spreadsheet file. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                                                                                                             |
+| -------------- | ------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| name           | String  | Path                       | The name of the workbook file to be search.                                                                                             |
+| searchText     | String  | Query                      | The searched text.                                                                                                                      |
+| ignoringCase   | Boolean | Query                      | Ignore the text of the search.                                                                                                          |
+| folder         | String  | Query                      | The folder path where the workbook is stored.                                                                                           |
+| storageName    | String  | Query                      | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.                                       |
+| region         | String  | Query                      | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password       | String  | Query                      | The password for opening spreadsheet file.                                                                                              |
 
 ### **Response**
 
@@ -64,13 +65,13 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | Invalid url. |
-| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
-| 404 | Not Found | Source file not accessible. |
-| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining data. |
+| Code | Meaning      | Description                                                   |
+| ---- | ------------ | ------------------------------------------------------------- |
+| 200  | OK           | The request completed successfully.                           |
+| 400  | Bad Request  | Invalid url.                                                  |
+| 401  | Unauthorized | Authentication has failed, or no credentials were provided.   |
+| 404  | Not Found    | Source file not accessible.                                   |
+| 500  | Server Error | The spreadsheet has encountered an anomaly in obtaining data. |
 
 ## Example Request (cURL)
 

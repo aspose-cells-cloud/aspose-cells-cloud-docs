@@ -17,19 +17,8 @@ weight: 70
 draft: false
 ArticleTitle: "Ungroup Columns in Excel with Aspose.Cells Cloud REST API"
 ---
+
 The **PostUngroupWorksheetColumns** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/ungroup`) in Aspose.Cells Cloud enables developers to remove column grouping from a specified worksheet by providing the workbook name, worksheet name, and the first and last column indices to ungroup. This REST operation supports ungrouping contiguous or non-contiguous column ranges, restoring individual column visibility and editability as defined in Excel’s grouping behavior.
-
-## Authentication
-
-All requests require an `Authorization` header with a valid JWT bearer token:
-
-```http
-Authorization: Bearer <YOUR_ACCESS_TOKEN>
-```
-
-Tokens are issued via Aspose Cloud OAuth 2.0 and expire after a set period. Refresh tokens as needed.
-
----
 
 ## The Post Ungroup Worksheet Columns Web API
 
@@ -43,14 +32,14 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Path Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| firstIndex | Integer | Query | The first column index to be operated. |
-| lastIndex | Integer | Query | The last column index to be operated. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------- | -------------------------- | -------------------------------------------- |
+| name           | String  | Path                       | The file name.                               |
+| sheetName      | String  | Path                       | The worksheet name.                          |
+| firstIndex     | Integer | Query                      | The first column index to be operated.       |
+| lastIndex      | Integer | Query                      | The last column index to be operated.        |
+| folder         | String  | Query                      | The folder where the file is situated.       |
+| storageName    | String  | Query                      | The storage name where the file is situated. |
 
 ### **Response**
 
@@ -75,22 +64,22 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ### Query Parameters
 
-| Name          | Type    | Required | Description                                         |
-| ------------- | ------- | -------- | --------------------------------------------------- |
-| `firstIndex`  | integer | Yes      | Zero-based index of the first column to ungroup.    |
-| `lastIndex`   | integer | Yes      | Zero-based index of the last column to ungroup.     |
+| Name          | Type    | Required | Description                                                 |
+| ------------- | ------- | -------- | ----------------------------------------------------------- |
+| `firstIndex`  | integer | Yes      | Zero-based index of the first column to ungroup.            |
+| `lastIndex`   | integer | Yes      | Zero-based index of the last column to ungroup.             |
 | `folder`      | string  | No       | Folder path containing the workbook (e.g., `docs/reports`). |
-| `storageName` | string  | No       | Name of the storage service (e.g., `MyStorage`).    |
+| `storageName` | string  | No       | Name of the storage service (e.g., `MyStorage`).            |
 
 > 📌 **Note**: `firstIndex` and `lastIndex` are **inclusive**. Example: `firstIndex=1`, `lastIndex=5` ungroups columns B through F.
 
@@ -127,22 +116,22 @@ The `Columns` object confirms the range of columns that were successfully ungrou
 
 ### Error Response
 
-| Field          | Type   | Description                          |
-| -------------- | ------ | ------------------------------------ |
-| `Code`         | integer | HTTP status code (e.g., `400`, `401`). |
+| Field          | Type    | Description                                      |
+| -------------- | ------- | ------------------------------------------------ |
+| `Code`         | integer | HTTP status code (e.g., `400`, `401`).           |
 | `Status`       | string  | Short error description (e.g., `"Bad Request"`). |
-| `ErrorMessage` | string  | Detailed error message.              |
+| `ErrorMessage` | string  | Detailed error message.                          |
 
 ### Common HTTP Status Codes
 
-| Code | Meaning               | Description |
-| ---- | --------------------- | ----------- |
-| 200  | OK                    | Columns successfully ungrouped. |
+| Code | Meaning               | Description                                                                           |
+| ---- | --------------------- | ------------------------------------------------------------------------------------- |
+| 200  | OK                    | Columns successfully ungrouped.                                                       |
 | 400  | Bad Request           | Missing/invalid parameters (e.g., negative `firstIndex`, `lastIndex` < `firstIndex`). |
-| 401  | Unauthorized          | Invalid, expired, or missing JWT token. |
-| 404  | Not Found             | Workbook or worksheet not found. |
-| 413  | Payload Too Large     | Request body exceeds size limits. |
-| 500  | Internal Server Error | Unexpected server error. |
+| 401  | Unauthorized          | Invalid, expired, or missing JWT token.                                               |
+| 404  | Not Found             | Workbook or worksheet not found.                                                      |
+| 413  | Payload Too Large     | Request body exceeds size limits.                                                     |
+| 500  | Internal Server Error | Unexpected server error.                                                              |
 
 ---
 
@@ -238,7 +227,7 @@ api
   .postUngroupWorksheetColumns("test.xlsx", "Sheet1", 1, 5, null, null)
   .then((resp) => {
     console.log(
-      `Ungrouped columns: ${resp.columns.firstIndex} – ${resp.columns.lastIndex}`
+      `Ungrouped columns: ${resp.columns.firstIndex} – ${resp.columns.lastIndex}`,
     );
   })
   .catch((err) => console.error(err));
@@ -291,7 +280,7 @@ func main() {
 
 ## Revision History
 
-| Date       | Author | Change |
-| ---------- | ------ | ------ |
+| Date       | Author       | Change                                                                                                                                                                                                       |
+| ---------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | 2024-06-15 | AI Optimizer | Fixed front matter: corrected future-dated `date`, added `description`, removed low-value `keywords`, standardized placeholders (`<YOUR_ACCESS_TOKEN>`), removed duplicate H1, and updated revision history. |
-| 2024-06-14 | Original | Initial draft. |
+| 2024-06-14 | Original     | Initial draft.                                                                                                                                                                                               |

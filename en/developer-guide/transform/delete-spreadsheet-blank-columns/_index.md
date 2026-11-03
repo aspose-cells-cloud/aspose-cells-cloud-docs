@@ -18,6 +18,7 @@ categories:
 weight: 100
 ArticleTitle: "Delete Blank Columns from Excel with Aspose.Cells Cloud API v4"
 ---
+
 The **RemoveSpreadsheetBlankColumns** API (`PUT https://api.aspose.cloud/v4.0/cells/remove/blank-columns`) in Aspose.Cells Cloud v4.0 deletes all blank columns—those where every cell is empty of data, formulas, comments, charts, or objects—from an uploaded Excel workbook, improving file size, rendering speed, and downstream processing accuracy; the operation scans all worksheets server-side and returns a cleaned workbook via a `ResponseFile` response.
 
 > **Note**: Aspose.Cells Cloud v4 is stable and production-ready. For early access to v5 features, contact [support@aspose.cloud](mailto:support@aspose.cloud).
@@ -38,23 +39,23 @@ Removing them reduces file bloat, eliminates parsing ambiguity, and ensures clea
 PUT https://api.aspose.cloud/v4.0/cells/remove/blank-columns
 ```
 
-### Authentication
+### **Security and Authentication**
 
-All requests require a [JWT token](/getting-started/authentication/) (replace `{access_token}` with your valid token):
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-```bash
--H "Authorization: Bearer {access_token}"
+```http
+Authorization: Bearer {access_token}
 ```
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| Spreadsheet | File | FormData | Upload spreadsheet file. |
-| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
-| outStorageName | String | Query | Output file Storage Name. |
-| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password | String | Query | The password for opening spreadsheet file. |
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                                                                                                             |
+| -------------- | ------ | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet    | File   | FormData                   | Upload spreadsheet file.                                                                                                                |
+| outPath        | String | Query                      | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
+| outStorageName | String | Query                      | Output file Storage Name.                                                                                                               |
+| region         | String | Query                      | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password       | String | Query                      | The password for opening spreadsheet file.                                                                                              |
 
 ### Response
 

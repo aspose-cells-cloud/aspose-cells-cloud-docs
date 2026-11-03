@@ -14,6 +14,7 @@ description: "Learn how to create a pivot table from a list object using Aspose.
 weight: 60
 ArticleTitle: "Convert Table to Pivot Table – Aspose.Cells Cloud Documentation"
 ---
+
 The **PostWorksheetListObjectSummarizeWithPivotTable** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/SummarizeWithPivotTable`) enables developers to programmatically convert an existing list object in a worksheet into a pivot table using Aspose.Cells Cloud, requiring parameters such as the workbook name, worksheet name, list object index, destination worksheet name, and a `CreatePivotTableRequest` body to define the pivot table structure and data fields.
 
 A pivot table summarizes data from a list object, allowing you to analyze and report on large data sets directly within the workbook.
@@ -30,15 +31,15 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Request parameters**
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| listObjectIndex | Integer | Path | The list object index. |
-| destsheetName | String | Query | The target worksheet name. |
-| createPivotTableRequest | class:createpivottablerequest | HTTPBody | Create pivot table request. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name          | Type                          | Path/Query String/HTTPBody | Description                                  |
+| ----------------------- | ----------------------------- | -------------------------- | -------------------------------------------- |
+| name                    | String                        | Path                       | The file name.                               |
+| sheetName               | String                        | Path                       | The worksheet name.                          |
+| listObjectIndex         | Integer                       | Path                       | The list object index.                       |
+| destsheetName           | String                        | Query                      | The target worksheet name.                   |
+| createPivotTableRequest | class:createpivottablerequest | HTTPBody                   | Create pivot table request.                  |
+| folder                  | String                        | Query                      | The folder where the file is situated.       |
+| storageName             | String                        | Query                      | The storage name where the file is situated. |
 
 The request body must follow the JSON schema defined below:
 
@@ -135,14 +136,14 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                        |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Cloud SDK Family
 

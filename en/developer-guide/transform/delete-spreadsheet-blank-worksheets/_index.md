@@ -8,6 +8,7 @@ keywords: "Aspose.Cells Cloud, delete blank worksheets, Excel API, workbook clea
 weight: 100
 ArticleTitle: "Delete Blank Worksheets in Excel Workbooks using Aspose.Cells Cloud API v4.0"
 ---
+
 The **RemoveSpreadsheetBlankWorksheets** API (`PUT https://api.aspose.cloud/v4.0/cells/remove/blank-worksheets`) in Aspose.Cells Cloud removes all blank worksheets—those containing no data, formulas, charts, comments, or other objects—from an uploaded Excel workbook. Using a `FormData` file upload, the operation preserves populated sheets while deleting empty ones, helping optimize workbook size, improve organization, and streamline post-processing workflows such as template cleanup or standardization.
 
 ## The Remove Spreadsheet Blank Worksheets Web API
@@ -16,26 +17,23 @@ The **RemoveSpreadsheetBlankWorksheets** API (`PUT https://api.aspose.cloud/v4.0
 PUT https://api.aspose.cloud/v4.0/cells/remove/blank-worksheets
 ```
 
-### Authentication
+### **Security and Authentication**
 
-All requests require a valid [JWT access token](/docs/total/getting-started/authentication/) generated with your `Client ID` and `Client Secret`.
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-```bash
-curl -X PUT \
-  'https://api.aspose.cloud/v4.0/cells/remove/blank-worksheets?outStorageName=MyFirstStorage' \
-  -H 'Authorization: Bearer <your_access_token>' \
-  -F 'Spreadsheet=@input.xlsx'
+```http
+Authorization: Bearer {access_token}
 ```
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| Spreadsheet | File | FormData | Upload spreadsheet file. |
-| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
-| outStorageName | String | Query | Output file Storage Name. |
-| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password | String | Query | The password for opening spreadsheet file. |
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                                                                                                             |
+| -------------- | ------ | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet    | File   | FormData                   | Upload spreadsheet file.                                                                                                                |
+| outPath        | String | Query                      | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
+| outStorageName | String | Query                      | Output file Storage Name.                                                                                                               |
+| region         | String | Query                      | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password       | String | Query                      | The password for opening spreadsheet file.                                                                                              |
 
 ### Response
 

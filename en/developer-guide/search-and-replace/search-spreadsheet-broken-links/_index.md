@@ -9,6 +9,7 @@ description: "Detect broken Excel links—external refs, hyperlinks, formulas—
 type: docs
 weight: 100
 ---
+
 The **SearchSpreadsheetBrokenLinks** API (`PUT https://api.aspose.cloud/v4.0/cells/search/broken-links`) in Aspose.Cells Cloud identifies broken hyperlinks, invalid external references, and malformed formulas within a local Excel workbook uploaded via form data. The operation runs server-side in the cloud—no local processing or cloud storage required—and returns results in structured JSON, enabling integration into CI/CD pipelines, audit tools, or compliance workflows.
 
 ## The Search Spreadsheet Broken Links Web API
@@ -17,9 +18,9 @@ The **SearchSpreadsheetBrokenLinks** API (`PUT https://api.aspose.cloud/v4.0/cel
 PUT https://api.aspose.cloud/v4.0/cells/search/broken-links
 ```
 
-### Authentication
+### **Security and Authentication**
 
-All requests require a valid [JWT token](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/). Include the token in the `Authorization` header as a Bearer token:
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ```http
 Authorization: Bearer {access_token}
@@ -27,13 +28,13 @@ Authorization: Bearer {access_token}
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| Spreadsheet | File | FormData | Upload spreadsheet file. |
-| worksheet | String | Query | Specify the worksheet for the replace. |
-| cellArea | String | Query | Specify the cell area for the replace. |
-| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password | String | Query | The password for opening spreadsheet file. |
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                                                                                                             |
+| -------------- | ------ | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet    | File   | FormData                   | Upload spreadsheet file.                                                                                                                |
+| worksheet      | String | Query                      | Specify the worksheet for the replace.                                                                                                  |
+| cellArea       | String | Query                      | Specify the cell area for the replace.                                                                                                  |
+| region         | String | Query                      | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password       | String | Query                      | The password for opening spreadsheet file.                                                                                              |
 
 ### Response Structure
 
@@ -57,7 +58,6 @@ Content-Type: application/json
 ```
 
 A successful response returns a `BrokenLinksResponse` object:
-
 
 #### BrokenLink Object
 

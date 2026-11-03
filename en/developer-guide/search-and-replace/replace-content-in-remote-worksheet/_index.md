@@ -9,6 +9,7 @@ type: docs
 weight: 100
 ArticleTitle: "Replace Text in Remote Excel Worksheet Using Aspose.Cells Cloud API"
 ---
+
 The **ReplaceContentInRemoteRange** API (`PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{cellArea}/replace/content`) in Aspose.Cells Cloud v4.0 enables precise, server-side replacement of specified text within a defined cell range of a remote Excel workbook stored in cloud storage—supporting dynamic template updates and cross-regional data synchronization without downloading the file.
 
 ## The Replace Content in Remote Range Web API
@@ -17,29 +18,23 @@ The **ReplaceContentInRemoteRange** API (`PUT https://api.aspose.cloud/v4.0/cell
 PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{cellArea}/replace/content
 ```
 
-### **Authentication**
+### **Security and Authentication**
 
-Aspose.Cells Cloud APIs use JWT token-based authentication. Include your access token in the `Authorization` header:
-
-```bash
--H "Authorization: Bearer {access_token}"
-```
-
-For setup guidance, see the [Aspose Cloud Authentication Guide](https://docs.aspose.cloud/total/working-with-authentication/) (verified as of 2024-06-15).
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### **Request Parameters**
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The name of the workbook file to be replace. |
-| searchText | String | Query | The searched text. |
-| replaceText | String | Query | The replaced text. |
-| worksheet | String | Path | The worksheet name. |
-| cellArea | String | Path | The cell area for the replace. |
-| folder | String | Query | The folder path where the workbook is stored. |
-| storageName | String | Query | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted. |
-| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password | String | Query | The password for opening spreadsheet file. |
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                                                                                                             |
+| -------------- | ------ | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| name           | String | Path                       | The name of the workbook file to be replace.                                                                                            |
+| searchText     | String | Query                      | The searched text.                                                                                                                      |
+| replaceText    | String | Query                      | The replaced text.                                                                                                                      |
+| worksheet      | String | Path                       | The worksheet name.                                                                                                                     |
+| cellArea       | String | Path                       | The cell area for the replace.                                                                                                          |
+| folder         | String | Query                      | The folder path where the workbook is stored.                                                                                           |
+| storageName    | String | Query                      | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.                                       |
+| region         | String | Query                      | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password       | String | Query                      | The password for opening spreadsheet file.                                                                                              |
 
 ### **Response**
 
@@ -63,7 +58,6 @@ Content-Type: application/json
 ```
 
 On success, the API returns:
-
 
 > **Note**: The current response does not include the count of replacements or affected cell coordinates. For detailed feedback, consider using the [GetCellsRange](https://reference.aspose.cloud/cells/) API before/after replacement.
 

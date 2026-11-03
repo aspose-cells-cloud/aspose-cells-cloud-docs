@@ -5,6 +5,7 @@ type: docs
 description: "Find text, numbers, or formulas in a remote Excel worksheet using Aspose.Cells Cloud API. Supports case-insensitive search, password-protected files, and cloud storage integration."
 keywords: "aspose.cells, excel api, text search, remote worksheet, cloud api"
 ---
+
 The **SearchContentInRemoteWorksheet** API (`PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/search/content`) enables developers to programmatically search for specified text, numbers, or formulas within a worksheet of an Excel workbook stored in cloud storage using Aspose.Cells Cloud, supporting case-insensitive and whole-word matching options while returning match locations directly in the cloud without requiring local file downloads.
 
 ## The Search Content in Remote Worksheet Web API
@@ -13,9 +14,9 @@ The **SearchContentInRemoteWorksheet** API (`PUT https://api.aspose.cloud/v4.0/c
 PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/search/content
 ```
 
-### Authentication
+### **Security and Authentication**
 
-All requests require a valid OAuth 2.0 JWT token. See [Authentication Overview](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) for implementation details.
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ```http
 Authorization: Bearer {access_token}
@@ -23,16 +24,16 @@ Authorization: Bearer {access_token}
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | Specify the search workbook file name. |
-| worksheet | String | Path | Specify the search worksheet name. |
-| searchText | String | Query | Specify the search content. |
-| ignoringCase | Boolean | Query | Ignore the text of the search. |
-| folder | String | Query | The folder path where the workbook is stored. |
-| storageName | String | Query | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted. |
-| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password | String | Query | The password for opening spreadsheet file. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                                                                                                             |
+| -------------- | ------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| name           | String  | Path                       | Specify the search workbook file name.                                                                                                  |
+| worksheet      | String  | Path                       | Specify the search worksheet name.                                                                                                      |
+| searchText     | String  | Query                      | Specify the search content.                                                                                                             |
+| ignoringCase   | Boolean | Query                      | Ignore the text of the search.                                                                                                          |
+| folder         | String  | Query                      | The folder path where the workbook is stored.                                                                                           |
+| storageName    | String  | Query                      | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.                                       |
+| region         | String  | Query                      | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password       | String  | Query                      | The password for opening spreadsheet file.                                                                                              |
 
 ### Response
 

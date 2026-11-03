@@ -3,7 +3,7 @@ title: "Remove Duplicate Substrings from Excel Cells"
 second_title: "Aspose.Cells Cloud API Documentation"
 linktitle: "Remove Duplicate Substrings"
 url: "/remove-duplicate-substrings/"
-description: "Remove duplicate substrings in Excel cells via Aspose.Cells Cloud API, e.g., convert \"VIP,VIP,Gold\" to \"VIP,Gold"
+description: 'Remove duplicate substrings in Excel cells via Aspose.Cells Cloud API, e.g., convert "VIP,VIP,Gold" to "VIP,Gold'
 keywords: "excel duplicate substrings, text deduplication api, cloud excel cleaning, aspose.cells cloud, excel macro alternative, data normalization api"
 type: docs
 weight: 100
@@ -12,6 +12,7 @@ aliases:
   - /cells/remove-duplicate-substrings/
 ArticleTitle: "Remove Duplicate Substrings in Excel with Aspose.Cells Cloud API"
 ---
+
 The **RemoveDuplicateSubstrings** API (`PUT https://api.aspose.cloud/v4.0/cells/content/remove/duplicate-substrings`) in Aspose.Cells Cloud identifies and removes repeated substrings within each cell of a specified range, using user-defined or preset delimiters (e.g., comma, semicolon, space), while preserving formatting, data validation, and workbook structure—such as converting `"VIP,Premium,VIP,Gold"` to `"VIP,Premium,Gold"` in a single pass.
 
 ## Overview
@@ -33,30 +34,28 @@ Key capabilities:
 PUT https://api.aspose.cloud/v4.0/cells/content/remove/duplicate-substrings
 ```
 
-### Authentication
+### **Security and Authentication**
 
-All Aspose.Cells Cloud APIs require JWT token-based authentication.
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ```http
 Authorization: Bearer {access_token}
 ```
 
-See [Authentication Overview](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) for setup instructions.
-
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| Spreadsheet | File | FormData | Upload spreadsheet file. |
-| delimiters | String | Query | comma, semicolon, space, tab, line-break |
-| treatConsecutiveDelimitersAsOne | Boolean | Query | collapse adjacent delimiters into a single separator. |
-| caseSensitive | Boolean | Query | - |
-| worksheet | String | Query | Specify the worksheet of spreadsheet. |
-| range | String | Query | Specify the worksheet range of spreadsheet. |
-| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
-| outStorageName | String | Query | Output file Storage Name. |
-| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password | String | Query | The password for opening spreadsheet file. |
+| Parameter Name                  | Type    | Path/Query String/HTTPBody | Description                                                                                                                             |
+| ------------------------------- | ------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet                     | File    | FormData                   | Upload spreadsheet file.                                                                                                                |
+| delimiters                      | String  | Query                      | comma, semicolon, space, tab, line-break                                                                                                |
+| treatConsecutiveDelimitersAsOne | Boolean | Query                      | collapse adjacent delimiters into a single separator.                                                                                   |
+| caseSensitive                   | Boolean | Query                      | -                                                                                                                                       |
+| worksheet                       | String  | Query                      | Specify the worksheet of spreadsheet.                                                                                                   |
+| range                           | String  | Query                      | Specify the worksheet range of spreadsheet.                                                                                             |
+| outPath                         | String  | Query                      | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
+| outStorageName                  | String  | Query                      | Output file Storage Name.                                                                                                               |
+| region                          | String  | Query                      | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password                        | String  | Query                      | The password for opening spreadsheet file.                                                                                              |
 
 ### **Response**
 
@@ -82,14 +81,14 @@ Content-Disposition: attachment; filename="result"
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                        |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Example Request (cURL)
 
@@ -105,7 +104,6 @@ This example:
 - Collapses consecutive commas.
 - Ignores case when comparing substrings.
 - Processes only cells in range `A1:D100`.
-
 
 ## Response
 
@@ -132,14 +130,12 @@ On success (HTTP `200 OK`), the response returns the cleaned workbook as a file 
 | 404  | Not Found             | Workbook, worksheet, or range not found.                           |
 | 500  | Internal Server Error | Unexpected server-side error.                                      |
 
-
 ## Use Cases
 
 - **Data Standardization**: Clean tag fields (e.g., `"AWS,AWS,Azure,GCP"` → `"AWS,Azure,GCP"`).
 - **Log Analysis**: Deduplicate error codes or component identifiers in technical logs.
 - **HR & Certifications**: Remove duplicate skill or certification entries (e.g., `"Python,Python,SQL,Python"` → `"Python,SQL"`).
 - **Product Tagging**: Normalize product attributes where duplicates occur due to import errors.
-
 
 ## OpenAPI Specification
 

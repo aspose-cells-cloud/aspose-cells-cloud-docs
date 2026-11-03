@@ -17,6 +17,7 @@ api_version: "v3.0"
 weight: 100
 ArticleTitle: "Delete All Pivot Tables in Excel Worksheet via Aspose.Cells Cloud REST API"
 ---
+
 The **DeleteWorksheetPivotTables** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables`) removes all PivotTables from a specified worksheet in an Excel file using Aspose.Cells Cloud, enabling users to reset analysis layouts, clean up unused pivot tables, or prepare templates for reuse without deleting the worksheet itself; the operation requires the file name and worksheet name as path parameters and supports optional folder and storageName query parameters for cloud storage organization.
 
 ## Overview
@@ -24,16 +25,6 @@ The **DeleteWorksheetPivotTables** API (`DELETE https://api.aspose.cloud/v3.0/ce
 This operation removes **all** pivot tables from a specified worksheet in an Excel file. It is especially useful for resetting analysis layouts, cleaning up unused pivot tables, or preparing templates for reuse—without deleting the worksheet itself.
 
 > 💡 **Best Practice Tip**: Bulk deletion is irreversible. For safety, consider backing up your file or using [versioning](https://docs.aspose.cloud/total/getting-started/storage/versioning/) before running this operation.
-
-## Authentication
-
-The Aspose.Cells Cloud APIs require **JWT token‑based authentication**. Include the token in the `Authorization` header of each request:
-
-```
-Authorization: Bearer <your-jwt-token>
-```
-
-> 🔒 **Security Note**: Never expose your JWT token in client-side code or public repositories. Store credentials securely (e.g., environment variables or secret managers).
 
 ## The Delete Worksheet Pivot Tables Web API
 
@@ -47,12 +38,12 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Path Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------ | -------------------------- | -------------------------------------------- |
+| name           | String | Path                       | The file name.                               |
+| sheetName      | String | Path                       | The worksheet name.                          |
+| folder         | String | Query                      | The folder where the file is situated.       |
+| storageName    | String | Query                      | The storage name where the file is situated. |
 
 ### **Response**
 
@@ -77,19 +68,19 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ### Query Parameters
 
-| Name          | Type   | Required | Description                                                           |
-|---------------|--------|----------|-----------------------------------------------------------------------|
-| `folder`      | string | No       | The folder that contains the file (e.g., `input/`).                  |
+| Name          | Type   | Required | Description                                                             |
+| ------------- | ------ | -------- | ----------------------------------------------------------------------- |
+| `folder`      | string | No       | The folder that contains the file (e.g., `input/`).                     |
 | `storageName` | string | No       | The storage name to use (if the file resides in a non-default storage). |
 
 ## Request Example (cURL)
@@ -116,7 +107,7 @@ The service returns a standard `CellsCloudResponse` object indicating the operat
 ## Error Handling
 
 | HTTP Status | Meaning                                      | Example Payload                                                    |
-|-------------|----------------------------------------------|--------------------------------------------------------------------|
+| ----------- | -------------------------------------------- | ------------------------------------------------------------------ |
 | **400**     | Bad Request – missing or invalid parameters  | `{ "Code": 400, "Message": "Missing required parameter 'name'." }` |
 | **401**     | Unauthorized – invalid or expired JWT        | `{ "Code": 401, "Message": "Invalid authentication token." }`      |
 | **404**     | Not Found – file or worksheet does not exist | `{ "Code": 404, "Message": "Worksheet not found." }`               |

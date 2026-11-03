@@ -9,32 +9,31 @@ aliases:
     /get-columns-from-a-worksheet/,
     /get-column-from-a-worksheet/,
   ]
-date: 2024-05-15
-lastmod: 2024-05-15
-summary: "Learn how to retrieve worksheet column metadata via Aspose.Cells Cloud REST API v3.0."
-lead: "Retrieve detailed column information—including index, width, hidden state, and style—from an Excel worksheet using Aspose.Cells Cloud v3.0. Includes JWT authentication, cURL, and SDK examples."
-canonical: "https://docs.aspose.cloud/cells/get-column-details/"
-robots: "index, follow"
 linkTitle: "Get Column Details"
 weight: 100
 ArticleTitle: "Get Column Details API - Aspose.Cells Cloud REST v3.0"
 description: "Retrieve Excel column metadata—index, width, hidden state, style—via Aspose.Cells Cloud REST API v3.0."
 keywords: "Aspose.Cells Cloud, get column details, Excel column metadata, REST API v3.0, column width, hidden column, column index, worksheet API, GetWorksheetColumns"
 ---
+
 The **GetWorksheetColumn** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex}`) retrieves detailed column metadata—including index, width, hidden state, and style—from an Excel worksheet using the Aspose.Cells Cloud REST API v3.0, enabling developers to programmatically inspect and work with specific column properties by passing the file name, worksheet name, and zero-based column index as required path parameters.
 
 ## Table of Contents
 
-1. [Prerequisites](#prerequisites)
-2. [Authentication](#authentication)
-3. [Endpoint](#endpoint)
-4. [Request Parameters](#request-parameters)
-5. [cURL Example](#curl-example)
-6. [Response Example](#response-example)
-7. [Response Schema](#response-schema)
-8. [Possible Errors](#possible-errors)
-9. [SDK Examples](#sdk-examples)
-10. [Additional Resources](#additional-resources)
+- [Table of Contents](#table-of-contents)
+- [Authentication](#authentication)
+- [The Get Worksheet Column Web API](#the-get-worksheet-column-web-api)
+  - [**Security and Authentication**](#security-and-authentication)
+  - [Request Parameters](#request-parameters)
+  - [**Response**](#response)
+- [cURL Example](#curl-example)
+- [Response Example](#response-example)
+- [Response Schema](#response-schema)
+- [Possible Errors](#possible-errors)
+  - [Example – 404 Not Found](#example--404-not-found)
+  - [Example – 401 Unauthorized](#example--401-unauthorized)
+- [SDK Examples](#sdk-examples)
+- [Additional Resources](#additional-resources)
 
 ---
 
@@ -62,13 +61,13 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| columnIndex | Integer | Path | The column index. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------- | -------------------------- | -------------------------------------------- |
+| name           | String  | Path                       | The file name.                               |
+| sheetName      | String  | Path                       | The worksheet name.                          |
+| columnIndex    | Integer | Path                       | The column index.                            |
+| folder         | String  | Query                      | The folder where the file is situated.       |
+| storageName    | String  | Query                      | The storage name where the file is situated. |
 
 > **Important:** While the specification marks `name`, `sheetName`, and `columnIndex` as `Required: false`, these are _functionally required_ for a valid request. Omitting them will result in a `400 Bad Request`.
 
@@ -97,13 +96,13 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 - **{name}** – workbook file name (e.g., `test.xlsx`).
 - **{sheetName}** – worksheet name (e.g., `Sheet1`).

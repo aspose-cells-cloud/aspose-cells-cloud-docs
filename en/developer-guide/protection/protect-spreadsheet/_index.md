@@ -9,6 +9,7 @@ keywords: "Excel password protection API, open password, modify password, spread
 weight: 100
 ArticleTitle: "Aspose.Cells Cloud Protect Spreadsheet API: Set Open & Modify Passwords Programmatically"
 ---
+
 The **ProtectSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/protection/spreadsheet`) in Aspose.Cells Cloud applies dual-layer password protection to Excel spreadsheets, allowing developers to set both an open password (to restrict file access) and a modify password (to prevent editing) in a single request, with passwords encrypted for enhanced security.
 
 This API supports modern formats (`.xlsx`, `.xlsm`, `.xlsb`) and legacy `.xls` files, and integrates seamlessly with cloud storage and regional settings for global deployments.
@@ -19,31 +20,20 @@ This API supports modern formats (`.xlsx`, `.xlsm`, `.xlsb`) and legacy `.xls` f
 PUT https://api.aspose.cloud/v4.0/cells/protection/spreadsheet
 ```
 
-### **Authentication**
+### **Security and Authentication**
 
-All requests require a valid OAuth 2.0 access token with the **Cells** scope. Tokens are obtained via Aspose Cloud’s [OAuth 2.0 flow](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
-
-Include the token in the `Authorization` header:
-
-```http
-Authorization: Bearer YOUR_ACCESS_TOKEN
-```
-
-> **Prerequisites**
->
-> - Register at [Aspose Cloud Dashboard](https://dashboard.aspose.cloud/) to get your `Client ID` and `Client Secret`
-> - Exchange credentials for an access token using the [OAuth 2.0 documentation]（https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/）
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### **Request Parameters**
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| Spreadsheet | File | FormData | Upload spreadsheet file. |
-| password | String | Query | Spreadsheet file encryption password. |
-| modifyPassword | String | Query | Sets the protected password to modify the file. |
-| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
-| outStorageName | String | Query | Output file Storage Name. |
-| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                                                                                                             |
+| -------------- | ------ | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet    | File   | FormData                   | Upload spreadsheet file.                                                                                                                |
+| password       | String | Query                      | Spreadsheet file encryption password.                                                                                                   |
+| modifyPassword | String | Query                      | Sets the protected password to modify the file.                                                                                         |
+| outPath        | String | Query                      | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
+| outStorageName | String | Query                      | Output file Storage Name.                                                                                                               |
+| region         | String | Query                      | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
 
 ### **Response**
 

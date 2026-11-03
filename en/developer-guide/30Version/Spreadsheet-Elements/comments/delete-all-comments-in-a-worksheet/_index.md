@@ -10,10 +10,8 @@ type: docs
 linktitle: "Clear All Comments"
 ArticleTitle: "Delete All Comments in Worksheet via Aspose.Cells Cloud API"
 ---
-The **DeleteWorksheetComments** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments`) provided by Aspose.Cells Cloud removes all comments from a specified worksheet in a cloud-based spreadsheet file. This operation accepts the workbook file name and worksheet name as required path parameters, with optional folder and storage parameters for file location flexibility. As a destructive action, it permanently deletes all comments without recovery, enabling developers to programmatically clean up worksheets when preparing reports or resetting templates.
 
-**API version:** `v3.0`  
-**Resource:** `Worksheets` → `DeleteWorksheetComments`
+The **DeleteWorksheetComments** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments`) provided by Aspose.Cells Cloud removes all comments from a specified worksheet in a cloud-based spreadsheet file. This operation accepts the workbook file name and worksheet name as required path parameters, with optional folder and storage parameters for file location flexibility. As a destructive action, it permanently deletes all comments without recovery, enabling developers to programmatically clean up worksheets when preparing reports or resetting templates.
 
 Aspose.Cells Cloud provides a robust REST endpoint that removes **all** comments from a specified worksheet. This operation is irreversible; once executed, the comments cannot be recovered.
 
@@ -31,12 +29,12 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Path Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------ | -------------------------- | -------------------------------------------- |
+| name           | String | Path                       | The file name.                               |
+| sheetName      | String | Path                       | The worksheet name.                          |
+| folder         | String | Query                      | The folder where the file is situated.       |
+| storageName    | String | Query                      | The storage name where the file is situated. |
 
 ### **Response**
 
@@ -61,13 +59,13 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ### Query Parameters
 

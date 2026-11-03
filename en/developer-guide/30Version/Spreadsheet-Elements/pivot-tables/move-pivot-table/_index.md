@@ -10,6 +10,7 @@ description: "Move pivot tables or fields in Excel workbooks via Aspose.Cells Cl
 weight: 120
 ArticleTitle: "Move Pivot Table Field with Aspose.Cells Cloud REST API"
 ---
+
 The **PostPivotTableFieldMoveTo** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField/Move`) enables moving a pivot field within a specific PivotTable by specifying the field index and the source and target field area types (e.g., Column, Row, Page, Data, or Undefined), allowing precise reorganization of PivotTable data layout programmatically via Aspose.Cells Cloud.
 
 ## The Post Pivot Table Field Move to Web API
@@ -24,16 +25,16 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Request parameters**
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| pivotTableIndex | Integer | Path | The PivotTable index. |
-| fieldIndex | Integer | Query | The pivot field index. |
-| from | String | Query | The fields area type(Column/Row/Page/Data/Undefined). |
-| to | String | Query | The fields area type(Column/Row/Page/Data/Undefined). |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name  | Type    | Path/Query String/HTTPBody | Description                                           |
+| --------------- | ------- | -------------------------- | ----------------------------------------------------- |
+| name            | String  | Path                       | The file name.                                        |
+| sheetName       | String  | Path                       | The worksheet name.                                   |
+| pivotTableIndex | Integer | Path                       | The PivotTable index.                                 |
+| fieldIndex      | Integer | Query                      | The pivot field index.                                |
+| from            | String  | Query                      | The fields area type(Column/Row/Page/Data/Undefined). |
+| to              | String  | Query                      | The fields area type(Column/Row/Page/Data/Undefined). |
+| folder          | String  | Query                      | The folder where the file is situated.                |
+| storageName     | String  | Query                      | The storage name where the file is situated.          |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PivotTables/PostPivotTableFieldMoveTo) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -89,13 +90,13 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Cloud SDK Family
 

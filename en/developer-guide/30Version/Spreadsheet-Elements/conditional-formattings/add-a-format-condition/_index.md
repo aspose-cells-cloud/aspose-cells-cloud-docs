@@ -9,10 +9,8 @@ ArticleTitle: "Add Format Condition – Aspose.Cells Cloud API Documentation"
 weight: 50
 linktitle: "Add Format Condition"
 ---
-The **PutWorksheetFormatCondition** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}`) adds a format condition to a specified worksheet in Aspose.Cells Cloud, supporting types such as CellValue, Expression, ColorScale, DataBar, IconSet, Top10, UniqueValues, DuplicateValues, and ContainsText; it requires parameters including the cell area, condition type, operator type, and one or two formulas to define the formatting rule.
 
-## Security and Authentication
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+The **PutWorksheetFormatCondition** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}`) adds a format condition to a specified worksheet in Aspose.Cells Cloud, supporting types such as CellValue, Expression, ColorScale, DataBar, IconSet, Top10, UniqueValues, DuplicateValues, and ContainsText; it requires parameters including the cell area, condition type, operator type, and one or two formulas to define the formatting rule.
 
 ## The Put Worksheet Format Condition Web API
 
@@ -26,18 +24,18 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| index | Integer | Path | Gets the Conditional Formatting element at the specified index. |
-| cellArea | String | Query | Adds a conditional formatted cell range. |
-| type | String | Query | Format condition type(CellValue/Expression/ColorScale/DataBar/IconSet/Top10/UniqueValues/DuplicateValues/ContainsText/NotContainsText/BeginsWith/EndsWith/ContainsBlanks/NotContainsBlanks/ContainsErrors/NotContainsErrors/TimePeriod/AboveAverage). |
-| operatorType | String | Query | Represents the operator type of conditional format and data validation(Between/Equal/GreaterThan/GreaterOrEqual/LessThan/None/NotBetween/NotEqual). |
-| formula1 | String | Query | The value or expression associated with conditional formatting. |
-| formula2 | String | Query | The value or expression associated with conditional formatting. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                                                                                                                                                                                                                           |
+| -------------- | ------- | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| name           | String  | Path                       | The file name.                                                                                                                                                                                                                                        |
+| sheetName      | String  | Path                       | The worksheet name.                                                                                                                                                                                                                                   |
+| index          | Integer | Path                       | Gets the Conditional Formatting element at the specified index.                                                                                                                                                                                       |
+| cellArea       | String  | Query                      | Adds a conditional formatted cell range.                                                                                                                                                                                                              |
+| type           | String  | Query                      | Format condition type(CellValue/Expression/ColorScale/DataBar/IconSet/Top10/UniqueValues/DuplicateValues/ContainsText/NotContainsText/BeginsWith/EndsWith/ContainsBlanks/NotContainsBlanks/ContainsErrors/NotContainsErrors/TimePeriod/AboveAverage). |
+| operatorType   | String  | Query                      | Represents the operator type of conditional format and data validation(Between/Equal/GreaterThan/GreaterOrEqual/LessThan/None/NotBetween/NotEqual).                                                                                                   |
+| formula1       | String  | Query                      | The value or expression associated with conditional formatting.                                                                                                                                                                                       |
+| formula2       | String  | Query                      | The value or expression associated with conditional formatting.                                                                                                                                                                                       |
+| folder         | String  | Query                      | The folder where the file is situated.                                                                                                                                                                                                                |
+| storageName    | String  | Query                      | The storage name where the file is situated.                                                                                                                                                                                                          |
 
 ### Success Response
 
@@ -60,8 +58,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 ```
 
-| HTTP Code | Reason            | Example Body                              |
-| --------- | ----------------- | ------------------------------------------ |
+| HTTP Code | Reason                                        | Example Body                        |
+| --------- | --------------------------------------------- | ----------------------------------- |
 | **200**   | OK – condition added or updated successfully. | `{ "Code": "200", "Status": "OK" }` |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/PutWorksheetFormatCondition) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
