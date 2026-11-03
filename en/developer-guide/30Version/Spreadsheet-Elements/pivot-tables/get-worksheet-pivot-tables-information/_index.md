@@ -55,12 +55,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 ```
 
-{{< tab tabNum="2" >}}
-
-{{< /tab >}}
-
-{{< /tabs >}}
-
 ### Error Responses
 
 | HTTP Code | Description                                                     | Sample JSON Payload                                           |
