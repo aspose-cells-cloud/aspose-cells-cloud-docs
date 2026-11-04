@@ -12,10 +12,6 @@ weight: 100
 ---
 The **GetWorksheetShapes** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes`) retrieves descriptions of all shapes contained within a specified Excel worksheet, enabling developers to programmatically inspect and work with embedded objects such as charts, pictures, and drawing elements via Aspose.Cells Cloud's REST API.
 
-## Security and Authentication
-
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
-
 ## The Get Worksheet Shapes Web API
 
 ```http

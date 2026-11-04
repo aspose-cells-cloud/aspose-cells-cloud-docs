@@ -13,9 +13,6 @@ The **DeleteWorksheetChartLegend** API (`DELETE https://api.aspose.cloud/v3.0/ce
 
 The API requires a valid Aspose Cloud JWT token, the workbook must be uploaded to Aspose Cloud storage, and the API version used is **v3.0**.
 
-## Security and Authentication
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
-
 ## The Delete Worksheet Chart Legend Web API
 
 ```http

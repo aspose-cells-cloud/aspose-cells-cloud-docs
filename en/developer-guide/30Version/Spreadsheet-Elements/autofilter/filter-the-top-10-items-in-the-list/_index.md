@@ -13,11 +13,6 @@ weight: 65
 ---
 The **PutWorksheetFilterTop10** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/filterTop10`) enables filtering the top or bottom N items in a specified worksheet range using Aspose.Cells Cloud, allowing users to dynamically hide rows based on criteria such as numeric rank or percentage, with support for both count-based and percentage-based filtering via parameters like `isTop`, `isPercent`, and `itemCount`.
 
-> **Prerequisites**  
-> • Obtain a valid JWT token using Aspose.Cells Cloud authentication.  
-> • Upload the Excel workbook to your Aspose Cloud storage (or specify the storage/folder where it resides).  
-> • Know the worksheet name and the cell range that you want to filter.
-
 ## The Put Worksheet Filter Top10 Web API
 
 ```http

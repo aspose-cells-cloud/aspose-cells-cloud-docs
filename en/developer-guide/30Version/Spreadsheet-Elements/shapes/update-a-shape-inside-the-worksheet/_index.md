@@ -12,10 +12,6 @@ weight: 31
 ---
 The **PostWorksheetShape** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes/{shapeindex}`) updates a specific shape within an Excel worksheet by sending a shape description object in the request body. Aspose.Cells Cloud enables developers to programmatically modify shape properties—such as position, size, text, or formatting—using a RESTful interface that supports authentication and optional folder and storage parameters.
 
-## Security and Authentication
-
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
-
 ## The Post Worksheet Shape Web API
 
 ```http

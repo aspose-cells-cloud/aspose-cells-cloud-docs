@@ -12,10 +12,6 @@ ArticleTitle: "Delete a Picture from an Excel Worksheet – Aspose.Cells Cloud A
 ---
 The **DeleteWorksheetPicture** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}`) enables developers to remove a specific picture from an Excel worksheet by its zero-based index using Aspose.Cells Cloud’s RESTful interface, supporting secure, cloud-based manipulation of spreadsheet elements without local software dependencies.
 
-### **Security and Authentication**
-
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
-
 ## The Delete Worksheet Picture Web API
 
 ```http

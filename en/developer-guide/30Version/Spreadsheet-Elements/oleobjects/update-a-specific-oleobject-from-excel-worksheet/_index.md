@@ -14,10 +14,6 @@ ArticleTitle: "Update an OLE Object in an Excel Worksheet – Aspose.Cells Cloud
 ---
 The **PostUpdateWorksheetOleObject** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects/{oleObjectIndex}`) updates a specific OLE object in an Excel worksheet using Aspose.Cells Cloud, enabling developers to modify embedded OLE content—such as linked or embedded objects—by sending updated OLE object data in the request body along with path parameters identifying the workbook, worksheet, and OLE object index.
 
-### **Security and Authentication**
-
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
-
 ## The Post Update Worksheet OLE Object Web API
 
 ```http

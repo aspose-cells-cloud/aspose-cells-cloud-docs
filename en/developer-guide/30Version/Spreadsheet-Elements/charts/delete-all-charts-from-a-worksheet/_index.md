@@ -13,12 +13,6 @@ The **DeleteWorksheetCharts** API (`DELETE https://api.aspose.cloud/v3.0/cells/{
 
 **Background** – Removing all charts from a worksheet is useful when you need to reset a sheet’s visual layout, replace outdated visualizations, or prepare a workbook for reuse without retaining previous chart data.
 
-Before calling the API, ensure the following prerequisites are met:
-
-- A valid JWT token is available for authentication.  
-- The workbook file exists in the specified storage location and folder.  
-- You are using API version **v3.0**.
-
 ## The Delete Worksheet Charts Web API
 
 ```http

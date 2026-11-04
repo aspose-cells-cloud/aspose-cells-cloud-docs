@@ -12,10 +12,6 @@ weight: 100
 ---
 The **GetHorizontalPageBreaks** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/horizontalpagebreaks`) retrieves descriptions of horizontal page breaks—row-based breaks that force a worksheet to start a new printed page after a specified row—in the named worksheet of the specified workbook via Aspose.Cells Cloud, supporting precise control over printed output layout.
 
-## Security and Authentication
-
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
-
 ## The Get Horizontal Page Breaks Web API
 
 ```http

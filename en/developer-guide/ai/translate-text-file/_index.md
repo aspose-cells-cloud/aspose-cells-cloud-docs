@@ -19,8 +19,6 @@ The **TranslateTextFile** endpoint leverages Aspose.Cells Cloud AI services to t
 
 The service preserves original line breaks, indentation, and special characters, automatically appends a `_translated` suffix to uploaded filenames, and returns the result as a binary stream.
 
-> **Prerequisites**  
-> Before using this API, you need an [App SID and App Key](https://dashboard.aspose.cloud/) from the Aspose Cloud Dashboard. See the [Authentication Guide](/cells-cloud/authentication/) for implementation details.
 
 ---
 

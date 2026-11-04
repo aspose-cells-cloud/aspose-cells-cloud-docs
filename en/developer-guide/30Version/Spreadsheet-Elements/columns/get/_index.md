@@ -37,18 +37,6 @@ The **GetWorksheetColumn** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/
 
 ---
 
-## Authentication
-
-All Aspose.Cells Cloud APIs use **JWT token‑based authentication**. Include the token in the `Authorization` header:
-
-```http
-Authorization: Bearer <access_token>
-```
-
-For details on obtaining a token, see the [Authentication Guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
-
----
-
 ## The Get Worksheet Column Web API
 
 ```http

@@ -39,10 +39,6 @@ You can export to the following formats:
 | NUMBERS | .numbers  | application/vnd.apple.numbers                                     |
 | FODS    | .fods     | application/vnd.oasis.opendocument.spreadsheet-flat-xml           |
 
-## Security and Authentication
-
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
-
 ## The Get Worksheet with Format Web API
 
 ```http

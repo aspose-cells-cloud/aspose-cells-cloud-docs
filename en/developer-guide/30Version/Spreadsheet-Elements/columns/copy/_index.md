@@ -26,27 +26,6 @@ The **Copy Columns** operation in Aspose.Cells Cloud REST API v3.0 enables you t
 
 ---
 
-## Security and Authentication
-
-All Aspose.Cells Cloud API requests require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/). Obtain your `clientId` and `clientSecret` from the [Aspose.Cloud Dashboard](https://dashboard.aspose.cloud/), then generate a short-lived access token using the OAuth2 client credentials flow.
-
-Example token request (cURL):
-
-```bash
-curl -X POST "https://api.aspose.cloud/connect/token" \
-  -d "grant_type=client_credentials&client_id=YOUR_CLIENT_ID&client_secret=YOUR_CLIENT_SECRET" \
-  -H "Content-Type: application/x-www-form-urlencoded" \
-  -H "Accept: application/json"
-```
-
-Include the resulting `access_token` in all API requests as:
-
-```http
-Authorization: Bearer <access_token>
-```
-
----
-
 ## The Post Copy Worksheet Columns Web API
 
 ```http

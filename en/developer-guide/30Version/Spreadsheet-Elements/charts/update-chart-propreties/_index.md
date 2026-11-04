@@ -11,10 +11,6 @@ linktitle: "Update Chart Properties"
 ---
 The **PostWorksheetChart** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}`) enables developers to update chart properties in a worksheet using Aspose.Cells Cloud, allowing precise programmatic control over chart appearance and behavior by sending a modified chart object in the request body.
 
-### **Security and Authentication**
-
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
-
 ## The Post Worksheet Chart Web API
 
 ```http

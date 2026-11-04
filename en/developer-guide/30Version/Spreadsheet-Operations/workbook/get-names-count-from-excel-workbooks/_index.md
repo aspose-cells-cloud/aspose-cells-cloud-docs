@@ -17,10 +17,6 @@ ArticleTitle: "Get Names from an Excel Workbook – Aspose.Cells Cloud API"
 ---
 The **GetWorkbookNames** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/names`) retrieves named ranges (defined names) from an Excel workbook stored in cloud storage, enabling developers to programmatically access workbook-level references such as named cells, ranges, or formulas. Aspose.Cells Cloud supports this operation via a simple RESTful interface, allowing integration with applications written in .NET, Java, Go, Node.js, Python, and other languages through dedicated SDKs.
 
-### **Security and Authentication**
-
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
-
 ## The Get Workbook Names Web API
 
 ```http

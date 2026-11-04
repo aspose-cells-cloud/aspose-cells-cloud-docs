@@ -12,10 +12,6 @@ weight: 74
 ---
 The **PostWorksheetCellsRangeColumnWidth** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/columnWidth`) enables developers to set the column width of a specified range within a worksheet using Aspose.Cells Cloud, requiring the workbook name, worksheet name, a range object in the request body, and a numeric width value in the query string.
 
-## Security and Authentication
-
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
-
 ## The Post Worksheet Cells Range Column Width Web API
 
 ```http

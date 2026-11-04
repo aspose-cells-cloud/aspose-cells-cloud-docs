@@ -12,10 +12,6 @@ weight: 180
 ---
 The **PutWorksheetBackground** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/background`) in Aspose.Cells Cloud enables developers to set a background image for a specific worksheet by uploading an image file or referencing an existing image path, supporting options like `picPath` and `File` form-data parameter to customize the background or watermark.
 
-## Security and Authentication
-
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
-
 ## The Put Worksheet Background Web API
 
 ```http

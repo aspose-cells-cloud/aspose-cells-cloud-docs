@@ -25,12 +25,6 @@ This API is ideal for:
 - Converting financial data to CSV for downstream processing
 - Exporting charts or tables as scalable vector graphics (SVG) for responsive UIs
 
-> **Prerequisites**
->
-> - An active [Aspose.Cells Cloud account](https://purchase.aspose.cloud/trial)
-> - Valid `Client ID` and `Client Secret` (see [Getting Started](https://docs.aspose.cloud/total/getting-started/))
-> - Workbook uploaded to Aspose Cloud storage (e.g., `Default` storage)
-> - JWT access token for authentication (see [Authenticating Requests](https://docs.aspose.cloud/total/quick-start/authenticating-requests/))
 
 ---
 

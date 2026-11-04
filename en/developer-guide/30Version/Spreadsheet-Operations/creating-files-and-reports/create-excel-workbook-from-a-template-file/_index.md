@@ -17,18 +17,6 @@ The **PutWorkbookCreate** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}`)
 
 ---
 
-## Authentication
-
-All Aspose.Cells Cloud requests require a **Bearer JWT token** passed in the `Authorization` header:
-
-```http
-Authorization: Bearer {access_token}
-```
-
-The token must be obtained beforehand and is valid for 1 hour by default.
-
----
-
 ## The Put Workbook Create Web API
 
 ```http

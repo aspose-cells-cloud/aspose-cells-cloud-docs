@@ -13,14 +13,6 @@ ArticleTitle: "Export Excel Chart to PDF, PNG, SVG with Aspose.Cells Cloud API"
 ---
 The **ExportChartAsFormat** API (`GET https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/charts/{chartIndex}`) in Aspose.Cells Cloud converts a chart from a spreadsheet stored in cloud storage directly to a target format—such as PDF, PNG, or SVG—without downloading the source file, enabling efficient, server-side conversion with reduced bandwidth and improved performance for large workbooks.
 
-{{% alert color="primary" %}}  
-✅ **Prerequisites**:
-
-- An [Aspose Cloud account](https://dashboard.aspose.cloud/)
-- Valid `Client ID` and `Client Secret`
-- A workbook uploaded to Aspose Cloud Storage  
-  {{% /alert %}}
-
 ## Overview
 
 Export a chart from a workbook stored in Aspose Cloud Storage to a target format (PDF, PNG, SVG, etc.) in a single API call — **without downloading the source file**. This cloud-native operation improves performance, reduces bandwidth usage, and enables server-side conversion at scale.

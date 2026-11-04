@@ -15,8 +15,6 @@ ArticleTitle: "Import Double Array into Excel Worksheet – Aspose.Cells Cloud G
 ---
 The **PostImport** API (`POST https://api.aspose.cloud/v3.0/cells/import`) enables importing double-array data into an Excel worksheet via Aspose.Cells Cloud, supporting output in multiple formats such as XLSX, PDF, CSV, and image types, with optional parameters like password protection and regional settings for flexible data import workflows.
 
-> **Prerequisites:** You must have a valid JWT token before calling this API. See the authentication guide for details.
-
 You send an HTTP request with **multipart** content (see [RFC 2046](https://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](https://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)).  
 The first part of the multipart body contains the **ImportDoubleArrayOption** data and the second part contains the data file.
 
