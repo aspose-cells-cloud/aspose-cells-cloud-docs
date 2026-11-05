@@ -78,11 +78,11 @@ Removes duplicate values in the worksheet, range, or table. This method scans th
 | -------------- | ----- | ----------- |
 | [TBD]          | [TBD] | [TBD]       |
 
-## How to Use the Remove Duplicates with SDKs
+## How to Use the Remove Duplicates API with SDKs?
 
-### Remove Duplicates Specification
+### Remove Duplicates API Specification
 
-The [Remove Duplicates API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/{Transform}/{RemoveDuplicates}) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Transform/RemoveDuplicates" rel="noopener noreferrer">Remove Duplicates API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
@@ -112,10 +112,6 @@ curl -v "https://api.aspose.cloud/v4.0/cells/remove/duplicates?worksheet=Sheet1&
 {< /tabs >}
 
 ### Use Aspose Cells Cloud SDKs
-
-Using an SDK is the fastest way to accelerate development. An SDK abstracts low‑level details, allowing you to focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
-
-The following code examples demonstrate how to call Aspose Cells Cloud web services using various SDKs:
 
 ```csharp
 // SDK example code for C#
@@ -185,3 +181,8 @@ try:
 except ApiException as e:
     print("Exception when calling TransformApi->remove_duplicates: %s\\n" % e)
 ```
+
+### Use Aspose.Cells Cloud SDKs
+
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

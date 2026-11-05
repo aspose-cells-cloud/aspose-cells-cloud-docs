@@ -138,9 +138,11 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/spreadsheet/pdf" \
 
 ---
 
-## SDK Examples
+## How to Use the Convert Spreadsheet to PDF API with SDKs?
 
-Aspose.Cells Cloud provides SDKs for major languages to simplify integration. Below are representative snippets. For full code and additional features, see the [GitHub repository](https://github.com/aspose-cells-cloud).
+### Convert Spreadsheet to PDF API Specification
+
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertSpreadsheetToPdf" rel="noopener noreferrer">Convert Spreadsheet to PDF API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 {{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 {{< tab tabNum="1" >}}
@@ -285,3 +287,8 @@ os.WriteFile("converted.pdf", pdfBytes, 0644)
 
 {{< /tab >}}
 {{< /tabs >}}
+
+### Use Aspose.Cells Cloud SDKs
+
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

@@ -164,7 +164,39 @@ curl -v "https://api.aspose.cloud/v3.0/cells/batch/protect" \
 
 ---
 
-### SDK Code Examples
+### Best Practices
+
+1. **Use Specific Patterns**  
+   Avoid overly broad regex (e.g., `.*`) that might accidentally match unintended files. Test patterns in a sandbox first.
+
+2. **Secure Passwords**  
+   Never hardcode passwords in code. Use environment variables or a secrets manager.
+
+3. **Output Folder Isolation**  
+   Always specify `OutFolder` to avoid overwriting originals.
+
+4. **Error Handling**  
+   Log responses to detect partial failures (e.g., some files skipped due to corruption).
+
+5. **File Format Support**  
+   While Aspose.Cells Cloud supports 30+ formats, batch protection is optimized for Excel formats (`.xlsx`, `.xls`, `.xlsm`, `.xlsb`). Use dedicated endpoints for non-Excel formats.
+
+---
+
+### Related Resources
+
+- [Encrypt, Decrypt, and Digitally Sign Excel Files](https://docs.aspose.cloud/cells/protect/)
+- [Batch Merge Excel Files](https://docs.aspose.cloud/cells/batch/merge/)
+- [Batch Convert Excel Files](https://docs.aspose.cloud/cells/batch/convert/)
+- [Aspose.Cells Cloud SDKs on GitHub](https://github.com/aspose-cells-cloud)
+
+> **Last updated**: May 22, 2024
+
+## How to Use the Post Batch Protect API with SDKs?
+
+### Post Batch Protect API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Batch/PostBatchProtect" rel="noopener noreferrer">Post Batch Protect API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 Using an SDK is the recommended approach for production integrations. SDKs handle authentication, serialization, and error handling.
 
@@ -435,30 +467,36 @@ fmt.Printf("Status: %s\n", *response.Code)
 
 ---
 
-### Best Practices
+### Use Aspose.Cells Cloud SDKs
 
-1. **Use Specific Patterns**  
-   Avoid overly broad regex (e.g., `.*`) that might accidentally match unintended files. Test patterns in a sandbox first.
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
-2. **Secure Passwords**  
-   Never hardcode passwords in code. Use environment variables or a secrets manager.
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 
-3. **Output Folder Isolation**  
-   Always specify `OutFolder` to avoid overwriting originals.
-
-4. **Error Handling**  
-   Log responses to detect partial failures (e.g., some files skipped due to corruption).
-
-5. **File Format Support**  
-   While Aspose.Cells Cloud supports 30+ formats, batch protection is optimized for Excel formats (`.xlsx`, `.xls`, `.xlsm`, `.xlsb`). Use dedicated endpoints for non-Excel formats.
-
----
-
-### Related Resources
-
-- [Encrypt, Decrypt, and Digitally Sign Excel Files](https://docs.aspose.cloud/cells/protect/)
-- [Batch Merge Excel Files](https://docs.aspose.cloud/cells/batch/merge/)
-- [Batch Convert Excel Files](https://docs.aspose.cloud/cells/batch/convert/)
-- [Aspose.Cells Cloud SDKs on GitHub](https://github.com/aspose-cells-cloud)
-
-> **Last updated**: May 22, 2024
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExamplePostBatchProtect.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_PostBatchProtect.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_PostBatchProtect.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_PostBatchProtect.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PostBatchProtect.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_PostBatchProtect.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_PostBatchProtect.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_PostBatchProtect.go" >}}
+{{</tab>}}
+{{< /tabs >}}

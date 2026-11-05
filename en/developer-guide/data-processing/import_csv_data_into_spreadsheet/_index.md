@@ -10,7 +10,6 @@ keywords: "Aspose.Cells, CSV import, spreadsheet, API"
 description: "Import CSV data file into the local spreadsheet using Aspose.Cells Cloud API."
 weight: 100
 ---
-
 The **ImportCSVDataIntoSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/import/data/csv`) in Aspose.Cells Cloud enables direct import of CSV data into an existing spreadsheet by parsing the file, mapping its contents to the specified worksheet and starting cell, and saving the updated file locally; it supports formats such as .xlsx and .ods and allows optional control over insertion behavior, numeric conversion, and locale-specific formatting.
 
 ## The Import CSVData Into Spreadsheet Web API
@@ -77,11 +76,11 @@ Content-Disposition: attachment; filename="result"
 
 Import CSV data file into the local spreadsheet. The method parses the CSV, maps the data to the spreadsheet's cell structure, and saves the file locally. Supported spreadsheet formats include .xlsx and .ods.
 
-## How to Use the Import CSV Data Into Spreadsheet with SDKs
+## How to Use the Import CSVData Into Spreadsheet API with SDKs?
 
-### Import CSV Data Into Spreadsheet Specification
+### Import CSVData Into Spreadsheet API Specification
 
-The [Import CSV Data Into Spreadsheet API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/ImportCSVDataIntoSpreadsheet) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/ImportCSVDataIntoSpreadsheet" rel="noopener noreferrer">Import CSVData Into Spreadsheet API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
@@ -116,6 +115,7 @@ curl -v "https://api.aspose.cloud/v4.0/cells/import/data/csv?worksheet=Sheet1&st
 
 ### Use Aspose Cells Cloud SDKs
 
-Using an SDK is the fastest way to accelerate development. An SDK abstracts low-level details, allowing you to focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
+### Use Aspose.Cells Cloud SDKs
 
-The following code examples demonstrate how to call Aspose Cells Cloud web services using various SDKs:
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

@@ -9,7 +9,6 @@ keywords: "Excel password protection API, open password, modify password, spread
 weight: 100
 ArticleTitle: "Aspose.Cells Cloud Protect Spreadsheet API: Set Open & Modify Passwords Programmatically"
 ---
-
 The **ProtectSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/protection/spreadsheet`) in Aspose.Cells Cloud applies dual-layer password protection to Excel spreadsheets, allowing developers to set both an open password (to restrict file access) and a modify password (to prevent editing) in a single request, with passwords encrypted for enhanced security.
 
 This API supports modern formats (`.xlsx`, `.xlsm`, `.xlsb`) and legacy `.xls` files, and integrates seamlessly with cloud storage and regional settings for global deployments.
@@ -131,64 +130,6 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/protection/spreadsheet?password
 
 > 💡 **Tip**: Replace `open123`/`edit456` with strong passwords. Use empty strings (`password=&modifyPassword=`) to _remove_ protection.
 
-### SDK Examples
-
-#### Python
-
-```python
-import asposecellscloud
-from asposecellscloud.api import cells_api
-
-# Initialize API client
-configuration = asposecellscloud.Configuration(
-    app_sid="YOUR_CLIENT_ID",
-    app_key="YOUR_CLIENT_SECRET"
-)
-api = cells_api.CellsApi(configuration)
-
-# Protect with open + modify passwords
-response = api.cells_workbook_put_protection(
-    name="workbook.xlsx",
-    password="open123",
-    modify_password="edit456",
-    folder="input",
-    out_folder="output"
-)
-print("Protected file saved to:", response.file_name)
-```
-
-#### Java
-
-```java
-import com.aspose.cells.cloud.*;
-
-public class ProtectSpreadsheet {
-    public static void main(String[] args) {
-        String clientId = "YOUR_CLIENT_ID";
-        String clientKey = "YOUR_CLIENT_SECRET";
-
-        CellsApi api = new CellsApi(clientId, clientKey);
-
-        try {
-            File file = new File("workbook.xlsx");
-            String response = api.cellsWorkbookPutProtection(
-                "workbook.xlsx",
-                "open123",
-                "edit456",
-                null,
-                null
-            );
-            System.out.println("Protection applied: " + response);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-}
-```
-
-> 📚 Browse all SDKs: [Aspose.Cells Cloud GitHub Repository](https://github.com/aspose-cells-cloud)  
-> 🔗 See language-specific guides: [Python SDK](/cells/python/), [Java SDK](/cells/java/), [Node.js SDK](/cells/nodejs/)
-
 ### Using Cloud Storage Paths
 
 Save directly to cloud storage with `outPath` and `outStorageName`:
@@ -199,3 +140,25 @@ curl -X PUT \
   -H "Authorization: Bearer $TOKEN" \
   -F "Spreadsheet=@workbook.xlsx"
 ```
+
+## How to Use the Protect Spreadsheet API with SDKs?
+
+### Protect Spreadsheet API Specification
+
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Protection/ProtectSpreadsheet" rel="noopener noreferrer">Protect Spreadsheet API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
+
+### Use Aspose.Cells Cloud SDKs
+
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
+
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+
+{{<tabs tabTotal="2" tabID="1" tabName1="PHP" tabName2="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ProtectSpreadsheet.php" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ProtectSpreadsheet.go" >}}
+{{</tab>}}
+{{< /tabs >}}

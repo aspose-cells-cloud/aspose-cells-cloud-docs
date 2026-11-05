@@ -96,7 +96,60 @@ curl -X PUT \
 
 ---
 
-## SDK Examples
+## How It Works
+
+- **String cells** → Scanned for delimiters (e.g., `"Total"`) or positional boundaries.
+- **Numeric/date cells** → Converted to text _using workbook locale_ before extraction (e.g., `123.45` → `"123"` for left 3).
+- **Empty cells** → Output remains empty.
+- **No delimiter found?** → Returns empty string (no errors).
+- **Preserves source data**: Formulas, formatting, and validation rules remain intact.
+
+> 💡 **Memory-efficient**: Processes in streaming mode—suitable for large datasets (millions of rows).
+
+---
+
+## Supported Extraction Modes
+
+| Mode             | Description                                                  | Example Input (`A1 = "Total: $123.45"`) | Output (`B1`) |
+| ---------------- | ------------------------------------------------------------ | --------------------------------------- | ------------- |
+| `Before`         | Extract text _before_ a specified substring                  | `beforeText = "Total:"`                 | `""` (empty)  |
+| `After`          | Extract text _after_ a specified substring                   | `afterText = "Total: "`                 | `$123.45`     |
+| `BeforePosition` | Extract first _n_ characters from the _left_ (pos = 1-based) | `beforePosition = 5`                    | `Total`       |
+| `AfterPosition`  | Extract last _n_ characters from the _right_ (pos = 1-based) | `afterPosition = 4`                     | `123.45`      |
+
+---
+
+## Response
+
+### Success (200 OK)
+
+- If `outPath` is **not** provided: Returns the updated workbook as a binary stream.
+- If `outPath` **is** provided: Returns JSON confirmation:
+
+```json
+{
+  "Code": 200,
+  "Status": "OK",
+  "Description": "Workbook saved to /output/extracted.xlsx"
+}
+```
+
+### Error Codes
+
+| Code | Meaning                                       |
+| ---- | --------------------------------------------- |
+| 200  | Success                                       |
+| 202  | Accepted (asynchronous)                       |
+| 400  | Invalid parameters or missing required fields |
+| 401  | Invalid/missing JWT token                     |
+| 404  | Workbook not found                            |
+| 500  | Internal server error                         |
+
+## How to Use the Extract Text API with SDKs?
+
+### Extract Text API Specification
+
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/TextProcessing/ExtractText" rel="noopener noreferrer">Extract Text API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Node.js (with `asposecellscloud`)
 
@@ -155,51 +208,7 @@ print("Extraction completed:", result)
 
 ---
 
-## How It Works
+### Use Aspose.Cells Cloud SDKs
 
-- **String cells** → Scanned for delimiters (e.g., `"Total"`) or positional boundaries.
-- **Numeric/date cells** → Converted to text _using workbook locale_ before extraction (e.g., `123.45` → `"123"` for left 3).
-- **Empty cells** → Output remains empty.
-- **No delimiter found?** → Returns empty string (no errors).
-- **Preserves source data**: Formulas, formatting, and validation rules remain intact.
-
-> 💡 **Memory-efficient**: Processes in streaming mode—suitable for large datasets (millions of rows).
-
----
-
-## Supported Extraction Modes
-
-| Mode             | Description                                                  | Example Input (`A1 = "Total: $123.45"`) | Output (`B1`) |
-| ---------------- | ------------------------------------------------------------ | --------------------------------------- | ------------- |
-| `Before`         | Extract text _before_ a specified substring                  | `beforeText = "Total:"`                 | `""` (empty)  |
-| `After`          | Extract text _after_ a specified substring                   | `afterText = "Total: "`                 | `$123.45`     |
-| `BeforePosition` | Extract first _n_ characters from the _left_ (pos = 1-based) | `beforePosition = 5`                    | `Total`       |
-| `AfterPosition`  | Extract last _n_ characters from the _right_ (pos = 1-based) | `afterPosition = 4`                     | `123.45`      |
-
----
-
-## Response
-
-### Success (200 OK)
-
-- If `outPath` is **not** provided: Returns the updated workbook as a binary stream.
-- If `outPath` **is** provided: Returns JSON confirmation:
-
-```json
-{
-  "Code": 200,
-  "Status": "OK",
-  "Description": "Workbook saved to /output/extracted.xlsx"
-}
-```
-
-### Error Codes
-
-| Code | Meaning                                       |
-| ---- | --------------------------------------------- |
-| 200  | Success                                       |
-| 202  | Accepted (asynchronous)                       |
-| 400  | Invalid parameters or missing required fields |
-| 401  | Invalid/missing JWT token                     |
-| 404  | Workbook not found                            |
-| 500  | Internal server error                         |
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

@@ -121,21 +121,6 @@ Content-Length: 8423
 
 {{< /tabs >}}
 
-### Using Aspose.Cells Cloud SDKs
-
-Using the SDK is the fastest way to develop, as it abstracts away low-level details and handles authentication automatically.
-
-Explore the complete list of Aspose.Cells Cloud SDKs in our [GitHub repository](https://github.com/aspose-cells-cloud).
-
-The following code examples illustrate how to call the API using various SDKs:
-
-- [C#](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet)
-- [Java](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java)
-- [Python](https://github.com/aspose-cells-cloud/aspose-cells-cloud-python)
-- [Node.js](https://github.com/aspose-cells-cloud/aspose-cells-cloud-node)
-
-> **Tip**: If loading from Gist is blocked, download the examples directly from the repository.
-
 ## Key Features and Benefits
 
 - **Cloud-Native Conversion**: Convert local spreadsheets directly in the cloud without storing them in cloud storage.
@@ -151,3 +136,36 @@ The publicly accessible [OpenAPI Specification](https://reference.aspose.cloud/c
 - [Convert Entire Workbook to Image](/convert-workbook-to-image/)
 - [Convert Excel to PDF](/convert-excel-to-pdf/)
 - [Excel to HTML Conversion](/excel-to-html/)
+
+## How to Use the Convert Range to Image API with SDKs?
+
+### Convert Range to Image API Specification
+
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertRangeToImage" rel="noopener noreferrer">Convert Range to Image API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
+
+Explore the complete list of Aspose.Cells Cloud SDKs in our [GitHub repository](https://github.com/aspose-cells-cloud).
+
+The following code examples illustrate how to call the API using various SDKs:
+
+- [C#](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet)
+- [Java](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java)
+- [Python](https://github.com/aspose-cells-cloud/aspose-cells-cloud-python)
+- [Node.js](https://github.com/aspose-cells-cloud/aspose-cells-cloud-node)
+
+> **Tip**: If loading from Gist is blocked, download the examples directly from the repository.
+
+### Use Aspose.Cells Cloud SDKs
+
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
+
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+
+{{<tabs tabTotal="2" tabID="4" tabName1="PHP" tabName2="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ConvertRangeToImage.php" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ConvertRangeToImage.go" >}}
+{{</tab>}}
+{{< /tabs >}}

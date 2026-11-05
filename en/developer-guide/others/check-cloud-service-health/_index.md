@@ -112,3 +112,14 @@ func main() {
     fmt.Printf("Service Status: %s\n", *resp.Status)
 }
 ```
+
+## How to Use the Check Cloud Service Health API with SDKs?
+
+### Check Cloud Service Health API Specification
+
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/CellsStatus/CheckCloudServiceHealth" rel="noopener noreferrer">Check Cloud Service Health API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
+
+### Use Aspose.Cells Cloud SDKs
+
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

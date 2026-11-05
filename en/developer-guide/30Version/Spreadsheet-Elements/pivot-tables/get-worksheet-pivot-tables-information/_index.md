@@ -10,7 +10,6 @@ description: "Get all PivotTables from an Excel worksheet via Aspose.Cells Cloud
 weight: 100
 ArticleTitle: "Get All Pivot Tables in an Excel Worksheet – Aspose.Cells Cloud API"
 ---
-
 The **GetWorksheetPivotTables** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables`) retrieves descriptions of all PivotTables in a specified worksheet using Aspose.Cells Cloud, enabling developers to programmatically inspect PivotTable structure and metadata without local Excel installation.
 
 ## The Get Worksheet Pivot Tables Web API
@@ -80,49 +79,42 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/work
 
 {{< /tab >}}
 
-## Cloud SDK Family
+## How to Use the Get Worksheet Pivot Tables API with SDKs?
 
-Using an SDK is the fastest way to develop. An SDK handles low‑level details so you can focus on your project. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+### Get Worksheet Pivot Tables API Specification
 
-The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
+The <a href="https://reference.aspose.cloud/cells/#/PivotTables/GetWorksheetPivotTables" rel="noopener noreferrer">Get Worksheet Pivot Tables API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
-{{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
+### Use Aspose.Cells Cloud SDKs
 
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Examples-DotNET-CSharp-PivotTables-GetWorksheetPivotTables-1.cs" >}}
-{{< /tab >}}
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Examples-Java-pivottables-GetPivotTableWorksheet-GetPivotTableWorksheet-12345.java" >}}
-{{< /tab >}}
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 
-{{< tab tabNum="3" >}}
-{{< /tab >}}
-
-{{< tab tabNum="4" >}}
-{{< /tab >}}
-
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "GetWorksheetPivotTablesInformation.py" >}}
-{{< /tab >}}
-
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Examples-Node.js-SDK-PivotTables-GetWorksheetPivotTables-1.js" >}}
-{{< /tab >}}
-
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "9d725d4678edaac53f95c5208e17783c" "Examples-Android-pivottables-GetPivotTableWorksheet-GetPivotTableWorksheet-12345.java" >}}
-{{< /tab >}}
-
-{{< tab tabNum="8" >}}
-{{< /tab >}}
-
-{{< tab tabNum="9" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Examples-Perl-PivotTables-GetWorksheetPivotTables-1.pl" >}}
-{{< /tab >}}
-
-{{< tab tabNum="10" >}}
-{{< gist "aspose-cells-cloud-gists" "6b30a17927feeb2899283e4dbe566c42" >}}
-{{< /tab >}}
-
+{{<tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExampleGetWorksheetPivotTables.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_GetWorksheetPivotTables.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_GetWorksheetPivotTables.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_GetWorksheetPivotTables.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_GetWorksheetPivotTables.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_GetWorksheetPivotTables.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_GetWorksheetPivotTables.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_GetWorksheetPivotTables.go" >}}
+{{</tab>}}
 {{< /tabs >}}

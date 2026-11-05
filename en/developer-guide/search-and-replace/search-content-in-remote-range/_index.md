@@ -8,7 +8,6 @@ keywords: "Aspose.Cells Cloud, Excel REST API, text search, remote range search,
 weight: 100
 ArticleTitle: "Search Excel Range Content in Aspose.Cells Cloud API"
 ---
-
 The **SearchContentInRemoteRange** API (`PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{cellArea}/search/content`) enables programmatic text, number, or formula search within a specified range of an Excel workbook stored in Aspose.Cells Cloud, supporting remote, cloud-based processing without downloading the file—ideal for automated data discovery, content analysis, and spreadsheet auditing workflows.
 
 ## API Overview
@@ -129,7 +128,11 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/MyWorkbook.xlsx/worksheets/Orde
 
 ---
 
-## Using SDKs
+## How to Use the Search Content in Remote Range API with SDKs?
+
+### Search Content in Remote Range API Specification
+
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Search/SearchContentInRemoteRange" rel="noopener noreferrer">Search Content in Remote Range API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 The SDKs handle authentication, serialization, and error handling—letting you focus on business logic. View full examples on [GitHub](https://github.com/aspose-cells-cloud).
 
@@ -273,3 +276,8 @@ resp, _, err := cellsAPI.CellsSearchContentInRemoteRange(
 
 {{< /tab >}}
 {{< /tabs >}}
+
+### Use Aspose.Cells Cloud SDKs
+
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

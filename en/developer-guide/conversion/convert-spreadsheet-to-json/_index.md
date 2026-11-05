@@ -123,7 +123,11 @@ The API returns the converted JSON as a file stream (or saves it to storage if `
 - **Full locale & format support** — Handle password-protected, region-specific, and complex workbooks.
 - **Scalable & reliable** — Handles large files and formula recalculation efficiently.
 
-## SDK Examples
+## How to Use the Convert Spreadsheet to JSON API with SDKs?
+
+### Convert Spreadsheet to JSON API Specification
+
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertSpreadsheetToJson" rel="noopener noreferrer">Convert Spreadsheet to JSON API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 Use our official SDKs to simplify integration. All SDKs include type safety, automatic retries, and error handling.
 
@@ -330,3 +334,8 @@ func main() {
 {{< /tabs >}}
 
 > 📦 **All SDKs**: [GitHub Organization](https://github.com/aspose-cells-cloud)
+
+### Use Aspose.Cells Cloud SDKs
+
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

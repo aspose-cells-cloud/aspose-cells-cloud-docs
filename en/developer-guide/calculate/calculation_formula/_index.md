@@ -75,11 +75,11 @@ Calculates a specified formula in a given worksheet of an uploaded spreadsheet f
 | -------------- | ----- | ----------- |
 | [TBD]          | [TBD] | [TBD]       |
 
-## How to Use the Calculate Formula with SDKs
+## How to Use the Calculation Formula API with SDKs?
 
-### Calculate Formula Specification
+### Calculation Formula API Specification
 
-The [Calculate Formula API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Calculate/CalculationFormula) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Calculate/CalculationFormula" rel="noopener noreferrer">Calculation Formula API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command-line tool to access Aspose Cells Cloud web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
@@ -113,6 +113,7 @@ curl -v "https://api.aspose.cloud/v4.0/cells/calculate/formula?worksheet=Sheet1&
 
 ### Use Aspose Cells Cloud SDKs
 
-Using an SDK is the fastest way to accelerate development. An SDK abstracts low-level details, allowing you to focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
+### Use Aspose.Cells Cloud SDKs
 
-The following code examples demonstrate how to call Aspose Cells Cloud web services using various SDKs:
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

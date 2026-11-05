@@ -92,11 +92,11 @@ Only string‑type cells are processed; numbers, booleans and formulas are conve
 | -------------- | ---- | ----------------------------------------------- |
 | -              | -    | No request body is required for this operation. |
 
-## How to Use the Remove Duplicate Substrings In Remote Spreadsheet with SDKs
+## How to Use the Remove Duplicate Substrings in Remote Spreadsheet API with SDKs?
 
-### Remove Duplicate Substrings In Remote Spreadsheet Specification
+### Remove Duplicate Substrings in Remote Spreadsheet API Specification
 
-The [Remove Duplicate Substrings In Remote Spreadsheet API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/TextProcessing/RemoveDuplicateSubstringsInRemoteSpreadsheet) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/TextProcessing/RemoveDuplicateSubstringsInRemoteSpreadsheet" rel="noopener noreferrer">Remove Duplicate Substrings in Remote Spreadsheet API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
@@ -129,6 +129,7 @@ curl -v "https://api.aspose.cloud/v4.0/cells/MyWorkbook.xlsx/worksheets/Sheet1/r
 
 ### Use Aspose Cells Cloud SDKs
 
-Using an SDK is the fastest way to accelerate development. An SDK abstracts low-level details, allowing you to focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
+### Use Aspose.Cells Cloud SDKs
 
-The following code examples demonstrate how to call Aspose Cells Cloud web services using various SDKs:
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

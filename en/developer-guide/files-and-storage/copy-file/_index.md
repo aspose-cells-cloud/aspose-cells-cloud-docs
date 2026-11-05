@@ -75,63 +75,6 @@ curl -X PUT \
   -H "Accept: application/json"
 ```
 
-### SDK Examples
-
-Using an SDK simplifies authentication, serialization, and error handling. Below are working examples for key languages.
-
-#### Go
-
-```go
-import (
-    "context"
-    "github.com/aspose-cells-cloud/aspose-cells-cloud-go/v44/cells"
-)
-
-config := cells.NewConfiguration()
-client := cells.NewCellsApiWithClientConfiguration(config)
-
-_, _, err := client.CopyFile(context.Background(), &cells.CopyFileRequest{
-    SrcPath:      "source.xlsx",
-    DestPath:     "dest.xlsx",
-    SrcStorageName: "MyStorage",
-    DestStorageName: "MyStorage",
-})
-if err != nil {
-    panic(err)
-}
-```
-
-#### Python
-
-```python
-from asposecellscloud.api import cells_api
-from asposecellscloud.models import CopyFileRequest
-
-api = cells_api.CellsApi(client_id, client_secret)
-request = CopyFileRequest(
-    src_path="source.xlsx",
-    dest_path="dest.xlsx",
-    src_storage_name="MyStorage",
-    dest_storage_name="MyStorage"
-)
-api.copy_file(request)
-```
-
-#### Node.js
-
-```javascript
-const { CellsApi } = require("aspose-cells-cloud");
-const client = new CellsApi(process.env.CLIENT_ID, process.env.CLIENT_SECRET);
-
-await client.copyFile("source.xlsx", {
-  destPath: "dest.xlsx",
-  srcStorageName: "MyStorage",
-  destStorageName: "MyStorage",
-});
-```
-
-> 🔗 [GitHub Repository](https://github.com/aspose-cells-cloud) | [API Reference](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/File/CopyFile)
-
 ### Related Operations
 
 | Operation       | Description                           | Link               |
@@ -140,3 +83,45 @@ await client.copyFile("source.xlsx", {
 | `DeleteFile`    | Remove a file from storage            | `/delete-file/`    |
 | `GetWorkbook`   | Retrieve a workbook from storage      | `/download-file/`  |
 | `CloneWorkbook` | Create a new workbook from a template | `/clone-workbook/` |
+
+## How to Use the Copy File API with SDKs?
+
+### Copy File API Specification
+
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/File/CopyFile" rel="noopener noreferrer">Copy File API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
+
+Using an SDK simplifies authentication, serialization, and error handling. Below are working examples for key languages.
+
+### Use Aspose.Cells Cloud SDKs
+
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
+
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_CopyFile.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_CopyFile.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_CopyFile.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_CopyFile.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_CopyFile.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_CopyFile.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_CopyFile.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_CopyFile.go" >}}
+{{</tab>}}
+{{< /tabs >}}

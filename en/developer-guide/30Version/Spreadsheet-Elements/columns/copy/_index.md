@@ -126,7 +126,23 @@ The workbook is updated in-place in cloud storage. To retrieve the updated file,
 
 ---
 
-## SDK Examples
+## Error Handling
+
+The API returns standard HTTP status codes with a JSON body containing error details.
+
+| Status Code | Meaning                                                | Example Response Body                                             |
+| ----------- | ------------------------------------------------------ | ----------------------------------------------------------------- |
+| `200`       | Success                                                | `{"Code": 200, "Status": "OK"}`                                   |
+| `400`       | Bad Request – invalid column indices or missing params | `{"Code": 400, "Message": "Column index is out of range."}`       |
+| `401`       | Unauthorized – invalid/expired token                   | `{"Code": 401, "Message": "Access token is invalid or expired."}` |
+| `404`       | Not Found – workbook/worksheet does not exist          | `{"Code": 404, "Message": "Workbook 'test.xlsx' not found."}`     |
+| `500`       | Internal Server Error                                  | `{"Code": 500, "Message": "An internal server error occurred."}`  |
+
+## How to Use the Post Copy Worksheet Columns API with SDKs?
+
+### Post Copy Worksheet Columns API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Cells/PostCopyWorksheetColumns" rel="noopener noreferrer">Post Copy Worksheet Columns API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 Using an SDK is the recommended approach for production integrations. It handles authentication, serialization, and error handling automatically.
 
@@ -416,14 +432,36 @@ func main() {
 
 ---
 
-## Error Handling
+### Use Aspose.Cells Cloud SDKs
 
-The API returns standard HTTP status codes with a JSON body containing error details.
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
-| Status Code | Meaning                                                | Example Response Body                                             |
-| ----------- | ------------------------------------------------------ | ----------------------------------------------------------------- |
-| `200`       | Success                                                | `{"Code": 200, "Status": "OK"}`                                   |
-| `400`       | Bad Request – invalid column indices or missing params | `{"Code": 400, "Message": "Column index is out of range."}`       |
-| `401`       | Unauthorized – invalid/expired token                   | `{"Code": 401, "Message": "Access token is invalid or expired."}` |
-| `404`       | Not Found – workbook/worksheet does not exist          | `{"Code": 404, "Message": "Workbook 'test.xlsx' not found."}`     |
-| `500`       | Internal Server Error                                  | `{"Code": 500, "Message": "An internal server error occurred."}`  |
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExamplePostCopyWorksheetColumns.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_PostCopyWorksheetColumns.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_PostCopyWorksheetColumns.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_PostCopyWorksheetColumns.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PostCopyWorksheetColumns.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_PostCopyWorksheetColumns.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_PostCopyWorksheetColumns.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_PostCopyWorksheetColumns.go" >}}
+{{</tab>}}
+{{< /tabs >}}

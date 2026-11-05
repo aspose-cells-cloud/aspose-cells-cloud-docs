@@ -9,7 +9,6 @@ description: "Detect broken Excel links—external refs, hyperlinks, formulas—
 type: docs
 weight: 100
 ---
-
 The **SearchSpreadsheetBrokenLinks** API (`PUT https://api.aspose.cloud/v4.0/cells/search/broken-links`) in Aspose.Cells Cloud identifies broken hyperlinks, invalid external references, and malformed formulas within a local Excel workbook uploaded via form data. The operation runs server-side in the cloud—no local processing or cloud storage required—and returns results in structured JSON, enabling integration into CI/CD pipelines, audit tools, or compliance workflows.
 
 ## The Search Spreadsheet Broken Links Web API
@@ -130,3 +129,43 @@ Aspose.Cells Cloud provides SDKs for C#, Java, PHP, Ruby, Node.js, Python, Perl,
 #### OpenAPI Specification
 
 The endpoint is defined in the public [OpenAPI spec](https://reference.aspose.cloud/cells/#/SearchController/SearchSpreadsheetBrokenLinks). Use this to generate client libraries or integrate with API-gateway tools.
+
+## How to Use the Search Spreadsheet Broken Links API with SDKs?
+
+### Search Spreadsheet Broken Links API Specification
+
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Search/SearchSpreadsheetBrokenLinks" rel="noopener noreferrer">Search Spreadsheet Broken Links API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
+
+### Use Aspose.Cells Cloud SDKs
+
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
+
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+
+{{<tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_SearchSpreadsheetBrokenLinks.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_SearchSpreadsheetBrokenLinks.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_SearchSpreadsheetBrokenLinks.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_SearchSpreadsheetBrokenLinks.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_SearchSpreadsheetBrokenLinks.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_SearchSpreadsheetBrokenLinks.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_SearchSpreadsheetBrokenLinks.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_SearchSpreadsheetBrokenLinks.go" >}}
+{{</tab>}}
+{{< /tabs >}}

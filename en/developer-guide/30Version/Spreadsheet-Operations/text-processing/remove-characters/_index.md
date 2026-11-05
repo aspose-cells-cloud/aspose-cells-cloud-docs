@@ -155,7 +155,31 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/removecharacters" \
 
 ---
 
-## SDK Code Examples
+## Best Practices
+
+1. **Test on a copy**: Always verify the impact on a non-production file first.
+2. **Combine with other tools**: Use in conjunction with `PostCleanObjects` or `PostRemoveBlankRows` for full data cleanup.
+3. **Use `IgnoreCase` carefully**: Set `IgnoreCase = true` only when case-insensitive removal is intended (e.g., for user-facing substrings like `"USD"` or `"°C"`).
+4. **Avoid overlapping operations**: Do not specify both `CustomCharacters` and `Substring` in the same request.
+
+---
+
+## Related Resources
+
+- [Aspose.Cells Cloud Documentation](https://docs.aspose.cloud/cells/)
+- [Full OpenAPI Specification](https://reference.aspose.cloud/cells/#/TextProcessingController/PostRemoveCharacters)
+- [SDK Examples on GitHub](https://github.com/aspose-cells-cloud)
+- [API Pricing & Free Trial](https://purchase.aspose.cloud/pricing)
+
+---
+
+> **Tip**: Need to remove characters _based on position_ (e.g., first 3 chars)? Use the [`PostCellsTrimText`](/excel-trim-text/) API instead.
+
+## How to Use the Post Remove Characters API with SDKs?
+
+### Post Remove Characters API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/TextProcessing/PostRemoveCharacters" rel="noopener noreferrer">Post Remove Characters API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Python (aspose-cells-cloud)
 
@@ -218,22 +242,7 @@ File.WriteAllBytes("output.xlsx", Convert.FromBase64String(response.FileContent)
 
 ---
 
-## Best Practices
+### Use Aspose.Cells Cloud SDKs
 
-1. **Test on a copy**: Always verify the impact on a non-production file first.
-2. **Combine with other tools**: Use in conjunction with `PostCleanObjects` or `PostRemoveBlankRows` for full data cleanup.
-3. **Use `IgnoreCase` carefully**: Set `IgnoreCase = true` only when case-insensitive removal is intended (e.g., for user-facing substrings like `"USD"` or `"°C"`).
-4. **Avoid overlapping operations**: Do not specify both `CustomCharacters` and `Substring` in the same request.
-
----
-
-## Related Resources
-
-- [Aspose.Cells Cloud Documentation](https://docs.aspose.cloud/cells/)
-- [Full OpenAPI Specification](https://reference.aspose.cloud/cells/#/TextProcessingController/PostRemoveCharacters)
-- [SDK Examples on GitHub](https://github.com/aspose-cells-cloud)
-- [API Pricing & Free Trial](https://purchase.aspose.cloud/pricing)
-
----
-
-> **Tip**: Need to remove characters _based on position_ (e.g., first 3 chars)? Use the [`PostCellsTrimText`](/excel-trim-text/) API instead.
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

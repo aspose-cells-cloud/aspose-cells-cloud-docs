@@ -84,13 +84,25 @@ curl -X GET "https://api.aspose.cloud/v4.0/cells/storage/file/input/Report.xlsx?
 
 ---
 
-### Use Aspose.Cells Cloud SDKs
+### OpenAPI Specification
 
-Using an SDK is the best way to speed up development. SDKs handle low-level details like authentication, request formatting, and error handling, enabling you to focus on business logic.
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/FileController/DownloadFile) defines a publicly accessible programming interface for this operation.
+
+You can interact directly with the API using tools like Postman or Swagger UI.
+
+---
+
+### Architecture Overview
+
+![Aspose.Cells Cloud file download architecture](https://docs.aspose.cloud/download/flow-download.png){:width="600" alt="Architecture diagram: Client → API Gateway → Cloud Storage → Binary File Stream"}
+
+## How to Use the Download File API with SDKs?
+
+### Download File API Specification
+
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/File/DownloadFile" rel="noopener noreferrer">Download File API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 Check out the [GitHub repository](https://github.com/aspose-cells-cloud){:target="\_blank" rel="noopener noreferrer"} for a complete list of Aspose.Cells Cloud SDKs.
-
-The following code examples demonstrate how to download a file using various SDKs:
 
 {{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 {{< tab tabNum="1" >}}
@@ -261,14 +273,36 @@ io.Copy(f, response)
 {{< /tab >}}
 {{< /tabs >}}
 
-### OpenAPI Specification
+### Use Aspose.Cells Cloud SDKs
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/FileController/DownloadFile) defines a publicly accessible programming interface for this operation.
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
-You can interact directly with the API using tools like Postman or Swagger UI.
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 
----
-
-### Architecture Overview
-
-![Aspose.Cells Cloud file download architecture](https://docs.aspose.cloud/download/flow-download.png){:width="600" alt="Architecture diagram: Client → API Gateway → Cloud Storage → Binary File Stream"}
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_DownloadFile.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_DownloadFile.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_DownloadFile.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_DownloadFile.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_DownloadFile.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_DownloadFile.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_DownloadFile.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_DownloadFile.go" >}}
+{{</tab>}}
+{{< /tabs >}}

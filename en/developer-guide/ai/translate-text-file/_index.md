@@ -151,7 +151,11 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/ai/translate/text-file?targetLa
 
 ---
 
-## SDK Examples
+## How to Use the Translate Text File API with SDKs?
+
+### Translate Text File API Specification
+
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/AI/TranslateTextFile" rel="noopener noreferrer">Translate Text File API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 Aspose.Cells Cloud SDKs abstract low-level HTTP details and simplify integration. Below are ready-to-run examples in popular languages.
 
@@ -307,3 +311,8 @@ fmt.Printf("Translated file: %s\n", *resp.Name)
 
 {{</tab>}}
 {{</tabs>}}
+
+### Use Aspose.Cells Cloud SDKs
+
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

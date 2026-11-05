@@ -85,11 +85,11 @@ Content-Disposition: attachment; filename="result"
 | -------------- | ---- | ---------------------------------------------- |
 | data           | file | Binary content of the workbook file to create. |
 
-## How to Use the PostBatchSplit API with SDKs
+## How to Use the Post Batch Split API with SDKs?
 
-### PostBatchSplit API Specification
+### Post Batch Split API Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/Batch/PostBatchSplit) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The <a href="https://reference.aspose.cloud/cells/#/Batch/PostBatchSplit" rel="noopener noreferrer">Post Batch Split API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
@@ -121,12 +121,6 @@ curl -v "http://api.aspose.cloud/v3.0/cells/batch/split" \
 
 {{< /tabs >}}
 
-### Use Aspose.Cells Cloud SDKs
-
-Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your split tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
-
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
-
 {{< tabs tabTotal="9" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js"  tabName7="Swift" tabName8="Perl" tabName9="Go" >}}
 
 {{< tab tabNum="1" >}}
@@ -157,3 +151,8 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### Use Aspose.Cells Cloud SDKs
+
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

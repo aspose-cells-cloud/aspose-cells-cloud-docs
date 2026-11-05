@@ -108,7 +108,11 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/spreadsheet/compress?level=7&ou
   --output compressed_output.xlsx
 ```
 
-### SDK Examples
+## How to Use the Compress Spreadsheet API with SDKs?
+
+### Compress Spreadsheet API Specification
+
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Management/CompressSpreadsheet" rel="noopener noreferrer">Compress Spreadsheet API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 See the [Aspose.Cells Cloud GitHub repository](https://github.com/aspose-cells-cloud) for the latest SDK versions and pinned examples.
 
@@ -253,4 +257,17 @@ resp, _, err := cellsApi.CompressSpreadsheet(
 ```
 
 {{< /tab >}}
+{{< /tabs >}}
+
+### Use Aspose.Cells Cloud SDKs
+
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
+
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+
+{{<tabs tabTotal="1" tabID="1" tabName1="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_CompressSpreadsheet.go" >}}
+{{</tab>}}
 {{< /tabs >}}

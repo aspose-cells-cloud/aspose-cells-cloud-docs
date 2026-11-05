@@ -184,18 +184,13 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/task/runtask" \
 
 For more information on related tasks, see the [ImportData task](/cells/tasks/importdata/) and the [SaveResult task](/cells/tasks/save-result/) pages.
 
-## Cloud SDK Family
+## How to Use the Post Run Task API with SDKs?
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+### Post Run Task API Specification
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The <a href="https://reference.aspose.cloud/cells/#/Task/PostRunTask" rel="noopener noreferrer">Post Run Task API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
-{{< tabs tabTotal="1" tabID="4" tabName1="PHP" >}}
+### Use Aspose.Cells Cloud SDKs
 
-{{< tab tabNum="1" >}}
-
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-Workbook-PostTaskDataMultipart-.php" >}}
-
-{{< /tab >}}
-
-{{< /tabs >}}
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

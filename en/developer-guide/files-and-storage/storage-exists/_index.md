@@ -58,11 +58,11 @@ Content-Type: application/json
 | 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
 | 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
-## How to Use the storage exists API with SDKs?
+## How to Use the Storage Exists API with SDKs?
 
-### OpenAPI Specification
+### Storage Exists API Specification
 
-The <a href="https://reference.aspose.cloud/cells/#/StorageController/StorageExists" rel="nofollow noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface, allowing developers to seamlessly interact with the REST API directly from a web browser.
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Storage/StorageExists" rel="noopener noreferrer">Storage Exists API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
@@ -89,11 +89,14 @@ curl -X GET "https://api.aspose.cloud/v4.0/cells/storage/{storageName}/exist" \
 
 {{< /tabs >}}
 
-### Use Aspose.Cells Cloud SDKs
-
 Utilizing an SDK is the most efficient approach to accelerate development. An SDK abstracts low‑level implementation details, enabling developers to concentrate on their project tasks. For a comprehensive list of available Aspose.Cells Cloud SDKs, please visit the <a href="https://github.com/aspose-cells-cloud" rel="nofollow noopener noreferrer">GitHub repository</a>.
 
-The following code examples demonstrate how to make API calls to Aspose.Cells web services using various SDKs:
+### Use Aspose.Cells Cloud SDKs
+
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
+
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 {{<tab tabNum="1" >}}

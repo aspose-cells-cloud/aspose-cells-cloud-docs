@@ -78,11 +78,11 @@ This API flips the orientation of a given data matrix. For example, a 3x2 range 
 | -------------- | ----- | ------------------------------------------------------------------------------- |
 | _None_         | _N/A_ | _No additional JSON body is required; the file is sent as multipart/form-data._ |
 
-## How to Use the FlipData with SDKs
+## How to Use the Flip Data API with SDKs?
 
-### FlipData Specification
+### Flip Data API Specification
 
-The [FlipData API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/TransformController/FlipData) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Transform/FlipData" rel="noopener noreferrer">Flip Data API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command-line tool to access Aspose.Cells Cloud web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
@@ -116,6 +116,7 @@ curl -v "https://api.aspose.cloud/v4.0/cells/flip?worksheet=Sheet1&cellArea=A1:B
 
 ### Use Aspose Cells Cloud SDKs
 
-Using an SDK is the fastest way to accelerate development. An SDK abstracts low-level details, allowing you to focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
+### Use Aspose.Cells Cloud SDKs
 
-The following code examples demonstrate how to call Aspose Cells Cloud web services using various SDKs:
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

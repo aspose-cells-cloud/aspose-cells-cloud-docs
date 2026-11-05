@@ -71,11 +71,11 @@ This endpoint accesses the local spreadsheet application (e.g., Excel) via inter
 | -------------- | ---- | ------------------------ |
 | Spreadsheet    | File | Upload spreadsheet file. |
 
-## How to Use the Get Worksheets With Local Spreadsheet with SDKs
+## How to Use the Get Worksheets with Local Spreadsheet API with SDKs?
 
-### Get Worksheets With Local Spreadsheet Specification
+### Get Worksheets with Local Spreadsheet API Specification
 
-The [Get Worksheets With Local Spreadsheet API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Management/GetWorksheetsWithLocalSpreadsheet) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Management/GetWorksheetsWithLocalSpreadsheet" rel="noopener noreferrer">Get Worksheets with Local Spreadsheet API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command-line tool to access Aspose.Cells Cloud web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
@@ -121,6 +121,7 @@ curl -v "https://api.aspose.cloud/v4.0/cells/spreadsheet/worksheets?region=en-US
 
 ### Use Aspose Cells Cloud SDKs
 
-Using an SDK is the fastest way to accelerate development. An SDK abstracts low-level details, allowing you to focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
+### Use Aspose.Cells Cloud SDKs
 
-The following code examples demonstrate how to call Aspose.Cells Cloud web services using various SDKs:
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

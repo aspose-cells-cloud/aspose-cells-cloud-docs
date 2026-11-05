@@ -85,7 +85,7 @@ Content-Disposition: attachment; filename="result"
 
 ### Convert Table to HTML API Specification
 
-The [Convert Table to HTML API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertTableToHTML) provides a publicly accessible programming interface, allowing REST interactions directly from a web browser.
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertTableToHtml" rel="noopener noreferrer">Convert Table to HTML API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
@@ -117,38 +117,9 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/table/html?worksheet=Sh
 
 {{< /tabs >}}
 
-### Use Aspose.Cells Cloud SDKs
-
-Using the SDK is the fastest way to develop, as it abstracts away low‑level details, allowing you to convert spreadsheet table data to HTML with minimal code. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
-
 The following code examples illustrate how to make calls to Aspose.Cells web services using various SDKs:
 
-#### C# Example
+### Use Aspose.Cells Cloud SDKs
 
-```csharp
-var config = new Configuration { ClientId = "xxx", ClientSecret = "yyy" };
-var cellsApi = new CellsApi(config);
-var response = cellsApi.CellsTablePostTableToHtml(
-    worksheet: "Sheet1",
-    tableName: "Table1",
-    filename: "myWorkbook.xlsx"
-);
-```
-
-#### Python Example
-
-```python
-from asposecellscloud.configuration import Configuration
-from asposecellscloud.apis.cells_api import CellsApi
-
-config = Configuration()
-config.client_id = "xxx"
-config.client_secret = "yyy"
-cells_api = CellsApi(config)
-
-response = cells_api.cells_table_post_table_to_html(
-    worksheet="Sheet1",
-    table_name="Table1",
-    filename="myWorkbook.xlsx"
-)
-```
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

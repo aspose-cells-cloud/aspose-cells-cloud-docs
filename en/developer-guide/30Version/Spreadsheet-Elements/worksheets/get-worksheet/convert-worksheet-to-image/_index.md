@@ -151,9 +151,41 @@ curl -v "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1?for
 
 ---
 
-## SDK Examples
+## Best Practices & Troubleshooting
 
-Aspose.Cells Cloud provides SDKs for 8+ languages. All SDKs handle authentication, serialization, and error handling automatically.
+### ✅ Recommendations
+
+- **For high-quality images**: Use `verticalResolution=300` and `horizontalResolution=300` for print-ready outputs.
+- **Preserve formatting**: Set `printHeadings=true` to include row/column labels in PDF/image exports.
+- **Limit output range**: Use `area="A1:D50"` to avoid converting empty columns/rows.
+- **Error handling**: Always validate JWT tokens and storage paths before conversion.
+
+### ⚠️ Common Issues
+
+| Issue                        | Solution                                                                         |
+| ---------------------------- | -------------------------------------------------------------------------------- |
+| **400: Invalid format**      | Check `format` against [supported values](#supported-formats).                   |
+| **404: Worksheet not found** | Verify `sheetName` matches exactly (case-sensitive).                             |
+| **401: Unauthorized**        | Regenerate JWT token; ensure scopes include `write:storage` and `read:document`. |
+| **Distorted output**         | Set explicit `verticalResolution`/`horizontalResolution`; avoid `0` for images.  |
+
+---
+
+## Related Resources
+
+- [Convert Entire Workbook to PDF](/cells/convert-workbook-to-pdf/)
+- [Export Chart to Image](/cells/export-chart/)
+- [Aspose.Cells Cloud SDK Documentation](https://github.com/aspose-cells-cloud)
+- [Free Online Worksheet Converter](https://products.aspose.cloud/cells/conversion/)
+
+> 💬 **Need help?**  
+> Contact support at [support@aspose.cloud](mailto:support@aspose.cloud) or post in our [community forum](https://forum.aspose.cloud/).
+
+## How to Use the Get Worksheet with Format API with SDKs?
+
+### Get Worksheet with Format API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Worksheets/GetWorksheetWithFormat" rel="noopener noreferrer">Get Worksheet with Format API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -381,32 +413,36 @@ os.WriteFile("output.png", result, 0644)
 
 ---
 
-## Best Practices & Troubleshooting
+### Use Aspose.Cells Cloud SDKs
 
-### ✅ Recommendations
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
-- **For high-quality images**: Use `verticalResolution=300` and `horizontalResolution=300` for print-ready outputs.
-- **Preserve formatting**: Set `printHeadings=true` to include row/column labels in PDF/image exports.
-- **Limit output range**: Use `area="A1:D50"` to avoid converting empty columns/rows.
-- **Error handling**: Always validate JWT tokens and storage paths before conversion.
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 
-### ⚠️ Common Issues
-
-| Issue                        | Solution                                                                         |
-| ---------------------------- | -------------------------------------------------------------------------------- |
-| **400: Invalid format**      | Check `format` against [supported values](#supported-formats).                   |
-| **404: Worksheet not found** | Verify `sheetName` matches exactly (case-sensitive).                             |
-| **401: Unauthorized**        | Regenerate JWT token; ensure scopes include `write:storage` and `read:document`. |
-| **Distorted output**         | Set explicit `verticalResolution`/`horizontalResolution`; avoid `0` for images.  |
-
----
-
-## Related Resources
-
-- [Convert Entire Workbook to PDF](/cells/convert-workbook-to-pdf/)
-- [Export Chart to Image](/cells/export-chart/)
-- [Aspose.Cells Cloud SDK Documentation](https://github.com/aspose-cells-cloud)
-- [Free Online Worksheet Converter](https://products.aspose.cloud/cells/conversion/)
-
-> 💬 **Need help?**  
-> Contact support at [support@aspose.cloud](mailto:support@aspose.cloud) or post in our [community forum](https://forum.aspose.cloud/).
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExampleGetWorksheetWithFormat.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_GetWorksheetWithFormat.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_GetWorksheetWithFormat.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_GetWorksheetWithFormat.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_GetWorksheetWithFormat.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_GetWorksheetWithFormat.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_GetWorksheetWithFormat.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_GetWorksheetWithFormat.go" >}}
+{{</tab>}}
+{{< /tabs >}}

@@ -147,7 +147,53 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/cells/
 
 ---
 
-## SDK Examples
+## Calculation Options Reference
+
+| Option          | When to Use                                                                 |
+|-----------------|-----------------------------------------------------------------------------|
+| `Recursive: true` | For formulas referencing other cells (e.g., `=A1+B2`). Ensures full dependency chain resolves. |
+| `IgnoreError: true` | Prevents `#DIV/0!`, `#VALUE!`, etc., from breaking workflows; returns `#N/A`. |
+| `Precision: "10"` | Truncates results to 10 decimal places for reporting or compliance needs.  |
+| `UseThreading: true` | Use for large workbooks with many interdependent formulas (v3.0+).         |
+
+---
+
+## Best Practices
+
+1. **Enable `Recursive` for chained formulas**  
+   Omitting this may yield stale or incorrect values for dependent cells.
+
+2. **Use `IgnoreError: true` in production**  
+   Avoids unexpected failures from invalid inputs (e.g., `=1/0`).
+
+3. **Avoid `UseThreading` in low-traffic apps**  
+   Threading adds overhead; enable only for heavy workloads or batch processing.
+
+4. **Validate cell names**  
+   Use standard Excel notation (`A1`, `$A$1`, `Sheet2!B5`).
+
+---
+
+## See Also
+
+- [Authenticate API Requests](/total/getting-started/auth/)  
+- [Manage Storage Files](/cells/storage/)  
+- [Calculate Workbook](/calculate-workbook/)  
+- [Error Handling in Aspose.Cells Cloud](/cells/error-handling/)  
+
+---
+
+## API Reference
+
+- [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostCellCalculate)  
+- [SDK Source Code](https://github.com/aspose-cells-cloud)  
+- [Aspose.Cells Cloud Dashboard](https://dashboard.aspose.cloud/)
+
+## How to Use the Post Cell Calculate API with SDKs?
+
+### Post Cell Calculate API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Cells/PostCellCalculate" rel="noopener noreferrer">Post Cell Calculate API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 Using an SDK simplifies authentication, serialization, and error handling. Below are working examples for all supported languages.
 
@@ -205,44 +251,36 @@ View and run full examples on GitHub:
 
 ---
 
-## Calculation Options Reference
+### Use Aspose.Cells Cloud SDKs
 
-| Option          | When to Use                                                                 |
-|-----------------|-----------------------------------------------------------------------------|
-| `Recursive: true` | For formulas referencing other cells (e.g., `=A1+B2`). Ensures full dependency chain resolves. |
-| `IgnoreError: true` | Prevents `#DIV/0!`, `#VALUE!`, etc., from breaking workflows; returns `#N/A`. |
-| `Precision: "10"` | Truncates results to 10 decimal places for reporting or compliance needs.  |
-| `UseThreading: true` | Use for large workbooks with many interdependent formulas (v3.0+).         |
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
----
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 
-## Best Practices
-
-1. **Enable `Recursive` for chained formulas**  
-   Omitting this may yield stale or incorrect values for dependent cells.
-
-2. **Use `IgnoreError: true` in production**  
-   Avoids unexpected failures from invalid inputs (e.g., `=1/0`).
-
-3. **Avoid `UseThreading` in low-traffic apps**  
-   Threading adds overhead; enable only for heavy workloads or batch processing.
-
-4. **Validate cell names**  
-   Use standard Excel notation (`A1`, `$A$1`, `Sheet2!B5`).
-
----
-
-## See Also
-
-- [Authenticate API Requests](/total/getting-started/auth/)  
-- [Manage Storage Files](/cells/storage/)  
-- [Calculate Workbook](/calculate-workbook/)  
-- [Error Handling in Aspose.Cells Cloud](/cells/error-handling/)  
-
----
-
-## API Reference
-
-- [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostCellCalculate)  
-- [SDK Source Code](https://github.com/aspose-cells-cloud)  
-- [Aspose.Cells Cloud Dashboard](https://dashboard.aspose.cloud/)
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExamplePostCellCalculate.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_PostCellCalculate.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_PostCellCalculate.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_PostCellCalculate.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PostCellCalculate.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_PostCellCalculate.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_PostCellCalculate.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_PostCellCalculate.go" >}}
+{{</tab>}}
+{{< /tabs >}}

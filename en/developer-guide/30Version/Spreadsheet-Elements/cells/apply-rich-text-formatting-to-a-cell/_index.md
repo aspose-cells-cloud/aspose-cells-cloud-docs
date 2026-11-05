@@ -133,69 +133,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/cells/
 
 ---
 
-### Use Aspose.Cells Cloud SDKs
-
-SDKs simplify integration by handling authentication, serialization, and error handling. All examples below format cell `A1` in `Sheet1` of `Book1.xlsx`.
-
-#### .NET (C#)
-```csharp
-var api = new CellsApi(clientId, clientSecret);
-var request = new PostCellCharactersRequest
-{
-    Name = "Book1.xlsx",
-    SheetName = "Sheet1",
-    CellName = "A1",
-    Options = new FontSetting[]
-    {
-        new FontSetting { StartIndex = 0, Length = 5, Font = new Font { IsBold = true, Size = 24 } },
-        new FontSetting { StartIndex = 5, Length = 4, Font = new Font { IsItalic = true, Size = 15 } }
-    }
-};
-api.PostCellCharacters(request);
-```
-
-#### Java
-```java
-CellsApi api = new CellsApi(clientId, clientSecret);
-Font[] fonts = {
-    new Font().isBold(true).size(24),
-    new Font().isItalic(true).size(15)
-};
-FontSetting[] options = {
-    new FontSetting().startIndex(0).length(5).font(fonts[0]),
-    new FontSetting().startIndex(5).length(4).font(fonts[1])
-};
-api.postCellCharacters("Book1.xlsx", "Sheet1", "A1", options, null, null);
-```
-
-#### Node.js
-```javascript
-const { CellsApi } = require("aspose-cells-cloud");
-const api = new CellsApi(process.env.ASPOSE_CLOUD_CLIENT_ID, process.env.ASPOSE_CLOUD_CLIENT_SECRET);
-const options = [
-  { font: { isBold: true, size: 24 }, length: 5, startIndex: 0 },
-  { font: { isItalic: true, size: 15 }, length: 4, startIndex: 5 }
-];
-await api.postCellCharacters("Book1.xlsx", "Sheet1", "A1", options);
-```
-
-#### Python
-```python
-from asposecellscloud.api import CellsApi
-from asposecellscloud.models import FontSetting, Font
-
-api = CellsApi(client_id, client_secret)
-options = [
-    FontSetting(font=Font(is_bold=True, size=24), length=5, start_index=0),
-    FontSetting(font=Font(is_italic=True, size=15), length=4, start_index=5)
-]
-api.post_cell_characters("Book1.xlsx", "Sheet1", "A1", options=options)
-```
-
-> 📚 **Full SDK Examples**: See the [Aspose.Cells Cloud GitHub organization](https://github.com/aspose-cells-cloud) for language-specific repos (e.g., [`aspose-cells-cloud-dotnet`](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet/tree/v24.6), [`aspose-cells-cloud-node`](https://github.com/aspose-cells-cloud/aspose-cells-cloud-node/tree/v24.6)).
-
----
-
 ### Related Documentation
 
 - [Authentication Overview](/getting-started/authentication/)  
@@ -213,3 +150,45 @@ api.post_cell_characters("Book1.xlsx", "Sheet1", "A1", options=options)
 - ✅ **Test formatting ranges** incrementally to prevent overwriting adjacent character styles.  
 
 > 📝 **Accessibility**: If adding screenshots to this documentation, ensure every image includes descriptive alt text (e.g., `alt="Excel cell A1 with 'Hello' in bold 24pt and 'World' in italic 15pt"`).
+
+## How to Use the Post Cell Characters API with SDKs?
+
+### Post Cell Characters API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Cells/PostCellCharacters" rel="noopener noreferrer">Post Cell Characters API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
+
+SDKs simplify integration by handling authentication, serialization, and error handling. All examples below format cell `A1` in `Sheet1` of `Book1.xlsx`.
+
+### Use Aspose.Cells Cloud SDKs
+
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
+
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExamplePostCellCharacters.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_PostCellCharacters.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_PostCellCharacters.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_PostCellCharacters.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PostCellCharacters.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_PostCellCharacters.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_PostCellCharacters.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_PostCellCharacters.go" >}}
+{{</tab>}}
+{{< /tabs >}}

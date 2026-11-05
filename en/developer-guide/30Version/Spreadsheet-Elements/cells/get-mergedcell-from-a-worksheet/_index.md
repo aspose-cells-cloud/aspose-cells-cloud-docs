@@ -133,7 +133,27 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/She
 }
 ```
 
-## SDK Examples
+## OpenAPI Specification
+
+The official API reference is available at the [Aspose.Cells Cloud API Reference](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetMergedCells).
+
+## Related Documentation
+
+- [Set Merged Cells in Excel](/set-mergedcells-in-excel)  
+- [List All Cells in a Worksheet](/list-cells-in-a-worksheet)  
+- [Excel Worksheet Operations Overview](/worksheet-operations)
+
+## Notes
+
+- This API does not use visual diagrams; all operations are text-based.
+- Ensure your JWT token has the required scopes (`cells.read` or `cells.write`) to access the endpoint.
+- For large workbooks, consider pagination or filtering to improve performance.
+
+## How to Use the Get Worksheet Merged Cells API with SDKs?
+
+### Get Worksheet Merged Cells API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Worksheets/GetWorksheetMergedCells" rel="noopener noreferrer">Get Worksheet Merged Cells API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 Using an SDK simplifies integration by handling authentication, serialization, and error handling. The [Aspose.Cells-Cloud SDKs repository on GitHub](https://github.com/aspose-cells-cloud) provides open-source implementations.
 
@@ -178,18 +198,36 @@ Using an SDK simplifies integration by handling authentication, serialization, a
 
 {{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_GetWorksheetMergedCells.go" >}}
 
-## OpenAPI Specification
+### Use Aspose.Cells Cloud SDKs
 
-The official API reference is available at the [Aspose.Cells Cloud API Reference](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetMergedCells).
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
-## Related Documentation
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 
-- [Set Merged Cells in Excel](/set-mergedcells-in-excel)  
-- [List All Cells in a Worksheet](/list-cells-in-a-worksheet)  
-- [Excel Worksheet Operations Overview](/worksheet-operations)
-
-## Notes
-
-- This API does not use visual diagrams; all operations are text-based.
-- Ensure your JWT token has the required scopes (`cells.read` or `cells.write`) to access the endpoint.
-- For large workbooks, consider pagination or filtering to improve performance.
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExampleGetWorksheetMergedCells.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_GetWorksheetMergedCells.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_GetWorksheetMergedCells.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_GetWorksheetMergedCells.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_GetWorksheetMergedCells.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_GetWorksheetMergedCells.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_GetWorksheetMergedCells.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_GetWorksheetMergedCells.go" >}}
+{{</tab>}}
+{{< /tabs >}}

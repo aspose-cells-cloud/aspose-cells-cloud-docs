@@ -129,173 +129,46 @@ Content-Type: application/json
 | 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
 | 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
-## Cloud SDK Family
+## How to Use the Get Worksheet Chart Title API with SDKs?
 
-Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+### Get Worksheet Chart Title API Specification
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
-
-{{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
-
-{{< tab tabNum="1" >}}
-
-```csharp
-// C# example using Aspose.Cells Cloud SDK
-var config = new Configuration
-{
-    AccessToken = "<jwt token>",
-    BasePath = "https://api.aspose.cloud"
-};
-var api = new ChartsApi(config);
-var response = api.GetWorksheetChartTitle("Book1.xlsx", "Sheet1", 0, folder: "", storageName: "");
-Console.WriteLine(response.Title.Text);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-```java
-// Java example using Aspose.Cells Cloud SDK
-Configuration config = new Configuration();
-config.setAccessToken("<jwt token>");
-config.setBasePath("https://api.aspose.cloud");
-ChartsApi api = new ChartsApi(config);
-ChartTitleResponse response = api.getWorksheetChartTitle("Book1.xlsx", "Sheet1", 0, "", "");
-System.out.println(response.getTitle().getText());
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="3" >}}
-
-```php
-<?php
-// PHP example using Aspose.Cells Cloud SDK
-$config = new Aspose\Cells\Configuration();
-$config->setAccessToken('<jwt token>');
-$config->setHost('https://api.aspose.cloud');
-$apiInstance = new Aspose\Cells\Api\ChartsApi($config);
-$response = $apiInstance->getWorksheetChartTitle('Book1.xlsx', 'Sheet1', 0, '', '');
-echo $response->getTitle()->getText();
-?>
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="4" >}}
-
-```ruby
-# Ruby example using Aspose.Cells Cloud SDK
-require 'aspose_cells_cloud'
-
-config = AsposeCellsCloud::Configuration.new
-config.access_token = '<jwt token>'
-config.host = 'https://api.aspose.cloud'
-
-api_instance = AsposeCellsCloud::ChartsApi.new
-result = api_instance.get_worksheet_chart_title('Book1.xlsx', 'Sheet1', 0, '', '')
-puts result.title.text
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="5" >}}
-
-```python
-# Python example using Aspose.Cells Cloud SDK
-from asposecellscloud import ChartsApi, Configuration
-
-config = Configuration()
-config.access_token = "<jwt token>"
-config.host = "https://api.aspose.cloud"
-
-api_instance = ChartsApi(config)
-response = api_instance.get_worksheet_chart_title("Book1.xlsx", "Sheet1", 0, "", "")
-print(response.title.text)
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="6" >}}
-
-```javascript
-// Node.js example using Aspose.Cells Cloud SDK
-const { ChartsApi, Configuration } = require('asposecellscloud');
-
-let config = new Configuration();
-config.accessToken = "<jwt token>";
-config.basePath = "https://api.aspose.cloud";
-
-let apiInstance = new ChartsApi(config);
-apiInstance.getWorksheetChartTitle("Book1.xlsx", "Sheet1", 0, "", "", (error, data) => {
-    if (error) console.error(error);
-    else console.log(data.title.text);
-});
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="7" >}}
-
-```java
-// Android (Java) example using Aspose.Cells Cloud SDK
-Configuration config = new Configuration();
-config.setAccessToken("<jwt token>");
-config.setBasePath("https://api.aspose.cloud");
-ChartsApi api = new ChartsApi(config);
-ChartTitleResponse response = api.getWorksheetChartTitle("Book1.xlsx", "Sheet1", 0, "", "");
-Log.d("ChartTitle", response.getTitle().getText());
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="8" >}}
-
-```swift
-// Swift example using Aspose.Cells Cloud SDK
-import AsposeCellsCloud
-
-let config = Configuration()
-config.accessToken = "<jwt token>"
-config.host = "https://api.aspose.cloud"
-
-let api = ChartsApi(configuration: config)
-api.getWorksheetChartTitle(name: "Book1.xlsx", sheetName: "Sheet1", chartIndex: 0, folder: "", storageName: "") { result, error in
-    if let title = result?.title?.text {
-        print("Chart title: \(title)")
-    }
-}
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="9" >}}
-
-```perl
-# Perl example using Aspose.Cells Cloud SDK
-use AsposeCellsCloud::ChartsApi;
-use AsposeCellsCloud::Configuration;
-
-my $config = AsposeCellsCloud::Configuration->new();
-$config->{access_token} = '<jwt token>';
-$config->{host} = 'https://api.aspose.cloud';
-
-my $api_instance = AsposeCellsCloud::ChartsApi->new($config);
-my $result = $api_instance->get_worksheet_chart_title('Book1.xlsx', 'Sheet1', 0, '', '');
-print $result->{title}{text}, "\n";
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="10" >}}
-
-{{< gist "aspose-cells-cloud-gists" "e1b22ed45ca780faa3231c3a8c60ddd4" >}}
-
-{{< /tab >}}
-
-{{< /tabs >}}
+The <a href="https://reference.aspose.cloud/cells/#/Charts/GetWorksheetChartTitle" rel="noopener noreferrer">Get Worksheet Chart Title API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can also refer to the individual SDK documentation for more advanced scenarios, such as updating or deleting a chart title.  
 
 **See also**: [Update Chart Title](/charts/title/put/), [Delete Chart Title](/charts/title/delete/).
+
+### Use Aspose.Cells Cloud SDKs
+
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
+
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExampleGetWorksheetChartTitle.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_GetWorksheetChartTitle.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_GetWorksheetChartTitle.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_GetWorksheetChartTitle.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_GetWorksheetChartTitle.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_GetWorksheetChartTitle.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_GetWorksheetChartTitle.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_GetWorksheetChartTitle.go" >}}
+{{</tab>}}
+{{< /tabs >}}

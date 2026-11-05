@@ -10,7 +10,6 @@ type: docs
 weight: 100
 ArticleTitle: "Split Excel Text by Delimiter, Mask, or Line Break | Aspose.Cells Cloud API"
 ---
-
 The **SplitText** API (`PUT https://api.aspose.cloud/v4.0/cells/content/split/text`) in Aspose.Cells Cloud enables precise text segmentation within Excel workbooks by splitting cell content using custom delimiters, line breaks, or pattern masks, then outputting results to a specified range in columns or rows; for example, users can split a cell’s comma-separated values into adjacent columns while optionally retaining or removing the delimiters.
 
 ## Overview
@@ -184,3 +183,14 @@ Content-Disposition: attachment; filename="output.xlsx"
 ## OpenAPI Specification
 
 The full API contract is documented in the [Aspose.Cells Cloud OpenAPI spec](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/TextProcessing/SplitText).
+
+## How to Use the Split Text API with SDKs?
+
+### Split Text API Specification
+
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/TextProcessing/SplitText" rel="noopener noreferrer">Split Text API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
+
+### Use Aspose.Cells Cloud SDKs
+
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

@@ -130,3 +130,14 @@ Download the merged file directly from `FileUrl`, or save it to the specified `o
 | `404` | Not Found             | Source folder or files not found in storage.                                        |
 | `413` | Payload Too Large     | Total input size exceeds cloud limits.                                              |
 | `500` | Internal Server Error | Unexpected server-side failure during merge.                                        |
+
+## How to Use the Merge Spreadsheets in Remote Folder API with SDKs?
+
+### Merge Spreadsheets in Remote Folder API Specification
+
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/MergeSpreadsheetsInRemoteFolder" rel="noopener noreferrer">Merge Spreadsheets in Remote Folder API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
+
+### Use Aspose.Cells Cloud SDKs
+
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

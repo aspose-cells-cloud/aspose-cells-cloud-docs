@@ -123,70 +123,21 @@ Content-Type: application/json
 | 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
 | 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
-## Cloud SDK Family
+## How to Use the Get Chart Second Value Axis API with SDKs?
 
-Using an SDK is the best way to speed up development. An SDK takes care of low‑level details and lets you focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
+### Get Chart Second Value Axis API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Charts/GetChartSecondValueAxis" rel="noopener noreferrer">Get Chart Second Value Axis API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
+
+### Use Aspose.Cells Cloud SDKs
+
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 
-{{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
-
-{{< tab tabNum="1" >}}
-
-<!-- C# example placeholder -->
-
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-<!-- Java example placeholder -->
-
-{{< /tab >}}
-
-{{< tab tabNum="3" >}}
-
-<!-- PHP example placeholder -->
-
-{{< /tab >}}
-
-{{< tab tabNum="4" >}}
-
-<!-- Ruby example placeholder -->
-
-{{< /tab >}}
-
-{{< tab tabNum="5" >}}
-
-<!-- Python example placeholder -->
-
-{{< /tab >}}
-
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example-Get-ChartSecondValueAxis.js" >}}
-{{< /tab >}}
-
-{{< tab tabNum="7" >}}
-
-<!-- Android example placeholder -->
-
-{{< /tab >}}
-
-{{< tab tabNum="8" >}}
-
-<!-- Swift example placeholder -->
-
-{{< /tab >}}
-
-{{< tab tabNum="9" >}}
-
-<!-- Perl example placeholder -->
-
-{{< /tab >}}
-
-{{< tab tabNum="10" >}}
-
-<!-- Go example placeholder -->
-
-{{< /tab >}}
-
+{{<tabs tabTotal="1" tabID="4" tabName1="Node.js" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example-Get-ChartSecondValueAxis.js" >}}
+{{</tab>}}
 {{< /tabs >}}

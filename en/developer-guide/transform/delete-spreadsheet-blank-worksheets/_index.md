@@ -8,7 +8,6 @@ keywords: "Aspose.Cells Cloud, delete blank worksheets, Excel API, workbook clea
 weight: 100
 ArticleTitle: "Delete Blank Worksheets in Excel Workbooks using Aspose.Cells Cloud API v4.0"
 ---
-
 The **RemoveSpreadsheetBlankWorksheets** API (`PUT https://api.aspose.cloud/v4.0/cells/remove/blank-worksheets`) in Aspose.Cells Cloud removes all blank worksheets—those containing no data, formulas, charts, comments, or other objects—from an uploaded Excel workbook. Using a `FormData` file upload, the operation preserves populated sheets while deleting empty ones, helping optimize workbook size, improve organization, and streamline post-processing workflows such as template cleanup or standardization.
 
 ## The Remove Spreadsheet Blank Worksheets Web API
@@ -107,7 +106,11 @@ Ensure consistency in workbooks submitted via web forms or portals by automatica
 | **Cost-Effective**      | Pay only for API calls; no upfront or hidden fees.                                       |
 | **Reliable Processing** | Tested logic for identifying truly empty sheets (no data, formulas, charts, or objects). |
 
-## SDK Examples
+## How to Use the Remove Spreadsheet Blank Worksheets API with SDKs?
+
+### Remove Spreadsheet Blank Worksheets API Specification
+
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Transform/RemoveSpreadsheetBlankWorksheets" rel="noopener noreferrer">Remove Spreadsheet Blank Worksheets API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 > **Tip**: Replace `clientId` and `clientSecret` with your actual Aspose Cloud credentials before running.
 
@@ -153,3 +156,8 @@ response = api.cells_delete_blank_worksheets(
 )
 print(f"Cleaned workbook saved: {response}")
 ```
+
+### Use Aspose.Cells Cloud SDKs
+
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

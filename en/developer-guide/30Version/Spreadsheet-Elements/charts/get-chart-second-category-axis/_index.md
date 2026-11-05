@@ -61,11 +61,11 @@ Content-Type: application/json
 | 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
 | 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
-## How to Use the GetChartSecondCategoryAxis API with SDKs
+## How to Use the Get Chart Second Category Axis API with SDKs?
 
-### GetChartSecondCategoryAxis API Specification
+### Get Chart Second Category Axis API Specification
 
-The **Get‑Chart‑Second‑Category‑Axis** operation is defined in the [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/GetChartSecondCategoryAxis) and enables direct REST interactions from a web browser or any HTTP client.
+The <a href="https://reference.aspose.cloud/cells/#/Charts/GetChartSecondCategoryAxis" rel="noopener noreferrer">Get Chart Second Category Axis API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the `cURL` command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the API with `cURL`.
 
@@ -105,12 +105,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/chart
 {{< /tab >}}
 
 {{< /tabs >}}
-
-### Use Aspose.Cells Cloud SDKs
-
-Using an SDK is the fastest way to integrate this API into your project. SDKs handle low‑level details such as authentication, request building, and response parsing, letting you focus on business logic. See the full list of Aspose.Cells Cloud SDKs in the [GitHub repository](https://github.com/aspose-cells-cloud).
-
-The following code examples demonstrate how to call the **Get Chart Second Category Axis** operation with various SDKs:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
@@ -411,4 +405,17 @@ func main() {
 
 {{< /tab >}}
 
+{{< /tabs >}}
+
+### Use Aspose.Cells Cloud SDKs
+
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
+
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+
+{{<tabs tabTotal="1" tabID="1" tabName1="Node.js" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example-Get-ChartSecondCategoryAxis.js" >}}
+{{</tab>}}
 {{< /tabs >}}

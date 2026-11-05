@@ -9,7 +9,6 @@ description: "Obtain an OAuth2 access token for Aspose.Cells Cloud REST API usin
 weight: 100
 draft: false
 ---
-
 The **PostAccessToken** API (`POST https://api.aspose.cloud/v4.0/cells/connect/token`) enables Aspose.Cells Cloud clients to obtain an access token by securely authenticating with their registered API credentials; as a proxy service, it forwards the client’s authentication request to the Aspose Cloud authorization server and returns the issued token, allowing middleware and applications to authenticate subsequent API calls without handling OAuth flows directly.
 
 - A registered [Aspose Cloud account](https://dashboard.aspose.cloud/).
@@ -109,9 +108,18 @@ curl -X POST "https://api.aspose.cloud/v4.0/cells/connect/token" \
 
 ---
 
-## How to Use the Access Token with SDKs
+## OpenAPI Specification
 
-Using an SDK is the fastest and safest way to obtain and manage tokens. SDKs handle token caching, expiration, and secure credential storage.
+The API is fully defined in the [machine-readable OpenAPI spec](https://raw.githubusercontent.com/aspose-cells-cloud/aspose-cells-cloud-openapi-spec/main/specs/cells_api.yaml) (YAML/JSON), enabling code generation and contract testing.
+
+You can also explore the interactive reference at:  
+[reference.aspose.cloud/cells/#/CellsAuthorityController/PostAccessToken](https://reference.aspose.cloud/cells/#/CellsAuthorityController/PostAccessToken)
+
+## How to Use the Post Access Token API with SDKs?
+
+### Post Access Token API Specification
+
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/CellsAuthority/PostAccessToken" rel="noopener noreferrer">Post Access Token API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Supported SDKs
 
@@ -155,9 +163,7 @@ cellsApi.cellsWorkbookPutConvertWorkbook(
 
 ---
 
-## OpenAPI Specification
+### Use Aspose.Cells Cloud SDKs
 
-The API is fully defined in the [machine-readable OpenAPI spec](https://raw.githubusercontent.com/aspose-cells-cloud/aspose-cells-cloud-openapi-spec/main/specs/cells_api.yaml) (YAML/JSON), enabling code generation and contract testing.
-
-You can also explore the interactive reference at:  
-[reference.aspose.cloud/cells/#/CellsAuthorityController/PostAccessToken](https://reference.aspose.cloud/cells/#/CellsAuthorityController/PostAccessToken)
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

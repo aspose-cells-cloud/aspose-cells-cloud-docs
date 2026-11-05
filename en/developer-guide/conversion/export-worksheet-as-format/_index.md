@@ -102,6 +102,26 @@ curl -X GET \
 - **Simplified Workflow** – Direct conversion from cloud-stored workbooks with minimal code.
 - **Multi-Language SDK Support** – Client libraries for C#, Java, Python, PHP, Ruby, Node.js, Perl, and Go.
 
-### **SDK Examples**
+## How to Use the Export Worksheet as Format API with SDKs?
+
+### Export Worksheet as Format API Specification
+
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ExportWorksheetAsFormat" rel="noopener noreferrer">Export Worksheet as Format API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 See the [Export Worksheet as Format API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ExportWorksheetAsFormat) for interactive testing.
+
+### Use Aspose.Cells Cloud SDKs
+
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
+
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+
+{{<tabs tabTotal="2" tabID="1" tabName1="PHP" tabName2="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ExportWorksheetAsFormat.php" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ExportWorksheetAsFormat.go" >}}
+{{</tab>}}
+{{< /tabs >}}

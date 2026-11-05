@@ -139,7 +139,44 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/charts
       }'
 ```
 
-### SDK Samples
+## Responses
+
+### Success (200)
+
+```json
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
+
+The response type is `CellsCloudResponse`.
+
+**HTTP Status Codes**
+
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Axis updated successfully.                                        |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
+## Additional Resources
+
+- **OpenAPI Specification** – [View / download JSON‑YAML](https://apireference.aspose.cloud/cells/#/Charts/PostChartValueAxis)
+- **SDK Repository** – <https://github.com/aspose-cells-cloud>
+- **Authentication guide** – <https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/>
+
+---
+
+_For any questions or feedback, please contact the Aspose.Cells Cloud support team._
+
+## How to Use the Post Chart Value Axis API with SDKs?
+
+### Post Chart Value Axis API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Charts/PostChartValueAxis" rel="noopener noreferrer">Post Chart Value Axis API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 {{< tabs tabTotal="10" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
@@ -414,35 +451,15 @@ func main() {
 
 {{< /tabs >}}
 
-## Responses
+### Use Aspose.Cells Cloud SDKs
 
-### Success (200)
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
-```json
-{
-  "Code": 200,
-  "Status": "OK"
-}
-```
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 
-The response type is `CellsCloudResponse`.
-
-**HTTP Status Codes**
-
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Axis updated successfully.                                        |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
-
-## Additional Resources
-
-- **OpenAPI Specification** – [View / download JSON‑YAML](https://apireference.aspose.cloud/cells/#/Charts/PostChartValueAxis)
-- **SDK Repository** – <https://github.com/aspose-cells-cloud>
-- **Authentication guide** – <https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/>
-
----
-
-_For any questions or feedback, please contact the Aspose.Cells Cloud support team._
+{{<tabs tabTotal="1" tabID="1" tabName1="Node.js" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example-Post-ChartValueAxis.js" >}}
+{{</tab>}}
+{{< /tabs >}}

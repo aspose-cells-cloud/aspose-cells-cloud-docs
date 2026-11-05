@@ -10,7 +10,6 @@ type: docs
 linktitle: "Clear All Comments"
 ArticleTitle: "Delete All Comments in Worksheet via Aspose.Cells Cloud API"
 ---
-
 The **DeleteWorksheetComments** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments`) provided by Aspose.Cells Cloud removes all comments from a specified worksheet in a cloud-based spreadsheet file. This operation accepts the workbook file name and worksheet name as required path parameters, with optional folder and storage parameters for file location flexibility. As a destructive action, it permanently deletes all comments without recovery, enabling developers to programmatically clean up worksheets when preparing reports or resetting templates.
 
 Aspose.Cells Cloud provides a robust REST endpoint that removes **all** comments from a specified worksheet. This operation is irreversible; once executed, the comments cannot be recovered.
@@ -122,7 +121,31 @@ The response body conforms to the `CellsCloudResponse` model.
 
 ---
 
-## SDK Examples
+## Notes & Limitations
+
+- This operation **deletes every comment** in the specified worksheet. Use it with caution—there is no undo.
+- The request does **not** accept a request body; all required information is conveyed via the URL and headers.
+- If the target file is **protected** or the worksheet is **read‑only**, the API will return a `400` or `401` error depending on the underlying cause.
+- The endpoint works with files stored in **Aspose Cloud Storage** as well as with **Amazon S3**, **Azure Blob**, or **Google Cloud Storage** when correctly referenced via `storageName`.
+
+---
+
+## Related Resources
+
+- **OpenAPI Specification** – [DeleteWorksheetComments](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheetComments)
+- **Authentication Guide** – [OAuth2 for Aspose.Cells Cloud]（https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/）
+- **SDK Repository** – <https://github.com/aspose-cells-cloud>
+- **General Worksheets API** – <https://docs.aspose.cloud/cells/worksheets/>
+
+---
+
+_Last updated: 2026‑07‑30_
+
+## How to Use the Delete Worksheet Comments API with SDKs?
+
+### Delete Worksheet Comments API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Worksheets/DeleteWorksheetComments" rel="noopener noreferrer">Delete Worksheet Comments API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 The following snippets demonstrate how to call the endpoint with the official Aspose.Cells Cloud SDKs (version 3.13.0). Replace placeholder values (`<fileName>`, `<sheet>`, `<jwt token>`, etc.) with your own data.
 
@@ -307,22 +330,36 @@ func main() {
 
 ---
 
-## Notes & Limitations
+### Use Aspose.Cells Cloud SDKs
 
-- This operation **deletes every comment** in the specified worksheet. Use it with caution—there is no undo.
-- The request does **not** accept a request body; all required information is conveyed via the URL and headers.
-- If the target file is **protected** or the worksheet is **read‑only**, the API will return a `400` or `401` error depending on the underlying cause.
-- The endpoint works with files stored in **Aspose Cloud Storage** as well as with **Amazon S3**, **Azure Blob**, or **Google Cloud Storage** when correctly referenced via `storageName`.
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
----
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 
-## Related Resources
-
-- **OpenAPI Specification** – [DeleteWorksheetComments](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheetComments)
-- **Authentication Guide** – [OAuth2 for Aspose.Cells Cloud]（https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/）
-- **SDK Repository** – <https://github.com/aspose-cells-cloud>
-- **General Worksheets API** – <https://docs.aspose.cloud/cells/worksheets/>
-
----
-
-_Last updated: 2026‑07‑30_
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExampleDeleteWorksheetComments.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_DeleteWorksheetComments.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_DeleteWorksheetComments.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_DeleteWorksheetComments.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_DeleteWorksheetComments.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_DeleteWorksheetComments.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_DeleteWorksheetComments.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_DeleteWorksheetComments.go" >}}
+{{</tab>}}
+{{< /tabs >}}

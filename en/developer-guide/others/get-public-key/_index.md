@@ -110,7 +110,11 @@ curl -X GET "https://api.aspose.cloud/v4.0/cells/publickey" \
 
 ## Usage Examples
 
-### Using Aspose.Cells Cloud SDKs
+## How to Use the Get Public Key API with SDKs?
+
+### Get Public Key API Specification
+
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Key/GetPublicKey" rel="noopener noreferrer">Get Public Key API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 SDKs reduce boilerplate code, automate token refresh, and simplify integration. Below are examples for common languages:
 
@@ -149,3 +153,8 @@ SDKs reduce boilerplate code, automate token refresh, and simplify integration. 
   ```
 
 For a complete list of SDKs and source code, visit the [Aspose.Cells Cloud GitHub repository](https://github.com/aspose-cells-cloud).
+
+### Use Aspose.Cells Cloud SDKs
+
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

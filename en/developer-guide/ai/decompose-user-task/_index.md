@@ -156,7 +156,18 @@ ID,Subject,Owner,Estimated Duration,Description
 
 ---
 
-## SDK Examples
+## Best Practices
+
+- **Input Clarity**: Use action-oriented language (e.g., “Build X” instead of “Think about X”) for more accurate decomposition.
+- **Regional Settings**: Specify `region` if your project uses non-US date/number formats (e.g., `de-DE` for German locales).
+- **Export Format**: While `.xlsx` is default, use SDK options or custom headers to request CSV (e.g., `Accept: text/csv`).
+- **Milestone Mapping**: Milestone nodes are auto-generated for major phase transitions (e.g., “Design Complete”, “Testing Started”).
+
+## How to Use the Decompose User Task API with SDKs?
+
+### Decompose User Task API Specification
+
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/AI/DecomposeUserTask" rel="noopener noreferrer">Decompose User Task API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 Use Aspose.Cells Cloud SDKs for concise, type-safe integration. The following examples call the `DecomposeUserTask` endpoint:
 
@@ -310,9 +321,7 @@ file.Write(response)
 
 ---
 
-## Best Practices
+### Use Aspose.Cells Cloud SDKs
 
-- **Input Clarity**: Use action-oriented language (e.g., “Build X” instead of “Think about X”) for more accurate decomposition.
-- **Regional Settings**: Specify `region` if your project uses non-US date/number formats (e.g., `de-DE` for German locales).
-- **Export Format**: While `.xlsx` is default, use SDK options or custom headers to request CSV (e.g., `Accept: text/csv`).
-- **Milestone Mapping**: Milestone nodes are auto-generated for major phase transitions (e.g., “Design Complete”, “Testing Started”).
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

@@ -5,7 +5,6 @@ type: docs
 description: "Find text, numbers, or formulas in a remote Excel worksheet using Aspose.Cells Cloud API. Supports case-insensitive search, password-protected files, and cloud storage integration."
 keywords: "aspose.cells, excel api, text search, remote worksheet, cloud api"
 ---
-
 The **SearchContentInRemoteWorksheet** API (`PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/search/content`) enables developers to programmatically search for specified text, numbers, or formulas within a worksheet of an Excel workbook stored in cloud storage using Aspose.Cells Cloud, supporting case-insensitive and whole-word matching options while returning match locations directly in the cloud without requiring local file downloads.
 
 ## The Search Content in Remote Worksheet Web API
@@ -111,23 +110,15 @@ curl -X PUT \
   -H "Content-Type: application/json"
 ```
 
-### Using Aspose.Cells Cloud SDKs
+## How to Use the Search Content in Remote Worksheet API with SDKs?
+
+### Search Content in Remote Worksheet API Specification
+
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Search/SearchContentInRemoteWorksheet" rel="noopener noreferrer">Search Content in Remote Worksheet API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 SDKs for .NET, Java, Python, PHP, Node.js, and Ruby streamline integration and reduce boilerplate code. See the [GitHub Repository](https://github.com/aspose-cells-cloud) for source code and examples.
 
-#### Python Example (Aspose.Cells Cloud SDK for Python)
+### Use Aspose.Cells Cloud SDKs
 
-```python
-from asposecellscloud.apis.cells_api import CellsApi
-from asposecellscloud.models.search_response import SearchResponse
-
-api = CellsApi(client_id, client_secret, base_url)
-response = api.search_content_in_remote_worksheet(
-    name="annual_report.xlsx",
-    worksheet="Sheet1",
-    search_text="Total",
-    ignoring_case=True,
-    folder="Reports"
-)
-print(f"Found {len(response.text_items)} cells with matches")
-```
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

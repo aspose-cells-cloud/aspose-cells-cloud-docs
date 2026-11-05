@@ -10,7 +10,6 @@ keywords: "Import JSON, Aspose.Cells, Spreadsheet, API"
 description: "Import JSON data file into the local spreadsheet."
 weight: 100
 ---
-
 The **ImportJSONDataIntoSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/import/data/json`) in Aspose.Cells Cloud enables developers to import JSON data directly into a specified worksheet of an existing spreadsheet file by parsing the JSON and mapping it to cell values starting at a given position; it supports formats like .xlsx and .ods and allows control over whether data is inserted or overwrites existing content via the `insert` parameter.
 
 ## The Import JSONData Into Spreadsheet Web API
@@ -75,11 +74,11 @@ Content-Disposition: attachment; filename="result"
 
 Import JSON data file into the local spreadsheet. The method parses the JSON, maps the data to the spreadsheet's cell structure, and saves the file locally. Supported spreadsheet formats include .xlsx and .ods.
 
-## How to Use the Import JSON Data Into Spreadsheet with SDKs
+## How to Use the Import JSONData Into Spreadsheet API with SDKs?
 
-### Import JSON Data Into Spreadsheet Specification
+### Import JSONData Into Spreadsheet API Specification
 
-The [Import JSON Data Into Spreadsheet API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/ImportJSONDataIntoSpreadsheet) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/ImportJSONDataIntoSpreadsheet" rel="noopener noreferrer">Import JSONData Into Spreadsheet API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command-line tool to access Aspose Cells Cloud web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
@@ -111,6 +110,7 @@ curl -v "https://api.aspose.cloud/v4.0/cells/import/data/json?worksheet=Sheet1&s
 
 ### Use Aspose Cells Cloud SDKs
 
-Using an SDK is the fastest way to accelerate development. An SDK abstracts low-level details, allowing you to focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
+### Use Aspose.Cells Cloud SDKs
 
-The following code examples demonstrate how to call Aspose Cells Cloud web services using various SDKs:
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

@@ -103,15 +103,18 @@ Automatically detect broken links in the range data of Excel files stored in clo
 - **Zero maintenance costs** – No servers to maintain, no software updates, and no compatibility concerns.
 - **Preserves complex Excel formatting** – Results can be exported to universally accessible PDF format without losing styling.
 
-## How to Use the Search for broken links within the range of the Spreadsheet API with SDKs
+## How to Use the Search Broken Links in Remote Range API with SDKs?
 
-### OpenAPI Specification
+### Search Broken Links in Remote Range API Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Search/SearchBrokenLinksInRemoteRange) defines a publicly accessible programming interface and allows you to carry out REST interactions directly from a web browser.
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Search/SearchBrokenLinksInRemoteRange" rel="noopener noreferrer">Search Broken Links in Remote Range API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
+
+Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to implement “search broken links in a range” with minimal code. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to implement “search broken links in a range” with minimal code. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 

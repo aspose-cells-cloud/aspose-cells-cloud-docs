@@ -67,11 +67,11 @@ Content-Type: application/json
 
 The API returns the following HTTP status codes:
 
-## How to Use the upload file API with SDKs?
+## How to Use the Upload File API with SDKs?
 
-### OpenAPI Specification
+### Upload File API Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/FileController/UploadFile) provides a detailed description of the API, enabling developers to interact with it directly via a web browser.
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/File/UploadFile" rel="noopener noreferrer">Upload File API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
@@ -101,11 +101,22 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/storage/file/Folder/Book1.xlsx"
 
 {{< /tabs >}}
 
-### Use Aspose.Cells Cloud SDKs
-
 Utilizing an SDK enhances development efficiency by managing low‑level details, allowing developers to concentrate on project tasks. Visit the [GitHub repository](https://github.com/aspose-cells-cloud) for a comprehensive list of Aspose.Cells Cloud SDKs.
 
 The following code examples illustrate how to call Aspose.Cells web services using various SDKs:
+
+**See also**
+
+- [Download File API](/download-file/) – Retrieve a file from cloud storage.
+- [Copy File API](/copy-file/) – Duplicate a file within cloud storage.
+- [Delete File API](/delete-file/) – Remove a file from cloud storage.
+
+### Use Aspose.Cells Cloud SDKs
+
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
+
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 {{<tab tabNum="1" >}}
@@ -133,9 +144,3 @@ The following code examples illustrate how to call Aspose.Cells web services usi
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_UploadFile.go" >}}
 {{</tab>}}
 {{< /tabs >}}
-
-**See also**
-
-- [Download File API](/download-file/) – Retrieve a file from cloud storage.
-- [Copy File API](/copy-file/) – Duplicate a file within cloud storage.
-- [Delete File API](/delete-file/) – Remove a file from cloud storage.

@@ -115,120 +115,21 @@ Content-Type: application/json
 | 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
 | 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
-## Cloud SDK Family
+## How to Use the Post Chart Second Value Axis API with SDKs?
 
-Using an SDK is the best way to speed up development. An SDK takes care of low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+### Post Chart Second Value Axis API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Charts/PostChartSecondValueAxis" rel="noopener noreferrer">Post Chart Second Value Axis API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
+
+### Use Aspose.Cells Cloud SDKs
+
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 
-{{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
-
-{{< tab tabNum="1" >}}
-
-```csharp
-// C# example to update the second value axis
-var api = new CellsApi("clientId", "clientSecret");
-var axis = new Axis { IsAutomaticMajorUnit = true, Maximum = 100 };
-api.PostChartSecondValueAxis(name, sheetName, chartIndex, axis);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-```java
-// Java example to update the second value axis
-CellsApi api = new CellsApi("clientId", "clientSecret");
-Axis axis = new Axis();
-axis.setIsAutomaticMajorUnit(true);
-axis.setMaximum(100.0);
-api.postChartSecondValueAxis(name, sheetName, chartIndex, axis);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="3" >}}
-
-```php
-// PHP example to update the second value axis
-$api = new CellsApi($clientId, $clientSecret);
-$axis = new Axis();
-$axis->setIsAutomaticMajorUnit(true);
-$axis->setMaximum(100);
-$api->postChartSecondValueAxis($name, $sheetName, $chartIndex, $axis);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="4" >}}
-
-```ruby
-# Ruby example to update the second value axis
-api = AsposeCellsCloud::ApiClient.new(client_id, client_secret)
-axis = Axis.new(is_automatic_major_unit: true, maximum: 100)
-api.post_chart_second_value_axis(name, sheet_name, chart_index, axis)
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="5" >}}
-
-```python
-# Python example to update the second value axis
-api = asposecellscloud.ApiClient(client_id, client_secret)
-axis = Axis(is_automatic_major_unit=True, maximum=100)
-api.post_chart_second_value_axis(name, sheet_name, chart_index, axis)
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="6" >}}
-
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example-Post-ChartSecondValueAxis.js" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="7" >}}
-
-```java
-// Android (Java) example – same as Java snippet above
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="8" >}}
-
-```swift
-// Swift example to update the second value axis
-let api = CellsApi(clientId: "clientId", clientSecret: "clientSecret")
-var axis = Axis()
-axis.isAutomaticMajorUnit = true
-axis.maximum = 100
-api.postChartSecondValueAxis(name: name, sheetName: sheetName, chartIndex: chartIndex, axis: axis)
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="9" >}}
-
-```perl
-# Perl example to update the second value axis
-my $api = AsposeCellsCloud::ApiClient->new(client_id => $client_id, client_secret => $client_secret);
-my $axis = AsposeCellsCloud::Object::Axis->new(isAutomaticMajorUnit => 1, maximum => 100);
-$api->post_chart_second_value_axis(name => $name, sheet_name => $sheet_name, chart_index => $chart_index, axis => $axis);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="10" >}}
-
-```go
-// Go example to update the second value axis
-api := cells.NewApiClient("clientId", "clientSecret")
-axis := cells.Axis{IsAutomaticMajorUnit: true, Maximum: 100}
-api.PostChartSecondValueAxis(name, sheetName, chartIndex, axis)
-```
-
-{{< /tab >}}
-
+{{<tabs tabTotal="1" tabID="4" tabName1="Node.js" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example-Post-ChartSecondValueAxis.js" >}}
+{{</tab>}}
 {{< /tabs >}}

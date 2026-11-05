@@ -141,60 +141,6 @@ curl -X GET \
 
 ---
 
-### Using Aspose.Cells Cloud SDKs
-
-SDKs for 8+ languages simplify integration, handle authentication, and manage serialization. See the [Aspose.Cells Cloud GitHub organization](https://github.com/aspose-cells-cloud) for official SDKs.
-
-#### C# (.NET)
-
-```csharp
-var api = new CellsApi(clientId, clientSecret);
-var response = api.CellsRangesGetRangesWorksheet(
-    name: "MyWorkbook.xlsx",
-    worksheet: "Sheet1",
-    range: "A1:C12",
-    format: "pdf",
-    folder: null,
-    storageName: null
-);
-File.WriteAllBytes("range_export.pdf", response);
-```
-
-#### Java
-
-```java
-CellsApi api = new CellsApi(System.getenv("CELLS_CLOUD_CLIENT_ID"),
-                            System.getenv("CELLS_CLOUD_CLIENT_SECRET"));
-ResponseStream response = api.cellsRangesGetRangesWorksheet(
-    "MyWorkbook.xlsx", "Sheet1", "A1:C12", "pdf", null, null);
-Files.write(Paths.get("range_export.pdf"), response.getBytes());
-```
-
-#### Python
-
-```python
-from asposecellscloud.api import CellsApi
-from asposecellscloud.configuration import Configuration
-
-config = Configuration()
-config.client_id = "YOUR_CLIENT_ID"
-config.client_secret = "YOUR_CLIENT_SECRET"
-api = CellsApi(config)
-
-response = api.cells_ranges_get_ranges_worksheet(
-    name="MyWorkbook.xlsx",
-    worksheet="Sheet1",
-    range="A1:C12",
-    format="pdf"
-)
-with open("range_export.pdf", "wb") as f:
-    f.write(response)
-```
-
-> Full examples for PHP, Ruby, Node.js, Perl, and Go are available in the [SDK repository](https://github.com/aspose-cells-cloud).
-
----
-
 ### Use Cases
 
 #### Data Export & Migration
@@ -230,3 +176,27 @@ with open("range_export.pdf", "wb") as f:
 - **Event-Triggered Exports**: Export upon sales order creation, inventory threshold, or report completion.
 - **Batch Processing**: Export multiple ranges across workbooks in parallel.
 - **Pipeline Integration**: Embed range export in CI/CD (e.g., generate test reports as PDF).
+
+## How to Use the Export Range as Format API with SDKs?
+
+### Export Range as Format API Specification
+
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ExportRangeAsFormat" rel="noopener noreferrer">Export Range as Format API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
+
+SDKs for 8+ languages simplify integration, handle authentication, and manage serialization. See the [Aspose.Cells Cloud GitHub organization](https://github.com/aspose-cells-cloud) for official SDKs.
+
+### Use Aspose.Cells Cloud SDKs
+
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
+
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+
+{{<tabs tabTotal="2" tabID="1" tabName1="PHP" tabName2="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ExportRangeAsFormat.php" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ExportRangeAsFormat.go" >}}
+{{</tab>}}
+{{< /tabs >}}

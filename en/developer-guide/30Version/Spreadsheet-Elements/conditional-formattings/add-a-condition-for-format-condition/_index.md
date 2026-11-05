@@ -140,7 +140,19 @@ The response indicates that the condition was added successfully. The operation 
 
 ---
 
-## SDK Examples
+## See Also
+
+- **[Get Conditional Formattings](https://docs.aspose.cloud/cells/conditional-formattings/get-conditional-formattings/)** – Retrieve the list of conditional‑formatting rules for a worksheet.  
+- **[Delete Conditional Formatting](https://docs.aspose.cloud/cells/conditional-formattings/delete-a-conditional-formatting/)** – Remove an existing conditional‑formatting rule.  
+- **[OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/PutWorksheetFormatConditionCondition)** – Full machine‑readable definition of this operation.  
+
+---
+
+## How to Use the Put Worksheet Format Condition Condition API with SDKs?
+
+### Put Worksheet Format Condition Condition API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/ConditionalFormattings/PutWorksheetFormatConditionCondition" rel="noopener noreferrer">Put Worksheet Format Condition Condition API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 Below are ready‑to‑run snippets for the most popular SDKs. Replace placeholder values (`YOUR_FILE`, `YOUR_SHEET`, etc.) with your own data.
 
@@ -336,10 +348,36 @@ func main() {
 
 ---
 
-## See Also
+### Use Aspose.Cells Cloud SDKs
 
-- **[Get Conditional Formattings](https://docs.aspose.cloud/cells/conditional-formattings/get-conditional-formattings/)** – Retrieve the list of conditional‑formatting rules for a worksheet.  
-- **[Delete Conditional Formatting](https://docs.aspose.cloud/cells/conditional-formattings/delete-a-conditional-formatting/)** – Remove an existing conditional‑formatting rule.  
-- **[OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/PutWorksheetFormatConditionCondition)** – Full machine‑readable definition of this operation.  
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
----
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExamplePutWorksheetFormatConditionCondition.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_PutWorksheetFormatConditionCondition.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_PutWorksheetFormatConditionCondition.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_PutWorksheetFormatConditionCondition.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PutWorksheetFormatConditionCondition.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_PutWorksheetFormatConditionCondition.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_PutWorksheetFormatConditionCondition.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_PutWorksheetFormatConditionCondition.go" >}}
+{{</tab>}}
+{{< /tabs >}}

@@ -73,11 +73,11 @@ This method searches for all text items within a remote spreadsheet file. It sup
 | -------------- | ---- | ----------- |
 | [TBD]          |      | [TBD]       |
 
-## How to Use the SearchAllTextItemsInRemoteSpreadsheet with SDKs
+## How to Use the Search All Text Items in Remote Spreadsheet API with SDKs?
 
-### SearchAllTextItemsInRemoteSpreadsheet Specification
+### Search All Text Items in Remote Spreadsheet API Specification
 
-The [SearchAllTextItemsInRemoteSpreadsheet API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Search/SearchAllTextItemsInRemoteSpreadsheet) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Search/SearchAllTextItemsInRemoteSpreadsheet" rel="noopener noreferrer">Search All Text Items in Remote Spreadsheet API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
@@ -117,6 +117,7 @@ curl -v "https://api.aspose.cloud/v4.0/cells/{name}/search/content/all-textitems
 
 ### Use Aspose Cells Cloud SDKs
 
-Using an SDK is the fastest way to accelerate development. An SDK abstracts low-level details, allowing you to focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
+### Use Aspose.Cells Cloud SDKs
 
-The following code examples demonstrate how to call Aspose Cells Cloud web services using various SDKs:
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

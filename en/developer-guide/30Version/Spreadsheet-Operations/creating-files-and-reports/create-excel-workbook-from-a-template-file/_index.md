@@ -132,7 +132,30 @@ _If the `dataFile` query parameter is used instead of a multipart body, omit the
 
 ---
 
-## SDK Examples
+## Error Handling
+
+| Status Code | Situation                                                     | Recommended Action                                                                                             |
+| ----------- | ------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| **400**     | Required parameters missing or invalid file type.             | Verify query parameters, ensure template and data files exist and are supported (`.xlsx`, `.xml`, `.json`).    |
+| **401**     | JWT token is missing, expired, or malformed.                  | Regenerate a fresh access token using your Client Id/Secret.                                                   |
+| **413**     | Uploaded file exceeds the service size limit (default 50 MB). | Reduce file size or split the workbook into smaller parts.                                                     |
+| **500**     | Unexpected server error.                                      | Retry after a short delay; if the problem persists, contact Aspose support with the `Request‑Id` header value. |
+
+---
+
+## See Also
+
+- **[PutWorkbookSave](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookSave)** – Save an existing workbook to a specified format.
+- **[GetWorkbook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkbook)** – Retrieve workbook information or download the file.
+- **[Upload File API](https://apireference.aspose.cloud/cells/#/Storage/UploadFile)** – Upload template or data files to cloud storage.
+
+---
+
+## How to Use the Put Workbook Create API with SDKs?
+
+### Put Workbook Create API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Workbook/PutWorkbookCreate" rel="noopener noreferrer">Put Workbook Create API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 The following snippets demonstrate how to invoke **PutWorkbookCreate** with the official Aspose.Cells Cloud SDKs.
 
@@ -408,21 +431,36 @@ func main() {
 
 ---
 
-## Error Handling
+### Use Aspose.Cells Cloud SDKs
 
-| Status Code | Situation                                                     | Recommended Action                                                                                             |
-| ----------- | ------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| **400**     | Required parameters missing or invalid file type.             | Verify query parameters, ensure template and data files exist and are supported (`.xlsx`, `.xml`, `.json`).    |
-| **401**     | JWT token is missing, expired, or malformed.                  | Regenerate a fresh access token using your Client Id/Secret.                                                   |
-| **413**     | Uploaded file exceeds the service size limit (default 50 MB). | Reduce file size or split the workbook into smaller parts.                                                     |
-| **500**     | Unexpected server error.                                      | Retry after a short delay; if the problem persists, contact Aspose support with the `Request‑Id` header value. |
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
----
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 
-## See Also
-
-- **[PutWorkbookSave](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookSave)** – Save an existing workbook to a specified format.
-- **[GetWorkbook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkbook)** – Retrieve workbook information or download the file.
-- **[Upload File API](https://apireference.aspose.cloud/cells/#/Storage/UploadFile)** – Upload template or data files to cloud storage.
-
----
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExamplePutWorkbookCreate.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_PutWorkbookCreate.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_PutWorkbookCreate.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_PutWorkbookCreate.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PutWorkbookCreate.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_PutWorkbookCreate.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_PutWorkbookCreate.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_PutWorkbookCreate.go" >}}
+{{</tab>}}
+{{< /tabs >}}

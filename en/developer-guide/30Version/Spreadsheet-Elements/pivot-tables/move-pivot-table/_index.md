@@ -10,7 +10,6 @@ description: "Move pivot tables or fields in Excel workbooks via Aspose.Cells Cl
 weight: 120
 ArticleTitle: "Move Pivot Table Field with Aspose.Cells Cloud REST API"
 ---
-
 The **PostPivotTableFieldMoveTo** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField/Move`) enables moving a pivot field within a specific PivotTable by specifying the field index and the source and target field area types (e.g., Column, Row, Page, Data, or Undefined), allowing precise reorganization of PivotTable data layout programmatically via Aspose.Cells Cloud.
 
 ## The Post Pivot Table Field Move to Web API
@@ -98,78 +97,42 @@ Content-Type: application/json
 | 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
 | 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
-## Cloud SDK Family
+## How to Use the Post Pivot Table Field Move to API with SDKs?
 
-Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+### Post Pivot Table Field Move to API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/PivotTables/PostPivotTableFieldMoveTo" rel="noopener noreferrer">Post Pivot Table Field Move to API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
+
+### Use Aspose.Cells Cloud SDKs
+
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 
-{{< tabs tabTotal="2" tabID="4" tabName1="C#" tabName2="Go" >}}
-
-{{< tab tabNum="1" >}}
-
-```csharp
-// Use HTTPS endpoints in production.
-public void Run_PivotTable_Move()
-{
-    url = @"https://api.aspose.com/v3.0/storage/file/Temp/V17.02.00_01.xlsx";
-    using (HttpWebResponse response = _helper.CallDelete(url, string.Empty, contentType))
-    {
-        Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
-    }
-
-    url = @"https://api.aspose.com/v3.0/cells/V17.02.00_01.xlsx?folder=Temp";
-    using (HttpWebResponse response = _helper.CallPut(url, string.Empty, contentType))
-    {
-        Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
-    }
-
-    url = @"https://api.aspose.com/v3.0/cells/V17.02.00_01.xlsx/worksheets/PivotSheet?folder=Temp";
-    using (HttpWebResponse response = _helper.CallPut(url, string.Empty, contentType))
-    {
-        Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
-    }
-
-    url = @"https://api.aspose.com/v3.0/cells/V17.02.00_01.xlsx/worksheets/Sheet2?folder=Temp";
-    using (HttpWebResponse response = _helper.CallPut(url, string.Empty, contentType))
-    {
-        Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
-    }
-
-    url = @"https://api.aspose.com/v3.0/cells/V17.02.00_01.xlsx/importdata?folder=Temp";
-    data = "{ \"BatchData\":[{\"rowIndex\":0,\"columnIndex\":0,\"type\":\"String\",\"value\":\"Sport\",\"style\":null}, ... ],\"DestinationWorksheet\":\"Sheet2\",\"IsInsert\":false}";
-    using (HttpWebResponse response = _helper.CallPost(url, data, contentType))
-    {
-        Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
-    }
-
-    url = "https://api.aspose.com/v3.0/cells/V17.02.00_01.xlsx/worksheets/PivotSheet/pivottables?folder=Temp";
-    data = "{\"Name\":\"TestPivot\",\"SourceData\":\"=Sheet2!A1:E8\",\"DestCellName\":\"C1\",\"UseSameSource\":true,\"PivotFieldRows\":[0,1],\"PivotFieldColumns\":[2],\"PivotFieldData\":[3,4]}";
-    using (HttpWebResponse response = _helper.CallPut(url, data, contentType))
-    {
-        Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
-    }
-
-    url = "https://api.aspose.com/v3.0/cells/V17.02.00_01.xlsx/worksheets/PivotSheet/pivottables/0/Move?row=10&column=10&folder=Temp";
-    using (HttpWebResponse response = _helper.CallPost(url, string.Empty, contentType))
-    {
-        Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
-    }
-
-    url = "https://api.aspose.com/v3.0/cells/V17.02.00_01.xlsx/worksheets/PivotSheet/pivottables/0/PivotField/Move?fieldIndex=1&from=Row&to=Column&folder=Temp";
-    using (HttpWebResponse response = _helper.CallPost(url, string.Empty, contentType))
-    {
-        Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
-    }
-}
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-{{< gist "aspose-cells-cloud-gists" "60360c7d035abd1b2c9e36c68c9f00fb" >}}
-
-{{< /tab >}}
-
+{{<tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExamplePostPivotTableFieldMoveTo.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_PostPivotTableFieldMoveTo.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_PostPivotTableFieldMoveTo.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_PostPivotTableFieldMoveTo.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PostPivotTableFieldMoveTo.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_PostPivotTableFieldMoveTo.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_PostPivotTableFieldMoveTo.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_PostPivotTableFieldMoveTo.go" >}}
+{{</tab>}}
 {{< /tabs >}}

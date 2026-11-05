@@ -151,106 +151,6 @@ curl -X PUT \
 - **Multi-Format Support**: Process XLSX, XLS, ODS, CSV, and more.
 - **Developer-Friendly**: Official SDKs for [C#](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet), [Java](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java), [Python](https://github.com/aspose-cells-cloud/aspose-cells-cloud-python), [Node.js](https://github.com/aspose-cells-cloud/aspose-cells-cloud-node), [PHP](https://github.com/aspose-cells-cloud/aspose-cells-cloud-php), [Ruby](https://github.com/aspose-cells-cloud/aspose-cells-cloud-ruby), [Perl](https://github.com/aspose-cells-cloud/aspose-cells-cloud-perl), and [Go](https://github.com/aspose-cells-cloud/aspose-cells-cloud-go).
 
-## SDK Examples
-
-{{< tabs tabTotal="8" tabID="csharp,java,php,ruby,node,python,perl,go" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab id="csharp" >}}
-
-```csharp
-// See full example: https://gist.github.com/aspose-cells-cloud-gists/8a5b324fdf3e574dbd747c1a1e24b05d/Example40_TrimTextInSpreadsheet.cs
-var cellsApi = new CellsApi(clientId, clientSecret);
-var result = cellsApi.CellsContentTrim("input.xlsx",
-    trimContent: " ", trimLeading: true, trimTrailing: true,
-    trimSpaceBetweenWordTo1: true, removeAllLineBreaks: true);
-```
-
-{{< /tab >}}
-{{< tab id="java" >}}
-
-```java
-// See full example: https://gist.github.com/aspose-cells-cloud-gists/c59aa5c02f735466a5e34751cee73f5f/Example40_TrimTextInSpreadsheet.java
-CellsApi cellsApi = new CellsApi(clientId, clientSecret);
-File result = cellsApi.cellsContentTrim("input.xlsx",
-    " ", true, true, true, true, null, null, null, null, null, null);
-```
-
-{{< /tab >}}
-{{< tab id="php" >}}
-
-```php
-// See full example: https://gist.github.com/aspose-cells-cloud-gists/84283c8ba766ed815f47e6dfb0891152/Example40_TrimTextInSpreadsheet.php
-$cellsApi = new CellsApi($clientId, $clientSecret);
-$result = $cellsApi->cellsContentTrim("input.xlsx",
-    " ", true, true, true, true, null, null, null, null, null, null);
-```
-
-{{< /tab >}}
-{{< tab id="ruby" >}}
-
-```ruby
-# See full example: https://gist.github.com/aspose-cells-cloud-gists/36ed8b8727561b92692939513d365fca/Example40_TrimTextInSpreadsheet.rb
-cells_api = AsposeCellsCloud::CellsApi.new(client_id, client_secret)
-result = cells_api.cells_content_trim('input.xlsx',
-  trim_content: ' ', trim_leading: true, trim_trailing: true,
-  trim_space_between_word_to1: true, remove_all_line_breaks: true)
-```
-
-{{< /tab >}}
-{{< tab id="node" >}}
-
-```typescript
-// See full example: https://gist.github.com/aspose-cells-cloud-gists/e82de2e4189bc27ae92abf73c36b4df0/Example40_TrimTextInSpreadsheet.ts
-const cellsApi = new CellsApi(clientId, clientSecret);
-const result = await cellsApi.cellsContentTrim(
-  "input.xlsx",
-  " ",
-  true,
-  true,
-  true,
-  true,
-  undefined,
-  undefined,
-  undefined,
-  undefined,
-  undefined,
-  undefined,
-);
-```
-
-{{< /tab >}}
-{{< tab id="python" >}}
-
-```python
-# See full example: https://gist.github.com/aspose-cells-cloud-gists/61e922de11e6e7144db88adcad6501c1/Example40_TrimTextInSpreadsheet.py
-cells_api = CellsApi(client_id, client_secret)
-result = cells_api.cells_content_trim("input.xlsx",
-    trim_content=" ", trim_leading=True, trim_trailing=True,
-    trim_space_between_word_to1=True, remove_all_line_breaks=True)
-```
-
-{{< /tab >}}
-{{< tab id="perl" >}}
-
-```perl
-# See full example: https://gist.github.com/aspose-cells-cloud-gists/f82a3a00251e34ff8766116282c8c9ca/Example40_TrimTextInSpreadsheet.pl
-my $cells_api = CellsAPI->new(client_id => $clientId, client_secret => $clientSecret);
-my $result = $cells_api->cells_content_trim("input.xlsx",
-    " ", 1, 1, 1, 1, undef, undef, undef, undef, undef, undef);
-```
-
-{{< /tab >}}
-{{< tab id="go" >}}
-
-```go
-// See full example: https://gist.github.com/aspose-cells-cloud-gists/2b824d4e13644368d12682856aa49185/Example40_TrimTextInSpreadsheet.go
-cellsApi, _ := api.NewCellsApiWithCredentials(os.Getenv("ClientID"), os.Getenv("ClientSecret"))
-result, _, _ := cellsApi.CellsContentTrim("input.xlsx",
-    " ", true, true, true, true, "", "", "", "", "", "")
-```
-
-{{< /tab >}}
-{{< /tabs >}}
-
 ## Related Resources
 
 - [Authentication Guide](/total/working-with-authentication/)
@@ -267,3 +167,14 @@ result, _, _ := cellsApi.CellsContentTrim("input.xlsx",
 ---
 
 > **Tip**: For large-scale data cleaning, combine TrimCharacter with [Batch Processing](/cells/batch-process-spreadsheets/) and [Webhook Notifications](/cells/working-with-webhooks/) for end-to-end automation.
+
+## How to Use the Trim Character API with SDKs?
+
+### Trim Character API Specification
+
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/TextProcessing/TrimCharacter" rel="noopener noreferrer">Trim Character API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
+
+### Use Aspose.Cells Cloud SDKs
+
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

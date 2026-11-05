@@ -16,7 +16,6 @@ categories: ["aspose.cells.cloud", "api-reference"]
 weight: 100
 type: docs
 ---
-
 The **UnprotectSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/unprotection/spreadsheet`) in Aspose.Cells Cloud v4.0 removes dual-layer password protection—both open and modify passwords—from Excel workbooks programmatically, supporting encrypted passwords for enhanced security; it accepts the protected spreadsheet file via form data and requires both the encryption and modify passwords as query parameters, enabling secure, server-side unlocking for integration into data pipelines, document management systems, and migration workflows without exposing credentials client-side.
 
 ## The Unprotect Spreadsheet Web API
@@ -159,3 +158,25 @@ Console.WriteLine($"Unprotected file saved to: {response.Path}");
 | `404 Not Found`         | Source file missing                    | Verify `name` matches an existing file in storage.                      |
 | `413 Payload Too Large` | File > 2 GB                            | Split large files or use chunked upload + storage APIs first.           |
 | `500 Server Error`      | Corrupted file                         | Validate file integrity before upload.                                  |
+
+## How to Use the Unprotect Spreadsheet API with SDKs?
+
+### Unprotect Spreadsheet API Specification
+
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Protection/UnprotectSpreadsheet" rel="noopener noreferrer">Unprotect Spreadsheet API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
+
+### Use Aspose.Cells Cloud SDKs
+
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
+
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+
+{{<tabs tabTotal="2" tabID="1" tabName1="PHP" tabName2="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_UnprotectSpreadsheet.php" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_UnprotectSpreadsheet.go" >}}
+{{</tab>}}
+{{< /tabs >}}

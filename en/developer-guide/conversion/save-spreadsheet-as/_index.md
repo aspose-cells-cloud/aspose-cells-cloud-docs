@@ -147,7 +147,22 @@ curl -X PUT \
 
 ---
 
-## SDK Examples
+## Why Use the Save Spreadsheet As API?
+
+| Benefit                    | Proof Point                                                                                                 |
+| -------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| **Cloud-Based Conversion** | 100% server-side processing; no local dependencies.                                                         |
+| **Data Security**          | Files never leave the cloud—conversion occurs in Azure/AWS regions you choose.                              |
+| **Developer Velocity**     | Reduces development time by 60% vs. custom conversion logic (validated across 50+ enterprise integrations). |
+| **Format Fidelity**        | Preserves 99.9% of formatting, formulas, and charts (tested on 10k+ real-world files).                      |
+| **Usage-Based Pricing**    | Pay only per conversion—no upfront licensing.                                                               |
+| **Zero Infrastructure**    | No server maintenance, scaling, or updates required.                                                        |
+
+## How to Use the Save Spreadsheet as API with SDKs?
+
+### Save Spreadsheet as API Specification
+
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/SaveSpreadsheetAs" rel="noopener noreferrer">Save Spreadsheet as API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 Aspose.Cells Cloud provides production-ready SDKs for 8+ languages. See the [GitHub organization](https://github.com/aspose-cells-cloud) for official repositories.
 
@@ -217,13 +232,7 @@ api.cellsSaveAsPostDocumentSaveAs(
 );
 ```
 
-## Why Use the Save Spreadsheet As API?
+### Use Aspose.Cells Cloud SDKs
 
-| Benefit                    | Proof Point                                                                                                 |
-| -------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| **Cloud-Based Conversion** | 100% server-side processing; no local dependencies.                                                         |
-| **Data Security**          | Files never leave the cloud—conversion occurs in Azure/AWS regions you choose.                              |
-| **Developer Velocity**     | Reduces development time by 60% vs. custom conversion logic (validated across 50+ enterprise integrations). |
-| **Format Fidelity**        | Preserves 99.9% of formatting, formulas, and charts (tested on 10k+ real-world files).                      |
-| **Usage-Based Pricing**    | Pay only per conversion—no upfront licensing.                                                               |
-| **Zero Infrastructure**    | No server maintenance, scaling, or updates required.                                                        |
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

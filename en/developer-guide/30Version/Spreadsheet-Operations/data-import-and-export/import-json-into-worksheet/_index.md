@@ -89,14 +89,15 @@ Possible status codes:
 }
 ```
 
-## How to Use the PostWorkbookImportJson API with SDKs
+## How to Use the Post Workbook Import JSON API with SDKs?
 
-### PostWorkbookImportJson API Specification
+### Post Workbook Import JSON API Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/DataProcessing/PostWorkbookImportJson) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
-
-### Use Aspose.Cells Cloud SDKs
+The <a href="https://reference.aspose.cloud/cells/#/DataProcessing/PostWorkbookImportJson" rel="noopener noreferrer">Post Workbook Import JSON API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 Using an SDK is the most efficient way to accelerate development. SDKs handle low‑level details, allowing you to focus on your business logic. For a complete list of Aspose.Cells Cloud SDKs, please visit the [GitHub repository](https://github.com/aspose-cells-cloud).
 
-The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
+### Use Aspose.Cells Cloud SDKs
+
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

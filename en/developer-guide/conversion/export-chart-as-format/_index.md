@@ -102,7 +102,31 @@ curl -X GET "https://api.aspose.cloud/v4.0/cells/input.xlsx/worksheets/Sheet1/ch
 
 ---
 
-## SDK Examples
+## Response
+
+The API returns the chart as a binary file stream in the specified format.
+
+### Success Response (HTTP 200)
+
+| Field  | Type | Description                          |
+| ------ | ---- | ------------------------------------ |
+| `file` | file | Binary content of the exported chart |
+
+### HTTP Status Codes
+
+| Code | Meaning               | Description                                                                     |
+| ---- | --------------------- | ------------------------------------------------------------------------------- |
+| 200  | OK                    | Chart exported successfully; response contains binary file content.             |
+| 400  | Bad Request           | Invalid path/query parameters (e.g., missing `format`, invalid `chartIndex`).   |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                                   |
+| 404  | Not Found             | Workbook or worksheet not found in storage.                                     |
+| 500  | Internal Server Error | Unexpected error during conversion (e.g., corrupted chart, unsupported format). |
+
+## How to Use the Export Chart as Format API with SDKs?
+
+### Export Chart as Format API Specification
+
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ExportChartAsFormat" rel="noopener noreferrer">Export Chart as Format API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 Using an SDK simplifies authentication, request formatting, and response handling. Below are complete, copy-pasteable examples:
 
@@ -161,22 +185,36 @@ api
 
 ---
 
-## Response
+### Use Aspose.Cells Cloud SDKs
 
-The API returns the chart as a binary file stream in the specified format.
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
-### Success Response (HTTP 200)
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 
-| Field  | Type | Description                          |
-| ------ | ---- | ------------------------------------ |
-| `file` | file | Binary content of the exported chart |
-
-### HTTP Status Codes
-
-| Code | Meaning               | Description                                                                     |
-| ---- | --------------------- | ------------------------------------------------------------------------------- |
-| 200  | OK                    | Chart exported successfully; response contains binary file content.             |
-| 400  | Bad Request           | Invalid path/query parameters (e.g., missing `format`, invalid `chartIndex`).   |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                                   |
-| 404  | Not Found             | Workbook or worksheet not found in storage.                                     |
-| 500  | Internal Server Error | Unexpected error during conversion (e.g., corrupted chart, unsupported format). |
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ExportChartAsFormat.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ExportChartAsFormat.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ExportChartAsFormat.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ExportChartAsFormat.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ExportChartAsFormat.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ExportChartAsFormat.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ExportChartAsFormat.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ExportChartAsFormat.go" >}}
+{{</tab>}}
+{{< /tabs >}}

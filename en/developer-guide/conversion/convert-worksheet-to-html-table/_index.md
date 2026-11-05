@@ -73,11 +73,11 @@ This operation reads a spreadsheet file from the local file system, converts its
 | -------------- | ------ | -------------------------------------------------------------------- |
 | _None_         | _None_ | _No JSON body is required; the file is sent as multipart/form-data._ |
 
-## How to Use the Convert Worksheet To Html Table with SDKs
+## How to Use the Convert Worksheet to HTML Table API with SDKs?
 
-### Convert Worksheet To Html Table Specification
+### Convert Worksheet to HTML Table API Specification
 
-The [Convert Worksheet To Html Table API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertWorksheetToHtmlTable) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertWorksheetToHtmlTable" rel="noopener noreferrer">Convert Worksheet to HTML Table API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
@@ -111,6 +111,7 @@ curl -v "https://api.aspose.cloud/v4.0/cells/convert/worksheet/html-table?worksh
 
 ### Use Aspose Cells Cloud SDKs
 
-Using an SDK is the fastest way to accelerate development. An SDK abstracts low-level details, allowing you to focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
+### Use Aspose.Cells Cloud SDKs
 
-The following code examples demonstrate how to call Aspose.Cells Cloud web services using various SDKs:
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

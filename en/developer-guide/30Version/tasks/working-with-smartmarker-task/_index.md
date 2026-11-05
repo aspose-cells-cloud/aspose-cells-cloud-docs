@@ -218,3 +218,14 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/task/runtask" \
 | `SmartMarkerTaskParameter.DestinationWorkbook` | object | Yes | Specifies where the intermediate workbook is stored. |
 | `SmartMarkerTaskParameter.xmlFile` | object | Yes | Data source (XML/JSON) used by SmartMarker. |
 | `SaveResultTaskParameter.ResultDestination` | object | Yes | Defines how the final workbook is returned (e.g., `OutputStream`). |
+
+## How to Use the Post Run Task API with SDKs?
+
+### Post Run Task API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Task/PostRunTask" rel="noopener noreferrer">Post Run Task API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
+
+### Use Aspose.Cells Cloud SDKs
+
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

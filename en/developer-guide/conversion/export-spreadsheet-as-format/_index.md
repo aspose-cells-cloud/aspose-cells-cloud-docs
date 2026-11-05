@@ -125,7 +125,59 @@ curl -X GET "https://api.aspose.cloud/v4.0/cells/MyWorkbook.xlsx?format=PDF&outP
 
 ---
 
-## SDK Examples
+## Supported Output Formats
+
+| Format  | Description                | Use Case                         |
+| :------ | :------------------------- | :------------------------------- |
+| `PDF`   | Portable Document Format   | Sharing, archiving, printing     |
+| `XLSX`  | Excel Open XML             | Modern Excel compatibility       |
+| `CSV`   | Comma-Separated Values     | Data import/export, ETL          |
+| `HTML`  | HyperText Markup Language  | Web publishing                   |
+| `JSON`  | JavaScript Object Notation | API consumption, NoSQL ingestion |
+| `ODS`   | OpenDocument Spreadsheet   | LibreOffice, LibreOffice Online  |
+| `TIFF`  | Tagged Image File Format   | Image-based archival, OCR prep   |
+| `TXT`   | Plain Text                 | Simple data extraction           |
+| `MHTML` | MIME HTML                  | Email-ready documents            |
+
+> 🔍 Full list of supported formats: [Aspose.Cells Cloud Format Support](/supported-formats/)
+
+---
+
+## HTTP Responses
+
+| Code  | Meaning               | Description                                                            |
+| :---- | :-------------------- | :--------------------------------------------------------------------- |
+| `200` | OK                    | Export successful; file stream returned.                               |
+| `400` | Bad Request           | Invalid request parameters (e.g., unsupported format, missing `name`). |
+| `401` | Unauthorized          | Invalid or missing JWT token.                                          |
+| `404` | Not Found             | Source file not found in storage.                                      |
+| `500` | Internal Server Error | Conversion failed (e.g., corrupted file, unsupported encryption).      |
+
+---
+
+## Error Handling
+
+| Error              | Cause                                                | Resolution                                          |
+| :----------------- | :--------------------------------------------------- | :-------------------------------------------------- |
+| `400 Bad Request`  | Missing `format` or `name`, invalid format value     | Validate parameters; use supported formats          |
+| `401 Unauthorized` | Token expired or malformed                           | Refresh token; ensure `Bearer` prefix               |
+| `404 Not Found`    | File doesn’t exist in storage                        | Verify `folder` and `name` path                     |
+| `500 Server Error` | File corrupted, password mismatch, or internal issue | Check file integrity; try unencrypted version first |
+
+## Why Use This API?
+
+- ✅ **Cloud-Native**: No local processing—entire conversion happens in the cloud.
+- ✅ **Zero Infrastructure**: No servers to maintain, scale, or patch.
+- ✅ **Pay-as-you-go**: Only pay for actual conversions (no fixed costs).
+- ✅ **High Fidelity**: Preserves formatting, formulas, charts, and macros.
+- ✅ **Developer Friendly**: SDKs in 8+ languages with full documentation.
+- ✅ **Secure**: TLS 1.2+ encryption; JWT authentication; GDPR-compliant data handling.
+
+## How to Use the Export Spreadsheet as Format API with SDKs?
+
+### Export Spreadsheet as Format API Specification
+
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ExportSpreadsheetAsFormat" rel="noopener noreferrer">Export Spreadsheet as Format API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### C#
 
@@ -312,50 +364,18 @@ if err != nil {
 fmt.Printf("Exported to: %s\n", *resp)
 ```
 
-## Supported Output Formats
+### Use Aspose.Cells Cloud SDKs
 
-| Format  | Description                | Use Case                         |
-| :------ | :------------------------- | :------------------------------- |
-| `PDF`   | Portable Document Format   | Sharing, archiving, printing     |
-| `XLSX`  | Excel Open XML             | Modern Excel compatibility       |
-| `CSV`   | Comma-Separated Values     | Data import/export, ETL          |
-| `HTML`  | HyperText Markup Language  | Web publishing                   |
-| `JSON`  | JavaScript Object Notation | API consumption, NoSQL ingestion |
-| `ODS`   | OpenDocument Spreadsheet   | LibreOffice, LibreOffice Online  |
-| `TIFF`  | Tagged Image File Format   | Image-based archival, OCR prep   |
-| `TXT`   | Plain Text                 | Simple data extraction           |
-| `MHTML` | MIME HTML                  | Email-ready documents            |
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
-> 🔍 Full list of supported formats: [Aspose.Cells Cloud Format Support](/supported-formats/)
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 
----
-
-## HTTP Responses
-
-| Code  | Meaning               | Description                                                            |
-| :---- | :-------------------- | :--------------------------------------------------------------------- |
-| `200` | OK                    | Export successful; file stream returned.                               |
-| `400` | Bad Request           | Invalid request parameters (e.g., unsupported format, missing `name`). |
-| `401` | Unauthorized          | Invalid or missing JWT token.                                          |
-| `404` | Not Found             | Source file not found in storage.                                      |
-| `500` | Internal Server Error | Conversion failed (e.g., corrupted file, unsupported encryption).      |
-
----
-
-## Error Handling
-
-| Error              | Cause                                                | Resolution                                          |
-| :----------------- | :--------------------------------------------------- | :-------------------------------------------------- |
-| `400 Bad Request`  | Missing `format` or `name`, invalid format value     | Validate parameters; use supported formats          |
-| `401 Unauthorized` | Token expired or malformed                           | Refresh token; ensure `Bearer` prefix               |
-| `404 Not Found`    | File doesn’t exist in storage                        | Verify `folder` and `name` path                     |
-| `500 Server Error` | File corrupted, password mismatch, or internal issue | Check file integrity; try unencrypted version first |
-
-## Why Use This API?
-
-- ✅ **Cloud-Native**: No local processing—entire conversion happens in the cloud.
-- ✅ **Zero Infrastructure**: No servers to maintain, scale, or patch.
-- ✅ **Pay-as-you-go**: Only pay for actual conversions (no fixed costs).
-- ✅ **High Fidelity**: Preserves formatting, formulas, charts, and macros.
-- ✅ **Developer Friendly**: SDKs in 8+ languages with full documentation.
-- ✅ **Secure**: TLS 1.2+ encryption; JWT authentication; GDPR-compliant data handling.
+{{<tabs tabTotal="2" tabID="1" tabName1="PHP" tabName2="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ExportSpreadsheetAsFormat.php" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ExportSpreadsheetAsFormat.go" >}}
+{{</tab>}}
+{{< /tabs >}}
