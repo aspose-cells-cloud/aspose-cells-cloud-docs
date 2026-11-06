@@ -1,8 +1,6 @@
 ---
 title: "Evaluate Aspose.Cells Cloud"
 description: "Try Aspose.Cells Cloud REST API for free: convert, merge, split Excel files in the cloud. Includes 150 API calls/month. No credit card required."
-date: 2024-02-14T10:00:00Z
-lastmod: 2024-03-28T14:30:00Z
 draft: false
 tags: ["cloud", "excel", "rest-api", "trial"]
 categories: ["product-overview"]

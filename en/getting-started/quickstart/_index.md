@@ -5,9 +5,6 @@ ArticleTitle: "Aspose.Cells Cloud Quickstart: Build an Excel Spreadsheet App in 
 type: "docs"
 url: "/quickstart/"
 description: "Build an Excel spreadsheet app in 5 minutes with Aspose.Cells Cloud: REST API setup, free account creation, security credentials, and SDK installation for Python, Java, C#, and more."
-date: 2024-02-15
-lastmod: 2024-03-28
-last_reviewed: 2024-03-28
 weight: 100
 keywords: "Aspose.Cells Cloud, Excel, Spreadsheet, API, Cloud SDK, REST API, PDF, CSV, JSON, Quickstart, Python, Java, C#, Node.js, Go, Ruby, Perl, PHP, Swift"
 linktitle: "Quickstart Guide"

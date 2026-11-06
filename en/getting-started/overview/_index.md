@@ -8,9 +8,6 @@ url: /overview/
 description: "Aspose.Cells Cloud REST API enables Excel automation in the cloud—convert XLSX to PDF/HTML/ODS, merge/split files, and apply encryption—using SDKs for Python, Java, C#, Node.js, and more. Free trial available."
 keywords: "Excel API, cloud spreadsheet, XLSX conversion, REST API for Excel, Aspose.Cells Cloud SDK"
 weight: 100
-date: 2024-03-15
-lastmod: 2024-05-22
-canonical: https://docs.aspose.cloud/cells/overview/
 aliases:
   - /cells/overview/
 ---

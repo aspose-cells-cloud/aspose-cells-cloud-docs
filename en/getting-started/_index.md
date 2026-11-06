@@ -6,8 +6,6 @@ linktitle: "Getting Started"
 type: docs
 url: /getting-started/
 description: "Upload, convert to PDF, download Excel files using Aspose.Cells Cloud REST API with cURL in 3 steps"
-date: 2024-05-10T00:00:00Z
-last_modified: 2024-05-15T14:30:00Z
 draft: false
 tags: ["excel", "cloud", "api", "curl", "pdf-conversion"]
 categories: ["cells", "getting-started"]
