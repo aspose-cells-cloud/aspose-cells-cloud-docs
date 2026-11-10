@@ -69,7 +69,7 @@ The conversion guide is the definitive treatment of this shift, including the pa
 | [Search & Replace](migrating-search-and-replace-apis.md) | Search | 4 → 14 | Category expansion; broken links; all text items | 🟢 Low |
 | [Data Processing](migrating-data-processing-to-4-0.md) | Data Processing / Transform | 13 → 10 | Consolidation plus merge, split and CSV import | 🟡 Medium |
 | [Conversion](migrating-conversion-apis-to-4-0.md) | Conversion | 14 → 28 | Granularity plus request-shape rewrite; real gaps | 🟡–🔴 Medium-high |
-| [Protection & Encryption](migrating-protection-and-encryption-apis.md) | Protection | 10 → 3 | Pure consolidation; controls removed | 🟡 Medium |
+| [Protection & Encryption](protection-and-encryption-migration/_index.md) | Protection | 10 → 3 | Pure consolidation; controls removed | 🟡 Medium |
 | [APIs Not Migratable](apis-not-migratable-to-4-0.md) | 25 controllers | 291 → 0 | No 4.0 implementation | 🔴 Blocker for some workloads |
 
 ### Text Processing — 8 to 16 endpoints
@@ -139,5 +139,5 @@ Read the guide that matches your controller, verify the behaviour that the mappi
 - [Search & Replace: 3.0 → 4.0](migrating-search-and-replace-apis.md)
 - [Data Processing: 3.0 → 4.0](migrating-data-processing-to-4-0.md)
 - [Conversion: 3.0 → 4.0](migrating-conversion-apis-to-4-0.md)
-- [Protection & Encryption: 3.0 → 4.0](migrating-protection-and-encryption-apis.md)
+- [Protection & Encryption: 3.0 → 4.0](protection-and-encryption-migration/_index.md)
 - [APIs Not Migratable to 4.0](apis-not-migratable-to-4-0.md)
