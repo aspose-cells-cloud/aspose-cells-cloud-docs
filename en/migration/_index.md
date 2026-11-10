@@ -65,8 +65,8 @@ The conversion guide is the definitive treatment of this shift, including the pa
 
 | Guide | Controller | Endpoints 3.0 → 4.0 | Character of the change | Risk |
 |-------|-----------|----------------------|-------------------------|------|
-| [Text Processing](migrating-text-processing-to-4-0.md) | Text Processing | 8 → 16 | Superset; two new operations; route restructure | 🟢 Low, one 🟡 step |
-| [Search & Replace](migrating-search-and-replace-apis.md) | Search | 4 → 14 | Category expansion; broken links; all text items | 🟢 Low |
+| [Text Processing](text-processing-migration/_index.md) | Text Processing | 8 → 16 | Superset; two new operations; route restructure | 🟢 Low, one 🟡 step |
+| [Search & Replace](search-and-replace-migration/_index.md) | Search | 4 → 14 | Category expansion; broken links; all text items | 🟢 Low |
 | [Data Processing](migrating-data-processing-to-4-0.md) | Data Processing / Transform | 13 → 10 | Consolidation plus merge, split and CSV import | 🟡 Medium |
 | [Conversion](migrating-conversion-apis-to-4-0.md) | Conversion | 14 → 28 | Granularity plus request-shape rewrite; real gaps | 🟡–🔴 Medium-high |
 | [Protection & Encryption](protection-and-encryption-migration/_index.md) | Protection | 10 → 3 | Pure consolidation; controls removed | 🟡 Medium |
@@ -135,8 +135,8 @@ Read the guide that matches your controller, verify the behaviour that the mappi
 ## Related Resources
 
 - [API Version Migration Guide](../../docs/API-Version-Migration.md)
-- [Text Processing: 3.0 → 4.0](migrating-text-processing-to-4-0.md)
-- [Search & Replace: 3.0 → 4.0](migrating-search-and-replace-apis.md)
+- [Text Processing: 3.0 → 4.0](text-processing-migration/_index.md)
+- [Search & Replace: 3.0 → 4.0](search-and-replace-migration/_index.md)
 - [Data Processing: 3.0 → 4.0](migrating-data-processing-to-4-0.md)
 - [Conversion: 3.0 → 4.0](migrating-conversion-apis-to-4-0.md)
 - [Protection & Encryption: 3.0 → 4.0](protection-and-encryption-migration/_index.md)
