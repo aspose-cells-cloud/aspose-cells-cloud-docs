@@ -38,7 +38,7 @@ Aspose.Cells Cloud’s **Import Data into Spreadsheet API** enables efficient, s
 PUT https://api.aspose.cloud/v4.0/cells/import/data
 ```
 
-### Authentication
+### Security and Authentication
 
 All requests require a valid [JWT token](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/). Include in the `Authorization` header as:
 

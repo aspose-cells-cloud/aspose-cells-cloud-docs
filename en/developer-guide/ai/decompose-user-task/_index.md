@@ -26,7 +26,7 @@ This v4.0 release introduces enhanced time-estimate optimization and native Azur
 PUT https://api.aspose.cloud/v4.0/cells/ai/task/decompose
 ```
 
-### Authentication
+### Security and Authentication
 
 All requests require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
@@ -44,7 +44,7 @@ All requests require [JWT token-based authentication](https://docs.aspose.cloud/
 
 ---
 
-### **Response**
+### Response
 
 ```json
 [

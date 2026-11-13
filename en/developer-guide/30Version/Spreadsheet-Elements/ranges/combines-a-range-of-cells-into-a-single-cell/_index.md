@@ -20,11 +20,11 @@ The **PostWorksheetCellsRangeMerge** API (`POST https://api.aspose.cloud/v3.0/ce
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/merge
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
 
-### **Request parameters**
+### Request Parameters
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 |---|---|---|---|
@@ -95,7 +95,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/
 | **404 Not Found**             | Workbook or worksheet not found.                        | `{ "Code": 404, "Message": "Resource not found." }`    |
 | **500 Internal Server Error** | Unexpected server error.                                | `{ "Code": 500, "Message": "Internal server error." }` |
 
-### **Response**
+### Response
 
 ```json
 [

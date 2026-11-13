@@ -20,7 +20,7 @@ The **CompressSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/spread
 PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/compress
 ```
 
-### Authentication
+### Security and Authentication
 
 All requests require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 

@@ -18,7 +18,7 @@ The **GetDocumentProperties** API (`GET https://api.aspose.cloud/v3.0/cells/{nam
 GET https://api.aspose.cloud/v3.0/cells/{name}/documentproperties
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
@@ -259,7 +259,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties" \
 
 {{< /tabs >}}
 
-### **Response**
+### Response
 
 ```json
 [

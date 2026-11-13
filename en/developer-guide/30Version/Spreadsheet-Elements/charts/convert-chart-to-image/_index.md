@@ -22,7 +22,7 @@ The **GetWorksheetChart** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/w
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartNumber}
 ```
 
-### Authentication
+### Security and Authentication
 
 All requests must include a valid JWT access token in the `Authorization` header:
 

@@ -31,7 +31,7 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 | folder | String | Query | The folder where the file is situated. |
 | storageName | String | Query | The storage name where the file is situated. |
 
-### **Response**
+### Response
 
 ```json
 [

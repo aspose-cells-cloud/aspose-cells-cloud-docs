@@ -18,11 +18,11 @@ The **GetWorksheetHyperlinks** API (`GET https://api.aspose.cloud/v3.0/cells/{na
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
 
-### Request parameters
+### Request Parameters
 
 | Parameter Name | Type   | Path/Query String/HTTPBody | Description                                  |
 | -------------- | ------ | -------------------------- | -------------------------------------------- |
@@ -105,7 +105,7 @@ The JSON response contains a `Hyperlinks` object.
 - **Count** – total number of hyperlinks in the worksheet.
 - **HyperlinkList** – an array where each item holds a `link` object. The `Href` property stores the hyperlink address, while `Rel`, `Title`, and `Type` provide additional metadata (often `null` for simple links).
 
-### **Response**
+### Response
 
 ```json
 [

@@ -17,17 +17,17 @@ The **PostAddTextContent** API (`POST https://api.aspose.cloud/v3.0/cells/addtex
 POST https://api.aspose.cloud/v3.0/cells/addtext
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-### **Request Parameter**
+### Request Parameters
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 |---|---|---|---|
 | addTextOptions | class:addtextoptions | HTTPBody | that specifies the text content and the position where the text should be added. |
 
-### **Response**
+### Response
 
 ```json
 [

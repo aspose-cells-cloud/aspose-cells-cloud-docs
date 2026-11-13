@@ -20,7 +20,7 @@ The **PostProtect** API (`POST https://api.aspose.cloud/v3.0/cells/protect`) in 
 POST https://api.aspose.cloud/v3.0/cells/protect
 ```
 
-### Authentication
+### Security and Authentication
 
 All requests must include a valid [JWT token](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).  
 Include the token in the `Authorization` header:

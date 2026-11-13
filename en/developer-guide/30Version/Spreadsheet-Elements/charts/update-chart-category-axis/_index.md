@@ -16,11 +16,11 @@ The **PostChartCategoryAxis** API (`POST https://api.aspose.cloud/v3.0/cells/{na
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/categoryaxis
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-### Request parameters
+### Request Parameters
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 |---|---|---|---|
@@ -89,7 +89,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/chart
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/PostChartCategoryAxis) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-### **Response**
+### Response
 
 ```json
 [

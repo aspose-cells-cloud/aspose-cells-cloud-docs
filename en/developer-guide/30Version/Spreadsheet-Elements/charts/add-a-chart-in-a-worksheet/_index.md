@@ -21,11 +21,11 @@ The **PutWorksheetChart** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/w
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-### Request parameters
+### Request Parameters
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 |---|---|---|---|
@@ -48,7 +48,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | pivotTableName | String | Query | The pivot table name. |
 | storageName | String | Query | The storage name where the file is situated. |
 
-### **Response**
+### Response
 
 ```json
 [

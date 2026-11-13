@@ -21,7 +21,7 @@ Programmatically search for specific text, numbers, or formulas in Excel workboo
 PUT https://api.aspose.cloud/v4.0/cells/{name}/search/content
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
@@ -41,7 +41,7 @@ Authorization: Bearer {access_token}
 | region         | String  | Query                      | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
 | password       | String  | Query                      | The password for opening spreadsheet file.                                                                                              |
 
-### **Response**
+### Response
 
 ```json
 [

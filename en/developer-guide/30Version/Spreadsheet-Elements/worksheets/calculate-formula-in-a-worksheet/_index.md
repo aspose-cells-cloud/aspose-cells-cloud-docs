@@ -18,7 +18,7 @@ The **GetWorksheetCalculateFormula** API (`GET https://api.aspose.cloud/v3.0/cel
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/formulaResult
 ```
 
-### Authentication
+### Security and Authentication
 
 All requests must include a valid **Bearer JWT token** in the `Authorization` header:
 
@@ -28,7 +28,7 @@ Authorization: Bearer <your_jwt_token>
 
 You can obtain a token by following the OAuth 2.0 flow described in the Aspose.Cells Cloud authentication guide.
 
-### **Request parameters**
+### Request Parameters
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 |---|---|---|---|
@@ -40,7 +40,7 @@ You can obtain a token by following the OAuth 2.0 flow described in the Aspose
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetCalculateFormula) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
-### **Response**
+### Response
 
 ```json
 [

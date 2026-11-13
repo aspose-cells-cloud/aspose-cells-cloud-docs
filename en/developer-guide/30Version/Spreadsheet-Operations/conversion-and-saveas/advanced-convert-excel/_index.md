@@ -18,11 +18,11 @@ The **PutConvertWorkbook** API (`PUT https://api.aspose.cloud/v3.0/cells/convert
 PUT https://api.aspose.cloud/v3.0/cells/convert
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
 
-### **Request Parameters:**
+### Request Parameters
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 |---|---|---|---|
@@ -43,7 +43,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | AutoColumnsFit | Boolean | Query | Auto-fits the columns width in this workbook. |
 | FontsLocation | String | Query | Use Custom fonts. |
 
-### **Response**
+### Response
 
 ```json
 [

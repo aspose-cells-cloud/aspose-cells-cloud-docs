@@ -18,7 +18,7 @@ The **DeleteWorksheetOleObject** API (`DELETE https://api.aspose.cloud/v3.0/cell
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects/{oleObjectIndex}
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
 
@@ -63,7 +63,7 @@ curl -v "https://api.aspose.cloud/v4.0/cells/Embedded_OleObject_Sample_Book1.xls
 
 {{< /tabs >}}
 
-### Response details
+### Response
 
 ```json
 [

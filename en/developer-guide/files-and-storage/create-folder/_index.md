@@ -27,7 +27,7 @@ The **CreateFolder** API (`PUT https://api.aspose.cloud/v4.0/cells/storage/folde
 PUT https://api.aspose.cloud/v4.0/cells/storage/folder/{path}
 ```
 
-### Authentication
+### Security and Authentication
 
 Aspose.Cells Cloud APIs require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 

@@ -26,7 +26,7 @@ The **ConvertWorksheetToHtml** API (`PUT https://api.aspose.cloud/v4.0/cells/con
 PUT https://api.aspose.cloud/v4.0/cells/convert/worksheet/html
 ```
 
-### Authentication
+### Security and Authentication
 
 The API requires <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
 

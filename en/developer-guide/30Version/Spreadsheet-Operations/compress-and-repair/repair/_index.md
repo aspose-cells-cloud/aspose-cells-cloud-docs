@@ -22,7 +22,7 @@ Aspose.Cells Cloud Excel Repair recovers data from corrupt Excel files online wi
 POST https://api.aspose.cloud/v3.0/cells/repair
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
@@ -33,7 +33,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | File | File | FormData | File to upload |
 | outFormat | String | Query | The output data file format.(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers) |
 
-### **Response**
+### Response
 
 ```json
 [

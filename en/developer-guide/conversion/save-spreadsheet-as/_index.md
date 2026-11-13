@@ -21,7 +21,7 @@ The **SaveSpreadsheetAs** API (`PUT https://api.aspose.cloud/v4.0/cells/{name}/s
 PUT https://api.aspose.cloud/v4.0/cells/{name}/saveas
 ```
 
-### Authentication
+### Security and Authentication
 
 All requests require a [JWT token](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/). Include the token in the `Authorization` header:
 
@@ -46,7 +46,7 @@ Authorization: Bearer <access_token>
 | region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
 | password | String | Query | The password for opening spreadsheet file. |
 
-### **Response**
+### Response
 
 ```json
 [

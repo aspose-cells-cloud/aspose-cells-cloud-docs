@@ -19,7 +19,7 @@ The **MoveWorksheetInSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells
 PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/move/worksheet
 ```
 
-### Authentication
+### Security and Authentication
 
 All requests require a JWT access token. See [Authentication Overview](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) for details.
 
@@ -44,7 +44,7 @@ All requests require a JWT access token. See [Authentication Overview](https://d
 > - `position` must be within valid range: `0 ≤ position ≤ (Worksheets.Count - 1)`.
 > - File size must not exceed 2 GB.
 
-### **Response**
+### Response
 
 ```json
 [

@@ -34,7 +34,7 @@ All requests require JWT token authentication.
 | storageName | String | Query | - |
 | versionId | String | Query | - |
 
-### Response Description
+### Response
 
 ```json
 [

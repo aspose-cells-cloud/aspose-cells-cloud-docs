@@ -26,15 +26,15 @@ The **GetPublicKey** API (`GET https://api.aspose.cloud/v4.0/cells/publickey`) r
 GET https://api.aspose.cloud/v4.0/cells/publickey
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
 
-### **Request Parameters:**
+### Request Parameters
 
 This operation does not require request parameters.
 
-### **Response**
+### Response
 
 ```json
 [

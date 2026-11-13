@@ -25,7 +25,7 @@ Modify the value axis of a specific chart in an Excel workbook stored in Aspose 
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/valueaxis
 ```
 
-### Authentication
+### Security and Authentication
 
 The API uses **JWT token-based authentication**. Include the token in the `Authorization` header:
 
@@ -44,7 +44,7 @@ Authorization: Bearer <jwt token>
 | folder | String | Query | The folder where the file is situated. |
 | storageName | String | Query | The storage name where the file is situated. |
 
-### **Response**
+### Response
 
 ```json
 [

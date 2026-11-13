@@ -27,7 +27,7 @@ The **ConvertWorksheetToCsv** API (`PUT https://api.aspose.cloud/v4.0/cells/conv
 PUT https://api.aspose.cloud/v4.0/cells/convert/worksheet/csv
 ```
 
-### Authentication
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs use [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/). Include your access token in the `Authorization` header:
 

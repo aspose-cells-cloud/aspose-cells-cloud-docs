@@ -17,7 +17,7 @@ The **GetWorksheetComment** API (`GET https://api.aspose.cloud/v3.0/cells/{name}
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{cellName}
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
@@ -91,7 +91,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/comment
 | `TextOrientationType`     | string  | Orientation of the text (e.g., **TopToBottom**).     |
 | `TextVerticalAlignment`   | string  | Vertical alignment of the text (e.g., **Bottom**).   |
 
-### **Response**
+### Response
 
 ```json
 [

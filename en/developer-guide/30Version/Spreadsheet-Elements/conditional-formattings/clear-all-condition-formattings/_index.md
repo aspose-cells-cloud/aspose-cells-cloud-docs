@@ -17,7 +17,7 @@ The **DeleteWorksheetConditionalFormattings** API (`DELETE https://api.aspose.cl
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
 
@@ -61,7 +61,7 @@ curl -v "https://api.aspose.cloud/v3.2/cells/Book1.xlsx/worksheets/sheet1/condit
 
 {{< /tabs >}}
 
-### **Response**
+### Response
 
 ```json
 [

@@ -21,11 +21,11 @@ Managing inconsistent text case in spreadsheets (Excel, Google Sheets, CSV) can 
 POST https://api.aspose.cloud/v3.0/cells/updatewordcase
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-### **Request Parameters**
+### Request Parameters
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 |---|---|---|---|
@@ -55,7 +55,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 - **CaseType** – The type of case conversion. Allowed values are `Upper`, `Lower`, `Capitalize`, and `Title`.
 - **IgnoreBlank** – If `true`, blank cells are ignored; default is `false`.
 
-### **Response**
+### Response
 
 ```json
 [

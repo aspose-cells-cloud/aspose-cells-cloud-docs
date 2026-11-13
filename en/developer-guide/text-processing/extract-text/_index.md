@@ -16,7 +16,7 @@ The **ExtractText** API (`PUT https://api.aspose.cloud/v4.0/cells/content/extrac
 PUT https://api.aspose.cloud/v4.0/cells/content/extract/text
 ```
 
-### Authentication
+### Security and Authentication
 
 All requests require a [JWT access token](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) (valid for 24 hours by default):
 
@@ -48,7 +48,7 @@ All requests require a [JWT access token](https://docs.aspose.cloud/total/gettin
 
 ---
 
-### **Response**
+### Response
 
 ```json
 [

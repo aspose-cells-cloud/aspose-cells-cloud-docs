@@ -20,7 +20,7 @@ The **PostWorksheetListObjectInsertSlicer** API (`POST https://api.aspose.cloud/
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/InsertSlicer
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
 
@@ -81,7 +81,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listo
 | 413  | Payload Too Large     | Uploaded file exceeds size limit.                                                        |
 | 500  | Internal Server Error | Unexpected server error.                                                                 |
 
-### **Response**
+### Response
 
 ```json
 [

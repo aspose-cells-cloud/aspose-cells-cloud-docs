@@ -49,7 +49,7 @@ All Aspose.Cells Cloud APIs require [JWT token-based authentication](https://doc
 
 ---
 
-### Response Format
+### Response
 
 ```json
 [

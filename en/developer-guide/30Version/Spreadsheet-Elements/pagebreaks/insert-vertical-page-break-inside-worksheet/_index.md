@@ -18,7 +18,7 @@ The **PutVerticalPageBreak** API (`PUT https://api.aspose.cloud/v3.0/cells/{name
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/verticalpagebreaks
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
 
@@ -40,7 +40,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PageBreaks/PutVerticalPageBreak) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-### **Response**
+### Response
 
 ```json
 [

@@ -20,7 +20,7 @@ The **GetFilesList** API (`GET https://api.aspose.cloud/v4.0/cells/storage/folde
 GET https://api.aspose.cloud/v4.0/cells/storage/folder/{path}
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
@@ -37,7 +37,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
   - `Size` – Size in bytes (folders report `0`).
   - `ModifiedDate` – Last modification timestamp (ISO 8601).
 
-### **Response**
+### Response
 
 ```json
 [

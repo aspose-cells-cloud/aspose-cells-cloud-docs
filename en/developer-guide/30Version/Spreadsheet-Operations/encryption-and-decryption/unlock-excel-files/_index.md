@@ -20,7 +20,7 @@ The **PostUnlock** API (`POST https://api.aspose.cloud/v3.0/cells/unlock`) in As
 POST https://api.aspose.cloud/v3.0/cells/unlock
 ```
 
-### Authentication
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs use [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/rel="noopener noreferrer" target="\_blank"). Ensure you include a valid bearer token in the `Authorization` header.
 

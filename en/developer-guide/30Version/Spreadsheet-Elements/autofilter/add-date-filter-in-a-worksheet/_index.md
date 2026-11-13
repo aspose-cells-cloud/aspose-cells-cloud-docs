@@ -20,11 +20,11 @@ The **PutWorksheetDateFilter** API (`PUT https://api.aspose.cloud/v3.0/cells/{na
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/dateFilter
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-### Request parameters
+### Request Parameters
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 |---|---|---|---|
@@ -46,7 +46,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 _The PUT request does not require a request body; all parameters are supplied via the query string._
 
-### **Response**
+### Response
 
 ```json
 [

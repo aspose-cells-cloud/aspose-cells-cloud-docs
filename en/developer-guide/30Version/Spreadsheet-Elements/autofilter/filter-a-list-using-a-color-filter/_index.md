@@ -20,11 +20,11 @@ This REST API adds a **color filter** to an Excel worksheet.
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/colorFilter
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-### Request Parameters:
+### Request Parameters
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 |---|---|---|---|
@@ -46,7 +46,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | ForegroundColor | object | Defines the foreground color. Contains sub‑properties such as `Color`, `ColorIndex`, `IsShapeColor`, `ThemeColor`, and `Type`. | No       |
 | BackgroundColor | object | Defines the background color. Same sub‑properties as `ForegroundColor`.                                                        | No       |
 
-### **Response**
+### Response
 
 ```json
 [

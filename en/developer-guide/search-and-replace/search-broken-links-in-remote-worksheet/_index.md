@@ -16,7 +16,7 @@ The **SearchBrokenLinksInRemoteWorksheet** API (`PUT https://api.aspose.cloud/v4
 PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/search/broken-links
 ```
 
-### Authentication
+### Security and Authentication
 
 All requests require a JWT token. [Learn how to obtain one](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 

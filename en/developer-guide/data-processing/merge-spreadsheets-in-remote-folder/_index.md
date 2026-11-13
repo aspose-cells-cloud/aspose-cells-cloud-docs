@@ -36,7 +36,7 @@ Key benefits:
 PUT https://api.aspose.cloud/v4.0/cells/merge/remote-spreadsheets
 ```
 
-### Security & Authentication
+### Security and Authentication
 
 All requests require JWT token-based authentication. See [Authenticating API Requests](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) for setup instructions.
 
@@ -55,7 +55,7 @@ All requests require JWT token-based authentication. See [Authenticating API Req
 | region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
 | password | String | Query | The password for opening spreadsheet file. |
 
-### **Response**
+### Response
 
 ```json
 [

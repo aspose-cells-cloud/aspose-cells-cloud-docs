@@ -20,11 +20,11 @@ The **PostWatermark** API (`POST https://api.aspose.cloud/v3.0/cells/watermark`)
 POST https://api.aspose.cloud/v3.0/cells/watermark
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-### **Request Parameters**
+### Request Parameters
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 |---|---|---|---|
@@ -36,7 +36,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | checkExcelRestriction | Boolean | Query | Whether check restriction of excel file when user modify cells related objects. |
 | region | String | Query | The regional settings for workbook. |
 
-### **Response**
+### Response
 
 ```json
 [

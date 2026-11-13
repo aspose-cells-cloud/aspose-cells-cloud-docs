@@ -18,11 +18,11 @@ The **PutPivotTableField** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
 
-### Request parameters
+### Request Parameters
 
 | Parameter Name         | Type                         | Path/Query String/HTTPBody | Description                                            |
 | ---------------------- | ---------------------------- | -------------------------- | ------------------------------------------------------ |
@@ -78,7 +78,7 @@ The successful response returns a JSON object with `Code` and `Status` fields. E
 
 Possible error responses include **400 Bad Request** for missing parameters, **401 Unauthorized** if the token is invalid, and **500 Internal Server Error** for server‑side issues.
 
-### **Response**
+### Response
 
 ```json
 [

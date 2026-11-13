@@ -26,7 +26,7 @@ The **ConvertText** API (`PUT https://api.aspose.cloud/v4.0/cells/content/conver
 PUT https://api.aspose.cloud/v4.0/cells/content/convert/text
 ```
 
-### Authentication
+### Security and Authentication
 
 All requests require [JWT token-based authentication](https://docs.aspose.cloud/cells/getting-started/authentication/).
 

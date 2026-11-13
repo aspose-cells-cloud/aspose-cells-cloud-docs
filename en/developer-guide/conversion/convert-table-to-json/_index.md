@@ -29,13 +29,13 @@ The **ConvertTableToJson** API (`PUT https://api.aspose.cloud/v4.0/cells/convert
 PUT https://api.aspose.cloud/v4.0/cells/convert/table/json
 ```
 
-### **Authentication**
+### Security and Authentication
 
 All requests require a valid [JWT access token](https://docs.aspose.cloud/total/getting-started/). Obtain your `Client ID` and `Client Secret` from the [Aspose Cloud Dashboard](https://dashboard.aspose.cloud/), then generate a token using the [OAuth 2.0 flow](https://docs.aspose.cloud/total/getting-started/quickstart/).
 
 > **Note**: Replace `{YOUR_ACCESS_TOKEN}` with your actual JWT token in all examples below.
 
-### **Request Parameters**
+### Request Parameters
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 |---|---|---|---|
@@ -50,7 +50,7 @@ All requests require a valid [JWT access token](https://docs.aspose.cloud/total/
 | region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
 | password | String | Query | The password for opening spreadsheet file. |
 
-### **Response**
+### Response
 
 ```json
 [

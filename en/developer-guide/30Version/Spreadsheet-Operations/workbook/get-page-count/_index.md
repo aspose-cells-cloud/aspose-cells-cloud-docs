@@ -19,11 +19,11 @@ The **GetPageCount** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/pageco
 GET https://api.aspose.cloud/v3.0/cells/{name}/pagecount
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
 
-### The request parameters
+### Request Parameters
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 |---|---|---|---|
@@ -61,7 +61,7 @@ _Replace `YourFile.xlsx` with the actual name of the workbook you want to query.
 
 {{< /tabs >}}
 
-### Response Schema
+### Response
 
 ```json
 [

@@ -20,7 +20,7 @@ You can export charts to the following formats: [PNG](https://docs.fileformat.co
 POST https://api.aspose.cloud/v3.0/cells/export
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
@@ -36,7 +36,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | region | String | Query | The regional settings for workbook. |
 | FontsLocation | String | Query | Use Custom fonts. |
 
-### **Response**
+### Response
 
 ```json
 [

@@ -20,7 +20,7 @@ This REST API moves a specified range to a destination range on an Excel workshe
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/moveto
 ```
 
-### Authentication
+### Security and Authentication
 
 The API requires a **Bearer JWT token** obtained through the Aspose Cloud OAuth flow. Include the token in the `Authorization` header:
 

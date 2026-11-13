@@ -18,7 +18,7 @@ The **SplitSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/split/spr
 PUT https://api.aspose.cloud/v4.0/cells/split/spreadsheet
 ```
 
-### Authentication
+### Security and Authentication
 
 All requests require a valid JWT token. See [Authentication Overview](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) for details.
 
@@ -44,7 +44,7 @@ Authorization: Bearer {access_token}
 
 ---
 
-### **Response**
+### Response
 
 ```json
 [

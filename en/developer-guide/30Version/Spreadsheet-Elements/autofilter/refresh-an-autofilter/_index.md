@@ -18,11 +18,11 @@ The **PostWorksheetAutoFilterRefresh** API (`POST https://api.aspose.cloud/v3.0/
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/refresh
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
 
-### **Request Parameters:**
+### Request Parameters
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 |---|---|---|---|
@@ -31,7 +31,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | folder | String | Query | The folder where the file is situated. |
 | storageName | String | Query | The storage name where the file is situated. |
 
-### **Response**
+### Response
 
 ```json
 [

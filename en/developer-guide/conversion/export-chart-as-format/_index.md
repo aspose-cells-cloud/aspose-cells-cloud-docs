@@ -23,7 +23,7 @@ Export a chart from a workbook stored in Aspose Cloud Storage to a target format
 GET https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/charts/{chartIndex}
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
 
@@ -45,7 +45,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ---
 
-### **Response**
+### Response
 
 ```json
 [

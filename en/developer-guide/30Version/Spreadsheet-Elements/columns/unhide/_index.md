@@ -19,7 +19,7 @@ The **PostUnhideWorksheetColumns** API (`POST https://api.aspose.cloud/v3.0/cell
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/unhide
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
@@ -64,7 +64,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ce
 
 **Typical HTTP status codes**
 
-### **Response**
+### Response
 
 ```json
 [

@@ -16,7 +16,7 @@ The **CopyFolder** API (`PUT https://api.aspose.cloud/v4.0/cells/storage/folder/
 PUT https://api.aspose.cloud/v4.0/cells/storage/folder/copy/{srcPath}
 ```
 
-### Authentication
+### Security and Authentication
 
 All requests require a valid JWT access token in the `Authorization` header:
 

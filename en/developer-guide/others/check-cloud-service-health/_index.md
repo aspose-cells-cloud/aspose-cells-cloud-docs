@@ -21,7 +21,7 @@ The **CheckCloudServiceHealth** API (`GET https://api.aspose.cloud/v4.0/cells/st
 GET https://api.aspose.cloud/v4.0/cells/status/check
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
 
@@ -29,7 +29,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 This operation does not require request parameters.
 
-### Response Format
+### Response
 
 ```json
 [

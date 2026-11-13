@@ -19,11 +19,11 @@ This API supports modern formats (`.xlsx`, `.xlsm`, `.xlsb`) and legacy `.xls` f
 PUT https://api.aspose.cloud/v4.0/cells/protection/spreadsheet
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-### **Request Parameters**
+### Request Parameters
 
 | Parameter Name | Type   | Path/Query String/HTTPBody | Description                                                                                                                             |
 | -------------- | ------ | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
@@ -34,7 +34,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | outStorageName | String | Query                      | Output file Storage Name.                                                                                                               |
 | region         | String | Query                      | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
 
-### **Response**
+### Response
 
 ```json
 [

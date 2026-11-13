@@ -17,7 +17,7 @@ The **PostBatchUnlock** API (`POST https://api.aspose.cloud/v3.0/cells/batch/unl
 POST https://api.aspose.cloud/v3.0/cells/batch/unlock
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
@@ -27,7 +27,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 |---|---|---|---|
 | batchLockRequest | class:batchlockrequest | HTTPBody | BatchLockRequest Batch locking file request. |
 
-### **Response**
+### Response
 
 ```json
 [

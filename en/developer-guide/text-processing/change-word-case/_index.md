@@ -16,7 +16,7 @@ The **UpdateWordCase** API (`PUT https://api.aspose.cloud/v4.0/cells/content/wor
 PUT https://api.aspose.cloud/v4.0/cells/content/wordcase
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
@@ -24,7 +24,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 -H "Authorization: Bearer {access_token}"
 ```
 
-### Request Parameters for **UpdateWordCase** API
+### Request Parameters
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 |---|---|---|---|

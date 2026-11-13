@@ -27,7 +27,7 @@ The **ConvertSpreadsheetToJson** API (`PUT https://api.aspose.cloud/v4.0/cells/c
 PUT https://api.aspose.cloud/v4.0/cells/convert/spreadsheet/json
 ```
 
-### Authentication
+### Security and Authentication
 
 All requests require a valid JWT access token in the `Authorization` header:
 

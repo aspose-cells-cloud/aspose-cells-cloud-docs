@@ -23,7 +23,7 @@ The API validates file existence, permissions, and conversion integrity, returni
 PUT https://api.aspose.cloud/v4.0/cells/convert/spreadsheet/pdf
 ```
 
-### Authentication
+### Security and Authentication
 
 The API requires [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/). To obtain a token, first authenticate using your `client_id` and `client_secret`:
 

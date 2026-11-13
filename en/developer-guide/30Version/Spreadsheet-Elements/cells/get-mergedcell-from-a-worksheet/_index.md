@@ -24,7 +24,7 @@ This API retrieves information about **merged cells** in a specified Excel works
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/mergedCells
 ```
 
-### Authentication
+### Security and Authentication
 
 All requests require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/). Include the token in the `Authorization` header as a Bearer token.
 

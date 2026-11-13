@@ -18,11 +18,11 @@ The **PostGroupWorksheetRows** API (`POST https://api.aspose.cloud/v3.0/cells/{n
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/group
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-### **Request parameters**
+### Request Parameters
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 |---|---|---|---|
@@ -74,7 +74,7 @@ Typical error responses:
 
 **See also:** [Ungroup rows on an Excel worksheet](../rows/ungroup/ "Ungroup rows on an Excel worksheet"), [Hide rows on an Excel worksheet](../rows/hide/ "Hide rows on an Excel worksheet"), [Unhide rows on an Excel worksheet](../rows/unhide/ "Unhide rows on an Excel worksheet").
 
-### **Response**
+### Response
 
 ```json
 [

@@ -17,11 +17,11 @@ The **MoveFolder** API (`PUT https://api.aspose.cloud/v4.0/cells/storage/folder/
 PUT https://api.aspose.cloud/v4.0/cells/storage/folder/move/{srcPath}
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-### The request parameters of **moveFolder** API are
+### Request Parameters
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 |---|---|---|---|
@@ -37,7 +37,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 - **srcStorageName** – optional. Identifier of the source storage.
 - **destStorageName** – optional. Identifier of the destination storage.
 
-### **Response**
+### Response
 
 ```json
 [

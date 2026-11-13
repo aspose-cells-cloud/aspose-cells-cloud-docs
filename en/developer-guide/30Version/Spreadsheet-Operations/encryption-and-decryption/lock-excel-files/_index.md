@@ -21,7 +21,7 @@ The **PostLock** API (`POST https://api.aspose.cloud/v3.0/cells/lock`) in Aspose
 POST https://api.aspose.cloud/v3.0/cells/lock
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
 
@@ -38,7 +38,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ---
 
-### **Response**
+### Response
 
 ```json
 [

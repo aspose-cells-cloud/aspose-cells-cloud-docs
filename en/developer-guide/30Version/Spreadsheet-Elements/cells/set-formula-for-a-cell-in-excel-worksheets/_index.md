@@ -33,7 +33,7 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 | folder         | string | query    | N        | Folder that contains the document.       |
 | storageName    | string | query    | N        | Name of the storage service.             |
 
-### **Request Parameters:**
+### Request Parameters
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 |---|---|---|---|
@@ -46,7 +46,7 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 | folder | String | Query | The folder where the file is situated. |
 | storageName | String | Query | The storage name where the file is situated. |
 
-### **Response**
+### Response
 
 ```json
 [

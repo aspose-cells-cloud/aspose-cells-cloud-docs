@@ -17,7 +17,7 @@ The **UploadFile** API (`PUT https://api.aspose.cloud/v4.0/cells/storage/file/{p
 PUT https://api.aspose.cloud/v4.0/cells/storage/file/{path}
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
@@ -25,7 +25,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 -H "Authorization: Bearer {access_token}"
 ```
 
-### The request parameters of the **uploadFile** API are
+### Request Parameters
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 |---|---|---|---|
@@ -33,7 +33,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | path | String | Path | - |
 | storageName | String | Query | - |
 
-### **Response**
+### Response
 
 ```json
 [

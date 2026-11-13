@@ -22,7 +22,7 @@ The **PostWorksheetCellSetValue** API (`POST https://api.aspose.cloud/v3.0/cells
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}
 ```
 
-### Authentication
+### Security and Authentication
 
 All requests require a valid [JWT token](/total/getting-started/rest-api-overview/authenticating-api-requests/) in the `Authorization` header:
 
@@ -43,7 +43,7 @@ Authorization: Bearer <your-jwt-token>
 | folder | String | Query | The folder where the file is situated. |
 | storageName | String | Query | The storage name where the file is situated. |
 
-### **Response**
+### Response
 
 ```json
 [

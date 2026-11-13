@@ -17,7 +17,7 @@ The **PutWorksheetHyperlink** API (`PUT https://api.aspose.cloud/v3.0/cells/{nam
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
 
@@ -37,7 +37,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 The request can also include a JSON body containing the same fields (`Address`, `FirstRow`, `FirstColumn`, `TotalRows`, `TotalColumns`). Supplying the body is useful when you prefer a payload over query‑string parameters.
 
-### **Response**
+### Response
 
 ```json
 [

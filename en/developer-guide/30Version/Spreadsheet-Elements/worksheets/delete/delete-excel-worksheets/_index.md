@@ -18,11 +18,11 @@ The **DeleteWorksheets** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
 
-### **Request parameters**
+### Request Parameters
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 |---|---|---|---|
@@ -80,7 +80,7 @@ The request can also return common error responses, for example:
 
 {{< /tabs >}}
 
-### **Response**
+### Response
 
 ```json
 [

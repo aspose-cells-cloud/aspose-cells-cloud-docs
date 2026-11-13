@@ -19,11 +19,11 @@ This REST API deletes **metadata** from one or more Excel files. It removes work
 POST https://api.aspose.cloud/v3.0/cells/metadata/delete
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-### **Request parameters**
+### Request Parameters
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 |---|---|---|---|
@@ -76,7 +76,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/metadata/delete?type=all" \
 
 The API returns a JSON object containing an `Error` field with details for each case.
 
-### **Response**
+### Response
 
 ```json
 [

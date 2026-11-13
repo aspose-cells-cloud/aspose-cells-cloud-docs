@@ -31,7 +31,7 @@ This document provides full API details, usage examples, best practices, and SDK
 GET https://api.aspose.cloud/v4.0/cells/{name}
 ```
 
-### Authentication
+### Security and Authentication
 
 All requests require a valid JWT token. Obtain one using your App SID and App Key via OAuth 2.0:
 
@@ -46,7 +46,7 @@ Include the token in the `Authorization: Bearer <ACCESS_TOKEN>` header.
 
 ---
 
-### **Request Parameters:**
+### Request Parameters
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 |---|---|---|---|
@@ -62,7 +62,7 @@ Include the token in the `Authorization: Bearer <ACCESS_TOKEN>` header.
 | region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
 | password | String | Query | The password for opening spreadsheet file. |
 
-### **Response**
+### Response
 
 ```json
 [

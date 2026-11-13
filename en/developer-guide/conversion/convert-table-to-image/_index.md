@@ -32,7 +32,7 @@ The API supports the following output image formats:
 PUT https://api.aspose.cloud/v4.0/cells/convert/table/image
 ```
 
-### Authentication
+### Security and Authentication
 
 This endpoint requires a valid JWT access token. See [Authentication Overview](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) for details.
 

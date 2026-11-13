@@ -18,7 +18,7 @@ The **ExportRangeAsFormat** API (`GET https://api.aspose.cloud/v4.0/cells/{name}
 GET https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{range}
 ```
 
-### Security & Authentication
+### Security and Authentication
 
 All API requests require [JWT token–based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/). Include the token in the `Authorization` header:
 
@@ -28,7 +28,7 @@ Authorization: Bearer <access_token>
 
 ---
 
-### **Request Parameters:**
+### Request Parameters
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 |---|---|---|---|

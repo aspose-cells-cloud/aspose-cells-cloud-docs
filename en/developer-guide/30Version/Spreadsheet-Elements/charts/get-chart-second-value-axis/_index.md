@@ -16,11 +16,11 @@ The **GetChartSecondValueAxis** API (`GET https://api.aspose.cloud/v3.0/cells/{n
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/secondvalueaxis
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-### Request parameters
+### Request Parameters
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 |---|---|---|---|
@@ -92,7 +92,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/" \
 
 {{< /tabs >}}
 
-### **Response**
+### Response
 
 ```json
 [

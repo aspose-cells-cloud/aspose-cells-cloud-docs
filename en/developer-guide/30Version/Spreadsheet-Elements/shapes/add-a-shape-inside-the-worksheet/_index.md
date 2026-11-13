@@ -18,11 +18,11 @@ The **PutWorksheetShape** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/w
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
 
-### **Request parameters**
+### Request Parameters
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 |---|---|---|---|
@@ -82,7 +82,7 @@ Typical error responses include:
 
 Each error is returned as a JSON object containing `Code` and `Message` fields.
 
-### **Response**
+### Response
 
 ```json
 [

@@ -22,7 +22,7 @@ This REST API adds a **digital signature** to an Excel workbook.
 POST https://api.aspose.cloud/v3.0/cells/{name}/digitalsignature
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
@@ -38,7 +38,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 _Note: If the file name contains special characters, URL‑encode it before adding it to the query string._
 
-### **Response**
+### Response
 
 ```json
 [

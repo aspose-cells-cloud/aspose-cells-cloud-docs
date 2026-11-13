@@ -36,7 +36,7 @@ The `AddText` operation (v4.0) enables you to:
 PUT https://api.aspose.cloud/v4.0/cells/content/add/text
 ```
 
-### Authentication
+### Security and Authentication
 
 The API uses [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 

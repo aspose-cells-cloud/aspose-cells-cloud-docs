@@ -18,7 +18,7 @@ The **ExportWorksheetAsFormat** API (`GET https://api.aspose.cloud/v4.0/cells/{n
 GET https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}
 ```
 
-### **Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs require <a href="https://docs.aspose.cloud/cells/getting-started/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
@@ -26,7 +26,7 @@ The Aspose.Cells Cloud APIs require <a href="https://docs.aspose.cloud/cells/get
 -H "Authorization: Bearer {access_token}"
 ```
 
-### **Request Parameters**
+### Request Parameters
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 |---|---|---|---|
@@ -43,7 +43,7 @@ The Aspose.Cells Cloud APIs require <a href="https://docs.aspose.cloud/cells/get
 | region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
 | password | String | Query | The password for opening spreadsheet file. |
 
-### **Response**
+### Response
 
 ```json
 [

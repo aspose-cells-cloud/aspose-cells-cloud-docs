@@ -18,7 +18,7 @@ The **PutHorizontalPageBreak** API (`PUT https://api.aspose.cloud/v3.0/cells/{na
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/horizontalpagebreaks
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
@@ -81,7 +81,7 @@ Example of an error response when the JWT token is missing or invalid:
 
 For more details on related operations, see the API pages for **[Get Horizontal Page Breaks](../get-horizontal-page-breaks/)** and **[Delete Horizontal Page Break](../delete-horizontal-page-break/)**.
 
-### **Response**
+### Response
 
 ```json
 [

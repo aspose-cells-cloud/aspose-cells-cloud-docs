@@ -17,7 +17,7 @@ The **PostWorksheetComment** API (`POST https://api.aspose.cloud/v3.0/cells/{nam
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{cellName}
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
@@ -80,7 +80,7 @@ Possible response status codes:
 - Maximum comment length is 1024 characters.  
 - Supported characters are UTF‑8; avoid control characters.  
 
-### **Response**
+### Response
 
 ```json
 [

@@ -20,11 +20,11 @@ This REST API enables you to **autofit rows** in an Excel workbook, automaticall
 POST https://api.aspose.cloud/v3.0/cells/{name}/autofitrows
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
 
-### **Request Parameters:**
+### Request Parameters
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 |---|---|---|---|
@@ -37,7 +37,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | firstColumn | Integer | Query | First column index. |
 | lastColumn | Integer | Query | Last column index. |
 
-### **Response**
+### Response
 
 ```json
 [

@@ -31,7 +31,7 @@ The **MergeRemoteSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/{na
 PUT https://api.aspose.cloud/v4.0/cells/{name}/merge/spreadsheet
 ```
 
-### Security & Authentication
+### Security and Authentication
 
 All Aspose.Cells Cloud APIs require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/){: rel="noopener noreferrer" target="\_blank"}.
 

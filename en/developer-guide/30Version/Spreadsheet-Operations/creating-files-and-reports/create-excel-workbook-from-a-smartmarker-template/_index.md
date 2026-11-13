@@ -21,7 +21,7 @@ The **PostWorkbookGetSmartMarkerResult** API (`POST https://api.aspose.cloud/v3.
 POST https://api.aspose.cloud/v3.0/cells/{name}/smartmarker
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
@@ -36,7 +36,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | storageName | String | Query | The storage name where the file is situated. |
 | outStorageName | String | Query | The storage name where the result file is situated. |
 
-### **Response**
+### Response
 
 ```json
 [

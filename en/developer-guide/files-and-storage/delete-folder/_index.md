@@ -26,7 +26,7 @@ You can delete an empty folder or, by setting the `recursive` flag to `true`, de
 DELETE https://api.aspose.cloud/v4.0/cells/storage/folder/{path}
 ```
 
-### Authentication
+### Security and Authentication
 
 Aspose.Cells Cloud uses **JWT token‑based authentication**.  
 Obtain an access token via the [authentication endpoint](/authentication/) and include it in the `Authorization` header as shown above.
@@ -39,7 +39,7 @@ Obtain an access token via the [authentication endpoint](/authentication/) and i
 
 ---
 
-### Parameters
+### Request Parameters
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 |---|---|---|---|
@@ -55,7 +55,7 @@ Obtain an access token via the [authentication endpoint](/authentication/) and i
 
 ---
 
-### **Response**
+### Response
 
 ```json
 [

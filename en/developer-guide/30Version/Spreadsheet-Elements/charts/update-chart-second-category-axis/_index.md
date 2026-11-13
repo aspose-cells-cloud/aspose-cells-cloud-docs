@@ -16,11 +16,11 @@ The **PostChartSecondCategoryAxis** API (`POST https://api.aspose.cloud/v3.0/cel
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/secondcategoryaxis
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-### Request parameters
+### Request Parameters
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 |---|---|---|---|
@@ -91,7 +91,7 @@ _Replace `{name}`, `{sheetName}`, `{chartIndex}`, `{folder}`, and `{storageName}
 
 {{< /tabs >}}
 
-### **Response**
+### Response
 
 ```json
 [

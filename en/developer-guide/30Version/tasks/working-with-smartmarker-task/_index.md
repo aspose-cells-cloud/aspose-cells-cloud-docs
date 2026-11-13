@@ -17,17 +17,17 @@ The **PostRunTask** API (`POST https://api.aspose.cloud/v3.0/cells/task/runtask`
 POST https://api.aspose.cloud/v3.0/cells/task/runtask
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
 
-### **Request Parameters:**
+### Request Parameters
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 |---|---|---|---|
 | TaskData | class:taskdata | HTTPBody | Task Data Descrition |
 
-### **Response**
+### Response
 
 ```json
 [

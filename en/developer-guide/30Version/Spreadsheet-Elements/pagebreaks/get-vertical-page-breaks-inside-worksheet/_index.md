@@ -18,7 +18,7 @@ The **GetVerticalPageBreaks** API (`GET https://api.aspose.cloud/v3.0/cells/{nam
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/verticalpagebreaks
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
 
@@ -77,7 +77,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/sampleExcelPageBreaks.xlsx/workshee
 
 {{< /tabs >}}
 
-### Response Details
+### Response
 
 ```json
 [

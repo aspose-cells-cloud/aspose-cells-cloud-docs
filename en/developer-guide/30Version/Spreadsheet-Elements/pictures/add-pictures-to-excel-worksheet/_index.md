@@ -18,7 +18,7 @@ The **PutWorksheetAddPicture** API (`PUT https://api.aspose.cloud/v3.0/cells/{na
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
@@ -83,7 +83,7 @@ curl -v "https://api.aspose.com/v1.1/cells/Sample_Test_Book.xls/worksheets/Sheet
 
 {{< /tabs >}}
 
-### **Response**
+### Response
 
 ```json
 [

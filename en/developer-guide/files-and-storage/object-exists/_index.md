@@ -17,7 +17,7 @@ The **ObjectExists** API (`GET https://api.aspose.cloud/v4.0/cells/storage/exist
 GET https://api.aspose.cloud/v4.0/cells/storage/exist/{path}
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
@@ -29,7 +29,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | storageName | String | Query | - |
 | versionId | String | Query | - |
 
-### **Response**
+### Response
 
 ```json
 [

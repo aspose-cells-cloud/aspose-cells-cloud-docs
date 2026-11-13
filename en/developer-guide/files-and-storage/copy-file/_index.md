@@ -17,7 +17,7 @@ The **CopyFile** API (`PUT https://api.aspose.cloud/v4.0/cells/storage/file/copy
 PUT https://api.aspose.cloud/v4.0/cells/storage/file/copy/{srcPath}
 ```
 
-### Authentication
+### Security and Authentication
 
 All requests require a valid JWT token. See the [Authentication Guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) for implementation details.  
 _Note: External links include `rel="noopener noreferrer"` for security._
@@ -32,7 +32,7 @@ _Note: External links include `rel="noopener noreferrer"` for security._
 | destStorageName | String | Query | - |
 | versionId | String | Query | - |
 
-### HTTP Responses
+### Response
 
 ```json
 [

@@ -20,7 +20,7 @@ The **PostWorksheetListObjectConvertToRange** API (`POST https://api.aspose.clou
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/ConvertToRange
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
@@ -36,7 +36,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 > **Note:** This operation works only with modern Excel formats such as **.xlsx** and **.xlsm**. The ListObject must not be protected. For more information about ListObjects, see the [ListObjects overview](/list-objects/). For details on working with ranges, refer to the [Ranges documentation](/ranges/).
 
-### **Response**
+### Response
 
 ```json
 [

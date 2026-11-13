@@ -37,7 +37,7 @@ This API is ideal for cleaning user inputs, customer data, report sources, and p
 PUT https://api.aspose.cloud/v4.0/cells/content/trim
 ```
 
-### Authentication
+### Security and Authentication
 
 All requests require a valid JWT access token with the **Cells** scope. Authenticate using your `client_id` and `client_secret` as described in the [REST API Authentication Guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
@@ -68,7 +68,7 @@ Authorization: Bearer {access_token}
 
 > **Best Practice**: Set `trimLeading` and `trimTrailing` explicitly to avoid unintended behavior when `trimContent` is customized.
 
-### **Response**
+### Response
 
 ```json
 [

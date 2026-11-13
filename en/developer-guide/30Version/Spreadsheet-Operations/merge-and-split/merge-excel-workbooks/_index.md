@@ -18,7 +18,7 @@ The **PostWorkbooksMerge** API (`POST https://api.aspose.cloud/v3.0/cells/{name}
 POST https://api.aspose.cloud/v3.0/cells/{name}/merge
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
@@ -32,7 +32,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | storageName | String | Query | The storage name where the file is situated. |
 | mergedStorageName | String | Query | Storage name. |
 
-### **Response**
+### Response
 
 ```json
 [

@@ -18,11 +18,11 @@ The **PostHideWorksheetRows** API (`POST https://api.aspose.cloud/v3.0/cells/{na
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/hide
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-### Request parameters
+### Request Parameters
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 |---|---|---|---|
@@ -71,7 +71,7 @@ A successful call returns a JSON object that contains the fields `Code` and `Sta
 
 **Notes:** Ensure that the `startrow` value is within the worksheet’s row range; otherwise the API will return a 400 error. Row indices are zero‑based, so `startrow=0` refers to the first row.
 
-### **Response**
+### Response
 
 ```json
 [

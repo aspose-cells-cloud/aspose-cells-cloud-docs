@@ -32,7 +32,7 @@ The **PostImportData** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/imp
 POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 ```
 
-### Security & Authentication
+### Security and Authentication
 
 All requests require a valid [JWT token](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) in the `Authorization` header:
 
@@ -64,7 +64,7 @@ Ensure the target workbook exists in the specified storage location before impor
 > - `ImportPictureOption`
 > - `ImportIntArrayOption`
 
-### **Response**
+### Response
 
 ```json
 [

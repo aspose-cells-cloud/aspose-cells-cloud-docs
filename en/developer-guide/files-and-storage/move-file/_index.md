@@ -17,7 +17,7 @@ The **MoveFile** API (`PUT https://api.aspose.cloud/v4.0/cells/storage/file/move
 PUT https://api.aspose.cloud/v4.0/cells/storage/file/move/{srcPath}
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
@@ -25,7 +25,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 -H "Authorization: Bearer {access_token}"
 ```
 
-### The request parameters of **moveFile** API are
+### Request Parameters
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 |---|---|---|---|
@@ -35,7 +35,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | destStorageName | String | Query | - |
 | versionId | String | Query | - |
 
-### **Response**
+### Response
 
 ```json
 [

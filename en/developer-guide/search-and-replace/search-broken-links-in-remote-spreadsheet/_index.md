@@ -17,7 +17,7 @@ The **SearchBrokenLinksInRemoteSpreadsheet** API (`PUT https://api.aspose.cloud/
 PUT https://api.aspose.cloud/v4.0/cells/{name}/search/broken-links
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
@@ -25,7 +25,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 -H "Authorization: Bearer {access_token}"
 ```
 
-### **Request Parameters:**
+### Request Parameters
 
 | Parameter Name | Type | Path/Query String/HTTPBody | Description |
 |---|---|---|---|
@@ -45,7 +45,7 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/Quarterly_Report.xlsx/search/br
      -H "Accept: application/json"
 ```
 
-### **Response**
+### Response
 
 ```json
 [

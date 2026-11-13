@@ -20,7 +20,7 @@ The **ConvertTableToHtml** API (`PUT https://api.aspose.cloud/v4.0/cells/convert
 PUT https://api.aspose.cloud/v4.0/cells/convert/table/html
 ```
 
-### **Security and Authentication**
+### Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/authentication/" rel="noopener noreferrer">JWT token-based authentication</a>.  
 _Replace `{YOUR_ACCESS_TOKEN}` in examples with a valid JWT token obtained from the Aspose Cloud dashboard._
@@ -40,7 +40,7 @@ _Replace `{YOUR_ACCESS_TOKEN}` in examples with a valid JWT token obtained from 
 | region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
 | password | String | Query | The password for opening spreadsheet file. |
 
-### **Response**
+### Response
 
 ```json
 [
