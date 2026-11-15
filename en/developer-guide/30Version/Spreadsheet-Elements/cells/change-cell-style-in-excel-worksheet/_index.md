@@ -28,6 +28,7 @@ article_title: "Change Cell Style in Excel Worksheet – Aspose.Cells Cloud API 
 linktitle: "Update Cell Style"
 ArticleTitle: "Update Excel Cell Style with Aspose.Cells Cloud REST API"
 ---
+
 The **PostUpdateWorksheetCellStyle** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}/style`) enables developers to update the style of a specific cell in an Excel worksheet by specifying the workbook name, worksheet name, and cell name, with the style configuration sent in the request body; Aspose.Cells Cloud supports this operation via REST API and SDKs for .NET, Java, Python, Node.js, Go, and other languages, allowing precise, programmatic control over cell formatting without altering other worksheet content.
 
 ## The Post Update Worksheet Cell Style Web API
@@ -112,19 +113,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test_cells.xlsx/worksheets/Sheet3/c
 The <a href="https://reference.aspose.cloud/cells/#/Cells/PostUpdateWorksheetCellStyle" rel="noopener noreferrer">Post Update Worksheet Cell Style API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 SDKs abstract low-level HTTP details and simplify integration. All official SDKs are open-source on [GitHub](https://github.com/aspose-cells-cloud).
-
-### Available SDKs
-
-- [C# (.NET)](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet)
-- [Java](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java)
-- [PHP](https://github.com/aspose-cells-cloud/aspose-cells-cloud-php)
-- [Python](https://github.com/aspose-cells-cloud/aspose-cells-cloud-python)
-- [Node.js](https://github.com/aspose-cells-cloud/aspose-cells-cloud-node)
-- [Ruby](https://github.com/aspose-cells-cloud/aspose-cells-cloud-ruby)
-- [Perl](https://github.com/aspose-cells-cloud/aspose-cells-cloud-perl)
-- [Go](https://github.com/aspose-cells-cloud/aspose-cells-cloud-go)
-
-### Code Examples
 
 ### Use Aspose.Cells Cloud SDKs
 

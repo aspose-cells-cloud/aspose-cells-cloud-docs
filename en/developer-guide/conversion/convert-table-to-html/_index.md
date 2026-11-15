@@ -12,6 +12,7 @@ type: docs
 aliases: ["/api/convert-table-to-html", "/docs/cells/convert/table/html"]
 ArticleTitle: "Aspose.Cells Cloud API: Convert Excel Table to HTML via REST"
 ---
+
 The **ConvertTableToHtml** API (`PUT https://api.aspose.cloud/v4.0/cells/convert/table/html`) in Aspose.Cells Cloud enables direct conversion of a specified table from a local Excel workbook to HTML format without requiring intermediate cloud storage upload. The API accepts the spreadsheet file via form-data, along with the worksheet and table name as query parameters, processes the conversion entirely on the cloud server, and returns the resulting HTML as a downloadable stream.
 
 ## The Convert Table to HTML Web API
@@ -27,18 +28,18 @@ _Replace `{YOUR_ACCESS_TOKEN}` in examples with a valid JWT token obtained from 
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| Spreadsheet | File | FormData | Upload spreadsheet file. |
-| worksheet | String | Query | worksheet name of spreadsheet. |
-| tableName | String | Query | table name |
-| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
-| outStorageName | String | Query | Output file Storage Name. |
-| fontsLocation | String | Query | Use Custom fonts. |
-| AutoRowsFit | Boolean | Query | (Optional) Autofits all rows in worksheets. |
-| AutoColumnsFit | Boolean | Query | (Optional) Autofits all columns in worksheets. |
-| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password | String | Query | The password for opening spreadsheet file. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                                                                                                             |
+| -------------- | ------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet    | File    | FormData                   | Upload spreadsheet file.                                                                                                                |
+| worksheet      | String  | Query                      | worksheet name of spreadsheet.                                                                                                          |
+| tableName      | String  | Query                      | table name                                                                                                                              |
+| outPath        | String  | Query                      | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
+| outStorageName | String  | Query                      | Output file Storage Name.                                                                                                               |
+| fontsLocation  | String  | Query                      | Use Custom fonts.                                                                                                                       |
+| AutoRowsFit    | Boolean | Query                      | (Optional) Autofits all rows in worksheets.                                                                                             |
+| AutoColumnsFit | Boolean | Query                      | (Optional) Autofits all columns in worksheets.                                                                                          |
+| region         | String  | Query                      | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password       | String  | Query                      | The password for opening spreadsheet file.                                                                                              |
 
 ### Response
 
@@ -64,14 +65,14 @@ Content-Disposition: attachment; filename="result"
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | Invalid url. |
-| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
-| 404 | Not Found | Source file not accessible. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining conversion data. |
+| Code | Meaning           | Description                                                              |
+| ---- | ----------------- | ------------------------------------------------------------------------ |
+| 200  | OK                | The request completed successfully.                                      |
+| 400  | Bad Request       | Invalid url.                                                             |
+| 401  | Unauthorized      | Authentication has failed, or no credentials were provided.              |
+| 404  | Not Found         | Source file not accessible.                                              |
+| 413  | Payload Too Large | The uploaded file exceeds the allowed size limit.                        |
+| 500  | Server Error      | The spreadsheet has encountered an anomaly in obtaining conversion data. |
 
 ## When to Use the Convert Table to HTML API?
 
@@ -86,6 +87,8 @@ Content-Disposition: attachment; filename="result"
 ### Convert Table to HTML API Specification
 
 The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertTableToHtml" rel="noopener noreferrer">Convert Table to HTML API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
+
+## Curl Command-Line Example
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 

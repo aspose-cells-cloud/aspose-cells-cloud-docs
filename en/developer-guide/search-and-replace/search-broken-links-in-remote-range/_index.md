@@ -9,6 +9,7 @@ keywords: "Aspose, Cells, broken links, API, Excel range, validation, cloud, spr
 description: "Detect broken external links, invalid formulas, and missing data sources in Excel ranges via Aspose.Cells Cloud API"
 weight: 100
 ---
+
 The **SearchBrokenLinksInRemoteRange** API (`PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{cellArea}/search/broken-links`) in Aspose.Cells Cloud v4.0 scans a specified range in a remote Excel workbook for broken hyperlinks and invalid external references, enabling automated quality checks and enterprise workflow integration without downloading the file.
 
 ## The Search Broken Links in Remote Range Web API
@@ -27,15 +28,15 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The name of the workbook file to be search. |
-| worksheet | String | Path | Specify the worksheet for the lookup. |
-| cellArea | String | Path | Specify the cell area for the lookup |
-| folder | String | Query | The folder path where the workbook is stored. |
-| storageName | String | Query | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted. |
-| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password | String | Query | The password for opening spreadsheet file. |
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                                                                                                             |
+| -------------- | ------ | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| name           | String | Path                       | The name of the workbook file to be search.                                                                                             |
+| worksheet      | String | Path                       | Specify the worksheet for the lookup.                                                                                                   |
+| cellArea       | String | Path                       | Specify the cell area for the lookup                                                                                                    |
+| folder         | String | Query                      | The folder path where the workbook is stored.                                                                                           |
+| storageName    | String | Query                      | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.                                       |
+| region         | String | Query                      | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password       | String | Query                      | The password for opening spreadsheet file.                                                                                              |
 
 **Example Request Body**
 
@@ -78,14 +79,16 @@ The `BrokenLinks` collection contains objects of type **BrokenLink**. Each objec
 - **type** – The type of link that is broken (e.g., `ExternalReference`, `Formula`).
 - **ErrorMessage** – A description of why the link is considered broken.
 
-**Note**: The API is subject to rate limits. Refer to the [Pricing and Rate Limits](https://www.aspose.cloud/pricing) page for details.
+**HTTP Status Codes**
 
-### Error Codes
-
-- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized** – Invalid access token, client ID, or client secret.
-- **404 Not Found** – The spreadsheet file is not accessible.
-- **500 Server Error** – The spreadsheet encountered an anomaly while obtaining calculation data.
+| Code | Meaning           | Description                                                   |
+| ---- | ----------------- | ------------------------------------------------------------- |
+| 200  | OK                | The request completed successfully.                           |
+| 400  | Bad Request       | Invalid url.                                                  |
+| 401  | Unauthorized      | Authentication has failed, or no credentials were provided.   |
+| 404  | Not Found         | Source file not accessible.                                   |
+| 413  | Payload Too Large | The uploaded file exceeds the allowed size limit.             |
+| 500  | Server Error      | The spreadsheet has encountered an anomaly in obtaining data. |
 
 Automatically detect broken links in the range data of Excel files stored in cloud storage. Our API scans specified ranges for broken external references, invalid formulas, and missing data sources. Supports remote spreadsheet auditing, automated quality checks, and integration with cloud storage providers. RESTful API for enterprise workflow automation.
 

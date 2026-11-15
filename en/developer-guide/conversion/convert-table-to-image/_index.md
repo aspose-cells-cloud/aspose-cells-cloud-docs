@@ -12,6 +12,7 @@ last_modified: 2024-06-15
 weight: 100
 section: docs
 ---
+
 The **ConvertTableToImage** API (`PUT https://api.aspose.cloud/v4.0/cells/convert/table/image`) in Aspose.Cells Cloud enables direct conversion of a table from a local Excel workbook to an image file without requiring cloud storage upload, supporting common output formats such as PNG, SVG, and TIFF; developers supply the spreadsheet file, worksheet name, table name, and target format as required parameters to perform the conversion entirely on the cloud server.
 
 ## Supported Image Formats
@@ -36,23 +37,21 @@ PUT https://api.aspose.cloud/v4.0/cells/convert/table/image
 
 This endpoint requires a valid JWT access token. See [Authentication Overview](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) for details.
 
----
-
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| Spreadsheet | File | FormData | Upload spreadsheet file. |
-| worksheet | String | Query | worksheet name of spreadsheet. |
-| tableName | String | Query | table name |
-| format | String | Query | file format. |
-| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
-| outStorageName | String | Query | Output file Storage Name. |
-| fontsLocation | String | Query | Use Custom fonts. |
-| AutoRowsFit | Boolean | Query | (Optional) Autofits all rows in worksheets. |
-| AutoColumnsFit | Boolean | Query | (Optional) Autofits all columns in worksheets. |
-| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password | String | Query | The password for opening spreadsheet file. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                                                                                                             |
+| -------------- | ------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet    | File    | FormData                   | Upload spreadsheet file.                                                                                                                |
+| worksheet      | String  | Query                      | worksheet name of spreadsheet.                                                                                                          |
+| tableName      | String  | Query                      | table name                                                                                                                              |
+| format         | String  | Query                      | file format.                                                                                                                            |
+| outPath        | String  | Query                      | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
+| outStorageName | String  | Query                      | Output file Storage Name.                                                                                                               |
+| fontsLocation  | String  | Query                      | Use Custom fonts.                                                                                                                       |
+| AutoRowsFit    | Boolean | Query                      | (Optional) Autofits all rows in worksheets.                                                                                             |
+| AutoColumnsFit | Boolean | Query                      | (Optional) Autofits all columns in worksheets.                                                                                          |
+| region         | String  | Query                      | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password       | String  | Query                      | The password for opening spreadsheet file.                                                                                              |
 
 ---
 
@@ -100,8 +99,6 @@ Content-Disposition: attachment; filename="Table1.png"
 | `413` | Request payload too large (file exceeds size limit).                 |
 | `500` | Server error during processing.                                      |
 
----
-
 ## Use Cases
 
 | Use Case                  | Description                                                                    |
@@ -111,9 +108,18 @@ Content-Disposition: attachment; filename="Table1.png"
 | **Training Materials**    | Capture templates or sample data for user guides and knowledge bases.          |
 | **Thumbnail Previews**    | Generate small previews for file browsers or document management systems.      |
 
----
+## Key Benefits
 
-## Code Examples
+- **No Cloud Storage Required**: Files are processed directly from the local system; no intermediate upload to cloud storage is needed.
+- **Accurate Rendering**: Preserves cell formatting, borders, colors, and conditional formatting as rendered in Excel.
+- **Flexible Output**: Supports common raster and vector image formats for cross-platform compatibility.
+- **Scalable Workflow**: Ideal for automation pipelines, CI/CD integrations, and server-side batch processing.
+
+## How to Use the Convert Table to Image API with SDKs?
+
+### Convert Table to Image API Specification
+
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertTableToImage" rel="noopener noreferrer">Convert Table to Image API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### cURL Request
 
@@ -125,7 +131,12 @@ curl -X PUT \
   -o table.png
 ```
 
-### C# (.NET SDK)
+### Use Aspose.Cells Cloud SDKs
+
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
+
+#### C# (.NET SDK)
 
 ```csharp
 var cellsApi = new CellsApi("client_id", "client_secret");
@@ -140,7 +151,7 @@ var response = cellsApi.CellsTablePutConvertTableToImage(
 File.WriteAllBytes("table.png", response.FileContents);
 ```
 
-### Java (SDK)
+#### Java (SDK)
 
 ```java
 CellsApi api = new CellsApi("client_id", "client_secret");
@@ -165,43 +176,3 @@ Files.write(Paths.get("table.png"), response.getFileContents());
 ```
 
 > Explore the [GitHub repository](https://github.com/aspose-cells-cloud) for additional SDK examples in PHP, Python, Node.js, Ruby, Perl, and Go.
-
----
-
-## Key Benefits
-
-- **No Cloud Storage Required**: Files are processed directly from the local system; no intermediate upload to cloud storage is needed.
-- **Accurate Rendering**: Preserves cell formatting, borders, colors, and conditional formatting as rendered in Excel.
-- **Flexible Output**: Supports common raster and vector image formats for cross-platform compatibility.
-- **Scalable Workflow**: Ideal for automation pipelines, CI/CD integrations, and server-side batch processing.
-
----
-
-## FAQ
-
-### How do I convert an Excel table to PNG?
-
-Upload the Excel file, specify the worksheet and table name, and set `format=png` in the query parameters.
-
-### Does the API support SVG output?
-
-Yes. SVG output is vector-based and maintains quality at any scale.
-
-### Can I save the image directly to cloud storage?
-
-Yes. Provide `outPath` and optionally `outStorageName` to store the result in your cloud storage account.
-
-### What if my Excel file is password-protected?
-
-Include the `password` query parameter with the correct password.
-
-## How to Use the Convert Table to Image API with SDKs?
-
-### Convert Table to Image API Specification
-
-The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertTableToImage" rel="noopener noreferrer">Convert Table to Image API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
-
-### Use Aspose.Cells Cloud SDKs
-
-Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
-Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

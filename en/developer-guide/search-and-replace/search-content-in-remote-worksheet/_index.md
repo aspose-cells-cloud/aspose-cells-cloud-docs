@@ -5,6 +5,7 @@ type: docs
 description: "Find text, numbers, or formulas in a remote Excel worksheet using Aspose.Cells Cloud API. Supports case-insensitive search, password-protected files, and cloud storage integration."
 keywords: "aspose.cells, excel api, text search, remote worksheet, cloud api"
 ---
+
 The **SearchContentInRemoteWorksheet** API (`PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/search/content`) enables developers to programmatically search for specified text, numbers, or formulas within a worksheet of an Excel workbook stored in cloud storage using Aspose.Cells Cloud, supporting case-insensitive and whole-word matching options while returning match locations directly in the cloud without requiring local file downloads.
 
 ## The Search Content in Remote Worksheet Web API
@@ -55,14 +56,16 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 ```
 
-### Error Responses
+**HTTP Status Codes**
 
-| Status Code | Description                                                      |
-| ----------- | ---------------------------------------------------------------- |
-| `400`       | Invalid URL or malformed request parameters                      |
-| `401`       | Missing or invalid OAuth 2.0 credentials                         |
-| `404`       | Workbook, worksheet, or storage path not found                   |
-| `500`       | Server-side error (e.g., unsupported file format, access denied) |
+| Code | Meaning           | Description                                                   |
+| ---- | ----------------- | ------------------------------------------------------------- |
+| 200  | OK                | The request completed successfully.                           |
+| 400  | Bad Request       | Invalid url.                                                  |
+| 401  | Unauthorized      | Authentication has failed, or no credentials were provided.   |
+| 404  | Not Found         | Source file not accessible.                                   |
+| 413  | Payload Too Large | The uploaded file exceeds the allowed size limit.             |
+| 500  | Server Error      | The spreadsheet has encountered an anomaly in obtaining data. |
 
 ### Success Response (200 OK)
 
@@ -99,7 +102,13 @@ Content-Type: application/json
 - **Template Verification**: Confirm placeholders (e.g., `{{Date}}`) are replaced after report generation.
 - **Historical Data Mining**: Extract business event codes or status markers from legacy files.
 
-## Implementation Examples
+## How to Use the Search Content in Remote Worksheet API with SDKs?
+
+### Search Content in Remote Worksheet API Specification
+
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Search/SearchContentInRemoteWorksheet" rel="noopener noreferrer">Search Content in Remote Worksheet API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
+
+SDKs for .NET, Java, Python, PHP, Node.js, and Ruby streamline integration and reduce boilerplate code. See the [GitHub Repository](https://github.com/aspose-cells-cloud) for source code and examples.
 
 ### cURL Request
 
@@ -109,14 +118,6 @@ curl -X PUT \
   -H "Authorization: Bearer {access_token}" \
   -H "Content-Type: application/json"
 ```
-
-## How to Use the Search Content in Remote Worksheet API with SDKs?
-
-### Search Content in Remote Worksheet API Specification
-
-The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Search/SearchContentInRemoteWorksheet" rel="noopener noreferrer">Search Content in Remote Worksheet API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
-
-SDKs for .NET, Java, Python, PHP, Node.js, and Ruby streamline integration and reduce boilerplate code. See the [GitHub Repository](https://github.com/aspose-cells-cloud) for source code and examples.
 
 ### Use Aspose.Cells Cloud SDKs
 

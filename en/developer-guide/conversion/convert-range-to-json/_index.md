@@ -4,12 +4,12 @@ linktitle: Convert Excel Range to JSON
 url: /convert-range-to-json/
 date: 2024-06-20
 description: "Convert Excel range to JSON via Aspose.Cells Cloud API with secure, cloud-native conversion and full SDK support."
-sitemap: false
 weight: 100
 keywords: convert range to json, Aspose.Cells Cloud, Excel to JSON, spreadsheet conversion, API
 type: docs
 ArticleTitle: "Convert Excel Range to JSON with Aspose.Cells Cloud API"
 ---
+
 The **ConvertRangeToJson** API (`PUT https://api.aspose.cloud/v4.0/cells/convert/range/json`) enables developers to convert a specified cell range from a local Excel or CSV file directly into JSON format using the Aspose.Cells Cloud service, running entirely on the cloud server without requiring intermediate uploads or cloud storage—making it ideal for lightweight, secure, and efficient data extraction from structured spreadsheet ranges.
 
 ## The Convert Range to JSON Web API
@@ -101,9 +101,19 @@ Returns a JSON file as a binary stream.
 | **i18n Localization**        | Convert translation spreadsheets to JSON for React i18n or gettext.     |
 | **Webhook Payloads**         | Transform report data into JSON for event-driven integrations.          |
 
-> 🔗 **See also**: [Convert Range to CSV](/convert-range-to-csv/) for tabular data interchange.
+## Key Benefits
 
-## Code Examples
+- ✅ **Cloud-Native Conversion**: Process local files without storing them in the cloud.
+- ✅ **Reduced Storage Costs**: Avoid uploading full workbooks—only the range is sent.
+- ✅ **JSON-Native Output**: Compatible with React, Vue, Angular, Node.js, Python, and databases.
+- ✅ **Intelligent Structure**: Automatically maps headers to keys and preserves data types.
+- ✅ **Full SDK Support**: 8+ language libraries reduce boilerplate and improve reliability.
+
+## How to Use the Convert Range to JSON API with SDKs?
+
+### Convert Range to JSON API Specification
+
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertRangeToJson" rel="noopener noreferrer">Convert Range to JSON API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### cURL Request (with Token Acquisition)
 
@@ -125,7 +135,10 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/range/json?worksheet=Sh
   --output result.json
 ```
 
-### SDK Examples (Select Language)
+### Use Aspose.Cells Cloud SDKs
+
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 {{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 {{<tab tabNum="1" >}}
@@ -153,33 +166,3 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/range/json?worksheet=Sh
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ConvertRangeToJson.go" >}}
 {{</tab>}}
 {{< /tabs >}}
-
-## Key Benefits
-
-- ✅ **Cloud-Native Conversion**: Process local files without storing them in the cloud.
-- ✅ **Reduced Storage Costs**: Avoid uploading full workbooks—only the range is sent.
-- ✅ **JSON-Native Output**: Compatible with React, Vue, Angular, Node.js, Python, and databases.
-- ✅ **Intelligent Structure**: Automatically maps headers to keys and preserves data types.
-- ✅ **Full SDK Support**: 8+ language libraries reduce boilerplate and improve reliability.
-
-## Additional Resources
-
-- [API Reference](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertRangeToJson)
-- [GitHub SDK Repository](https://github.com/aspose-cells-cloud)
-- [Authentication Guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)
-
----
-
-_Last updated: 2024-06-20_  
-_Feedback? [Open an issue on GitHub](https://github.com/aspose-cells-cloud/docs/issues)_
-
-## How to Use the Convert Range to JSON API with SDKs?
-
-### Convert Range to JSON API Specification
-
-The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertRangeToJson" rel="noopener noreferrer">Convert Range to JSON API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
-
-### Use Aspose.Cells Cloud SDKs
-
-Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
-Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

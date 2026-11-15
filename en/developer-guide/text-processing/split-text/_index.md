@@ -10,6 +10,7 @@ type: docs
 weight: 100
 ArticleTitle: "Split Excel Text by Delimiter, Mask, or Line Break | Aspose.Cells Cloud API"
 ---
+
 The **SplitText** API (`PUT https://api.aspose.cloud/v4.0/cells/content/split/text`) in Aspose.Cells Cloud enables precise text segmentation within Excel workbooks by splitting cell content using custom delimiters, line breaks, or pattern masks, then outputting results to a specified range in columns or rows; for example, users can split a cell’s comma-separated values into adjacent columns while optionally retaining or removing the delimiters.
 
 ## Overview
@@ -95,7 +96,11 @@ Content-Disposition: attachment; filename="result"
 - **`region`**: Influences locale-specific behavior (e.g., in `de-DE`, semicolon is often used as a list separator instead of comma). Example: `"fr-FR"` treats comma as decimal separator and space as thousands separator.
 - **`outPositionRange`**: Must be a valid Excel range (e.g., `` `"B2:E100"` ``). The API writes results starting at the top-left cell and expands right (columns) or down (rows) as needed.
 
-## Example Request
+## How to Use the Split Text API with SDKs?
+
+### Split Text API Specification
+
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/TextProcessing/SplitText" rel="noopener noreferrer">Split Text API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### cURL Example
 
@@ -108,7 +113,10 @@ curl -X PUT \
   -o output.xlsx
 ```
 
-### SDK Examples (Selected)
+### Use Aspose.Cells Cloud SDKs
+
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}  
 {{<tab tabNum="1" >}}  
@@ -168,29 +176,3 @@ HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 Content-Disposition: attachment; filename="output.xlsx"
 ```
-
-### Error Codes
-
-| Code                         | Description                                                                |
-| ---------------------------- | -------------------------------------------------------------------------- |
-| `400 Bad Request`            | Invalid parameter format (e.g., malformed range, missing required fields). |
-| `401 Unauthorized`           | Missing, expired, or invalid JWT token.                                    |
-| `403 Forbidden`              | Insufficient permissions or quota exceeded.                                |
-| `404 Not Found`              | Spreadsheet file not found in storage or invalid path.                     |
-| `415 Unsupported Media Type` | File format not supported (e.g., .xlsx required).                          |
-| `500 Internal Server Error`  | Unexpected server-side failure during processing.                          |
-
-## OpenAPI Specification
-
-The full API contract is documented in the [Aspose.Cells Cloud OpenAPI spec](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/TextProcessing/SplitText).
-
-## How to Use the Split Text API with SDKs?
-
-### Split Text API Specification
-
-The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/TextProcessing/SplitText" rel="noopener noreferrer">Split Text API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
-
-### Use Aspose.Cells Cloud SDKs
-
-Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
-Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

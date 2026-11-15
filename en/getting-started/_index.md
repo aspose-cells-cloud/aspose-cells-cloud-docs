@@ -9,7 +9,7 @@ description: "Upload, convert to PDF, download Excel files using Aspose.Cells Cl
 draft: false
 tags: ["excel", "cloud", "api", "curl", "pdf-conversion"]
 categories: ["cells", "getting-started"]
-weight: 100
+weight: 20
 keywords: "Aspose.Cells Cloud, Excel API, spreadsheet conversion, Excel to PDF, cloud spreadsheet, Aspose.Cells Cloud API, excel api, convert excel to pdf online, cloud spreadsheet automation"
 ---
 

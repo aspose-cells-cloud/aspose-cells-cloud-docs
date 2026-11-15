@@ -8,6 +8,7 @@ description: "Extract substrings, numbers, or fixed-length prefixes/suffixes fro
 weight: 100
 ArticleTitle: "Extract Text from Excel Cells via Aspose.Cells Cloud REST API"
 ---
+
 The **ExtractText** API (`PUT https://api.aspose.cloud/v4.0/cells/content/extract/text`) in Aspose.Cells Cloud enables developers to extract substrings, numbers, or fixed-length text fragments—such as the first N characters, text before/after a delimiter, or text between two substrings—from Excel cell ranges without relying on complex FIND, LEFT, RIGHT, or MID formulas; the operation processes cell data efficiently, preserves original formatting and formulas, and writes results directly to a target range in the same or a different worksheet or workbook.
 
 ## The Extract Text Web API
@@ -30,21 +31,21 @@ All requests require a [JWT access token](https://docs.aspose.cloud/total/gettin
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| Spreadsheet | File | FormData | Upload spreadsheet file. |
-| extractTextType | String | Query | Indicates extract text type. |
-| outPositionRange | String | Query | Indicates the output location for the extracted text. |
-| beforeText | String | Query | Indicates extracting the text before the specified characters or substrings. |
-| afterText | String | Query | Indicates extracting the text after the specified characters or substrings. |
-| beforePosition | Integer | Query | Indicates retrieving the first character or a specified number of characters from the left side of the selected cell. |
-| afterPosition | Integer | Query | Indicates retrieving the first character or a specified number of characters from the right side of the selected cell. |
-| worksheet | String | Query | Specify the worksheet of spreadsheet. |
-| range | String | Query | Specify the worksheet range of spreadsheet. |
-| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
-| outStorageName | String | Query | Output file Storage Name. |
-| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password | String | Query | The password for opening spreadsheet file. |
+| Parameter Name   | Type    | Path/Query String/HTTPBody | Description                                                                                                                             |
+| ---------------- | ------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet      | File    | FormData                   | Upload spreadsheet file.                                                                                                                |
+| extractTextType  | String  | Query                      | Indicates extract text type.                                                                                                            |
+| outPositionRange | String  | Query                      | Indicates the output location for the extracted text.                                                                                   |
+| beforeText       | String  | Query                      | Indicates extracting the text before the specified characters or substrings.                                                            |
+| afterText        | String  | Query                      | Indicates extracting the text after the specified characters or substrings.                                                             |
+| beforePosition   | Integer | Query                      | Indicates retrieving the first character or a specified number of characters from the left side of the selected cell.                   |
+| afterPosition    | Integer | Query                      | Indicates retrieving the first character or a specified number of characters from the right side of the selected cell.                  |
+| worksheet        | String  | Query                      | Specify the worksheet of spreadsheet.                                                                                                   |
+| range            | String  | Query                      | Specify the worksheet range of spreadsheet.                                                                                             |
+| outPath          | String  | Query                      | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
+| outStorageName   | String  | Query                      | Output file Storage Name.                                                                                                               |
+| region           | String  | Query                      | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password         | String  | Query                      | The password for opening spreadsheet file.                                                                                              |
 
 ---
 
@@ -72,14 +73,14 @@ Content-Disposition: attachment; filename="result"
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                        |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## cURL Example
 
@@ -133,17 +134,6 @@ curl -X PUT \
   "Description": "Workbook saved to /output/extracted.xlsx"
 }
 ```
-
-### Error Codes
-
-| Code | Meaning                                       |
-| ---- | --------------------------------------------- |
-| 200  | Success                                       |
-| 202  | Accepted (asynchronous)                       |
-| 400  | Invalid parameters or missing required fields |
-| 401  | Invalid/missing JWT token                     |
-| 404  | Workbook not found                            |
-| 500  | Internal server error                         |
 
 ## How to Use the Extract Text API with SDKs?
 

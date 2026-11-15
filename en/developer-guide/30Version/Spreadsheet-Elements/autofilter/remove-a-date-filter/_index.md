@@ -12,6 +12,7 @@ keywords: "Aspose.Cells, delete date filter, Excel AutoFilter, REST API, SDK"
 description: "Delete a date filter from an Excel worksheet using the Aspose.Cells Cloud REST API with cURL or SDKs."
 ArticleTitle: "Delete a Date Filter – Aspise.Cells Cloud API Documentation"
 ---
+
 The **DeleteWorksheetDateFilter** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/dateFilter`) enables Aspose.Cells Cloud users to remove a date filter from a specified worksheet by providing the workbook name, worksheet name, field index, and dateTimeGroupingType—optionally including date components like year, month, or day—to precisely target the filter being removed.
 
 ## The Delete Worksheet Date Filter Web API
@@ -26,20 +27,20 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The workbook name. |
-| sheetName | String | Path | The worksheet name. |
-| fieldIndex | Integer | Query | The integer offset of the field on which you want to base the filter (from the left of the list; the leftmost field is field 0). |
-| dateTimeGroupingType | String | Query | Specifies how to group dateTime values. |
-| year | Integer | Query | The year. |
-| month | Integer | Query | The month. |
-| day | Integer | Query | The day. |
-| hour | Integer | Query | The hour. |
-| minute | Integer | Query | The minute. |
-| second | Integer | Query | The second. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name       | Type    | Path/Query String/HTTPBody | Description                                                                                                                      |
+| -------------------- | ------- | -------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| name                 | String  | Path                       | The workbook name.                                                                                                               |
+| sheetName            | String  | Path                       | The worksheet name.                                                                                                              |
+| fieldIndex           | Integer | Query                      | The integer offset of the field on which you want to base the filter (from the left of the list; the leftmost field is field 0). |
+| dateTimeGroupingType | String  | Query                      | Specifies how to group dateTime values.                                                                                          |
+| year                 | Integer | Query                      | The year.                                                                                                                        |
+| month                | Integer | Query                      | The month.                                                                                                                       |
+| day                  | Integer | Query                      | The day.                                                                                                                         |
+| hour                 | Integer | Query                      | The hour.                                                                                                                        |
+| minute               | Integer | Query                      | The minute.                                                                                                                      |
+| second               | Integer | Query                      | The second.                                                                                                                      |
+| folder               | String  | Query                      | The folder where the file is situated.                                                                                           |
+| storageName          | String  | Query                      | The storage name where the file is situated.                                                                                     |
 
 ### Response
 
@@ -64,23 +65,13 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
-
-The API returns standard HTTP status codes indicating the result of the delete operation.
-
-| Code | Meaning               | Description                                                                           |
-| ---- | --------------------- | ------------------------------------------------------------------------------------- |
-| 200  | OK                    | The date filter was successfully deleted; the response contains the operation status. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).                          |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                                         |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                                     |
-| 500  | Internal Server Error | Unexpected server error.                                                              |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## How to Use the Delete Worksheet Date Filter API with SDKs?
 

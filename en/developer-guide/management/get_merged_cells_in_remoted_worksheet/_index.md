@@ -10,6 +10,7 @@ keywords: "Aspose Cells, Get Merged Cells, Remote Worksheet, API"
 description: "Retrieves all merged cell areas from a remote worksheet in a spreadsheet."
 weight: 100
 ---
+
 The **GetMergedCellsInRemotedWorksheet** API (`GET https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/mergedcells`) in Aspose.Cells Cloud retrieves all merged cell areas from a specified worksheet of a remote spreadsheet, returning a structured list of cell ranges defined by their top-left and bottom-right coordinates—enabling precise layout analysis, data validation, and integrity checks before further processing.
 
 ## The Get Merged Cells in Remoted Worksheet Web API
@@ -24,14 +25,14 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | spreadsheet name |
-| worksheet | String | Path | worksheet name |
-| folder | String | Query | The cloud storage path of the spreadsheet. |
-| storageName | String | Query | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted. |
-| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password | String | Query | The password for opening spreadsheet file. |
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                                                                                                             |
+| -------------- | ------ | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| name           | String | Path                       | spreadsheet name                                                                                                                        |
+| worksheet      | String | Path                       | worksheet name                                                                                                                          |
+| folder         | String | Query                      | The cloud storage path of the spreadsheet.                                                                                              |
+| storageName    | String | Query                      | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.                                       |
+| region         | String | Query                      | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password       | String | Query                      | The password for opening spreadsheet file.                                                                                              |
 
 ### Response
 
@@ -55,23 +56,17 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | Invalid url. |
-| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
-| 404 | Not Found | Source file not accessible. |
-| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining data. |
+| Code | Meaning      | Description                                                   |
+| ---- | ------------ | ------------------------------------------------------------- |
+| 200  | OK           | The request completed successfully.                           |
+| 400  | Bad Request  | Invalid url.                                                  |
+| 401  | Unauthorized | Authentication has failed, or no credentials were provided.   |
+| 404  | Not Found    | Source file not accessible.                                   |
+| 500  | Server Error | The spreadsheet has encountered an anomaly in obtaining data. |
 
 **Response Status Codes**
 
 Get all merged cell area form a remote spreadsheet worksheet.
-
-### Request Body Parameter
-
-| Parameter Name | Type | Description |
-| -------------- | ---- | ----------- |
-| —              | —    | _None_      |
 
 ## How to Use the Get Merged Cells in Remoted Worksheet API with SDKs?
 
@@ -118,8 +113,6 @@ curl -v "https://api.aspose.cloud/v4.0/cells/Sample.xlsx/worksheets/Sheet1/merge
 {{< /tab >}}
 
 {{< /tabs >}}
-
-### Use Aspose Cells Cloud SDKs
 
 ### Use Aspose.Cells Cloud SDKs
 

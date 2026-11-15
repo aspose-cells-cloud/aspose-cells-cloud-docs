@@ -1,7 +1,5 @@
 ---
 title: "Get Public Key (v4.0)"
-date: 2024-03-15
-lastmod: 2024-05-20
 linktitle: "Get Public Key"
 type: docs
 url: /get-public-key/
@@ -18,6 +16,7 @@ description: "Get 2048-bit RSA public key from Aspose.Cells Cloud API via OAuth2
 weight: 100
 ArticleTitle: "Get RSA 2048-bit Public Key from Aspose.Cells Cloud API"
 ---
+
 The **GetPublicKey** API (`GET https://api.aspose.cloud/v4.0/cells/publickey`) retrieves the 2048-bit RSA public key used by Aspose.Cells Cloud for encrypting sensitive data prior to transmission; this asymmetric public key enables clients to securely encrypt payloads before sending them to the service, supporting end-to-end data protection as part of the API’s OAuth2-secured workflow.
 
 ## The Get Public Key Web API
@@ -57,13 +56,13 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Request
 
@@ -98,25 +97,16 @@ curl -X GET "https://api.aspose.cloud/v4.0/cells/publickey" \
 }
 ```
 
-### HTTP Status Codes
-
-| Code | Meaning               | Description                                                                 |
-| ---- | --------------------- | --------------------------------------------------------------------------- |
-| 200  | OK                    | Public key retrieved successfully; response contains RSA public key in JSON |
-| 400  | Bad Request           | Invalid or missing parameters (e.g., malformed token, unsupported format)   |
-| 401  | Unauthorized          | Invalid, expired, or missing OAuth2 access token                            |
-| 413  | Payload Too Large     | Not applicable (GET request has no payload)                                 |
-| 500  | Internal Server Error | Unexpected server-side error occurred                                       |
-
-## Usage Examples
-
 ## How to Use the Get Public Key API with SDKs?
 
 ### Get Public Key API Specification
 
 The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Key/GetPublicKey" rel="noopener noreferrer">Get Public Key API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
-SDKs reduce boilerplate code, automate token refresh, and simplify integration. Below are examples for common languages:
+### Use Aspose.Cells Cloud SDKs
+
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 - **C#**:
 
@@ -153,8 +143,3 @@ SDKs reduce boilerplate code, automate token refresh, and simplify integration. 
   ```
 
 For a complete list of SDKs and source code, visit the [Aspose.Cells Cloud GitHub repository](https://github.com/aspose-cells-cloud).
-
-### Use Aspose.Cells Cloud SDKs
-
-Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
-Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

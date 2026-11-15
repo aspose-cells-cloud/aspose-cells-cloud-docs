@@ -16,6 +16,7 @@ canonical: https://docs.aspose.cloud/cells/clear-contents-and-styles-of-cells-in
 ArticleTitle: "Clear Contents and Styles of Cells in an Excel Worksheet – Aspose.Cells Cloud API"
 linktitle: "Clear Cell Contents"
 ---
+
 The **PostClearContents** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clearcontents`) enables developers to clear cell contents and styles within a specified worksheet of an Excel file using Aspose.Cells Cloud, supporting optional range-based clearing via query parameters like `range`, `startRow`, `startColumn`, `endRow`, and `endColumn` to target specific cell areas precisely.
 
 ## Clear Contents and Styles of Cells in an Excel Worksheet
@@ -23,6 +24,7 @@ The **PostClearContents** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/
 Aspose.Cells Cloud provides robust support for clearing cell area contents in a worksheet—a process commonly required for data preparation, template resets, and dynamic report generation.
 
 The REST API supports flexible clearing options via query parameters:
+
 - **Range-based clearing** (`range`): Clear a named or A1-style range (e.g., `"A2:C11"`).
 - **Grid-based clearing**: Use `startRow`, `startColumn`, `endRow`, and `endColumn` to specify a rectangular region by index.
 - **Optional context**: Specify `folder` and `storageName` to locate the file.
@@ -41,17 +43,17 @@ The Aspose.Cells Cloud APIs require [JWT token-based authentication](https://doc
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| range | String | Query | Represents the range to which the specified cells applies. |
-| startRow | Integer | Query | The start row index. |
-| startColumn | Integer | Query | The start column index. |
-| endRow | Integer | Query | The end row index. |
-| endColumn | Integer | Query | The end column index. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                                |
+| -------------- | ------- | -------------------------- | ---------------------------------------------------------- |
+| name           | String  | Path                       | The file name.                                             |
+| sheetName      | String  | Path                       | The worksheet name.                                        |
+| range          | String  | Query                      | Represents the range to which the specified cells applies. |
+| startRow       | Integer | Query                      | The start row index.                                       |
+| startColumn    | Integer | Query                      | The start column index.                                    |
+| endRow         | Integer | Query                      | The end row index.                                         |
+| endColumn      | Integer | Query                      | The end column index.                                      |
+| folder         | String  | Query                      | The folder where the file is situated.                     |
+| storageName    | String  | Query                      | The storage name where the file is situated.               |
 
 > **Tip**: Either `range` or the grid parameters (`startRow`, `startColumn`, `endRow`, `endColumn`) must be provided. Using both simultaneously may result in undefined behavior.
 
@@ -78,20 +80,25 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 On success, the API returns a `200 OK` status with the following payload:
 
+## How to Use the Post Clear Contents API with SDKs?
 
-#### HTTP Status Codes
+### Post Clear Contents API Specification
 
-### Using the PostClearContents API
+The <a href="https://reference.aspose.cloud/cells/#/Cells/PostClearContents" rel="noopener noreferrer">Post Clear Contents API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
+
+Using an SDK is recommended to streamline integration and reduce boilerplate code. The Aspose.Cells Cloud SDKs handle authentication, request/response serialization, and error handling automatically.
+
+Please refer to the [GitHub repository](https://github.com/aspose-cells-cloud) for the full list of supported SDKs and installation instructions.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
@@ -119,47 +126,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/c
 {{< /tab >}}
 
 {{< /tabs >}}
-
-## API Reference
-
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostClearContents) defines the publicly accessible programming interface for this operation.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "TechArticle",
-  "headline": "Clear Contents and Styles of Cells in an Excel Worksheet",
-  "description": "How to use Aspose.Cells Cloud REST API to clear cell contents and styles in an Excel worksheet.",
-  "url": "https://docs.aspose.cloud/cells/clear-contents-and-styles-of-cells-in-excel-worksheet/",
-  "datePublished": "2023-07-08",
-  "dateModified": "2023-07-08",
-  "author": {
-    "@type": "Organization",
-    "name": "Aspose"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Aspose",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://docs.aspose.cloud/cells/images/Aspose-image-for-open-graph.jpg",
-      "caption": "Aspose.Cells Cloud logo",
-      "alt": "Aspose.Cells Cloud logo"
-    }
-  },
-  "keywords": "Aspose.Cells, Excel API, clear cell contents, clear cell styles, REST API, cloud spreadsheet"
-}
-</script>
-
-## How to Use the Post Clear Contents API with SDKs?
-
-### Post Clear Contents API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Cells/PostClearContents" rel="noopener noreferrer">Post Clear Contents API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
-
-Using an SDK is recommended to streamline integration and reduce boilerplate code. The Aspose.Cells Cloud SDKs handle authentication, request/response serialization, and error handling automatically.
-
-Please refer to the [GitHub repository](https://github.com/aspose-cells-cloud) for the full list of supported SDKs and installation instructions.
 
 ### Use Aspose.Cells Cloud SDKs
 

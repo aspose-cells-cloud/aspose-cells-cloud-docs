@@ -6,8 +6,6 @@ second_title: "Aspose.Cells Cloud"
 ArticleTitle: "Convert Spreadsheet Using Aspose.Cells Cloud API"
 linktitle: "Convert Spreadsheet"
 type: docs
-date: 2024-05-15
-lastmod: 2024-06-20
 weight: 100
 tags: ["api", "rest", "conversion", "spreadsheet", "cloud"]
 canonical: "/convert-spreadsheet/"
@@ -55,8 +53,6 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 | `PDF`, `XPS`, `SVG`, `TIFF`, `PNG`, `BMP`, `EMF`, `JPEG`, `GIF`       | Document & image formats          |
 | `DOCX`, `PPTX`                                                        | Word & PowerPoint documents       |
 | `EPUB`, `AZW3`                                                        | E-book formats                    |
-
-> **Note:** Format names should be used in uppercase (e.g., `PDF`, `XLSX`, `CSV`). For compatibility, the API accepts mixed-case equivalents (e.g., `pdf`, `xlsx`).
 
 ### Response
 
@@ -109,7 +105,11 @@ Content-Length: 8423
 - ✅ **Simplified Workflow**: End-to-end conversion in a single API call.
 - ✅ **Data Fidelity**: Preserves formatting, formulas, charts, and embedded objects.
 
-## Code Examples
+## How to Use the Convert Range to PDF API with SDKs?
+
+### Convert Range to PDF API Specification
+
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertSpreadsheet" rel="noopener noreferrer">Convert Range to PDF API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### cURL Request
 
@@ -229,34 +229,3 @@ result, _, err := api.CellsConvertSpreadsheet(
 
 {{</tab>}}
 {{< /tabs >}}
-
-## API Specification
-
-- [REST API Reference](https://reference.aspose.cloud/cells/?urls.primaryName=API%20v4#/Conversion/ConvertSpreadsheet)
-
-## Feedback
-
-Was this page helpful?  
-[✅ Yes] [❌ No]  
-Contact support: [support@aspose.cloud](mailto:support@aspose.cloud)
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebAPI",
-  "name": "Convert Spreadsheet",
-  "description": "Convert a spreadsheet file to another format using Aspose.Cells Cloud.",
-  "url": "https://api.aspose.cloud/v4.0/cells/convert/spreadsheet",
-  "documentation": "https://docs.aspose.cloud/cells/convert-spreadsheet/",
-  "targetPlatform": "Web",
-  "authenticationType": "OAuth2",
-  "operation": [
-    {
-      "@type": "HttpOperation",
-      "httpMethod": "PUT",
-      "urlTemplate": "https://api.aspose.cloud/v4.0/cells/convert/spreadsheet",
-      "description": "Convert a spreadsheet to the specified format."
-    }
-  ]
-}
-</script>

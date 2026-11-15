@@ -10,6 +10,7 @@ keywords: "Aspose.Cells, Worksheets, Local Spreadsheet, API"
 description: "Fetches a complete list of worksheets from the currently active local spreadsheet."
 weight: 100
 ---
+
 The **GetWorksheetsWithLocalSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/worksheets`) in Aspose.Cells Cloud fetches a complete list of worksheets—including their names and types (e.g., standard, chart, macro)—from the currently active local spreadsheet application via interop or a local API, returning the collection as a structured JSON array; this enables developers to populate a worksheet selector UI or audit spreadsheet contents by uploading the file via form data.
 
 ## The Get Worksheets with Local Spreadsheet Web API
@@ -24,11 +25,11 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| Spreadsheet | File | FormData | Upload spreadsheet file. |
-| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password | String | Query | The password for opening spreadsheet file. |
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                                                                                                             |
+| -------------- | ------ | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet    | File   | FormData                   | Upload spreadsheet file.                                                                                                                |
+| region         | String | Query                      | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password       | String | Query                      | The password for opening spreadsheet file.                                                                                              |
 
 ### Response
 
@@ -52,14 +53,14 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | Invalid url. |
-| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
-| 404 | Not Found | Source file not accessible. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining data. |
+| Code | Meaning           | Description                                                   |
+| ---- | ----------------- | ------------------------------------------------------------- |
+| 200  | OK                | The request completed successfully.                           |
+| 400  | Bad Request       | Invalid url.                                                  |
+| 401  | Unauthorized      | Authentication has failed, or no credentials were provided.   |
+| 404  | Not Found         | Source file not accessible.                                   |
+| 413  | Payload Too Large | The uploaded file exceeds the allowed size limit.             |
+| 500  | Server Error      | The spreadsheet has encountered an anomaly in obtaining data. |
 
 **Response Status Codes**
 
@@ -118,8 +119,6 @@ curl -v "https://api.aspose.cloud/v4.0/cells/spreadsheet/worksheets?region=en-US
 {{< /tab >}}
 
 {{< /tabs >}}
-
-### Use Aspose Cells Cloud SDKs
 
 ### Use Aspose.Cells Cloud SDKs
 

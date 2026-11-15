@@ -2,16 +2,14 @@
 title: "Get Aspose.Cells Cloud Status"
 description: "Real-time health status endpoint for Aspose.Cells Cloud REST API. Returns service availability, status codes (200/503), and response schema for proactive monitoring and pre-flight checks."
 linktitle: "Cells Cloud Status"
-date: 2024-06-15T14:30:00Z
 tags:
   - "REST API"
   - "health check"
   - "Aspose.Cells Cloud"
-categories:
-  - "API Reference"
 weight: 100
 draft: false
 ---
+
 The **GetAsposeCellsCloudStatus** API (`GET https://api.aspose.cloud/v4.0/cells`) checks the real-time health status of the Aspose.Cells Cloud service, returning a string response that indicates service availability and operational conditions such as connectivity, latency, and error rates—enabling developers to perform pre-flight checks before executing critical operations or integrate with monitoring systems for SLA compliance.
 
 ## Overview
@@ -82,14 +80,14 @@ The endpoint uses the HTTP **GET** method and does not require a request body.
 | `401 Unauthorized`        | Missing or invalid authentication token.                              |
 | `503 Service Unavailable` | The service is currently down for maintenance or experiencing issues. |
 
-## SDK Integration
+## OpenAPI Specification
 
-Using Aspose.Cells Cloud SDKs simplifies integration and reduces boilerplate code. The SDK handles authentication, request formatting, and error parsing automatically.
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/CellsStatusController/GetAsposeCellsCloudStatus) defines a publicly accessible programming interface that allows you to carry out REST interactions directly from a web browser.
 
-- 📚 [SDK Documentation](/cloud/total/sdk/)
-- 💻 [GitHub Repositories](https://github.com/aspose-cells-cloud) (C#, Java, Python, PHP, Node.js, Ruby)
+### Use Aspose.Cells Cloud SDKs
 
-### Example (C# SDK)
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 ```csharp
 using Aspose.Cells.Cloud.SDK.Api;
@@ -99,7 +97,3 @@ var cellsApi = new CellsApi("your_client_id", "your_client_secret");
 var status = await cellsApi.GetAsposeCellsCloudStatusAsync();
 Console.WriteLine($"Service Status: {status.Status}");
 ```
-
-## OpenAPI Specification
-
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/CellsStatusController/GetAsposeCellsCloudStatus) defines a publicly accessible programming interface that allows you to carry out REST interactions directly from a web browser.

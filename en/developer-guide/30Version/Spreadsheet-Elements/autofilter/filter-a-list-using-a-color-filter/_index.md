@@ -10,6 +10,7 @@ description: "Learn how to apply a color filter to an Excel worksheet with Aspos
 weight: 65
 ArticleTitle: "Add a Color Filter in an Excel Worksheet using Aspose.Cells Cloud API"
 ---
+
 The **PutWorksheetColorFilter** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/colorFilter`) enables developers to apply a color filter to a specified field within an Excel worksheet’s AutoFilter, allowing conditional highlighting or hiding of rows based on cell background or font color; it requires the workbook name, worksheet name, target range, field index, and a color filter request body, with optional parameters to match blank cells and refresh the filter.
 
 This REST API adds a **color filter** to an Excel worksheet.
@@ -26,17 +27,17 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The workbook name. |
-| sheetName | String | Path | The worksheet name. |
-| range | String | Query | Represents the range to which the specified AutoFilter applies. |
-| fieldIndex | Integer | Query | The integer offset of the field on which you want to base the filter (from the left of the list; the leftmost field is field 0). |
-| colorFilter | class:colorfilterrequest | HTTPBody | color filter request. |
-| matchBlanks | Boolean | Query | Match all blank cell in the list. |
-| refresh | Boolean | Query | Refresh auto filters to hide or unhide the rows. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type                     | Path/Query String/HTTPBody | Description                                                                                                                      |
+| -------------- | ------------------------ | -------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| name           | String                   | Path                       | The workbook name.                                                                                                               |
+| sheetName      | String                   | Path                       | The worksheet name.                                                                                                              |
+| range          | String                   | Query                      | Represents the range to which the specified AutoFilter applies.                                                                  |
+| fieldIndex     | Integer                  | Query                      | The integer offset of the field on which you want to base the filter (from the left of the list; the leftmost field is field 0). |
+| colorFilter    | class:colorfilterrequest | HTTPBody                   | color filter request.                                                                                                            |
+| matchBlanks    | Boolean                  | Query                      | Match all blank cell in the list.                                                                                                |
+| refresh        | Boolean                  | Query                      | Refresh auto filters to hide or unhide the rows.                                                                                 |
+| folder         | String                   | Query                      | The folder where the file is situated.                                                                                           |
+| storageName    | String                   | Query                      | The storage name where the file is situated.                                                                                     |
 
 **`colorFilter` JSON schema**
 
@@ -69,14 +70,14 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                        |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## How to Use the Put Worksheet Color Filter API with SDKs?
 
@@ -113,8 +114,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFi
 {{< /tab >}}
 
 {{< /tabs >}}
-
-**See also:** [Add a custom filter](https://docs.aspose.cloud/cells/autofilter/add-custom-filter/), [Add a date filter](https://docs.aspose.cloud/cells/autofilter/add-date-filter/), [Remove an auto filter](https://docs.aspose.cloud/cells/autofilter/remove-auto-filter/).
 
 ### Use Aspose.Cells Cloud SDKs
 

@@ -6,13 +6,12 @@ type: docs
 description: "Check Aspose.Cells Cloud service health in real-time using GET /v4.0/cells/status/check with JWT authentication."
 keywords: "Aspose.Cells Cloud, API health check, REST status, cloud service monitoring, service availability, health endpoint"
 weight: 100
-date: 2024-06-15
-lastmod: 2024-06-15
 images:
   - src: "/images/health-check-response.png"
     alt: "Aspose.Cells Cloud health check API response in JSON format displayed in Postman"
 ArticleTitle: "Aspose.Cells Cloud Health Check API: Real-Time Service Status Monitoring"
 ---
+
 The **CheckCloudServiceHealth** API (`GET https://api.aspose.cloud/v4.0/cells/status/check`) provides real-time monitoring of Aspose.Cells Cloud service availability and operational status, returning key health metrics such as service connectivity, response latency, and error rates to support pre-flight checks before executing critical operations.
 
 ## The Check Cloud Service Health Web API
@@ -51,7 +50,6 @@ Content-Type: application/json
 
 A successful response returns HTTP `200 OK` with a JSON payload:
 
-
 > **Note**: The `timestamp` field uses [ISO 8601 UTC format](https://en.wikipedia.org/wiki/ISO_8601). When `detail=true`, additional fields such as `latency_ms`, `error_rate`, and `uptime_percentage` may appear.
 
 ### HTTP Status Codes
@@ -71,7 +69,11 @@ A successful response returns HTTP `200 OK` with a JSON payload:
 - 🔹 **Automated SLA monitoring** integrated into CI/CD pipelines or observability platforms (e.g., Prometheus, Datadog).
 - 🔹 **Troubleshooting** during integration failures—verify service availability before escalating.
 
-## Implementation Examples
+## How to Use the Check Cloud Service Health API with SDKs?
+
+### Check Cloud Service Health API Specification
+
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/CellsStatus/CheckCloudServiceHealth" rel="noopener noreferrer">Check Cloud Service Health API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Using cURL
 
@@ -82,7 +84,10 @@ curl -X GET \
   -H 'Accept: application/json'
 ```
 
-### Using Aspose.Cells Cloud SDK (Go)
+### Use Aspose.Cells Cloud SDKs
+
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 ```go
 package main
@@ -112,14 +117,3 @@ func main() {
     fmt.Printf("Service Status: %s\n", *resp.Status)
 }
 ```
-
-## How to Use the Check Cloud Service Health API with SDKs?
-
-### Check Cloud Service Health API Specification
-
-The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/CellsStatus/CheckCloudServiceHealth" rel="noopener noreferrer">Check Cloud Service Health API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
-
-### Use Aspose.Cells Cloud SDKs
-
-Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
-Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

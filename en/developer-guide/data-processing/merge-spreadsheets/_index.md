@@ -15,6 +15,7 @@ description: "Merge spreadsheets using Aspose.Cells Cloud API — batch combine 
 weight: 100
 ArticleTitle: "Merge Multiple Excel Files with Aspose.Cells Cloud API – Batch Combine Spreadsheets"
 ---
+
 The **MergeSpreadsheets** API (`PUT https://api.aspose.cloud/v4.0/cells/merge/spreadsheet`) enables developers to combine multiple local Excel, CSV, or ODS files into a single workbook using Aspose.Cells Cloud, supporting output formats such as XLSX, CSV, PDF, and over 30 others; the operation processes files cloud-side without requiring prior upload to cloud storage and allows configuration of output format, worksheet layout (e.g., merging all data into one sheet), and regional settings.
 
 ## Overview
@@ -39,16 +40,16 @@ All requests require JWT token-based authentication. Obtain your access token vi
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| Spreadsheet | File | FormData | Upload spreadsheet file. |
-| outFormat | String | Query | The out file format. |
-| mergeInOneSheet | Boolean | Query | Whether to combine all data into a single worksheet. |
-| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
-| outStorageName | String | Query | Output file Storage Name. |
-| fontsLocation | String | Query | Use Custom fonts. |
-| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password | String | Query | The password for opening spreadsheet file. |
+| Parameter Name  | Type    | Path/Query String/HTTPBody | Description                                                                                                                             |
+| --------------- | ------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet     | File    | FormData                   | Upload spreadsheet file.                                                                                                                |
+| outFormat       | String  | Query                      | The out file format.                                                                                                                    |
+| mergeInOneSheet | Boolean | Query                      | Whether to combine all data into a single worksheet.                                                                                    |
+| outPath         | String  | Query                      | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
+| outStorageName  | String  | Query                      | Output file Storage Name.                                                                                                               |
+| fontsLocation   | String  | Query                      | Use Custom fonts.                                                                                                                       |
+| region          | String  | Query                      | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password        | String  | Query                      | The password for opening spreadsheet file.                                                                                              |
 
 ### Response
 
@@ -74,20 +75,18 @@ Content-Disposition: attachment; filename="result"
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | Invalid url. |
-| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
-| 404 | Not Found | Source file not accessible. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining data. |
+| Code | Meaning           | Description                                                   |
+| ---- | ----------------- | ------------------------------------------------------------- |
+| 200  | OK                | The request completed successfully.                           |
+| 400  | Bad Request       | Invalid url.                                                  |
+| 401  | Unauthorized      | Authentication has failed, or no credentials were provided.   |
+| 404  | Not Found         | Source file not accessible.                                   |
+| 413  | Payload Too Large | The uploaded file exceeds the allowed size limit.             |
+| 500  | Server Error      | The spreadsheet has encountered an anomaly in obtaining data. |
 
 On success, the API returns the merged workbook as a binary stream.
 
-
 **Success Response**
-
 
 **Error Responses**
 
@@ -110,37 +109,6 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/merge/spreadsheet?outFormat=PDF
   -F "Spreadsheet=@/path/to/Book2.xlsx" \
   -o merged_report.pdf
 ```
-
-#### Using SDKs
-
-Aspose.Cells Cloud provides SDKs for popular languages. See the [GitHub repository](https://github.com/aspose-cells-cloud){rel="noopener noreferrer" target="\_blank"} for code samples.
-
-{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{< tab tabNum="1" >}}
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_MergeSpreadsheets.cs" >}}
-{{< /tab >}}
-{{< tab tabNum="2" >}}
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_MergeSpreadsheets.java" >}}
-{{< /tab >}}
-{{< tab tabNum="3" >}}
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_MergeSpreadsheets.php" >}}
-{{< /tab >}}
-{{< tab tabNum="4" >}}
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_MergeSpreadsheets.rb" >}}
-{{< /tab >}}
-{{< tab tabNum="5" >}}
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_MergeSpreadsheets.ts" >}}
-{{< /tab >}}
-{{< tab tabNum="6" >}}
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_MergeSpreadsheets.py" >}}
-{{< /tab >}}
-{{< tab tabNum="7" >}}
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_MergeSpreadsheets.pl" >}}
-{{< /tab >}}
-{{< tab tabNum="8" >}}
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_MergeSpreadsheets.go" >}}
-{{< /tab >}}
-{{< /tabs >}}
 
 ## When to Use the Merge Spreadsheet API
 
@@ -193,3 +161,30 @@ The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Data
 
 Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
 Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
+
+{{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{< tab tabNum="1" >}}
+{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_MergeSpreadsheets.cs" >}}
+{{< /tab >}}
+{{< tab tabNum="2" >}}
+{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_MergeSpreadsheets.java" >}}
+{{< /tab >}}
+{{< tab tabNum="3" >}}
+{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_MergeSpreadsheets.php" >}}
+{{< /tab >}}
+{{< tab tabNum="4" >}}
+{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_MergeSpreadsheets.rb" >}}
+{{< /tab >}}
+{{< tab tabNum="5" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_MergeSpreadsheets.ts" >}}
+{{< /tab >}}
+{{< tab tabNum="6" >}}
+{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_MergeSpreadsheets.py" >}}
+{{< /tab >}}
+{{< tab tabNum="7" >}}
+{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_MergeSpreadsheets.pl" >}}
+{{< /tab >}}
+{{< tab tabNum="8" >}}
+{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_MergeSpreadsheets.go" >}}
+{{< /tab >}}
+{{< /tabs >}}

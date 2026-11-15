@@ -12,6 +12,7 @@ aliases:
   - /cells/remove-duplicate-substrings/
 ArticleTitle: "Remove Duplicate Substrings in Excel with Aspose.Cells Cloud API"
 ---
+
 The **RemoveDuplicateSubstrings** API (`PUT https://api.aspose.cloud/v4.0/cells/content/remove/duplicate-substrings`) in Aspose.Cells Cloud identifies and removes repeated substrings within each cell of a specified range, using user-defined or preset delimiters (e.g., comma, semicolon, space), while preserving formatting, data validation, and workbook structure—such as converting `"VIP,Premium,VIP,Gold"` to `"VIP,Premium,Gold"` in a single pass.
 
 ## Overview
@@ -118,29 +119,12 @@ On success (HTTP `200 OK`), the response returns the cleaned workbook as a file 
 }
 ```
 
-### HTTP Status Codes
-
-| Code | Meaning               | Description                                                        |
-| ---- | --------------------- | ------------------------------------------------------------------ |
-| 200  | OK                    | Request succeeded; cleaned workbook returned.                      |
-| 202  | Accepted              | Asynchronous processing initiated.                                 |
-| 400  | Bad Request           | Invalid parameters, malformed request, or missing required fields. |
-| 401  | Unauthorized          | Invalid or missing access token.                                   |
-| 404  | Not Found             | Workbook, worksheet, or range not found.                           |
-| 500  | Internal Server Error | Unexpected server-side error.                                      |
-
 ## Use Cases
 
 - **Data Standardization**: Clean tag fields (e.g., `"AWS,AWS,Azure,GCP"` → `"AWS,Azure,GCP"`).
 - **Log Analysis**: Deduplicate error codes or component identifiers in technical logs.
 - **HR & Certifications**: Remove duplicate skill or certification entries (e.g., `"Python,Python,SQL,Python"` → `"Python,SQL"`).
 - **Product Tagging**: Normalize product attributes where duplicates occur due to import errors.
-
-## OpenAPI Specification
-
-The [official OpenAPI spec](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/TextProcessing/RemoveDuplicateSubstrings) provides full contract details for programmatic integration.
-
----
 
 ## How to Use the Remove Duplicate Substrings API with SDKs?
 

@@ -10,6 +10,7 @@ keywords: "TransposeData, Aspose.Cells, Cloud API, spreadsheet, transpose"
 description: "Switch rows and columns in the spreadsheet."
 weight: 100
 ---
+
 The **TransposeData** API (`PUT https://api.aspose.cloud/v4.0/cells/transpose`) in Aspose.Cells Cloud enables developers to switch rows and columns within a specified range of a spreadsheet worksheet, supporting operations such as transforming tabular layouts for reporting or data analysis. It requires a spreadsheet file upload, the target worksheet name, and a cell area (e.g., "A1:C10"), and optionally accepts parameters like output path, storage name, locale, and password for secure handling of protected files.
 
 ## The Transpose Data Web API
@@ -24,15 +25,15 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| Spreadsheet | File | FormData | Upload spreadsheet file. |
-| worksheet | String | Query | The worksheet name. |
-| cellArea | String | Query | A specified data range |
-| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
-| outStorageName | String | Query | Output file Storage Name. |
-| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password | String | Query | The password for opening spreadsheet file. |
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                                                                                                             |
+| -------------- | ------ | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet    | File   | FormData                   | Upload spreadsheet file.                                                                                                                |
+| worksheet      | String | Query                      | The worksheet name.                                                                                                                     |
+| cellArea       | String | Query                      | A specified data range                                                                                                                  |
+| outPath        | String | Query                      | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
+| outStorageName | String | Query                      | Output file Storage Name.                                                                                                               |
+| region         | String | Query                      | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password       | String | Query                      | The password for opening spreadsheet file.                                                                                              |
 
 ### Response
 
@@ -58,24 +59,18 @@ Content-Disposition: attachment; filename="result"
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                        |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 **Response Status Codes**
 
 Switch rows and columns in the spreadsheet.
-
-### Request Body Parameter
-
-| Parameter Name | Type  | Description |
-| -------------- | ----- | ----------- |
-| [TBD]          | [TBD] | [TBD]       |
 
 ## How to Use the Transpose Data API with SDKs?
 
@@ -112,8 +107,6 @@ curl -v "https://api.aspose.cloud/v4.0/cells/transpose?worksheet=Sheet1&cellArea
 {< /tab >}
 
 {< /tabs >}
-
-### Use Aspose Cells Cloud SDKs
 
 ### Use Aspose.Cells Cloud SDKs
 

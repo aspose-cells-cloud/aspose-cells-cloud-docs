@@ -11,6 +11,7 @@ lastmod: 2024-04-23
 api_version: v4.0
 ArticleTitle: "Move Worksheet in Excel via Aspose.Cells Cloud REST API"
 ---
+
 The **MoveWorksheetInSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/move/worksheet`) in Aspose.Cells Cloud enables developers to programmatically reposition a specified worksheet within an Excel workbook by name and target index, supporting dynamic report structuring and logical data flow without manual intervention.
 
 ## The Move Worksheet in Spreadsheet Web API
@@ -29,15 +30,15 @@ All requests require a JWT access token. See [Authentication Overview](https://d
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| Spreadsheet | File | FormData | Upload spreadsheet file. |
-| worksheet | String | Query | The current name of the worksheet to be moved. |
-| position | Integer | Query | Move the worksheet to the position |
-| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
-| outStorageName | String | Query | Output file Storage Name. |
-| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password | String | Query | The password for opening spreadsheet file. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                                                                                                             |
+| -------------- | ------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet    | File    | FormData                   | Upload spreadsheet file.                                                                                                                |
+| worksheet      | String  | Query                      | The current name of the worksheet to be moved.                                                                                          |
+| position       | Integer | Query                      | Move the worksheet to the position                                                                                                      |
+| outPath        | String  | Query                      | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
+| outStorageName | String  | Query                      | Output file Storage Name.                                                                                                               |
+| region         | String  | Query                      | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password       | String  | Query                      | The password for opening spreadsheet file.                                                                                              |
 
 > ⚠️ **Important**:
 >
@@ -68,14 +69,14 @@ Content-Disposition: attachment; filename="result"
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | Invalid url. |
-| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
-| 404 | Not Found | Source file not accessible. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining data. |
+| Code | Meaning           | Description                                                   |
+| ---- | ----------------- | ------------------------------------------------------------- |
+| 200  | OK                | The request completed successfully.                           |
+| 400  | Bad Request       | Invalid url.                                                  |
+| 401  | Unauthorized      | Authentication has failed, or no credentials were provided.   |
+| 404  | Not Found         | Source file not accessible.                                   |
+| 413  | Payload Too Large | The uploaded file exceeds the allowed size limit.             |
+| 500  | Server Error      | The spreadsheet has encountered an anomaly in obtaining data. |
 
 ## cURL Example
 
@@ -118,6 +119,11 @@ Returns the modified workbook as a binary stream (file download).
 The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Management/MoveWorksheetInSpreadsheet" rel="noopener noreferrer">Move Worksheet in Spreadsheet API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 Using an SDK is recommended for production use—it handles authentication, request formatting, and error parsing.
+
+### Use Aspose.Cells Cloud SDKs
+
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 {{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 {{< tab tabNum="1" >}}
@@ -258,8 +264,3 @@ fmt.Println("Moved Sheet1 to position 0")
 
 {{< /tab >}}
 {{< /tabs >}}
-
-### Use Aspose.Cells Cloud SDKs
-
-Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
-Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

@@ -91,12 +91,17 @@ Content-Type: application/json
 }
 ```
 
-### Error Codes
 
-- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized** – Invalid access token, client ID, or client secret.
-- **404 Not Found** – The spreadsheet file is not accessible.
-- **500 Server Error** – An anomaly occurred while obtaining calculation data.
+**HTTP Status Codes**
+
+| Code | Meaning           | Description                                                   |
+| ---- | ----------------- | ------------------------------------------------------------- |
+| 200  | OK                | The request completed successfully.                           |
+| 400  | Bad Request       | Invalid url.                                                  |
+| 401  | Unauthorized      | Authentication has failed, or no credentials were provided.   |
+| 404  | Not Found         | Source file not accessible.                                   |
+| 413  | Payload Too Large | The uploaded file exceeds the allowed size limit.             |
+| 500  | Server Error      | The spreadsheet has encountered an anomaly in obtaining data. |
 
 Automatically detect broken links in Excel files stored in cloud storage. Our API scans specified ranges for broken external references, invalid formulas, and missing data sources. It supports remote spreadsheet auditing, automated quality checks, and integration with cloud‑storage providers. Use the RESTful API to automate enterprise‑level workflows.
 

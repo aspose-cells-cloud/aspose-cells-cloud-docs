@@ -11,10 +11,10 @@ ArticleTitle: "Aspose.Cells Cloud API: Bulk Replace Text in Remote Excel Ranges"
 
 Perform bulk text replacement across remote Excel files stored in cloud storage such as AWS S3 or Azure Blob. Use this REST API endpoint to efficiently locate and update text across an entire workbook or specific ranges—without downloading or manually editing files.
 
-## API Endpoint
+## The Replace Content in Remote Spreadsheet Web API
 
 ```http
-PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{cellArea}/replace/content
+PUT https://api.aspose.cloud/v4.0/cells/{name}/replace/content
 ```
 
 ### **Security and Authentication**
@@ -28,8 +28,6 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | Parameter     | Type   | Location | Description                                                                                                                          |
 | ------------- | ------ | -------- | ------------------------------------------------------------------------------------------------------------------------------------ |
 | `name`        | String | Path     | The name of the workbook file stored in cloud storage (e.g., `"report.xlsx"`).                                                       |
-| `worksheet`   | String | Path     | The name of the worksheet where the replacement occurs (e.g., `"Sheet1"`).                                                           |
-| `cellArea`    | String | Path     | The cell range (e.g., `"A1:D20"`, `"B2:F"`). Supports full-column/row references.                                                    |
 | `searchText`  | String | Query    | The text string to locate. Search is case-sensitive unless modified by locale settings.                                              |
 | `replaceText` | String | Query    | The replacement text.                                                                                                                |
 | `folder`      | String | Query    | Cloud storage folder path containing the workbook (e.g., `"/documents/quarterly/"`).                                                 |
@@ -43,7 +41,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ```bash
 curl -X PUT \
-  'https://api.aspose.cloud/v4.0/cells/report.xlsx/worksheets/Sheet1/ranges/A1:D20/replace/content?searchText=Q1&replaceText=Q2&folder=documents/quarterly&region=en-US' \
+  'https://api.aspose.cloud/v4.0/cells/report.xlsx/replace/content?searchText=Q1&replaceText=Q2&folder=documents/quarterly&region=en-US' \
   -H 'Authorization: Bearer <your_access_token>' \
   -H 'Content-Type: application/json'
 ```
@@ -70,18 +68,16 @@ A successful response returns the `CellsCloudResponse` object with operation sta
 | `ReplacedCount`  | Integer | Total number of text replacements performed.           |
 | `ReplacedRanges` | Array   | Array of cell coordinates where replacements occurred. |
 
----
+**HTTP Status Codes**
 
-## Error Codes
-
-| Status Code | Description                                                                |
-| ----------- | -------------------------------------------------------------------------- |
-| `400`       | Bad Request — Invalid URL, missing parameters, or malformed range syntax.  |
-| `401`       | Unauthorized — Missing, expired, or invalid OAuth2 token.                  |
-| `404`       | Not Found — Workbook, worksheet, or specified range does not exist.        |
-| `500`       | Server Error — Internal failure (e.g., file corruption, permission error). |
-
----
+| Code | Meaning           | Description                                                   |
+| ---- | ----------------- | ------------------------------------------------------------- |
+| 200  | OK                | The request completed successfully.                           |
+| 400  | Bad Request       | Invalid url.                                                  |
+| 401  | Unauthorized      | Authentication has failed, or no credentials were provided.   |
+| 404  | Not Found         | Source file not accessible.                                   |
+| 413  | Payload Too Large | The uploaded file exceeds the allowed size limit.             |
+| 500  | Server Error      | The spreadsheet has encountered an anomaly in obtaining data. |
 
 ## When to Use This API
 
@@ -89,8 +85,6 @@ A successful response returns the `CellsCloudResponse` object with operation sta
 - **Template Personalization** – Inject region-specific values (e.g., currency, date format) into cloud-based templates.
 - **Cross-Environment Sync** – Maintain consistency across regional deployments (e.g., replace `"USD"` with `"EUR"` in EU-based workbooks).
 - **Data Validation Cleanup** – Standardize inconsistent entries (e.g., replace `"N/A"`, `"n/a"`, `"NA"` with `"Missing"` in a region-agnostic way using `region=en-US`).
-
----
 
 ## Why Use Aspose.Cells Cloud for Text Replacement?
 
@@ -100,8 +94,6 @@ A successful response returns the `CellsCloudResponse` object with operation sta
 - **Developer-Friendly** – Use native SDKs for rapid integration.
 - **Secure** – OAuth2 authentication and encrypted data-in-transit (TLS 1.2+).
 - **Pay-Per-Use** – No infrastructure costs or maintenance overhead.
-
----
 
 ## Code Examples
 

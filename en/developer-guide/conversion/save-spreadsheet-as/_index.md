@@ -8,11 +8,10 @@ url: /save-spreadsheet-as/
 linktitle: "Save Spreadsheet As"
 keywords: "Aspose.Cells Cloud, spreadsheet conversion, save as, API, XLSX to PDF, cloud storage, Excel to PDF, CSV export, cloud conversion, API v4.0"
 weight: 100
-robots: index, follow
-canonical: /save-spreadsheet-as/
 tags: ["conversion", "api", "cloud", "excel", "rest"]
 ArticleTitle: "Save Spreadsheet As PDF, XLSX, CSV, HTML & More with Aspose.Cells Cloud API"
 ---
+
 The **SaveSpreadsheetAs** API (`PUT https://api.aspose.cloud/v4.0/cells/{name}/saveas`) in Aspose.Cells Cloud enables cloud-based conversion of a workbook stored in cloud storage to a specified format—such as PDF, XLSX, or CSV—without downloading the file locally, preserving layout, formulas, and styling while minimizing data transfer and enhancing security by processing entirely within the cloud environment.
 
 ## The Save Spreadsheet as Web API
@@ -31,20 +30,20 @@ Authorization: Bearer <access_token>
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | (Required) The name of the workbook file to be converted. |
-| format | String | Query | (Required) The desired output format (e.g., "Xlsx", "Pdf", "Csv"). |
-| saveOptionsData | class:saveoptionsdata | HTTPBody | (Optional) Save options data. The default is null. |
-| folder | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
-| storageName | String | Query | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted. |
-| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
-| outStorageName | String | Query | Output file Storage Name. |
-| fontsLocation | String | Query | Use Custom fonts. |
-| AutoRowsFit | Boolean | Query | (Optional) Autofits all rows in worksheets. |
-| AutoColumnsFit | Boolean | Query | (Optional) Autofits all columns in worksheets. |
-| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password | String | Query | The password for opening spreadsheet file. |
+| Parameter Name  | Type                  | Path/Query String/HTTPBody | Description                                                                                                                             |
+| --------------- | --------------------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| name            | String                | Path                       | (Required) The name of the workbook file to be converted.                                                                               |
+| format          | String                | Query                      | (Required) The desired output format (e.g., "Xlsx", "Pdf", "Csv").                                                                      |
+| saveOptionsData | class:saveoptionsdata | HTTPBody                   | (Optional) Save options data. The default is null.                                                                                      |
+| folder          | String                | Query                      | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
+| storageName     | String                | Query                      | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.                                       |
+| outPath         | String                | Query                      | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
+| outStorageName  | String                | Query                      | Output file Storage Name.                                                                                                               |
+| fontsLocation   | String                | Query                      | Use Custom fonts.                                                                                                                       |
+| AutoRowsFit     | Boolean               | Query                      | (Optional) Autofits all rows in worksheets.                                                                                             |
+| AutoColumnsFit  | Boolean               | Query                      | (Optional) Autofits all columns in worksheets.                                                                                          |
+| region          | String                | Query                      | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password        | String                | Query                      | The password for opening spreadsheet file.                                                                                              |
 
 ### Response
 
@@ -69,14 +68,14 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | Invalid url. |
-| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
-| 404 | Not Found | Source file not accessible. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining conversion data. |
+| Code | Meaning           | Description                                                              |
+| ---- | ----------------- | ------------------------------------------------------------------------ |
+| 200  | OK                | The request completed successfully.                                      |
+| 400  | Bad Request       | Invalid url.                                                             |
+| 401  | Unauthorized      | Authentication has failed, or no credentials were provided.              |
+| 404  | Not Found         | Source file not accessible.                                              |
+| 413  | Payload Too Large | The uploaded file exceeds the allowed size limit.                        |
+| 500  | Server Error      | The spreadsheet has encountered an anomaly in obtaining conversion data. |
 
 ### Supported Output Formats
 
@@ -92,8 +91,6 @@ Content-Type: application/json
 | MD     | `.md`     |        |           |
 
 > Full format list: See the [Aspose.Cells Cloud API Explorer](https://reference.aspose.cloud/cells/).
-
----
 
 ## Example Request (cURL)
 
@@ -113,17 +110,6 @@ curl -X PUT \
   "Status": "OK"
 }
 ```
-
-### Error Handling
-
-| Status Code | Error Message                  | Cause                                              |
-| ----------- | ------------------------------ | -------------------------------------------------- |
-| `400`       | Invalid request parameters     | Missing `name` or `format`; invalid format value   |
-| `401`       | Authentication failed          | Invalid, expired, or missing JWT token             |
-| `404`       | Source file not accessible     | File does not exist in storage                     |
-| `500`       | Server error during conversion | Internal issue (e.g., unsupported file corruption) |
-
----
 
 ## Use Cases
 
@@ -164,9 +150,12 @@ curl -X PUT \
 
 The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/SaveSpreadsheetAs" rel="noopener noreferrer">Save Spreadsheet as API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
-Aspose.Cells Cloud provides production-ready SDKs for 8+ languages. See the [GitHub organization](https://github.com/aspose-cells-cloud) for official repositories.
+### Use Aspose.Cells Cloud SDKs
 
-### Node.js (aspose-cells-cloud-node)
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
+
+#### Node.js (aspose-cells-cloud-node)
 
 ```javascript
 const { CellsApi, SaveResponse } = require("aspose-cells-cloud");
@@ -185,7 +174,7 @@ cellsApi
   .catch((error) => console.error("Error:", error));
 ```
 
-### Python (aspose-cells-cloud-python)
+#### Python (aspose-cells-cloud-python)
 
 ```python
 from asposecellscloud.apis.cells_api import CellsApi
@@ -231,8 +220,3 @@ api.cellsSaveAsPostDocumentSaveAs(
     null
 );
 ```
-
-### Use Aspose.Cells Cloud SDKs
-
-Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
-Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

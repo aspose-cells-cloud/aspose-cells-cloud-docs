@@ -8,6 +8,7 @@ keywords: "change word case API, Aspose.Cells, Excel case conversion, uppercase,
 description: "Convert Excel text case using Aspose.Cells Cloud API: uppercase, lowercase, proper case, and sentence case"
 weight: 100
 ---
+
 The **UpdateWordCase** API (`PUT https://api.aspose.cloud/v4.0/cells/content/wordcase`) in Aspose.Cells Cloud enables instant text case conversion in spreadsheets—supporting Upper Case, Lower Case, Proper Case, and Sentence Case—by processing only string cells while preserving formulas, formatting, and data validation; users upload a spreadsheet and specify the desired case type via query parameter, optionally targeting a specific worksheet or range.
 
 ## The Update Word Case Web API
@@ -26,16 +27,16 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| Spreadsheet | File | FormData | Upload spreadsheet file. |
-| wordCaseType | String | Query | Specify text case: Upper Case, Lower Case, Proper Case, Sentence Case. |
-| worksheet | String | Query | Specify the worksheet of spreadsheet. |
-| range | String | Query | Specify the worksheet range of spreadsheet. |
-| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
-| outStorageName | String | Query | Output file Storage Name. |
-| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password | String | Query | The password for opening spreadsheet file. |
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                                                                                                             |
+| -------------- | ------ | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet    | File   | FormData                   | Upload spreadsheet file.                                                                                                                |
+| wordCaseType   | String | Query                      | Specify text case: Upper Case, Lower Case, Proper Case, Sentence Case.                                                                  |
+| worksheet      | String | Query                      | Specify the worksheet of spreadsheet.                                                                                                   |
+| range          | String | Query                      | Specify the worksheet range of spreadsheet.                                                                                             |
+| outPath        | String | Query                      | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
+| outStorageName | String | Query                      | Output file Storage Name.                                                                                                               |
+| region         | String | Query                      | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password       | String | Query                      | The password for opening spreadsheet file.                                                                                              |
 
 ### Response
 
@@ -61,12 +62,16 @@ Content-Disposition: attachment; filename="result"
 
 On success the service returns **200 OK** (or **202 Accepted**) with a JSON payload containing the binary stream of the processed workbook.
 
-### Error Codes
+**HTTP Status Codes**
 
-- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized** – Invalid access token or incorrect client credentials.
-- **404 Not Found** – The spreadsheet file is not accessible.
-- **500 Server Error** – The spreadsheet encountered an internal processing anomaly.
+| Code | Meaning           | Description                                                   |
+| ---- | ----------------- | ------------------------------------------------------------- |
+| 200  | OK                | The request completed successfully.                           |
+| 400  | Bad Request       | Invalid url.                                                  |
+| 401  | Unauthorized      | Authentication has failed, or no credentials were provided.   |
+| 404  | Not Found         | Source file not accessible.                                   |
+| 413  | Payload Too Large | The uploaded file exceeds the allowed size limit.             |
+| 500  | Server Error      | The spreadsheet has encountered an anomaly in obtaining data. |
 
 Use the Aspose.Cells Cloud Web API to instantly convert text case in your spreadsheet—switch between uppercase, lowercase, proper case (capitalize each word), or sentence case (capitalize the first letter of each sentence) across a selected range. Only string cells are affected; numbers, booleans, errors, and blanks are ignored. Formulas, formatting, and data validation remain untouched.
 

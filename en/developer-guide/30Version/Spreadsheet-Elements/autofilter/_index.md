@@ -125,5 +125,3 @@ response = api.cells_autofilter_post_worksheet_autofilter(
     case_sensitive=False
 )
 ```
-
-> Code samples in C#, Java, Node.js, PHP, and other languages are available in each operation’s dedicated documentation page.

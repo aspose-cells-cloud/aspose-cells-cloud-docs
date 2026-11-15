@@ -16,6 +16,7 @@ keywords:
 weight: 100
 ArticleTitle: "Remove Characters by Position in Excel with Aspose.Cells Cloud API"
 ---
+
 The **RemoveCharactersByPosition** API (`PUT https://api.aspose.cloud/v4.0/cells/content/remove/characters-by-position`) in Aspose.Cells Cloud v4.0 deletes characters from Excel cell ranges by position—supporting first/last N characters, text before/after a substring, or content between two delimiters—while preserving formulas, formatting, and data validation, enabling precise text cleaning for data standardization and batch preprocessing without complex regex.
 
 ## Overview
@@ -57,20 +58,20 @@ The API requires [JWT token-based authentication](https://docs.aspose.cloud/tota
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| Spreadsheet | File | FormData | Upload spreadsheet file. |
-| theFirstNCharacters | Integer | Query | Specify removing the first n characters from selected cells. |
-| theLastNCharacters | Integer | Query | Specify removing the last n characters from selected cells. |
-| allCharactersBeforeText | String | Query | Specify using targeted removal options to delete text that is located before certain characters. |
-| allCharactersAfterText | String | Query | Specify using targeted removal options to delete text that is located after certain characters. |
-| caseSensitive | Boolean | Query | Affects `Substring` mode and `CustomChars` when enabled. |
-| worksheet | String | Query | Specify the worksheet of spreadsheet. |
-| range | String | Query | Specify the worksheet range of spreadsheet. |
-| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
-| outStorageName | String | Query | Output file Storage Name. |
-| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password | String | Query | The password for opening spreadsheet file. |
+| Parameter Name          | Type    | Path/Query String/HTTPBody | Description                                                                                                                             |
+| ----------------------- | ------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet             | File    | FormData                   | Upload spreadsheet file.                                                                                                                |
+| theFirstNCharacters     | Integer | Query                      | Specify removing the first n characters from selected cells.                                                                            |
+| theLastNCharacters      | Integer | Query                      | Specify removing the last n characters from selected cells.                                                                             |
+| allCharactersBeforeText | String  | Query                      | Specify using targeted removal options to delete text that is located before certain characters.                                        |
+| allCharactersAfterText  | String  | Query                      | Specify using targeted removal options to delete text that is located after certain characters.                                         |
+| caseSensitive           | Boolean | Query                      | Affects `Substring` mode and `CustomChars` when enabled.                                                                                |
+| worksheet               | String  | Query                      | Specify the worksheet of spreadsheet.                                                                                                   |
+| range                   | String  | Query                      | Specify the worksheet range of spreadsheet.                                                                                             |
+| outPath                 | String  | Query                      | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
+| outStorageName          | String  | Query                      | Output file Storage Name.                                                                                                               |
+| region                  | String  | Query                      | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password                | String  | Query                      | The password for opening spreadsheet file.                                                                                              |
 
 > **Note**: Only one primary mode (`theFirstNCharacters`, `theLastNCharacters`, `allCharactersBeforeText`, `allCharactersAfterText`, or `BetweenValues`) should be specified per request. Combining modes yields undefined behavior.
 
@@ -98,15 +99,16 @@ Content-Disposition: attachment; filename="result"
 
 On success, returns the cleaned workbook as a binary stream (`Content-Type: application/octet-stream`).
 
-### Error Codes
+**HTTP Status Codes**
 
-| Status Code        | Description                                        |
-| ------------------ | -------------------------------------------------- |
-| `200 OK`           | Request succeeded; cleaned file returned.          |
-| `400 Bad Request`  | Invalid parameter values or malformed request URI. |
-| `401 Unauthorized` | Invalid or expired access token.                   |
-| `404 Not Found`    | Specified file or storage path not found.          |
-| `500 Server Error` | Internal error during file processing.             |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                        |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Use Cases
 
@@ -125,15 +127,16 @@ On success, returns the cleaned workbook as a binary stream (`Content-Type: appl
 
 > Customers report up to **90% reduction** in text-cleaning time for large workbooks compared to manual or spreadsheet-native approaches. _(See [Aspose.Cells Cloud Case Studies](https://www.aspose.com/cloud/case-studies/) for verified examples.)_
 
-## OpenAPI Specification
-
-The public OpenAPI definition for this endpoint is available at the [Aspose.Cells Cloud API Reference](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/TextProcessing/RemoveCharactersByPositionInRemoteSpreadsheet).
-
 ## How to Use the Remove Characters by Position API with SDKs?
 
 ### Remove Characters by Position API Specification
 
 The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/TextProcessing/RemoveCharactersByPosition" rel="noopener noreferrer">Remove Characters by Position API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
+
+### Use Aspose.Cells Cloud SDKs
+
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 Using an SDK is recommended for production use. The SDK handles authentication, serialization, and error handling.
 
@@ -260,8 +263,3 @@ resp, _, err := api.CellsApi.CellsContentRemoveCharactersByPosition(
 {{< /tabs >}}
 
 > Explore the full SDK source and examples at [GitHub](https://github.com/aspose-cells-cloud).
-
-### Use Aspose.Cells Cloud SDKs
-
-Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
-Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

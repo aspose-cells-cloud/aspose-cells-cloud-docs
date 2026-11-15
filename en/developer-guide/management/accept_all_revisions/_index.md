@@ -10,6 +10,7 @@ keywords: "Aspose.Cells, AcceptAllRevisions, spreadsheet, revisions"
 description: "Accept all revisions in a spreadsheet file using Aspose.Cells Cloud API."
 weight: 100
 ---
+
 The **AcceptAllRevisions** API (`PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/accept-all-revisions`) in Aspose.Cells Cloud v4.0 processes an uploaded spreadsheet file by accepting all tracked revisions—such as insertions, deletions, and formatting changes—then returns the cleaned, final workbook. Developers use this operation to finalize collaborative editing workflows in cloud-based spreadsheet applications, eliminating the need to manually resolve change history before distribution or further processing.
 
 ## The Accept All Revisions Web API
@@ -24,14 +25,14 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| Spreadsheet | File | FormData | Upload spreadsheet file. |
-| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
-| outStorageName | String | Query | Output file Storage Name. |
-| fontsLocation | String | Query | Use Custom fonts. |
-| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password | String | Query | The password for opening spreadsheet file. |
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                                                                                                             |
+| -------------- | ------ | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet    | File   | FormData                   | Upload spreadsheet file.                                                                                                                |
+| outPath        | String | Query                      | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
+| outStorageName | String | Query                      | Output file Storage Name.                                                                                                               |
+| fontsLocation  | String | Query                      | Use Custom fonts.                                                                                                                       |
+| region         | String | Query                      | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password       | String | Query                      | The password for opening spreadsheet file.                                                                                              |
 
 ### Response
 
@@ -57,14 +58,14 @@ Content-Disposition: attachment; filename="result"
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                        |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 **Response Status Codes**
 
@@ -111,8 +112,6 @@ curl -v "https://api.aspose.cloud/v4.0/cells/spreadsheet/accept-all-revisions?ou
 {< /tab >}
 
 {< /tabs >}
-
-### Use Aspose Cells Cloud SDKs
 
 ### Use Aspose.Cells Cloud SDKs
 

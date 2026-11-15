@@ -5,25 +5,14 @@ type: docs
 url: /export-spreadsheet-as-format/
 description: "Export Excel workbooks to PDF, XLSX, CSV, HTML, JSON, ODS, TIFF via Aspose.Cells Cloud REST API and SDKs."
 keywords: "Aspose.Cells Cloud, Excel to PDF conversion, REST API export, spreadsheet format conversion, XLSX, CSV, HTML, JSON, ODS, cloud API, SDK examples"
-date: 2024-03-15
-lastmod: 2024-06-20
-sitemap:
-  changefreq: monthly
-  priority: 0.8
-robots: index, follow
 draft: false
 weight: 100
 ArticleTitle: "Export Excel Workbook to PDF, XLSX, CSV, HTML, JSON & More via Aspose.Cells Cloud API"
 ---
-The **ExportSpreadsheetAsFormat** API (`GET https://api.aspose.cloud/v4.0/cells/{name}`) in Aspose.Cells Cloud converts Excel workbooks stored in cloud storage to target formats such as PDF, XLSX, CSV, HTML, JSON, ODS, and TIFF without requiring local downloads, preserving formatting, formulas, and styling while improving performance for large files through remote processing.
-
-## Overview
 
 The **ExportSpreadsheetAsFormat** API enables you to convert Excel workbooks stored in Aspose Cloud to a wide range of formats—including PDF, XLSX, CSV, HTML, JSON, ODS, and TIFF—directly in the cloud. The operation processes the file remotely, eliminating local downloads and preserving formatting, formulas, and styling.
 
 This document provides full API details, usage examples, best practices, and SDK integrations for rapid development.
-
----
 
 ## The Export Spreadsheet as Format Web API
 
@@ -44,23 +33,21 @@ curl -v "https://api.aspose.cloud/connect/token" \
 
 Include the token in the `Authorization: Bearer <ACCESS_TOKEN>` header.
 
----
-
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | (Required) The name of the workbook file to be retrieved. |
-| format | String | Query | (Required) The desired output format (e.g., "Xlsx", "Pdf", "Csv"). |
-| folder | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
-| storageName | String | Query | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted. |
-| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
-| outStorageName | String | Query | Output file Storage Name. |
-| fontsLocation | String | Query | Use Custom fonts. |
-| AutoRowsFit | Boolean | Query | (Optional) Autofits all rows in worksheets. |
-| AutoColumnsFit | Boolean | Query | (Optional) Autofits all columns in worksheets. |
-| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password | String | Query | The password for opening spreadsheet file. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                                                                                                             |
+| -------------- | ------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| name           | String  | Path                       | (Required) The name of the workbook file to be retrieved.                                                                               |
+| format         | String  | Query                      | (Required) The desired output format (e.g., "Xlsx", "Pdf", "Csv").                                                                      |
+| folder         | String  | Query                      | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
+| storageName    | String  | Query                      | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.                                       |
+| outPath        | String  | Query                      | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
+| outStorageName | String  | Query                      | Output file Storage Name.                                                                                                               |
+| fontsLocation  | String  | Query                      | Use Custom fonts.                                                                                                                       |
+| AutoRowsFit    | Boolean | Query                      | (Optional) Autofits all rows in worksheets.                                                                                             |
+| AutoColumnsFit | Boolean | Query                      | (Optional) Autofits all columns in worksheets.                                                                                          |
+| region         | String  | Query                      | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password       | String  | Query                      | The password for opening spreadsheet file.                                                                                              |
 
 ### Response
 
@@ -86,29 +73,13 @@ Content-Disposition: attachment; filename="result"
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | Invalid url. |
-| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
-| 404 | Not Found | Source file not accessible. |
-| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining conversion data. |
-
-| Parameter        | Type    | Location | Required | Description                                                                                                                                                                                              |
-| :--------------- | :------ | :------- | :------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `name`           | string  | Path     | ✅       | Name of the source workbook (e.g., `MyWorkbook.xlsx`).                                                                                                                                                   |
-| `format`         | string  | Query    | ✅       | Target format: `PDF`, `XLSX`, `CSV`, `HTML`, `JSON`, `ODS`, `TIFF`, `TXT`, `XLS`, `MHTML`, `XLSB`, `XLTM`, `XLT`, `XLTX`, `DOTX`, `DOCX`, `EPUB`, `MD`, `PNG`, `JPEG`, `BMP`, `SVG`, `XPS`, `PS`, `EMF`. |
-| `folder`         | string  | Query    | ❌       | Folder path containing the workbook. Defaults to root.                                                                                                                                                   |
-| `storageName`    | string  | Query    | ❌       | Custom storage name. Uses default storage if omitted.                                                                                                                                                    |
-| `outPath`        | string  | Query    | ❌       | Destination folder for the output file. Defaults to same as source.                                                                                                                                      |
-| `outStorageName` | string  | Query    | ❌       | Storage name for output file. Uses `storageName` or default if omitted.                                                                                                                                  |
-| `fontsLocation`  | string  | Query    | ❌       | Custom folder containing fonts required for rendering.                                                                                                                                                   |
-| `region`         | string  | Query    | ❌       | Locale setting (e.g., `en-US`, `fr-FR`). Affects number/date formatting.                                                                                                                                 |
-| `password`       | string  | Query    | ❌       | Password for encrypted Excel files.                                                                                                                                                                      |
-| `AutoRowsFit`    | boolean | Query    | ❌       | Whether to autofit all rows before export. Default: `false`.                                                                                                                                             |
-| `AutoColumnsFit` | boolean | Query    | ❌       | Whether to autofit all columns before export. Default: `false`.                                                                                                                                          |
-
----
+| Code | Meaning      | Description                                                              |
+| ---- | ------------ | ------------------------------------------------------------------------ |
+| 200  | OK           | The request completed successfully.                                      |
+| 400  | Bad Request  | Invalid url.                                                             |
+| 401  | Unauthorized | Authentication has failed, or no credentials were provided.              |
+| 404  | Not Found    | Source file not accessible.                                              |
+| 500  | Server Error | The spreadsheet has encountered an anomaly in obtaining conversion data. |
 
 ## cURL Example
 
@@ -122,8 +93,6 @@ curl -X GET "https://api.aspose.cloud/v4.0/cells/MyWorkbook.xlsx?format=PDF&outP
 ```
 
 > ✅ **Best Practice**: Replace `<ACCESS_TOKEN>` with your actual token. Use `-o` to save the response stream directly to a file.
-
----
 
 ## Supported Output Formats
 
@@ -141,29 +110,6 @@ curl -X GET "https://api.aspose.cloud/v4.0/cells/MyWorkbook.xlsx?format=PDF&outP
 
 > 🔍 Full list of supported formats: [Aspose.Cells Cloud Format Support](/supported-formats/)
 
----
-
-## HTTP Responses
-
-| Code  | Meaning               | Description                                                            |
-| :---- | :-------------------- | :--------------------------------------------------------------------- |
-| `200` | OK                    | Export successful; file stream returned.                               |
-| `400` | Bad Request           | Invalid request parameters (e.g., unsupported format, missing `name`). |
-| `401` | Unauthorized          | Invalid or missing JWT token.                                          |
-| `404` | Not Found             | Source file not found in storage.                                      |
-| `500` | Internal Server Error | Conversion failed (e.g., corrupted file, unsupported encryption).      |
-
----
-
-## Error Handling
-
-| Error              | Cause                                                | Resolution                                          |
-| :----------------- | :--------------------------------------------------- | :-------------------------------------------------- |
-| `400 Bad Request`  | Missing `format` or `name`, invalid format value     | Validate parameters; use supported formats          |
-| `401 Unauthorized` | Token expired or malformed                           | Refresh token; ensure `Bearer` prefix               |
-| `404 Not Found`    | File doesn’t exist in storage                        | Verify `folder` and `name` path                     |
-| `500 Server Error` | File corrupted, password mismatch, or internal issue | Check file integrity; try unencrypted version first |
-
 ## Why Use This API?
 
 - ✅ **Cloud-Native**: No local processing—entire conversion happens in the cloud.
@@ -179,7 +125,12 @@ curl -X GET "https://api.aspose.cloud/v4.0/cells/MyWorkbook.xlsx?format=PDF&outP
 
 The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ExportSpreadsheetAsFormat" rel="noopener noreferrer">Export Spreadsheet as Format API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
-### C#
+### Use Aspose.Cells Cloud SDKs
+
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
+
+#### C#
 
 ```csharp
 using Aspose.Cells.Cloud.Sdk;
@@ -203,7 +154,7 @@ var result = cellsApi.ExportSpreadsheetAsFormat(
 Console.WriteLine($"Exported to: {result}");
 ```
 
-### Java
+#### Java
 
 ```java
 import com.aspose.cells.cloud.*;
@@ -225,7 +176,7 @@ String result = cellsApi.exportSpreadsheetAsFormat(
 System.out.println("Exported to: " + result);
 ```
 
-### Python
+#### Python
 
 ```python
 from asposecellscloud.api import CellsApi
@@ -246,7 +197,7 @@ result = api.export_spreadsheet_as_format(
 print(f"Exported to: {result}")
 ```
 
-### PHP
+#### PHP
 
 ```php
 require_once('vendor/autoload.php');
@@ -271,7 +222,7 @@ $result = $cellsApi->exportSpreadsheetAsFormat(
 echo "Exported to: " . $result . "\n";
 ```
 
-### Node.js (TypeScript)
+#### Node.js (TypeScript)
 
 ```typescript
 import { CellsApi } from "aspose-cells-cloud";
@@ -294,7 +245,7 @@ const result = await cellsApi.exportSpreadsheetAsFormat(
 console.log(`Exported to: ${result}`);
 ```
 
-### Ruby
+#### Ruby
 
 ```ruby
 require 'aspose_cells_cloud'
@@ -314,7 +265,7 @@ result = api_instance.export_spreadsheet_as_format(
 puts "Exported to: #{result}"
 ```
 
-### Perl
+#### Perl
 
 ```perl
 use AsposeCellsCloud::Configuration;
@@ -336,7 +287,7 @@ my $result = $api->export_spreadsheet_as_format(
 print "Exported to: $result\n";
 ```
 
-### Go
+#### Go
 
 ```go
 import (
@@ -363,11 +314,6 @@ if err != nil {
 }
 fmt.Printf("Exported to: %s\n", *resp)
 ```
-
-### Use Aspose.Cells Cloud SDKs
-
-Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
-Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 

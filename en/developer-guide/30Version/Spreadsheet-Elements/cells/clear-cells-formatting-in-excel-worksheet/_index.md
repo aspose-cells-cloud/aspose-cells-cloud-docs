@@ -8,6 +8,7 @@ description: "Use Aspose.Cells Cloud REST API to clear cell formatting in an Exc
 ArticleTitle: "Clear Cell Formatting in an Excel Worksheet - Aspose.Cells Cloud API"
 linktitle: "Clear Cell Formatting"
 ---
+
 The **PostClearFormats** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clearformats`) in Aspose.Cells Cloud enables developers to programmatically clear cell formatting in a specified Excel worksheet, supporting targeted clearing via optional range or row/column index parameters such as `startRow`, `endColumn`, or `range`.
 
 **Note:** All Aspose.Cells Cloud API calls must be made over **HTTPS**. HTTP endpoints are deprecated and may be blocked by browsers.
@@ -29,17 +30,17 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| range | String | Query | Represents the range to which the specified cells applies. |
-| startRow | Integer | Query | The start row index. |
-| startColumn | Integer | Query | The start column index. |
-| endRow | Integer | Query | The end row index. |
-| endColumn | Integer | Query | The end column index. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                                |
+| -------------- | ------- | -------------------------- | ---------------------------------------------------------- |
+| name           | String  | Path                       | The file name.                                             |
+| sheetName      | String  | Path                       | The worksheet name.                                        |
+| range          | String  | Query                      | Represents the range to which the specified cells applies. |
+| startRow       | Integer | Query                      | The start row index.                                       |
+| startColumn    | Integer | Query                      | The start column index.                                    |
+| endRow         | Integer | Query                      | The end row index.                                         |
+| endColumn      | Integer | Query                      | The end column index.                                      |
+| folder         | String  | Query                      | The folder where the file is situated.                     |
+| storageName    | String  | Query                      | The storage name where the file is situated.               |
 
 ### Response
 
@@ -64,13 +65,13 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 **Response Schema**
 
@@ -113,11 +114,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/c
 {{< /tab >}}
 
 {{< /tabs >}}
-
-**See also**
-
-- [Clear Contents and Styles of Cells](https://docs.aspose.cloud/cells/clear-contents-and-styles)
-- [Set Cell Style](https://docs.aspose.cloud/cells/set-cell-style)
 
 ### Use Aspose.Cells Cloud SDKs
 

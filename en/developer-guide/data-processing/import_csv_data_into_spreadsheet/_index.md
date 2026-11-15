@@ -10,6 +10,7 @@ keywords: "Aspose.Cells, CSV import, spreadsheet, API"
 description: "Import CSV data file into the local spreadsheet using Aspose.Cells Cloud API."
 weight: 100
 ---
+
 The **ImportCSVDataIntoSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/import/data/csv`) in Aspose.Cells Cloud enables direct import of CSV data into an existing spreadsheet by parsing the file, mapping its contents to the specified worksheet and starting cell, and saving the updated file locally; it supports formats such as .xlsx and .ods and allows optional control over insertion behavior, numeric conversion, and locale-specific formatting.
 
 ## The Import CSVData Into Spreadsheet Web API
@@ -112,8 +113,6 @@ curl -v "https://api.aspose.cloud/v4.0/cells/import/data/csv?worksheet=Sheet1&st
 {< /tab >}
 
 {< /tabs >}
-
-### Use Aspose Cells Cloud SDKs
 
 ### Use Aspose.Cells Cloud SDKs
 

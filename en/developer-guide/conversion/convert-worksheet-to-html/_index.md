@@ -9,13 +9,9 @@ description: "Convert Excel worksheet to HTML using Aspose.Cells Cloud API—sec
 summary: "Learn how to convert Excel worksheets to HTML using Aspose.Cells Cloud API — zero-upload, secure, and fast. Supports custom fonts, locale settings, and password-protected workbooks."
 keywords: "Aspose.Cells, Excel to HTML, worksheet conversion, cloud API, free online converter"
 authors: ["Aspose Cloud Team"]
-date: 2024-02-15
-lastmod: 2024-05-01
-sitemap:
-  changefreq: monthly
-  priority: 0.8
 weight: 100
 ---
+
 The **ConvertWorksheetToHtml** API (`PUT https://api.aspose.cloud/v4.0/cells/convert/worksheet/html`), part of Aspose.Cells Cloud v4.0, converts a worksheet from a local Excel file directly to HTML on Aspose's cloud servers—no intermediate upload or storage is required. To use the endpoint, clients send the spreadsheet file via form data and specify the worksheet name as a query parameter; optional parameters allow control over row/column autofitting, locale settings, and password-protected files.
 
 > **Note**: All examples assume Aspose.Cells Cloud SDK v24.2+. API parameters and behavior may vary in older versions.
@@ -32,17 +28,17 @@ The API requires <a href="https://docs.aspose.cloud/total/getting-started/rest-a
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| Spreadsheet | File | FormData | Upload spreadsheet file. |
-| worksheet | String | Query | worksheet name of spreadsheet. |
-| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
-| outStorageName | String | Query | Output file Storage Name. |
-| fontsLocation | String | Query | Use Custom fonts. |
-| AutoRowsFit | Boolean | Query | (Optional) Autofits all rows in worksheets. |
-| AutoColumnsFit | Boolean | Query | (Optional) Autofits all columns in worksheets. |
-| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password | String | Query | The password for opening spreadsheet file. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                                                                                                             |
+| -------------- | ------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet    | File    | FormData                   | Upload spreadsheet file.                                                                                                                |
+| worksheet      | String  | Query                      | worksheet name of spreadsheet.                                                                                                          |
+| outPath        | String  | Query                      | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
+| outStorageName | String  | Query                      | Output file Storage Name.                                                                                                               |
+| fontsLocation  | String  | Query                      | Use Custom fonts.                                                                                                                       |
+| AutoRowsFit    | Boolean | Query                      | (Optional) Autofits all rows in worksheets.                                                                                             |
+| AutoColumnsFit | Boolean | Query                      | (Optional) Autofits all columns in worksheets.                                                                                          |
+| region         | String  | Query                      | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password       | String  | Query                      | The password for opening spreadsheet file.                                                                                              |
 
 ### Response
 
@@ -68,14 +64,14 @@ Content-Disposition: attachment; filename="result"
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | Invalid url. |
-| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
-| 404 | Not Found | Source file not accessible. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining conversion data. |
+| Code | Meaning           | Description                                                              |
+| ---- | ----------------- | ------------------------------------------------------------------------ |
+| 200  | OK                | The request completed successfully.                                      |
+| 400  | Bad Request       | Invalid url.                                                             |
+| 401  | Unauthorized      | Authentication has failed, or no credentials were provided.              |
+| 404  | Not Found         | Source file not accessible.                                              |
+| 413  | Payload Too Large | The uploaded file exceeds the allowed size limit.                        |
+| 500  | Server Error      | The spreadsheet has encountered an anomaly in obtaining conversion data. |
 
 Returns a binary HTML file stream (Content-Type: `text/html`).
 
@@ -93,7 +89,11 @@ Returns a binary HTML file stream (Content-Type: `text/html`).
 - **Full control over output** – Customize fonts, locale, and layout (via `AutoRowsFit`/`AutoColumnsFit`).
 - **Seamless integration** – Simple `PUT` request with `multipart/form-data` fits naturally into CI/CD, microservices, or serverless pipelines.
 
-## Examples
+## How to Use the Convert Worksheet to HTML API with SDKs?
+
+### Convert Worksheet to HTML API Specification
+
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertWorksheetToHtml" rel="noopener noreferrer">Convert Worksheet to HTML API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### cURL Request
 
@@ -103,14 +103,6 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/worksheet/html?workshee
   -F "Spreadsheet=@myWorkbook.xlsx" \
   -o converted.html
 ```
-
-## How to Use the Convert Worksheet to HTML API with SDKs?
-
-### Convert Worksheet to HTML API Specification
-
-The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertWorksheetToHtml" rel="noopener noreferrer">Convert Worksheet to HTML API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
-
-Using the Aspose.Cells Cloud SDK is the fastest way to integrate. Below are concise examples in popular languages:
 
 ### Use Aspose.Cells Cloud SDKs
 

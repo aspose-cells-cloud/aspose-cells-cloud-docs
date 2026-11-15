@@ -10,6 +10,7 @@ keywords: "Aspose.Cells, Remove Duplicates, API"
 description: "Removes duplicate values in a worksheet, range, or table."
 weight: 100
 ---
+
 The **RemoveDuplicates** API (`PUT https://api.aspose.cloud/v4.0/cells/remove/duplicates`) in Aspose.Cells Cloud removes duplicate rows within a specified worksheet, range, or table by scanning for identical values in designated columns and retaining only the first occurrence of each duplicate set; the comparison is case-sensitive and based on exact cell value matches, enabling precise data cleaning directly in cloud-based spreadsheet processing workflows.
 
 ## The Remove Duplicates Web API
@@ -24,16 +25,16 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| Spreadsheet | File | FormData | Upload spreadsheet file. |
-| worksheet | String | Query | The worksheet name. |
-| range | String | Query | Range name that need deduplication. |
-| table | String | Query | Table name that need deduplication. |
-| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
-| outStorageName | String | Query | Output file Storage Name. |
-| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password | String | Query | The password for opening spreadsheet file. |
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                                                                                                             |
+| -------------- | ------ | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet    | File   | FormData                   | Upload spreadsheet file.                                                                                                                |
+| worksheet      | String | Query                      | The worksheet name.                                                                                                                     |
+| range          | String | Query                      | Range name that need deduplication.                                                                                                     |
+| table          | String | Query                      | Table name that need deduplication.                                                                                                     |
+| outPath        | String | Query                      | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
+| outStorageName | String | Query                      | Output file Storage Name.                                                                                                               |
+| region         | String | Query                      | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password       | String | Query                      | The password for opening spreadsheet file.                                                                                              |
 
 ### Response
 
@@ -59,24 +60,18 @@ Content-Disposition: attachment; filename="result"
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | Invalid url. |
-| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
-| 404 | Not Found | Source file not accessible. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining data. |
+| Code | Meaning           | Description                                                   |
+| ---- | ----------------- | ------------------------------------------------------------- |
+| 200  | OK                | The request completed successfully.                           |
+| 400  | Bad Request       | Invalid url.                                                  |
+| 401  | Unauthorized      | Authentication has failed, or no credentials were provided.   |
+| 404  | Not Found         | Source file not accessible.                                   |
+| 413  | Payload Too Large | The uploaded file exceeds the allowed size limit.             |
+| 500  | Server Error      | The spreadsheet has encountered an anomaly in obtaining data. |
 
 **Response Status Codes**
 
 Removes duplicate values in the worksheet, range, or table. This method scans the target scope for rows with identical values in the specified columns to check. For each set of duplicates, all but the first occurrence are removed. The comparison is typically case‑sensitive and matches the exact cell value.
-
-### Request Body Parameter
-
-| Parameter Name | Type  | Description |
-| -------------- | ----- | ----------- |
-| [TBD]          | [TBD] | [TBD]       |
 
 ## How to Use the Remove Duplicates API with SDKs?
 

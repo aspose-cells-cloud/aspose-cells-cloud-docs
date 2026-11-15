@@ -10,6 +10,7 @@ article_type: how-to
 linktitle: "Apply Rich Text Formatting"
 ArticleTitle: "Apply Rich Text Formatting to Excel Cells via Aspose.Cells Cloud REST API"
 ---
+
 The **PostCellCharacters** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}/characters`) enables developers to apply rich text formatting—such as varying fonts, sizes, or styles—to specific substrings within a single cell in an Excel worksheet using the Aspose.Cells Cloud REST API, supporting precise, granular control over cell content appearance without altering the underlying cell value.
 
 ## Apply Rich Text Formatting to a Cell
@@ -32,23 +33,25 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| cellName | String | Path | The cell name. |
-| options | container | HTTPBody | - |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type      | Path/Query String/HTTPBody | Description                                  |
+| -------------- | --------- | -------------------------- | -------------------------------------------- |
+| name           | String    | Path                       | The file name.                               |
+| sheetName      | String    | Path                       | The worksheet name.                          |
+| cellName       | String    | Path                       | The cell name.                               |
+| options        | container | HTTPBody                   | -                                            |
+| folder         | String    | Query                      | The folder where the file is situated.       |
+| storageName    | String    | Query                      | The storage name where the file is situated. |
 
 #### `options` Body Structure
 
 The `options` object must include a `FontSetting` array, where each item specifies:
+
 - `StartIndex`: Starting position of the range (0-based)
 - `Length`: Number of characters to format
 - `Font`: Formatting options (e.g., `IsBold`, `IsItalic`, `Size`, `Color`, `Name`)
 
 Example `FontSetting`:
+
 ```json
 {
   "FontSetting": [
@@ -65,10 +68,6 @@ Example `FontSetting`:
   ]
 }
 ```
-
-> 🔍 **Note**: Fonts apply cumulatively. If `IsBold` is set but `IsItalic` is omitted, only bold formatting is applied to that range.
-
----
 
 ### Response
 
@@ -95,15 +94,21 @@ Apply formatting to specific character ranges within a cell.
 
 ### HTTP Status Codes
 
-| Code | Meaning               | Description |
-|------|-----------------------|-------------|
-| `200` | OK                    | Formatting applied successfully. |
+| Code  | Meaning               | Description                                                       |
+| ----- | --------------------- | ----------------------------------------------------------------- |
+| `200` | OK                    | Formatting applied successfully.                                  |
 | `400` | Bad Request           | Invalid cell name, missing `options`, or unsupported file format. |
-| `401` | Unauthorized          | Missing, expired, or invalid JWT token. |
-| `413` | Payload Too Large     | Request body exceeds 200 MB limit. |
-| `500` | Internal Server Error | Unexpected server-side failure. |
+| `401` | Unauthorized          | Missing, expired, or invalid JWT token.                           |
+| `413` | Payload Too Large     | Request body exceeds 200 MB limit.                                |
+| `500` | Internal Server Error | Unexpected server-side failure.                                   |
 
----
+## How to Use the Post Cell Characters API with SDKs?
+
+### Post Cell Characters API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Cells/PostCellCharacters" rel="noopener noreferrer">Post Cell Characters API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
+
+SDKs simplify integration by handling authentication, serialization, and error handling. All examples below format cell `A1` in `Sheet1` of `Book1.xlsx`.
 
 ### cURL Example
 
@@ -124,40 +129,13 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/cells/
 ```
 
 **Expected Response**:
+
 ```json
 {
   "Code": 200,
   "Status": "OK"
 }
 ```
-
----
-
-### Related Documentation
-
-- [Authentication Overview](/getting-started/authentication/)  
-- [Working with Excel Files](/working-with-excel-files/)  
-- [Aspose.Cells Cloud SDK Reference](/sdks/)  
-- [Release Notes](https://products.aspose.cloud/cells/release-notes/) (verify `v3.0` compatibility)  
-
----
-
-### Best Practices
-
-- ✅ **Use semantic folder structures** (e.g., `/reports/2023/`) in the `folder` parameter for easier file management.  
-- ✅ **Validate cell names** before sending requests (e.g., `A1`, `Z100`, not `1A`).  
-- ✅ **Pre-upload large files** via `/cells` endpoints to avoid payload limits.  
-- ✅ **Test formatting ranges** incrementally to prevent overwriting adjacent character styles.  
-
-> 📝 **Accessibility**: If adding screenshots to this documentation, ensure every image includes descriptive alt text (e.g., `alt="Excel cell A1 with 'Hello' in bold 24pt and 'World' in italic 15pt"`).
-
-## How to Use the Post Cell Characters API with SDKs?
-
-### Post Cell Characters API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Cells/PostCellCharacters" rel="noopener noreferrer">Post Cell Characters API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
-
-SDKs simplify integration by handling authentication, serialization, and error handling. All examples below format cell `A1` in `Sheet1` of `Book1.xlsx`.
 
 ### Use Aspose.Cells Cloud SDKs
 

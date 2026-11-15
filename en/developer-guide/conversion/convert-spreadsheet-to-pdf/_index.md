@@ -11,11 +11,10 @@ lastmod: 2024-06-01
 weight: 100
 ArticleTitle: "Convert Spreadsheet to PDF with Aspose.Cells Cloud API"
 ---
+
 The **ConvertSpreadsheetToPdf** API (`PUT https://api.aspose.cloud/v4.0/cells/convert/spreadsheet/pdf`) in Aspose.Cells Cloud enables direct conversion of a local spreadsheet file into a PDF document entirely on the cloud server—without requiring the file to be stored in cloud storage first—by accepting the source file as a multipart/form-data upload and returning the PDF as a binary response stream for immediate download or integration.
 
 The API validates file existence, permissions, and conversion integrity, returning appropriate HTTP status codes and error messages for invalid input or processing failures.
-
----
 
 ## The Convert Spreadsheet to PDF Web API
 
@@ -40,22 +39,18 @@ Then include the token in the `Authorization` header:
 -H "Authorization: Bearer YOUR_ACCESS_TOKEN"
 ```
 
----
-
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| Spreadsheet | File | FormData | Upload spreadsheet file. |
-| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
-| outStorageName | String | Query | Output file Storage Name. |
-| fontsLocation | String | Query | Use Custom fonts. |
-| AutoRowsFit | Boolean | Query | (Optional) Autofits all rows in worksheets. |
-| AutoColumnsFit | Boolean | Query | (Optional) Autofits all columns in worksheets. |
-| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password | String | Query | The password for opening spreadsheet file. |
-
----
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                                                                                                             |
+| -------------- | ------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet    | File    | FormData                   | Upload spreadsheet file.                                                                                                                |
+| outPath        | String  | Query                      | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
+| outStorageName | String  | Query                      | Output file Storage Name.                                                                                                               |
+| fontsLocation  | String  | Query                      | Use Custom fonts.                                                                                                                       |
+| AutoRowsFit    | Boolean | Query                      | (Optional) Autofits all rows in worksheets.                                                                                             |
+| AutoColumnsFit | Boolean | Query                      | (Optional) Autofits all columns in worksheets.                                                                                          |
+| region         | String  | Query                      | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password       | String  | Query                      | The password for opening spreadsheet file.                                                                                              |
 
 ### Response
 
@@ -90,8 +85,6 @@ Content-Disposition: attachment; filename="result"
 | `413`     | Payload Too Large     | File exceeds the 100 MB limit.                                                 |
 | `500`     | Internal Server Error | Unexpected server-side failure during conversion.                              |
 
----
-
 ### Success (200 OK)
 
 - **Content-Type**: `application/pdf`
@@ -108,8 +101,6 @@ Content-Disposition: attachment; filename="result"
 - **Audit & Compliance Workflows**: Generate immutable, unalterable PDF versions of financial spreadsheets without exposing raw data to cloud storage.
 - **Multi-Format Conversion Chains**: Combine with other endpoints (e.g., [Convert Spreadsheet to CSV](/convert-spreadsheet-to-csv/)) for flexible archival or interoperability.
 
----
-
 ## Benefits
 
 - ✅ **Zero-Upload Workflow**: Convert local files directly—no prior upload to cloud storage needed.
@@ -117,9 +108,13 @@ Content-Disposition: attachment; filename="result"
 - ✅ **Scalable & Secure**: Cloud infrastructure handles processing; no client-side dependencies required.
 - ✅ **Simple REST Interface**: Single request, optional parameters, and immediate binary response simplify integration.
 
----
+## How to Use the Convert Spreadsheet to PDF API with SDKs?
 
-## cURL Example
+### Convert Spreadsheet to PDF API Specification
+
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertSpreadsheetToPdf" rel="noopener noreferrer">Convert Spreadsheet to PDF API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
+
+### cURL Example
 
 ```bash
 # 1. Obtain JWT token
@@ -136,13 +131,10 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/spreadsheet/pdf" \
 
 > 💡 Tip: Use `-v` flag for verbose output to inspect headers (e.g., `Content-Disposition`).
 
----
+### Use Aspose.Cells Cloud SDKs
 
-## How to Use the Convert Spreadsheet to PDF API with SDKs?
-
-### Convert Spreadsheet to PDF API Specification
-
-The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertSpreadsheetToPdf" rel="noopener noreferrer">Convert Spreadsheet to PDF API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 {{< tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 {{< tab tabNum="1" >}}
@@ -287,8 +279,3 @@ os.WriteFile("converted.pdf", pdfBytes, 0644)
 
 {{< /tab >}}
 {{< /tabs >}}
-
-### Use Aspose.Cells Cloud SDKs
-
-Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
-Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

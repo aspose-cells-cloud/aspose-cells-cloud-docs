@@ -10,6 +10,7 @@ keywords: "Aspose.Cells, blank cells, AutoFilter, REST API, Excel"
 description: "Filter blank cells in Excel using Aspose.Cells Cloud API with PostWorksheetMatchBlanks endpoint via cURL or SDKs."
 weight: 100
 ---
+
 The **PostWorksheetMatchBlanks** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/matchBlanks`) enables Aspose.Cells Cloud to match all blank cells within a specified AutoFilter list on an Excel worksheet by setting the filter criteria for the field at the given `fieldIndex` to include only blank entries, supporting precise data filtering without manual intervention.
 
 ## The Post Worksheet Match Blanks Web API
@@ -24,13 +25,13 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The workbook name. |
-| sheetName | String | Path | The worksheet name. |
-| fieldIndex | Integer | Query | The integer offset of the field on which you want to base the filter (from the left of the list; the leftmost field is field 0). |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                                                                                                      |
+| -------------- | ------- | -------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| name           | String  | Path                       | The workbook name.                                                                                                               |
+| sheetName      | String  | Path                       | The worksheet name.                                                                                                              |
+| fieldIndex     | Integer | Query                      | The integer offset of the field on which you want to base the filter (from the left of the list; the leftmost field is field 0). |
+| folder         | String  | Query                      | The folder where the file is situated.                                                                                           |
+| storageName    | String  | Query                      | The storage name where the file is situated.                                                                                     |
 
 ### Response
 
@@ -55,13 +56,13 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## How to Use the Post Worksheet Match Blanks API with SDKs?
 

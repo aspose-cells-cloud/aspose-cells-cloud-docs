@@ -9,6 +9,7 @@ type: docs
 weight: 100
 ArticleTitle: "Replace Text in Remote Excel Worksheet Using Aspose.Cells Cloud API"
 ---
+
 The **ReplaceContentInRemoteRange** API (`PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{cellArea}/replace/content`) in Aspose.Cells Cloud v4.0 enables precise, server-side replacement of specified text within a defined cell range of a remote Excel workbook stored in cloud storage—supporting dynamic template updates and cross-regional data synchronization without downloading the file.
 
 ## The Replace Content in Remote Range Web API
@@ -60,14 +61,16 @@ On success, the API returns:
 
 > **Note**: The current response does not include the count of replacements or affected cell coordinates. For detailed feedback, consider using the [GetCellsRange](https://reference.aspose.cloud/cells/) API before/after replacement.
 
-### **Error Codes**
+**HTTP Status Codes**
 
-| Code  | Description           | Cause                                                       |
-| :---- | :-------------------- | :---------------------------------------------------------- |
-| `400` | Bad Request           | Invalid path/query parameters (e.g., malformed `cellArea`). |
-| `401` | Unauthorized          | Missing, expired, or invalid access token.                  |
-| `404` | Not Found             | Workbook, worksheet, or range not found.                    |
-| `500` | Internal Server Error | Server-side error (e.g., file corruption, access denial).   |
+| Code | Meaning           | Description                                                   |
+| ---- | ----------------- | ------------------------------------------------------------- |
+| 200  | OK                | The request completed successfully.                           |
+| 400  | Bad Request       | Invalid url.                                                  |
+| 401  | Unauthorized      | Authentication has failed, or no credentials were provided.   |
+| 404  | Not Found         | Source file not accessible.                                   |
+| 413  | Payload Too Large | The uploaded file exceeds the allowed size limit.             |
+| 500  | Server Error      | The spreadsheet has encountered an anomaly in obtaining data. |
 
 ### **Example Request (cURL)**
 

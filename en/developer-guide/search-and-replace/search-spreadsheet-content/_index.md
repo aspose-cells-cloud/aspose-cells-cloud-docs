@@ -8,6 +8,7 @@ description: "Use Aspose.Cells Cloud API to search Excel files for text, numbers
 weight: 100
 ArticleTitle: "Search Excel Content with Aspose.Cells Cloud API – Text, Range & Worksheet Search"
 ---
+
 The **SearchSpreadsheetContent** API (`PUT https://api.aspose.cloud/v4.0/cells/search/content`) in Aspose.Cells Cloud enables developers to programmatically search for specified text within a local Excel spreadsheet uploaded via the request body, returning matched cell locations—including worksheet name, cell address, and matched text—without requiring prior storage in the cloud; the operation supports refining results with options like case-insensitive matching, worksheet or cell-area scoping, and password-protected file handling.
 
 ---
@@ -24,15 +25,15 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| Spreadsheet | File | FormData | Upload spreadsheet file. |
-| searchText | String | Query | The searched text. |
-| ignoringCase | Boolean | Query | Ignore the text of the search. |
-| worksheet | String | Query | Specify the worksheet for the lookup. |
-| cellArea | String | Query | Specify the cell area for the lookup |
-| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password | String | Query | The password for opening spreadsheet file. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                                                                                                             |
+| -------------- | ------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet    | File    | FormData                   | Upload spreadsheet file.                                                                                                                |
+| searchText     | String  | Query                      | The searched text.                                                                                                                      |
+| ignoringCase   | Boolean | Query                      | Ignore the text of the search.                                                                                                          |
+| worksheet      | String  | Query                      | Specify the worksheet for the lookup.                                                                                                   |
+| cellArea       | String  | Query                      | Specify the cell area for the lookup                                                                                                    |
+| region         | String  | Query                      | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password       | String  | Query                      | The password for opening spreadsheet file.                                                                                              |
 
 ---
 
@@ -59,16 +60,16 @@ Content-Type: application/json
 
 The API returns a `SearchResponse` object containing an array of matched items.
 
-### Error Handling
+**HTTP Status Codes**
 
-| Code                        | Description                                                    |
-| --------------------------- | -------------------------------------------------------------- |
-| `400 Bad Request`           | Invalid URL, malformed parameters, or unsupported file format. |
-| `401 Unauthorized`          | Missing, expired, or invalid JWT token.                        |
-| `404 Not Found`             | The uploaded file cannot be accessed or does not exist.        |
-| `500 Internal Server Error` | Unexpected error during processing (e.g., corrupted workbook). |
-
----
+| Code | Meaning           | Description                                                   |
+| ---- | ----------------- | ------------------------------------------------------------- |
+| 200  | OK                | The request completed successfully.                           |
+| 400  | Bad Request       | Invalid url.                                                  |
+| 401  | Unauthorized      | Authentication has failed, or no credentials were provided.   |
+| 404  | Not Found         | Source file not accessible.                                   |
+| 413  | Payload Too Large | The uploaded file exceeds the allowed size limit.             |
+| 500  | Server Error      | The spreadsheet has encountered an anomaly in obtaining data. |
 
 ### cURL Example
 
@@ -110,8 +111,6 @@ Each `textItem` includes:
 - `text`: The matched string.
 - `occurrences`: Number of times the text appears in that cell.
 
----
-
 ## Use Cases
 
 ### Compliance & Security Audits
@@ -130,20 +129,16 @@ Validate that placeholders like `{{Date}}` or `{{User}}` are fully replaced afte
 
 Search historical Excel files for event codes, transaction types, or business terms to accelerate archival analysis.
 
----
+## How to Use the Search Spreadsheet Broken Links API with SDKs?
 
-## Benefits
+### Search Spreadsheet Content API Specification
 
-- **No Infrastructure Overhead**: Search runs in the cloud—no local processing or storage required.
-- **Flexible Scope**: Limit searches to specific worksheets, ranges, or the entire workbook.
-- **Developer-Friendly SDKs**: Pre-built clients available for [C#, Java, PHP, Ruby, Node.js, Python, Perl, and Go](https://github.com/aspose-cells-cloud).
-- **Secure by Default**: All requests require JWT authentication; files are processed temporarily and not retained.
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Search/SearchSpreadsheetContent" rel="noopener noreferrer">Search Spreadsheet Content API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
-> **Note**: While no infrastructure management is needed for cloud-hosted usage, on-premises deployments (e.g., Aspose.Cells Cloud for Docker) may be required for air-gapped environments.
+### Use Aspose.Cells Cloud SDKs
 
----
-
-## SDK Integration
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 Using an SDK simplifies integration by handling HTTP requests and response parsing. Below are examples for common languages:
 

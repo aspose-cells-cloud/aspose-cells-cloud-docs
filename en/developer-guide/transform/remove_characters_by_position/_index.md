@@ -10,6 +10,7 @@ keywords: "Aspose.Cells, Remove Characters, API"
 description: "Deletes characters from cells by position in a spreadsheet."
 weight: 100
 ---
+
 The **RemoveCharactersByPosition** API (`PUT https://api.aspose.cloud/v4.0/cells/content/remove/characters-by-position`) in Aspose.Cells Cloud enables precise, position-based character removal from spreadsheet cells—such as stripping the first or last N characters, deleting text before or after a substring, or extracting content between delimiters—while preserving formulas, formatting, and data validation rules.
 
 ## The Remove Characters by Position Web API
@@ -24,20 +25,20 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| Spreadsheet | File | FormData | Upload spreadsheet file. |
-| theFirstNCharacters | Integer | Query | Specify removing the first n characters from selected cells. |
-| theLastNCharacters | Integer | Query | Specify removing the last n characters from selected cells. |
-| allCharactersBeforeText | String | Query | Specify using targeted removal options to delete text that is located before certain characters. |
-| allCharactersAfterText | String | Query | Specify using targeted removal options to delete text that is located after certain characters. |
-| caseSensitive | Boolean | Query | Affects `Substring` mode and `CustomChars` when enabled. |
-| worksheet | String | Query | Specify the worksheet of spreadsheet. |
-| range | String | Query | Specify the worksheet range of spreadsheet. |
-| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
-| outStorageName | String | Query | Output file Storage Name. |
-| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password | String | Query | The password for opening spreadsheet file. |
+| Parameter Name          | Type    | Path/Query String/HTTPBody | Description                                                                                                                             |
+| ----------------------- | ------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet             | File    | FormData                   | Upload spreadsheet file.                                                                                                                |
+| theFirstNCharacters     | Integer | Query                      | Specify removing the first n characters from selected cells.                                                                            |
+| theLastNCharacters      | Integer | Query                      | Specify removing the last n characters from selected cells.                                                                             |
+| allCharactersBeforeText | String  | Query                      | Specify using targeted removal options to delete text that is located before certain characters.                                        |
+| allCharactersAfterText  | String  | Query                      | Specify using targeted removal options to delete text that is located after certain characters.                                         |
+| caseSensitive           | Boolean | Query                      | Affects `Substring` mode and `CustomChars` when enabled.                                                                                |
+| worksheet               | String  | Query                      | Specify the worksheet of spreadsheet.                                                                                                   |
+| range                   | String  | Query                      | Specify the worksheet range of spreadsheet.                                                                                             |
+| outPath                 | String  | Query                      | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
+| outStorageName          | String  | Query                      | Output file Storage Name.                                                                                                               |
+| region                  | String  | Query                      | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password                | String  | Query                      | The password for opening spreadsheet file.                                                                                              |
 
 ### Response
 
@@ -63,14 +64,14 @@ Content-Disposition: attachment; filename="result"
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                        |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 **Response Status Codes**
 
@@ -121,8 +122,6 @@ curl -v "https://api.aspose.cloud/v4.0/cells/content/remove/characters-by-positi
 {< /tabs >}
 
 ### Use Aspose Cells Cloud SDKs
-
-### Use Aspose.Cells Cloud SDKs
 
 Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
 Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

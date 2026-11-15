@@ -12,12 +12,8 @@ api_version: v3.0
 type: docs
 ArticleTitle: "Apply Dynamic Filters in Excel with Aspose.Cells Cloud API"
 ---
+
 The **PutWorksheetDynamicFilter** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/dynamicFilter`) enables Aspose.Cells Cloud users to apply a dynamic filter to a specified range in an Excel worksheet, automatically evaluating values such as dates, averages, or blanks to create smart, context-aware views without manual formula writing.
-
-## Overview
-
-The **PutWorksheetDynamicFilter** operation adds a dynamic filter to a specified range in an Excel worksheet.  
-Dynamic filters automatically evaluate values such as dates, averages, or blanks, allowing you to create “smart” views without writing custom formulas.
 
 ## The Put Worksheet Dynamic Filter Web API
 
@@ -31,17 +27,29 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Path Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The workbook name. |
-| sheetName | String | Path | The worksheet name. |
-| range | String | Query | Represents the range to which the specified AutoFilter applies. |
-| fieldIndex | Integer | Query | The integer offset of the field on which you want to base the filter (from the left of the list; the leftmost field is field 0). |
-| dynamicFilterType | String | Query | Dynamic filter type. |
-| matchBlanks | Boolean | Query | Match all blank cell in the list. |
-| refresh | Boolean | Query | Refresh auto filters to hide or unhide the rows. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name    | Type    | Path/Query String/HTTPBody | Description                                                                                                                      |
+| ----------------- | ------- | -------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| name              | String  | Path                       | The workbook name.                                                                                                               |
+| sheetName         | String  | Path                       | The worksheet name.                                                                                                              |
+| range             | String  | Query                      | Represents the range to which the specified AutoFilter applies.                                                                  |
+| fieldIndex        | Integer | Query                      | The integer offset of the field on which you want to base the filter (from the left of the list; the leftmost field is field 0). |
+| dynamicFilterType | String  | Query                      | Dynamic filter type.                                                                                                             |
+| matchBlanks       | Boolean | Query                      | Match all blank cell in the list.                                                                                                |
+| refresh           | Boolean | Query                      | Refresh auto filters to hide or unhide the rows.                                                                                 |
+| folder            | String  | Query                      | The folder where the file is situated.                                                                                           |
+| storageName       | String  | Query                      | The storage name where the file is situated.                                                                                     |
+
+## Supported Dynamic Filter Types
+
+| Value          | Meaning                                            |
+| -------------- | -------------------------------------------------- |
+| `BelowAverage` | Rows whose value is below the column’s average.    |
+| `AboveAverage` | Rows whose value is above the column’s average.    |
+| `Tomorrow`     | Rows with dates equal to tomorrow’s date.          |
+| `Yesterday`    | Rows with dates equal to yesterday’s date.         |
+| `NextWeek`     | Rows with dates falling in the next calendar week. |
+| `LastMonth`    | Rows with dates from the previous month.           |
+| `ThisYear`     | Rows with dates occurring in the current year.     |
 
 ### Response
 
@@ -66,45 +74,13 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
-
-### Query Parameters
-
-| Parameter           | Type    | Required | Description                                                                             |
-| ------------------- | ------- | -------- | --------------------------------------------------------------------------------------- |
-| `range`             | string  | ✅       | The cell range on which the filter is applied (e.g., `A1:B1`).                          |
-| `fieldIndex`        | integer | ✅       | Zero‑based index of the column inside the range to which the dynamic filter is applied. |
-| `dynamicFilterType` | string  | ✅       | Type of dynamic filter to apply (see **Supported Dynamic Filter Types**).               |
-| `matchBlanks`       | boolean | ❌       | If `true`, blank cells are included in the filter results. Default: `false`.            |
-| `refresh`           | boolean | ❌       | If `true`, the auto‑filter is refreshed after applying the filter.                      |
-| `folder`            | string  | ❌       | Path to the folder in storage where the workbook is located.                            |
-| `storageName`       | string  | ❌       | Name of the Aspose Cloud storage to use.                                                |
-
-### Request Body
-
-The request body is an empty JSON object:
-
-```json
-{}
-```
-
-## Supported Dynamic Filter Types
-
-| Value          | Meaning                                            |
-| -------------- | -------------------------------------------------- |
-| `BelowAverage` | Rows whose value is below the column’s average.    |
-| `AboveAverage` | Rows whose value is above the column’s average.    |
-| `Tomorrow`     | Rows with dates equal to tomorrow’s date.          |
-| `Yesterday`    | Rows with dates equal to yesterday’s date.         |
-| `NextWeek`     | Rows with dates falling in the next calendar week. |
-| `LastMonth`    | Rows with dates from the previous month.           |
-| `ThisYear`     | Rows with dates occurring in the current year.     |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Example Request (cURL)
 
@@ -127,31 +103,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFi
 }
 ```
 
-**HTTP Status Codes**
-
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
-
-## Related Topics
-
-- **Add a standard AutoFilter** – [Add a standard filter](/autofilter/add-filter)
-- **Add a date filter** – [Add a date filter](/autofilter/add-date-filter)
-- **Delete an AutoFilter** – [Delete auto filter](/autofilter/delete-filter)
-- **Working with worksheets** – [Worksheet API overview](/worksheets/)
-
-## Notes
-
-- All images used in the original documentation have been reviewed for accessibility. Decorative icons are marked with `alt=""` and `role="presentation"`; functional icons retain descriptive `alt` text.
-- Meta keywords have been cleaned to remove empty entries and duplicates.
-- The page now follows a clear heading hierarchy (single H1 in front‑matter, H2 for major sections, H3/H4 for subsections) to improve SEO and screen‑reader navigation.
-
----
-
 ## How to Use the Put Worksheet Dynamic Filter API with SDKs?
 
 ### Put Worksheet Dynamic Filter API Specification
@@ -159,136 +110,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFi
 The <a href="https://reference.aspose.cloud/cells/#/AutoFilter/PutWorksheetDynamicFilter" rel="noopener noreferrer">Put Worksheet Dynamic Filter API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 Below are ready‑to‑run snippets for the most popular SDKs. Replace `YOUR_JWT_TOKEN`, `YOUR_FILE_NAME`, and other placeholders with your actual values.
-
-### C#
-
-```csharp
-using Aspose.Cells.Cloud.SDK.Api;
-using Aspose.Cells.Cloud.SDK.Model;
-using System;
-
-var apiInstance = new AutoFilterApi();
-var name = "Book1.xlsx"; // string | The workbook name.
-var sheetName = "Sheet1"; // string | The worksheet name.
-var range = "A1:B1"; // string | The range to filter.
-var fieldIndex = 0; // int? | Zero‑based column index.
-var dynamicFilterType = "BelowAverage"; // string | Dynamic filter type.
-var matchBlanks = true; // bool? | Include blank cells.
-var refresh = true; // bool? | Refresh after applying.
-var folder = "myFolder"; // string (optional)
-var storageName = null; // string (optional)
-
-try
-{
-    var response = apiInstance.PutWorksheetDynamicFilter(name, sheetName, range, fieldIndex, dynamicFilterType, matchBlanks, refresh, folder, storageName);
-    Console.WriteLine(response.Status);
-}
-catch (Exception e)
-{
-    Console.WriteLine("Exception when calling AutoFilterApi.PutWorksheetDynamicFilter: " + e.Message );
-}
-```
-
-### Java
-
-```java
-import com.aspose.cloud.cells.api.AutoFilterApi;
-import com.aspose.cloud.cells.model.*;
-
-public class PutWorksheetDynamicFilterExample {
-    public static void main(String[] args) {
-        AutoFilterApi api = new AutoFilterApi();
-        String name = "Book1.xlsx";
-        String sheetName = "Sheet1";
-        String range = "A1:B1";
-        Integer fieldIndex = 0;
-        String dynamicFilterType = "BelowAverage";
-        Boolean matchBlanks = true;
-        Boolean refresh = true;
-        String folder = "myFolder";
-        String storageName = null;
-
-        try {
-            CellsCloudResponse resp = api.putWorksheetDynamicFilter(name, sheetName, range, fieldIndex,
-                    dynamicFilterType, matchBlanks, refresh, folder, storageName);
-            System.out.println(resp.getStatus());
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-}
-```
-
-### Python
-
-```python
-from asposecellscloud import AutoFilterApi, ApiClient, Configuration
-
-config = Configuration()
-config.access_token = "<jwt token>"
-api_client = ApiClient(configuration=config)
-api = AutoFilterApi(api_client)
-
-name = "Book1.xlsx"
-sheet_name = "Sheet1"
-range_ = "A1:B1"
-field_index = 0
-dynamic_filter_type = "BelowAverage"
-match_blanks = True
-refresh = True
-folder = "myFolder"
-storage_name = None
-
-response = api.put_worksheet_dynamic_filter(
-    name=name,
-    sheet_name=sheet_name,
-    range=range_,
-    field_index=field_index,
-    dynamic_filter_type=dynamic_filter_type,
-    match_blanks=match_blanks,
-    refresh=refresh,
-    folder=folder,
-    storage_name=storage_name
-)
-
-print(response.status)
-```
-
-### Node.js (TypeScript)
-
-```typescript
-import {
-  AutoFilterApi,
-  Configuration,
-  CellsCloudResponse,
-} from "@asposecloud/cells-sdk";
-
-const config = new Configuration({
-  accessToken: "<jwt token>",
-});
-const api = new AutoFilterApi(config);
-
-(async () => {
-  try {
-    const resp: CellsCloudResponse = await api.putWorksheetDynamicFilter(
-      "Book1.xlsx", // name
-      "Sheet1", // sheetName
-      "A1:B1", // range
-      0, // fieldIndex
-      "BelowAverage", // dynamicFilterType
-      true, // matchBlanks
-      true, // refresh
-      "myFolder", // folder (optional)
-      undefined, // storageName (optional)
-    );
-    console.log(resp.status);
-  } catch (error) {
-    console.error(error);
-  }
-})();
-```
-
-_(Similar snippets are available for Ruby, PHP, Go, and Perl in the official SDK repository.)_
 
 ### Use Aspose.Cells Cloud SDKs
 

@@ -2,11 +2,6 @@
 url: /delete-worksheet-from-spreadsheet/
 title: "Delete Excel Worksheet via REST API | Aspose.Cells Cloud"
 linktitle: "Delete Worksheet"
-date: 2023-09-15T00:00:00Z
-lastmod: 2024-05-22T14:30:00Z
-sitemap:
-  changefreq: monthly
-  priority: 0.8
 description: "Delete Excel worksheet programmatically using Aspose.Cells Cloud REST API with JWT authentication and SDK examples."
 keywords: "delete worksheet Excel API, remove sheet from workbook, Excel cloud API, Aspose.Cells Cloud delete sheet, REST API remove Excel sheet"
 weight: 100
@@ -16,15 +11,7 @@ ArticleTitle: "Delete Excel Worksheet via Aspose.Cells Cloud REST API"
 
 Programmatically delete worksheets from Excel workbooks using Aspose.Cells Cloud API. Safely remove single or multiple sheets, clean up workbook structure, and automate spreadsheet optimization. RESTful API for enterprise-grade Excel management and document-processing workflows.
 
-## Prerequisites
-
-- An Aspose.Cells Cloud account ([sign up free](https://dashboard.aspose.cloud/))
-- A valid client ID and client secret (see [Get Your App SID and Key](https://docs.aspose.cloud/total/getting-started/quickstart/))
-- API version validated as of May 2024. Check the [Aspose.Cells Cloud Changelog](https://releasenotes.aspose.cloud/total/) for updates.
-
 ## Delete Worksheet from Spreadsheet API
-
-### Web API Endpoint
 
 ```http
 DELETE "https://api.aspose.cloud/v4.0/cells/spreadsheet/delete/worksheet?sheetName={sheetName}&outPath={outPath}&outStorageName={outStorageName}&region={region}&password={password}"

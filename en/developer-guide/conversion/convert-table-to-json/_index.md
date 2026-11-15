@@ -2,8 +2,6 @@
 url: /convert-table-to-json/
 title: Convert Excel Table to JSON using Aspose.Cells Cloud API v4.0
 linktitle: "Convert Table To Json"
-date: 2024-03-15
-lastmod: 2024-06-15
 summary: Step-by-step guide to convert Excel table data to JSON in one PUT request using Aspose.Cells Cloud API v4.0. Includes cURL, .NET, Java, Python, and Node.js SDK examples.
 tags:
   - excel
@@ -11,8 +9,7 @@ tags:
   - conversion
   - api
   - cloud
-categories:
-  - conversion
+
 aliases:
   - /conversion/convert-table-to-json/
 weight: 100
@@ -21,6 +18,7 @@ ArticleTitle: "Convert Excel Table to JSON via Aspose.Cells Cloud API v4.0"
 description: "Convert Excel table to JSON via Aspose.Cells Cloud API—no upload required, supports cURL and SDKs."
 keywords: "Aspose.Cells Cloud, convert Excel table to JSON, table to JSON API, cloud Excel conversion, Aspose.Cells Cloud API v4.0, convert worksheet table to JSON, JSON export from Excel, cloud table extraction"
 ---
+
 The **ConvertTableToJson** API (`PUT https://api.aspose.cloud/v4.0/cells/convert/table/json`) in Aspose.Cells Cloud v4.0 converts a specified table from a local spreadsheet file—uploaded directly in the request—into JSON format without requiring prior storage in the cloud, enabling efficient, single-call conversion of local data while avoiding upload and storage overhead.
 
 ## The Convert Table to JSON Web API
@@ -37,18 +35,18 @@ All requests require a valid [JWT access token](https://docs.aspose.cloud/total/
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| Spreadsheet | File | FormData | Upload spreadsheet file. |
-| worksheet | String | Query | worksheet name of spreadsheet. |
-| tableName | String | Query | table name |
-| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
-| outStorageName | String | Query | Output file Storage Name. |
-| fontsLocation | String | Query | Use Custom fonts. |
-| AutoRowsFit | Boolean | Query | (Optional) Autofits all rows in worksheets. |
-| AutoColumnsFit | Boolean | Query | (Optional) Autofits all columns in worksheets. |
-| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password | String | Query | The password for opening spreadsheet file. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                                                                                                             |
+| -------------- | ------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet    | File    | FormData                   | Upload spreadsheet file.                                                                                                                |
+| worksheet      | String  | Query                      | worksheet name of spreadsheet.                                                                                                          |
+| tableName      | String  | Query                      | table name                                                                                                                              |
+| outPath        | String  | Query                      | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
+| outStorageName | String  | Query                      | Output file Storage Name.                                                                                                               |
+| fontsLocation  | String  | Query                      | Use Custom fonts.                                                                                                                       |
+| AutoRowsFit    | Boolean | Query                      | (Optional) Autofits all rows in worksheets.                                                                                             |
+| AutoColumnsFit | Boolean | Query                      | (Optional) Autofits all columns in worksheets.                                                                                          |
+| region         | String  | Query                      | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password       | String  | Query                      | The password for opening spreadsheet file.                                                                                              |
 
 ### Response
 
@@ -85,7 +83,13 @@ Returns a JSON object containing the converted file content:
 | `413` | Payload Too Large     | File exceeds 2 GB limit.                                                                        |
 | `500` | Internal Server Error | Unexpected server error during conversion.                                                      |
 
-## **How to Use the API**
+## How to Use the Convert Table to JSON API with SDKs?
+
+### Convert Table to JSON API Specification
+
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertTableToJson" rel="noopener noreferrer">Convert Table to JSON API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
+
+The following code snippets demonstrate conversion using Aspose.Cells Cloud SDKs. All examples use the same parameters: `worksheet="Sheet1"`, `tableName="Table1"`.
 
 ### **cURL Example**
 
@@ -101,14 +105,6 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/table/json?worksheet=Sh
   -H "Authorization: Bearer {YOUR_ACCESS_TOKEN}" \
   -F "Spreadsheet=@myWorkbook.xlsx"
 ```
-
-## How to Use the Convert Table to JSON API with SDKs?
-
-### Convert Table to JSON API Specification
-
-The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertTableToJson" rel="noopener noreferrer">Convert Table to JSON API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
-
-The following code snippets demonstrate conversion using Aspose.Cells Cloud SDKs. All examples use the same parameters: `worksheet="Sheet1"`, `tableName="Table1"`.
 
 ### Use Aspose.Cells Cloud SDKs
 

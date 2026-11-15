@@ -9,6 +9,7 @@ description: "Aspose.Cells Cloud API v4: Convert text-formatted numbers to numbe
 weight: 100
 type: docs
 ---
+
 The **ConvertText** API (`PUT https://api.aspose.cloud/v4.0/cells/content/convert/text`) in Aspose.Cells Cloud enables users to clean and standardize Excel data by converting text-formatted numbers into numeric values, replacing unwanted characters and line breaks, and normalizing accented characters to plain letters, ensuring accurate calculations and consistent formatting across spreadsheets.
 
 ## Overview
@@ -36,18 +37,18 @@ All requests require [JWT token-based authentication](https://docs.aspose.cloud/
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| Spreadsheet | File | FormData | Upload spreadsheet file. |
-| convertTextType | String | Query | Indicates the conversion of text type. |
-| sourceCharacters | String | Query | Indicates the source characters. |
-| targetCharacters | String | Query | Indicates the target characters. |
-| worksheet | String | Query | Specify the worksheet of spreadsheet. |
-| range | String | Query | Specify the worksheet range of spreadsheet. |
-| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
-| outStorageName | String | Query | Output file Storage Name. |
-| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password | String | Query | The password for opening spreadsheet file. |
+| Parameter Name   | Type   | Path/Query String/HTTPBody | Description                                                                                                                             |
+| ---------------- | ------ | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet      | File   | FormData                   | Upload spreadsheet file.                                                                                                                |
+| convertTextType  | String | Query                      | Indicates the conversion of text type.                                                                                                  |
+| sourceCharacters | String | Query                      | Indicates the source characters.                                                                                                        |
+| targetCharacters | String | Query                      | Indicates the target characters.                                                                                                        |
+| worksheet        | String | Query                      | Specify the worksheet of spreadsheet.                                                                                                   |
+| range            | String | Query                      | Specify the worksheet range of spreadsheet.                                                                                             |
+| outPath          | String | Query                      | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
+| outStorageName   | String | Query                      | Output file Storage Name.                                                                                                               |
+| region           | String | Query                      | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password         | String | Query                      | The password for opening spreadsheet file.                                                                                              |
 
 ### Response
 
@@ -73,17 +74,18 @@ Content-Disposition: attachment; filename="result"
 
 On success, returns the processed workbook as a file stream.
 
-### Error Codes
+**HTTP Status Codes**
 
-| Code               | Description                                                                            |
-| ------------------ | -------------------------------------------------------------------------------------- |
-| `400 Bad Request`  | Invalid API URI, malformed parameters, or unsupported file format.                     |
-| `401 Unauthorized` | Invalid or expired access token, or incorrect client ID/secret.                        |
-| `404 Not Found`    | Specified file or storage path does not exist.                                         |
-| `500 Server Error` | Internal server failure during processing (e.g., corrupted file or calculation error). |
+| Code | Meaning           | Description                                                   |
+| ---- | ----------------- | ------------------------------------------------------------- |
+| 200  | OK                | The request completed successfully.                           |
+| 400  | Bad Request       | Invalid url.                                                  |
+| 401  | Unauthorized      | Authentication has failed, or no credentials were provided.   |
+| 404  | Not Found         | Source file not accessible.                                   |
+| 413  | Payload Too Large | The uploaded file exceeds the allowed size limit.             |
+| 500  | Server Error      | The spreadsheet has encountered an anomaly in obtaining data. |
 
 ### HTTP Method and Path
-
 
 > **Note**: Ensure the `v4.0` API version is current. If `v5.0` becomes available, review deprecation notices and migrate accordingly.
 
@@ -105,26 +107,16 @@ curl -X PUT \
 - **Accent Normalization**: Standardize multilingual data by converting `"café"` → `"cafe"`, `"naïve"` → `"naive"`, etc.
 - **CSV Preprocessing**: Prepare raw CSV data before importing into Excel or downstream systems.
 
-## Benefits
+## How to Use the Convert Text API with SDKs?
 
-- **Automatic Bulk Conversion**: Transform thousands of values in a single request without manual intervention.
-- **Consistent Data Formatting**: Apply uniform transformations across entire datasets or targeted ranges.
-- **Developer-Friendly Integration**: Use our [SDKs](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet) (.NET, Java, PHP, Ruby, Node.js, Python, Perl, Go) to integrate text cleaning with minimal code.
-- **Storage Efficiency**: Process files directly in cloud storage without temporary local copies.
+### Convert Text API Specification
 
-## Internal & External Resources
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/TextProcessing/ConvertText" rel="noopener noreferrer">Convert Text API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
-- **Related Documentation**:
-  - [Data Validation Guide](/data-validation/)
-  - [Excel to PDF Conversion API](/convert-excel-to-pdf/)
-  - [Workbook Merging & Splitting](/merge-workbooks/)
+### Use Aspose.Cells Cloud SDKs
 
-- **External References**:
-  - [Aspose.Cells Cloud SDKs (GitHub)](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet)  
-    _Select your language: .NET, Java, PHP, Ruby, Node.js, Python, Perl, or Go._
-  - [Raw OpenAPI Specification (JSON)](https://raw.githubusercontent.com/aspose-cells-cloud/aspose-cells-cloud-openapi-spec/main/specs/Cells_API.json)
-
-## Code Examples
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go">}}
 {{<tab tabNum="1">}}
@@ -152,14 +144,3 @@ curl -X PUT \
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ConvertText.go">}}
 {{</tab>}}
 {{</tabs>}}
-
-## How to Use the Convert Text API with SDKs?
-
-### Convert Text API Specification
-
-The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/TextProcessing/ConvertText" rel="noopener noreferrer">Convert Text API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
-
-### Use Aspose.Cells Cloud SDKs
-
-Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
-Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

@@ -44,7 +44,6 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | folder | String | Query | The folder where the file is situated. |
 | storageName | String | Query | The storage name where the file is situated. |
 
-_The PUT request does not require a request body; all parameters are supplied via the query string._
 
 ### Response
 

@@ -9,6 +9,7 @@ keywords: "Aspose.Cells, Excel search API, cloud spreadsheet, text search, REST"
 weight: 100
 ArticleTitle: "Search Text in Remote Excel Files via Aspose.Cells Cloud API"
 ---
+
 The **SearchContentInRemoteSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/{name}/search/content`) enables developers to programmatically search for specific text, numbers, or formulas within Excel workbooks stored in Aspose.Cells Cloud—without downloading the file—by scanning all worksheets and cells remotely and returning precise match locations for automated data discovery, compliance auditing, or template validation workflows.
 
 ## Search Content in Remote Spreadsheet API
@@ -144,14 +145,16 @@ After report automation, verify placeholder replacement (e.g., `{{Date}}`) acros
 
 Search legacy archives for event codes (e.g., `"Bankruptcy"`, `"Merger"`) to extract business logic and support legacy system migration.
 
-## Benefits
+## How to Use the Search Content in Remote Spreadsheet API with SDKs?
 
-- **Developer-Friendly** – SDKs for C#, Java, PHP, Ruby, Node.js, Python, Perl, and Go accelerate integration
-- **Zero Infrastructure** – Fully managed cloud service; no servers, updates, or compatibility overhead
-- **Cost-Effective** – Pay-per-use pricing model with no upfront investment
-- **Format Preservation** – Search results retain original Excel formatting; export to PDF or other formats if needed
+### Search Content in Remote Spreadsheet API Specification
 
-## Code Examples
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Search/SearchContentInRemoteSpreadsheet" rel="noopener noreferrer">Search Content in Remote Spreadsheet API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
+
+### Use Aspose.Cells Cloud SDKs
+
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 Using Aspose.Cells Cloud SDKs is the recommended approach for development. Below are minimal examples in each supported language.
 
@@ -311,14 +314,3 @@ fmt.Printf("Matches: %d\n", len(*result.TextItems))
 {{< /tab >}}
 
 {{< /tabs >}}
-
-## How to Use the Search Content in Remote Spreadsheet API with SDKs?
-
-### Search Content in Remote Spreadsheet API Specification
-
-The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Search/SearchContentInRemoteSpreadsheet" rel="noopener noreferrer">Search Content in Remote Spreadsheet API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
-
-### Use Aspose.Cells Cloud SDKs
-
-Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
-Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

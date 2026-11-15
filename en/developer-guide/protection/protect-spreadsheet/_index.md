@@ -9,6 +9,7 @@ keywords: "Excel password protection API, open password, modify password, spread
 weight: 100
 ArticleTitle: "Aspose.Cells Cloud Protect Spreadsheet API: Set Open & Modify Passwords Programmatically"
 ---
+
 The **ProtectSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/protection/spreadsheet`) in Aspose.Cells Cloud applies dual-layer password protection to Excel spreadsheets, allowing developers to set both an open password (to restrict file access) and a modify password (to prevent editing) in a single request, with passwords encrypted for enhanced security.
 
 This API supports modern formats (`.xlsx`, `.xlsm`, `.xlsb`) and legacy `.xls` files, and integrates seamlessly with cloud storage and regional settings for global deployments.
@@ -58,14 +59,6 @@ Content-Disposition: attachment; filename="result"
 
 Returns the protected workbook as a binary file stream (or saves to cloud storage if `outPath` is provided).
 
-> ✅ **API Version Note**: This page documents the current `v4.0` endpoint. Check the [API Changelog](/cells/changelog/) for updates, including potential `v5.0` migration guidance.
-
-### 🔐 Security Best Practices
-
-- Never hardcode passwords in client code. Use secure vaults (e.g., AWS Secrets Manager, Azure Key Vault).
-- Prefer `modifyPassword` alone for read-only sharing (no open password needed).
-- Use HTTPS for all requests to protect credentials in transit.
-
 ### **HTTP Status Codes**
 
 | Code  | Meaning               | Description                                                                                                |
@@ -106,12 +99,6 @@ Returns the protected workbook as a binary file stream (or saves to cloud storag
 
 ## **How to Use the Protect Spreadsheet API**
 
-### Prerequisites
-
-1. [Create an Aspose Cloud account](https://dashboard.aspose.cloud/)
-2. Get `Client ID` and `Client Secret` from the dashboard
-3. Generate an `access_token` via OAuth 2.0
-
 ### cURL Example
 
 ```bash
@@ -127,8 +114,6 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/protection/spreadsheet?password
   -F "Spreadsheet=@/path/to/workbook.xlsx" \
   --output protected_workbook.xlsx
 ```
-
-> 💡 **Tip**: Replace `open123`/`edit456` with strong passwords. Use empty strings (`password=&modifyPassword=`) to _remove_ protection.
 
 ### Using Cloud Storage Paths
 

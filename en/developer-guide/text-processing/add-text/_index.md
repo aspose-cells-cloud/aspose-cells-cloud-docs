@@ -8,6 +8,7 @@ keywords: "Aspose.Cells Cloud API, add text Excel, bulk text insertion, prefix s
 description: "Use the Aspose.Cells Cloud AddText API to insert prefixes, suffixes, or custom labels into hundreds of Excel cells in one REST call. Supports precise positioning (beginning, end, before/after anchor text), conditional cell handling, and locale-aware formatting."
 weight: 100
 ---
+
 The **AddText** API (`PUT https://api.aspose.cloud/v4.0/cells/content/add/text`) in Aspose.Cells Cloud enables bulk insertion of prefixes, suffixes, or custom text into multiple Excel cells in a single request—no formulas, helper columns, or manual editing required. You specify the text to add, its position (e.g., AtTheBeginning, AtTheEnd, BeforeText, or AfterText), and optionally anchor text or cell ranges; empty cells can be skipped or filled, and numeric/formula cells are safely converted to strings before modification. The operation returns the updated workbook and a count of affected cells.
 
 ## Overview
@@ -48,19 +49,19 @@ The API uses [JWT token-based authentication](https://docs.aspose.cloud/total/ge
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| Spreadsheet | File | FormData | Upload spreadsheet file. |
-| text | String | Query | Specify the added text content. |
-| position | String | Query | Indicates the specific location for adding text content.None, AtTheBeginning, AtTheEnd, BeforeText, AfterText. |
-| selectText | String | Query | Indicates selecting the specific position to add text based on the content of the text. |
-| skipEmptyCells | Boolean | Query | Indicates skip empty cells. |
-| worksheet | String | Query | Specify the worksheet of spreadsheet. |
-| range | String | Query | Specify the worksheet range of spreadsheet. |
-| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
-| outStorageName | String | Query | Output file Storage Name. |
-| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password | String | Query | The password for opening spreadsheet file. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                                                                                                             |
+| -------------- | ------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet    | File    | FormData                   | Upload spreadsheet file.                                                                                                                |
+| text           | String  | Query                      | Specify the added text content.                                                                                                         |
+| position       | String  | Query                      | Indicates the specific location for adding text content.None, AtTheBeginning, AtTheEnd, BeforeText, AfterText.                          |
+| selectText     | String  | Query                      | Indicates selecting the specific position to add text based on the content of the text.                                                 |
+| skipEmptyCells | Boolean | Query                      | Indicates skip empty cells.                                                                                                             |
+| worksheet      | String  | Query                      | Specify the worksheet of spreadsheet.                                                                                                   |
+| range          | String  | Query                      | Specify the worksheet range of spreadsheet.                                                                                             |
+| outPath        | String  | Query                      | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
+| outStorageName | String  | Query                      | Output file Storage Name.                                                                                                               |
+| region         | String  | Query                      | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password       | String  | Query                      | The password for opening spreadsheet file.                                                                                              |
 
 ### Response
 
@@ -86,14 +87,16 @@ Content-Disposition: attachment; filename="result"
 
 Returns the updated workbook as a binary stream.
 
-### Error Codes
+**HTTP Status Codes**
 
-| Code               | Description                                                                                                                    |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
-| `400` Bad Request  | Missing required parameters (`text`, `position`, `Spreadsheet`), invalid `position` value, or malformed range/worksheet names. |
-| `401` Unauthorized | Invalid, expired, or missing access token.                                                                                     |
-| `404` Not Found    | Spreadsheet file not found in upload or storage path.                                                                          |
-| `500` Server Error | Internal error processing the workbook (e.g., calculation dependency failure).                                                 |
+| Code | Meaning           | Description                                                   |
+| ---- | ----------------- | ------------------------------------------------------------- | --- |
+| 200  | OK                | The request completed successfully.                           |
+| 400  | Bad Request       | Invalid url.                                                  |
+| 401  | Unauthorized      | Authentication has failed, or no credentials were provided.   |
+| 404  | Not Found         | Source file not accessible.                                   |
+| 413  | Payload Too Large | The uploaded file exceeds the allowed size limit.             |
+| 500  | Server Error      | The spreadsheet has encountered an anomaly in obtaining data. |     |
 
 ### Example: Add Prefix to Selected Range
 

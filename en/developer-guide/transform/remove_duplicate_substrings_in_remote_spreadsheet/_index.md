@@ -10,6 +10,7 @@ keywords: "Aspose.Cells, Remove Duplicate Substrings, API"
 description: "API to find and remove repeated substrings inside cells of a specified range in a workbook."
 weight: 1
 ---
+
 The **RemoveDuplicateSubstringsInRemoteSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/duplicate-substrings`) in Aspose.Cells Cloud identifies and removes repeated substrings within each cell of a specified range, using user-defined or preset delimiters like comma, semicolon, space, tab, or line-break, while preserving formulas (though they are converted to strings and re-evaluated), formatting, and data-validation; only the first occurrence of each duplicate substring is retained per cell, and the cleaned workbook is returned as a stream along with the count of processed cells.
 
 ## The Remove Duplicate Substrings in Remote Spreadsheet Web API
@@ -24,18 +25,18 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | (Required) The name of the workbook file to be retrieved. |
-| worksheet | String | Path | Specify the worksheet of spreadsheet. |
-| range | String | Path | Specify the worksheet range of spreadsheet. |
-| delimiters | String | Query | comma, semicolon, space, tab, line-break |
-| treatConsecutiveDelimitersAsOne | Boolean | Query | collapse adjacent delimiters into a single separator. |
-| caseSensitive | Boolean | Query | - |
-| folder | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
-| storageName | String | Query | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted. |
-| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password | String | Query | The password for opening spreadsheet file. |
+| Parameter Name                  | Type    | Path/Query String/HTTPBody | Description                                                                                                                             |
+| ------------------------------- | ------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| name                            | String  | Path                       | (Required) The name of the workbook file to be retrieved.                                                                               |
+| worksheet                       | String  | Path                       | Specify the worksheet of spreadsheet.                                                                                                   |
+| range                           | String  | Path                       | Specify the worksheet range of spreadsheet.                                                                                             |
+| delimiters                      | String  | Query                      | comma, semicolon, space, tab, line-break                                                                                                |
+| treatConsecutiveDelimitersAsOne | Boolean | Query                      | collapse adjacent delimiters into a single separator.                                                                                   |
+| caseSensitive                   | Boolean | Query                      | -                                                                                                                                       |
+| folder                          | String  | Query                      | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
+| storageName                     | String  | Query                      | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.                                       |
+| region                          | String  | Query                      | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password                        | String  | Query                      | The password for opening spreadsheet file.                                                                                              |
 
 ### Response
 
@@ -60,13 +61,13 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 **Response Status Codes**
 
@@ -126,8 +127,6 @@ curl -v "https://api.aspose.cloud/v4.0/cells/MyWorkbook.xlsx/worksheets/Sheet1/r
 
 {< /tab >}
 {< /tabs >}
-
-### Use Aspose Cells Cloud SDKs
 
 ### Use Aspose.Cells Cloud SDKs
 

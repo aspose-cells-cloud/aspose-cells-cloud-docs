@@ -13,3 +13,4 @@ Automatically perform calculations such as `SUM`, `COUNT`, `AVERAGE`, `MIN`, and
 
 - **[Calculate by Cell Color](/cells/aggregate-cells-by-color/)** – Retrieve totals grouped by background or font color in a single request.
 - **[Spreadsheet Quick Calculate](/cells/math-calculate/)** – Compute `SUM`, `COUNT`, `AVERAGE`, `MIN`, `MAX` (and basic arithmetic) across any range instantly.
+- **[Calculate Formula](/cells/calculate-formula/)** – Evaluate a formula and return the result for a specific cell.

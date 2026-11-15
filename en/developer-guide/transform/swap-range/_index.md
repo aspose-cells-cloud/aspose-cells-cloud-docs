@@ -80,14 +80,16 @@ The API returns the modified Excel file as a binary stream.
 - If `outPath` is specified, the file is saved to cloud storage _and_ returned in the response.
 - If omitted, only the file stream is returned.
 
-### Error Handling
+**HTTP Status Codes**
 
-| HTTP Code          | Description                                                                 |
-| ------------------ | --------------------------------------------------------------------------- |
-| `400 Bad Request`  | Invalid range dimensions, malformed parameters, or missing required fields. |
-| `401 Unauthorized` | Missing, invalid, or expired JWT token.                                     |
-| `404 Not Found`    | Source workbook not found in cloud storage or path.                         |
-| `500 Server Error` | Internal processing failure (e.g., workbook corruption).                    |
+| Code | Meaning           | Description                                                   |
+| ---- | ----------------- | ------------------------------------------------------------- |
+| 200  | OK                | The request completed successfully.                           |
+| 400  | Bad Request       | Invalid url.                                                  |
+| 401  | Unauthorized      | Authentication has failed, or no credentials were provided.   |
+| 404  | Not Found         | Source file not accessible.                                   |
+| 413  | Payload Too Large | The uploaded file exceeds the allowed size limit.             |
+| 500  | Server Error      | The spreadsheet has encountered an anomaly in obtaining data. |
 
 ### Notes on Parameters
 

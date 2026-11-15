@@ -10,6 +10,7 @@ keywords: "Aspose.Cells, Text Conversion, API"
 description: "Converts text in a specified range of a worksheet, including number conversion, character replacement, line break handling, and accented character normalization."
 weight: 100
 ---
+
 The **ConvertTextInRemoteSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/range/{range}/content/convert/text`) in Aspose.Cells Cloud enables targeted text conversion within a specified range of a remote spreadsheet, allowing users to transform numbers stored as text into numeric values, replace unwanted characters or line breaks with custom separators, and normalize accented characters—all without downloading or manually editing the file.
 
 ## The Convert Text in Remote Spreadsheet Web API
@@ -24,18 +25,18 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | (Required) The name of the workbook file to be retrieved. |
-| worksheet | String | Path | Specify the worksheet of spreadsheet. |
-| range | String | Path | Specify the worksheet range of spreadsheet. |
-| convertTextType | String | Query | Indicates the conversion of text type. |
-| sourceCharacters | String | Query | Indicates the source characters. |
-| targetCharacters | String | Query | Indicates the target characters. |
-| folder | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
-| storageName | String | Query | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted. |
-| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password | String | Query | The password for opening spreadsheet file. |
+| Parameter Name   | Type   | Path/Query String/HTTPBody | Description                                                                                                                             |
+| ---------------- | ------ | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| name             | String | Path                       | (Required) The name of the workbook file to be retrieved.                                                                               |
+| worksheet        | String | Path                       | Specify the worksheet of spreadsheet.                                                                                                   |
+| range            | String | Path                       | Specify the worksheet range of spreadsheet.                                                                                             |
+| convertTextType  | String | Query                      | Indicates the conversion of text type.                                                                                                  |
+| sourceCharacters | String | Query                      | Indicates the source characters.                                                                                                        |
+| targetCharacters | String | Query                      | Indicates the target characters.                                                                                                        |
+| folder           | String | Query                      | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
+| storageName      | String | Query                      | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.                                       |
+| region           | String | Query                      | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password         | String | Query                      | The password for opening spreadsheet file.                                                                                              |
 
 ### Response
 
@@ -60,13 +61,13 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 **Response Status Codes**
 
@@ -118,8 +119,6 @@ curl -v "https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/range
 {< /tab >}
 
 {< /tabs >}
-
-### Use Aspose Cells Cloud SDKs
 
 ### Use Aspose.Cells Cloud SDKs
 

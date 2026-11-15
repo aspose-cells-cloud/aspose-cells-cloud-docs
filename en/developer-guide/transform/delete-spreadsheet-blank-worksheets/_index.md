@@ -8,6 +8,7 @@ keywords: "Aspose.Cells Cloud, delete blank worksheets, Excel API, workbook clea
 weight: 100
 ArticleTitle: "Delete Blank Worksheets in Excel Workbooks using Aspose.Cells Cloud API v4.0"
 ---
+
 The **RemoveSpreadsheetBlankWorksheets** API (`PUT https://api.aspose.cloud/v4.0/cells/remove/blank-worksheets`) in Aspose.Cells Cloud removes all blank worksheets—those containing no data, formulas, charts, comments, or other objects—from an uploaded Excel workbook. Using a `FormData` file upload, the operation preserves populated sheets while deleting empty ones, helping optimize workbook size, improve organization, and streamline post-processing workflows such as template cleanup or standardization.
 
 ## The Remove Spreadsheet Blank Worksheets Web API
@@ -62,14 +63,16 @@ On success (`200 OK`), the API returns the cleaned workbook as a binary file str
 | -------------- | ------------- | ----------------------------------------------------- |
 | `ResponseFile` | File (Stream) | The processed workbook with blank worksheets removed. |
 
-### Error Responses
+**HTTP Status Codes**
 
-| Status             | Code                                                                        | Description |
-| ------------------ | --------------------------------------------------------------------------- | ----------- |
-| `400 Bad Request`  | Invalid request format, malformed parameters, or missing required file.     |
-| `401 Unauthorized` | Invalid or expired access token; missing or invalid credentials.            |
-| `404 Not Found`    | Source file not found in storage or inaccessible path.                      |
-| `500 Server Error` | Internal processing failure—e.g., corruption during parsing or calculation. |
+| Code | Meaning           | Description                                                   |
+| ---- | ----------------- | ------------------------------------------------------------- |
+| 200  | OK                | The request completed successfully.                           |
+| 400  | Bad Request       | Invalid url.                                                  |
+| 401  | Unauthorized      | Authentication has failed, or no credentials were provided.   |
+| 404  | Not Found         | Source file not accessible.                                   |
+| 413  | Payload Too Large | The uploaded file exceeds the allowed size limit.             |
+| 500  | Server Error      | The spreadsheet has encountered an anomaly in obtaining data. |
 
 > **Important**: This operation permanently deletes blank worksheets. Always back up your workbook before use.
 
@@ -96,15 +99,6 @@ Optimize aging Excel files that have accumulated empty sheets over time, reducin
 ### 5. User-Generated Content Validation
 
 Ensure consistency in workbooks submitted via web forms or portals by automatically stripping accidental blank sheets.
-
-## Benefits
-
-| Benefit                 | Explanation                                                                              |
-| ----------------------- | ---------------------------------------------------------------------------------------- |
-| **No Infrastructure**   | Fully managed cloud service—no servers, updates, or compatibility maintenance required.  |
-| **Rapid Integration**   | SDKs reduce implementation to 5–10 lines of code (see examples below).                   |
-| **Cost-Effective**      | Pay only for API calls; no upfront or hidden fees.                                       |
-| **Reliable Processing** | Tested logic for identifying truly empty sheets (no data, formulas, charts, or objects). |
 
 ## How to Use the Remove Spreadsheet Blank Worksheets API with SDKs?
 

@@ -3,7 +3,7 @@ title: What's new in Aspose.Cells Cloud
 second_title: "Document"
 linktitle: "What's new"
 type: docs
-weight: 9
+weight: 10
 url: /new-features/
 aliases: [/what-s-new-in-aspose-cells-cloud/]
 keywords: "Aspose.Cells Cloud, new features, Microsoft Office Excel, OpenOffice Spreadsheet, CSV, PDF, REST API, SDK, spreadsheet, cloud"
@@ -20,11 +20,10 @@ ArticleTitle: "What's new in Aspose.Cells Cloud – Latest Features and Updates"
 
 The table below provides a concise summary of the most recent Aspose.Cells Cloud release items.
 
-| **ID** | **Summary**                                                 | **Category** |
-|:-----:|:-----------------------------------------------------------:|:-----------:|
-| 60858 | Implement the data transpose Web API on Aspose Cells Cloud. | New Feature |
-| 60912 | Implement the data unpivot Web API on Aspose Cells Cloud.   | New Feature |
-
+| **ID** |                         **Summary**                         | **Category** |
+| :----: | :---------------------------------------------------------: | :----------: |
+| 60858  | Implement the data transpose Web API on Aspose Cells Cloud. | New Feature  |
+| 60912  |  Implement the data unpivot Web API on Aspose Cells Cloud.  | New Feature  |
 
 # Historical Releases
 

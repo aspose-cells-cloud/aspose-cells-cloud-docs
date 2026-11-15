@@ -10,6 +10,7 @@ description: "Convert Excel worksheets to JSON instantly using Aspose.Cells Clou
 weight: 100
 type: docs
 ---
+
 The **ConvertWorksheetToJson** API (`PUT https://api.aspose.cloud/v4.0/cells/convert/worksheet/json`) enables Aspose.Cells Cloud users to convert a specified worksheet from a local spreadsheet file directly into JSON format without uploading to cloud storage. The operation requires a multipart form-data file upload and the worksheet name as a query parameter, supporting password-protected files, custom fonts, regional settings, and optional autofit configurations for rows and columns, ensuring accurate and efficient export of structured worksheet data for downstream applications.
 
 ## The Convert Worksheet to JSON Web API
@@ -24,17 +25,17 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| Spreadsheet | File | FormData | Upload spreadsheet file. |
-| worksheet | String | Query | worksheet name of spreadsheet. |
-| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
-| outStorageName | String | Query | Output file Storage Name. |
-| fontsLocation | String | Query | Use Custom fonts. |
-| AutoRowsFit | Boolean | Query | (Optional) Autofits all rows in worksheets. |
-| AutoColumnsFit | Boolean | Query | (Optional) Autofits all columns in worksheets. |
-| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password | String | Query | The password for opening spreadsheet file. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                                                                                                             |
+| -------------- | ------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet    | File    | FormData                   | Upload spreadsheet file.                                                                                                                |
+| worksheet      | String  | Query                      | worksheet name of spreadsheet.                                                                                                          |
+| outPath        | String  | Query                      | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
+| outStorageName | String  | Query                      | Output file Storage Name.                                                                                                               |
+| fontsLocation  | String  | Query                      | Use Custom fonts.                                                                                                                       |
+| AutoRowsFit    | Boolean | Query                      | (Optional) Autofits all rows in worksheets.                                                                                             |
+| AutoColumnsFit | Boolean | Query                      | (Optional) Autofits all columns in worksheets.                                                                                          |
+| region         | String  | Query                      | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password       | String  | Query                      | The password for opening spreadsheet file.                                                                                              |
 
 ### Response
 
@@ -60,14 +61,14 @@ Content-Disposition: attachment; filename="result"
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | Invalid url. |
-| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
-| 404 | Not Found | Source file not accessible. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining conversion data. |
+| Code | Meaning           | Description                                                              |
+| ---- | ----------------- | ------------------------------------------------------------------------ |
+| 200  | OK                | The request completed successfully.                                      |
+| 400  | Bad Request       | Invalid url.                                                             |
+| 401  | Unauthorized      | Authentication has failed, or no credentials were provided.              |
+| 404  | Not Found         | Source file not accessible.                                              |
+| 413  | Payload Too Large | The uploaded file exceeds the allowed size limit.                        |
+| 500  | Server Error      | The spreadsheet has encountered an anomaly in obtaining conversion data. |
 
 > **Last updated**: March 15, 2024  
 > **API version**: v4.0  
@@ -87,7 +88,11 @@ Content-Disposition: attachment; filename="result"
 - ✅ **Fast, scalable execution** – Leverages Aspose.Cells’ high‑performance engine on cloud infrastructure, handling large worksheets efficiently.
 - ✅ **Simplified integration** – Single PUT call returns a ready‑to‑use JSON file or stores it directly, reducing code complexity.
 
-## How to Use the Convert Worksheet to JSON API
+## How to Use the Convert Worksheet to JSON API with SDKs?
+
+### Convert Worksheet to JSON API Specification
+
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertWorksheetToJson" rel="noopener noreferrer">Convert Worksheet to JSON API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Using cURL
 
@@ -116,11 +121,10 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/worksheet/json?workshee
 {{< /tab >}}
 {{< /tabs >}}
 
-## How to Use the Convert Worksheet to JSON API with SDKs?
+### Use Aspose.Cells Cloud SDKs
 
-### Convert Worksheet to JSON API Specification
-
-The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertWorksheetToJson" rel="noopener noreferrer">Convert Worksheet to JSON API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 {{< tabs tabTotal="8" tabID="2" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 {{< tab tabNum="1" >}}
@@ -232,8 +236,3 @@ response, _, _ := cellsApi.ConvertWorksheetToJson(
 
 {{< /tab >}}
 {{< /tabs >}}
-
-### Use Aspose.Cells Cloud SDKs
-
-Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
-Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

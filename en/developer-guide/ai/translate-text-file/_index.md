@@ -8,9 +8,6 @@ keywords: AI text translation, Aspose.Cells Cloud API, REST API translate file, 
 weight: 100
 ArticleTitle: "Translate Text Files with Aspose.Cells Cloud AI API"
 ---
-The **TranslateTextFile** API (`PUT https://api.aspose.cloud/v4.0/cells/ai/translate/text-file`), part of Aspose.Cells Cloud v4.0, translates the content of a text file (or raw text in the request body) into a specified target language using AI-powered services, supporting flexible input via multipart/form-data upload or direct content submission while preserving original formatting and line structure.
-
-## Overview
 
 The **TranslateTextFile** endpoint leverages Aspose.Cells Cloud AI services to translate the content of a text file into a specified target language. It supports two operation modes:
 
@@ -18,9 +15,6 @@ The **TranslateTextFile** endpoint leverages Aspose.Cells Cloud AI services to t
 2. **Direct Content Mode** – post raw text in the request body and receive the translated text directly.
 
 The service preserves original line breaks, indentation, and special characters, automatically appends a `_translated` suffix to uploaded filenames, and returns the result as a binary stream.
-
-
----
 
 ## The Translate Text File Web API
 
@@ -34,14 +28,12 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| Spreadsheet | File | FormData | Upload spreadsheet file. |
-| targetLanguage | String | Query | The target language code for translation (e.g., "es", "fr", "de"). |
-| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password | String | Query | The password for opening spreadsheet file. |
-
----
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                                                                                                             |
+| -------------- | ------ | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet    | File   | FormData                   | Upload spreadsheet file.                                                                                                                |
+| targetLanguage | String | Query                      | The target language code for translation (e.g., "es", "fr", "de").                                                                      |
+| region         | String | Query                      | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password       | String | Query                      | The password for opening spreadsheet file.                                                                                              |
 
 ### Response
 
@@ -73,14 +65,6 @@ Content-Type: application/json
 | 413  | Payload Too Large     | File size exceeds the 2 GB limit.                                                         |
 | 500  | Internal Server Error | Translation service unavailable or internal processing failure.                           |
 
-For authentication issues, see [Authentication Troubleshooting](/cells-cloud/authentication/#troubleshooting).
-
----
-
-> **Note**: This endpoint follows [SemVer](https://semver.org/) versioning. v4.0 is current as of April 2024. See the [API Versioning Policy](/cells-cloud/api-versioning/) for deprecation notices and upgrade guidance.
-
----
-
 ### Successful Response (200 OK)
 
 **Headers**
@@ -106,8 +90,6 @@ Binary stream containing the translated content with preserved formatting, line 
 - **Customer Support Platforms**  
   Translate incoming plain-text tickets or chat logs in real time for agents working in multiple languages.
 
----
-
 ## Why Use This API?
 
 - **AI-Driven Accuracy**  
@@ -122,40 +104,16 @@ Binary stream containing the translated content with preserved formatting, line 
 - **Seamless File Handling**  
   Automatically appends `_translated` to filenames for uploaded files, reducing client-side logic.
 
----
-
-## How to Use the API
-
-### 1. File Upload Mode (Multipart/Form-Data)
-
-**cURL Example**
-
-```bash
-curl -X PUT "https://api.aspose.cloud/v4.0/cells/ai/translate/text-file?targetLanguage=es" \
-  -H "Authorization: Bearer <JWT token>" \
-  -F "file=@document.txt"
-```
-
-### 2. Direct Content Mode (Raw Text)
-
-**cURL Example**
-
-```bash
-curl -X PUT "https://api.aspose.cloud/v4.0/cells/ai/translate/text-file?targetLanguage=fr&region=fr-FR" \
-  -H "Authorization: Bearer <JWT token>" \
-  -H "Content-Type: text/plain" \
-  -d "Hello, this is a test message."
-```
-
-> **Tip**: For large files, use the [UploadFile API](/cells-cloud/file-handling/#upload-file) first, then reference the uploaded file with the [TranslateTextFileWithFileId](/cells-cloud/ai/#translate-text-file-by-id) endpoint.
-
----
-
 ## How to Use the Translate Text File API with SDKs?
 
 ### Translate Text File API Specification
 
 The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/AI/TranslateTextFile" rel="noopener noreferrer">Translate Text File API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
+
+### Use Aspose.Cells Cloud SDKs
+
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 Aspose.Cells Cloud SDKs abstract low-level HTTP details and simplify integration. Below are ready-to-run examples in popular languages.
 
@@ -311,8 +269,3 @@ fmt.Printf("Translated file: %s\n", *resp.Name)
 
 {{</tab>}}
 {{</tabs>}}
-
-### Use Aspose.Cells Cloud SDKs
-
-Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
-Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

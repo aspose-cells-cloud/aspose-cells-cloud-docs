@@ -4,12 +4,11 @@ ArticleTitle: "How to Convert a Local Spreadsheet Range to a CSV File: Step-by-S
 linktitle: "Convert Range to CSV"
 type: docs
 url: /convert-range-to-csv/
-date: 2024-05-21
-lastmod: 2024-05-21
 keywords: "Aspose.Cells, Convert Range to CSV, Excel to CSV, Excel API, Cloud Spreadsheet, REST API, XLSX to CSV, Aspose.Cells Cloud"
 description: "Convert Excel range (XLSX/XLS) to CSV using Aspose.Cells Cloud REST API with C#, Java, Python SDK examples"
 weight: 100
 ---
+
 The **ConvertRangeToCsv** API (`PUT https://api.aspose.cloud/v4.0/cells/convert/range/csv`) enables developers to convert a specified cell range from a local Excel file directly to CSV format using Aspose.Cells Cloud, without requiring prior upload to cloud storage; it accepts the spreadsheet file, worksheet name, and range (e.g., `A1:C10`) as required parameters and returns the converted CSV file, supporting efficient, cloud-native conversion while reducing local resource usage.
 
 ## The Convert Range to CSV Web API
@@ -24,18 +23,18 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| Spreadsheet | File | FormData | Upload spreadsheet file. |
-| worksheet | String | Query | worksheet name of spreadsheet. |
-| range | String | Query | cell area. e.g. A1:C10 |
-| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
-| outStorageName | String | Query | Output file Storage Name. |
-| fontsLocation | String | Query | Use Custom fonts. |
-| AutoRowsFit | Boolean | Query | (Optional) Autofits all rows in worksheets. |
-| AutoColumnsFit | Boolean | Query | (Optional) Autofits all columns in worksheets. |
-| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password | String | Query | The password for opening spreadsheet file. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                                                                                                             |
+| -------------- | ------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet    | File    | FormData                   | Upload spreadsheet file.                                                                                                                |
+| worksheet      | String  | Query                      | worksheet name of spreadsheet.                                                                                                          |
+| range          | String  | Query                      | cell area. e.g. A1:C10                                                                                                                  |
+| outPath        | String  | Query                      | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
+| outStorageName | String  | Query                      | Output file Storage Name.                                                                                                               |
+| fontsLocation  | String  | Query                      | Use Custom fonts.                                                                                                                       |
+| AutoRowsFit    | Boolean | Query                      | (Optional) Autofits all rows in worksheets.                                                                                             |
+| AutoColumnsFit | Boolean | Query                      | (Optional) Autofits all columns in worksheets.                                                                                          |
+| region         | String  | Query                      | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password       | String  | Query                      | The password for opening spreadsheet file.                                                                                              |
 
 ### Response
 
@@ -61,14 +60,14 @@ Content-Disposition: attachment; filename="result"
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | Invalid url. |
-| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
-| 404 | Not Found | Source file not accessible. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining conversion data. |
+| Code | Meaning           | Description                                                              |
+| ---- | ----------------- | ------------------------------------------------------------------------ |
+| 200  | OK                | The request completed successfully.                                      |
+| 400  | Bad Request       | Invalid url.                                                             |
+| 401  | Unauthorized      | Authentication has failed, or no credentials were provided.              |
+| 404  | Not Found         | Source file not accessible.                                              |
+| 413  | Payload Too Large | The uploaded file exceeds the allowed size limit.                        |
+| 500  | Server Error      | The spreadsheet has encountered an anomaly in obtaining conversion data. |
 
 _Example CSV content returned (first few rows):_
 
@@ -82,6 +81,7 @@ Jane Smith,2023-01-16,980.50
 To call this endpoint you must have a valid Aspose Cloud **client ID** and **client secret**, obtain a **JWT access token**, and ensure the source spreadsheet is in **XLSX** or **XLS** format.
 
 ### Web API
+
 **cURL example**
 
 ```bash
@@ -89,7 +89,8 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/range/csv?worksheet=She
      -H "Authorization: Bearer $(cat ~/.aspose-cloud-token)" \
      -F "Spreadsheet=@sample.xlsx"
 ```
-> *For security, store your JWT token in an environment variable or secure vault.*
+
+> _For security, store your JWT token in an environment variable or secure vault._
 
 ## Where should you use the Convert Range to CSV API?
 

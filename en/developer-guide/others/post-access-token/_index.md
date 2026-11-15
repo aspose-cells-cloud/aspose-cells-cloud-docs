@@ -1,7 +1,5 @@
 ---
 title: "Aspose.Cells Cloud Web API - Post Access Token"
-date: 2023-11-15
-lastmod: 2024-06-15
 articleTitle: "Get Access Token with Client ID and Secret"
 linktitle: "Post Access Token"
 keywords: "Aspose.Cells Cloud, OAuth2, access token, REST API, JWT, authentication, Excel cloud, client credentials flow"
@@ -9,6 +7,7 @@ description: "Obtain an OAuth2 access token for Aspose.Cells Cloud REST API usin
 weight: 100
 draft: false
 ---
+
 The **PostAccessToken** API (`POST https://api.aspose.cloud/v4.0/cells/connect/token`) enables Aspose.Cells Cloud clients to obtain an access token by securely authenticating with their registered API credentials; as a proxy service, it forwards the client’s authentication request to the Aspose Cloud authorization server and returns the issued token, allowing middleware and applications to authenticate subsequent API calls without handling OAuth flows directly.
 
 - A registered [Aspose Cloud account](https://dashboard.aspose.cloud/).
@@ -104,36 +103,16 @@ curl -X POST "https://api.aspose.cloud/v4.0/cells/connect/token" \
 | 401  | Unauthorized          | Invalid or expired `client_id`/`client_secret`               | `json {"error": "invalid_client", "error_description": "Client authentication failed."}` |
 | 500  | Internal Server Error | Temporary service disruption                                 | `json {"error": "server_error", "error_description": "An unexpected error occurred."}`   |
 
-> ℹ️ **Token Expiration**: Always check `expires_in`. Renew tokens _before_ expiration to avoid 401 errors in downstream calls.
-
----
-
-## OpenAPI Specification
-
-The API is fully defined in the [machine-readable OpenAPI spec](https://raw.githubusercontent.com/aspose-cells-cloud/aspose-cells-cloud-openapi-spec/main/specs/cells_api.yaml) (YAML/JSON), enabling code generation and contract testing.
-
-You can also explore the interactive reference at:  
-[reference.aspose.cloud/cells/#/CellsAuthorityController/PostAccessToken](https://reference.aspose.cloud/cells/#/CellsAuthorityController/PostAccessToken)
-
 ## How to Use the Post Access Token API with SDKs?
 
 ### Post Access Token API Specification
 
 The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/CellsAuthority/PostAccessToken" rel="noopener noreferrer">Post Access Token API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
-### Supported SDKs
+### Use Aspose.Cells Cloud SDKs
 
-- [.NET](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet)
-- [Java](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java)
-- [Python](https://github.com/aspose-cells-cloud/aspose-cells-cloud-python)
-- [Node.js](https://github.com/aspose-cells-cloud/aspose-cells-cloud-javascript)
-- [PHP](https://github.com/aspose-cells-cloud/aspose-cells-cloud-php)
-- [Ruby](https://github.com/aspose-cells-cloud/aspose-cells-cloud-ruby)
-- [Go](https://github.com/aspose-cells-cloud/aspose-cells-cloud-go)
-
-Check the [GitHub organization](https://github.com/aspose-cells-cloud){: rel="noopener noreferrer"} for the full list and installation guides.
-
-### Example (Node.js SDK)
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 ```javascript
 const { CellsApi } = require("aspose-cells-cloud");
@@ -155,15 +134,12 @@ cellsApi.cellsWorkbookPutConvertWorkbook(
 );
 ```
 
-> ✅ SDKs automatically:
->
-> - Fetch and cache tokens
-> - Refresh expired tokens (if refresh tokens are supported)
-> - Handle retries and error parsing
+### Supported SDKs
 
----
-
-### Use Aspose.Cells Cloud SDKs
-
-Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
-Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
+- [.NET](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet)
+- [Java](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java)
+- [Python](https://github.com/aspose-cells-cloud/aspose-cells-cloud-python)
+- [Node.js](https://github.com/aspose-cells-cloud/aspose-cells-cloud-javascript)
+- [PHP](https://github.com/aspose-cells-cloud/aspose-cells-cloud-php)
+- [Ruby](https://github.com/aspose-cells-cloud/aspose-cells-cloud-ruby)
+- [Go](https://github.com/aspose-cells-cloud/aspose-cells-cloud-go)

@@ -6,7 +6,7 @@ linktitle: "Migration"
 type: docs
 url: /
 description: "Aspose.Cells Cloud – Migration from v3.0 to v4.0: convert, merge, split, encrypt Excel files in the cloud. Free 150 calls/month, 8 SDKs, RESTful."
-weight: 100
+weight: 80
 keywords: "Aspose.Cells Cloud, Excel API, migration, spreadsheet conversion, merge Excel, split Excel, protect Excel, cloud spreadsheet SDK, REST API, Excel processing"
 ---
 
@@ -32,12 +32,12 @@ Every migrated call moves from `/v3.0/cells` to `/v4.0/cells`. Format converters
 
 The 3.0 routes were verbs glued onto a flat namespace: `trimcontent`, `removecharacters`, `findText`, `replaceText`. 4.0 arranges nouns hierarchically, usually under a content or convert node:
 
-| 3.0 | 4.0 |
-|-----|-----|
-| `POST /cells/trimcontent` | `PUT /cells/content/trim` |
+| 3.0                            | 4.0                                    |
+| ------------------------------ | -------------------------------------- |
+| `POST /cells/trimcontent`      | `PUT /cells/content/trim`              |
 | `POST /cells/removecharacters` | `PUT /cells/content/remove/characters` |
-| `POST /cells/{name}/findText` | `PUT /cells/{name}/search/content` |
-| `POST /cells/convert/pdf` | `PUT /cells/convert/spreadsheet/pdf` |
+| `POST /cells/{name}/findText`  | `PUT /cells/{name}/search/content`     |
+| `POST /cells/convert/pdf`      | `PUT /cells/convert/spreadsheet/pdf`   |
 
 The verbs are gone, so route renaming is unavoidable even where the capability is identical.
 
@@ -63,14 +63,14 @@ The conversion guide is the definitive treatment of this shift, including the pa
 
 ## The Six Guides at a Glance
 
-| Guide | Controller | Endpoints 3.0 → 4.0 | Character of the change | Risk |
-|-------|-----------|----------------------|-------------------------|------|
-| [Text Processing](text-processing-migration/_index.md) | Text Processing | 8 → 16 | Superset; two new operations; route restructure | 🟢 Low, one 🟡 step |
-| [Search & Replace](search-and-replace-migration/_index.md) | Search | 4 → 14 | Category expansion; broken links; all text items | 🟢 Low |
-| [Data Processing](migrating-data-processing-to-4-0.md) | Data Processing / Transform | 13 → 10 | Consolidation plus merge, split and CSV import | 🟡 Medium |
-| [Conversion](migrating-conversion-apis-to-4-0.md) | Conversion | 14 → 28 | Granularity plus request-shape rewrite; real gaps | 🟡–🔴 Medium-high |
-| [Protection & Encryption](protection-and-encryption-migration/_index.md) | Protection | 10 → 3 | Pure consolidation; controls removed | 🟡 Medium |
-| [APIs Not Migratable](apis-not-migratable-to-4-0.md) | 25 controllers | 291 → 0 | No 4.0 implementation | 🔴 Blocker for some workloads |
+| Guide                                                                    | Controller                  | Endpoints 3.0 → 4.0 | Character of the change                           | Risk                          |
+| ------------------------------------------------------------------------ | --------------------------- | ------------------- | ------------------------------------------------- | ----------------------------- |
+| [Text Processing](text-processing-migration/_index.md)                   | Text Processing             | 8 → 16              | Superset; two new operations; route restructure   | 🟢 Low, one 🟡 step           |
+| [Search & Replace](search-and-replace-migration/_index.md)               | Search                      | 4 → 14              | Category expansion; broken links; all text items  | 🟢 Low                        |
+| [Data Processing](migrating-data-processing-to-4-0.md)                   | Data Processing / Transform | 13 → 10             | Consolidation plus merge, split and CSV import    | 🟡 Medium                     |
+| [Conversion](migrating-conversion-apis-to-4-0.md)                        | Conversion                  | 14 → 28             | Granularity plus request-shape rewrite; real gaps | 🟡–🔴 Medium-high             |
+| [Protection & Encryption](protection-and-encryption-migration/_index.md) | Protection                  | 10 → 3              | Pure consolidation; controls removed              | 🟡 Medium                     |
+| [APIs Not Migratable](apis-not-migratable-to-4-0.md)                     | 25 controllers              | 291 → 0             | No 4.0 implementation                             | 🔴 Blocker for some workloads |
 
 ### Text Processing — 8 to 16 endpoints
 
@@ -105,14 +105,14 @@ A pure consolidation. Protect, lock and encrypt all resolve to `PUT /cells/prote
 
 ## Common Pitfalls
 
-| Pitfall | What happens | How to avoid it |
-|---------|--------------|-----------------|
-| Assuming route loss means capability loss | Markdown, SQL, DOCX and PPTX look removed but still convert via `format=` | Check the format registry before rewriting |
-| Trusting a rename to be behaviour-preserving | Duplicate removal changed from rows to in-cell substrings | Re-test outputs, not just status codes |
-| Relying on silently ignored parameters | `sheetName` and `pageIndex` are accepted and ignored on workbook routes | Move selection into a worksheet route |
-| Forgetting the multipart field rename | Conversion uploads fail with the old `File` field | Send the file as `Spreadsheet` |
-| Migrating protection without a compliance check | 4.0 defaults to AES-256 with no way to choose | Confirm requirements before cut-over |
-| Patching generated SDKs by hand | Route, verb and parameter changes accumulate | Regenerate from the 4.0 specification |
+| Pitfall                                         | What happens                                                              | How to avoid it                            |
+| ----------------------------------------------- | ------------------------------------------------------------------------- | ------------------------------------------ |
+| Assuming route loss means capability loss       | Markdown, SQL, DOCX and PPTX look removed but still convert via `format=` | Check the format registry before rewriting |
+| Trusting a rename to be behaviour-preserving    | Duplicate removal changed from rows to in-cell substrings                 | Re-test outputs, not just status codes     |
+| Relying on silently ignored parameters          | `sheetName` and `pageIndex` are accepted and ignored on workbook routes   | Move selection into a worksheet route      |
+| Forgetting the multipart field rename           | Conversion uploads fail with the old `File` field                         | Send the file as `Spreadsheet`             |
+| Migrating protection without a compliance check | 4.0 defaults to AES-256 with no way to choose                             | Confirm requirements before cut-over       |
+| Patching generated SDKs by hand                 | Route, verb and parameter changes accumulate                              | Regenerate from the 4.0 specification      |
 
 ---
 
@@ -122,13 +122,13 @@ Aspose.Cells Cloud 4.0 is a smaller, sharper API, and the migration is not one p
 
 Read the guide that matches your controller, verify the behaviour that the mapping tables cannot guarantee, and plan for a hybrid rather than a clean cut-over.
 
-| Question | Answer |
-|----------|--------|
-| Is 4.0 a drop-in replacement? | No — routes, verbs and request shapes change |
-| Is capability reduced overall? | Yes, for 291 endpoints; no, for the migrated controllers |
-| Can both versions coexist? | Yes — `/v3.0/cells` and `/v4.0/cells` |
-| What should I migrate first? | Text processing and search |
-| What should I verify before cut-over? | Conversion output, `PageSetup`, protection settings |
+| Question                              | Answer                                                   |
+| ------------------------------------- | -------------------------------------------------------- |
+| Is 4.0 a drop-in replacement?         | No — routes, verbs and request shapes change             |
+| Is capability reduced overall?        | Yes, for 291 endpoints; no, for the migrated controllers |
+| Can both versions coexist?            | Yes — `/v3.0/cells` and `/v4.0/cells`                    |
+| What should I migrate first?          | Text processing and search                               |
+| What should I verify before cut-over? | Conversion output, `PageSetup`, protection settings      |
 
 ---
 

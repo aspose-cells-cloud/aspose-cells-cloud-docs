@@ -10,6 +10,7 @@ weight: 50
 linktitle: "Get AutoFilter"
 ArticleTitle: "Retrieve AutoFilter Description from Excel Worksheet via Aspose.Cells Cloud API"
 ---
+
 The **GetWorksheetAutoFilter** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter`) retrieves the full AutoFilter configuration—including filter columns, range, and sorting details—from a specified worksheet in a workbook stored in the cloud, enabling developers to programmatically inspect or replicate complex filter settings using Aspose.Cells Cloud’s REST API.
 
 > **Note:** All sample requests use **HTTPS**. Never send JWT tokens over an insecure connection.
@@ -34,12 +35,12 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Path Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The workbook name. |
-| sheetName | String | Path | The worksheet name. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------ | -------------------------- | -------------------------------------------- |
+| name           | String | Path                       | The workbook name.                           |
+| sheetName      | String | Path                       | The worksheet name.                          |
+| folder         | String | Query                      | The folder where the file is situated.       |
+| storageName    | String | Query                      | The storage name where the file is situated. |
 
 ### Response
 
@@ -64,13 +65,13 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ### HTTP Request
 
@@ -238,16 +239,6 @@ The service returns a JSON object that wraps the `AutoFilter` model.
 | 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
 | 500  | Internal Server Error | Unexpected server error.                                          |
 
----
-
-## See Also
-
-- [AutoFilter – OpenAPI Specification](https://apireference.aspose.cloud/cells/#/AutoFilter/GetWorksheetAutoFilter)
-- [Authentication guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)
-- [Storage operations](https://docs.aspose.cloud/cells/storage/)
-
----
-
 ## How to Use the Get Worksheet Auto Filter API with SDKs?
 
 ### Get Worksheet Auto Filter API Specification
@@ -255,21 +246,6 @@ The service returns a JSON object that wraps the `AutoFilter` model.
 The <a href="https://reference.aspose.cloud/cells/#/AutoFilter/GetWorksheetAutoFilter" rel="noopener noreferrer">Get Worksheet Auto Filter API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 The operation is available in all Aspose.Cells Cloud SDKs. Below are ready‑to‑run snippets.
-
-| Language    | Example                                                                                                                                                                                                                                                                                                                                                                                   |
-| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **C#**      | <details><summary>Show code</summary>`csharp\nusing Aspose.Cells.Cloud.SDK.Api;\nusing Aspose.Cells.Cloud.SDK.Model;\n\nvar apiInstance = new CellsApi();\nvar response = apiInstance.GetWorksheetAutoFilter(\"Book1.xlsx\", \"Sheet1\", folder: \"MyFolder\", storageName: \"MyStorage\");\nConsole.WriteLine(response.AutoFilter);\n`</details>                                         |
-| **Java**    | <details><summary>Show code</summary>`java\nimport com.aspose.cells.cloud.api.CellsApi;\nimport com.aspose.cells.cloud.model.AutoFilterResponse;\n\nCellsApi api = new CellsApi();\nAutoFilterResponse resp = api.getWorksheetAutoFilter(\"Book1.xlsx\", \"Sheet1\", \"MyFolder\", \"MyStorage\");\nSystem.out.println(resp.getAutoFilter());\n`</details>                                |
-| **Python**  | <details><summary>Show code</summary>`python\nfrom asposecellscloud import CellsApi\n\napi = CellsApi()\nresp = api.get_worksheet_auto_filter(name='Book1.xlsx', sheet_name='Sheet1', folder='MyFolder', storage_name='MyStorage')\nprint(resp.auto_filter)\n`</details>                                                                                                                  |
-| **Node.js** | <details><summary>Show code</summary>`javascript\nconst { CellsApi } = require('asposecellscloud');\nconst api = new CellsApi();\napi.getWorksheetAutoFilter('Book1.xlsx', 'Sheet1', { folder: 'MyFolder', storageName: 'MyStorage' })\n  .then(resp => console.log(resp.autoFilter))\n  .catch(err => console.error(err));\n`</details>                                                  |
-| **PHP**     | <details><summary>Show code</summary>`php\nuse Aspose\Cells\CellsApi;\nuse Aspose\Cells\Models\AutoFilterResponse;\n\n$api = new CellsApi();\n$response = $api->getWorksheetAutoFilter('Book1.xlsx', 'Sheet1', 'MyFolder', 'MyStorage');\nprint_r($response->getAutoFilter());\n`</details>                                                                                               |
-| **Ruby**    | <details><summary>Show code</summary>`ruby\nrequire 'aspose_cells_cloud'\napi = AsposeCellsCloud::CellsApi.new\nresp = api.get_worksheet_auto_filter('Book1.xlsx', 'Sheet1', folder: 'MyFolder', storage_name: 'MyStorage')\nputs resp.auto_filter\n`</details>                                                                                                                           |
-| **Go**      | <details><summary>Show code</summary>`go\nimport (\n    \"fmt\"\n    \"github.com/aspose-cells-cloud/aspose-cells-cloud-go/v3\"\n)\n\napi := asposecellscloud.NewAPIClient()\nresp, _, err := api.CellsApi.GetWorksheetAutoFilter(context.Background(), \"Book1.xlsx\", \"Sheet1\", \"MyFolder\", \"MyStorage\")\nif err != nil { panic(err) }\nfmt.Println(resp.AutoFilter)\n`</details> |
-| **Perl**    | <details><summary>Show code</summary>`perl\nuse AsposeCellsCloud::CellsApi;\nmy $api = AsposeCellsCloud::CellsApi->new();\nmy $resp = $api->get_worksheet_auto_filter(name=>'Book1.xlsx', sheet_name=>'Sheet1', folder=>'MyFolder', storage_name=>'MyStorage');\nprint $resp->{autoFilter};\n`</details>                                                                                  |
-
-For a complete list of SDKs and installation instructions, visit the [Aspose.Cells Cloud GitHub repository](https://github.com/aspose-cells-cloud).
-
----
 
 ### Use Aspose.Cells Cloud SDKs
 

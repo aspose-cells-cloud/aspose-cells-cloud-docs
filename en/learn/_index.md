@@ -5,7 +5,7 @@ url: /learn
 aliases: [/learn-aspose-cells-cloud]
 linktitle: "Learn"
 description: "Aspose.Cells Cloud: Convert Excel to PDF/CSV, automate spreadsheets via REST API and SDKs—no local Excel required."
-weight: 15
+weight: 70
 ArticleTitle: "Aspose.Cells Cloud API Tutorial: Convert Excel to PDF, CSV in 5 Minutes"
 keywords: "Aspose.Cells Cloud, Excel API, spreadsheet automation, convert XLSX to PDF, REST API Excel, Python SDK Excel, .NET Excel API, Java Excel SDK, Node.js Excel API, cURL Excel conversion"
 ---
@@ -22,16 +22,16 @@ A REST-based service for programmatically creating, editing, converting, and ana
 
 Developers building spreadsheet automation solutions – from beginners to enterprise teams. Create, edit, convert, and analyze XLSX/CSV files via REST APIs without Excel installations.
 
-## How to Use Aspose.Cells Cloud API in Two Steps  
+## How to Use Aspose.Cells Cloud API in Two Steps
 
-### Zero to Automation in 5 Minutes  
+### Zero to Automation in 5 Minutes
 
-### Step 1: Get API Credentials  
+### Step 1: Get API Credentials
 
-1. [Sign up for free](https://dashboard.aspose.cloud/signup)  
-2. [Create application](https://dashboard.aspose.cloud/applications) → Copy `Client ID` & `Client Secret`  
+1. [Sign up for free](https://dashboard.aspose.cloud/signup)
+2. [Create application](https://dashboard.aspose.cloud/applications) → Copy `Client ID` & `Client Secret`
 
-### Step 2: Execute Your First API Call  
+### Step 2: Execute Your First API Call
 
 ```bash
 # Get access token via cURL
@@ -47,7 +47,7 @@ curl -v "https://api.aspose.cloud/v4.0/cells/convert/spreadsheet?format=PDF" \
 -F "File=@input.xlsx"
 ```
 
-### Execute Spreadsheet API Using SDK  
+### Execute Spreadsheet API Using SDK
 
 ```python
 # Python SDK example

@@ -10,8 +10,6 @@ description: "Aggregate Excel cells by background or font color (sum, count, ave
 weight: 100
 ---
 
-## Overview
-
 The API can perform data calculations based on cell **color**. It can sum, count, average, and also find the maximum and minimum values in an Excel spreadsheet according to the fill or font color of the cells.
 
 | Calculate Operation | Description                                                  |

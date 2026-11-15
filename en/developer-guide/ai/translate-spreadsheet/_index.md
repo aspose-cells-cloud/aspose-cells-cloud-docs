@@ -8,9 +8,8 @@ keywords: "Aspose.Cells Cloud, translate spreadsheet API, AI translation, spread
 weight: 100
 ArticleTitle: "Aspose.Cells Cloud Translate Spreadsheet API – AI-Powered Multi-Language Translation"
 ---
-The **TranslateSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/ai/translate/spreadsheet`) in Aspose.Cells Cloud translates all textual content in an uploaded Excel workbook to a specified target language using AI-powered neural translation models, preserving cell formatting, formulas, charts, pivot tables, conditional formatting, and multi-sheet structure; it accepts input formats such as XLS, XLSX, XLSM, CSV, and ODS, and requires the target language code and the spreadsheet file as parameters.
 
-> **Note:** This API is available in Aspose.Cells Cloud v4.0+, released in March 2024.
+The **TranslateSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/ai/translate/spreadsheet`) in Aspose.Cells Cloud translates all textual content in an uploaded Excel workbook to a specified target language using AI-powered neural translation models, preserving cell formatting, formulas, charts, pivot tables, conditional formatting, and multi-sheet structure; it accepts input formats such as XLS, XLSX, XLSM, CSV, and ODS, and requires the target language code and the spreadsheet file as parameters.
 
 ## The Translate Spreadsheet Web API
 
@@ -24,12 +23,12 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| Spreadsheet | File | FormData | Upload spreadsheet file. |
-| targetLanguage | String | Query | The target language code for translation (e.g., "es", "fr", "de"). |
-| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password | String | Query | The password for opening spreadsheet file. |
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                                                                                                             |
+| -------------- | ------ | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet    | File   | FormData                   | Upload spreadsheet file.                                                                                                                |
+| targetLanguage | String | Query                      | The target language code for translation (e.g., "es", "fr", "de").                                                                      |
+| region         | String | Query                      | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password       | String | Query                      | The password for opening spreadsheet file.                                                                                              |
 
 ### Response
 
@@ -55,13 +54,13 @@ Content-Disposition: attachment; filename="result"
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | Invalid target language parameter. |
-| 401 | Unauthorized | Authentication failed for translation service. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Server Error | Translation service unavailable or spreadsheet processing error. |
+| Code | Meaning           | Description                                                      |
+| ---- | ----------------- | ---------------------------------------------------------------- |
+| 200  | OK                | The request completed successfully.                              |
+| 400  | Bad Request       | Invalid target language parameter.                               |
+| 401  | Unauthorized      | Authentication failed for translation service.                   |
+| 413  | Payload Too Large | The uploaded file exceeds the allowed size limit.                |
+| 500  | Server Error      | Translation service unavailable or spreadsheet processing error. |
 
 **Successful Response (200 OK)**
 
@@ -91,7 +90,11 @@ Standard Aspose.Cells Cloud error model:
 - **Multi-Sheet Automation** – Processes all worksheets in a single request—no per-sheet loops required.
 - **Cloud-Native Integration** – Seamlessly embeds into CI/CD pipelines, serverless functions (e.g., AWS Lambda), or enterprise back-ends via REST or SDK.
 
-## SDK Integration
+## How to Use the Translate Spreadsheet API with SDKs?
+
+### Translate Spreadsheet API Specification
+
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/AI/TranslateSpreadsheet" rel="noopener noreferrer">Translate Spreadsheet API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Using Aspose.Cells Cloud SDKs
 
@@ -185,17 +188,3 @@ os.WriteFile("translated.xlsx", response, 0644)
 {{</highlight>}}  
 {{</tab>}}  
 {{< /tabs >}}
-
-## API Specification & Testing
-
-- **Interactive Swagger UI**: Test the API directly in your browser using the [Translate Spreadsheet OpenAPI spec](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/AI/TranslateSpreadsheet).
-- **Postman Collection**: Import the [Aspose.Cells Cloud Postman collection](https://github.com/aspose-cells-cloud/aspose-cells-cloud-postman) for reusable request templates.
-
-## Troubleshooting
-
-| Issue                                           | Resolution                                                                                                                                 |
-| :---------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------- |
-| `400 Bad Request` with "Invalid targetLanguage" | Verify language code against [supported languages](https://docs.microsoft.com/en-us/azure/cognitive-services/translator/language-support). |
-| `401 Unauthorized`                              | Regenerate JWT token using valid `Client ID`/`Secret` and ensure it hasn’t expired (typically 24h).                                        |
-| `500 Internal Server Error`                     | Check [Service Health Dashboard](https://status.aspose.cloud/) for translation service outages.                                            |
-| Formatted numbers/dates misaligned              | Specify `region` parameter (e.g., `"US"` or `"EU"`) to enforce locale-aware formatting.                                                    |

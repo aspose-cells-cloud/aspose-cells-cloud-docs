@@ -9,6 +9,7 @@ keywords: "Aspose.Cells, remove characters, Excel API, text cleaning, spreadshee
 description: "Remove custom characters, sets, or substrings from Excel cells using Aspose.Cells Cloud API for precise data cleaning."
 weight: 100
 ---
+
 The **RemoveCharacters** API (`PUT https://api.aspose.cloud/v4.0/cells/content/remove/characters`) in Aspose.Cells Cloud enables precise deletion of user-defined characters, predefined symbol sets (such as non-printing characters, letters, digits, punctuation, or symbols), or substrings from a specified Excel cell range while preserving formulas, formatting, and data validation; it supports multiple removal modes including `CustomChars`, `CharacterSet`, and `Substring`, with optional case sensitivity and locale-aware processing.
 
 ## Overview
@@ -46,19 +47,19 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| Spreadsheet | File | FormData | Upload spreadsheet file. |
-| removeTextMethod | String | Query | Specify the removal of text method type. |
-| characterSets | String | Query | Specify the character sets. |
-| removeCustomValue | String | Query | Specify the remove custom value. |
-| caseSensitive | Boolean | Query | affects `Substring` mode and `CustomChars` when enabled |
-| worksheet | String | Query | Specify the worksheet of spreadsheet. |
-| range | String | Query | Specify the worksheet range of spreadsheet. |
-| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
-| outStorageName | String | Query | Output file Storage Name. |
-| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password | String | Query | The password for opening spreadsheet file. |
+| Parameter Name    | Type    | Path/Query String/HTTPBody | Description                                                                                                                             |
+| ----------------- | ------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet       | File    | FormData                   | Upload spreadsheet file.                                                                                                                |
+| removeTextMethod  | String  | Query                      | Specify the removal of text method type.                                                                                                |
+| characterSets     | String  | Query                      | Specify the character sets.                                                                                                             |
+| removeCustomValue | String  | Query                      | Specify the remove custom value.                                                                                                        |
+| caseSensitive     | Boolean | Query                      | affects `Substring` mode and `CustomChars` when enabled                                                                                 |
+| worksheet         | String  | Query                      | Specify the worksheet of spreadsheet.                                                                                                   |
+| range             | String  | Query                      | Specify the worksheet range of spreadsheet.                                                                                             |
+| outPath           | String  | Query                      | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
+| outStorageName    | String  | Query                      | Output file Storage Name.                                                                                                               |
+| region            | String  | Query                      | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password          | String  | Query                      | The password for opening spreadsheet file.                                                                                              |
 
 ### Response
 
@@ -82,12 +83,16 @@ Content-Type: application/octet-stream
 Content-Disposition: attachment; filename="result"
 ```
 
-### Error Codes
+**HTTP Status Codes**
 
-- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized** – Invalid access token, or incorrect client ID and secret.
-- **404 Not Found** – The spreadsheet file is not accessible.
-- **500 Server Error** – The spreadsheet encountered an anomaly while obtaining calculation data.
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                        |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## Where Should You Use the Remove Characters API?
 

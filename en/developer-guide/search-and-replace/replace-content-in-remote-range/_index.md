@@ -8,6 +8,7 @@ keywords: "replace text remote excel range, Aspose.Cells Cloud API, find and rep
 weight: 100
 ArticleTitle: "Replace Text in Remote Excel Range via Aspose.Cells Cloud API"
 ---
+
 The **ReplaceContentInRemoteRange** API (`PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{cellArea}/replace/content`) in Aspose.Cells Cloud v4.0 enables precise, bulk text replacement within a specified cell range of a remote Excel file stored in cloud storage—such as AWS S3, Azure Blob, or Google Cloud Storage—without requiring the file to be downloaded locally.
 
 ---
@@ -61,18 +62,16 @@ A successful request returns a `200 OK` status with the following JSON body:
 
 The `CellsCloudResponse` object confirms successful execution. The API does **not** return the count or locations of replacements—only success confirmation.
 
-### Error Codes
+**HTTP Status Codes**
 
-| Code | Message      | Cause                                                                         |
-| ---- | ------------ | ----------------------------------------------------------------------------- |
-| 400  | Bad Request  | Invalid URL, malformed parameters, or unsupported file format.                |
-| 401  | Unauthorized | Missing, expired, or invalid access token.                                    |
-| 404  | Not Found    | Workbook, worksheet, or specified range does not exist.                       |
-| 500  | Server Error | Internal failure during processing (e.g., file corruption, permission error). |
-
----
-
-### HTTP Request
+| Code | Meaning           | Description                                                   |
+| ---- | ----------------- | ------------------------------------------------------------- |
+| 200  | OK                | The request completed successfully.                           |
+| 400  | Bad Request       | Invalid url.                                                  |
+| 401  | Unauthorized      | Authentication has failed, or no credentials were provided.   |
+| 404  | Not Found         | Source file not accessible.                                   |
+| 413  | Payload Too Large | The uploaded file exceeds the allowed size limit.             |
+| 500  | Server Error      | The spreadsheet has encountered an anomaly in obtaining data. |
 
 ## Use Cases
 
@@ -80,8 +79,6 @@ The `CellsCloudResponse` object confirms successful execution. The API does **no
 - **Batch Data Standardization**: Standardize text across multiple Excel files in cloud storage (e.g., region-specific currency or unit labels).
 - **Cross-Region Deployment**: Synchronize content consistency for Excel files deployed across regions while respecting locale settings.
 - **Automated Reporting Pipelines**: Integrate into CI/CD workflows to inject runtime values into Excel reports stored in object storage.
-
----
 
 ## How to Use the Replace Content in Remote Range API with SDKs?
 

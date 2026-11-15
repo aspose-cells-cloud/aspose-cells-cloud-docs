@@ -14,6 +14,7 @@ tags:
   ["excel", "range-to-image", "rest-api", "image-conversion", "aspose-cells"]
 ArticleTitle: "Convert Excel Range to Image with Aspose.Cells Cloud API"
 ---
+
 The **ConvertRangeToImage** API (`PUT https://api.aspose.cloud/v4.0/cells/convert/range/image`) in Aspose.Cells Cloud enables developers to convert a specified cell range—such as A1:C10—from a local Excel file directly into image formats including PNG, JPEG, SVG, TIFF, or BMP, without uploading the full workbook to cloud storage; the operation reads the file from the local system, performs conversion server-side, and returns the resulting image, reducing cloud resource usage and simplifying workflow.
 
 ## The Convert Range to Image Web API
@@ -28,20 +29,20 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| Spreadsheet | File | FormData | Upload spreadsheet file. |
-| worksheet | String | Query | worksheet name of spreadsheet. |
-| range | String | Query | cell area. e.g. A1:C10 |
-| format | String | Query | file format. e.g. png, svg, tiff |
-| printHeadings | Boolean | Query | Represents if row and column headings are printed with this page. |
-| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
-| outStorageName | String | Query | Output file Storage Name. |
-| fontsLocation | String | Query | Use Custom fonts. |
-| AutoRowsFit | Boolean | Query | (Optional) Autofits all rows in worksheets. |
-| AutoColumnsFit | Boolean | Query | (Optional) Autofits all columns in worksheets. |
-| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password | String | Query | The password for opening spreadsheet file. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                                                                                                             |
+| -------------- | ------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet    | File    | FormData                   | Upload spreadsheet file.                                                                                                                |
+| worksheet      | String  | Query                      | worksheet name of spreadsheet.                                                                                                          |
+| range          | String  | Query                      | cell area. e.g. A1:C10                                                                                                                  |
+| format         | String  | Query                      | file format. e.g. png, svg, tiff                                                                                                        |
+| printHeadings  | Boolean | Query                      | Represents if row and column headings are printed with this page.                                                                       |
+| outPath        | String  | Query                      | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
+| outStorageName | String  | Query                      | Output file Storage Name.                                                                                                               |
+| fontsLocation  | String  | Query                      | Use Custom fonts.                                                                                                                       |
+| AutoRowsFit    | Boolean | Query                      | (Optional) Autofits all rows in worksheets.                                                                                             |
+| AutoColumnsFit | Boolean | Query                      | (Optional) Autofits all columns in worksheets.                                                                                          |
+| region         | String  | Query                      | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password       | String  | Query                      | The password for opening spreadsheet file.                                                                                              |
 
 > **Note**: All query parameter names use camelCase (`autoRowsFit`, `autoColumnsFit`, etc.) to match the actual API contract.
 
@@ -91,7 +92,26 @@ Save the response body to a file (e.g., `report.png`) to view the rendered image
 | 413  | Payload Too Large     | Uploaded file exceeds size limit.                                             |
 | 500  | Internal Server Error | Unexpected server error during conversion.                                    |
 
-## How to Use the Convert Range to Image API
+## Key Features and Benefits
+
+- **Cloud-Native Conversion**: Convert local spreadsheets directly in the cloud without storing them in cloud storage.
+- **Reduced Resource Burden**: Eliminates the need to upload full workbooks — only the required range is processed.
+- **Simplified Workflow**: Direct conversion from local files to image format via cloud services, with no intermediate steps.
+
+## How to Use the Convert Range to Image API with SDKs?
+
+### Convert Range to Image API Specification
+
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertRangeToImage" rel="noopener noreferrer">Convert Range to Image API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
+
+Explore the complete list of Aspose.Cells Cloud SDKs in our [GitHub repository](https://github.com/aspose-cells-cloud).
+
+The following code examples illustrate how to call the API using various SDKs:
+
+- [C#](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet)
+- [Java](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java)
+- [Python](https://github.com/aspose-cells-cloud/aspose-cells-cloud-python)
+- [Node.js](https://github.com/aspose-cells-cloud/aspose-cells-cloud-node)
 
 ### Using cURL
 
@@ -120,39 +140,6 @@ Content-Length: 8423
 {{< /tab >}}
 
 {{< /tabs >}}
-
-## Key Features and Benefits
-
-- **Cloud-Native Conversion**: Convert local spreadsheets directly in the cloud without storing them in cloud storage.
-- **Reduced Resource Burden**: Eliminates the need to upload full workbooks — only the required range is processed.
-- **Simplified Workflow**: Direct conversion from local files to image format via cloud services, with no intermediate steps.
-
-## OpenAPI Specification
-
-The publicly accessible [OpenAPI Specification](https://reference.aspose.cloud/cells/openapi/v4) outlines this API endpoint, enabling REST interactions directly from a web browser or CLI tools.
-
-## See Also
-
-- [Convert Entire Workbook to Image](/convert-workbook-to-image/)
-- [Convert Excel to PDF](/convert-excel-to-pdf/)
-- [Excel to HTML Conversion](/excel-to-html/)
-
-## How to Use the Convert Range to Image API with SDKs?
-
-### Convert Range to Image API Specification
-
-The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertRangeToImage" rel="noopener noreferrer">Convert Range to Image API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
-
-Explore the complete list of Aspose.Cells Cloud SDKs in our [GitHub repository](https://github.com/aspose-cells-cloud).
-
-The following code examples illustrate how to call the API using various SDKs:
-
-- [C#](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet)
-- [Java](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java)
-- [Python](https://github.com/aspose-cells-cloud/aspose-cells-cloud-python)
-- [Node.js](https://github.com/aspose-cells-cloud/aspose-cells-cloud-node)
-
-> **Tip**: If loading from Gist is blocked, download the examples directly from the repository.
 
 ### Use Aspose.Cells Cloud SDKs
 

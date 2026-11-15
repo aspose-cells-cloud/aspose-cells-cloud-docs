@@ -54,14 +54,16 @@ The API returns a JSON array containing a reference to the processed file.
 ]
 ```
 
-### Error Codes
+**HTTP Status Codes**
 
-| Code    | Description                                                             |
-| ------- | ----------------------------------------------------------------------- |
-| **400** | Invalid URL, malformed parameters, or missing `Spreadsheet` field.      |
-| **401** | Missing, expired, or invalid JWT token.                                 |
-| **404** | Source file not found in cloud storage (if `outPath` specifies a path). |
-| **500** | Server-side error during processing (e.g., file corruption).            |
+| Code | Meaning           | Description                                                   |
+| ---- | ----------------- | ------------------------------------------------------------- |
+| 200  | OK                | The request completed successfully.                           |
+| 400  | Bad Request       | Invalid url.                                                  |
+| 401  | Unauthorized      | Authentication has failed, or no credentials were provided.   |
+| 404  | Not Found         | Source file not accessible.                                   |
+| 413  | Payload Too Large | The uploaded file exceeds the allowed size limit.             |
+| 500  | Server Error      | The spreadsheet has encountered an anomaly in obtaining data. |
 
 ## Where should we use the Delete Spreadsheet Blank Rows API?
 

@@ -10,6 +10,7 @@ description: "Export Excel worksheet to PDF, PNG, SVG, CSV via Aspose.Cells Clou
 weight: 100
 ArticleTitle: "Export Worksheet to PDF, PNG, SVG, CSV via Aspose.Cells Cloud API"
 ---
+
 The **ExportWorksheetAsFormat** API (`GET https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}`) in Aspose.Cells Cloud converts a specific worksheet from a cloud-stored workbook directly into a target format—such as PDF, PNG, or SVG—without requiring local download, enabling efficient, server-side export of structured spreadsheet data.
 
 ## The Export Worksheet as Format Web API
@@ -28,20 +29,20 @@ The Aspose.Cells Cloud APIs require <a href="https://docs.aspose.cloud/cells/get
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | (Required) The name of the workbook file to be retrieved. |
-| worksheet | String | Path | - |
-| format | String | Query | (Required) The desired pdf or image format  (e.g., "png", "Pdf", "svg"). |
-| folder | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
-| storageName | String | Query | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted. |
-| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
-| outStorageName | String | Query | Output file Storage Name. |
-| fontsLocation | String | Query | Use Custom fonts. |
-| AutoRowsFit | Boolean | Query | (Optional) Autofits all rows in worksheets. |
-| AutoColumnsFit | Boolean | Query | (Optional) Autofits all columns in worksheets. |
-| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password | String | Query | The password for opening spreadsheet file. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                                                                                                             |
+| -------------- | ------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| name           | String  | Path                       | (Required) The name of the workbook file to be retrieved.                                                                               |
+| worksheet      | String  | Path                       | -                                                                                                                                       |
+| format         | String  | Query                      | (Required) The desired pdf or image format (e.g., "png", "Pdf", "svg").                                                                 |
+| folder         | String  | Query                      | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
+| storageName    | String  | Query                      | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.                                       |
+| outPath        | String  | Query                      | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
+| outStorageName | String  | Query                      | Output file Storage Name.                                                                                                               |
+| fontsLocation  | String  | Query                      | Use Custom fonts.                                                                                                                       |
+| AutoRowsFit    | Boolean | Query                      | (Optional) Autofits all rows in worksheets.                                                                                             |
+| AutoColumnsFit | Boolean | Query                      | (Optional) Autofits all columns in worksheets.                                                                                          |
+| region         | String  | Query                      | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password       | String  | Query                      | The password for opening spreadsheet file.                                                                                              |
 
 ### Response
 
@@ -67,13 +68,13 @@ Content-Disposition: attachment; filename="result"
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | Invalid url. |
-| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
-| 404 | Not Found | Source file not accessible. |
-| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining conversion data. |
+| Code | Meaning      | Description                                                              |
+| ---- | ------------ | ------------------------------------------------------------------------ |
+| 200  | OK           | The request completed successfully.                                      |
+| 400  | Bad Request  | Invalid url.                                                             |
+| 401  | Unauthorized | Authentication has failed, or no credentials were provided.              |
+| 404  | Not Found    | Source file not accessible.                                              |
+| 500  | Server Error | The spreadsheet has encountered an anomaly in obtaining conversion data. |
 
 Returns a binary file stream of the requested format.
 

@@ -18,6 +18,7 @@ categories:
 weight: 100
 ArticleTitle: "Delete Blank Columns from Excel with Aspose.Cells Cloud API v4"
 ---
+
 The **RemoveSpreadsheetBlankColumns** API (`PUT https://api.aspose.cloud/v4.0/cells/remove/blank-columns`) in Aspose.Cells Cloud v4.0 deletes all blank columns—those where every cell is empty of data, formulas, comments, charts, or objects—from an uploaded Excel workbook, improving file size, rendering speed, and downstream processing accuracy; the operation scans all worksheets server-side and returns a cleaned workbook via a `ResponseFile` response.
 
 > **Note**: Aspose.Cells Cloud v4 is stable and production-ready. For early access to v5 features, contact [support@aspose.cloud](mailto:support@aspose.cloud).
@@ -122,9 +123,18 @@ Returns the cleaned workbook as a binary stream (or saves to cloud storage if `o
 - **Batch Processing**: Handle hundreds of files via scheduled cloud workflows.
 - **Cost-Efficient**: Pay only for processed files (see [pricing](https://purchase.aspose.cloud/pricing)).
 
-## Code Examples
+## How to Use the Remove Spreadsheet Blank Columns API with SDKs?
 
-### C# (.NET)
+### Remove Spreadsheet Blank Columns API Specification
+
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Transform/RemoveSpreadsheetBlankColumns" rel="noopener noreferrer">Remove Spreadsheet Blank Columns API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
+
+### Use Aspose.Cells Cloud SDKs
+
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
+
+#### C# (.NET)
 
 ```csharp
 var cellsApi = new CellsApi(clientId, clientSecret);
@@ -135,7 +145,7 @@ var response = cellsApi.RemoveSpreadsheetBlankColumns(
 File.WriteAllBytes("output.xlsx", response);
 ```
 
-### Java
+#### Java
 
 ```java
 CellsApi cellsApi = new CellsApi(clientId, clientSecret);
@@ -148,7 +158,7 @@ File response = cellsApi.removeSpreadsheetBlankColumns(
 Files.copy(response.toPath(), Paths.get("output.xlsx"), StandardCopyOption.REPLACE_EXISTING);
 ```
 
-### Python
+#### Python
 
 ```python
 from asposecellscloud.api import CellsApi
@@ -163,7 +173,7 @@ with open('output.xlsx', 'wb') as f:
     f.write(response.content)
 ```
 
-### Node.js (TypeScript)
+#### Node.js (TypeScript)
 
 ```typescript
 const cellsApi = new CellsApi(clientId, clientSecret);
@@ -173,14 +183,3 @@ const response = await cellsApi.removeSpreadsheetBlankColumns(
 );
 fs.writeFileSync("output.xlsx", response.body as Buffer);
 ```
-
-## How to Use the Remove Spreadsheet Blank Columns API with SDKs?
-
-### Remove Spreadsheet Blank Columns API Specification
-
-The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Transform/RemoveSpreadsheetBlankColumns" rel="noopener noreferrer">Remove Spreadsheet Blank Columns API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
-
-### Use Aspose.Cells Cloud SDKs
-
-Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
-Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

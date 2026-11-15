@@ -10,6 +10,7 @@ keywords: "Aspose.Cells, GetStructure, spreadsheet, structure"
 description: "Retrieve the structural metadata of a remote Excel workbook, including worksheets, tables, pivot tables, charts, shapes, and other core information."
 weight: 100
 ---
+
 The **GetStructureInRemoteSpreadsheet** API (`GET https://api.aspose.cloud/v4.0/cells/{name}/structure`) in Aspose.Cells Cloud retrieves a structured JSON representation of an Excel workbook’s core elements—including metadata, worksheets, tables, pivot tables, charts, and shapes—by converting them into a JObject, enabling efficient data export, API integration, and logging without requiring local file processing.
 
 ## The Get Structure in Remote Spreadsheet Web API
@@ -24,13 +25,13 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | - |
-| folder | String | Query | - |
-| storageName | String | Query | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted. |
-| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password | String | Query | The password for opening spreadsheet file. |
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                                                                                                             |
+| -------------- | ------ | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| name           | String | Path                       | -                                                                                                                                       |
+| folder         | String | Query                      | -                                                                                                                                       |
+| storageName    | String | Query                      | (Optional) The name of the storage if using custom cloud storage. Use default storage if omitted.                                       |
+| region         | String | Query                      | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password       | String | Query                      | The password for opening spreadsheet file.                                                                                              |
 
 ### Response
 
@@ -54,21 +55,13 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
-
-**Response Status Codes**
-
-### Request Body Parameter
-
-| Parameter Name | Type  | Description |
-| -------------- | ----- | ----------- |
-| [TBD]          | [TBD] | [TBD]       |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## How to Use the Get Structure in Remote Spreadsheet API with SDKs?
 
@@ -121,8 +114,6 @@ curl -v "https://api.aspose.cloud/v4.0/cells/{name}/structure?folder=myFolder&st
 {{< /tab >}}
 
 {{< /tabs >}}
-
-### Use Aspose Cells Cloud SDKs
 
 ### Use Aspose.Cells Cloud SDKs
 

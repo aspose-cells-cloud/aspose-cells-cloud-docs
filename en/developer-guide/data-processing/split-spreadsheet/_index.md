@@ -8,6 +8,7 @@ weight: 100
 ArticleTitle: "Split Excel Workbook Locally with Aspose.Cells Cloud API – No Upload, 30+ Formats"
 keywords: "Aspose.Cells Cloud, split Excel workbook, local Excel splitting, Excel to PDF split, Excel API split, split worksheet to files, Excel REST API, cURL split Excel, Aspose.Cells SDK"
 ---
+
 The **SplitSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/split/spreadsheet`) in Aspose.Cells Cloud v4.0 splits a locally uploaded Excel workbook into multiple output files on the server side, without requiring cloud storage—enabling users to export each worksheet or specified range to formats such as XLSX, CSV, PDF, or HTML by defining source sheet indices (`from`, `to`) and target `outFormat`.
 
 > **Note**: While processing occurs on Aspose’s infrastructure, _no files are persisted to cloud storage_. The operation is fully local to your session — your data remains secure and unuploaded to persistent storage.
@@ -30,17 +31,17 @@ Authorization: Bearer {access_token}
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| Spreadsheet | File | FormData | Upload spreadsheet file. |
-| from | Integer | Query | Begin worksheet index. |
-| to | Integer | Query | End worksheet index. |
-| outFormat | String | Query | The out file format. |
-| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
-| outStorageName | String | Query | Output file Storage Name. |
-| fontsLocation | String | Query | Use Custom fonts. |
-| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password | String | Query | The password for opening spreadsheet file. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                                                                                                             |
+| -------------- | ------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet    | File    | FormData                   | Upload spreadsheet file.                                                                                                                |
+| from           | Integer | Query                      | Begin worksheet index.                                                                                                                  |
+| to             | Integer | Query                      | End worksheet index.                                                                                                                    |
+| outFormat      | String  | Query                      | The out file format.                                                                                                                    |
+| outPath        | String  | Query                      | (Optional) The folder path where the workbook is stored. The default is null.                                                           |
+| outStorageName | String  | Query                      | Output file Storage Name.                                                                                                               |
+| fontsLocation  | String  | Query                      | Use Custom fonts.                                                                                                                       |
+| region         | String  | Query                      | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| password       | String  | Query                      | The password for opening spreadsheet file.                                                                                              |
 
 ---
 
@@ -68,14 +69,14 @@ Content-Disposition: attachment; filename="result"
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | Invalid url. |
-| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
-| 404 | Not Found | Source file not accessible. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining data. |
+| Code | Meaning           | Description                                                   |
+| ---- | ----------------- | ------------------------------------------------------------- |
+| 200  | OK                | The request completed successfully.                           |
+| 400  | Bad Request       | Invalid url.                                                  |
+| 401  | Unauthorized      | Authentication has failed, or no credentials were provided.   |
+| 404  | Not Found         | Source file not accessible.                                   |
+| 413  | Payload Too Large | The uploaded file exceeds the allowed size limit.             |
+| 500  | Server Error      | The spreadsheet has encountered an anomaly in obtaining data. |
 
 ### PUT `/cells/split/spreadsheet`
 
@@ -92,8 +93,6 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/split/spreadsheet?outFormat=PDF
 
 ✅ **Response**: ZIP archive containing one file per worksheet (e.g., `Sheet1.pdf`, `Sheet2.pdf`, etc.)
 
----
-
 ## Response
 
 | Status Code | Content-Type               | Description                                                  |
@@ -103,20 +102,6 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/split/spreadsheet?outFormat=PDF
 
 ✅ **On success**, each worksheet in the range (`from`–`to`) is exported as a separate file in the specified format and packaged into a ZIP archive.  
 ✅ **File naming**: `Sheet{index}.{ext}` (e.g., `Sheet0.pdf`, `Sheet1.csv`).
-
----
-
-## Error Handling
-
-| Code  | Meaning               | Cause & Resolution                                                                                              |
-| ----- | --------------------- | --------------------------------------------------------------------------------------------------------------- |
-| `400` | Bad Request           | Invalid `from`/`to` index (e.g., negative, `from > to`), unsupported file type, or missing `Spreadsheet` field. |
-| `401` | Unauthorized          | Missing, expired, or invalid JWT token. Re-authenticate and retry.                                              |
-| `404` | Not Found             | Source file not found in temporary session (expired upload or malformed FormData).                              |
-| `413` | Payload Too Large     | File exceeds 2 GB limit. Compress or split externally first.                                                    |
-| `500` | Internal Server Error | Unexpected processing failure (e.g., corrupted file). Verify file integrity.                                    |
-
----
 
 ## Use Cases
 
@@ -128,8 +113,6 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/split/spreadsheet?outFormat=PDF
 | **Multi-Format Output**         | Simultaneously export the same sheets to PDF, CSV, and JSON for downstream systems.                          |
 | **Template-Based Splitting**    | Use templates to define split rules (e.g., split by column value → one file per region).                     |
 | **Preprocessing for DB Load**   | Split large Excel files into clean CSV chunks ready for bulk database import.                                |
-
----
 
 ## Why Use Aspose.Cells Cloud Split API?
 
@@ -148,57 +131,16 @@ Stateless architecture scales with demand. No data is stored after processing.
 ✅ **Pay-per-Use Pricing**  
 No infrastructure costs — only pay for API calls.
 
----
-
-## API Diagram
-
-```plaintext
-┌──────────────┐
-│ Local File   │
-│ (e.g., XLSX) │
-└──────┬───────┘
-       │ Upload via FormData
-       ▼
-┌──────────────────────────────────────────┐
-│ Aspose.Cells Cloud (Local-Processing Mode) │
-│  • File processed in-memory              │
-│  • No storage required                   │
-│  • Split per `from`/`to` & `outFormat`   │
-└───────────────┬──────────────────────────┘
-                │ Return ZIP of split files
-                ▼
-┌──────────────────┐
-│ Output Files     │
-│ (PDF/CSV/JSON,…) │
-└──────────────────┘
-```
-
-> **Alt text**: _Local-only split flow: No data leaves your environment or cloud storage._
-
----
-
-## Related APIs
-
-- [Merge Excel Files](/merge-excel/)
-- [Convert Excel to PDF/HTML/JSON](/convert-excel/)
-- [Protect & Unprotect Workbooks](/protect-excel/)
-- [Extract Worksheet Images](/extract-images/)
-
----
-
-## References
-
-- [API Reference](https://reference.aspose.cloud/cells/#/DataProcessingController/SplitSpreadsheet)
-- [SDK Documentation & Examples](https://github.com/aspose-cells-cloud)
-- [Authentication Guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)
-
 ## How to Use the Split Spreadsheet API with SDKs?
 
 ### Split Spreadsheet API Specification
 
 The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/DataProcessing/SplitSpreadsheet" rel="noopener noreferrer">Split Spreadsheet API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
-Using an SDK simplifies integration and handles token management, multipart uploads, and error parsing automatically. Below are verified examples for major languages — all pinned to version `v24.5`.
+### Use Aspose.Cells Cloud SDKs
+
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 <details>
 <summary><strong>C#</strong> (Click to expand)</summary>
@@ -344,10 +286,3 @@ result, _, err := api.SplitSpreadsheet(
 > 🔗 View full source on GitHub:  
 > [`aspose-cells-cloud-gists/Example40_SplitLocalFile.cs@v24.5`](https://github.com/aspose-cells-cloud-gists/8a5b324fdf3e574dbd747c1a1e24b05d/blob/v24.5/Example40_SplitLocalFile.cs)  
 > _(Replace `.cs` with `.java`, `.php`, `.py`, etc. for other languages)_
-
----
-
-### Use Aspose.Cells Cloud SDKs
-
-Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
-Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

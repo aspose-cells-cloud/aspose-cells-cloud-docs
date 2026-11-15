@@ -10,6 +10,7 @@ keywords: "Aspose.Cells, Split Table, API"
 description: "API to split a table in a spreadsheet by column values."
 weight: 100
 ---
+
 The **SplitTable** API (`PUT https://api.aspose.cloud/v4.0/cells/split/table`) in Aspose.Cells Cloud enables splitting an Excel table into multiple sheets or workbooks based on distinct values in a specified column. By grouping rows according to the split column’s unique values, it processes each group as a separate data unit, supporting export either as individual workbooks or new worksheets within the same workbook, with optional ZIP packaging for multiple files—ideal for local file splitting and cloud-based processing without requiring pre-uploaded storage.
 
 ## The Split Table Web API
@@ -24,21 +25,21 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| Spreadsheet | File | FormData | Upload spreadsheet file. |
-| worksheet | String | Query | Worksheet containing the table. |
-| tableName | String | Query | Data table that needs to be split. |
-| splitColumnName | String | Query | Column name to split by. |
-| saveSplitColumn | Boolean | Query | Whether to keep the data in the split column. |
-| splitRowNumber | Integer | Query | - |
-| toNewWorkbook | Boolean | Query | Export destination control: true - Creates new workbook files containing the split data; false - Adds a new worksheet to the current workbook. |
-| toMultipleFiles | Boolean | Query | true - Exports table data as **multiple separate files** (returned as ZIP archive);false - Stores all data in a **single file** with multiple sheets. Default: false. |
-| outPath | String | Query | (Optional) The folder path where the workbook is stored. The default is null. |
-| outStorageName | String | Query | Output file Storage Name. |
-| fontsLocation | String | Query | Use Custom fonts. |
-| region | String | Query | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
-| password | String | Query | The password for opening spreadsheet file. |
+| Parameter Name  | Type    | Path/Query String/HTTPBody | Description                                                                                                                                                           |
+| --------------- | ------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet     | File    | FormData                   | Upload spreadsheet file.                                                                                                                                              |
+| worksheet       | String  | Query                      | Worksheet containing the table.                                                                                                                                       |
+| tableName       | String  | Query                      | Data table that needs to be split.                                                                                                                                    |
+| splitColumnName | String  | Query                      | Column name to split by.                                                                                                                                              |
+| saveSplitColumn | Boolean | Query                      | Whether to keep the data in the split column.                                                                                                                         |
+| splitRowNumber  | Integer | Query                      | -                                                                                                                                                                     |
+| toNewWorkbook   | Boolean | Query                      | Export destination control: true - Creates new workbook files containing the split data; false - Adds a new worksheet to the current workbook.                        |
+| toMultipleFiles | Boolean | Query                      | true - Exports table data as **multiple separate files** (returned as ZIP archive);false - Stores all data in a **single file** with multiple sheets. Default: false. |
+| outPath         | String  | Query                      | (Optional) The folder path where the workbook is stored. The default is null.                                                                                         |
+| outStorageName  | String  | Query                      | Output file Storage Name.                                                                                                                                             |
+| fontsLocation   | String  | Query                      | Use Custom fonts.                                                                                                                                                     |
+| region          | String  | Query                      | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.                               |
+| password        | String  | Query                      | The password for opening spreadsheet file.                                                                                                                            |
 
 ### Response
 
@@ -64,14 +65,14 @@ Content-Disposition: attachment; filename="result"
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | Invalid url. |
-| 401 | Unauthorized | Authentication has failed, or no credentials were provided. |
-| 404 | Not Found | Source file not accessible. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Server Error | The spreadsheet has encountered an anomaly in obtaining data. |
+| Code | Meaning           | Description                                                   |
+| ---- | ----------------- | ------------------------------------------------------------- |
+| 200  | OK                | The request completed successfully.                           |
+| 400  | Bad Request       | Invalid url.                                                  |
+| 401  | Unauthorized      | Authentication has failed, or no credentials were provided.   |
+| 404  | Not Found         | Source file not accessible.                                   |
+| 413  | Payload Too Large | The uploaded file exceeds the allowed size limit.             |
+| 500  | Server Error      | The spreadsheet has encountered an anomaly in obtaining data. |
 
 **Response Status Codes**
 
@@ -121,8 +122,6 @@ curl -v "https://api.aspose.cloud/v4.0/cells/split/table?worksheet=Sheet1&tableN
 {{< /tab >}}
 
 {{< /tabs >}}
-
-### Use Aspose Cells Cloud SDKs
 
 ### Use Aspose.Cells Cloud SDKs
 

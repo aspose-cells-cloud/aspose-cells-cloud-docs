@@ -10,6 +10,7 @@ keywords: "Import XML, Aspose.Cells, API"
 description: "Import XML data file into the local spreadsheet using Aspose.Cells Cloud."
 weight: 100
 ---
+
 The **ImportXMLDataIntoSpreadsheet** API (`PUT https://api.aspose.cloud/v4.0/cells/import/data/xml`) in Aspose.Cells Cloud enables developers to import XML data directly into a specified worksheet of a local spreadsheet by parsing the XML structure and mapping it to cell content, supporting formats such as .xlsx and .ods; it requires uploading both the XML data file and the target spreadsheet, along with the target worksheet name and starting cell address, and optionally controls insertion behavior via the `insert` parameter.
 
 ## The Import XMLData Into Spreadsheet Web API
@@ -74,12 +75,6 @@ Content-Disposition: attachment; filename="result"
 
 Import XML data file into the local spreadsheet. The method parses the XML, maps the data to the spreadsheet's cell structure, and saves the file locally. Supported spreadsheet formats include .xlsx and .ods.
 
-### Request Body Parameter
-
-| Parameter Name | Type | Description |
-| -------------- | ---- | ----------- |
-| _None_         | -    | -           |
-
 ## How to Use the Import XMLData Into Spreadsheet API with SDKs?
 
 ### Import XMLData Into Spreadsheet API Specification
@@ -116,8 +111,6 @@ curl -v "https://api.aspose.cloud/v4.0/cells/import/data/xml?worksheet={workshee
 {< /tab >}
 
 {< /tabs >}
-
-### Use Aspose Cells Cloud SDKs
 
 ### Use Aspose.Cells Cloud SDKs
 
