@@ -9,6 +9,7 @@ weight: 100
 ArticleTitle: "Get Worksheet Comment – Aspose.Cells Cloud API Documentation"
 linktitle: "Get Worksheet Comment"
 ---
+
 The **GetWorksheetComment** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{cellName}`) retrieves the description of a comment attached to a specific cell in a worksheet using Aspose.Cells Cloud, supporting path parameters for the file name, worksheet name, and cell name to precisely target the desired comment.
 
 ## The Get Worksheet Comment Web API
@@ -23,15 +24,66 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| cellName | String | Path | The cell name |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------ | -------------------------- | -------------------------------------------- |
+| name           | String | Path                       | The file name.                               |
+| sheetName      | String | Path                       | The worksheet name.                          |
+| cellName       | String | Path                       | The cell name                                |
+| folder         | String | Query                      | The folder where the file is situated.       |
+| storageName    | String | Query                      | The storage name where the file is situated. |
 
-The <a href="https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetComment" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+**Response:** The API returns a JSON object containing a `Comment` object with the following fields:
+
+| Field                     | Type    | Description                                          |
+| ------------------------- | ------- | ---------------------------------------------------- |
+| `CellName`                | string  | Address of the cell (e.g., **A1**).                  |
+| `Author`                  | string  | Name of the comment’s author.                        |
+| `HtmlNote`                | string  | Comment content in HTML format (if any).             |
+| `Note`                    | string  | Plain‑text version of the comment.                   |
+| `AutoSize`                | boolean | Indicates whether the comment box auto‑sizes.        |
+| `IsVisible`               | boolean | Determines if the comment is visible.                |
+| `Width`                   | integer | Width of the comment box (in characters).            |
+| `Height`                  | integer | Height of the comment box (in characters).           |
+| `TextHorizontalAlignment` | string  | Horizontal alignment of the text (e.g., **Bottom**). |
+| `TextOrientationType`     | string  | Orientation of the text (e.g., **TopToBottom**).     |
+| `TextVerticalAlignment`   | string  | Vertical alignment of the text (e.g., **Bottom**).   |
+
+### Response
+
+```json
+[
+  {
+    "Name": "CommentResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CommentResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
+## How to Use the Get Worksheet Comment API with SDKs?
+
+### Get Worksheet Comment API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Worksheets/GetWorksheetComment" rel="noopener noreferrer">Get Worksheet Comment API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
 
@@ -74,65 +126,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/comment
 {{< /tab >}}
 
 {{< /tabs >}}
-
-**Response:** The API returns a JSON object containing a `Comment` object with the following fields:
-
-| Field                     | Type    | Description                                          |
-| ------------------------- | ------- | ---------------------------------------------------- |
-| `CellName`                | string  | Address of the cell (e.g., **A1**).                  |
-| `Author`                  | string  | Name of the comment’s author.                        |
-| `HtmlNote`                | string  | Comment content in HTML format (if any).             |
-| `Note`                    | string  | Plain‑text version of the comment.                   |
-| `AutoSize`                | boolean | Indicates whether the comment box auto‑sizes.        |
-| `IsVisible`               | boolean | Determines if the comment is visible.                |
-| `Width`                   | integer | Width of the comment box (in characters).            |
-| `Height`                  | integer | Height of the comment box (in characters).           |
-| `TextHorizontalAlignment` | string  | Horizontal alignment of the text (e.g., **Bottom**). |
-| `TextOrientationType`     | string  | Orientation of the text (e.g., **TopToBottom**).     |
-| `TextVerticalAlignment`   | string  | Vertical alignment of the text (e.g., **Bottom**).   |
-
-### Response
-
-```json
-[
-  {
-    "Name": "CommentResponse",
-    "DataType": {
-      "Identifier": "Class",
-      "Reference": "CommentResponse"
-    }
-  }
-]
-```
-
-**Sample response headers**
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-```
-
-### Common Errors
-
-- **401 Unauthorized** – Verify that the JWT token is valid, not expired, and correctly placed in the `Authorization` header.
-- **404 Not Found** – Ensure the file name, worksheet name, and cell address are correct and that the file exists in the specified folder/storage.
-- **500 Internal Server Error** – Check the request payload for malformed data and confirm that the service is operational.
-
-**HTTP Status Codes**
-
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
-
-## How to Use the Get Worksheet Comment API with SDKs?
-
-### Get Worksheet Comment API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Worksheets/GetWorksheetComment" rel="noopener noreferrer">Get Worksheet Comment API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

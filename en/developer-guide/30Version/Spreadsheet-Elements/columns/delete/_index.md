@@ -20,6 +20,7 @@ keywords:
 weight: 100
 ArticleTitle: "Delete Excel Columns via Aspose.Cells Cloud REST API"
 ---
+
 The **DeleteWorksheetColumns** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex}`) enables developers to remove one or more columns from an Excel worksheet using Aspose.Cells Cloud, with optional automatic updating of cell references—including formulas—in other worksheets via the `updateReference` query parameter.
 
 ## The Delete Worksheet Columns Web API
@@ -79,39 +80,6 @@ Content-Type: application/json
 - **`{sheetName}`** – worksheet name (e.g., `Sheet1`).
 - **`{columnIndex}`** – zero‑based index of the first column to delete.
 
----
-
-### Path parameters
-
-| Name            | Location | Type    | Required | Description                                     |
-| --------------- | -------- | ------- | -------- | ----------------------------------------------- |
-| **name**        | path     | string  | ✅ Yes   | Workbook file name.                             |
-| **sheetName**   | path     | string  | ✅ Yes   | Worksheet name.                                 |
-| **columnIndex** | path     | integer | ✅ Yes   | Zero‑based index of the first column to delete. |
-
-### Query parameters
-
-| Name                | Location | Type    | Required | Description                                                                                      |
-| ------------------- | -------- | ------- | -------- | ------------------------------------------------------------------------------------------------ |
-| **startColumn**     | query    | integer | ❌ No    | Zero‑based index where deletion starts. Defaults to `columnIndex` if omitted.                    |
-| **totalColumns**    | query    | integer | ❌ No    | Number of columns to delete. If omitted, only the column identified by `columnIndex` is removed. |
-| **updateReference** | query    | boolean | ❌ No    | When `true`, updates cell references (including formulas) across the workbook after deletion.    |
-| **folder**          | query    | string  | ❌ No    | Path to the folder that contains the workbook.                                                   |
-| **storageName**     | query    | string  | ❌ No    | Name of the Aspose Cloud storage service.                                                        |
-
-> **Important**: The legacy `columns` query parameter is deprecated. Prefer `startColumn` and `totalColumns` for clarity and flexibility.
-
----
-
-## cURL Example
-
-```bash
-curl -X DELETE \
-  "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/1?startColumn=1&totalColumns=2&updateReference=true" \
-  -H "accept: application/json" \
-  -H "Authorization: Bearer <YOUR_ACCESS_TOKEN>"
-```
-
 ### Explanation
 
 - Deletes columns **B and C** (`startColumn=1`, `totalColumns=2`) from `Sheet1` of `test.xlsx`.
@@ -146,79 +114,22 @@ The response body follows the generic **`CellsCloudResponse`** model.
 
 ---
 
-## Additional Notes
-
-### Security Headers (Production)
-
-Include these headers when serving the documentation:
-
-```
-Content-Security-Policy: default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:;
-X-Content-Type-Options: nosniff
-X-Frame-Options: SAMEORIGIN
-Referrer-Policy: strict-origin-when-cross-origin
-```
-
-### Performance Optimizations
-
-- Bundle and minify JS/CSS with Hugo’s `resources.Get` + `resources.Minify`.
-- Defer third-party scripts (e.g., analytics) until after `DOMContentLoaded`.
-- Preload critical SVGs used in navigation (e.g., icons).
-
-### SEO & Accessibility
-
-- **Internal Links**:
-  - [Upload a workbook](/cells/upload/)
-  - [Learn about JWT authentication](/auth/)
-  - [Delete rows from a worksheet](/rows/delete/)
-- **Images**: All decorative images use `alt=""`; functional images include descriptive `alt` text.
-- **Structured Data**: See JSON-LD snippet below.
-
-### JSON-LD Schema Markup
-
-```json
-{
-  "@context": "https://schema.org",
-  "@type": "TechArticle",
-  "headline": "Delete Columns from Excel via Aspose.Cells Cloud API",
-  "description": "Step-by-step guide to delete Excel columns using Aspose.Cells Cloud REST API, including cURL, SDK examples, and error handling.",
-  "author": { "@type": "Organization", "name": "Aspose" },
-  "datePublished": "2024-06-15",
-  "url": "https://docs.aspose.cloud/cells/columns/delete/",
-  "keywords": ["Aspose.Cells", "Delete Column", "Excel", "REST API"]
-}
-```
-
----
-
-## See Also
-
-- [Aspose.Cells Cloud REST API Reference (OpenAPI)](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetColumns)
-- [Authentication Overview](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)
-- [Aspose.Cells Cloud SDKs for .NET, Java, Python, Node.js, Go, Ruby, PHP, and Perl on GitHub](https://github.com/aspose-cells-cloud)
-
 ## How to Use the Delete Worksheet Columns API with SDKs?
 
 ### Delete Worksheet Columns API Specification
 
 The <a href="https://reference.aspose.cloud/cells/#/Cells/DeleteWorksheetColumns" rel="noopener noreferrer">Delete Worksheet Columns API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
+### cURL Example
+
+```bash
+curl -X DELETE \
+  "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/1?startColumn=1&totalColumns=2&updateReference=true" \
+  -H "accept: application/json" \
+  -H "Authorization: Bearer <YOUR_ACCESS_TOKEN>"
+```
+
 Below are ready‑to‑run snippets for the most popular SDKs. Replace `<YOUR_ACCESS_TOKEN>` with your actual token.
-
-| Language    | Sample                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **C#**      | <details><summary>Show code</summary> <br><br>`csharp\nusing Aspose.Cells.Cloud.SDK.Api;\nusing Aspose.Cells.Cloud.SDK.Model;\n\nvar config = new Configuration { AccessToken = "<YOUR_ACCESS_TOKEN>", BaseUrl = "https://api.aspose.cloud" };\nvar api = new CellsApi(config);\n\nvar response = api.DeleteWorksheetColumns(\n    name: "test.xlsx",\n    sheetName: "Sheet1",\n    columnIndex: 1,\n    startColumn: 1,\n    totalColumns: 2,\n    updateReference: true\n);\nConsole.WriteLine($"Status: {response.Status}");\n`</details>                                                                                                                                                                                                                                                                                                                                  |
-| **Java**    | <details><summary>Show code</summary> <br><br>`java\nimport com.aspose.cloud.cells.api.CellsApi;\nimport com.aspose.cloud.cells.model.CellsCloudResponse;\nimport com.aspose.cloud.cells.Configuration;\n\nConfiguration config = new Configuration();\nconfig.setAccessToken("<YOUR_ACCESS_TOKEN>");\nconfig.setBaseUrl("https://api.aspose.cloud");\nCellsApi api = new CellsApi(config);\n\nCellsCloudResponse resp = api.deleteWorksheetColumns(\n    "test.xlsx", "Sheet1", 1, 1, 2, true, null, null\n);\nSystem.out.println("Status: " + resp.getStatus());\n`</details>                                                                                                                                                                                                                                                                                                |
-| **Python**  | <details><summary>Show code</summary> <br><br>`python\nimport asposecellscloud\nfrom asposecellscloud.rest import ApiException\n\nconfig = asposecellscloud.Configuration()\nconfig.access_token = '<YOUR_ACCESS_TOKEN>'\nconfig.host = 'https://api.aspose.cloud'\napi_instance = asposecellscloud.CellsApi(asposecellscloud.ApiClient(config))\n\ntry:\n    resp = api_instance.delete_worksheet_columns(\n        name='test.xlsx',\n        sheet_name='Sheet1',\n        column_index=1,\n        start_column=1,\n        total_columns=2,\n        update_reference=True\n    )\n    print('Status:', resp.status)\nexcept ApiException as e:\n    print('Exception:', e)\n`</details>                                                                                                                                                                                  |
-| **Node.js** | <details><summary>Show code</summary> <br><br>`javascript\nconst { CellsApi, Configuration } = require('asposecellscloud');\n\nlet config = new Configuration({\n  accessToken: '<YOUR_ACCESS_TOKEN>',\n  basePath: 'https://api.aspose.cloud'\n});\nlet api = new CellsApi(config);\n\napi.deleteWorksheetColumns('test.xlsx', 'Sheet1', 1, {\n  startColumn: 1,\n  totalColumns: 2,\n  updateReference: true\n}).then(res => {\n  console.log('Status:', res.status);\n}).catch(err => {\n  console.error(err);\n});\n`</details>                                                                                                                                                                                                                                                                                                                                            |
-| **Go**      | <details><summary>Show code</summary> <br><br>`go\npackage main\n\nimport (\n  "context"\n  "fmt"\n  "github.com/asposecellscloud/aspose-cells-cloud-go/v3/api"\n  "github.com/asposecellscloud/aspose-cells-cloud-go/v3/client/optional"\n)\n\nfunc main() {\n  cfg := asposecellscloud.NewConfiguration()\n  cfg.AccessToken = "<YOUR_ACCESS_TOKEN>"\n  cfg.BasePath = "https://api.aspose.cloud"\n  client := api.NewAPIClient(cfg)\n  resp, _, err := client.CellsApi.DeleteWorksheetColumns(\n    context.Background(),\n    "test.xlsx", "Sheet1", 1,\n    &api.DeleteWorksheetColumnsOpts{\n      StartColumn:  optional.NewInt32(1),\n      TotalColumns: optional.NewInt32(2),\n      UpdateReference: optional.NewBool(true),\n    }\n  )\n  if err != nil {\n    fmt.Println("Error:", err)\n    return\n  }\n  fmt.Println("Status:", resp.Status)\n}\n`</details> |
-| **Ruby**    | <details><summary>Show code</summary> <br><br>```ruby\nrequire 'aspose_cells_cloud'\n\nconfig = AsposeCellsCloud::Configuration.new do                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | c   | \n c.access_token = '<YOUR_ACCESS_TOKEN>'\n c.host = 'https://api.aspose.cloud'\nend\napi = AsposeCellsCloud::CellsApi.new\n\nbegin\n resp = api.delete_worksheet_columns(\n 'test.xlsx', 'Sheet1', 1,\n start_column: 1,\n total_columns: 2,\n update_reference: true\n )\n puts "Status: #{resp.status}"\nrescue AsposeCellsCloud::ApiError => e\n puts "Exception: #{e}"\nend\n```</details> |
-| **PHP**     | <details><summary>Show code</summary> <br><br>`php\n<?php\nrequire_once('vendor/autoload.php');\nuse Aspose\\Cells\\Cloud\\Api\\CellsApi;\nuse Aspose\\Cells\\Cloud\\Configuration;\n\n$config = new Configuration();\n$config->setAccessToken('<YOUR_ACCESS_TOKEN>');\n$config->setHost('https://api.aspose.cloud');\n$apiInstance = new CellsApi($config);\n\ntry {\n    $result = $apiInstance->deleteWorksheetColumns(\n        'test.xlsx', 'Sheet1', 1, [\n            'startColumn' => 1,\n            'totalColumns' => 2,\n            'updateReference' => true\n        ]\n    );\n    echo "Status: " . $result->getStatus();\n} catch (Exception $e) {\n    echo 'Error: ' . $e->getMessage();\n}\n?>\n`</details>                                                                                                                                                |
-| **Perl**    | <details><summary>Show code</summary> <br><br>`perl\n#!/usr/bin/perl\nuse strict; use warnings;\nuse AsposeCellsCloud::Api::CellsApi;\nuse AsposeCellsCloud::Configuration;\n\nmy $config = AsposeCellsCloud::Configuration->new(\n    access_token => '<YOUR_ACCESS_TOKEN>',\n    host => 'https://api.aspose.cloud'\n);\nmy $api = AsposeCellsCloud::Api::CellsApi->new($config);\n\nmy $response = $api->delete_worksheet_columns(\n    name => 'test.xlsx',\n    sheet_name => 'Sheet1',\n    column_index => 1,\n    start_column => 1,\n    total_columns => 2,\n    update_reference => JSON::true\n);\nprint "Status: " . $response->{Status} . "\n";\n`</details>                                                                                                                                                                                                     |
-
-> All SDKs automatically add the required `Authorization` header when `access_token` is configured.
-
----
 
 ### Use Aspose.Cells Cloud SDKs
 

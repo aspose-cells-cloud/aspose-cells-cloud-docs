@@ -8,6 +8,7 @@ description: "Updates the category axis of a chart in an Excel worksheet using t
 ArticleTitle: "Update Chart Category Axis – Aspose.Cells Cloud API"
 linktitle: "Update Category Axis"
 ---
+
 The **PostChartCategoryAxis** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/categoryaxis`) updates the category axis of a specific chart in a worksheet using Aspose.Cells Cloud, allowing developers to programmatically modify axis properties such as scaling, formatting, and labels by sending an axis configuration object in the request body.
 
 ## The Post Chart Category Axis Web API
@@ -22,29 +23,64 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| chartIndex | Integer | Path | The chart index. |
-| axis | class:axis | HTTPBody | Axis |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type       | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ---------- | -------------------------- | -------------------------------------------- |
+| name           | String     | Path                       | The file name.                               |
+| sheetName      | String     | Path                       | The worksheet name.                          |
+| chartIndex     | Integer    | Path                       | The chart index.                             |
+| axis           | class:axis | HTTPBody                   | Axis                                         |
+| folder         | String     | Query                      | The folder where the file is situated.       |
+| storageName    | String     | Query                      | The storage name where the file is situated. |
 
 **Request Body Schema – `axis` object**
 
-| Property | Type   | Description |
-|----------|--------|-------------|
-| IsAutomaticMajorUnit | boolean | Determines whether the major unit is calculated automatically. |
-| MajorUnit | number | Value of the major unit when `IsAutomaticMajorUnit` is `false`. |
-| IsAutomaticMinorUnit | boolean | Determines whether the minor unit is calculated automatically. |
-| MinorUnit | number | Value of the minor unit when `IsAutomaticMinorUnit` is `false`. |
-| Title | object | Title settings for the axis (e.g., `Text`, `Font`, `Visible`). |
-| TickLabelPosition | string | Position of tick labels (e.g., `Low`, `High`, `NextToAxis`). |
-| ... | ... | Additional axis properties as defined in the API spec. |
+| Property             | Type    | Description                                                     |
+| -------------------- | ------- | --------------------------------------------------------------- |
+| IsAutomaticMajorUnit | boolean | Determines whether the major unit is calculated automatically.  |
+| MajorUnit            | number  | Value of the major unit when `IsAutomaticMajorUnit` is `false`. |
+| IsAutomaticMinorUnit | boolean | Determines whether the minor unit is calculated automatically.  |
+| MinorUnit            | number  | Value of the minor unit when `IsAutomaticMinorUnit` is `false`. |
+| Title                | object  | Title settings for the axis (e.g., `Text`, `Font`, `Visible`).  |
+| TickLabelPosition    | string  | Position of tick labels (e.g., `Low`, `High`, `NextToAxis`).    |
+| ...                  | ...     | Additional axis properties as defined in the API spec.          |
 
+### Response
 
-**Prerequisites / Authentication**
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                        |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+## How to Use the Post Chart Category Axis API with SDKs?
+
+### Post Chart Category Axis API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Charts/PostChartCategoryAxis" rel="noopener noreferrer">Post Chart Category Axis API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 To call this endpoint you must obtain a JWT access token from the Aspose.Cells Cloud authentication service (`/connect/token`). Include the token in the `Authorization` header as shown in the example below.
 
@@ -86,52 +122,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/chart
 {{< /tab >}}
 
 {{< /tabs >}}
-
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/PostChartCategoryAxis) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
-
-### Response
-
-```json
-[
-  {
-    "Name": "CellsCloudResponse",
-    "DataType": {
-      "Identifier": "Class",
-      "Reference": "CellsCloudResponse"
-    }
-  }
-]
-```
-
-**Sample response headers**
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-```
-
-**HTTP Status Codes**
-
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
-
-### Notes
-
-* The endpoint requires HTTPS; using HTTP may trigger mixed‑content warnings in browsers.
-* All placeholder values (`{name}`, `{sheetName}`, `{chartIndex}`, `{folder}`, `{storageName}`) must be replaced with actual identifiers.
-* Supported chart types for category‑axis updates are listed in the API reference.
-
-## How to Use the Post Chart Category Axis API with SDKs?
-
-### Post Chart Category Axis API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Charts/PostChartCategoryAxis" rel="noopener noreferrer">Post Chart Category Axis API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

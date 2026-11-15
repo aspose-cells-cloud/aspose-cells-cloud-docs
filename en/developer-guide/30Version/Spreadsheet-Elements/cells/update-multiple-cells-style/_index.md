@@ -19,6 +19,7 @@ description: "Update Excel cell range styles (font, color, background) via Aspos
 linktitle: "Update Cells Style API"
 ArticleTitle: "Aspose.Cells Cloud API: Update Multiple Cells Style in Excel"
 ---
+
 The **PostUpdateWorksheetRangeStyle** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/style`) enables developers to update the formatting style for a specified cell range in an Excel worksheet via Aspose.Cells Cloud, supporting key parameters including `name`, `sheetName`, `range`, and a `style` object in the request body to apply consistent styling across multiple cells efficiently.
 
 ## The Post Update Worksheet Range Style Web API
@@ -37,14 +38,14 @@ Authorization: Bearer <your_jwt_token>
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| range | String | Query | Represents the range to which the specified cells applies. |
-| style | class:style | HTTPBody | Style with update style settings. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type        | Path/Query String/HTTPBody | Description                                                |
+| -------------- | ----------- | -------------------------- | ---------------------------------------------------------- |
+| name           | String      | Path                       | The file name.                                             |
+| sheetName      | String      | Path                       | The worksheet name.                                        |
+| range          | String      | Query                      | Represents the range to which the specified cells applies. |
+| style          | class:style | HTTPBody                   | Style with update style settings.                          |
+| folder         | String      | Query                      | The folder where the file is situated.                     |
+| storageName    | String      | Query                      | The storage name where the file is situated.               |
 
 #### Style Object
 
@@ -80,31 +81,29 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                        |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 Returns a `CellsCloudResponse` object:
-
 
 | Field    | Type    | Description                                          |
 | -------- | ------- | ---------------------------------------------------- |
 | `Status` | string  | Operation result status (`"OK"` on success).         |
 | `Code`   | integer | HTTP status code (e.g., `200`, `400`, `401`, `500`). |
 
-#### HTTP Status Codes
-
-
----
-
 This REST API updates the **style** for a range of cells in an Excel worksheet.
 
-## How to Use the PostUpdateWorksheetRangeStyle API
+## How to Use the Post Update Worksheet Range Style API with SDKs?
+
+### Post Update Worksheet Range Style API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Cells/PostUpdateWorksheetRangeStyle" rel="noopener noreferrer">Post Update Worksheet Range Style API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Using cURL
 
@@ -148,27 +147,6 @@ cURL -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/s
 {{< /tab >}}
 
 {{< /tabs >}}
-
-## See Also
-
-- [Read cell range style](/read-cell-range-style/)
-- [Get worksheet cell styles](/get-worksheet-cell-styles/)
-
-## API Reference
-
-- [OpenAPI Specification: PostUpdateWorksheetRangeStyle](https://apireference.aspose.cloud/cells/#/Cells/PostUpdateWorksheetRangeStyle)
-
-## How to Use the Post Update Worksheet Range Style API with SDKs?
-
-### Post Update Worksheet Range Style API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Cells/PostUpdateWorksheetRangeStyle" rel="noopener noreferrer">Post Update Worksheet Range Style API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
-
-See the [Aspose.Cells Cloud SDKs GitHub repository](https://github.com/aspose-cells-cloud){: rel="noopener noreferrer"} for full source and documentation.
-
-Examples for multiple languages:
-
----
 
 ### Use Aspose.Cells Cloud SDKs
 

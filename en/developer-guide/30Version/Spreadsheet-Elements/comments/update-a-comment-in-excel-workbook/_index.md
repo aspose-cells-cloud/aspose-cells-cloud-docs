@@ -9,6 +9,7 @@ weight: 30
 ArticleTitle: "Update Worksheet Cell Comment – Aspose.Cells Cloud API"
 linktitle: "Update Comment"
 ---
+
 The **PostWorksheetComment** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{cellName}`) updates an existing comment attached to a specific cell in an Excel worksheet using Aspose.Cells Cloud, requiring the workbook name, worksheet name, cell name, and a comment object in the request body.
 
 ## The Post Worksheet Comment Web API
@@ -23,16 +24,52 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| cellName | String | Path | The cell name. |
-| comment | class:comment | HTTPBody | Comment object. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type          | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------------- | -------------------------- | -------------------------------------------- |
+| name           | String        | Path                       | The file name.                               |
+| sheetName      | String        | Path                       | The worksheet name.                          |
+| cellName       | String        | Path                       | The cell name.                               |
+| comment        | class:comment | HTTPBody                   | Comment object.                              |
+| folder         | String        | Query                      | The folder where the file is situated.       |
+| storageName    | String        | Query                      | The storage name where the file is situated. |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetComment) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
+### Response
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                        |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+## How to Use the Post Worksheet Comment API with SDKs?
+
+### Post Worksheet Comment API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Worksheets/PostWorksheetComment" rel="noopener noreferrer">Post Worksheet Comment API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the **cURL** command-line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
 
@@ -72,56 +109,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/comment
 {{< /tab >}}
 
 {{< /tabs >}}
-
-Possible response status codes:
-
-
-**Notes / Tips:**  
-- Maximum comment length is 1024 characters.  
-- Supported characters are UTF‑8; avoid control characters.  
-
-### Response
-
-```json
-[
-  {
-    "Name": "CellsCloudResponse",
-    "DataType": {
-      "Identifier": "Class",
-      "Reference": "CellsCloudResponse"
-    }
-  }
-]
-```
-
-**Sample response headers**
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-```
-
-**HTTP Status Codes**
-
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
-
-## How to Use the Post Worksheet Comment API with SDKs?
-
-### Post Worksheet Comment API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Worksheets/PostWorksheetComment" rel="noopener noreferrer">Post Worksheet Comment API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
-
-Related Operations:  
-- [Get Worksheet Comment](/comments/get/)  
-- [Add Worksheet Comment](/comments/add/)  
-- [Delete Worksheet Comment](/comments/delete/)
 
 ### Use Aspose.Cells Cloud SDKs
 

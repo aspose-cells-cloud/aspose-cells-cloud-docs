@@ -9,6 +9,7 @@ description: "Delete all charts from a worksheet via Aspose.Cells Cloud REST API
 ArticleTitle: "Delete All Charts from a Worksheet using Aspose.Cells Cloud API"
 linktitle: "Clear All Charts"
 ---
+
 The **DeleteWorksheetCharts** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts`) is a REST endpoint provided by Aspose.Cells Cloud that removes all charts from a specified worksheet within a spreadsheet file, enabling developers to programmatically clean or reset chart content without manual intervention; it requires the file name and worksheet name as path parameters, with optional query parameters for folder and storage name to support flexible cloud-based file management.
 
 **Background** – Removing all charts from a worksheet is useful when you need to reset a sheet’s visual layout, replace outdated visualizations, or prepare a workbook for reuse without retaining previous chart data.
@@ -25,20 +26,20 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------ | -------------------------- | -------------------------------------------- |
+| name           | String | Path                       | The file name.                               |
+| sheetName      | String | Path                       | The worksheet name.                          |
+| folder         | String | Query                      | The folder where the file is situated.       |
+| storageName    | String | Query                      | The storage name where the file is situated. |
 
 **Request Headers**
 
-| Header        | Description                     |
-|---------------|---------------------------------|
-| Authorization | Bearer `<jwt token>`            |
-| Accept        | `application/json`              |
-| Content-Type  | `application/json` (no body)   |
+| Header        | Description                  |
+| ------------- | ---------------------------- |
+| Authorization | Bearer `<jwt token>`         |
+| Accept        | `application/json`           |
+| Content-Type  | `application/json` (no body) |
 
 **Request Body**
 
@@ -48,13 +49,12 @@ The DELETE operation does **not** require a request body.
 
 ```json
 {
-    "Status":"OK",
-    "Code":200
+  "Status": "OK",
+  "Code": 200
 }
 ```
 
-
-*Example error responses*
+_Example error responses_
 
 ```json
 // 400 Bad Request
@@ -105,13 +105,13 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## How to Use the Delete Worksheet Charts API with SDKs?
 

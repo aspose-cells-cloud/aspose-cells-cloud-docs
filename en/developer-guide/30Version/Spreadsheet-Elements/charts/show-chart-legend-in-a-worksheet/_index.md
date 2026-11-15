@@ -9,6 +9,7 @@ description: "Show Excel chart legend via Aspose.Cells Cloud API: PUT /cells/{na
 linktitle: "Show Chart Legend"
 ArticleTitle: "Display Chart Legend in Excel with Aspose.Cells Cloud REST API"
 ---
+
 The **PutWorksheetChartLegend** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend`) enables developers to show the chart legend—the explanatory box identifying data series—in a worksheet chart via Aspose.Cells Cloud. Using this REST endpoint, you can programmatically display legend descriptions for charts embedded in Excel workbooks, supporting automation of report generation and dashboard updates without manual Excel interaction.
 
 ## The Put Worksheet Chart Legend Web API
@@ -23,13 +24,50 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| chartIndex | Integer | Path | The chart index. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------- | -------------------------- | -------------------------------------------- |
+| name           | String  | Path                       | The file name.                               |
+| sheetName      | String  | Path                       | The worksheet name.                          |
+| chartIndex     | Integer | Path                       | The chart index.                             |
+| folder         | String  | Query                      | The folder where the file is situated.       |
+| storageName    | String  | Query                      | The storage name where the file is situated. |
+
+### Response
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+## How to Use the Put Worksheet Chart Legend API with SDKs?
+
+### Put Worksheet Chart Legend API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Charts/PutWorksheetChartLegend" rel="noopener noreferrer">Put Worksheet Chart Legend API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/PutWorksheetChartLegend) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
@@ -71,43 +109,6 @@ The API can return the following HTTP status codes:
 {{< /tab >}}
 
 {{< /tabs >}}
-
-### Response
-
-```json
-[
-  {
-    "Name": "CellsCloudResponse",
-    "DataType": {
-      "Identifier": "Class",
-      "Reference": "CellsCloudResponse"
-    }
-  }
-]
-```
-
-**Sample response headers**
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-```
-
-**HTTP Status Codes**
-
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
-
-## How to Use the Put Worksheet Chart Legend API with SDKs?
-
-### Put Worksheet Chart Legend API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Charts/PutWorksheetChartLegend" rel="noopener noreferrer">Put Worksheet Chart Legend API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

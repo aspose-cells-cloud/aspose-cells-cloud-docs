@@ -12,6 +12,7 @@ keywords: "Aspose Cells API, convert list object to range, Excel REST API"
 description: "Learn how to convert an Excel ListObject (table) to a Range using Aspose.Cells Cloud REST API. Includes request syntax, parameters, sample cURL, response schema, authentication details, error codes, and SDK examples."
 weight: 30
 ---
+
 The **PostWorksheetListObjectConvertToRange** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/ConvertToRange`) converts a specified ListObject (table) to a plain Range within an Excel worksheet, enabling developers to remove table formatting while preserving cell content and structure. Aspose.Cells Cloud supports this operation via REST API and SDKs for .NET, Java, Go, Node.js, Python, and other languages, offering reliable programmatic control over spreadsheet elements without requiring local Excel installation.
 
 ## The Post Worksheet List Object Convert to Range Web API
@@ -26,13 +27,13 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| listObjectIndex | Integer | Path | List object index. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name  | Type    | Path/Query String/HTTPBody | Description                                  |
+| --------------- | ------- | -------------------------- | -------------------------------------------- |
+| name            | String  | Path                       | The file name.                               |
+| sheetName       | String  | Path                       | The worksheet name.                          |
+| listObjectIndex | Integer | Path                       | List object index.                           |
+| folder          | String  | Query                      | The folder where the file is situated.       |
+| storageName     | String  | Query                      | The storage name where the file is situated. |
 
 > **Note:** This operation works only with modern Excel formats such as **.xlsx** and **.xlsm**. The ListObject must not be protected. For more information about ListObjects, see the [ListObjects overview](/list-objects/). For details on working with ranges, refer to the [Ranges documentation](/ranges/).
 
@@ -59,16 +60,19 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
-**Authentication**  
-To call this operation you must include a valid JWT token in the `Authorization` header. Obtain the token by sending a POST request to the OAuth 2.0 token endpoint with your client ID and client secret. The token must include the `Cells.ReadWrite` scope and is valid for the period returned by the token service.
+## How to Use the Post Worksheet List Object Convert to Range API with SDKs?
+
+### Post Worksheet List Object Convert to Range API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObjectConvertToRange" rel="noopener noreferrer">Post Worksheet List Object Convert to Range API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### cURL Example (Request)
 
@@ -86,7 +90,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listob
 
 {{< /tab >}}
 
-#### Response Schema
+**Response Schema**
 
 The API returns a **200 OK** response with details of the newly created range.
 
@@ -102,18 +106,6 @@ The API returns a **200 OK** response with details of the newly created range.
   "ColumnCount": 3
 }
 ```
-
-| Field           | Type    | Description                                        |
-| --------------- | ------- | -------------------------------------------------- |
-| **Code**        | integer | HTTP‑like status code (200 indicates success).     |
-| **Status**      | string  | Textual status message.                            |
-| **RangeName**   | string  | The name assigned to the created range.            |
-| **Address**     | string  | Full address of the range, including sheet name.   |
-| **FirstRow**    | integer | Zero‑based index of the first row in the range.    |
-| **FirstColumn** | integer | Zero‑based index of the first column in the range. |
-| **RowCount**    | integer | Number of rows in the range.                       |
-| **ColumnCount** | integer | Number of columns in the range.                    |
-
 
 **Error Response Schema (example):**
 
@@ -142,12 +134,6 @@ The API returns a **200 OK** response with details of the newly created range.
 {{< /tab >}}
 
 {{< /tabs >}}
-
-## How to Use the Post Worksheet List Object Convert to Range API with SDKs?
-
-### Post Worksheet List Object Convert to Range API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObjectConvertToRange" rel="noopener noreferrer">Post Worksheet List Object Convert to Range API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

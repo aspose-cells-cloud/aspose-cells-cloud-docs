@@ -10,6 +10,7 @@ description: "Get a specific Excel document property via Aspose.Cells Cloud REST
 weight: 100
 ArticleTitle: "Get a Specific Document Property from Excel using Aspose.Cells Cloud API"
 ---
+
 The **GetDocumentProperty** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/documentproperties/{propertyName}`) retrieves a specific built-in or custom document property from an Excel workbook by name using Aspose.Cells Cloud, supporting common properties like Author, Title, or Custom fields without requiring local file processing.
 
 ## The Get Document Property Web API
@@ -24,14 +25,64 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The workbook name. |
-| propertyName | String | Path | The property name. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------ | -------------------------- | -------------------------------------------- |
+| name           | String | Path                       | The workbook name.                           |
+| propertyName   | String | Path                       | The property name.                           |
+| folder         | String | Query                      | The folder where the file is situated.       |
+| storageName    | String | Query                      | The storage name where the file is situated. |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Properties/GetDocumentProperty) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+### Response
+
+```json
+[
+  {
+    "Name": "CellsDocumentPropertyResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsDocumentPropertyResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+The JSON object returned by the API contains the following fields:
+
+| Field                           | Type    | Description                                                  |
+| ------------------------------- | ------- | ------------------------------------------------------------ |
+| **DocumentProperty.Name**       | string  | The name of the property (e.g., `Author`).                   |
+| **DocumentProperty.Value**      | string  | The value of the property. May be empty if not set.          |
+| **DocumentProperty.BuiltIn**    | boolean | Indicates whether the property is a built‑in Excel property. |
+| **DocumentProperty.link.Href**  | string  | Relative URL to the property resource.                       |
+| **DocumentProperty.link.Rel**   | string  | Relation type, usually `self`.                               |
+| **DocumentProperty.link.Title** | string  | Human‑readable title (may be `null`).                        |
+| **DocumentProperty.link.Type**  | string  | MIME type of the linked resource (may be `null`).            |
+| **Code**                        | integer | HTTP status code returned by the service.                    |
+| **Status**                      | string  | Textual description of the status (e.g., `OK`).              |
+
+**HTTP Status Codes**
+
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                        |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+## How to Use the Get Document Property API with SDKs?
+
+### Get Document Property API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Properties/GetDocumentProperty" rel="noopener noreferrer">Get Document Property API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the **cURL command-line tool** to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
@@ -72,84 +123,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties/author
 {{< /tab >}}
 
 {{< /tabs >}}
-
-### Response
-
-```json
-[
-  {
-    "Name": "CellsDocumentPropertyResponse",
-    "DataType": {
-      "Identifier": "Class",
-      "Reference": "CellsDocumentPropertyResponse"
-    }
-  }
-]
-```
-
-**Sample response headers**
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-```
-
-The JSON object returned by the API contains the following fields:
-
-| Field                           | Type    | Description                                                  |
-| ------------------------------- | ------- | ------------------------------------------------------------ |
-| **DocumentProperty.Name**       | string  | The name of the property (e.g., `Author`).                   |
-| **DocumentProperty.Value**      | string  | The value of the property. May be empty if not set.          |
-| **DocumentProperty.BuiltIn**    | boolean | Indicates whether the property is a built‑in Excel property. |
-| **DocumentProperty.link.Href**  | string  | Relative URL to the property resource.                       |
-| **DocumentProperty.link.Rel**   | string  | Relation type, usually `self`.                               |
-| **DocumentProperty.link.Title** | string  | Human‑readable title (may be `null`).                        |
-| **DocumentProperty.link.Type**  | string  | MIME type of the linked resource (may be `null`).            |
-| **Code**                        | integer | HTTP status code returned by the service.                    |
-| **Status**                      | string  | Textual description of the status (e.g., `OK`).              |
-
-### Error Responses
-
-| HTTP Status | Code                   | Description                                     |
-| ----------- | ---------------------- | ----------------------------------------------- |
-| 400         | `InvalidParameter`     | One or more request parameters are invalid.     |
-| 401         | `AuthenticationFailed` | Missing or invalid JWT token.                   |
-| 404         | `PropertyNotFound`     | The specified document property does not exist. |
-| 500         | `InternalError`        | An unexpected error occurred on the server.     |
-
-A typical error body looks like:
-
-```json
-{
-  "Code": 404,
-  "Status": "Property not found"
-}
-```
-
-## How to Use the Get Document Property API with SDKs?
-
-### Get Document Property API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Properties/GetDocumentProperty" rel="noopener noreferrer">Get Document Property API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
-
-### Terminology
-
-| Term                  | Definition                                                                                         |
-| --------------------- | -------------------------------------------------------------------------------------------------- |
-| **Document Property** | A piece of metadata associated with an Excel workbook (e.g., Author, Title, Created).              |
-| **Metadata**          | General term for data that describes other data; in this context it refers to document properties. |
-| **Custom Property**   | A user‑defined property not included in the built‑in set.                                          |
-
-### Frequently Asked Questions
-
-**Q:** _How can I retrieve the Author property of an Excel file stored in Aspose Cloud?_  
-**A:** Send a GET request to `https://api.aspose.cloud/v3.0/cells/{fileName}/documentproperties/author` with a valid Bearer token. The response JSON includes `DocumentProperty.Name = "Author"` and its `Value`.
-
-**Q:** _What error is returned if the requested property does not exist?_  
-**A:** The API returns HTTP 404 with a JSON body containing `Code: 404` and `Status: "Property not found"`.
-
-**Q:** _Do I need to specify `storageName` when the file is in the default storage?_  
-**A:** No. The `storageName` query parameter is optional; omit it to use the default storage configured for your account.
 
 ### Use Aspose.Cells Cloud SDKs
 

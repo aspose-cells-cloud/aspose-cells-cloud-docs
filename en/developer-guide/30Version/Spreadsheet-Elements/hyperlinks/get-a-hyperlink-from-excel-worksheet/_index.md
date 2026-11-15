@@ -8,6 +8,7 @@ weight: 100
 ArticleTitle: "Aspose.Cells Cloud API – Get Worksheet Hyperlink"
 linktitle: "Get Hyperlink"
 ---
+
 The **GetWorksheetHyperlink** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks/{hyperlinkIndex}`) retrieves the description of a specific hyperlink from an Excel worksheet by its zero-based index, enabling developers to programmatically extract hyperlink details such as address, text to display, and screen tip using Aspose.Cells Cloud’s REST interface.
 
 ## The Get Worksheet Hyperlink Web API
@@ -51,16 +52,21 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 ```
 
-### Error Responses
+**HTTP Status Codes**
 
-| HTTP Code | Reason                                             | Example Body                                                        |
-| --------- | -------------------------------------------------- | ------------------------------------------------------------------- |
-| **400**   | Bad Request – missing or invalid parameters.       | `{ "Code":"400", "Message":"Invalid parameter value." }`            |
-| **401**   | Unauthorized – missing or invalid JWT token.       | `{ "Code":"401", "Message":"Access token is missing or invalid." }` |
-| **404**   | Not Found – workbook or worksheet does not exist.  | `{ "Code":"404", "Message":"File not found." }`                     |
-| **500**   | Internal Server Error – unexpected server failure. | `{ "Code":"500", "Message":"An unexpected error occurred." }`       |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Hyperlinks/GetWorksheetHyperlink) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+## How to Use the Get Worksheet Hyperlink API with SDKs?
+
+### Get Worksheet Hyperlink API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Hypelinks/GetWorksheetHyperlink" rel="noopener noreferrer">Get Worksheet Hyperlink API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
 
@@ -107,12 +113,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/hyperli
 {{< /tab >}}
 
 {{< /tabs >}}
-
-## How to Use the Get Worksheet Hyperlink API with SDKs?
-
-### Get Worksheet Hyperlink API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Hypelinks/GetWorksheetHyperlink" rel="noopener noreferrer">Get Worksheet Hyperlink API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

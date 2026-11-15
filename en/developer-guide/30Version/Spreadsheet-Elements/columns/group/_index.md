@@ -22,10 +22,8 @@ aliases:
   - /excel/group-columns/
 ArticleTitle: "Group Columns in Excel Using Aspose.Cells Cloud REST API v3.0"
 ---
-The **PostGroupWorksheetColumns** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/group`) enables programmatic grouping of worksheet columns in Aspose.Cells Cloud, allowing developers to define collapsible column ranges by specifying first and last column indices, with optional control over visibility via the `hide` parameter—ideal for automating interactive Excel dashboards and reports that mirror native Excel grouping behavior.
 
-**API Version:** v3.0  
-**Operation:** `PostGroupWorksheetColumns` – Group worksheet columns in a worksheet.
+The **PostGroupWorksheetColumns** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/group`) enables programmatic grouping of worksheet columns in Aspose.Cells Cloud, allowing developers to define collapsible column ranges by specifying first and last column indices, with optional control over visibility via the `hide` parameter—ideal for automating interactive Excel dashboards and reports that mirror native Excel grouping behavior.
 
 ## Overview
 
@@ -84,16 +82,6 @@ Content-Type: application/json
 | 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
 | 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
-| Parameter     | Location | Required | Description                                                          |
-| ------------- | -------- | -------- | -------------------------------------------------------------------- |
-| `name`        | Path     | Yes      | Workbook filename (e.g., `report.xlsx`).                             |
-| `sheetName`   | Path     | Yes      | Worksheet name containing the columns to group.                      |
-| `firstIndex`  | Query    | Yes      | Zero-based index of the first column in the group.                   |
-| `lastIndex`   | Query    | Yes      | Zero-based index of the last column in the group.                    |
-| `hide`        | Query    | No       | If `true`, the grouped columns are hidden (collapsed) upon grouping. |
-| `folder`      | Query    | No       | Folder path containing the workbook (if not in default storage).     |
-| `storageName` | Query    | No       | Custom storage name (if applicable).                                 |
-
 ### Notes
 
 - Column indices are **zero-based** (e.g., column A = index `0`, column B = index `1`).
@@ -106,8 +94,6 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ce
      -H "accept: application/json" \
      -H "Authorization: Bearer <access_token>"
 ```
-
-> **Security Note:** All requests use **HTTPS** for encrypted communication.
 
 ## Response
 
@@ -127,15 +113,6 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ce
 }
 ```
 
-### Error Responses
-
-| Field          | Type    | Description                                               |
-| -------------- | ------- | --------------------------------------------------------- |
-| `Code`         | integer | HTTP error code (`400`, `401`, `404`, `500`, etc.)        |
-| `Status`       | string  | Error status (`Error`).                                   |
-| `ErrorMessage` | string  | Human-readable error description.                         |
-| `ErrorCode`    | string  | Programmatic error identifier (e.g., `InvalidParameter`). |
-
 **Example – Bad Request (400):**
 
 ```json
@@ -146,25 +123,6 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ce
   "ErrorCode": "InvalidParameter"
 }
 ```
-
-## Usage Tips
-
-- **Collapsible Sections**: Use `hide=true` to collapse groups immediately; users can later expand them in Excel.
-- **Index Validation**: Ensure `firstIndex ≤ lastIndex` and both indices are within valid column bounds (e.g., ≤ 16,383 for modern Excel).
-- **Storage Paths**: For non-default storage, provide both `folder` and `storageName` query parameters.
-
-## See Also
-
-- [JWT Authentication Guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)
-- [OpenAPI Reference: PostGroupWorksheetColumns](https://apireference.aspose.cloud/cells/#/Cells/PostGroupWorksheetColumns)
-- [Aspose.Cells Cloud SDKs (GitHub)](https://github.com/aspose-cells-cloud){: rel="noopener noreferrer"}
-- [Group Rows on an Excel Worksheet](/cells/group-rows/)
-
-![Collapsed grouped columns in Excel showing the +/– expand/collapse indicator.](/images/group-columns.png)
-
-> _Figure: Collapsed column group in Excel, with the +/- toggle visible._
-
----
 
 ## How to Use the Post Group Worksheet Columns API with SDKs?
 

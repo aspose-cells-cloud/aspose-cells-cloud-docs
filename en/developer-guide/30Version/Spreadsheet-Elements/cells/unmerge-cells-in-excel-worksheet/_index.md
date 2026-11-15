@@ -19,10 +19,8 @@ related:
     title: Merge Cells in Excel Worksheet
 linktitle: "Unmerge Cells"
 ---
-The **PostWorksheetUnmerge** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/unmerge`) in Aspose.Cells Cloud enables developers to unmerge previously merged cells in a specified rectangular range of an Excel worksheet by providing the start row, start column, total rows, and total columns as query parameters; this operation supports precise range-based unmerging and integrates with existing cloud workflows via the v3.0 REST API.
 
-> **API Version**: Aspose.Cells Cloud v24.3  
-> **Supported Formats**: `.xlsx`, `.xlsb`, `.xlsm`, `.xls`
+The **PostWorksheetUnmerge** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/unmerge`) in Aspose.Cells Cloud enables developers to unmerge previously merged cells in a specified rectangular range of an Excel worksheet by providing the start row, start column, total rows, and total columns as query parameters; this operation supports precise range-based unmerging and integrates with existing cloud workflows via the v3.0 REST API.
 
 ## The Post Worksheet Unmerge Web API
 
@@ -38,16 +36,16 @@ The API uses JWT token-based authentication. Before making requests, ensure you 
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| startRow | Integer | Query | The start row index. |
-| startColumn | Integer | Query | The start column index. |
-| totalRows | Integer | Query | The total rows number. |
-| totalColumns | Integer | Query | The total columns number. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------- | -------------------------- | -------------------------------------------- |
+| name           | String  | Path                       | The file name.                               |
+| sheetName      | String  | Path                       | The worksheet name.                          |
+| startRow       | Integer | Query                      | The start row index.                         |
+| startColumn    | Integer | Query                      | The start column index.                      |
+| totalRows      | Integer | Query                      | The total rows number.                       |
+| totalColumns   | Integer | Query                      | The total columns number.                    |
+| folder         | String  | Query                      | The folder where the file is situated.       |
+| storageName    | String  | Query                      | The storage name where the file is situated. |
 
 > **Tip**: Omitting `folder` and `storageName` defaults to the root folder and default storage configured for your account.
 
@@ -74,10 +72,10 @@ Content-Type: application/json
 
 The API returns a `CellsCloudResponse` object with the following fields:
 
-| Field    | Type   | Description |
-|----------|--------|-------------|
-| `Status` | string | `"OK"` on success; `"Error"` on failure. |
-| `Code`   | integer| HTTP status code (e.g., `200`, `400`, `401`, `500`). |
+| Field    | Type    | Description                                          |
+| -------- | ------- | ---------------------------------------------------- |
+| `Status` | string  | `"OK"` on success; `"Error"` on failure.             |
+| `Code`   | integer | HTTP status code (e.g., `200`, `400`, `401`, `500`). |
 
 ### Example Response
 
@@ -90,14 +88,14 @@ The API returns a `CellsCloudResponse` object with the following fields:
 
 ### HTTP Status Codes
 
-| Code | Meaning               | Description |
-|------|-----------------------|-------------|
-| 200  | OK                    | Unmerge operation completed successfully. |
+| Code | Meaning               | Description                                                                               |
+| ---- | --------------------- | ----------------------------------------------------------------------------------------- |
+| 200  | OK                    | Unmerge operation completed successfully.                                                 |
 | 400  | Bad Request           | Missing or invalid parameters (e.g., non-numeric `startRow`, unsupported file extension). |
-| 401  | Unauthorized          | Invalid, expired, or missing JWT token. |
-| 404  | Not Found             | Workbook or worksheet not found. |
-| 413  | Payload Too Large     | Workbook exceeds maximum file size limit (1 GB). |
-| 500  | Internal Server Error | Unexpected server error. Contact support with request ID. |
+| 401  | Unauthorized          | Invalid, expired, or missing JWT token.                                                   |
+| 404  | Not Found             | Workbook or worksheet not found.                                                          |
+| 413  | Payload Too Large     | Workbook exceeds maximum file size limit (1 GB).                                          |
+| 500  | Internal Server Error | Unexpected server error. Contact support with request ID.                                 |
 
 ## How to Use the API
 
@@ -121,139 +119,11 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/u
 }
 ```
 
-## Related Operations
-
-- [Merge Cells in Excel Worksheet](/merge-cells-in-excel-worksheet/) — Merge adjacent cells into a single range.
-- [Get Worksheet Cells](/get-worksheet-cells/) — Retrieve cell data, including merged regions.
-- [Clear Cells](/clear-cells-in-excel-worksheet/) — Clear contents, formatting, or comments from a range.
-
-## Support
-
-For issues or questions, contact [Aspose.Cells Cloud Support](https://helpdesk.aspose.cloud/) or post to our [community forum](https://forum.aspose.cloud/).
-
 ## How to Use the Post Worksheet Unmerge API with SDKs?
 
 ### Post Worksheet Unmerge API Specification
 
 The <a href="https://reference.aspose.cloud/cells/#/Cells/PostWorksheetUnmerge" rel="noopener noreferrer">Post Worksheet Unmerge API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
-
-SDKs handle low-level HTTP communication, authentication, and serialization. Below are concise examples for major languages.
-
-{{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-
-{{< tab tabNum="1" title="C#" >}}
-
-```csharp
-// Replace 'MyApp.SID' and 'MyApp.Key' with your credentials
-var cellsApi = new CellsApi("MyApp.SID", "MyApp.Key");
-var response = cellsApi.PostWorksheetUnmerge(
-    name: "test.xlsx",
-    sheetName: "Sheet1",
-    startRow: 10,
-    startColumn: 10,
-    totalRows: 5,
-    totalColumns: 3
-);
-Console.WriteLine($"Status: {response.Status}, Code: {response.Code}");
-```
-{{< /tab >}}
-
-{{< tab tabNum="2" title="Java" >}}
-
-```java
-// Replace 'clientId' and 'clientSecret' with your credentials
-CellsApi cellsApi = new CellsApi("MyApp.SID", "MyApp.Key");
-CellsCloudResponse response = cellsApi.postWorksheetUnmerge(
-    "test.xlsx", "Sheet1", 10, 10, 5, 3, null, null
-);
-System.out.println("Status: " + response.getStatus() + ", Code: " + response.getCode());
-```
-{{< /tab >}}
-
-{{< tab tabNum="3" title="PHP" >}}
-
-```php
-// Replace with your credentials
-$cellsApi = new CellsApi("MyApp.SID", "MyApp.Key");
-$response = $cellsApi->postWorksheetUnmerge(
-    "test.xlsx", "Sheet1", 10, 10, 5, 3, null, null
-);
-echo "Status: " . $response->getStatus() . ", Code: " . $response->getCode();
-```
-{{< /tab >}}
-
-{{< tab tabNum="4" title="Ruby" >}}
-
-```ruby
-# Replace with your credentials
-cells_api = AsposeCellsCloud::CellsApi.new("MyApp.SID", "MyApp.Key")
-response = cells_api.post_worksheet_unmerge(
-  'test.xlsx', 'Sheet1', 10, 10, 5, 3, nil, nil
-)
-puts "Status: #{response.status}, Code: #{response.code}"
-```
-{{< /tab >}}
-
-{{< tab tabNum="5" title="Node.js" >}}
-
-```typescript
-// Replace with your credentials
-const cellsApi = new CellsApi("MyApp.SID", "MyApp.Key");
-const response = await cellsApi.postWorksheetUnmerge(
-  'test.xlsx', 'Sheet1', 10, 10, 5, 3, undefined, undefined
-);
-console.log(`Status: ${response.body.status}, Code: ${response.body.code}`);
-```
-{{< /tab >}}
-
-{{< tab tabNum="6" title="Python" >}}
-
-```python
-# Replace with your credentials
-cells_api = CellsApi("MyApp.SID", "MyApp.Key")
-response = cells_api.post_worksheet_unmerge(
-    'test.xlsx', 'Sheet1', 10, 10, 5, 3, folder=None, storage_name=None
-)
-print(f"Status: {response.status}, Code: {response.code}")
-```
-{{< /tab >}}
-
-{{< tab tabNum="7" title="Perl" >}}
-
-```perl
-# Replace with your credentials
-my $cells_api = AsposeCellsCloud::API->new(
-    client_id => "MyApp.SID",
-    client_secret => "MyApp.Key"
-);
-my $response = $cells_api->post_worksheet_unmerge(
-    'test.xlsx', 'Sheet1', 10, 10, 5, 3, { folder => undef, storage_name => undef }
-);
-print "Status: $response->{status}, Code: $response->{code}\n";
-```
-{{< /tab >}}
-
-{{< tab tabNum="8" title="Go" >}}
-
-```go
-// Replace with your credentials
-cfg := cells.NewConfiguration("MyApp.SID", "MyApp.Key")
-client := cells.NewClient(cfg)
-resp, err := client.CellsPostWorksheetUnmerge(
-    context.Background(),
-    "test.xlsx", "Sheet1", 10, 10, 5, 3,
-    nil, nil,
-)
-if err != nil {
-    log.Fatal(err)
-}
-fmt.Printf("Status: %s, Code: %d\n", *resp.Status, resp.Code)
-```
-{{< /tab >}}
-
-{{< /tabs >}}
-
-> **Tip**: All SDK examples assume credentials are configured via environment variables or explicit initialization. Never hard-code secrets in production code.
 
 ### Use Aspose.Cells Cloud SDKs
 

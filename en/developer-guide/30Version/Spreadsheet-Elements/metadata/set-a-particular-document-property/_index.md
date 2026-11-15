@@ -11,8 +11,6 @@ api_version: "v3.0 (Stable)"
 aliases: [/set-a-particular-document-property/]
 ---
 
-## Overview
-
 The **Update (Set) Document Property** operation lets you create a new document property or modify an existing one in an Excel workbook stored in Aspose Cloud Storage.
 
 ## The PUT Document Property Web API
@@ -24,15 +22,6 @@ PUT https://api.aspose.cloud/v3.0/cells/{name}/documentproperties/{propertyName}
 ### **Security and Authentication**
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer" target="_blank">JWT token-based authentication</a>.
-
-## HTTP Request
-
-| Element          | Value                                             |
-| ---------------- | ------------------------------------------------- |
-| **Method**       | `PUT`                                             |
-| **URI**          | `/cells/{name}/documentproperties/{propertyName}` |
-| **Content-Type** | `application/json`                                |
-| **Accept**       | `application/json`                                |
 
 ### Path Parameters
 
@@ -73,7 +62,19 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 > **Note**: Field naming conventions vary by SDK language (e.g., `BuiltIn` in JSON vs `builtIn` in Node.js). Always consult the SDK’s type definitions for correct casing and naming.
 
-## Example Request (cURL)
+## HTTP Status Codes
+
+| Code | Meaning               | Description                                                  |
+| ---- | --------------------- | ------------------------------------------------------------ |
+| 200  | OK                    | Property updated or created successfully.                    |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                |
+| 413  | Payload Too Large     | Request body exceeds size limit.                             |
+| 500  | Internal Server Error | Unexpected server error.                                     |
+
+## SDK Examples
+
+**cURL Example**
 
 ```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties/author?folder=Docs&storageName=MyStorage" \
@@ -94,7 +95,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties/author
       }'
 ```
 
-### Example Successful Response
+**Example Successful Response**
 
 ```json
 {
@@ -103,14 +104,25 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties/author
 }
 ```
 
-## HTTP Status Codes
+**HTTP Status Codes**
 
-| Code | Meaning               | Description                                                  |
-| ---- | --------------------- | ------------------------------------------------------------ |
-| 200  | OK                    | Property updated or created successfully.                    |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                |
-| 413  | Payload Too Large     | Request body exceeds size limit.                             |
-| 500  | Internal Server Error | Unexpected server error.                                     |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
-## SDK Examples
+## How to Use the Set Document Properties API with SDKs?
+
+### Set Document Properties API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Properties/SetDocumentProperties" rel="noopener noreferrer">Set Document Properties API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
+
+### Use Aspose.Cells Cloud SDKs
+
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
+
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:

@@ -9,6 +9,7 @@ description: "Update Excel chart legend via Aspose.Cells Cloud REST API using cU
 ArticleTitle: "Update Chart Legend in a Worksheet – Aspose.Cells Cloud API Guide"
 linktitle: "Update Chart Legend"
 ---
+
 The **PostWorksheetChartLegend** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend`) enables updating a chart legend in a worksheet via Aspose.Cells Cloud, allowing developers to programmatically modify legend properties such as position, size, and formatting by sending a `legend` object in the request body alongside required path parameters (file name, sheet name, and chart index).
 
 A chart legend displays the names and symbols for the data series in a chart. Updating the legend allows you to customize its appearance, such as font style, color, and shadow.
@@ -25,16 +26,52 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| chartIndex | Integer | Path | The chart index. |
-| legend | class:legend | HTTPBody | - |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type         | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------------ | -------------------------- | -------------------------------------------- |
+| name           | String       | Path                       | The file name.                               |
+| sheetName      | String       | Path                       | The worksheet name.                          |
+| chartIndex     | Integer      | Path                       | The chart index.                             |
+| legend         | class:legend | HTTPBody                   | -                                            |
+| folder         | String       | Query                      | The folder where the file is situated.       |
+| storageName    | String       | Query                      | The storage name where the file is situated. |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/PostWorksheetChartLegend) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+### Response
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                        |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+## How to Use the Post Worksheet Chart Legend API with SDKs?
+
+### Post Worksheet Chart Legend API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Charts/PostWorksheetChartLegend" rel="noopener noreferrer">Post Worksheet Chart Legend API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API using cURL.
 
@@ -65,44 +102,6 @@ curl -v "https://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet
 {{< /tab >}}
 
 {{< /tabs >}}
-
-### Response
-
-```json
-[
-  {
-    "Name": "CellsCloudResponse",
-    "DataType": {
-      "Identifier": "Class",
-      "Reference": "CellsCloudResponse"
-    }
-  }
-]
-```
-
-**Sample response headers**
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-```
-
-**HTTP Status Codes**
-
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
-
-## How to Use the Post Worksheet Chart Legend API with SDKs?
-
-### Post Worksheet Chart Legend API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Charts/PostWorksheetChartLegend" rel="noopener noreferrer">Post Worksheet Chart Legend API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 Using an SDK accelerates development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

@@ -8,6 +8,7 @@ description: "Aspose.Cells Cloud REST API - Retrieve the value axis of a chart i
 ArticleTitle: "Get Chart Value Axis - Aspose.Cells Cloud REST API"
 linktitle: "Get Chart Value Axis"
 ---
+
 The **GetChartValueAxis** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/valueaxis`) retrieves the value axis properties of a chart from a worksheet in an Excel file stored in the cloud, using Aspose.Cells Cloud REST API; it accepts required path parameters `name`, `sheetName`, and `chartIndex`, and optional query parameters `folder` and `storageName`, returning an AxisResponse that enables developers to programmatically access and analyze chart axis configuration without local Excel installation.
 
 For related operations, see the **[Get Chart Category Axis](/charts/category-axis/get/)** endpoint.
@@ -24,13 +25,13 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| chartIndex | Integer | Path | The chart index. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------- | -------------------------- | -------------------------------------------- |
+| name           | String  | Path                       | The file name.                               |
+| sheetName      | String  | Path                       | The worksheet name.                          |
+| chartIndex     | Integer | Path                       | The chart index.                             |
+| folder         | String  | Query                      | The folder where the file is situated.       |
+| storageName    | String  | Query                      | The storage name where the file is situated. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/GetChartValueAxis) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -77,7 +78,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/chart
 
 **Possible HTTP status codes**
 
-
 The response contains a detailed `ValueAxis` object with properties such as `Minimum`, `Maximum`, `MajorUnit`, `MinorUnit`, `Title`, and `Format`. In a full implementation, additional formatting details may be provided.
 
 {{< /tab >}}
@@ -107,13 +107,13 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## How to Use the Get Chart Value Axis API with SDKs?
 

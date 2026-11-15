@@ -11,6 +11,7 @@ keywords: "Aspose.Cells, Cloud API, unhide columns, Excel, REST, SDK"
 description: "Unhide Excel columns with Aspose.Cells Cloud REST API using PostUnhideWorksheetColumns endpoint and SDK examples"
 weight: 50
 ---
+
 The **PostUnhideWorksheetColumns** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/unhide`) enables developers to unhide specific ranges of columns in a worksheet using Aspose.Cells Cloud, requiring path parameters for the file and sheet name, and query parameters for the starting column index and number of columns to unhide, optionally specifying column width.
 
 ## The Post Unhide Worksheet Columns Web API
@@ -25,17 +26,52 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| startColumn | Integer | Query | The begin column index to be operated. |
-| totalColumns | Integer | Query | Number of columns to be operated. |
-| width | floating | Query | Gets and sets the column width in unit of characters. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type     | Path/Query String/HTTPBody | Description                                           |
+| -------------- | -------- | -------------------------- | ----------------------------------------------------- |
+| name           | String   | Path                       | The file name.                                        |
+| sheetName      | String   | Path                       | The worksheet name.                                   |
+| startColumn    | Integer  | Query                      | The begin column index to be operated.                |
+| totalColumns   | Integer  | Query                      | Number of columns to be operated.                     |
+| width          | floating | Query                      | Gets and sets the column width in unit of characters. |
+| folder         | String   | Query                      | The folder where the file is situated.                |
+| storageName    | String   | Query                      | The storage name where the file is situated.          |
 
-The <a href="https://apireference.aspose.cloud/cells/#/Cells/PostUnhideWorksheetColumns" target="_blank" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+### Response
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+## How to Use the Post Unhide Worksheet Columns API with SDKs?
+
+### Post Unhide Worksheet Columns API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Cells/PostUnhideWorksheetColumns" rel="noopener noreferrer">Post Unhide Worksheet Columns API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the **cURL** command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
@@ -61,45 +97,6 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ce
 {{< /tab >}}
 
 {{< /tabs >}}
-
-**Typical HTTP status codes**
-
-### Response
-
-```json
-[
-  {
-    "Name": "CellsCloudResponse",
-    "DataType": {
-      "Identifier": "Class",
-      "Reference": "CellsCloudResponse"
-    }
-  }
-]
-```
-
-**Sample response headers**
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-```
-
-**HTTP Status Codes**
-
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
-
-## How to Use the Post Unhide Worksheet Columns API with SDKs?
-
-### Post Unhide Worksheet Columns API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Cells/PostUnhideWorksheetColumns" rel="noopener noreferrer">Post Unhide Worksheet Columns API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

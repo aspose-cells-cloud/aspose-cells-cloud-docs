@@ -14,6 +14,7 @@ keywords:
 last_updated: 2024-05-28
 weight: 160
 ---
+
 The **PostChartValueAxis** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/valueaxis`) enables developers to update the value axis of a specific chart in an Excel workbook stored in Aspose.Cells Cloud by sending a request body containing axis properties such as bounds, tick units, and logarithmic scaling—allowing precise control over axis behavior without manual intervention.
 
 **Summary:**  
@@ -35,14 +36,14 @@ Authorization: Bearer <jwt token>
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| chartIndex | Integer | Path | The chart index. |
-| axis | class:axis | HTTPBody | Axis |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type       | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ---------- | -------------------------- | -------------------------------------------- |
+| name           | String     | Path                       | The file name.                               |
+| sheetName      | String     | Path                       | The worksheet name.                          |
+| chartIndex     | Integer    | Path                       | The chart index.                             |
+| axis           | class:axis | HTTPBody                   | Axis                                         |
+| folder         | String     | Query                      | The folder where the file is situated.       |
+| storageName    | String     | Query                      | The storage name where the file is situated. |
 
 ### Response
 
@@ -67,14 +68,14 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                        |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 Replace the placeholders with your actual values.
 
@@ -154,23 +155,13 @@ The response type is `CellsCloudResponse`.
 
 **HTTP Status Codes**
 
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Axis updated successfully.                                        |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
-
-## Additional Resources
-
-- **OpenAPI Specification** – [View / download JSON‑YAML](https://apireference.aspose.cloud/cells/#/Charts/PostChartValueAxis)
-- **SDK Repository** – <https://github.com/aspose-cells-cloud>
-- **Authentication guide** – <https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/>
-
----
-
-_For any questions or feedback, please contact the Aspose.Cells Cloud support team._
+| Code | Meaning               | Description                                                  |
+| ---- | --------------------- | ------------------------------------------------------------ |
+| 200  | OK                    | Axis updated successfully.                                   |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                            |
+| 500  | Internal Server Error | Unexpected server error.                                     |
 
 ## How to Use the Post Chart Value Axis API with SDKs?
 
@@ -178,6 +169,12 @@ _For any questions or feedback, please contact the Aspose.Cells Cloud support te
 
 The <a href="https://reference.aspose.cloud/cells/#/Charts/PostChartValueAxis" rel="noopener noreferrer">Post Chart Value Axis API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
+### Use Aspose.Cells Cloud SDKs
+
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
+
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 {{< tabs tabTotal="10" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}
@@ -451,15 +448,3 @@ func main() {
 
 {{< /tabs >}}
 
-### Use Aspose.Cells Cloud SDKs
-
-Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
-Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
-
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
-
-{{<tabs tabTotal="1" tabID="1" tabName1="Node.js" >}}
-{{<tab tabNum="1" >}}
-{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example-Post-ChartValueAxis.js" >}}
-{{</tab>}}
-{{< /tabs >}}

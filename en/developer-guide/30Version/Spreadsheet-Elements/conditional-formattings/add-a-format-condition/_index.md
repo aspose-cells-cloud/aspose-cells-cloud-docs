@@ -9,6 +9,7 @@ ArticleTitle: "Add Format Condition – Aspose.Cells Cloud API Documentation"
 weight: 50
 linktitle: "Add Format Condition"
 ---
+
 The **PutWorksheetFormatCondition** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}`) adds a format condition to a specified worksheet in Aspose.Cells Cloud, supporting types such as CellValue, Expression, ColorScale, DataBar, IconSet, Top10, UniqueValues, DuplicateValues, and ContainsText; it requires parameters including the cell area, condition type, operator type, and one or two formulas to define the formatting rule.
 
 ## The Put Worksheet Format Condition Web API
@@ -57,22 +58,13 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 ```
 
-| HTTP Code | Reason                                        | Example Body                        |
-| --------- | --------------------------------------------- | ----------------------------------- |
-| **200**   | OK – condition added or updated successfully. | `{ "Code": "200", "Status": "OK" }` |
+## How to Use the Put Worksheet Format Condition API with SDKs?
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/PutWorksheetFormatCondition) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+### Put Worksheet Format Condition API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/ConditionalFormattings/PutWorksheetFormatCondition" rel="noopener noreferrer">Put Worksheet Format Condition API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use **cURL** to call the Aspose.Cells API. The example below shows a complete request, including an empty JSON body.
-
-### Error Responses
-
-| HTTP Code | Reason                                             | Example Body                                                        |
-| --------- | -------------------------------------------------- | ------------------------------------------------------------------- |
-| **400**   | Bad Request – missing or invalid parameters.       | `{ "Code":"400", "Message":"Invalid parameter value." }`            |
-| **401**   | Unauthorized – missing or invalid JWT token.       | `{ "Code":"401", "Message":"Access token is missing or invalid." }` |
-| **404**   | Not Found – workbook or worksheet does not exist.  | `{ "Code":"404", "Message":"File not found." }`                     |
-| **500**   | Internal Server Error – unexpected server failure. | `{ "Code":"500", "Message":"An unexpected error occurred." }`       |
 
 ### cURL Example
 
@@ -103,12 +95,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/condit
 {{< /tab >}}
 
 {{< /tabs >}}
-
-## How to Use the Put Worksheet Format Condition API with SDKs?
-
-### Put Worksheet Format Condition API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/ConditionalFormattings/PutWorksheetFormatCondition" rel="noopener noreferrer">Put Worksheet Format Condition API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

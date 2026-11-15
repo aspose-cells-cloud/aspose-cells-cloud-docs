@@ -10,6 +10,7 @@ description: "Retrieve all built-in and custom document properties from an Excel
 ArticleTitle: "Get All Document Properties – Aspose.Cells Cloud API"
 weight: 25
 ---
+
 The **GetDocumentProperties** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/documentproperties`) retrieves descriptions of Excel file properties for a specified workbook via Aspose.Cells Cloud, supporting optional filtering by property type and specifying storage location through query parameters.
 
 ## The Get Document Properties Web API
@@ -24,14 +25,49 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The workbook name. |
-| type | String | Query | Excel property type. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------ | -------------------------- | -------------------------------------------- |
+| name           | String | Path                       | The workbook name.                           |
+| type           | String | Query                      | Excel property type.                         |
+| folder         | String | Query                      | The folder where the file is situated.       |
+| storageName    | String | Query                      | The storage name where the file is situated. |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Properties/GetDocumentProperties) defines a publicly accessible programming interface and allows you to perform REST interactions directly from a web browser.
+### Response
+
+```json
+[
+  {
+    "Name": "CellsDocumentPropertiesResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsDocumentPropertiesResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+## How to Use the Get Document Properties API with SDKs?
+
+### Get Document Properties API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Properties/GetDocumentProperties" rel="noopener noreferrer">Get Document Properties API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
 
@@ -258,43 +294,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties" \
 {{< /tab >}}
 
 {{< /tabs >}}
-
-### Response
-
-```json
-[
-  {
-    "Name": "CellsDocumentPropertiesResponse",
-    "DataType": {
-      "Identifier": "Class",
-      "Reference": "CellsDocumentPropertiesResponse"
-    }
-  }
-]
-```
-
-**Sample response headers**
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-```
-
-**HTTP Status Codes**
-
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
-
-## How to Use the Get Document Properties API with SDKs?
-
-### Get Document Properties API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Properties/GetDocumentProperties" rel="noopener noreferrer">Get Document Properties API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

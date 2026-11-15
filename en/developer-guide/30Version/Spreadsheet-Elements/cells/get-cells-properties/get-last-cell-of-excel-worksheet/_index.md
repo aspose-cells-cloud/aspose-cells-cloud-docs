@@ -63,16 +63,6 @@ Content-Type: application/json
 | 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
 | 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
-**HTTP Status Codes**
-
-| Code | Meaning               | Description                                                      |
-| ---- | --------------------- | ---------------------------------------------------------------- |
-| 200  | OK                    | Successful operation; returns the end cell address and metadata. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).     |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                    |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                |
-| 500  | Internal Server Error | Unexpected server error.                                         |
-
 ## How to Use the Get Worksheet Cell API with SDKs?
 
 ### Get Worksheet Cell API Specification

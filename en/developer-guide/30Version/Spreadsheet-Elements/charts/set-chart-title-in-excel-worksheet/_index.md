@@ -9,6 +9,7 @@ description: "Learn how to add or update a chart title in an Excel worksheet usi
 linktitle: "Add Chart Title"
 ArticleTitle: "Add or Update Chart Title in Excel with Aspose.Cells Cloud API"
 ---
+
 The **PutWorksheetChartTitle** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title`) enables developers to set or update the title of a specific chart in an Excel worksheet using Aspose.Cells Cloud, supporting operations such as adding a new title or modifying an existing one by sending a `TitleChart` object in the request body.
 
 ## The Put Worksheet Chart Title Web API
@@ -23,16 +24,54 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| chartIndex | Integer | Path | The chart index. |
-| title | class:title | HTTPBody | TitleChart title. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type        | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ----------- | -------------------------- | -------------------------------------------- |
+| name           | String      | Path                       | The file name.                               |
+| sheetName      | String      | Path                       | The worksheet name.                          |
+| chartIndex     | Integer     | Path                       | The chart index.                             |
+| title          | class:title | HTTPBody                   | TitleChart title.                            |
+| folder         | String      | Query                      | The folder where the file is situated.       |
+| storageName    | String      | Query                      | The storage name where the file is situated. |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/PutWorksheetChartTitle) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+### Response
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                        |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+## How to Use the Put Worksheet Chart Title API with SDKs?
+
+### Put Worksheet Chart Title API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Charts/PutWorksheetChartTitle" rel="noopener noreferrer">Put Worksheet Chart Title API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
+
+### curl Example
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
 
@@ -63,46 +102,6 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Shee
 {{< /tab >}}
 
 {{< /tabs >}}
-
-**Error Responses**
-
-### Response
-
-```json
-[
-  {
-    "Name": "CellsCloudResponse",
-    "DataType": {
-      "Identifier": "Class",
-      "Reference": "CellsCloudResponse"
-    }
-  }
-]
-```
-
-**Sample response headers**
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-```
-
-**HTTP Status Codes**
-
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
-
-## How to Use the Put Worksheet Chart Title API with SDKs?
-
-### Put Worksheet Chart Title API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Charts/PutWorksheetChartTitle" rel="noopener noreferrer">Put Worksheet Chart Title API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

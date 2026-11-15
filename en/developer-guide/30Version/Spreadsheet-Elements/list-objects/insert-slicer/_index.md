@@ -12,6 +12,7 @@ date: 2023-11-15
 categories: ["cloud-api", "excel"]
 tags: ["slicer", "listobject", "rest-api"]
 ---
+
 The **PostWorksheetListObjectInsertSlicer** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/InsertSlicer`) enables users to insert a slicer for a specific list object on an Excel worksheet via Aspose.Cells Cloud, requiring the file name, worksheet name, list object index, column index, and destination cell name as parameters to position the slicer accurately.
 
 ## The Post Worksheet List Object Insert Slicer Web API
@@ -26,15 +27,52 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| listObjectIndex | Integer | Path | List object index. |
-| columnIndex | Integer | Query | The index of ListColumn in ListObject.ListColumns |
-| destCellName | String | Query | The cell in the upper-left corner of the Slicer range. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name  | Type    | Path/Query String/HTTPBody | Description                                            |
+| --------------- | ------- | -------------------------- | ------------------------------------------------------ |
+| name            | String  | Path                       | The file name.                                         |
+| sheetName       | String  | Path                       | The worksheet name.                                    |
+| listObjectIndex | Integer | Path                       | List object index.                                     |
+| columnIndex     | Integer | Query                      | The index of ListColumn in ListObject.ListColumns      |
+| destCellName    | String  | Query                      | The cell in the upper-left corner of the Slicer range. |
+| folder          | String  | Query                      | The folder where the file is situated.                 |
+| storageName     | String  | Query                      | The storage name where the file is situated.           |
+
+### Response
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning               | Description                                                                              |
+| ---- | --------------------- | ---------------------------------------------------------------------------------------- |
+| 200  | OK                    | Slicer inserted successfully; response contains metadata (name, column index, position). |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).                             |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                                            |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                                        |
+| 500  | Internal Server Error | Unexpected server error.                                                                 |
+
+## How to Use the Post Worksheet List Object Insert Slicer API with SDKs?
+
+### Post Worksheet List Object Insert Slicer API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObjectInsertSlicer" rel="noopener noreferrer">Post Worksheet List Object Insert Slicer API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to call the API:
 
@@ -70,47 +108,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listo
 
 {{< /tab >}}
 {{< /tabs >}}
-
-**HTTP Status Codes**
-
-| Code | Meaning               | Description                                                                              |
-| ---- | --------------------- | ---------------------------------------------------------------------------------------- |
-| 200  | OK                    | Slicer inserted successfully; response contains metadata (name, column index, position). |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).                             |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                                            |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                                        |
-| 500  | Internal Server Error | Unexpected server error.                                                                 |
-
-### Response
-
-```json
-[
-  {
-    "Name": "CellsCloudResponse",
-    "DataType": {
-      "Identifier": "Class",
-      "Reference": "CellsCloudResponse"
-    }
-  }
-]
-```
-
-**Sample response headers**
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-```
-
-### Error Handling
-
-When an error occurs, the API returns a JSON object with an `ErrorMessage` field that describes the problem. Inspect the HTTP status code and the `ErrorMessage` to determine the corrective action.
-
-## How to Use the Post Worksheet List Object Insert Slicer API with SDKs?
-
-### Post Worksheet List Object Insert Slicer API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObjectInsertSlicer" rel="noopener noreferrer">Post Worksheet List Object Insert Slicer API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

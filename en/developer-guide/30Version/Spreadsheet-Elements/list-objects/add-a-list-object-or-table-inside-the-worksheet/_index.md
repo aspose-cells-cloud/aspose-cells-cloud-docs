@@ -10,6 +10,7 @@ description: "Add an Excel list object (table) to a worksheet via Aspose.Cells C
 weight: 100
 ArticleTitle: "Add a List Object (Table) to an Excel Worksheet – Aspose.Cells Cloud Documentation"
 ---
+
 The **PutWorksheetListObject** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects`) enables developers to add a list object (table) to a specific worksheet in an Excel file stored in the cloud using Aspose.Cells Cloud. It supports optional query parameters such as `startRow`, `startColumn`, `endRow`, `endColumn`, `hasHeaders`, `displayName`, and `showTotals` to define the table’s range and formatting behavior.
 
 Before using this endpoint, ensure you have a valid JWT token, the workbook is stored in a supported cloud storage, and the worksheet exists.
@@ -26,19 +27,19 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| startRow | Integer | Query | The start row of the list range. |
-| startColumn | Integer | Query | The start column of the list range. |
-| endRow | Integer | Query | The start row of the list range. |
-| endColumn | Integer | Query | The start column of the list range. |
-| folder | String | Query | The folder where the file is situated. |
-| hasHeaders | Boolean | Query | Indicate whether the range has headers. |
-| displayName | String | Query | Indicate whether display name. |
-| showTotals | Boolean | Query | Indicate whether show totals. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------- | -------------------------- | -------------------------------------------- |
+| name           | String  | Path                       | The file name.                               |
+| sheetName      | String  | Path                       | The worksheet name.                          |
+| startRow       | Integer | Query                      | The start row of the list range.             |
+| startColumn    | Integer | Query                      | The start column of the list range.          |
+| endRow         | Integer | Query                      | The start row of the list range.             |
+| endColumn      | Integer | Query                      | The start column of the list range.          |
+| folder         | String  | Query                      | The folder where the file is situated.       |
+| hasHeaders     | Boolean | Query                      | Indicate whether the range has headers.      |
+| displayName    | String  | Query                      | Indicate whether display name.               |
+| showTotals     | Boolean | Query                      | Indicate whether show totals.                |
+| storageName    | String  | Query                      | The storage name where the file is situated. |
 
 ### Example response
 
@@ -61,14 +62,15 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 ```
 
-### Error codes
+**HTTP Status Codes**
 
-| HTTP Status | Reason                | Description                                      |
-| ----------- | --------------------- | ------------------------------------------------ |
-| **400**     | Bad Request           | Invalid range parameters or malformed JSON body. |
-| **401**     | Unauthorized          | Missing or expired JWT token.                    |
-| **404**     | Not Found             | Specified workbook or worksheet does not exist.  |
-| **500**     | Internal Server Error | Unexpected server‑side failure.                  |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 **Example 400 response**
 
@@ -90,8 +92,6 @@ Content-Type: application/json
 }
 ```
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ListObjects/PutWorksheetListObject) provides the full contract for this operation.
-
 ### Request body schema
 
 The **listObject** object describes the table that will be created. Only the most common properties are shown; see the OpenAPI specification for the complete list.
@@ -104,7 +104,13 @@ The **listObject** object describes the table that will be created. Only the mos
 }
 ```
 
-### Example request (cURL)
+## How to Use the Put Worksheet List Object API with SDKs?
+
+### Put Worksheet List Object API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/ListObjects/PutWorksheetListObject" rel="noopener noreferrer">Put Worksheet List Object API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
+
+**cURL Example**
 
 ```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listobjects?startRow=1&startColumn=1&endRow=10&endColumn=12&hasHeaders=true" \
@@ -118,12 +124,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listob
         "style": "TableStyleMedium2"
       }'
 ```
-
-## How to Use the Put Worksheet List Object API with SDKs?
-
-### Put Worksheet List Object API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/ListObjects/PutWorksheetListObject" rel="noopener noreferrer">Put Worksheet List Object API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

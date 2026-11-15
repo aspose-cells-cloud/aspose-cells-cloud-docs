@@ -9,6 +9,7 @@ weight: 100
 linktitle: "Add Hyperlink"
 ArticleTitle: "Add Hyperlink to Excel Worksheet via Aspose.Cells Cloud REST API"
 ---
+
 The **PutWorksheetHyperlink** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks`) enables programmatic addition of hyperlinks to Excel worksheets via Aspose.Cells Cloud, supporting range-based linking by specifying first row/column, total rows/columns, and the target address; this RESTful operation allows developers to automate hyperlink insertion across supported cloud-based Excel workflows using SDKs for .NET, Java, Python, and other languages.
 
 ## The Put Worksheet Hyperlink Web API
@@ -23,17 +24,17 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| firstRow | Integer | Query | First row of the hyperlink range. |
-| firstColumn | Integer | Query | First column of the hyperlink range. |
-| totalRows | Integer | Query | Number of rows in this hyperlink range. |
-| totalColumns | Integer | Query | Number of columns of this hyperlink range. |
-| address | String | Query | Address of the hyperlink. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------- | -------------------------- | -------------------------------------------- |
+| name           | String  | Path                       | The file name.                               |
+| sheetName      | String  | Path                       | The worksheet name.                          |
+| firstRow       | Integer | Query                      | First row of the hyperlink range.            |
+| firstColumn    | Integer | Query                      | First column of the hyperlink range.         |
+| totalRows      | Integer | Query                      | Number of rows in this hyperlink range.      |
+| totalColumns   | Integer | Query                      | Number of columns of this hyperlink range.   |
+| address        | String  | Query                      | Address of the hyperlink.                    |
+| folder         | String  | Query                      | The folder where the file is situated.       |
+| storageName    | String  | Query                      | The storage name where the file is situated. |
 
 The request can also include a JSON body containing the same fields (`Address`, `FirstRow`, `FirstColumn`, `TotalRows`, `TotalColumns`). Supplying the body is useful when you prefer a payload over query‑string parameters.
 
@@ -58,16 +59,21 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 ```
 
-### Error Responses
+**HTTP Status Codes**
 
-| HTTP Code | Reason                                             | Example Body                                                        |
-| --------- | -------------------------------------------------- | ------------------------------------------------------------------- |
-| **400**   | Bad Request – missing or invalid parameters.       | `{ "Code":"400", "Message":"Invalid parameter value." }`            |
-| **401**   | Unauthorized – missing or invalid JWT token.       | `{ "Code":"401", "Message":"Access token is missing or invalid." }` |
-| **404**   | Not Found – workbook or worksheet does not exist.  | `{ "Code":"404", "Message":"File not found." }`                     |
-| **500**   | Internal Server Error – unexpected server failure. | `{ "Code":"500", "Message":"An unexpected error occurred." }`       |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Hypelinks/PutWorksheetHyperlink) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+## How to Use the Put Worksheet Hyperlink API with SDKs?
+
+### Put Worksheet Hyperlink API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Hypelinks/PutWorksheetHyperlink" rel="noopener noreferrer">Put Worksheet Hyperlink API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
@@ -99,12 +105,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/hyperli
 {{< /tabs >}}
 
 If the request fails, the API returns standard HTTP error codes (e.g., 400 Bad Request, 401 Unauthorized, 404 Not Found, 500 Internal Server Error) together with a JSON payload that contains an error message and code.
-
-## How to Use the Put Worksheet Hyperlink API with SDKs?
-
-### Put Worksheet Hyperlink API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Hypelinks/PutWorksheetHyperlink" rel="noopener noreferrer">Put Worksheet Hyperlink API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

@@ -9,6 +9,7 @@ description: "Update Excel metadata using Aspose.Cells Cloud REST API: POST /cel
 weight: 35
 ArticleTitle: "Update Metadata – Aspose.Cells Cloud API Documentation"
 ---
+
 The **PostMetadata** API (`POST https://api.aspose.cloud/v3.0/cells/metadata/update`) updates document properties—such as title, author, or custom fields—in Excel files uploaded via the request, and optionally saves the modified file in various output formats including XLSX, PDF, or CSV. Aspose.Cells Cloud enables this functionality through a RESTful interface, supporting password-protected files and regional settings adjustments, while returning a FilesResult with the updated document.
 
 ## The Post Metadata Web API
@@ -23,18 +24,54 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| File | File | FormData | File to upload |
-| cellsDocuments | container | HTTPBody | document properties |
-| password | String | Query | The password needed to open an Excel file. |
-| checkExcelRestriction | Boolean | Query | Whether check restriction of excel file when user modify cells related objects. |
-| outFormat | String | Query | The output data file format.(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers) |
-| region | String | Query | The regional settings for workbook. |
+| Parameter Name        | Type      | Path/Query String/HTTPBody | Description                                                                                                                                      |
+| --------------------- | --------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| File                  | File      | FormData                   | File to upload                                                                                                                                   |
+| cellsDocuments        | container | HTTPBody                   | document properties                                                                                                                              |
+| password              | String    | Query                      | The password needed to open an Excel file.                                                                                                       |
+| checkExcelRestriction | Boolean   | Query                      | Whether check restriction of excel file when user modify cells related objects.                                                                  |
+| outFormat             | String    | Query                      | The output data file format.(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers) |
+| region                | String    | Query                      | The regional settings for workbook.                                                                                                              |
 
 **Notes:** Up to 10 files can be uploaded in a single request. Supported formats include `.xlsx`, `.xls`, and `.csv`. The total request size must not exceed 100 MB.
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PostMetadata) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+### Response
+
+```json
+[
+  {
+    "Name": "FilesResult",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "FilesResult"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                        |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+## How to Use the Post Metadata API with SDKs?
+
+### Post Metadata API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/LightCells/PostMetadata" rel="noopener noreferrer">Post Metadata API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
@@ -79,49 +116,6 @@ The request requires an **Authorization** header with a Bearer JWT token. Ensure
 {{< /tab >}}
 
 {{< /tabs >}}
-
-### Response
-
-```json
-[
-  {
-    "Name": "FilesResult",
-    "DataType": {
-      "Identifier": "Class",
-      "Reference": "FilesResult"
-    }
-  }
-]
-```
-
-**Sample response headers**
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-```
-
-**HTTP Status Codes**
-
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
-
-## How to Use the Post Metadata API with SDKs?
-
-### Post Metadata API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/LightCells/PostMetadata" rel="noopener noreferrer">Post Metadata API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
-
-**See also:**
-
-- [Get Metadata](/metadata/get/)
-- [Delete Metadata](/metadata/delete/)
 
 ### Use Aspose.Cells Cloud SDKs
 

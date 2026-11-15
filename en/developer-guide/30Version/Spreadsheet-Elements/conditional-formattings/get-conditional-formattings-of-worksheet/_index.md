@@ -9,6 +9,7 @@ weight: 100
 linktitle: "Get Conditional Formatting Rules"
 ArticleTitle: "Get All Conditional Formatting Rules from Worksheet via Aspose.Cells Cloud API"
 ---
+
 The **GetWorksheetConditionalFormattings** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings`) retrieves descriptions of all conditional formatting rules applied to a specified worksheet in a cloud-stored spreadsheet file, enabling developers to inspect formatting logic programmatically via Aspose.Cells Cloud's REST API, which supports multiple SDKs including .NET, Java, Python, and Node.js.
 
 ## The Get Worksheet Conditional Formattings Web API
@@ -51,16 +52,39 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 ```
 
-### Error Responses
+**Response Parameters**
 
-| HTTP Code | Reason                                             | Example Body                                                        |
-| --------- | -------------------------------------------------- | ------------------------------------------------------------------- |
-| **400**   | Bad Request – missing or invalid parameters.       | `{ "Code":"400", "Message":"Invalid parameter value." }`            |
-| **401**   | Unauthorized – missing or invalid JWT token.       | `{ "Code":"401", "Message":"Access token is missing or invalid." }` |
-| **404**   | Not Found – workbook or worksheet does not exist.  | `{ "Code":"404", "Message":"File not found." }`                     |
-| **500**   | Internal Server Error – unexpected server failure. | `{ "Code":"500", "Message":"An unexpected error occurred." }`       |
+| Parameter                                        | Type    | Description                                                    |
+| ------------------------------------------------ | ------- | -------------------------------------------------------------- |
+| Status                                           | string  | Result status of the request (e.g., **OK**).                   |
+| ConditionalFormattings                           | object  | Container for conditional formatting data.                     |
+| ConditionalFormattings.Count                     | integer | Number of conditional formatting rules returned.               |
+| ConditionalFormattings.ConditionalFormattingList | array   | List of conditional formatting objects.                        |
+| ConditionalFormattingList[].sqref                | string  | Cell range to which the formatting applies (e.g., **A1:B10**). |
+| ConditionalFormattingList[].FormatConditions     | array   | Collection of format condition objects for the range.          |
+| FormatConditions[].Priority                      | integer | Evaluation priority of the condition.                          |
+| FormatConditions[].Type                          | string  | Type of condition (e.g., **CellValue**).                       |
+| FormatConditions[].Operator                      | string  | Operator used for the condition (e.g., **GreaterThan**).       |
+| FormatConditions[].Formula1                      | string  | First formula or value for the condition.                      |
+| FormatConditions[].Style                         | object  | Styling applied when the condition is met.                     |
+| Style.Font.Color                                 | object  | RGBA color definition for the font.                            |
+| Style.Font.IsBold                                | boolean | Indicates whether the font is bold.                            |
 
-The <a href="https://apireference.aspose.cloud/cells/#/ConditionalFormattings/GetWorksheetConditionalFormattings" target="_blank">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+**HTTP Status Codes**
+
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+## How to Use the Get Worksheet Conditional Formattings API with SDKs?
+
+### Get Worksheet Conditional Formattings API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/ConditionalFormattings/GetWorksheetConditionalFormattings" rel="noopener noreferrer">Get Worksheet Conditional Formattings API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
 
@@ -108,45 +132,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/condit
 }
 ```
 
-_The example above shows only the most relevant fields to keep the payload concise._
-
-**Response Parameters**
-
-| Parameter                                        | Type    | Description                                                    |
-| ------------------------------------------------ | ------- | -------------------------------------------------------------- |
-| Status                                           | string  | Result status of the request (e.g., **OK**).                   |
-| ConditionalFormattings                           | object  | Container for conditional formatting data.                     |
-| ConditionalFormattings.Count                     | integer | Number of conditional formatting rules returned.               |
-| ConditionalFormattings.ConditionalFormattingList | array   | List of conditional formatting objects.                        |
-| ConditionalFormattingList[].sqref                | string  | Cell range to which the formatting applies (e.g., **A1:B10**). |
-| ConditionalFormattingList[].FormatConditions     | array   | Collection of format condition objects for the range.          |
-| FormatConditions[].Priority                      | integer | Evaluation priority of the condition.                          |
-| FormatConditions[].Type                          | string  | Type of condition (e.g., **CellValue**).                       |
-| FormatConditions[].Operator                      | string  | Operator used for the condition (e.g., **GreaterThan**).       |
-| FormatConditions[].Formula1                      | string  | First formula or value for the condition.                      |
-| FormatConditions[].Style                         | object  | Styling applied when the condition is met.                     |
-| Style.Font.Color                                 | object  | RGBA color definition for the font.                            |
-| Style.Font.IsBold                                | boolean | Indicates whether the font is bold.                            |
-
-**HTTP Status Codes**
-
-| Code | Meaning               | Description                                                       |
-| ---- | --------------------- | ----------------------------------------------------------------- |
-| 200  | OK                    | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
-| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
-| 500  | Internal Server Error | Unexpected server error.                                          |
-
 {{< /tab >}}
 
 {{< /tabs >}}
-
-## How to Use the Get Worksheet Conditional Formattings API with SDKs?
-
-### Get Worksheet Conditional Formattings API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/ConditionalFormattings/GetWorksheetConditionalFormattings" rel="noopener noreferrer">Get Worksheet Conditional Formattings API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

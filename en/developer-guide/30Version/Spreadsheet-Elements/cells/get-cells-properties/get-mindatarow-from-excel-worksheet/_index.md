@@ -8,6 +8,7 @@ description: "Get first data row index in Excel worksheet using Aspose.Cells Clo
 ArticleTitle: "Get MinDataRow from Excel Worksheet – Aspose.Cells Cloud API"
 linktitle: "Get MinDataRow"
 ---
+
 The **GetWorksheetCell** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellOrMethodName}`) in Aspose.Cells Cloud v3.0 retrieves cell data by accepting either a cell reference (e.g., "A1") or a method name (such as "mindatarow") to return specific worksheet information, including the index of the first row containing data.
 
 ## The Get Worksheet Cell Web API
@@ -22,13 +23,13 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| cellOrMethodName | String | Path | The cell's or method name. (Method name like firstcell, endcell etc.) |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name   | Type   | Path/Query String/HTTPBody | Description                                                           |
+| ---------------- | ------ | -------------------------- | --------------------------------------------------------------------- |
+| name             | String | Path                       | The file name.                                                        |
+| sheetName        | String | Path                       | The worksheet name.                                                   |
+| cellOrMethodName | String | Path                       | The cell's or method name. (Method name like firstcell, endcell etc.) |
+| folder           | String | Query                      | The folder where the file is situated.                                |
+| storageName      | String | Query                      | The storage name where the file is situated.                          |
 
 ### Response
 
@@ -52,15 +53,19 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
 
-**API version: 3.0** (latest stable); v4.0 in preview — see [migration guide](https://docs.aspose.cloud/cells/migration/).
+## How to Use the Get Worksheet Cell API with SDKs?
+
+### Get Worksheet Cell API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Cells/GetWorksheetCell" rel="noopener noreferrer">Get Worksheet Cell API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### cURL Example
 
@@ -75,10 +80,10 @@ curl -X GET "https://api.aspose.cloud/v3.0/cells/{fileName}/worksheets/{sheetNam
 
 **Request Parameters**
 
-| Parameter          | Location | Type   | Required | Description                                                   |
-|--------------------|----------|--------|----------|---------------------------------------------------------------|
+| Parameter          | Location | Type   | Required | Description                                                  |
+| ------------------ | -------- | ------ | -------- | ------------------------------------------------------------ |
 | `fileName`         | Path     | string | Yes      | Name of the Excel workbook (including extension).            |
-| `sheetName`        | Path     | string | Yes      | Name of the worksheet within the workbook.                    |
+| `sheetName`        | Path     | string | Yes      | Name of the worksheet within the workbook.                   |
 | `cellOrMethodName` | Query    | string | Yes      | Must be set to `mindatarow`. Other values are not supported. |
 
 **Response Example**
@@ -88,28 +93,6 @@ curl -X GET "https://api.aspose.cloud/v3.0/cells/{fileName}/worksheets/{sheetNam
   "MinDataRow": 5
 }
 ```
-
-**HTTP Status Codes**
-
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
-
-## How to Use the Get Worksheet Cell API with SDKs?
-
-### Get Worksheet Cell API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Cells/GetWorksheetCell" rel="noopener noreferrer">Get Worksheet Cell API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
-
-**See also**
-
-- [Get MaxDataRow](https://docs.aspose.cloud/cells/get-maxdatarow-from-excel-worksheet/)
-- [Get MinColumn](https://docs.aspose.cloud/cells/get-mincolumn-from-excel-worksheet/)
-- [Get MaxColumn](https://docs.aspose.cloud/cells/get-maxcolumn-from-excel-worksheet/)
 
 ### Use Aspose.Cells Cloud SDKs
 

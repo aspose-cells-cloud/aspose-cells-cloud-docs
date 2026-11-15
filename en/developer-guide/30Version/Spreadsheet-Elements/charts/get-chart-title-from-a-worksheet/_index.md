@@ -18,6 +18,7 @@ description: "Retrieve a chart title from an Excel worksheet using Aspose.Cells 
 ArticleTitle: "Get Chart Title from a Worksheet"
 linktitle: "Get Chart Title"
 ---
+
 The **GetWorksheetChartTitle** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title`) retrieves the title description of a specific chart stored in a worksheet of an Excel workbook via Aspose.Cells Cloud, requiring the file name, worksheet name, and chart index as path parameters, and optionally supporting folder and storage name query parameters to locate the source file.
 
 ## The Get Worksheet Chart Title Web API
@@ -32,13 +33,13 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| chartIndex | Integer | Path | The chart index. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------- | -------------------------- | -------------------------------------------- |
+| name           | String  | Path                       | The file name.                               |
+| sheetName      | String  | Path                       | The worksheet name.                          |
+| chartIndex     | Integer | Path                       | The chart index.                             |
+| folder         | String  | Query                      | The folder where the file is situated.       |
+| storageName    | String  | Query                      | The storage name where the file is situated. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/GetWorksheetChartTitle) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -85,19 +86,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/charts
 | `Title.Font.Size`   | Font size in points.                            |
 | `Title.Font.IsBold` | Indicates whether the title text is bold.       |
 
-**Response status codes**
-
-
-**Notes**: The chart index is zero‑based; ensure the chart exists. If the workbook has not been uploaded, upload it first using the appropriate API.
-
-**How to extract the title in a script (using `jq`)**
-
-```bash
-# Assuming the JSON response is saved in response.json
-title=$(jq -r '.Title.Text' response.json)
-echo "Chart title: $title"
-```
-
 ### Response
 
 ```json
@@ -121,13 +109,13 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## How to Use the Get Worksheet Chart Title API with SDKs?
 
@@ -135,9 +123,7 @@ Content-Type: application/json
 
 The <a href="https://reference.aspose.cloud/cells/#/Charts/GetWorksheetChartTitle" rel="noopener noreferrer">Get Worksheet Chart Title API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
-You can also refer to the individual SDK documentation for more advanced scenarios, such as updating or deleting a chart title.  
-
-**See also**: [Update Chart Title](/charts/title/put/), [Delete Chart Title](/charts/title/delete/).
+You can also refer to the individual SDK documentation for more advanced scenarios, such as updating or deleting a chart title.
 
 ### Use Aspose.Cells Cloud SDKs
 

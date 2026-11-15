@@ -9,6 +9,7 @@ description: "Learn how to delete duplicate rows from a ListObject in an Excel w
 weight: 100
 ArticleTitle: "Remove Duplicate Rows from ListObject in Excel via Aspose.Cells Cloud API"
 ---
+
 The **PostWorksheetListObjectRemoveDuplicates** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/RemoveDuplicates`) removes duplicate rows from a ListObject in an Excel worksheet using Aspose.Cells Cloud, supporting robust duplicate removal for structured data while allowing optional folder and storageName query parameters to specify the file location.
 
 ## The Post Worksheet List Object Remove Duplicates Web API
@@ -23,13 +24,13 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| listObjectIndex | Integer | Path | The list object index. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name  | Type    | Path/Query String/HTTPBody | Description                                  |
+| --------------- | ------- | -------------------------- | -------------------------------------------- |
+| name            | String  | Path                       | The file name.                               |
+| sheetName       | String  | Path                       | The worksheet name.                          |
+| listObjectIndex | Integer | Path                       | The list object index.                       |
+| folder          | String  | Query                      | The folder where the file is situated.       |
+| storageName     | String  | Query                      | The storage name where the file is situated. |
 
 ### Response
 
@@ -54,13 +55,13 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 On success the service returns a JSON object similar to the example above. The fields are:
 
@@ -69,7 +70,13 @@ On success the service returns a JSON object similar to the example above. The f
 - **DuplicateRowsRemoved** – Number of rows that were eliminated.
 - **Message** – Additional information about the operation.
 
-### Sample Request (cURL)
+## How to Use the Post Worksheet List Object Remove Duplicates API with SDKs?
+
+### Post Worksheet List Object Remove Duplicates API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObjectRemoveDuplicates" rel="noopener noreferrer">Post Worksheet List Object Remove Duplicates API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
+
+**cURL Example**
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 {{< tab tabNum="1" >}}
@@ -96,12 +103,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listo
 
 {{< /tab >}}
 {{< /tabs >}}
-
-## How to Use the Post Worksheet List Object Remove Duplicates API with SDKs?
-
-### Post Worksheet List Object Remove Duplicates API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObjectRemoveDuplicates" rel="noopener noreferrer">Post Worksheet List Object Remove Duplicates API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

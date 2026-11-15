@@ -78,34 +78,17 @@ The body must contain a **Comment** object in JSON format.
 | `TextOrientationType`     | string  | optional | Text rotation (`NoRotation`, `Rotate90`, …).           |
 | `TextVerticalAlignment`   | string  | optional | Vertical alignment (`Top`, `Center`, `Bottom`).        |
 
----
+**HTTP Status Codes**
 
-## cURL Example
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
-```bash
-curl -v "https://api.aspose.cloud/v3.1/cells/test.xlsx/worksheets/Sheet1/comments/A1" \
-  -X PUT \
-  -H "Content-Type: application/json" \
-  -H "Accept: application/json" \
-  -H "Authorization: Bearer <jwt_token>" \
-  -d '{
-        "CellName": "A1",
-        "Author": "test",
-        "HtmlNote": "<font style=\"font-weight:bold;font-family:Tahoma;font-size:9pt;color:#000000;text-align:left;\">this is a comment</font>",
-        "Note": "this is a comment",
-        "AutoSize": true,
-        "IsVisible": true,
-        "Width": 10,
-        "Height": 10,
-        "TextHorizontalAlignment": "Left",
-        "TextOrientationType": "NoRotation",
-        "TextVerticalAlignment": "Top"
-      }'
-```
-
----
-
-## Response Schema
+### Response Schema
 
 | Field     | Type    | Description                                                                           |
 | --------- | ------- | ------------------------------------------------------------------------------------- |
@@ -122,9 +105,7 @@ The `Comment` object also contains a **link** sub‑object:
 | `Title`   | string | Optional title (may be `null`).              |
 | `Type`    | string | Optional MIME type (may be `null`).          |
 
----
-
-## Successful Response Example
+### Successful Response Example
 
 ```json
 {
@@ -152,20 +133,36 @@ The `Comment` object also contains a **link** sub‑object:
 }
 ```
 
----
+## How to Use the Add a Comment to a Cell in a Worksheet API with SDKs?
 
-## Error Responses
+### Add a Comment to a Cell in a Worksheet API Specification
 
-| HTTP Code | Description                                                 | Example                                                                                                                                             |
-| --------- | ----------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **400**   | Bad request – missing or invalid parameters.                | `{ "Error": { "Code": "InvalidParameter", "Message": "The 'cellName' parameter is missing or malformed." }, "Code": 400, "Status": "Bad Request" }` |
-| **401**   | Unauthorized – token missing or invalid.                    | `{ "Error": { "Code": "InvalidToken", "Message": "Authentication failed." }, "Code": 401, "Status": "Unauthorized" }`                               |
-| **404**   | Not found – workbook, worksheet, or cell does not exist.    | `{ "Error": { "Code": "FileNotFound", "Message": "Workbook 'test.xlsx' not found." }, "Code": 404, "Status": "Not Found" }`                         |
-| **500**   | Internal server error – unexpected condition on the server. | `{ "Error": { "Code": "ServerError", "Message": "An unexpected error occurred." }, "Code": 500, "Status": "Internal Server Error" }`                |
+The <a href="https://reference.aspose.cloud/cells/#/Comments/PutWorksheetComment" rel="noopener noreferrer">Add a Comment to a Cell in a Worksheet API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
----
+### cURL Example
 
-## SDK Examples
+```bash
+curl -v "https://api.aspose.cloud/v3.1/cells/test.xlsx/worksheets/Sheet1/comments/A1" \
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt_token>" \
+  -d '{
+        "CellName": "A1",
+        "Author": "test",
+        "HtmlNote": "<font style=\"font-weight:bold;font-family:Tahoma;font-size:9pt;color:#000000;text-align:left;\">this is a comment</font>",
+        "Note": "this is a comment",
+        "AutoSize": true,
+        "IsVisible": true,
+        "Width": 10,
+        "Height": 10,
+        "TextHorizontalAlignment": "Left",
+        "TextOrientationType": "NoRotation",
+        "TextVerticalAlignment": "Top"
+      }'
+```
+
+### Use Aspose.Cells Cloud SDKs
 
 The following SDKs provide ready‑made wrappers for this operation. Replace placeholder values (`<YOUR_CLIENT_ID>`, `<YOUR_CLIENT_SECRET>`, etc.) with real data.
 
@@ -456,27 +453,3 @@ func main() {
 {{< /tab >}}
 
 {{< /tabs >}}
-
-> ⚠️ **Note**: Field names follow the SDK’s language-specific naming conventions:
->
-> - C#/Java/Go: `CellName` (PascalCase)
-> - JS/Python/Ruby/PHP/Perl: `cellName` / `cell_name` (camelCase/snake_case)
->   Ensure your SDK version matches the casing in this example.
-
----
-
-## See Also
-
-- **Get Worksheet Comment** – `GET /cells/{name}/worksheets/{sheetName}/comments/{cellName}`
-- **Update Worksheet Comment** – `POST /cells/{name}/worksheets/{sheetName}/comments/{cellName}`
-- **Delete Worksheet Comment** – `DELETE /cells/{name}/worksheets/{sheetName}/comments/{cellName}`
-- **Clear All Comments** – `DELETE /cells/{name}/worksheets/{sheetName}/comments`
-
----
-
-## Additional Notes
-
-- The endpoint path includes **v3.1** — the current stable version. While `v3.0` remains functional, new features and improvements are only available in v3.1.
-- For the full OpenAPI definition, visit the [Aspose.Cells Cloud API reference](https://docs.aspose.cloud/cells/#/Worksheets/PutWorksheetComment).
-- Remember to handle rate‑limiting (HTTP 429) and retry according to the API guidelines.
-- To migrate from v3.0 to v3.1, update your base URL from `https://api.aspose.cloud/v3.0` to `https://api.aspose.cloud/v3.1` and verify field casing consistency in your SDK implementations.

@@ -8,6 +8,7 @@ description: "Learn how to update the second category axis of a chart in an Exce
 ArticleTitle: "Update Chart Second Category Axis – Aspose.Cells Cloud API"
 linktitle: "Update Second Category Axis"
 ---
+
 The **PostChartSecondCategoryAxis** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/secondcategoryaxis`) updates the second category axis of a chart in Aspose.Cells Cloud, enabling precise control over axis formatting and scale by sending an axis configuration object in the request body.
 
 ## The Post Chart Second Category Axis Web API
@@ -22,74 +23,16 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| chartIndex | Integer | Path | The chart index. |
-| axis | class:axis | HTTPBody | Axis |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
-
-**Authentication** – The API requires a valid OAuth 2.0 access token. Generate a JWT token by following the [Authentication Guide]（https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/）. Include the token in the `Authorization` header as shown in the cURL example below.
+| Parameter Name | Type       | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ---------- | -------------------------- | -------------------------------------------- |
+| name           | String     | Path                       | The file name.                               |
+| sheetName      | String     | Path                       | The worksheet name.                          |
+| chartIndex     | Integer    | Path                       | The chart index.                             |
+| axis           | class:axis | HTTPBody                   | Axis                                         |
+| folder         | String     | Query                      | The folder where the file is situated.       |
+| storageName    | String     | Query                      | The storage name where the file is situated. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/PostChartSecondCategoryAxis) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
-
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
-
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
-
-{{< tab tabNum="1" >}}
-
-```bash
-curl -v "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/secondcategoryaxis?folder={folder}&storageName={storageName}" \
-  -X POST \
-  -H "Content-Type: application/json" \
-  -H "Accept: application/json" \
-  -H "Authorization: Bearer <jwt token>" \
-  -d '{
-        "axis": {
-          /* axis settings, e.g., "Title": "New Axis Title", "IsVisible": true */
-        }
-      }'
-```
-
-_Replace `{name}`, `{sheetName}`, `{chartIndex}`, `{folder}`, and `{storageName}` with your actual values. The request body must contain the `axis` object with the desired settings._
-
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-**Successful response (200)**
-
-```json
-{
-  "Code": 200,
-  "Status": "OK",
-  "Chart": {
-    "Id": "chart_1",
-    "SecondCategoryAxis": {
-      "Title": "New Axis Title",
-      "IsVisible": true
-      /* additional axis properties */
-    }
-  }
-}
-```
-
-**Error responses**
-
-
-```json
-{
-  "Code": 400,
-  "Message": "Invalid request payload."
-}
-```
-
-{{< /tab >}}
-
-{{< /tabs >}}
 
 ### Response
 
@@ -114,14 +57,14 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                        |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## How to Use the Post Chart Second Category Axis API with SDKs?
 
@@ -131,12 +74,60 @@ The <a href="https://reference.aspose.cloud/cells/#/Charts/PostChartSecondCatego
 
 SDKs simplify development by handling low‑level details and allowing you to focus on your business logic. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-**Notes & Best Practices**
+### curl Example
 
-- The `chartIndex` parameter is zero‑based; the first chart in a worksheet is index 0.
-- The API supports both `.xlsx` and `.xls` workbook formats.
-- Include only the properties you need in the `axis` object; unspecified properties retain their existing values.
-- Respect rate‑limit guidelines (typically 100 requests per minute per account) to avoid throttling.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+
+{{< tab tabNum="1" >}}
+
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/secondcategoryaxis?folder={folder}&storageName={storageName}" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{
+        "axis": {
+          /* axis settings, e.g., "Title": "New Axis Title", "IsVisible": true */
+        }
+      }'
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+**Successful response (200)**
+
+```json
+{
+  "Code": 200,
+  "Status": "OK",
+  "Chart": {
+    "Id": "chart_1",
+    "SecondCategoryAxis": {
+      "Title": "New Axis Title",
+      "IsVisible": true
+      /* additional axis properties */
+    }
+  }
+}
+```
+
+**Error responses**
+
+```json
+{
+  "Code": 400,
+  "Message": "Invalid request payload."
+}
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
 
 ### Use Aspose.Cells Cloud SDKs
 

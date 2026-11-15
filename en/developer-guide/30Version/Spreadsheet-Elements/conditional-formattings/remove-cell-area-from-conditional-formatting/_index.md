@@ -9,6 +9,7 @@ ArticleTitle: "Delete Cell Area – Aspose.Cells Cloud API Documentation"
 weight: 70
 linktitle: "Delete Cell Area"
 ---
+
 The **DeleteWorksheetConditionalFormattingArea** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/area`) in Aspose.Cells Cloud removes a specified rectangular cell area from an existing conditional formatting rule in a worksheet, using required path parameters `name` and `sheetName` plus query parameters `startRow`, `startColumn`, `totalRows`, and `totalColumns` to define the range; this enables precise programmatic control over conditional formatting removal without modifying other rules.
 
 ## The Delete Worksheet Conditional Formatting Area Web API
@@ -55,16 +56,21 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 ```
 
-### Error Responses
+**HTTP Status Codes**
 
-| HTTP Status | Code            | Description                                           | Sample JSON                                                   |
-| ----------- | --------------- | ----------------------------------------------------- | ------------------------------------------------------------- |
-| 400         | `BadRequest`    | Missing or invalid parameters.                        | `{ "Code": "400", "Message": "Invalid request parameters." }` |
-| 401         | `Unauthorized`  | Missing or invalid JWT token.                         | `{ "Code": "401", "Message": "Authentication failed." }`      |
-| 404         | `NotFound`      | File, worksheet, or conditional formatting not found. | `{ "Code": "404", "Message": "Resource not found." }`         |
-| 500         | `InternalError` | Unexpected server error.                              | `{ "Code": "500", "Message": "Internal server error." }`      |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/DeleteWorksheetConditionalFormattingArea) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+## How to Use the Delete Worksheet Conditional Formatting Area API with SDKs?
+
+### Delete Worksheet Conditional Formatting Area API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/ConditionalFormattings/DeleteWorksheetConditionalFormattingArea" rel="noopener noreferrer">Delete Worksheet Conditional Formatting Area API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells Cloud services easily. The following example shows how to call the **Delete Cell Area** endpoint with cURL.
 
@@ -94,12 +100,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/condit
 {{< /tab >}}
 
 {{< /tabs >}}
-
-## How to Use the Delete Worksheet Conditional Formatting Area API with SDKs?
-
-### Delete Worksheet Conditional Formatting Area API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/ConditionalFormattings/DeleteWorksheetConditionalFormattingArea" rel="noopener noreferrer">Delete Worksheet Conditional Formatting Area API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

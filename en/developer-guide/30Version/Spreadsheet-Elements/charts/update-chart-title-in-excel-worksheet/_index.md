@@ -9,6 +9,7 @@ description: Learn how to update a chart title in an Excel worksheet using Aspos
 ArticleTitle: "Update Chart Title in Excel Worksheet – Aspose.Cells Cloud Documentation"
 linktitle: "Update Chart Title"
 ---
+
 The **PostWorksheetChartTitle** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title`) enables updating the title of a specific chart in an Excel worksheet using Aspose.Cells Cloud, requiring the file name, worksheet name, chart index, and a title object in the request body; this REST endpoint supports programmatic chart title management, allowing developers to modify chart titles dynamically without manual Excel interaction.
 
 ## The Post Worksheet Chart Title Web API
@@ -23,14 +24,14 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| chartIndex | Integer | Path | The chart index. |
-| title | class:title | HTTPBody | TitleChart title |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type        | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ----------- | -------------------------- | -------------------------------------------- |
+| name           | String      | Path                       | The file name.                               |
+| sheetName      | String      | Path                       | The worksheet name.                          |
+| chartIndex     | Integer     | Path                       | The chart index.                             |
+| title          | class:title | HTTPBody                   | TitleChart title                             |
+| folder         | String      | Query                      | The folder where the file is situated.       |
+| storageName    | String      | Query                      | The storage name where the file is situated. |
 
 ### Response
 
@@ -57,17 +58,21 @@ All API calls must be made over **HTTPS** to avoid mixed‑content warnings.
 
 ### Response status codes
 
-| Code | Description                              |
-| ---- | ---------------------------------------- |
-| 200  | OK – The chart title was updated successfully. |
-| 400  | Bad Request – Missing or invalid parameters. |
-| 401  | Unauthorized – Invalid or missing JWT token. |
+| Code | Description                                          |
+| ---- | ---------------------------------------------------- |
+| 200  | OK – The chart title was updated successfully.       |
+| 400  | Bad Request – Missing or invalid parameters.         |
+| 401  | Unauthorized – Invalid or missing JWT token.         |
 | 404  | Not Found – Workbook, worksheet, or chart not found. |
 | 500  | Internal Server Error – Unexpected server condition. |
 
 **Note:** The `chartIndex` is zero‑based; the first chart on a worksheet is referenced with `0`.
 
-The <a href="https://apireference.aspose.cloud/cells/#/Charts/PostWorksheetChartTitle" target="_blank" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+## How to Use the Post Worksheet Chart Title API with SDKs?
+
+### Post Worksheet Chart Title API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Charts/PostWorksheetChartTitle" rel="noopener noreferrer">Post Worksheet Chart Title API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
@@ -97,12 +102,6 @@ curl -v POST "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheet
 {{< /tab >}}
 
 {{< /tabs >}}
-
-## How to Use the Post Worksheet Chart Title API with SDKs?
-
-### Post Worksheet Chart Title API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Charts/PostWorksheetChartTitle" rel="noopener noreferrer">Post Worksheet Chart Title API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

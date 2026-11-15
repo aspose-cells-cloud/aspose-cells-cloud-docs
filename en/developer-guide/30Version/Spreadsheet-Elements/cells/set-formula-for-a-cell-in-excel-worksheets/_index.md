@@ -8,6 +8,7 @@ description: "Set Excel cell formulas using Aspose.Cells Cloud REST API with cUR
 linktitle: "Set Cell Formula"
 ArticleTitle: "Set Formula for a Cell in Excel Using Aspose.Cells Cloud REST API"
 ---
+
 The **PostWorksheetCellSetValue** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}`) enables developers to set a formula or value for a specific cell in an Excel worksheet using its cell name via Aspose.Cells Cloud, supporting operations like assigning dynamic formulas such as `=SUM(A1:A10)` directly to cells without local Excel installation.
 
 ## The Post Worksheet Cell Set Value Web API
@@ -20,31 +21,18 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{ce
 
 The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
-**Request parameters**
-
-| Parameter Name | Type   | Location | Required | Description                              |
-|----------------|--------|----------|----------|------------------------------------------|
-| name           | string | path     | Y        | Name of the Excel document.              |
-| sheetName      | string | path     | Y        | Name of the worksheet.                   |
-| cellName       | string | path     | Y        | Address of the target cell (e.g., **A1**).|
-| value          | string | query    | N        | Value to assign to the cell.             |
-| type           | string | query    | N        | Data type of the value (e.g., **string**).|
-| formula        | string | query    | N        | Formula to apply to the cell (e.g., **sum(A1,A2)**). |
-| folder         | string | query    | N        | Folder that contains the document.       |
-| storageName    | string | query    | N        | Name of the storage service.             |
-
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| cellName | String | Path | The cell name. |
-| value | String | Query | The cell value. |
-| type | String | Query | The value type. |
-| formula | String | Query | Formula for cell |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------ | -------------------------- | -------------------------------------------- |
+| name           | String | Path                       | The file name.                               |
+| sheetName      | String | Path                       | The worksheet name.                          |
+| cellName       | String | Path                       | The cell name.                               |
+| value          | String | Query                      | The cell value.                              |
+| type           | String | Query                      | The value type.                              |
+| formula        | String | Query                      | Formula for cell                             |
+| folder         | String | Query                      | The folder where the file is situated.       |
+| storageName    | String | Query                      | The storage name where the file is situated. |
 
 ### Response
 
@@ -69,13 +57,13 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 Return CellResponse.
 
@@ -104,6 +92,8 @@ Return CellResponse.
 ### Post Worksheet Cell Set Value API Specification
 
 The <a href="https://reference.aspose.cloud/cells/#/Cells/PostWorksheetCellSetValue" rel="noopener noreferrer">Post Worksheet Cell Set Value API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
+
+### curl Example
 
 Use the cURL command‑line tool to call Aspose.Cells web services.
 
@@ -136,229 +126,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/c
     "Formula" : "=Sum(A2:A15)",
     ...
   }
-}
-```
-
-{{< /tab >}}
-
-{{< /tabs >}}
-
-{{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
-
-{{< tab tabNum="1" >}}
-
-```csharp
-// C# example – set formula for a cell
-// Replace <access-token>, <file-name>, etc. with your values.
-var api = new CellsApi("<client-id>", "<client-secret>", "https://api.aspose.cloud");
-var response = api.PostWorksheetCellSetValue(
-    name: "myWorkbook.xlsx",
-    sheetName: "Sheet1",
-    cellName: "A3",
-    value: "1234",
-    type: "string",
-    formula: "SUM(A1,A2)",
-    folder: null,
-    storageName: null);
-Console.WriteLine(response.Status);
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-```java
-// Java example – set formula for a cell
-CellsApi api = new CellsApi("<client-id>", "<client-secret>", "https://api.aspose.cloud");
-PostWorksheetCellSetValueRequest request = new PostWorksheetCellSetValueRequest()
-        .name("myWorkbook.xlsx")
-        .sheetName("Sheet1")
-        .cellName("A3")
-        .value("1234")
-        .type("string")
-        .formula("SUM(A1,A2)");
-CellsResponse response = api.postWorksheetCellSetValue(request);
-System.out.println(response.getStatus());
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="3" >}}
-
-```php
-<?php
-// PHP example – set formula for a cell
-require_once('vendor/autoload.php');
-
-$config = new Aspose\Cells\Configuration();
-$config->setAppKey('<client-id>');
-$config->setAppSid('<client-secret>');
-$config->setHost('https://api.aspose.cloud');
-
-$apiInstance = new Aspose\Cells\Api\CellsApi($config);
-$result = $apiInstance->postWorksheetCellSetValue(
-    "myWorkbook.xlsx",
-    "Sheet1",
-    "A3",
-    "1234",
-    "string",
-    "SUM(A1,A2)"
-);
-echo $result->getStatus();
-?>
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="4" >}}
-
-```ruby
-# Ruby example – set formula for a cell
-require 'aspose_cells_cloud'
-
-config = AsposeCellsCloud::Configuration.new
-config.api_key['client_id'] = '<client-id>'
-config.api_key['client_secret'] = '<client-secret>'
-config.host = 'https://api.aspose.cloud'
-
-api = AsposeCellsCloud::CellsApi.new
-result = api.post_worksheet_cell_set_value(
-  name: 'myWorkbook.xlsx',
-  sheet_name: 'Sheet1',
-  cell_name: 'A3',
-  value: '1234',
-  type: 'string',
-  formula: 'SUM(A1,A2)'
-)
-puts result.status
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="5" >}}
-
-```python
-# Python example – set formula for a cell
-import asposecellscloud
-
-client = asposecellscloud.CellsApiClient(
-    client_id='<client-id>',
-    client_secret='<client-secret>',
-    base_url='https://api.aspose.cloud'
-)
-
-api = asposecellscloud.CellsApi(client)
-response = api.post_worksheet_cell_set_value(
-    name='myWorkbook.xlsx',
-    sheet_name='Sheet1',
-    cell_name='A3',
-    value='1234',
-    type='string',
-    formula='SUM(A1,A2)'
-)
-print(response.status)
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="6" >}}
-
-```javascript
-// Node.js example – set formula for a cell
-const { CellsApi, ApiClient } = require('asposecellscloud');
-const client = new ApiClient();
-client.config = {
-    clientId: '<client-id>',
-    clientSecret: '<client-secret>',
-    baseUrl: 'https://api.aspose.cloud'
-};
-
-const cellsApi = new CellsApi(client);
-cellsApi.postWorksheetCellSetValue({
-    name: 'myWorkbook.xlsx',
-    sheetName: 'Sheet1',
-    cellName: 'A3',
-    value: '1234',
-    type: 'string',
-    formula: 'SUM(A1,A2)'
-}).then(res => console.log(res.status));
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="7" >}}
-
-```java
-// Android (Java) example – set formula for a cell
-// Similar to the standard Java example; ensure you use the Android-compatible SDK.
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="8" >}}
-
-**Swift example not available**. The SDK for Swift is currently under development.
-
-{{< /tab >}}
-
-{{< tab tabNum="9" >}}
-
-```perl
-# Perl example – set formula for a cell
-use AsposeCellsCloud::CellsApi;
-my $api_instance = AsposeCellsCloud::CellsApi->new(
-    client_id => '<client-id>',
-    client_secret => '<client-secret>',
-    base_url => 'https://api.aspose.cloud'
-);
-my $result = $api_instance->post_worksheet_cell_set_value(
-    name => 'myWorkbook.xlsx',
-    sheet_name => 'Sheet1',
-    cell_name => 'A3',
-    value => '1234',
-    type => 'string',
-    formula => 'SUM(A1,A2)'
-);
-print $result->{Status};
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="10" >}}
-
-```go
-// Go example – set formula for a cell
-package main
-
-import (
-    "fmt"
-    "github.com/asposecellscloud/asposecellscloud-go/v3"
-)
-
-func main() {
-    config := asposecellscloud.NewConfiguration()
-    config.ClientId = "<client-id>"
-    config.ClientSecret = "<client-secret>"
-    config.BasePath = "https://api.aspose.cloud"
-
-    api := asposecellscloud.NewAPIClient(config).CellsApi
-    resp, _, err := api.PostWorksheetCellSetValue(
-        "myWorkbook.xlsx",
-        "Sheet1",
-        "A3",
-        map[string]string{
-            "value":   "1234",
-            "type":    "string",
-            "formula": "SUM(A1,A2)",
-        },
-        nil,
-        nil,
-    )
-    if err != nil {
-        fmt.Println(err)
-        return
-    }
-    fmt.Println(resp.Status)
 }
 ```
 

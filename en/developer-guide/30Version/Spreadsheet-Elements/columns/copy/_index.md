@@ -16,6 +16,7 @@ articleTitle: "Copy Columns in an Excel Worksheet using Aspose.Cells Cloud API"
 type: docs
 keywords: "Aspose.Cells Cloud, copy columns, Excel column duplication, REST API v3.0, PostCopyWorksheetColumns, cURL example, SDK integration, conditional formatting copy, worksheet column operations, authentication JWT"
 ---
+
 The **PostCopyWorksheetColumns** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/copy`) in Aspose.Cells Cloud REST API v3.0 enables copying a specified number of columns from a source index to a destination index within the same or a different worksheet, preserving values, styles, formulas, and conditional formatting; this operation supports tasks like template duplication and structural reorganization in large Excel workbooks.
 
 ## Overview
@@ -23,8 +24,6 @@ The **PostCopyWorksheetColumns** API (`POST https://api.aspose.cloud/v3.0/cells/
 The **Copy Columns** operation in Aspose.Cells Cloud REST API v3.0 enables you to duplicate a single column or a contiguous range of columns within the same Excel worksheet. The copied content—including values, cell styles, conditional formatting, and formulas—is inserted at a specified destination column index. This operation supports large-scale spreadsheet management and is ideal for tasks such as template duplication, data expansion, and structural reorganization.
 
 > **Note**: This operation only copies within the same worksheet. To copy columns across worksheets or workbooks, use [Copy Worksheet](/worksheets/copy/) or [Paste Special](/cells/paste/) operations.
-
----
 
 ## The Post Copy Worksheet Columns Web API
 
@@ -38,16 +37,16 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Path Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| sourceColumnIndex | Integer | Query | Source column index |
-| destinationColumnIndex | Integer | Query | Destination column index |
-| columnNumber | Integer | Query | The copied column number |
-| worksheet | String | Query | The destination worksheet name. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name         | Type    | Path/Query String/HTTPBody | Description                                  |
+| ---------------------- | ------- | -------------------------- | -------------------------------------------- |
+| name                   | String  | Path                       | The file name.                               |
+| sheetName              | String  | Path                       | The worksheet name.                          |
+| sourceColumnIndex      | Integer | Query                      | Source column index                          |
+| destinationColumnIndex | Integer | Query                      | Destination column index                     |
+| columnNumber           | Integer | Query                      | The copied column number                     |
+| worksheet              | String  | Query                      | The destination worksheet name.              |
+| folder                 | String  | Query                      | The folder where the file is situated.       |
+| storageName            | String  | Query                      | The storage name where the file is situated. |
 
 ### Response
 
@@ -72,13 +71,13 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ### Query Parameters
 
@@ -96,20 +95,6 @@ Content-Type: application/json
 > - All indices are **0-based**.
 > - The `destinationColumnIndex` must be ≥ 0 and ≤ total columns in the worksheet.
 > - Copying columns may shift existing columns to the right.
-
-### OpenAPI Specification
-
-Full API contract: [PostCopyWorksheetColumns](https://apireference.aspose.cloud/cells/#/Cells/PostCopyWorksheetColumns)
-
----
-
-## Request Example (cURL)
-
-```bash
-curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/copy?sourceColumnIndex=1&destinationColumnIndex=12&columnNumber=3" \
-  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..." \
-  -H "accept: application/json"
-```
 
 ### Response
 
@@ -144,293 +129,13 @@ The API returns standard HTTP status codes with a JSON body containing error det
 
 The <a href="https://reference.aspose.cloud/cells/#/Cells/PostCopyWorksheetColumns" rel="noopener noreferrer">Post Copy Worksheet Columns API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
-Using an SDK is the recommended approach for production integrations. It handles authentication, serialization, and error handling automatically.
+### Request Example (cURL)
 
-{{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-
-{{< tab tabNum="1" >}}
-
-### C# (.NET)
-
-```csharp
-using Aspose.Cells.Cloud.Sdk;
-using Aspose.Cells.Cloud.Sdk.Models;
-
-var configuration = new Configuration
-{
-    ClientId = Environment.GetEnvironmentVariable("ASPOSE_CLOUD_CLIENT_ID"),
-    ClientSecret = Environment.GetEnvironmentVariable("ASPOSE_CLOUD_CLIENT_SECRET")
-};
-var cellsApi = new CellsApi(configuration);
-
-var request = new PostCopyWorksheetColumnsRequest
-{
-    Name = "test.xlsx",
-    SheetName = "Sheet1",
-    SourceColumnIndex = 1,
-    DestinationColumnIndex = 12,
-    ColumnNumber = 3,
-    Folder = "docs/sheets",
-    StorageName = "FirstStorage"
-};
-
-var result = await cellsApi.PostCopyWorksheetColumns(request);
-Console.WriteLine($"Success: {result.Code}");
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/copy?sourceColumnIndex=1&destinationColumnIndex=12&columnNumber=3" \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..." \
+  -H "accept: application/json"
 ```
-
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-### Java
-
-```java
-import com.aspose.cells.cloud.*;
-import com.aspose.cells.cloud.api.CellsApi;
-import com.aspose.cells.cloud.model.*;
-
-ApiClient apiClient = new ApiClient();
-apiClient.setBasePath("https://api.aspose.cloud");
-apiClient.setAccessToken("YOUR_ACCESS_TOKEN");
-
-CellsApi cellsApi = new CellsApi(apiClient);
-
-String name = "test.xlsx";
-String sheetName = "Sheet1";
-Integer sourceColumnIndex = 1;
-Integer destinationColumnIndex = 12;
-Integer columnNumber = 3;
-String folder = "docs/sheets";
-String storageName = "FirstStorage";
-
-try {
-    CellsCloudResponse response = cellsApi.postCopyWorksheetColumns(
-        name, sheetName, sourceColumnIndex, destinationColumnIndex, columnNumber,
-        null, folder, storageName);
-    System.out.println("Success: " + response.getCode());
-} catch (ApiException e) {
-    System.err.println("Error: " + e.getResponseBody());
-}
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="3" >}}
-
-### PHP
-
-```php
-<?php
-require_once('vendor/autoload.php');
-
-use Aspose\Cells\CellsApi;
-use Aspose\Cells\Configuration;
-
-$clientId = getenv('ASPOSE_CLOUD_CLIENT_ID');
-$clientSecret = getenv('ASPOSE_CLOUD_CLIENT_SECRET');
-
-$configuration = new Configuration();
-$configuration->setAppKey($clientSecret);
-$configuration->setAppSid($clientId);
-
-$cellsApi = new CellsApi($configuration);
-
-$request = new PostCopyWorksheetColumnsRequest([
-    'name' => 'test.xlsx',
-    'sheetName' => 'Sheet1',
-    'sourceColumnIndex' => 1,
-    'destinationColumnIndex' => 12,
-    'columnNumber' => 3,
-    'folder' => 'docs/sheets',
-    'storageName' => 'FirstStorage'
-]);
-
-try {
-    $result = $cellsApi->postCopyWorksheetColumns($request);
-    echo "Success: " . $result->Code;
-} catch (Exception $e) {
-    echo 'Error: ' . $e->getMessage();
-}
-?>
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="4" >}}
-
-### Ruby
-
-```ruby
-require 'aspose_cells_cloud'
-
-AsposeCellsCloud.configure do |config|
-  config.client_id = ENV['ASPOSE_CLOUD_CLIENT_ID']
-  config.client_secret = ENV['ASPOSE_CLOUD_CLIENT_SECRET']
-end
-
-cells_api = AsposeCellsCloud::CellsApi.new
-
-request = AsposeCellsCloud::PostCopyWorksheetColumnsRequest.new(
-  name: 'test.xlsx',
-  sheet_name: 'Sheet1',
-  source_column_index: 1,
-  destination_column_index: 12,
-  column_number: 3,
-  folder: 'docs/sheets',
-  storage_name: 'FirstStorage'
-)
-
-response = cells_api.post_copy_worksheet_columns(request)
-puts "Success: #{response.code}"
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="5" >}}
-
-### Node.js (TypeScript/JavaScript)
-
-```typescript
-import { CellsApi, PostCopyWorksheetColumnsRequest } from "aspose-cells-cloud";
-
-const clientId = process.env.ASPOSE_CLOUD_CLIENT_ID;
-const clientSecret = process.env.ASPOSE_CLOUD_CLIENT_SECRET;
-
-const cellsApi = new CellsApi(clientId, clientSecret);
-
-const request = new PostCopyWorksheetColumnsRequest({
-  name: "test.xlsx",
-  sheetName: "Sheet1",
-  sourceColumnIndex: 1,
-  destinationColumnIndex: 12,
-  columnNumber: 3,
-  folder: "docs/sheets",
-  storageName: "FirstStorage",
-});
-
-try {
-  const response = await cellsApi.postCopyWorksheetColumns(request);
-  console.log(`Success: ${response.code}`);
-} catch (error) {
-  console.error("Error:", error.response?.data || error.message);
-}
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="6" >}}
-
-### Python
-
-```python
-import os
-from asposecellscloud.api.cells_api import CellsApi
-from asposecellscloud.models.post_copy_worksheet_columns_request import PostCopyWorksheetColumnsRequest
-
-client_id = os.getenv("ASPOSE_CLOUD_CLIENT_ID")
-client_secret = os.getenv("ASPOSE_CLOUD_CLIENT_SECRET")
-
-api = CellsApi(client_id, client_secret)
-
-request = PostCopyWorksheetColumnsRequest(
-    name="test.xlsx",
-    sheet_name="Sheet1",
-    source_column_index=1,
-    destination_column_index=12,
-    column_number=3,
-    folder="docs/sheets",
-    storage_name="FirstStorage"
-)
-
-response = api.post_copy_worksheet_columns(request)
-print(f"Success: {response.code}")
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="7" >}}
-
-### Perl
-
-```perl
-use AsposeCellsCloud::Configuration;
-use AsposeCellsCloud::CellsApi;
-
-my $config = AsposeCellsCloud::Configuration->new(
-  app_sid => $ENV{'ASPOSE_CLOUD_CLIENT_ID'},
-  app_key => $ENV{'ASPOSE_CLOUD_CLIENT_SECRET'}
-);
-
-my $cells_api = AsposeCellsCloud::CellsApi->new(config => $config);
-
-my $request = {
-  name => 'test.xlsx',
-  sheet_name => 'Sheet1',
-  source_column_index => 1,
-  destination_column_index => 12,
-  column_number => 3,
-  folder => 'docs/sheets',
-  storage_name => 'FirstStorage'
-};
-
-eval {
-  my $result = $cells_api->post_copy_worksheet_columns($request);
-  print "Success: " . $result->{Code} . "\n";
-};
-if ($@) {
-  warn "Error: " . $@->message;
-}
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="8" >}}
-
-### Go
-
-```go
-package main
-
-import (
-	"context"
-	"fmt"
-	"os"
-
-	"github.com/aspose-cells-cloud/aspose-cells-cloud-go/v22/api"
-	"github.com/aspose-cells-cloud/aspose-cells-cloud-go/v22/request"
-)
-
-func main() {
-	clientID := os.Getenv("ASPOSE_CLOUD_CLIENT_ID")
-	clientSecret := os.Getenv("ASPOSE_CLOUD_CLIENT_SECRET")
-
-	ctx := context.Background()
-	api := api.NewCellsApi(clientID, clientSecret)
-
-	req := &request.PostCopyWorksheetColumnsRequest{
-		Name:                   "test.xlsx",
-		SheetName:              "Sheet1",
-		SourceColumnIndex:      1,
-		DestinationColumnIndex: 12,
-		ColumnNumber:           3,
-		Folder:                 "docs/sheets",
-		StorageName:            "FirstStorage",
-	}
-
-	resp, _, err := api.PostCopyWorksheetColumns(ctx, req)
-	if err != nil {
-		fmt.Printf("Error: %v\n", err)
-		return
-	}
-	fmt.Printf("Success: %d\n", resp.Code)
-}
-```
-
-{{< /tab >}}
-
-{{< /tabs >}}
-
----
 
 ### Use Aspose.Cells Cloud SDKs
 

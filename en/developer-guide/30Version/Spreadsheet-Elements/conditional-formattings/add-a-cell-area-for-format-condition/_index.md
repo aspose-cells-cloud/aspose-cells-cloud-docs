@@ -12,6 +12,7 @@ type: docs
 linktitle: "Add CellArea to CF"
 ArticleTitle: "Add CellArea to Conditional Formatting in Aspose.Cells Cloud REST API v3.0"
 ---
+
 The **PutWorksheetFormatConditionArea** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}/area`) enables developers to assign a specific cell range—defined by the `cellArea` query parameter—to an existing conditional formatting rule in a worksheet via Aspose.Cells Cloud. This operation supports precise control over where formatting is applied, ensuring dynamic reports and data visualizations remain accurate and relevant to the intended data subset.
 
 ## Why This Matters
@@ -21,8 +22,6 @@ CellArea defines the exact range of cells affected by a conditional format—cri
 ## Add CellArea to Conditional Formatting
 
 **Summary** – Adds a cell area (e.g., `A1:C3`) to an existing conditional‑formatting rule in a worksheet via the Aspose.Cells Cloud REST API v3.0.
-
----
 
 ## The Put Worksheet Format Condition Area Web API
 
@@ -84,9 +83,26 @@ Content-Type: application/json
 | `folder`      | string | No       | Folder path where the file is stored.              |
 | `storageName` | string | No       | Storage service name.                              |
 
----
+## HTTP Status Codes
 
-## Request Example (cURL)
+| Code | Meaning               | Description                                                     |
+| ---- | --------------------- | --------------------------------------------------------------- |
+| 200  | OK                    | CellArea added successfully; response contains updated details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., malformed `cellArea`).     |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                   |
+| 409  | Conflict              | New `cellArea` overlaps an existing area in the same rule.      |
+| 413  | Payload Too Large     | Request exceeds size limits.                                    |
+| 500  | Internal Server Error | Unexpected server error.                                        |
+
+## How to Use the Put Worksheet Format Condition Area API with SDKs?
+
+### Put Worksheet Format Condition Area API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/ConditionalFormattings/PutWorksheetFormatConditionArea" rel="noopener noreferrer">Put Worksheet Format Condition Area API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
+
+> **Before running examples**, replace `<YOUR_APP_SID>` and `<YOUR_APP_KEY>` with your credentials from the [Aspose Cloud Dashboard](https://dashboard.aspose.cloud/).
+
+### cURL Example
 
 ```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/conditionalFormattings/0/area?cellArea=A1:C3" \
@@ -96,7 +112,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/condit
   -H "Authorization: Bearer <jwt token>"
 ```
 
-### Expected Successful Response
+#### Expected Successful Response
 
 ```json
 {
@@ -119,29 +135,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/condit
 | `StartColumn` | int  | Zero‑based index of the first column. |
 | `EndRow`      | int  | Zero‑based index of the last row.     |
 | `EndColumn`   | int  | Zero‑based index of the last column.  |
-
----
-
-## HTTP Status Codes
-
-| Code | Meaning               | Description                                                     |
-| ---- | --------------------- | --------------------------------------------------------------- |
-| 200  | OK                    | CellArea added successfully; response contains updated details. |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., malformed `cellArea`).     |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                   |
-| 409  | Conflict              | New `cellArea` overlaps an existing area in the same rule.      |
-| 413  | Payload Too Large     | Request exceeds size limits.                                    |
-| 500  | Internal Server Error | Unexpected server error.                                        |
-
----
-
-## How to Use the Put Worksheet Format Condition Area API with SDKs?
-
-### Put Worksheet Format Condition Area API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/ConditionalFormattings/PutWorksheetFormatConditionArea" rel="noopener noreferrer">Put Worksheet Format Condition Area API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
-
-> **Before running examples**, replace `<YOUR_APP_SID>` and `<YOUR_APP_KEY>` with your credentials from the [Aspose Cloud Dashboard](https://dashboard.aspose.cloud/).
 
 ### Use Aspose.Cells Cloud SDKs
 

@@ -8,6 +8,7 @@ description: Retrieves the second value axis of a specified chart in an Excel wo
 ArticleTitle: "Get Chart Second Value Axis – Aspose.Cells Cloud API"
 linktitle: "Get Second Value Axis"
 ---
+
 The **GetChartSecondValueAxis** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/secondvalueaxis`) retrieves the second value axis of a chart in Aspose.Cells Cloud, enabling developers to programmatically access axis properties such as scale, format, and title for advanced chart analysis and customization using standard REST conventions and supported SDKs for .NET, Java, Python, and other languages.
 
 ## The Get Chart Second Value Axis Web API
@@ -22,13 +23,13 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| chartIndex | Integer | Path | The chart index. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------- | -------------------------- | -------------------------------------------- |
+| name           | String  | Path                       | The file name.                               |
+| sheetName      | String  | Path                       | The worksheet name.                          |
+| chartIndex     | Integer | Path                       | The chart index.                             |
+| folder         | String  | Query                      | The folder where the file is situated.       |
+| storageName    | String  | Query                      | The storage name where the file is situated. |
 
 **Prerequisites**: A valid JWT access token obtained via the Aspose Cloud OAuth2 flow must be supplied in the `Authorization` header of each request.
 
@@ -70,22 +71,22 @@ curl -v "https://api.aspose.cloud/v3.0/cells/" \
 
 **Response fields**
 
-- **Code** – HTTP status code of the operation (e.g., `200` for success).  
-- **Status** – Textual description of the status (`"OK"` for success).  
-- **Axis** – Object containing details of the second value axis:  
-  - **AxisId** – Identifier of the axis.  
-  - **IsVisible** – Boolean indicating whether the axis is displayed.  
-  - **MinimumScale** – Minimum value displayed on the axis.  
-  - **MaximumScale** – Maximum value displayed on the axis.  
-  - **MajorUnit** – Interval between major tick marks.  
-  - **MinorUnit** – Interval between minor tick marks.  
+- **Code** – HTTP status code of the operation (e.g., `200` for success).
+- **Status** – Textual description of the status (`"OK"` for success).
+- **Axis** – Object containing details of the second value axis:
+  - **AxisId** – Identifier of the axis.
+  - **IsVisible** – Boolean indicating whether the axis is displayed.
+  - **MinimumScale** – Minimum value displayed on the axis.
+  - **MaximumScale** – Maximum value displayed on the axis.
+  - **MajorUnit** – Interval between major tick marks.
+  - **MinorUnit** – Interval between minor tick marks.
   - **Title** – Title text of the axis.
 
 **Error responses** (non‑200)
 
-- `400 Bad Request` – Invalid parameters or malformed request.  
-- `401 Unauthorized` – Missing or invalid JWT token.  
-- `404 Not Found` – Specified file, worksheet, or chart does not exist.  
+- `400 Bad Request` – Invalid parameters or malformed request.
+- `401 Unauthorized` – Missing or invalid JWT token.
+- `404 Not Found` – Specified file, worksheet, or chart does not exist.
 - `500 Internal Server Error` – Unexpected server error.
 
 {{< /tab >}}
@@ -115,13 +116,13 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## How to Use the Get Chart Second Value Axis API with SDKs?
 

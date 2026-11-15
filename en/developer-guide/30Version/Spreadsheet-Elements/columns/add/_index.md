@@ -12,6 +12,7 @@ description: "Insert one or more columns into an Excel worksheet using Aspose.Ce
 weight: 100
 ArticleTitle: "Add Empty Column to Excel Worksheet Using Aspose.Cells Cloud API"
 ---
+
 The **PutInsertWorksheetColumns** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex}`) inserts one or more columns into a specified worksheet at a given column index, using Aspose.Cells Cloud to programmatically manage spreadsheet structure. It requires the file name, worksheet name, column index, and number of columns to insert, with optional control over reference updates and storage location. This operation supports dynamic worksheet expansion while maintaining formatting and formula integrity across the workbook.
 
 ## The Put Insert Worksheet Columns Web API
@@ -26,15 +27,15 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| columnIndex | Integer | Path | The column index. |
-| columns | Integer | Query | The number of columns. |
-| updateReference | Boolean | Query | Indicates if references in other worksheets will be updated. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name  | Type    | Path/Query String/HTTPBody | Description                                                  |
+| --------------- | ------- | -------------------------- | ------------------------------------------------------------ |
+| name            | String  | Path                       | The file name.                                               |
+| sheetName       | String  | Path                       | The worksheet name.                                          |
+| columnIndex     | Integer | Path                       | The column index.                                            |
+| columns         | Integer | Query                      | The number of columns.                                       |
+| updateReference | Boolean | Query                      | Indicates if references in other worksheets will be updated. |
+| folder          | String  | Query                      | The folder where the file is situated.                       |
+| storageName     | String  | Query                      | The storage name where the file is situated.                 |
 
 **Notes**
 
@@ -43,36 +44,6 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 - The `updateReference` flag defaults to `false`; set to `true` to update formulas and named ranges.
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PutInsertWorksheetColumns) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
-
-You can use the cURL command‑line tool to call Aspose.Cells web services. The following example shows a complete request, including authentication and the correct path parameter.
-
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
-
-{{< tab tabNum="11" >}}
-
-```bash
-curl -X PUT "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/1?totalColumns=1&updateReference=true" \
-     -H "Authorization: Bearer <access_token>" \
-     -H "accept: application/json"
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="12" >}}
-
-```json
-{
-  "Code": 200,
-  "Status": "OK"
-}
-```
-
-{{< /tab >}}
-
-{{< /tabs >}}
-
-**Response codes**
-
 
 **Example error responses**
 
@@ -125,19 +96,46 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## How to Use the Put Insert Worksheet Columns API with SDKs?
 
 ### Put Insert Worksheet Columns API Specification
 
 The <a href="https://reference.aspose.cloud/cells/#/Cells/PutInsertWorksheetColumns" rel="noopener noreferrer">Put Insert Worksheet Columns API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
+
+You can use the cURL command‑line tool to call Aspose.Cells web services. The following example shows a complete request, including authentication and the correct path parameter.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/columns/1?totalColumns=1&updateReference=true" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "accept: application/json"
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="12" >}}
+
+```json
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
 
 ### Use Aspose.Cells Cloud SDKs
 
