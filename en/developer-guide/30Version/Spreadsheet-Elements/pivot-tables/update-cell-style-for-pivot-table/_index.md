@@ -10,6 +10,7 @@ description: "Format pivot table cell styles via Aspose.Cells Cloud REST API usi
 weight: 90
 ArticleTitle: "Update Cell Style for Pivot Table - Aspose.Cells Cloud API Documentation"
 ---
+
 The **PostPivotTableCellStyle** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/Format`) enables Aspose.Cells Cloud users to update the cell style of a specific cell within a pivot table by specifying the file name, worksheet name, pivot table index, and the zero-based row and column indices of the target cell, along with a style object in the request body; this operation supports precise formatting control for pivot table elements without requiring local file manipulation.
 
 ## The Post Pivot Table Cell Style Web API
@@ -36,48 +37,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | folder          | String      | Query                      | The folder where the file is situated.                 |
 | storageName     | String      | Query                      | The storage name where the file is situated.           |
 
-The <a href="https://apireference.aspose.cloud/cells/#/PivotTables/PostPivotTableCellStyle" target="_blank" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
-
-You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
-
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
-
-{{< tab tabNum="1" >}}
-
-```bash
-curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables/0/Format?column=1&row=1" \
-  -X POST \
-  -d '{"Font":{"Name":"Arial","Size":10}}' \
-  -H "Content-Type: application/json" \
-  -H "Accept: application/json" \
-  -H "Authorization: Bearer <jwt token>"
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-```json
-{
-  "Code": 200,
-  "Status": "OK"
-}
-```
-
-{{< /tab >}}
-
-{{< /tabs >}}
-
-**Response**  
 On success the service returns HTTP 200 with an empty body indicating that the style has been applied. In case of an error, a JSON payload with an error code and message is returned.
-
-| HTTP Status | Description                                                               |
-| ----------- | ------------------------------------------------------------------------- |
-| 200         | Style applied successfully.                                               |
-| 400         | Bad request – e.g., invalid column/row index.                             |
-| 401         | Unauthorized – missing or invalid JWT token.                              |
-| 404         | Not found – specified document, worksheet, or pivot table does not exist. |
-| 500         | Internal server error – unexpected condition.                             |
 
 The response body is empty on success.
 
@@ -121,27 +81,35 @@ Content-Type: application/json
 
 The <a href="https://reference.aspose.cloud/cells/#/PivotTables/PostPivotTableCellStyle" rel="noopener noreferrer">Post Pivot Table Cell Style API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
-The following code example demonstrates how to call Aspose.Cells web services using the **Go** SDK:
+You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
 
-<script type="application/ld+json">
+{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+
+{{< tab tabNum="1" >}}
+
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables/0/Format?column=1&row=1" \
+  -X POST \
+  -d '{"Font":{"Name":"Arial","Size":10}}' \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+```json
 {
-  "@context": "https://schema.org",
-  "@type": "TechArticle",
-  "headline": "Update Cell Style for Pivot Table",
-  "description": "Guide to updating the style of a specific cell in an Aspose.Cells Cloud pivot table using the REST API.",
-  "author": {
-    "@type": "Organization",
-    "name": "Aspose"
-  },
-  "datePublished": "2026-07-30",
-  "keywords": "Aspose.Cells Cloud, pivot table, cell style, REST API, Go SDK",
-  "url": "https://docs.aspose.cloud/cells/pivot-tables/format/",
-  "publisher": {
-    "@type": "Organization",
-    "name": "Aspose"
-  }
+  "Code": 200,
+  "Status": "OK"
 }
-</script>
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
 
 ### Use Aspose.Cells Cloud SDKs
 

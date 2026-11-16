@@ -10,15 +10,14 @@ weight: 100
 ArticleTitle: "Add Rows to Excel Worksheet using Aspose.Cells Cloud API – Step‑by‑Step Guide"
 ---
 
+Below are quick links to the detailed examples for adding rows:
+
+- [How to add an empty row on an Excel worksheet](/cells/rows/add/row/)
+- [How to add multiple rows on an Excel worksheet](/cells/rows/add/rows/)
+
 ## How to Add Rows to an Excel Worksheet
 
 This article explains how to insert a single empty row or multiple rows into an existing worksheet by using the Aspose.Cells Cloud REST API. Ensure you have a valid API key and the appropriate SDK installed before proceeding.
-
-**Prerequisites**
-
-- [ ] Aspose.Cells Cloud account with an active subscription.
-- [ ] API key/Access token generated from the Aspose Cloud dashboard.
-- [ ] One of the supported SDKs (C#, Java, Python, Node.js) installed and configured.
 
 **API Reference**
 
@@ -82,8 +81,3 @@ This article explains how to insert a single empty row or multiple rows into an 
   | 401  | Authentication failed                |
   | 404  | File or worksheet not found          |
   | 500  | Server error                         |
-
-Below are quick links to the detailed examples for adding rows:
-
-- [How to add an empty row on an Excel worksheet](/cells/rows/add/row/)
-- [How to add multiple rows on an Excel worksheet](/cells/rows/add/rows/)

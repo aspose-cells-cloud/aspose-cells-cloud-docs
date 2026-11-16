@@ -9,6 +9,7 @@ description: "Delete worksheet validation by index via Aspose.Cells Cloud REST A
 weight: 100
 ArticleTitle: "Delete Worksheet Validation in Excel via Aspose.Cells Cloud REST API"
 ---
+
 The **DeleteWorksheetValidation** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations/{validationIndex}`) enables developers to remove a specific data validation from an Excel worksheet by its zero-based index using Aspose.Cells Cloud, supporting programmatic cleanup of validation rules without altering other worksheet content.
 
 ## The Delete Worksheet Validation Web API
@@ -23,15 +24,50 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The workbook name. |
-| sheetName | String | Path | The worksheet name. |
-| validationIndex | Integer | Path | The validation index. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name  | Type    | Path/Query String/HTTPBody | Description                                  |
+| --------------- | ------- | -------------------------- | -------------------------------------------- |
+| name            | String  | Path                       | The workbook name.                           |
+| sheetName       | String  | Path                       | The worksheet name.                          |
+| validationIndex | Integer | Path                       | The validation index.                        |
+| folder          | String  | Query                      | The folder where the file is situated.       |
+| storageName     | String  | Query                      | The storage name where the file is situated. |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/WorksheetValidations/DeleteWorksheetValidation) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
+### Response
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+## How to Use the Delete Worksheet Validation API with SDKs?
+
+### Delete Worksheet Validation API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/WorksheetValidations/DeleteWorksheetValidation" rel="noopener noreferrer">Delete Worksheet Validation API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to call the Aspose.Cells web service. The example below shows how to delete a validation with cURL.
 
@@ -61,43 +97,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/v
 {{< /tab >}}
 
 {{< /tabs >}}
-
-### Response
-
-```json
-[
-  {
-    "Name": "CellsCloudResponse",
-    "DataType": {
-      "Identifier": "Class",
-      "Reference": "CellsCloudResponse"
-    }
-  }
-]
-```
-
-**Sample response headers**
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-```
-
-**HTTP Status Codes**
-
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
-
-## How to Use the Delete Worksheet Validation API with SDKs?
-
-### Delete Worksheet Validation API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/WorksheetValidations/DeleteWorksheetValidation" rel="noopener noreferrer">Delete Worksheet Validation API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

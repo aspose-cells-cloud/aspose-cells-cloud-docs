@@ -10,6 +10,7 @@ description: "Delete Excel pivot table by index using Aspose.Cells Cloud REST AP
 weight: 70
 ArticleTitle: "How to Delete a Pivot Table in an Excel Worksheet with Aspose.Cells Cloud"
 ---
+
 The **DeleteWorksheetPivotTable** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}`) enables developers to remove a specific PivotTable from a worksheet by its zero-based index using Aspose.Cells Cloud’s REST interface, supporting robust programmatic manipulation of spreadsheet data without requiring local software installation.
 
 Pivot tables are a powerful way to summarise data in an **Excel worksheet**. Using Aspose.Cells Cloud, you can programmatically remove an unwanted pivot table with a single HTTP DELETE request. This operation is ideal when you need to clean up worksheets, automate report generation, or integrate Excel manipulation into your applications.
@@ -34,7 +35,43 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | folder          | String  | Query                      | The folder where the file is situated.       |
 | storageName     | String  | Query                      | The storage name where the file is situated. |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PivotTables/DeleteWorksheetPivotTable) defines a publicly accessible programming interface and allows you to carry out REST interactions directly from a web browser.
+### Response
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+### Error handling
+
+Common response status codes are listed below:
+
+| HTTP Status | Description                                                             |
+| ----------- | ----------------------------------------------------------------------- |
+| 400         | Bad request – missing or invalid parameters.                            |
+| 401         | Unauthorized – invalid or absent JWT token.                             |
+| 404         | Not found – the file, worksheet, or pivot table does not exist.         |
+| 500         | Internal server error – an unexpected condition occurred on the server. |
+
+## How to Use the Delete Worksheet Pivot Table API with SDKs?
+
+### Delete Worksheet Pivot Table API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/PivotTables/DeleteWorksheetPivotTable" rel="noopener noreferrer">Delete Worksheet Pivot Table API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the **cURL command‑line tool** to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
@@ -75,44 +112,6 @@ The response follows a simple JSON schema:
 {{< /tab >}}
 
 {{< /tabs >}}
-
-### Response
-
-```json
-[
-  {
-    "Name": "CellsCloudResponse",
-    "DataType": {
-      "Identifier": "Class",
-      "Reference": "CellsCloudResponse"
-    }
-  }
-]
-```
-
-**Sample response headers**
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-```
-
-### Error handling
-
-Common response status codes are listed below:
-
-| HTTP Status | Description                                                             |
-| ----------- | ----------------------------------------------------------------------- |
-| 400         | Bad request – missing or invalid parameters.                            |
-| 401         | Unauthorized – invalid or absent JWT token.                             |
-| 404         | Not found – the file, worksheet, or pivot table does not exist.         |
-| 500         | Internal server error – an unexpected condition occurred on the server. |
-
-## How to Use the Delete Worksheet Pivot Table API with SDKs?
-
-### Delete Worksheet Pivot Table API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/PivotTables/DeleteWorksheetPivotTable" rel="noopener noreferrer">Delete Worksheet Pivot Table API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

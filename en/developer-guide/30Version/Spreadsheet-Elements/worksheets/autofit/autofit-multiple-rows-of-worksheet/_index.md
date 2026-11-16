@@ -10,6 +10,7 @@ description: "Autofit multiple Excel rows via Aspose.Cells Cloud REST API using 
 weight: 40
 ArticleTitle: "Autofit Multiple Rows in an Excel Worksheet – Aspose.Cells Cloud API Documentation"
 ---
+
 The **PostAutofitWorksheetRows** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitrows`) in Aspose.Cells Cloud automatically adjusts the height of specified rows in an Excel worksheet by analyzing their content, supporting precise control via optional query parameters like `startRow`, `endRow`, and `onlyAuto` to autofit a range or all rows.
 
 ## The Post Autofit Worksheet Rows Web API
@@ -24,15 +25,15 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| startRow | Integer | Query | The start row index. |
-| endRow | Integer | Query | The end row index. |
-| onlyAuto | Boolean | Query | Autofits all rows in this worksheet. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------- | -------------------------- | -------------------------------------------- |
+| name           | String  | Path                       | The file name.                               |
+| sheetName      | String  | Path                       | The worksheet name.                          |
+| startRow       | Integer | Query                      | The start row index.                         |
+| endRow         | Integer | Query                      | The end row index.                           |
+| onlyAuto       | Boolean | Query                      | Autofits all rows in this worksheet.         |
+| folder         | String  | Query                      | The folder where the file is situated.       |
+| storageName    | String  | Query                      | The storage name where the file is situated. |
 
 **autoFitterOptions** fields (all optional):
 
@@ -40,7 +41,42 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 - `IgnoreHidden` _(boolean)_ – When `true`, hidden rows are ignored during the autofit process.
 - `OnlyAuto` _(boolean)_ – Mirrors the query‑parameter `onlyAuto`; when set, it overrides the query value.
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostAutofitWorksheetRows) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+### Response
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+## How to Use the Post Autofit Worksheet Rows API with SDKs?
+
+### Post Autofit Worksheet Rows API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Worksheets/PostAutofitWorksheetRows" rel="noopener noreferrer">Post Autofit Worksheet Rows API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
 
@@ -75,47 +111,9 @@ Typical error responses include:
 - **404 Not Found** – The specified file or worksheet does not exist.
 - **500 Internal Server Error** – An unexpected server error occurred.
 
-
 {{< /tab >}}
 
 {{< /tabs >}}
-
-### Response
-
-```json
-[
-  {
-    "Name": "CellsCloudResponse",
-    "DataType": {
-      "Identifier": "Class",
-      "Reference": "CellsCloudResponse"
-    }
-  }
-]
-```
-
-**Sample response headers**
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-```
-
-**HTTP Status Codes**
-
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
-
-## How to Use the Post Autofit Worksheet Rows API with SDKs?
-
-### Post Autofit Worksheet Rows API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Worksheets/PostAutofitWorksheetRows" rel="noopener noreferrer">Post Autofit Worksheet Rows API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

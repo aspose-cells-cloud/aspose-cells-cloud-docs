@@ -10,6 +10,7 @@ keywords: "autofit row, Aspose.Cells Cloud, Excel API, REST, worksheet, SDK, spr
 weight: 30
 ArticleTitle: "Autofit Row in Excel Worksheet using Aspose.Cells Cloud API"
 ---
+
 The **PostAutofitWorksheetRow** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitrow`) in Aspose.Cells Cloud enables autofitting a single row in a worksheet by dynamically adjusting its height to accommodate the tallest content in the specified row, with optional parameters to limit the operation to a specific column range (`firstColumn`, `lastColumn`) and support for custom folder and storage locations; the operation requires the file name, worksheet name, and row index as mandatory path and query parameters.
 
 ## The Post Autofit Worksheet Row Web API
@@ -24,16 +25,16 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| rowIndex | Integer | Query | The row index. |
-| firstColumn | Integer | Query | The first column index. |
-| lastColumn | Integer | Query | The last column index. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
-| rowCount | Integer | Query | - |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------- | -------------------------- | -------------------------------------------- |
+| name           | String  | Path                       | The file name.                               |
+| sheetName      | String  | Path                       | The worksheet name.                          |
+| rowIndex       | Integer | Query                      | The row index.                               |
+| firstColumn    | Integer | Query                      | The first column index.                      |
+| lastColumn     | Integer | Query                      | The last column index.                       |
+| folder         | String  | Query                      | The folder where the file is situated.       |
+| storageName    | String  | Query                      | The storage name where the file is situated. |
+| rowCount       | Integer | Query                      | -                                            |
 
 **Sample `autoFitterOptions` JSON body**
 
@@ -67,17 +68,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 ```
 
-### Error Handling
-
-The API returns standard HTTP status codes. Common error responses for this endpoint are:
-
-| HTTP Code | Example Payload                                           | Meaning                                                                           |
-| --------- | --------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| 400       | `{ "Code": 400, "Message": "Row index out of range." }`   | The supplied `rowIndex` does not exist in the worksheet.                          |
-| 401       | `{ "Code": 401, "Message": "Invalid or expired token." }` | Authentication failed – check the JWT token and ensure the request is over HTTPS. |
-| 404       | `{ "Code": 404, "Message": "File not found." }`           | The specified Excel file or worksheet cannot be located.                          |
-| 500       | `{ "Code": 500, "Message": "Internal server error." }`    | An unexpected server‑side problem occurred.                                       |
-
 ### Entity Definitions
 
 | Entity              | Description                                                                              |
@@ -87,7 +77,21 @@ The API returns standard HTTP status codes. Common error responses for this endp
 | `lastColumn`        | Ending column for the autofit operation.                                                 |
 | `autoFitterOptions` | Optional settings that influence how the row is autofit (merged cells, wrap text, etc.). |
 
-The [OpenAPI Specification](/cells/#/Worksheets/PostAutofitWorksheetRow) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
+**HTTP Status Codes**
+
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+## How to Use the Post Autofit Worksheet Row API with SDKs?
+
+### Post Autofit Worksheet Row API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Worksheets/PostAutofitWorksheetRow" rel="noopener noreferrer">Post Autofit Worksheet Row API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The example below demonstrates how to call the API with cURL.
 
@@ -115,14 +119,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/sampleAutoFit.xlsx/worksheets/Sheet
 {{< /tab >}}
 
 {{< /tabs >}}
-
-## How to Use the Post Autofit Worksheet Row API with SDKs?
-
-### Post Autofit Worksheet Row API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Worksheets/PostAutofitWorksheetRow" rel="noopener noreferrer">Post Autofit Worksheet Row API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
-
-**See also:** [Autofit column](/worksheets/autofit/column/), [Autofit rows](/worksheets/autofit/rows/), [AutoFitterOptions](/cells/auto-fitter-options).
 
 ### Use Aspose.Cells Cloud SDKs
 

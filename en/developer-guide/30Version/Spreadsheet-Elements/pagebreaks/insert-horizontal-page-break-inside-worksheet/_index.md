@@ -10,6 +10,7 @@ description: "Insert a horizontal page break in an Excel worksheet using Aspose.
 weight: 30
 ArticleTitle: "Add Horizontal Page Break – Aspose.Cells Cloud API"
 ---
+
 The **PutHorizontalPageBreak** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/horizontalpagebreaks`) adds a horizontal page break within a specified Excel worksheet via Aspose.Cells Cloud, enabling precise control over print layout by inserting a break at a given row or cell position without manual intervention.
 
 ## The Put Horizontal Page Break Web API
@@ -24,19 +25,64 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The workbook name. |
-| sheetName | String | Path | The worksheet name. |
-| cellname | String | Query | Cell name |
-| row | Integer | Query | Row index, zero based. |
-| column | Integer | Query | Column index, zero based. |
-| startColumn | Integer | Query | Start column index, zero based. |
-| endColumn | Integer | Query | End column index, zero based. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------- | -------------------------- | -------------------------------------------- |
+| name           | String  | Path                       | The workbook name.                           |
+| sheetName      | String  | Path                       | The worksheet name.                          |
+| cellname       | String  | Query                      | Cell name                                    |
+| row            | Integer | Query                      | Row index, zero based.                       |
+| column         | Integer | Query                      | Column index, zero based.                    |
+| startColumn    | Integer | Query                      | Start column index, zero based.              |
+| endColumn      | Integer | Query                      | End column index, zero based.                |
+| folder         | String  | Query                      | The folder where the file is situated.       |
+| storageName    | String  | Query                      | The storage name where the file is situated. |
 
-The <a href="https://apireference.aspose.cloud/cells/#/PageBreaks/PutHorizontalPageBreak" target="_blank" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible interface that lets you perform REST interactions directly from a web browser.
+Example of an error response when the JWT token is missing or invalid:
+
+```json
+{
+  "Code": 401,
+  "Status": "Unauthorized",
+  "Message": "Invalid or missing JWT token."
+}
+```
+
+### Response
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+## How to Use the Put Horizontal Page Break API with SDKs?
+
+### Put Horizontal Page Break API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/PageBreaks/PutHorizontalPageBreak" rel="noopener noreferrer">Put Horizontal Page Break API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the API with cURL.
 
@@ -67,56 +113,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/sampleExcelPageBreaks.xlsx/workshee
 {{< /tab >}}
 
 {{< /tabs >}}
-
-Example of an error response when the JWT token is missing or invalid:
-
-```json
-{
-  "Code": 401,
-  "Status": "Unauthorized",
-  "Message": "Invalid or missing JWT token."
-}
-```
-
-
-For more details on related operations, see the API pages for **[Get Horizontal Page Breaks](../get-horizontal-page-breaks/)** and **[Delete Horizontal Page Break](../delete-horizontal-page-break/)**.
-
-### Response
-
-```json
-[
-  {
-    "Name": "CellsCloudResponse",
-    "DataType": {
-      "Identifier": "Class",
-      "Reference": "CellsCloudResponse"
-    }
-  }
-]
-```
-
-**Sample response headers**
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-```
-
-**HTTP Status Codes**
-
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
-
-## How to Use the Put Horizontal Page Break API with SDKs?
-
-### Put Horizontal Page Break API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/PageBreaks/PutHorizontalPageBreak" rel="noopener noreferrer">Put Horizontal Page Break API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

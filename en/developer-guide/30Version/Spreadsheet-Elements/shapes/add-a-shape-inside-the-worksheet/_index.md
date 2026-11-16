@@ -10,6 +10,7 @@ description: "Learn how to add shapes (arc, line, rectangle, etc.) to an Excel w
 weight: 30
 ArticleTitle: "Add a Shape to an Excel Worksheet using Aspose.Cells Cloud API"
 ---
+
 The **PutWorksheetShape** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes`) enables developers to programmatically add a shape to a specific worksheet in an Excel file stored in the cloud, supporting operations like positioning via query parameters such as `upperLeftRow`, `upperLeftColumn`, `top`, `left`, `width`, and `height`, and defining shape type using `DrawingType`, all requiring authentication via a JWT access token obtained through Aspose.Cells Cloud OAuth2.
 
 ## The Put Worksheet Shape Web API
@@ -24,22 +25,58 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| shapeDTO | class:shape | HTTPBody | - |
-| DrawingType | String | Query | Shape object type |
-| upperLeftRow | Integer | Query | Upper left row index. |
-| upperLeftColumn | Integer | Query | Upper left column index. |
-| top | Integer | Query | Represents the vertical offset of Spinner from its left row, in unit of pixel. |
-| left | Integer | Query | Represents the horizontal offset of Spinner from its left column, in unit of pixel. |
-| width | Integer | Query | Represents the height of Spinner, in unit of pixel. |
-| height | Integer | Query | Represents the width of Spinner, in unit of pixel. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name  | Type        | Path/Query String/HTTPBody | Description                                                                         |
+| --------------- | ----------- | -------------------------- | ----------------------------------------------------------------------------------- |
+| name            | String      | Path                       | The file name.                                                                      |
+| sheetName       | String      | Path                       | The worksheet name.                                                                 |
+| shapeDTO        | class:shape | HTTPBody                   | -                                                                                   |
+| DrawingType     | String      | Query                      | Shape object type                                                                   |
+| upperLeftRow    | Integer     | Query                      | Upper left row index.                                                               |
+| upperLeftColumn | Integer     | Query                      | Upper left column index.                                                            |
+| top             | Integer     | Query                      | Represents the vertical offset of Spinner from its left row, in unit of pixel.      |
+| left            | Integer     | Query                      | Represents the horizontal offset of Spinner from its left column, in unit of pixel. |
+| width           | Integer     | Query                      | Represents the height of Spinner, in unit of pixel.                                 |
+| height          | Integer     | Query                      | Represents the width of Spinner, in unit of pixel.                                  |
+| folder          | String      | Query                      | The folder where the file is situated.                                              |
+| storageName     | String      | Query                      | The storage name where the file is situated.                                        |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Shapes/PutWorksheetShape) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+### Response
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                        |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+## How to Use the Put Worksheet Shape API with SDKs?
+
+### Put Worksheet Shape API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Shapes/PutWorksheetShape" rel="noopener noreferrer">Put Worksheet Shape API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
 
@@ -67,58 +104,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes
 }
 ```
 
-_The successful response returns the HTTP status code, a textual status, and the identifier of the newly created shape (`ShapeId`)._
-
 {{< /tab >}}
 
 {{< /tabs >}}
-
-
-Typical error responses include:
-
-- **400 Bad Request** – missing or invalid parameters.
-- **401 Unauthorized** – invalid or missing JWT token.
-- **404 Not Found** – the specified worksheet or document does not exist.
-
-Each error is returned as a JSON object containing `Code` and `Message` fields.
-
-### Response
-
-```json
-[
-  {
-    "Name": "CellsCloudResponse",
-    "DataType": {
-      "Identifier": "Class",
-      "Reference": "CellsCloudResponse"
-    }
-  }
-]
-```
-
-**Sample response headers**
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-```
-
-**HTTP Status Codes**
-
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
-
-## How to Use the Put Worksheet Shape API with SDKs?
-
-### Put Worksheet Shape API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Shapes/PutWorksheetShape" rel="noopener noreferrer">Put Worksheet Shape API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

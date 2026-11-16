@@ -55,32 +55,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | `folder`      | string | ❌       | Path to the folder containing the workbook (e.g., `/docs`).                         |
 | `storageName` | string | ❌       | Name of the storage (e.g., `MyCloud`).                                              |
 
----
-
-## Request Example (cURL)
-
-```bash
-curl -v "https://api.aspose.cloud/v3.0/cells/Embedded_OleObject_Sample_Book1.xlsx/worksheets/Sheet1/oleobjects/0?format=png" \
-  -X GET \
-  -H "Authorization: Bearer <jwt-token>" \
-  -o oleobject.png
-```
-
-> **Tip**: Use `-o` to save the image directly. Replace `<jwt-token>` with your valid token.
-
----
-
-## Response
-
-| Status | Content-Type                      | Description                                    |
-| ------ | --------------------------------- | ---------------------------------------------- |
-| `200`  | `image/png` (or specified format) | Binary image data of the converted OLE object. |
-| `400`  | `application/json`                | Invalid request parameters.                    |
-| `401`  | `application/json`                | Authentication failed.                         |
-| `404`  | `application/json`                | Workbook, worksheet, or OLE object not found.  |
-| `500`  | `application/json`                | Internal server error.                         |
-
-### Handling the Response
+### Response
 
 The API returns raw binary image data. Examples for common use cases:
 
@@ -99,22 +74,39 @@ The API returns raw binary image data. Examples for common use cases:
 
 ![Sample Converted OLE Object](/images/ole-object-output.png "Result: Converted OLE object as PNG")
 
----
+**HTTP Status Codes**
 
-## Error Responses
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
-| Status | Error Code             | Message                                            |
-| ------ | ---------------------- | -------------------------------------------------- |
-| `400`  | `InvalidParameter`     | One or more parameters are invalid or missing.     |
-| `401`  | `AuthenticationFailed` | Token expired, missing, or malformed.              |
-| `404`  | `PropertyNotFound`     | Workbook, worksheet, or OLE object does not exist. |
-| `500`  | `InternalError`        | Unexpected server error.                           |
+## How to Use the Convert Worksheet OLE Object to Image API with SDKs?
 
----
+### Convert Worksheet OLE Object to Image API Specification
 
-## SDK Examples
+The <a href="https://reference.aspose.cloud/cells/#/OleObjects/GetWorksheetOleObjectRequest" rel="noopener noreferrer">Convert Worksheet OLE Object to Image API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
-The following snippets demonstrate how to call the operation using official Aspose.Cells Cloud SDKs. Replace `YOUR_JWT_TOKEN` with your actual token.
+**cURL Example**
+
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Embedded_OleObject_Sample_Book1.xlsx/worksheets/Sheet1/oleobjects/0?format=png" \
+  -X GET \
+  -H "Authorization: Bearer <jwt-token>" \
+  -o oleobject.png
+```
+
+> **Tip**: Use `-o` to save the image directly. Replace `<jwt-token>` with your valid token.
+
+### Use Aspose.Cells Cloud SDKs
+
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
+
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 
 <details>
 <summary><strong>C#</strong></summary>
@@ -311,31 +303,3 @@ close $fh;
 ```
 
 </details>
-
-> **Tip**: Full SDK source code and samples are available in the [Aspose.Cells Cloud GitHub Repository](https://github.com/aspose-cells-cloud).
-
----
-
-## Related Operations
-
-| Operation                                                               | Description                          | Documentation Link                                     |
-| ----------------------------------------------------------------------- | ------------------------------------ | ------------------------------------------------------ |
-| `POST /cells/{name}/worksheets/{sheetName}/oleobjects`                  | Add a new OLE object to a worksheet. | [/cells/add-ole-object/](/cells/add-ole-object/)       |
-| `PUT /cells/{name}/worksheets/{sheetName}/oleobjects/{objectNumber}`    | Update an existing OLE object.       | [/cells/update-ole-object/](/cells/update-ole-object/) |
-| `DELETE /cells/{name}/worksheets/{sheetName}/oleobjects/{objectNumber}` | Remove an OLE object.                | [/cells/delete-ole-object/](/cells/delete-ole-object/) |
-| `GET /cells/{name}/worksheets/{sheetName}/oleobjects`                   | List all OLE objects in a worksheet. | [/cells/list-ole-objects/](/cells/list-ole-objects/)   |
-
----
-
-## Additional Resources
-
-- **[OpenAPI Specification](https://apireference.aspose.cloud/cells/#/OleObjects/GetWorksheetOleObject)**
-- **[Authentication Guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/)**
-- **[SDK Source Code & Examples](https://github.com/aspose-cells-cloud)**
-- **[Performance & Accessibility](https://docs.aspose.cloud/cells/performance-accessibility/)**
-  - Lighthouse Target: >90 performance, >95 accessibility (WCAG 2.1 AA)
-  - All images include descriptive `alt` text for screen readers.
-
----
-
-> **Next Steps**: Try converting an OLE object interactively using our [Swagger UI Demo](https://apireference.aspose.cloud/cells/#/OleObjects/GetWorksheetOleObject).

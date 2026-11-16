@@ -12,14 +12,6 @@ ArticleTitle: "Add or Delete Worksheet Background Image with Aspose.Cells Cloud 
 
 ## Working with background on an Excel worksheet
 
-**Overview:** A worksheet background is an image that appears behind the cells of a worksheet, useful for branding or visual cues. Aspose.Cells Cloud API lets you add or delete this background image programmatically.
-
-**Prerequisites:**
-
-- Valid Aspose.Cells Cloud access token (OAuth 2.0).
-- An Excel workbook stored in the cloud.
-- An image file (PNG, JPEG, BMP) for the background.
-
 - **Add background** – Set a background image on a worksheet. See the detailed guide [How to set background on an Excel worksheet](/cells/worksheets/background/add/).
 - **Delete background** – Remove an existing background image from a worksheet. See the detailed guide [How to delete background on an Excel worksheet](/cells/worksheets/background/delete/).
 
@@ -59,9 +51,3 @@ api.delete_worksheet_background("Book1.xlsx", "Sheet1")
 ```
 
 For additional language examples (C#, PHP, Ruby), refer to the SDK documentation.
-
-**Related topics**
-
-- Learn more about managing worksheets in general: [Worksheets overview](/cells/worksheets/).
-- Understand how to authenticate with Aspose.Cells Cloud: [API authentication guide]（https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/）.
-- Explore other spreadsheet elements such as charts, tables, and formulas: [Spreadsheet elements index](/cells/elements/).

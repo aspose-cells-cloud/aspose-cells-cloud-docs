@@ -10,6 +10,7 @@ description: "Learn how to update a picture in an Excel worksheet using Aspose.C
 ArticleTitle: "Update picture in an Excel file using Aspose.Cells Cloud REST API"
 weight: 70
 ---
+
 The **PostWorksheetPicture** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}`) enables updating a specific picture in an Excel worksheet by its zero-based index using Aspose.Cells Cloud, allowing developers to replace or modify picture content programmatically with a JSON-serialized picture object in the request body.
 
 ## The Post Worksheet Picture Web API
@@ -24,14 +25,14 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| pictureIndex | Integer | Path | The picture's index. |
-| picture | class:picture | HTTPBody | Picture object description. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type          | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------------- | -------------------------- | -------------------------------------------- |
+| name           | String        | Path                       | The file name.                               |
+| sheetName      | String        | Path                       | The worksheet name.                          |
+| pictureIndex   | Integer       | Path                       | The picture's index.                         |
+| picture        | class:picture | HTTPBody                   | Picture object description.                  |
+| folder         | String        | Query                      | The folder where the file is situated.       |
+| storageName    | String        | Query                      | The storage name where the file is situated. |
 
 **Note:** The picture index is zero‑based. Supported image formats include JPEG, PNG, BMP, and GIF. The maximum picture size is 10 MB.
 
@@ -56,16 +57,21 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 ```
 
-### Error Responses
+**HTTP Status Codes**
 
-| HTTP Code | Description                                                                 |
-| --------- | --------------------------------------------------------------------------- |
-| 401       | Unauthorized – missing or invalid token.                                    |
-| 404       | Not Found – the specified file, worksheet, or picture index does not exist. |
-| 400       | Bad Request – malformed request syntax or invalid parameters.               |
-| 500       | Internal Server Error – an unexpected condition was encountered.            |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
-The <a href="https://apireference.aspose.cloud/cells/#/Pictures/PostWorksheetPicture" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+## How to Use the Post Worksheet Picture API with SDKs?
+
+### Post Worksheet Picture API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Pictures/PostWorksheetPicture" rel="noopener noreferrer">Post Worksheet Picture API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
 
@@ -96,14 +102,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/picture
 {{< /tab >}}
 
 {{< /tabs >}}
-
-## How to Use the Post Worksheet Picture API with SDKs?
-
-### Post Worksheet Picture API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Pictures/PostWorksheetPicture" rel="noopener noreferrer">Post Worksheet Picture API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
-
-_See also:_ Add picture, Delete picture, Get picture, Clear pictures – other picture‑related operations in the Aspose.Cells Cloud API.
 
 ### Use Aspose.Cells Cloud SDKs
 

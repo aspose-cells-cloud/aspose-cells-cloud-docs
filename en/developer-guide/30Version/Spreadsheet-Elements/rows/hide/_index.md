@@ -10,6 +10,7 @@ description: "Hide Excel worksheet rows via Aspose.Cells Cloud REST API using cU
 weight: 40
 ArticleTitle: "Hide Rows in Excel Worksheet using Aspose.Cells Cloud API"
 ---
+
 The **PostHideWorksheetRows** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/hide`) enables programmatic hiding of rows in an Excel worksheet via Aspose.Cells Cloud, supporting operations like specifying the starting row index and number of rows to hide through required query parameters `startrow` and `totalRows`, while allowing optional folder and storage context for cloud-based file management.
 
 ## The Post Hide Worksheet Rows Web API
@@ -24,16 +25,55 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| startrow | Integer | Query | The begin row index to be operated. |
-| totalRows | Integer | Query | Number of rows to be operated. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------- | -------------------------- | -------------------------------------------- |
+| name           | String  | Path                       | The file name.                               |
+| sheetName      | String  | Path                       | The worksheet name.                          |
+| startrow       | Integer | Query                      | The begin row index to be operated.          |
+| totalRows      | Integer | Query                      | Number of rows to be operated.               |
+| folder         | String  | Query                      | The folder where the file is situated.       |
+| storageName    | String  | Query                      | The storage name where the file is situated. |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostHideWorksheetRows) provides a publicly accessible programming interface that lets you perform REST interactions directly from a web browser.
+A successful call returns a JSON object that contains the fields `Code` and `Status`. In case of an error, the response includes additional fields such as `Message` and appropriate HTTP status codes (e.g., 400, 401, 404, 500).
+
+**Notes:** Ensure that the `startrow` value is within the worksheet’s row range; otherwise the API will return a 400 error. Row indices are zero‑based, so `startrow=0` refers to the first row.
+
+### Response
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+## How to Use the Post Hide Worksheet Rows API with SDKs?
+
+### Post Hide Worksheet Rows API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Cells/PostHideWorksheetRows" rel="noopener noreferrer">Post Hide Worksheet Rows API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the **cURL** command‑line tool to call Aspose.Cells web services. The API requires a JWT Bearer token obtained from the Aspose Cloud OAuth endpoint; include it in the `Authorization` header. The example below demonstrates how to hide a row using cURL.
 
@@ -63,50 +103,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 {{< /tab >}}
 
 {{< /tabs >}}
-
-**Response status codes**
-
-
-A successful call returns a JSON object that contains the fields `Code` and `Status`. In case of an error, the response includes additional fields such as `Message` and appropriate HTTP status codes (e.g., 400, 401, 404, 500).
-
-**Notes:** Ensure that the `startrow` value is within the worksheet’s row range; otherwise the API will return a 400 error. Row indices are zero‑based, so `startrow=0` refers to the first row.
-
-### Response
-
-```json
-[
-  {
-    "Name": "CellsCloudResponse",
-    "DataType": {
-      "Identifier": "Class",
-      "Reference": "CellsCloudResponse"
-    }
-  }
-]
-```
-
-**Sample response headers**
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-```
-
-**HTTP Status Codes**
-
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
-
-## How to Use the Post Hide Worksheet Rows API with SDKs?
-
-### Post Hide Worksheet Rows API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Cells/PostHideWorksheetRows" rel="noopener noreferrer">Post Hide Worksheet Rows API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

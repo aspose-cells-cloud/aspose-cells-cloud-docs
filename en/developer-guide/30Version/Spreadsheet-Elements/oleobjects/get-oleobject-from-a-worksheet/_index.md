@@ -10,6 +10,7 @@ description: "Retrieve an OLE object (image, chart, or embedded file) from a wor
 ArticleTitle: "Get OLE Object from Excel Worksheet – Aspose.Cells Cloud API"
 weight: 100
 ---
+
 The **GetWorksheetOleObject** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects/{objectNumber}`) retrieves an OLE object from a specified Excel worksheet by its object number, optionally converting it to a supported image format such as PNG, TIFF, JPEG, GIF, EMF, or BMP, enabling programmatic extraction and reuse of embedded objects within cloud-based spreadsheets using Aspose.Cells Cloud.
 
 ## The Get Worksheet OLE Object Web API
@@ -60,33 +61,21 @@ When `format` is set to an image type (e.g., `png`), the API returns the binary 
 Content-Type: image/png
 ```
 
-_(The image file is streamed directly to the client.)_
+**HTTP Status Codes**
 
-### Error Responses
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
-| HTTP Status | Error Code   | Description                                   |
-| ----------- | ------------ | --------------------------------------------- |
-| 400         | BadRequest   | Missing or invalid parameters.                |
-| 401         | Unauthorized | Invalid or missing JWT token.                 |
-| 404         | NotFound     | Workbook, worksheet, or OLE object not found. |
-| 500         | ServerError  | Unexpected server error.                      |
+## How to Use the Get Worksheet OLE Object API with SDKs?
 
-**Example 404 response**
+### Get Worksheet OLE Object API Specification
 
-```json
-{
-  "Code": 404,
-  "Status": "NotFound",
-  "Message": "The requested OLE object with number 0 was not found in worksheet 'Sheet1'."
-}
-```
-
-### Storage Options
-
-- **folder** – specifies the sub‑folder in the default storage where the workbook resides.
-- **storageName** – overrides the default storage name if the workbook is stored elsewhere.
-
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/OleObjects/GetWorksheetOleObject) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
+The <a href="https://reference.aspose.cloud/cells/#/OleObjects/GetWorksheetOleObject" rel="noopener noreferrer">Get Worksheet OLE Object API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the **cURL** command‑line tool to call the Aspose.Cells web service. The example below demonstrates how to request an OLE object as a PNG image.
 
@@ -129,12 +118,6 @@ If `format` is omitted or set to `json`, the API returns a JSON payload describi
 {{< /tab >}}
 
 {{< /tabs >}}
-
-## How to Use the Get Worksheet OLE Object API with SDKs?
-
-### Get Worksheet OLE Object API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/OleObjects/GetWorksheetOleObject" rel="noopener noreferrer">Get Worksheet OLE Object API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

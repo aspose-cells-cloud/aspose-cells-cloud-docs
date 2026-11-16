@@ -13,13 +13,7 @@ ArticleTitle: "Delete a Row in an Excel Worksheet – Aspose.Cells Cloud API Gui
 
 This REST API deletes a row from an Excel worksheet.
 
-**Prerequisites**
-
-- A valid JWT **Authorization** token.
-- The workbook must be stored in a supported Aspose Cloud storage (default or custom).
-- The target folder (if specified) must exist in the chosen storage.
-
-## REST API
+## The Delete Worksheet Row API
 
 ```bash
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/{rowIndex}
@@ -38,9 +32,30 @@ DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/r
 | **folder**          | string  | query        | No       | Folder that contains the workbook.                                                                  |
 | **storageName**     | string  | query        | No       | Name of the storage service.                                                                        |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRow) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+**Possible HTTP response codes**
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows a complete, executable call.
+| Code | Meaning               | Description                                                   |
+| ---- | --------------------- | ------------------------------------------------------------- |
+| 200  | OK                    | The row was deleted successfully.                             |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., non‑numeric `rowIndex`). |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                 |
+| 404  | Not Found             | Specified workbook, worksheet, or row does not exist.         |
+| 500  | Internal Server Error | Unexpected server error; see error response for details.      |
+
+**Error response example**
+
+```json
+{
+  "Code": 400,
+  "Message": "Invalid row index supplied."
+}
+```
+
+## How to Use the Delete Worksheet Row API with SDKs?
+
+### Delete Worksheet Row API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Cells/DeleteWorksheetRow" rel="noopener noreferrer">Delete Worksheet Row API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -69,28 +84,10 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 
 {{< /tabs >}}
 
-**Possible HTTP response codes**
+### Use Aspose.Cells Cloud SDKs
 
-| Code | Meaning               | Description                                                   |
-| ---- | --------------------- | ------------------------------------------------------------- |
-| 200  | OK                    | The row was deleted successfully.                             |
-| 400  | Bad Request           | Missing or invalid parameters (e.g., non‑numeric `rowIndex`). |
-| 401  | Unauthorized          | Invalid or missing JWT token.                                 |
-| 404  | Not Found             | Specified workbook, worksheet, or row does not exist.         |
-| 500  | Internal Server Error | Unexpected server error; see error response for details.      |
-
-**Error response example**
-
-```json
-{
-  "Code": 400,
-  "Message": "Invalid row index supplied."
-}
-```
-
-## Cloud SDK Family
-
-Using an SDK is the best way to speed up development. An SDK abstracts low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 

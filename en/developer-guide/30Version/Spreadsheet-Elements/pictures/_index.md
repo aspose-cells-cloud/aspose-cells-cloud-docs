@@ -61,37 +61,3 @@ This guide explains how to work with **pictures** (also called images) in Excel 
 | HTTP Method | Endpoint                                                           | Required Parameters                                          | Sample Request                                                                        | Sample Response                                 | Status Codes               |
 | ----------- | ------------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------------------------------- | ----------------------------------------------- | -------------------------- |
 | DELETE      | `/cells/{fileName}/worksheets/{sheetName}/pictures/{pictureIndex}` | `fileName` (path), `sheetName` (path), `pictureIndex` (path) | `DELETE https://api.aspose.cloud/v3.0/cells/myBook.xlsx/worksheets/Sheet1/pictures/2` | `{ "code": 200, "status": "Picture deleted." }` | 200 OK, 400, 401, 404, 500 |
-
-**Related topics**
-
-Explore other image‑related operations in Aspose.Cells Cloud:
-
-- [Add, edit, and delete drawing shapes](/cells/shapes/) – add, edit, and delete drawing shapes.
-- [Create and manipulate chart objects](/cells/charts/) – create and manipulate chart objects.
-- [Embed and manage raw image files](/cells/images/) – embed and manage raw image files.
-
----
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "TechArticle",
-  "headline": "Working with Excel pictures – Aspose.Cells Cloud Documentation",
-  "description": "Guide for retrieving, adding, updating, and deleting Excel pictures via Aspose.Cells Cloud REST API.",
-  "author": {
-    "@type": "Organization",
-    "name": "Aspose"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Aspose",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://cms.admin.containerize.com/templates/asposecloud/images/logo.png",
-      "alt": "Aspose logo"
-    }
-  },
-  "datePublished": "2023-11-15",
-  "keywords": "Excel pictures, Aspose.Cells Cloud, REST API, image handling"
-}
-</script>

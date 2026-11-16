@@ -10,6 +10,7 @@ description: "Use Aspose.Cells Cloud REST API to delete the background image of 
 weight: 210
 ArticleTitle: "Delete background on an Excel worksheet using Aspose.Cells Cloud API"
 ---
+
 The **DeleteWorksheetBackground** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/background`) in Aspose.Cells Cloud enables programmatic removal of background images or watermarks from a specified worksheet. This REST operation requires the file name and worksheet name as path parameters, with optional query parameters for folder and storage location. It supports deletion of both static background images and watermark elements, offering a straightforward way to clean up worksheet visuals without altering other content.
 
 ## The Delete Worksheet Background Web API
@@ -24,15 +25,49 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------ | -------------------------- | -------------------------------------------- |
+| name           | String | Path                       | The file name.                               |
+| sheetName      | String | Path                       | The worksheet name.                          |
+| folder         | String | Query                      | The folder where the file is situated.       |
+| storageName    | String | Query                      | The storage name where the file is situated. |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheetBackground) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+### Response
 
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+## How to Use the Delete Worksheet Background API with SDKs?
+
+### Delete Worksheet Background API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Worksheets/DeleteWorksheetBackground" rel="noopener noreferrer">Delete Worksheet Background API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. All requests require a valid JWT token. Obtain the token via the OAuth2 token endpoint as described in the Authentication guide.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
@@ -58,47 +93,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/WorkSheetBackground_Sample_Test_Boo
 }
 ```
 
-
 {{< /tab >}}
 
 {{< /tabs >}}
-
-### Response
-
-```json
-[
-  {
-    "Name": "CellsCloudResponse",
-    "DataType": {
-      "Identifier": "Class",
-      "Reference": "CellsCloudResponse"
-    }
-  }
-]
-```
-
-**Sample response headers**
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-```
-
-**HTTP Status Codes**
-
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
-
-## How to Use the Delete Worksheet Background API with SDKs?
-
-### Delete Worksheet Background API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Worksheets/DeleteWorksheetBackground" rel="noopener noreferrer">Delete Worksheet Background API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

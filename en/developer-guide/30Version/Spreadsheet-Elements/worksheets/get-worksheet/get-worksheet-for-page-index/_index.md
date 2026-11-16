@@ -10,6 +10,7 @@ keywords: "Aspose.Cells Cloud, worksheet page export, PDF, PNG, CSV, REST API, J
 description: "Export a specific worksheet page to PDF, PNG, CSV, and 20+ formats using Aspose.Cells Cloud REST API with cURL or SDKs."
 weight: 240
 ---
+
 The **GetWorksheetWithFormat** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}`) enables developers to retrieve a specific worksheet from a workbook in a desired format—such as PDF, PNG, or HTML—using Aspose.Cells Cloud, supporting use cases like extracting a single printable page, chart image, or data snapshot without downloading the full file, with optional parameters like `format`, `pageIndex`, `area`, and image resolution settings for fine-grained control.
 
 [GET /cells/{name}/worksheets/{sheetName}](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheet) API lets you convert a specified page of a worksheet to various file formats. Supported formats: [XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [ODS](https://docs.fileformat.com/spreadsheet/ods/), [TXT](https://docs.fileformat.com/word-processing/txt/), [PDF](https://docs.fileformat.com/pdf/), [OTS](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [DIF](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [GIF](https://docs.fileformat.com/image/gif/), [BMP](https://docs.fileformat.com/image/bmp/), [WMF](https://docs.fileformat.com/image/wmf/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [NUMBERS](https://docs.fileformat.com/spreadsheet/numbers/), [FODS](https://docs.fileformat.com/spreadsheet/fods/).
@@ -26,19 +27,19 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| format | String | Query | Export format(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers). |
-| verticalResolution | Integer | Query | Image vertical resolution. |
-| horizontalResolution | Integer | Query | Image horizontal resolution. |
-| area | String | Query | Represents the range to be printed. |
-| pageIndex | Integer | Query | Represents the page to be printed |
-| onePagePerSheet | Boolean | Query | - |
-| printHeadings | Boolean | Query | - |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name       | Type    | Path/Query String/HTTPBody | Description                                                                                                                        |
+| -------------------- | ------- | -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| name                 | String  | Path                       | The file name.                                                                                                                     |
+| sheetName            | String  | Path                       | The worksheet name.                                                                                                                |
+| format               | String  | Query                      | Export format(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers). |
+| verticalResolution   | Integer | Query                      | Image vertical resolution.                                                                                                         |
+| horizontalResolution | Integer | Query                      | Image horizontal resolution.                                                                                                       |
+| area                 | String  | Query                      | Represents the range to be printed.                                                                                                |
+| pageIndex            | Integer | Query                      | Represents the page to be printed                                                                                                  |
+| onePagePerSheet      | Boolean | Query                      | -                                                                                                                                  |
+| printHeadings        | Boolean | Query                      | -                                                                                                                                  |
+| folder               | String  | Query                      | The folder where the file is situated.                                                                                             |
+| storageName          | String  | Query                      | The storage name where the file is situated.                                                                                       |
 
 ### Response
 
@@ -63,17 +64,19 @@ Content-Disposition: attachment; filename="result"
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheet) defines a publicly accessible programming interface and enables you to perform REST interactions directly from a web browser.
+## How to Use the Get Worksheet with Format API with SDKs?
 
-> **Prerequisites** – You must have a valid JWT authentication token and the workbook stored in a cloud folder that you specify with the `folder` parameter.
+### Get Worksheet with Format API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Worksheets/GetWorksheetWithFormat" rel="noopener noreferrer">Get Worksheet with Format API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
 
@@ -105,30 +108,6 @@ iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABG0lEQVR42mNkYGBg+M+ABbJw
 {{< /tab >}}
 
 {{< /tabs >}}
-
-**Parameters**
-
-| Parameter              | Type    | Description                                                          | Default |
-| ---------------------- | ------- | -------------------------------------------------------------------- | ------- |
-| `format`               | string  | Output file format (e.g., `pdf`, `png`, `csv`).                      | `pdf`   |
-| `verticalResolution`   | integer | Vertical DPI of the rendered image.                                  | `100`   |
-| `horizontalResolution` | integer | Horizontal DPI of the rendered image.                                | `100`   |
-| `pageIndex`            | integer | Zero‑based index of the worksheet page to export (`0` = first page). | `0`     |
-| `folder`               | string  | Cloud storage folder where the source workbook resides.              | —       |
-
-
-**Possible errors**
-
-- **401 Unauthorized** – Invalid or missing JWT token.
-- **404 Not Found** – Specified workbook or worksheet does not exist.
-- **400 Bad Request** – Invalid parameter value (e.g., unsupported `format`).
-- **500 Internal Server Error** – Unexpected server‑side problem.
-
-## How to Use the Get Worksheet with Format API with SDKs?
-
-### Get Worksheet with Format API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Worksheets/GetWorksheetWithFormat" rel="noopener noreferrer">Get Worksheet with Format API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

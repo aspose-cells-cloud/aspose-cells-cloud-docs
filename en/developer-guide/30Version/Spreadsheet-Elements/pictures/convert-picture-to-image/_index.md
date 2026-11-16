@@ -10,6 +10,7 @@ description: "Retrieve a picture from an Excel worksheet by index using Aspose.C
 weight: 100
 ArticleTitle: "Aspose.Cells Cloud API – Get Picture from Worksheet"
 ---
+
 The **GetWorksheetPictureWithFormat** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureNumber}`) retrieves a specific picture from an Excel worksheet by its zero-based index and converts it to a requested image format (PNG, TIFF, JPEG, GIF, EMF, or BMP), enabling developers to extract and use embedded pictures as standalone image files via Aspose.Cells Cloud REST API.
 
 ## The Get Worksheet Picture with Format Web API
@@ -24,14 +25,14 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| pictureNumber | Integer | Path | The picture index. |
-| format | String | Query | Picture conversion format(PNG/TIFF/JPEG/GIF/EMF/BMP). |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                           |
+| -------------- | ------- | -------------------------- | ----------------------------------------------------- |
+| name           | String  | Path                       | The file name.                                        |
+| sheetName      | String  | Path                       | The worksheet name.                                   |
+| pictureNumber  | Integer | Path                       | The picture index.                                    |
+| format         | String  | Query                      | Picture conversion format(PNG/TIFF/JPEG/GIF/EMF/BMP). |
+| folder         | String  | Query                      | The folder where the file is situated.                |
+| storageName    | String  | Query                      | The storage name where the file is situated.          |
 
 ### Response
 
@@ -54,16 +55,21 @@ Content-Type: application/octet-stream
 Content-Disposition: attachment; filename="result"
 ```
 
-### Error Responses
+**HTTP Status Codes**
 
-| HTTP Code | Description                                                                    |
-| --------- | ------------------------------------------------------------------------------ |
-| 401       | Unauthorized – missing or invalid token.                                       |
-| 404       | Not Found – the specified file, worksheet, or page‑break index does not exist. |
-| 400       | Bad Request – malformed request syntax or invalid parameters.                  |
-| 500       | Internal Server Error – an unexpected condition was encountered.               |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Pictures/GetWorksheetPicture) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
+## How to Use the Get Worksheet Picture with Format API with SDKs?
+
+### Get Worksheet Picture with Format API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Pictures/GetWorksheetPictureWithFormat" rel="noopener noreferrer">Get Worksheet Picture with Format API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
 
@@ -92,14 +98,6 @@ iVBORw0KGgoAAAANSUhEUgAA...
 {{< /tab >}}
 
 {{< /tabs >}}
-
-To call this endpoint you must include a valid JWT access token in the **Authorization** header. Tokens are obtained via the Aspose.Cells Cloud authentication flow and require the appropriate scopes for file access. For details on acquiring a token, see the global **Authentication** guide.
-
-## How to Use the Get Worksheet Picture with Format API with SDKs?
-
-### Get Worksheet Picture with Format API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Pictures/GetWorksheetPictureWithFormat" rel="noopener noreferrer">Get Worksheet Picture with Format API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

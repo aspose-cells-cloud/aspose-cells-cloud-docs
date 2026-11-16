@@ -10,6 +10,7 @@ description: "Learn how to ungroup rows in an Excel worksheet using the Aspose.C
 weight: 70
 ArticleTitle: "Ungroup Rows in Excel with Aspose.Cells Cloud REST API & SDKs"
 ---
+
 The **PostUngroupWorksheetRows** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/ungroup`) in Aspose.Cells Cloud enables developers to ungroup rows in a specified worksheet by defining the first and last row indices to operate on, supporting precise control over row grouping and improving workbook structure management.
 
 ## The Post Ungroup Worksheet Rows Web API
@@ -24,17 +25,52 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| firstIndex | Integer | Query | The first row index to be operated. |
-| lastIndex | Integer | Query | The last row index to be operated. |
-| isAll | Boolean | Query | Is all row to be operated |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------- | -------------------------- | -------------------------------------------- |
+| name           | String  | Path                       | The file name.                               |
+| sheetName      | String  | Path                       | The worksheet name.                          |
+| firstIndex     | Integer | Query                      | The first row index to be operated.          |
+| lastIndex      | Integer | Query                      | The last row index to be operated.           |
+| isAll          | Boolean | Query                      | Is all row to be operated                    |
+| folder         | String  | Query                      | The folder where the file is situated.       |
+| storageName    | String  | Query                      | The storage name where the file is situated. |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostUngroupWorksheetRows) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+### Response
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+## How to Use the Post Ungroup Worksheet Rows API with SDKs?
+
+### Post Ungroup Worksheet Rows API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Cells/PostUngroupWorksheetRows" rel="noopener noreferrer">Post Ungroup Worksheet Rows API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
@@ -64,43 +100,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 {{< /tab >}}
 
 {{< /tabs >}}
-
-### Response
-
-```json
-[
-  {
-    "Name": "CellsCloudResponse",
-    "DataType": {
-      "Identifier": "Class",
-      "Reference": "CellsCloudResponse"
-    }
-  }
-]
-```
-
-**Sample response headers**
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-```
-
-**HTTP Status Codes**
-
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
-
-## How to Use the Post Ungroup Worksheet Rows API with SDKs?
-
-### Post Ungroup Worksheet Rows API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Cells/PostUngroupWorksheetRows" rel="noopener noreferrer">Post Ungroup Worksheet Rows API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

@@ -9,6 +9,7 @@ description: Provides an API to sort a range of cells within a workbook using As
 weight: 100
 ArticleTitle: "Sort Range of Cells in Excel with Aspose.Cells Cloud REST API"
 ---
+
 The **PostWorksheetCellsRangeSort** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/sort`) enables developers to perform data sorting around a specified range of cells in a worksheet using Aspose.Cells Cloud, supporting complex sorting criteria such as multiple keys, custom orders, and case sensitivity through a structured `RangeSortRequest` body payload.
 
 ## The Post Worksheet Cells Range Sort Web API
@@ -23,13 +24,13 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| rangeSortRequest | class:rangesortrequest | HTTPBody | RangeSortRequest Range Sort Request |
-| folder | String | Query | Original workbook folder. |
-| storageName | String | Query | Storage name. |
+| Parameter Name   | Type                   | Path/Query String/HTTPBody | Description                         |
+| ---------------- | ---------------------- | -------------------------- | ----------------------------------- |
+| name             | String                 | Path                       | The file name.                      |
+| sheetName        | String                 | Path                       | The worksheet name.                 |
+| rangeSortRequest | class:rangesortrequest | HTTPBody                   | RangeSortRequest Range Sort Request |
+| folder           | String                 | Query                      | Original workbook folder.           |
+| storageName      | String                 | Query                      | Storage name.                       |
 
 ### Response
 
@@ -54,26 +55,20 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                        |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
-The request parameters are:
+## How to Use the Post Worksheet Cells Range Sort API with SDKs?
 
-| Parameter Name | Type   | Location | Description                                  |
-| -------------- | ------ | -------- | -------------------------------------------- |
-| name           | String | Path     | The workbook name.                           |
-| sheetName      | String | Path     | The worksheet name.                          |
-| rangeOperate   | Class  | Body     | The Range Sort request object.               |
-| folder         | String | Query    | The folder containing the original workbook. |
-| storageName    | String | Query    | The name of the storage.                     |
+### Post Worksheet Cells Range Sort API Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/RangesController/PostWorksheetCellsRangeSort) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The <a href="https://reference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeSort" rel="noopener noreferrer">Post Worksheet Cells Range Sort API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
@@ -97,12 +92,6 @@ curl -v "http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges
 
 {{< /tab >}}
 {{< /tabs >}}
-
-## How to Use the Post Worksheet Cells Range Sort API with SDKs?
-
-### Post Worksheet Cells Range Sort API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeSort" rel="noopener noreferrer">Post Worksheet Cells Range Sort API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

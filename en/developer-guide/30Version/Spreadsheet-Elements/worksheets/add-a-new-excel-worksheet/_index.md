@@ -10,6 +10,7 @@ keywords: "Add Excel worksheet, Aspose.Cells Cloud, REST API, PUT worksheet, Exc
 description: "Step‑by‑step guide to add a new worksheet to an Excel workbook using Aspose.Cells Cloud REST API, including request details, a cURL example, and SDK code snippets for multiple languages."
 weight: 100
 ---
+
 The **PutAddNewWorksheet** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}`) in Aspose.Cells Cloud adds a new worksheet to an existing Excel workbook, supporting optional parameters such as position and sheet type (e.g., Worksheet, VB, or Chart) to customize the new sheet’s placement and behavior within the workbook.
 
 ## The Put Add New Worksheet Web API
@@ -24,16 +25,51 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The new sheet name. |
-| position | Integer | Query | The new sheet position. |
-| sheettype | String | Query | Specifies the worksheet type(VB/Worksheet/Chart/BIFF4Macro/InternationalMacro/Other/Dialog). |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                                                                  |
+| -------------- | ------- | -------------------------- | -------------------------------------------------------------------------------------------- |
+| name           | String  | Path                       | The file name.                                                                               |
+| sheetName      | String  | Path                       | The new sheet name.                                                                          |
+| position       | Integer | Query                      | The new sheet position.                                                                      |
+| sheettype      | String  | Query                      | Specifies the worksheet type(VB/Worksheet/Chart/BIFF4Macro/InternationalMacro/Other/Dialog). |
+| folder         | String  | Query                      | The folder where the file is situated.                                                       |
+| storageName    | String  | Query                      | The storage name where the file is situated.                                                 |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PutAddNewWorksheet) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+### Response
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+## How to Use the Put Add New Worksheet API with SDKs?
+
+### Put Add New Worksheet API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Worksheets/PutAddNewWorksheet" rel="noopener noreferrer">Put Add New Worksheet API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
 
@@ -63,45 +99,6 @@ curl -v "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Tasks" \
 {{< /tab >}}
 
 {{< /tabs >}}
-
-**Possible response status codes**
-
-### Response
-
-```json
-[
-  {
-    "Name": "CellsCloudResponse",
-    "DataType": {
-      "Identifier": "Class",
-      "Reference": "CellsCloudResponse"
-    }
-  }
-]
-```
-
-**Sample response headers**
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-```
-
-**HTTP Status Codes**
-
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
-
-## How to Use the Put Add New Worksheet API with SDKs?
-
-### Put Add New Worksheet API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Worksheets/PutAddNewWorksheet" rel="noopener noreferrer">Put Add New Worksheet API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

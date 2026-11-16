@@ -10,6 +10,7 @@ description: "Unhide Excel rows via Aspose.Cells Cloud REST API using PostUnhide
 weight: 50
 ArticleTitle: "Unhide rows on an Excel worksheet using Aspose.Cells Cloud API"
 ---
+
 The **PostUnhideWorksheetRows** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/unhide`) in Aspose.Cells Cloud enables developers to unhide specified rows in an Excel worksheet by providing the file name, worksheet name, starting row index, and number of rows to unhide; it also optionally supports setting row height and specifying folder or storage names, making worksheet formatting adjustments programmatic and scalable across cloud-based document workflows.
 
 ## The Post Unhide Worksheet Rows Web API
@@ -24,20 +25,52 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| startrow | Integer | Query | The begin row index to be operated. |
-| totalRows | Integer | Query | Number of rows to be operated. |
-| height | floating | Query | The new row height. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type     | Path/Query String/HTTPBody | Description                                  |
+| -------------- | -------- | -------------------------- | -------------------------------------------- |
+| name           | String   | Path                       | The file name.                               |
+| sheetName      | String   | Path                       | The worksheet name.                          |
+| startrow       | Integer  | Query                      | The begin row index to be operated.          |
+| totalRows      | Integer  | Query                      | Number of rows to be operated.               |
+| height         | floating | Query                      | The new row height.                          |
+| folder         | String   | Query                      | The folder where the file is situated.       |
+| storageName    | String   | Query                      | The storage name where the file is situated. |
 
-The <a href="https://apireference.aspose.cloud/cells/#/Cells/PostUnhideWorksheetRows" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+### Response
 
-**Authentication**  
-All requests must be authenticated using a JWT access token obtained from the Aspose Cloud authentication service. Include the token in the `Authorization: Bearer <jwt token>` header.
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+## How to Use the Post Unhide Worksheet Rows API with SDKs?
+
+### Post Unhide Worksheet Rows API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Cells/PostUnhideWorksheetRows" rel="noopener noreferrer">Post Unhide Worksheet Rows API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
@@ -68,46 +101,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 {{< /tab >}}
 
 {{< /tabs >}}
-
-
-For detailed troubleshooting, see the [Error Handling guide](/error-handling/).
-
-### Response
-
-```json
-[
-  {
-    "Name": "CellsCloudResponse",
-    "DataType": {
-      "Identifier": "Class",
-      "Reference": "CellsCloudResponse"
-    }
-  }
-]
-```
-
-**Sample response headers**
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-```
-
-**HTTP Status Codes**
-
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
-
-## How to Use the Post Unhide Worksheet Rows API with SDKs?
-
-### Post Unhide Worksheet Rows API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Cells/PostUnhideWorksheetRows" rel="noopener noreferrer">Post Unhide Worksheet Rows API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

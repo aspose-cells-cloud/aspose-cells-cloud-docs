@@ -15,6 +15,7 @@ draft: false
 slug: delete-vertical-page-break
 api_version: v3.0
 ---
+
 The **DeleteVerticalPageBreak** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/verticalpagebreaks/{index}`) enables developers to remove a specific vertical page break from a worksheet in an Excel workbook via the Aspose.Cells Cloud REST API, using the workbook name, worksheet name, and zero-based index of the page break as required path parameters.
 
 > 💡 **Tip**: Replace `client_id` and `client_secret` with valid credentials from your [Aspose Cloud Dashboard](https://dashboard.aspose.cloud/). For JWT token generation, see our [Authentication Guide]（https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/）.
@@ -33,13 +34,13 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The workbook name. |
-| sheetName | String | Path | The worksheet name. |
-| index | Integer | Path | Removes the vertical page break element at a specified name. Element index, zero based. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                                                             |
+| -------------- | ------- | -------------------------- | --------------------------------------------------------------------------------------- |
+| name           | String  | Path                       | The workbook name.                                                                      |
+| sheetName      | String  | Path                       | The worksheet name.                                                                     |
+| index          | Integer | Path                       | Removes the vertical page break element at a specified name. Element index, zero based. |
+| folder         | String  | Query                      | The folder where the file is situated.                                                  |
+| storageName    | String  | Query                      | The storage name where the file is situated.                                            |
 
 ### Response
 
@@ -64,37 +65,15 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
-| Parameter       | Type    | Location | Required | Description                                             |
-| --------------- | ------- | -------- | -------- | ------------------------------------------------------- |
-| **name**        | string  | path     | Yes      | The name of the Excel file.                             |
-| **sheetName**   | string  | path     | Yes      | The name of the worksheet that contains the page break. |
-| **index**       | integer | path     | Yes      | Zero‑based index of the vertical page break to delete.  |
-| **folder**      | string  | query    | No       | Folder path where the file is stored.                   |
-| **storageName** | string  | query    | No       | Name of the storage service.                            |
-
----
-
-## Request Example
-
-```bash
-curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/verticalpagebreaks/0?folder=Docs&storageName=MyStorage" \
-  -X DELETE \
-  -H "Content-Type: application/json" \
-  -H "Accept: application/json" \
-  -H "Authorization: Bearer <jwt_token>"
-```
-
----
-
-## Success Response
+### Success Response
 
 | Code    | Description                                       |
 | ------- | ------------------------------------------------- |
@@ -109,9 +88,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/vertic
 }
 ```
 
----
-
-## Error Responses
+### Error Responses
 
 | HTTP Code | Description                                                                    |
 | --------- | ------------------------------------------------------------------------------ |
@@ -158,174 +135,21 @@ _500 – Internal Server Error_
 }
 ```
 
----
-
-## Related Resources
-
-- **OpenAPI Specification (Swagger)** – [Download JSON](https://raw.githubusercontent.com/aspose-cells-cloud/aspose-cells-cloud-go/master/docs/openapi.yaml)
-- **Aspose.Cells Cloud SDKs** – <https://github.com/aspose-cells-cloud>
-- **Authentication Guide** – <https://docs.aspose.cloud/cells/authentication/>
-
----
-
-Was this page helpful?  
-✅ Yes | ❌ No
-
-_(Feedback helps us improve our documentation.)_
-
----
-
-_Document last updated: 2024-03-15_
-
 ## How to Use the Delete Vertical Page Break API with SDKs?
 
 ### Delete Vertical Page Break API Specification
 
 The <a href="https://reference.aspose.cloud/cells/#/PageBreaks/DeleteVerticalPageBreak" rel="noopener noreferrer">Delete Vertical Page Break API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
-The following examples demonstrate how to call the **DeleteVerticalPageBreak** operation using various Aspose.Cells Cloud SDKs.
+**cUrl Example**
 
-<details><summary>**C#**</summary>
-
-```csharp
-// Install-Package Aspose.Cells-Cloud
-using Aspose.Cells.Cloud.SDK.Api;
-using Aspose.Cells.Cloud.SDK.Model;
-
-var apiInstance = new CellsApi("client_id", "client_secret");
-string name = "Book1.xlsx";
-string sheetName = "Sheet1";
-int index = 0;
-string folder = "Docs";
-string storageName = "MyStorage";
-
-try
-{
-    var response = apiInstance.DeleteVerticalPageBreak(name, sheetName, index, folder, storageName);
-    Console.WriteLine($"Status: {response.Status}");
-}
-catch (Exception e)
-{
-    Console.WriteLine("Exception when calling CellsApi.DeleteVerticalPageBreak: " + e.Message );
-}
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/verticalpagebreaks/0?folder=Docs&storageName=MyStorage" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt_token>"
 ```
-
-</details>
-
-<details><summary>**Java**</summary>
-
-```java
-import com.aspose.cloud.cells.api.CellsApi;
-import com.aspose.cloud.cells.model.CellsCloudResponse;
-
-public class DeleteVerticalPageBreak {
-    public static void main(String[] args) {
-        CellsApi api = new CellsApi("client_id", "client_secret");
-        String name = "Book1.xlsx";
-        String sheetName = "Sheet1";
-        int index = 0;
-        String folder = "Docs";
-        String storageName = "MyStorage";
-
-        try {
-            CellsCloudResponse resp = api.deleteVerticalPageBreak(name, sheetName, index, folder, storageName);
-            System.out.println("Status: " + resp.getStatus());
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-}
-```
-
-</details>
-
-<details><summary>**Python**</summary>
-
-```python
-from asposecellscloud import CellsApi, ApiClient, Configuration
-
-config = Configuration()
-config.client_id = "client_id"
-config.client_secret = "client_secret"
-api_client = ApiClient(configuration=config)
-api = CellsApi(api_client)
-
-name = "Book1.xlsx"
-sheet_name = "Sheet1"
-index = 0
-folder = "Docs"
-storage_name = "MyStorage"
-
-try:
-    response = api.delete_vertical_page_break(name, sheet_name, index, folder, storage_name)
-    print("Status:", response.status)
-except Exception as e:
-    print("Error:", e)
-```
-
-</details>
-
-<details><summary>**Node.js**</summary>
-
-```javascript
-const { CellsApi, ApiClient, Configuration } = require("asposecellscloud");
-
-const config = new Configuration();
-config.clientId = "client_id";
-config.clientSecret = "client_secret";
-
-const api = new CellsApi(new ApiClient(config));
-
-const name = "Book1.xlsx";
-const sheetName = "Sheet1";
-const index = 0;
-const folder = "Docs";
-const storageName = "MyStorage";
-
-api
-  .deleteVerticalPageBreak(name, sheetName, index, folder, storageName)
-  .then((response) => console.log("Status:", response.status))
-  .catch((error) => console.error("Error:", error));
-```
-
-</details>
-
-<details><summary>**Go**</summary>
-
-```go
-package main
-
-import (
-    "fmt"
-    "github.com/asposecellscloud/aspose-cells-cloud-go/v3"
-)
-
-func main() {
-    config := asposecellscloud.NewConfiguration()
-    config.ClientId = "client_id"
-    config.ClientSecret = "client_secret"
-
-    api := asposecellscloud.NewAPIClient(config).CellsApi
-    name := "Book1.xlsx"
-    sheetName := "Sheet1"
-    index := int32(0)
-    folder := "Docs"
-    storageName := "MyStorage"
-
-    resp, _, err := api.DeleteVerticalPageBreak(name, sheetName, index, folder, storageName)
-    if err != nil {
-        fmt.Println("Error:", err)
-        return
-    }
-    fmt.Println("Status:", resp.Status)
-}
-```
-
-</details>
-
-> 📦 **SDKs for other languages** (PHP, Ruby, Perl, etc.) are available in the [Aspose.Cells Cloud GitHub repository](https://github.com/aspose-cells-cloud).
-
----
 
 ### Use Aspose.Cells Cloud SDKs
 

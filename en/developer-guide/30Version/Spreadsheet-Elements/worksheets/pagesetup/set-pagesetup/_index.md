@@ -9,6 +9,7 @@ description: "Configure Excel page setup via Aspose.Cells Cloud API: POST /cells
 weight: 100
 ArticleTitle: "Set page setup for a worksheet – Aspose.Cells Cloud API Guide"
 ---
+
 The **PostPageSetup** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pagesetup`) updates page setup configurations for a specified worksheet in a workbook stored in Aspose.Cells Cloud, allowing precise control over print settings such as margins, orientation, and paper size. To call this API, you must provide a valid JWT (OAuth) token in the `Authorization` header, ensure the workbook resides in an Aspose Cloud storage location where you have read/write permissions, and include the required path parameters `{name}` and `{sheetName}` along with a `pageSetup` object in the request body describing the desired settings.
 
 This REST API sets the page setup for an Excel worksheet.
@@ -25,13 +26,13 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| pageSetup | class:pagesetup | HTTPBody | PageSetup Page Setup description. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type            | Path/Query String/HTTPBody | Description                                  |
+| -------------- | --------------- | -------------------------- | -------------------------------------------- |
+| name           | String          | Path                       | The file name.                               |
+| sheetName      | String          | Path                       | The worksheet name.                          |
+| pageSetup      | class:pagesetup | HTTPBody                   | PageSetup Page Setup description.            |
+| folder         | String          | Query                      | The folder where the file is situated.       |
+| storageName    | String          | Query                      | The storage name where the file is situated. |
 
 **Example JSON payload for the `pageSetup` object**
 
@@ -48,7 +49,43 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 }
 ```
 
-The <a href="https://reference.aspose.cloud/cells/#/PageSetup/PostPageSetup" target="_blank" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+### Response
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                        |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+## How to Use the Post Page Setup API with SDKs?
+
+### Post Page Setup API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/PageSetup/PostPageSetup" rel="noopener noreferrer">Post Page Setup API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
@@ -90,46 +127,6 @@ The API returns a JSON object indicating the result of the operation:
 {{< /tab >}}
 
 {{< /tabs >}}
-
-**Possible response status codes**
-
-### Response
-
-```json
-[
-  {
-    "Name": "CellsCloudResponse",
-    "DataType": {
-      "Identifier": "Class",
-      "Reference": "CellsCloudResponse"
-    }
-  }
-]
-```
-
-**Sample response headers**
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-```
-
-**HTTP Status Codes**
-
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
-
-## How to Use the Post Page Setup API with SDKs?
-
-### Post Page Setup API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/PageSetup/PostPageSetup" rel="noopener noreferrer">Post Page Setup API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

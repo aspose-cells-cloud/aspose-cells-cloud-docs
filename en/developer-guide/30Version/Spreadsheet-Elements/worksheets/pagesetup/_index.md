@@ -10,8 +10,6 @@ weight: 100
 ArticleTitle: "Worksheet Page Setup – Configure Print Layout with Aspose.Cells Cloud"
 ---
 
-# **PageSetup**
-
 Excel print page settings
 
 ## Overview
@@ -81,9 +79,3 @@ This snippet sets the worksheet to landscape orientation, uses A4 paper, centers
 | Zoom                  | int           | false    | false    | 100            | Scaling factor in percent (10 – 400%).                                       |
 | Header                | object        | true     | false    | (none)         | Page header configuration.                                                   |
 | Footer                | object        | true     | false    | (none)         | Page footer configuration.                                                   |
-
-## Related Objects
-
-- **Header** – Configures the worksheet header.
-- **Footer** – Configures the worksheet footer.
-- **PrintOptions** – Additional print‑related settings such as page breaks and print area.

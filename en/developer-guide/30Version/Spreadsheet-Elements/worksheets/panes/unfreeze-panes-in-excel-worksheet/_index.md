@@ -12,6 +12,7 @@ description: "Unfreeze Excel worksheet panes via Aspose.Cells Cloud API: DELETE 
 weight: 1000
 ArticleTitle: "Unfreeze Panes in Excel Worksheet using Aspose.Cells Cloud REST API"
 ---
+
 The **DeleteWorksheetFreezePanes** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/freezepanes`) unfreezes panes in an Excel worksheet by removing previously frozen rows and columns, enabling dynamic reconfiguration of scrollable view regions; Aspose.Cells Cloud supports this operation with required parameters including `row`, `column`, `freezedRows`, and `freezedColumns` to precisely define the pane boundary being unfrozen.
 
 ## The Delete Worksheet Freeze Panes Web API
@@ -26,20 +27,53 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| row | Integer | Query | Row index. |
-| column | Integer | Query | Column index. |
-| freezedRows | Integer | Query | Number of visible rows in top pane, no more than row index. |
-| freezedColumns | Integer | Query | Number of visible columns in left pane, no more than column index. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                                        |
+| -------------- | ------- | -------------------------- | ------------------------------------------------------------------ |
+| name           | String  | Path                       | The file name.                                                     |
+| sheetName      | String  | Path                       | The worksheet name.                                                |
+| row            | Integer | Query                      | Row index.                                                         |
+| column         | Integer | Query                      | Column index.                                                      |
+| freezedRows    | Integer | Query                      | Number of visible rows in top pane, no more than row index.        |
+| freezedColumns | Integer | Query                      | Number of visible columns in left pane, no more than column index. |
+| folder         | String  | Query                      | The folder where the file is situated.                             |
+| storageName    | String  | Query                      | The storage name where the file is situated.                       |
 
-_No additional query parameters (such as row, column, frozenRows, or frozenColumns) are required for the unfreeze operation._
+### Response
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheetFreezePanes) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+## How to Use the Delete Worksheet Freeze Panes API with SDKs?
+
+### Delete Worksheet Freeze Panes API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Worksheets/DeleteWorksheetFreezePanes" rel="noopener noreferrer">Delete Worksheet Freeze Panes API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
@@ -69,43 +103,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/f
 {{< /tab >}}
 
 {{< /tabs >}}
-
-### Response
-
-```json
-[
-  {
-    "Name": "CellsCloudResponse",
-    "DataType": {
-      "Identifier": "Class",
-      "Reference": "CellsCloudResponse"
-    }
-  }
-]
-```
-
-**Sample response headers**
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-```
-
-**HTTP Status Codes**
-
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
-
-## How to Use the Delete Worksheet Freeze Panes API with SDKs?
-
-### Delete Worksheet Freeze Panes API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Worksheets/DeleteWorksheetFreezePanes" rel="noopener noreferrer">Delete Worksheet Freeze Panes API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

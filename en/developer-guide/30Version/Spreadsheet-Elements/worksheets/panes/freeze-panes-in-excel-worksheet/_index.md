@@ -10,6 +10,7 @@ description: "Freeze rows and columns in an Excel worksheet using Aspose.Cells C
 weight: 190
 ArticleTitle: "Freeze Panes in Excel Worksheet using Aspose.Cells Cloud REST API"
 ---
+
 The **PutWorksheetFreezePanes** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/freezepanes`) enables developers to set freeze panes in an Excel worksheet using Aspose.Cells Cloud, specifying the top-left frozen cell via `row` and `column` indices along with the number of visible rows (`freezedRows`) and columns (`freezedColumns`) in the top and left panes, respectively; this supports precise control over worksheet navigation for large datasets without requiring manual Excel interaction.
 
 ## The Put Worksheet Freeze Panes Web API
@@ -24,16 +25,16 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| row | Integer | Query | Row index. |
-| column | Integer | Query | Column index. |
-| freezedRows | Integer | Query | Number of visible rows in top pane, no more than row index. |
-| freezedColumns | Integer | Query | Number of visible columns in left pane, no more than column index. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                                        |
+| -------------- | ------- | -------------------------- | ------------------------------------------------------------------ |
+| name           | String  | Path                       | The file name.                                                     |
+| sheetName      | String  | Path                       | The worksheet name.                                                |
+| row            | Integer | Query                      | Row index.                                                         |
+| column         | Integer | Query                      | Column index.                                                      |
+| freezedRows    | Integer | Query                      | Number of visible rows in top pane, no more than row index.        |
+| freezedColumns | Integer | Query                      | Number of visible columns in left pane, no more than column index. |
+| folder         | String  | Query                      | The folder where the file is situated.                             |
+| storageName    | String  | Query                      | The storage name where the file is situated.                       |
 
 ### Response
 
@@ -78,7 +79,11 @@ The request parameters are:
 | folder         | string  | query    | Folder path in storage where the workbook resides.  |
 | storageName    | string  | query    | Name of the storage service.                        |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PutWorksheetFreezePanes) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+## How to Use the Put Worksheet Freeze Panes API with SDKs?
+
+### Put Worksheet Freeze Panes API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Worksheets/PutWorksheetFreezePanes" rel="noopener noreferrer">Put Worksheet Freeze Panes API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
@@ -108,12 +113,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/f
 {{< /tab >}}
 
 {{< /tabs >}}
-
-## How to Use the Put Worksheet Freeze Panes API with SDKs?
-
-### Put Worksheet Freeze Panes API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Worksheets/PutWorksheetFreezePanes" rel="noopener noreferrer">Put Worksheet Freeze Panes API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

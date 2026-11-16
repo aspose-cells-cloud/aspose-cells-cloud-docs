@@ -28,11 +28,3 @@ The following examples demonstrate how to delete a single empty row or multiple 
 | **Request Body**          | _None_                                                                                                                                                                                                                  |
 | **Response Example**      | `json<br>{<br>  "Code": 200,<br>  "Status": "OK",<br>  "RowsDeleted": 1<br>}<br>`                                                                                                                                       |
 | **Possible Status Codes** | 200 OK – rows deleted successfully<br>400 Bad Request – invalid parameters<br>401 Unauthorized – authentication failure<br>404 Not Found – file or worksheet not found<br>500 Internal Server Error – server‑side issue |
-
-**See also**
-
-- [Add Row](/cells/rows/add/)
-- [Get Row](/cells/rows/get/)
-- [Copy Row](/cells/rows/copy/)
-- [Hide Row](/cells/rows/hide/)
-- [Rows Overview](/cells/rows/)

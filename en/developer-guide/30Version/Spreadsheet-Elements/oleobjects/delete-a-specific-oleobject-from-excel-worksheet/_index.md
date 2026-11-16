@@ -10,6 +10,7 @@ description: "Delete a specific OLE object from an Excel worksheet using Aspose.
 weight: 50
 ArticleTitle: "Delete OLE Object from Excel Worksheet using Aspose.Cells Cloud API"
 ---
+
 The **DeleteWorksheetOleObject** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects/{oleObjectIndex}`) enables deletion of a specific OLE object—such as an embedded image, chart, or other embedded content—from a worksheet in an Excel workbook using Aspose.Cells Cloud, supporting robust programmatic control over spreadsheet elements with no manual intervention required.
 
 ## The Delete Worksheet OLE Object Web API
@@ -31,37 +32,6 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | oleObjectIndex | Integer | Path                       | Ole object index.                            |
 | folder         | String  | Query                      | The folder where the file is situated.       |
 | storageName    | String  | Query                      | The storage name where the file is situated. |
-
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/OleObjects/DeleteWorksheetOleObject) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
-
-You can use the **cURL command-line tool** to access Aspose.Cells web services easily. The following example shows how to make the call with cURL.
-
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
-
-{{< tab tabNum="1" >}}
-
-```bash
-curl -v "https://api.aspose.cloud/v4.0/cells/Embedded_OleObject_Sample_Book1.xlsx/worksheets/Sheet1/oleobjects/0" \
-  -X DELETE \
-  -H "Content-Type: application/json" \
-  -H "Accept: application/json" \
-  -H "Authorization: Bearer <jwt token>"
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-```json
-{
-  "Code": 200,
-  "Status": "OK"
-}
-```
-
-{{< /tab >}}
-
-{{< /tabs >}}
 
 ### Response
 
@@ -94,20 +64,40 @@ Content-Type: application/json
 | 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
 | 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
-| HTTP status          | Description                                                            | Sample JSON                                                         |
-| -------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| **200 OK**           | The OLE object was deleted successfully.                               | `{ "Code": 200, "Status": "OK" }`                                   |
-| **401 Unauthorized** | Missing or invalid JWT token.                                          | `{ "Code": 401, "Message": "Access token is missing or invalid." }` |
-| **404 Not Found**    | The specified workbook, worksheet, or OLE object index does not exist. | `{ "Code": 404, "Message": "OLE object index out of range." }`      |
-| **400 Bad Request**  | Required parameters are missing or malformed.                          | `{ "Code": 400, "Message": "Invalid request parameters." }`         |
-
-Handle these responses in your application by checking the status code and displaying the accompanying message.
-
 ## How to Use the Delete Worksheet OLE Object API with SDKs?
 
 ### Delete Worksheet OLE Object API Specification
 
 The <a href="https://reference.aspose.cloud/cells/#/OleObjects/DeleteWorksheetOleObject" rel="noopener noreferrer">Delete Worksheet OLE Object API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
+
+You can use the **cURL command-line tool** to access Aspose.Cells web services easily. The following example shows how to make the call with cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+
+{{< tab tabNum="1" >}}
+
+```bash
+curl -v "https://api.aspose.cloud/v4.0/cells/Embedded_OleObject_Sample_Book1.xlsx/worksheets/Sheet1/oleobjects/0" \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+```json
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
 
 ### Use Aspose.Cells Cloud SDKs
 

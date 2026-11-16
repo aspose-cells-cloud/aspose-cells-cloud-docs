@@ -14,6 +14,7 @@ description: "Learn how to create a pivot table from a list object using Aspose.
 weight: 60
 ArticleTitle: "Convert Table to Pivot Table – Aspose.Cells Cloud Documentation"
 ---
+
 The **PostWorksheetListObjectSummarizeWithPivotTable** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/SummarizeWithPivotTable`) enables developers to programmatically convert an existing list object in a worksheet into a pivot table using Aspose.Cells Cloud, requiring parameters such as the workbook name, worksheet name, list object index, destination worksheet name, and a `CreatePivotTableRequest` body to define the pivot table structure and data fields.
 
 A pivot table summarizes data from a list object, allowing you to analyze and report on large data sets directly within the workbook.
@@ -78,40 +79,6 @@ The request body must follow the JSON schema defined below:
 }
 ```
 
-The <a href="https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObjectSummarizeWithPivotTable" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
-
-You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
-
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
-
-{{< tab tabNum="1" >}}
-
-```bash
-curl -v "https://api.aspose.cloud/v3.0/cells/TestCase.xlsx/worksheets/Sheet2/listobjects/0/SummarizeWithPivotTable?folder=CellsTests&destsheetName=Sheet4" \
--X POST \
--d '{"Name":"TestPivot","DestCellName":"C1","PivotFieldRows":[0,1],"PivotFieldColumns":[2],"PivotFieldData":[3,4]}' \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
-```
-
-_Note: Use the production endpoint (`api.aspose.cloud`) for live environments. The QA endpoint (`api-qa.aspose.cloud`) is intended for testing only. HTTPS is required for all production calls._
-
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-```json
-{
-  "Code": 200,
-  "Status": "OK"
-}
-```
-
-{{< /tab >}}
-
-{{< /tabs >}}
-
 ### Response
 
 ```json
@@ -149,6 +116,38 @@ Content-Type: application/json
 ### Post Worksheet List Object Summarize with Pivot Table API Specification
 
 The <a href="https://reference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObjectSummarizeWithPivotTable" rel="noopener noreferrer">Post Worksheet List Object Summarize with Pivot Table API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
+
+You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+
+{{< tab tabNum="1" >}}
+
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/TestCase.xlsx/worksheets/Sheet2/listobjects/0/SummarizeWithPivotTable?folder=CellsTests&destsheetName=Sheet4" \
+-X POST \
+-d '{"Name":"TestPivot","DestCellName":"C1","PivotFieldRows":[0,1],"PivotFieldColumns":[2],"PivotFieldData":[3,4]}' \
+-H "Content-Type: application/json" \
+-H "Accept: application/json" \
+-H "Authorization: Bearer <jwt token>"
+```
+
+_Note: Use the production endpoint (`api.aspose.cloud`) for live environments. The QA endpoint (`api-qa.aspose.cloud`) is intended for testing only. HTTPS is required for all production calls._
+
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+```json
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
 
 ### Use Aspose.Cells Cloud SDKs
 

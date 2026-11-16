@@ -10,6 +10,7 @@ description: "Set Excel worksheet zoom (10–400%) via Aspose.Cells Cloud REST A
 weight: 100
 ArticleTitle: "Set Zoom for an Excel Worksheet – Aspose.Cells Cloud API v3.0"
 ---
+
 The **PostUpdateWorksheetZoom** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/zoom`) updates the scaling percentage of a specified worksheet in an Excel file stored in the cloud, supporting values between 10 and 400; Aspose.Cells Cloud requires authentication via a Bearer JWT token in the `Authorization` header and accepts optional query parameters `folder` and `storageName` to locate the source file.
 
 ## The Post Update Worksheet Zoom Web API
@@ -24,15 +25,50 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| value | Integer | Query | Represents the scaling factor in percentage. It should be between 10 and 400. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                                                   |
+| -------------- | ------- | -------------------------- | ----------------------------------------------------------------------------- |
+| name           | String  | Path                       | The file name.                                                                |
+| sheetName      | String  | Path                       | The worksheet name.                                                           |
+| value          | Integer | Query                      | Represents the scaling factor in percentage. It should be between 10 and 400. |
+| folder         | String  | Query                      | The folder where the file is situated.                                        |
+| storageName    | String  | Query                      | The storage name where the file is situated.                                  |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostUpdateWorksheetZoom) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+### Response
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+## How to Use the Post Update Worksheet Zoom API with SDKs?
+
+### Post Update Worksheet Zoom API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Worksheets/PostUpdateWorksheetZoom" rel="noopener noreferrer">Post Update Worksheet Zoom API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
 
@@ -62,53 +98,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/zoom?va
 {{< /tab >}}
 
 {{< /tabs >}}
-
-**Error‑Response Information**  
-Possible HTTP status codes include:
-
-- `400 Bad Request` – missing or invalid parameters.
-- `401 Unauthorized` – missing or invalid JWT token.
-- `404 Not Found` – specified file or worksheet does not exist.
-- `500 Internal Server Error` – unexpected server‑side error.
-
-Each error response returns a JSON body containing a `Code` and a descriptive `Message`.
-
-### Response
-
-```json
-[
-  {
-    "Name": "CellsCloudResponse",
-    "DataType": {
-      "Identifier": "Class",
-      "Reference": "CellsCloudResponse"
-    }
-  }
-]
-```
-
-**Sample response headers**
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-```
-
-**HTTP Status Codes**
-
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
-
-## How to Use the Post Update Worksheet Zoom API with SDKs?
-
-### Post Update Worksheet Zoom API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Worksheets/PostUpdateWorksheetZoom" rel="noopener noreferrer">Post Update Worksheet Zoom API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

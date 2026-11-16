@@ -10,6 +10,7 @@ description: "Retrieve named ranges from Excel workbooks via Aspose.Cells Cloud 
 ArticleTitle: "Get Named Ranges on an Excel Workbook – Aspose.Cells Cloud API"
 weight: 100
 ---
+
 The **GetNamedRanges** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/ranges`) retrieves descriptions of named ranges defined within the worksheets of a specified workbook file, enabling developers to programmatically inspect range definitions and their properties using Aspose.Cells Cloud.
 
 **Background** – A _named range_ is a user‑defined identifier that refers to a specific cell or block of cells in a worksheet. Named ranges simplify formula creation, improve readability, and enable programmatic access to frequently used areas of a workbook.
@@ -26,13 +27,62 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------ | -------------------------- | -------------------------------------------- |
+| name           | String | Path                       | The file name.                               |
+| folder         | String | Query                      | The folder where the file is situated.       |
+| storageName    | String | Query                      | The storage name where the file is situated. |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetNamedRanges) defines a publicly accessible programming interface that lets you perform REST interactions directly from a web browser.
+**Response Model**
+
+| Field         | Type    | Description                                                              |
+| ------------- | ------- | ------------------------------------------------------------------------ |
+| `ColumnCount` | integer | Number of columns in the range.                                          |
+| `ColumnWidth` | number  | Width of each column (in points).                                        |
+| `FirstColumn` | integer | Zero‑based index of the first column in the range.                       |
+| `FirstRow`    | integer | Zero‑based index of the first row in the range.                          |
+| `Name`        | string  | The user‑defined name of the range.                                      |
+| `RefersTo`    | string  | A formula that defines the cell reference (e.g., `=Sheet1!$B$10:$H$10`). |
+| `RowCount`    | integer | Number of rows in the range.                                             |
+| `RowHeight`   | number  | Height of each row (in points).                                          |
+| `Worksheet`   | string  | Name of the worksheet that contains the range.                           |
+
+### Response
+
+```json
+[
+  {
+    "Name": "RangesResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "RangesResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+## How to Use the Get Named Ranges API with SDKs?
+
+### Get Named Ranges API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Worksheets/GetNamedRanges" rel="noopener noreferrer">Get Named Ranges API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command-line tool to call Aspose.Cells web services. The example below demonstrates how to retrieve named ranges using cURL.
 
@@ -77,57 +127,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/ranges" \
 {{< /tab >}}
 
 {{< /tabs >}}
-
-**Response Model**
-
-| Field         | Type    | Description                                                              |
-| ------------- | ------- | ------------------------------------------------------------------------ |
-| `ColumnCount` | integer | Number of columns in the range.                                          |
-| `ColumnWidth` | number  | Width of each column (in points).                                        |
-| `FirstColumn` | integer | Zero‑based index of the first column in the range.                       |
-| `FirstRow`    | integer | Zero‑based index of the first row in the range.                          |
-| `Name`        | string  | The user‑defined name of the range.                                      |
-| `RefersTo`    | string  | A formula that defines the cell reference (e.g., `=Sheet1!$B$10:$H$10`). |
-| `RowCount`    | integer | Number of rows in the range.                                             |
-| `RowHeight`   | number  | Height of each row (in points).                                          |
-| `Worksheet`   | string  | Name of the worksheet that contains the range.                           |
-
-### Response
-
-```json
-[
-  {
-    "Name": "RangesResponse",
-    "DataType": {
-      "Identifier": "Class",
-      "Reference": "RangesResponse"
-    }
-  }
-]
-```
-
-**Sample response headers**
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-```
-
-**HTTP Status Codes**
-
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
-
-## How to Use the Get Named Ranges API with SDKs?
-
-### Get Named Ranges API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Worksheets/GetNamedRanges" rel="noopener noreferrer">Get Named Ranges API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

@@ -10,6 +10,7 @@ description: "Retrieve all picture objects from an Excel worksheet via Aspose.Ce
 ArticleTitle: "Get all pictures in an Excel worksheet - Aspose.Cells Cloud API"
 weight: 100
 ---
+
 The **GetWorksheetPictures** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures`) retrieves descriptions of all pictures in a specified Excel worksheet using Aspose.Cells Cloud, enabling developers to programmatically access picture metadata such as position, size, and type without manual extraction.
 
 ## The Get Worksheet Pictures Web API
@@ -24,12 +25,12 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------ | -------------------------- | -------------------------------------------- |
+| name           | String | Path                       | The file name.                               |
+| sheetName      | String | Path                       | The worksheet name.                          |
+| folder         | String | Query                      | The folder where the file is situated.       |
+| storageName    | String | Query                      | The storage name where the file is situated. |
 
 ### Response
 
@@ -52,16 +53,21 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 ```
 
-### Error Responses
+**HTTP Status Codes**
 
-| HTTP Code | Description                                                                    |
-| --------- | ------------------------------------------------------------------------------ |
-| 401       | Unauthorized – missing or invalid token.                                       |
-| 404       | Not Found – the specified file, worksheet, or page‑break index does not exist. |
-| 400       | Bad Request – malformed request syntax or invalid parameters.                  |
-| 500       | Internal Server Error – an unexpected condition was encountered.               |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Pictures/GetWorksheetPictures) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+## How to Use the Get Worksheet Pictures API with SDKs?
+
+### Get Worksheet Pictures API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Pictures/GetWorksheetPictures" rel="noopener noreferrer">Get Worksheet Pictures API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
@@ -130,15 +136,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/picture
 
 **Note:** Use HTTPS (TLS 1.2 or higher) when calling the API and include a valid JWT token in the `Authorization` header.
 
-## How to Use the Get Worksheet Pictures API with SDKs?
-
-### Get Worksheet Pictures API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Pictures/GetWorksheetPictures" rel="noopener noreferrer">Get Worksheet Pictures API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
-
 You can download the SDKs directly from their respective package managers (e.g., NuGet for .NET, Maven Central for Java, Composer for PHP, npm for Node.js, PyPI for Python, CPAN for Perl, and Go modules for Go).
-
-_See also:_ Add a picture, Delete a picture, Update picture properties.
 
 ### Use Aspose.Cells Cloud SDKs
 

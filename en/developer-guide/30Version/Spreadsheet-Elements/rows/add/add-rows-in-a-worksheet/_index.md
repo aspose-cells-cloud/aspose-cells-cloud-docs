@@ -9,6 +9,7 @@ keywords: "Aspose.Cells Cloud, insert rows, Excel worksheet, REST API, SDK, add 
 description: "Add rows to Excel worksheet via Aspose.Cells Cloud API PutInsertWorksheetRows endpoint with parameters and SDK examples"
 weight: 100
 ---
+
 The **PutInsertWorksheetRows** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows`) in Aspose.Cells Cloud v3.0 inserts one or more new rows into a specified Excel worksheet starting at a given row index, enabling dynamic worksheet expansion while optionally updating references in other sheets.
 
 ## The Put Insert Worksheet Rows Web API
@@ -23,23 +24,52 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| startrow | Integer | Query | The begin row index to be operated. |
-| totalRows | Integer | Query | Number of rows to be operated. |
-| updateReference | Boolean | Query | Indicates if update references in other worksheets. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name  | Type    | Path/Query String/HTTPBody | Description                                         |
+| --------------- | ------- | -------------------------- | --------------------------------------------------- |
+| name            | String  | Path                       | The file name.                                      |
+| sheetName       | String  | Path                       | The worksheet name.                                 |
+| startrow        | Integer | Query                      | The begin row index to be operated.                 |
+| totalRows       | Integer | Query                      | Number of rows to be operated.                      |
+| updateReference | Boolean | Query                      | Indicates if update references in other worksheets. |
+| folder          | String  | Query                      | The folder where the file is situated.              |
+| storageName     | String  | Query                      | The storage name where the file is situated.        |
 
-**Prerequisites**  
-The workbook must already exist in the specified storage (or folder) before invoking this operation.
+### Response
 
-**Authentication**  
-The API requires a valid JWT token. Include it in the `Authorization` header as shown in the cURL example below.
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PutInsertWorksheetRows) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+## How to Use the Put Insert Worksheet Rows API with SDKs?
+
+### Put Insert Worksheet Rows API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Cells/PutInsertWorksheetRows" rel="noopener noreferrer">Put Insert Worksheet Rows API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
 
@@ -68,56 +98,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 }
 ```
 
-_Possible response codes_
-
-- **200 OK** – Rows inserted successfully.
-- **400 Bad Request** – Invalid parameters (e.g., negative row index).
-- **401 Unauthorized** – Missing or invalid JWT token.
-- **404 Not Found** – Specified workbook or worksheet does not exist.
-- **500 Internal Server Error** – Unexpected server error.
-
 {{< /tab >}}
 
 {{< /tabs >}}
-
-For further operations on rows, see the related pages: **Delete rows**, **Get rows**, and **Copy rows**.
-
-### Response
-
-```json
-[
-  {
-    "Name": "CellsCloudResponse",
-    "DataType": {
-      "Identifier": "Class",
-      "Reference": "CellsCloudResponse"
-    }
-  }
-]
-```
-
-**Sample response headers**
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-```
-
-**HTTP Status Codes**
-
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
-
-## How to Use the Put Insert Worksheet Rows API with SDKs?
-
-### Put Insert Worksheet Rows API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Cells/PutInsertWorksheetRows" rel="noopener noreferrer">Put Insert Worksheet Rows API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

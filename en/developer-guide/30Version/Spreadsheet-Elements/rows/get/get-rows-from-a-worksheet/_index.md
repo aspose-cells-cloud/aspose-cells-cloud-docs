@@ -10,6 +10,7 @@ description: "Get rows from Excel worksheet using Aspose.Cells Cloud REST API v3
 weight: 100
 ArticleTitle: "Get rows information from an Excel worksheet – Aspose.Cells Cloud API Documentation"
 ---
+
 The **GetWorksheetRows** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows`) in Aspose.Cells Cloud retrieves detailed descriptions of rows in a specified Excel worksheet, supporting optional pagination via `offset` and `count` query parameters to efficiently fetch specific row ranges.
 
 ## The Get Worksheet Rows Web API
@@ -24,82 +25,14 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| offset | Integer | Query | Row offset. |
-| count | Integer | Query | Display rows number. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
-
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetRows) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
-
-You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
-
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
-
-{{< tab tabNum="1" >}}
-
-```bash
-curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows" \
-  -X GET \
-  -H "Content-Type: application/json" \
-  -H "Accept: application/json" \
-  -H "Authorization: Bearer <jwt token>"
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-```json
-{
-  "Rows": {
-    "MaxRow": 20,
-    "RowsCount": 17,
-    "RowsList": [
-      { "link": { "Href": "/0", "Rel": "self", "Title": null, "Type": null } },
-      { "link": { "Href": "/1", "Rel": "self", "Title": null, "Type": null } },
-      { "link": { "Href": "/2", "Rel": "self", "Title": null, "Type": null } },
-      { "link": { "Href": "/3", "Rel": "self", "Title": null, "Type": null } },
-      { "link": { "Href": "/4", "Rel": "self", "Title": null, "Type": null } },
-      { "link": { "Href": "/5", "Rel": "self", "Title": null, "Type": null } },
-      { "link": { "Href": "/6", "Rel": "self", "Title": null, "Type": null } },
-      { "link": { "Href": "/7", "Rel": "self", "Title": null, "Type": null } },
-      { "link": { "Href": "/8", "Rel": "self", "Title": null, "Type": null } },
-      { "link": { "Href": "/9", "Rel": "self", "Title": null, "Type": null } },
-      { "link": { "Href": "/10", "Rel": "self", "Title": null, "Type": null } },
-      { "link": { "Href": "/11", "Rel": "self", "Title": null, "Type": null } },
-      { "link": { "Href": "/12", "Rel": "self", "Title": null, "Type": null } },
-      { "link": { "Href": "/13", "Rel": "self", "Title": null, "Type": null } },
-      { "link": { "Href": "/14", "Rel": "self", "Title": null, "Type": null } },
-      { "link": { "Href": "/15", "Rel": "self", "Title": null, "Type": null } },
-      { "link": { "Href": "/16", "Rel": "self", "Title": null, "Type": null } },
-      { "link": { "Href": "/17", "Rel": "self", "Title": null, "Type": null } },
-      { "link": { "Href": "/18", "Rel": "self", "Title": null, "Type": null } },
-      { "link": { "Href": "/19", "Rel": "self", "Title": null, "Type": null } },
-      { "link": { "Href": "/20", "Rel": "self", "Title": null, "Type": null } },
-      { "link": { "Href": "/21", "Rel": "self", "Title": null, "Type": null } },
-      { "link": { "Href": "/22", "Rel": "self", "Title": null, "Type": null } },
-      { "link": { "Href": "/23", "Rel": "self", "Title": null, "Type": null } },
-      { "link": { "Href": "/24", "Rel": "self", "Title": null, "Type": null } }
-    ],
-    "link": {
-      "Href": "/test.xlsx/worksheets/Sheet1/cells/rows",
-      "Rel": "self",
-      "Title": null,
-      "Type": null
-    }
-  },
-  "Code": 200,
-  "Status": "OK"
-}
-```
-
-{{< /tab >}}
-
-{{< /tabs >}}
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------- | -------------------------- | -------------------------------------------- |
+| name           | String  | Path                       | The file name.                               |
+| sheetName      | String  | Path                       | The worksheet name.                          |
+| offset         | Integer | Query                      | Row offset.                                  |
+| count          | Integer | Query                      | Display rows number.                         |
+| folder         | String  | Query                      | The folder where the file is situated.       |
+| storageName    | String  | Query                      | The storage name where the file is situated. |
 
 **Response codes**
 
@@ -126,13 +59,13 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## How to Use the Get Worksheet Rows API with SDKs?
 

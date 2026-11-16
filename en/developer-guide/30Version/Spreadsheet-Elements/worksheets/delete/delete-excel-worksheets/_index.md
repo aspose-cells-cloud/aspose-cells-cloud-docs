@@ -10,6 +10,7 @@ description: "Delete multiple Excel worksheets using Aspose.Cells Cloud REST API
 weight: 100
 ArticleTitle: "Delete Multiple Excel Worksheets using Aspose.Cells Cloud REST API"
 ---
+
 The **DeleteWorksheets** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets`) enables deletion of multiple worksheets matching specified criteria from a workbook stored in the cloud, supporting flexible matching via the `matchCondition` body parameter while requiring only the workbook's `name` as a path parameter; Aspose.Cells Cloud handles the complex task of worksheet removal through its REST API and provides SDKs for .NET, Java, Go, Node.js, Python, and other languages to streamline integration.
 
 ## The Delete Worksheets Web API
@@ -24,12 +25,12 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | - |
-| matchCondition | class:matchconditionrequest | HTTPBody | - |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type                        | Path/Query String/HTTPBody | Description                                  |
+| -------------- | --------------------------- | -------------------------- | -------------------------------------------- |
+| name           | String                      | Path                       | -                                            |
+| matchCondition | class:matchconditionrequest | HTTPBody                   | -                                            |
+| folder         | String                      | Query                      | The folder where the file is situated.       |
+| storageName    | String                      | Query                      | The storage name where the file is situated. |
 
 **MatchConditionRequest Properties**
 
@@ -38,7 +39,43 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | RegexPattern        | string   | Regular expression to match worksheet names. | optional |
 | FullMatchConditions | string[] | Exact worksheet names to be deleted.         | optional |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheets) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+### Response
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                        |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+## How to Use the Delete Worksheets API with SDKs?
+
+### Delete Worksheets API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Worksheets/DeleteWorksheets" rel="noopener noreferrer">Delete Worksheets API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL. **A valid JWT token is required in the `Authorization` header.**
 
@@ -79,50 +116,6 @@ The request can also return common error responses, for example:
 {{< /tab >}}
 
 {{< /tabs >}}
-
-### Response
-
-```json
-[
-  {
-    "Name": "CellsCloudResponse",
-    "DataType": {
-      "Identifier": "Class",
-      "Reference": "CellsCloudResponse"
-    }
-  }
-]
-```
-
-**Sample response headers**
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-```
-
-**HTTP Status Codes**
-
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
-
-## How to Use the Delete Worksheets API with SDKs?
-
-### Delete Worksheets API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Worksheets/DeleteWorksheets" rel="noopener noreferrer">Delete Worksheets API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
-
-**See also:**
-
-- [Delete a Single Worksheet](https://docs.aspose.cloud/cells/worksheets/delete/)
-- [Copy Worksheet](https://docs.aspose.cloud/cells/worksheets/copy/)
-- [Move Worksheet](https://docs.aspose.cloud/cells/worksheets/move/)
 
 ### Use Aspose.Cells Cloud SDKs
 

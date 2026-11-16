@@ -10,6 +10,7 @@ description: "Get cell values from an Excel named range using Aspose.Cells Cloud
 weight: 100
 ArticleTitle: "Get Cells Data Based on Named Range – Aspose.Cells Cloud API"
 ---
+
 The **GetWorksheetCellsRangeValue** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/value`) retrieves the values of cells within a specified range in a worksheet, supporting both named ranges via the `namerange` query parameter and explicit cell ranges defined by `firstRow`, `firstColumn`, `rowCount`, and `columnCount` parameters. Aspose.Cells Cloud enables developers to programmatically extract range data from Excel workbooks stored in cloud storage, simplifying data integration and reporting workflows across supported platforms including .NET, Java, Python, and Node.js.
 
 - A valid JWT access token with the appropriate scope.
@@ -32,19 +33,66 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| namerange | String | Query | The range name. |
-| firstRow | Integer | Query | Gets the index of the first row of the range. |
-| firstColumn | Integer | Query | Gets the index of the first columnn of the range. |
-| rowCount | Integer | Query | Gets the count of rows in the range. |
-| columnCount | Integer | Query | Gets the count of columns in the range. |
-| folder | String | Query | Original workbook folder. |
-| storageName | String | Query | Storage name. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                       |
+| -------------- | ------- | -------------------------- | ------------------------------------------------- |
+| name           | String  | Path                       | The file name.                                    |
+| sheetName      | String  | Path                       | The worksheet name.                               |
+| namerange      | String  | Query                      | The range name.                                   |
+| firstRow       | Integer | Query                      | Gets the index of the first row of the range.     |
+| firstColumn    | Integer | Query                      | Gets the index of the first columnn of the range. |
+| rowCount       | Integer | Query                      | Gets the count of rows in the range.              |
+| columnCount    | Integer | Query                      | Gets the count of columns in the range.           |
+| folder         | String  | Query                      | Original workbook folder.                         |
+| storageName    | String  | Query                      | Storage name.                                     |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Ranges/GetWorksheetCellsRangeValue) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
+**Example error response (400 Bad Request)**
+
+```json
+{
+  "Code": 400,
+  "Status": "Bad Request",
+  "Message": "The parameter 'namedRange' is missing or invalid."
+}
+```
+
+> **Tip:** The API uses zero‑based indices for `firstRow` and `firstColumn`. For example, the first row of the worksheet is `0`.
+
+### Response
+
+```json
+[
+  {
+    "Name": "RangeValueResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "RangeValueResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+## How to Use the Get Worksheet Cells Range Value API with SDKs?
+
+### Get Worksheet Cells Range Value API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Ranges/GetWorksheetCellsRangeValue" rel="noopener noreferrer">Get Worksheet Cells Range Value API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to call Aspose.Cells web services easily. The example below demonstrates how to request cell values from a named range.
 
@@ -260,58 +308,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/
 {{< /tabs >}}
 
 **Security Note:** Always use HTTPS when calling the API. The service does not support plain HTTP; using HTTPS ensures the request is encrypted and complies with security best practices.
-
-
-**Example error response (400 Bad Request)**
-
-```json
-{
-  "Code": 400,
-  "Status": "Bad Request",
-  "Message": "The parameter 'namedRange' is missing or invalid."
-}
-```
-
-> **Tip:** The API uses zero‑based indices for `firstRow` and `firstColumn`. For example, the first row of the worksheet is `0`.
-
-### Response
-
-```json
-[
-  {
-    "Name": "RangeValueResponse",
-    "DataType": {
-      "Identifier": "Class",
-      "Reference": "RangeValueResponse"
-    }
-  }
-]
-```
-
-**Sample response headers**
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-```
-
-**HTTP Status Codes**
-
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
-
-## How to Use the Get Worksheet Cells Range Value API with SDKs?
-
-### Get Worksheet Cells Range Value API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Ranges/GetWorksheetCellsRangeValue" rel="noopener noreferrer">Get Worksheet Cells Range Value API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
-
-Using an SDK is the most efficient way to accelerate development. An SDK abstracts low‑level details, allowing you to focus on business logic. See the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 ### Use Aspose.Cells Cloud SDKs
 

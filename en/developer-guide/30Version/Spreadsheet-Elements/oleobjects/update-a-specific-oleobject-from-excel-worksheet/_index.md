@@ -12,6 +12,7 @@ author: "Aspose Cloud Documentation Team"
 lastmod: "2024-03-01"
 ArticleTitle: "Update an OLE Object in an Excel Worksheet – Aspose.Cells Cloud API Guide"
 ---
+
 The **PostUpdateWorksheetOleObject** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects/{oleObjectIndex}`) updates a specific OLE object in an Excel worksheet using Aspose.Cells Cloud, enabling developers to modify embedded OLE content—such as linked or embedded objects—by sending updated OLE object data in the request body along with path parameters identifying the workbook, worksheet, and OLE object index.
 
 ## The Post Update Worksheet OLE Object Web API
@@ -26,14 +27,14 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worsheet name. |
-| oleObjectIndex | Integer | Path | Ole object index. |
-| ole | class:oleobject | HTTPBody | Ole Object description. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type            | Path/Query String/HTTPBody | Description                                  |
+| -------------- | --------------- | -------------------------- | -------------------------------------------- |
+| name           | String          | Path                       | The file name.                               |
+| sheetName      | String          | Path                       | The worsheet name.                           |
+| oleObjectIndex | Integer         | Path                       | Ole object index.                            |
+| ole            | class:oleobject | HTTPBody                   | Ole Object description.                      |
+| folder         | String          | Query                      | The folder where the file is situated.       |
+| storageName    | String          | Query                      | The storage name where the file is situated. |
 
 ### Response
 
@@ -56,27 +57,15 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 ```
 
-### Error Responses
+**HTTP Status Codes**
 
-| HTTP Status | Code | Message                                                        |
-| ----------- | ---- | -------------------------------------------------------------- |
-| 400         | 4000 | Bad request – missing or invalid parameters.                   |
-| 401         | 4010 | Unauthorized – invalid or missing JWT token.                   |
-| 404         | 4040 | Not found – workbook, worksheet, or OLE object does not exist. |
-| 500         | 5000 | Internal server error – unexpected failure on the server side. |
-
-The API also returns a custom **Code** field in the response body that maps to the HTTP status (e.g., 200 → 2000, 400 → 4000, etc.).
-
-The request parameters are:
-
-| Parameter Name | Type    | Parameter Location | Description                                          |
-| -------------- | ------- | ------------------ | ---------------------------------------------------- |
-| name           | string  | path               | The workbook name.                                   |
-| sheetName      | string  | path               | The worksheet name.                                  |
-| oleObjectIndex | integer | path               | Index of the OLE object within the worksheet.        |
-| ole            | object  | body               | JSON representation of the OLE object to be updated. |
-| folder         | string  | query              | The folder that contains the workbook.               |
-| storageName    | string  | query              | The name of the storage service.                     |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ### Request Body Fields
 
@@ -92,7 +81,15 @@ The request parameters are:
 | Width               | integer | required | Width of the OLE object, in points.                       |
 | Height              | integer | required | Height of the OLE object, in points.                      |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/OleObjects/PostUpdateWorksheetOleObject) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
+## When to Use This API?
+
+Use this endpoint when you need to modify an existing OLE object—such as an embedded image, chart, or document—without re‑uploading the entire worksheet. Typical scenarios include updating the image source, resizing the object, or changing its position after the workbook has been generated. For related operations see [Add an OLE Object](/oleobjects/add/) and [Delete an OLE Object](/oleobjects/delete/).
+
+## How to Use the Post Update Worksheet OLE Object API with SDKs?
+
+### Post Update Worksheet OLE Object API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/OleObjects/PostUpdateWorksheetOleObject" rel="noopener noreferrer">Post Update Worksheet OLE Object API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
 
@@ -135,45 +132,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/" \
 {{< /tab >}}
 
 {{< /tabs >}}
-
-## When to Use This API?
-
-Use this endpoint when you need to modify an existing OLE object—such as an embedded image, chart, or document—without re‑uploading the entire worksheet. Typical scenarios include updating the image source, resizing the object, or changing its position after the workbook has been generated. For related operations see [Add an OLE Object](/oleobjects/add/) and [Delete an OLE Object](/oleobjects/delete/).
-
-## How to Use the Post Update Worksheet OLE Object API with SDKs?
-
-### Post Update Worksheet OLE Object API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/OleObjects/PostUpdateWorksheetOleObject" rel="noopener noreferrer">Post Update Worksheet OLE Object API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
-
-Below is a short C# example that updates an OLE object using the Aspose.Cells Cloud SDK:
-
-```csharp
-using Aspose.Cells.Cloud.SDK.Api;
-using Aspose.Cells.Cloud.SDK.Model;
-
-var config = new Configuration
-{
-    AppSid = "<your-app-sid>",
-    AppKey = "<your-app-key>"
-};
-var oleApi = new OleObjectsApi(config);
-var request = new OleObjectUpdateRequest
-{
-    ImageSourceFullName = "aspose-logo.png",
-    IsAutoSize = true,
-    SourceFullName = "Sample_Book2.xls",
-    UpperLeftRow = 15,
-    UpperLeftColumn = 5,
-    Left = 10,
-    Top = 10,
-    Width = 400,
-    Height = 400
-};
-
-var response = oleApi.UpdateWorksheetOleObject("SampleBook.xlsx", "Sheet1", 0, request, folder: "myFolder");
-Console.WriteLine($"Status: {response.Status}");
-```
 
 ### Use Aspose.Cells Cloud SDKs
 

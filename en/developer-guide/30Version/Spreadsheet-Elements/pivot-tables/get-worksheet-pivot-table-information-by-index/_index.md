@@ -10,6 +10,7 @@ description: "Retrieve worksheet pivot table info by index via Aspose.Cells Clou
 weight: 100
 ArticleTitle: "Get a Pivot Table in an Excel Worksheet"
 ---
+
 The **GetWorksheetPivotTable** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivottableIndex}`) retrieves detailed information about a specific PivotTable in a worksheet by its zero-based index, enabling developers to programmatically access PivotTable metadata such as cache, data fields, and layout without parsing the entire workbook; Aspose.Cells Cloud supports this operation via a RESTful endpoint and provides SDKs for multiple programming languages including .NET, Java, Go, Node.js, and Python.
 
 ## The Get Worksheet Pivot Table Web API
@@ -31,6 +32,58 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | pivottableIndex | Integer | Path                       | Gets the PivotTable report by index.         |
 | folder          | String  | Query                      | The folder where the file is situated.       |
 | storageName     | String  | Query                      | The storage name where the file is situated. |
+
+### Response
+
+```json
+[
+  {
+    "Name": "PivotTableResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "PivotTableResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**Response Schema**
+
+| Field                                                                            | Type   | Description                                      |
+| -------------------------------------------------------------------------------- | ------ | ------------------------------------------------ |
+| Status                                                                           | string | Operation status text (e.g., “OK”).              |
+| PivotFilters                                                                     | array  | Collection of pivot filter definitions.          |
+| └─ AutoFilter                                                                    | object | Details of automatic filtering applied to pivot. |
+|     └─ link                                                                      | object | Hyperlink information for the filter.            |
+|     └─ FilterColumns                                                             | array  | Individual column filter settings.               |
+|     └─ Range                                                                     | string | Cell range the filter applies to.                |
+|     └─ Sorter                                                                    | object | Sorting configuration for the filtered data.     |
+| (additional nested fields follow the same structure as shown in the sample JSON) |
+
+**HTTP Status Codes**
+
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+**Notes:** The API supports Excel files up to 150 MB and works with Excel 2007‑2021 formats. Ensure the worksheet name is case‑sensitive.
+
+## How to Use the Get Worksheet Pivot Table API with SDKs?
+
+### Get Worksheet Pivot Table API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/PivotTables/GetWorksheetPivotTable" rel="noopener noreferrer">Get Worksheet Pivot Table API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the API with cURL.
 
@@ -167,62 +220,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/work
 }
 ```
 
-**Response Schema**
-
-| Field                                                                            | Type   | Description                                      |
-| -------------------------------------------------------------------------------- | ------ | ------------------------------------------------ |
-| Status                                                                           | string | Operation status text (e.g., “OK”).              |
-| PivotFilters                                                                     | array  | Collection of pivot filter definitions.          |
-| └─ AutoFilter                                                                    | object | Details of automatic filtering applied to pivot. |
-|     └─ link                                                                      | object | Hyperlink information for the filter.            |
-|     └─ FilterColumns                                                             | array  | Individual column filter settings.               |
-|     └─ Range                                                                     | string | Cell range the filter applies to.                |
-|     └─ Sorter                                                                    | object | Sorting configuration for the filtered data.     |
-| (additional nested fields follow the same structure as shown in the sample JSON) |
-
 {{< /tab >}}
 
 {{< /tabs >}}
-
-### Response
-
-```json
-[
-  {
-    "Name": "PivotTableResponse",
-    "DataType": {
-      "Identifier": "Class",
-      "Reference": "PivotTableResponse"
-    }
-  }
-]
-```
-
-**Sample response headers**
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-```
-
-### Error handling
-
-The API follows standard HTTP status codes. Typical responses include:
-
-| Status Code | Meaning                                                          | Example JSON (error)                              |
-| ----------- | ---------------------------------------------------------------- | ------------------------------------------------- |
-| 200         | Success – the pivot table is returned                            | —                                                 |
-| 401         | Unauthorized – invalid or missing token                          | `{"code":401,"message":"Invalid access token."}`  |
-| 404         | Not found – file, worksheet, or pivot‑table index does not exist | `{"code":404,"message":"Pivot table not found."}` |
-| 500         | Server error – unexpected condition                              | `{"code":500,"message":"Internal server error."}` |
-
-**Notes:** The API supports Excel files up to 150 MB and works with Excel 2007‑2021 formats. Ensure the worksheet name is case‑sensitive.
-
-## How to Use the Get Worksheet Pivot Table API with SDKs?
-
-### Get Worksheet Pivot Table API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/PivotTables/GetWorksheetPivotTable" rel="noopener noreferrer">Get Worksheet Pivot Table API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

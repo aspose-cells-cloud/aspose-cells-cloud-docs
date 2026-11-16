@@ -10,6 +10,7 @@ description: "Learn how to update a shape in an Excel worksheet using the Aspose
 ArticleTitle: "Update a shape on an Excel worksheet - Aspose.Cells Cloud API"
 weight: 31
 ---
+
 The **PostWorksheetShape** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes/{shapeindex}`) updates a specific shape within an Excel worksheet by sending a shape description object in the request body. Aspose.Cells Cloud enables developers to programmatically modify shape properties—such as position, size, text, or formatting—using a RESTful interface that supports authentication and optional folder and storage parameters.
 
 ## The Post Worksheet Shape Web API
@@ -24,14 +25,14 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| shapeindex | Integer | Path | shape index in worksheet shapes. |
-| dto | class:shape | HTTPBody | The shape description. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type        | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ----------- | -------------------------- | -------------------------------------------- |
+| name           | String      | Path                       | The file name.                               |
+| sheetName      | String      | Path                       | The worksheet name.                          |
+| shapeindex     | Integer     | Path                       | shape index in worksheet shapes.             |
+| dto            | class:shape | HTTPBody                   | The shape description.                       |
+| folder         | String      | Query                      | The folder where the file is situated.       |
+| storageName    | String      | Query                      | The storage name where the file is situated. |
 
 ### Response
 
@@ -56,14 +57,14 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                        |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ### DTO Schema
 
@@ -111,25 +112,6 @@ The `dto` object contains the properties that can be updated. All fields are opt
 }
 ```
 
-## Example with cURL (command‑line tool)
-
-```bash
-curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes/0?folder=Temp" \
-  -X POST \
-  -H "Content-Type: application/json" \
-  -H "Accept: application/json" \
-  -H "Authorization: Bearer <accessToken>" \
-  -d '{
-        "Name": "UpdatedShape",
-        "UpperLeftRow": 1,
-        "UpperLeftColumn": 1,
-        "Width": 120,
-        "Height": 60,
-        "IsHidden": false,
-        "IsLocked": false
-      }'
-```
-
 ### Response
 
 ```json
@@ -139,14 +121,15 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes
 }
 ```
 
-**Error handling** – The API may return the following status codes:
+**HTTP Status Codes**
 
-| Code | Meaning               | Typical cause                                       |
-| ---- | --------------------- | --------------------------------------------------- |
-| 400  | Bad Request           | Invalid JSON or missing required fields.            |
-| 401  | Unauthorized          | Missing or invalid JWT token.                       |
-| 404  | Not Found             | Workbook, worksheet, or shape index does not exist. |
-| 500  | Internal Server Error | Unexpected server‑side problem.                     |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 **Example error responses**
 
@@ -191,6 +174,25 @@ _500 – Internal Server Error_
 ### Post Worksheet Shape API Specification
 
 The <a href="https://reference.aspose.cloud/cells/#/Shapes/PostWorksheetShape" rel="noopener noreferrer">Post Worksheet Shape API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
+
+**Example with cURL (command‑line tool)**
+
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes/0?folder=Temp" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <accessToken>" \
+  -d '{
+        "Name": "UpdatedShape",
+        "UpperLeftRow": 1,
+        "UpperLeftColumn": 1,
+        "Width": 120,
+        "Height": 60,
+        "IsHidden": false,
+        "IsLocked": false
+      }'
+```
 
 ### Use Aspose.Cells Cloud SDKs
 

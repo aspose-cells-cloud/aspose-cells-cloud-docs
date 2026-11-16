@@ -10,6 +10,7 @@ description: "Add a pivot field to an existing pivot table via Aspose.Cells Clou
 weight: 40
 ArticleTitle: "Add a Pivot Field to a Pivot Table – Aspose.Cells Cloud Documentation"
 ---
+
 The **PutPivotTableField** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField`) adds a pivot field to an existing pivot table in Aspose.Cells Cloud, supporting row, column, data, or filter field types via the required `pivotFieldType` query parameter and `pivotTableFieldRequest` body. This operation enables developers to programmatically extend pivot table structure without manual reconfiguration, leveraging Aspose.Cells Cloud’s REST API to automate complex spreadsheet analysis workflows across supported SDKs for .NET, Java, Python, and other languages.
 
 ## The Put Pivot Table Field Web API
@@ -34,49 +35,6 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | needReCalculate        | Boolean                      | Query                      | Whether the specific PivotTable calculate(true/false). |
 | folder                 | String                       | Query                      | The folder where the file is situated.                 |
 | storageName            | String                       | Query                      | The storage name where the file is situated.           |
-
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PivotTables/PutPivotTableField) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
-
-You can use the **cURL** command‑line tool to call Aspose.Cells web services. The example below demonstrates how to add a pivot field using cURL.
-
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
-
-{{< tab tabNum="1" >}}
-
-```bash
-curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables/0/PivotField?pivotFieldType=Row" \
-  -X PUT \
-  -d '{"Data":[1,2]}' \
-  -H "Content-Type: application/json" \
-  -H "Accept: application/json" \
-  -H "Authorization: Bearer <jwt token>"
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-```json
-{
-  "Code": 200,
-  "Status": "OK"
-}
-```
-
-{{< /tab >}}
-
-{{< /tabs >}}
-
-The successful response returns a JSON object with `Code` and `Status` fields. Example schema:
-
-```json
-{
-  "Code": 0, // integer indicating the HTTP status code
-  "Status": "OK" // string message
-}
-```
-
-Possible error responses include **400 Bad Request** for missing parameters, **401 Unauthorized** if the token is invalid, and **500 Internal Server Error** for server‑side issues.
 
 ### Response
 
@@ -117,9 +75,46 @@ Content-Type: application/json
 The <a href="https://reference.aspose.cloud/cells/#/PivotTables/PutPivotTableField" rel="noopener noreferrer">Put Pivot Table Field API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 **See also:**
+You can use the **cURL** command‑line tool to call Aspose.Cells web services. The example below demonstrates how to add a pivot field using cURL.
 
-- [Add a Pivot Table](https://docs.aspose.cloud/cells/pivot-tables/add-pivot-table/)
-- [Delete Pivot Field](https://docs.aspose.cloud/cells/pivot-tables/delete-pivot-field/)
+{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+
+{{< tab tabNum="1" >}}
+
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables/0/PivotField?pivotFieldType=Row" \
+  -X PUT \
+  -d '{"Data":[1,2]}' \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+```json
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
+
+The successful response returns a JSON object with `Code` and `Status` fields. Example schema:
+
+```json
+{
+  "Code": 0, // integer indicating the HTTP status code
+  "Status": "OK" // string message
+}
+```
+
+Possible error responses include **400 Bad Request** for missing parameters, **401 Unauthorized** if the token is invalid, and **500 Internal Server Error** for server‑side issues.
 
 ### Use Aspose.Cells Cloud SDKs
 

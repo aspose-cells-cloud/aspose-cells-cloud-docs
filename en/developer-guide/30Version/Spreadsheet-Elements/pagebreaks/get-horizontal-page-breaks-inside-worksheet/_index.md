@@ -10,6 +10,7 @@ description: "Get horizontal page breaks from Excel worksheet via Aspose.Cells C
 ArticleTitle: "Get Horizontal Page Breaks - Aspose.Cells Cloud API Documentation"
 weight: 100
 ---
+
 The **GetHorizontalPageBreaks** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/horizontalpagebreaks`) retrieves descriptions of horizontal page breaks—row-based breaks that force a worksheet to start a new printed page after a specified row—in the named worksheet of the specified workbook via Aspose.Cells Cloud, supporting precise control over printed output layout.
 
 ## The Get Horizontal Page Breaks Web API
@@ -24,14 +25,49 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The workbook name. |
-| sheetName | String | Path | The worksheet name. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------ | -------------------------- | -------------------------------------------- |
+| name           | String | Path                       | The workbook name.                           |
+| sheetName      | String | Path                       | The worksheet name.                          |
+| folder         | String | Query                      | The folder where the file is situated.       |
+| storageName    | String | Query                      | The storage name where the file is situated. |
 
-The <a href="https://apireference.aspose.cloud/cells/#/PageBreaks/GetHorizontalPageBreaks" rel="noopener" title="OpenAPI specification for GetHorizontalPageBreaks">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+### Response
+
+```json
+[
+  {
+    "Name": "HorizontalPageBreaksResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "HorizontalPageBreaksResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+## How to Use the Get Horizontal Page Breaks API with SDKs?
+
+### Get Horizontal Page Breaks API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/PageBreaks/GetHorizontalPageBreaks" rel="noopener noreferrer">Get Horizontal Page Breaks API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
 
@@ -76,42 +112,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/sampleExcelPageBreaks.xlsx/workshee
 {{< /tab >}}
 
 {{< /tabs >}}
-
-### Response
-
-```json
-[
-  {
-    "Name": "HorizontalPageBreaksResponse",
-    "DataType": {
-      "Identifier": "Class",
-      "Reference": "HorizontalPageBreaksResponse"
-    }
-  }
-]
-```
-
-**Sample response headers**
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-```
-
-### Error Handling
-
-| HTTP Status | Description                                                 | Example JSON                                           |
-| ----------- | ----------------------------------------------------------- | ------------------------------------------------------ |
-| 400         | Bad request – missing or invalid parameters.                | `{ "Code": 400, "Message": "Invalid parameter." }`     |
-| 401         | Unauthorized – JWT token is missing or invalid.             | `{ "Code": 401, "Message": "Authentication failed." }` |
-| 404         | Not found – the specified file or worksheet does not exist. | `{ "Code": 404, "Message": "Resource not found." }`    |
-| 500         | Internal server error – unexpected condition on the server. | `{ "Code": 500, "Message": "Server error." }`          |
-
-## How to Use the Get Horizontal Page Breaks API with SDKs?
-
-### Get Horizontal Page Breaks API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/PageBreaks/GetHorizontalPageBreaks" rel="noopener noreferrer">Get Horizontal Page Breaks API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

@@ -10,6 +10,7 @@ description: "Add OLE objects to Excel worksheets using Aspose.Cells Cloud REST 
 ArticleTitle: "Add OLE Object to Excel Worksheet with Aspose.Cells Cloud API"
 weight: 100
 ---
+
 The **PutWorksheetOleObject** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects`) enables developers to programmatically embed OLE objects—such as Word documents, PDFs, or other binary files—into a specific Excel worksheet using Aspose.Cells Cloud, supporting optional positioning via `upperLeftRow`, `upperLeftColumn`, `height`, and `width` query parameters.
 
 This REST API adds an **OLE object** to an Excel worksheet.
@@ -26,57 +27,24 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worsheet name. |
-| upperLeftRow | Integer | Query | Upper left row index |
-| upperLeftColumn | Integer | Query | Upper left column index |
-| height | Integer | Query | Height of oleObject, in unit of pixel |
-| width | Integer | Query | Width of oleObject, in unit of pixel |
-| oleFile | String | Query | OLE filename path(full file name). |
-| imageFile | String | Query | Image filename path(full file name). |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name  | Type    | Path/Query String/HTTPBody | Description                                  |
+| --------------- | ------- | -------------------------- | -------------------------------------------- |
+| name            | String  | Path                       | The file name.                               |
+| sheetName       | String  | Path                       | The worsheet name.                           |
+| upperLeftRow    | Integer | Query                      | Upper left row index                         |
+| upperLeftColumn | Integer | Query                      | Upper left column index                      |
+| height          | Integer | Query                      | Height of oleObject, in unit of pixel        |
+| width           | Integer | Query                      | Width of oleObject, in unit of pixel         |
+| oleFile         | String  | Query                      | OLE filename path(full file name).           |
+| imageFile       | String  | Query                      | Image filename path(full file name).         |
+| folder          | String  | Query                      | The folder where the file is situated.       |
+| storageName     | String  | Query                      | The storage name where the file is situated. |
 
 **Notes** – `upperLeftRow` and `upperLeftColumn` use zero‑based indexing. The `oleFile` (and optionally `imageFile`) must already exist in the target storage; otherwise the request will return an error.
-
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/OleObjects/PutWorksheetOleObject) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
-
-You can use the **cURL** command‑line tool to call Aspose.Cells web services. The example below demonstrates how to add an OLE object with cURL. **HTTPS is required for all production calls.**
-
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
-
-{{< tab tabNum="1" >}}
-
-```bash
-curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/oleobjects" \
-  -X PUT \
-  -H "Content-Type: application/json" \
-  -H "Accept: application/json" \
-  -H "Authorization: Bearer <jwt token>" \
-  -d '{"ImageSourceFullName":"aspose-logo.png", "IsAutoSize":true, "SourceFullName":"Sample_Book2.xls", "UpperLeftRow":15, "Top":10, "UpperLeftColumn":5, "Left":10, "Width":400, "Height":400}'
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-```json
-{
-  "Code": 200,
-  "Status": "OK"
-}
-```
-
-{{< /tab >}}
-
-{{< /tabs >}}
 
 ![Screenshot showing an OLE object embedded in an Excel worksheet](/cells/images/ole-object-example.png)
 
 **Possible HTTP status codes**
-
 
 A typical successful response returns the following JSON payload:
 
@@ -119,13 +87,13 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## How to Use the Put Worksheet OLE Object API with SDKs?
 
@@ -134,6 +102,36 @@ Content-Type: application/json
 The <a href="https://reference.aspose.cloud/cells/#/OleObjects/PutWorksheetOleObject" rel="noopener noreferrer">Put Worksheet OLE Object API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 Using an SDK speeds up development. An SDK abstracts low‑level details, allowing you to focus on your business logic. See the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+
+You can use the **cURL** command‑line tool to call Aspose.Cells web services. The example below demonstrates how to add an OLE object with cURL. **HTTPS is required for all production calls.**
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+
+{{< tab tabNum="1" >}}
+
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/oleobjects" \
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{"ImageSourceFullName":"aspose-logo.png", "IsAutoSize":true, "SourceFullName":"Sample_Book2.xls", "UpperLeftRow":15, "Top":10, "UpperLeftColumn":5, "Left":10, "Width":400, "Height":400}'
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+```json
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
 
 ### Use Aspose.Cells Cloud SDKs
 

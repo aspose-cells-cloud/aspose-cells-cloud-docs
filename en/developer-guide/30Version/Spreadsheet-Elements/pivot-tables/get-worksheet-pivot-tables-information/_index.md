@@ -10,6 +10,7 @@ description: "Get all PivotTables from an Excel worksheet via Aspose.Cells Cloud
 weight: 100
 ArticleTitle: "Get All Pivot Tables in an Excel Worksheet – Aspose.Cells Cloud API"
 ---
+
 The **GetWorksheetPivotTables** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables`) retrieves descriptions of all PivotTables in a specified worksheet using Aspose.Cells Cloud, enabling developers to programmatically inspect PivotTable structure and metadata without local Excel installation.
 
 ## The Get Worksheet Pivot Tables Web API
@@ -30,8 +31,6 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | sheetName      | String | Path                       | The worksheet name.                          |
 | folder         | String | Query                      | The folder where the file is situated.       |
 | storageName    | String | Query                      | The storage name where the file is situated. |
-
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PivotTables/GetWorksheetPivotTables) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 ### Response
 
@@ -54,16 +53,22 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 ```
 
-### Error Responses
+**HTTP Status Codes**
 
-| HTTP Code | Description                                                     | Sample JSON Payload                                           |
-| --------- | --------------------------------------------------------------- | ------------------------------------------------------------- |
-| 400       | Bad request – required parameter missing.                       | `{ "Code": "400", "Message": "Missing required parameter." }` |
-| 401       | Unauthorized – invalid or missing token.                        | `{ "Code": "401", "Message": "Authentication failed." }`      |
-| 404       | Not found – workbook, worksheet, or pivot table does not exist. | `{ "Code": "404", "Message": "Resource not found." }`         |
-| 500       | Internal server error – unexpected condition on the server.     | `{ "Code": "500", "Message": "Server error." }`               |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
-### Request
+
+## How to Use the Get Worksheet Pivot Tables API with SDKs?
+
+### Get Worksheet Pivot Tables API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/PivotTables/GetWorksheetPivotTables" rel="noopener noreferrer">Get Worksheet Pivot Tables API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -78,12 +83,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/work
 ```
 
 {{< /tab >}}
-
-## How to Use the Get Worksheet Pivot Tables API with SDKs?
-
-### Get Worksheet Pivot Tables API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/PivotTables/GetWorksheetPivotTables" rel="noopener noreferrer">Get Worksheet Pivot Tables API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

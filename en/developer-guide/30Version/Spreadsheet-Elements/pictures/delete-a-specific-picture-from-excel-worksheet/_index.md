@@ -10,6 +10,7 @@ description: "Delete a picture from an Excel worksheet using Aspose.Cells Cloud 
 weight: 50
 ArticleTitle: "Delete a Picture from an Excel Worksheet – Aspose.Cells Cloud API"
 ---
+
 The **DeleteWorksheetPicture** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}`) enables developers to remove a specific picture from an Excel worksheet by its zero-based index using Aspose.Cells Cloud’s RESTful interface, supporting secure, cloud-based manipulation of spreadsheet elements without local software dependencies.
 
 ## The Delete Worksheet Picture Web API
@@ -24,13 +25,50 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worsheet name. |
-| pictureIndex | Integer | Path | Picture index. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------- | -------------------------- | -------------------------------------------- |
+| name           | String  | Path                       | The file name.                               |
+| sheetName      | String  | Path                       | The worsheet name.                           |
+| pictureIndex   | Integer | Path                       | Picture index.                               |
+| folder         | String  | Query                      | The folder where the file is situated.       |
+| storageName    | String  | Query                      | The storage name where the file is situated. |
+
+### Response
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+## How to Use the Delete Worksheet Picture API with SDKs?
+
+### Delete Worksheet Picture API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Pictures/DeleteWorksheetPicture" rel="noopener noreferrer">Delete Worksheet Picture API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make the call with cURL.
 
@@ -68,43 +106,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/picture
 {{< /tab >}}
 
 {{< /tabs >}}
-
-### Response
-
-```json
-[
-  {
-    "Name": "CellsCloudResponse",
-    "DataType": {
-      "Identifier": "Class",
-      "Reference": "CellsCloudResponse"
-    }
-  }
-]
-```
-
-**Sample response headers**
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-```
-
-### Error Handling
-
-| HTTP Code | Meaning                                                     | Sample Error Payload                                                |
-| --------- | ----------------------------------------------------------- | ------------------------------------------------------------------- |
-| 200       | Picture deleted successfully.                               | `{ "Code": 200, "Status": "OK" }`                                   |
-| 400       | Bad request – invalid parameters.                           | `{ "Code": 400, "Message": "Invalid pictureIndex." }`               |
-| 401       | Unauthorized – missing/invalid token.                       | `{ "Code": 401, "Message": "Access token is missing or invalid." }` |
-| 404       | Not found – workbook, worksheet, or picture does not exist. | `{ "Code": 404, "Message": "Resource not found." }`                 |
-| 500       | Internal server error.                                      | `{ "Code": 500, "Message": "Unexpected server error." }`            |
-
-## How to Use the Delete Worksheet Picture API with SDKs?
-
-### Delete Worksheet Picture API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Pictures/DeleteWorksheetPicture" rel="noopener noreferrer">Delete Worksheet Picture API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

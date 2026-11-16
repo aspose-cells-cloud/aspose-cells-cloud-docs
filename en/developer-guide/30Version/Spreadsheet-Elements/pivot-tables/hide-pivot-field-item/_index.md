@@ -10,6 +10,7 @@ description: "Hide pivot field items in Aspose.Cells Cloud via REST API with JWT
 weight: 110
 ArticleTitle: "Hide Pivot Field Item in a Pivot Table – Aspose.Cells Cloud API Guide"
 ---
+
 The **PostPivotTableFieldHideItem** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField/Hide`) enables hiding a specific pivot field item in a PivotTable via Aspose.Cells Cloud, requiring path parameters for the file name, worksheet name, and PivotTable index, plus query parameters specifying the field type, field index, item index, and hide status, allowing precise control over PivotTable item visibility and supporting recalculating the PivotTable on demand.
 
 This REST API hides a pivot field item in a pivot table.
@@ -26,18 +27,18 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| pivotTableIndex | Integer | Path | The PivotTable index. |
-| pivotFieldType | String | Query | Represents PivotTable field type(Undefined/Row/Column/Page/Data). |
-| fieldIndex | Integer | Query | The pivot field index. |
-| itemIndex | Integer | Query | The index of the pivot item in the pivot field. |
-| isHide | Boolean | Query | Whether the specific PivotItem is hidden(true/false). |
-| needReCalculate | Boolean | Query | Whether the specific PivotTable calculate(true/false). |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name  | Type    | Path/Query String/HTTPBody | Description                                                       |
+| --------------- | ------- | -------------------------- | ----------------------------------------------------------------- |
+| name            | String  | Path                       | The file name.                                                    |
+| sheetName       | String  | Path                       | The worksheet name.                                               |
+| pivotTableIndex | Integer | Path                       | The PivotTable index.                                             |
+| pivotFieldType  | String  | Query                      | Represents PivotTable field type(Undefined/Row/Column/Page/Data). |
+| fieldIndex      | Integer | Query                      | The pivot field index.                                            |
+| itemIndex       | Integer | Query                      | The index of the pivot item in the pivot field.                   |
+| isHide          | Boolean | Query                      | Whether the specific PivotItem is hidden(true/false).             |
+| needReCalculate | Boolean | Query                      | Whether the specific PivotTable calculate(true/false).            |
+| folder          | String  | Query                      | The folder where the file is situated.                            |
+| storageName     | String  | Query                      | The storage name where the file is situated.                      |
 
 **Quick reference of required query parameters**
 
@@ -47,7 +48,44 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 - **isHide** – `true` to hide, `false` to show.
 - **needReCalculate** – optional, defaults to `false`.
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PivotTables/PostPivotTableFieldHideItem) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
+**Note:** If the supplied `fieldIndex` or `itemIndex` is out of range, the API returns a **400 Bad Request** response.
+
+### Response
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+## How to Use the Post Pivot Table Field Hide Item API with SDKs?
+
+### Post Pivot Table Field Hide Item API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/PivotTables/PostPivotTableFieldHideItem" rel="noopener noreferrer">Post Pivot Table Field Hide Item API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The example below shows how to call the API with cURL.
 
@@ -77,50 +115,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/pivott
 {{< /tab >}}
 
 {{< /tabs >}}
-
-**Response details**
-
-
-**Note:** If the supplied `fieldIndex` or `itemIndex` is out of range, the API returns a **400 Bad Request** response.
-
-### Response
-
-```json
-[
-  {
-    "Name": "CellsCloudResponse",
-    "DataType": {
-      "Identifier": "Class",
-      "Reference": "CellsCloudResponse"
-    }
-  }
-]
-```
-
-**Sample response headers**
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-```
-
-**HTTP Status Codes**
-
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
-
-## How to Use the Post Pivot Table Field Hide Item API with SDKs?
-
-### Post Pivot Table Field Hide Item API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/PivotTables/PostPivotTableFieldHideItem" rel="noopener noreferrer">Post Pivot Table Field Hide Item API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
-
-**Note:** The SDK examples assume that you have already configured authentication (JWT token) and that the workbook resides in the specified storage folder. Adjust the `folder` and `storageName` parameters as needed for your environment.
 
 ### Use Aspose.Cells Cloud SDKs
 

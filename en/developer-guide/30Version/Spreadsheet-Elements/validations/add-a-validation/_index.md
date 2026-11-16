@@ -9,6 +9,7 @@ description: "Add Excel validation rules via Aspose.Cells Cloud API: PUT /cells/
 weight: 100
 ArticleTitle: "Add Worksheet Validation to Excel via Aspose.Cells Cloud REST API"
 ---
+
 The **PutWorksheetValidation** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations`) enables Aspose.Cells Cloud users to add a validation at a specific index in an Excel worksheet by sending the validation definition in the request body; it supports specifying a target cell range via the optional `range` query parameter and accommodates cloud storage organization through `folder` and `storageName` parameters.
 
 ## The Put Worksheet Validation Web API
@@ -23,15 +24,50 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The workbook name. |
-| sheetName | String | Path | The worksheet name. |
-| range | String | Query | Specified cells area |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------ | -------------------------- | -------------------------------------------- |
+| name           | String | Path                       | The workbook name.                           |
+| sheetName      | String | Path                       | The worksheet name.                          |
+| range          | String | Query                      | Specified cells area                         |
+| folder         | String | Query                      | The folder where the file is situated.       |
+| storageName    | String | Query                      | The storage name where the file is situated. |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/WorksheetValidations/PutWorksheetValidation) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+### Response
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+## How to Use the Put Worksheet Validation API with SDKs?
+
+### Put Worksheet Validation API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/WorksheetValidations/PutWorksheetValidation" rel="noopener noreferrer">Put Worksheet Validation API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
@@ -61,43 +97,6 @@ curl -v "http://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/va
 {{< /tab >}}
 
 {{< /tabs >}}
-
-### Response
-
-```json
-[
-  {
-    "Name": "CellsCloudResponse",
-    "DataType": {
-      "Identifier": "Class",
-      "Reference": "CellsCloudResponse"
-    }
-  }
-]
-```
-
-**Sample response headers**
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-```
-
-**HTTP Status Codes**
-
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
-
-## How to Use the Put Worksheet Validation API with SDKs?
-
-### Put Worksheet Validation API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/WorksheetValidations/PutWorksheetValidation" rel="noopener noreferrer">Put Worksheet Validation API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

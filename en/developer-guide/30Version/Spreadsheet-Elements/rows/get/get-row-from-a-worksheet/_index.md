@@ -10,6 +10,7 @@ description: "Get Excel row data—height, visibility, style—via Aspose.Cells 
 weight: 100
 ArticleTitle: "Get Row Description from an Excel Worksheet – Aspose.Cells Cloud API"
 ---
+
 The **GetWorksheetRow** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/{rowIndex}`) retrieves row data by its index in an Excel worksheet using Aspose.Cells Cloud, enabling developers to programmatically access structured row content—including cell values and formatting—without downloading the entire workbook, with support for optional folder and storage parameters to locate remote files.
 
 This REST API retrieves row data by its index on an Excel worksheet.
@@ -26,15 +27,65 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| rowIndex | Integer | Path | The row index. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------- | -------------------------- | -------------------------------------------- |
+| name           | String  | Path                       | The file name.                               |
+| sheetName      | String  | Path                       | The worksheet name.                          |
+| rowIndex       | Integer | Path                       | The row index.                               |
+| folder         | String  | Query                      | The folder where the file is situated.       |
+| storageName    | String  | Query                      | The storage name where the file is situated. |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetRow) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
+### Response
+
+```json
+[
+  {
+    "Name": "RowResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "RowResponse"
+    }
+  }
+]
+```
+
+**Response schema**
+
+| Property          | Type    | Description                                              |
+| ----------------- | ------- | -------------------------------------------------------- |
+| `GroupLevel`      | integer | Outline level of the row (used for grouping).            |
+| `Height`          | number  | Height of the row in points.                             |
+| `Index`           | integer | Zero‑based index of the row returned.                    |
+| `IsBlank`         | boolean | Indicates whether the row contains any data.             |
+| `IsHeightMatched` | boolean | `true` if the row height matches the default row height. |
+| `IsHidden`        | boolean | `true` if the row is hidden.                             |
+| `Style`           | object  | Object containing style information for the row.         |
+| `link`            | object  | Hyperlink reference to the row resource.                 |
+| `Code`            | integer | HTTP status code of the response.                        |
+| `Status`          | string  | Textual description of the status (e.g., “OK”).          |
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+## How to Use the Get Worksheet Row API with SDKs?
+
+### Get Worksheet Row API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Cells/GetWorksheetRow" rel="noopener noreferrer">Get Worksheet Row API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL. Include the `Authorization: Bearer <jwt token>` header to authenticate the request.
 
@@ -79,71 +130,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 }
 ```
 
-**Response schema**
-
-| Property          | Type    | Description                                              |
-| ----------------- | ------- | -------------------------------------------------------- |
-| `GroupLevel`      | integer | Outline level of the row (used for grouping).            |
-| `Height`          | number  | Height of the row in points.                             |
-| `Index`           | integer | Zero‑based index of the row returned.                    |
-| `IsBlank`         | boolean | Indicates whether the row contains any data.             |
-| `IsHeightMatched` | boolean | `true` if the row height matches the default row height. |
-| `IsHidden`        | boolean | `true` if the row is hidden.                             |
-| `Style`           | object  | Object containing style information for the row.         |
-| `link`            | object  | Hyperlink reference to the row resource.                 |
-| `Code`            | integer | HTTP status code of the response.                        |
-| `Status`          | string  | Textual description of the status (e.g., “OK”).          |
-
 {{< /tab >}}
 
 {{< /tabs >}}
-
-**Notes / Error handling:** The API may return the following HTTP status codes:
-
-- **200** – Success; the row data is returned.
-- **401** – Unauthorized; the JWT token is missing or invalid.
-- **404** – Not found; the specified workbook, worksheet, or row does not exist.
-- **500** – Internal server error; an unexpected condition occurred.
-
-
-For a complete list of error codes, see the Aspose.Cells Cloud [Error Codes documentation](https://docs.aspose.cloud/cells/).
-
-### Response
-
-```json
-[
-  {
-    "Name": "RowResponse",
-    "DataType": {
-      "Identifier": "Class",
-      "Reference": "RowResponse"
-    }
-  }
-]
-```
-
-**Sample response headers**
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-```
-
-**HTTP Status Codes**
-
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
-
-## How to Use the Get Worksheet Row API with SDKs?
-
-### Get Worksheet Row API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Cells/GetWorksheetRow" rel="noopener noreferrer">Get Worksheet Row API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

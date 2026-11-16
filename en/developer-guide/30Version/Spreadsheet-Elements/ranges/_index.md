@@ -30,8 +30,3 @@ The Aspose.Cells Cloud REST API provides dedicated endpoints for each range oper
 - [Unmerge Merged Cells in Range](/cells/unmerge-merged-cells-in-range/) – Reverses a previous merge operation, restoring the original individual cells. **API**: `POST /cells/{fileName}/worksheets/{sheetName}/ranges/{rangeName}/unmerge`.
 - [Move a Named Range with an Excel Worksheet](/cells/move-a-named-range-with-an-excel-worksheet/) – Relocates a named range to a new address within the same worksheet or to another worksheet. **API**: `PUT /cells/{fileName}/worksheets/{sheetName}/namedranges/{rangeName}/move`.
 - [Set Range Value in Excel Worksheet](/cells/ranges/set-value/) – Writes a single value or an array of values to the specified range. **API**: `PUT /cells/{fileName}/worksheets/{sheetName}/ranges/{rangeName}/value`.
-
-All requests and responses are in JSON format. Include the `Authorization` header with your access token for authentication.
-
-> **Prerequisites**  
-> Requires a valid Aspose.Cells Cloud API key. See [Authentication Guide]（https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/） for setup instructions.

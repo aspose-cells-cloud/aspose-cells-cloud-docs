@@ -15,12 +15,6 @@ ArticleTitle: "How to Get Range Content from an Excel Worksheet – Aspose.Cells
 - [How to get cell data based on a named range](/cells/ranges/get/values/)
 - [How to get a named range from an Excel workbook](/cells/ranges/get/name/)
 
-**Prerequisites**
-
-- A valid Aspose Cloud access token (or `client_id`/`client_secret` for OAuth).
-- The Excel file must be uploaded to the target storage folder.
-- Aspose.Cells Cloud SDK version 3.0 or later.
-
 The **Get Range** operation returns the content of a specified range in a worksheet.  
 It is a simple `GET` request that returns the range data in JSON format (or other formats when requested).
 
@@ -153,10 +147,3 @@ print(response)
   "Message": "The specified file, worksheet, or range could not be found."
 }
 ```
-
-**See also**
-
-- [How to get cell data based on a named range](/cells/ranges/get/values/)
-- [How to get a named range from an Excel workbook](/cells/ranges/get/name/)
-- [Update range content](/cells/ranges/update/)
-- [Delete a range](/cells/ranges/delete/)

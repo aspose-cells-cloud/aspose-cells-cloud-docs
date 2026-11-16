@@ -10,6 +10,7 @@ description: "Group Excel worksheet rows using Aspose.Cells Cloud REST API with 
 weight: 60
 ArticleTitle: "Group Rows in Excel Worksheet using Aspose.Cells Cloud API"
 ---
+
 The **PostGroupWorksheetRows** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/group`) enables grouping of rows in a specified Excel worksheet using Aspose.Cells Cloud, requiring the file name, worksheet name, and the first and last row indices to group; it also optionally supports hiding the grouped rows and specifying the storage folder or name.
 
 ## The Post Group Worksheet Rows Web API
@@ -24,17 +25,52 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| firstIndex | Integer | Query | The first row index to be operated. |
-| lastIndex | Integer | Query | The last row index to be operated. |
-| hide | Boolean | Query | rows visible state |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------- | -------------------------- | -------------------------------------------- |
+| name           | String  | Path                       | The file name.                               |
+| sheetName      | String  | Path                       | The worksheet name.                          |
+| firstIndex     | Integer | Query                      | The first row index to be operated.          |
+| lastIndex      | Integer | Query                      | The last row index to be operated.           |
+| hide           | Boolean | Query                      | rows visible state                           |
+| folder         | String  | Query                      | The folder where the file is situated.       |
+| storageName    | String  | Query                      | The storage name where the file is situated. |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostGroupWorksheetRows) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
+### Response
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+## How to Use the Post Group Worksheet Rows API with SDKs?
+
+### Post Group Worksheet Rows API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Cells/PostGroupWorksheetRows" rel="noopener noreferrer">Post Group Worksheet Rows API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
@@ -61,55 +97,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 }
 ```
 
-
-Typical error responses:
-
-- **400 Bad Request** – check that `firstIndex` and `lastIndex` are valid integers and that `firstIndex` ≤ `lastIndex`.
-- **401 Unauthorized** – verify that the `Authorization` header contains a current JWT token.
-- **404 Not Found** – ensure the workbook (`name`) and worksheet (`sheetName`) exist in the specified `folder`/`storageName`.
-
 {{< /tab >}}
 
 {{< /tabs >}}
-
-**See also:** [Ungroup rows on an Excel worksheet](../rows/ungroup/ "Ungroup rows on an Excel worksheet"), [Hide rows on an Excel worksheet](../rows/hide/ "Hide rows on an Excel worksheet"), [Unhide rows on an Excel worksheet](../rows/unhide/ "Unhide rows on an Excel worksheet").
-
-### Response
-
-```json
-[
-  {
-    "Name": "CellsCloudResponse",
-    "DataType": {
-      "Identifier": "Class",
-      "Reference": "CellsCloudResponse"
-    }
-  }
-]
-```
-
-**Sample response headers**
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-```
-
-**HTTP Status Codes**
-
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
-
-## How to Use the Post Group Worksheet Rows API with SDKs?
-
-### Post Group Worksheet Rows API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Cells/PostGroupWorksheetRows" rel="noopener noreferrer">Post Group Worksheet Rows API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

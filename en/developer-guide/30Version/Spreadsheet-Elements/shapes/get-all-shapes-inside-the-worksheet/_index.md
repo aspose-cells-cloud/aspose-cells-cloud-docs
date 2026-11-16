@@ -10,6 +10,7 @@ description: "Get all shapes from an Excel worksheet via Aspose.Cells Cloud API,
 ArticleTitle: "Get All Shapes on an Excel Worksheet"
 weight: 100
 ---
+
 The **GetWorksheetShapes** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes`) retrieves descriptions of all shapes contained within a specified Excel worksheet, enabling developers to programmatically inspect and work with embedded objects such as charts, pictures, and drawing elements via Aspose.Cells Cloud's REST API.
 
 ## The Get Worksheet Shapes Web API
@@ -24,14 +25,64 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------ | -------------------------- | -------------------------------------------- |
+| name           | String | Path                       | The file name.                               |
+| sheetName      | String | Path                       | The worksheet name.                          |
+| folder         | String | Query                      | The folder where the file is situated.       |
+| storageName    | String | Query                      | The storage name where the file is situated. |
 
-> **Optional**: `folder`, `storageName`, and `include` can be omitted when the file resides in the root storage.
+### Response
+
+```json
+[
+  {
+    "Name": "ShapesResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "ShapesResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+The `Shapes` object contains a list of `Shape` items. Each shape includes the following properties (when the `include=details` flag is used; otherwise only the `link` object is returned).
+
+| Property   | Type   | Description                                                                |
+| ---------- | ------ | -------------------------------------------------------------------------- |
+| **Name**   | string | The name assigned to the shape (e.g., “Chart 1”).                          |
+| **Type**   | string | The shape type (e.g., `Chart`, `Picture`, `TextBox`).                      |
+| **Top**    | number | The distance, in points, from the top edge of the worksheet to the shape.  |
+| **Left**   | number | The distance, in points, from the left edge of the worksheet to the shape. |
+| **Width**  | number | The width of the shape in points.                                          |
+| **Height** | number | The height of the shape in points.                                         |
+| **Link**   | object | Hyperlink information (`Href`, `Rel`, `Type`, `Title`).                    |
+
+### Error Handling
+
+| HTTP Status | Description                                       | Sample Error Body                                                   |
+| ----------- | ------------------------------------------------- | ------------------------------------------------------------------- |
+| **400**     | Bad request – malformed parameters.               | `{ "Code": 400, "Message": "Invalid parameter value." }`            |
+| **401**     | Unauthorized – missing or invalid token.          | `{ "Code": 401, "Message": "Access token is missing or invalid." }` |
+| **404**     | Not found – workbook or worksheet does not exist. | `{ "Code": 404, "Message": "File or worksheet not found." }`        |
+| **500**     | Internal server error – unexpected condition.     | `{ "Code": 500, "Message": "An unexpected error occurred." }`       |
+
+A successful request returns **HTTP 200** with a `Shapes` object containing the list of shapes, as illustrated in the response example above.
+
+The API enforces a limit of **150 requests per minute per JWT token**. Exceeding this limit returns **HTTP 429** with a `Retry-After` header indicating when to retry.
+
+## How to Use the Get Worksheet Shapes API with SDKs?
+
+### Get Worksheet Shapes API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Shapes/GetWorksheetShapes" rel="noopener noreferrer">Get Worksheet Shapes API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services. The example below demonstrates a request that includes the optional query parameters.
 
@@ -103,58 +154,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes
 {{< /tab >}}
 
 {{< /tabs >}}
-
-### Response
-
-```json
-[
-  {
-    "Name": "ShapesResponse",
-    "DataType": {
-      "Identifier": "Class",
-      "Reference": "ShapesResponse"
-    }
-  }
-]
-```
-
-**Sample response headers**
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-```
-
-The `Shapes` object contains a list of `Shape` items. Each shape includes the following properties (when the `include=details` flag is used; otherwise only the `link` object is returned).
-
-| Property   | Type   | Description                                                                |
-| ---------- | ------ | -------------------------------------------------------------------------- |
-| **Name**   | string | The name assigned to the shape (e.g., “Chart 1”).                          |
-| **Type**   | string | The shape type (e.g., `Chart`, `Picture`, `TextBox`).                      |
-| **Top**    | number | The distance, in points, from the top edge of the worksheet to the shape.  |
-| **Left**   | number | The distance, in points, from the left edge of the worksheet to the shape. |
-| **Width**  | number | The width of the shape in points.                                          |
-| **Height** | number | The height of the shape in points.                                         |
-| **Link**   | object | Hyperlink information (`Href`, `Rel`, `Type`, `Title`).                    |
-
-### Error Handling
-
-| HTTP Status | Description                                       | Sample Error Body                                                   |
-| ----------- | ------------------------------------------------- | ------------------------------------------------------------------- |
-| **400**     | Bad request – malformed parameters.               | `{ "Code": 400, "Message": "Invalid parameter value." }`            |
-| **401**     | Unauthorized – missing or invalid token.          | `{ "Code": 401, "Message": "Access token is missing or invalid." }` |
-| **404**     | Not found – workbook or worksheet does not exist. | `{ "Code": 404, "Message": "File or worksheet not found." }`        |
-| **500**     | Internal server error – unexpected condition.     | `{ "Code": 500, "Message": "An unexpected error occurred." }`       |
-
-A successful request returns **HTTP 200** with a `Shapes` object containing the list of shapes, as illustrated in the response example above.
-
-The API enforces a limit of **150 requests per minute per JWT token**. Exceeding this limit returns **HTTP 429** with a `Retry-After` header indicating when to retry.
-
-## How to Use the Get Worksheet Shapes API with SDKs?
-
-### Get Worksheet Shapes API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Shapes/GetWorksheetShapes" rel="noopener noreferrer">Get Worksheet Shapes API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

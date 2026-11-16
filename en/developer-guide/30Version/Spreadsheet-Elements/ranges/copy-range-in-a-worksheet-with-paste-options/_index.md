@@ -33,9 +33,24 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges
 
 **Notes:** The `rangeOperate` field determines what is copied. Use `copydata` to copy only cell values, `copystyle` for formatting, `copyto` for both data and style, and `copyvalue` to copy values without formulas. The API supports ranges up to 1 million cells; larger ranges may result in a timeout.
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangesCopy) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+**HTTP Status Codes**
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                        |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+## How to Use the Copy Worksheet Cells Range API with SDKs?
+
+### Post Worksheet Cells Range Copy API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeCopy" rel="noopener noreferrer">Post Worksheet Cells Range Copy API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
+
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -115,9 +130,7 @@ These error objects include an HTTP status code and a descriptive message to hel
 
 {{< /tabs >}}
 
-You can download a sample workbook to test the copy operation [here](https://example.com/sample.xlsx).
-
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

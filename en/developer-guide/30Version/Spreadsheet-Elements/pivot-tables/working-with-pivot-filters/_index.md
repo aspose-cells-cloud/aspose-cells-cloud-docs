@@ -10,6 +10,7 @@ description: "Add pivot table filters to Excel workbooks via Aspose.Cells Cloud 
 weight: 50
 ArticleTitle: "Working with Pivot Filters – Aspose.Cells Cloud Documentation"
 ---
+
 The **PutWorksheetPivotTableFilter** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotFilters`) adds a pivot filter to the specified PivotTable in a worksheet using Aspose.Cells Cloud, enabling developers to programmatically apply filtering criteria to pivot table data without manual intervention.
 
 ## The Put Worksheet Pivot Table Filter Web API
@@ -88,21 +89,13 @@ Content-Type: application/json
 | 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                        |
 | 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
-**Best Practices**
+## How to Use the Put Worksheet Pivot Table Filter API with SDKs?
 
-- Keep filter objects as small as possible; large filter definitions may increase request latency.
-- Calls are idempotent — adding the same filter twice will not create duplicates.
-- Respect the API rate‑limit of 100 requests per minute per account.
+### Put Worksheet Pivot Table Filter API Specification
 
-_Additional notes:_
+The <a href="https://reference.aspose.cloud/cells/#/PivotTables/PutWorksheetPivotTableFilter" rel="noopener noreferrer">Put Worksheet Pivot Table Filter API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
-- The maximum size of a filter definition is 1 MB; larger payloads will be rejected with a 400 error.
-- When using `needReCalculate=true`, the recalculation may increase response time for large workbooks.
-
-You can explore the full OpenAPI definition here:  
-[OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PivotTables/PutWorksheetPivotTableFilter)
-
-### Example cURL request
+**Example cURL**
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -178,14 +171,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/pivott
 {{< /tab >}}
 
 {{< /tabs >}}
-
-## How to Use the Put Worksheet Pivot Table Filter API with SDKs?
-
-### Put Worksheet Pivot Table Filter API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/PivotTables/PutWorksheetPivotTableFilter" rel="noopener noreferrer">Put Worksheet Pivot Table Filter API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
-
-For additional operations related to pivot tables, see the **Add**, **Delete**, and **Clear** filter documentation.
 
 ### Use Aspose.Cells Cloud SDKs
 

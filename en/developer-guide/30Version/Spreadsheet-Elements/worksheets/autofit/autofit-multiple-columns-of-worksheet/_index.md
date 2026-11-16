@@ -10,6 +10,7 @@ description: "Autofit multiple Excel worksheet columns using Aspose.Cells Cloud 
 weight: 100
 ArticleTitle: "Autofit Multiple Columns in Excel Worksheet via Aspose.Cells Cloud API"
 ---
+
 The **PostAutofitWorksheetColumns** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitcolumns`) in Aspose.Cells Cloud enables autofitting multiple columns in a specified worksheet by adjusting column widths to fit their content, supporting optional range parameters like `startColumn` and `endColumn` for precise control.
 
 ## The Post Autofit Worksheet Columns Web API
@@ -24,19 +25,52 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| startColumn | Integer | Query | The start column index. |
-| endColumn | Integer | Query | The end column index. |
-| onlyAuto | Boolean | Query | - |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------- | -------------------------- | -------------------------------------------- |
+| name           | String  | Path                       | The file name.                               |
+| sheetName      | String  | Path                       | The worksheet name.                          |
+| startColumn    | Integer | Query                      | The start column index.                      |
+| endColumn      | Integer | Query                      | The end column index.                        |
+| onlyAuto       | Boolean | Query                      | -                                            |
+| folder         | String  | Query                      | The folder where the file is situated.       |
+| storageName    | String  | Query                      | The storage name where the file is situated. |
 
-\*The parameter name is displayed as a link to the related documentation.
+### Response
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostAutofitWorksheetColumns) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+## How to Use the Post Autofit Worksheet Columns API with SDKs?
+
+### Post Autofit Worksheet Columns API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Worksheets/PostAutofitWorksheetColumns" rel="noopener noreferrer">Post Autofit Worksheet Columns API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
@@ -67,43 +101,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/sampleAutoFit.xlsx/worksheets/Sheet
 {{< /tab >}}
 
 {{< /tabs >}}
-
-### Response
-
-```json
-[
-  {
-    "Name": "CellsCloudResponse",
-    "DataType": {
-      "Identifier": "Class",
-      "Reference": "CellsCloudResponse"
-    }
-  }
-]
-```
-
-**Sample response headers**
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-```
-
-**HTTP Status Codes**
-
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
-
-## How to Use the Post Autofit Worksheet Columns API with SDKs?
-
-### Post Autofit Worksheet Columns API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Worksheets/PostAutofitWorksheetColumns" rel="noopener noreferrer">Post Autofit Worksheet Columns API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

@@ -10,6 +10,7 @@ description: "Add a picture to an Excel worksheet using Aspose.Cells Cloud REST 
 weight: 100
 ArticleTitle: "Add a Picture to an Excel Worksheet – Aspose.Cells Cloud API"
 ---
+
 The **PutWorksheetAddPicture** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures`) enables developers to add a new picture to a specific Excel worksheet using Aspose.Cells Cloud, supporting both embedded image data in the request body and external image paths via query parameters, with optional positioning controls such as upper-left and lower-right row/column coordinates.
 
 ## The Put Worksheet Add Picture Web API
@@ -24,21 +25,20 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worsheet name. |
-| picture | class:picture | HTTPBody | Pictute object |
-| upperLeftRow | Integer | Query | The image upper left row. |
-| upperLeftColumn | Integer | Query | The image upper left column. |
-| lowerRightRow | Integer | Query | The image low right row. |
-| lowerRightColumn | Integer | Query | The image low right column. |
-| picturePath | String | Query | The picture path, if not provided the picture data is inspected in the request body. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name   | Type          | Path/Query String/HTTPBody | Description                                                                          |
+| ---------------- | ------------- | -------------------------- | ------------------------------------------------------------------------------------ |
+| name             | String        | Path                       | The file name.                                                                       |
+| sheetName        | String        | Path                       | The worsheet name.                                                                   |
+| picture          | class:picture | HTTPBody                   | Pictute object                                                                       |
+| upperLeftRow     | Integer       | Query                      | The image upper left row.                                                            |
+| upperLeftColumn  | Integer       | Query                      | The image upper left column.                                                         |
+| lowerRightRow    | Integer       | Query                      | The image low right row.                                                             |
+| lowerRightColumn | Integer       | Query                      | The image low right column.                                                          |
+| picturePath      | String        | Query                      | The picture path, if not provided the picture data is inspected in the request body. |
+| folder           | String        | Query                      | The folder where the file is situated.                                               |
+| storageName      | String        | Query                      | The storage name where the file is situated.                                         |
 
 **Request Body Note:** When `picturePath` is omitted, send the binary image data in the request body using `multipart/form-data`.
-
 
 **Example 200 Response Schema**
 
@@ -52,7 +52,45 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 **Note:** The maximum picture size is 10 MB; larger files will be rejected with a `400 Bad Request` response.
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Pictures/PutWorksheetAddPicture) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+### Response
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                        |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+## How to Use the Put Worksheet Add Picture API with SDKs?
+
+### Put Worksheet Add Picture API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Pictures/PutWorksheetAddPicture" rel="noopener noreferrer">Put Worksheet Add Picture API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
+
+**Note:** Supported image formats include PNG, JPEG, BMP, and GIF. Maximum picture size is 10 MB; larger files will be rejected with a `400 Bad Request` response.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
@@ -82,46 +120,6 @@ curl -v "https://api.aspose.com/v1.1/cells/Sample_Test_Book.xls/worksheets/Sheet
 {{< /tab >}}
 
 {{< /tabs >}}
-
-### Response
-
-```json
-[
-  {
-    "Name": "CellsCloudResponse",
-    "DataType": {
-      "Identifier": "Class",
-      "Reference": "CellsCloudResponse"
-    }
-  }
-]
-```
-
-**Sample response headers**
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-```
-
-**HTTP Status Codes**
-
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
-
-## How to Use the Put Worksheet Add Picture API with SDKs?
-
-### Put Worksheet Add Picture API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Pictures/PutWorksheetAddPicture" rel="noopener noreferrer">Put Worksheet Add Picture API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
-
-**Note:** Supported image formats include PNG, JPEG, BMP, and GIF. Maximum picture size is 10 MB; larger files will be rejected with a `400 Bad Request` response.
 
 ### Use Aspose.Cells Cloud SDKs
 

@@ -10,6 +10,7 @@ description: "Learn how to delete all pictures from an Excel worksheet using Asp
 weight: 60
 ArticleTitle: "How to Delete All Pictures in an Excel Worksheet with Aspose.Cells Cloud"
 ---
+
 The **DeleteWorksheetPictures** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures`) is a REST endpoint provided by Aspose.Cells Cloud that removes all pictures from a specified worksheet in an Excel file, supporting robust and programmatic cleanup of image content without manual intervention; it requires the `name` and `sheetName` path parameters and optionally accepts `folder` and `storageName` query parameters to locate the target file in cloud storage.
 
 **Version Compatibility**  
@@ -27,12 +28,12 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------ | -------------------------- | -------------------------------------------- |
+| name           | String | Path                       | The file name.                               |
+| sheetName      | String | Path                       | The worksheet name.                          |
+| folder         | String | Query                      | The folder where the file is situated.       |
+| storageName    | String | Query                      | The storage name where the file is situated. |
 
 ### Response
 
@@ -55,16 +56,21 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 ```
 
-### Error Responses
+**HTTP Status Codes**
 
-| HTTP Code | Description                                                                    |
-| --------- | ------------------------------------------------------------------------------ |
-| 401       | Unauthorized – missing or invalid token.                                       |
-| 404       | Not Found – the specified file, worksheet, or page‑break index does not exist. |
-| 400       | Bad Request – malformed request syntax or invalid parameters.                  |
-| 500       | Internal Server Error – an unexpected condition was encountered.               |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Pictures/DeleteWorksheetPictures) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
+## How to Use the Delete Worksheet Pictures API with SDKs?
+
+### Delete Worksheet Pictures API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Pictures/DeleteWorksheetPictures" rel="noopener noreferrer">Delete Worksheet Pictures API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to call the API with cURL.
 
@@ -94,19 +100,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/{fileName}/worksheets/{sheetName}/p
 {{< /tab >}}
 
 {{< /tabs >}}
-
-## How to Use the Delete Worksheet Pictures API with SDKs?
-
-### Delete Worksheet Pictures API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Pictures/DeleteWorksheetPictures" rel="noopener noreferrer">Delete Worksheet Pictures API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
-
-**Notes:** The DELETE operation does not support pagination and is subject to the standard Aspose.Cells Cloud API rate limits (default 100 requests per minute). Adjust your client logic accordingly.
-
-**See also**:
-
-- [/pictures/delete/](../delete/) – Delete a specific picture from a worksheet.
-- [/pictures/add/](../add/) – Add a picture to a worksheet.
 
 ### Use Aspose.Cells Cloud SDKs
 

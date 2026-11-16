@@ -10,6 +10,7 @@ description: "Sort Excel worksheet range data using Aspose.Cells Cloud REST API 
 weight: 100
 ArticleTitle: "Sort Excel Worksheet Range Data with Aspose.Cells Cloud REST API"
 ---
+
 The **PostWorksheetRangeSort** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/sort`) enables sorting data within a specified range on an Excel worksheet using Aspose.Cells Cloud. It requires the file name, worksheet name, cell area to sort, and a DataSorter object in the request body, with optional folder and storage parameters. This operation supports complex sorting scenarios such as multi-column, case-sensitive, and custom list sorting, making it suitable for programmatic data organization in cloud-based Excel workflows.
 
 ## The Post Worksheet Range Sort Web API
@@ -24,14 +25,14 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| cellArea | String | Query | The area needed to sort. |
-| dataSorter | class:datasorter | HTTPBody | DataSorter with sorting settings. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type             | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ---------------- | -------------------------- | -------------------------------------------- |
+| name           | String           | Path                       | The file name.                               |
+| sheetName      | String           | Path                       | The worksheet name.                          |
+| cellArea       | String           | Query                      | The area needed to sort.                     |
+| dataSorter     | class:datasorter | HTTPBody                   | DataSorter with sorting settings.            |
+| folder         | String           | Query                      | The folder where the file is situated.       |
+| storageName    | String           | Query                      | The storage name where the file is situated. |
 
 **`dataSorter` object schema** – The body must contain a JSON object with the following properties:
 
@@ -43,7 +44,43 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 - `SortLeftToRight` _(boolean, required)_ – If `true`, sorting proceeds left‑to‑right; otherwise top‑to‑bottom.
 - _(Optional)_ `CaseOrder`, `SortLeftToRight`, etc., may also be supplied according to the OpenAPI specification.
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetRangeSort) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+### Response
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                        |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+## How to Use the Post Worksheet Range Sort API with SDKs?
+
+### Post Worksheet Range Sort API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Worksheets/PostWorksheetRangeSort" rel="noopener noreferrer">Post Worksheet Range Sort API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
 
@@ -74,55 +111,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/She
 {{< /tab >}}
 
 {{< /tabs >}}
-
-**Error handling** – The API can return standard HTTP error codes. Typical responses include:
-
-| HTTP Status | Code | Message                                           |
-| ----------- | ---- | ------------------------------------------------- |
-| 400         | 400  | Bad request – missing or invalid parameters.      |
-| 401         | 401  | Unauthorized – invalid or absent JWT token.       |
-| 404         | 404  | Not found – workbook or worksheet does not exist. |
-| 500         | 500  | Internal server error.                            |
-
-The response body follows the pattern `{ "Code": <status>, "Message": "<description>", "Status": "Error" }` for error cases.
-
-### Response
-
-```json
-[
-  {
-    "Name": "CellsCloudResponse",
-    "DataType": {
-      "Identifier": "Class",
-      "Reference": "CellsCloudResponse"
-    }
-  }
-]
-```
-
-**Sample response headers**
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-```
-
-**HTTP Status Codes**
-
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
-
-## How to Use the Post Worksheet Range Sort API with SDKs?
-
-### Post Worksheet Range Sort API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Worksheets/PostWorksheetRangeSort" rel="noopener noreferrer">Post Worksheet Range Sort API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

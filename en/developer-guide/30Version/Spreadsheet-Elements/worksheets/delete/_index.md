@@ -12,6 +12,9 @@ ArticleTitle: "Delete Worksheet(s) in an Excel Workbook with Aspose.Cells Cloud 
 
 ## Working with Deleting Worksheets in an Excel Workbook
 
+- [Delete multiple worksheets](/worksheets/delete-multiple/) – Remove worksheets from an existing workbook.
+- [Delete a worksheet](/worksheets/delete-worksheet/) – Remove a specific worksheet from an existing workbook.
+
 When an application generates or modifies Excel files dynamically, you may need to remove worksheets that are no longer required—such as temporary reports, placeholder sheets, or outdated data. The Aspose.Cells Cloud API makes it easy to delete a single worksheet or several worksheets in one request.
 
 **API Reference**
@@ -121,10 +124,3 @@ except ApiException as e:
 - Verify that the authentication token is valid before making the request.
 - Check the response status code; handle `400`, `401`, `404`, and `500` accordingly.
 - Use try‑catch blocks (or equivalent) to capture network or SDK exceptions.
-
-**Related Operations**
-
-- [Add a worksheet](/worksheets/add/) – Create a new worksheet in an existing workbook.
-- [Copy a worksheet](/worksheets/copy/) – Duplicate an existing worksheet.
-- [Rename a worksheet](/worksheets/rename/) – Change the name of a worksheet.
-- [Move a worksheet](/worksheets/move/) – Reorder worksheets within a workbook.

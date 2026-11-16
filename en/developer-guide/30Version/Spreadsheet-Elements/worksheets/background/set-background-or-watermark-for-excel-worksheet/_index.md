@@ -10,6 +10,7 @@ keywords: "Aspose.Cells, Excel, worksheet, background, REST API, SDK, add image"
 description: "Add a background image (PNG, JPEG, BMP, GIF) to an Excel worksheet using Aspose.Cells Cloud REST API with cURL or SDKs."
 weight: 180
 ---
+
 The **PutWorksheetBackground** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/background`) in Aspose.Cells Cloud enables developers to set a background image for a specific worksheet by uploading an image file or referencing an existing image path, supporting options like `picPath` and `File` form-data parameter to customize the background or watermark.
 
 ## The Put Worksheet Background Web API
@@ -24,15 +25,15 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| picPath | String | Query | picture full filename. |
-| imageAdaptOption | String | Query | - |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
-| File | File | FormData | File to upload |
+| Parameter Name   | Type   | Path/Query String/HTTPBody | Description                                  |
+| ---------------- | ------ | -------------------------- | -------------------------------------------- |
+| name             | String | Path                       | The file name.                               |
+| sheetName        | String | Path                       | The worksheet name.                          |
+| picPath          | String | Query                      | picture full filename.                       |
+| imageAdaptOption | String | Query                      | -                                            |
+| folder           | String | Query                      | The folder where the file is situated.       |
+| storageName      | String | Query                      | The storage name where the file is situated. |
+| File             | File   | FormData                   | File to upload                               |
 
 **Supported formats & limits**
 
@@ -40,7 +41,43 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 - Maximum file size: **5 MB**.
 - The image is tiled to fill the entire worksheet background.
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PutWorksheetBackground) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+### Response
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                        |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+## How to Use the Put Worksheet Background API with SDKs?
+
+### Put Worksheet Background API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Worksheets/PutWorksheetBackground" rel="noopener noreferrer">Put Worksheet Background API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
 
@@ -70,48 +107,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/b
 
 _Possible error responses_
 
-
 {{< /tab >}}
 
 {{< /tabs >}}
-
-### Response
-
-```json
-[
-  {
-    "Name": "CellsCloudResponse",
-    "DataType": {
-      "Identifier": "Class",
-      "Reference": "CellsCloudResponse"
-    }
-  }
-]
-```
-
-**Sample response headers**
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-```
-
-**HTTP Status Codes**
-
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
-
-## How to Use the Put Worksheet Background API with SDKs?
-
-### Put Worksheet Background API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Worksheets/PutWorksheetBackground" rel="noopener noreferrer">Put Worksheet Background API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

@@ -19,6 +19,7 @@ keywords:
 description: "Update Excel worksheet properties like DisplayZeros and IsRulerVisible using Aspose.Cells Cloud REST API v3.0"
 ArticleTitle: "Update Worksheet Properties – Aspose.Cells Cloud API Reference (v3.0)"
 ---
+
 The **PostUpdateWorksheetProperty** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}`) updates core properties of a specific worksheet within a workbook stored in the cloud, using Aspose.Cells Cloud’s REST interface. Developers supply the workbook name, worksheet name, and a JSON-serialized worksheet object in the request body to modify properties such as visibility, tab color, or protection settings—enabling programmatic control over worksheet behavior without manual Excel interaction.
 
 ## The Post Update Worksheet Property Web API
@@ -33,17 +34,55 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| sheet | class:worksheet | HTTPBody | The worksheet description. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type            | Path/Query String/HTTPBody | Description                                  |
+| -------------- | --------------- | -------------------------- | -------------------------------------------- |
+| name           | String          | Path                       | The file name.                               |
+| sheetName      | String          | Path                       | The worksheet name.                          |
+| sheet          | class:worksheet | HTTPBody                   | The worksheet description.                   |
+| folder         | String          | Query                      | The folder where the file is situated.       |
+| storageName    | String          | Query                      | The storage name where the file is situated. |
 
 The **sheet** object is sent in the request body as JSON. Example properties that can be modified include `DisplayZeros`, `IsRulerVisible`, `IsGridlinesVisible`, and others defined in the API specification.
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostUpdateWorksheetProperty) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+### Response
+
+```json
+[
+  {
+    "Name": "CellsCloudResponse",
+    "DataType": {
+      "Identifier": "Class",
+      "Reference": "CellsCloudResponse"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                        |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+**Prerequisites:** You must have a valid Aspose Cloud account, obtain a JWT access token, and ensure the target workbook is stored in a supported storage location. All requests should be made over **HTTPS**.
+
+## How to Use the Post Update Worksheet Property API with SDKs?
+
+### Post Update Worksheet Property API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Worksheets/PostUpdateWorksheetProperty" rel="noopener noreferrer">Post Update Worksheet Property API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
@@ -74,54 +113,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1" 
 {{< /tab >}}
 
 {{< /tabs >}}
-
-Typical response codes:
-
-- **200** – Success. The worksheet properties were updated.
-- **400** – Invalid request (e.g., malformed JSON or missing required parameter).
-- **401** – Unauthorized – missing or invalid JWT token.
-- **404** – Workbook or worksheet not found.
-- **500** – Internal server error.
-
-### Response
-
-```json
-[
-  {
-    "Name": "CellsCloudResponse",
-    "DataType": {
-      "Identifier": "Class",
-      "Reference": "CellsCloudResponse"
-    }
-  }
-]
-```
-
-**Sample response headers**
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-```
-
-**HTTP Status Codes**
-
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
-
-**Prerequisites:** You must have a valid Aspose Cloud account, obtain a JWT access token, and ensure the target workbook is stored in a supported storage location. All requests should be made over **HTTPS**.
-
-## How to Use the Post Update Worksheet Property API with SDKs?
-
-### Post Update Worksheet Property API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Worksheets/PostUpdateWorksheetProperty" rel="noopener noreferrer">Post Update Worksheet Property API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

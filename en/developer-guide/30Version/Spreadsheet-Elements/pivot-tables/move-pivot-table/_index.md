@@ -10,6 +10,7 @@ description: "Move pivot tables or fields in Excel workbooks via Aspose.Cells Cl
 weight: 120
 ArticleTitle: "Move Pivot Table Field with Aspose.Cells Cloud REST API"
 ---
+
 The **PostPivotTableFieldMoveTo** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField/Move`) enables moving a pivot field within a specific PivotTable by specifying the field index and the source and target field area types (e.g., Column, Row, Page, Data, or Undefined), allowing precise reorganization of PivotTable data layout programmatically via Aspose.Cells Cloud.
 
 ## The Post Pivot Table Field Move to Web API
@@ -34,37 +35,6 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | to              | String  | Query                      | The fields area type(Column/Row/Page/Data/Undefined). |
 | folder          | String  | Query                      | The folder where the file is situated.                |
 | storageName     | String  | Query                      | The storage name where the file is situated.          |
-
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PivotTables/PostPivotTableFieldMoveTo) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
-
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
-
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
-
-{{< tab tabNum="1" >}}
-
-```bash
-curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/pivottables/0/PivotField/Move?fieldIndex=0&from=C1&to=C10" \
-  -X POST \
-  -H "Content-Type: application/json" \
-  -H "Accept: application/json" \
-  -H "Authorization: Bearer <jwt token>"
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-```json
-{
-  "Code": 200,
-  "Status": "OK"
-}
-```
-
-{{< /tab >}}
-
-{{< /tabs >}}
 
 ### Response
 
@@ -102,6 +72,35 @@ Content-Type: application/json
 ### Post Pivot Table Field Move to API Specification
 
 The <a href="https://reference.aspose.cloud/cells/#/PivotTables/PostPivotTableFieldMoveTo" rel="noopener noreferrer">Post Pivot Table Field Move to API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
+
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+
+{{< tab tabNum="1" >}}
+
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/pivottables/0/PivotField/Move?fieldIndex=0&from=C1&to=C10" \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+```json
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
 
 ### Use Aspose.Cells Cloud SDKs
 

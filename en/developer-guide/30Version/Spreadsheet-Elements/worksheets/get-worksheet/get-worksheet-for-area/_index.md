@@ -10,6 +10,7 @@ description: "Export a specific Excel worksheet range to PNG, PDF, CSV, and 20+ 
 weight: 230
 ArticleTitle: "Export Worksheet Area to PNG, PDF, CSV with Aspose.Cells Cloud API – Complete Guide"
 ---
+
 The **GetWorksheetWithFormat** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}`) enables developers to retrieve a specified worksheet from a workbook in various formats—including XLS, XLSX, PDF, PNG, JPEG, and others—by leveraging Aspose.Cells Cloud. The operation supports exporting a specific cell range (via the `area` query parameter) and allows customization such as image resolution, print settings, and page layout options, making it ideal for programmatic document conversion and reporting workflows.
 
 This guide shows how to export a **specific cell range** from an Excel worksheet to PNG, PDF, CSV, and more than 20 additional formats using the Aspose.Cells Cloud API. For related operations such as exporting an entire worksheet or converting a workbook, see the **[Export Entire Worksheet](https://docs.aspose.cloud/cells/worksheets/worksheet-to-different-formats/)** and **[Convert Workbook to PDF](https://docs.aspose.cloud/cells/workbook/convert-to-pdf/)** pages.
@@ -26,19 +27,19 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| format | String | Query | Export format(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers). |
-| verticalResolution | Integer | Query | Image vertical resolution. |
-| horizontalResolution | Integer | Query | Image horizontal resolution. |
-| area | String | Query | Represents the range to be printed. |
-| pageIndex | Integer | Query | Represents the page to be printed |
-| onePagePerSheet | Boolean | Query | - |
-| printHeadings | Boolean | Query | - |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name       | Type    | Path/Query String/HTTPBody | Description                                                                                                                        |
+| -------------------- | ------- | -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| name                 | String  | Path                       | The file name.                                                                                                                     |
+| sheetName            | String  | Path                       | The worksheet name.                                                                                                                |
+| format               | String  | Query                      | Export format(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers). |
+| verticalResolution   | Integer | Query                      | Image vertical resolution.                                                                                                         |
+| horizontalResolution | Integer | Query                      | Image horizontal resolution.                                                                                                       |
+| area                 | String  | Query                      | Represents the range to be printed.                                                                                                |
+| pageIndex            | Integer | Query                      | Represents the page to be printed                                                                                                  |
+| onePagePerSheet      | Boolean | Query                      | -                                                                                                                                  |
+| printHeadings        | Boolean | Query                      | -                                                                                                                                  |
+| folder               | String  | Query                      | The folder where the file is situated.                                                                                             |
+| storageName          | String  | Query                      | The storage name where the file is situated.                                                                                       |
 
 ### Response
 
@@ -61,16 +62,15 @@ Content-Type: application/octet-stream
 Content-Disposition: attachment; filename="result"
 ```
 
-- **200 OK** – Returns the requested file in binary format (PNG, PDF, CSV, etc.).
+**HTTP Status Codes**
 
-### Error responses
-
-| Status Code | Description                                                 |
-| ----------- | ----------------------------------------------------------- |
-| 400         | Bad request – missing or invalid parameters.                |
-| 401         | Unauthorized – authentication token is missing or invalid.  |
-| 404         | Not found – specified workbook or worksheet does not exist. |
-| 500         | Internal server error – unexpected condition on the server. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 **Example error payload**
 
@@ -82,6 +82,12 @@ Content-Disposition: attachment; filename="result"
   }
 }
 ```
+
+## How to Use the Get Worksheet with Format API with SDKs?
+
+### Get Worksheet with Format API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Worksheets/GetWorksheetWithFormat" rel="noopener noreferrer">Get Worksheet with Format API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
 
@@ -106,14 +112,6 @@ Converted image (binary PNG)
 {{< /tab >}}
 
 {{< /tabs >}}
-
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetWithFormat) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
-
-## How to Use the Get Worksheet with Format API with SDKs?
-
-### Get Worksheet with Format API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Worksheets/GetWorksheetWithFormat" rel="noopener noreferrer">Get Worksheet with Format API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

@@ -10,6 +10,7 @@ description: "Unmerge merged cells in Excel ranges via Aspose.Cells Cloud API wi
 weight: 100
 ArticleTitle: "Unmerge Merged Cells in Excel Range via Aspose.Cells Cloud API"
 ---
+
 The **PostWorksheetCellsRangeUnMerge** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/unmerge`) enables unmerging merged cells within a specified range on an Excel worksheet using Aspose.Cells Cloud, supporting precise range-based operations while preserving other cell formatting and data integrity.
 
 ## The Post Worksheet Cells Range Un Merge Web API
@@ -24,13 +25,13 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| range | class:range | HTTPBody | Range range description. |
-| folder | String | Query | Original workbook folder. |
-| storageName | String | Query | Storage name. |
+| Parameter Name | Type        | Path/Query String/HTTPBody | Description               |
+| -------------- | ----------- | -------------------------- | ------------------------- |
+| name           | String      | Path                       | The file name.            |
+| sheetName      | String      | Path                       | The worksheet name.       |
+| range          | class:range | HTTPBody                   | Range range description.  |
+| folder         | String      | Query                      | Original workbook folder. |
+| storageName    | String      | Query                      | Storage name.             |
 
 ### Response
 
@@ -55,26 +56,20 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                        |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
-The request parameters are:
+## How to Use the Post Worksheet Cells Range Un Merge API with SDKs?
 
-| Parameter Name | Type   | Location | Required | Description                                     |
-| -------------- | ------ | -------- | -------- | ----------------------------------------------- |
-| name           | string | path     | Yes      | Workbook name.                                  |
-| sheetName      | string | path     | Yes      | Worksheet name.                                 |
-| range          | object | body     | Yes      | Range object that defines the cells to unmerge. |
-| folder         | string | query    | No       | Folder that contains the workbook.              |
-| storageName    | string | query    | No       | Storage name.                                   |
+### Post Worksheet Cells Range Un Merge API Specification
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeUnmerge) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The <a href="https://reference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeUnMerge" rel="noopener noreferrer">Post Worksheet Cells Range Un Merge API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
@@ -115,12 +110,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/
 {{< /tab >}}
 
 {{< /tabs >}}
-
-## How to Use the Post Worksheet Cells Range Un Merge API with SDKs?
-
-### Post Worksheet Cells Range Un Merge API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeUnMerge" rel="noopener noreferrer">Post Worksheet Cells Range Un Merge API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

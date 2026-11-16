@@ -10,6 +10,7 @@ description: "Calculate formulas in an Excel worksheet using Aspose.Cells Cloud 
 weight: 100
 ArticleTitle: "Calculate a formula on an Excel worksheet – Aspose.Cells Cloud Documentation"
 ---
+
 The **GetWorksheetCalculateFormula** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/formulaResult`) enables developers to calculate and retrieve the evaluated result of a specified Excel formula within a worksheet using Aspose.Cells Cloud, supporting direct formula evaluation without requiring local Excel installation.
 
 ## The Get Worksheet Calculate Formula Web API
@@ -30,15 +31,13 @@ You can obtain a token by following the OAuth 2.0 flow described in the Aspose
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| formula | String | Query | The formula. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
-
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetCalculateFormula) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------ | -------------------------- | -------------------------------------------- |
+| name           | String | Path                       | The file name.                               |
+| sheetName      | String | Path                       | The worksheet name.                          |
+| formula        | String | Query                      | The formula.                                 |
+| folder         | String | Query                      | The folder where the file is situated.       |
+| storageName    | String | Query                      | The storage name where the file is situated. |
 
 ### Response
 
@@ -71,6 +70,12 @@ Content-Type: application/json
 | 404  | Not found – the specified file or worksheet does not exist. |
 | 500  | Internal server error – unexpected condition on the server. |
 
+## How to Use the Get Worksheet Calculate Formula API with SDKs?
+
+### Get Worksheet Calculate Formula API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Worksheets/GetWorksheetCalculateFormula" rel="noopener noreferrer">Get Worksheet Calculate Formula API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
+
 You can use the **cURL** command‑line tool to call Aspose.Cells Cloud web services easily. The example below shows how to request a formula result with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
@@ -102,20 +107,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/She
 {{< /tab >}}
 
 {{< /tabs >}}
-
-## How to Use the Get Worksheet Calculate Formula API with SDKs?
-
-### Get Worksheet Calculate Formula API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Worksheets/GetWorksheetCalculateFormula" rel="noopener noreferrer">Get Worksheet Calculate Formula API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
-
----
-
-**See also:**
-
-- [Get Worksheet](https://docs.aspose.cloud/cells/worksheets/get-worksheet/)
-- [Update Worksheet](https://docs.aspose.cloud/cells/worksheets/update-worksheet/)
-- [Calculate All Formulas](https://docs.aspose.cloud/cells/worksheets/calculate-all-formulas/)
 
 ### Use Aspose.Cells Cloud SDKs
 
