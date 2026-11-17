@@ -13,6 +13,7 @@ description: "Learn how to import a string array into an Excel worksheet using A
 weight: 40
 ArticleTitle: "Import String Array into Excel Worksheet – Aspose.Cells Cloud"
 ---
+
 The **PostImport** API (`POST https://api.aspose.cloud/v3.0/cells/import`) enables importing data—including string arrays—into an Excel file via Aspose.Cells Cloud, supporting output formats such as CSV, XLSX, PDF, and more. Developers can upload a file and specify parameters like `outFormat` to generate the desired output, making it ideal for programmatically populating spreadsheets with list-based data, such as configuration values or externally sourced string collections.
 
 This REST API imports string‑array data into an Excel worksheet.

@@ -10,6 +10,7 @@ description: "Export Excel worksheet to PDF, CSV, TIFF, and other formats via As
 weight: 100
 ArticleTitle: "Export Excel Worksheet to Various Formats – Aspose.Cells Cloud"
 ---
+
 The **PostExport** API (`POST https://api.aspose.cloud/v3.0/cells/export`) enables developers to export Excel internal elements—such as worksheets, charts, or shapes—or entire workbooks to various file formats using Aspose.Cells Cloud, supporting over 30 formats including PDF, CSV, HTML, PNG, JPG, and MD; users upload the source file via form-data and specify target formats and optional parameters like `objectType` and `format` to control the export scope and output type.
 
 - **XLS** – [XLS format details](https://docs.fileformat.com/spreadsheet/xls/)
@@ -78,10 +79,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 ```
 
-### **Error handling**
-
-If the request fails, the API returns a JSON error object containing fields such as `Code` and `Message`. Typical HTTP status codes include **401 Unauthorized** (missing or invalid token) and **400 Bad Request** (invalid parameters).
-
 **HTTP Status Codes**
 
 | Code | Meaning               | Description                                                       |
@@ -92,21 +89,15 @@ If the request fails, the API returns a JSON error object containing fields such
 | 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
 | 500  | Internal Server Error | Unexpected server error.                                          |
 
-**Notes**
+### **Error handling**
 
-- Maximum file size for upload is 50 MB.
-- The API supports exporting multiple worksheets in a single request; each worksheet is returned as a separate file in the `Files` array.
-- Asynchronous processing is available for large workbooks; use the `202 Accepted` response to poll the operation status.
+If the request fails, the API returns a JSON error object containing fields such as `Code` and `Message`. Typical HTTP status codes include **401 Unauthorized** (missing or invalid token) and **400 Bad Request** (invalid parameters).
 
 ## How to Use the Post Export API with SDKs?
 
 ### Post Export API Specification
 
 The <a href="https://reference.aspose.cloud/cells/#/DataProcessing/PostExport" rel="noopener noreferrer">Post Export API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
-
-### Prerequisites
-
-Before calling the API, obtain a valid JWT access token using the Aspose.Cells Cloud authentication flow. Ensure the token is included in the `Authorization` header of each request. The SDKs handle token acquisition automatically when configured with your client credentials.
 
 You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
 

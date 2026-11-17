@@ -13,6 +13,7 @@ description: "Import double array into Excel worksheet via Aspose.Cells Cloud AP
 weight: 100
 ArticleTitle: "Import Double Array into Excel Worksheet – Aspose.Cells Cloud Guide"
 ---
+
 The **PostImport** API (`POST https://api.aspose.cloud/v3.0/cells/import`) enables importing double-array data into an Excel worksheet via Aspose.Cells Cloud, supporting output in multiple formats such as XLSX, PDF, CSV, and image types, with optional parameters like password protection and regional settings for flexible data import workflows.
 
 You send an HTTP request with **multipart** content (see [RFC 2046](https://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](https://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)).  
@@ -94,17 +95,16 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 ```
 
-A successful request returns **HTTP 200** with a JSON payload similar to:
+**HTTP Status Codes**
 
-
-Possible status codes:
-
-| Code | Meaning                                 |
-| ---- | --------------------------------------- |
-| 200  | Import succeeded                        |
-| 400  | Bad request – missing or invalid data   |
-| 401  | Unauthorized – invalid or missing token |
-| 500  | Internal server error                   |
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ### Error Handling
 

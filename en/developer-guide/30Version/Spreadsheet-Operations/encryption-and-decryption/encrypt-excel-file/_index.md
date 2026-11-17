@@ -10,6 +10,7 @@ description: "Learn how to encrypt an Excel workbook using Aspose.Cells Cloud RE
 weight: 100
 ArticleTitle: "Encrypt Excel Workbook with Aspose.Cells Cloud API – cURL and SDK Examples"
 ---
+
 The **PostEncryptWorkbook** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/encryption`) enables Aspose.Cells Cloud users to encrypt an Excel workbook by providing the file name and encryption parameters via the request body; it supports robust file protection as part of a comprehensive information security strategy, allowing secure handling of sensitive spreadsheet data through standardized REST calls.
 
 ## The Post Encrypt Workbook Web API
@@ -30,6 +31,30 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | encryption | class:workbookencryptionrequest | HTTPBody | WorkbookEncryptionRequestEncryption parameters. |
 | folder | String | Query | The folder where the file is situated. |
 | storageName | String | Query | The storage name where the file is situated. |
+
+
+### **Request Body Parameter**
+
+| Parameter Name | Type                      | Required | Description                           |
+| -------------- | ------------------------- | -------- | ------------------------------------- |
+| encryption     | WorkbookEncryptionRequest | ✓        | Encryption settings for the workbook. |
+
+#### **WorkbookEncryptionRequest**
+
+| Parameter Name | Type    | Required | Description                                                                        |
+| -------------- | ------- | -------- | ---------------------------------------------------------------------------------- |
+| EncryptionType | string  | ✓        | Encryption algorithm. See the table below for supported values and their meanings. |
+| KeyLength      | integer | ✗        | Length of the encryption key in bits (ignored for `XOR` and `Compatible`).         |
+| Password       | string  | ✓        | Password used for encryption.                                                      |
+
+#### **EncryptionType values**
+
+| Value                             | Description                                   |
+| --------------------------------- | --------------------------------------------- |
+| `XOR`                             | Simple XOR algorithm (legacy, low security).  |
+| `Compatible`                      | Excel 97‑2003 compatible encryption (40‑bit). |
+| `EnhancedCryptographicProviderV1` | AES‑128 with SHA‑1 hash.                      |
+| `StrongCryptographicProvider`     | AES‑256 with SHA‑512 hash (strongest).        |
 
 ### Response
 
@@ -63,29 +88,6 @@ Content-Type: application/json
 | 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
 | 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
-### **Request Body Parameter**
-
-| Parameter Name | Type                      | Required | Description                           |
-| -------------- | ------------------------- | -------- | ------------------------------------- |
-| encryption     | WorkbookEncryptionRequest | ✓        | Encryption settings for the workbook. |
-
-#### **WorkbookEncryptionRequest**
-
-| Parameter Name | Type    | Required | Description                                                                        |
-| -------------- | ------- | -------- | ---------------------------------------------------------------------------------- |
-| EncryptionType | string  | ✓        | Encryption algorithm. See the table below for supported values and their meanings. |
-| KeyLength      | integer | ✗        | Length of the encryption key in bits (ignored for `XOR` and `Compatible`).         |
-| Password       | string  | ✓        | Password used for encryption.                                                      |
-
-#### **EncryptionType values**
-
-| Value                             | Description                                   |
-| --------------------------------- | --------------------------------------------- |
-| `XOR`                             | Simple XOR algorithm (legacy, low security).  |
-| `Compatible`                      | Excel 97‑2003 compatible encryption (40‑bit). |
-| `EnhancedCryptographicProviderV1` | AES‑128 with SHA‑1 hash.                      |
-| `StrongCryptographicProvider`     | AES‑256 with SHA‑512 hash (strongest).        |
-
 ## How to Use the Post Encrypt Workbook API with SDKs?
 
 ### Post Encrypt Workbook API Specification
@@ -117,15 +119,6 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/encryption" \
   "Status": "OK"
 }
 ```
-
-**Possible error responses**
-
-| HTTP Status | Code                | Message                                         |
-| ----------- | ------------------- | ----------------------------------------------- |
-| 400         | BadRequest          | Missing or invalid parameters.                  |
-| 401         | Unauthorized        | Authentication token is absent or invalid.      |
-| 403         | Forbidden           | Insufficient permissions to access the storage. |
-| 500         | InternalServerError | Unexpected server error.                        |
 
 {{< /tab >}}
 

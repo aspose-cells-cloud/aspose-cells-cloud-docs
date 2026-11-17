@@ -24,6 +24,7 @@ aliases:
   - /import/with-using-storage/
 linktitle: "Import data with storage"
 ---
+
 The **PostImportData** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/importdata`) enables you to import structured data—such as CSV, JSON, arrays, or images—directly into an Excel file stored in cloud storage, supporting workflows that avoid local file handling. Aspose.Cells Cloud provides this REST API operation with parameters like `importOption`, `folder`, and `storageName` to control how and where data is inserted, making it suitable for scalable, server-side automation across multiple programming languages via official SDKs.
 
 ## The Post Import Data Web API
@@ -41,8 +42,6 @@ Authorization: Bearer <your-jwt-token>
 ```
 
 Ensure the target workbook exists in the specified storage location before importing data.
-
----
 
 ### Request Parameters
 
@@ -111,8 +110,6 @@ The `importOption` body parameter requires the following common fields (specific
 
 For detailed parameter definitions, see the [Import Data Option Reference](/cells/import/#import-data-option-parameter).
 
----
-
 ## Example: Import Integer Array
 
 This example imports a 1D integer array into `Sheet1`, starting at cell `B2`, vertically:
@@ -147,8 +144,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/importdata?folder=Temp&s
 }
 ```
 
----
-
 ## HTTP Status Codes
 
 | Code | Meaning               | Description                                                                                 |
@@ -160,8 +155,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/importdata?folder=Temp&s
 | 404  | Not Found             | Excel file or storage location not found.                                                   |
 | 413  | Payload Too Large     | Request body exceeds size limits.                                                           |
 | 500  | Internal Server Error | Unexpected server error.                                                                    |
-
----
 
 ## SDK Integration
 
@@ -207,26 +200,6 @@ try {
 
 > **Tip**: See the [Aspose.Cells Cloud SDKs GitHub Repository](https://github.com/aspose-cells-cloud){: rel="noopener noreferrer"} for language-specific samples and documentation.
 
----
-
-## Best Practices
-
-1. **Validate Data Format**  
-   Ensure the `Data` array matches the `importDataType` (e.g., use `ImportStringArrayOption` for `["A", "B", "C"]`).
-
-2. **Handle Row/Column Indexing**  
-   Confirm whether your SDK uses 0-based or 1-based indexing (most Aspose.Cells SDKs use 0-based for arrays).
-
-3. **Test with `IsInsert=false` First**  
-   Overwrite mode (`IsInsert=false`) avoids unintended worksheet expansion during initial testing.
-
-4. **Use Storage Names Explicitly**  
-   Specify `storageName` to avoid ambiguity in multi-storage environments.
-
-5. **Check Region Settings**  
-   For CSV or localized data, set `region` to match the data’s locale (e.g., `"de-DE"` for German number formats).
-
----
 
 ## Related Topics
 
@@ -234,6 +207,3 @@ try {
 - [Export Excel to PDF](/cells/export/)
 - [Working with Cloud Storage](/storage/)
 
----
-
-**Last Updated**: 2024-04-27

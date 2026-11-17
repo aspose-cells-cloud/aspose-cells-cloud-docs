@@ -14,11 +14,12 @@ description: "Remove write-protection password from Excel workbooks using Aspose
 weight: 110
 ArticleTitle: "Remove Write‑Protection (Password) from an Excel Workbook"
 ---
+
 The **DeleteDocumentUnProtectFromChanges** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/writeProtection`) removes write-protection (password) from an Excel workbook stored in cloud storage, enabling programmatic removal of Excel password protection. Using Aspose.Cells Cloud, developers can unprotect workbooks without requiring local software installation, supporting operations like modifying protected content after password removal. The API requires the workbook’s filename as a path parameter and optionally accepts `folder` and `storageName` query parameters to locate the file.
 
 For adding protection, see the [Protect Excel](/cells/protect/) guide.
 
-## The Delete Document Un Protect From Changes Web API
+## The Delete Document UnProtect From Changes Web API
 
 ```http
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/writeProtection

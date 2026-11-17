@@ -71,17 +71,6 @@ Content-Type: application/json
 
 A successful call returns a **`200 OK`** (or **`201 Created`** when a new file is generated) with a JSON payload that describes the created workbook.
 
-#### Example cURL with request body
-
-```bash
-curl -X PUT "https://api.aspose.cloud/v3.0/cells/newworkbook.xlsx?templateFile=Calendar.xlsx&isWriteOver=true" \
-     -H "accept: application/json" \
-     -H "Authorization: Bearer {access_token}" \
-     -H "x-aspose-client: Containerize.Swagger" \
-     -F "data=@Sample_Data.xml"
-```
-
-_If the `dataFile` query parameter is used instead of a multipart body, omit the `-F` flag._
 
 ### Response Data Types
 
@@ -108,6 +97,18 @@ _If the `dataFile` query parameter is used instead of a multipart body, omit the
 The <a href="https://reference.aspose.cloud/cells/#/Workbook/PutWorkbookCreate" rel="noopener noreferrer">Put Workbook Create API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 The following snippets demonstrate how to invoke **PutWorkbookCreate** with the official Aspose.Cells Cloud SDKs.
+
+**cURL Example with request body**
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v3.0/cells/newworkbook.xlsx?templateFile=Calendar.xlsx&isWriteOver=true" \
+     -H "accept: application/json" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "x-aspose-client: Containerize.Swagger" \
+     -F "data=@Sample_Data.xml"
+```
+
+_If the `dataFile` query parameter is used instead of a multipart body, omit the `-F` flag._
 
 ### Use Aspose.Cells Cloud SDKs
 

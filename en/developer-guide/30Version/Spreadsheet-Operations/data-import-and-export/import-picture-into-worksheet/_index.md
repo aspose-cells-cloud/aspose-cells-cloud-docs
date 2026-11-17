@@ -13,6 +13,7 @@ keywords: "Import picture, Excel, Aspose.Cells Cloud, REST API, v3.0"
 description: "Learn how to import pictures into Excel worksheets using Aspose.Cells Cloud REST API v3.0. Includes multipart request examples, SDK code samples, and error‑handling guidance. Get started quickly with clear steps."
 weight: 19
 ---
+
 The **PostImport** API (`POST https://api.aspose.cloud/v3.0/cells/import`) enables importing data—including images like logos, charts, or diagrams—into an Excel workbook via Aspose.Cells Cloud, supporting various output formats such as XLSX, PDF, and PNG.
 
 ## The Post Import Web API
@@ -74,7 +75,6 @@ Content-Type: application/json
 
 A successful request returns **HTTP 200** with a JSON payload similar to:
 
-
 Possible status codes:
 
 ### ImportPictureOption – definition
@@ -93,8 +93,6 @@ Possible status codes:
   "Source": { "FileSource": "Storage" }
 }
 ```
-
-_`IsInsert` is a **boolean** – `true` inserts a new picture, `false` replaces an existing one._
 
 ### Important parameters
 
@@ -118,6 +116,12 @@ _`IsInsert` is a **boolean** – `true` inserts a new picture, `false` replaces 
 ### Post Import API Specification
 
 The <a href="https://reference.aspose.cloud/cells/#/LightCells/PostImport" rel="noopener noreferrer">Post Import API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
+
+
+### Use Aspose.Cells Cloud SDKs
+
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 {{< tabs tabTotal="9" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js"  tabName7="Swift" tabName8="Perl" tabName9="Go" >}}
 
@@ -157,8 +161,3 @@ The <a href="https://reference.aspose.cloud/cells/#/LightCells/PostImport" rel="
 {{< /tab >}}
 
 {{< /tabs >}}
-
-### Use Aspose.Cells Cloud SDKs
-
-Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
-Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

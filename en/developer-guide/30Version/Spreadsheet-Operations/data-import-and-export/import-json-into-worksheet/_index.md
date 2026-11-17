@@ -10,6 +10,7 @@ description: "Learn how to import JSON data into an Excel worksheet using Aspose
 weight: 40
 ArticleTitle: "Import JSON into Excel with Aspose.Cells Cloud REST API"
 ---
+
 The **PostWorkbookImportJson** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/importjson`) enables Aspose.Cells Cloud users to import JSON data—either from a cloud file or an HTTP URI—directly into an Excel workbook, supporting both structured and unstructured JSON formats without requiring manual conversion.
 
 ## The Post Workbook Import JSON Web API
@@ -68,10 +69,6 @@ Content-Disposition: attachment; filename="result"
 | 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
 | 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
-A successful request returns **HTTP 200** with a JSON payload similar to:
-
-
-Possible status codes:
 
 ### **Example Request Body**
 

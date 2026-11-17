@@ -17,18 +17,29 @@ Aspose.Cells Cloud API supports importing data from a variety of sources and can
 
 **API version:** **v3.0** – Last updated: **2024-03-15**
 
-### Quick‑Start Guide
+## How to call import and export APIs
 
-1. **Prepare the payload** – Build a JSON body that describes the import or export options (e.g., `ImportCSVDataOption`, `ExportOptions`).
-2. **Send the request** – Use `curl`, Postman, or an SDK to call the appropriate endpoint (`POST /cells/import` or `POST /cells/export`).
-3. **Handle the response** – On success you receive the processed file (binary or Base64). On error, inspect the HTTP status code and the error message returned in the JSON body.
+The following articles explain each API in detail and contain cURL and SDK examples:
 
-#### Prerequisites
-
-- An active Aspose Cloud account and a valid JWT token.
-- The target workbook must exist in the specified storage location (for storage‑based APIs).
-- Correct `Content‑Type` headers (`multipart/form-data` for file uploads, `application/json` for JSON bodies).
-
+- [Import CSV data into Excel worksheet using Aspose.Cells Cloud API](/cells/import/without-using-storage)
+- [Import data into Excel files with storage](/cells/import/with-using-storage)
+- [How to import Batch Data into Excel Worksheet](/cells/import-batch-data-into-excel-worksheet/)
+- [How to import CSV Data into Excel Worksheet](/cells/import-CSV-data-into-excel-worksheet/)
+- [How to import picture into Excel Worksheet](/cells/import-picture-into-excel-worksheet/)
+- [How to import Integer Array into Excel Worksheet](/cells/import-integer-array-into-excel-worksheet/)
+- [How to import Double Array into Excel Worksheet](/cells/import-double-array-into-excel-worksheet/)
+- [How to import String Array into Excel Worksheet](/cells/import-string-array-into-excel-worksheet/)
+- [How to import 2 Dimension Integer Array into Excel Worksheet](/cells/import-a-2D-integer-array-into-excel-worksheet/)
+- [How to import 2 Dimension Double Array into Excel Worksheet](/cells/import-a-2D-double-array-into-excel-worksheet/)
+- [How to import 2 Dimension String Array into Excel Worksheet](/cells/import-a-2D-string-array-into-excel-worksheet/)
+- [Export Excel chart to different file format](/cells/export-excel-chart-to-different-formats/)
+- [Export Excel list object to different file format](/cells/export-excel-listobject-to-different-formats/)
+- [Export Excel OLE object to different file format](/cells/export-excel-ole-object/)
+- [Export Excel picture to different file format](/cells/export-excel-picture-to-different-formats/)
+- [Export Excel shape to different file format](/cells/export-excel-shape-to-different-formats/)
+- [Export Excel workbook to different file format](/cells/export-excel-to-different-formats/)
+- [Export Excel worksheet to different file format](/cells/export-excel-worksheet-to-different-formats/)
+  
 ## How to import data from various data sources
 
 Importing data into an Excel file involves several considerations that must be addressed during the process. The ability to import many formats and types of data with professional quality is a top feature of Aspose.Cells Cloud.
@@ -340,26 +351,3 @@ curl -v "https://api.aspose.cloud/v3.0/cells/export" \
 | 401    | Unauthorized – invalid or expired JWT token                    | Refresh the token and retry                  |
 | 404    | Not found – the specified workbook or worksheet does not exist | Check the file name and storage path         |
 | 500    | Internal server error – unexpected condition on the server     | Contact Aspose support with the request ID   |
-
-## How to call import and export APIs
-
-The following articles explain each API in detail and contain cURL and SDK examples:
-
-- [Import CSV data into Excel worksheet using Aspose.Cells Cloud API](/cells/import/without-using-storage)
-- [Import data into Excel files with storage](/cells/import/with-using-storage)
-- [How to import Batch Data into Excel Worksheet](/cells/import-batch-data-into-excel-worksheet/)
-- [How to import CSV Data into Excel Worksheet](/cells/import-CSV-data-into-excel-worksheet/)
-- [How to import picture into Excel Worksheet](/cells/import-picture-into-excel-worksheet/)
-- [How to import Integer Array into Excel Worksheet](/cells/import-integer-array-into-excel-worksheet/)
-- [How to import Double Array into Excel Worksheet](/cells/import-double-array-into-excel-worksheet/)
-- [How to import String Array into Excel Worksheet](/cells/import-string-array-into-excel-worksheet/)
-- [How to import 2 Dimension Integer Array into Excel Worksheet](/cells/import-a-2D-integer-array-into-excel-worksheet/)
-- [How to import 2 Dimension Double Array into Excel Worksheet](/cells/import-a-2D-double-array-into-excel-worksheet/)
-- [How to import 2 Dimension String Array into Excel Worksheet](/cells/import-a-2D-string-array-into-excel-worksheet/)
-- [Export Excel chart to different file format](/cells/export-excel-chart-to-different-formats/)
-- [Export Excel list object to different file format](/cells/export-excel-listobject-to-different-formats/)
-- [Export Excel OLE object to different file format](/cells/export-excel-ole-object/)
-- [Export Excel picture to different file format](/cells/export-excel-picture-to-different-formats/)
-- [Export Excel shape to different file format](/cells/export-excel-shape-to-different-formats/)
-- [Export Excel workbook to different file format](/cells/export-excel-to-different-formats/)
-- [Export Excel worksheet to different file format](/cells/export-excel-worksheet-to-different-formats/)

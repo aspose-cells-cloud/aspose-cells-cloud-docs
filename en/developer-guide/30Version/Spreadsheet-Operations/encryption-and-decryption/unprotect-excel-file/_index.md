@@ -12,6 +12,7 @@ description: "Unprotect Excel workbooks via Aspose.Cells Cloud API using DeleteU
 weight: 60
 ArticleTitle: "Unprotect Excel Workbook – Aspose.Cells Cloud API"
 ---
+
 The **DeleteUnProtectWorkbook** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/protection`) enables unprotection of Excel workbooks via Aspose.Cells Cloud by removing existing workbook protection using the required `password` parameter; it supports unprotecting files stored in cloud storage and accepts optional `folder` and `storageName` query parameters to locate the target workbook.
 
 ## The Delete Un Protect Workbook Web API
@@ -32,6 +33,19 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | password | String | Query | Protection settings, only password can be specified. |
 | folder | String | Query | The folder where the file is situated. |
 | storageName | String | Query | The storage name where the file is situated. |
+
+### Request Body Parameters
+
+| Parameter Name | Type                      | Description                                              |
+| -------------- | ------------------------- | -------------------------------------------------------- |
+| protection     | WorkbookProtectionRequest | Object that specifies the protection settings to remove. |
+
+#### WorkbookProtectionRequest
+
+| Parameter Name | Type   | Description                                                                                               |
+| -------------- | ------ | --------------------------------------------------------------------------------------------------------- |
+| ProtectionType | string | Type of protection to remove (`ALL`, `CONTENTS`, `NONE`, `OBJECTS`, `SCENARIOS`, `STRUCTURE`, `WINDOWS`). |
+| Password       | string | Password required to remove the protection (optional).                                                    |
 
 ### Response
 
@@ -54,36 +68,27 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 ```
 
-### HTTPS Status Error Responses
+**HTTP Status Codes**
 
-| HTTP Status | Code                | Description                                               |
-| ----------- | ------------------- | --------------------------------------------------------- |
-| 400         | BadRequest          | Missing or invalid parameters.                            |
-| 401         | Unauthorized        | Invalid or missing access token.                          |
-| 404         | NotFound            | Specified workbook not found in the given folder/storage. |
-| 500         | InternalServerError | Unexpected server error.                                  |
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
-### Query Parameters
 
-| Parameter Name | Type   | Description                                             |
-| -------------- | ------ | ------------------------------------------------------- |
-| folder         | string | Path to the folder that contains the original workbook. |
-| storageName    | string | Name of the storage service where the workbook resides. |
+## How to Use the Delete Un Protect Workbook API with SDKs?
 
-### Request Body Parameters
+### Delete Un Protect Workbook API Specification
 
-| Parameter Name | Type                      | Description                                              |
-| -------------- | ------------------------- | -------------------------------------------------------- |
-| protection     | WorkbookProtectionRequest | Object that specifies the protection settings to remove. |
+The <a href="https://reference.aspose.cloud/cells/#/Protection/DeleteUnProtectWorkbook" rel="noopener noreferrer">Delete Un Protect Workbook API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
-#### WorkbookProtectionRequest
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
-| Parameter Name | Type   | Description                                                                                               |
-| -------------- | ------ | --------------------------------------------------------------------------------------------------------- |
-| ProtectionType | string | Type of protection to remove (`ALL`, `CONTENTS`, `NONE`, `OBJECTS`, `SCENARIOS`, `STRUCTURE`, `WINDOWS`). |
-| Password       | string | Password required to remove the protection (optional).                                                    |
-
-#### cURL Example
+**cURL Example**
 
 ```bash
 curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/protection?folder=MyFolder&storageName=MyStorage" \
@@ -93,7 +98,7 @@ curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/protection?folder=
      -d '{ "ProtectionType": "ALL", "Password": "aspose"}'
 ```
 
-#### Response (Success)
+Response (Success)
 
 ```json
 {
@@ -101,14 +106,6 @@ curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/protection?folder=
   "Status": "OK"
 }
 ```
-
-## How to Use the Delete Un Protect Workbook API with SDKs?
-
-### Delete Un Protect Workbook API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Protection/DeleteUnProtectWorkbook" rel="noopener noreferrer">Delete Un Protect Workbook API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
-
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 Using an SDK simplifies integration and reduces boiler‑plate code. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

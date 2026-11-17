@@ -10,6 +10,7 @@ description: "Decrypt encrypted Excel workbooks using Aspose.Cells Cloud API wit
 ArticleTitle: "How to Decrypt an Excel Workbook Using Aspose.Cells Cloud API"
 weight: 50
 ---
+
 The **DeleteDecryptWorkbook** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/encryption`) enables decryption of encrypted Excel files stored in Aspose.Cells Cloud by removing encryption from the specified file, requiring only the file name in the path and a `WorkbookEncryptionRequest` object in the request body with decryption parameters.
 
 - A valid JWT access token.
@@ -33,6 +34,21 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | encryption | class:workbookencryptionrequest | HTTPBody | WorkbookEncryptionRequestEncryption parameters. |
 | folder | String | Query | The folder where the file is situated. |
 | storageName | String | Query | The storage name where the file is situated. |
+
+
+### Request Body Parameter
+
+| Parameter Name | Type                      | Description                                  |
+| -------------- | ------------------------- | -------------------------------------------- |
+| encryption     | WorkbookEncryptionRequest | Encryption settings required for decryption. |
+
+### WorkbookEncryptionRequest
+
+| Parameter Name | Type    | Description                                                                                                   |
+| -------------- | ------- | ------------------------------------------------------------------------------------------------------------- |
+| EncryptionType | string  | Encryption algorithm (`XOR`, `Compatible`, `EnhancedCryptographicProviderV1`, `StrongCryptographicProvider`). |
+| KeyLength      | integer | Length of the encryption key in bits.                                                                         |
+| Password       | string  | Password used for decryption.                                                                                 |
 
 ### Response
 
@@ -95,20 +111,6 @@ Content-Type: application/json
   "Message": "Internal server error. Please try again later."
 }
 ```
-
-### Request Body Parameter
-
-| Parameter Name | Type                      | Description                                  |
-| -------------- | ------------------------- | -------------------------------------------- |
-| encryption     | WorkbookEncryptionRequest | Encryption settings required for decryption. |
-
-### WorkbookEncryptionRequest
-
-| Parameter Name | Type    | Description                                                                                                   |
-| -------------- | ------- | ------------------------------------------------------------------------------------------------------------- |
-| EncryptionType | string  | Encryption algorithm (`XOR`, `Compatible`, `EnhancedCryptographicProviderV1`, `StrongCryptographicProvider`). |
-| KeyLength      | integer | Length of the encryption key in bits.                                                                         |
-| Password       | string  | Password used for decryption.                                                                                 |
 
 ## How to Use the Delete Decrypt Workbook API with SDKs?
 

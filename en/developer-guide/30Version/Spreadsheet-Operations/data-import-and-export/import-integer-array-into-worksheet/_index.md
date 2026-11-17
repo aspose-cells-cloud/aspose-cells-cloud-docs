@@ -13,6 +13,7 @@ description: "Import integer arrays into Excel worksheets via Aspose.Cells Cloud
 weight: 30
 ArticleTitle: "Import Integer Array into Excel Worksheet – Aspose.Cells Cloud API"
 ---
+
 The **PostImport** API (`POST https://api.aspose.cloud/v3.0/cells/import`) enables importing data, such as an integer array, into an Excel worksheet using Aspose.Cells Cloud, supporting output formats including XLSX, PDF, CSV, and others; it accepts an uploaded file via form data and optional query parameters to control output format, password protection, and Excel restrictions.
 
 The request must be an HTTP **POST** with multipart content (see [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). The first part of the multipart body contains the **ImportIntegerArrayOption** JSON payload, and the second part contains the source data file (e.g., a CSV or binary Excel file).
@@ -58,22 +59,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 ```
 
-**HTTP Status Codes**
-
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
-
-A successful request returns **HTTP 200** with a JSON payload similar to:
-
-
-Possible status codes:
-
 Both endpoints accept the same multipart payload. The first endpoint performs a generic import operation, while the second targets a specific workbook identified by `{name}`.
 
 ### ImportIntegerArrayOption
@@ -102,6 +87,17 @@ Both endpoints accept the same multipart payload. The first endpoint performs a 
   "ImportDataType": "IntArray"
 }
 ```
+
+**HTTP Status Codes**
+
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## How to Use the Post Import API with SDKs?
 

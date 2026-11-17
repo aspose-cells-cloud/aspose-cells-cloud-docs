@@ -14,6 +14,7 @@ url: /protect-excel-file/
 aliases: [/protect-excel-workbooks/, /workbook/protect/]
 keywords: "Aspose.Cells Cloud, protect Excel workbook, Excel password protection, WorkbookProtectionRequest, PostProtectDocument API, restrict Excel editing, structure protection, windows protection, contents protection, Aspose.Cells Cloud SDK"
 ---
+
 The **PostProtectWorkbook** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/protection`) enables developers to securely protect Excel workbooks by applying password-based or option-based protection via Aspose.Cells Cloud, supporting key operations such as restricting editing, structure, or window visibility as specified in the `protectWorkbookRequest` body.
 
 ### Security Notice
@@ -37,6 +38,19 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | protectWorkbookRequest | class:protectworkbookrequest | HTTPBody | The protection settings. |
 | folder | String | Query | The folder where the file is situated. |
 | storageName | String | Query | The storage name where the file is situated. |
+
+### Request Body Parameters
+
+| Parameter Name | Type                      | Description                                                   |
+| -------------- | ------------------------- | ------------------------------------------------------------- |
+| protection     | WorkbookProtectionRequest | Object that defines the protection settings for the workbook. |
+
+#### WorkbookProtectionRequest
+
+| Parameter Name | Type   | Description                                                                                                                                              |
+| -------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ProtectionType | string | Type of protection to apply. Allowed values (case‑insensitive): **ALL**, **CONTENTS**, **NONE**, **OBJECTS**, **SCENARIOS**, **STRUCTURE**, **WINDOWS**. |
+| Password       | string | Optional password to set for the protection.                                                                                                             |
 
 ### Response
 
@@ -70,18 +84,6 @@ Content-Type: application/json
 | 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
 | 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
-### Request Body Parameters
-
-| Parameter Name | Type                      | Description                                                   |
-| -------------- | ------------------------- | ------------------------------------------------------------- |
-| protection     | WorkbookProtectionRequest | Object that defines the protection settings for the workbook. |
-
-#### WorkbookProtectionRequest
-
-| Parameter Name | Type   | Description                                                                                                                                              |
-| -------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ProtectionType | string | Type of protection to apply. Allowed values (case‑insensitive): **ALL**, **CONTENTS**, **NONE**, **OBJECTS**, **SCENARIOS**, **STRUCTURE**, **WINDOWS**. |
-| Password       | string | Optional password to set for the protection.                                                                                                             |
 
 ## How to Use the Post Protect Workbook API with SDKs?
 
@@ -89,15 +91,7 @@ Content-Type: application/json
 
 The <a href="https://reference.aspose.cloud/cells/#/Protection/PostProtectWorkbook" rel="noopener noreferrer">Post Protect Workbook API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
-### Prerequisites
-
-Before calling the API, ensure you have completed the following steps:
-
-- **Obtain a JWT access token** using the <a href="/rest-api/auth/" rel="noopener noreferrer">authentication flow</a>.  
-- **Upload the workbook** to your Aspose Cloud storage or confirm it already exists in the target folder.  
-- **Know the storage name** (default is `"Default"` if not specified) and the exact file name you wish to protect.
-
-### Example: Protect a Workbook with cURL
+**Example: Protect a Workbook with cURL**
 
 1. Obtain an access token as described in **Prerequisites / Authentication**.  
 2. Execute the request:
@@ -114,7 +108,7 @@ Before calling the API, ensure you have completed the following steps:
 
 Using an SDK is the most efficient way to develop against Aspose.Cells Cloud. An SDK abstracts low‑level details, allowing you to focus on your business logic. See the <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">Aspose.Cells Cloud SDKs repository on GitHub</a> for a complete list of supported SDKs.
 
-### Sample Full Response
+**Sample Full Response**
 
 ```json
 {

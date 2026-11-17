@@ -12,6 +12,7 @@ keywords: "Aspose.Cells Cloud, digital signature, Excel workbook, REST API, .pfx
 description: "Sign Excel workbooks digitally using Aspose.Cells Cloud REST API with JWT auth, .pfx/.p12 files, and SDK examples"
 weight: 35
 ---
+
 The **PostDigitalSignature** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/digitalsignature`) enables users to apply a digital signature to an Excel workbook via Aspose.Cells Cloud, adding an electronic, encrypted stamp of authentication to verify the file's integrity and origin. The operation requires the workbook name (`name`), the digital signature file path (`digitalsignaturefile`), and the workbook's password (`password`), and supports optional folder and storage parameters for flexible file management. Aspose.Cells Cloud handles this task through a RESTful interface, allowing programmatic signing of Excel files across 30+ supported formats.
 
 This REST API adds a **digital signature** to an Excel workbook.
@@ -51,6 +52,15 @@ _Note: If the file name contains special characters, URL‑encode it before addi
   }
 ]
 ```
+**Response Schema**  
+The API returns a JSON object with the following fields:
+
+| Field         | Type   | Description                                             |
+| ------------- | ------ | ------------------------------------------------------- |
+| `Code`        | int    | HTTP‑like status code indicating the result.            |
+| `Status`      | string | Short text describing the outcome (e.g., `OK`).         |
+| `SignatureId` | string | Identifier of the applied digital signature (optional). |
+| `Message`     | string | Additional information or error details (optional).     |
 
 **Sample response headers**
 
@@ -59,24 +69,16 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 ```
 
-### Error Handling
+**HTTP Status Codes**
 
-| HTTP Status | Meaning                                                |
-| ----------- | ------------------------------------------------------ |
-| 200         | Signature applied successfully.                        |
-| 400         | Bad request – missing or invalid parameters.           |
-| 401         | Unauthorized – invalid or expired OAuth token.         |
-| 403         | Forbidden – insufficient permissions or access denied. |
-| 500         | Internal server error – unexpected failure.            |
-
-### Https status Error Responses
-
-| HTTP Status | Code                | Description                                               |
-| ----------- | ------------------- | --------------------------------------------------------- |
-| 400         | BadRequest          | Missing or invalid parameters.                            |
-| 401         | Unauthorized        | Invalid or missing access token.                          |
-| 404         | NotFound            | Specified workbook not found in the given folder/storage. |
-| 500         | InternalServerError | Unexpected server error.                                  |
+| Code | Meaning | Description |
+|---|---|---|
+| 200 | OK | The request completed successfully. |
+| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
+| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
+| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
+| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
+| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## How to Use the Post Digital Signature API with SDKs?
 
@@ -113,15 +115,6 @@ curl -v "https://api.aspose.cloud/v4.0/cells/{name}/digitalsignature?digitalsign
 
 {{< /tabs >}}
 
-**Response Schema**  
-The API returns a JSON object with the following fields:
-
-| Field         | Type   | Description                                             |
-| ------------- | ------ | ------------------------------------------------------- |
-| `Code`        | int    | HTTP‑like status code indicating the result.            |
-| `Status`      | string | Short text describing the outcome (e.g., `OK`).         |
-| `SignatureId` | string | Identifier of the applied digital signature (optional). |
-| `Message`     | string | Additional information or error details (optional).     |
 
 Using an SDK simplifies integration and reduces boiler‑plate code. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

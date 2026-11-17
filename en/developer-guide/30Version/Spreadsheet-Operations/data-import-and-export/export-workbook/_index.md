@@ -10,6 +10,7 @@ description: "Export Excel workbooks to PDF, CSV, images, and more via Aspose.Ce
 weight: 100
 ArticleTitle: "Export Excel Workbook to Multiple Formats with Aspose.Cells Cloud"
 ---
+
 The **PostExport** API (`POST https://api.aspose.cloud/v3.0/cells/export`) enables exporting Excel workbooks or internal elements—such as worksheets, charts, or pictures—to 30+ formats including XLS, XLSX, PDF, CSV, HTML, PNG, and JPEG via Aspose.Cells Cloud. Developers upload a file via form data and specify the target format and optional export scope using query parameters, allowing flexible conversion of spreadsheet content without local dependencies.
 
 ## The Post Export Web API

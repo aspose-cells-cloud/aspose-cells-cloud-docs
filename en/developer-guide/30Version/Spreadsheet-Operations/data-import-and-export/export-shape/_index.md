@@ -10,6 +10,7 @@ description: "Export Excel shapes to PNG, GIF, JPEG, BMP, SVG, TIFF, EMF, and WM
 weight: 100
 ArticleTitle: "Export Shapes – Aspose.Cells Cloud"
 ---
+
 The **PostExport** API (`POST https://api.aspose.cloud/v3.0/cells/export`) enables exporting Excel internal elements—such as shapes, charts, or entire workbooks—to diverse formats like PDF, PNG, HTML, or CSV. Using Aspose.Cells Cloud, developers can programmatically convert specific sheet components without manual intervention, supporting 30+ output formats and including optional parameters for password protection, regional settings, and font customization. To use the API, upload the source Excel file via the required `File` form-data field and specify the target `objectType` (e.g., `shape`) and `format` in the query string.
 
 You can export shapes to the following formats: **PNG**, **GIF**, **JPEG**, **BMP**, **SVG**, **TIFF**, **EMF**, **WMF**.
@@ -70,16 +71,6 @@ Content-Type: application/json
 
 _Typical Base64‑encoded file payloads range from a few hundred bytes to several megabytes, depending on image dimensions and format._
 
-### **Request Example**
-
-```bash
-curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=shape&format=tiff" \
-     -H "accept: multipart/form-data" \
-     -H "Content-Type: multipart/form-data" \
-     -H "Authorization: Bearer <your_access_token>" \
-     -H "x-aspose-client: Containerize.Swagger" \
-     -d '{"File":{}}'
-```
 
 ## How to Use the Post Export API with SDKs?
 
@@ -94,7 +85,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=shape&format
      -H "accept: multipart/form-data" \
      -H "Content-Type: multipart/form-data" \
      -H "Authorization: Bearer <your_access_token>" \
-     -H "x-aspose-client: Containerize.Swagger" \
+     -H "x-aspose-client: Aspose.Cells Cloud SDK" \
      -d '{"File":{}}'
 ```
 
