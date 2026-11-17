@@ -10,6 +10,7 @@ description: "Replace text in Excel worksheets using Aspose.Cells Cloud REST API
 ArticleTitle: "Replace Text in an Excel Worksheet – Aspose.Cells Cloud API"
 weight: 70
 ---
+
 The **PostWorksheetTextReplace** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/replaceText`) enables developers to replace all occurrences of specified old text with new text in a named worksheet of an Excel file stored in the cloud, using Aspose.Cells Cloud’s robust text-replacement functionality; it requires the file name, worksheet name, and both `oldValue` and `newValue` query parameters, and optionally supports `folder` and `storageName` for flexible file handling across cloud storage systems.
 
 ## The Post Worksheet Text Replace Web API
@@ -24,14 +25,14 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | Worksheet name. |
-| oldValue | String | Query | The old text to replace. |
-| newValue | String | Query | The new text to replace by. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------ | -------------------------- | -------------------------------------------- |
+| name           | String | Path                       | The file name.                               |
+| sheetName      | String | Path                       | Worksheet name.                              |
+| oldValue       | String | Query                      | The old text to replace.                     |
+| newValue       | String | Query                      | The new text to replace by.                  |
+| folder         | String | Query                      | The folder where the file is situated.       |
+| storageName    | String | Query                      | The storage name where the file is situated. |
 
 ### Response
 
@@ -56,13 +57,13 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## How to Use the Post Worksheet Text Replace API with SDKs?
 

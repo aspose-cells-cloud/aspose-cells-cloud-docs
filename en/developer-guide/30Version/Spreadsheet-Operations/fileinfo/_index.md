@@ -38,9 +38,3 @@ The response is returned as JSON with the same three properties shown in the tab
 | 500       | Internal Server Error   | Unexpected server‑side failure.          |
 
 For each error, ensure the authentication token is valid (401), verify the file path (404), or consult the generic error‑handling guide for retry strategies (500).
-
-## See Also
-
-- [Get Workbook](https://docs.aspose.cloud/cells/get-workbook) – retrieve a workbook object and its worksheets.
-- [Download File](https://docs.aspose.cloud/cells/download-file) – download raw file bytes without Base64 encoding.
-- [Authentication Overview](https://docs.aspose.cloud/cells/authentication) – how to obtain and use access tokens.

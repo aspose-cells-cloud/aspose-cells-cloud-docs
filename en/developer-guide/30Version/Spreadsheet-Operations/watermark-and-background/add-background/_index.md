@@ -13,6 +13,7 @@ description: "Add background image to Excel workbook via Aspose.Cells Cloud API 
 weight: 160
 ArticleTitle: "Add Background Image to Excel Workbook Using Aspose.Cells Cloud API"
 ---
+
 The **PutWorkbookBackground** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}/background`) enables developers to set a background image for an Excel workbook using Aspose.Cells Cloud, supporting both local file upload via form data and remote image references via the `picPath` query parameter; this operation simplifies adding consistent visual branding or watermarks across all worksheets in a workbook through a single REST call.
 
 ## The Put Workbook Background Web API
@@ -27,14 +28,14 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Query Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| picPath | String | Query | The picture full path. |
-| imageAdaptOption | String | Query | - |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
-| File | File | FormData | File to upload |
+| Parameter Name   | Type   | Path/Query String/HTTPBody | Description                                  |
+| ---------------- | ------ | -------------------------- | -------------------------------------------- |
+| name             | String | Path                       | The file name.                               |
+| picPath          | String | Query                      | The picture full path.                       |
+| imageAdaptOption | String | Query                      | -                                            |
+| folder           | String | Query                      | The folder where the file is situated.       |
+| storageName      | String | Query                      | The storage name where the file is situated. |
+| File             | File   | FormData                   | File to upload                               |
 
 ### Response
 
@@ -59,14 +60,14 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                        |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 This REST API adds a **background image** to an Excel workbook.
 

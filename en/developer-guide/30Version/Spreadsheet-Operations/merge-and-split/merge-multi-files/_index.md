@@ -10,6 +10,7 @@ description: "Learn how to merge multiple Excel workbooks into one file using th
 weight: 32
 ArticleTitle: "Merge Multiple Excel Files into One Workbook with Aspose.Cells Cloud REST API"
 ---
+
 The **PostMerge** API (`POST https://api.aspose.cloud/v3.0/cells/merge`) enables developers to merge multiple Excel files into a single workbook using Aspose.Cells Cloud, supporting formats such as XLSX, PDF, and others via optional query parameters like `outFormat` and `mergeToOneSheet`.
 
 ## The Post Merge Web API
@@ -24,14 +25,14 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| File | File | FormData | File to upload |
-| outFormat | String | Query | The output data file format.(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers) |
-| mergeToOneSheet | Boolean | Query | Merge all workbooks into a sheet. |
-| password | String | Query | The password needed to open an Excel file. |
-| checkExcelRestriction | Boolean | Query | Whether check restriction of excel file when user modify cells related objects. |
-| region | String | Query | The regional settings for workbook. |
+| Parameter Name        | Type    | Path/Query String/HTTPBody | Description                                                                                                                                      |
+| --------------------- | ------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| File                  | File    | FormData                   | File to upload                                                                                                                                   |
+| outFormat             | String  | Query                      | The output data file format.(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers) |
+| mergeToOneSheet       | Boolean | Query                      | Merge all workbooks into a sheet.                                                                                                                |
+| password              | String  | Query                      | The password needed to open an Excel file.                                                                                                       |
+| checkExcelRestriction | Boolean | Query                      | Whether check restriction of excel file when user modify cells related objects.                                                                  |
+| region                | String  | Query                      | The regional settings for workbook.                                                                                                              |
 
 ### Response
 
@@ -56,14 +57,14 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                        |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 This REST API merges multiple Excel files into a single Excel workbook.
 

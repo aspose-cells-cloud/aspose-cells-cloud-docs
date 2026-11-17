@@ -13,6 +13,7 @@ description: "Delete background image from Excel workbook using Aspose.Cells Clo
 weight: 170
 ArticleTitle: "Delete Background Image from Excel Workbook using Aspose.Cells Cloud API"
 ---
+
 The **DeleteWorkbookBackground** API (`DELETE https://api.aspose.cloud/v3.0/cells/{name}/background`) enables developers to remove the background image from an Excel workbook using Aspose.Cells Cloud, a robust cloud-based solution for spreadsheet operations. The API requires only the workbook filename as a path parameter, with optional `folder` and `storageName` query parameters for specifying location and storage, and returns a `CellsCloudResponse` confirming successful deletion.
 
 ## The Delete Workbook Background Web API
@@ -27,11 +28,11 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Query Parameters**
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------ | -------------------------- | -------------------------------------------- |
+| name           | String | Path                       | The file name.                               |
+| folder         | String | Query                      | The folder where the file is situated.       |
+| storageName    | String | Query                      | The storage name where the file is situated. |
 
 ### Response
 
@@ -56,13 +57,13 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## How to Use the Delete Workbook Background API with SDKs?
 

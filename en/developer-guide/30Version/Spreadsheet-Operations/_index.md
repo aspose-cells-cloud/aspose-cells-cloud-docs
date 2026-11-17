@@ -12,8 +12,6 @@ linktitle: "Spreadsheet Operations Guide"
 
 Spreadsheet Operations provides a concise guide to the most common actions you can perform on Excel workbooks with **Aspose.Cells Cloud** (v3.0). Whether you need to auto‑fit columns, batch‑process files, protect worksheets, or manipulate text, the REST API offers dedicated endpoints that work across languages like Python, C#, and Java. The list below links to the detailed documentation for each operation and includes a brief usage note to help you get started quickly.
 
-**Prerequisites**: To call these endpoints you must have a valid Aspose.Cells Cloud API key and include the `Authorization` header (`Bearer <access-token>`). The examples assume API version v3.0.
-
 - **[Auto Fitter Options](/cells/auto-fitter-options/)** – Automatically adjusts column widths and row heights. `POST /cells/{file}/worksheets/{sheet}/autoFitColumns`
 
   ```http

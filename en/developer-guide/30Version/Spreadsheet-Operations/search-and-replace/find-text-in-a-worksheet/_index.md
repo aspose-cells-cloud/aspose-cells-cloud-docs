@@ -10,6 +10,7 @@ keywords: "Excel, Aspose.Cells Cloud, REST API, find text, worksheet, spreadshee
 description: "Find text in an Excel worksheet using Aspose.Cells Cloud REST API: POST /cells/{name}/worksheets/{sheetName}/findText"
 ArticleTitle: "Find Text in Excel Worksheet using Aspose.Cells Cloud REST API"
 ---
+
 The **PostWorksheetTextSearch** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/findText`) enables developers to search for specific text within a designated Excel worksheet using Aspose.Cells Cloud, accepting required path parameters `name` and `sheetName`, and a required query parameter `text` specifying the search term; the operation supports optional `folder` and `storageName` parameters for flexible file handling, and returns structured results via the `TextItemsResponse` format.
 
 ## The Post Worksheet Text Search Web API
@@ -24,13 +25,13 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| sheetName | String | Path | The worksheet name. |
-| text | String | Query | Text to search. |
-| folder | String | Query | Original workbook folder. |
-| storageName | String | Query | Storage name. |
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description               |
+| -------------- | ------ | -------------------------- | ------------------------- |
+| name           | String | Path                       | The file name.            |
+| sheetName      | String | Path                       | The worksheet name.       |
+| text           | String | Query                      | Text to search.           |
+| folder         | String | Query                      | Original workbook folder. |
+| storageName    | String | Query                      | Storage name.             |
 
 ### Response
 
@@ -55,13 +56,13 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## How to Use the Post Worksheet Text Search API with SDKs?
 

@@ -15,6 +15,7 @@ description: "Retrieve all defined names from an Excel workbook using Aspose.Cel
 weight: 120
 ArticleTitle: "Get Names from an Excel Workbook – Aspose.Cells Cloud API"
 ---
+
 The **GetWorkbookNames** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/names`) retrieves named ranges (defined names) from an Excel workbook stored in cloud storage, enabling developers to programmatically access workbook-level references such as named cells, ranges, or formulas. Aspose.Cells Cloud supports this operation via a simple RESTful interface, allowing integration with applications written in .NET, Java, Go, Node.js, Python, and other languages through dedicated SDKs.
 
 ## The Get Workbook Names Web API
@@ -29,11 +30,11 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------ | -------------------------- | -------------------------------------------- |
+| name           | String | Path                       | The file name.                               |
+| folder         | String | Query                      | The folder where the file is situated.       |
+| storageName    | String | Query                      | The storage name where the file is situated. |
 
 ### Response
 
@@ -58,33 +59,19 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
-The request parameters are:
+## How to Use the Get Workbook Names API with SDKs?
 
-| Parameter Name | Type   | Location | Description                            |
-| -------------- | ------ | -------- | -------------------------------------- |
-| name           | string | path     | The workbook file name.                |
-| folder         | string | query    | The folder that contains the workbook. |
-| storageName    | string | query    | The name of the storage to use.        |
+### Get Workbook Names API Specification
 
-The request must include the following HTTP headers:
-
-| Header        | Type   | Description                                   |
-| ------------- | ------ | --------------------------------------------- |
-| Authorization | string | Bearer JWT token (required)                   |
-| Accept        | string | `application/json`                            |
-| Content-Type  | string | `application/json` (for requests with a body) |
-
-**Authentication** – The API requires an OAuth2/JWT bearer token. Obtain a token from `https://api.aspose.cloud/connect/token` using your client‑id and client‑secret, then include the header `Authorization: Bearer <jwt token>` in every request.
-
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkbookNames) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The <a href="https://reference.aspose.cloud/cells/#/Workbook/GetWorkbookNames" rel="noopener noreferrer">Get Workbook Names API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services. The example below demonstrates how to call the Aspose.Cells Cloud API with cURL.
 
@@ -129,25 +116,14 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/names" \
 }
 ```
 
-_Response fields_
-
 - **Status** _(string)_ – Operation status message.
 - **Names.link** _(object)_ – Hyperlink information for the collection.
 - **Names.Count** _(integer)_ – Total number of defined names returned.
 - **Names.NameList** _(array)_ – List of name objects; each object contains a **link** object with navigation details.
 
-**Error handling** – The service may return the following HTTP status codes:
-
-
 {{< /tab >}}
 
 {{< /tabs >}}
-
-## How to Use the Get Workbook Names API with SDKs?
-
-### Get Workbook Names API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Workbook/GetWorkbookNames" rel="noopener noreferrer">Get Workbook Names API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

@@ -10,6 +10,7 @@ description: "Split Excel workbooks into multiple files using Aspose.Cells Cloud
 weight: 32
 ArticleTitle: "Split an Excel file into multiple files - Aspose.Cells Cloud Documentation"
 ---
+
 The **PostSplit** API (`POST https://api.aspose.cloud/v3.0/cells/split`) enables developers to split multi-sheet Excel workbooks into separate files using Aspose.Cells Cloud, supporting output formats including CSV, XLSX, PDF, PNG, and others by processing each worksheet or a specified range of sheets as an individual file.
 
 ## The Post Split Web API
@@ -24,15 +25,15 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| File | File | FormData | File to upload |
-| outFormat | String | Query | The output data file format.(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers) |
-| password | String | Query | The password needed to open an Excel file. |
-| from | Integer | Query | sheet index |
-| to | Integer | Query | sheet index |
-| checkExcelRestriction | Boolean | Query | Whether check restriction of excel file when user modify cells related objects. |
-| region | String | Query | The regional settings for workbook. |
+| Parameter Name        | Type    | Path/Query String/HTTPBody | Description                                                                                                                                      |
+| --------------------- | ------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| File                  | File    | FormData                   | File to upload                                                                                                                                   |
+| outFormat             | String  | Query                      | The output data file format.(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers) |
+| password              | String  | Query                      | The password needed to open an Excel file.                                                                                                       |
+| from                  | Integer | Query                      | sheet index                                                                                                                                      |
+| to                    | Integer | Query                      | sheet index                                                                                                                                      |
+| checkExcelRestriction | Boolean | Query                      | Whether check restriction of excel file when user modify cells related objects.                                                                  |
+| region                | String  | Query                      | The regional settings for workbook.                                                                                                              |
 
 ### Response
 
@@ -57,14 +58,14 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                        |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## How to Use the Post Split API with SDKs?
 

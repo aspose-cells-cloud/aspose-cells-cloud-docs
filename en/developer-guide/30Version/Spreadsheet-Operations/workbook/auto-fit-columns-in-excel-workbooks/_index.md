@@ -16,6 +16,7 @@ description: "Use Aspose.Cells Cloud REST API to auto-fit Excel column widths wi
 weight: 90
 ArticleTitle: "Auto-fit Columns in Excel with Aspose.Cells Cloud REST API"
 ---
+
 The **PostAutofitWorkbookColumns** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/autofitcolumns`) enables programmatic auto-fitting of columns in an Excel workbook stored in the cloud, supporting optional start and end column indices via query parameters to limit the operation to a specific range; Aspose.Cells Cloud handles the complex layout calculations required to adjust column widths based on content, ensuring consistent formatting without manual intervention.
 
 ## The Post Autofit Workbook Columns Web API
@@ -30,13 +31,13 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | - |
-| startColumn | Integer | Query | The start column index. |
-| endColumn | Integer | Query | The end column index. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------- | -------------------------- | -------------------------------------------- |
+| name           | String  | Path                       | -                                            |
+| startColumn    | Integer | Query                      | The start column index.                      |
+| endColumn      | Integer | Query                      | The end column index.                        |
+| folder         | String  | Query                      | The folder where the file is situated.       |
+| storageName    | String  | Query                      | The storage name where the file is situated. |
 
 ### Response
 
@@ -61,27 +62,19 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
-The request parameters are:
+## How to Use the Post Autofit Workbook Columns API with SDKs?
 
-| Parameter Name        | Type    | Location | Description                                       |
-| --------------------- | ------- | -------- | ------------------------------------------------- |
-| **name**              | string  | path     | The name of the workbook file.                    |
-| **autoFitterOptions** | object  | body     | Options that control the auto‑fit behavior.       |
-| **startColumn**       | integer | query    | Zero‑based index of the first column to auto‑fit. |
-| **endColumn**         | integer | query    | Zero‑based index of the last column to auto‑fit.  |
-| **folder**            | string  | query    | The folder that contains the workbook.            |
-| **storageName**       | string  | query    | The name of the storage service.                  |
+### Post Autofit Workbook Columns API Specification
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostAutofitWorkbookColumns){:rel="noopener noreferrer"} defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
-
+The <a href="https://reference.aspose.cloud/cells/#/Workbook/PostAutofitWorkbookColumns" rel="noopener noreferrer">Post Autofit Workbook Columns API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 You can use the cURL command‑line tool to easily access Aspose.Cells web services. The following example shows how to call the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
@@ -113,26 +106,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/autofitcolumns" \
 {{< /tab >}}
 
 {{< /tabs >}}
-
-### Prerequisites
-
-Before calling this operation, ensure that you have a valid Aspose Cloud API key, a generated JWT token, and that the target workbook already exists in the specified storage location.
-
-
-The API can return the following HTTP status codes:
-
-| Code | Description                                 |
-| ---- | ------------------------------------------- |
-| 200  | Success – columns auto‑fitted               |
-| 400  | Bad request – missing or invalid parameters |
-| 401  | Unauthorized – invalid or expired JWT       |
-| 500  | Server error – internal processing failure  |
-
-## How to Use the Post Autofit Workbook Columns API with SDKs?
-
-### Post Autofit Workbook Columns API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Workbook/PostAutofitWorkbookColumns" rel="noopener noreferrer">Post Autofit Workbook Columns API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 Using an SDK is the most efficient way to accelerate development. An SDK handles low‑level details so you can focus on your project logic. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud){:rel="noopener noreferrer"} for a complete list of Aspose.Cells Cloud SDKs.
 

@@ -10,6 +10,7 @@ keywords: "Aspose.Cells, Cloud API, Excel, worksheet, text items, REST"
 description: "Retrieve text items from an Excel worksheet using Aspose.Cells Cloud REST API with cURL or SDKs."
 ArticleTitle: "Get Text Items from an Excel Worksheet"
 ---
+
 The **GetWorksheetTextItems** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/textItems`) retrieves text items from a specified worksheet in an Excel workbook stored in Aspose.Cells Cloud, supporting search and replace workflows by exposing structured text data for programmatic analysis or modification; it requires the workbook name and worksheet name as path parameters, and optionally accepts folder and storageName query parameters to locate the file.
 
 ## The Get Worksheet Text Items Web API
@@ -24,12 +25,12 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | Workbook name. |
-| sheetName | String | Path | The worksheet name. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------ | -------------------------- | -------------------------------------------- |
+| name           | String | Path                       | Workbook name.                               |
+| sheetName      | String | Path                       | The worksheet name.                          |
+| folder         | String | Query                      | The folder where the file is situated.       |
+| storageName    | String | Query                      | The storage name where the file is situated. |
 
 ### Response
 
@@ -54,13 +55,13 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 This REST API reads a worksheet’s text items in an Excel file.
 

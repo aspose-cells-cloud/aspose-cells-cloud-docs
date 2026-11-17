@@ -10,6 +10,7 @@ weight: 100
 keywords: "Excel, Aspose.Cells Cloud, REST API, Spreadsheet, Get Text Items, Workbook"
 description: "Retrieve text items from an Excel workbook using the Aspose.Cells Cloud REST API. Available through SDKs for C#, Java, Python, PHP, Ruby, Go, Node.js, Perl, and Swift."
 ---
+
 The **GetWorkbookTextItems** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/textItems`) retrieves text items from a specified Excel workbook stored in cloud storage, enabling developers to programmatically extract all text content—including cells, comments, headers, footers, and shapes—for search, analysis, or replacement workflows. Aspose.Cells Cloud supports this operation with robust parsing and structured output in the `TextItemsResponse` format, allowing precise identification of text elements across worksheets without manual intervention.
 
 ## The Get Workbook Text Items Web API
@@ -24,11 +25,11 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------ | -------------------------- | -------------------------------------------- |
+| name           | String | Path                       | The file name.                               |
+| folder         | String | Query                      | The folder where the file is situated.       |
+| storageName    | String | Query                      | The storage name where the file is situated. |
 
 ### Response
 
@@ -53,13 +54,13 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 This REST API reads a workbook’s **text items** in an Excel file.
 
@@ -111,18 +112,6 @@ curl -X GET "https://api.aspose.cloud/v3.0/cells/test.xlsx/textItems" -H "accept
 {{< /tab >}}
 
 {{< /tabs >}}
-
-Typical HTTP response codes:
-
-| Code | Description                                 |
-| ---- | ------------------------------------------- |
-| 200  | Request succeeded; text items are returned. |
-| 401  | Unauthorized – missing or invalid token.    |
-| 403  | Forbidden – insufficient permissions.       |
-| 404  | Not Found – workbook or resource not found. |
-| 500  | Internal Server Error – unexpected failure. |
-
-This example uses API version **v3.0**; refer to the changelog for newer versions. Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 ### Use Aspose.Cells Cloud SDKs
 

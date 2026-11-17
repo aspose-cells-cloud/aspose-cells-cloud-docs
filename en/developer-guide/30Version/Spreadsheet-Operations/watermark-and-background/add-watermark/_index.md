@@ -10,6 +10,7 @@ description: "Add text watermarks to Excel files using Aspose.Cells Cloud REST A
 weight: 39
 ArticleTitle: "Add Watermark to Excel Files – Aspose.Cells Cloud Documentation"
 ---
+
 The **PostWatermark** API (`POST https://api.aspose.cloud/v3.0/cells/watermark`) enables users to add a text watermark to Excel files via Aspose.Cells Cloud, requiring the uploaded file, the watermark text, and color (e.g., `#1032ff`) as mandatory parameters, while supporting optional output formats such as PDF, XLSX, or PNG.
 
 **Background:** A watermark is a semi‑transparent text overlay applied to each worksheet to indicate ownership or confidentiality.
@@ -26,15 +27,15 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| File | File | FormData | File to upload |
-| text | String | Query | background text. |
-| color | String | Query | e.g. #1032ff |
-| outFormat | String | Query | The output data file format.(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers) |
-| password | String | Query | The password needed to open an Excel file. |
-| checkExcelRestriction | Boolean | Query | Whether check restriction of excel file when user modify cells related objects. |
-| region | String | Query | The regional settings for workbook. |
+| Parameter Name        | Type    | Path/Query String/HTTPBody | Description                                                                                                                                      |
+| --------------------- | ------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| File                  | File    | FormData                   | File to upload                                                                                                                                   |
+| text                  | String  | Query                      | background text.                                                                                                                                 |
+| color                 | String  | Query                      | e.g. #1032ff                                                                                                                                     |
+| outFormat             | String  | Query                      | The output data file format.(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers) |
+| password              | String  | Query                      | The password needed to open an Excel file.                                                                                                       |
+| checkExcelRestriction | Boolean | Query                      | Whether check restriction of excel file when user modify cells related objects.                                                                  |
+| region                | String  | Query                      | The regional settings for workbook.                                                                                                              |
 
 ### Response
 
@@ -59,14 +60,14 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                        |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 The JSON response contains a **Files** array. For each file object:
 

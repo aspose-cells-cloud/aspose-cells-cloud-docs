@@ -10,6 +10,7 @@ description: "Merge Excel workbooks using Aspose.Cells Cloud API with JWT auth a
 ArticleTitle: "Merge an Excel Workbook into Another Workbook using Aspose.Cells Cloud API"
 weight: 50
 ---
+
 The **PostWorkbooksMerge** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/merge`) enables developers to programmatically merge a secondary Excel workbook into an existing workbook stored in the cloud using Aspose.Cells Cloud, supporting operations like combining multiple workbooks into a single file while preserving formatting and structure.
 
 ## The Post Workbooks Merge Web API
@@ -24,13 +25,13 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Query Parameter**
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| mergeWith | String | Query | The workbook to merge with. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
-| mergedStorageName | String | Query | Storage name. |
+| Parameter Name    | Type   | Path/Query String/HTTPBody | Description                                  |
+| ----------------- | ------ | -------------------------- | -------------------------------------------- |
+| name              | String | Path                       | The file name.                               |
+| mergeWith         | String | Query                      | The workbook to merge with.                  |
+| folder            | String | Query                      | The folder where the file is situated.       |
+| storageName       | String | Query                      | The storage name where the file is situated. |
+| mergedStorageName | String | Query                      | Storage name.                                |
 
 ### Response
 
@@ -55,13 +56,13 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 This REST API merges an Excel **workbook** into another workbook.
 

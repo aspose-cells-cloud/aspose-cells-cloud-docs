@@ -9,6 +9,7 @@ description: "Use Aspose.Cells Cloud PostTrimContent API to remove extra spaces 
 weight: 100
 ArticleTitle: "Aspose.Cells Cloud PostTrimContent API: Trim Excel Cell Content"
 ---
+
 The **PostTrimContent** API (`POST https://api.aspose.cloud/v3.0/cells/trimcontent`) in Aspose.Cells Cloud processes and trims content within a specified range in a spreadsheet by removing extra spaces, line breaks, and other unnecessary characters from selected cells—helping clean data entries and ensure consistent formatting while preserving data integrity.
 
 ## The Post Trim Content Web API
@@ -23,9 +24,9 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| trimContentOptions | class:trimcontentoptions | HTTPBody | - |
+| Parameter Name     | Type                     | Path/Query String/HTTPBody | Description |
+| ------------------ | ------------------------ | -------------------------- | ----------- |
+| trimContentOptions | class:trimcontentoptions | HTTPBody                   | -           |
 
 ### Response
 
@@ -50,14 +51,14 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                        |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 The **PostTrimContent** API processes and trims content within a specified range in a spreadsheet. It removes extra spaces, line breaks, and other unnecessary characters from the content of selected cells, making it useful for cleaning data entries and ensuring consistent spreadsheet formatting.
 
@@ -73,8 +74,6 @@ The **PostTrimContent** API processes and trims content within a specified range
 ### Post Trim Content API Specification
 
 The <a href="https://reference.aspose.cloud/cells/#/TextProcessing/PostTrimContent" rel="noopener noreferrer">Post Trim Content API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
-
-_Last updated: 2026-03-30_
 
 ### Use Aspose.Cells Cloud SDKs
 

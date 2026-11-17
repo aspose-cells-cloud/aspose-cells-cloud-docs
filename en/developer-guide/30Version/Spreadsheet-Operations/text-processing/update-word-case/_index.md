@@ -9,11 +9,8 @@ description: "PostUpdateWordCase API converts text case in Excel, CSV, Google Sh
 weight: 100
 ArticleTitle: "Aspose.Cells – Update Word Case API Documentation"
 ---
-The **PostUpdateWordCase** API (`POST https://api.aspose.cloud/v3.0/cells/updatewordcase`) in Aspose.Cells Cloud automates text-case conversions across Excel, Google Sheets, and CSV files, enabling consistent formatting of large datasets by applying rules such as uppercase, lowercase, title case, or sentence case to specified text ranges.
 
-**API version:** 3.0
-
-Managing inconsistent text case in spreadsheets (Excel, Google Sheets, CSV) can be frustrating, especially with large datasets. The **PostUpdateWordCase web API** automates text‑case conversions, ensuring clean and standardized data with minimal effort.
+The **PostUpdateWordCase** API (`POST https://api.aspose.cloud/v3.0/cells/updatewordcase`) in Aspose.Cells Cloud automates text-case conversions to address the common issue of inconsistent text case in spreadsheets, which can significantly impact data analysis and processing, and works with a wide range of formats including Excel, Google Sheets, OpenOffice, JSON, CSV, and others, applying rules such as uppercase-to-lowercase, lowercase-to-uppercase, capitalize-first-letter, and title case (where the first letter of each major word is capitalized) to specified text ranges, so that large datasets can be cleaned, standardized, and made ready for further manipulation or analysis with minimal effort.
 
 ## The Post Update Word Case Web API
 
@@ -27,9 +24,9 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| wordCaseOptions | class:wordcaseoptions | HTTPBody | - |
+| Parameter Name  | Type                  | Path/Query String/HTTPBody | Description |
+| --------------- | --------------------- | -------------------------- | ----------- |
+| wordCaseOptions | class:wordcaseoptions | HTTPBody                   | -           |
 
 **`wordCaseOptions` schema**
 
@@ -78,30 +75,18 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                        |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 - **Filename** – Name of the processed file.
 - **FileSize** – Size of the file in bytes.
 - **FileContent** – Base‑64 encoded content of the transformed file.
-
-### **Function Description**
-
-The PostUpdateWordCase web API addresses the common issue of inconsistent text case in spreadsheets, which can significantly impact data analysis and processing. This API automates case conversion, ensuring that your data is clean, standardized, and ready for further manipulation or analysis.
-
-- **Automated Text‑Case Conversion**
-  - **Uppercase to Lowercase** – Convert all uppercase letters to lowercase.
-  - **Lowercase to Uppercase** – Convert all lowercase letters to uppercase.
-  - **Capitalize First Letter** – Capitalize the first letter of each word.
-  - **Title Case** – Convert text to title case, where the first letter of each major word is capitalized.
-
-- **Support for Multiple Formats** – The API works with a wide range of spreadsheet formats, including Excel, OpenOffice, JSON, CSV, and others. This versatility makes it suitable for various data‑processing needs.
 
 ## How to Use the Post Update Word Case API with SDKs?
 

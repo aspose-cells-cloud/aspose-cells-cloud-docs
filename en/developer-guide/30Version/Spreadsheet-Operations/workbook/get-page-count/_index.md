@@ -11,6 +11,7 @@ weight: 100
 version: "v3.0"
 ArticleTitle: "Get Page Count from an Excel File using Aspose.Cells Cloud API"
 ---
+
 The **GetPageCount** API (`GET https://api.aspose.cloud/v3.0/cells/{name}/pagecount`) enables developers to retrieve the total number of pages in an Excel workbook stored in the cloud, supporting scenarios like pagination planning or document analysis; it accepts the workbook’s filename as a required path parameter, with optional `folder` and `storageName` query parameters to specify location and storage, and returns an integer count reflecting the workbook’s printed page layout.
 
 ## The Get Page Count Web API
@@ -25,13 +26,47 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------ | -------------------------- | -------------------------------------------- |
+| name           | String | Path                       | The file name.                               |
+| folder         | String | Query                      | The folder where the file is situated.       |
+| storageName    | String | Query                      | The storage name where the file is situated. |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/GetPageCount) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+### Response
+
+```json
+[
+  {
+    "Name": "Int32",
+    "DataType": {
+      "Identifier": "Integer"
+    }
+  }
+]
+```
+
+**Sample response headers**
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
+
+## How to Use the Get Page Count API with SDKs?
+
+### Get Page Count API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Workbook/GetPageCount" rel="noopener noreferrer">Get Page Count API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells REST API easily. The following example shows how to call the endpoint with cURL.
 
@@ -60,56 +95,6 @@ _Replace `YourFile.xlsx` with the actual name of the workbook you want to query.
 {{< /tab >}}
 
 {{< /tabs >}}
-
-### Response
-
-```json
-[
-  {
-    "Name": "Int32",
-    "DataType": {
-      "Identifier": "Integer"
-    }
-  }
-]
-```
-
-**Sample response headers**
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-```
-
-**HTTP Status Codes**
-
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
-
-| HTTP Status | Data Type | Description                                                       |
-| ----------- | --------- | ----------------------------------------------------------------- |
-| 200         | integer   | The total number of printable pages in the workbook (e.g., `13`). |
-| 4xx‑5xx     | JSON      | Error object (see _Error Handling_ section).                      |
-
-## Error Handling
-
-| HTTP Status | Description                                | Example JSON Body                                                                            |
-| ----------- | ------------------------------------------ | -------------------------------------------------------------------------------------------- |
-| 401         | Invalid or missing JWT token.              | `{ "Code": "InvalidAuthenticationToken", "Message": "Access token is missing or invalid." }` |
-| 404         | The specified workbook could not be found. | `{ "Code": "FileNotFound", "Message": "The requested file does not exist." }`                |
-| 400         | Bad request – missing required parameters. | `{ "Code": "BadRequest", "Message": "Required parameter 'name' is missing." }`               |
-| 500         | Internal server error.                     | `{ "Code": "InternalError", "Message": "An unexpected error occurred." }`                    |
-
-## How to Use the Get Page Count API with SDKs?
-
-### Get Page Count API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Workbook/GetPageCount" rel="noopener noreferrer">Get Page Count API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

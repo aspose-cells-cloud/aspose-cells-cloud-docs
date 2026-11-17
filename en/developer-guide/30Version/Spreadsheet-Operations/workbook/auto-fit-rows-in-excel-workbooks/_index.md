@@ -10,7 +10,8 @@ description: "Learn to automatically adjust row heights in an Excel workbook usi
 weight: 90
 ArticleTitle: "Autofit Rows on an Excel Workbook – Aspose.Cells Cloud API"
 ---
-The **PostAutofitWorkbookRows** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/autofitrows`) enables Aspose.Cells Cloud users to automatically adjust row heights in an Excel workbook to fit their contents, supporting optional range specification via `startRow`, `endRow`, `firstColumn`, and `lastColumn` query parameters. Prior to calling the API, ensure you have obtained a valid Bearer JWT token from Aspose's authentication service and that the target workbook is accessible in either the default or a configured custom storage location. The operation accepts the workbook's filename in the path and allows fine-grained control over which rows and columns to autofit, including an `onlyAuto` flag to restrict adjustments to rows already marked for auto-fitting.
+
+The **PostAutofitWyorkbookRows** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/autofitrows`) enables Aspose.Cells Cloud users to automatically adjust row heights in an Excel workbook to fit their contents, supporting optional range specification via `startRow`, `endRow`, `firstColumn`, and `lastColumn` query parameters. Prior to calling the API, ensure you have obtained a valid Bearer JWT token from Aspose's authentication service and that the target workbook is accessible in either the default or a configured custom storage location. The operation accepts the workbook's filename in the path and allows fine-grained control over which rows and columns to autofit, including an `onlyAuto` flag to restrict adjustments to rows already marked for auto-fitting.
 
 This REST API enables you to **autofit rows** in an Excel workbook, automatically adjusting row height after data is inserted or modified.
 
@@ -26,16 +27,22 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| startRow | Integer | Query | Start row. |
-| endRow | Integer | Query | End row. |
-| onlyAuto | Boolean | Query | Only auto. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
-| firstColumn | Integer | Query | First column index. |
-| lastColumn | Integer | Query | Last column index. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                  |
+| -------------- | ------- | -------------------------- | -------------------------------------------- |
+| name           | String  | Path                       | The file name.                               |
+| startRow       | Integer | Query                      | Start row.                                   |
+| endRow         | Integer | Query                      | End row.                                     |
+| onlyAuto       | Boolean | Query                      | Only auto.                                   |
+| folder         | String  | Query                      | The folder where the file is situated.       |
+| storageName    | String  | Query                      | The storage name where the file is situated. |
+| firstColumn    | Integer | Query                      | First column index.                          |
+| lastColumn     | Integer | Query                      | Last column index.                           |
+
+**AutoFitterOptions** is an object that specifies how the autofit operation behaves (e.g., `AutoFitMergedCells`, `IgnoreHidden`).
+**Notes**
+
+- When `AutoFitMergedCells` is set to **true**, merged cells are considered as a single entity during the autofit operation.
+- Setting `IgnoreHidden` to **true** skips hidden rows and columns, preserving their current dimensions.
 
 ### Response
 
@@ -60,32 +67,19 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
-The request parameters include:
+## How to Use the Post Autofit Workbook Rows API with SDKs?
 
-| Parameter Name    | Type              | Location | Description                                                                     |
-| ----------------- | ----------------- | -------- | ------------------------------------------------------------------------------- |
-| name              | string            | path     | Name of the workbook file.                                                      |
-| autoFitterOptions | AutoFitterOptions | body     | Options that control the autofit behavior.                                      |
-| startRow          | integer           | query    | Index of the first row to autofit.                                              |
-| endRow            | integer           | query    | Index of the last row to autofit.                                               |
-| firstColumn       | integer           | query    | Index of the first column considered for autofit.                               |
-| lastColumn        | integer           | query    | Index of the last column considered for autofit.                                |
-| onlyAuto          | boolean           | query    | If **true**, only rows with the AutoFit flag are processed (default **false**). |
-| folder            | string            | query    | Folder path where the workbook is stored.                                       |
-| storageName       | string            | query    | Name of the storage service.                                                    |
+### Post Autofit Workbook Rows API Specification
 
-**AutoFitterOptions** is an object that specifies how the autofit operation behaves (e.g., `AutoFitMergedCells`, `IgnoreHidden`).
-
-
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostAutofitWorkbookRows) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The <a href="https://reference.aspose.cloud/cells/#/Workbook/PostAutofitWorkbookRows" rel="noopener noreferrer">Post Autofit Workbook Rows API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to call Aspose.Cells web services. Replace `<jwt token>` with a valid Bearer JWT token obtained from the Aspose authentication service.
 
@@ -126,17 +120,6 @@ _Example error response (e.g., missing workbook):_
 {{< /tab >}}
 
 {{< /tabs >}}
-
-**Notes**
-
-- When `AutoFitMergedCells` is set to **true**, merged cells are considered as a single entity during the autofit operation.
-- Setting `IgnoreHidden` to **true** skips hidden rows and columns, preserving their current dimensions.
-
-## How to Use the Post Autofit Workbook Rows API with SDKs?
-
-### Post Autofit Workbook Rows API Specification
-
-The <a href="https://reference.aspose.cloud/cells/#/Workbook/PostAutofitWorkbookRows" rel="noopener noreferrer">Post Autofit Workbook Rows API Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 
