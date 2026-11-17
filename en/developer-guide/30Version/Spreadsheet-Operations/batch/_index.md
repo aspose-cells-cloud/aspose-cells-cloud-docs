@@ -15,8 +15,6 @@ The Aspose.Cells Cloud API provides batch endpoints that allow you to perform co
 
 - ## Batch Convert Excel Files
 
-  _Convert multiple Excel files to a chosen output format in one request._
-
   **API Details**
 
   ```http
@@ -43,8 +41,6 @@ The Aspose.Cells Cloud API provides batch endpoints that allow you to perform co
   | 500  | Internal server error.                   |
 
 - ## Batch Lock Excel Files
-
-  _Apply a password lock to multiple Excel files simultaneously._
 
   **API Details**
 
@@ -73,8 +69,6 @@ The Aspose.Cells Cloud API provides batch endpoints that allow you to perform co
 
 - ## Batch Protect Excel Files
 
-  _Add protection settings (e.g., read‑only, structure) to multiple workbooks._
-
   **API Details**
 
   ```http
@@ -101,8 +95,6 @@ The Aspose.Cells Cloud API provides batch endpoints that allow you to perform co
   | 500  | Unexpected server error.         |
 
 - ## Batch Split
-
-  _Divide large Excel workbooks into smaller files based on worksheets or row ranges._
 
   **API Details**
 
@@ -158,9 +150,3 @@ The Aspose.Cells Cloud API provides batch endpoints that allow you to perform co
   | 400  | Wrong password or missing files. |
   | 401  | Unauthorized access.             |
   | 500  | Server side failure.             |
-
-For authentication details, see [Authentication Overview]（https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/）.  
-To use batch operations programmatically, try our [Python SDK example](/cells/sdk/python/batch-operations/).
-
-![Batch processing workflow: client sends multipart POST to /cells/batch/convert; server processes files in parallel and returns aggregated response.](/images/batch-workflow.png "Batch conversion workflow")  
-_Diagram showing client-side batch request to Aspose.Cells Cloud API, parallel processing of multiple files, and aggregated response._

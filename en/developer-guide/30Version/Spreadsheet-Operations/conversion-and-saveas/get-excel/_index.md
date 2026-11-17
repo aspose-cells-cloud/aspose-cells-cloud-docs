@@ -12,6 +12,7 @@ description: "Convert Excel files to PDF, CSV, HTML, images via Aspose.Cells Clo
 weight: 100
 ArticleTitle: "Aspose.Cells Cloud – Convert Excel Workbook to PDF, CSV, HTML, and More (GET /cells/{name})"
 ---
+
 The **GetWorkbook** API (`GET https://api.aspose.cloud/v3.0/cells/{name}`) retrieves an Excel workbook from Aspose.Cells Cloud in various output formats, supporting conversions to PDF, CSV, HTML, XLSX, PNG, JPG, and over 20 other formats via the optional `format` query parameter.
 
 ## The Get Workbook Web API
@@ -26,24 +27,24 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Query Parameters**
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| format | String | Query | The conversion format(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers). |
-| password | String | Query | The password needed to open an Excel file. |
-| isAutoFit | Boolean | Query | Specifies whether set workbook rows to be autofit. |
-| onlySaveTable | Boolean | Query | Specifies whether only save table data.Only use pdf to excel. |
-| folder | String | Query | The folder where the file is situated. |
-| outPath | String | Query | Path to save the result. If it's a single file, the `outPath` should encompass both the filename and extension. In the case of multiple files, the `outPath` should only include the folder. |
-| storageName | String | Query | The storage name where the file is situated. |
-| outStorageName | String | Query | The storage name where the output file is situated. |
-| checkExcelRestriction | Boolean | Query | Whether check restriction of excel file when user modify cells related objects. |
-| region | String | Query | The regional settings for workbook. |
-| pageWideFitOnPerSheet | Boolean | Query | The page wide fit on worksheet. |
-| pageTallFitOnPerSheet | Boolean | Query | The page tall fit on worksheet. |
-| onePagePerSheet | Boolean | Query | When converting to PDF format, one page per sheet. |
-| onlyAutofitTable | Boolean | Query | - |
-| FontsLocation | String | Query | Use Custom fonts. |
+| Parameter Name        | Type    | Path/Query String/HTTPBody | Description                                                                                                                                                                                  |
+| --------------------- | ------- | -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| name                  | String  | Path                       | The file name.                                                                                                                                                                               |
+| format                | String  | Query                      | The conversion format(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers).                                                   |
+| password              | String  | Query                      | The password needed to open an Excel file.                                                                                                                                                   |
+| isAutoFit             | Boolean | Query                      | Specifies whether set workbook rows to be autofit.                                                                                                                                           |
+| onlySaveTable         | Boolean | Query                      | Specifies whether only save table data.Only use pdf to excel.                                                                                                                                |
+| folder                | String  | Query                      | The folder where the file is situated.                                                                                                                                                       |
+| outPath               | String  | Query                      | Path to save the result. If it's a single file, the `outPath` should encompass both the filename and extension. In the case of multiple files, the `outPath` should only include the folder. |
+| storageName           | String  | Query                      | The storage name where the file is situated.                                                                                                                                                 |
+| outStorageName        | String  | Query                      | The storage name where the output file is situated.                                                                                                                                          |
+| checkExcelRestriction | Boolean | Query                      | Whether check restriction of excel file when user modify cells related objects.                                                                                                              |
+| region                | String  | Query                      | The regional settings for workbook.                                                                                                                                                          |
+| pageWideFitOnPerSheet | Boolean | Query                      | The page wide fit on worksheet.                                                                                                                                                              |
+| pageTallFitOnPerSheet | Boolean | Query                      | The page tall fit on worksheet.                                                                                                                                                              |
+| onePagePerSheet       | Boolean | Query                      | When converting to PDF format, one page per sheet.                                                                                                                                           |
+| onlyAutofitTable      | Boolean | Query                      | -                                                                                                                                                                                            |
+| FontsLocation         | String  | Query                      | Use Custom fonts.                                                                                                                                                                            |
 
 ### Response
 
@@ -71,21 +72,19 @@ Content-Length: 123456
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 **Success (200)**
 
 - The API returns a **[Workbook](/cells/workbook/)** object that contains workbook structure info when the `format` query parameter is omitted.
 
 - The API returns the converted file in the requested format when the `format` query parameter specifies a file type.
-
-
 
 > **Notes:**
 >
@@ -104,7 +103,7 @@ The <a href="https://reference.aspose.cloud/cells/#/Conversion/GetWorkbook" rel=
 > - The source workbook must be stored in a supported Aspose storage or supplied directly in the request.
 > - Ensure the API version (`v3.0`) matches the latest released version.
 
-### Example Request
+**cURL Example**
 
 You can use the **cURL** command‑line tool to access Aspose.Cells web services. The following example shows a correct GET request with the required authorization header.
 
@@ -128,30 +127,6 @@ curl -X GET "https://api.aspose.cloud/v3.0/cells/book1.xlsx?format=pdf" \
 
 - <a href="https://apireference.aspose.cloud/cells/#/Workbook/ConvertWorkbook" rel="noopener noreferrer">Convert Workbook (POST)</a>
 - <a href="https://apireference.aspose.cloud/cells/#/Workbook/SaveAs" rel="noopener noreferrer">Save As (GET)</a>
-
----
-
-_Last Updated: 2024-12-01_
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "TechArticle",
-  "headline": "Aspose.Cells Cloud – Convert Excel Workbook to PDF, CSV, HTML, and More (GET /cells/{name})",
-  "description": "Documentation for the Aspose.Cells Cloud GET /cells/{name} endpoint that converts Excel workbooks to various formats such as PDF, CSV, HTML, and more.",
-  "author": {
-    "@type": "Organization",
-    "name": "Aspose"
-  },
-  "datePublished": "2024-12-01",
-  "keywords": "Aspose.Cells, Excel conversion, PDF, CSV, HTML, API, REST, cloud",
-  "url": "https://docs.aspose.cloud/cells/get-different-formats-files/",
-  "publisher": {
-    "@type": "Organization",
-    "name": "Aspose"
-  }
-}
-</script>
 
 ### Use Aspose.Cells Cloud SDKs
 

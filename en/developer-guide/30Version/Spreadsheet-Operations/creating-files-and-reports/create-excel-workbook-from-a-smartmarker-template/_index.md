@@ -13,6 +13,7 @@ description: "Generate Excel workbooks from Smart Marker templates using Aspose.
 weight: 40
 ArticleTitle: "Build Excel Reports with Smart Marker Templates – Aspose.Cells Cloud API Guide"
 ---
+
 The **PostWorkbookGetSmartMarkerResult** API (`POST https://api.aspose.cloud/v3.0/cells/{name}/smartmarker`) enables developers to process Excel workbooks using Smart Marker templates by sending a POST request with the template file name in the path and optional data via the request body or an XML file; Aspose.Cells Cloud supports this complex processing workflow, allowing dynamic report generation from structured data without requiring local Excel installation.
 
 ## The Post Workbook Get Smart Marker Result Web API
@@ -27,14 +28,20 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Query Parameters**
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The file name. |
-| xmlFile | String | Query | The xml file full path, if empty the data is read from request body. |
-| folder | String | Query | The folder where the file is situated. |
-| outPath | String | Query | The path to save result |
-| storageName | String | Query | The storage name where the file is situated. |
-| outStorageName | String | Query | The storage name where the result file is situated. |
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                                          |
+| -------------- | ------ | -------------------------- | -------------------------------------------------------------------- |
+| name           | String | Path                       | The file name.                                                       |
+| xmlFile        | String | Query                      | The xml file full path, if empty the data is read from request body. |
+| folder         | String | Query                      | The folder where the file is situated.                               |
+| outPath        | String | Query                      | The path to save result                                              |
+| storageName    | String | Query                      | The storage name where the file is situated.                         |
+| outStorageName | String | Query                      | The storage name where the result file is situated.                  |
+
+### **Request Body Parameter**
+
+| Parameter Name | Type | Description                                           |
+| -------------- | ---- | ----------------------------------------------------- |
+| xmlFile        | file | Smart Marker XML data file uploaded with the request. |
 
 ### Response
 
@@ -57,31 +64,28 @@ Content-Type: application/octet-stream
 Content-Disposition: attachment; filename="result"
 ```
 
+**Example error response (400)**
+
+```json
+{
+  "Code": 400,
+  "Message": "The XML data file is missing or malformed."
+}
+```
+
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
-
-**Notes / Limitations:**
-
-- The API supports Excel files up to **50 MB** in size.
-- Accepted formats are **.xlsx**, **.xlsm**, and **.xlsb** only.
-- A rate limit of **20 requests per second** per account is enforced.
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ### **What is a Smart Marker?**
 
 A Smart Marker is a placeholder syntax that maps data fields in an XML (or JSON) file to cells in an Excel template. At runtime Aspose.Cells replaces the markers with the corresponding data, allowing you to generate fully populated reports programmatically.
-
-### **Request Body Parameter**
-
-| Parameter Name | Type | Description                                           |
-| -------------- | ---- | ----------------------------------------------------- |
-| xmlFile        | file | Smart Marker XML data file uploaded with the request. |
 
 ## How to Use the Post Workbook Get Smart Marker Result API with SDKs?
 
@@ -125,24 +129,6 @@ Content-Type: application/json
 {{< /tab >}}
 
 {{< /tabs >}}
-
-### **Error Handling**
-
-| HTTP Status | Description           | Typical Cause                                           |
-| ----------- | --------------------- | ------------------------------------------------------- |
-| 400         | Bad Request           | Missing template, malformed XML, or invalid parameters. |
-| 401         | Unauthorized          | Invalid or missing authentication token.                |
-| 404         | Not Found             | Specified workbook or storage location does not exist.  |
-| 500         | Internal Server Error | Unexpected server‑side failure.                         |
-
-**Example error response (400)**
-
-```json
-{
-  "Code": 400,
-  "Message": "The XML data file is missing or malformed."
-}
-```
 
 ### Use Aspose.Cells Cloud SDKs
 

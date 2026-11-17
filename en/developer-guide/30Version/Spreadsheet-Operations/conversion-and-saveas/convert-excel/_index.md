@@ -14,6 +14,7 @@ keywords: "Aspose.Cells Cloud, Excel conversion, file format conversion, REST AP
 description: "Convert Excel to CSV, PDF, HTML, JSON, Markdown via Aspose.Cells Cloud PutConvertWorkBook API"
 weight: 100
 ---
+
 The **PutConvertWorkbook** API (`PUT https://api.aspose.cloud/v3.0/cells/convert`) enables conversion of Excel workbooks to 30+ formats—including PDF, CSV, HTML, PNG, and others—by uploading the source file in the request body and specifying the target format via the `format` query parameter, with optional support for password-protected files and custom output paths.
 
 This REST API converts an Excel file to various output formats.
@@ -30,24 +31,24 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Query Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| File | File | FormData | File to upload |
-| format | String | Query | The format to convert(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers). |
-| password | String | Query | The password needed to open an Excel file. |
-| outPath | String | Query | Path to save the result. If it's a single file, the `outPath` should encompass both the filename and extension. In the case of multiple files, the `outPath` should only include the folder. |
-| storageName | String | Query | The storage name where the file is situated. |
-| checkExcelRestriction | Boolean | Query | Whether check restriction of excel file when user modify cells related objects. |
-| streamFormat | String | Query | The format of the input file stream. |
-| region | String | Query | The regional settings for workbook. |
-| pageWideFitOnPerSheet | Boolean | Query | The page wide fit on worksheet. |
-| pageTallFitOnPerSheet | Boolean | Query | The page tall fit on worksheet. |
-| sheetName | String | Query | Convert the specified worksheet. |
-| pageIndex | Integer | Query | Convert the specified page  of worksheet, sheetName is required. |
-| onePagePerSheet | Boolean | Query | When converting to PDF format, one page per sheet. |
-| AutoRowsFit | Boolean | Query | Auto-fits all rows in this workbook. |
-| AutoColumnsFit | Boolean | Query | Auto-fits the columns width in this workbook. |
-| FontsLocation | String | Query | Use Custom fonts. |
+| Parameter Name        | Type    | Path/Query String/HTTPBody | Description                                                                                                                                                                                  |
+| --------------------- | ------- | -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| File                  | File    | FormData                   | File to upload                                                                                                                                                                               |
+| format                | String  | Query                      | The format to convert(CSV/XLS/HTML/MHTML/ODS/PDF/XML/TXT/TIFF/XLSB/XLSM/XLSX/XLTM/XLTX/XPS/PNG/JPG/JPEG/GIF/EMF/BMP/MD[Markdown]/Numbers).                                                   |
+| password              | String  | Query                      | The password needed to open an Excel file.                                                                                                                                                   |
+| outPath               | String  | Query                      | Path to save the result. If it's a single file, the `outPath` should encompass both the filename and extension. In the case of multiple files, the `outPath` should only include the folder. |
+| storageName           | String  | Query                      | The storage name where the file is situated.                                                                                                                                                 |
+| checkExcelRestriction | Boolean | Query                      | Whether check restriction of excel file when user modify cells related objects.                                                                                                              |
+| streamFormat          | String  | Query                      | The format of the input file stream.                                                                                                                                                         |
+| region                | String  | Query                      | The regional settings for workbook.                                                                                                                                                          |
+| pageWideFitOnPerSheet | Boolean | Query                      | The page wide fit on worksheet.                                                                                                                                                              |
+| pageTallFitOnPerSheet | Boolean | Query                      | The page tall fit on worksheet.                                                                                                                                                              |
+| sheetName             | String  | Query                      | Convert the specified worksheet.                                                                                                                                                             |
+| pageIndex             | Integer | Query                      | Convert the specified page of worksheet, sheetName is required.                                                                                                                              |
+| onePagePerSheet       | Boolean | Query                      | When converting to PDF format, one page per sheet.                                                                                                                                           |
+| AutoRowsFit           | Boolean | Query                      | Auto-fits all rows in this workbook.                                                                                                                                                         |
+| AutoColumnsFit        | Boolean | Query                      | Auto-fits the columns width in this workbook.                                                                                                                                                |
+| FontsLocation         | String  | Query                      | Use Custom fonts.                                                                                                                                                                            |
 
 ### Response
 
@@ -72,14 +73,14 @@ Content-Disposition: attachment; filename="result"
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                        |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 The request is an HTTP **PUT** with multipart content (see [RFC 2046](https://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](https://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)).  
 The first part of the multipart body contains the **data file**, and the second part contains the **save options**.

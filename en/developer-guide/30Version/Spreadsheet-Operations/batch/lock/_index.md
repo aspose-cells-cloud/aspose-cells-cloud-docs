@@ -9,6 +9,7 @@ weight: 100
 linktitle: "Batch Lock Excel Files"
 ArticleTitle: "Batch Lock Excel Files with Aspose.Cells Cloud API"
 ---
+
 The **PostBatchLock** API (`POST https://api.aspose.cloud/v3.0/cells/batch/lock`) enables Aspose.Cells Cloud users to batch lock eligible Excel and other supported files by applying specific matching conditions, supporting over 30 formats such as Excel, PDF, Markdown, JSON, XML, CSV, and HTML in a single operation.
 
 ## The Post Batch Lock Web API
@@ -23,9 +24,9 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| batchLockRequest | class:batchlockrequest | HTTPBody | BatchLockRequest Batch locking file request. |
+| Parameter Name   | Type                   | Path/Query String/HTTPBody | Description                                  |
+| ---------------- | ---------------------- | -------------------------- | -------------------------------------------- |
+| batchLockRequest | class:batchlockrequest | HTTPBody                   | BatchLockRequest Batch locking file request. |
 
 #### **BatchLockRequest** Properties
 
@@ -66,14 +67,14 @@ Content-Disposition: attachment; filename="result"
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                        |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ### Request Body Parameter
 

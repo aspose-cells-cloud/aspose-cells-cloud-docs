@@ -11,30 +11,9 @@ canonical: https://docs.aspose.cloud/cells/convert-excel-file-to-html-file/
 robots: index,follow
 ---
 
-# Convert Excel Workbooks to HTML
-
 Aspose.Cells Cloud provides a robust REST endpoint that converts Excel workbooks (XLS, XLSX, CSV, etc.) into HTML documents. The operation returns a **FileInfo** object containing the generated HTML file (name, size, and Base64‑encoded content).
 
-## Prerequisites
-
-| Requirement              | How to satisfy                                                                                                                                                                                              |
-| ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Aspose Cloud account** | Sign‑up at [aspose.cloud](https://www.aspose.cloud)                                                                                                                                                         |
-| **JWT access token**     | Obtain a bearer token via the OAuth 2.0 `POST /connect/token` endpoint. See [Authentication]（https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/） for details. |
-| **Storage (optional)**   | If you want the API to read/write files from a specific storage, create it first (e.g., Amazon S3, Azure Blob, or Aspose Cloud storage).                                                                    |
-| **cURL / SDK**           | Any HTTP client capable of multipart/form-data (cURL, Postman, or one of the Aspose.Cells SDKs).                                                                                                            |
-
-## Authentication
-
-All Aspose.Cells Cloud requests require JWT token-based authentication:
-
-```http
-Authorization: Bearer <access-token>
-```
-
-Include the token in the `Authorization` header of every request.
-
-## Endpoint
+## Convert Excel Workbooks to HTML Web API
 
 ```
 POST https://api.aspose.cloud/v3.0/cells/convert/html
@@ -71,21 +50,6 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/html?checkExcelRestric
      -H "Content-Type: multipart/form-data" \
      -F "File=@/path/to/your_workbook.xlsx"
 ```
-
-### SDK Examples
-
-| Language    | Code                                                                                                                                                                                                                                                                                                                                                                                          |
-| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **C#**      | `csharp\nusing Aspose.Cells.Cloud.SDK.Api;\nusing Aspose.Cells.Cloud.SDK.Model;\n\nvar apiInstance = new ConversionApi();\nvar file = File.ReadAllBytes("your.xlsx");\nvar result = apiInstance.PostConvertWorkbookToHtml(\n    file, \n    password: null, \n    checkExcelRestriction: true,\n    region: "en-US",\n    fontsLocation: "/fonts"\n);\nConsole.WriteLine(result.Filename);\n` |
-| **Java**    | `java\nConversionApi api = new ConversionApi();\nFile file = new File("your.xlsx");\nFileInfo info = api.postConvertWorkbookToHtml(\n    file, \n    null, \n    true,\n    "en-US",\n    "/fonts"\n);\nSystem.out.println(info.getFilename());\n`                                                                                                                                            |
-| **Python**  | `python\nfrom asposecellscloud import ConversionApi\napi = ConversionApi()\nwith open('your.xlsx', 'rb') as f:\n    file_info = api.post_convert_workbook_to_html(\n        file=f.read(),\n        password=None,\n        check_excel_restriction=True,\n        region="en-US",\n        fonts_location="/fonts"\n    )\nprint(file_info.filename)\n`                                      |
-| **Node.js** | `javascript\nconst { ConversionApi } = require('asposecellscloud');\nconst api = new ConversionApi();\nconst fs = require('fs');\napi.postConvertWorkbookToHtml({\n  File: fs.createReadStream('your.xlsx'),\n  password: null,\n  checkExcelRestriction: true,\n  region: 'en-US',\n  fontsLocation: '/fonts'\n}).then(info => console.log(info.Filename));\n`                               |
-| **Go**      | `go\nimport (\n    "asposecellscloud"\n    "os"\n)\nfunc main() {\n    api := asposecellscloud.NewConversionApi()\n    f, _ := os.Open("your.xlsx")\n    info, _ := api.PostConvertWorkbookToHtml(\n        f, \n        nil, \n        true,\n        "en-US",\n        "/fonts"\n    )\n    fmt.Println(info.Filename)\n}\n`                                                                |
-| **PHP**     | `php\nuse Aspose\Cells\ConversionApi;\n$api = new ConversionApi();\n$file = fopen('your.xlsx', 'r');\n$info = $api->postConvertWorkbookToHtml(\n    $file,\n    null,\n    true,\n    "en-US",\n    "/fonts"\n);\necho $info->getFilename();\n`                                                                                                                                               |
-| **Ruby**    | `ruby\nrequire 'aspose_cells_cloud'\napi = AsposeCellsCloud::ConversionApi.new\nfile = File.open('your.xlsx')\ninfo = api.post_convert_workbook_to_html(\n  file: file,\n  password: nil,\n  check_excel_restriction: true,\n  region: 'en-US',\n  fonts_location: '/fonts'\n)\nputs info.filename\n`                                                                                         |
-| **Perl**    | `perl\nuse Aspose::Cells::ConversionApi;\nmy $api = Aspose::Cells::ConversionApi->new();\nopen my $fh, '<', 'your.xlsx' or die $!;\nmy $info = $api->post_convert_workbook_to_html(\n  file => $fh,\n  password => undef,\n  check_excel_restriction => 1,\n  region => 'en-US',\n  fonts_location => '/fonts'\n);\nprint $info->{Filename};\n`                                               |
-
-> **Tip**: For full SDK installation instructions, see the [Aspose.Cells Cloud SDKs repository](https://github.com/aspose-cells-cloud).
 
 ## Successful Response
 
@@ -137,68 +101,149 @@ The response schema is defined by the **FileInfo** model: [/cells/file-info](/ce
 | `POST /cells/{name}/saveAs` | Save an existing Excel file as HTML (or other formats) directly to storage.                   |
 | `GET /cells/{name}`         | Retrieve a workbook already stored as HTML (or other formats) with optional query parameters. |
 
-## Frequently Asked Questions
+### SDK Examples
 
-**Q:** _How do I authenticate when calling the Excel‑to‑HTML conversion API?_  
-**A:** Include an `Authorization: Bearer <access-token>` header obtained from the OAuth 2.0 `/connect/token` endpoint.
+#### C#
 
-**Q:** _What does the `FileInfo` response contain?_  
-**A:** Three fields – `Filename` (string), `FileSize` (integer, bytes), and `FileContent` (Base64‑encoded HTML content).
+```csharp
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Model;
 
-**Q:** _Which error codes might I encounter?_  
-**A:** `400` (Bad Request), `401` (Unauthorized), `404` (File Not Found), `413` (Payload Too Large), `429` (Too Many Requests), `500` (Internal Server Error). Each returns a JSON payload with `Code` and `Message`.
-
-**Q:** _Can I specify a custom font location?_  
-**A:** Yes. Use the `FontsLocation` query parameter to point to a folder or URL that contains the required fonts.
-
-**Q:** _Is there a rate‑limit for this operation?_  
-**A:** The default limit is **60 calls per minute** per account. Exceeding it returns `429 Too Many Requests`.
-
-## Change Log
-
-| Version  | Date       | Changes                                                                            |
-| -------- | ---------- | ---------------------------------------------------------------------------------- |
-| **v3.0** | 2024-10-01 | Initial public release of `PostConvertWorkbookToHtml`.                             |
-| **v3.1** | 2025-04-15 | Added `region` and `FontsLocation` query parameters; updated error payload format. |
-| **v3.2** | 2026-03-20 | Introduced rate‑limit documentation and sample error responses.                    |
-
----
-
-_For any further assistance, please contact Aspose support or visit the official API reference:_ [https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToHtml](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToHtml)
-
-## JSON‑LD Breadcrumb (Structured Data)
-
-```html
-<script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://docs.aspose.cloud/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Developer Center",
-        "item": "https://docs.aspose.cloud/cells/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Conversion",
-        "item": "https://docs.aspose.cloud/cells/conversion/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 4,
-        "name": "Excel to HTML",
-        "item": "https://docs.aspose.cloud/cells/convert-excel-file-to-html-file/"
-      }
-    ]
-  }
-</script>
+var apiInstance = new ConversionApi();
+var file = File.ReadAllBytes("your.xlsx");
+var result = apiInstance.PostConvertWorkbookToHtml(
+    file,
+    password: null,
+    checkExcelRestriction: true,
+    region: "en-US",
+    fontsLocation: "/fonts"
+);
+Console.WriteLine(result.Filename);
 ```
+
+#### Java
+
+```java
+ConversionApi api = new ConversionApi();
+File file = new File("your.xlsx");
+FileInfo info = api.postConvertWorkbookToHtml(
+    file,
+    null,
+    true,
+    "en-US",
+    "/fonts"
+);
+System.out.println(info.getFilename());
+```
+
+#### Python
+
+```python
+from asposecellscloud import ConversionApi
+
+api = ConversionApi()
+with open('your.xlsx', 'rb') as f:
+    file_info = api.post_convert_workbook_to_html(
+        file=f.read(),
+        password=None,
+        check_excel_restriction=True,
+        region="en-US",
+        fonts_location="/fonts"
+    )
+print(file_info.filename)
+```
+
+#### Node.js
+
+```javascript
+const { ConversionApi } = require("asposecellscloud");
+const fs = require("fs");
+
+const api = new ConversionApi();
+api
+  .postConvertWorkbookToHtml({
+    File: fs.createReadStream("your.xlsx"),
+    password: null,
+    checkExcelRestriction: true,
+    region: "en-US",
+    fontsLocation: "/fonts",
+  })
+  .then((info) => console.log(info.Filename));
+```
+
+#### Go
+
+```go
+import (
+    "fmt"
+    "os"
+
+    "asposecellscloud"
+)
+
+func main() {
+    api := asposecellscloud.NewConversionApi()
+    f, _ := os.Open("your.xlsx")
+    info, _ := api.PostConvertWorkbookToHtml(
+        f,
+        nil,
+        true,
+        "en-US",
+        "/fonts"
+    )
+    fmt.Println(info.Filename)
+}
+```
+
+#### PHP
+
+```php
+use Aspose\Cells\ConversionApi;
+
+$api = new ConversionApi();
+$file = fopen('your.xlsx', 'r');
+$info = $api->postConvertWorkbookToHtml(
+    $file,
+    null,
+    true,
+    "en-US",
+    "/fonts"
+);
+echo $info->getFilename();
+```
+
+#### Ruby
+
+```ruby
+require 'aspose_cells_cloud'
+
+api = AsposeCellsCloud::ConversionApi.new
+file = File.open('your.xlsx')
+info = api.post_convert_workbook_to_html(
+  file: file,
+  password: nil,
+  check_excel_restriction: true,
+  region: 'en-US',
+  fonts_location: '/fonts'
+)
+puts info.filename
+```
+
+#### Perl
+
+```perl
+use Aspose::Cells::ConversionApi;
+
+my $api = Aspose::Cells::ConversionApi->new();
+open my $fh, '<', 'your.xlsx' or die $!;
+my $info = $api->post_convert_workbook_to_html(
+  file => $fh,
+  password => undef,
+  check_excel_restriction => 1,
+  region => 'en-US',
+  fonts_location => '/fonts'
+);
+print $info->{Filename};
+```
+
+> **Tip**: For full SDK installation instructions, see the [Aspose.Cells Cloud SDKs repository](https://github.com/aspose-cells-cloud).

@@ -68,21 +68,6 @@ The service returns a **FileInfo** object. The important fields are described be
 }
 ```
 
-#### Error Handling
-
-If the request fails, the API returns an error object with the following structure:
-
-| Field     | Type   | Description                              |
-| --------- | ------ | ---------------------------------------- |
-| `Code`    | string | Machine‑readable error identifier.       |
-| `Message` | string | Human‑readable description of the error. |
-
-Common HTTP status codes:
-
-- **400** – Bad request (e.g., missing file, invalid parameters).
-- **401** – Unauthorized (invalid or missing access token).
-- **500** – Internal server error.
-
 **HTTP Status Codes**
 
 | Code | Meaning               | Description                                                       |

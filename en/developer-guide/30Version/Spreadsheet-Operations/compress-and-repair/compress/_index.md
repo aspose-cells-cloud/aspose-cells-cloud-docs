@@ -10,6 +10,7 @@ keywords: "compress excel file, aspose cells cloud, excel compression, spreadshe
 description: "Compress Excel files up to 500 MB via Aspose.Cells Cloud API with configurable compression levels."
 weight: 39
 ---
+
 The **PostCompress** API (`POST https://api.aspose.cloud/v3.0/cells/compress`) in Aspose.Cells Cloud enables compression of Excel files—supporting formats such as Xls, Xlsx, Xlsm, Xlsb, and Ods—by allowing users to upload a file via form data and optionally specify compression level (1–100), password, and Excel restriction checks to generate optimized target files.
 
 ## The Post Compress Web API
@@ -24,12 +25,12 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| File | File | FormData | File to upload |
-| CompressLevel | Integer | Query | Compress level. The compression ratio 1-100. |
-| password | String | Query | The password needed to open an Excel file. |
-| checkExcelRestriction | Boolean | Query | Whether check restriction of excel file when user modify cells related objects. |
+| Parameter Name        | Type    | Path/Query String/HTTPBody | Description                                                                     |
+| --------------------- | ------- | -------------------------- | ------------------------------------------------------------------------------- |
+| File                  | File    | FormData                   | File to upload                                                                  |
+| CompressLevel         | Integer | Query                      | Compress level. The compression ratio 1-100.                                    |
+| password              | String  | Query                      | The password needed to open an Excel file.                                      |
+| checkExcelRestriction | Boolean | Query                      | Whether check restriction of excel file when user modify cells related objects. |
 
 ### Response
 
@@ -54,29 +55,14 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
-
-_Note:_ `FileContent` contains the compressed workbook encoded as a Base64 string. The length of the string corresponds to the size of the compressed file; you can decode it using standard Base64 utilities to retrieve the binary Excel file.
-
-**Prerequisites:**
-
-- A valid JWT token is required for authentication.
-- Supported file formats are XLS, XLSX, XLSM, XLSB, and ODS.
-- The maximum allowed file size is 500 MB per request (subject to service limits).
-
-This REST API compresses data in an Excel file.
-
-- Compress XLS, XLSX, XLSM, XLSB, ODS
-- Quickly compress multiple Excel spreadsheet files
-- Choose the level of compression
-- Supports multiple files
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                        |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ### Request Body Parameter
 

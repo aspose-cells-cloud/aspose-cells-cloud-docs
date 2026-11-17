@@ -15,6 +15,7 @@ description: "Learn how to create an empty Excel workbook using Aspose.Cells Clo
 weight: 100
 ArticleTitle: "Create an Empty Excel Workbook using Aspose.Cells Cloud API"
 ---
+
 The **PutWorkbookCreate** API (`PUT https://api.aspose.cloud/v3.0/cells/{name}`) creates a new Excel workbook in Aspose.Cells Cloud, supporting multiple methods such as generating a blank workbook, using a template file via the `templateFile` query parameter, or populating from smart marker data. This RESTful operation accepts the new document name as a required path parameter and optional parameters like `folder` and `storageName` to specify cloud storage locations, enabling flexible, programmatic workbook creation across supported SDKs for .NET, Java, Python, and other languages.
 
 ## The Put Workbook Create Web API
@@ -29,15 +30,15 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Query Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| name | String | Path | The new document name. |
-| templateFile | String | Query | The template file, if the data not provided default workbook is created. |
-| dataFile | String | Query | Smart marker data file, if the data not provided the request content is checked for the data. |
-| isWriteOver | Boolean | Query | Specifies whether to write over targer file. |
-| folder | String | Query | The folder where the file is situated. |
-| storageName | String | Query | The storage name where the file is situated. |
-| checkExcelRestriction | Boolean | Query | - |
+| Parameter Name        | Type    | Path/Query String/HTTPBody | Description                                                                                   |
+| --------------------- | ------- | -------------------------- | --------------------------------------------------------------------------------------------- |
+| name                  | String  | Path                       | The new document name.                                                                        |
+| templateFile          | String  | Query                      | The template file, if the data not provided default workbook is created.                      |
+| dataFile              | String  | Query                      | Smart marker data file, if the data not provided the request content is checked for the data. |
+| isWriteOver           | Boolean | Query                      | Specifies whether to write over targer file.                                                  |
+| folder                | String  | Query                      | The folder where the file is situated.                                                        |
+| storageName           | String  | Query                      | The storage name where the file is situated.                                                  |
+| checkExcelRestriction | Boolean | Query                      | -                                                                                             |
 
 ### Response
 
@@ -62,13 +63,13 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ### Request Body Parameter
 

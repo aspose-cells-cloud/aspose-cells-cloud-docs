@@ -25,11 +25,6 @@ ArticleTitle: "Convert Workbook Options – Aspose.Cells Cloud API"
 | **ConvertFormat**                   | **string**  | Target file format (e.g., **PDF**, **CSV**, **HTML**, **XLSX**, **TIFF**, etc.).                              |       |
 | **CheckExcelRestriction**           | **boolean** | Gets or sets whether to enforce Excel‑specific restrictions (maximum rows, columns, sheet name length, etc.). |       |
 
-**Prerequisites**
-
-- Obtain a valid OAuth 2.0 access token for Aspose.Cells Cloud.
-- Ensure the source file is accessible via one of the supported `DataSource` types.
-
 **Quick example**
 
 ```json

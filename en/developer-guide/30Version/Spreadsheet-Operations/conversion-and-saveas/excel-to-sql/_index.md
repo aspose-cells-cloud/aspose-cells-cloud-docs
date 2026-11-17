@@ -102,6 +102,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/sql" \
 Using an SDK is the best way to speed up development. An SDK handles low‑level details, allowing you to focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
+
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
 {{< tab tabNum="1" >}}
@@ -157,15 +158,5 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 ## Other APIs Implementing This Function
 
 - **[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)** – Saves a workbook in a different format and stores the result in the specified storage.
-
 - **[PUT /cells/convert](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)** – Converts a workbook to another format with optional settings and returns the result in the response.
-
 - **[GET /cells/{name}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)** – Retrieves a workbook with optional conversion settings.
-
-**Notes**
-
-- When converting password‑protected Excel files, ensure the `password` query parameter is supplied; otherwise the conversion will fail with a 400 error.
-- The service returns the SQL file content as Base64; decode it before saving to a `.sql` file.
-
-**Sample Files**  
-Download a sample Excel workbook [here](https://example.com/sample.xlsx) and a pre‑generated SQL result [here](https://example.com/sample.sql) to test the API quickly.

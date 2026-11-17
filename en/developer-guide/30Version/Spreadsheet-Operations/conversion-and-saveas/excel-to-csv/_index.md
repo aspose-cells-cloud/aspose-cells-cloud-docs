@@ -13,6 +13,7 @@ description: "Convert Excel spreadsheets to CSV using the Aspose.Cells Cloud RES
 weight: 90
 ArticleTitle: "Convert Excel to CSV using Aspose.Cells Cloud REST API"
 ---
+
 The **PostConvertWorkbookToCSV** API (`POST https://api.aspose.cloud/v3.0/cells/convert/csv`) converts Excel files to CSV format using Aspose.Cells Cloud, supporting password-protected workbooks and optional parameters such as regional settings and Excel restriction checks; it accepts a file upload via multipart form data and returns detailed file information upon successful conversion.
 
 ## The Post Convert Workbook to CSV Web API
@@ -27,12 +28,12 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Query Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| File | File | FormData | File to upload |
-| password | String | Query | The password needed to open an Excel file. |
-| checkExcelRestriction | Boolean | Query | Whether check restriction of excel file when user modify cells related objects. |
-| region | String | Query | The regional settings for workbook. |
+| Parameter Name        | Type    | Path/Query String/HTTPBody | Description                                                                     |
+| --------------------- | ------- | -------------------------- | ------------------------------------------------------------------------------- |
+| File                  | File    | FormData                   | File to upload                                                                  |
+| password              | String  | Query                      | The password needed to open an Excel file.                                      |
+| checkExcelRestriction | Boolean | Query                      | Whether check restriction of excel file when user modify cells related objects. |
+| region                | String  | Query                      | The regional settings for workbook.                                             |
 
 ### Response
 
@@ -57,14 +58,14 @@ Content-Type: application/json
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                        |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 The API returns a **FileInfo** object that contains the generated CSV file.
 

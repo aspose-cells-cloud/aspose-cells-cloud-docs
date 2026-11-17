@@ -69,21 +69,27 @@ curl -v "https://api.aspose.cloud/v3.0/cells/book1.xlsx?format=tiff" \
 > - The **Convert** request body must contain the file (or a reference to a stored file) and the desired `SaveFormat`.
 > - The **Export** request does not require a request body; the format is supplied via the query string (`format=tiff`).
 
-## Error Handling
+**HTTP Status Codes**
 
-| **Status Code** | **Meaning**           | **Typical Cause**                           |
-| --------------- | --------------------- | ------------------------------------------- |
-| 200             | Success               | The TIFF image is returned (binary stream). |
-| 400             | Bad Request           | Missing or malformed parameters.            |
-| 401             | Unauthorized          | Invalid or missing JWT token.               |
-| 404             | Not Found             | The specified workbook does not exist.      |
-| 500             | Internal Server Error | Unexpected server‑side condition.           |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
 
 When an error occurs, the API returns a JSON payload with `Code`, `Message`, and optionally `Description`.
 
-## Cloud SDK Family
+## How to Use the PostConvertWorkbookToTiff API with SDKs
 
-Using an SDK is the fastest way to develop. An SDK handles low‑level details so you can focus on your project. Please check the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+### PostConvertWorkbookToTiff API Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToTiff" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+### Use Aspose.Cells Cloud SDKs
+
+Using an SDK is the best way to speed up development. An SDK handles low‑level details, allowing you to focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 

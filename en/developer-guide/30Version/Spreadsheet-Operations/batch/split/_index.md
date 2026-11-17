@@ -9,6 +9,7 @@ weight: 100
 linktitle: "Batch Split API"
 ArticleTitle: "Aspose.Cells Cloud Batch Split API: Split Excel Files to PDF, CSV, JSON"
 ---
+
 The **PostBatchSplit** API (`POST https://api.aspose.cloud/v3.0/cells/batch/split`) enables batch splitting of eligible files—such as Excel, PDF, Markdown, CSV, HTML, and over 30 other supported formats—by applying specific matching conditions defined in the request body, streamlining document automation workflows for developers using Aspose.Cells Cloud.
 
 ## The Post Batch Split Web API
@@ -23,9 +24,9 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| batchSplitRequest | class:batchsplitrequest | HTTPBody | BatchSplitRequest Batch splitting file request. |
+| Parameter Name    | Type                    | Path/Query String/HTTPBody | Description                                     |
+| ----------------- | ----------------------- | -------------------------- | ----------------------------------------------- |
+| batchSplitRequest | class:batchsplitrequest | HTTPBody                   | BatchSplitRequest Batch splitting file request. |
 
 ### Response
 
@@ -50,14 +51,14 @@ Content-Disposition: attachment; filename="result"
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                        |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ### **BatchSplitRequest** Properties
 
@@ -121,6 +122,10 @@ curl -v "http://api.aspose.cloud/v3.0/cells/batch/split" \
 
 {{< /tabs >}}
 
+### Use Aspose.Cells Cloud SDKs
+
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 {{< tabs tabTotal="9" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js"  tabName7="Swift" tabName8="Perl" tabName9="Go" >}}
 
 {{< tab tabNum="1" >}}
@@ -151,8 +156,3 @@ curl -v "http://api.aspose.cloud/v3.0/cells/batch/split" \
 {{< /tab >}}
 
 {{< /tabs >}}
-
-### Use Aspose.Cells Cloud SDKs
-
-Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to use the API with short code.  
-Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

@@ -151,11 +151,3 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
-
-## Other APIs Implementing This Function
-
-- **[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)** – Saves an Excel file as a DOCX file with additional settings and stores the result in the specified storage.
-
-- **[PUT /cells/convert](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)** – Converts an Excel file to a DOCX file with optional settings and returns the result in the response.
-
-- **[GET /cells/{name}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)** – Retrieves an Excel workbook and converts it to a DOCX file with optional parameters.

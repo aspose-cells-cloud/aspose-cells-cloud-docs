@@ -16,12 +16,6 @@ keywords: "Aspose.Cells Cloud, create Excel file, build Excel report, SmartMarke
 
 Using the Aspose.Cells Cloud API, you can effortlessly create new Excel workbooks and generate workbooks from template files. It also supports creating advanced Excel reports with the SmartMarker feature, which can handle a variety of data‑processing and reporting needs.
 
-**Prerequisites**: Before you begin, ensure you have a valid Aspose Cloud API key and the Aspose.Cells Cloud SDK installed for your development language.
-
-- ✅ An Aspose Cloud account with valid [API key and App SID](https://dashboard.aspose.cloud/)
-- ✅ Aspose.Cells Cloud SDK for your language (e.g., `pip install aspose-words-cloud` for Python)
-- ✅ Basic familiarity with Excel file structure and JSON data formats
-
 ## Create an Excel file and build a report
 
 - [Create an empty Excel workbook using Aspose.Cells Cloud API](/cells/create-an-empty-excel-file/)

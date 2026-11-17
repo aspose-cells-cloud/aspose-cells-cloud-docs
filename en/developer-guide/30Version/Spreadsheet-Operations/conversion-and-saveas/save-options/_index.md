@@ -16,11 +16,6 @@ ArticleTitle: "Save Options – Aspose.Cells Cloud REST API Documentation"
 
 SaveOptions allow you to control how a workbook is saved when using the Aspose.Cells Cloud REST API. By configuring these options you can enable HTTP compression, specify the output format, manage temporary storage, and control additional behaviors such as chart cache refresh and automatic directory creation.
 
-**Prerequisites**
-
-- An authenticated Aspose.Cells Cloud session ([OAuth 2.0 setup](/oauth-setup)).
-- The target workbook must be loaded or created via the API prior to saving ([Create or load workbook via API](/workbook-operations)).
-
 | Name                      | Type       | Description                                                                                        | Notes      |
 | ------------------------- | ---------- | -------------------------------------------------------------------------------------------------- | ---------- |
 | **EnableHTTPCompression** | **bool?**  | Enables HTTP compression for the response.                                                         | [optional] |

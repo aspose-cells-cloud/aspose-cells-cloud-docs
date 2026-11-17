@@ -14,6 +14,7 @@ aliases:
 linktitle: "Batch Protect Excel Files"
 ArticleTitle: "Batch Protect Excel Files with Aspose.Cells Cloud REST API"
 ---
+
 The **PostBatchProtect** API (`POST https://api.aspose.cloud/v3.0/cells/batch/protect`) enables Aspose.Cells Cloud users to apply consistent security settings—such as full encryption or read-only locking—to multiple Excel files in a single request, using flexible matching criteria like regular expressions or exact filenames to selectively target files for protection while preserving originals and saving results to a designated output folder.
 
 ## The Post Batch Protect Web API
@@ -28,12 +29,11 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Request Parameters
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-|---|---|---|---|
-| batchProtectRequest | class:batchprotectrequest | HTTPBody | BatchProtectRequest Batch protection file request. |
+| Parameter Name      | Type                      | Path/Query String/HTTPBody | Description                                        |
+| ------------------- | ------------------------- | -------------------------- | -------------------------------------------------- |
+| batchProtectRequest | class:batchprotectrequest | HTTPBody                   | BatchProtectRequest Batch protection file request. |
 
 The request body must contain a `BatchProtectRequest` object.
-
 
 #### `BatchProtectRequest` Properties
 
@@ -79,118 +79,14 @@ Content-Disposition: attachment; filename="result"
 
 **HTTP Status Codes**
 
-| Code | Meaning | Description |
-|---|---|---|
-| 200 | OK | The request completed successfully. |
-| 400 | Bad Request | The request is malformed or one or more parameters are invalid. |
-| 401 | Unauthorized | Authentication failed, or the JWT token is missing or expired. |
-| 404 | Not Found | The requested workbook, worksheet, or resource was not found. |
-| 413 | Payload Too Large | The uploaded file exceeds the allowed size limit. |
-| 500 | Internal Server Error | The server encountered an unexpected error while processing the request. |
-
-#### Success Response (HTTP 200 OK)
-
-
-#### Error Responses
-
-
-> **Note**: A 200 response confirms _processing completion_ but does not guarantee _all files were protected_. Check logs or use the [Batch Status API](https://docs.aspose.cloud/cells/batch-status/) for per-file results.
-
----
-
-Aspose.Cells Cloud’s **batch protection API** enables you to apply consistent security settings to multiple Excel files in a single request. Using flexible matching criteria—including regular expressions and exact file names—you can selectively protect files based on naming patterns. Supported protection types include full encryption (All), read-only locking (ReadOnly), and more. Protected files are saved to a designated output folder, preserving the original files.
-
-This API supports 30+ file formats (Excel, CSV, PDF, Markdown, JSON, XML, HTML, and more) and provides SDKs for C#, Java, Python, Node.js, PHP, Ruby, Perl, and Go.
-
----
-
-### REST API Endpoint
-#### Base URL
-
-| Environment | Base URL                                                |
-| ----------- | ------------------------------------------------------- |
-| Production  | `https://api.aspose.cloud/v3.0/cells/batch/protect`     |
-| Sandbox     | `https://testapi.aspose.cloud/v3.0/cells/batch/protect` |
-
-> **Note**: All requests require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/). Obtain your `Client ID` and `Client Secret` from the [Aspose Cloud Dashboard](https://dashboard.aspose.cloud/).
-
----
-
-### Request Body Example
-
-```json
-{
-  "SourceFolder": "input_files",
-  "MatchCondition": {
-    "RegexPattern": "^(Sales|Inventory).+\\.xlsx$",
-    "FullMatchConditions": ["Template.xlsx"]
-  },
-  "ProtectionType": "All",
-  "Password": "123456",
-  "OutFolder": "protected_output"
-}
-```
-
-This example protects all `.xlsx` files in `input_files` matching `Sales*.xlsx`, `Inventory*.xlsx`, or exactly `Template.xlsx`, applies full encryption with password `123456`, and saves results to `protected_output`.
-
----
-
-### cURL Example
-
-```bash
-# Step 1: Get JWT token
-TOKEN=$(curl -v "https://api.aspose.cloud/connect/token" \
-  -X POST \
-  -d "grant_type=client_credentials&client_id=YOUR_CLIENT_ID&client_secret=YOUR_CLIENT_SECRET" \
-  -H "Content-Type: application/x-www-form-urlencoded" \
-  -s | jq -r '.access_token')
-
-# Step 2: Submit batch protect request
-curl -v "https://api.aspose.cloud/v3.0/cells/batch/protect" \
-  -X POST \
-  -H "Authorization: Bearer $TOKEN" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "SourceFolder": "CellsTests",
-    "OutFolder": "Output",
-    "MatchCondition": {
-      "RegexPattern": "(^Book)(.+)(xlsx$)"
-    },
-    "Password": "123456",
-    "ProtectionType": "All"
-  }' \
-  -o response.json
-```
-
----
-
-### Best Practices
-
-1. **Use Specific Patterns**  
-   Avoid overly broad regex (e.g., `.*`) that might accidentally match unintended files. Test patterns in a sandbox first.
-
-2. **Secure Passwords**  
-   Never hardcode passwords in code. Use environment variables or a secrets manager.
-
-3. **Output Folder Isolation**  
-   Always specify `OutFolder` to avoid overwriting originals.
-
-4. **Error Handling**  
-   Log responses to detect partial failures (e.g., some files skipped due to corruption).
-
-5. **File Format Support**  
-   While Aspose.Cells Cloud supports 30+ formats, batch protection is optimized for Excel formats (`.xlsx`, `.xls`, `.xlsm`, `.xlsb`). Use dedicated endpoints for non-Excel formats.
-
----
-
-### Related Resources
-
-- [Encrypt, Decrypt, and Digitally Sign Excel Files](https://docs.aspose.cloud/cells/protect/)
-- [Batch Merge Excel Files](https://docs.aspose.cloud/cells/batch/merge/)
-- [Batch Convert Excel Files](https://docs.aspose.cloud/cells/batch/convert/)
-- [Aspose.Cells Cloud SDKs on GitHub](https://github.com/aspose-cells-cloud)
-
-> **Last updated**: May 22, 2024
+| Code | Meaning               | Description                                                              |
+| ---- | --------------------- | ------------------------------------------------------------------------ |
+| 200  | OK                    | The request completed successfully.                                      |
+| 400  | Bad Request           | The request is malformed or one or more parameters are invalid.          |
+| 401  | Unauthorized          | Authentication failed, or the JWT token is missing or expired.           |
+| 404  | Not Found             | The requested workbook, worksheet, or resource was not found.            |
+| 413  | Payload Too Large     | The uploaded file exceeds the allowed size limit.                        |
+| 500  | Internal Server Error | The server encountered an unexpected error while processing the request. |
 
 ## How to Use the Post Batch Protect API with SDKs?
 
