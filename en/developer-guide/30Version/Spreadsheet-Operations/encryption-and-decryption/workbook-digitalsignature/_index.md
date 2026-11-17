@@ -115,7 +115,6 @@ curl -v "https://api.aspose.cloud/v4.0/cells/{name}/digitalsignature?digitalsign
 
 {{< /tabs >}}
 
-
 Using an SDK simplifies integration and reduces boiler‑plate code. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 ### Use Aspose.Cells Cloud SDKs
