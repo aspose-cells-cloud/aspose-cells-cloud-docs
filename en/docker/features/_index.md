@@ -59,12 +59,13 @@ Refer to the user manual — [How to Use Aspose.Cells Cloud Docker Container](ht
 
 **Quick start**
 
-1. Pull the Docker image: `docker pull aspose/cells-cloud`.
+1. Pull the Docker image: `docker pull aspose/cells-cloud:ltsc2022.26.10.0`.
 2. Run the container, mounting the license and data directories, e.g.:
    ```bash
-   docker run -d -p 8080:80 \
-     -v /path/to/license:/app/license \
-     -v /path/to/data:/app/data \
-     aspose/cells-cloud
+    docker run  --isolation hyperv -d  \
+      -v c:/dataWindows:c:/data  -v C:/Windows/Fonts:C:/Windows/Fonts \
+      -p 47903:5000  -e LicensePublicKey=${LicensePublicKey} -e LicensePrivateKey=${LicensePrivateKey} \
+      -e storagesCredentialsFilePath=./storageResource.json \
+      --name cells-cloud-server  aspose/cells-cloud:ltsc2022.26.10.0
    ```
 3. Access the REST API at `http://localhost:8080/v3.0/`. For detailed API usage, see the [Aspose.Cells Cloud API reference](https://docs.aspose.cloud/cells/api-reference/).

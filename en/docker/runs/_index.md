@@ -14,13 +14,13 @@ Aspose.Cells Cloud Docker provides a ready‑to‑run container image that hosts
 
 **Prerequisites**
 
-- Docker Engine 20.10 or later installed and running.  
-- PowerShell 5.1 or PowerShell 7+.  
-- Open port 5000 inside the container (mapped to host port 47900) and ensure the host firewall allows inbound traffic on 47900.  
-- For Metered or License billing modes, have your `LicensePublicKey`, `LicensePrivateKey`, or a license file ready, or an `AccessToken` if using token mode.  
+- Docker Engine 20.10 or later installed and running.
+- PowerShell 5.1 or PowerShell 7+.
+- Open port 5000 inside the container (mapped to host port 47900) and ensure the host firewall allows inbound traffic on 47900.
+- For Metered or License billing modes, have your `LicensePublicKey`, `LicensePrivateKey`, or a license file ready, or an `AccessToken` if using token mode.
 - A local folder (e.g., `C:\data`) to be mounted as storage for the container.
 
-**Quick‑Start (Trial mode)**  
+**Quick‑Start (Trial mode)**
 
 Run the following command to start the container in trial mode:
 
@@ -54,7 +54,7 @@ docker run -d `
   -e LicensePrivateKey=yourLicensePrivateKey `
   -e storagesCredentialsFilePath=./storageResource.json `
   --name asposecellscloud `
-  aspose/cells-cloud:ltsc2022.25.9.0
+  aspose/cells-cloud:ltsc2022.26.10.0
 ```
 
 The container runs in detached mode (`-d`). After it starts, you can verify that the service is reachable:
@@ -90,7 +90,7 @@ docker run -d `
   -e LicenseFile=c:/data/aspose.cells.lic `
   -e storagesCredentialsFilePath=./storageResource.json `
   --name asposecellscloud `
-  aspose/cells-cloud:ltsc2022.25.9.0
+  aspose/cells-cloud:ltsc2022.26.10.0
 ```
 
 ## Run Aspose.Cells Cloud Docker Container with Access Token
@@ -124,8 +124,8 @@ After starting the container, confirm the service is operational with the same h
 
 ### Troubleshooting
 
-- **Health‑check fails** – Ensure port 47900 is not blocked by a firewall and that the container is running (`docker ps`).  
-- **License errors** – Verify that `LicensePublicKey`, `LicensePrivateKey`, or `LicenseFile` values are correct and that the environment variables are passed without extra whitespace.  
+- **Health‑check fails** – Ensure port 47900 is not blocked by a firewall and that the container is running (`docker ps`).
+- **License errors** – Verify that `LicensePublicKey`, `LicensePrivateKey`, or `LicenseFile` values are correct and that the environment variables are passed without extra whitespace.
 - **Storage not accessible** – Confirm the host folder (`c:/data`) exists and Docker has permission to read/write to it.
 
 ---
